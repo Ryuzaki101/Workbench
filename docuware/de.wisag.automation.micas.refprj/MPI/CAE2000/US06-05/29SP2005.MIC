@@ -1,0 +1,204 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60505.GPS
+  ;*** Projektname    : MPI Turm 2
+  ;*** Projektnummer  : 33100821
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Peters
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (sp20,5)
+  WordV  Aggregate_Ein
+  WordV  K0
+  FloatK 1_SW_AU_Temp (10.00)
+  FloatK 1_SW_Raum_Temp (22.00)
+  FloatV 1_Raum_Temp
+  WordV  Freigabe_AT
+  WordV  1_Ventil_R0
+  FloatV Aussentemp
+  WordV  1_Torschl_R1
+  WordV  1_Ventil_R1
+  WordV  1_Torschl_R0
+  WordV  1_Anlage_R1_1
+  WordK  1_Anlage_R1 (0)
+  WordV  1_Anlage_R0
+  WordV  1_Anlage_EIN1
+  IPAMB &M0 (94,1)
+  WordV  $WSCRATCH
+  IPAMB &M1 (94,3)
+  IPAMB &M2 (37,5)
+  IPAMB &M3 (37,7)
+  IPAMB &M4 (37,13)
+  IPAMB &M5 (37,15)
+  IPAMB &M6 (0,0)
+  FloatK $M8 (6.00)
+  FloatK $M9 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMW &M10 (209)
+  IPAMW &M11 (103)
+  IPAAW &M12 (235)
+  FloatV $F1
+  FloatK $M13 (40.00)
+  FloatK $M14 (15.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M15 (10.00)
+  WordV  $B3
+  WordK  $M16 (1)
+  IPAAW &M18 (236)
+  FloatV $F3
+  FloatK $M19 (20.00)
+  FloatK $M20 (-10.00)
+  FloatV $F4
+  FloatK $M21 (10.00)
+  WordV  $B4
+  WordK  $M22 (1)
+  FloatK $M24 (0.50)
+  WordV  $B5
+  FloatK $M25 (60.00)
+  FloatK $M26 (60.00)
+  WordV  $B6
+  FloatK $M27 (0.50)
+  WordV  $B7
+  FloatK $M28 (0.00)
+  FloatK $M29 (300.00)
+  WordV  $B8
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M30 (37,9)
+  WordV  $B9
+  WordV  $B12
+  WordV  $B10
+  WordV  $B13
+  WordV  $B11
+  IPAMB &M32 (95,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:  MPI Gîttingen
+  ;Projekt:Turm 6
+  ;        KÑltenetz
+  ;Anlage: Torschleier EG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (1_Anlage_R1,1_Anlage_EIN1)
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,1_Anlage_R0,$WSCRATCH)
+  MELEIN (&M1,1,1_Anlage_R1,$WSCRATCH)
+  MELEIN (&M2,1,1_Torschl_R0,$WSCRATCH)
+  MELEIN (&M3,1,1_Torschl_R1,$WSCRATCH)
+  MELEIN (&M4,1,1_Ventil_R0,$WSCRATCH)
+  MELEIN (&M5,1,1_Ventil_R1,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (1_Anlage_EIN1,$M8,$M9,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,1_Anlage_R1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M10,1_Raum_Temp,$WSCRATCH)
+  ANEIN (&M11,Aussentemp,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M12,$F1,$WSCRATCH)
+  LIMIT ($F1,$M13,$M14,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M15,$B3)
+  AWT ($B3,$F2,1_SW_Raum_Temp,1_SW_Raum_Temp)
+  ANAUS (1_SW_Raum_Temp,$M16,&M12,$WSCRATCH)
+  ANEIN (&M18,$F3,$WSCRATCH)
+  LIMIT ($F3,$M19,$M20,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M21,$B4)
+  AWT ($B4,$F4,1_SW_AU_Temp,1_SW_AU_Temp)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;Default-Werte setzen
+  ;8
+  ; 
+  ANAUS (1_SW_AU_Temp,$M22,&M18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLEH (1_SW_AU_Temp,Aussentemp,$M24,$B5)
+  VVZ ($B5,$M25,$M26,$B6)
+  UND2 ($B6,1_Anlage_R1,Freigabe_AT)
+  VGLEH (1_SW_Raum_Temp,1_Raum_Temp,$M27,$B7)
+  VVZ ($B7,$M28,$M29,$B8)
+  UND2 (Freigabe_AT,$B8,Aggregate_Ein)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  NICHT (Aggregate_Ein,$HB0)
+  BEFAUS (1,$HB0,Aggregate_Ein,$WZERO,$WZERO,&M30,$WSCRATCH)
+  NICHT (Aggregate_Ein,$HB0)
+  BEFAUS (1,$HB0,Aggregate_Ein,$WZERO,$WZERO,&M4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Anlage_R0,$B12,$B9)
+  NICHT (1_Anlage_R0,$B12)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Anlage_R1,$B13,$B10)
+  NICHT (1_Anlage_R1,$B13)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (1_Anlage_R1_1,$B10,$B11)
+  BEFAUS (1,$B9,$B11,$WZERO,$WZERO,&M32,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.wisag.automation.micas.workbench.ide.workbench"
+            name="Micas Workbench">
+         <property
+               name="appName"
+               value="Micas Workbench">
+         </property>
+                  <property
+               name="org.eclipse.core.runtime.preferences.customization"
+               value="plugin_customization.ini">
+         </property>
+                  <property
+                        name="aboutImage"
+                        value="icons/wisagsb_about.png">
+                  </property>
+                  <property
+                        name="windowImages"
+                        value="icons/wisagwb_window_16.png,icons/wisagwb_window_32.png,icons/wisagwb_window_48.png,icons/wisagwb_window_64.png,icons/wisagwb_window_128.png">
+                  </property>
+                  <property
+                        name="startupProgressRect"
+                        value="45,312,465,15">
+                  </property>
+                  <property
+                        name="aboutText"
+                        value="Micas Workbench&#x0A;&#x0A;&#x0A;(c) Copyright WISAG Automatisierungstechnik GmbH &amp; Co. KG&#x0A;1988, 2015.  All rights reserved.&#x0A;&#x0A;Visit http://www.wisag.de/industrie/leistungen/anlagenbau%20gebaeudetechnik/wisag%20automatisierungstechnik.aspx&#x0A;&#x0A;This product includes software developed by&#x0A;&#x0A;Eclipse Foundation http://www.eclipse.org/&#x0A;Apache Software Foundation http://www.apache.org/&#x0A;The Legion of the Bouncy Castle http://http://www.bouncycastle.org/&#x0A;Itemis AG http://www.itemis.de/&#x0A;Catuno GmbH http://www.catuno.de">
+                  </property>
+                  <property
+                        name="preferenceCustomization"
+                        value="plugin_customization.ini">
+                  </property>
+
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.wisag.automation.micas.workbench.internal.PerspectiveFactory"
+            icon="icons/wisag_16_16.png"
+            id="de.wisag.automation.micas.workbench.perspective"
+            name="Wisag Automation Workbench">
+      </perspective>
+   </extension>
+    <!-- The following extension will filter out the Problems View-->
+        <!--
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.ui\.console/.*" />
+        -->
+
+   <extension point="org.eclipse.ui.activities">
+        <category description="Contains bindings declared in the
+            org.eclipse.example.hello plugin." name="WISAG Automation Workbench Activity"
+            id="de.wisag.automation.micas.workbench.category"/>
+    </extension>
+
+    <extension point="org.eclipse.ui.activities">
+        <activity name="WISAG Automation Workbench Activity" id="de.wisag.automation.micas.workbench.activity"/>
+
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.debug\.ui/.*" />
+
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.team\.ui/.*" />
+
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.debug\.ui/.*" />
+
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.emf.*/.*" />
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.xtext\.xtext\.ui/.*" />
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.xpand\.ui/.*" />
+		<activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.xtend.*/.*" />
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.ant\.ui/.*" />
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.ui\.externaltools/.*" />
+
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+            isEqualityPattern="true"
+        	pattern="org.eclipse.ui/org.eclipse.ui.file.print" />
+
+ 		<activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org.eclipse.ui.workbench/.*replaceWithPreviousFromHistory.*" />
+		<!-- nicht in restore from history view anzeigen -->
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	isEqualityPattern="true"
+        	pattern="org.eclipselabs.damos.diagram.ui/org.eclipselabs.damos.diagram.ui.commands.moveToAnotherFragment" />
+
+		<activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org.eclipse.compare/.*" />
+        <!-- Disable Duplicate Contextmenu entry   -->
+        <activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.gmf\.runtime\.diagram\.ui\.providers/.*DuplicateActionDelegate" />
+         <!--
+		<activityPatternBinding activityId="de.wisag.automation.micas.workbench.activity"
+        	pattern="org\.eclipse\.jdt\.ui/.*" />
+    	-->
+        <categoryActivityBinding activityId="de.wisag.automation.micas.workbench.activity"
+            categoryId="de.wisag.automation.micas.workbench.category"/>
+     </extension>
+    <extension
+          point="org.eclipse.ui.navigator.navigatorContent">
+       <commonWizard
+             type="new"
+             wizardId="de.wisag.automation.micas.module.editor.presentation.ModuleModelWizardID">
+          <enablement></enablement>
+       </commonWizard>
+    </extension>
+    <extension
+          id="workbench"
+          point="org.eclipse.core.runtime.applications">
+       <application
+             cardinality="singleton-global"
+             thread="main"
+             visible="true">
+          <run
+                class="de.wisag.automation.micas.workbench.ide.Application">
+          </run>
+       </application>
+    </extension>
+    <extension
+          point="org.eclipse.ui.splashHandlers">
+       <splashHandler
+             class="de.wisag.automation.micas.workbench.ide.splash.LicenseCheckingSplashHandler"
+             id="de.wisag.automation.micas.workbench.ide.splash.interactive">
+       </splashHandler>
+       <splashHandlerProductBinding
+             productId="de.wisag.automation.micas.workbench.ide.product"
+             splashId="de.wisag.automation.micas.workbench.ide.splash.interactive">
+       </splashHandlerProductBinding>
+    </extension>
+</plugin>

@@ -1,0 +1,1471 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 03_04_04.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 4
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  A_BF_UK_3_1
+  WordV  A_BF_UK_2_1
+  FloatV E_MW_RA_POTI_2
+  FloatV E_X_RA_T_2
+  FloatK K_0.5_WERT (0.50)
+  FloatV E_W_RA_T_2
+  WordV  E_RM_ST_2_1
+  WordV  Z_STUFE_1_1
+  WordV  E_BM_FERN_1
+  WordK  K_1_STATUS (1)
+  WordV  Z_UK_HOCH_1
+  WordV  A_BF_UK_1_1
+  FloatV A_AS_W_RA_T_2
+  FloatV E_W_RA_T_1
+  WordV  S_ERR
+  FloatV E_X_RA_T_1
+  WordV  E_RM_ST_3_1
+  FloatV E_MW_RA_POTI_1
+  WordV  Z_HAUPT_1
+  FloatV A_AS_W_RA_T_1
+  WordV  Z_UK_TIEF_1
+  WordV  E_RM_ST_1_1
+  FloatV A_AS_KW_VE_1
+  FloatV A_AS_WW_VE_1
+  WordV  Z_HAUPT_2
+  WordV  E_BM_FERN_2
+  WordV  E_RM_ST_1_2
+  WordV  E_RM_ST_2_2
+  WordV  Z_STUFE_1_2
+  WordV  E_RM_ST_3_2
+  FloatV A_AS_KW_VE_2
+  FloatV A_AS_WW_VE_2
+  WordV  Z_UK_TIEF_2
+  WordV  Z_UK_HOCH_2
+  WordV  A_BF_UK_1_2
+  WordV  A_BF_UK_2_2
+  WordV  A_BF_UK_3_2
+  FloatV E_W_RA_T_3
+  FloatV E_MW_RA_POTI_3
+  FloatV A_AS_W_RA_T_3
+  FloatV E_X_RA_T_3
+  WordV  Z_HAUPT_3
+  WordV  E_BM_FERN_3
+  WordV  E_RM_ST_1_3
+  WordV  E_RM_ST_2_3
+  WordV  E_RM_ST_3_3
+  WordV  Z_STUFE_1_3
+  FloatV A_AS_KW_VE_3
+  FloatV A_AS_WW_VE_3
+  WordV  Z_UK_TIEF_3
+  WordV  Z_UK_HOCH_3
+  WordV  A_BF_UK_1_3
+  WordV  A_BF_UK_2_3
+  WordV  A_BF_UK_3_3
+  FloatV E_W_RA_T_4
+  FloatV E_MW_RA_POTI_4
+  FloatV A_AS_W_RA_T_4
+  FloatV E_X_RA_T_4
+  WordV  Z_HAUPT_4
+  WordV  E_BM_FERN_4
+  WordV  E_RM_ST_1_4
+  WordV  E_RM_ST_2_4
+  WordV  E_RM_ST_3_4
+  WordV  Z_STUFE_1_4
+  FloatV A_AS_KW_VE_4
+  FloatV A_AS_WW_VE_4
+  WordV  Z_UK_TIEF_4
+  WordV  Z_UK_HOCH_4
+  WordV  A_BF_UK_1_4
+  WordV  A_BF_UK_2_4
+  WordV  A_BF_UK_3_4
+  WordV  E_VP_FREIG_1
+  FloatV E_MW_AU_TEMP
+  WordV  E_ST_UMLK_1
+  WordK  K_VP_FREIG_1 (1)
+  WordV  E_VP_FREIG_2
+  WordK  K_VP_FREIG_2 (1)
+  WordV  E_ST_UMLK_2
+  WordV  E_VP_FREIG_3
+  WordK  K_VP_FREIG_3 (1)
+  WordV  E_ST_UMLK_3
+  WordV  E_VP_FREIG_4
+  WordK  K_VP_FREIG_4 (1)
+  WordV  E_ST_UMLK_4
+  WordV  E_ST_BMZ_RM
+  WordV  A_ST_SAM_ST_1
+  WordV  A_ST_SAM_ST_3
+  WordV  A_ST_SAM_ST_2
+  WordV  A_ST_SAM_ST_4
+  WordV  E_ST_KUEHL_130B
+  WordV  E_VP_QUITT_SUG
+  WordV  E_VP_QUITT_DG
+  FloatV A_MW_AU_TEMP
+  WordV  E_BM_QUITT
+  WordV  A_BM_QUITT
+  WordV  E_ST_ANL_107S2
+  WordV  E_ST_ANL_107A
+  WordV  E_ST_ANL_108A
+  WordV  E_ST_ANL_112
+  WordV  E_ST_KUEHL_107S2
+  WordV  E_ST_KUEHL_129
+  WordV  A_ST_BETR
+  WordK  K_0_STATUS (0)
+  WordV  E_RM_QUITT_GLT
+  WordV  E_ST_KUEHL_107a
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (164,1)
+  IPAMB &M1 (164,5)
+  IPAMB &M2 (164,9)
+  IPAMB &M3 (164,13)
+  IPAMB &M4 (31,15)
+  WordV  $B1
+  IPAMB &M5 (35,14)
+  IPAMB &M6 (30,2)
+  IPAMB &M7 (29,14)
+  IPAMB &M8 (70,11)
+  IPAMB &M9 (30,7)
+  IPAMB &M10 (177,10)
+  IPAMB &M11 (189,2)
+  IPAMB &M12 (190,2)
+  IPAMB &M13 (226,2)
+  IPAMB &M14 (31,6)
+  IPAMB &M15 (164,3)
+  IPAMB &M16 (5,6)
+  IPAMB &M17 (4,3)
+  IPAMB &M18 (4,7)
+  IPAMB &M19 (5,3)
+  IPAMB &M20 (5,7)
+  WordV  $B2
+  IPAMB &M21 (164,7)
+  IPAMB &M22 (5,14)
+  IPAMB &M23 (4,11)
+  IPAMB &M24 (4,15)
+  IPAMB &M25 (5,11)
+  IPAMB &M26 (5,15)
+  WordV  $B3
+  IPAMB &M27 (164,11)
+  IPAMB &M28 (7,6)
+  IPAMB &M29 (6,3)
+  IPAMB &M30 (6,7)
+  IPAMB &M31 (7,3)
+  IPAMB &M32 (7,7)
+  WordV  $B4
+  IPAMB &M33 (164,15)
+  IPAMB &M34 (7,14)
+  IPAMB &M35 (6,11)
+  IPAMB &M36 (6,15)
+  IPAMB &M37 (7,11)
+  IPAMB &M38 (7,15)
+  WordV  $B5
+  IPAAW &M39 (255)
+  IPAAW &M40 (55)
+  IPAAW &M41 (54)
+  IPAAW &M42 (57)
+  IPAAW &M43 (56)
+  IPAAW &M44 (59)
+  IPAAW &M45 (58)
+  IPAAW &M46 (61)
+  IPAAW &M47 (60)
+  WordV  $B6
+  WordV  $WSCRATCH
+  WordV  $B7
+  FloatK $M48 (2.00)
+  FloatK $M49 (-2.00)
+  FloatV $F1
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  FloatK $M50 (50.00)
+  FloatV $F2
+  FloatK $M51 (48.00)
+  FloatK $M52 (4.00)
+  FloatK $M53 (0.00)
+  FloatV $F3
+  FloatV $F4
+  FloatK $M54 (0.50)
+  WordV  $B11
+  WordV  $B12
+  FloatK $M55 (0.00)
+  FloatK $M56 (300.00)
+  FloatV $F5
+  FloatK $M57 (10.00)
+  WordV  $B13
+  FloatK $M58 (90.00)
+  WordV  $HB2
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatV $F6
+  FloatK $M59 (600.00)
+  WordV  $B17
+  FloatK $M60 (4.00)
+  FloatV $F7
+  FloatK $M61 (600.00)
+  WordV  $B18
+  FloatK $M62 (4.00)
+  FloatK $M63 (1.00)
+  FloatK $M64 (0.00)
+  FloatV $F8
+  FloatV $F9
+  FloatK $M65 (1.00)
+  WordV  $B19
+  FloatK $M66 (2.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  FloatK $M67 (2.00)
+  FloatK $M68 (-2.00)
+  FloatV $F10
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  FloatK $M69 (50.00)
+  FloatV $F11
+  FloatK $M70 (48.00)
+  FloatK $M71 (4.00)
+  FloatK $M72 (0.00)
+  FloatV $F12
+  FloatV $F13
+  FloatK $M73 (0.50)
+  WordV  $B30
+  WordV  $B31
+  FloatK $M74 (0.00)
+  FloatK $M75 (300.00)
+  FloatV $F14
+  FloatK $M76 (10.00)
+  WordV  $B32
+  FloatK $M77 (90.00)
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  FloatV $F15
+  FloatK $M78 (600.00)
+  WordV  $B36
+  FloatK $M79 (4.00)
+  FloatV $F16
+  FloatK $M80 (600.00)
+  WordV  $B37
+  FloatK $M81 (4.00)
+  FloatK $M82 (1.00)
+  FloatK $M83 (0.00)
+  FloatV $F17
+  FloatV $F18
+  FloatK $M84 (1.00)
+  WordV  $B38
+  FloatK $M85 (2.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  FloatK $M86 (2.00)
+  FloatK $M87 (-2.00)
+  FloatV $F19
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  FloatK $M88 (50.00)
+  FloatV $F20
+  FloatK $M89 (48.00)
+  FloatK $M90 (4.00)
+  FloatK $M91 (0.00)
+  FloatV $F21
+  FloatV $F22
+  FloatK $M92 (0.50)
+  WordV  $B49
+  WordV  $B50
+  FloatK $M93 (0.00)
+  FloatK $M94 (300.00)
+  FloatV $F23
+  FloatK $M95 (10.00)
+  WordV  $B51
+  FloatK $M96 (90.00)
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  FloatV $F24
+  FloatK $M97 (600.00)
+  WordV  $B55
+  FloatK $M98 (4.00)
+  FloatV $F25
+  FloatK $M99 (600.00)
+  WordV  $B56
+  FloatK $M100 (4.00)
+  FloatK $M101 (1.00)
+  FloatK $M102 (0.00)
+  FloatV $F26
+  FloatV $F27
+  FloatK $M103 (1.00)
+  WordV  $B57
+  FloatK $M104 (2.00)
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  FloatK $M105 (2.00)
+  FloatK $M106 (-2.00)
+  FloatV $F28
+  WordV  $B65
+  WordV  $B66
+  WordV  $B67
+  FloatK $M107 (50.00)
+  FloatV $F29
+  FloatK $M108 (48.00)
+  FloatK $M109 (4.00)
+  FloatK $M110 (0.00)
+  FloatV $F30
+  FloatV $F31
+  FloatK $M111 (0.50)
+  WordV  $B68
+  WordV  $B69
+  FloatK $M112 (0.00)
+  FloatK $M113 (300.00)
+  FloatV $F32
+  FloatK $M114 (10.00)
+  WordV  $B70
+  FloatK $M115 (90.00)
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  FloatV $F33
+  FloatK $M116 (600.00)
+  WordV  $B74
+  FloatK $M117 (4.00)
+  FloatV $F34
+  FloatK $M118 (600.00)
+  WordV  $B75
+  FloatK $M119 (4.00)
+  FloatK $M120 (1.00)
+  FloatK $M121 (0.00)
+  FloatV $F35
+  FloatV $F36
+  FloatK $M122 (1.00)
+  WordV  $B76
+  FloatK $M123 (2.00)
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  FloatK $M124 (50.00)
+  FloatK $M125 (-50.00)
+  WordV  $B82
+  FloatK $M126 (8.00)
+  FloatK $M127 (60.00)
+  FloatK $M128 (0.00)
+  WordV  $B83
+  FloatK $M129 (60.00)
+  FloatK $M130 (0.00)
+  WordV  $B84
+  WordV  $B85
+  IPAMB &M131 (254,12)
+  IPAMB &M132 (254,10)
+  IPAMB &M133 (164,0)
+  IPAMB &M134 (164,4)
+  IPAMB &M135 (164,8)
+  IPAMB &M136 (164,12)
+  IPAMB &M137 (254,0)
+  IPAMB &M138 (254,11)
+  IPAMB &M139 (254,8)
+  WordV  $B86
+  IPAMB &M140 (4,1)
+  IPAMB &M141 (4,5)
+  IPAMB &M142 (5,1)
+  IPAMB &M143 (4,9)
+  IPAMB &M144 (4,13)
+  IPAMB &M145 (5,9)
+  IPAMB &M146 (6,1)
+  IPAMB &M147 (6,5)
+  IPAMB &M148 (7,1)
+  IPAMB &M149 (6,9)
+  IPAMB &M150 (6,13)
+  IPAMB &M151 (7,9)
+  IPAAW &M152 (62)
+  IPAAW &M153 (63)
+  IPAAW &M154 (166)
+  IPAAW &M155 (64)
+  IPAAW &M156 (65)
+  IPAAW &M157 (169)
+  IPAAW &M158 (66)
+  IPAAW &M159 (67)
+  IPAAW &M160 (172)
+  IPAAW &M161 (68)
+  IPAAW &M162 (69)
+  IPAAW &M163 (175)
+  IPAAW &M164 (146)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Bio-Physikalische
+  ;Chemie Göttingen
+  ;KUNDE:
+  ;------------------------
+  ;Stangl GmbH Halle
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Turm 3 1.OG
+  ;Raum 102 = 1
+  ;Raum 103 = 2
+  ;Raum 104 = 3
+  ;Raum 105 = 4
+  ;Highbus  = 5
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Task 4= Steuerung und
+  ;        Regelung
+  ;Task 5= Daten ausgeben
+  ;g
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ERR_ =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;T3-LU01-02A-X50
+  ; 
+  NICHT (K_VP_FREIG_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_1,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ; 
+  ;T3-LU01-03A-X50
+  ; 
+  NICHT (K_VP_FREIG_2,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_2,$WZERO,$WZERO,&M1,S_ERR)
+  ; reigabe
+  ; 
+  ;T3-LU01-04A-X50
+  ; 
+  NICHT (K_VP_FREIG_3,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_3,$WZERO,$WZERO,&M2,S_ERR)
+  ;Freigabe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;T3-LU01-05K-X50
+  ; 
+  NICHT (K_VP_FREIG_4,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_4,$WZERO,$WZERO,&M3,S_ERR)
+  ;Freigabe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1500)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;Störung
+  ;Flächenrauch-
+  ;Auslösung BMZ
+  ; 
+  NICHT ($B1,E_ST_BMZ_RM)
+  MELEIN (&M4,1,$B1,S_ERR)
+  ;T3-BM00-00A-A01
+  ; 
+  ;Meldung Ein
+  ;Quittierung
+  ; 
+  ;Tiefkühlschrank
+  ;Raum 107 S2
+  ; 
+  MELEIN (&M5,1,E_BM_QUITT,S_ERR)
+  ;T3-UV01-00A-B00
+  ; 
+  MELEIN (&M6,1,E_ST_KUEHL_107S2,S_ERR)
+  ;T3-SO01-07K-S01
+  ; 
+  ;Tiefkühlschränke
+  ;Raum 129
+  ; 
+  MELEIN (&M7,1,E_ST_KUEHL_129,S_ERR)
+  ;T3-SO01-29A-S01
+  ; 
+  ;Rückmeldung Ein
+  ;Quittierung GLT
+  ; 
+  MELEIN (&M8,1,E_RM_QUITT_GLT,S_ERR)
+  ;T3-UV01-01A-X00
+  ; 
+  ;Tiefkühlschrank
+  ;Raum 107a
+  ; 
+  MELEIN (&M9,1,E_ST_KUEHL_107a,S_ERR)
+  ;T3-SO01-07A-S02
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;Abschaltstörung
+  ;Anlage 107S2
+  ; 
+  MELEIN (&M10,1,E_ST_ANL_107S2,S_ERR)
+  ;T3-LU01-07K-A50
+  ; 
+  ;Abschaltstörung
+  ;Anlage 107A
+  ; 
+  MELEIN (&M11,1,E_ST_ANL_107A,S_ERR)
+  ;T3-LU01-07A-A50
+  ; 
+  ;Abschaltstörung
+  ;Anlage 108A
+  ; 
+  MELEIN (&M12,1,E_ST_ANL_108A,S_ERR)
+  ;T3-LU01-08A-A50
+  ; 
+  ;Abschaltstörung
+  ;Anlage 112
+  ; 
+  MELEIN (&M13,1,E_ST_ANL_112,S_ERR)
+  ;T3-LU01-12A-A50
+  ; 
+  ;Tiefkühlschrank
+  ;Raum 130b Flur
+  ; 
+  MELEIN (&M14,1,E_ST_KUEHL_130B,S_ERR)
+  ;T3-SO01-30B-S02
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  ;T3-LU01-02A-X50
+  ; 
+  MELEIN (&M15,1,K_VP_FREIG_1,S_ERR)
+  BTRA (K_VP_FREIG_1,E_VP_FREIG_1)
+  ;Meldung Ein
+  ;UMLK Ort
+  ; 
+  MELEIN (&M16,1,E_BM_FERN_1,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 1
+  ; 
+  MELEIN (&M17,1,E_RM_ST_1_1,S_ERR)
+  ;T3-LU01-02A-X11
+  ; 
+  ;Rückmeldung Ein
+  ;UMLK Stufe 2
+  ; 
+  MELEIN (&M18,1,E_RM_ST_2_1,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 3
+  ; 
+  MELEIN (&M19,1,E_RM_ST_3_1,S_ERR)
+  ;T3-LU01-02A-X13
+  ; 
+  ;T3-LU01-02A-X12
+  ; 
+  ;T3-LU01-02A-B11
+  ; 
+  ;Störung
+  ;UMLK
+  ; 
+  NICHT ($B2,E_ST_UMLK_1)
+  MELEIN (&M20,1,$B2,S_ERR)
+  ;T3-LU01-02A-S11
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  ;T3-LU01-03A-X50
+  ; 
+  MELEIN (&M21,1,K_VP_FREIG_2,S_ERR)
+  BTRA (K_VP_FREIG_2,E_VP_FREIG_2)
+  ;Meldung Ein
+  ;UMLK Ort
+  ; 
+  MELEIN (&M22,1,E_BM_FERN_2,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 1
+  ; 
+  MELEIN (&M23,1,E_RM_ST_1_2,S_ERR)
+  ;T3-LU01-03A-X11
+  ; 
+  ;Rückmeldung Ein
+  ;UMLK Stufe 2
+  ; 
+  MELEIN (&M24,1,E_RM_ST_2_2,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 3
+  ; 
+  MELEIN (&M25,1,E_RM_ST_3_2,S_ERR)
+  ;T3-LU01-03A-X13
+  ; 
+  ;T3-LU01-03A-X12
+  ; 
+  ;T3-LU01-03A-B11
+  ; 
+  ;Störung
+  ;UMLK
+  ; 
+  NICHT ($B3,E_ST_UMLK_2)
+  MELEIN (&M26,1,$B3,S_ERR)
+  ;T3-LU01-03A-S11
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  ;T3-LU01-04A-X50
+  ; 
+  MELEIN (&M27,1,K_VP_FREIG_3,S_ERR)
+  BTRA (K_VP_FREIG_3,E_VP_FREIG_3)
+  ;Meldung Ein
+  ;UMLK Ort
+  ; 
+  MELEIN (&M28,1,E_BM_FERN_3,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 1
+  ; 
+  MELEIN (&M29,1,E_RM_ST_1_3,S_ERR)
+  ;T3-LU01-04A-X11
+  ; 
+  ;Rückmeldung Ein
+  ;UMLK Stufe 2
+  ; 
+  MELEIN (&M30,1,E_RM_ST_2_3,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 3
+  ; 
+  MELEIN (&M31,1,E_RM_ST_3_3,S_ERR)
+  ;T3-LU01-04A-X13
+  ; 
+  ;T3-LU01-04A-X12
+  ; 
+  ;T3-LU01-04A-B11
+  ; 
+  ;Störung
+  ;UMLK
+  ; 
+  NICHT ($B4,E_ST_UMLK_3)
+  MELEIN (&M32,1,$B4,S_ERR)
+  ;T3-LU01-04A-S11
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  ;T3-LU01-05K-X50
+  ; 
+  MELEIN (&M33,1,K_VP_FREIG_4,S_ERR)
+  BTRA (K_VP_FREIG_4,E_VP_FREIG_4)
+  ;Meldung Ein
+  ;UMLK Ort
+  ; 
+  MELEIN (&M34,1,E_BM_FERN_4,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 1
+  ; 
+  MELEIN (&M35,1,E_RM_ST_1_4,S_ERR)
+  ;T3-LU01-05K-X11
+  ; 
+  ;Rückmeldung Ein
+  ;UMLK Stufe 2
+  ; 
+  MELEIN (&M36,1,E_RM_ST_2_4,S_ERR)
+  ;Rückmeldung Ein
+  ;UMLK Stufe 3
+  ; 
+  MELEIN (&M37,1,E_RM_ST_3_4,S_ERR)
+  ;T3-LU01-05K-X13
+  ; 
+  ;T3-LU01-05K-X12
+  ; 
+  ;T3-LU01-05K-B11
+  ; 
+  ;Störung
+  ;UMLK
+  ; 
+  NICHT ($B5,E_ST_UMLK_4)
+  MELEIN (&M38,1,$B5,S_ERR)
+  ;T3-LU01-05K-S11
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M39,E_MW_AU_TEMP,S_ERR)
+  ;T3-AS03-01B-V00
+  ; 
+  ;Aussentemperatur
+  ;Turm 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M40,E_MW_RA_POTI_1,S_ERR)
+  ;T3-LU01-02A-T20
+  ; 
+  ;Messwert
+  ;Raumsollwert Poti
+  ;
+  ; 
+  ANEIN (&M41,E_X_RA_T_1,S_ERR)
+  ;T3-LU01-02A-T01
+  ; 
+  ;Istwert
+  ;Raumtemperatur
+  ;
+  ; 
+  SOLKEN (1,K_1_STATUS,E_W_RA_T_1,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Raum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M42,E_MW_RA_POTI_2,S_ERR)
+  ;T3-LU01-03A-T20
+  ; 
+  ;Messwert
+  ;Raumsollwert Poti
+  ;
+  ; 
+  ANEIN (&M43,E_X_RA_T_2,S_ERR)
+  ;T3-LU01-03A-T01
+  ; 
+  ;Istwert
+  ;Raumtemperatur
+  ;
+  ; 
+  SOLKEN (2,K_1_STATUS,E_W_RA_T_2,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Raum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&M44,E_MW_RA_POTI_3,S_ERR)
+  ;T3-LU01-04A-T20
+  ; 
+  ;Messwert
+  ;Raumsollwert Poti
+  ;
+  ; 
+  ANEIN (&M45,E_X_RA_T_3,S_ERR)
+  ;T3-LU01-04A-T01
+  ; 
+  ;Istwert
+  ;Raumtemperatur
+  ;
+  ; 
+  SOLKEN (3,K_1_STATUS,E_W_RA_T_3,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Raum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&M46,E_MW_RA_POTI_4,S_ERR)
+  ;T3-LU01-05K-T20
+  ; 
+  ;Messwert
+  ;Raumsollwert Poti
+  ;
+  ; 
+  ANEIN (&M47,E_X_RA_T_4,S_ERR)
+  ;T3-LU01-05K-T01
+  ; 
+  ;Istwert
+  ;Raumtemperatur
+  ;
+  ; 
+  SOLKEN (4,K_1_STATUS,E_W_RA_T_4,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Raum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODRMN (8,E_ST_UMLK_1,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B6,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B7,
+         $WSCRATCH)
+  ODR2 ($B6,$B7,A_ST_SAM_ST_1)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UNDMN (1,E_VP_FREIG_1,2,E_ST_BMZ_RM,E_ST_UMLK_1,Z_HAUPT_1,
+         $WSCRATCH)
+  ;Freigabe Raum
+  ;- Virtuelle Freigabe
+  ;- Rauchmelder BMZ
+  ;- Störung Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  LIMIT (E_MW_RA_POTI_1,$M48,$M49,$F1)
+  ADD2 (E_W_RA_T_1,$F1,A_AS_W_RA_T_1)
+  ;Raumtemperatur
+  ;Sollwertbildung mit
+  ;Sollwertsteller
+  ;+/- 2K
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODRMN (3,E_RM_ST_1_1,E_RM_ST_2_1,E_RM_ST_3_1,0,$WSCRATCH,
+         $B8)
+  UND2 (E_BM_FERN_1,$B8,$B9)
+  ODRMN (1,$B9,1,Z_HAUPT_1,$B10,$WSCRATCH)
+  REGLER (5,K_1_STATUS,$B10,$M50,$F2,S_ERR)
+  SEQ2 ($F2,$M51,$M52,$M53,A_AS_KW_VE_1,A_AS_WW_VE_1,
+        $WSCRATCH)
+  SUB2 (E_X_RA_T_1,A_AS_W_RA_T_1,$F3)
+  ABSWER ($F3,$F4)
+  VGLOH ($F4,$M54,$B11)
+  UND2 ($B11,Z_HAUPT_1,$B12)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ;S
+  ; 
+  VVZ ($B12,$M55,$M56,Z_STUFE_1_1)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  MAX (2,A_AS_KW_VE_1,A_AS_WW_VE_1,$F5)
+  VGLOH ($F5,$M57,$B13)
+  VGLOH ($F5,$M58,$HB2)
+  NICHT ($HB2,$B14)
+  ODR2 ($B13,Z_UK_TIEF_1,$B15)
+  ODR2 ($B14,Z_UK_HOCH_1,$B16)
+  UHR (K_1_STATUS,$B15,$F6)
+  VGLOH ($F6,$M59,$B17)
+  MOKY ($B17,$M60,Z_UK_TIEF_1)
+  UHR (K_1_STATUS,$B16,$F7)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  VGLOH ($F7,$M61,$B18)
+  MOKY ($B18,$M62,Z_UK_HOCH_1)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  NICHT (Z_HAUPT_1,$HB0)
+  VRZ ($HB0,$M63,$WZERO,$M64,K_1_STATUS,$B22,$B23,$F8)
+  ADD2 (K_0.5_WERT,$F8,$F9)
+  UND2 ($B24,$B21,A_BF_UK_1_1)
+  VGLOH ($F9,$M65,$B19)
+  UND11 ($B19,A_BF_UK_3_1,A_BF_UK_2_1)
+  VGLOH ($F9,$M66,A_BF_UK_3_1)
+  ODRMN (2,A_BF_UK_2_1,A_BF_UK_3_1,0,$B20,$B21)
+  UND11 (Z_UK_HOCH_1,A_BF_UK_3_1,$B22)
+  UND2 (Z_UK_TIEF_1,$B20,$B23)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  UND2 (Z_STUFE_1_1,Z_HAUPT_1,$B24)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (8,E_ST_UMLK_2,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B25,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B26,
+         $WSCRATCH)
+  ODR2 ($B25,$B26,A_ST_SAM_ST_2)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UNDMN (1,E_VP_FREIG_2,2,E_ST_BMZ_RM,E_ST_UMLK_2,Z_HAUPT_2,
+         $WSCRATCH)
+  ;Freigabe Raum
+  ;- Virtuelle Freigabe
+  ;- Rauchmelder BMZ
+  ;- Störung Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  LIMIT (E_MW_RA_POTI_2,$M67,$M68,$F10)
+  ADD2 (E_W_RA_T_2,$F10,A_AS_W_RA_T_2)
+  ;Raumtemperatur
+  ;Sollwertbildung mit
+  ;Sollwertsteller
+  ;+/- 2K
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (3,E_RM_ST_1_2,E_RM_ST_2_2,E_RM_ST_3_2,0,$WSCRATCH,
+         $B27)
+  UND2 (E_BM_FERN_2,$B27,$B28)
+  ODRMN (1,$B28,1,Z_HAUPT_2,$B29,$WSCRATCH)
+  REGLER (6,K_1_STATUS,$B29,$M69,$F11,S_ERR)
+  SEQ2 ($F11,$M70,$M71,$M72,A_AS_KW_VE_2,A_AS_WW_VE_2,
+        $WSCRATCH)
+  SUB2 (E_X_RA_T_2,A_AS_W_RA_T_2,$F12)
+  ABSWER ($F12,$F13)
+  VGLOH ($F13,$M73,$B30)
+  UND2 ($B30,Z_HAUPT_2,$B31)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ;S
+  ; 
+  VVZ ($B31,$M74,$M75,Z_STUFE_1_2)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  MAX (2,A_AS_KW_VE_2,A_AS_WW_VE_2,$F14)
+  VGLOH ($F14,$M76,$B32)
+  VGLOH ($F14,$M77,$HB2)
+  NICHT ($HB2,$B33)
+  ODR2 ($B32,Z_UK_TIEF_2,$B34)
+  ODR2 ($B33,Z_UK_HOCH_2,$B35)
+  UHR (K_1_STATUS,$B34,$F15)
+  VGLOH ($F15,$M78,$B36)
+  MOKY ($B36,$M79,Z_UK_TIEF_2)
+  UHR (K_1_STATUS,$B35,$F16)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  VGLOH ($F16,$M80,$B37)
+  MOKY ($B37,$M81,Z_UK_HOCH_2)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  NICHT (Z_HAUPT_2,$HB0)
+  VRZ ($HB0,$M82,$WZERO,$M83,K_1_STATUS,$B41,$B42,$F17)
+  ADD2 (K_0.5_WERT,$F17,$F18)
+  UND2 ($B43,$B40,A_BF_UK_1_2)
+  VGLOH ($F18,$M84,$B38)
+  UND11 ($B38,A_BF_UK_3_2,A_BF_UK_2_2)
+  VGLOH ($F18,$M85,A_BF_UK_3_2)
+  ODRMN (2,A_BF_UK_2_2,A_BF_UK_3_2,0,$B39,$B40)
+  UND11 (Z_UK_HOCH_2,A_BF_UK_3_2,$B41)
+  UND2 (Z_UK_TIEF_2,$B39,$B42)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  UND2 (Z_STUFE_1_2,Z_HAUPT_2,$B43)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (8,E_ST_UMLK_3,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B44,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B45,
+         $WSCRATCH)
+  ODR2 ($B44,$B45,A_ST_SAM_ST_3)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  UNDMN (1,E_VP_FREIG_3,2,E_ST_BMZ_RM,E_ST_UMLK_3,Z_HAUPT_3,
+         $WSCRATCH)
+  ;Freigabe Raum
+  ;- Virtuelle Freigabe
+  ;- Rauchmelder BMZ
+  ;- Störung Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  LIMIT (E_MW_RA_POTI_3,$M86,$M87,$F19)
+  ADD2 (E_W_RA_T_3,$F19,A_AS_W_RA_T_3)
+  ;Raumtemperatur
+  ;Sollwertbildung mit
+  ;Sollwertsteller
+  ;+/- 2K
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ODRMN (3,E_RM_ST_1_3,E_RM_ST_2_3,E_RM_ST_3_3,0,$WSCRATCH,
+         $B46)
+  UND2 (E_BM_FERN_3,$B46,$B47)
+  ODRMN (1,$B47,1,Z_HAUPT_3,$B48,$WSCRATCH)
+  REGLER (7,K_1_STATUS,$B48,$M88,$F20,S_ERR)
+  SEQ2 ($F20,$M89,$M90,$M91,A_AS_KW_VE_3,A_AS_WW_VE_3,
+        $WSCRATCH)
+  SUB2 (E_X_RA_T_3,A_AS_W_RA_T_3,$F21)
+  ABSWER ($F21,$F22)
+  VGLOH ($F22,$M92,$B49)
+  UND2 ($B49,Z_HAUPT_3,$B50)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ;S
+  ; 
+  VVZ ($B50,$M93,$M94,Z_STUFE_1_3)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  MAX (2,A_AS_KW_VE_3,A_AS_WW_VE_3,$F23)
+  VGLOH ($F23,$M95,$B51)
+  VGLOH ($F23,$M96,$HB2)
+  NICHT ($HB2,$B52)
+  ODR2 ($B51,Z_UK_TIEF_3,$B53)
+  ODR2 ($B52,Z_UK_HOCH_3,$B54)
+  UHR (K_1_STATUS,$B53,$F24)
+  VGLOH ($F24,$M97,$B55)
+  MOKY ($B55,$M98,Z_UK_TIEF_3)
+  UHR (K_1_STATUS,$B54,$F25)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  VGLOH ($F25,$M99,$B56)
+  MOKY ($B56,$M100,Z_UK_HOCH_3)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  NICHT (Z_HAUPT_3,$HB0)
+  VRZ ($HB0,$M101,$WZERO,$M102,K_1_STATUS,$B60,$B61,$F26)
+  ADD2 (K_0.5_WERT,$F26,$F27)
+  UND2 ($B62,$B59,A_BF_UK_1_3)
+  VGLOH ($F27,$M103,$B57)
+  UND11 ($B57,A_BF_UK_3_3,A_BF_UK_2_3)
+  VGLOH ($F27,$M104,A_BF_UK_3_3)
+  ODRMN (2,A_BF_UK_2_3,A_BF_UK_3_3,0,$B58,$B59)
+  UND11 (Z_UK_HOCH_3,A_BF_UK_3_3,$B60)
+  UND2 (Z_UK_TIEF_3,$B58,$B61)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  UND2 (Z_STUFE_1_3,Z_HAUPT_3,$B62)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (8,E_ST_UMLK_4,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B63,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B64,
+         $WSCRATCH)
+  ODR2 ($B63,$B64,A_ST_SAM_ST_4)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UNDMN (1,E_VP_FREIG_4,2,E_ST_BMZ_RM,E_ST_UMLK_4,Z_HAUPT_4,
+         $WSCRATCH)
+  ;Freigabe Raum
+  ;- Virtuelle Freigabe
+  ;- Rauchmelder BMZ
+  ;- Störung Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  LIMIT (E_MW_RA_POTI_4,$M105,$M106,$F28)
+  ADD2 (E_W_RA_T_4,$F28,A_AS_W_RA_T_4)
+  ;Raumtemperatur
+  ;Sollwertbildung mit
+  ;Sollwertsteller
+  ;+/- 2K
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ODRMN (3,E_RM_ST_1_4,E_RM_ST_2_4,E_RM_ST_3_4,0,$WSCRATCH,
+         $B65)
+  UND2 (E_BM_FERN_4,$B65,$B66)
+  ODRMN (1,$B66,1,Z_HAUPT_4,$B67,$WSCRATCH)
+  REGLER (8,K_1_STATUS,$B67,$M107,$F29,S_ERR)
+  SEQ2 ($F29,$M108,$M109,$M110,A_AS_KW_VE_4,A_AS_WW_VE_4,
+        $WSCRATCH)
+  SUB2 (E_X_RA_T_4,A_AS_W_RA_T_4,$F30)
+  ABSWER ($F30,$F31)
+  VGLOH ($F31,$M111,$B68)
+  UND2 ($B68,Z_HAUPT_4,$B69)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ;S
+  ; 
+  VVZ ($B69,$M112,$M113,Z_STUFE_1_4)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  MAX (2,A_AS_KW_VE_4,A_AS_WW_VE_4,$F32)
+  VGLOH ($F32,$M114,$B70)
+  VGLOH ($F32,$M115,$HB2)
+  NICHT ($HB2,$B71)
+  ODR2 ($B70,Z_UK_TIEF_4,$B72)
+  ODR2 ($B71,Z_UK_HOCH_4,$B73)
+  UHR (K_1_STATUS,$B72,$F33)
+  VGLOH ($F33,$M116,$B74)
+  MOKY ($B74,$M117,Z_UK_TIEF_4)
+  UHR (K_1_STATUS,$B73,$F34)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  VGLOH ($F34,$M118,$B75)
+  MOKY ($B75,$M119,Z_UK_HOCH_4)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  NICHT (Z_HAUPT_4,$HB0)
+  VRZ ($HB0,$M120,$WZERO,$M121,K_1_STATUS,$B79,$B80,$F35)
+  ADD2 (K_0.5_WERT,$F35,$F36)
+  UND2 ($B81,$B78,A_BF_UK_1_4)
+  VGLOH ($F36,$M122,$B76)
+  UND11 ($B76,A_BF_UK_3_4,A_BF_UK_2_4)
+  VGLOH ($F36,$M123,A_BF_UK_3_4)
+  ODRMN (2,A_BF_UK_2_4,A_BF_UK_3_4,0,$B77,$B78)
+  UND11 (Z_UK_HOCH_4,A_BF_UK_3_4,$B79)
+  UND2 (Z_UK_TIEF_4,$B77,$B80)
+  ;Umluftgerät
+  ;Kühlen und Heizen
+  ; 
+  UND2 (Z_STUFE_1_4,Z_HAUPT_4,$B81)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  LIMIT (E_MW_AU_TEMP,$M124,$M125,A_MW_AU_TEMP)
+  ODR2 (E_BM_QUITT,E_RM_QUITT_GLT,$B82)
+  MOKY ($B85,$M126,A_BM_QUITT)
+  NICHT (E_VP_QUITT_DG,$HB0)
+  VVZ ($HB0,$M127,$M128,$B83)
+  NICHT (E_VP_QUITT_SUG,$HB0)
+  VVZ ($HB0,$M129,$M130,$B84)
+  UNDMN (3,$B82,$B83,$B84,0,$B85,$WSCRATCH)
+  MELEIN (&M131,1,E_VP_QUITT_DG,$WSCRATCH)
+  MELEIN (&M132,1,E_VP_QUITT_SUG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ODRMN (6,E_ST_ANL_107A,E_ST_ANL_107S2,E_ST_ANL_108A,
+         E_ST_ANL_112,E_ST_KUEHL_107S2,E_ST_KUEHL_129,2,
+         E_ST_KUEHL_107a,E_ST_KUEHL_130B,A_ST_BETR,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_1,&M133,S_ERR)
+  ;T3-LU01-02A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_2,&M134,S_ERR)
+  ;Sammelstörung
+  ;
+  ; 
+  ;T3-LU01-03A-S50
+  ; 
+  ;Sammelstörung
+  ;
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_3,&M135,S_ERR)
+  ;T3-LU01-04A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_4,&M136,S_ERR)
+  ;Sammelstörung
+  ;
+  ; 
+  ;T3-LU01-05A-S50
+  ; 
+  ;Sammelstörung
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,$B86,&M137,S_ERR)
+  ;T3-AS03-02B-V00
+  ; 
+  SETMEL (K_1_STATUS,1,A_BM_QUITT,&M138,S_ERR)
+  ;BMZ Abschaltung
+  ;Highbus
+  ; 
+  ;T3-AS03-02B-V11
+  ; 
+  ;Quittierung
+  ;Highbus
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_BETR,&M139,S_ERR)
+  ;T3-AS03-02B-V08
+  ; 
+  ;Störung Betriebs-
+  ;technik
+  ; 
+  BTRA (E_ST_BMZ_RM,$B86)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ;T3-LU01-02A-X11
+  ; 
+  NICHT (A_BF_UK_1_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_1_1,$WZERO,$WZERO,&M140,S_ERR)
+  ;Umlufklimagerät
+  ;Stufe 1
+  ; 
+  ;T3-LU01-02A-X12
+  ; 
+  NICHT (A_BF_UK_2_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_2_1,$WZERO,$WZERO,&M141,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 2
+  ; 
+  ;T3-LU01-02A-X13
+  ; 
+  NICHT (A_BF_UK_3_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_3_1,$WZERO,$WZERO,&M142,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  ;T3-LU01-03A-X11
+  ; 
+  NICHT (A_BF_UK_1_2,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_1_2,$WZERO,$WZERO,&M143,S_ERR)
+  ;Umlufklimagerät
+  ;Stufe 1
+  ; 
+  ;T3-LU01-03A-X12
+  ; 
+  NICHT (A_BF_UK_2_2,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_2_2,$WZERO,$WZERO,&M144,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 2
+  ; 
+  ;T3-LU01-03A-X13
+  ; 
+  NICHT (A_BF_UK_3_2,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_3_2,$WZERO,$WZERO,&M145,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  ;T3-LU01-04A-X11
+  ; 
+  NICHT (A_BF_UK_1_3,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_1_3,$WZERO,$WZERO,&M146,S_ERR)
+  ;Umlufklimagerät
+  ;Stufe 1
+  ; 
+  ;T3-LU01-04A-X12
+  ; 
+  NICHT (A_BF_UK_2_3,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_2_3,$WZERO,$WZERO,&M147,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 2
+  ; 
+  ;T3-LU01-04A-X13
+  ; 
+  NICHT (A_BF_UK_3_3,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_3_3,$WZERO,$WZERO,&M148,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  ;T3-LU01-05K-X11
+  ; 
+  NICHT (A_BF_UK_1_4,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_1_4,$WZERO,$WZERO,&M149,S_ERR)
+  ;Umlufklimagerät
+  ;Stufe 1
+  ; 
+  ;T3-LU01-05K-X12
+  ; 
+  NICHT (A_BF_UK_2_4,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_2_4,$WZERO,$WZERO,&M150,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 2
+  ; 
+  ;T3-LU01-05K-X13
+  ; 
+  NICHT (A_BF_UK_3_4,$HB0)
+  BEFAUS (1,$HB0,A_BF_UK_3_4,$WZERO,$WZERO,&M151,S_ERR)
+  ;Umluftklimagerät
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  ;T3-LU01-02A-Y01
+  ; 
+  ANAUS (A_AS_WW_VE_1,K_1_STATUS,&M152,S_ERR)
+  ;Umluftklimagerät
+  ;Warmwasserventil
+  ; 
+  ;T3-LU01-02A-Y02
+  ; 
+  ANAUS (A_AS_KW_VE_1,K_1_STATUS,&M153,S_ERR)
+  ;Umluftklimagerät
+  ;Kaltwasserventil
+  ; 
+  ;T3-LU01-02A-T51
+  ; 
+  ANAUS (A_AS_W_RA_T_1,K_1_STATUS,&M154,S_ERR)
+  ;Sollwert Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  ;T3-LU01-03A-Y01
+  ; 
+  ANAUS (A_AS_WW_VE_2,K_1_STATUS,&M155,S_ERR)
+  ;Umluftklimagerät
+  ;Warmwasserventil
+  ; 
+  ;T3-LU01-03A-Y02
+  ; 
+  ANAUS (A_AS_KW_VE_2,K_1_STATUS,&M156,S_ERR)
+  ;Umluftklimagerät
+  ;Kaltwasserventil
+  ; 
+  ;T3-LU01-03A-T51
+  ; 
+  ANAUS (A_AS_W_RA_T_2,K_1_STATUS,&M157,S_ERR)
+  ;Sollwert Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  ;T3-LU01-04A-Y01
+  ; 
+  ANAUS (A_AS_WW_VE_3,K_1_STATUS,&M158,S_ERR)
+  ;Umluftklimagerät
+  ;Warmwasserventil
+  ; 
+  ;T3-LU01-04A-Y02
+  ; 
+  ANAUS (A_AS_KW_VE_3,K_1_STATUS,&M159,S_ERR)
+  ;Umluftklimagerät
+  ;Kaltwasserventil
+  ; 
+  ;T3-LU01-04A-T51
+  ; 
+  ANAUS (A_AS_W_RA_T_3,K_1_STATUS,&M160,S_ERR)
+  ;Sollwert Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  ;T3-LU01-05K-Y01
+  ; 
+  ANAUS (A_AS_WW_VE_4,K_1_STATUS,&M161,S_ERR)
+  ;Umluftklimagerät
+  ;Warmwasserventil
+  ; 
+  ;T3-LU01-05K-Y02
+  ; 
+  ANAUS (A_AS_KW_VE_4,K_1_STATUS,&M162,S_ERR)
+  ;Umluftklimagerät
+  ;Kaltwasserventil
+  ; 
+  ;T3-LU01-05K-T51
+  ; 
+  ANAUS (A_AS_W_RA_T_4,K_1_STATUS,&M163,S_ERR)
+  ;Sollwert Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  ;T3-AS04-00A-T00
+  ; 
+  ANAUS (A_MW_AU_TEMP,K_1_STATUS,&M164,S_ERR)
+  ;Aussentemperatur
+  ;für US03.04
+  ; 
+  ENDE 
+  ENDMODUL 

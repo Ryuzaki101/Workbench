@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="de.wisag.automation.micas.common.ui">
+   <implementation class="de.wisag.automation.micas.common.ui.internal.WorkbenchMonitor"/>
+   <reference bind="bindWorkbench" cardinality="1..1" interface="org.eclipse.ui.IWorkbench" name="IWorkbench" policy="static" unbind="unbindWorkbench"/>
+   <reference bind="bindLicenseManager" cardinality="1..1" interface="de.wisag.automation.micas.common.licensing.ILicenseManager" name="ILicenseManager" policy="static"  unbind="unbindLicenseManager"/>
+   <service>
+      <provide interface="de.wisag.automation.micas.common.ui.IMicasWorkbenchMonitor"/>
+   </service>
+</scr:component>

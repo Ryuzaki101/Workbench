@@ -1,0 +1,331 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2004.GPS
+  ;*** Projektname    : Aalto-TH Anl.25
+  ;*** Projektnummer  : 126187
+  ;*** Bearbeiter     : W.Donner
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 0
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  ERR1
+  WordV  A220-DRUCKWAECHT
+  WordV  MERR1
+  WordV  ERR2
+  WordV  MERR2
+  WordV  ZPK
+  FloatV ANL22-DRUCK-MW01
+  WordV  A221-KEILR-ST
+  WordV  A22.1-STOERUNG
+  WordV  A221-FU-STOERUNG
+  WordV  A222-KEILR-ST
+  WordV  ERR3
+  WordV  ERR4
+  WordV  ERR5
+  WordV  A22.2-STOERUNG
+  WordV  ERR6
+  WordV  A22.1-FU-ST-KALT
+  WordV  Fernquit_a22.aus
+  WordV  A22.2-FU-ST-KALT
+  WordV  A22.1-FU-AUS-RM
+  WordV  A22.0-KL-BYP-EIN
+  FloatV ANL22-DRUCK-MW02
+  WordV  MERR3
+  WordV  MERR4
+  WordV  MERR5
+  WordV  MERR6
+  FloatV A.22-MIN-DRU-MW
+  WordV  A22.1-BEREIT
+  WordV  A22.2-BEREIT
+  WordV  QUITTIERUNG
+  WordK  KON00 (0)
+  WordV  ERR7
+  FloatK KON10SEK_PT1 (10.00)
+  FloatK KON10SEK_PT2 (10.00)
+  FloatK KON10SEK_PT3 (10.00)
+  WordV  MERR7
+  FloatV ANL.22-YSIG-RE25
+  FloatV ANL22-Y-FU1-2
+  WordV  MERR9
+  WordV  MERR8
+  WordK  KON01 (1)
+  WordV  WERR
+  WordV  PK
+  WordV  Fernquit_a22.ein
+  WordV  A22.1-FU-EIN-RM
+  WordV  A22.2-FU-AUS-RM
+  WordK  K-A22-FREIG-AUS (0)
+  WordK  K-A22-FREIG-EIN1 (0)
+  WordK  K-A22-FREIG-EIN2 (0)
+  WordK  K-A22-FREIG-EIN3 (1)
+  FloatK K-A22-SOLLW-REG (-0.20)
+  WordV  A221-KEILR-BM
+  WordV  A221-REP-SCHALT
+  WordV  A222-REP-SCHALT
+  WordV  A222-KEILR-BM
+  WordV  A222-FU-STOERUNG
+  WordV  A22.2-FU-EIN-RM
+  WordV  A22.0-KL-BYP-AUS
+  FloatV ANL22-DRUCK-MW03
+  WordV  A221-FU-EIN
+  WordV  A222-FU-EIN
+  WordV  Ueberdruck_FU2
+  WordV  Ueberdruck_FU1
+  IPAMB &03D-KL220-900 (170,1)
+  WordK  $M0 (1)
+  IPAAW &03D-KL220-149 (172)
+  IPAMB &M1 (170,0)
+  IPAMB &M2 (170,2)
+  IPAMB &M3 (170,3)
+  IPAMB &M4 (170,4)
+  IPAMB &M5 (170,5)
+  IPAMB &M6 (170,6)
+  IPAMB &M7 (170,7)
+  IPAMB &03D-KL221-101 (130,2)
+  IPAMB &03D-KL221-102 (130,3)
+  IPAMB &03D-KL220-103 (130,6)
+  IPAMB &03D-KL221-104 (130,7)
+  IPAMB &03D-KL222-101 (131,2)
+  IPAMB &03D-KL222-102 (131,3)
+  IPAMB &03D-KL222-104 (131,6)
+  IPAMB &03D-KL221-130EIN (100,3)
+  WordV  $WSCRATCH
+  IPAMB &03D-KL222-130EIN (100,7)
+  IPAMB &03D-KL221-105 (131,14)
+  IPAMB &03D-KL222-105 (131,15)
+  IPAMB &M8 (100,0)
+  IPAMB &03D-KL221-130 (100,1)
+  IPAMB &M9 (100,2)
+  IPAMB &M11 (100,4)
+  IPAMB &03D-KL222-130 (100,5)
+  IPAMB &M12 (100,6)
+  IPAMB &M14 (101,1)
+  IPAMB &03D-KL220-130 (101,2)
+  IPAMB &M15 (101,3)
+  IPAMB &M16 (101,4)
+  IPAAW &03D-KL220-132 (102)
+  IPAAW &03D-KL220-133 (103)
+  IPAAW &03D-KL220-134 (104)
+  WordV  $B1
+  FloatK $M17 (10.00)
+  FloatK $M18 (0.00)
+  WordV  $B2
+  WordV  $B3
+  FloatK $M19 (10.00)
+  FloatK $M20 (0.00)
+  WordV  $B4
+  WordV  $B5
+  FloatK $M21 (30.00)
+  FloatK $M22 (0.00)
+  WordV  $B6
+  WordK  $M23 (1)
+  IPAMB &03D-KL221-991 (171,0)
+  WordV  $B7
+  FloatK $M24 (30.00)
+  FloatK $M25 (0.00)
+  WordV  $B8
+  WordK  $M26 (1)
+  IPAMB &03D-KL222-991 (171,1)
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  FloatK $M27 (0.00)
+  FloatK $M28 (0.00)
+  WordV  $B12
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  FloatK $M29 (5.00)
+  FloatK $M30 (0.00)
+  WordV  $B16
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  WordK  $M31 (1)
+  IPAAW &03D-KL220-858 (174)
+  FloatK $M32 (0.00)
+  FloatK $M33 (0.00)
+  FloatK $M34 (0.00)
+  FloatK $M35 (100.00)
+  FloatK $M36 (100.00)
+  FloatK $M37 (0.00)
+  FloatV $F4
+  WordK  $M38 (1)
+  IPAAW &03D-KL221-116 (110)
+  FloatK $M39 (0.00)
+  FloatV $F5
+  WordK  $M40 (1)
+  IPAAW &03D-KL222-116 (111)
+  IPAMB &03D-KL220-126 (171,13)
+  IPAMB &M41 (171,14)
+  IPAMB &M42 (171,15)
+  IPAMB &MEL_TASTER_?? (150,7)
+  WordV  $B17
+  WordV  $B18
+  FloatK $M43 (5.00)
+  FloatK $M44 (3.00)
+  FloatK $M45 (0.00)
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $HB0
+  IPAMB &Anl.22-EIN (100,9)
+  WordV  $B24
+  IPAMB &Anl.22-Störung (100,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage zentrale
+  ;Aussenluftaufbereitung
+  ;Anl. 22
+  ;Klimazentrale K5
+  ;Druckregelung der FU
+  ;über Min- Auswahl der
+  ;Druckgeber
+  ; 
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BEFAUS (1,K-A22-FREIG-AUS,K-A22-FREIG-EIN1,
+          K-A22-FREIG-EIN2,K-A22-FREIG-EIN3,&03D-KL220-900,
+          ERR1)
+  ANAUS (K-A22-SOLLW-REG,$M0,&03D-KL220-149,MERR1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&M1,8,ZPK,K-A22-FREIG-AUS,ZPK,K-A22-FREIG-EIN1,ZPK,
+          K-A22-FREIG-EIN2,ZPK,K-A22-FREIG-EIN3,MERR2)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&03D-KL221-101,2,A221-REP-SCHALT,A221-KEILR-BM,
+          ERR2)
+  MELEIN (&03D-KL220-103,2,A220-DRUCKWAECHT,A221-FU-STOERUNG,
+          ERR3)
+  MELEIN (&03D-KL222-101,2,A222-REP-SCHALT,A222-KEILR-BM,
+          ERR4)
+  MELEIN (&03D-KL222-104,1,A222-FU-STOERUNG,ERR5)
+  MELEIN (&03D-KL221-130EIN,1,A221-FU-EIN,$WSCRATCH)
+  MELEIN (&03D-KL222-130EIN,1,A222-FU-EIN,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&03D-KL221-105,1,Ueberdruck_FU1,$WSCRATCH)
+  MELEIN (&03D-KL222-105,1,Ueberdruck_FU2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&M8,4,ZPK,A22.1-FU-AUS-RM,A22.1-FU-ST-KALT,
+          A22.1-FU-EIN-RM,ERR6)
+  MELEIN (&M11,4,ZPK,A22.2-FU-AUS-RM,A22.2-FU-ST-KALT,
+          A22.2-FU-EIN-RM,ERR6)
+  MELEIN (&M14,4,ZPK,A22.0-KL-BYP-AUS,ZPK,A22.0-KL-BYP-EIN,
+          ERR6)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&03D-KL220-132,ANL22-DRUCK-MW01,MERR3)
+  ANEIN (&03D-KL220-133,ANL22-DRUCK-MW02,MERR4)
+  ANEIN (&03D-KL220-134,ANL22-DRUCK-MW03,MERR5)
+  ANEIN (&03D-KL220-149,K-A22-SOLLW-REG,MERR6)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  UNDMN (3,A221-FU-STOERUNG,A221-REP-SCHALT,Ueberdruck_FU1,3,
+         A22.1-FU-ST-KALT,A220-DRUCKWAECHT,A221-KEILR-ST,
+         $WSCRATCH,$B1)
+  VVZ ($B1,$M17,$M18,$B2)
+  RSS ($B2,QUITTIERUNG,A22.1-STOERUNG,A22.1-BEREIT)
+  UNDMN (3,A222-FU-STOERUNG,A222-REP-SCHALT,Ueberdruck_FU2,3,
+         A22.2-FU-ST-KALT,A220-DRUCKWAECHT,A222-KEILR-ST,
+         $WSCRATCH,$B3)
+  VVZ ($B3,$M19,$M20,$B4)
+  RSS ($B4,QUITTIERUNG,A22.2-STOERUNG,A22.2-BEREIT)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  UND11 (A22.1-FU-EIN-RM,A221-KEILR-BM,$B5)
+  VVZ ($B5,$M21,$M22,$B6)
+  RSS ($B6,QUITTIERUNG,A221-KEILR-ST,$WSCRATCH)
+  SETMEL ($M23,1,A221-KEILR-ST,&03D-KL221-991,WERR)
+  ;DiffDruck Zulüfter
+  ; 
+  UND11 (A22.2-FU-EIN-RM,A222-KEILR-BM,$B7)
+  VVZ ($B7,$M24,$M25,$B8)
+  RSS ($B8,QUITTIERUNG,A222-KEILR-ST,$WSCRATCH)
+  SETMEL ($M26,1,A222-KEILR-ST,&03D-KL222-991,WERR)
+  ;DiffDruck Ablüfter
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ODRMN (3,K-A22-FREIG-EIN1,K-A22-FREIG-EIN3,KON00,0,$B9,
+         $WSCRATCH)
+  UNDMN (2,$B9,A22.1-BEREIT,0,$B10,$B11)
+  VVZ ($B10,$M27,$M28,$B12)
+  BEFAUS (1,$B11,$B12,$WZERO,$WZERO,&03D-KL221-130,ERR7)
+  ODRMN (3,K-A22-FREIG-EIN2,K-A22-FREIG-EIN3,KON00,0,$B13,
+         $WSCRATCH)
+  UNDMN (2,$B13,A22.2-BEREIT,0,$B14,$B15)
+  VVZ ($B14,$M29,$M30,$B16)
+  BEFAUS (1,$B15,$B16,$WZERO,$WZERO,&03D-KL222-130,ERR7)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  PT1 (ANL22-DRUCK-MW01,KON10SEK_PT1,$F1)
+  PT1 (ANL22-DRUCK-MW02,KON10SEK_PT2,$F2)
+  PT1 (ANL22-DRUCK-MW03,KON10SEK_PT3,$F3)
+  MIN (3,$F1,$F2,$F3,A.22-MIN-DRU-MW)
+  ANAUS (A.22-MIN-DRU-MW,$M31,&03D-KL220-858,MERR7)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  REGLER (1,KON01,$WZERO,$M32,ANL.22-YSIG-RE25,$WSCRATCH)
+  FKG (ANL.22-YSIG-RE25,4,$M33,$M34,$M35,$M36,ANL22-Y-FU1-2)
+  AWT (A22.1-FU-EIN-RM,$M37,ANL22-Y-FU1-2,$F4)
+  ANAUS ($F4,$M38,&03D-KL221-116,MERR8)
+  AWT (A22.2-FU-EIN-RM,$M39,ANL22-Y-FU1-2,$F5)
+  ANAUS ($F5,$M40,&03D-KL222-116,MERR9)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&03D-KL220-126,3,Fernquit_a22.aus,PK,
+          Fernquit_a22.ein,WERR)
+  MELEIN (&MEL_TASTER_??,1,$B17,$WSCRATCH)
+  ODR2 (Fernquit_a22.ein,$B17,$B18)
+  MOKY ($B18,$M43,QUITTIERUNG)
+  VVZ (QUITTIERUNG,$M44,$M45,$B19)
+  UND11 ($B22,$B19,$B20)
+  RSS ($B20,$B19,$B21,$B22)
+  BEFAUS (1,$B21,$B19,$WZERO,$WZERO,&03D-KL220-126,WERR)
+  ;StörQuitt
+  ;  "Rücksetzen"
+  ; 
+  ;StörQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UND2 (A221-FU-EIN,A222-FU-EIN,$B23)
+  NICHT ($B23,$HB0)
+  BEFAUS (1,$HB0,$B23,$WZERO,$WZERO,&Anl.22-EIN,$WSCRATCH)
+  ODR2 (A22.1-STOERUNG,A22.2-STOERUNG,$B24)
+  NICHT ($B24,$HB0)
+  BEFAUS (1,$HB0,$B24,$WZERO,$WZERO,&Anl.22-Störung,
+          $WSCRATCH)
+  ENDE 
+  ENDMODUL 

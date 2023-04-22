@@ -1,0 +1,119 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI40506.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 4
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (ac40,6)
+  FloatK k_Basis-SW-R.59 (22.00)
+  FloatV SW-Raumfeuc-21
+  FloatK k_Basis-SW-R.29 (22.00)
+  FloatK k_Basis-SW-R.29b (22.00)
+  FloatK k_Basis-SW-R.32 (22.00)
+  FloatK k_Basis-SW-R.33 (22.00)
+  FloatK k_SW-Raumfeuc-21 (50.00)
+  FloatK k_SW-KW-VL-Te-se (8.00)
+  FloatK k_Basis-SW-R.57a (22.00)
+  FloatK k_Basis-SW-R.46 (22.00)
+  FloatK k_Basis-SW-R.57b (22.00)
+  FloatV Basis-SW-R.59
+  FloatV Basis-SW-R.29
+  FloatV Basis-SW-R.57a
+  FloatV Basis-SW-R.29b
+  FloatV Basis-SW-R.33
+  FloatK k_Raumtemp-23 (22.00)
+  FloatV SW-KW-VL-Te-se
+  FloatV Raumtemp-23
+  FloatV Basis-SW-R.46
+  FloatV Basis-SW-R.32
+  FloatV Basis-SW-R.57b
+  WordK  $M0 (1)
+  IPAAW &M1 (141)
+  WordV  $WSCRATCH
+  WordK  $M2 (1)
+  IPAAW &M3 (142)
+  WordK  $M4 (1)
+  IPAAW &M5 (143)
+  WordK  $M6 (1)
+  IPAAW &M7 (144)
+  WordK  $M8 (1)
+  IPAAW &M9 (145)
+  WordK  $M10 (1)
+  IPAAW &M11 (146)
+  WordK  $M12 (1)
+  IPAAW &M13 (147)
+  WordK  $M14 (1)
+  IPAAW &M15 (148)
+  WordK  $M16 (1)
+  IPAAW &M17 (149)
+  WordK  $M18 (1)
+  IPAAW &M19 (150)
+  WordK  $M20 (1)
+  IPAAW &M21 (151)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Kunde:   MPI Gîttingen
+  ;Projekt: STI Turm 4
+  ;         SOG + SUG
+  ;         Sollwerte
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ANAUS (k_SW-KW-VL-Te-se,$M0,&M1,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.46,$M2,&M3,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.57a,$M4,&M5,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.57b,$M6,&M7,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.59,$M8,&M9,$WSCRATCH)
+  ANAUS (k_Raumtemp-23,$M10,&M11,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (k_Basis-SW-R.29,$M12,&M13,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.29b,$M14,&M15,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.32,$M16,&M17,$WSCRATCH)
+  ANAUS (k_Basis-SW-R.33,$M18,&M19,$WSCRATCH)
+  ANAUS (k_SW-Raumfeuc-21,$M20,&M21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,500)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M3,k_Basis-SW-R.46,$WSCRATCH)
+  ATRA (k_Basis-SW-R.46,Basis-SW-R.46)
+  ANEIN (&M5,k_Basis-SW-R.57a,$WSCRATCH)
+  ATRA (k_Basis-SW-R.57a,Basis-SW-R.57a)
+  ANEIN (&M7,k_Basis-SW-R.57b,$WSCRATCH)
+  ATRA (k_Basis-SW-R.57b,Basis-SW-R.57b)
+  ANEIN (&M9,k_Basis-SW-R.59,$WSCRATCH)
+  ATRA (k_Basis-SW-R.59,Basis-SW-R.59)
+  ANEIN (&M11,k_Raumtemp-23,$WSCRATCH)
+  ATRA (k_Raumtemp-23,Raumtemp-23)
+  ANEIN (&M13,k_Basis-SW-R.29,$WSCRATCH)
+  ATRA (k_Basis-SW-R.29,Basis-SW-R.29)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M15,k_Basis-SW-R.29b,$WSCRATCH)
+  ATRA (k_Basis-SW-R.29b,Basis-SW-R.29b)
+  ANEIN (&M17,k_Basis-SW-R.32,$WSCRATCH)
+  ATRA (k_Basis-SW-R.32,Basis-SW-R.32)
+  ANEIN (&M19,k_Basis-SW-R.33,$WSCRATCH)
+  ATRA (k_Basis-SW-R.33,Basis-SW-R.33)
+  ANEIN (&M1,k_SW-KW-VL-Te-se,$WSCRATCH)
+  ATRA (k_SW-KW-VL-Te-se,SW-KW-VL-Te-se)
+  ANEIN (&M21,k_SW-Raumfeuc-21,$WSCRATCH)
+  ATRA (k_SW-Raumfeuc-21,SW-Raumfeuc-21)
+  ENDE 
+  ENDMODUL 

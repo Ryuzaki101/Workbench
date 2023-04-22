@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.wisag.automation.micas.module/src-gen"
+    editDirectory="/de.wisag.automation.micas.module.edit/src-gen" editorDirectory="/de.wisag.automation.micas.module.editor/src-gen"
+    modelPluginID="de.wisag.automation.micas.module" modelName="Module" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" language="" usedGenPackages="../../org.eclipselabs.damos.dml/model/DML.genmodel#//dml">
+  <foreignModel>Module.ecore</foreignModel>
+  <genPackages prefix="Module" basePackage="de.wisag.automation.micas" disposableProviderFactory="true"
+      ecorePackage="Module.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//ModuleKind">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/AC40"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/AR11"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/ZPxx"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/GWxx"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/ZMxx"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/ER12"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/ER11"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/MB11_13"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/AR12"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/SP11"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/AR20_SP20"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ModuleKind/AC60"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//DataType">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//DataType/Float"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//DataType/Word"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//DataType/Reference"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//ReferenceType">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ReferenceType/FgaValue"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ReferenceType/FgaMessageConst"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ReferenceType/FgaMeasuredValue"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//ReferenceType/FgaAnalogValue"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//TaskKind">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//TaskKind/init"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//TaskKind/cyclic"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//PageFormat">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//PageFormat/A4"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//PageFormat/A3"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Module.ecore#//PageOrientation">
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//PageOrientation/Landscape"/>
+      <genEnumLiterals ecoreEnumLiteral="Module.ecore#//PageOrientation/Portrait"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="Module.ecore#//Float"/>
+    <genClasses ecoreClass="Module.ecore#//Module">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/kind"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Module.ecore#//Module/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Module.ecore#//Module/tasks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/processor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/examiner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/createdDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/lastModifiedDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/lastInstallDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/qualifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/lineNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/stationNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/fieldBusNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/pageFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Module/pageOrientation"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Module.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Attribute/dataType"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Task/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Task/cycleTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Task/index"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Module.ecore#//Task/pages"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Module.ecore#//Task/module"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//Task/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//VariableAttribute"/>
+    <genClasses ecoreClass="Module.ecore#//ConstantAttribute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Module.ecore#//ConstantAttribute/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//ConstantAttribute/direct"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//ReferenceAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//ReferenceAttribute/row"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//ReferenceAttribute/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//ReferenceAttribute/referenceType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Module.ecore#//Value"/>
+    <genClasses ecoreClass="Module.ecore#//FloatValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//FloatValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//WordValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//WordValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//AttributeSpecification">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Module.ecore#//AttributeSpecification/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//MicasDataTypeSpecification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Module.ecore#//MicasDataTypeSpecification/dataType"/>
+    </genClasses>
+    <genClasses ecoreClass="Module.ecore#//Page">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Module.ecore#//Page/task"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Module.ecore#//OffpageConnector"/>
+    <genClasses ecoreClass="Module.ecore#//IncomingOffpageConnector"/>
+    <genClasses ecoreClass="Module.ecore#//OutgoingOffpageConnector"/>
+    <genClasses ecoreClass="Module.ecore#//Constant"/>
+    <genClasses ecoreClass="Module.ecore#//Reference"/>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,75 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2004.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 1
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  A2201-RM-AUS (0)
+  WordK  A2201-RM-EIN (1)
+  WordV  ERR01
+  WordK  A2202-RM-AUS (0)
+  WordK  A2202-RM-EIN (1)
+  WordK  A2203-RM-AUS (0)
+  WordK  A2203-RM-EIN (1)
+  WordK  A2204-RM-AUS (0)
+  WordK  A2204-RM-EIN (1)
+  WordV  ERR05
+  WordV  ZPK
+  WordV  ERR06
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU2201BF20 (15,1)
+  IPAMB &BA1LU2202BF20 (15,5)
+  IPAMB &BA1LU2203BF20 (16,1)
+  IPAMB &BA1LU2204BF20 (16,5)
+  IPAMB &M0 (15,0)
+  IPAMB &M1 (15,2)
+  IPAMB &M2 (15,3)
+  IPAMB &M3 (15,4)
+  IPAMB &M4 (15,6)
+  IPAMB &M5 (15,7)
+  IPAMB &M6 (16,0)
+  IPAMB &M7 (16,2)
+  IPAMB &M8 (16,3)
+  IPAMB &M9 (16,4)
+  IPAMB &M10 (16,6)
+  IPAMB &M11 (16,7)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BEFAUS (1,A2201-RM-AUS,A2201-RM-EIN,$WZERO,$WZERO,
+          &BA1LU2201BF20,ERR01)
+  BEFAUS (1,A2202-RM-AUS,A2202-RM-EIN,$WZERO,$WZERO,
+          &BA1LU2202BF20,ERR01)
+  BEFAUS (1,A2203-RM-AUS,A2203-RM-EIN,$WZERO,$WZERO,
+          &BA1LU2203BF20,ERR01)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,A2204-RM-AUS,A2204-RM-EIN,$WZERO,$WZERO,
+          &BA1LU2204BF20,ERR01)
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&M0,4,ZPK,A2201-RM-AUS,ZPK,A2201-RM-EIN,ERR05)
+  MELEIN (&M3,4,ZPK,A2202-RM-AUS,ZPK,A2202-RM-EIN,ERR06)
+  MELEIN (&M6,4,ZPK,A2203-RM-AUS,ZPK,A2203-RM-EIN,ERR06)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M9,4,ZPK,A2204-RM-AUS,ZPK,A2204-RM-EIN,ERR06)
+  ENDE 
+  ENDMODUL 

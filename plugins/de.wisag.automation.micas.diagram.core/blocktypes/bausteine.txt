@@ -1,0 +1,3063 @@
+ANALOG
+
+**   MicasBaustein
+******************************************** TTZEIT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     303C       Baustein-Typ
+**     2     ****       Variable Eingang     (Typ Float)
+**     3     ****       Variable Totzeit     (Typ Float)
+**     4     ****       Variable Ausgang     (Typ Float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = sizeof (Past) = 16Byte
+**                    Laenge des Zwischencode        = 5 Worte
+*
+***   MicasBaustein
+******************************************** INTE
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301C       Baustein-Typ
+**     2     ****       Variable Eingang  Xe (Typ Float)
+**     3     ****       Variable Integrationskonstante Ti in sec. (Typ Float)
+**     4     ****       Variable Setzen      (Typ Wort)
+**     5     ****       Variable Setzwert    (Typ Float)
+**     6     ****       Variable Ausgang  Xa (Typ Float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = sizeof (Past) = 16Byte
+**                    Laenge des Zwischencode        = 7 Worte
+**   Funktion:        Es wird die Uebertragungsfunktion F(p) = 1/(pT)
+**                    realisiert. Der Baustein stellt einen einfachen
+**		      Integrierer dar.
+*
+***   MicasBaustein
+******************************************** PT1
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301D       Baustein-Typ
+**     2     ****       Variable Eingang  Xe (Typ Float)
+**     3     ****       Variable Zeitkonstante T1 in sec. (Typ Float)
+**     4     ****       Variable Ausgang  Xa (Typ Float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = sizeof (Past) = 22 Byte
+**                    Laenge des Zwischencode        = 7 Worte
+**   Funktion:        Es wird die Uebertragungsfunktion F(p) = 1/(1+pT1)
+**                    realisiert. Der Baustein stellt einen Tiefpass
+**		      erster Ordnung dar.
+*
+*
+*
+***   MicasBaustein
+******************************************** ADSU
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3002       Baustein-Typ
+**     ------------------------------------------------------------------------
+**     2     000n       Gruppenlaenge Anzahl der Eingaenge (Typ direkt)
+**     3     ****       Zwischenvariable Eingang 1 plus (Typ float)
+**     4     ****       Zwischenvariable Eingang 2 plus (Typ float)
+**     .
+**     n+2   ****       Zwischenvariable Eingang letzte plus ( Typ float)
+**     ------------------------------------------------------------------------
+**     n+3   000m       Gruppenlaenge Anzahl der Eingaenge minus (Typ direkt)
+**     n+4   ****       Zwischenvariable Eingang 1 minus ( Typ float)
+**     n+5   ****       Zwischenvariable Eingang 2 minus ( Typ float)
+**     .
+**     n+3+m ****       Zwischenvariable Eingang letzte minus ( Typ float)
+**     ------------------------------------------------------------------------
+**     n+4+m ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= n+m+5
+**
+** Funktion:
+**                    Der Baustein kann bis zu 15 positive und 15
+**		      invertierende (negative) Analogeingaenge verarbeiten
+**
+**		      Die positiven Eingaenge werden miteinander addiert und
+**		      die negativen Eingaenge werden subtrahiert.
+**		      Das Ergebnis wird auf dem Ausgang ausgegeben.
+**		      Alle Zwischenvariablen sind vom Typ float.
+*
+*
+*
+***   MicasBaustein
+******************************************** ATRA
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     303A       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang   (Typ float)
+**     3     ****       Zwischenvariable Ausgang   (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Der Eingangswert wird auf dem Ausgang
+**		      geschrieben.
+*
+*
+*
+***   MicasBaustein
+******************************************** ADD2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3003       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang 1 (Typ float)
+**     3     ****       Zwischenvariable Eingang 2 (Typ float)
+**     4     ****       Zwischenvariable Ausgang   (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 5
+**
+**   Funktion :       Die beiden Eingaenge werden miteinander addiert,
+**                    das Ergebnis steht im Ausgang.
+**		      Alle Zwischenvariablen sind vom Typ float
+*
+*
+*
+***   MicasBaustein
+******************************************** SUB2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3004       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang 1 plus  (Typ float)
+**     3     ****       Zwischenvariable Eingang 2 minus (Typ float)
+**     4     ****       Zwischenvariable Ausgang         (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 5
+**
+**   Funktion :       Der Eingang 2 minus wird vom Eingang 1 plus
+**                    subtrahiert, und das Ergebis im Ausgang
+**		                ausgegeben.
+**		      Alle Zwischenvariablen sind vom Typ float
+*
+*
+***   MicasBaustein
+******************************************** CHS
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3005       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Der Eingang wird invertiert
+**                    Ausgang = Eingang * -1
+*
+*
+***   MicasBaustein
+******************************************** MULDI
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3006       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang 1 Zaehler (Typ float)
+**     3     ****       Zwischenvariable Eingang 2 Zaehler (Typ float)
+**     4     ****       Zwischenvariable Eingang 3 Nenner  (Typ float)
+**     5     ****       Zwischenvariable Ausgang Typ float
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 6
+**
+**   Funktion : AUSGANG = EINGANG 1 * EINGANG 2
+**                        ---------------------
+**			      EINGANG 3
+*
+*
+*
+***   MicasBaustein
+******************************************** MULT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3007       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang 1  (Typ float)
+**     3     ****       Zwischenvariable Eingang 2  (Typ float)
+**     4     ****       Zwischenvariable Ausgang    (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 5
+**
+**   Funktion : AUSGANG = EINGANG 1 * EINGANG 2
+*
+*
+***   MicasBaustein
+******************************************** ABSWER
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3008       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Vom Eingang wird der Absolutwert gebildet
+**                    Ausgang =  |Eingang |
+*
+*
+***   MicasBaustein
+******************************************** MAX
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3009       Baustein-Typ
+**     2     000n       Anzahl der Eingaenge        (Typ direkt)
+**     3     ****       Zwischenvariable Eingang 1  (Typ float)
+**     4     ****       Zwischenvariable Eingang 2  (Typ float)
+**     .     ****
+**   2+n     ****       Zwischenvariable Eingang letzter (Typ float)
+**   3+n     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4+n
+**
+**   Funktion :       Der Groesste der bis zu 15 Eingaenge wird ueber
+**                    den Ausgang ausgegeben.
+**                    A = max ( E[1]...E[last] )
+*
+*
+*
+***   MicasBaustein
+******************************************** MIN
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300A       Baustein-Typ
+**     2     000n       Anzahl der Eingaenge        (Typ direkt)
+**     3     ****       Zwischenvariable Eingang 1  (Typ float)
+**     4     ****       Zwischenvariable Eingang 2  (Typ float)
+**     .     ****
+**   2+n     ****       Zwischenvariable Eingang letzter (Typ float)
+**   3+n     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4+n
+**
+**   Funktion :       Der Kleinste  der bis zu 15 Eingaenge wird ueber
+**                    den Ausgang ausgegeben.
+**                    A = MIN ( E[1]...E[last] )
+*
+*
+***   MicasBaustein
+******************************************** LIMIT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300B       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang          (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang OG       (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang UG       (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang          (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Der Eingangswert wird auf den eingestellten oberen
+**		      bzw. unteren Grenzwert begrenzt und ueber den Ausgang
+**		      ausgegeben.
+**		      Eingang <= UG       -->   Ausgang = UG
+**		      Eingang >= OG       -->   Ausgang = OG
+**		      UG < Eingang < OG   -->   Ausgang = Eingang
+**
+**		      Voraussetzung: UG <= OG
+*
+*
+***   MicasBaustein
+******************************************** ABSFEU
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300C       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eing. rel.Feuchte(Typ float)
+**     3     ****       Index auf Zwischenvariable Eing. Temperat.  (Typ float)
+**     4     ****       Index auf Zwischenvariable Eing. Druck      (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang          (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 28
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Der Baustein berechnet die absolute Feuchte in kg Wasser
+**		      pro kg Luft.
+*
+*
+***   MicasBaustein
+******************************************** ABFEUG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3054       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eing. rel.Feuchte(Typ float)
+**     3     ****       Index auf Zwischenvariable Eing. Temperat.  (Typ float)
+**     4     ****       Index auf Zwischenvariable Eing. Druck      (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang          (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 28
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Der Baustein berechnet die absolute Feuchte in g Wasser
+**		      pro kg Luft.
+*
+*
+*
+***   MicasBaustein
+******************************************** ENTHA
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300D       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eing. abs.Feuchte(Typ float)
+**     3     ****       Index auf Zwischenvariable Eing. Temperatur (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausg. Enthalpie  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 12
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Der Baustein berechnet die Enthalpie in kJ/kg.
+*
+*
+***   MicasBaustein
+******************************************** ENTHAG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3055       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eing. abs.Feuchte(Typ float)
+**     3     ****       Index auf Zwischenvariable Eing. Temperatur (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausg. Enthalpie  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 12
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Der Baustein berechnet die Enthalpie in kJ/kg.
+*
+* --------------------------------------------------------------------------
+*Binaer
+* --------------------------------------------------------------------------
+*
+***   MicasBaustein
+******************************************** BTRA
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     303B       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang   (Typ word)
+**     3     ****       Zwischenvariable Ausgang   (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Der Eingangswert wird auf dem Ausgang
+**		      geschrieben.
+*
+*
+***   MicasBaustein
+******************************************** UND2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300E       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn beide Eingaenge 1-Signal haben, wird der Ausgang 1,
+**		      sonst wird er 0.
+*
+*
+***   MicasBaustein
+******************************************** UND11
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     300F       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2, inv.  (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn Eingang1  1-Signal und Eingang2  0-Signal haben,
+**		      so wird der Ausgang 1, sonst wird er 0.
+*
+*
+***   MicasBaustein
+******************************************** UND21
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3010       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2,       (Typ word)
+**     4     ****       Index auf Zwischenvariable Eingang 3, inv.  (Typ word)
+**     5     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Wenn Eingang1 und 2  1-Signal und Eingang3  0-Signal
+**		      haben, so wird der Ausgang 1, sonst wird er 0.
+*
+*
+***   MicasBaustein
+******************************************** UNDMN
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3011       Baustein-Typ
+**     ------------------------------------------------------------------------
+**     2     000m       Gruppenlaenge Anzahl der nicht inv. Eing.  (Typ direkt)
+**     3     ****       Index auf Zwischenvariable Eingang 1       (Typ word  )
+**     4     ****       Index auf Zwischenvariable Eingang 2       (Typ word  )
+**     .       .                     ...
+**     m+2   ****       Index auf Zwischenvariable Eingang m       (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+3   000n       Gruppenlaenge Anzahl der inv. Eingaenge    (Typ direkt)
+**     m+4   ****       Index auf Zwischenvariable Eingang 1, inv. (Typ word  )
+**     m+5   ****       Index auf Zwischenvariable Eingang 2, inv. (Typ word  )
+**     .       .                     ...
+**     m+n+3 ****       Index auf Zwischenvariable Eingang n, inv. (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+n+4 ****       Index auf Zwischenvariable Ausgang 1       (Typ word  )
+**     m+n+5 ****       Index auf Zwischenvariable Ausgang 2, inv. (Typ word  )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= m+n+6
+**
+** Funktion:
+**                    Der Baustein besitzt bis zu 15 nicht invertierende und
+**		      bis zu 15 invertierende Binaereingaenge.
+**		      Es muss mindestens ein Eingang vorhanden sein.
+*
+***   MicasBaustein
+******************************************** NAND2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3012       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang, inv.    (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn beide Eingaenge 1-Signal haben, wird der Ausgang 0,
+**		      sonst wird er 1.
+*
+*
+***   MicasBaustein
+******************************************** ODR2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3013       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn beide Eingaenge 0-Signal haben, wird der Ausgang 0,
+**		      sonst wird er 1.
+*
+***   MicasBaustein
+******************************************** ODRMN
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3014       Baustein-Typ
+**     ------------------------------------------------------------------------
+**     2     000m       Gruppenlaenge Anzahl der nicht inv. Eing.  (Typ direkt)
+**     3     ****       Index auf Zwischenvariable Eingang 1       (Typ word  )
+**     4     ****       Index auf Zwischenvariable Eingang 2       (Typ word  )
+**     .       .                     ...
+**     m+2   ****       Index auf Zwischenvariable Eingang m       (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+3   000n       Gruppenlaenge Anzahl der inv. Eingaenge    (Typ direkt)
+**     m+4   ****       Index auf Zwischenvariable Eingang 1, inv. (Typ word  )
+**     m+5   ****       Index auf Zwischenvariable Eingang 2, inv. (Typ word  )
+**     .       .                     ...
+**     m+n+3 ****       Index auf Zwischenvariable Eingang n, inv. (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+n+4 ****       Index auf Zwischenvariable Ausgang 1       (Typ word  )
+**     m+n+5 ****       Index auf Zwischenvariable Ausgang 2, inv. (Typ word  )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= m+n+6
+**
+** Funktion:
+**                    Der Baustein besitzt bis zu 15 nicht invertierende und
+**		      bis zu 15 invertierende Binaereingaenge.
+**		      Es muss mindestens ein Eingang vorhanden sein.
+*
+*
+*
+***   MicasBaustein
+******************************************** NOR2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3015       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang, inv.    (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn beide Eingaenge 0-Signal haben, wird der Ausgang 1,
+**		      sonst wird er 0.
+*
+*
+***   MicasBaustein
+******************************************** XOR2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3016       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn die beiden Eingaenge ungleiches Signal haben,
+**		      wird der Ausgang 1, sonst wird er 0.
+*
+*
+*
+***   MicasBaustein
+******************************************** NICHT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3017       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang          (Typ word)
+**     3     ****       Index auf Zwischenvariable Ausgang, inv.    (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 4
+**
+** Funktion:
+**                    Bei 0-Signal am Eingang wird der Ausgang 1,
+**		      andernfalls wird er 0.
+*
+*
+*
+***   MicasBaustein
+******************************************** UVO
+**
+**   Index  Datenart    Bedeutung
+**
+**     0         Fxxx   Baustein-Nummer
+**     1         3018   Baustein-Typ
+**     ------------------------------------------------------------------------
+**     2         ****   Index auf Zwischenvariable Oder-Eingang    (Typ word  )
+**     ------------------------------------------------------------------------
+**     3         000m   Gruppenlaenge Anzahl der nicht inv. Eing.  (Typ direkt)
+**                      am 1. UND-Gatter
+**     4         ****   Index auf Zwischenvariable Eingang 1       (Typ word  )
+**     5         ****   Index auf Zwischenvariable Eingang 2       (Typ word  )
+**     .           .                     ...
+**     m+3       ****   Index auf Zwischenvariable Eingang m       (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+4       000n   Gruppenlaenge Anzahl der inv. Eingaenge    (Typ direkt)
+**                      am 1. UND-Gatter
+**     m+5       ****   Index auf Zwischenvariable Eingang 1, inv. (Typ word  )
+**     m+6       ****   Index auf Zwischenvariable Eingang 2, inv. (Typ word  )
+**     .           .                     ...
+**     m+n+4     ****   Index auf Zwischenvariable Eingang n, inv. (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+n+5     000r   Gruppenlaenge Anzahl der nicht inv. Eing.  (Typ direkt)
+**                      am 2. UND-Gatter
+**     m+n+6     ****   Index auf Zwischenvariable Eingang 1       (Typ word  )
+**     m+n+7     ****   Index auf Zwischenvariable Eingang 2       (Typ word  )
+**     .           .                     ...
+**     m+n+r+5   ****   Index auf Zwischenvariable Eingang r       (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+n+r+6   000s   Gruppenlaenge Anzahl der inv. Eingaenge    (Typ direkt)
+**                      am 2. UND-Gatter
+**     m+n+r+7   ****   Index auf Zwischenvariable Eingang 1, inv. (Typ word  )
+**     m+n+r+8   ****   Index auf Zwischenvariable Eingang 2, inv. (Typ word  )
+**     .           .                     ...
+**     m+n+r+s+6 ****   Index auf Zwischenvariable Eingang s, inv. (Typ word  )
+**     ------------------------------------------------------------------------
+**     m+n+r+s+7 ****   Index auf Zwischenvariable Ausgang 1       (Typ word  )
+**     m+n+r+s+8 ****   Index auf Zwischenvariable Ausgang 2, inv. (Typ word  )
+**
+
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= m+n+r+s+9
+**
+** Funktion:
+**                    Der Baustein besitzt bis zu 15 nicht invertierende und
+**		      bis zu 15 invertierende Binaereingaenge an jeweils
+**		      zwei UND-Gattern. Die Ausgaenge der beiden UND-Gatter
+**		      fuehren auf ein ODER-Gatter. Ein zusaetzlicher Eingang
+**		      ist direkt mit dem ODER-Gatter verbunden.
+**
+**		      Es muss mindestens ein Eingang bei jedem der beiden
+**		      UND-Gatter vorhanden sein.
+**
+**		      Wenn an einem der beiden UND-Gatter jeder der m nicht-
+**		      invertierenden Eingaenge 1-Signal und jeder der n inver-
+**		      tierenden Eingaenge 0-Signal hat oder der direkte Eingang
+**		      des ODER-Gatters 1-Signal besitzt, so wird der nicht-
+**		      invertierende Ausgang 1, der invertierende Ausgang 0,
+**		      sonst umgekehrt.
+*
+*
+***   MicasBaustein
+******************************************** AEQ
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3019       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang 1        (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang 2        (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**          Wenn die beiden Eingaenge gleiches Signal haben,
+**		      wird der Ausgang 1, sonst wird er 0.
+*
+*
+***   MicasBaustein
+******************************************** RSS
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301A       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang  S       (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang  R       (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**     5     ****       Index auf Zwischenvariable Ausgang, inv.    (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 2
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**          Der Ruecksetzeingang R ist dominierend: Wenn R = 1,
+**		      wird der nichtinvert. Ausgang 0, unabhaengig vom Zustand
+**		      des S-Eingangs.
+**		      Ist R = 0 und S = 1, so wird der nichtinvert. Ausgang
+**		      gesetzt, dh. 1. Haben beide Eingaenge 0-Signal, so
+**		      bleibt der alte Zustand am Ausgang erhalten.
+**		      Der invert. Ausgang besitzt immer das entgegengesetzte
+**		      Signal des nichtinvert. Ausgangs.
+*
+*
+*
+***   MicasBaustein
+******************************************** TFF
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301B       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang  T       (Typ word)
+**     3     ****       Index auf Zwischenvariable Ausgang          (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang, inv.    (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 4
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Wenn der Eingang von 0 auf 1 wechselt, wechseln die
+**		      Ausgaenge ihren Signalzustand.
+**		      Der invert. Ausgang besitzt immer das entgegengesetzte
+**		      Signal des nichtinvert. Ausgangs.
+*
+*
+*
+*------------------------------------------------------------------------------
+*BINAER / ANALOG
+*------------------------------------------------------------------------------
+*                                     **   MicasBaustein
+******************************************** VRZ
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301E       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang  R       (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang  Delta   (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang  S       (Typ word)
+**     5     ****       Index auf Zwischenvariable Eingang  Setzwert(Typ float)
+**     6     ****       Index auf Zwischenvariable Eingang  Freigabe(Typ word)
+**     7     ****       Index auf Zwischenvariable Eingang  Auf     (Typ word)
+**     8     ****       Index auf Zwischenvariable Eingang  Ab      (Typ word)
+**     9     ****       Index auf Zwischenvariable Ausgang          (Typ Float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 8
+**                    Laenge des Zwischencode        (in Eintr.)= 10
+**
+** Funktion:
+**          Der Vorwaerts/Rueckwaerts-Zaehler besitzt Eingaenge
+**		      fuer Ruecksetzen, Schrittweite, Setzen, Setzwert,
+**		      Zaehlerfreigabe, sowie Impulseingaenge auf Aufwaerts-/
+**		      Abwaertszaehlen.
+**		      Die Reihenfolge der Anschluesse bestimmt die Prioritaet
+**		      der Eingaenge, zB. Ruecksetzen vor Setzen.
+**		      Bei gleichzeitigem Auftreten von Impulsen am Eingang
+**		      Auf und Eingang Ab erfolgt keine Reaktion am Ausgang.
+*
+***   MicasBaustein
+******************************************** AWT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     301F       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang Wahl     (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang A        (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang B        (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang          (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Entsprechend dem Eingangssignal Wahl wird einer der
+**		      beiden Eingaenge A oder B an den Ausgang durchgeschaltet.
+**                    Wahl = 0  -->  Ausgang = Eingang A
+**                    Wahl = 1  -->  Ausgang = Eingang B
+*
+*
+***   MicasBaustein
+******************************************** UST
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3020       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang Wahl     (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang          (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausgang A        (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang B        (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Entsprechend dem Eingangssignal Wahl wird der Eingang
+**		      auf einen der beiden Ausgaenge A oder B durchgeschaltet.
+**                    Wahl = 0  -->  Ausgang A = Eingang
+**                    Wahl = 1  -->  Ausgang B = Eingang
+*
+*
+*
+***   MicasBaustein
+******************************************** SCHR
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3021       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang  R      (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang  VB     (Typ word)
+**     4     ****       Index auf Zwischenvariable Eingang  FR     (Typ word)
+**     ------------------------------------------------------------------------
+**     5     00mm       Gruppenlaenge Anzahl der Analogeingaenge   (Typ direkt)
+**     6     ****       Index auf Zwischenvariable Eingang  1      (Typ float )
+**     7     ****       Index auf Zwischenvariable Eingang  2      (Typ float )
+**     .       .                     ...
+**     m+5   ****       Index auf Zwischenvariable Eingang  m      (Typ float )
+**     ------------------------------------------------------------------------
+**     m+6   ****       Index auf Zwischenvariable Ausgang  AKT    (Typ word)
+**     m+7   ****       Index auf Zwischenvariable Ausgang  BS     (Typ word)
+**     m+8   ****       Index auf Zwischenvariable Ausgang  BS/    (Typ word)
+**     ------------------------------------------------------------------------
+**     m+9   00nn       Gruppenlaenge Anzahl der Analogausgaenge   (Typ direkt)
+**     m+10  ****       Index auf Zwischenvariable Ausgang  1      (Typ float )
+**     m+11  ****       Index auf Zwischenvariable Ausgang  2      (Typ float )
+**     .       .                     ...
+**     m+m+9 ****       Index auf Zwischenvariable Ausgang  m      (Typ float )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 4
+**                    Laenge des Zwischencode        (in Eintr.)= m+n+10
+**
+** Funktion:
+**                    Der Baustein kennt 2 Zustaende: "Schritt aktiv" und
+**		      "Schritt inaktiv". Der aktuelle Zustand wird am
+**		      Ausgang AKT angezeigt. Im aktiven Zustand werden die
+**		      Sollwert-Eingaenge auf die Sollwert-Ausgaenge durch-
+**		      geschaltet, im inaktiven Zustand werden die Sollwert-
+**		      Ausgaenge nicht bedient, das heisst, die alten Werte
+**		      im Vergangenheitsspeicher bleiben stehen.
+**		      In den Zustand "Schritt aktiv" gelangt der Baustein,
+**		      wenn die Eingaenge VB=1 UND FR=1 sind und zusaetzlich
+**		      der Eingang R=0 ist.
+**		      Ruecksetzen laesst sich der Baustein durch R=1, unab-
+**		      haengig von den anderen Eingangsbelegungen, der Rueck-
+**		      setzeingang ist also dominierend.
+**		      Der Ausgang BS ist beim Taskstart 0 und wird 1, sobald
+**		      der Ausgang AKT 1 wird. BS wird nicht vom Ruecksetz-
+**		      eingang R rueckgesetzt, dies geschieht erst beim
+**		      naechsten Geraete- bzw Taskanlauf. BS' gibt
+**		      den invertierten Wert von BS aus.
+**		      Die beiden Gruppenlaengen betragen 0...127 und muessen
+**		      immer den gleichen Wert besitzen. Die Angabe der zweiten
+**		      Gruppenlaenge ist nur aus programmtechn. Gruenden erfor-
+**		      derlich.
+**
+**
+**                      R  AKT-1 VB FR ! AKT    SollwertAusgang
+**                    -----------------+--------------------------------
+**                      0    0   0  0  !  0      nicht bedient
+**                      0    0   0  1  !  0      nicht bedient
+**                      0    0   1  0  !  0      nicht bedient
+**                      0    0   1  1  !  1   Eing. wird durchgesch.
+**                      0    1   0  0  !  1   Eing. wird durchgesch.
+**                      0    1   0  1  !  1   Eing. wird durchgesch.
+**                      0    1   1  0  !  1   Eing. wird durchgesch.
+**                      0    1   1  1  !  1   Eing. wird durchgesch.
+**                      1    -   -  -  !  0       nicht bedient
+**
+**
+**                      R  BS-1  VB FR ! BS 'BS
+**			          ---------------------+-------
+**			                0    0   0  0  !  0  1
+**			                0    0   0  1  !  0  1
+**			                0    0   1  0  !  0  1
+**			                0    0   1  1  !  1  0
+**			                0    1   0  0  !  1  0
+**			                0    1   0  1  !  1  0
+**			                0    1   1  0  !  1  0
+**			                0    1   1  1  !  1  0
+**			                1    -   -  -  !  1  0
+*
+*
+*
+***   MicasBaustein
+******************************************** FKG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3022       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang X       (Typ float)
+**     3     00nn       Gruppenl. Anzahl der Stuetzstelleneingaenge(Typ direkt)
+**     4     ****       Index auf Zwischenvariable Eingang X1      (Typ float)
+**     5     ****       Index auf Zwischenvariable Eingang Y1      (Typ float)
+**     6     ****       Index auf Zwischenvariable Eingang X2      (Typ float)
+**     7     ****       Index auf Zwischenvariable Eingang Y2      (Typ float)
+**     .       .                     ...
+**     n+2   ****       Index auf Zwischenvariable Eingang Xn      (Typ float)
+**     n+3   ****       Index auf Zwischenvariable Eingang Yn      (Typ float)
+**     n+4   ****       Index auf Zwischenvariable Ausgang Y       (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= n+5
+**
+** Funktion:
+**                    Eine Kurve wird durch Angabe von bis zu 255
+**		      Funktionswerten angenaehert. Die Stuetzstellen werden
+**		      als Wertepaare (x- und y-Wert) angegeben und sind
+**		      variabel. Zwischenwerte werden linear interpoliert,
+**		      Werte jenseits des ersten bzw. letzten Stuetzpunktes
+**		      werden auf den ersten bzw. letzten Stuetzpunkt bezogen.
+**
+**		      ! Die Gruppenlaenge gibt die Zahl der Stuetzstellen-
+**		        eingaenge an, nicht die Zahl der Stuetzstellenpaare,
+**			also
+**			      Gruppenlaenge = Zahl der Stuetzstellenpaare * 2
+*
+*
+***   MicasBaustein
+******************************************** MAZ
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3023       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, X       (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, S       (Typ word)
+**     4     ****       Index auf Zwischenvariable Eingang, Xo      (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang, Y       (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 6
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Der Ausgang Y wird auf den neuen Eingangswert X gebracht,
+**		      wenn dieser hoeher als der alte Y-Wert ist.
+**		      Der Ausgang Y wird auf den Setzwert Xo initialisiert,
+**		      wenn der Setz-Eingang von 0 auf 1 wechselt.
+*
+***   MicasBaustein
+******************************************** SEQ2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3024       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, X       (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, X1      (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, H       (Typ float)
+**     5     ****       Index auf Zwischenvariable Eingang, P       (Typ float)
+**     6     ****       Index auf Zwischenvariable Ausgang, Y1      (Typ float)
+**     7     ****       Index auf Zwischenvariable Ausgang, Y2      (Typ float)
+**     8     ****       Index auf Zwischenvariable Ausgang, S       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 30
+**                    Laenge des Zwischencode        (in Eintr.)= 9
+**
+** Funktion:
+**                    Mit diesem Baustein kann die Funktion Entfeuchten
+**		      (Ausgang Y1) und Befeuchten (Ausgang Y2) realisiert
+**		      werden. Die Kennlinien sind dabei jeweils bereichsweise
+**		      linear. Steigung und Lage der beiden Funktionen werden
+**		      bestimmt durch die beiden Eingangs-Werte X1 (untere
+**		      Grenze der Totzone) und H (Breite der Totzone).
+**
+**		      Die Funktion Y1 faellt linear von Y1=100% bei X=0% bis
+**		      Y1=0% bei X=X1 und bleibt dann 0%.
+**
+**		      Die Funktion Y2 besitzt den Wert 0% von X=0% bis zur
+**		      Stelle X=X1+H1 und steigt dann linear bis zum Endwert
+**		      Y2=100%.
+**
+**		      Zusaetzlich beinhaltet der Baustein noch einen
+**		      Vergleicher ohne Hysterese mit dem Schwellwert P.
+**		      Der Ausgang S ist 1, falls X groesser oder gleich P ist,
+**		      sonst ist S=0.
+
+**
+**		           X      !     Y1         !    Y2
+**		      ------------+----------------+----------------
+**		           0%     !     100%       !     0%
+**		        0%...X1   ! linear fallend !     0%
+**		           X1     !      0%        !     0%
+**		       X1...X1+H  !      0%        !     0%
+**		          X1+H    !      0%        !     0%
+**		      X1+H...100% !      0%        ! linear steigend
+**		          100%    !      0%        !    100%
+**
+**
+**                    Vergleicher:
+**
+**		             X <  P    --->    S = 0
+**			           X >= P    --->    S = 1
+**
+**
+**		      Einschraenkungen:
+**
+**			     0 <= H  <= (100%-X1)
+**			     0 <= X  <=  100%
+**			     0 <= X1 <=  100%
+**			     0 <= P  <=  100%
+*/
+            *
+Begin
+
+/*									    */
+/*  Y =  A * X  +  B							    */
+/*									    */
+/*		 Y'' - Y'						    */
+/*	mit A = ---------	,    B  =  Y'  -  A * X'		    */
+/*		 X'' - X'						    */
+/*									    */
+
+
+
+                                             **   MicasBaustein
+******************************************** SEQ3
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3025       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, X       (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, X1      (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, H1      (Typ float)
+**     5     ****       Index auf Zwischenvariable Eingang, X2      (Typ float)
+**     6     ****       Index auf Zwischenvariable Eingang, H2      (Typ float)
+**     7     ****       Index auf Zwischenvariable Eingang, P1      (Typ float)
+**     8     ****       Index auf Zwischenvariable Eingang, P2      (Typ float)
+**     9     ****       Index auf Zwischenvariable Eingang, YMIN    (Typ float)
+**    10     ****       Index auf Zwischenvariable Eingang, SW      (Typ word)
+**    11     ****       Index auf Zwischenvariable Ausgang, Y1      (Typ float)
+**    12     ****       Index auf Zwischenvariable Ausgang, Y2      (Typ float)
+**    13     ****       Index auf Zwischenvariable Ausgang, Y3      (Typ float)
+**    14     ****       Index auf Zwischenvariable Ausgang, Y4      (Typ float)
+**    15     ****       Index auf Zwischenvariable Ausgang, S1      (Typ word)
+**    16     ****       Index auf Zwischenvariable Ausgang, S2      (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 64
+**                    Laenge des Zwischencode        (in Eintr.)= 17
+**
+** Funktion:
+**                    Mit diesem Baustein kann eine Temperaturregelung
+**		      realisiert werden. Ausgaenge sind vorgesehen fuer
+**		      Kuehlerventil (Y1), Umluftklappe (Y2), Aussenluft-
+**		      klappe mit Minbegrenzung (Y3) und Heizungsregelung (Y4).
+**		      Die Kennlinien sind dabei jeweils bereichsweise linear.
+**		      Steigung und Lage der Funktionen werden bestimmt durch
+**		      die beiden Eingangspaare X1/H1 (untere Grenze der unteren
+**		      Totzone/Breite der unteren Totzone) und X2/H2(untere
+**		      Grenze der oberen Totzone/Breite der oberen Totzone).
+**
+**		      Die Funktion Y1 faellt linear von Y1=100% bei X=0% bis
+**		      Y1=0% bei X=X1 und bleibt dann 0%.
+**
+**		      Die Funktion Y2 besitzt den Wert 0% von X=0% bis zur
+**		      Stelle X=X1+H1, steigt dann linear bis zum Endwert
+**		      Y2=100% bei X=X2 und bleibt dann 100% bis X=100%.
+**
+**		      Die Funktion Y3 besitzt den Wert 100% von X=0% bis zur
+**		      Stelle X=X1+H1, faellt dann linear bis zum Wert Y3=YMIN
+**		      bei X=X2 und bleibt dann auf dem Wert YMIN bis X=100%.
+**
+**		      Die Funktion Y4 besitzt den Wert 0% von X=0% bis zur
+**		      Stelle X=X2+H2, steigt dann linear bis zum Endwert
+**		      Y4=100% bei X=100%.
+
+**
+**		      Zusaetzlich beinhaltet der Baustein noch zwei Vergleicher
+**		      ohne Hysterese mit den Schwellwerten P1,P2.
+**		      Der zugehoerige Ausgang S1,S2 ist 1, falls X groesser
+**		      oder gleich P1,P2 ist, sonst ist S1,S2=0.
+**
+**		      Der Eingang SW kann zur Sommer-/Winter-Umschaltung
+**		      benutzt werden. Ist SW=1 so werden die Funktionen Y2
+**		      und Y3 an der Geraden X= (X1+H1) + (X2-(X1+H1))/2
+**		      gespiegelt.
+**
+**		      Fuer SW=0 gilt:
+**
+**		     X      !    Y1      !    Y2     !    Y3     !    Y4
+**		------------+------------+-----------+-----------+------------
+**		     0%     !   100%    !     0%     !   100%    !    0%
+**		  0%...X1   ! lin.fall. !     0%     !   100%    !    0%
+**		     X1     !    0%     !     0%     !   100%    !    0%
+**		 X1...X1+H1 !    0%     !     0%     !   100%    !    0%
+**		    X1+H1   !    0%     !     0%     !   100%    !    0%
+**		 X1+H1...X2 !    0%     ! lin.steig. ! lin.fall. !    0%
+**		     X2     !    0%     !    100%    !   YMIN    !    0%
+**		 X2...X2+H2 !    0%     !    100%    !   YMIN    !    0%
+**		    X2+H2   !    0%     !    100%    !   YMIN    !    0%
+**	  X2+H2...100%!    0%     !    100%    !   YMIN    ! lin.steig.
+**		     100%   !    0%     !    100%    !   YMIN    !   100%
+**
+**
+**                    Vergleicher:
+**
+**		       X <  P1    --->    S1 = 0
+**			     X >= P1    --->    S1 = 1
+**		       X <  P2    --->    S2 = 0
+**			     X >= P2    --->    S2 = 1
+**
+**
+**		      Einschraenkungen:
+**
+**			     0 <= H1   <= (100%-X1)
+**			     0 <= H2   <= (100%-X2)
+**			     0 <= X    <=  100%
+**			     0 <= X1   <=  100%
+**			     0 <= X2   <=  100%
+**			     0 <= P1   <=  100%
+**			     0 <= P2   <=  100%
+**			     0 <= YMIN <=  100%
+*
+*
+***   MicasBaustein
+******************************************** VGLOH
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3026       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Wert    (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, Grenzw. (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Ist der Eingangswert kleiner als der angegebene
+**		      Grenzwert, so wird der Ausgang Y=0 , sonst 1.
+**
+**                    Wert >= Grenze   ---> Y = 1
+**		      Wert < Grenze    ---> Y = 0
+*
+*
+***   MicasBaustein
+******************************************** VGLEH
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3027       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Wert    (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, Grenze  (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, Hyst.   (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 2
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Ist der Eingangswert groesser oder gleich dem angegebenen
+**		      Grenzwert, so wird der Ausgang Y=1 , ist er kleiner als
+**		      der Grenzwert abzueglich Hysterese, so ist Y=0, ansonsten
+**		      behaelt Y den alten Wert.
+**
+**                    Wert >= Grenze            ---> Y = 1
+**		      Wert < Grenze - Hysterese ---> Y = 0
+**		      sonst                     ---> Y = Y_alt
+**
+** Voraussetzung:     Hysterese >= 0
+**                    (Verhalten bei negat. Hysterese: wie VGLOH)
+*
+*
+***   MicasBaustein
+******************************************** VGLUH
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3028       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Wert    (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, Grenze  (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, ob.Hyst.(Typ float)
+**     5     ****       Index auf Zwischenvariable Eingang, unt.Hyst(Typ float)
+**     6     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 2
+**                    Laenge des Zwischencode        (in Eintr.)= 7
+**
+** Funktion:
+**                    Ist der Eingangswert groesser oder gleich dem angegebenen
+**		      Grenzwert zuzueglich oberer Hysterese, so wird der Aus-
+**		      gang Y=1 , ist er kleiner als der Grenzwert abzueglich
+**		      unterer Hysterese, so ist Y=0, ansonsten behaelt Y den
+**		      alten Wert.
+**
+**                    Wert >= Grenze + obere Hyst.   ---> Y = 1
+**		      (Wert-Grenze >= ob.Hyst.)
+**		      Wert <  Grenze - untere Hyst.  ---> Y = 0
+**		      (Wert-Grenze < (- unt.Hyst.))
+**		      sonst                          ---> Y = Y_alt
+**
+** Voraussetzung:     Hysterese unten >= 0
+**                    Hysterese oben  >= 0
+*
+*
+***   MicasBaustein
+******************************************** VGL3P
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3029       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Wert    (Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, o.Grenze(Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, u.Grenze(Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang, Y_gr    (Typ word )
+**     6     ****       Index auf Zwischenvariable Ausgang, Y_kl    (Typ word )
+**     7     ****       Index auf Zwischenvariable Ausgang, Y_mi    (Typ word )
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+**                    Laenge des Zwischencode        (in Eintr.)= 8
+**
+** Funktion:
+**                    Ueber die drei Ausgaenge Y_groesser, Y_kleiner und
+**		      Y_mitte wird angezeigt, in welchem Bereich bezueglich
+**		      der beiden Grenzwerte der Eingangswert liegt.
+**
+**                                                Y_gr  Y_kl  Y_mi
+**		      ---------------------------------------------
+**                    Wert > obere Grenze    --->  1     0     0
+**		      Wert < untere Grenze   --->  0     1     0
+**		      sonst                  --->  0     0     1
+**
+**                    Voraussetzung: untere Grenze <= obere Grenze
+*
+*------------------------------------------------------------------------------
+*ZEIT
+*------------------------------------------------------------------------------
+***   MicasBaustein
+******************************************** UHR
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     302A       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Enable  (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang, Reset   (Typ word)
+**     4     ****       Index auf Zwischenvariable Ausgang, Zeit    (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 4
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Solange der Enable-Eingang 1 ist, laeuft die Zeit T.
+**		      Der Ruecksetzeingang ist dominierend und setzt die
+**		      Stopuhr auf Null zurueck.
+**                    Am Ausgang wird die Zeit in Sekunden ausgegeben.
+**
+**                    Die maximal zu stoppende Zeit betraegt:
+**
+**		               Tmax = 2'147'483'647 * Tz
+**
+**
+**                    Beispiel:       Tz   !   Tmax
+**                                  -------+----------------------
+**                                    1 ms !    24 Tage
+**                                   10 ms !   248 Tage
+**				    100 ms !  2485 Tage = 6  Jahre
+**                                  1   s  ! 24855 Tage = 68 Jahre
+*
+* *  *   MicasBaustein
+******************************************** KALUHR
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3053       Baustein-Typ
+ *     2     ****       Index auf Zwischenvar. Eingang, AlarmMin   (Typ float) 
+ *     3     ****       Index auf Zwischenvar. Eingang, AlarmHour  (Typ float)
+ *     4     ****       Index auf Zwischenvar. Eingang, AlarmDay   (Typ float) 
+ *     5     ****       Index auf Zwischenvar. Eingang, AlarmMonth (Typ float)
+ *     6     ****       Index auf Zwischenvar. Eingang, AlarmYear  (Typ float)
+ *     7     ****       Index auf Zwischenvar. Eingang, AlarmWD    (Typ float)
+ *     8     ****       Index auf Zwischenvar. Eingang, AlarmKW	   (Typ float) 
+ *     9     ****       Index auf Zwischenvar. Ausgang, Minute     (Typ float) 
+ *    10     ****       Index auf Zwischenvar. Ausgang, Stunde     (Typ float)
+ *    11     ****       Index auf Zwischenvar. Ausgang, Tag        (Typ float) 
+ *    12     ****       Index auf Zwischenvar. Ausgang, Monat      (Typ float)
+ *    13     ****       Index auf Zwischenvar. Ausgang, Jahr       (Typ float)
+ *    14     ****       Index auf Zwischenvar. Ausgang, Wochentag  (Typ float)
+ *    15     ****       Index auf Zwischenvar. Ausgang, KW         (Typ float) 
+ *    16     ****       Index auf Zwischenvar. Ausgang, AB         (Typ word) 
+ *	      
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+ *                    Laenge des Zwischencode        (in Eintr.)= 17
+ *
+ * Funktion:	      Wenn alle Eingaenge, die mit Werten ungleich
+ *		      0 belegt sind, mit den entsprechenden
+ *		      Zeit- und und Kalenderwerten der Echtzeituhr ueber-
+ *		      einstimmen, dann ist der Ausgang AB = 1, sonst 0.
+ *		      Sind alle Eingangswerte = 0, dann ist AB = 0.
+ *		      Die aktuelle Uhrzeit/Datum wird in jedem Fall auf
+ *		      die Ausgaenge gelegt.
+ *		      
+ *
+*
+***   MicasBaustein
+******************************************** VVZ
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     302B       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, X       (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang, T1      (Typ float)
+**     4     ****       Index auf Zwischenvariable Eingang, T2      (Typ float)
+**     5     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 26
+**                    Laenge des Zwischencode        (in Eintr.)= 6
+**
+** Funktion:
+**                    Vorderflanke: Wenn der X-Eingang von 0 nach 1 wechselt,
+**		      wird der Y-Ausgang um T1 verzoegert auf 1 gesetzt.
+**		      Rueckflanke: Wenn der X-Eingang von 1 nach 0 wechselt,
+**		      wird der Y-Ausgang um T2 verzoegert auf 0 gestetzt.
+**
+**		      Eingangsimpulse die kleiner als T1 bzw. T2 sind, bewirken
+**		      keine Aenderung am Ausgang.
+*
+*
+***   MicasBaustein
+******************************************** MOKY
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     302C       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Trigger (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang, T       (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 16
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Der Baustein ist nachtriggerbar, d.h. wenn am Trigger-
+**		      Eingang eine 0-1-Flanke auftritt, bevor das Ausgangssig.
+**		      Y=0 ist, dann beginnt die Laufzeit des Ausgangssignal
+**		      von neuem.
+*
+*
+***   MicasBaustein
+******************************************** MOKS
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     302D       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, X       (Typ word)
+**     3     ****       Index auf Zwischenvariable Eingang, T       (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 16
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:
+**                    Es besteht eine UND-Abhaengigkeit zwischen Eingang X
+**		      und Ausgang Y, d.h. wenn X=0 ist, dann ist auch der
+**		      Ausgang Y=0. Falls T wirksam werden soll, muss der
+**		      Eingang X laenger als die Zeit T anstehen.
+*
+*
+***   MicasBaustein
+******************************************** PDM
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     302E       Baustein-Typ
+**     2     ****       Index auf Zwischenvariable Eingang, Tastverh(Typ float)
+**     3     ****       Index auf Zwischenvariable Eingang, Periode (Typ float)
+**     4     ****       Index auf Zwischenvariable Ausgang, Y       (Typ word)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 26
+**                    Laenge des Zwischencode        (in Eintr.)= 5
+**
+** Funktion:          Beliebig einstellbarer Taktgenerator. Bei Aenderung von
+**                    Tastverhaeltnis und/oder Periodendauer im Betrieb wird
+**		      erst der letzte Taktzyklus beendet, bevor mit dem Neuen
+**		      begonnen wird (synchrone Taktumschaltung).
+**
+**
+**                                       Impulsdauer_high
+**		      Tastverhaeltnis = ------------------   [in %]
+**                                         Periodendauer
+**
+**
+**		      Vorsausetzung: 0 <= Tastverhaeltnis <= 100
+**
+** Parametrierungshinweis:
+**
+**	Periodendauer * Tastverhaeltnis >= 100 * Taskzykluszeit in sec
+**      (sonst kann nicht mehr aufgeloest werden)
+*
+*
+*------------------------------------------------------------------------------
+*MATH
+*------------------------------------------------------------------------------
+*
+***   MicasBaustein
+******************************************** SIN
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     303E       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Es wird die Funktion Y = sin (x) gebildet
+**                    x muss im Bogenmass uebergeben werden.
+*
+*
+***   MicasBaustein
+******************************************** COS
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     303F       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Es wird die Funktion Y = cos (x) gebildet
+**                    x muss im Bogenmass uebergeben werden.
+*
+***   MicasBaustein
+******************************************** EHOX
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3040       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Es wird die Funktion Y = e^x gebildet
+**                    Die Funktion liefert den Wert e potenziert mit dem
+**		      Eingang. Bei einem Ueber-bzw. Unterlauf wird ent-
+**		      sprechend die groesste oder kleinste darstellbare
+**		      Zahl geliefert.
+*
+*
+***   MicasBaustein
+******************************************** LN
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3041       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Es wird die Funktion Y = ln(x) gebildet
+**                    Die Funktion liefert also den natuerlichen Logarithmus
+**
+**		      Bei Eingangswerten <=0, fuer die der Logarithmus nicht
+**		      definiert ist, wird der Wert 1.0 zurueckgeliefert.
+*
+*
+***   MicasBaustein
+******************************************** LOG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3042       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Es wird die Funktion Y = log(x) gebildet
+**                    Die Funktion liefert also den 10-er Logarithmus
+**
+**		      Bei Eingangswerten <=0, fuer die der Logarithmus nicht
+**		      definiert ist, wird der Wert 1.0 zurueckgeliefert.
+*
+***   MicasBaustein
+******************************************** XHOY
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3043       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang 1 (x) (Typ float)
+**     3     ****       Zwischenvariable Eingang 2 (y) (Typ float)
+**     4     ****       Zwischenvariable Ausgang       (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 5
+**
+**   Funktion :       Die Funktion liefert den Wert x^y
+**                    Es wird x hoch y berechnet und am Ausgang ausgegeben.
+*
+*
+***   MicasBaustein
+******************************************** RAD
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3044       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Die Funktion wandelt einen Analogwert im Gradmass
+**                    in das entsprechende Bogenmass
+*
+*
+***   MicasBaustein
+******************************************** DEG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3045       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Die Funktion wandelt einen Analogwert im Bogenmass
+**                    in das entsprechende Gradmass.
+*
+*
+***   MicasBaustein
+******************************************** SQRT
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3046       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte : Anzahl der Vergangenheitswerte = 0
+**                    Laenge des Zwischencode        = 4
+**
+**   Funktion :       Die Funktion liefert die Quadratwurzel.
+**                    Bei negativen Werten wird NULL zurueckgeliefert.
+*
+*
+***   MicasBaustein
+******************************************** QUAD
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3047       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+**                      Laenge des Zwischencode        = 4
+**
+**   Funktion :         Der Baustein liefert den quadadrierten Wert.
+*
+*
+***   MicasBaustein
+******************************************** REZI
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3048       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+**                      Laenge des Zwischencode        = 4
+**
+**   Funktion :         Der Baustein liefert den Kehrwert (1/X).
+*
+*
+***   MicasBaustein
+******************************************** MULK2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     3049       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+**                      Laenge des Zwischencode        = 4
+**
+**   Funktion :         Der Baustein liefert den mit 2 multiplizierten
+**                      Eingangswert.
+**   Bemerkung:         Diese Funktion ist besonders schnell und sollte
+**                      bei einer Multiplikation mit 2 benutzt werden.
+*
+*
+*
+***   MicasBaustein
+******************************************** DIVK2
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     304A       Baustein-Typ
+**     2     ****       Zwischenvariable Eingang  (Typ float)
+**     3     ****       Zwischenvariable Ausgang  (Typ float)
+**
+**.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+**                      Laenge des Zwischencode        = 4
+**
+**   Funktion :         Der Baustein liefert den mit 2 dividierten
+**                      Eingangswert.
+**   Bemerkung:         Diese Funktion ist besonders schnell und sollte
+**                      bei einer Division mit 2 benutzt werden.
+*
+*
+***   MicasBaustein
+******************************************** HLG
+**
+**   Index  Datenart    Bedeutung
+**
+**     0     Fxxx       Baustein-Nummer
+**     1     304F       Baustein-Typ
+**     2     ****       Zwischenvariable Schalter       (Typ word)
+**     3     ****       Zwischenvariable Eingang1       (Typ float)
+**     4     ****       Zwischenvariable Eingang2       (Typ float)
+**     5     ****       Zwischenvariable Steigung +(S1) (Typ float)
+**     6     ****       Zwischenvariable Steigung -(S2) (Typ float)
+**     7     ****       Zwischenvariable Halten         (Typ word)
+**     8     ****       Zwischenvariable Setzen         (Typ word)
+**     9     ****       Zwischenvariable Setzwert       (Typ float)
+**    10     ****       Zwischenvariable Ausgang        (Typ float)
+**
+**.* Funktionswerte :   Anzahl der Vergangenheitswerte = 16 Byte
+**                      Laenge des Zwischencode        = 11 Worte
+**
+**   Funktion :	    Der Ausgang (Istwert) folgt dem Eingang (Sollwert) mit
+**		    konstanter Steigung und zwar so lange, bis der Istwert
+**		    den Sollwert erreicht hat. Die Richtung der Sollwert-
+**		    aenderung bestimmt den Eingang, ueber welchen die
+**		    Steigung eingelesen wird. Steigung + wird bei einer
+**		    positiven Differenz von Eingang - Ausgang benutzt,
+**		    Steigung - wird bei einer negativen Diffenz von Eingang zu
+**		    Ausgang benutzt.
+**		    Der Wert von Schalter bestimmt den wirksamen Eingang.
+**		    Schalter =0  Eingang1 ist wirksam
+**		    Schalter =1  Eingang2 ist wirksam
+**
+**	            Die Reihenfolge der Anschluesse bestimmt die Prioritaet
+**		    der Eingaenge
+**
+**                  Achtung die Steigung S2 muss immer negativ sein.
+**
+**                  Es wird folgende Funktion gebildet:
+**
+**		    Xa = Xa0 + t*S1   fuer Xa > Xe
+**
+**		    Xa = Xa0 + t*S2   fuer Xa < Xe
+**
+**		    Xa = Xa           fuer Xa = Xe
+**
+**		    Realisierung
+**
+**		    Xa(n+1) = Xa(n) + Tz*S1 fuer Xa > Xe
+**
+**		    Xa(n+1) = Xa(n) + Tz*S2 fuer Xa < Xe
+**
+**		    Xa(n+1) = Xa(n)              Xa = Xe
+*
+*
+*------------------------------------------------------------------------------
+*VERWALTUNG
+*------------------------------------------------------------------------------
+**.  Eingangsdaten
+ *.  -------------
+ *    
+ *   Kopfbaustein des Micasprogramm
+ *   Systeminformation auf Stack MInitV()
+ *
+ *   Beschreibung des Kopfbausteins
+ *
+ *            15  Bit  0  Word Offset   Beschreibung   
+ *             +-------+
+ *   pKopf --> |       |    0       Bausteinnr.  (immer F000)         
+ * (Funktion-  |       |    1       Bausteintyp. (immer 2000)    
+ *  Parameter  |       |    2       Anzahl der Tasks
+ *	           |   |   |    3       Bit 0-7 =Abarbeitungssst. Bit 7-15 TSKid 
+ *	           |       |    4       Zykluszeit der Task
+ *	           |       |    5       Segment Zwischencode der Task(Offset=0)
+ *	           |       |    6       Byteindex Vergangenheitswert der Task
+ *	           |   |   |    7       Bit 0-7 =Abarbeitungssst. Bit 7-15 TSKid 
+ *	           |       |    8       Zykluszeit der Task
+ *	           |       |    9       Segment Zwischencode der Task (Offset =0)
+ *	           |       |    10      Byteindex Vergangenheitswert der Task
+ *             |       |    .
+ *             |       |    .       Wiederholung entsprechend Anzahl der Tasks
+ *             +-------+      
+ *
+ *
+ *  Micas PastRam
+ *
+ *             7 Bit   0   Byteindex
+ *             +-------+
+ * pBase------>|       |      0
+ *             |       |      1 Micas Workram
+ *	           |       |      2
+ * pVW ------> |-------|      OffPastFirst
+ * (Baustein-  |       |  
+ *  Kontext)   |       |       Vergangenheitsbereich erster Task  
+ *	           |       |  
+ *	           |-------| 
+ *	           |       |  
+ *	           |       |       Vergangenheitsbereich zweiter  Task  
+ *	           |       |      .
+ *	           |       |      .  
+ *	           |-------|
+ *	           |       |  
+ *	           |       |       Vergangenheitsbereich letzter Task  
+ *	           |       |       
+ *             |       | OffPastLast (Siehe Micas Workram Beschreibung)      
+ *	           +-------+
+ *
+ *
+ * Micas Workram
+ *                                  Byteindex
+ *	         +---------------------+  
+ *pMicasWor> |OffWordKon           |    0
+ *	         +---------------------+  
+ *           |OffFloatKon          |    2
+ *	         +---------------------+  
+ *	         |OffWordZw            |    4
+ *	         +---------------------+  
+ *           |OffFloatZw           |    6
+ *           +---------------------+
+ *	         |OffPastFirst         |    8  (Index erster Vergangenheitswert)
+ *	         +---------------------+    
+ *	         |OffPastLast          |    10 (Index letzter Vergangenheitswert)
+ *	         +---------------------+    
+ *	         |DATA                 |    12 (DATA segment,is for extended MICAS)
+ *	         +---------------------+    
+ *	         |Starttime of MICAS   |    14 (This is the time in sec when MICAS
+ *	         |                     |	   starts, if 0 then 10 sec are taken)
+ *	         +---------------------+    
+ *           | frei                |
+ *	         +---------------------+                    
+ * 	         | Checksum Zwi. Code  |    IndCheckZwiK ( 44d bzw. 2Ch)
+ *	         +---------------------+
+ * 	         | Checksum Index      |    IndCheckK    ( 46d bzw. 2Eh)          
+ *	         +---------------------+  
+ *           |   WortKonstanten    |    OffWordKon     ( 30h)
+ * 	         |                     |    ..              
+ *	         +---------------------+
+ *	         |   FloatKonstanten   |    OffFloatKon
+ * 	         |                     |    ..
+ *	         +---------------------+
+ *	         |  Wortzwischenwerte  |    OffWordZw
+ * 	         |                     |   ..               
+ *	         +---------------------+    
+ *	         | Floatzwischenwerte  |    OffFloatZw
+ * 	         |                     |   ..               
+ *	         +---------------------+
+ *
+ *
+ *
+ * Micas Gesamtuebersicht
+ *	    +---------------------+  
+ *      | Kopfbaustein        | <---- pKopf (von System)
+ * 	    |                     |                 
+ *	    |                     |     
+ *	    +---------------------+  
+ *      | Workram             | <---- pBase (von System) = pMicasWor    
+ *	    |                     |     
+ *	    +---------------------+  
+ *	    | Pastram Task1       |    
+ *	    |                     |     
+ *	    +---------------------+  
+ *	    | Pastram Task2       |    
+ *	    |                     |     
+ *	    +---------------------+  
+ *      .                     .
+ *	    +---------------------+  
+ *	    | Pastram Taskn       |    
+ *	    |                     |     
+ *	    +---------------------+  
+ *      | Zwischencode Task1  |    
+ *	    |                     |     
+ *      +---------------------+
+ *      | Zwischencode Task2  |    
+ *	    |                     |     
+ *      +---------------------+
+ *      .                     .
+ *      .                     .
+ *	    +---------------------+
+ *      |  Stack Taskn        |    
+ *	    |                     |     
+ *      +---------------------+
+ *      .                     .
+ *      +---------------------+
+ *      |  Stack Task2        |    
+ *	    |                     |     
+ *      +---------------------+
+ *      |  Stack Task1        |    
+ *	    |                     |     
+ *      +---------------------+
+ *
+
+ *.  Ausgangsdaten
+ *.  -------------
+ *   MicasWorkRam
+ *   Die Zwischenwerte werden mit 0 initialisiert.
+ *
+ *   MicasPastRam
+ *   Die Vergangenheitswerte werden mit 0 initialisiert
+ *    
+ *   StorDescript
+ *   Der Storage Description Block wird aufgebaut
+ *    
+ *   BausteinKontext
+ *   Der Bausteinkontext wird fuer jeden Task aufgebaut.
+ *
+ */
+
+/*c
+ * #define BefTimeK 5000    @ Befehlsaugabezeit in ms			     
+ *			    @ Befehlswiederholzeit bei nichtquittierten
+ *			    @ Befehlen
+ * #define IndCheckZwiK	0x2C   @ Index Checksum fuer ZwiCode
+ * #define IndCheckK	0x2E   @ Index Checksum fuer Workramparameter
+ * 		     
+ * struct StorDescript
+ * {
+ * byte *pMicasWork;	@ Byte Pointer auf Micas Arbeitsspeicher 	 
+ *			@ dieser Speicherbereich ist shared d.h. alle	 
+ *			@ Micas Task haben Zugriff.
+ *			@ (Die Micas Zwischenadressen	 
+ *			@ bzw. Konstanten werden hier gehalten)	 
+ *
+ * word MicasWorkLen;	@ Laenge des Micas Arbeitsspeicher fuer evt. 	 
+ *			@ Zugriffueberpruefung.	 
+ *
+ * byte *pMicasPast;
+ *
+ * word PastLen;	@ Laenge des Micas Past Ram fuer evt. 	 
+ *			@ Zugriffueberpruefung.
+ *
+ * word KonstWord;	@  Byte Index der Wordkonstanten bezogen auf
+ *			@  pMicasWork
+ *
+ * word KonstFloat;	@  Byte Index der Floatkonstanten bezogen auf	 
+ *			@  pMicasWork
+ *
+ * word ZwischWord;	@  Byte Index Zwischenadresse vom Typ word
+ *			@  bezogen auf pMicasWork
+ *
+ * word ZwischFloat;	@  Byte Index Zwischenadresse vom Typ float
+ *			@  bezogen auf pMicasWork
+ * };
+ *
+ *						   
+ * struct BausteinKontext
+ * {
+ * word* pFirstBs;	@ Byte Pointer auf ersten MicasBaustein
+******************************************** der
+ *			@ Task im Zwischencode
+ *
+ * byte* pVW;      	@ Byte Pointer auf Vergangenheitswerte der
+ *			@ Micastask
+ *
+ * word  AnzVW;    	@ Anzahl der Vergangenheitswerte der Task fuer
+ *                 	@ Schreib. bzw. Leseueberpruefung
+ *
+ * word  relTimeBef;    @ relative Zeit fuer nichtquittierte Befehls
+ *			@ Wiederholung in Tick
+ *
+ * real  ZyklusZeit;    @ Zykluszeit der Task in Millisekunden
+ * };
+ *
+ *
+ * @ Konstantendefinitionen	 
+ * @ #01oc97# Sche: in KOPKON.ASM for 29AR20, 29SP20
+ * @ also limited to this value, do not enlarge 
+ * #define MaxAnzTaskK 16        	@Maximale Anzahl der Micas Tasks
+ * 
+ *
+ * *   MicasBaustein
+******************************************** ENDE  
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3000       Baustein-Typ
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = - Byte
+ *                    Laenge des Zwischencode        = - Worte
+ *
+ * Funktion:
+ *                    Der Baustein terminiert ein Micastask            
+ *		      Es wird in das Betriebsystem gesprungen
+ *		      
+ * *   MicasBaustein
+******************************************** STEP  
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3001       Baustein-Typ
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 0 Worte
+ *
+ * Funktion:
+ *                    Der Baustein wird im Stepmode vom Micas-
+ *		      Interpreter aufgerufen.
+ *		      
+ *
+ * *   MicasBaustein
+******************************************** BENDE  
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     303D       Baustein-Typ
+ *     2     ****       Zwischenvariable Ende/Weiter  1/0	(Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 3 Worte
+ *
+ * Funktion:
+ *                    Der Baustein terminiert ein Micastask,
+ *		      wenn die Zwischenvariable den Wert 1 hat.
+ *		      Es wird dann in das Betriebsystem gesprungen
+ *		      
+ *
+ *
+ *-----------------------------------------------------------------------------
+ *intern 
+ *-----------------------------------------------------------------------------
+ *
+ * *   MicasBaustein
+******************************************** OPORTB
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     304B       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable			(Typ word)
+ *     3     ****       Zwischenvariable Portwert		(Typ word)
+ *     4     ****       Zwischenvariable Portadresse		(Typ word)
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 5
+ *
+ *   Funktion :         Der Baustein schreibt den Portwert auf den
+ *			durch Portadresse adressierten Port.
+ *			Es wird ein Bytezugriff gemacht
+ *			
+ *
+ * *   MicasBaustein
+******************************************** IPORTB
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     304C       Baustein-Typ
+ *     2     ****       Zwischenvariable Portadresse		(Typ word)
+ *     3     ****       Zwischenvariable Portwert		(Typ word)
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 4
+ *
+ *   Funktion :         Der Baustein liest den durch Portadresse
+ *			adressierten Port.
+ *			Es wird ein Bytezugriff gemacht
+ *			
+ * *   MicasBaustein
+******************************************** MSET
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     304D       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable			(Typ word)
+ *     3     ****       Zwischenvariable Value			(Typ word)
+ *     4     ****       Zwischenvariable Anzahl  Byte		(Typ word)
+ *     5     ****       Zwischenvariable Segment Adr.		(Typ word)
+ *     6     ****       Zwischenvariable Offset  Adr.		(Typ word)
+ *     
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 7
+ *
+ *   Funktion :         Der Baustein initialisiert den durch Anzahl und
+ *			Segment:Offset adressierten Datenbereich mit dem
+ *			Initialwert Value.
+ *			
+ *
+ * *   MicasBaustein
+******************************************** MCPY
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     304E       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable			(Typ word)
+ *     3     ****       Zwischenvariable Anzahl  Byte		(Typ word)
+ *     4     ****       Zwischenvariable Segment Adr. Source	(Typ word)
+ *     5     ****       Zwischenvariable Offset  Adr. Source	(Typ word)
+ *     6     ****       Zwischenvariable Segment Adr. Dest	(Typ word)
+ *     7     ****       Zwischenvariable Offset  Adr. Dest	(Typ word)
+ *     
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 8
+ *
+ *   Funktion :         Der Baustein kopiert den durch Segment:Offset (Source)
+ *			und Anzahl Byte auf den durch Segment:Offset (Dest)
+ *			adressierten Datenbereich.
+ *			
+ *
+ * *   MicasBaustein
+******************************************** TSTART
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3050       Baustein-Typ
+ *     2     ****       Zwischenvariable relative Startzeit Ausgang (Typ word)
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 3
+ *
+ *   Funktion :         Der Baustein wird zur Zeitmessung benoetigt, die
+ *			relative Startzeit wird auf den Ausgang geschrieben.
+ *			
+ *
+ * *   MicasBaustein
+******************************************** TMESS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3051       Baustein-Typ
+ *     2     ****       Zwischenvariable relative Startzeit Eingang (Typ word)
+ *     3     ****       Zwischenvariable minimale Laufzeit  Ausgang (Typ float)
+ *     4     ****       Zwischenvariable maximale Laufzeit  Ausgang (Typ float)
+ *     5     ****       Zwischenvariable anzahl Messzyklen  Ausgang (Typ float)
+ *
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 10
+ *                      Laenge des Zwischencode        = 6
+ *
+ *   Funktion :         Der Baustein wird zur Zeitmessung benoetigt
+ *			Die minimale bzw. maximale Laufzeit zwischen dem
+ *			Baustein TSTART und TSTOP wird am Ausgang ausgegeben.
+ *                      Der Wert wird in ms angegeben.
+ *
+ *			Achtung, der Baustein darf nur beim 29ZP10 eingesetzt
+ *			werden.
+ *                      Achtung, der Baustein braucht 10 Byte 
+ *			Vergangenheitswerte
+ *			
+ *
+ * *   MicasBaustein
+******************************************** TSTART (Dummy fuer 29AR10 uns.)
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3050       Baustein-Typ
+ *     2     ****       Zwischenvariable relative Startzeit Ausgang (Typ word)
+ *	      
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 3
+ *
+ *   Funktion :         Der Baustein wird zur Zeitmessung benoetigt, die
+ *			relative Startzeit wird auf den Ausgang geschrieben.
+ *			
+ *
+ **   MicasBaustein
+******************************************** TMESS (Dummy fuer 29AR10 uns.)
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3051       Baustein-Typ
+ *     2     ****       Zwischenvariable relative Startzeit Eingang (Typ word)
+ *     3     ****       Zwischenvariable minimale Laufzeit  Ausgang (Typ float)
+ *     4     ****       Zwischenvariable maximale Laufzeit  Ausgang (Typ float)
+ *     5     ****       Zwischenvariable anzahl Messzyklen  Ausgang (Typ float)
+ *
+ *.* Funktionswerte :   Anzahl der Vergangenheitswerte = 0
+ *                      Laenge des Zwischencode        = 6
+ *
+ *   Funktion :         Der Baustein wird zur Zeitmessung benoetigt
+ *			Die minimale bzw. maximale Laufzeit zwischen dem
+ *			Baustein TSTART und TSTOP wird am Ausgang ausgegeben.
+ *			Achtung der Baustein darf nur beim 29ZP10 eingesetzt
+ *			werden.
+ *			
+ *
+ * *   MicasBaustein
+******************************************** FTOB
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3056       Baustein-Typ
+ *     2     ****       Index auf Zwischenvar. Eingang, FLOAT	   (Typ float) 
+ *     3     ****       Index auf Zwischenvar. Ausgang, Bit00	   (Typ word)
+ *     4     ****       Index auf Zwischenvar. Ausgang, Bit01      (Typ word) 
+ *     5     ****       Index auf Zwischenvar. Ausgang, Bit02      (Typ word)
+ *     6     ****       Index auf Zwischenvar. Ausgang, Bit03      (Typ word)
+ *     7     ****       Index auf Zwischenvar. Ausgang, Bit04      (Typ word)
+ *     8     ****       Index auf Zwischenvar. Ausgang, Bit05	   (Typ word) 
+ *     9     ****       Index auf Zwischenvar. Ausgang, Bit06      (Typ word) 
+ *    10     ****       Index auf Zwischenvar. Ausgang, Bit07      (Typ word)
+ *    11     ****       Index auf Zwischenvar. Ausgang, Bit08      (Typ word) 
+ *    12     ****       Index auf Zwischenvar. Ausgang, Bit09      (Typ word)
+ *    13     ****       Index auf Zwischenvar. Ausgang, Bit10      (Typ word)
+ *    14     ****       Index auf Zwischenvar. Ausgang, Bit11      (Typ word)
+ *    15     ****       Index auf Zwischenvar. Ausgang, Bit12      (Typ word) 
+ *    16     ****       Index auf Zwischenvar. Ausgang, Bit13      (Typ word) 
+ *    17     ****       Index auf Zwischenvar. Ausgang, Bit14      (Typ word) 
+ *    18     ****       Index auf Zwischenvar. Ausgang, Bit15      (Typ word) 
+ *	      
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+ *                    Laenge des Zwischencode        (in Eintr.)= 19
+ *
+ * Funktion:	      Der Baustein konvertiert den Floatwert am Eingang
+ *		      in ein Wort und gibt dieses binaer auf den einzelnen
+ *		      Ausgaengen aus (wie frueher WDEC = word decoder)
+ *		      Dient dazu MICAS besser zu testen
+ *		      
+ *
+ * *   MicasBaustein
+******************************************** BTOF
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3057       Baustein-Typ
+ *     2     ****       Index auf Zwischenvar. Eingang, Bit00	   (Typ word)
+ *     3     ****       Index auf Zwischenvar. Eingang, Bit01      (Typ word)
+ *     4     ****       Index auf Zwischenvar. Eingang, Bit02      (Typ word)
+ *     5     ****       Index auf Zwischenvar. Eingang, Bit03      (Typ word)
+ *     6     ****       Index auf Zwischenvar. Eingang, Bit04      (Typ word)
+ *     7     ****       Index auf Zwischenvar. Eingang, Bit05	   (Typ word)
+ *     8     ****       Index auf Zwischenvar. Eingang, Bit06      (Typ word)
+ *     9     ****       Index auf Zwischenvar. Eingang, Bit07      (Typ word)
+ *    10     ****       Index auf Zwischenvar. Eingang, Bit08      (Typ word)
+ *    11     ****       Index auf Zwischenvar. Eingang, Bit09      (Typ word)
+ *    12     ****       Index auf Zwischenvar. Eingang, Bit10      (Typ word)
+ *    13     ****       Index auf Zwischenvar. Eingang, Bit11      (Typ word)
+ *    14     ****       Index auf Zwischenvar. Eingang, Bit12      (Typ word)
+ *    15     ****       Index auf Zwischenvar. Eingang, Bit13      (Typ word)
+ *    16     ****       Index auf Zwischenvar. Eingang, Bit14      (Typ word)
+ *    17     ****       Index auf Zwischenvar. Eingang, Bit15      (Typ word)
+ *    18     ****       Index auf Zwischenvar. Ausgang, FLOAT	   (Typ float)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte (in Byte)  = 0
+ *                    Laenge des Zwischencode        (in Eintr.)= 19
+ *
+ * Funktion:	      Der Baustein konvertiert die binaeren Eingaenge
+ *		      in ein Wort und gibt dieses als float am Ausgang aus
+ *		      (invers zum FTOB, wie frueher WUMC = word uncode)
+ *		      Dient dazu MICAS besser zu testen
+ *		      
+ *
+ *-----------------------------------------------------------------------------
+ *REGLER SOLLKENN                   
+ *-----------------------------------------------------------------------------
+ * *   MicasBaustein
+******************************************** Regler 
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3037       Baustein-Typ
+ *     2     00xx       Regelkreis Nummer (Typ direkt)
+ *     3     ****       Zwischenvariable  Regler Ausschalten (Typ word)     
+ *     4     ****       Zw. Variable  Reglerausgang feste Grenze(Typ word)    
+ *     5     ****       feste Grenze (Typ real) 
+ *     6     ****       Zwischenvariable  Ausgang (Stellgr) (Typ real)     
+ *     7     ****       Zwischenvariable  Ausgang (Error)   (Typ word)     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 37 Byte
+ *                    Laenge des Zwischencode        = 7 Worte
+ *                    
+ *
+ * *   MicasBaustein
+******************************************** UREG
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3039       Baustein-Typ
+ *     2     00xx       Regelkreis Nummer (Typ direkt)
+ *     3     ****	Zeile Istwert                        
+ *     4     ****	Zeile Sollwert                       
+ *     5     ****	Regler Ein/Aus  1/0		    
+ *     6     ****	Eingang feste Grenze E/A		    
+ *     7     ****	REGELM/Micas-Reglerparameter Auswahl 1/0
+ *     8     ****	Reglertyp (P, PI oder PID)           
+ *     9     ****	Abtastzeit des Reglers               
+ *     10    ****	Proportionalbereich des Reglers      
+ *     11    ****	Nachstellzeit (I-Anteil)             
+ *     12    ****	Vorhaltzeit   (D-Anteil)             
+ *     13    ****	untere Grenze Sollwert               
+ *     14    ****	obere Grenze Sollwert                
+ *     15    ****	Hysterese                            
+ *     16    ****	Stellgroesse TYP (Analog, 3-Punkt)   
+ *     17    ****	untere Grenze Stellgroesse           
+ *     18    ****	obere Grenze Stellgroesse            
+ *     19    ****	Zeile Stellgroesse                   
+ *     20    ****	Spalte,Zeile 3-Punkt Schaltbefehl    
+ *     21    ****	Error Ausgang			    
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 37 Byte
+ *                    Laenge des Zwischencode        = 22 Worte
+ *                    
+ *
+ * *   MicasBaustein
+******************************************** LREG
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3052       Baustein-Typ
+ *     2     ****	Zeile Istwert                        
+ *     3     ****	Zeile Sollwert                       
+ *     4     ****	Regler Ein/Aus  1/0		    
+ *     5     ****	Eingang feste Grenze E/A		    
+ *     6     ****	Reglertyp (P, PI oder PID)           
+ *     7     ****	Abtastzeit des Reglers               
+ *     8     ****	Proportionalbereich des Reglers      
+ *     9     ****	Nachstellzeit (I-Anteil)             
+ *     10    ****	Vorhaltzeit   (D-Anteil)             
+ *     11    ****	untere Grenze Sollwert               
+ *     12    ****	obere Grenze Sollwert                
+ *     13    ****	Hysterese                            
+ *     14    ****	untere Grenze Stellgroesse           
+ *     15    ****	obere Grenze Stellgroesse            
+ *     16    ****	Spalte,Zeile 3-Punkt Schaltbefehl    
+ *     17    ****	Error Ausgang			    
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 37 Byte
+ *                    Laenge des Zwischencode        = 22 Worte
+ *                    
+ *
+ * *   MicasBaustein
+******************************************** SOLKEN
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3038       Baustein-Typ
+ *     2     ****       Sollwertkennlinie-Nummer		    (Typ word)
+ *     3     ****       Zwischenvariable  SOKENN Ein/Ausschalten    (Typ word)
+ *     4     ****       Errechnete Fuehrungsgroesse		    (Typ float)
+ *     5     ****       Zwischenvariable  Ausgang (Error)	    (Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte =  8 Byte
+ *                    Laenge des Zwischencode        =  6 Worte
+ *                    
+ *           
+ *
+ *
+*
+*
+*------------------------------------------------------------------------------
+*TRANSFER
+*------------------------------------------------------------------------------
+*
+**   MicasBaustein
+******************************************** ANEIN 
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     302F       Baustein-Typ
+ *     2     ****       Konstante Zeile Datenpunkt Eingang (Typ FGAAW, FGAMW)
+ *     3     ****       Zwischenvariable  Messwert Ausgang (Typ float)     
+ *     4     ****       Zwischenvariable  Error    Ausgang (Typ word)     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 5 Worte
+ *
+ * Funktion:
+ *                    Der Baustein liest ein  Messwert  oder Analogwert
+ *		      aus dem Prozessabbild aus.
+ *		      Die Messgroesse wird in die Zwischenvariable
+ *		      Ausgang Messwert geschrieben.
+ *		      Die Zeilennr. des Datenpunktes steht in der Eingangs-
+ *		      konstante .
+ *		      Der Ausgang ist vom Typ Float.
+ *		      Wird bein Lesen des Datenpunktes ein Fehler entdeckt,
+ *		      wird der Errorhandler aufgerufen und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ **   MicasBaustein
+******************************************** ZWEIN 
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3030       Baustein-Typ
+ *     2     ****       Konstante Zeile Datenpunkt Eingang (Typ FGAZW )  
+ *     3     ****       Zwischenvariable Zaehlwert Ausgang (Typ float)     
+ *     4     ****       Zwischenvariable Error)    Ausgang (Typ word)     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 5 Worte
+ *
+ * Funktion:
+ *                    Der Baustein liest ein  Zaehlwert aus dem Prozessabbild
+ *		      aus.
+ *		      Der Zaehlwert wird in die Zwischenvariable
+ *		      Ausgang Zaehlwert geschrieben.
+ *		      Die Zeilennr. des Datenpunktes steht in der Eingangs-
+ *		      konstante .
+ *		      Der Ausgang ist vom Typ Float.
+ *		      Wird bein Lesen des Datenpunktes ein Fehler entdeckt,
+ *		      wird der Errorhandler aufgerufen und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ *
+ **   MicasBaustein
+******************************************** MELEIN
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3031       Baustein-Typ
+ *     2     ****       Konstante Zeile (low) Spalte (high) Eingang (Typ FGAML)
+ *     3     000n       Gruppenlaenge (Anzahl der Meldepunkte) Eingang (direkt)
+ *     4     ****       Zwischenvariable  1. Bit  Ausgang (Typ word)
+ *     5     ****       Zwischenvariable  2. Bit  Ausgang (Typ word)
+ *     .
+ *     n+3   ****       Zwischenvariable  n. Bit  Ausgang (Typ word)
+ *     n+4   ****       Zwischenvariable  Error   Ausgang (Typ word)
+ *     
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0   Byte
+ *                    Laenge des Zwischencode        = n+5 Worte
+ *
+ * Funktion:
+ *
+ *		      Der Baustein liest n Meldekontakte aus dem
+ *		      Prozessabbild und schreibt die Meldezustaende
+ *		      in die Ausgangsvariablen . Ist das entsprechende
+ *		      Meldebit im Prozessabbild =1 wird die
+ *		      entsprechende Ausgangsvariable true (1),
+ *		      ansonsten false (0) gesetzt.
+ *
+ *		      Die Anzahl der Meldekontakte muss immer kleiner gleich
+ *		      16 sein.
+ *		      Ist bein Lesen des Datenpunktes ein Fehler aufgetreten,
+ *		      wird der Errorhandler aufgerufen, und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ **   MicasBaustein
+******************************************** ANAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3032       Baustein-Typ
+ *     2     ****       Zwischenvariable Eingang Ausgabewert (Typ Float)
+ *     3     ****       Zwischenvariable Eingang Enable (Typ Word)
+ *     4     ****       Konstante Zeile  Eingang (Typ FGAAW oder FGAMW))
+ *     5     ****       Zwischenvariable Ausgang Error
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 6 Byte
+ *                    Laenge des Zwischencode        = 6 Worte
+ *
+ * Funktion:
+ *
+ *	   Der Baustein schreibt ein Analogwert oder fiktiven
+ *	   Messwert, auf den durch die Konstante (Zeile) addressierten
+ *	   Datenpunkt.
+ *
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	   Ist beim Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen. Und der Ausgang ERROR
+ *	   
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   Enable eine 1 hat.
+ *	   
+ *
+ **   MicasBaustein
+******************************************** BEFAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3033       Baustein-Typ
+ *     2     YY0n       Anzahl der Schaltstufen  Eingang (Typ direkt)
+ *     3     ****       Variable AUS             Eingang (Typ word)
+ *     4     ****       Variable ON1             Eingang (Typ word)
+ *     5     ****       Variable ON2             Eingang (Typ word)
+ *     6     ****       Variable ON3             Eingang (Typ word)
+ *     7     ****       Konstante Zeile Spalte   Eingang (Typ FGAME)
+ *     8     ****       Zwischenvariable Error   Ausgang (Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 3   Byte
+ *                    Laenge des Zwischencode        = 9   Worte
+ *
+ * Funktion:
+ *
+ *	   Der Baustein schaltet einen n-stufigen Schaltbefehl
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *	   Ist bein Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   einen eindeutigen Zustand hat.
+ *	   #02no95# Sche: Ergaenzung
+ *	   Es koennen auch Schaltbefehle mit Kontrolle der echten 
+ *	   Rueckmeldungen anstatt des Sollzustandes ausgegeben werden.
+ *	   Das hat den Vorteil, dass ein Befehl wiederholt wird, wenn
+ *	   die Anlage zwar eingeschalten wurde, aber das Impulsrelais
+ *	   beispielsweise nicht anzog.
+ *	   Der high Teil der Schaltstufe enthaelt einen Merker, ob
+ *	   der Test ueber die Rueckmeldungen durchgefuehrt werden soll
+ *	   (default 0 wie bisher), dies ist Bit 0 des high Bytes. 
+ *	   Desweiteren wird auf den Bits 1, 3, 5, 7 (je nach Schaltstufe)
+ *	   die Rueckmeldungsmaske erwartet. Eine 0 steht fuer einen
+ *	   Schliesser, eine 1 fuer einen Oeffner.
+ *
+ *	   Bsp fuer einstufige (Ausgabespalte 1, 5, 9, 13):
+ *		n = 0x0101 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *
+ *		n = 0x0301 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *
+ *		n = 0x0901 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *
+ *		n = 0x0b01 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *
+ *	   Bsp fuer zweistufige (Ausgabespalte 1, 9)
+ *	   (dreistufige analog zu sehen):
+ *		n = 0x0102 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x0302 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x0902 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x2102 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x0b02 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x2302 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x2902 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x2b02 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Oeffner
+ *		
+ *
+ **   MicasBaustein
+******************************************** SETMEL
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3034       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable               Eing. (Typ word) 
+ *     3     000n       Gruppenlaenge (Anzahl der Meldepunkte)Eing. (direkt)
+ *     4     ****       Zwischenvariable  Bit 1               Eing. (Typ word)
+ *     5     ****       Zwischenvariable  Bit 2               Eing. (Typ word)
+ *     .
+ *     n+3   ****       Zwischenvariable  Bit n               Eing. (Typ word)
+ *     n+4   ****       Konstante Zeile Spalte                Eing. (Typ fgaml)
+ *     n+5   ****       Zwischenvariable  Error               Ausg. (Typ word)
+ *
+ *.* Funktionswerte :
+ *          Anzahl der Vergangenheitswerte = 4   Byte
+ *          Laenge des Zwischencode        = n+6 Worte
+ *
+ * Funktion:
+ *         Der Baustein schreibt n fiktive Meldepunke
+ *	   wobei der erste Eingang der Bitwertigkeit 0+Spalte
+ *	   der zweite Eingang 1+Spalte uns. im
+ *	   Prozessabbild entspricht.
+ *         Der Baustein kann ueber die Variable Enable aktiviert
+ *	   bzw. deaktiviert werden. (Enable=1 = aktiv)
+ *
+ *	   Die Anzahl der Engaenge muss immer kleiner gleich
+ *	   16 sein.
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird nach einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	  	      
+ *	   Ist beim Schreiben des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   
+ *
+ * *   MicasBaustein
+******************************************** ZWAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3035       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable   Eingang (Typ word)
+ *     3     ****       Zwischenvariable Delta    Eingang (Typ float)
+ *     4     ****       Zwischenvariable Mode     Eingang (Typ word)
+ *     5     ****       Zwischenvariable Setzwert Eingang (Typ float)
+ *     6     ****       Zwischenvariable Zeile    Eingang (Typ fgazw)
+ *     7     ****       Zwischenvariable Error    Ausgang (Typ word)
+ *     
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 8 Worte
+ *
+ * Funktion:
+ *
+ *      Der Baustein kennt zwei Modi welche ueber die
+ *	Zwischenvariable MODE eingestellt werden koennen.
+ *	MODE = 1 ist Setzmode
+ *	MODE = 0 ist Zaehlmode
+ *
+ *	Im Setzmode wird die durch Zeile adressierte fiktive Zaehlwertzeile
+ *	mit dem Setzwert initialisiert.
+ *
+ *	Im Zaehlmodi wird die durch Zeile adressierte Zaehlwertzeile
+ *	pro Zyklus um Delta erhoeht.
+ *	Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	Befehls erfolgt ist.
+ *
+ *	Ist beim Schreiben des Datenpunktes ein Fehler aufgetreten,
+ *	wird der Errorhandler aufgerufen und der Ausgang ERROR
+ *	auf true gesetzt.
+ *	
+ *
+ **   MicasBaustein
+******************************************** DSTAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3036       Baustein-Typ
+ *     2     ****       Zwischenvariable Sollwert	Eingang (Typ Float)
+ *     3     ****       Zwischenvariable Enable		Eingang (Typ Word)
+ *     4     ****       Zwischenvariable Ausfuehrkontrollzeit 
+ *			in sec				Eingang (Typ Float)
+ *     5     ****       Konstante Zeile  Messwert Eingang (Typ FGAMW)
+ *     6     ****       Konstante Befehlszeile,Spalte   Eingang (Typ FGAML)
+ *			(fuer MUS)
+ *     7     ****       Zwischenvariable Error		Ausgang (Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 16 Byte
+ *                    Laenge des Zwischencode        = 8 Worte
+ *
+ * Funktion:
+ *
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	   Ist beim Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   Enable eine 1 hat.
+ *	   
+ **   MicasBaustein
+******************************************** ANEIN 
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     302F       Baustein-Typ
+ *     2     ****       Konstante Zeile Datenpunkt Eingang (Typ FGAAW, FGAMW)
+ *     3     ****       Zwischenvariable  Messwert Ausgang (Typ float)     
+ *     4     ****       Zwischenvariable  Error    Ausgang (Typ word)     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 5 Worte
+ *
+ * Funktion:
+ *                    Der Baustein liest ein  Messwert  oder Analogwert
+ *		      aus dem Prozessabbild aus.
+ *		      Die Messgroesse wird in die Zwischenvariable
+ *		      Ausgang Messwert geschrieben.
+ *		      Die Zeilennr. des Datenpunktes steht in der Eingangs-
+ *		      konstante .
+ *		      Der Ausgang ist vom Typ Float.
+ *		      Wird bein Lesen des Datenpunktes ein Fehler entdeckt,
+ *		      wird der Errorhandler aufgerufen und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ **   MicasBaustein
+******************************************** ZWEIN 
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3030       Baustein-Typ
+ *     2     ****       Konstante Zeile Datenpunkt Eingang (Typ FGAZW )  
+ *     3     ****       Zwischenvariable Zaehlwert Ausgang (Typ float)     
+ *     4     ****       Zwischenvariable Error)    Ausgang (Typ word)     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 5 Worte
+ *
+ * Funktion:
+ *                    Der Baustein liest ein  Zaehlwert aus dem Prozessabbild
+ *		      aus.
+ *		      Der Zaehlwert wird in die Zwischenvariable
+ *		      Ausgang Zaehlwert geschrieben.
+ *		      Die Zeilennr. des Datenpunktes steht in der Eingangs-
+ *		      konstante .
+ *		      Der Ausgang ist vom Typ Float.
+ *		      Wird bein Lesen des Datenpunktes ein Fehler entdeckt,
+ *		      wird der Errorhandler aufgerufen und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ *
+ **   MicasBaustein
+******************************************** MELEIN
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3031       Baustein-Typ
+ *     2     ****       Konstante Zeile (low) Spalte (high) Eingang (Typ FGAML)
+ *     3     000n       Gruppenlaenge (Anzahl der Meldepunkte) Eingang (direkt)
+ *     4     ****       Zwischenvariable  1. Bit  Ausgang (Typ word)
+ *     5     ****       Zwischenvariable  2. Bit  Ausgang (Typ word)
+ *     .
+ *     n+3   ****       Zwischenvariable  n. Bit  Ausgang (Typ word)
+ *     n+4   ****       Zwischenvariable  Error   Ausgang (Typ word)
+ *     
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0   Byte
+ *                    Laenge des Zwischencode        = n+5 Worte
+ *
+ * Funktion:
+ *
+ *		      Der Baustein liest n Meldekontakte aus dem
+ *		      Prozessabbild und schreibt die Meldezustaende
+ *		      in die Ausgangsvariablen . Ist das entsprechende
+ *		      Meldebit im Prozessabbild =1 wird die
+ *		      entsprechende Ausgangsvariable true (1),
+ *		      ansonsten false (0) gesetzt.
+ *
+ *		      Die Anzahl der Meldekontakte muss immer kleiner gleich
+ *		      16 sein.
+ *		      Ist bein Lesen des Datenpunktes ein Fehler aufgetreten,
+ *		      wird der Errorhandler aufgerufen, und der Ausgang Error
+ *		      auf logisch true (1) gesetzt.
+ *		      
+ *
+ *
+ * *   MicasBaustein
+******************************************** ANAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3032       Baustein-Typ
+ *     2     ****       Zwischenvariable Eingang Ausgabewert (Typ Float)
+ *     3     ****       Zwischenvariable Eingang Enable (Typ Word)
+ *     4     ****       Konstante Zeile  Eingang (Typ FGAAW oder FGAMW))
+ *     5     ****       Zwischenvariable Ausgang Error
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 6 Byte
+ *                    Laenge des Zwischencode        = 6 Worte
+ *
+ * Funktion:
+ *
+ *	   Der Baustein schreibt ein Analogwert oder fiktiven
+ *	   Messwert, auf den durch die Konstante (Zeile) addressierten
+ *	   Datenpunkt.
+ *
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	   Ist beim Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen. Und der Ausgang ERROR
+ *	   
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   Enable eine 1 hat.
+ *	   
+ *
+ * *   MicasBaustein
+******************************************** BEFAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3033       Baustein-Typ
+ *     2     YY0n       Anzahl der Schaltstufen  Eingang (Typ direkt)
+ *     3     ****       Variable AUS             Eingang (Typ word)
+ *     4     ****       Variable ON1             Eingang (Typ word)
+ *     5     ****       Variable ON2             Eingang (Typ word)
+ *     6     ****       Variable ON3             Eingang (Typ word)
+ *     7     ****       Konstante Zeile Spalte   Eingang (Typ FGAME)
+ *     8     ****       Zwischenvariable Error   Ausgang (Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 3   Byte
+ *                    Laenge des Zwischencode        = 9   Worte
+ *
+ * Funktion:
+ *
+ *	   Der Baustein schaltet einen n-stufigen Schaltbefehl
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *	   Ist bein Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   einen eindeutigen Zustand hat.
+ *	   #02no95# Sche: Ergaenzung
+ *	   Es koennen auch Schaltbefehle mit Kontrolle der echten 
+ *	   Rueckmeldungen anstatt des Sollzustandes ausgegeben werden.
+ *	   Das hat den Vorteil, dass ein Befehl wiederholt wird, wenn
+ *	   die Anlage zwar eingeschalten wurde, aber das Impulsrelais
+ *	   beispielsweise nicht anzog.
+ *	   Der high Teil der Schaltstufe enthaelt einen Merker, ob
+ *	   der Test ueber die Rueckmeldungen durchgefuehrt werden soll
+ *	   (default 0 wie bisher), dies ist Bit 0 des high Bytes. 
+ *	   Desweiteren wird auf den Bits 1, 3, 5, 7 (je nach Schaltstufe)
+ *	   die Rueckmeldungsmaske erwartet. Eine 0 steht fuer einen
+ *	   Schliesser, eine 1 fuer einen Oeffner.
+ *
+ *	   Bsp fuer einstufige (Ausgabespalte 1, 5, 9, 13):
+ *		n = 0x0101 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *
+ *		n = 0x0301 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *
+ *		n = 0x0901 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *
+ *		n = 0x0b01 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *
+ *	   Bsp fuer zweistufige (Ausgabespalte 1, 9)
+ *	   (dreistufige analog zu sehen):
+ *		n = 0x0102 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x0302 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x0902 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x2102 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x0b02 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Schliesser
+ *
+ *		n = 0x2302 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Schliesser
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x2902 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Schliesser, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Oeffner
+ *
+ *		n = 0x2b02 => check ueber Rueckmeldungen,
+ *		R0-Kontakt ist Oeffner, R1-Kontakt ist Oeffner
+ *		R2-Kontakt ist Oeffner
+ *		
+ *
+ *
+ * *   MicasBaustein
+******************************************** SETMEL
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3034       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable               Eing. (Typ word) 
+ *     3     000n       Gruppenlaenge (Anzahl der Meldepunkte)Eing. (direkt)
+ *     4     ****       Zwischenvariable  Bit 1               Eing. (Typ word)
+ *     5     ****       Zwischenvariable  Bit 2               Eing. (Typ word)
+ *     .
+ *     n+3   ****       Zwischenvariable  Bit n               Eing. (Typ word)
+ *     n+4   ****       Konstante Zeile Spalte                Eing. (Typ fgaml)
+ *     n+5   ****       Zwischenvariable  Error               Ausg. (Typ word)
+ *.* Funktionswerte :
+ *          Anzahl der Vergangenheitswerte = 4   Byte
+ *          Laenge des Zwischencode        = n+6 Worte
+ *
+ * Funktion:
+ *         Der Baustein schreibt n fiktive Meldepunke
+ *	   wobei der erste Eingang der Bitwertigkeit 0+Spalte
+ *	   der zweite Eingang 1+Spalte uns. im
+ *	   Prozessabbild entspricht.
+ *         Der Baustein kann ueber die Variable Enable aktiviert
+ *	   bzw. deaktiviert werden. (Enable=1 = aktiv)
+ *
+ *	   Die Anzahl der Engaenge muss immer kleiner gleich
+ *	   16 sein.
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird nach einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	  	      
+ *	   Ist beim Schreiben des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   
+ *
+ *
+ * *   MicasBaustein 
+******************************************** ZWAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3035       Baustein-Typ
+ *     2     ****       Zwischenvariable Enable   Eingang (Typ word)
+ *     3     ****       Zwischenvariable Delta    Eingang (Typ float)
+ *     4     ****       Zwischenvariable Mode     Eingang (Typ word)
+ *     5     ****       Zwischenvariable Setzwert Eingang (Typ float)
+ *     6     ****       Zwischenvariable Zeile    Eingang (Typ fgazw)
+ *     7     ****       Zwischenvariable Error    Ausgang (Typ word)
+ *     
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 0 Byte
+ *                    Laenge des Zwischencode        = 8 Worte
+ *
+ * Funktion:
+ *
+ *      Der Baustein kennt zwei Modi welche ueber die
+ *	Zwischenvariable MODE eingestellt werden koennen.
+ *	MODE = 1 ist Setzmode
+ *	MODE = 0 ist Zaehlmode
+ *
+ *	Im Setzmode wird die durch Zeile adressierte fiktive Zaehlwertzeile
+ *	mit dem Setzwert initialisiert.
+ *
+ *	Im Zaehlmodi wird die durch Zeile adressierte Zaehlwertzeile
+ *	pro Zyklus um Delta erhoeht.
+ *	Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	Befehls erfolgt ist.
+ *
+ *	Ist beim Schreiben des Datenpunktes ein Fehler aufgetreten,
+ *	wird der Errorhandler aufgerufen und der Ausgang ERROR
+ *	auf true gesetzt.
+ *	
+ * *   MicasBaustein 
+******************************************** DSTAUS
+ *
+ *   Index  Datenart    Bedeutung
+ *
+ *     0     Fxxx       Baustein-Nummer
+ *     1     3036       Baustein-Typ
+ *     2     ****       Zwischenvariable Sollwert	Eingang (Typ Float)
+ *     3     ****       Zwischenvariable Enable		Eingang (Typ Word)
+ *     4     ****       Zwischenvariable Ausfuehrkontrollzeit 
+ *			in sec				Eingang (Typ Float)
+ *     5     ****       Konstante Zeile  Messwert Eingang (Typ FGAMW)
+ *     6     ****       Konstante Befehlszeile,Spalte   Eingang (Typ FGAML)
+ *			(fuer MUS)
+ *     7     ****       Zwischenvariable Error		Ausgang (Typ word)
+ *
+ *.* Funktionswerte : Anzahl der Vergangenheitswerte = 16 Byte
+ *                    Laenge des Zwischencode        = 8 Worte
+ *
+ * Funktion:
+ *
+ *	   Der Befehl wird so lange ausgegeben, bis die Quittierung des
+ *	   Befehls erfolgt ist.
+ *	   Ein nichtquittierter Befehl wird mit einer im System fest
+ *	   projektierten Zeit wiederholt (BefTimeK in MINIT.H)
+ *	   Die relative Befehlswiederholzeit (Anzahl der Wartezyklen)
+ *	   wird dem Baustein vom Micasinterpreter uebergeben.
+ *	   (Siehe Struktur MicasPara MINEXT.C) 
+ *
+ *	   Ist beim Lesen des Datenpunktes ein Fehler aufgetreten,
+ *	   wird der Errorhandler aufgerufen.
+ *	   Die Ausgabe erfolgt nur, falls der Baustein am Eingang
+ *	   Enable eine 1 hat.
+ *	   
+ *
+ *                                              
+
+
+-----------------------------------------------------------------------------
+Auflistung aller Bausteine
+-----------------------------------------------------------------------------
+  *     
+ *longword (*const BsSprungVert[]) () = {
+/* 0d  0h */    ENDE,             //Verwaltung
+/* 1d  1h */    STEP,             //Verwaltung
+/* 2d  2h */    ADSU,             //Analog
+/* 3d  3h */    ADD2,             //Analog
+/* 4d  4h */    SUB2,             //Analog
+/* 5d  5h */    CHS,              //Analog
+/* 6d  6h */    MULDI,            //Analog
+/* 7d  7h */    MULT,             //Analog
+/* 8d  8h */    ABSWER,           //Analog
+/* 9d  9h */    MAX,              //Analog
+/* 10d Ah */    MIN,              //Analog
+/* 11d Bh */    LIMIT,            //Analog
+/* 12d Ch */    ABSFEU,           //Analog
+/* 13d Dh */    ENTHA,            //Analog
+/* 14d Eh */    UND2,             //Binaer
+/* 15d Fh */    UND11,            //Binaer
+/* 16d 10h */    UND21,           //Binaer
+/* 17d 11h */    UNDMN,           //Binaer
+/* 18d 12h */    NAND2,           //Binaer
+/* 19d 13h */    ODR2,            //Binaer
+/* 20d 14h */    ODRMN,           //Binaer
+/* 21d 15h */    NOR2,            //Binaer
+/* 22d 16h */    XOR2,            //Binaer
+/* 23d 17h */    NICHT,           //Binaer
+/* 24d 18h */    UVO,             //Binaer
+/* 25d 19h */    AEQ,             //Binaer
+/* 26d 1Ah */    RSS,             //Binaer
+/* 27d 1Bh */    TFF,             //Binaer
+/* 28d 1Ch */    INTE,            //Analog
+/* 29d 1Dh */    PT1,             //Analog
+/* 30d 1Eh */    VRZ,             //Binaer-Analog
+/* 31d 1Fh */    AWT,             //Binaer-Analog
+/* 32d 20h */    UST,             //Binaer-Analog
+/* 33d 21h */    SCHR,            //Binaer-Analog
+/* 34d 22h */    FKG,             //Binaer-Analog
+/* 35d 23h */    MAZ,             //Binaer-Analog
+/* 36d 24h */    SEQ2,            //Binaer-Analog
+/* 37d 25h */    SEQ3,            //Binaer-Analog
+/* 38d 26h */    VGLOH,           //Binaer-Analog
+/* 39d 27h */    VGLEH,           //Binaer-Analog
+/* 40d 28h */    VGLUH,           //Binaer-Analog
+/* 41d 29h */    VGL3P,           //Binaer-Analog
+/* 42d 2Ah */    UHR,             //Zeit
+/* 43d 2Bh */    VVZ,             //Zeit
+/* 44d 2Ch */    MOKY,            //Zeit
+/* 45d 2Dh */    MOKS,            //Zeit
+/* 46d 2Eh */    PDM,             //Zeit
+/* 47d 2Fh */    ANEIN,           //Transfer
+/* 48d 30h */    ZWEIN,           //Transfer
+/* 49d 31h */    MELEIN,          //Transfer
+/* 50d 32h */    ANAUS,           //Transfer
+/* 51d 33h */    BEFAUS,          //Transfer
+/* 52d 34h */    SETMEL,          //Transfer
+/* 53d 35h */    ZWAUS,           //Transfer
+/* 54d 36h */    DSTAUS,          //Transfer
+/* 55d 37h */    REGLER,          //Regler-Sollken
+/* 56d 38h */    SOLKEN,          //Regler-Sollken
+/* 57d 39h */    UREG,            //Regler-Sollken
+/* 58d 3Ah */    ATRA,            //Analog
+/* 59d 3Bh */    BTRA,            //Binaer
+/* 60d 3Ch */    TTZEIT,          //Analog
+/* 61d 3Dh */    BENDE,           //Verwaltung
+/* 62d 3Eh */    SIN_,            //Math
+/* 63d 3Fh */    COS_,            //Math
+/* 64D 40H */    EHOX,            //Math
+/* 65d 41h */    LN,              //Math
+/* 66d 42h */    LOG,             //Math
+/* 67d 43h */    XHOY ,           //Math
+/* 68d 44h */    RAD,             //Math
+/* 69d 45h */    DEG,             //Math
+/* 70d 46h */    SQRT,            //Math
+/* 71d 47h */    QUAD,            //Math
+/* 72d 48h */    REZI,            //Math
+/* 73d 49h */    MULK2,           //Math
+/* 74d 4Ah */    DIVK2,           //Math
+/* 75d 4Bh */    OPORTB,          //Intern
+/* 76d 4Ch */    IPORTB,          //Intern
+/* 77d 4Dh */    MSET,            //Intern
+/* 78d 4Eh */    MCPY,            //Intern
+/* 79d 4Fh */	 HLG,               //Math
+/* 80d 50h */	 TSTART,            //Intern
+/* 81d 51h */	 TMESS,             //Intern
+/* 82d 52h */	 LREG,    /* 16.6.92 */         //Regler-Sollken
+/* 83d 53h */	 KALUHR,  /* 26.6.92 */         //Zeit
+/* 84d 54h */	 ABFEUG,  /* 26.6.92 */         //Analog
+/* 85d 55h */	 ENTHAG,  /* 26.6.92 */         //Analog
+/* 86d 56h */	 FTOB,    /* #11no97# */        //Intern
+/* 87d 57h */	 BTOF};	  /* #11no97# */        //Intern
+

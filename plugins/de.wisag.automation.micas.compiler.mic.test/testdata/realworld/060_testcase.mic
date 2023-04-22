@@ -1,0 +1,403 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01309.GPS
+  ;*** Projektname    : MPI NMR 1
+  ;*** Projektnummer  : 33100367
+  ;*** Bearbeiter     : Romahn
+  ;*** Prüfer         : Peters
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 13
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 9
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Lade_PU_R1
+  WordK  K0 (0)
+  WordV  Anl_WWB_R1_1
+  WordV  Entriegeln
+  WordK  Anl_WWB_R1 (0)
+  WordV  Anl_WWB_EIN1
+  WordV  Zirk_PU_R1_1
+  WordK  Zirk_PU_R1 (0)
+  FloatV Zirk_Temp
+  WordV  Zirk_PU_EIN1
+  FloatK SW_Speicher_Aus (60.00)
+  WordV  Unterspannung
+  WordV  K1
+  WordV  Ventil_ST
+  FloatV Speicher_Temp_O
+  FloatV Ruecksig_Ventil
+  FloatV Speicher_Temp_U
+  FloatV Sig_Ventil
+  WordV  Entriegeln_Tas
+  WordV  Lade_PU_ST
+  WordV  Lade_PU_R0
+  WordV  STB_WWB
+  WordV  Zirk_PU_R0
+  WordV  Zirk_PU_ST
+  WordV  Anl_WWB_R1_2
+  WordV  Anl_WWB_R0
+  WordV  Anl_WWB_ST
+  WordV  Ladung_Ein
+  FloatK SW_Speicher_Ein (60.00)
+  WordV  Entriegeln_Bef
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B3
+  FloatK $M2 (4.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B4
+  WordV  $HB0
+  FloatK $M4 (20.00)
+  FloatK $M5 (0.00)
+  WordV  $B5
+  FloatK $M6 (0.00)
+  FloatK $M7 (5.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $WSCRATCH
+  WordV  $B9
+  WordV  $B10
+  IPAMB &M8 (61,1)
+  IPAMB &M9 (61,2)
+  IPAMB &M10 (61,3)
+  IPAMB &M11 (0,0)
+  IPAMB &M12 (42,5)
+  IPAMB &M13 (42,6)
+  WordV  $HB2
+  IPAMB &M14 (42,7)
+  IPAMB &M16 (53,14)
+  IPAMB &M17 (51,11)
+  IPAMB &M19 (0,11)
+  IPAMB &M20 (0,14)
+  IPAMB &M21 (41,13)
+  IPAMB &M22 (53,15)
+  IPAMB &M23 (41,15)
+  IPAMW &M24 (57)
+  IPAMW &M25 (58)
+  IPAMW &M26 (59)
+  IPAMW &M27 (60)
+  IPAAW &M28 (62)
+  FloatV $F1
+  FloatK $M29 (70.00)
+  FloatK $M30 (40.00)
+  FloatV $F2
+  FloatK $M31 (10.00)
+  WordV  $B11
+  WordK  $M32 (1)
+  IPAAW &M34 (63)
+  FloatV $F3
+  FloatK $M35 (70.00)
+  FloatK $M36 (40.00)
+  FloatV $F4
+  FloatK $M37 (10.00)
+  WordV  $B12
+  WordK  $M38 (1)
+  FloatV $F5
+  FloatV $F6
+  FloatK $M40 (10.00)
+  WordV  $B13
+  WordV  $B14
+  WordV  $HB1
+  FloatV $F7
+  FloatK $M41 (180.00)
+  WordV  $B15
+  WordK  $M42 (1)
+  IPAMB &M43 (61,0)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  FloatK $M44 (172800.00)
+  FloatK $M45 (0.00)
+  WordV  $B20
+  FloatK $M46 (300.00)
+  WordV  $B21
+  FloatK $M47 (4.00)
+  FloatK $M48 (2.00)
+  WordV  $B22
+  FloatK $M49 (0.00)
+  FloatK $M50 (300.00)
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  FloatK $M52 (172800.00)
+  FloatK $M53 (0.00)
+  WordV  $B28
+  FloatK $M54 (300.00)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B35
+  WordV  $B31
+  WordV  $B36
+  WordV  $B32
+  WordV  $B33
+  WordV  $B37
+  WordV  $B34
+  WordK  $M56 (1)
+  IPAAW &M57 (31)
+  FloatK $M58 (0.00)
+  FloatK $M59 (100.00)
+  WordV  $B38
+  WordV  $B41
+  WordV  $B39
+  WordV  $B42
+  WordV  $B40
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:  MPI Göttingen
+  ;Projekt:NMR 1
+  ;Anlage: WWB
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_WWB_R1,Anl_WWB_EIN1)
+  BTRA (Zirk_PU_R1,Zirk_PU_EIN1)
+  ENDE 
+  TASK (2,cycl,2000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anl_WWB_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B3,Anl_WWB_R1_1)
+  NICHT ($B1,$B3)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Zirk_PU_EIN1,$M2,$M3,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B4,Zirk_PU_R1_1)
+  NICHT ($B2,$B4)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M4,$M5,$B5)
+  VVZ (Anl_WWB_R1,$M6,$M7,$B6)
+  UND11 ($B6,$B5,$B7)
+  RSS ($B7,Anl_WWB_R1,$B8,$WSCRATCH)
+  UND2 ($B8,$B5,$B9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B9,$B10,Anl_WWB_R1_2)
+  NICHT ($B9,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,Anl_WWB_R0,$WSCRATCH)
+  MELEIN (&M9,1,Anl_WWB_ST,$WSCRATCH)
+  MELEIN (&M10,1,Anl_WWB_R1,$WSCRATCH)
+  MELEIN (&M11,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M12,1,Zirk_PU_R0,$WSCRATCH)
+  MELEIN (&M13,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Zirk_PU_ST)
+  MELEIN (&M14,1,Zirk_PU_R1,$WSCRATCH)
+  MELEIN (&M11,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_WWB)
+  MELEIN (&M17,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  MELEIN (&M11,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,Entriegeln_Bef,$WSCRATCH)
+  MELEIN (&M20,1,Entriegeln_Tas,$WSCRATCH)
+  MELEIN (&M21,1,Lade_PU_R0,$WSCRATCH)
+  MELEIN (&M22,1,Lade_PU_ST,$WSCRATCH)
+  MELEIN (&M23,1,Lade_PU_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entriegeln_Bef,Entriegeln_Tas,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M24,Zirk_Temp,$WSCRATCH)
+  ANEIN (&M25,Speicher_Temp_O,$WSCRATCH)
+  ANEIN (&M26,Speicher_Temp_U,$WSCRATCH)
+  ANEIN (&M27,Ruecksig_Ventil,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M28,$F1,$WSCRATCH)
+  LIMIT ($F1,$M29,$M30,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M31,$B11)
+  AWT ($B11,$F2,SW_Speicher_Ein,SW_Speicher_Ein)
+  ANAUS (SW_Speicher_Ein,$M32,&M28,$WSCRATCH)
+  ANEIN (&M34,$F3,$WSCRATCH)
+  LIMIT ($F3,$M35,$M36,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M37,$B12)
+  AWT ($B12,$F4,SW_Speicher_Aus,SW_Speicher_Aus)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;Default-Werte setzen
+  ;8
+  ; 
+  ANAUS (SW_Speicher_Aus,$M38,&M34,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  SUB2 (Sig_Ventil,Ruecksig_Ventil,$F5)
+  ABSWER ($F5,$F6)
+  VGLOH ($F6,$M40,$B13)
+  UND11 ($B13,Entriegeln,$B14)
+  NICHT ($B14,$HB1)
+  UHR (K1,$HB1,$F7)
+  VGLOH ($F7,$M41,$B15)
+  RSS ($B15,Entriegeln,Ventil_ST,$WSCRATCH)
+  SETMEL ($M42,1,Ventil_ST,&M43,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1027744nd
+  ;dauert diese länger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  VGLOH (SW_Speicher_Ein,Speicher_Temp_O,$B16)
+  VGLOH (Speicher_Temp_U,SW_Speicher_Aus,$B17)
+  RSS ($B16,$B17,$B18,$WSCRATCH)
+  UND21 ($B18,Anl_WWB_R1,STB_WWB,Ladung_Ein)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UNDMN (0,2,Lade_PU_R1,$B21,$B19,$WSCRATCH)
+  VVZ ($B19,$M44,$M45,$B20)
+  MOKY ($B20,$M46,$B21)
+  VGLEH (Sig_Ventil,$M47,$M48,$B22)
+  VVZ ($B22,$M49,$M50,$B23)
+  ODR2 ($B21,$B23,$B24)
+  UNDMN (1,$B24,2,Lade_PU_ST,STB_WWB,$B25,$B26)
+  BEFAUS (1,$B26,$B25,$WZERO,$WZERO,&M21,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  UNDMN (0,2,Zirk_PU_R1,$B29,$B27,$WSCRATCH)
+  VVZ ($B27,$M52,$M53,$B28)
+  MOKY ($B28,$M54,$B29)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Zirk_PU_R1,$B35,$B30)
+  NICHT (Zirk_PU_R1,$B35)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_WWB_R1,$B36,$B31)
+  NICHT (Anl_WWB_R1,$B36)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B29,$B30,Zirk_PU_R1_1,$B31,0,$B32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Zirk_PU_R0,$B37,$B33)
+  NICHT (Zirk_PU_R0,$B37)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Zirk_PU_ST,$B33,$B34)
+  BEFAUS (1,$B34,$B32,$WZERO,$WZERO,&M12,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANAUS (Sig_Ventil,$M56,&M57,$WSCRATCH)
+  ;WWB-Ventil
+  ; 
+  AWT (Ladung_Ein,$M58,$M59,Sig_Ventil)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_WWB_R0,$B41,$B38)
+  NICHT (Anl_WWB_R0,$B41)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_WWB_R1,$B42,$B39)
+  NICHT (Anl_WWB_R1,$B42)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,Anl_WWB_R1_1,Anl_WWB_R1_2,$B39,0,$B40,$WSCRATCH)
+  BEFAUS (1,$B38,$B40,$WZERO,$WZERO,&M8,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

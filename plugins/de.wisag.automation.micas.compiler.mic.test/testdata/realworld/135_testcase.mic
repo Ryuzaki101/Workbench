@@ -1,0 +1,212 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI40507.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 4
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  k1 (1)
+  WordV  Anl_normal_AUS
+  WordV  Anl_gestoert_AUS
+  WordV  Anl_Entrauch-Bet
+  WordV  Anl_Vmax
+  WordV  Anl_Vmin
+  WordV  Anl_Havarie
+  WordV  33_VSR_ZU-fahre
+  WordK  33_Hararie-Raum (0)
+  WordV  33_VSR_EIN1
+  WordK  33_VSR_R1 (1)
+  WordV  33_Taster
+  WordV  33_VSR_EIN1_1
+  FloatV 33_VSR_ZUL+ABL
+  IPAMB &M0 (158,3)
+  WordV  $WSCRATCH
+  IPAMB &M1 (76,14)
+  IPAMB &M2 (1,0)
+  IPAMB &M8 (251,0)
+  IPAMB &M9 (251,1)
+  IPAMB &M10 (251,2)
+  IPAMB &M11 (251,3)
+  IPAMB &M12 (251,4)
+  IPAMB &M13 (251,5)
+  WordV  $B1
+  FloatK $M16 (50.00)
+  FloatK $M17 (4.00)
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M18 (76,13)
+  WordV  $B5
+  WordV  $HB1
+  WordV  $B9
+  WordV  $B6
+  WordV  $B10
+  WordV  $B7
+  IPAMB &M19 (158,1)
+  WordV  $B8
+  FloatK $M20 (50.00)
+  FloatK $M21 (100.00)
+  FloatV $F1
+  FloatK $M22 (0.00)
+  WordK  $M23 (1)
+  IPAAW &M24 (97)
+  FloatK $M25 (8.00)
+  FloatK $M26 (0.00)
+  WordV  $B11
+  WordV  $B12
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;In dieser BM existieren
+  ;nur in den Räumen 201 +
+  ;204 örtliche Ventilator-
+  ;Stufenschalter. Diese
+  ;Programmvorlage rührt
+  ;aus der BM im Turm 3 her
+  ; 
+  ;Der Einfachheit halber
+  ;verbleiben die Variablen
+  ;von fehlenden Schalter-
+  ;stellungen; diese werden
+  ;im Zuordnungseditor auf
+  ;0 oder 1 gesetzt.
+  ; 
+  ;VSR in den
+  ;Räumen:
+  ;33
+  ; 
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Göttingen
+  ;Projekt: Sanierung
+  ;         Turm 4
+  ;         SOG + SUG
+  ;Anlage:  EZR / ULKG
+  ; 
+  ;Um die Variablennamen
+  ;nicht bei jedem Programm
+  ;an die Raum-Nr. anpassen
+  ;zu müssen, werden die
+  ;Räume je Programm und
+  ;Modul mit A, B, C usw.
+  ;durch"nummeriert".
+  ;keine ULKG-Funktionen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (33_VSR_R1,33_VSR_EIN1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,200)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,33_VSR_R1,$WSCRATCH)
+  MELEIN (&M1,1,33_Taster,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,Anl_normal_AUS,$WSCRATCH)
+  MELEIN (&M9,1,Anl_gestoert_AUS,$WSCRATCH)
+  MELEIN (&M10,1,Anl_Entrauch-Bet,$WSCRATCH)
+  MELEIN (&M11,1,Anl_Vmax,$WSCRATCH)
+  MELEIN (&M12,1,Anl_Vmin,$WSCRATCH)
+  MELEIN (&M13,1,Anl_Havarie,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  UNDMN (4,33_VSR_R1,Anl_Vmax,k1,k1,0,$B1,$WSCRATCH)
+  PDM ($M16,$M17,$B2)
+  UND2 ($B2,$B8,$B3)
+  ODR2 ($B1,$B3,$B4)
+  NICHT ($B4,$HB0)
+  BEFAUS (1,$HB0,$B4,$WZERO,$WZERO,&M18,$WSCRATCH)
+  ;LED ist an, wenn Anlage
+  ;+ Ventilatoren EIN, sie
+  ;blinkt bei Anl.-Störung
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B9,33_VSR_R1,$B5)
+  NICHT (33_VSR_R1,$HB1)
+  NICHT ($HB1,$B9)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (33_VSR_R1,$B10,$B6)
+  NICHT (33_VSR_R1,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,33_VSR_EIN1_1,33_Taster,$B6,0,$B7,$WSCRATCH)
+  BEFAUS (1,$B5,$B7,$WZERO,$WZERO,&M19,$WSCRATCH)
+  ;Fiktiver Tagbetriebs-
+  ;Befehl für VSR
+  ; 
+  ODR2 (Anl_gestoert_AUS,33_VSR_ZU-fahre,$B8)
+  UND2 (Anl_Havarie,33_Hararie-Raum,33_VSR_ZU-fahre)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  AWT (33_VSR_R1,$M20,$M21,$F1)
+  AWT (33_VSR_ZU-fahre,$F1,$M22,33_VSR_ZUL+ABL)
+  ANAUS (33_VSR_ZUL+ABL,$M23,&M24,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  VVZ (33_VSR_EIN1,$M25,$M26,$B11)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B11,$B12,33_VSR_EIN1_1)
+  NICHT ($B11,$B12)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

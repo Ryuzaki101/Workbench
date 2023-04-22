@@ -1,0 +1,775 @@
+s
+*cd
+05A6:09A8 311A 0000 0002 50FE 07FF D1A1 7C60 0064 
+05A6:09B8 051A 0120 28B0 C000 FB38 C040 090E 0903 
+05A6:09C8 0000 0000 7700 0000 0000 0000 0000 0000 
+05A6:09D8 4F64 4F00 
+Adr PA = 0000:311A 
+Modul  : ccER12
+EPROM A09,A08: 38  40  
+Version: V13.3 29-Feb-2012 10:24:11
+Continue with return or [Y] 
+Factory Data:
+ Serial Number: 00454
+ Test Date    : 24-05-2011
+ Tester       : Ry
+ Trim Factor  : 156
+
+Range Calibration Data:
+ 200 Ohm: 000 - 04041
+ 2  kOhm: 000 - 04128
+ 20 kOhm: 000 - 04118
+ 0-1  V : 000 - 04075
+ 0-10 V : 000 - 04082
+
+CPLD-Version does not support I²C - cannot read internal temperature
+
+Continue with return or [Y] 
+Different work parameters:
+ Pulsetime for commands:  400 ms
+ Delaytime for coming Msg: 10 ms
+ Holdtime  for going  Msg: 10 ms
+
+HMI works at Sio
+Baudrate for Sio: 19200 Baud
+Sio works with XON<->XOFF (SW) hand shake
+
+Ethernet chip: AM79C960
+MAC addr: 00:00:c4:a0:01:c6  Used connector: 10B-T (twisted pair)
+PHY addr: 07   Speed from EEPROM: AUTODETECT   Speed from PHY: 100M
+Internet addr : 192.168.001.157  Netmask : 255.255.255.000 (192.168.001.000)
+Effective host: 000000ff     ... Netmask : ffffff00
+This interface is default interface of TCP/IP
+Defaultroute uses Gateway : 192.168.001.001
+
+GA2000-Bus works with Ethernet
+Continue with return or [Y] 
+GA2000 works with US-Nr: 01
+
+Parameters from EEPROM for PROVI-Bus:
+GerAdr:   2  MaxAdr:  32  MaxTelAnz:   8  StoerZyklen:  2  Baudrate: 19200
+
+Continue with return or [Y] 
+Peer-to-Peer (P2P) is done over ethernet, following devices participate:
+[GerAdr_h]  Internet Addr   LifeTmr  RcvErr  -Ctr   SndErr  -Ctr
+P2P[01]   : 192.168.001.155  00050    0000   00000   0000   00000
+P2P[02]   : 192.168.001.157  00060    0000   00000   0000   00000  -> own US
+P2P[03]   : 192.168.001.156  00000    0000   00000   0000   00000
+P2P[04]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[05]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[06]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[07]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[08]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[09]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[10]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[11]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[12]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[13]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[14]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[15]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P works with UDP
+P2P range from 1 .. 15
+P2P default cycle: 20   life cycle: 60
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Continue with return or [Y] 
+
+Minimal priority of messages which are sent as events (to PC-LS or ICA): 0
+ZLT works with US-Nr: 01
+
+
+
+*ÿøxàøxàøxà
+unknown command
+**
+**
+*cd
+0717:09A8 12E0 0000 0002 0453 0A04 C92B 0FE0 0032 
+0717:09B8 2A54 00EA 2C42 C000 1E04 06CD 0000 0000 
+0717:09C8 0000 0000 0A00 0000 0000 0000 0000 0000 
+0717:09D8 0000 0000 
+Adr PA = 0000:12E0 
+Modul  : 29SP20
+EPROM  : 04  
+Version: V53 14-Jul-99 20:39:07
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 005
+Selectable fieldbus devices : 
+002
+003
+004
+005
+012
+
+*chd2
+
+Own Device ! 
+
+**
+**
+*cd
+0717:09A8 3580 0000 0002 10FF 0926 DE7E 3C60 0082 
+0717:09B8 5F6A 0120 2B29 C000 7038 F840 0955 094B 
+0717:09C8 0000 0000 3700 0030 0050 0060 0070 0080 
+0717:09D8 0000 0000 
+Adr PA = 0000:3580 
+Modul  : 29ZP20
+EPROM A09,A08: 38  40  
+Version: V116 04-Feb-2008 11:46:17
+Continue with return or [Y] 
+
+29EI20 is plugged in (ethernet interface should be active)
+Ethernet chip: LAN91c96    Revision: 9
+TCR Para: TX-ENA  
+RCR Para: ALMUL  RX-ENA  STRIP-CRC  
+CTL Para: TE-ENA  CR-ENA  LE-ENA  AUTORELEASE  
+CNF Para: 16BIT  
+MAC addr: 00:00:c4:a0:04:78  Used connector:  0 : 10B-T (twisted pair)
+Internet addr : 192.168.001.156  Netmask : 255.255.255.000 (192.168.001.000)
+This interface is default interface of TCP/IP
+
+GA2000-Bus works with TCP/IP
+GA2000 works with US-Nr: 00
+
+Parameters from EEPROM for PROVI-Bus:
+GerAdr:   2  MaxAdr:  32  MaxTelAnz:   8  StoerZyklen:  2  Baudrate: 19200
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Continue with return or [Y] 
+Peer-to-Peer (P2P) is done over ethernet, following devices participate:
+[GerAdr_h]  Internet Addr   LifeTmr  RcvErr  -Ctr   SndErr  -Ctr
+P2P[01]   : 192.168.001.156  00060    0000   00000   0000   00000  -> own US
+P2P[02]   : 192.168.001.157  00040    0000   00000   0000   00000
+P2P[03]   : 192.168.001.155  00000    0000   00000   0000   00000
+P2P[04]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[05]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[06]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[07]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[08]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[09]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[10]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[11]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[12]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[13]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[14]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[15]   : 000.000.000.000  00000    0000   00000   0000   00000
+Peer-to-Peer (P2P) range from 1 .. 15
+Continue with return or [Y] 
+Peer-to-Peer (P2P) default cycle: 20   life cycle: 60
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Minimal priority of messages which are sent as events (to PC-LS or ICA): 0
+ZLT works with US-Nr: 00
+Baudrate for Sio: 9600 Baud
+
+**
+**
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+003
+004
+005
+012
+
+*cd
+0717:09A8 3580 0000 0002 10FF 0926 DE7E 3C60 0082 
+0717:09B8 5F6A 0120 2B29 C000 7038 F840 0955 094B 
+0717:09C8 0000 0000 3700 0030 0050 0060 0070 0080 
+0717:09D8 0000 0000 
+Adr PA = 0000:3580 
+Modul  : 29ZP20
+EPROM A09,A08: 38  40  
+Version: V116 04-Feb-2008 11:46:17
+Continue with return or [Y] 
+
+29EI20 is plugged in (ethernet interface should be active)
+Ethernet chip: LAN91c96    Revision: 9
+TCR Para: TX-ENA  
+RCR Para: ALMUL  RX-ENA  STRIP-CRC  
+CTL Para: TE-ENA  CR-ENA  LE-ENA  AUTORELEASE  
+CNF Para: 16BIT  
+MAC addr: 00:00:c4:a0:04:78  Used connector:  0 : 10B-T (twisted pair)
+Internet addr : 192.168.001.156  Netmask : 255.255.255.000 (192.168.001.000)
+This interface is default interface of TCP/IP
+
+GA2000-Bus works with TCP/IP
+GA2000 works with US-Nr: 00
+
+Parameters from EEPROM for PROVI-Bus:
+GerAdr:   2  MaxAdr:  32  MaxTelAnz:   8  StoerZyklen:  2  Baudrate: 19200
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Continue with return or [Y] 
+Peer-to-Peer (P2P) is done over ethernet, following devices participate:
+[GerAdr_h]  Internet Addr   LifeTmr  RcvErr  -Ctr   SndErr  -Ctr
+P2P[01]   : 192.168.001.156  00060    0000   00000   0000   00000  -> own US
+P2P[02]   : 192.168.001.157  00040    0000   00000   0000   00000
+P2P[03]   : 192.168.001.155  00000    0000   00000   0000   00000
+P2P[04]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[05]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[06]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[07]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[08]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[09]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[10]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[11]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[12]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[13]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[14]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[15]   : 000.000.000.000  00000    0000   00000   0000   00000
+Peer-to-Peer (P2P) range from 1 .. 15
+Continue with return or [Y] mhmhmhmhmh
+unknown command
+**
+**
+**
+* deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+restart NOW
+
+Tasks locked => do restart with Q
+**
+*q
+
+checksum EPROMs: 
+checksum BANK 0: 010e7b00 010c7c01
+checksum BANK 1: 01232002 0120c403
+checksum BANK 2: 01104a04 010d6c05
+checksum BANK 3: 013fbe06 01402d07
+checksum BANK 4: 00d57308 00d3a709
+checksum BANK 5: 00ee470a 00ecad0b
+checksum BANK 6: 01fdff0c 01fdff0d
+checksum BANK 7: 00cb9f0e 00ca940f
+checksum EPROMs: 090efb38(OK) 0903c040(OK) 
+testing RAM!
+ready ... 
+time: 23:53:18  date: 07-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+No Sio_2 mounted
+
+CODE: 
+CODE: 
+CODE: 
+**
+**
+*
+CODE: 
+CODE: 
+CODE: 
+CODE: 
+**
+**
+* deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+restart NOW
+
+Tasks locked => do restart with Q
+**
+*q
+
+checksum EPROMs: 
+checksum BANK 0: 010f0300 010d1101
+checksum BANK 1: 01236a02 01211003
+checksum BANK 2: 0110a004 010dbb05
+checksum BANK 3: 013f9c06 013ffe07
+checksum BANK 4: 00d38208 00d23b09
+checksum BANK 5: 00eeca0a 00ece40b
+checksum BANK 6: 01697b0c 0168f70d
+checksum BANK 7: 00d0200e 00cfef0f
+checksum EPROMs: 087e9038(OK) 0873df40(OK) 
+testing RAM!
+ready ... 
+time: 07:23:48  date: 05-02-08
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 10-Feb-2012 15:20:07  CPLD Version: 2    |
+|                                                            |
++------------------------------------------------------------+
+No Sio_2 mounted
+
+CODE: 
+07:24:01 MODUL RESTART               (UZ/US/P2P-GERAET)    :  0/ 1/ 2         
+07:24:01 MODUL RESTART               (UZ/US/P2P-GERAET)    :  0/ 2/ 2         time: 10:18:52  date: 02-03-12
++------------------------------------------------------------+
+| ABB Gebaeudeautomation                            GAT/T    |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|            Version: V116 04-Feb-2008 11:46:17              |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+**
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+003
+004
+005
+012
+
+*Wait, until following actions are done:
+Data base of others is deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*qtime: 10:23:54  date: 02-03-12
++------------------------------------------------------------+
+| ABB Gebaeudeautomation                            GAT/T    |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|            Version: V116 04-Feb-2008 11:46:17              |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+CODE: 
+**
+*time: 08:07:11  date: 05-02-08
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 10-Feb-2012 15:20:07  CPLD Version: 2    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+**
+**
+*Wait, until following actions are done:
+Data base of others is deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*qtime: 08:10:15  date: 05-02-08
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 10-Feb-2012 15:20:07  CPLD Version: 2    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+CODE: 
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+
+**
+*time: 00:42:30  date: 08-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+**
+*Wait, until following actions are done:
+Data base of others is deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*qtime: 00:42:54  date: 08-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+
+**
+**
+*time: 03:21:38  date: 08-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+**
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+
+**
+**
+*cd
+0507:09A8 311A 0000 0002 50FE 07FF D1A1 7C60 0064 
+0507:09B8 051A 0120 28B0 C000 FB38 C040 090E 0903 
+0507:09C8 0000 0000 7700 0000 0000 0000 0000 0000 
+0507:09D8 4F64 4F00 
+Adr PA = 0000:311A 
+Modul  : ccER12
+EPROM A09,A08: 38  40  
+Version: V13.3 29-Feb-2012 10:24:11
+Continue with return or [Y] 
+Factory Data:
+ Serial Number: 00454
+ Test Date    : 24-05-2011
+ Tester       : Ry
+ Trim Factor  : 156
+
+Range Calibration Data:
+ 200 Ohm: 000 - 04041
+ 2  kOhm: 000 - 04128
+ 20 kOhm: 000 - 04118
+ 0-1  V : 000 - 04075
+ 0-10 V : 000 - 04082
+
+CPLD-Version does not support I²C - cannot read internal temperature
+
+Continue with return or [Y] 
+Different work parameters:
+ Pulsetime for commands:  400 ms
+ Delaytime for coming Msg: 10 ms
+ Holdtime  for going  Msg: 10 ms
+
+HMI works at Sio
+Baudrate for Sio: 19200 Baud
+Sio works with XON<->XOFF (SW) hand shake
+
+Ethernet chip: AM79C960
+MAC addr: 00:00:c4:a0:01:c6  Used connector: 10B-T (twisted pair)
+PHY addr: 07   Speed from EEPROM: AUTODETECT   Speed from PHY: 100M
+Internet addr : 192.168.001.157  Netmask : 255.255.255.000 (192.168.001.000)
+Effective host: 000000ff     ... Netmask : ffffff00
+This interface is default interface of TCP/IP
+Defaultroute uses Gateway : 192.168.001.001
+
+GA2000-Bus works with Ethernet
+Continue with return or [Y] 
+GA2000 works with US-Nr: 01
+
+Parameters from EEPROM for PROVI-Bus:
+GerAdr:   2  MaxAdr:  32  MaxTelAnz:   8  StoerZyklen:  2  Baudrate: 19200
+
+Continue with return or [Y] 
+Peer-to-Peer (P2P) is done over ethernet, following devices participate:
+[GerAdr_h]  Internet Addr   LifeTmr  RcvErr  -Ctr   SndErr  -Ctr
+P2P[01]   : 192.168.001.156  00060    0000   00000   0000   00000
+P2P[02]   : 192.168.001.157  00060    0000   00000   0000   00000  -> own US
+P2P[03]   : 192.168.001.155  00055    0000   00000   0000   00000
+P2P[04]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[05]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[06]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[07]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[08]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[09]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[10]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[11]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[12]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[13]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[14]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[15]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P works with UDP
+P2P range from 1 .. 15
+P2P default cycle: 20   life cycle: 60
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Continue with return or [Y] d
+*
+*
+unknown command
+*cd
+0507:09A8 311A 0000 0002 50FE 07FF D1A1 7C60 0064 
+0507:09B8 051A 0120 28B0 C000 FB38 C040 090E 0903 
+0507:09C8 0000 0000 7700 0000 0000 0000 0000 0000 
+0507:09D8 4F64 4F00 
+Adr PA = 0000:311A 
+Modul  : ccER12
+EPROM A09,A08: 38  40  
+Version: V13.3 29-Feb-2012 10:24:11
+Continue with return or [Y] 
+Factory Data:
+ Serial Number: 00454
+ Test Date    : 24-05-2011
+ Tester       : Ry
+ Trim Factor  : 156
+
+Range Calibration Data:
+ 200 Ohm: 000 - 04041
+ 2  kOhm: 000 - 04128
+ 20 kOhm: 000 - 04118
+ 0-1  V : 000 - 04075
+ 0-10 V : 000 - 04082
+
+CPLD-Version does not support I²C - cannot read internal temperature
+
+Continue with return or [Y] 
+Different work parameters:
+ Pulsetime for commands:  400 ms
+ Delaytime for coming Msg: 10 ms
+ Holdtime  for going  Msg: 10 ms
+
+HMI works at Sio
+Baudrate for Sio: 19200 Baud
+Sio works with XON<->XOFF (SW) hand shake
+
+Ethernet chip: AM79C960
+MAC addr: 00:00:c4:a0:01:c6  Used connector: 10B-T (twisted pair)
+PHY addr: 07   Speed from EEPROM: AUTODETECT   Speed from PHY: 100M
+Internet addr : 192.168.001.157  Netmask : 255.255.255.000 (192.168.001.000)
+Effective host: 000000ff     ... Netmask : ffffff00
+This interface is default interface of TCP/IP
+Defaultroute uses Gateway : 192.168.001.001
+
+GA2000-Bus works with Ethernet
+Continue with return or [Y] 
+GA2000 works with US-Nr: 01
+
+Parameters from EEPROM for PROVI-Bus:
+GerAdr:   2  MaxAdr:  32  MaxTelAnz:   8  StoerZyklen:  2  Baudrate: 19200
+
+Continue with return or [Y] 
+Peer-to-Peer (P2P) is done over ethernet, following devices participate:
+[Ger  00000  00000
+P2P[09]   : 000.000.000.000  00 -Ctr   SndErr  -Ctr
+
+P2P[01]   : 192.168.001.156  00050    0000   00000   0000   00000P2P[09]   : 000.000.000.000  00
+P2P[02]   : 192.168.001.157  00060    0000   00000   0000   00000  -> own US
+P2P[03]   : 192.168.001.155  00045    0000   00000   0000   00000
+P2P[04]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[05]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[06]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[07]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[08]   : 000.000.000.000  00000    0000   00000   0000 000    0000   00000   0000   00000
+P2P[10]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[11]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[12]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[13]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[14]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P[15]   : 000.000.000.000  00000    0000   00000   0000   00000
+P2P works with UDP
+P2P range from 1 .. 15
+P2P default cycle: 20   life cycle: 60
+First global PA-line from EEPROM for Peer-to-Peer Bus or High-Bus:     255
+Continue with return or [Y] time: 03:28:14  date: 08-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+CODE: 
+**
+**
+*cd
+0507:09A8 311A 0000 0002 50FE 07FF D1A1 7C60 0064 
+0507:09B8 051A 0120 28B0 C000 FB38 C040 090E 0903 
+0507:09C8 0000 0000 7700 0000 0000 0000 0000 0000 
+0507:09D8 4F64 4F00 
+Adr PA = 0000:311A 
+Modul  : ccER12
+EPROM A09,A08: 38  40  
+Version: V13.3 29-Feb-2012 10:24:11
+Continue with return or [Y] s
+*pa255
+
+Line : 255  0000:3D0E ---               00000 00000  0                000  000
+
+**
+*pa40
+
+Line : 040  0000:32FA ---               00000 00000  0                000  000
+
+*pa240
+
+Line : 240  0000:3C5A ---               00000 00000  0                000  000
+
+**
+**
+*pa241
+
+Line : 241  0000:3C66 ---               00000 00000  0                000  000
+
+*pa242
+
+Line : 242  0000:3C72 ---               00000 00000  0                000  000
+
+**
+**
+*
+CODE: 
+CODE: 
+CODE: 
+CODE: 
+*wing actions are done:
+Data base of others is deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*q
+
+checksum EPROMs: 
+checksum BANK 0: 010ff400 010d9801
+checksum BANK 1: 0124b602 0122b603
+checksum BANK 2: 0110a404 010e4805
+checksum BANK 3: 013db906 013dfe07
+checksum BANK 4: 00e84508 00e6e809
+checksum BANK 5: 00f9150a 00f8090b
+checksum BANK 6: 01fdff0c 01fdff0d
+checksum BANK 7: 00f3100e 00f2740f
+checksum EPROMs: 09557038(15) 094bf840(14)
+
+
+testing RAM!
+ready ... 
+time: 14:47:05  date: 02-03-12
++------------------------------------------------------------+
+| ABB Gebaeudeautomation                            GAT/T    |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|            Version: V116 04-Feb-2008 11:46:17              |
+|                                                            |
++------------------------------------------------------------+
+CODE: 
+14:47:17 MODULRESTART (UZ/US/FELDBUSGERAET):  0/ 0/ 3                         
+14:47:17 MODULRESTART (UZ/US/FELDBUSGERAET):  0/ 0/ 4                         
+14:47:17 MODULRESTART (UZ/US/FELDBUSGERAET):  0/ 0/ 5                         
+14:47:17 MODULRESTART (UZ/US/FELDBUSGERAET):  0/ 0/12                         
+14:47:17 FALSCHE MODULVEREINBARUNG (UZ/US/ZEILE/SOLL/IST) :30/ 0/48/2/0       
+14:47:17 FALSCHE MODULVEREINBARUNG (UZ/US/ZEILE/SOLL/IST) :30/ 0/49/2/0       
+CODE: 
+CODE: 
+CODE: 
+**
+*chd
+Device : 002   Selected fieldbus device (1 ... 032 ) : 002
+Selectable fieldbus devices : 
+002
+
+**
+**
+* deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*q
+
+checksum EPROMs: 
+checksum BANK 0: 010f0300 010d1101
+checksum BANK 1: 01236a02 01211003
+checksum BANK 2: 0110a004 010dbb05
+checksum BANK 3: 013f9c06 013ffe07
+checksum BANK 4: 00d38208 00d23b09
+checksum BANK 5: 00eeca0a 00ece40b
+checksum BANK 6: 01697b0c 0168f70d
+checksum BANK 7: 00d0200e 00cfef0f
+checksum EPROMs: 087e9038(OK) 0873df40(OK) 
+testing RAM!
+ready ... 
+time: 12:00:09  date: 05-02-08
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 10-Feb-2012 15:20:07  CPLD Version: 2    |
+|                                                            |
++------------------------------------------------------------+
+No Sio_2 mounted
+
+CODE: 
+**
+**
+*
+CODE: 
+CODE: 
+CODE: 
+**
+**
+* deleted
+Data base of others is initialized
+Tasks of other devices are continued
+Now ask MERR *
+
+Tasks locked => do restart with Q
+**
+*q
+
+checksum EPROMs: 
+checksum BANK 0: 010e7b00 010c7c01
+checksum BANK 1: 01232002 0120c403
+checksum BANK 2: 01104a04 010d6c05
+checksum BANK 3: 013fbe06 01402d07
+checksum BANK 4: 00d57308 00d3a709
+checksum BANK 5: 00ee470a 00ecad0b
+checksum BANK 6: 01fdff0c 01fdff0d
+checksum BANK 7: 00cb9f0e 00ca940f
+checksum EPROMs: 090efb38(OK) 0903c040(OK) 
+testing RAM!
+ready ... 
+time: 04:33:25  date: 08-01-00
++------------------------------------------------------------+
+| WISAG Automatisierungstechnik GmbH & Co. KG       WGI-AT   |
+| Ohmweg 11-15, 68199 Mannheim                               |
+|                    P  R  O  C  O  S                        |
+|                 ----------------------                     |
+|    Version: V13.3 29-Feb-2012 10:24:11  CPLD Version: 1    |
+|                                                            |
++------------------------------------------------------------+
+No Sio_2 mounted
+
+CODE: 
+04:33:37 P2P-KOMMUNIKATION RESTART   (UZ/US/P2P-GERAET)    :  0/ 1/ 2         
+04:33:37 P2P-KOMMUNIKATION RESTART   (UZ/US/P2P-GERAET)    :  0/ 3/ 2         
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/ 9/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/10/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/11/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/12/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/13/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/14/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/15/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST): 0/ 1/16/3/0      
+04:33:37 FALSCHE MODULVEREINBARUNG   (UZ/US/ZEILE/SOLL/IST):30/ 1/63/2/0      

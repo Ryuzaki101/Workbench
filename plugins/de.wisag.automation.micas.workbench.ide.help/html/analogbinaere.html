@@ -1,0 +1,1119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+         <!--title>analoge Bausteine</title-->
+</head>
+
+<body>
+
+<div id="logo">&nbsp;MICAS Workbench</div>
+
+<hr>
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Analog-Bin&auml;r-Bausteine</h1>
+
+<p>
+<a href="#AWT" title="Auswahltor mit 2 Eing&auml;ngen">AWT</a>&nbsp;
+<a href="#FKG" title="Funktionskennliniengeber">FKG</a>&nbsp;
+<a href="#MAZ" title="Maximalwert &uuml;ber der Zeit">MAZ</a>&nbsp;
+<a href="#SCHR" title="Schrittbaustein">SCHR</a>&nbsp;
+<a href="#SEQ2" title="Zweifachsequenz Baustein">SEQ2</a>&nbsp;
+<a href="#SEQ3" title="Dreifachsequenz Baustein mit Sommer/Winter-Umschaltung">SEQ3</a>&nbsp;
+<a href="#UST" title="Umschalttor mit 2 Ausg&auml;ngen">UST</a>&nbsp;
+<a href="#VGL3P" title="Vergleicher mit Dreipunkt-Verhalten">VGL3P</a>&nbsp;
+<a href="#VGLEH" title="Vergleicher mit einseitiger Hysterese">VGLEH</a>&nbsp;
+<a href="#VGLOH" title="Vergleicher ohne Hysterese">VGLOH</a>&nbsp;
+<a href="#VGLUH" title="Vergleicher mit unsymmetrischer Hysterese">VGLUH</a>&nbsp;
+<a href="#VRZ" title="Vorw&auml;rts-R&uuml;ckw&auml;rts-Z&auml;hler">VRZ</a>&nbsp;
+</p>
+
+<h2><a name="AWT">AWT</a> - Auswahltor mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Entsprechend dem Eingangssignal A (Auswahl) wird entweder der Eingang
+Xe1 oder der Eingang Xe2 auf den Ausgang Xa geschaltet.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein AWT" src="img/sym_awt.png" alt="" border="0" width="62" height="98">
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>Xe1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>Xe2</td>
+ </tr>
+</table>
+<br>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Auswahl A</td>
+  </tr>
+  <tr align="center">
+   <td>Xe1</td>
+   <td>Float</td>
+   <td>Eingangwert Xe1</td>
+  </tr>
+  <tr align="center">
+   <td>Xe2</td>
+   <td>Float</td>
+   <td>Eingangwert Xe2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="MICAS-Baustein FKG">FKG</a> - Funktionskennliniengeber</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Eine Kurve wird durch Angabe von bis zu 255 Funktionswerten angen&auml;hert. Die
+St&uuml;tzstellen werden als Wertepaare (x- und y-Wert) angegeben und sind
+variabel. Zwischenwerte werden linear interpoliert, Werte jenseits des ersten
+bzw. letzten St&uuml;tzpunktes werden auf den ersten bzw. letzten St&uuml;tzpunkt
+bezogen.
+</p>
+<p>Die St&uuml;tzpunkte (Wertepaare der Form Xn, Yn) werden in einem Parameterfenster paarweise in eine Tabelle eingegeben.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein FKG" src="img/sym_fkg.png" alt="" border="0" width="63" height="70">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MAZ">MAZ</a> - Maximalwert &uuml;ber der Zeit</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Variablen am Ausgang Y wird immer dann ein neuer Wert zugewiesen,
+wenn der Wert der Variablen am Eingang e gr&ouml;&szlig;er ist als der bisherige Wert
+der Ausgangs-Variablen Y.<br>
+Die Variable am Ausgang Y wird auf den am Eingang X0 liegenden Anfangswert
+gesetzt, wenn die Variable am Eingang S (Setzeingang) von 0- auf 1-Signal wechselt.
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein MAZ" src="img/sym_maz.png" alt="" border="0" width="48" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>e</td>
+   <td>Float</td>
+   <td>Eingangwert e</td>
+  </tr>
+  <tr align="center">
+   <td>S</td>
+   <td>Float</td>
+   <td>Setzen auf Setzwert Xo</td>
+  </tr>
+  <tr align="center">
+   <td>Xo</td>
+   <td>Float</td>
+   <td>Setzwert Xo</td>
+  </tr>
+  <tr align="center">
+   <td>Y</td>
+   <td>Float</td>
+   <td>Ausgangwert Y</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/MAZ.png" alt="" border="0" width="630" height="540">
+
+
+<h2><a name="SCHR">SCHR</a> - Schrittbaustein</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p> Der Schrittbaustein erm&ouml;glicht die Organisation schrittweise ablaufender
+Vorg&auml;nge. Er ist nur in <u>zyklischen</u> Tasks einsetzbar.<br>
+In vielen Prozessen treten schrittweise ablaufende Vorg&auml;nge auf, bei denen
+jeder Schritt auf den vorangehenden logisch oder zeitlich folgt. F&uuml;r die
+Ablaufsteuerung dieser Vorg&auml;nge gelten folgende Festlegungen:</p>
+<ul>
+ <ol>
+  <li>Alle Vorg&auml;nge, die einem Schritt zugeordnet sind, werden nur ausgel&ouml;st,
+      wenn der Schritt aktiviert (gesetzt) ist.</li>
+  <li>Ein Schritt kann nur gesetzt werden, wenn sein Vorg&auml;nger zuvor gesetzt wurde
+      (Ausnahme: erster Schritt)</li>
+  <li>Im Allgemeinen wird mit dem Setzen eines Schrittes der Vorg&auml;ngerschritt zur&uuml;ckgesetzt.</li>
+  <li>Die logische Folge der Schritte kann verzweigt sein.</li>
+  <li>Der Schrittbaustein erm&ouml;glicht die Organisation dieser Abl&auml;ufe.</li>
+ </ol>
+</ul>
+<p>Der Baustein kann die zwei Zust&auml;nde "Schritt aktiv" und "Schritt inaktiv" einnehmen.
+Der jeweils aktuelle Zustand wird am Ausgang AKT angezeigt. Im aktiven Zustand
+werden die Sollwert-Eing&auml;nge Xe1...Xen auf die Sollwert-Ausg&auml;nge Xa1...Xan
+durchgeschaltet. Im inaktiven Zustand werden die Sollwert-Ausg&auml;nge nicht
+ver&auml;ndert, d. h. sie f&uuml;hren weiterhin die Werte aus dem letzten aktiven Schritt.</p>
+
+<p>Schritt aktiv: <br>
+Ein Schritt wird dann gesetzt, wenn der R&uuml;cksetz-Eingang R=0
+ist und die UND-Verkn&uuml;pfung der Eing&auml;nge VB (Vorg&auml;ngerbaustein) und FR
+(Freigabe) erf&uuml;llt ist. <br>
+Das Setzen des Schrittes erfolgt speichernd, d. h. der
+Schritt kann nur durch Setzen von Eingang R (R&uuml;cksetzen) auf 1-Signal
+zur&uuml;ckgesetzt werden. </p>
+
+<p>Bei aktivem Schritt wird Ausgang AKT (Schritt aktiv) = 1 gesetzt.
+Der Eingang VB (Vorg&auml;nger-Baustein) stellt die logische Beziehung
+zum Vorg&auml;nger-Baustein her. An den Eingang FR (Freigabe) k&ouml;nnen weitere
+Aktivierungsbedingungen angeschlossen werden.</p>
+
+<p>Ein gesetzter Schritt bewirkt das Durchschalten der Eing&auml;nge Xe1 bis Xen
+(Sollwert-Eingang) auf die Ausg&auml;nge Xa1 bis Xan (Sollwert-Ausgang), und
+das Setzen des Ausgangs BS (Befehl setzen) auf 1-Signal und des Ausgangs
+BR (Befehl r&uuml;cksetzen) auf 0-Signal. </p>
+
+<p>Der Ausgang BS ist beim Task-Start auf 0-Signal und geht auf 1-Signal,
+wenn der Ausgang AKT zum erstenmal auf 1-Signal geht.
+BS wird nicht durch 1-Signal am R&uuml;cksetz-Eingang R zur&uuml;ckgesetzt.
+Dies geschieht erst beim n&auml;chsten Task- oder Ger&auml;te-Neustart. Der
+Ausgang BR f&uuml;hrt stets das inverse Signal zum Ausgang BS.</p>
+
+<p>Schritt inaktiv:<br>
+F&uuml;hrt der Eingang R (R&uuml;cksetzen) 1-Signal, so wird der Baustein in den Zustand
+"Schritt inaktiv" &uuml;berf&uuml;hrt. Bei inaktivem Schritt geht
+der Ausgang AKT auf 0-Signal. Die Ausg&auml;nge BS (Befehl setzen), BR (Befehl
+r&uuml;cksetzen) sowie SA1 bis SAn (Sollwert-Ausgang) werden bei inaktivem
+Schritt nicht ver&auml;ndert.</p>
+
+<p>Bei Widerspr&uuml;chen (Eing&auml;nge VB, FR und R gleichzeitig auf 1-Signal) ist der
+R&uuml;cksetzeingang R dominant. </p>
+
+<h3>Symbol</h3>
+<p>Der Schrittbaustein kann 0 bis maximal 0xFF Ein-/Ausg&auml;nge haben.</p>
+<table width="30%" border="0" cellpadding="2" cellspacing="2">
+ <tr valign="top">
+  <td><img title="MICAS-Baustein SCHRITT Mindestgr&ouml;sse" src="img/sym_schritt.png" alt="" border="0" width="76" height="117">
+&nbsp;</td>
+  <td valign="top"><img title="MICAS-Baustein SCHRITT mit 4 Analogwerten" src="img/sym_schritt_4as.png" alt="" border="0" width="76" height="170">
+&nbsp;</td>
+ </tr>
+</table>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">R</th>
+  <th scope="col">AKT Vorg&auml;nger</th>
+  <th scope="col">VB</th>
+  <th scope="col">FR</th>
+  <th scope="col">AKT</th>
+  <th scope="col">Xa (1-15)</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>nicht bedient</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>nicht bedient</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>nicht bedient</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>Xe wird auf Xa geschaltet</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>Xe wird auf Xa geschaltet</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>Xe wird auf Xa geschaltet</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>Xe wird auf Xa geschaltet</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>0</td>
+  <td>nicht bedient</td>
+ </tr>
+</table>
+<h4>Tabelle 1: Ausgang AKT als Funktion der Eingangs-Signale</h4>
+<br>
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">R</th>
+  <th scope="col">BS Vorg&auml;nger</th>
+  <th scope="col">VB</th>
+  <th scope="col">FR</th>
+  <th scope="col">BS</th>
+  <th scope="col">BR</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>-</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+<h4>Tabelle 2: Ausg&auml;nge BS und BR als Funktion der Eingangs-Signale</h4>
+<br>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>R</td>
+   <td>Word</td>
+   <td>R&uuml;cksetzeingang</td>
+  </tr>
+  <tr align="center">
+   <td>VB</td>
+   <td>Word</td>
+   <td>Vorbedingung</td>
+  </tr>
+  <tr align="center">
+   <td>FR</td>
+   <td>Word</td>
+   <td>Freigabe</td>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangswert Xe (1-15)</td>
+  </tr>
+  <tr align="center">
+   <td>AKT</td>
+   <td>Word</td>
+   <td>Aktiv</td>
+  </tr>
+  <tr align="center">
+   <td>BS</td>
+   <td>Word</td>
+   <td>Befehl setzen</td>
+  </tr>
+  <tr align="center">
+   <td>BSinv</td>
+   <td>Word</td>
+   <td>Befehl setzen invers</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa (1-15)</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="SEQ2">SEQ2</a> - Zweifach-Sequenz Baustein</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Mit diesem Baustein kann eine zweifache Sequenz (z. B. Entfeuchten und
+Befeuchten) realisiert werden. Die Kennlinien sind dabei jeweils bereichsweise
+linear. Steigung und Lage der beiden Funktionen werden bestimmt durch
+die beiden Eingangs-Werte X1 (untere Grenze der Totzone) und H (Breite der
+Totzone).</p>
+<p>Der Ausgangswert Y1 f&auml;llt linear von Y1=100% bei X=0% bis Y1=0% bei X=X1 und
+bleibt dann auf 0%.<br>
+Der Ausgangswert Y2 besitzt den Wert 0 % von X=0% bis zur Stelle X = X1+H und
+steigt dann linear bis zum Endwert Y2=100% bei X=100%.</p>
+<p>Zus&auml;tzlich beinhaltet der Baustein noch einen Vergleicher ohne Hysterese mit
+dem Schwellwert P. Der Ausgang S f&uuml;hrt 1-Signal falls Xe gr&ouml;&szlig;er oder gleich P ist,
+sonst ist S=0.
+</p>
+
+<p>Einschr&auml;nkungen:
+ <ul>
+  <li>0 &lt; H &lt; (100% - X1)</li>
+  <li>0 &lt; X &lt; 100 %</li>
+  <li>0 &lt; X1 &lt; 100 %</li>
+  <li>0 &lt; P &lt; 100 %</li>
+ </ul>
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein SEQ2" src="img/sym_seq2.png" alt="" border="0" width="50" height="117">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangswert 0%-100%</td>
+  </tr>
+  <tr align="center">
+    <td>X1</td>
+    <td>Float</td>
+    <td>Grenzwert X1 (Beginn Totzone)</td>
+  </tr>
+  <tr align="center">
+    <td>H</td>
+    <td>Float</td>
+    <td>Hysterese (Breite der Totzone)</td>
+  </tr>
+  <tr align="center">
+    <td>P</td>
+    <td>Float</td>
+    <td>Vergleichswert P</td>
+  </tr>
+  <tr align="center">
+    <td>Y1</td>
+    <td>Float</td>
+    <td>Ausgangswert Y1</td>
+  </tr>
+  <tr align="center">
+    <td>Y2</td>
+    <td>Float</td>
+    <td>Ausgangswert Y2</td>
+  </tr>
+  <tr align="center">
+    <td>S</td>
+    <td>Word</td>
+    <td>Schaltausgang S</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/SEQ2.png" alt="" border="0" width="535" height="389">
+
+
+<h2><a name="SEQ3">SEQ3</a> - Dreifachsequenz Baustein mit Sommer/Winter-Umschaltung</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Mit diesem Baustein kann eine dreifache Sequenz (z. B. zur Temperatur-
+Regelung) realisiert werden. Deshalb sind Ausg&auml;nge vorgesehen f&uuml;r<br>
+<ul>
+ <li>K&uuml;hlerventil (Y1)</li>
+ <li>Umluftklappe (Y2)</li>
+ <li>Au&szlig;enluftklappe mit Min.-Begrenzung (Y3)</li>
+ <li>Erhitzerventil (Y4)</li>
+</ul>
+<p>Die Kennlinien sind dabei jeweils bereichsweise linear.
+Steigung und Lage der Funktionen werden bestimmt durch die beiden
+Eingangspaare X1/H1 (untere Grenze der unteren Totzone/Breite der unteren
+Totzone) und X2/H2 (untere Grenze der oberen Totzone/Breite der oberen
+Totzone).</p>
+<p>Die Funktion Y1 f&auml;llt linear von Y1=100% bei X=0% bis Y1=0% bei X=X1 und
+bleibt dann auf 0%.<br>
+Die Funktion Y2 besitzt den Wert 0% von X=0% bis zur Stelle X=X1+H1, steigt
+dann linear bis zum Endwert Y2=100% bei X=X2 und bleibt dann 100% bis X=100 %.<br>
+Die Funktion Y3 besitzt den Wert 100% von X=0% bis zur Stelle X=X1+H1,
+f&auml;llt dann linear bis zum Wert Y3=YMIN bei X=X2 und bleibt dann auf dem Wert
+YMIN bis X=100%.<br>
+Die Funktion Y4 besitzt den Wert 0% von X=0% bis zur Stelle X=X2+H2, steigt
+dann linear bis zum Endwert Y4=100% bei X=100%.</p>
+<p>Zus&auml;tzlich beinhaltet der Baustein noch zwei Vergleicher ohne Hysterese mit
+den Schwellwerten P1 bzw. P2.
+Der zugeh&ouml;rige Ausgang S1 bzw. S2 ist 1, falls X gr&ouml;&szlig;er oder gleich P1 bzw.
+P2 ist, sonst ist S1 bzw. S2=0.</p>
+<p>Der Eingang SW kann zur Sommer-/Winter-Umschaltung benutzt werden.
+Ist SW=1 so werden die Funktionen Y2 und Y3 an der Geraden X=(X1+H1)+(X2-(X1+H1))/2 gespiegelt.
+</p>
+
+<p>Einschr&auml;nkungen:<br>
+<ul>
+    <li>0 &lt;= H1 &lt;= (100% - X1)</li>
+    <li>0 &lt;= H2 &lt;= (100% - X2)</li>
+    <li>0 &lt;= X &lt;= 100%</li>
+    <li>0 &lt;= X1 &lt;= 100%</li>
+    <li>0 &lt;= X2 &lt;= 100%</li>
+    <li>0 &lt;= P1 &lt;= 100%</li>
+    <li>0 &lt;= P2 &lt;= 100%</li>
+    <li>0 &lt;= YMIN &lt;= 100%</li>
+</ul>
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein SEQ3" src="img/sym_seq3.png" alt="" border="0" width="77" height="208">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangswert 0%-100%</td>
+  </tr>
+  <tr align="center">
+    <td>X1</td>
+    <td>Float</td>
+    <td>Grenzwert X1 (Beginn Totzone 1)</td>
+  </tr>
+  <tr align="center">
+    <td>H1</td>
+    <td>Float</td>
+    <td>Hysterese 1 (Breite der Totzone 1)</td>
+  </tr>
+  <tr align="center">
+    <td>X2</td>
+    <td>Float</td>
+    <td>Grenzwert X2 (Beginn Totzone 2)</td>
+  </tr>
+  <tr align="center">
+    <td>H2</td>
+    <td>Float</td>
+    <td>Hysterese 2 (Breite der Totzone 2)</td>
+  </tr>
+  <tr align="center">
+    <td>P1</td>
+    <td>Float</td>
+    <td>Vergleichswert P1</td>
+  </tr>
+  <tr align="center">
+    <td>P2</td>
+    <td>Float</td>
+    <td>Vergleichswert P2</td>
+  </tr>
+  <tr align="center">
+    <td>YMIN</td>
+    <td>Float</td>
+    <td>Minimalwert f&uuml;r Y3</td>
+  </tr>
+  <tr align="center">
+    <td>SW</td>
+    <td>Word</td>
+    <td>Sommer-Winter-Umschaltung SW</td>
+  </tr>
+  <tr align="center">
+    <td>Y1</td>
+    <td>Float</td>
+    <td>Ausgangswert Y1<br>z.B. K&uuml;hlerventil</td>
+  </tr>
+  <tr align="center">
+    <td>Y2</td>
+    <td>Float</td>
+    <td>Ausgangswert Y2<br>z.B. Umluftklappe/WRG</td>
+  </tr>
+  <tr align="center">
+    <td>Y3</td>
+    <td>Float</td>
+    <td>Ausgangswert Y3<br>z.B. Aussenluftklappe mit Min.-Begrenzung</td>
+  </tr>
+  <tr align="center">
+    <td>Y4</td>
+    <td>Float</td>
+    <td>Ausgangswert Y4<br>z.B. Erhitzerventil</td>
+  </tr>
+  <tr align="center">
+    <td>S1</td>
+    <td>Word</td>
+    <td>Schaltausgang S1</td>
+  </tr>
+  <tr align="center">
+    <td>S2</td>
+    <td>Word</td>
+    <td>Schaltausgang S2</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/SEQ3.png" alt="" border="0" width="672" height="807">
+
+
+<h2><a name="UST">UST</a> - Umschalttor mit 2 Ausg&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Entsprechend dem Eingang "Wahl" (Umschalt-Signal) wird das Signal am
+Eingang Xe auf den Ausgang Xa1 oder den Ausgang Xa2 geschaltet.</p>
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Wahl</th>
+    <th>Ausgang</th>
+  </tr>
+  <tr align="center">
+    <td>0</td>
+    <td>Xa1 = Xe</td>
+  </tr>
+  <tr align="center">
+    <td>1</td>
+    <td>Xa2 = Xe</td>
+  </tr>
+</table>
+<br>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein UST" src="img/sym_ust.png" alt="" border="0" width="74" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Wahl</td>
+    <td>Word</td>
+    <td>Umschaltsignal</td>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+    <td>Xa1</td>
+    <td>Float</td>
+    <td>Ausgangssignal Xa1 = Xe,<br> wenn Wahl = 0</td>
+  </tr>
+  <tr align="center">
+    <td>Xa2</td>
+    <td>Float</td>
+    <td>Ausgangssignal Xa2 = Xe,<br> wenn Wahl = 1</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="VGL3P">VGL3P</a> - Vergleicher mit Dreipunkt-Verhalten</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der am Eingang Xe liegenden Variablen wird mit den Werten der am
+Eingang oGrenze (oberer Grenzwert) und der am Eingang uGrenze (unterer Grenzwert)
+liegenden Variablen verglichen. Der Vergleicher hat folgendes Verhalten :</p>
+<ul>
+ <li>Ist der am Eingang Xe liegende Wert gr&ouml;&szlig;er als oGrente, so wird der Ausgang Ygr auf 1-Signal gesetzt.</li>
+ <li>Ist der Wert kleiner als uGrenze, so wird der Ausgang Ykl auf 1-Signal gesetzt</li>
+ <li>Liegt der Wert zwischen uGrenze und oGrenze, so wird der Ausgang Ymi auf 1-Signal gesetzt.</li>
+</ul>
+<p>Voraussetzung:<br>
+Der am Eingang uGrenze liegende Wert mu&szlig; immer kleiner sein als der am Eingang
+oGrenze liegende Wert!
+</p>
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Eingang</th>
+    <th>Ausgang Ygr</th>
+    <th>Ausgang Ykl</th>
+    <th>Ausgang Ymi</th>
+  </tr>
+  <tr align="center">
+    <td>Xe &gt; oGrenze</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr align="center">
+    <td>Xe &lt; uGrenze</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr align="center">
+    <td>uGrenze &lt; Xe &lt; oGrenze</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
+<br>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein VGL3P" src="img/sym_vgl3p.png" alt="" border="0" width="104" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+    <td>oGrenze</td>
+    <td>Float</td>
+    <td>Oberer Grenzwert</td>
+  </tr>
+  <tr align="center">
+    <td>uGrenze</td>
+    <td>Float</td>
+    <td>Unterer Grenzwert</td>
+  </tr>
+  <tr align="center">
+    <td>Ygr</td>
+    <td>Word</td>
+    <td>Ausgangssignal Ygr,<br> wenn Xe &gt; oGrenze</td>
+  </tr>
+  <tr align="center">
+    <td>Ykl</td>
+    <td>Word</td>
+    <td>Ausgangssignal Ykl,<br> wenn Xe &lt; uGrenze</td>
+  </tr>
+  <tr align="center">
+    <td>Ymi</td>
+    <td>Word</td>
+    <td>Ausgangssignal Ymi,<br> wenn uGrenze &lt; Xe &lt; oGrenze</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/VGL3P.png" alt="" border="0" width="639" height="502">
+
+
+<h2><a name="VGLEH">VGLEH</a> - Vergleicher mit einseitiger Hysterese</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Ist der am Eingang Xe liegende Wert gleich oder gr&ouml;&szlig;er als der am Eingang Grenze
+liegende Vergleichswert, so geht der Ausgang Y auf 1-Signal.<br>
+Ist der am Eingang Xe liegende Wert kleiner als der Vergleichswert "Grenze" abz&uuml;glich dem am
+Eingang "Hyst" (Hysterese) liegenden Wert, so geht der Ausgang Y auf 0-Signal.<br>
+Andernfalls beh&auml;lt der Ausgang Y den alten Wert.</p>
+<p><i>Hinweis:<br>
+Der Wert am Eingang Hyst mu&szlig; immer gr&ouml;&szlig;er als 0 sein!</i>
+</p>
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Eingang</th>
+    <th>Ausgang Y</th>
+  </tr>
+  <tr align="center">
+    <td>Xe &gt; Grenze</td>
+    <td>1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe &lt; Grenze - Hyst</td>
+    <td>0</td>
+  </tr>
+  <tr align="center">
+    <td>Grenze - Hyst &lt; Xe &lt; Grenze</td>
+    <td>alter Wert</td>
+  </tr>
+</table>
+<br>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein VGLEH" src="img/sym_vgleh.png" alt="" border="0" width="92" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+    <td>Grenze</td>
+    <td>Float</td>
+    <td>Grenzwert</td>
+  </tr>
+  <tr align="center">
+    <td>Hyst</td>
+    <td>Float</td>
+    <td>Hysterese</td>
+  </tr>
+  <tr align="center">
+    <td>Y</td>
+    <td>Word</td>
+    <td>Ausgangssignal Y</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/VGLEH.png" alt="" border="0" width="630" height="162">
+
+
+<h2><a name="VGLOH">VGLOH</a> - Vergleicher ohne Hysterese</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Ist der Wert der Variablen am Eingang Xe kleiner als der Wert der Variablen am
+Eingang "Grenze" (Vergleichswert), so ist der Ausgang Xa auf 0-Signal, anderenfalls
+ist er auf 1-Signal.</p>
+<p>
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Eingang Xe</th>
+    <th>Ausgang Xa</th>
+  </tr>
+  <tr align="center">
+    <td>Xe &gt; Grenze</td>
+    <td>1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe &lt; Grenze</td>
+    <td>0</td>
+  </tr>
+</table>
+<br>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein VGLOH" src="img/sym_vgloh.png" alt="" border="0" width="92" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+    <td>Grenze</td>
+    <td>Float</td>
+    <td>Grenzwert</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Word</td>
+    <td>Ausgangssignal Xa</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/VGLOH.png" alt="" border="0" width="635" height="162">
+
+
+<h2><a name="VGLUH">VGLUH</a> - Vergleicher mit unsymmetrischer Hysterese</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Ist der Wert der am Eingang Xe liegenden Variablen gleich oder gr&ouml;&szlig;er als der
+Wert der am Eingang "Grenze" (Vergleichswert) liegenden Variablen zuz&uuml;glich dem
+Wert der am Eingang oHyst (obere Hystere) liegenden Variablen, so geht der
+Ausgang Xa auf 1-Signal.<br>
+Ist der Wert der am Eingang Xe liegenden Variablen
+kleiner als der Wert der am Eingang "Grenze" liegenden Variablen abz&uuml;glich dem
+Wert der am Eingang "uHyst" (untere Hysterese) liegenden Variablen, so geht der
+Ausgang Xa auf 0-Signal, anderenfalls beh&auml;lt er den alten Wert.</p>
+
+<p>Voraussetzung:<br>
+Die Werte der an den Eing&auml;ngen uHyst und oHyst liegenden Variablen m&uuml;ssen
+stets gr&ouml;&szlig;er als 0 sein.
+</p>
+
+
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Eingang Xe</th>
+    <th>Ausgang Xa</th>
+  </tr>
+  <tr align="center">
+    <td>Xe &gt; Grenze + oHyst</td>
+    <td>1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe &lt; Grenze - uHyst</td>
+    <td>0</td>
+  </tr>
+  <tr align="center">
+    <td>Grenze - uHyst &lt; Xe &lt; Grenze + oHyst</td>
+    <td>alter Wert</td>
+  </tr>
+</table>
+<br>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein VGLUH" src="img/sym_vgluh.png" alt="" border="0" width="92" height="117">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+    <td>Grenze</td>
+    <td>Float</td>
+    <td>Grenzwert</td>
+  </tr>
+  <tr align="center">
+    <td>oHyst</td>
+    <td>Float</td>
+    <td>Obere Hysterese</td>
+  </tr>
+  <tr align="center">
+    <td>uHyst</td>
+    <td>Float</td>
+    <td>Untere Hysterese</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Word</td>
+    <td>Ausgangssignal Xa</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/VGLUH.png" alt="" border="0" width="630" height="162">
+
+
+<h2><a name="VRZ">VRZ</a> - Vorw&auml;rts-R&uuml;ckw&auml;rts-Z&auml;hler</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Vorw&auml;rts-R&uuml;ckw&auml;rts-Z&auml;hler besitzt Eing&auml;nge f&uuml;r
+<ul>
+ <li>R&uuml;cksetzen R</li>
+ <li>Schrittweite Delta</li>
+ <li>Setzen S</li>
+ <li>Setzwert </li>
+ <li>Freigabe</li>
+ <li>Impulseing&auml;nge zum Aufw&auml;rtsz&auml;hlen (Auf)</li>
+ <li>Impulseing&auml;nge zum Abw&auml;rtsz&auml;hlen (Ab)</li>
+</ul>
+Die Reihenfolge der Anschl&uuml;sse bestimmt die
+Priorit&auml;t der Eing&auml;nge, z. B. R&uuml;cksetzen vor Setzen. Bei gleichzeitigem
+Auftreten vom Impulsen am Eingang AUF und Eingang AB erfolgt keine
+Reaktion am Ausgang.</p>
+<p>Der am Ausgang dieses Bausteins liegende Z&auml;hlwert darf nicht in die Proze&szlig;-
+Datenbank &uuml;bertragen werden, da diese nur Vorw&auml;rtsz&auml;hler kennt!
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein VRZ" src="img/sym_vrz.png" alt="" border="0" width="111" height="172">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>R</td>
+    <td>Word</td>
+    <td>R&uuml;cksetzen</td>
+  </tr>
+  <tr align="center">
+    <td>Delta</td>
+    <td>Float</td>
+    <td>Z&auml;hldifferenz</td>
+  </tr>
+  <tr align="center">
+    <td>S</td>
+    <td>Word</td>
+    <td>Setzen</td>
+  </tr>
+  <tr align="center">
+    <td>Setzwert</td>
+    <td>Float</td>
+    <td>Setzwert</td>
+  </tr>
+  <tr align="center">
+    <td>Freigabe</td>
+    <td>Word</td>
+    <td>Freigabe des Z&auml;hlers</td>
+  </tr>
+  <tr align="center">
+    <td>Auf</td>
+    <td>Word</td>
+    <td>Vorw&auml;rts Z&auml;hlen</td>
+  </tr>
+  <tr align="center">
+    <td>Ab</td>
+    <td>Word</td>
+    <td>R&uuml;ckw&auml;rts Z&auml;hlen</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Z&auml;hlwert</td>
+  </tr>
+</table>
+<br>
+
+<br>
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+</body>
+</html>

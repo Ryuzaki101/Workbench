@@ -1,0 +1,725 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2004.GPS
+  ;*** Projektname    : ALLDATA
+  ;*** Projektnummer  : 23100965
+  ;*** Bearbeiter     : Wolfgang Donner
+  ;*** PrÅfer         : Wolfgang Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 2
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (AR20,4)
+  WordV  A5-ANLAGE-EIN1
+  WordV  PHASENAUSFALL
+  FloatV Y-SIGNAL-ZUL-REG
+  FloatV A05-SW-ABS-ENTF
+  WordK  KON00 (0)
+  FloatV A5-SOLLW-TAUPUNK
+  FloatK FKON5-MIN-WRG (5.00)
+  WordV  A09-ZUL-RM-AUS
+  WordV  BA1LU0900BM10RM
+  WordV  A05-ABKL-RM-EIN1
+  FloatV A05-STELL-VORERH
+  WordV  A05-ABKL-RM-AUS
+  FloatV A05-ZUL-FEUCHTE
+  FloatV A5-STELL-KUEHLER
+  WordV  Fernquit_a05_ein
+  WordV  NOT-AUS
+  WordV  LEISTUNGSSCHALT.
+  WordV  A05-REP-ABL
+  WordV  QUITTIERUNG-A05
+  WordV  STEUER-SPG-220V
+  WordV  ABSCHALT-BRAND
+  FloatV A05-STELL-WRG
+  FloatK A05-SOLLW-ZULTEM (18.00)
+  FloatV A05-ZUL-TEMP
+  WordV  A05-WRG-ST
+  WordV  A5-ANLAGE-AUS
+  FloatV A05-AUSSEN-TEMP
+  FloatV A05-ABL-FEUCHTE
+  WordV  PHASENUEBERWACHU
+  WordV  A05-RAUCHMELDER
+  FloatV A5-SIG-ENTFEUCHT
+  WordV  A05-ABL1-RM-EIN1
+  WordK  KON01 (1)
+  FloatV A05-SIG-WRG-TAU
+  FloatV A05-TAUP-TEMP
+  FloatV A05-STELL-NE
+  FloatV A05-ABS-FEU-ZUL
+  WordV  A05-ZUL1-RM-ST
+  FloatV A05-SIG_NACHERH
+  WordV  A05-ABL-AUTO-ST
+  FloatV Y-SIGNAL-TAUPREG
+  WordV  A05-FROST
+  WordV  A05-VE-RM-ST
+  FloatV A05-Y-FROST
+  WordV  A05-REP-ZUL
+  WordV  A05-ZUL-AUTO-ST
+  FloatK KON02-G-KG (2.00)
+  WordV  Netzgeraete
+  WordV  A05-KEIL-BM-ZUL
+  WordV  A05-VE-RM-EIN1
+  WordV  A05-ABL1-RM-ST
+  FloatV A05-SW-ABS-BEFEU
+  FloatV A05-VE-RL-TEMP
+  FloatK A05-SOLLW-TAUPUN (16.00)
+  WordV  A05-ABL-KEIL-ST
+  WordV  WERR
+  FloatV ABS-FEUCHTE-ABL
+  WordV  A05-ZUL-KEIL-ST
+  WordV  A05-ABKL-RM-ST
+  WordV  A05-KEIL-BM-ABL
+  WordV  A05-ZUL1-RM-EIN1
+  WordV  A05-ZUL1-RM-AUS
+  WordV  A05-SAMMELST
+  FloatV A05-ABL-TEMP
+  FloatV A05-SIG-VORH-TAU
+  FloatV A05-ABS-FEU-ABL
+  FloatV A5-SIG-BEFEUCHT
+  WordV  A05-VE-RM-AUS
+  FloatV A05-SIG-KUEH-ZUL
+  WordV  A05-ABL1-RM-AUS
+  WordV  Fernquit_a05_aus
+  WordV  A05-Hand
+  WordV  EIN1_Anlage_5
+  WordV  DAMPFBEF-STOER
+  WordK  $M0 (1)
+  IPAAW &BA1LU0500AA91 (117)
+  WordK  $M1 (1)
+  IPAAW &BA1LU0500AA93 (115)
+  IPAMB &BA1LU0500BM10 (2,1)
+  IPAMB &M2 (2,2)
+  IPAMB &M3 (2,3)
+  IPAMB &BA1LU0500BM20 (2,5)
+  IPAMB &M4 (2,6)
+  IPAMB &M5 (2,7)
+  IPAMB &BA1LU0500BM40 (3,5)
+  IPAMB &M6 (3,6)
+  IPAMB &M7 (3,7)
+  IPAMB &BA1LU0500BM50 (3,1)
+  IPAMB &M8 (3,2)
+  IPAMB &M9 (3,3)
+  IPAMB &BA1LU0000ST10 (12,13)
+  IPAMB &BA1LU0000ST23 (12,14)
+  IPAMB &BA1LU0900ST24 (12,15)
+  WordV  $HB4
+  WordV  $HB5
+  WordV  $HB6
+  IPAMB &BA1LU0000ST20 (13,12)
+  WordV  $HB2
+  IPAMB &BA1LU0000ST26 (13,8)
+  IPAMB &BA1LU0000ST25 (13,14)
+  IPAMB &BA1LU0500WA11 (11,6)
+  IPAMB &BA1LU0500WA21 (11,7)
+  IPAMB &BA1LU0500AL01 (12,7)
+  IPAMB &BA1LU0500GF01 (12,5)
+  IPAMB &BA1LU0500ST51 (12,4)
+  IPAMB &BA1LU0500ST30 (13,0)
+  IPAMB &BA1LU0500BM15 (11,4)
+  IPAMB &BA1LU0500BM25 (11,5)
+  IPAMB &BA1LU0500WA70 (2,10)
+  IPAMB &Anlage_5_EIN1 (104,7)
+  IPAAW &BA1LU0500MW00 (35)
+  IPAAW &BA1LU0500MW09 (30)
+  IPAAW &BA1LU0500MW03 (33)
+  IPAAW &BA1LU0500MW22 (32)
+  IPAAW &BA1LU0500MW32 (36)
+  IPAAW &BA1LU0500MW39 (37)
+  IPAAW &BA1LU0500MW02 (31)
+  WordV  $B1
+  FloatK $M10 (120.00)
+  FloatK $M11 (0.00)
+  WordV  $B2
+  WordV  $WSCRATCH
+  WordK  $M12 (1)
+  IPAMB &BA1LU0500ST83 (104,1)
+  WordV  $B3
+  FloatK $M13 (120.00)
+  FloatK $M14 (0.00)
+  WordV  $B4
+  WordK  $M15 (1)
+  IPAMB &BA1LU0500ST82 (104,0)
+  IPAMB &BA1LU0500BF02 (104,13)
+  IPAMB &M16 (104,14)
+  IPAMB &M17 (104,15)
+  IPAMB &BA1LU0500BM99 (1,15)
+  WordV  $B5
+  WordV  $B6
+  FloatK $M18 (5.00)
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B7
+  FloatK $M19 (300.00)
+  FloatK $M20 (0.00)
+  WordV  $B8
+  WordK  $M21 (1)
+  IPAMB &BA1LU0500ST78 (104,3)
+  WordV  $B9
+  WordV  $B10
+  FloatK $M22 (300.00)
+  FloatK $M23 (0.00)
+  WordV  $B11
+  WordK  $M24 (1)
+  IPAMB &BA1LU0500ST77 (104,2)
+  WordK  $M25 (1)
+  IPAMB &BA1LU0500ST90 (104,6)
+  FloatK $M26 (0.00)
+  FloatK $M27 (100.00)
+  FloatV $F5
+  WordV  $B17
+  FloatK $M28 (600.00)
+  FloatK $M29 (0.00)
+  WordV  $B18
+  FloatK $M30 (1.00)
+  FloatK $M31 (0.50)
+  WordV  $B12
+  FloatK $M32 (1.00)
+  FloatK $M33 (0.50)
+  WordV  $B13
+  FloatK $M34 (10.00)
+  FloatK $M35 (1.00)
+  WordV  $B21
+  FloatK $M36 (29.00)
+  FloatK $M37 (2.00)
+  WordV  $B22
+  WordV  $HB1
+  WordV  $B23
+  WordV  $B14
+  FloatK $M38 (30.00)
+  FloatK $M39 (10.00)
+  FloatV $F7
+  FloatK $M40 (0.00)
+  WordK  $M41 (2)
+  FloatK $M42 (2.00)
+  FloatK $M43 (10.00)
+  FloatK $M44 (300.00)
+  FloatK $M45 (0.00)
+  FloatK $M46 (0.00)
+  FloatK $M47 (40.00)
+  FloatK $M48 (0.00)
+  FloatK $M49 (0.00)
+  FloatK $M50 (100.00)
+  FloatV $F8
+  FloatK $M51 (10.00)
+  FloatK $M52 (0.00)
+  WordK  $M53 (2)
+  FloatK $M54 (2.00)
+  FloatK $M55 (10.00)
+  FloatK $M56 (300.00)
+  FloatK $M57 (0.00)
+  FloatK $M58 (0.00)
+  FloatK $M59 (20.00)
+  FloatK $M60 (0.00)
+  FloatK $M61 (0.00)
+  FloatK $M62 (100.00)
+  FloatV $F1
+  FloatK $M63 (0.00)
+  FloatV $F2
+  WordV  $B20
+  FloatK $M64 (10.00)
+  FloatV $F6
+  FloatK $M65 (5.00)
+  FloatK $M66 (1.00)
+  WordV  $HB3
+  WordV  $B19
+  WordV  $B15
+  FloatK $M67 (10.00)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B16
+  FloatK $M68 (0.00)
+  FloatV $F3
+  FloatK $M69 (0.00)
+  FloatV $F4
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  FloatK $M70 (0.00)
+  FloatK $M71 (1800.00)
+  FloatV $F9
+  WordV  $B32
+  FloatK $M72 (3.00)
+  FloatK $M73 (2.00)
+  WordV  $B35
+  FloatK $M74 (0.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  FloatV $F10
+  FloatK $M75 (172800.00)
+  WordV  $B39
+  FloatK $M76 (300.00)
+  WordV  $B33
+  WordV  $B40
+  WordV  $B34
+  WordV  $B30
+  WordV  $B41
+  WordV  $B31
+  FloatK $M77 (4.00)
+  FloatK $M78 (0.00)
+  WordV  $B42
+  WordK  $M79 (1)
+  IPAMB &BA1LU0500ST81 (104,5)
+  FloatK $M80 (0.00)
+  FloatK $M81 (0.00)
+  FloatK $M82 (0.00)
+  FloatK $M83 (50.00)
+  FloatK $M84 (100.00)
+  FloatK $M85 (50.00)
+  FloatK $M86 (0.00)
+  FloatK $M87 (100.00)
+  FloatK $M88 (100.00)
+  WordV  $B43
+  FloatK $M89 (120.00)
+  FloatK $M90 (0.00)
+  FloatK $M91 (0.00)
+  FloatV $F11
+  WordK  $M92 (1)
+  IPAAW &BA1LU0500AA01 (76)
+  WordV  $B44
+  FloatV $F12
+  FloatK $M93 (0.00)
+  WordK  $M94 (1)
+  IPAAW &BA1LU0500AA51 (74)
+  IPAMB &BA1LU0500BM51 (4,13)
+  FloatK $M95 (0.00)
+  FloatK $M96 (0.00)
+  FloatK $M97 (100.00)
+  FloatK $M98 (50.00)
+  FloatK $M99 (0.00)
+  FloatK $M100 (50.00)
+  FloatK $M101 (0.00)
+  FloatK $M102 (100.00)
+  FloatK $M103 (100.00)
+  FloatK $M104 (0.00)
+  WordK  $M105 (1)
+  IPAAW &BA1LU0500AA03 (79)
+  FloatV $F13
+  FloatK $M106 (0.00)
+  WordK  $M107 (1)
+  IPAAW &BA1LU0500AA02 (77)
+  FloatK $M108 (101300.00)
+  WordK  $M109 (1)
+  IPAAW &BA1LU0500MW33 (89)
+  FloatK $M110 (101300.00)
+  WordK  $M111 (1)
+  IPAAW &BA1LU0500MW34 (90)
+  WordK  $M112 (1)
+  IPAAW &BA1LU0500AA88 (119)
+  WordK  $M113 (1)
+  IPAAW &BA1LU0500AA81 (120)
+  WordK  $M114 (1)
+  IPAAW &BA1LU0500MW35 (122)
+  FloatK $M115 (0.00)
+  FloatK $M116 (0.00)
+  WordV  $B45
+  FloatK $M117 (0.00)
+  FloatV $F14
+  WordK  $M118 (1)
+  IPAAW &BA1LU0500AA31 (78)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE :
+  ;--------
+  ;Anlage 05
+  ;STEUERUNG UND REGELUNG
+  ; 
+  ;MODUL - EINBAU - ORT :
+  ;----------------------
+  ;LöFTUNGSCHALTSCHRANK
+  ;LU05
+  ;Kellergeschoss K2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ANAUS (A05-SOLLW-TAUPUN,$M0,&BA1LU0500AA91,WERR)
+  ANAUS (A05-SOLLW-ZULTEM,$M1,&BA1LU0500AA93,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&BA1LU0500BM10,3,A05-ZUL1-RM-AUS,A05-ZUL1-RM-ST,
+          A05-ZUL1-RM-EIN1,WERR)
+  MELEIN (&BA1LU0500BM20,3,A05-ABL1-RM-AUS,A05-ABL1-RM-ST,
+          A05-ABL1-RM-EIN1,WERR)
+  MELEIN (&BA1LU0500BM40,3,A05-VE-RM-AUS,A05-VE-RM-ST,
+          A05-VE-RM-EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&BA1LU0500BM50,3,A05-ABKL-RM-AUS,A05-ABKL-RM-ST,
+          A05-ABKL-RM-EIN1,WERR)
+  MELEIN (&BA1LU0000ST10,3,$HB4,$HB5,$HB6,WERR)
+  NICHT ($HB4,PHASENAUSFALL)
+  NICHT ($HB5,STEUER-SPG-220V)
+  NICHT ($HB6,NOT-AUS)
+  MELEIN (&BA1LU0000ST20,1,$HB2,WERR)
+  NICHT ($HB2,PHASENUEBERWACHU)
+  MELEIN (&BA1LU0000ST26,1,$HB2,WERR)
+  NICHT ($HB2,Netzgeraete)
+  MELEIN (&BA1LU0000ST25,1,$HB2,WERR)
+  NICHT ($HB2,LEISTUNGSSCHALT.)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&BA1LU0500WA11,1,$HB2,WERR)
+  NICHT ($HB2,A05-REP-ZUL)
+  MELEIN (&BA1LU0500WA21,1,$HB2,WERR)
+  NICHT ($HB2,A05-REP-ABL)
+  MELEIN (&BA1LU0500AL01,1,$HB2,WERR)
+  NICHT ($HB2,A05-RAUCHMELDER)
+  MELEIN (&BA1LU0500GF01,1,$HB2,WERR)
+  NICHT ($HB2,A05-FROST)
+  MELEIN (&BA1LU0500ST51,1,$HB2,WERR)
+  NICHT ($HB2,A05-WRG-ST)
+  MELEIN (&BA1LU0500ST30,1,DAMPFBEF-STOER,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU0500BM15,1,A05-KEIL-BM-ZUL,WERR)
+  MELEIN (&BA1LU0500BM25,1,A05-KEIL-BM-ABL,WERR)
+  MELEIN (&BA1LU0500WA70,1,A05-Hand,WERR)
+  MELEIN (&Anlage_5_EIN1,1,EIN1_Anlage_5,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&BA1LU0500MW00,A05-AUSSEN-TEMP,WERR)
+  ANEIN (&BA1LU0500MW09,A05-ABL-TEMP,WERR)
+  ANEIN (&BA1LU0500MW03,A05-ZUL-TEMP,WERR)
+  ANEIN (&BA1LU0500MW22,A05-VE-RL-TEMP,WERR)
+  ANEIN (&BA1LU0500MW32,A05-ZUL-FEUCHTE,WERR)
+  ;A05 Aussentemperatur
+  ; 
+  ;A05 VE- RÅcklauftemp
+  ; 
+  ;A05 Zulufttemperatur
+  ; 
+  ;A05 Ablufttemperatur
+  ; 
+  ;A05 Zuluftfeuchte
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&BA1LU0500AA93,A05-SOLLW-ZULTEM,WERR)
+  ANEIN (&BA1LU0500MW39,A05-ABL-FEUCHTE,WERR)
+  ANEIN (&BA1LU0500MW02,A05-TAUP-TEMP,WERR)
+  ;A05 Abluftfeuchte
+  ; 
+  ;A05 Taupunktemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU0500AA91,A5-SOLLW-TAUPUNK,WERR)
+  ;Sollw.Taupunkttemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  UND11 (A05-ABL1-RM-EIN1,A05-KEIL-BM-ABL,$B1)
+  VVZ ($B1,$M10,$M11,$B2)
+  RSS ($B2,QUITTIERUNG-A05,A05-ABL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M12,1,A05-ABL-KEIL-ST,&BA1LU0500ST83,WERR)
+  UND11 (A05-ZUL1-RM-EIN1,A05-KEIL-BM-ZUL,$B3)
+  VVZ ($B3,$M13,$M14,$B4)
+  RSS ($B4,QUITTIERUNG-A05,A05-ZUL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M15,1,A05-ZUL-KEIL-ST,&BA1LU0500ST82,WERR)
+  ;DiffDruck ZulÅfter
+  ; 
+  ;DiffDruck AblÅfter
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&BA1LU0500BF02,3,Fernquit_a05_aus,WERR,
+          Fernquit_a05_ein,WERR)
+  MELEIN (&BA1LU0500BM99,1,$B5,WERR)
+  ODR2 (Fernquit_a05_ein,$B5,$B6)
+  MOKY ($B6,$M18,QUITTIERUNG-A05)
+  NICHT (QUITTIERUNG-A05,$HB0)
+  BEFAUS (1,$HB0,QUITTIERUNG-A05,$WZERO,$WZERO,
+          &BA1LU0500BF02,WERR)
+  ;StîrQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  UNDMN (1,A5-ANLAGE-EIN1,2,A05-Hand,A05-ABL1-RM-EIN1,$B7,
+         $WSCRATCH)
+  VVZ ($B7,$M19,$M20,$B8)
+  RSS ($B8,QUITTIERUNG-A05,A05-ABL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M21,1,A05-ABL-AUTO-ST,&BA1LU0500ST78,WERR)
+  ODRMN (5,A05-ZUL-AUTO-ST,A05-REP-ZUL,A05-REP-ABL,
+         A05-SAMMELST,A05-ABL-AUTO-ST,0,$B9,$WSCRATCH)
+  UNDMN (1,A5-ANLAGE-EIN1,2,A05-Hand,A05-ZUL1-RM-EIN1,$B10,
+         $WSCRATCH)
+  VVZ ($B10,$M22,$M23,$B11)
+  RSS ($B11,QUITTIERUNG-A05,A05-ZUL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M24,1,A05-ZUL-AUTO-ST,&BA1LU0500ST77,WERR)
+  SETMEL ($M25,1,$B9,&BA1LU0500ST90,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B16,$M26,$M27,$F5)
+  MAX (3,$F5,$F4,$F3,A05-Y-FROST)
+  UND11 (EIN1_Anlage_5,$B13,$B17)
+  VVZ ($B17,$M28,$M29,$B18)
+  VGLEH (A05-TAUP-TEMP,$M30,$M31,$B12)
+  ODRMN (2,$B18,$B14,0,$WSCRATCH,$WSCRATCH)
+  VGLEH (A05-VE-RL-TEMP,$M32,$M33,$B13)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (A05-AUSSEN-TEMP,$M34,$M35,$B21)
+  VGLEH (A05-VE-RL-TEMP,$M36,$M37,$B22)
+  NICHT (EIN1_Anlage_5,$HB1)
+  RSS ($B20,$HB1,$B23,$WSCRATCH)
+  BTRA ($B23,$B14)
+  AWT ($B23,$M38,$M39,$F7)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A05-VE-RL-TEMP,$F7,$WONE,$B21,$M40,$M41,$M42,$M43,
+        $M44,$M45,$M46,$M47,$M48,$M49,$M50,$F8,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A05-TAUP-TEMP,$M51,$WONE,$WZERO,$M52,$M53,$M54,$M55,
+        $M56,$M57,$M58,$M59,$M60,$M61,$M62,$F1,$WSCRATCH)
+  AWT ($B21,$F8,$M63,$F2)
+  ;Version 2.0
+  ; 
+  ODR2 ($B22,$B21,$B20)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B13,$M64,A05-VE-RL-TEMP,$F6)
+  VGLEH ($F6,$M65,$M66,$HB3)
+  NICHT ($HB3,$B19)
+  ODR2 ($B19,A05-FROST,$B15)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIERUNG-A05,$M67,$B24)
+  UND11 ($B24,$B15,$B25)
+  RSS ($B15,$B25,$B16,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B16,$WSCRATCH)
+  AWT ($B13,$M68,$F2,$F3)
+  AWT ($B12,$M69,$F1,$F4)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (7,A05-FROST,A05-ZUL-KEIL-ST,A05-ABL-KEIL-ST,
+         ABSCHALT-BRAND,A05-ZUL1-RM-ST,A05-ABL1-RM-ST,
+         A05-RAUCHMELDER,0,A05-SAMMELST,$WSCRATCH)
+  ;Programmstîrung
+  ;Frost/ Meldung
+  ;an GLT
+  ;q
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UNDMN (2,A5-ANLAGE-EIN1,EIN1_Anlage_5,0,$B26,$B27)
+  BEFAUS (1,$B27,$B26,$WZERO,$WZERO,&BA1LU0500BM10,WERR)
+  ;A05 Zuluft 1 Stufe ein
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UNDMN (3,A5-ANLAGE-EIN1,EIN1_Anlage_5,A05-ZUL1-RM-EIN1,0,
+         $B28,$B29)
+  BEFAUS (1,$B29,$B28,$WZERO,$WZERO,&BA1LU0500BM20,WERR)
+  ;A05 Abluft 1 Stufe ein
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;FREIG-VE-PUMPE
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M70,$M71,$F9)
+  MOKY (A05-ZUL1-RM-EIN1,$F9,$B32)
+  VGLEH (A05-STELL-VORERH,$M72,$M73,$B35)
+  VVZ ($B35,$M74,$F9,$B36)
+  UND2 (A05-ZUL1-RM-EIN1,$B36,$B37)
+  ODR2 (A05-VE-RM-ST,$B34,$B38)
+  NICHT ($B38,$HB0)
+  UHR ($HB0,$B38,$F10)
+  VGLOH ($F10,$M75,$B39)
+  MOKY ($B39,$M76,$B33)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (4,$B32,$B37,A05-FROST,$B33,0,$B40,$WSCRATCH)
+  UND11 ($B40,A05-VE-RM-ST,$B34)
+  BTRA ($B34,$B30)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 ($B30,A05-VE-RM-EIN1,$B41)
+  RSS ($B42,QUITTIERUNG-A05,$B31,$WSCRATCH)
+  VVZ ($B41,$M77,$M78,$B42)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B30,$HB0)
+  BEFAUS (1,$HB0,$B30,$WZERO,$WZERO,&BA1LU0500BM40,WERR)
+  SETMEL ($M79,1,$B31,&BA1LU0500ST81,WERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  REGLER (1,KON01,KON00,$M80,Y-SIGNAL-TAUPREG,WERR)
+  ;Taupunktregelung
+  ;Anl.05
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  FKG (Y-SIGNAL-TAUPREG,4,$M81,$M82,$M83,$M84,
+       A05-SIG-WRG-TAU)
+  FKG (Y-SIGNAL-TAUPREG,4,$M85,$M86,$M87,$M88,
+       A05-SIG-VORH-TAU)
+  ;REGELUNG Taupunkttemp.
+  ;nur WRG/ Vorerhitzer
+  ;Anlage 05
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;Ansteuerung AbsperrKl.
+  ;Anlage 05
+  ;Zuluft/Abluftklappe
+  ; 
+  NICHT (EIN1_Anlage_5,$HB0)
+  BEFAUS (1,$HB0,EIN1_Anlage_5,$WZERO,$WZERO,&BA1LU0500BM50,
+          WERR)
+  ;Freigabe der Anlage
+  ;wenn Klappen geîffnet
+  ;sind KlappenrÅckmeldung
+  ;wird intern gesetzt
+  ;keine RÅckmeldung
+  ; 
+  UNDMN (2,A05-ABKL-RM-EIN1,KON01,0,$B43,A5-ANLAGE-AUS)
+  VVZ ($B43,$M89,$M90,A5-ANLAGE-EIN1)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  AWT (A05-ZUL1-RM-EIN1,$M91,A05-SIG-VORH-TAU,$F11)
+  MAX (2,$F11,A05-Y-FROST,A05-STELL-VORERH)
+  ANAUS (A05-STELL-VORERH,$M92,&BA1LU0500AA01,WERR)
+  UND11 (A05-ZUL1-RM-EIN1,A05-WRG-ST,$B44)
+  MAX (2,A05-SIG-WRG-TAU,FKON5-MIN-WRG,$F12)
+  AWT ($B44,$M93,$F12,A05-STELL-WRG)
+  ANAUS (A05-STELL-WRG,$M94,&BA1LU0500AA51,WERR)
+  NICHT (A05-WRG-ST,$HB0)
+  BEFAUS (1,$HB0,A05-WRG-ST,$WZERO,$WZERO,&BA1LU0500BM51,
+          WERR)
+  ;VORERHITZER
+  ; 
+  ;WRG
+  ; 
+  ;WRG Bypassklappen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  REGLER (2,KON01,KON00,$M95,Y-SIGNAL-ZUL-REG,WERR)
+  ;Regler Zulufttemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  FKG (Y-SIGNAL-ZUL-REG,4,$M96,$M97,$M98,$M99,
+       A05-SIG-KUEH-ZUL)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M100,$M101,$M102,$M103,
+       A05-SIG_NACHERH)
+  ;Ansteuerung KÅhler
+  ; 
+  ;Ansteuerung NE
+  ; 
+  ;ZUL-TEMP
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  AWT (A05-ZUL1-RM-EIN1,$M104,A05-SIG_NACHERH,A05-STELL-NE)
+  ANAUS (A05-STELL-NE,$M105,&BA1LU0500AA03,WERR)
+  MAX (2,A05-SIG-KUEH-ZUL,A5-SIG-ENTFEUCHT,$F13)
+  AWT (A05-ZUL1-RM-EIN1,$M106,$F13,A5-STELL-KUEHLER)
+  ANAUS (A5-STELL-KUEHLER,$M107,&BA1LU0500AA02,WERR)
+  ;KÅhler A05
+  ; 
+  ;Nacherhitzer A05
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ABFEUG (A05-ZUL-FEUCHTE,A05-ZUL-TEMP,$M108,A05-ABS-FEU-ZUL)
+  ANAUS (A05-ABS-FEU-ZUL,$M109,&BA1LU0500MW33,WERR)
+  ABFEUG (A05-ABL-FEUCHTE,A05-ABL-TEMP,$M110,A05-ABS-FEU-ABL)
+  ANAUS (A05-ABS-FEU-ABL,$M111,&BA1LU0500MW34,WERR)
+  SOLKEN (1,KON01,A05-SW-ABS-BEFEU,WERR)
+  ADD2 (A05-SW-ABS-BEFEU,KON02-G-KG,A05-SW-ABS-ENTF)
+  ANAUS (A05-SW-ABS-BEFEU,$M112,&BA1LU0500AA88,WERR)
+  ANAUS (A05-SW-ABS-ENTF,$M113,&BA1LU0500AA81,WERR)
+  ;Sollwert Befeuchten
+  ; 
+  ;Zuluftfeuchte
+  ; 
+  ;Abluftfeuchte
+  ; 
+  ;Sollwert Entfeuchten
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ATRA (A05-ABS-FEU-ABL,ABS-FEUCHTE-ABL)
+  ANAUS (A05-ABS-FEU-ABL,$M114,&BA1LU0500MW35,WERR)
+  REGLER (6,KON01,KON00,$M115,A5-SIG-ENTFEUCHT,WERR)
+  REGLER (7,KON01,KON00,$M116,A5-SIG-BEFEUCHT,WERR)
+  ;Befeuchtung
+  ; 
+  ;Entfeuchtung
+  ; 
+  ;VERVIEL. ABS.FEUCHTE ABL
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UND11 (A05-ZUL1-RM-EIN1,DAMPFBEF-STOER,$B45)
+  AWT ($B45,$M117,A5-SIG-BEFEUCHT,$F14)
+  ANAUS ($F14,$M118,&BA1LU0500AA31,WERR)
+  ;Ansteuerung Befeuchter
+  ;Anlage 05
+  ; 
+  ENDE 
+  ENDMODUL 

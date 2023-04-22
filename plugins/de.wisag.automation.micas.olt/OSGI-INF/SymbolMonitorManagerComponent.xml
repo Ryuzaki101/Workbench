@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="de.wisag.automation.micas.olt.symbolmonitormanager">
+   <implementation class="de.wisag.automation.micas.olt.internal.SymbolMonitorManagerComponent"/>
+   <service>
+      <provide interface="de.wisag.automation.micas.olt.ISymbolMonitorManager"/>
+   </service>
+   <reference bind="bindDeviceManager" cardinality="1..1" interface="de.wisag.automation.micas.olt.IMicasDeviceManager" name="IMicasDeviceManager" policy="dynamic" unbind="unbindDeviceManager"/>
+   <reference bind="bindMonitorMessageBroadcaster" cardinality="1..1" interface="de.wisag.automation.micas.olt.IMonitorMessageBroadcaster" name="IMonitorMessageBroadcaster" policy="static" unbind="unbindMonitorMessageBroadcaster"/>
+</scr:component>

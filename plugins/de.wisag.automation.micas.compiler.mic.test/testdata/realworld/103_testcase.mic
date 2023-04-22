@@ -1,0 +1,106 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI70302.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 3
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Bereits_Schymura
+  WordV  Taster_Pfor/Wart
+  WordV  Bereits_Laukat
+  WordV  Bereits_Borchers
+  WordV  Bereits_Teichman
+  WordV  Bereits_Herdam
+  IPAMB &M0 (0,11)
+  WordV  $WSCRATCH
+  IPAMB &M1 (0,14)
+  IPAMB &M2 (0,15)
+  IPAMB &M3 (1,10)
+  IPAMB &M4 (1,11)
+  IPAMB &M5 (1,14)
+  IPAMB &M6 (0,0)
+  WordV  $B1
+  WordV  $B2
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M8 (7,1)
+  WordV  $B3
+  IPAMB &M9 (7,5)
+  WordV  $B4
+  IPAMB &M10 (7,9)
+  WordV  $B5
+  WordV  $B6
+  IPAMB &M11 (7,13)
+  WordV  $B7
+  IPAMB &M12 (8,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingen
+  ;Projekt: STI EZ
+  ;Inhalt:  UMSCHALTUNG
+  ;         RUFBEREITSCHAFT
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,Taster_Pfor/Wart,$WSCRATCH)
+  MELEIN (&M1,1,Bereits_Schymura,$WSCRATCH)
+  MELEIN (&M2,1,Bereits_Herdam,$WSCRATCH)
+  MELEIN (&M3,1,Bereits_Teichman,$WSCRATCH)
+  MELEIN (&M4,1,Bereits_Laukat,$WSCRATCH)
+  MELEIN (&M5,1,Bereits_Borchers,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  NICHT (Taster_Pfor/Wart,$B1)
+  NAND2 ($B1,Bereits_Schymura,$B2)
+  NICHT ($B2,$HB0)
+  BEFAUS (1,$HB0,$B2,$WZERO,$WZERO,&M8,$WSCRATCH)
+  NAND2 ($B1,Bereits_Herdam,$B3)
+  NICHT ($B3,$HB0)
+  BEFAUS (1,$HB0,$B3,$WZERO,$WZERO,&M9,$WSCRATCH)
+  NAND2 ($B1,Bereits_Teichman,$B4)
+  NICHT ($B4,$HB0)
+  BEFAUS (1,$HB0,$B4,$WZERO,$WZERO,&M10,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT (Taster_Pfor/Wart,$B5)
+  NAND2 ($B5,Bereits_Laukat,$B6)
+  NICHT ($B6,$HB0)
+  BEFAUS (1,$HB0,$B6,$WZERO,$WZERO,&M11,$WSCRATCH)
+  NAND2 ($B5,Bereits_Borchers,$B7)
+  NICHT ($B7,$HB0)
+  BEFAUS (1,$HB0,$B7,$WZERO,$WZERO,&M12,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

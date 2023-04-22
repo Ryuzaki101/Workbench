@@ -1,0 +1,466 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2003.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 2
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  ERR32
+  WordV  A4-UMLUF1-REP
+  WordV  A4-U2-2ST-RM-EIN
+  WordV  A4-U1-SOLL-EIN2
+  WordV  ERR28
+  WordV  A4-U2-SOLL-EIN2
+  WordV  ERR27
+  WordV  A4-U2-SOLL-EIN1
+  WordV  ZPK
+  WordV  ERR23
+  WordV  ERR29
+  WordV  ERR18
+  WordV  ERR25
+  WordV  ERR09
+  WordV  A4-UMLU2-ST-KEIL
+  WordV  ERR33
+  WordV  ERR30
+  WordV  ZPK3
+  WordV  ZPK2
+  WordV  A4-UMLUF1-RAUCH
+  WordV  SAMMEL-ST-UML1
+  WordV  A4-UMLF2-AUTO-ST
+  WordV  ERR66
+  FloatV A4-Raum-Serverfa
+  WordV  ERR12
+  WordV  ERR14
+  WordV  SAMMEL-ST-UML2
+  WordV  A4-U2-2ST-RM-ST
+  FloatV A4-UMLUF1-ZULTEM
+  WordV  ERR08
+  WordK  Fernquit_a05.ein (1)
+  WordV  ERR24
+  WordV  ERR17
+  WordV  A4-UML1-HAND-BET
+  WordV  A4-U2-2ST-RM-AUS
+  WordV  ERR36
+  WordK  KON01 (1)
+  WordV  ERR07
+  FloatV A4-SOLL-ZULUFT41
+  WordV  A4-U2-1ST-RM-AUS
+  WordV  A4-U2-1ST-RM-ST
+  WordV  A4-U2-1ST-RM-EIN
+  WordV  A4-U1-2ST-RM-ST
+  WordV  TESTSETZ01
+  WordV  ERR06
+  WordV  ERR42
+  FloatV Y-SIGNAL-REG.11
+  WordV  ZPK1
+  WordV  A4-UMLUF2-REP
+  WordV  ERR20
+  WordV  ERR03
+  WordV  ERR16
+  WordV  ERR19
+  WordV  SAMMEL-ST-UML1-2
+  WordV  QUITTIERUNG-A04
+  WordV  A4-UMLU1-ST-KEIL
+  WordV  ERR26
+  WordV  A4-U1-1ST-RM-ST
+  WordV  A4-UMLF1-AUTO-ST
+  FloatV BA1LU0400AA04
+  WordV  A4-UML2-KEIL-BM
+  WordV  A4-U1-EIN
+  WordV  A4-U1-1ST-RM-EIN
+  FloatV Y-SIGNAL-REG.12
+  WordV  A4-U1-1ST-RM-AUS
+  WordV  A4-U2-EIN
+  FloatV BA1LU0400AA03
+  WordV  ERR13
+  FloatV A4-SOLL-ZULUFT-G
+  WordV  PK18
+  FloatK K-SOLL-ZULUFT41 (18.00)
+  FloatV A4-SOLL-ZULUFT-S
+  FloatK K-SOLL-ZULUFT42 (18.00)
+  FloatV A4-SOLL-ZULUFT42
+  WordV  A4-U1-2ST-RM-AUS
+  WordV  A4-UMLUF2-RAUCH
+  FloatK K-SOLL-ZULUFT-G (22.00)
+  WordV  ERR21
+  WordV  ERR22
+  WordV  ERR31
+  FloatK K-SOLL-RAUMT-DRU (22.00)
+  WordV  A4-U1-2ST-RM-EIN
+  FloatK K-SOLL-RAUMT-POS (18.00)
+  FloatV A4-UMLUF2-ZULTEM
+  FloatV ZULUFT-Grossbuer
+  FloatV ZULUFT-Serverfam
+  FloatV A4-Raum-Grossbue
+  WordV  ERR10
+  WordK  Fernquit_a05.aus (0)
+  WordV  ERR01
+  WordV  A4-UML1-KEIL-BM
+  WordV  ERR02
+  WordV  ERR04
+  FloatK K-SOLL-ZULUFT-S (18.00)
+  WordV  ERR05
+  WordV  ERR11
+  WordK  KON00 (0)
+  WordV  \SETZ11
+  WordV  \SETZ10
+  WordV  A4-U1-SOLL-EIN1
+  WordK  KFREIG-GLT-AUS41 (0)
+  WordK  KFREIG-GLT-AUS42 (0)
+  WordK  KFREIG-GLTEIN241 (0)
+  WordK  KFREIG-GLTEIN141 (1)
+  WordK  KFREIG-GLTEIN142 (1)
+  WordK  KFREIG-GLTEIN242 (0)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU0401BF01 (103,1)
+  IPAMB &BA1LU0402BF01 (103,9)
+  WordK  $M0 (1)
+  IPAAW &BA1LU0401AA92 (127)
+  WordV  $WSCRATCH
+  WordK  $M1 (1)
+  IPAAW &BA1LU0400AA93 (123)
+  WordK  $M2 (1)
+  IPAAW &BA1LU0400AA94 (125)
+  WordK  $M3 (1)
+  IPAAW &BA1LU0402AA92 (67)
+  WordK  $M4 (1)
+  IPAAW &BA1LU0400AA83 (124)
+  WordK  $M5 (1)
+  IPAAW &BA1LU0400AA84 (126)
+  IPAMB &M6 (0,0)
+  IPAMB &BA1LU0401BM01 (0,1)
+  IPAMB &M7 (0,2)
+  IPAMB &M8 (0,3)
+  IPAMB &M9 (0,4)
+  IPAMB &BA1LU0401BM02 (0,5)
+  IPAMB &M10 (0,6)
+  IPAMB &M11 (0,7)
+  IPAMB &M12 (1,0)
+  IPAMB &BA1LU0402BM01 (1,1)
+  IPAMB &M13 (1,2)
+  IPAMB &M14 (1,3)
+  IPAMB &M15 (1,4)
+  IPAMB &BA1LU0402BM02 (1,5)
+  IPAMB &M16 (1,6)
+  IPAMB &M17 (1,7)
+  IPAAW &BA1LU0401MW02 (20)
+  IPAAW &BA1LU0402MW02 (21)
+  IPAAW &BA1LU0400MW03 (22)
+  IPAAW &BA1LU0400MW04 (23)
+  IPAAW &BA1LU0400MW13 (24)
+  IPAAW &BA1LU0400MW14 (25)
+  IPAMB &BA1LU0401AL01 (11,1)
+  WordV  $HB2
+  IPAMB &BA1LU0402AL01 (11,2)
+  IPAMB &BA1LU0401BM15 (10,1)
+  IPAMB &BA1LU0402BM15 (10,2)
+  IPAMB &BA1LU0400WA70 (0,10)
+  IPAMB &BA1LU0401WA11 (10,3)
+  IPAMB &BA1LU0402WA11 (10,4)
+  IPAMB &M18 (103,0)
+  IPAMB &M19 (103,2)
+  IPAMB &M20 (103,3)
+  IPAMB &M21 (103,4)
+  IPAMB &M22 (103,5)
+  IPAMB &M23 (103,8)
+  IPAMB &M24 (103,10)
+  IPAMB &M25 (103,11)
+  IPAMB &M26 (103,12)
+  IPAMB &M27 (103,13)
+  IPAMB &BA1LU0500BF02 (104,13)
+  IPAMB &M28 (104,14)
+  IPAMB &M29 (104,15)
+  IPAMB &BA1LU0500BM99 (1,15)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  FloatK $M30 (5.00)
+  WordV  $HB0
+  WordV  $B4
+  WordV  $B5
+  FloatK $M31 (300.00)
+  FloatK $M32 (0.00)
+  WordV  $B6
+  WordK  $M33 (1)
+  IPAMB &BA1LU0402ST82 (101,1)
+  WordV  $B7
+  WordV  $B8
+  FloatK $M34 (300.00)
+  FloatK $M35 (0.00)
+  WordV  $B9
+  WordK  $M36 (1)
+  IPAMB &BA1LU0401ST82 (101,0)
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  FloatK $M37 (120.00)
+  FloatK $M38 (0.00)
+  WordV  $B13
+  WordK  $M39 (1)
+  IPAMB &BA1LU0402ST77 (101,3)
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M40 (120.00)
+  FloatK $M41 (0.00)
+  WordV  $B17
+  WordK  $M42 (1)
+  IPAMB &BA1LU0401ST77 (101,2)
+  WordV  $B18
+  FloatK $M43 (10.00)
+  FloatK $M44 (0.00)
+  WordV  $B19
+  FloatK $M45 (10.00)
+  FloatK $M46 (0.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  IPAMB &BA1LU0400BM51 (0,9)
+  WordV  $B24
+  WordV  $B25
+  FloatK $M47 (0.00)
+  FloatV $F1
+  FloatK $M48 (0.00)
+  FloatV $F2
+  FloatK $M49 (0.00)
+  FloatK $M50 (0.00)
+  FloatK $M51 (0.00)
+  FloatV $F3
+  FloatK $M52 (0.00)
+  FloatK $M53 (0.00)
+  FloatV $F4
+  FloatK $M54 (0.00)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 02
+  ;Lüftungszentrale
+  ;Keller
+  ;Umluftgeräte Anl.04
+  ;Großraumbüro
+  ;Serverfarm
+  ; 
+  ;Achtung alle Ventile
+  ;werden direkt über
+  ;die Regler angesteu.
+  ;Y-Ausgang keine
+  ;fiktiven Adressen
+  ;sondern die Ausgänge
+  ;direkt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (2,KFREIG-GLT-AUS41,KFREIG-GLTEIN141,
+          KFREIG-GLTEIN241,$WZERO,&BA1LU0401BF01,ERR01)
+  BEFAUS (2,KFREIG-GLT-AUS42,KFREIG-GLTEIN142,
+          KFREIG-GLTEIN242,$WZERO,&BA1LU0402BF01,ERR02)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (K-SOLL-ZULUFT41,$M0,&BA1LU0401AA92,$WSCRATCH)
+  ANAUS (K-SOLL-ZULUFT-G,$M1,&BA1LU0400AA93,$WSCRATCH)
+  ANAUS (K-SOLL-ZULUFT-S,$M2,&BA1LU0400AA94,$WSCRATCH)
+  ANAUS (K-SOLL-ZULUFT42,$M3,&BA1LU0402AA92,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANAUS (K-SOLL-RAUMT-DRU,$M4,&BA1LU0400AA83,$WSCRATCH)
+  ANAUS (K-SOLL-RAUMT-POS,$M5,&BA1LU0400AA84,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&M6,4,ZPK,A4-U1-1ST-RM-AUS,A4-U1-1ST-RM-ST,
+          A4-U1-1ST-RM-EIN,ERR03)
+  MELEIN (&M9,4,ZPK,A4-U1-2ST-RM-AUS,A4-U1-2ST-RM-ST,
+          A4-U1-2ST-RM-EIN,ERR04)
+  ODR2 (A4-U1-2ST-RM-EIN,A4-U1-1ST-RM-EIN,A4-U1-EIN)
+  ;EDV-UMLUFT 4.1 1.Stufe
+  ; 
+  ;EDV-UMLUFT 4.1 2.Stufe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&M12,4,ZPK,A4-U2-1ST-RM-AUS,A4-U2-1ST-RM-ST,
+          A4-U2-1ST-RM-EIN,ERR05)
+  MELEIN (&M15,4,ZPK,A4-U2-2ST-RM-AUS,A4-U2-2ST-RM-ST,
+          A4-U2-2ST-RM-EIN,ERR06)
+  ANEIN (&BA1LU0402AA92,A4-SOLL-ZULUFT42,ERR66)
+  ATRA (A4-SOLL-ZULUFT42,K-SOLL-ZULUFT42)
+  ODR2 (A4-U2-1ST-RM-EIN,A4-U2-2ST-RM-EIN,A4-U2-EIN)
+  ;EDV UMLUFT 2 1 STUFE
+  ; 
+  ;EDV UMLUFT 2 2 STUFE
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&BA1LU0401MW02,A4-UMLUF1-ZULTEM,ERR07)
+  ANEIN (&BA1LU0402MW02,A4-UMLUF2-ZULTEM,ERR08)
+  ANEIN (&BA1LU0400MW03,ZULUFT-Grossbuer,ERR09)
+  ANEIN (&BA1LU0400MW04,ZULUFT-Serverfam,ERR10)
+  ANEIN (&BA1LU0400MW13,A4-Raum-Grossbue,ERR11)
+  ANEIN (&BA1LU0400MW14,A4-Raum-Serverfa,ERR12)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU0400AA83,K-SOLL-RAUMT-DRU,ERR11)
+  ANEIN (&BA1LU0400AA84,K-SOLL-RAUMT-POS,ERR12)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&BA1LU0401AL01,1,$HB2,ERR13)
+  NICHT ($HB2,A4-UMLUF1-RAUCH)
+  MELEIN (&BA1LU0402AL01,1,$HB2,ERR14)
+  NICHT ($HB2,A4-UMLUF2-RAUCH)
+  ANEIN (&BA1LU0401AA92,A4-SOLL-ZULUFT41,ERR66)
+  ATRA (A4-SOLL-ZULUFT41,K-SOLL-ZULUFT41)
+  ANEIN (&BA1LU0400AA93,A4-SOLL-ZULUFT-G,ERR66)
+  ATRA (A4-SOLL-ZULUFT-G,K-SOLL-ZULUFT-G)
+  ANEIN (&BA1LU0400AA94,A4-SOLL-ZULUFT-S,ERR66)
+  ATRA (A4-SOLL-ZULUFT-S,K-SOLL-ZULUFT-S)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&BA1LU0401BM15,1,A4-UML1-KEIL-BM,ERR16)
+  MELEIN (&BA1LU0402BM15,1,A4-UML2-KEIL-BM,ERR17)
+  MELEIN (&BA1LU0400WA70,1,A4-UML1-HAND-BET,ERR18)
+  MELEIN (&BA1LU0401WA11,1,$HB2,ERR19)
+  NICHT ($HB2,A4-UMLUF1-REP)
+  MELEIN (&BA1LU0402WA11,1,$HB2,ERR20)
+  NICHT ($HB2,A4-UMLUF2-REP)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&M18,6,ZPK1,KFREIG-GLT-AUS41,ZPK2,KFREIG-GLTEIN141,
+          ZPK3,KFREIG-GLTEIN241,ERR21)
+  MELEIN (&M23,6,ZPK1,KFREIG-GLT-AUS42,ZPK2,KFREIG-GLTEIN142,
+          ZPK3,KFREIG-GLTEIN242,ERR22)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&BA1LU0500BF02,3,Fernquit_a05.aus,PK18,
+          Fernquit_a05.ein,ERR23)
+  MELEIN (&BA1LU0500BM99,1,$B1,$WSCRATCH)
+  ODR2 (TESTSETZ01,$B1,$B2)
+  ODR2 (Fernquit_a05.ein,$B2,$B3)
+  MOKY ($B3,$M30,QUITTIERUNG-A04)
+  NICHT (QUITTIERUNG-A04,$HB0)
+  BEFAUS (1,$HB0,QUITTIERUNG-A04,$WZERO,$WZERO,
+          &BA1LU0500BF02,ERR24)
+  ;StörQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ODR2 (A4-U2-1ST-RM-EIN,A4-U2-2ST-RM-EIN,$B4)
+  UND11 ($B4,A4-UML2-KEIL-BM,$B5)
+  VVZ ($B5,$M31,$M32,$B6)
+  RSS ($B6,QUITTIERUNG-A04,A4-UMLU2-ST-KEIL,$WSCRATCH)
+  SETMEL ($M33,1,A4-UMLU2-ST-KEIL,&BA1LU0402ST82,ERR26)
+  ODR2 (A4-U1-1ST-RM-EIN,A4-U1-2ST-RM-EIN,$B7)
+  UND11 ($B7,A4-UML1-KEIL-BM,$B8)
+  VVZ ($B8,$M34,$M35,$B9)
+  RSS ($B9,QUITTIERUNG-A04,A4-UMLU1-ST-KEIL,$WSCRATCH)
+  SETMEL ($M36,1,A4-UMLU1-ST-KEIL,&BA1LU0401ST82,ERR25)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UNDMN (1,A4-U2-SOLL-EIN2,2,A4-U2-2ST-RM-EIN,
+         A4-UML1-HAND-BET,$B10,$WSCRATCH)
+  UNDMN (1,A4-U2-SOLL-EIN1,2,A4-U2-1ST-RM-EIN,
+         A4-UML1-HAND-BET,$B11,$WSCRATCH)
+  ODR2 ($B10,$B11,$B12)
+  VVZ ($B12,$M37,$M38,$B13)
+  RSS ($B13,QUITTIERUNG-A04,A4-UMLF2-AUTO-ST,$WSCRATCH)
+  SETMEL ($M39,1,A4-UMLF2-AUTO-ST,&BA1LU0402ST77,ERR28)
+  UNDMN (1,A4-U1-SOLL-EIN2,2,A4-U1-2ST-RM-EIN,
+         A4-UML1-HAND-BET,$B14,$WSCRATCH)
+  UNDMN (1,A4-U1-SOLL-EIN1,2,A4-U1-1ST-RM-EIN,
+         A4-UML1-HAND-BET,$B15,$WSCRATCH)
+  ODR2 ($B15,$B14,$B16)
+  VVZ ($B16,$M40,$M41,$B17)
+  RSS ($B17,QUITTIERUNG-A04,A4-UMLF1-AUTO-ST,$WSCRATCH)
+  SETMEL ($M42,1,A4-UMLF1-AUTO-ST,&BA1LU0401ST77,ERR27)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ODRMN (6,A4-UMLU1-ST-KEIL,A4-UMLUF1-REP,A4-U1-1ST-RM-ST,
+         A4-UMLF1-AUTO-ST,A4-UMLUF1-RAUCH,\SETZ11,0,$B18,
+         $WSCRATCH)
+  VVZ ($B18,$M43,$M44,SAMMEL-ST-UML1)
+  ODRMN (6,A4-UMLU2-ST-KEIL,A4-UMLUF2-REP,A4-U2-1ST-RM-ST,
+         A4-UMLF2-AUTO-ST,A4-UMLUF2-RAUCH,\SETZ10,0,$B19,
+         $WSCRATCH)
+  VVZ ($B19,$M45,$M46,SAMMEL-ST-UML2)
+  ODR2 (SAMMEL-ST-UML1,SAMMEL-ST-UML2,SAMMEL-ST-UML1-2)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  UNDMN (1,KFREIG-GLTEIN141,2,SAMMEL-ST-UML1,A4-U1-SOLL-EIN2,
+         A4-U1-SOLL-EIN1,$B20)
+  UNDMN (1,KFREIG-GLTEIN241,2,SAMMEL-ST-UML1,A4-U1-SOLL-EIN1,
+         A4-U1-SOLL-EIN2,$B21)
+  BEFAUS (1,$B20,A4-U1-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0401BM01,ERR29)
+  BEFAUS (1,$B21,A4-U1-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0401BM02,ERR30)
+  ODRMN (2,A4-U1-SOLL-EIN2,A4-U1-SOLL-EIN1,0,$B22,$B23)
+  BEFAUS (1,$B23,$B22,$WZERO,$WZERO,&BA1LU0400BM51,ERR31)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UNDMN (1,KFREIG-GLTEIN142,2,SAMMEL-ST-UML2,A4-U2-SOLL-EIN2,
+         A4-U2-SOLL-EIN1,$B24)
+  UNDMN (1,KFREIG-GLTEIN242,2,SAMMEL-ST-UML2,A4-U2-SOLL-EIN1,
+         A4-U2-SOLL-EIN2,$B25)
+  BEFAUS (1,$B24,A4-U2-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0402BM01,ERR32)
+  BEFAUS (1,$B25,A4-U2-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0402BM02,ERR33)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1000)
+  REGLER (11,A4-U1-EIN,SAMMEL-ST-UML1,$M47,$F1,$WSCRATCH)
+  REGLER (12,A4-U2-EIN,SAMMEL-ST-UML2,$M48,$F2,$WSCRATCH)
+  ;Regelung EDV Umluft-
+  ;geräte 1/2
+  ;Anlage 04
+  ;Ansteuerung Kühlvent.
+  ;Regler negativen XP
+  ; 
+  AWT (SAMMEL-ST-UML1,$F1,$M49,Y-SIGNAL-REG.11)
+  AWT (SAMMEL-ST-UML2,$F2,$M50,Y-SIGNAL-REG.12)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  REGLER (14,KON01,KON00,$M51,$F3,ERR36)
+  AWT (SAMMEL-ST-UML2,$F3,$M52,BA1LU0400AA03)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  REGLER (16,KON01,KON00,$M53,$F4,ERR42)
+  AWT (SAMMEL-ST-UML1,$F4,$M54,BA1LU0400AA04)
+  ENDE 
+  ENDMODUL 

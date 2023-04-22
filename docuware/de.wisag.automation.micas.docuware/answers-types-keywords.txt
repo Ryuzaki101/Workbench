@@ -1,0 +1,183 @@
+Bausteinen in Tasks.
+
+Die Prioritäten im Diagramm auf den Seiten lassen sich wohl
+der Reihenfolge der Bausteine in den Tasks zuordnen.
+Das scheint fast immer zu passen.
+
+
+
+Aber auf S.40 im Diagramm :
+
+   Im MIC File steht Folgendes :
+
+   ...
+
+   ANAUS (VE3-AB-Dru.glatt,$M21,&RLT06MW22,werr-89)
+
+   ...
+
+   PT1 (VE3-AB-Druck,FK-25,VE3-AB-Dru.glatt)
+
+
+
+Wie wird die Reihenfolge in diesem Fall aus dem Diagramm abgeleitet?
+
+Wenn man vom MIC-File ausgeht, wird die Variable 'VE3-AB-Dru.glatt'
+gar nicht  initialisiert.
+
+AW
+Auf jeder Seite im CAE2000 können den Bausteinen Prioritäten vergeben werden, die die Reihenfolge
+der Ablage und somit die Reihenfolge der Bearbeitung bestimmen. Wobei die aufsteigende Priorität
+die Abarbeitungsfolge bestimmt. Werden keine vergeben, werden die Bausteine in der Reihenfolge des
+Anlegens (zeitlich gesehen) abgelegt. Das kann dann zur Folge haben, dass zuerst die Ausgabe mit
+dem ANAUS erfolgt, bevor das PT1-Glied durchlaufen wird. Somit wird zuerst der alte Wert ausgegeben.
+Dies kann zur Laufzeit zu unerklärlichen Effekten führen, besonders wenn Logik mit im Spiel ist.
+Im obigen Fall wurden also keine Prioritäten für diese Seite vergeben, hier ist es nicht weiter tragisch,
+da der Analogwert nur einen Schritt zu spät ausgegeben wird, wir empfehlen aber grundsätzlich,
+solche zu vergeben, damit nicht diese Nebeneffekt in der Logik auftreten.
+
+
+
+
+
+Weitere Fragen :
+
+- Welche Bedeutung haben die Doppellinien im Diagramm.
+
+Diese zeigen Floatvariable/Floatkonstante an.
+
+Es gibt für die Verarbeitung an und für sich nur zwei Typen von Variablen:
+
+1. Float (IEEE 754, INTEL-Definition) mit Doppellinie, im ONLINE-Test hellgrün
+
+2. Binäre Typen, 16-Bit-Variable, aber nur das Bit0 wird ausgewertet, einfache Linie, im ONLINE-Test blau und dünn, wenn 0 oder blau und dick, wenn 1
+
+
+
+- Seite 60. Der Regler und die Reglerdefinition.
+
+   In der Definition des Reglers und auch im MIC File
+
+   tauchen X und W nicht auf.
+
+Der Regler liest vom Prozessabbild und schreibt auf das Prozessabbild. In MICAS bildet er zusammen mit der Sollwertkennlinie eine Ausnahme.
+Diese Daten und Parameter sind in einer Datenbank hinterlegt, die von der Leitzentrale beschrieben werden kann. Somit kann der Proportionalbereich
+oder andere Reglergrößen nachträglich geändert werden. Das MICAS-Programm selbst kann nicht von der Leitzentrale beschrieben werden.
+Der Regler hat deshalb für die Programmlogik nur einen Eingang zum Ein-/Ausschalten und einen Eingang, um einen feste Stellgröße vorzugeben.
+Dies ist für das Anfahren gedacht oder auch für die Verriegelung, d. h. Anlage ist zum Beispiel im Frostschutz mit Klappen zu und
+festem Durchfluss eines Heizregisters mit 10% Ventilstellung.
+
+Ähnliches gilt für die Sollwertkennlinie. Deren Eckpunkte können auch von der Leitzentrale vorgegeben werden.
+
+
+
+- SETMEL (prio: 4, Seite 9) Ausgangsseitig.
+
+   Da steht FG-ADR1 bis FG-ADR7 .. die tauchen weder im MIC-File
+
+   noch in der Bausteindefinition auf. Mehr dazu siehe Erklärung unten.
+
+
+
+
+
+- Folgende Schlüsselwörter haben wir Identifiziert :
+
+   FloatK  - Floatkonstante anlegen
+
+   FloatV  - Floatvariable  anlegen
+
+   WordK   - Int-Konstante  anlegen (16-Bit)
+
+   WordV   - Int-Variable   anlegen (16-Bit)
+
+   IPAMB   - Definiert das Symbol im  Prozessabbild mit Zeile/Spalte
+
+   IPAAW   - Konstante Zeile im ProzessAbbild (?) wie oben IPAMB, Zeile(/Spalte), aber Spalte ist implizit 0! Mehr dazu siehe Erklärung unten.
+
+
+
+   TASK (nummer,art,[zykluszeit])
+
+     art := cycl|init
+
+   ENDE - Taskende
+
+
+
+   MODUL (TYP,FB_NUMMER)
+
+      TYP : Modul Typ Bsp.: AR11
+
+      FB_NUMMER : Feldbus Nummer (des Moduls bzw. Gerätes, auf dem dieses Programm abgelegt wird Bsp. 03)
+
+      Achtung:
+
+      Alle Tasks, die in dieser Anweisung eingeschlossen sind, werden modulspezifisch generiert,
+
+d. h. es entsteht beispielsweise ein File AR1103.H03 mit dem Tasksystem für den AR11 #3
+
+   ENDMODUL
+
+
+
+so weit erst mal.
+
+Zum Prozessabbild muss einiges ergänzt werden:
+
+Dieses ist als Matrix vorstellbar, die pro Zeile entweder einen Analogausgabewert, einen Messwert, einen Zählwert oder 16 Einzelmeldungen aufnehmen kann.
+Dies stammt aus einer Zeit, als ein Messwert noch als der unkonvertierte 12-Bit Wert abgelegt wurde. Die Zeile ist somit der Index, in dem der Analogwert
+im Prozessabbild zu finden ist. Da es nur einen pro Zeile gibt, ist die Spalte implizit immer 0. Für eine Meldung wird die Spalte zur Identifikation aber
+benötigt, da ja max. 16 pro Zeile vorhanden sind. Das Prozessabbild ist die Schnittstelle zu unserer Leitzentrale bzgl. Prozesswerte und die eingelesenen
+bzw. zuletzt geschriebenen Werte an die Peripherie werden hier eingetragen. Eine Umrechnung der Messwerte nimmt die Leitzentrale selbst vor. Unser MICAS
+liest aus diesem die konvertierten (Float-)Werte ein und der Transferbaustein hat als Parameter die Zeile des Prozessabbildes (Baustein enthält dazu Typ IPAAW,
+der nach dem Anlegen des Bausteins ausgefüllt wird). Für eine Einzelmeldung wird noch die Spalte benötigt, deshalb der Typ IPAMB, für das Setzen einer
+Einzelmeldung (oder mehrerer) mit SETMEL gilt Analoges. Im Prozessabbild gibt es noch einen weiteren Spezialfall.
+
+Binäre Ausgänge sind mit ihren Rückmeldungen verkoppelt, die Ausgänge selbst tauchen somit im Prozessabbild nur indirekt auf. Dazu gibt es eine Projektierungsvorschrift:
+	Eine schaltbare Anlage hat mehrere Meldungen zugeordnet und eine Bezugsadresse im Prozessabbild, die sogenannte R0-(Zeile/)Spalte. Als weitere Meldungen
+	gibt es den Örtlichstatus oder -meldung, einen Störstatus oder –meldung und die Rückmeldungen
+		AUS (R0-Spalte),
+		EIN (R1-Spalte) und bei mehrstufigen
+		EIN2 (R2-Spalte), das bis zu
+		EIN3 (R3-Spalte). Diese sind im Prozessabbild wie folgt hinterlegt:
+
+Meldung: OE R0 ST R1 xx R2 xx R3 OE R0 ST R1 xx R2 xx R3
+
+Spalte:  00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
+
+
+
+Oder wenn mehr/nur einstufige vorhanden sind:
+
+Meldung: OE R0 ST R1 OE R0 ST R1 OE R0 ST R1 xx R2 xx R3
+
+Spalte:  00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
+
+
+
+Meldung: OE R0 ST R1 OE R0 ST R1 OE R0 ST R1 OE R0 ST R1
+
+Spalte:  00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
+
+
+
+Eine Anlage wird mit dem BEFAUS geschalten. Dieser hat für jede Stufe einen binären Eingang, die aktuelle Stufe wird über eeine Zahl im Baustein
+vorgegeben (N=1..3) Bei einstufigen ist es dann meistens so, dass der R0-Eingang der negierte R1-Eingang ist. In welchem Zustand sich eine Anlage
+befindet, kann aus den Rückmeldungen ersehen werden. Da dies meistens Schließer sind, bedeutet eine 1 auf R0, die Anlage ist AUS, auf R1 die Anlage
+ist EIN usw. Sind beide R0 und R1 1, ist die Anlage in einem inkonsistenten Zustand, genauso, wenn beide 0 sind (dafür gibt es eine separate Überwachung).
+Als Adresse im BEFAUS im Prozessabbild wird somit die Zeile/R0-Spalte vorgegeben (Typ IPAMB).
+
+Aus dem ganzen geht also hervor, dass die Adressierung sich auf Zeile/Spalte bezieht bzw. sie ist HW-bezogen, da HW-Ein-/Ausgänge fest dem Prozessabbild
+zugeordnet werden. Dies stammt alles aus einer Zeit, als diese noch über DIL’s eingestellt wurden. Das layout des MICAS bzw. der Transferbausteine
+(Lesen/Schreiben Prozessabbild und somit Ein-Ausgänge) beruht somit von der Adressierung auf Zeile/Spalte.
+
+Warum nun die zusätzliche Adresse(n) im SETMEL (und anderen), die nirgends auftaucht(en)?
+
+Jedes Objekt im Prozessabbild wird mit einer Anwenderadresse oder Funktionsgruppenadresse (FGA) identifiziert. Ein Objekt wäre nun eine Anlage mit ihren
+verschiedenen Meldungen. Zugeordnet wird dann die FGA zu einer HW-Adresse oder Informationspunktadresse (IPA), die die Zeile und Spalte beinhaltet.
+Anders herum, als Beispiel: Die IPAMB (30,1) hat als Zuordnung die FGA 00-KLI01-BF1, diese kann als Kommentar in den Baustein aufgenommen werden.
+Leider gibt es hier in MICAS keinen eindeutigen Bezug bzw. keine Transferbausteine, bei denen die FGA als Adresse angegeben wird!
+Mit diesem Kommentar schaffen sich die Projekteure dann eine Brücke zur FGA oder auch Benutzeradresse. Da wir den Übersetzer des MIC-File in der Hand
+haben und in Zukunft auch das Planungstool wollen wir das so ändern, dass wir mit der FGA arbeiten (evt. auch paralell arbeiten können).
+

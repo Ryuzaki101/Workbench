@@ -1,0 +1,167 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI20507.GPS
+  ;*** Projektname    : MPI Turm 2
+  ;*** Projektnummer  : 33100821
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Peters
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (ar20,7)
+  WordV  1_Anlage_R0
+  WordV  1_Rauch_ST
+  WordV  1_Tag_R239_einsc
+  WordV  1_Anlage_R1
+  WordV  K1
+  WordV  1_Taster_R239
+  WordV  1_Tag_R239_EIN1
+  WordK  1_Tag_R239 (0)
+  WordV  1_Anlage_ST
+  WordV  1_Zul_Ven_R0
+  WordV  1_Abl_Ven_R0
+  WordV  1_Tag_R239_R1_1
+  WordV  1_Nacht_R239
+  WordV  1_Abl_Ven_R1
+  WordV  1_Zul_Ven_R1
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &M2 (120,1)
+  WordV  $WSCRATCH
+  IPAMB &M3 (120,3)
+  IPAMB &M4 (108,1)
+  IPAMB &M5 (108,3)
+  IPAMB &M6 (120,2)
+  IPAMB &M7 (1,0)
+  IPAMB &M9 (63,3)
+  WordV  $HB2
+  IPAMB &M10 (94,14)
+  IPAMB &M11 (20,5)
+  IPAMB &M12 (20,7)
+  IPAMB &M13 (21,1)
+  IPAMB &M14 (21,3)
+  WordV  $B3
+  WordV  $B9
+  WordV  $B4
+  FloatK $M18 (50.00)
+  FloatK $M19 (4.00)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  IPAMB &M20 (94,13)
+  FloatK $M21 (5.00)
+  WordV  $B10
+  WordV  $B11
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFX0003
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:  MPI Gîttingen
+  ;Projekt:Turm 2
+  ;        Berufung Dr.Hell
+  ;Taster/LED-Ansteuerung
+  ;Anlage Labore und Norm-
+  ;optik 2OG , Raum : 239
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (1_Tag_R239,1_Tag_R239_EIN1)
+  ENDE 
+  TASK (2,cycl,500)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (1_Tag_R239_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,1_Tag_R239_R1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,1_Anlage_R0,$WSCRATCH)
+  MELEIN (&M3,1,1_Anlage_R1,$WSCRATCH)
+  MELEIN (&M4,1,1_Nacht_R239,$WSCRATCH)
+  MELEIN (&M5,1,1_Tag_R239,$WSCRATCH)
+  MELEIN (&M6,1,1_Anlage_ST,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1_Rauch_ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M10,1,1_Taster_R239,$WSCRATCH)
+  MELEIN (&M11,1,1_Zul_Ven_R0,$WSCRATCH)
+  MELEIN (&M12,1,1_Zul_Ven_R1,$WSCRATCH)
+  MELEIN (&M13,1,1_Abl_Ven_R0,$WSCRATCH)
+  MELEIN (&M14,1,1_Abl_Ven_R1,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Tag_R239,$B9,$B3)
+  NICHT (1_Tag_R239,$B9)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (1_Taster_R239,$B3,1_Tag_R239_einsc)
+  UNDMN (4,1_Tag_R239,1_Anlage_R1,1_Zul_Ven_R1,1_Abl_Ven_R1,
+         0,$B4,$WSCRATCH)
+  PDM ($M18,$M19,$B5)
+  UND2 ($B5,1_Anlage_ST,$B6)
+  ODR2 ($B4,$B6,$B7)
+  NICHT ($B7,$B8)
+  BEFAUS (1,$B8,$B7,$WZERO,$WZERO,&M20,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MOKY (1_Tag_R239_einsc,$M21,$B10)
+  ODR2 ($B10,1_Tag_R239_R1_1,$B11)
+  BEFAUS (1,$WZERO,$B11,$WZERO,$WZERO,&M4,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

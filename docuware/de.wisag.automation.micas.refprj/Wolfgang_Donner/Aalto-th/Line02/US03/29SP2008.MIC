@@ -1,0 +1,349 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29SP2008.GPS
+  ;*** Projektname    : TH0203C
+  ;*** Projektnummer  : 126187
+  ;*** Bearbeiter     : Flie·garten
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 3
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 8
+  ;*****************************************************************
+  MODUL (SP20,8)
+  WordV  Err12
+  WordV  Err13
+  WordV  Err15
+  WordV  Err16
+  WordV  Err17
+  WordV  Quittierung_AUS
+  WordV  Quittierung_EIN
+  WordK  Stoerung_quitt (1)
+  WordV  Quitt._Taster
+  WordV  Err18
+  WordV  Stoerung1
+  WordV  Stoerung2
+  WordV  AUTO_ST_Druck1
+  WordV  AUTO_ST_Druck2
+  WordK  KFOLGE-AUS (0)
+  WordV  Err01
+  WordV  Freigabe_Druck_1
+  WordV  Freigabe_Druck_2
+  WordV  BetriebsdruckHan
+  WordV  Kompressor1_WA
+  WordV  Kompressor2_WA
+  WordV  Druckluft1_EIN
+  WordV  Druckluft2_EIN
+  WordV  Kompressor1_ST
+  WordK  K-KOMP1 (0)
+  WordK  K-KOMP2 (0)
+  WordK  K-AUTOMATIK (1)
+  WordV  Kompressor2_ST
+  WordV  Err02
+  WordV  ZPK
+  WordV  Err03
+  WordV  Err05
+  WordV  Err04
+  WordV  Err06
+  WordV  BetriebsdruckMIN
+  WordV  Err23
+  WordV  Kompressor1_EIN
+  WordV  Kompressor2_EIN
+  IPAMB &03F-LU010-900 (150,1)
+  IPAMB &03F-LU010-126 (154,1)
+  IPAMB &M0 (154,2)
+  IPAMB &M1 (154,3)
+  WordV  $B1
+  FloatK $M2 (5.00)
+  FloatK $M3 (3.00)
+  FloatK $M4 (0.00)
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &03F-HZ000-101 (2,11)
+  IPAMB &M5 (150,2)
+  IPAMB &M6 (150,3)
+  IPAMB &M7 (150,4)
+  IPAMB &M8 (150,5)
+  IPAMB &M9 (150,6)
+  IPAMB &M10 (150,7)
+  IPAMB &03F-LU011-101 (73,3)
+  IPAMB &03F-LU012-101 (73,6)
+  IPAMB &03F-LU011-117 (72,14)
+  IPAMB &03F-LU011-103 (70,2)
+  IPAMB &03F-LU012-117 (72,15)
+  IPAMB &03F-LU012-103 (70,6)
+  IPAMB &03F-LU010-993 (72,11)
+  IPAMB &03F-LU010-139 (70,10)
+  WordV  $B6
+  WordV  $WSCRATCH
+  FloatK $M11 (180.00)
+  FloatK $M12 (0.00)
+  WordV  $B7
+  WordK  $M13 (1)
+  IPAMB &03F-LU011-993 (153,0)
+  WordV  $B8
+  FloatK $M14 (180.00)
+  FloatK $M15 (0.00)
+  WordV  $B9
+  WordK  $M16 (1)
+  IPAMB &03F-LU012-993 (153,1)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B26
+  WordV  $B15
+  WordV  $B16
+  FloatK $M17 (6.00)
+  FloatV $F1
+  FloatV $FSCRATCH
+  FloatK $M18 (12.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M19 (3600.00)
+  WordV  $B27
+  FloatK $M20 (1.00)
+  FloatK $M21 (0.00)
+  FloatV $F4
+  WordV  $B17
+  FloatV $F5
+  FloatK $M22 (3600.00)
+  WordV  $B28
+  FloatK $M23 (1.00)
+  FloatK $M24 (0.00)
+  FloatV $F6
+  WordV  $B18
+  FloatK $M25 (10.00)
+  WordV  $B19
+  FloatK $M26 (10.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B31
+  WordV  $HB0
+  FloatV $F7
+  FloatK $M27 (48.00)
+  FloatV $F8
+  FloatK $M28 (3600.00)
+  FloatV $F9
+  FloatV $F10
+  WordV  $B32
+  FloatK $M29 (300.00)
+  WordV  $B29
+  WordV  $B33
+  WordV  $B30
+  WordV  $B10
+  WordV  $B36
+  FloatV $F11
+  FloatK $M30 (48.00)
+  FloatV $F12
+  FloatK $M31 (3600.00)
+  FloatV $F13
+  FloatV $F14
+  WordV  $B37
+  FloatK $M32 (300.00)
+  WordV  $B34
+  WordV  $B38
+  WordV  $B35
+  WordV  $B11
+  WordV  $B39
+  IPAMB &03F-LU011-130 (70,1)
+  WordV  $B40
+  IPAMB &03F-LU012-130 (70,5)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;Druckluftsteuerung
+  ;Betriebsdruckluft
+  ;STEUERUNG UNND
+  ;REGELUNG:
+  ;SCHALTSCHRANK:
+  ;Druckluft
+  ; 
+  ;Aalto-Theater Essen
+  ;Umbau Heizung / KÑlte
+  ;S
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (3,KFOLGE-AUS,K-KOMP1,K-KOMP2,K-AUTOMATIK,
+          &03F-LU010-900,Err01)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&03F-LU010-126,3,Quittierung_AUS,ZPK,
+          Quittierung_EIN,Err15)
+  ODR2 (Quittierung_EIN,Quitt._Taster,$B1)
+  MOKY ($B1,$M2,Stoerung_quitt)
+  VVZ (Stoerung_quitt,$M3,$M4,$B2)
+  UND11 ($B5,$B2,$B3)
+  RSS ($B3,$B2,$B4,$B5)
+  BEFAUS (1,$B4,$B2,$WZERO,$WZERO,&03F-LU010-126,Err16)
+  MELEIN (&03F-HZ000-101,1,Quitt._Taster,Err17)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&03F-LU010-900,7,KFOLGE-AUS,ZPK,K-KOMP1,ZPK,
+          K-KOMP2,ZPK,K-AUTOMATIK,Err02)
+  MELEIN (&03F-LU011-101,1,Kompressor1_WA,Err04)
+  MELEIN (&03F-LU012-101,1,Kompressor2_WA,Err05)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&03F-LU011-117,1,Kompressor1_EIN,Err03)
+  MELEIN (&03F-LU011-103,1,Kompressor1_ST,Err04)
+  MELEIN (&03F-LU012-117,1,Kompressor2_EIN,Err05)
+  MELEIN (&03F-LU012-103,1,Kompressor2_ST,Err06)
+  MELEIN (&03F-LU010-993,1,BetriebsdruckMIN,Err23)
+  MELEIN (&03F-LU010-139,1,BetriebsdruckHan,Err23)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  UNDMN (1,Druckluft1_EIN,2,Kompressor1_EIN,BetriebsdruckHan,
+         $B6,$WSCRATCH)
+  VVZ ($B6,$M11,$M12,$B7)
+  RSS ($B7,Stoerung_quitt,AUTO_ST_Druck1,$WSCRATCH)
+  SETMEL ($M13,1,AUTO_ST_Druck1,&03F-LU011-993,Err18)
+  UNDMN (1,Druckluft2_EIN,2,Kompressor2_EIN,BetriebsdruckHan,
+         $B8,$WSCRATCH)
+  VVZ ($B8,$M14,$M15,$B9)
+  RSS ($B9,Stoerung_quitt,AUTO_ST_Druck2,$WSCRATCH)
+  SETMEL ($M16,1,AUTO_ST_Druck2,&03F-LU012-993,Err18)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (2,AUTO_ST_Druck1,Kompressor1_ST,1,Kompressor1_WA,
+         Stoerung1,$WSCRATCH)
+  ODRMN (2,AUTO_ST_Druck2,Kompressor2_ST,1,Kompressor2_WA,
+         Stoerung2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,K-KOMP1,2,K-KOMP2,K-AUTOMATIK,$B12,$WSCRATCH)
+  UNDMN (1,K-KOMP2,2,K-AUTOMATIK,K-KOMP1,$B13,$WSCRATCH)
+  UNDMN (1,K-AUTOMATIK,2,K-KOMP2,K-KOMP1,$B14,$WSCRATCH)
+  ODRMN (3,$B12,$B13,$B14,0,$B26,$WSCRATCH)
+  UND2 (Stoerung2,$B26,$B15)
+  UND2 (Stoerung1,$B26,$B16)
+  UST ($WZERO,$M17,$F1,$FSCRATCH)
+  UST ($WZERO,$M18,$F2,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (Kompressor1_EIN,$B27,$F3)
+  VGLOH ($F3,$M19,$B27)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B19,$M20,$WZERO,$M21,$WONE,$B27,$WZERO,$F4)
+  ATRA ($F4,$FSCRATCH)
+  VGLOH ($F4,$F1,$B17)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (Kompressor2_EIN,$B28,$F5)
+  VGLOH ($F5,$M22,$B28)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B20,$M23,$WZERO,$M24,$WONE,$B28,$WZERO,$F6)
+  ATRA ($F6,$FSCRATCH)
+  VGLOH ($F6,$F2,$B18)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B17,$M25,$B19)
+  MOKY ($B18,$M26,$B20)
+  RSS ($B17,$B18,$B21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B14,$B21,$B22)
+  UND2 ($B21,$B14,$B23)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B12,$B15,$B22,0,$B24,$WSCRATCH)
+  ODRMN (3,$B13,$B16,$B23,0,$B25,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B30,Stoerung1,$B31)
+  NICHT ($B31,$HB0)
+  UHR ($HB0,$B31,$F7)
+  UST ($WZERO,$M27,$F8,$FSCRATCH)
+  UST ($WZERO,$M28,$F9,$FSCRATCH)
+  MULT ($F8,$F9,$F10)
+  VGLOH ($F7,$F10,$B32)
+  MOKY ($B32,$M29,$B29)
+  ODR2 ($B24,$B29,$B33)
+  UND11 ($B33,Stoerung1,$B30)
+  BTRA ($B30,$B10)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B35,Stoerung2,$B36)
+  NICHT ($B36,$HB0)
+  UHR ($HB0,$B36,$F11)
+  UST ($WZERO,$M30,$F12,$FSCRATCH)
+  UST ($WZERO,$M31,$F13,$FSCRATCH)
+  MULT ($F12,$F13,$F14)
+  VGLOH ($F11,$F14,$B37)
+  MOKY ($B37,$M32,$B34)
+  ODR2 ($B25,$B34,$B38)
+  UND11 ($B38,Stoerung2,$B35)
+  BTRA ($B35,$B11)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (BetriebsdruckMIN,$B10,Freigabe_Druck_1)
+  ODR2 ($B11,BetriebsdruckMIN,Freigabe_Druck_2)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (Freigabe_Druck_1,$B39)
+  BEFAUS (1,$B39,Freigabe_Druck_1,$WZERO,$WZERO,
+          &03F-LU011-130,Err12)
+  NICHT (Freigabe_Druck_2,$B40)
+  BEFAUS (1,$B40,Freigabe_Druck_2,$WZERO,$WZERO,
+          &03F-LU012-130,Err13)
+  ENDE 
+  ENDMODUL 

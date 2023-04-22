@@ -1,0 +1,648 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60514.GPS
+  ;*** Projektname    : MPI-G”ttingen T6
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : Jac.
+  ;*** Prfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 14
+  ;*****************************************************************
+  MODUL (AR20,14)
+  WordV  WERR
+  WordK  K-GES-ANL-AUS-TI (0)
+  WordK  K-GES-ANL-EIN-TI (1)
+  FloatK K-SW-ZL-TEMP-KLK (17.00)
+  FloatK K-SW-ZL-TEMP-WLK (24.00)
+  FloatK K-SW_ZU-TEMP-D10 (22.00)
+  WordV  ZUL-VENT-AUS-TIE
+  WordV  ZUL-VENT-ST-TIE
+  WordV  ZUL-VENT-EIN-TIE
+  WordV  ABL-VENT1-AUS-TI
+  WordV  ABL-VENT1-ST-TIE
+  WordV  ABL-VENT1-EIN-TI
+  WordV  ABL-VENT2-AUS-TI
+  WordV  ABL-VENT2-ST-TIE
+  WordV  ABL-VENT2-EIN-TI
+  WordV  VE-PUM-AUS-TIER
+  WordV  VE-PUM-ST-TIER
+  WordV  VE-PUM-EIN-TIER
+  WordV  WRG-PUM-1-AUS-TI
+  WordV  WRG-PUM-1-ST-TI
+  WordV  WRG-PUM-1-EIN-TI
+  WordV  WRG-PUM-2-AUS-TI
+  WordV  WRG-PUM-2-ST-TI
+  WordV  WRG-PUM-2-EIN-TI
+  WordV  T6-LU17-10B-B02
+  WordV  T6-LU17-10B-S10
+  WordV  FEUERW-ABSCHALT
+  WordV  HYGROSTAT-TIERST
+  WordV  ZUL-KEILRI-TIER
+  WordV  ABL-1-KEILRI-TIE
+  WordV  ABL-2-KEILRI-TIE
+  WordV  FROST-TIERSTAELL
+  FloatV AUSSENTEMPERATUR
+  FloatV ZUL-TEMP-KALTLUF
+  FloatV ZUL-FEUCH-TIERST
+  FloatV ZUL-TEMP-WARMLUF
+  WordV  VORSPUELEN-TIER
+  WordK  KON01 (1)
+  WordK  KON00 (0)
+  FloatV EINSCH-VE-PUMPE
+  WordV  SOMMER-UMSCH-TIE
+  FloatV ZUL-ABS-FEUCHTE
+  FloatV ABL-ABS-FEUCHTE
+  FloatV Y-Regler_Kalt
+  WordV  ZUL-VENT-STOER
+  WordV  ENTRIEGELN
+  WordV  ABL-VENT-1-STOER
+  WordV  ABL-VENT-2-STOER
+  FloatV EINSCH-WRG-PUMPE
+  WordK  K-GES-AN-EIN-R10 (1)
+  WordV  EH-PUMPE-EIN_AU
+  WordV  K-GES-AN-AUS-R10
+  FloatK K-GR-AU_ERP-EIN- (10.00)
+  FloatV RL-TEMP-VORERH
+  FloatV RAUMTEMPERAT-D13
+  WordK  K-GES-AN-EIN-R13 (1)
+  WordV  K-GES-AN-AUS-R13
+  WordV  VORGESPUELT
+  FloatV ABL-TEMP-TIERST_
+  FloatV ABL-FEUCH-TIERST
+  FloatV SW-AB-ABS-FEUCHT
+  FloatK K-SW-MIN-RL-TEMP (15.00)
+  FloatV Y-REG-ABS-ZU-FEU
+  FloatK K-SW-REL-ZU-FEUC (50.00)
+  FloatK K-SW_ZU-TEMP-D13 (22.00)
+  FloatV ZU-TEMP_RAUM-D10
+  FloatV ZU-TEMP_RAUM-D13
+  WordV  AU-FO-KLAPPE-ZU_
+  WordV  AU-FO-KLAPPE-AUF
+  WordV  R-SCH-ZUL-LAB-2k
+  WordV  R-SCH-AB1-LAB-2K
+  WordV  R-SCH-AB2-LAB-2K
+  FloatV ANST-VORSPUELEN
+  WordV  AU-Temp.>10
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &T6-LU17-10B-X50 (118,1)
+  WordK  $M0 (1)
+  IPAAW &T6-LU17-10B-Y50 (122)
+  WordK  $M1 (1)
+  IPAAW &T6-LU17-10B-Y51 (123)
+  WordK  $M2 (1)
+  IPAAW &T6-LU17-10B-Y61 (131)
+  WordK  $M3 (1)
+  IPAAW &T6-LU17-10B-Y54 (50)
+  WordK  $M4 (1)
+  IPAAW &T6-LU17-13B-Y50 (56)
+  IPAMB &T6-LU17-10B-X51 (118,5)
+  WordK  $M5 (1)
+  IPAAW &T6-LU17-10B-Y56 (194)
+  IPAMB &T6-LU17-13B-X50 (118,9)
+  WordK  $M6 (1)
+  IPAAW &T6-LU17-10B-Y57 (197)
+  IPAMB &M7 (118,2)
+  IPAMB &M8 (118,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &T6-LU17-10B-X01 (101,1)
+  IPAMB &M9 (101,2)
+  IPAMB &M10 (101,3)
+  IPAMB &T6-LU17-10B-X02 (101,5)
+  IPAMB &M11 (101,6)
+  IPAMB &M12 (101,7)
+  IPAMB &T6-LU17-10B-X03 (102,1)
+  IPAMB &M13 (102,2)
+  IPAMB &M14 (102,3)
+  IPAMB &T6-LU17-10B-X06 (102,5)
+  IPAMB &M15 (102,6)
+  IPAMB &M16 (102,7)
+  IPAMB &T6-LU17-10B-X04 (120,1)
+  IPAMB &M17 (120,2)
+  IPAMB &M18 (120,3)
+  IPAMB &T6-LU17-10B-X05 (120,5)
+  IPAMB &M19 (120,6)
+  IPAMB &M20 (120,7)
+  IPAMB &T6-LU17-10B-B01 (126,2)
+  IPAMB &M21 (126,3)
+  IPAMB &T6-LU17-10B-B03 (126,6)
+  IPAMB &M22 (126,7)
+  IPAMB &T6-LU17-10B-S04 (127,2)
+  IPAMB &T6-LU17-10B-S11 (127,11)
+  IPAMB &T6-LU17-10B-B00 (101,11)
+  IPAMB &M23 (118,6)
+  IPAMB &M24 (118,7)
+  WordV  $B3
+  WordV  $B4
+  IPAMB &M25 (118,10)
+  IPAMB &M26 (118,11)
+  WordV  $B5
+  WordV  $B6
+  IPAMB &T6-LU17-10B-X10 (119,1)
+  IPAMB &M27 (119,2)
+  IPAMB &M28 (119,3)
+  IPAMB &M29 (124,15)
+  IPAMB &M30 (125,10)
+  IPAMB &M31 (125,11)
+  FloatV $F1
+  FloatV $F2
+  IPAAW &T6-LU17-10B-T00 (103)
+  IPAAW &T6-LU17-10B-T01 (104)
+  IPAAW &T6-LU17-10B-T02 (105)
+  IPAAW &T6-LU17-10B-F01 (107)
+  FloatV $F3
+  IPAAW &T6-LU17-10B-T03 (106)
+  FloatV $F4
+  IPAAW &T6-LU17-13B-T01 (109)
+  IPAAW &T6-LU17-10B-T04 (134)
+  IPAAW &T6-LU17-10B-F02 (108)
+  FloatV $F5
+  IPAAW &T6-LU17-13B-T02 (188)
+  FloatV $F6
+  IPAAW &T6-LU17-10B-T05 (191)
+  FloatV $F7
+  WordV  $B7
+  FloatK $M32 (120.00)
+  FloatK $M33 (0.00)
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  WordV  $HB1
+  FloatK $M34 (10.00)
+  FloatK $M35 (1.00)
+  FloatK $M36 (40.00)
+  WordV  $B11
+  WordV  $B12
+  FloatK $M37 (1.00)
+  WordV  $B13
+  FloatK $M38 (60.00)
+  FloatK $M39 (60.00)
+  FloatK $M40 (10.00)
+  FloatK $M41 (0.50)
+  FloatK $M42 (31.00)
+  FloatK $M43 (32.00)
+  FloatK $M44 (0.00)
+  FloatK $M45 (60.00)
+  FloatK $M46 (100.00)
+  FloatV $F8
+  FloatK $M47 (0.00)
+  WordK  $M48 (1)
+  IPAAW &T6-LU17-10B-Y05 (115)
+  FloatK $M49 (0.00)
+  FloatK $M50 (100.00)
+  FloatV $F9
+  FloatK $M51 (0.00)
+  WordK  $M52 (2)
+  FloatK $M53 (3.00)
+  FloatK $M54 (10.00)
+  FloatK $M55 (120.00)
+  FloatK $M56 (0.00)
+  FloatK $M57 (10.00)
+  FloatK $M58 (40.00)
+  FloatK $M59 (0.20)
+  FloatK $M60 (0.00)
+  FloatK $M61 (100.00)
+  FloatV $F10
+  FloatK $M62 (62.00)
+  FloatK $M63 (0.00)
+  FloatK $M64 (100.00)
+  FloatK $M65 (100.00)
+  FloatV $F11
+  WordV  $HB0
+  FloatK $M66 (100.00)
+  FloatV $F12
+  FloatV $F13
+  FloatK $M67 (0.00)
+  WordK  $M68 (1)
+  IPAAW &T6-LU17-10B-Y01 (111)
+  FloatK $M69 (5.00)
+  FloatK $M70 (2.00)
+  WordV  $B14
+  FloatK $M71 (0.00)
+  FloatK $M72 (300.00)
+  WordV  $B15
+  FloatK $M73 (86400.00)
+  FloatK $M74 (300.00)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  FloatV $F14
+  FloatK $M75 (86400.00)
+  WordV  $B21
+  WordV  $B22
+  FloatV $F15
+  FloatK $M76 (86400.00)
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  FloatK $M77 (5.00)
+  FloatK $M78 (3.00)
+  WordV  $B29
+  FloatK $M79 (0.00)
+  FloatK $M80 (300.00)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  FloatK $M81 (0.00)
+  FloatK $M82 (100.00)
+  FloatK $M83 (30.00)
+  FloatK $M84 (0.00)
+  FloatV $F16
+  FloatK $M85 (0.00)
+  FloatV $F17
+  FloatK $M86 (0.00)
+  FloatV $F18
+  WordK  $M87 (1)
+  IPAAW &T6-LU17-10B-Y03 (113)
+  FloatK $M88 (101325.00)
+  WordK  $M89 (1)
+  IPAAW &T6-LU17-10B-Y60 (61)
+  FloatK $M90 (101325.00)
+  WordK  $M91 (1)
+  IPAAW &T6-LU17-10B-Y62 (183)
+  FloatK $M92 (101325.00)
+  WordK  $M93 (1)
+  IPAAW &T6-LU17-10B-Y64 (184)
+  WordV  $HB3
+  FloatK $M94 (0.00)
+  FloatV $F19
+  FloatK $M95 (0.00)
+  WordV  $B33
+  WordK  $M96 (1)
+  IPAAW &T6-LU17-10B-Y63 (133)
+  WordK  $M97 (1)
+  IPAAW &T6-LU17-10B-Y04 (114)
+  WordK  $M98 (1)
+  IPAAW &T6-LU17-10B-Y65 (185)
+  FloatK $M99 (0.00)
+  FloatV $F20
+  FloatK $M100 (0.00)
+  FloatV $F21
+  WordK  $M101 (1)
+  IPAAW &T6-LU17-10B-Y02 (112)
+  WordV  $B34
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  FloatK $M102 (20.00)
+  FloatK $M103 (0.00)
+  WordV  $B39
+  WordV  $B40
+  WordK  $M104 (1)
+  IPAMB &T6-LU17-10B-S51 (118,15)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  IPAMB &T6-LU17-10B-X11 (119,5)
+  WordV  $B47
+  FloatK $M105 (20.00)
+  FloatK $M106 (0.00)
+  WordV  $B48
+  WordV  $B49
+  WordK  $M107 (1)
+  IPAMB &T6-LU17-10B-S52 (118,14)
+  WordV  $B50
+  WordK  $M108 (1)
+  IPAMB &T6-LU17-10B-S53 (118,13)
+  FloatK $M109 (4.00)
+  WordV  $B51
+  WordV  $B52
+  IPAMB &T6-AS17-10A-X00 (101,13)
+  WordV  $B53
+  WordK  $M110 (1)
+  IPAMB &T6-AS17-10A-S50 (118,12)
+  FloatK $M112 (0.00)
+  FloatV $F22
+  FloatK $M113 (0.00)
+  FloatV $F23
+  WordK  $M114 (1)
+  IPAAW &T6-LU17-10B-Y06 (116)
+  FloatK $M115 (0.00)
+  FloatV $F24
+  FloatK $M116 (0.00)
+  FloatV $F25
+  WordK  $M117 (1)
+  IPAAW &T6-LU17-13B-Y01 (117)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;Lftung 2-Kanal Tierst.
+  ;Lftung Raum D10-D13
+  ;Einbauort:
+  ;Schaltschrank Turm 6
+  ;Dachgeschoss
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-GES-ANL-AUS-TI,K-GES-ANL-EIN-TI,$WZERO,$WZERO,
+          &T6-LU17-10B-X50,WERR)
+  ANAUS (K-SW-ZL-TEMP-KLK,$M0,&T6-LU17-10B-Y50,WERR)
+  ANAUS (K-SW-ZL-TEMP-WLK,$M1,&T6-LU17-10B-Y51,WERR)
+  ANAUS (K-SW-REL-ZU-FEUC,$M2,&T6-LU17-10B-Y61,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K-SW_ZU-TEMP-D10,$M3,&T6-LU17-10B-Y54,WERR)
+  ANAUS (K-SW_ZU-TEMP-D13,$M4,&T6-LU17-13B-Y50,WERR)
+  BEFAUS (1,K-GES-AN-AUS-R10,K-GES-AN-EIN-R10,$WZERO,$WZERO,
+          &T6-LU17-10B-X51,WERR)
+  ANAUS (K-SW-MIN-RL-TEMP,$M5,&T6-LU17-10B-Y56,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-GES-AN-AUS-R13,K-GES-AN-EIN-R13,$WZERO,$WZERO,
+          &T6-LU17-13B-X50,WERR)
+  ANAUS (K-GR-AU_ERP-EIN-,$M6,&T6-LU17-10B-Y57,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&T6-LU17-10B-X50,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-GES-ANL-AUS-TI)
+  BTRA ($B2,K-GES-ANL-EIN-TI)
+  MELEIN (&T6-LU17-10B-X01,3,ZUL-VENT-AUS-TIE,
+          ZUL-VENT-ST-TIE,ZUL-VENT-EIN-TIE,WERR)
+  MELEIN (&T6-LU17-10B-X02,3,ABL-VENT1-AUS-TI,
+          ABL-VENT1-ST-TIE,ABL-VENT1-EIN-TI,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&T6-LU17-10B-X03,3,ABL-VENT2-AUS-TI,
+          ABL-VENT2-ST-TIE,ABL-VENT2-EIN-TI,WERR)
+  MELEIN (&T6-LU17-10B-X06,3,VE-PUM-AUS-TIER,VE-PUM-ST-TIER,
+          VE-PUM-EIN-TIER,WERR)
+  MELEIN (&T6-LU17-10B-X04,3,WRG-PUM-1-AUS-TI,
+          WRG-PUM-1-ST-TI,WRG-PUM-1-EIN-TI,WERR)
+  MELEIN (&T6-LU17-10B-X05,3,WRG-PUM-2-AUS-TI,
+          WRG-PUM-2-ST-TI,WRG-PUM-2-EIN-TI,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&T6-LU17-10B-B01,2,ZUL-KEILRI-TIER,
+          ABL-1-KEILRI-TIE,WERR)
+  MELEIN (&T6-LU17-10B-B03,2,ABL-2-KEILRI-TIE,
+          FROST-TIERSTAELL,WERR)
+  MELEIN (&T6-LU17-10B-S04,1,HYGROSTAT-TIERST,WERR)
+  MELEIN (&T6-LU17-10B-S11,1,FEUERW-ABSCHALT,WERR)
+  MELEIN (&T6-LU17-10B-B00,1,ENTRIEGELN,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&T6-LU17-10B-X51,3,$B3,$WSCRATCH,$B4,WERR)
+  MELEIN (&T6-LU17-13B-X50,3,$B5,$WSCRATCH,$B6,WERR)
+  BTRA ($B3,K-GES-AN-AUS-R10)
+  BTRA ($B4,K-GES-AN-EIN-R10)
+  BTRA ($B5,K-GES-AN-AUS-R13)
+  BTRA ($B6,K-GES-AN-EIN-R13)
+  MELEIN (&T6-LU17-10B-X10,3,AU-FO-KLAPPE-ZU_,$WSCRATCH,
+          AU-FO-KLAPPE-AUF,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&M29,1,R-SCH-ZUL-LAB-2k,WERR)
+  MELEIN (&M30,1,R-SCH-AB1-LAB-2K,WERR)
+  MELEIN (&M31,1,R-SCH-AB2-LAB-2K,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&T6-LU17-10B-Y50,$F1,WERR)
+  ATRA ($F1,K-SW-ZL-TEMP-KLK)
+  ANEIN (&T6-LU17-10B-Y51,$F2,WERR)
+  ATRA ($F2,K-SW-ZL-TEMP-WLK)
+  ANEIN (&T6-LU17-10B-T00,AUSSENTEMPERATUR,WERR)
+  ANEIN (&T6-LU17-10B-T01,ZUL-TEMP-KALTLUF,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&T6-LU17-10B-T02,ZUL-TEMP-WARMLUF,WERR)
+  ANEIN (&T6-LU17-10B-F01,ZUL-FEUCH-TIERST,WERR)
+  ANEIN (&T6-LU17-10B-Y54,$F3,WERR)
+  ATRA ($F3,K-SW_ZU-TEMP-D10)
+  ANEIN (&T6-LU17-10B-T03,ZU-TEMP_RAUM-D10,WERR)
+  ANEIN (&T6-LU17-13B-Y50,$F4,WERR)
+  ATRA ($F4,K-SW_ZU-TEMP-D13)
+  ANEIN (&T6-LU17-13B-T01,RAUMTEMPERAT-D13,WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&T6-LU17-10B-T04,ABL-TEMP-TIERST_,WERR)
+  ANEIN (&T6-LU17-10B-F02,ABL-FEUCH-TIERST,WERR)
+  ANEIN (&T6-LU17-10B-Y61,$F5,WERR)
+  ATRA ($F5,K-SW-REL-ZU-FEUC)
+  ANEIN (&T6-LU17-13B-T02,ZU-TEMP_RAUM-D13,WERR)
+  ANEIN (&T6-LU17-10B-Y56,$F6,WERR)
+  ATRA ($F6,K-SW-MIN-RL-TEMP)
+  ANEIN (&T6-LU17-10B-T05,RL-TEMP-VORERH,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&T6-LU17-10B-Y57,$F7,WERR)
+  ATRA ($F7,K-GR-AU_ERP-EIN-)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,2000)
+  NICHT (K-GES-ANL-AUS-TI,$B7)
+  VVZ ($B7,$M32,$M33,$B8)
+  ODRMN (3,$B8,AU-Temp.>10,$B12,0,$B9,$WSCRATCH)
+  UND2 ($B9,$B7,$B10)
+  NICHT ($B7,$HB1)
+  RSS ($B10,$HB1,VORGESPUELT,$WSCRATCH)
+  UND11 ($B7,VORGESPUELT,VORSPUELEN-TIER)
+  VGLEH (AUSSENTEMPERATUR,$M34,$M35,AU-Temp.>10)
+  VGLOH (RL-TEMP-VORERH,$M36,$B11)
+  UND2 ($B7,$B11,$B12)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  VGLEH (K-GR-AU_ERP-EIN-,AUSSENTEMPERATUR,$M37,$B13)
+  VVZ ($B13,$M38,$M39,EH-PUMPE-EIN_AU)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,$M40,$M41,SOMMER-UMSCH-TIE)
+  REGLER (1,KON01,KON00,$M42,Y-Regler_Kalt,WERR)
+  FKG (Y-Regler_Kalt,4,$M43,$M44,$M45,$M46,$F8)
+  AWT (ZUL-VENT-EIN-TIE,$M47,$F8,EINSCH-WRG-PUMPE)
+  ANAUS (EINSCH-WRG-PUMPE,$M48,&T6-LU17-10B-Y05,WERR)
+  ;Waermerueckgewinn.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  AWT (VORSPUELEN-TIER,$M49,$M50,$F9)
+  LREG (RL-TEMP-VORERH,K-SW-MIN-RL-TEMP,KON01,AU-Temp.>10,
+        $M51,$M52,$M53,$M54,$M55,$M56,$M57,$M58,$M59,$M60,
+        $M61,$F10,$WSCRATCH)
+  MAX (2,$F9,$F10,ANST-VORSPUELEN)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  FKG (Y-Regler_Kalt,4,$M62,$M63,$M64,$M65,$F11)
+  NICHT (FROST-TIERSTAELL,$HB0)
+  AWT ($HB0,$F11,$M66,$F12)
+  MAX (2,ANST-VORSPUELEN,$F12,$F13)
+  AWT (K-GES-ANL-EIN-TI,$M67,$F13,EINSCH-VE-PUMPE)
+  ANAUS (EINSCH-VE-PUMPE,$M68,&T6-LU17-10B-Y01,WERR)
+  ;Vorerhitzer
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  VGLEH (EINSCH-VE-PUMPE,$M69,$M70,$B14)
+  VVZ ($B14,$M71,$M72,$B15)
+  VVZ (VE-PUM-AUS-TIER,$M73,$M74,$B16)
+  ODRMN (3,$B15,$B16,$B18,0,$B17,$WSCRATCH)
+  UND2 (K-GES-ANL-EIN-TI,EH-PUMPE-EIN_AU,$B18)
+  UNDMN (1,$B17,1,VE-PUM-ST-TIER,$B19,$B20)
+  BEFAUS (1,$B20,$B19,$WZERO,$WZERO,&T6-LU17-10B-X06,WERR)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UHR (WRG-PUM-1-EIN-TI,$B21,$F14)
+  VGLOH ($F14,$M75,$B21)
+  ODR2 ($B21,WRG-PUM-1-ST-TI,$B22)
+  UHR (WRG-PUM-2-EIN-TI,$B23,$F15)
+  VGLOH ($F15,$M76,$B23)
+  ODR2 ($B23,WRG-PUM-2-ST-TI,$B24)
+  RSS ($B22,$B24,$B25,$WSCRATCH)
+  UNDMN (1,$B30,1,$B25,$B26,$B27)
+  BEFAUS (1,$B27,$B26,$WZERO,$WZERO,&T6-LU17-10B-X04,WERR)
+  ODR2 ($B25,WRG-PUM-1-ST-TI,$B28)
+  VGLEH (EINSCH-WRG-PUMPE,$M77,$M78,$B29)
+  VVZ ($B29,$M79,$M80,$B30)
+  UNDMN (2,$B28,$B30,0,$B31,$B32)
+  BEFAUS (1,$B32,$B31,$WZERO,$WZERO,&T6-LU17-10B-X05,WERR)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  FKG (Y-Regler_Kalt,4,$M81,$M82,$M83,$M84,$F16)
+  AWT (ZUL-VENT-EIN-TIE,$M85,$F16,$F17)
+  AWT (ZUL-VENT-EIN-TIE,$M86,$F17,$F18)
+  ANAUS ($F18,$M87,&T6-LU17-10B-Y03,WERR)
+  ;KUEHLERVENTIL
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ABFEUG (ZUL-FEUCH-TIERST,ZUL-TEMP-KALTLUF,$M88,
+          ZUL-ABS-FEUCHTE)
+  ANAUS (ZUL-ABS-FEUCHTE,$M89,&T6-LU17-10B-Y60,WERR)
+  ABFEUG (ABL-FEUCH-TIERST,ABL-TEMP-TIERST_,$M90,
+          ABL-ABS-FEUCHTE)
+  ANAUS (ABL-ABS-FEUCHTE,$M91,&T6-LU17-10B-Y62,WERR)
+  ABFEUG (K-SW-REL-ZU-FEUC,ABL-TEMP-TIERST_,$M92,
+          SW-AB-ABS-FEUCHT)
+  ANAUS (SW-AB-ABS-FEUCHT,$M93,&T6-LU17-10B-Y64,WERR)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT ($B33,$HB3)
+  REGLER (26,KON01,$HB3,$M94,$F19,$WSCRATCH)
+  NICHT ($B33,$HB3)
+  REGLER (27,KON01,$HB3,$M95,Y-REG-ABS-ZU-FEU,$WSCRATCH)
+  UND2 (ZUL-VENT-EIN-TIE,HYGROSTAT-TIERST,$B33)
+  ANAUS ($F19,$M96,&T6-LU17-10B-Y63,WERR)
+  ANAUS (Y-REG-ABS-ZU-FEU,$M97,&T6-LU17-10B-Y04,WERR)
+  ANAUS (Y-REG-ABS-ZU-FEU,$M98,&T6-LU17-10B-Y65,WERR)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  REGLER (2,KON01,KON00,$M99,$F20,WERR)
+  AWT (ZUL-VENT-EIN-TIE,$M100,$F20,$F21)
+  ANAUS ($F21,$M101,&T6-LU17-10B-Y02,WERR)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  UND21 (K-GES-ANL-EIN-TI,ZUL-VENT-STOER,VORSPUELEN-TIER,
+         $B34)
+  UND2 ($B34,AU-FO-KLAPPE-AUF,$B35)
+  NICHT ($B35,$B36)
+  BEFAUS (1,$B36,$B35,$WZERO,$WZERO,&T6-LU17-10B-X01,WERR)
+  NICHT ($B34,$B37)
+  BEFAUS (1,$B37,$B34,$WZERO,$WZERO,&T6-LU17-10B-X10,WERR)
+  ;Aussenluftklappe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  XOR2 (ZUL-VENT-EIN-TIE,ZUL-KEILRI-TIER,$B38)
+  VVZ ($B38,$M102,$M103,$B39)
+  RSS ($B39,ENTRIEGELN,$B40,$WSCRATCH)
+  SETMEL ($M104,1,$B40,&T6-LU17-10B-S51,WERR)
+  ODRMN (2,$B40,R-SCH-ZUL-LAB-2k,3,ZUL-VENT-ST-TIE,
+         FROST-TIERSTAELL,FEUERW-ABSCHALT,$WSCRATCH,
+         ZUL-VENT-STOER)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (3,K-GES-ANL-EIN-TI,ABL-VENT-1-STOER,
+         AU-FO-KLAPPE-AUF,1,VORSPUELEN-TIER,$B41,$WSCRATCH)
+  NICHT ($B41,$B42)
+  BEFAUS (1,$B42,$B41,$WZERO,$WZERO,&T6-LU17-10B-X02,WERR)
+  UNDMN (3,K-GES-ANL-EIN-TI,ABL-VENT-2-STOER,
+         AU-FO-KLAPPE-AUF,1,VORSPUELEN-TIER,$B43,$WSCRATCH)
+  NICHT ($B43,$B44)
+  BEFAUS (1,$B44,$B43,$WZERO,$WZERO,&T6-LU17-10B-X03,WERR)
+  ODRMN (2,$B43,$B41,0,$B45,$B46)
+  BEFAUS (1,$B46,$B45,$WZERO,$WZERO,&T6-LU17-10B-X11,WERR)
+  ;Fortluftklappe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  XOR2 (ABL-VENT1-EIN-TI,ABL-1-KEILRI-TIE,$B47)
+  VVZ ($B47,$M105,$M106,$B48)
+  RSS ($B48,ENTRIEGELN,$B49,$WSCRATCH)
+  SETMEL ($M107,1,$B49,&T6-LU17-10B-S52,WERR)
+  ODRMN (2,$B49,R-SCH-AB1-LAB-2K,3,ABL-VENT1-ST-TIE,
+         FROST-TIERSTAELL,FEUERW-ABSCHALT,$WSCRATCH,
+         ABL-VENT-1-STOER)
+  NICHT (ABL-2-KEILRI-TIE,$B50)
+  SETMEL ($M108,1,$B50,&T6-LU17-10B-S53,WERR)
+  ODRMN (1,R-SCH-AB2-LAB-2K,4,ABL-2-KEILRI-TIE,
+         ABL-VENT2-ST-TIE,FROST-TIERSTAELL,FEUERW-ABSCHALT,
+         $WSCRATCH,ABL-VENT-2-STOER)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  MOKY (ENTRIEGELN,$M109,$B51)
+  NICHT ($B51,$B52)
+  BEFAUS (1,$B52,$B51,$WZERO,$WZERO,&T6-AS17-10A-X00,WERR)
+  ODRMN (0,5,ZUL-VENT-STOER,ABL-VENT-1-STOER,
+         ABL-VENT-2-STOER,FROST-TIERSTAELL,FEUERW-ABSCHALT,
+         $B53,$WSCRATCH)
+  SETMEL ($M110,1,$B53,&T6-AS17-10A-S50,WERR)
+  BEFAUS (1,$B53,$WZERO,$WZERO,$WZERO,&T6-LU17-10B-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  REGLER (5,KON01,KON00,$M112,$F22,WERR)
+  AWT (K-GES-AN-EIN-R10,$M113,$F22,$F23)
+  ANAUS ($F23,$M114,&T6-LU17-10B-Y06,WERR)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  REGLER (6,KON01,KON00,$M115,$F24,WERR)
+  AWT (K-GES-AN-EIN-R13,$M116,$F24,$F25)
+  ANAUS ($F25,$M117,&T6-LU17-13B-Y01,WERR)
+  ENDE 
+  ENDMODUL 

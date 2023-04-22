@@ -1,0 +1,1578 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 00_06_06.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 34101734
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 6
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV E_X_KW_VL_TEMP
+  FloatV E_VP_GW_KW_TEMP
+  FloatV A_RKW_VENTILAT
+  WordV  Z_KM_KU_WA_PU
+  WordV  E_VP_FREIG_KW_LU
+  WordV  A_VENT_NK_1
+  WordV  A_VENT_NK_2
+  WordV  E_BM_QUITT_BTL2
+  FloatV D_ZT_KWLU_VE_100
+  WordV  E_ST_KM
+  WordK  K_1_STATUS (1)
+  WordV  E_RM_PU_KW_AK_E
+  FloatV Z_KW_LU_NK_VE
+  WordV  E_ST_KW_AK_PU
+  WordV  A_VENT_UMS_VERT
+  WordV  S_ERR
+  FloatV A_KW_LU_NK_VE
+  FloatV E_W_KW_VL_TEMP
+  WordV  E_RM_PU_KW_LU_E
+  WordV  E_ST_RKW
+  WordV  E_VP_FREIG_KW_DK
+  WordV  A_KW_LU_PU
+  WordV  Z_ANF_PU_KW_LU
+  FloatV E_AS_KU_VENTIL_2
+  FloatV E_AS_KU_VENTIL_1
+  WordV  E_ST_KW_LU_PU
+  WordV  Z_KW_LU_WA_PU
+  FloatV D_ZT_PU_KW_LU_A
+  WordV  E_BM_ANF_KW_AK
+  WordV  A_KW_AK_PU
+  WordV  E_VP_FREIG_KW_AK
+  WordK  K_0_STATUS (0)
+  WordV  R_KW_AK_QUITT
+  WordV  Z_KW_AK_WA_PU
+  FloatV D_ZT_PU_KW_AK_A
+  WordV  A_KW_AK_SAM_ST
+  WordV  A_KW_LU_SAM_ST
+  WordV  R_KW_DK_QUITT
+  WordV  E_ST_KW_DK_PU
+  WordV  A_KW_DK_SAM_ST
+  WordV  E_RM_PU_KW_DK_E
+  WordV  Z_KW_DK_WA_PU
+  FloatV D_ZT_PU_KW_DK_A
+  WordV  A_KW_DK_PU
+  WordV  A_KWLU_WA_VE_100
+  WordV  A_KM_SAM_ST
+  WordV  E_ST_KM_KU_PU
+  WordV  E_VP_FREIG_KM
+  FloatV E_MW_KW_SP_TE_U
+  FloatV E_MW_KW_SP_TE_O
+  FloatV E_VP_GW_KM_EIN
+  FloatV E_VP_GW_KM_AUS
+  WordV  E_BM_KM_STROEM
+  WordV  Z_KM_FREIG
+  WordV  E_RM_PU_KM_KU_E
+  WordV  A_KM_FREIGABE
+  FloatV E_VP_ZT_KW_NL
+  WordV  E_RM_PU_KM_KW_E
+  WordV  Z_KM_KW_WA_PU
+  FloatV D_ZT_PU_KM_KW_A
+  WordV  E_ST_KM_KW_PU
+  WordV  A_KM_KW_PU
+  FloatK K_60_WERT (60.00)
+  FloatK K_1_WERT (1.00)
+  FloatV E_VP_ZT_KU_NL
+  WordV  A_KM_KU_PU
+  FloatV D_ZT_PU_KM_KU_A
+  FloatV E_X_KU_TEMP
+  FloatV E_W_KU_TEMP
+  WordV  E_BM_NOTBETRIEB
+  FloatV E_MW_DRUCK_KU
+  FloatV E_VP_GW_DRUCK_KU
+  WordV  A_FREIG_HEBE_PU
+  WordV  A_ALARM_HEBE_PU
+  WordV  E_VP_FREIG_HZ
+  WordV  R_HZ_QUITT
+  WordV  E_ST_HZ_PU
+  WordV  A_HZ_SAM_ST
+  FloatV E_MW_AU_TEMP
+  FloatV D_ZT_PU_HZ_A
+  FloatV E_VP_GW_HZ_AU_TE
+  WordV  A_HZ_PU
+  WordV  E_RM_PU_HZ_E
+  WordV  Z_HZ_WA_PU
+  WordV  Z_HZ_REG_EIN
+  WordV  E_VP_HZ_NACHT_E
+  FloatK K_20_GRAD (20.00)
+  FloatV E_VP_HZ_NACHT_WT
+  FloatV A_HZ_VENTIL
+  FloatV E_W_SK_HZ
+  FloatV E_X_HZ_VL_TEMP
+  WordV  Z_INIT_TASK_EIN
+  FloatK K_VP_ZT_KW_NL (1.00)
+  FloatK K_W_KU_TEMP (25.00)
+  WordK  K_VP_FREIG_HZ (1)
+  WordK  K_VP_FREIG_KM (0)
+  WordK  K_VP_FREIG_KW_AK (1)
+  WordK  K_VP_FREIG_KW_DK (1)
+  WordK  K_VP_FREIG_KW_LU (1)
+  WordK  K_VP_HZ_NACHT_E (0)
+  FloatK K_VP_ZT_KU_NL (1.00)
+  FloatK K_VP_GW_DRUCK_KU (0.20)
+  FloatK K_VP_GW_HZ_AU_TE (22.00)
+  FloatK K_VP_GW_KM_AUS (9.00)
+  FloatK K_VP_GW_KM_EIN (6.50)
+  FloatK K_VP_GW_KW_TEMP (15.00)
+  FloatK K_VP_HZ_NACHT_WT (5.00)
+  FloatK K_0_GRAD (0.00)
+  FloatV A_W_HZ_REG
+  WordV  A_ST_NOTKUEHL
+  WordV  E_BM_LU_BTL2
+  WordV  Z_KW_LU_QUITT
+  WordV  Z_ANF_NK_KW_PU
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (173,1)
+  IPAMB &M1 (164,1)
+  IPAMB &M2 (162,1)
+  IPAMB &M3 (163,1)
+  IPAMB &M4 (158,1)
+  IPAMB &M5 (173,5)
+  IPAAW &M6 (169)
+  IPAAW &M7 (174)
+  IPAAW &M8 (166)
+  IPAAW &M9 (165)
+  IPAAW &M10 (159)
+  IPAAW &M11 (176)
+  IPAAW &M12 (168)
+  IPAAW &M13 (167)
+  IPAAW &M14 (171)
+  IPAMB &M15 (173,3)
+  IPAMB &M16 (164,3)
+  IPAMB &M17 (162,3)
+  IPAMB &M18 (163,3)
+  IPAMB &M19 (158,3)
+  IPAMB &M20 (173,7)
+  IPAMB &M21 (1,6)
+  WordV  $B1
+  IPAMB &M22 (64,2)
+  WordV  $B2
+  IPAMB &M23 (33,2)
+  WordV  $B3
+  IPAMB &M24 (32,6)
+  WordV  $B4
+  IPAMB &M25 (15,6)
+  WordV  $B5
+  IPAMB &M26 (50,6)
+  WordV  $B6
+  IPAMB &M27 (33,6)
+  WordV  $B7
+  IPAMB &M28 (64,3)
+  WordV  $B8
+  IPAMB &M29 (255,4)
+  IPAMB &M30 (64,7)
+  IPAMB &M31 (255,2)
+  IPAMB &M32 (255,1)
+  IPAMB &M33 (1,7)
+  IPAMB &M34 (33,3)
+  IPAMB &M35 (32,7)
+  IPAMB &M36 (15,7)
+  IPAMB &M37 (50,7)
+  IPAMB &M38 (33,7)
+  IPAMB &M39 (179,3)
+  IPAAW &M49 (160)
+  IPAAW &M50 (43)
+  IPAAW &M51 (47)
+  IPAAW &M52 (253)
+  IPAAW &M53 (4)
+  IPAAW &M54 (6)
+  IPAAW &M55 (7)
+  IPAAW &M56 (19)
+  IPAAW &M57 (5)
+  IPAAW &M58 (9)
+  FloatK $M59 (8.00)
+  WordV  $B9
+  FloatK $M60 (8.00)
+  WordV  $B10
+  WordV  $B11
+  FloatK $M61 (4.00)
+  WordV  $B12
+  WordV  $WSCRATCH
+  FloatK $M62 (5.00)
+  FloatK $M63 (2.00)
+  WordV  $B13
+  FloatK $M64 (0.00)
+  FloatK $M65 (300.00)
+  WordV  $B14
+  WordV  $B15
+  FloatK $M66 (5.00)
+  FloatK $M67 (2.00)
+  WordV  $B16
+  FloatK $M68 (0.00)
+  FloatK $M69 (300.00)
+  WordV  $B17
+  WordV  $B18
+  FloatK $M70 (172800.00)
+  WordV  $B19
+  FloatK $M71 (300.00)
+  WordV  $B20
+  WordV  $B21
+  FloatK $M72 (1.00)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $HB3
+  FloatK $M73 (100.00)
+  FloatV $F1
+  FloatK $M74 (0.00)
+  FloatK $M75 (100.00)
+  FloatK $M76 (100.00)
+  FloatK $M77 (0.00)
+  FloatK $M78 (1.00)
+  WordV  $B26
+  FloatK $M79 (2419200.00)
+  WordV  $B27
+  FloatK $M80 (120.00)
+  FloatK $M81 (100.00)
+  FloatK $M82 (8.00)
+  WordV  $B28
+  FloatK $M83 (8.00)
+  WordV  $B29
+  WordV  $B30
+  FloatK $M84 (4.00)
+  WordV  $B31
+  FloatK $M85 (172800.00)
+  WordV  $B32
+  FloatK $M86 (300.00)
+  WordV  $B33
+  WordV  $B34
+  FloatK $M87 (8.00)
+  WordV  $B35
+  FloatK $M88 (8.00)
+  WordV  $B36
+  WordV  $B37
+  FloatK $M89 (4.00)
+  WordV  $B38
+  FloatK $M90 (172800.00)
+  WordV  $B39
+  FloatK $M91 (300.00)
+  WordV  $B40
+  FloatK $M92 (8.00)
+  WordV  $B41
+  FloatK $M93 (8.00)
+  WordV  $B42
+  WordV  $B43
+  FloatK $M94 (4.00)
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  WordV  $HB2
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  FloatK $M95 (30.00)
+  FloatK $M96 (0.00)
+  WordV  $B50
+  FloatK $M97 (172800.00)
+  WordV  $B51
+  FloatK $M98 (300.00)
+  FloatV $F2
+  FloatK $M99 (0.00)
+  WordV  $B52
+  WordV  $B53
+  FloatK $M100 (172800.00)
+  WordV  $B54
+  FloatK $M101 (300.00)
+  FloatV $F3
+  FloatK $M102 (0.00)
+  WordV  $B55
+  WordV  $B56
+  FloatK $M103 (100.00)
+  FloatV $F4
+  FloatK $M104 (0.00)
+  FloatK $M105 (100.00)
+  FloatK $M106 (100.00)
+  FloatK $M107 (0.00)
+  FloatK $M108 (0.10)
+  FloatK $M109 (8.00)
+  WordV  $B57
+  FloatK $M110 (8.00)
+  WordV  $B58
+  WordV  $B59
+  FloatK $M111 (4.00)
+  WordV  $B60
+  FloatK $M112 (172800.00)
+  WordV  $B61
+  FloatK $M113 (300.00)
+  FloatK $M114 (1.00)
+  WordV  $B62
+  WordV  $B63
+  FloatV $F5
+  FloatV $F6
+  FloatV $F7
+  FloatV $F8
+  FloatK $M115 (0.00)
+  IPAMB &M116 (164,5)
+  IPAMB &M117 (173,0)
+  IPAMB &M118 (164,0)
+  IPAMB &M119 (158,5)
+  IPAMB &M120 (162,0)
+  IPAMB &M121 (163,0)
+  IPAMB &M122 (158,0)
+  IPAMB &M123 (158,4)
+  IPAMB &M124 (67,1)
+  IPAMB &M125 (1,5)
+  IPAMB &M126 (14,9)
+  IPAMB &M127 (33,1)
+  IPAMB &M128 (32,5)
+  IPAMB &M129 (15,5)
+  IPAMB &M130 (50,5)
+  IPAMB &M131 (33,5)
+  IPAMB &M132 (15,13)
+  IPAMB &M133 (1,9)
+  IPAMB &M134 (1,13)
+  IPAMB &M135 (14,13)
+  IPAAW &M136 (12)
+  IPAAW &M137 (11)
+  IPAAW &M138 (10)
+  IPAAW &M139 (177)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Bio-Physikalische-
+  ;Chemie Göttingen
+  ;KUNDE:
+  ;------------------------
+  ;AME- Technik GmbH
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Kaltwasser Lüftung
+  ;Kaltwasser Autoklav
+  ;Kaltwasser Deckenkühler
+  ;Kälte- Anlage
+  ;Statische Heizung
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (K_1_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter aktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  TASK (2,cycl,1000)
+  NICHT (Z_INIT_TASK_EIN,$HB0)
+  BENDE ($HB0)
+  ;Initialisierung
+  ;durchfühhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;BTLHE20-01A-X50
+  ; 
+  NICHT (K_VP_FREIG_HZ,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_HZ,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ;Heizung
+  ; 
+  ;BTLKA20-00A-X50
+  ; 
+  NICHT (K_VP_FREIG_KM,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_KM,$WZERO,$WZERO,&M1,S_ERR)
+  ;Freigabe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-02A-X50
+  ; 
+  NICHT (K_VP_FREIG_KW_AK,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_KW_AK,$WZERO,$WZERO,&M2,S_ERR)
+  ;Freigabe
+  ;Kaltwasser Autoklav
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;BTLKA20-03A-X50
+  ; 
+  NICHT (K_VP_FREIG_KW_DK,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_KW_DK,$WZERO,$WZERO,&M3,S_ERR)
+  ;Freigabe
+  ;Kaltwasser
+  ;Deckenkühler
+  ; 
+  ;BTLKA20-01A-X50
+  ;D
+  ; 
+  NICHT (K_VP_FREIG_KW_LU,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_KW_LU,$WZERO,$WZERO,&M4,S_ERR)
+  ;Freigabe
+  ;Kaltwasser
+  ;Lüftung
+  ; 
+  ;BTLHE20-01A-X51
+  ;L
+  ; 
+  NICHT (K_VP_HZ_NACHT_E,$HB0)
+  BEFAUS (1,$HB0,K_VP_HZ_NACHT_E,$WZERO,$WZERO,&M5,S_ERR)
+  ;Nachtabsenkung
+  ;Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;BTLKA20-00A-V54
+  ; 
+  ANAUS (K_VP_GW_DRUCK_KU,K_1_STATUS,&M6,S_ERR)
+  ;Grenzwert Druck
+  ;Kühlwasser
+  ; 
+  ;BTLHE20-01A-V50
+  ; 
+  ANAUS (K_VP_GW_HZ_AU_TE,K_1_STATUS,&M7,S_ERR)
+  ;Grenzwert Heizung
+  ;Aussentemperatur
+  ; 
+  ;BTLKA20-00A-V51
+  ; 
+  ANAUS (K_VP_GW_KM_AUS,K_1_STATUS,&M8,S_ERR)
+  ;Grenzwert Temp.
+  ;Kältemaschine Aus
+  ; 
+  ;BTLKA20-00A-V50
+  ; 
+  ANAUS (K_VP_GW_KM_EIN,K_1_STATUS,&M9,S_ERR)
+  ;Grenzwert Temp.
+  ;Kältemaschine Ein
+  ; 
+  ;BTLKA20-01A-V50
+  ; 
+  ANAUS (K_VP_GW_KW_TEMP,K_1_STATUS,&M10,S_ERR)
+  ;Grenzwert Temp.
+  ;Kaltwassertemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;BTLHE20-01A-V52
+  ; 
+  ANAUS (K_VP_HZ_NACHT_WT,K_1_STATUS,&M11,S_ERR)
+  ;Wert Nacht-
+  ;Absenkung Heizung
+  ; 
+  ;BTLKA20-00A-V53
+  ; 
+  ANAUS (K_VP_ZT_KU_NL,K_1_STATUS,&M12,S_ERR)
+  ;Nachlaufzeit
+  ;Kühlwasserpumpe
+  ; 
+  ;BTLKA20-00A-V52
+  ; 
+  ANAUS (K_VP_ZT_KW_NL,K_1_STATUS,&M13,S_ERR)
+  ;Nachlaufzeit
+  ;Kaltwasserpumpe
+  ; 
+  ;BTLKA20-00A-T50
+  ; 
+  ANAUS (K_W_KU_TEMP,K_1_STATUS,&M14,S_ERR)
+  ;Sollwert Kühl-
+  ;Wassertemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  BTRA (K_0_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter
+  ;deaktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ;Statische Heizung
+  ; 
+  ;BTLHE20-01A-X50
+  ; 
+  MELEIN (&M15,1,K_VP_FREIG_HZ,S_ERR)
+  BTRA (K_VP_FREIG_HZ,E_VP_FREIG_HZ)
+  ;Rückmeldung Ein
+  ;Freigabe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-00A-X50
+  ; 
+  MELEIN (&M16,1,K_VP_FREIG_KM,S_ERR)
+  BTRA (K_VP_FREIG_KM,E_VP_FREIG_KM)
+  ;Rückmeldung Ein
+  ;Freigabe Kalt-
+  ;Wasser Autoklav
+  ; 
+  ;BTLKA20-02A-X50
+  ; 
+  MELEIN (&M17,1,K_VP_FREIG_KW_AK,S_ERR)
+  BTRA (K_VP_FREIG_KW_AK,E_VP_FREIG_KW_AK)
+  ;Rückmeldung Ein
+  ;Freigabe Kalt-
+  ;wasser Deckenkühl.
+  ; 
+  ;BTLKA20-03A-X50
+  ; 
+  MELEIN (&M18,1,K_VP_FREIG_KW_DK,S_ERR)
+  BTRA (K_VP_FREIG_KW_DK,E_VP_FREIG_KW_DK)
+  ;Rückmeldung Ein
+  ;Freigabe Kalt-
+  ;Wasser Lüftung
+  ; 
+  ;BTLKA20-01A-X50
+  ; 
+  MELEIN (&M19,1,K_VP_FREIG_KW_LU,S_ERR)
+  BTRA (K_VP_FREIG_KW_LU,E_VP_FREIG_KW_LU)
+  ;Rückmeldung Ein
+  ;Nachtabsenkung
+  ;Statische Heizung
+  ; 
+  ;BTLHE20-01A-X51
+  ; 
+  MELEIN (&M20,1,K_VP_HZ_NACHT_E,S_ERR)
+  BTRA (K_VP_HZ_NACHT_E,E_VP_HZ_NACHT_E)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;Störung
+  ;Heizungspumpe
+  ; 
+  NICHT ($B1,E_ST_HZ_PU)
+  MELEIN (&M21,1,$B1,S_ERR)
+  ;Störung
+  ;Kältemaschine
+  ; 
+  NICHT ($B2,E_ST_KM)
+  MELEIN (&M22,1,$B2,S_ERR)
+  ;BTLKA20-00A-S10
+  ; 
+  ;Störung
+  ;Kältemaschine
+  ;Kühlwasserpumpe
+  ; 
+  NICHT ($B3,E_ST_KM_KU_PU)
+  MELEIN (&M23,1,$B3,S_ERR)
+  ;Störung
+  ;Kältemaschine
+  ;Kaltwasserpumpe
+  ; 
+  NICHT ($B4,E_ST_KM_KW_PU)
+  MELEIN (&M24,1,$B4,S_ERR)
+  ;BTLKA20-00A-X01
+  ; 
+  ;BTLKA20-00A-X02
+  ; 
+  ;Störung
+  ;Kaltwasserpumpe
+  ;Autoklav
+  ; 
+  NICHT ($B5,E_ST_KW_AK_PU)
+  MELEIN (&M25,1,$B5,S_ERR)
+  ;BTLHE20-01A-X01
+  ; 
+  ;Störung
+  ;Kaltwasserpumpe
+  ;Deckenlüfter
+  ; 
+  NICHT ($B6,E_ST_KW_DK_PU)
+  MELEIN (&M26,1,$B6,S_ERR)
+  ;BTLKA20-03A-X01
+  ; 
+  ;BTLKA20-02A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;Störung
+  ;Kaltwasserpumpe
+  ;Lüftung
+  ; 
+  NICHT ($B7,E_ST_KW_LU_PU)
+  MELEIN (&M27,1,$B7,S_ERR)
+  ;Störung
+  ;RKW
+  ; 
+  NICHT ($B8,E_ST_RKW)
+  MELEIN (&M28,1,$B8,S_ERR)
+  ;BTLKA20-00A-S20
+  ; 
+  ;BTLKA20-01A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;Meldung Ein
+  ;Anforderung Kalt-
+  ;Wasser Autoklav
+  ; 
+  ;BTLAS06-00B-V05
+  ; 
+  MELEIN (&M29,1,E_BM_ANF_KW_AK,S_ERR)
+  ;Meldung Ein
+  ;Strömung
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-00A-B01
+  ;K
+  ; 
+  MELEIN (&M30,1,E_BM_KM_STROEM,S_ERR)
+  ;Meldung Ein
+  ;Notbetrieb
+  ; 
+  ;BTLAS06-00B-V03
+  ; 
+  MELEIN (&M31,1,E_BM_NOTBETRIEB,S_ERR)
+  ;Meldung Ein
+  ;Quittierung
+  ; 
+  ;BTLAS06-00B-V02
+  ; 
+  MELEIN (&M32,1,E_BM_QUITT_BTL2,S_ERR)
+  ;Rückmeldung Ein
+  ;Heizungspumpe
+  ; 
+  ;BTLHE20-01A-X01
+  ; 
+  MELEIN (&M33,1,E_RM_PU_HZ_E,S_ERR)
+  ;Rückmeldung Ein
+  ;Kühlwasserpumpe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-00A-X02
+  ; 
+  MELEIN (&M34,1,E_RM_PU_KM_KU_E,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Kaltwasserpumpe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-00A-X01
+  ; 
+  MELEIN (&M35,1,E_RM_PU_KM_KW_E,S_ERR)
+  ;Rückmeldung Ein
+  ;Kaltwasserpumpe
+  ;Autoklav
+  ; 
+  ;BTLKA20-02A-X01
+  ; 
+  MELEIN (&M36,1,E_RM_PU_KW_AK_E,S_ERR)
+  ;Rückmeldung Ein
+  ;Kaltwasserpumpe
+  ;Deckenlüfter
+  ; 
+  ;BTLKA20-03A-X01
+  ; 
+  MELEIN (&M37,1,E_RM_PU_KW_DK_E,S_ERR)
+  ;Rückmeldung Ein
+  ;Kaltwasserpumpe
+  ;Lüftung
+  ; 
+  ;BTLKA20-01A-X01
+  ; 
+  MELEIN (&M38,1,E_RM_PU_KW_LU_E,S_ERR)
+  ;Meldung Ein
+  ;Freigabe Lüftung
+  ;BTL2
+  ; 
+  ;BTLLU20-00A-X50
+  ; 
+  MELEIN (&M39,1,E_BM_LU_BTL2,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&M6,K_VP_GW_DRUCK_KU,S_ERR)
+  ATRA (K_VP_GW_DRUCK_KU,E_VP_GW_DRUCK_KU)
+  ;BTLKA20-00A-V54
+  ; 
+  ;Grenzwert
+  ;Druck
+  ;Kühlwasser Kälte
+  ; 
+  ANEIN (&M7,K_VP_GW_HZ_AU_TE,S_ERR)
+  ATRA (K_VP_GW_HZ_AU_TE,E_VP_GW_HZ_AU_TE)
+  ;BTLHE20-01A-V50
+  ; 
+  ;Grenzwert
+  ;Heizung Ausschalten
+  ;Aussentemperatur
+  ; 
+  ANEIN (&M8,K_VP_GW_KM_AUS,S_ERR)
+  ATRA (K_VP_GW_KM_AUS,E_VP_GW_KM_AUS)
+  ;BTLKA20-00A-V51
+  ; 
+  ;Grenzwert
+  ;Temperatur
+  ;Kältemaschine Aus
+  ; 
+  ANEIN (&M9,K_VP_GW_KM_EIN,S_ERR)
+  ATRA (K_VP_GW_KM_EIN,E_VP_GW_KM_EIN)
+  ;BTLKA20-00A-V50
+  ;K
+  ; 
+  ;Grenzwert
+  ;Temperatur
+  ;Kältemaschine Ein
+  ; 
+  ANEIN (&M10,K_VP_GW_KW_TEMP,S_ERR)
+  ATRA (K_VP_GW_KW_TEMP,E_VP_GW_KW_TEMP)
+  ;BTLKA20-01A-V50
+  ;K
+  ; 
+  ;Grenzwert
+  ;Umschaltung Kalt-
+  ;Wasser Lüftung
+  ; 
+  ANEIN (&M11,K_VP_HZ_NACHT_WT,S_ERR)
+  ATRA (K_VP_HZ_NACHT_WT,E_VP_HZ_NACHT_WT)
+  ;BTLHE20-01A-V52
+  ; 
+  ;Wert
+  ;Nachtabsenkung
+  ;Statische Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ANEIN (&M12,K_VP_ZT_KU_NL,S_ERR)
+  ATRA (K_VP_ZT_KU_NL,E_VP_ZT_KU_NL)
+  ;BTLKA20-00A-V53
+  ;S
+  ; 
+  ;Zeit
+  ;Kühlwasserpumpe
+  ;Nachlauf
+  ; 
+  ANEIN (&M13,K_VP_ZT_KW_NL,S_ERR)
+  ATRA (K_VP_ZT_KW_NL,E_VP_ZT_KW_NL)
+  ;BTLKA20-00A-V52
+  ;N
+  ; 
+  ;Zeit
+  ;Kaltwasserpumpe
+  ;Nachlauf
+  ; 
+  ANEIN (&M14,K_W_KU_TEMP,S_ERR)
+  ATRA (K_W_KU_TEMP,E_W_KU_TEMP)
+  ;BTLKA20-00A-T50
+  ;N
+  ; 
+  ;Sollwert
+  ;Kühlwassertemperatur
+  ; 
+  ANEIN (&M49,E_W_KW_VL_TEMP,S_ERR)
+  ;BTLKA20-01A-T50
+  ; 
+  ;Sollwert
+  ;Kaltwasser-
+  ;Vorlauftemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ANEIN (&M50,E_AS_KU_VENTIL_1,S_ERR)
+  ;BTLLU20-01A-Y08
+  ;V
+  ; 
+  ;Stellsignal
+  ;Kühlerventil
+  ;Zuluftgerät 1
+  ; 
+  ANEIN (&M51,E_AS_KU_VENTIL_2,S_ERR)
+  ;BTLLU20-02A-Y08
+  ; 
+  ;Stellsignal
+  ;Kühlerventil
+  ;Zuluftgerät 2
+  ; 
+  ANEIN (&M52,E_MW_AU_TEMP,S_ERR)
+  ;BTLAS06-00B-V20
+  ; 
+  ;Messwert
+  ;Aussentemperatur
+  ; 
+  ANEIN (&M53,E_MW_DRUCK_KU,S_ERR)
+  ;BTLKA20-00A-P10
+  ; 
+  ;Messwert
+  ;Druck
+  ;Kühlwasser Kälte
+  ; 
+  ANEIN (&M54,E_MW_KW_SP_TE_O,S_ERR)
+  ;BTLKA20-00A-T12
+  ; 
+  ;Messwert
+  ;Temperatur Kalt-
+  ;Wasserspeicher Oben
+  ; 
+  ANEIN (&M55,E_MW_KW_SP_TE_U,S_ERR)
+  ;BTLKA20-00A-T11
+  ; 
+  ;Messwert
+  ;Temperatur Kalt-
+  ;Wasserspeicher Unten
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ANEIN (&M56,E_X_HZ_VL_TEMP,S_ERR)
+  ;BTLHE20-01A-T01
+  ; 
+  ;Istwert
+  ;Vorlauftemperatur
+  ;Heizung
+  ; 
+  ANEIN (&M57,E_X_KU_TEMP,S_ERR)
+  ;BTLKA20-00A-T05
+  ; 
+  ;Istwert
+  ;Kühlwassertemperatur
+  ; 
+  ANEIN (&M58,E_X_KW_VL_TEMP,S_ERR)
+  ;BTLKA20-01A-T01
+  ; 
+  ;Istwert
+  ;Kaltwassertemperatur
+  ;Lüftung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  SOLKEN (1,K_1_STATUS,E_W_SK_HZ,S_ERR)
+  ;Sollwert Statische
+  ;Heizung
+  ; 
+  ;BTLHE20-01A-V51
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  TASK (4,cycl,1000)
+  ;Kopfsteuerung der
+  ;Anlage:
+  ;- virtuelle Störungen
+  ;- Sammelstörung
+  ;- Hauptstörung
+  ;- Anlage Einschalten
+  ; 
+  ;Steuerungs und
+  ;Regelungs-
+  ;Funktionen der Anlage
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  MOKY (E_BM_QUITT_BTL2,$M59,$B9)
+  MOKY (E_VP_FREIG_KW_LU,$M60,$B10)
+  ODR2 ($B9,$B10,$B11)
+  MOKY ($B11,$M61,Z_KW_LU_QUITT)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (8,E_ST_KW_LU_PU,A_ST_NOTKUEHL,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B12,
+         $WSCRATCH)
+  ODR2 ($B12,K_0_STATUS,A_KW_LU_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  VGLEH (E_AS_KU_VENTIL_1,$M62,$M63,$B13)
+  VVZ ($B13,$M64,$M65,$B14)
+  UND2 ($B14,E_VP_FREIG_KW_LU,$B15)
+  VGLEH (E_AS_KU_VENTIL_2,$M66,$M67,$B16)
+  VVZ ($B16,$M68,$M69,$B17)
+  UND2 ($B17,E_VP_FREIG_KW_LU,$B18)
+  ;Bedarfabhängiges
+  ;Einschalten der
+  ;Kaltwasserpumpe
+  ;Y>5> Pumpe Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Pumpe Aus
+  ; 
+  ODR2 ($B15,$B18,Z_ANF_PU_KW_LU)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_KW_LU_E,D_ZT_PU_KW_LU_A)
+  VGLOH (D_ZT_PU_KW_LU_A,$M70,$B19)
+  MOKY ($B19,$M71,Z_KW_LU_WA_PU)
+  ;Kaltwasserpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UND2 (Z_ANF_PU_KW_LU,Z_ANF_NK_KW_PU,$B20)
+  ODR2 ($B20,Z_KW_LU_WA_PU,$B21)
+  UND11 ($B21,E_ST_KW_LU_PU,A_KW_LU_PU)
+  ;Kaltwasserpumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ;- Kaltwasserpumpe nur
+  ;  bei Notkuehlung aktiv
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  VGLEH (E_X_KW_VL_TEMP,E_VP_GW_KW_TEMP,$M72,$B22)
+  RSS ($B22,Z_KW_LU_QUITT,Z_ANF_NK_KW_PU,$B23)
+  UNDMN (3,E_BM_LU_BTL2,E_VP_FREIG_KW_LU,E_RM_PU_KW_LU_E,0,
+         $B24,$WSCRATCH)
+  UND2 (E_BM_LU_BTL2,E_VP_FREIG_KW_LU,$B25)
+  UND2 (Z_ANF_NK_KW_PU,$B24,A_ST_NOTKUEHL)
+  BTRA (A_ST_NOTKUEHL,A_VENT_NK_1)
+  BTRA (A_ST_NOTKUEHL,A_VENT_UMS_VERT)
+  UND2 ($B23,$B25,A_VENT_NK_2)
+  ;Umschaltung auf
+  ;Stadtwassernotkühlung
+  ;bei Grenzwert-
+  ;verletzung KW-Temp.
+  ;-
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  NICHT (A_VENT_UMS_VERT,$HB3)
+  REGLER (8,K_1_STATUS,$HB3,$M73,$F1,S_ERR)
+  FKG ($F1,4,$M74,$M75,$M76,$M77,Z_KW_LU_NK_VE)
+  ;Kaltwasser-
+  ;Vorlauftemperatur-
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  VGLOH (A_KW_LU_NK_VE,$M78,$B26)
+  UHR (K_1_STATUS,$B26,D_ZT_KWLU_VE_100)
+  VGLOH (D_ZT_KWLU_VE_100,$M79,$B27)
+  MOKY ($B27,$M80,A_KWLU_WA_VE_100)
+  ;Wartungslauf
+  ;Kaltwasserventil
+  ;Hat das Ventil länger
+  ;als 48 Stunden in der
+  ;Position 0 9.20719e+042estanden
+  ;wird es
+  ;für 120 sec entgegen-
+  ;gesetzt gefahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  AWT (A_KWLU_WA_VE_100,Z_KW_LU_NK_VE,$M81,A_KW_LU_NK_VE)
+  ;Kaltwasserventil
+  ;- Regelsignal Temp-Reg.
+  ;- Freigabe Anlage
+  ;- Wartung Ventil 100
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  MOKY (E_BM_QUITT_BTL2,$M82,$B28)
+  MOKY (E_VP_FREIG_KW_AK,$M83,$B29)
+  ODR2 ($B28,$B29,$B30)
+  MOKY ($B30,$M84,R_KW_AK_QUITT)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- Rückm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (8,E_ST_KW_AK_PU,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B31,
+         $WSCRATCH)
+  ODR2 ($B31,K_0_STATUS,A_KW_AK_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_KW_AK_E,D_ZT_PU_KW_AK_A)
+  VGLOH (D_ZT_PU_KW_AK_A,$M85,$B32)
+  MOKY ($B32,$M86,Z_KW_AK_WA_PU)
+  ;Kaltwasserpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  UND2 (E_BM_ANF_KW_AK,E_VP_FREIG_KW_AK,$B33)
+  ODR2 ($B33,Z_KW_AK_WA_PU,$B34)
+  UNDMN (1,$B34,2,E_ST_KW_AK_PU,E_BM_NOTBETRIEB,A_KW_AK_PU,
+         $WSCRATCH)
+  ;Kaltwasserpumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  MOKY (E_BM_QUITT_BTL2,$M87,$B35)
+  MOKY (E_VP_FREIG_KW_DK,$M88,$B36)
+  ODR2 ($B35,$B36,$B37)
+  MOKY ($B37,$M89,R_KW_DK_QUITT)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- Rückm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ODRMN (8,E_ST_KW_DK_PU,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B38,
+         $WSCRATCH)
+  ODR2 ($B38,K_0_STATUS,A_KW_DK_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_KW_DK_E,D_ZT_PU_KW_DK_A)
+  VGLOH (D_ZT_PU_KW_DK_A,$M90,$B39)
+  MOKY ($B39,$M91,Z_KW_DK_WA_PU)
+  ;Kaltwasserpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ODR2 (E_VP_FREIG_KW_DK,Z_KW_DK_WA_PU,$B40)
+  UNDMN (1,$B40,2,E_ST_KW_DK_PU,E_BM_NOTBETRIEB,A_KW_DK_PU,
+         $WSCRATCH)
+  ;Kaltwasserpumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  MOKY (E_BM_QUITT_BTL2,$M92,$B41)
+  MOKY (E_VP_FREIG_KW_DK,$M93,$B42)
+  ODR2 ($B41,$B42,$B43)
+  MOKY ($B43,$M94,R_KW_DK_QUITT)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  ODRMN (8,E_ST_KM,E_ST_KM_KW_PU,E_ST_KM_KU_PU,E_ST_RKW,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B44,
+         $WSCRATCH)
+  ODR2 ($B44,K_0_STATUS,A_KM_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  ODRMN (3,K_0_STATUS,E_ST_KM_KW_PU,E_ST_KM_KU_PU,0,
+         $WSCRATCH,$B45)
+  VGLOH (E_MW_KW_SP_TE_U,E_VP_GW_KM_EIN,$B46)
+  VGLOH (E_MW_KW_SP_TE_O,E_VP_GW_KM_AUS,$HB2)
+  NICHT ($HB2,$B47)
+  RSS ($B46,$B47,$B48,$WSCRATCH)
+  UNDMN (3,$B45,E_VP_FREIG_KM,$B48,1,E_BM_NOTBETRIEB,
+         Z_KM_FREIG,$WSCRATCH)
+  ;Freigabe Kältemaschine
+  ;über Temperaturen im
+  ;Kaltwasserspeicher
+  ; 
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  UNDMN (3,E_RM_PU_KM_KW_E,E_RM_PU_KM_KU_E,E_BM_KM_STROEM,0,
+         $B49,$WSCRATCH)
+  VVZ (Z_KM_FREIG,$M95,$M96,$B50)
+  UND2 ($B49,$B50,A_KM_FREIGABE)
+  ;Freigabe Kältemaschine
+  ;erst bei eingeschalteten
+  ;Pumpen und
+  ;vorhandener Strömung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_KM_KW_E,D_ZT_PU_KM_KW_A)
+  VGLOH (D_ZT_PU_KM_KW_A,$M97,$B51)
+  MOKY ($B51,$M98,Z_KM_KW_WA_PU)
+  ;Kälte Kaltwasserpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  MULDI (E_VP_ZT_KW_NL,K_60_WERT,K_1_WERT,$F2)
+  VVZ (Z_KM_FREIG,$M99,$F2,$B52)
+  ODR2 ($B52,Z_KM_KW_WA_PU,$B53)
+  UNDMN (1,$B53,2,E_ST_KM_KW_PU,E_BM_NOTBETRIEB,A_KM_KW_PU,
+         $WSCRATCH)
+  ;Kälte Kaltwasserpumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_KM_KU_E,D_ZT_PU_KM_KU_A)
+  VGLOH (D_ZT_PU_KM_KU_A,$M100,$B54)
+  MOKY ($B54,$M101,Z_KM_KU_WA_PU)
+  ;Kälte Kühlwasserpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  MULDI (E_VP_ZT_KU_NL,K_60_WERT,K_1_WERT,$F3)
+  VVZ (Z_KM_FREIG,$M102,$F3,$B55)
+  ODR2 ($B55,Z_KM_KU_WA_PU,$B56)
+  UNDMN (1,$B56,2,E_ST_KM_KU_PU,E_BM_NOTBETRIEB,A_KM_KU_PU,
+         $WSCRATCH)
+  ;Kälte Kühlwasserpumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  NICHT (Z_KM_FREIG,$HB3)
+  REGLER (14,K_1_STATUS,$HB3,$M103,$F4,S_ERR)
+  FKG ($F4,4,$M104,$M105,$M106,$M107,A_RKW_VENTILAT)
+  ;RKW Temperaturregelung
+  ;über die Ansteuerung
+  ;der Ventilatoren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  VGLEH (E_MW_DRUCK_KU,E_VP_GW_DRUCK_KU,$M108,
+         A_FREIG_HEBE_PU)
+  NICHT (A_FREIG_HEBE_PU,A_ALARM_HEBE_PU)
+  ;Hebepumpe wird bei
+  ;Unterschreiten eines
+  ;Druckgrenzwertes
+  ;gesperrt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  MOKY (E_BM_QUITT_BTL2,$M109,$B57)
+  MOKY (E_VP_FREIG_HZ,$M110,$B58)
+  ODR2 ($B57,$B58,$B59)
+  MOKY ($B59,$M111,R_HZ_QUITT)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  ODRMN (8,E_ST_HZ_PU,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B60,
+         $WSCRATCH)
+  ODR2 ($B60,K_0_STATUS,A_HZ_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_PU_HZ_E,D_ZT_PU_HZ_A)
+  VGLOH (D_ZT_PU_HZ_A,$M112,$B61)
+  MOKY ($B61,$M113,Z_HZ_WA_PU)
+  ;Heizungspumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  VGLEH (E_MW_AU_TEMP,E_VP_GW_HZ_AU_TE,$M114,$HB3)
+  NICHT ($HB3,Z_HZ_REG_EIN)
+  UND2 (E_VP_FREIG_HZ,Z_HZ_REG_EIN,$B62)
+  ODR2 ($B62,Z_HZ_WA_PU,$B63)
+  UND11 ($B63,E_ST_HZ_PU,A_HZ_PU)
+  ;Heizungspumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  56
+  ;*****************************************************************
+  MIN (2,E_VP_HZ_NACHT_WT,K_20_GRAD,$F5)
+  MAX (2,$F5,K_0_GRAD,$F6)
+  SUB2 (E_W_SK_HZ,$F6,$F7)
+  AWT (E_VP_HZ_NACHT_E,E_W_SK_HZ,$F7,$F8)
+  MAX (2,$F8,K_20_GRAD,A_W_HZ_REG)
+  ;Sollwert Sollkennlinie
+  ;mit Nachtabsenkung
+  ;Begrenzung des
+  ;Nachtabsenkungswertes
+  ;von 0 bis 20 Grad
+  ; 
+  ;*****************************************************************
+  ;*** Seite  57
+  ;*****************************************************************
+  NICHT (Z_HZ_REG_EIN,$HB3)
+  REGLER (9,K_1_STATUS,$HB3,$M115,A_HZ_VENTIL,S_ERR)
+  ;Heizungs-
+  ;Vorlauftemperatur-
+  ;Regelung
+  ;B
+  ; 
+  ;*****************************************************************
+  ;*** Seite  58
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  59
+  ;*****************************************************************
+  TASK (5,cycl,1000)
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Digitale Werte
+  ;B
+  ; 
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  60
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ALARM_HEBE_PU,&M116,S_ERR)
+  ;BTLKA20-00A-A51
+  ; 
+  SETMEL (K_1_STATUS,1,A_HZ_SAM_ST,&M117,S_ERR)
+  ;Alarm Hebepumpe
+  ;Gesperrt
+  ; 
+  ;BTLHE20-01A-S50
+  ; 
+  ;Sammelstörung
+  ;Heizung
+  ; 
+  SETMEL (K_1_STATUS,1,A_KM_SAM_ST,&M118,S_ERR)
+  ;BTLKA20-00A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_KWLU_WA_VE_100,&M119,S_ERR)
+  ;Sammelstörung
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-01A-W50
+  ; 
+  ;Wartung Kaltwasser-
+  ;Ventil Lüftung
+  ; 
+  SETMEL (K_1_STATUS,1,A_KW_AK_SAM_ST,&M120,S_ERR)
+  ;BTLKA20-02A-S50
+  ; 
+  ;Sammelstörung
+  ;Kaltwasser Autoklav
+  ; 
+  ;*****************************************************************
+  ;*** Seite  61
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_KW_DK_SAM_ST,&M121,S_ERR)
+  ;BTLKA20-03A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_KW_LU_SAM_ST,&M122,S_ERR)
+  ;Sammelstörung
+  ;Kaltwasser Deckenk.
+  ; 
+  ;BTLKA20-01A-S50
+  ; 
+  ;Sammelstörung
+  ;Kaltwasser Lüftung
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_NOTKUEHL,&M123,S_ERR)
+  ;BTLKA20-01A-A51
+  ; 
+  ;Störung Notkühlung
+  ;BTL2 in Betrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  62
+  ;*****************************************************************
+  ;BTLSA20-02A-X01
+  ; 
+  NICHT (A_FREIG_HEBE_PU,$HB0)
+  BEFAUS (1,$HB0,A_FREIG_HEBE_PU,$WZERO,$WZERO,&M124,S_ERR)
+  ;Freigabe
+  ;Hebepumpe
+  ; 
+  ;BTLHE20-01A-X01
+  ; 
+  NICHT (A_HZ_PU,$HB0)
+  BEFAUS (1,$HB0,A_HZ_PU,$WZERO,$WZERO,&M125,S_ERR)
+  ;Heizungspumpe
+  ; 
+  ;BTLKA20-00A-X10
+  ; 
+  NICHT (A_KM_FREIGABE,$HB0)
+  BEFAUS (1,$HB0,A_KM_FREIGABE,$WZERO,$WZERO,&M126,S_ERR)
+  ;Freigabe
+  ;Kältemaschine
+  ; 
+  ;*****************************************************************
+  ;*** Seite  63
+  ;*****************************************************************
+  ;BTLKA20-00A-X02
+  ; 
+  NICHT (A_KM_KU_PU,$HB0)
+  BEFAUS (1,$HB0,A_KM_KU_PU,$WZERO,$WZERO,&M127,S_ERR)
+  ;Kühlwasserpumpe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-00A-X01
+  ; 
+  NICHT (A_KM_KW_PU,$HB0)
+  BEFAUS (1,$HB0,A_KM_KW_PU,$WZERO,$WZERO,&M128,S_ERR)
+  ;Kaltwasserpumpe
+  ;Kältemaschine
+  ; 
+  ;BTLKA20-02A-X01
+  ; 
+  NICHT (A_KW_AK_PU,$HB0)
+  BEFAUS (1,$HB0,A_KW_AK_PU,$WZERO,$WZERO,&M129,S_ERR)
+  ;Kaltwasserpumpe
+  ;Autoklav
+  ; 
+  ;*****************************************************************
+  ;*** Seite  64
+  ;*****************************************************************
+  ;BTLKA20-03A-X01
+  ; 
+  NICHT (A_KW_DK_PU,$HB0)
+  BEFAUS (1,$HB0,A_KW_DK_PU,$WZERO,$WZERO,&M130,S_ERR)
+  ;Kaltwasserpumpe
+  ;Deckenkühler
+  ; 
+  ;BTLKA20-01A-X01
+  ; 
+  NICHT (A_KW_LU_PU,$HB0)
+  BEFAUS (1,$HB0,A_KW_LU_PU,$WZERO,$WZERO,&M131,S_ERR)
+  ;Kaltwasserpumpe
+  ;Lüftung
+  ; 
+  ;BTLKA20-01A-X02
+  ; 
+  NICHT (A_VENT_UMS_VERT,$HB0)
+  BEFAUS (1,$HB0,A_VENT_UMS_VERT,$WZERO,$WZERO,&M132,S_ERR)
+  ;Umschaltventil
+  ;Kaltwasser
+  ;Lüftung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  65
+  ;*****************************************************************
+  ;BTLKA20-01A-X11
+  ; 
+  NICHT (A_VENT_NK_1,$HB0)
+  BEFAUS (1,$HB0,A_VENT_NK_1,$WZERO,$WZERO,&M133,S_ERR)
+  ;Ventil Notkühler
+  ; 
+  ;BTLKA20-01A-X12
+  ; 
+  NICHT (A_VENT_NK_2,$HB0)
+  BEFAUS (1,$HB0,A_VENT_NK_2,$WZERO,$WZERO,&M134,S_ERR)
+  ;Ventil Notkühler
+  ;Bypass
+  ; 
+  ;BTLKA20-00A-X20
+  ; 
+  NICHT (A_KM_FREIGABE,$HB0)
+  BEFAUS (1,$HB0,A_KM_FREIGABE,$WZERO,$WZERO,&M135,S_ERR)
+  ;Freigabe
+  ;Rückkühlwerk
+  ;Kältemaschine
+  ; 
+  ;*****************************************************************
+  ;*** Seite  66
+  ;*****************************************************************
+  ;BTLHE20-01A-Y01
+  ; 
+  ANAUS (A_HZ_VENTIL,K_1_STATUS,&M136,S_ERR)
+  ;Heizungsventil
+  ; 
+  ;BTLKA20-01A-Y02
+  ; 
+  ANAUS (A_KW_LU_NK_VE,K_1_STATUS,&M137,S_ERR)
+  ;Notkühlventil
+  ;Kaltwasser Lüftung
+  ; 
+  ;BTLKA20-00A-Y20
+  ; 
+  ANAUS (A_RKW_VENTILAT,K_1_STATUS,&M138,S_ERR)
+  ;RKW
+  ;Ventilatoren
+  ; 
+  ;BTLHE20-01A-T50
+  ; 
+  ANAUS (A_W_HZ_REG,K_1_STATUS,&M139,S_ERR)
+  ;Sollwert VL-TEMP
+  ;Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  67
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

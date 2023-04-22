@@ -1,0 +1,1313 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI50506.GPS
+  ;*** Projektname    : MPI Turm 5
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** PrÅfer         : H.Meyer
+  ;*** Line Nummer    : 5
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (ar20,6)
+  WordV  Anl_WWB_R1_1
+  WordV  AT>Grenze_SO
+  FloatV VL_Temp_NW
+  WordV  Anl_HZ_NW_ST
+  FloatV VL_Temp_Sock
+  WordV  Anl_HZ_Sock_R0
+  FloatV SW_Regler_Sock
+  WordV  Anl_WWB_ST
+  WordV  Pu1_LuV_ST
+  WordV  Anl_LuV_R0
+  WordV  Anl_HZ_NW_R0
+  WordV  Pu_Z2_ST
+  WordV  HZ_SO_Nacht_1
+  WordV  Pu_Z2_R1
+  WordV  HZ_Sock_Nacht_1
+  WordV  AT>Grenze_NW
+  FloatV VL_Temp_FE
+  WordV  HZ_NW_Nacht_1
+  WordV  AT>Grenze_Sock
+  WordV  Pu_Z1_R0
+  WordV  Pu_Z1_ST
+  WordV  Anl_HZ_NW_R1_1
+  WordV  Pu_Z1_R1
+  WordV  STB_WWB
+  WordV  Anl_FE_R1_1
+  WordV  Pu_Z2_R0
+  FloatV SW_AT_Grenze_DG
+  WordV  Pu_NW_ST
+  WordV  Anl_HZ_SO_R0
+  WordV  Anl_HZ_SO_ST
+  WordV  Pu1_LuV_R1
+  WordV  Anl_HZ_Sock_R1_1
+  WordV  Pu2_LuV_R1
+  WordV  Pu_NW_R0
+  WordV  Pu_Sock_R1
+  WordV  Pu_SO_R0
+  WordV  Pu_SO_ST
+  WordV  Pu_SO_R1
+  WordK  Anl_LuV_R1 (0)
+  WordV  Anl_LuV_EIN1
+  WordV  Anl_LuV_R1_1
+  WordV  Entriegeln
+  WordV  Anl_HZ_SO_R1_1
+  WordV  Anl_FE_ST
+  WordV  Anl_HZ_Sock_ST
+  WordV  Anl_HZ_Sock_EIN1
+  WordV  Anl_HZ_SO_EIN1
+  WordV  HZ_Sock_Na_EIN1
+  FloatV SW_Tag_SO_Ke
+  WordK  HZ_NW_Nacht (0)
+  WordV  HZ_SO_Na_EIN1
+  WordV  HZ_NW_Na_EIN1
+  FloatV SW_Nacht_SO_Ke
+  FloatV SW_Nacht_Sock_Ke
+  WordK  HZ_SO_Nacht (0)
+  WordV  Pu2_LuV_ST
+  WordV  Anl_HZ_NW_EIN1
+  FloatV SG_SO
+  WordV  Anl_FE_R0
+  FloatV SW_Nacht_NW_Ke
+  FloatV Aussentemp
+  WordV  VE_Pumpe_R0
+  WordV  Pu1_LuV_R0
+  WordV  Pu_NW_R1
+  WordV  Pu2_LuV_R0
+  WordV  Pu_Sock_R0
+  WordV  Pu_Sock_ST
+  FloatV SW_Tag_NW_Ke
+  FloatV SW_Nacht_DG_Ke
+  WordK  Anl_HZ_Sock_R1 (0)
+  FloatV SW_Regler_DG
+  WordK  Anl_HZ_NW_R1 (0)
+  WordV  HZ_DG_Nacht_1
+  WordV  Unterspannung_NN
+  WordV  VE_Pumpe_EIN1
+  WordK  Anl_HZ_SO_R1 (0)
+  WordK  HZ_Sock_Nacht (0)
+  WordK  VE_Pumpe_R1 (0)
+  WordV  Z_Pumpen_ST
+  WordV  Anl_WBB_EIN1
+  WordV  Anl_WWB_R1_2
+  WordV  VE_Pumpe_Rep
+  FloatV SW_Regler_SO
+  WordV  Entr.Befehl
+  FloatV SG_Sock
+  FloatV SW_Tag_Sock_Ke
+  WordV  Pu_DG_ST
+  WordV  Pu_DG_R1
+  FloatV VL_Temp_DG
+  WordV  AT>Grenze_DG
+  WordV  K1
+  FloatV SG_DG
+  WordK  Anl_FE_R1 (0)
+  WordV  Entr.Taster
+  WordV  Anl_FE_EIN1
+  FloatV SW_Tag_DG_Ke
+  WordK  HZ_DG_Nacht (0)
+  WordV  Legion_R1
+  WordV  Anl_LuV_ST
+  WordV  HZ_DG_Na_EIN1
+  WordK  Anl_HZ_DG_R1 (0)
+  FloatV WWB_Ventil
+  FloatV SW_SP_Legio
+  WordV  Anl_HZ_DG_EIN1
+  WordV  Anl_HZ_DG_R1_1
+  WordV  VE_Pumpe_R1_1
+  WordK  Anl_WWB_R1 (0)
+  WordV  Anl_HZ_DG_R0
+  WordV  Anl_HZ_DG_ST
+  WordV  Pu_DG_R0
+  FloatV VL_Temp_SO
+  FloatV SP_Temp_WWB
+  WordV  Anl_WWB_R0
+  FloatV SW_GW_Fernltg
+  FloatV SW_Regler_NW
+  FloatV SG_NW
+  FloatV VL_Temp_Fe_prim
+  FloatV SW_AT_Grenze_NW
+  FloatV SW_AT_Grenze_Soc
+  FloatV SW_AT_Grenze_SO
+  FloatV SW_SP_WWB
+  FloatV SW_FE
+  FloatV SG_FE
+  FloatV SW_FE_Kennlinie
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B6
+  FloatK $M2 (4.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B7
+  FloatK $M4 (6.00)
+  FloatK $M5 (0.00)
+  WordV  $B3
+  WordV  $B8
+  FloatK $M6 (6.00)
+  FloatK $M7 (0.00)
+  WordV  $B4
+  WordV  $B9
+  FloatK $M8 (6.00)
+  FloatK $M9 (0.00)
+  WordV  $B5
+  WordV  $B10
+  FloatK $M10 (8.00)
+  FloatK $M11 (0.00)
+  WordV  $B11
+  WordV  $B15
+  FloatK $M12 (8.00)
+  FloatK $M13 (0.00)
+  WordV  $B12
+  WordV  $B16
+  FloatK $M14 (8.00)
+  FloatK $M15 (0.00)
+  WordV  $B13
+  WordV  $B17
+  FloatK $M16 (8.00)
+  FloatK $M17 (0.00)
+  WordV  $B14
+  WordV  $B18
+  FloatK $M18 (10.00)
+  FloatK $M19 (0.00)
+  WordV  $B19
+  WordV  $B22
+  FloatK $M20 (10.00)
+  FloatK $M21 (0.00)
+  WordV  $B20
+  WordV  $B23
+  FloatK $M22 (10.00)
+  FloatK $M23 (0.00)
+  WordV  $B21
+  WordV  $B24
+  WordV  $HB0
+  FloatK $M24 (20.00)
+  FloatK $M25 (0.00)
+  WordV  $B25
+  FloatK $M26 (0.00)
+  FloatK $M27 (5.00)
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $WSCRATCH
+  WordV  $B29
+  WordV  $B30
+  IPAMB &M28 (91,1)
+  IPAMB &M29 (91,2)
+  IPAMB &M30 (91,3)
+  IPAMB &M31 (0,0)
+  IPAMB &M32 (92,9)
+  IPAMB &M33 (92,10)
+  IPAMB &M34 (92,11)
+  IPAMB &M35 (92,15)
+  IPAMB &M36 (92,1)
+  IPAMB &M37 (92,2)
+  IPAMB &M38 (92,3)
+  IPAMB &M39 (92,7)
+  IPAMB &M40 (93,1)
+  IPAMB &M41 (93,2)
+  IPAMB &M42 (93,3)
+  IPAMB &M43 (93,7)
+  IPAMB &M44 (91,5)
+  IPAMB &M45 (91,6)
+  IPAMB &M46 (91,7)
+  IPAMB &M47 (91,9)
+  IPAMB &M48 (91,10)
+  IPAMB &M49 (91,11)
+  IPAMB &M50 (91,15)
+  IPAMB &M52 (93,9)
+  IPAMB &M53 (93,10)
+  IPAMB &M54 (93,11)
+  IPAMB &M55 (93,15)
+  IPAMB &M60 (59,1)
+  IPAMB &M61 (59,2)
+  WordV  $HB2
+  IPAMB &M62 (59,3)
+  IPAMB &M63 (59,5)
+  IPAMB &M64 (59,6)
+  IPAMB &M65 (59,7)
+  IPAMB &M67 (70,14)
+  IPAMB &M68 (60,5)
+  IPAMB &M69 (60,6)
+  IPAMB &M70 (60,7)
+  IPAMB &M71 (60,1)
+  IPAMB &M72 (60,2)
+  IPAMB &M73 (60,3)
+  IPAMB &M74 (40,1)
+  IPAMB &M75 (40,3)
+  IPAMB &M76 (61,1)
+  IPAMB &M77 (61,2)
+  IPAMB &M78 (61,3)
+  IPAMB &M79 (61,5)
+  IPAMB &M80 (61,6)
+  IPAMB &M81 (61,7)
+  IPAMB &M82 (0,11)
+  IPAMB &M83 (0,14)
+  IPAMB &M84 (62,1)
+  IPAMB &M85 (62,2)
+  IPAMB &M86 (62,3)
+  IPAMB &M87 (62,5)
+  IPAMB &M88 (62,6)
+  IPAMB &M89 (62,7)
+  IPAMB &M90 (70,11)
+  IPAMB &M91 (69,3)
+  IPAMW &M92 (43)
+  IPAMW &M93 (45)
+  IPAMW &M94 (44)
+  IPAMW &M95 (46)
+  IPAMW &M96 (47)
+  IPAMW &M97 (48)
+  IPAMW &M98 (42)
+  IPAAW &M99 (86)
+  IPAAW &M100 (87)
+  IPAAW &M101 (85)
+  IPAAW &M102 (88)
+  IPAAW &M103 (84)
+  IPAAW &M104 (89)
+  IPAAW &M105 (90)
+  IPAAW &M106 (94)
+  IPAMW &M107 (41)
+  FloatK $M108 (1.00)
+  WordV  $B31
+  FloatK $M109 (60.00)
+  FloatK $M110 (60.00)
+  FloatK $M111 (1.00)
+  WordV  $B32
+  FloatK $M112 (60.00)
+  FloatK $M113 (60.00)
+  FloatK $M114 (1.00)
+  WordV  $B33
+  FloatK $M115 (1.00)
+  WordV  $B34
+  FloatK $M116 (60.00)
+  FloatK $M117 (60.00)
+  FloatK $M118 (60.00)
+  FloatK $M119 (60.00)
+  FloatK $M120 (0.00)
+  FloatK $M121 (1.00)
+  WordV  $HB3
+  WordV  $B35
+  FloatK $M122 (30.00)
+  FloatK $M123 (30.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordK  $M124 (1)
+  IPAMB &M125 (91,0)
+  WordV  $B39
+  FloatK $M126 (0.00)
+  WordV  $B40
+  FloatK $M127 (604800.00)
+  FloatK $M128 (0.00)
+  WordV  $B41
+  FloatK $M129 (300.00)
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  FloatK $M131 (0.00)
+  WordV  $B48
+  FloatK $M132 (604800.00)
+  FloatK $M133 (0.00)
+  WordV  $B49
+  FloatK $M134 (300.00)
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  FloatK $M136 (0.00)
+  WordV  $B56
+  FloatK $M137 (604800.00)
+  FloatK $M138 (0.00)
+  WordV  $B57
+  FloatK $M139 (300.00)
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  FloatK $M141 (0.00)
+  WordV  $B64
+  FloatK $M142 (604800.00)
+  FloatK $M143 (0.00)
+  WordV  $B65
+  FloatK $M144 (300.00)
+  WordV  $B66
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  FloatV $F1
+  FloatK $M148 (86400.00)
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  FloatV $F2
+  FloatK $M150 (86400.00)
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  FloatK $M151 (10.00)
+  FloatK $M152 (0.00)
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  FloatK $M154 (1.00)
+  WordV  $B84
+  WordV  $B85
+  FloatK $M155 (600.00)
+  FloatK $M156 (0.00)
+  WordV  $B86
+  WordV  $B87
+  IPAMB &M157 (91,13)
+  FloatK $M158 (7200.00)
+  FloatK $M159 (0.00)
+  WordV  $B88
+  WordV  $B89
+  FloatK $M160 (30.00)
+  FloatK $M161 (0.00)
+  WordV  $B90
+  WordV  $B91
+  FloatK $M162 (60.00)
+  FloatK $M163 (0.00)
+  FloatK $M164 (5.00)
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  FloatK $M165 (0.00)
+  FloatK $M166 (100.00)
+  WordK  $M167 (1)
+  IPAAW &M168 (97)
+  WordK  $M169 (1)
+  IPAAW &M170 (100)
+  WordK  $M171 (1)
+  IPAAW &M172 (103)
+  WordK  $M173 (1)
+  IPAAW &M174 (106)
+  WordK  $M175 (1)
+  IPAAW &M176 (54)
+  WordV  $B95
+  WordV  $B99
+  WordV  $B96
+  WordV  $B97
+  WordV  $B100
+  WordV  $B98
+  WordV  $B101
+  WordV  $B104
+  WordV  $B102
+  WordV  $B105
+  WordV  $B103
+  WordV  $B106
+  WordV  $B112
+  WordV  $B107
+  WordV  $B113
+  WordV  $B108
+  WordV  $B109
+  WordK  $M180 (1)
+  WordV  $B110
+  WordV  $B114
+  WordV  $B111
+  IPAMB &M182 (92,13)
+  WordV  $B115
+  WordV  $B121
+  WordV  $B116
+  WordV  $B122
+  WordV  $B117
+  WordV  $B118
+  WordK  $M184 (1)
+  WordV  $B119
+  WordV  $B123
+  WordV  $B120
+  IPAMB &M186 (92,5)
+  WordV  $B124
+  WordV  $B130
+  WordV  $B125
+  WordV  $B131
+  WordV  $B126
+  WordV  $B127
+  WordK  $M188 (1)
+  WordV  $B128
+  WordV  $B132
+  WordV  $B129
+  IPAMB &M190 (93,5)
+  WordV  $B133
+  WordV  $B139
+  WordV  $B134
+  WordV  $B140
+  WordV  $B135
+  WordV  $B136
+  WordK  $M192 (1)
+  WordV  $B137
+  WordV  $B141
+  WordV  $B138
+  IPAMB &M194 (93,13)
+  WordV  $B142
+  WordV  $B143
+  WordV  $B147
+  WordV  $B144
+  WordV  $B148
+  WordV  $B145
+  WordV  $B146
+  WordK  $M196 (1)
+  WordV  $B149
+  WordV  $B156
+  WordV  $B150
+  WordV  $B157
+  WordV  $B151
+  WordV  $B152
+  WordV  $B153
+  WordV  $B154
+  WordV  $B155
+  WordK  $M199 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Sanierung
+  ;         Turm 5
+  ;Anlage:  Fernheizung
+  ;         Statische Heiz-
+  ;         kreise
+  ;         Warmwaserberei-
+  ;         tung
+  ;         LÅftungsvertei-
+  ;         ler
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_FE_R1,Anl_FE_EIN1)
+  BTRA (Anl_HZ_NW_R1,Anl_HZ_NW_EIN1)
+  BTRA (Anl_HZ_Sock_R1,Anl_HZ_Sock_EIN1)
+  BTRA (Anl_HZ_SO_R1,Anl_HZ_SO_EIN1)
+  BTRA (Anl_HZ_DG_R1,Anl_HZ_DG_EIN1)
+  BTRA (VE_Pumpe_R1,VE_Pumpe_EIN1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (Anl_LuV_R1,Anl_LuV_EIN1)
+  BTRA (Anl_WWB_R1,Anl_WBB_EIN1)
+  BTRA (HZ_NW_Nacht,HZ_NW_Na_EIN1)
+  BTRA (HZ_Sock_Nacht,HZ_Sock_Na_EIN1)
+  BTRA (HZ_SO_Nacht,HZ_SO_Na_EIN1)
+  BTRA (HZ_DG_Nacht,HZ_DG_Na_EIN1)
+  ENDE 
+  TASK (2,cycl,2000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (Anl_FE_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B6,Anl_FE_R1_1)
+  NICHT ($B1,$B6)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_HZ_NW_EIN1,$M2,$M3,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B7,Anl_HZ_NW_R1_1)
+  NICHT ($B2,$B7)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_HZ_Sock_EIN1,$M4,$M5,$B3)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B3,$B8,Anl_HZ_Sock_R1_1)
+  NICHT ($B3,$B8)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_HZ_SO_EIN1,$M6,$M7,$B4)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B4,$B9,Anl_HZ_SO_R1_1)
+  NICHT ($B4,$B9)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_HZ_DG_EIN1,$M8,$M9,$B5)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B5,$B10,Anl_HZ_DG_R1_1)
+  NICHT ($B5,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  VVZ (HZ_NW_Na_EIN1,$M10,$M11,$B11)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B11,$B15,HZ_NW_Nacht_1)
+  NICHT ($B11,$B15)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (HZ_Sock_Na_EIN1,$M12,$M13,$B12)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B12,$B16,HZ_Sock_Nacht_1)
+  NICHT ($B12,$B16)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (HZ_SO_Na_EIN1,$M14,$M15,$B13)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B13,$B17,HZ_SO_Nacht_1)
+  NICHT ($B13,$B17)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (HZ_DG_Na_EIN1,$M16,$M17,$B14)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B14,$B18,HZ_DG_Nacht_1)
+  NICHT ($B14,$B18)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  VVZ (Anl_LuV_EIN1,$M18,$M19,$B19)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B19,$B22,Anl_LuV_R1_1)
+  NICHT ($B19,$B22)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_WBB_EIN1,$M20,$M21,$B20)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B20,$B23,Anl_WWB_R1_1)
+  NICHT ($B20,$B23)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (VE_Pumpe_EIN1,$M22,$M23,$B21)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B21,$B24,VE_Pumpe_R1_1)
+  NICHT ($B21,$B24)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M24,$M25,$B25)
+  VVZ (Anl_WWB_R1,$M26,$M27,$B26)
+  UND11 ($B26,$B25,$B27)
+  RSS ($B27,Anl_WWB_R1,$B28,$WSCRATCH)
+  UND2 ($B28,$B25,$B29)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B29,$B30,Anl_WWB_R1_2)
+  NICHT ($B29,$B30)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M28,1,Anl_FE_R0,$WSCRATCH)
+  MELEIN (&M29,1,Anl_FE_ST,$WSCRATCH)
+  MELEIN (&M30,1,Anl_FE_R1,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M32,1,Anl_HZ_NW_R0,$WSCRATCH)
+  MELEIN (&M33,1,Anl_HZ_NW_ST,$WSCRATCH)
+  MELEIN (&M34,1,Anl_HZ_NW_R1,$WSCRATCH)
+  MELEIN (&M35,1,HZ_NW_Nacht,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M36,1,Anl_HZ_Sock_R0,$WSCRATCH)
+  MELEIN (&M37,1,Anl_HZ_Sock_ST,$WSCRATCH)
+  MELEIN (&M38,1,Anl_HZ_Sock_R1,$WSCRATCH)
+  MELEIN (&M39,1,HZ_Sock_Nacht,$WSCRATCH)
+  MELEIN (&M40,1,Anl_HZ_SO_R0,$WSCRATCH)
+  MELEIN (&M41,1,Anl_HZ_SO_ST,$WSCRATCH)
+  MELEIN (&M42,1,Anl_HZ_SO_R1,$WSCRATCH)
+  MELEIN (&M43,1,HZ_SO_Nacht,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M44,1,Anl_LuV_R0,$WSCRATCH)
+  MELEIN (&M45,1,Anl_LuV_ST,$WSCRATCH)
+  MELEIN (&M46,1,Anl_LuV_R1,$WSCRATCH)
+  MELEIN (&M47,1,Anl_WWB_R0,$WSCRATCH)
+  MELEIN (&M48,1,Anl_WWB_ST,$WSCRATCH)
+  MELEIN (&M49,1,Anl_WWB_R1,$WSCRATCH)
+  MELEIN (&M50,1,Legion_R1,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M52,1,Anl_HZ_DG_R0,$WSCRATCH)
+  MELEIN (&M53,1,Anl_HZ_DG_ST,$WSCRATCH)
+  MELEIN (&M54,1,Anl_HZ_DG_R1,$WSCRATCH)
+  MELEIN (&M55,1,HZ_DG_Nacht,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M60,1,Pu1_LuV_R0,$WSCRATCH)
+  MELEIN (&M61,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Pu1_LuV_ST)
+  MELEIN (&M62,1,Pu1_LuV_R1,$WSCRATCH)
+  MELEIN (&M63,1,Pu2_LuV_R0,$WSCRATCH)
+  MELEIN (&M64,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Pu2_LuV_ST)
+  MELEIN (&M65,1,Pu2_LuV_R1,$WSCRATCH)
+  MELEIN (&M31,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M67,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,VE_Pumpe_Rep)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M68,1,Pu_NW_R0,$WSCRATCH)
+  MELEIN (&M69,1,Pu_NW_ST,$WSCRATCH)
+  MELEIN (&M70,1,Pu_NW_R1,$WSCRATCH)
+  MELEIN (&M71,1,Pu_Sock_R0,$WSCRATCH)
+  MELEIN (&M72,1,Pu_Sock_ST,$WSCRATCH)
+  MELEIN (&M73,1,Pu_Sock_R1,$WSCRATCH)
+  MELEIN (&M74,1,VE_Pumpe_R0,$WSCRATCH)
+  MELEIN (&M75,1,VE_Pumpe_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M76,1,Pu_SO_R0,$WSCRATCH)
+  MELEIN (&M77,1,Pu_SO_ST,$WSCRATCH)
+  MELEIN (&M78,1,Pu_SO_R1,$WSCRATCH)
+  MELEIN (&M79,1,Pu_DG_R0,$WSCRATCH)
+  MELEIN (&M80,1,Pu_DG_ST,$WSCRATCH)
+  MELEIN (&M81,1,Pu_DG_R1,$WSCRATCH)
+  MELEIN (&M82,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M83,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M84,1,Pu_Z1_R0,$WSCRATCH)
+  MELEIN (&M85,1,Pu_Z1_ST,$WSCRATCH)
+  MELEIN (&M86,1,Pu_Z1_R1,$WSCRATCH)
+  MELEIN (&M87,1,Pu_Z2_R0,$WSCRATCH)
+  MELEIN (&M88,1,Pu_Z2_ST,$WSCRATCH)
+  MELEIN (&M89,1,Pu_Z2_R1,$WSCRATCH)
+  MELEIN (&M90,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_WWB)
+  MELEIN (&M91,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung_NN)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M92,VL_Temp_FE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M93,VL_Temp_NW,$WSCRATCH)
+  ANEIN (&M94,VL_Temp_Sock,$WSCRATCH)
+  ANEIN (&M95,VL_Temp_SO,$WSCRATCH)
+  ANEIN (&M96,VL_Temp_DG,$WSCRATCH)
+  ANEIN (&M97,SP_Temp_WWB,$WSCRATCH)
+  ANEIN (&M98,VL_Temp_Fe_prim,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M99,SW_AT_Grenze_NW,$WSCRATCH)
+  ANEIN (&M100,SW_AT_Grenze_SO,$WSCRATCH)
+  ANEIN (&M101,SW_AT_Grenze_Soc,$WSCRATCH)
+  ANEIN (&M102,SW_AT_Grenze_DG,$WSCRATCH)
+  ANEIN (&M103,SW_GW_Fernltg,$WSCRATCH)
+  ANEIN (&M104,SW_SP_WWB,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&M105,SW_SP_Legio,$WSCRATCH)
+  ANEIN (&M106,SW_FE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&M107,Aussentemp,$WSCRATCH)
+  VGLEH (Aussentemp,SW_AT_Grenze_NW,$M108,$B31)
+  VVZ ($B31,$M109,$M110,AT>Grenze_NW)
+  VGLEH (Aussentemp,SW_AT_Grenze_Soc,$M111,$B32)
+  VVZ ($B32,$M112,$M113,AT>Grenze_Sock)
+  VGLEH (Aussentemp,SW_AT_Grenze_SO,$M114,$B33)
+  VGLEH (Aussentemp,SW_AT_Grenze_DG,$M115,$B34)
+  VVZ ($B33,$M116,$M117,AT>Grenze_SO)
+  VVZ ($B34,$M118,$M119,AT>Grenze_DG)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  REGLER (1,K1,Anl_FE_R0,$M120,SG_FE,$WSCRATCH)
+  SOLKEN (1,K1,SW_FE_Kennlinie,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  VGLEH (VL_Temp_Fe_prim,SW_GW_Fernltg,$M121,$HB3)
+  NICHT ($HB3,$B35)
+  VVZ ($B35,$M122,$M123,$B36)
+  UND11 (Entriegeln,$B36,$B37)
+  RSS ($B36,$B37,$B38,$WSCRATCH)
+  SETMEL ($M124,1,$B38,&M125,$WSCRATCH)
+  ;öberwachung VL-Temp.
+  ;Fernleitung auf einstell
+  ;baren Grenzwert und
+  ;Ausgabe Stîrmeldung an
+  ;die Betriebstechnik
+  ;F
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODR2 (AT>Grenze_NW,Anl_HZ_NW_R0,$B39)
+  REGLER (3,K1,$B39,$M126,SG_NW,$WSCRATCH)
+  SOLKEN (4,K1,SW_Tag_NW_Ke,$WSCRATCH)
+  SOLKEN (5,K1,SW_Nacht_NW_Ke,$WSCRATCH)
+  AWT (HZ_NW_Nacht,SW_Tag_NW_Ke,SW_Nacht_NW_Ke,SW_Regler_NW)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UNDMN (0,2,Pu_NW_R1,$B42,$B40,$WSCRATCH)
+  VVZ ($B40,$M127,$M128,$B41)
+  MOKY ($B41,$M129,$B42)
+  UND11 (Anl_HZ_NW_R1,AT>Grenze_NW,$B43)
+  ODR2 ($B42,$B43,$B44)
+  UNDMN (1,$B44,1,Pu_NW_ST,$B45,$B46)
+  BEFAUS (1,$B46,$B45,$WZERO,$WZERO,&M68,$WSCRATCH)
+  ;7 Tage = 604.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODR2 (AT>Grenze_Sock,Anl_HZ_Sock_R0,$B47)
+  REGLER (2,K1,$B47,$M131,SG_Sock,$WSCRATCH)
+  SOLKEN (2,K1,SW_Tag_Sock_Ke,$WSCRATCH)
+  SOLKEN (3,K1,SW_Nacht_Sock_Ke,$WSCRATCH)
+  AWT (HZ_Sock_Nacht,SW_Tag_Sock_Ke,SW_Nacht_Sock_Ke,
+       SW_Regler_Sock)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UNDMN (0,2,Pu_Sock_R1,$B50,$B48,$WSCRATCH)
+  VVZ ($B48,$M132,$M133,$B49)
+  MOKY ($B49,$M134,$B50)
+  UND11 (Anl_HZ_Sock_R1,AT>Grenze_Sock,$B51)
+  ODR2 ($B50,$B51,$B52)
+  UNDMN (1,$B52,1,Pu_Sock_ST,$B53,$B54)
+  BEFAUS (1,$B54,$B53,$WZERO,$WZERO,&M71,$WSCRATCH)
+  ;7 Tage = 604.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODR2 (AT>Grenze_SO,Anl_HZ_SO_R0,$B55)
+  REGLER (4,K1,$B55,$M136,SG_SO,$WSCRATCH)
+  SOLKEN (6,K1,SW_Tag_SO_Ke,$WSCRATCH)
+  SOLKEN (7,K1,SW_Nacht_SO_Ke,$WSCRATCH)
+  AWT (HZ_SO_Nacht,SW_Tag_SO_Ke,SW_Nacht_SO_Ke,SW_Regler_SO)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UNDMN (0,2,Pu_SO_R1,$B58,$B56,$WSCRATCH)
+  VVZ ($B56,$M137,$M138,$B57)
+  MOKY ($B57,$M139,$B58)
+  UND11 (Anl_HZ_SO_R1,AT>Grenze_SO,$B59)
+  ODR2 ($B58,$B59,$B60)
+  UNDMN (1,$B60,1,Pu_SO_ST,$B61,$B62)
+  BEFAUS (1,$B62,$B61,$WZERO,$WZERO,&M76,$WSCRATCH)
+  ;7 Tage = 604.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODR2 (AT>Grenze_DG,Anl_HZ_DG_R0,$B63)
+  REGLER (5,K1,$B63,$M141,SG_DG,$WSCRATCH)
+  SOLKEN (8,K1,SW_Tag_DG_Ke,$WSCRATCH)
+  SOLKEN (9,K1,SW_Nacht_DG_Ke,$WSCRATCH)
+  AWT (HZ_DG_Nacht,SW_Tag_DG_Ke,SW_Nacht_DG_Ke,SW_Regler_DG)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UNDMN (0,2,Pu_DG_R1,$B66,$B64,$WSCRATCH)
+  VVZ ($B64,$M142,$M143,$B65)
+  MOKY ($B65,$M144,$B66)
+  UND11 (Anl_HZ_DG_R1,AT>Grenze_DG,$B67)
+  ODR2 ($B66,$B67,$B68)
+  UNDMN (1,$B68,1,Pu_DG_ST,$B69,$B70)
+  BEFAUS (1,$B70,$B69,$WZERO,$WZERO,&M79,$WSCRATCH)
+  ;7 Tage = 604.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  NICHT (Anl_LuV_R1,$HB0)
+  BEFAUS (1,$HB0,Anl_LuV_R1,$WZERO,$WZERO,&M60,$WSCRATCH)
+  NICHT (Anl_LuV_R1,$HB0)
+  BEFAUS (1,$HB0,Anl_LuV_R1,$WZERO,$WZERO,&M63,$WSCRATCH)
+  ;Lueftungsverteiler
+  ;Pumpe 1
+  ; 
+  ;Lueftungsverteiler
+  ;Pumpe 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UHR (Pu_Z1_R1,$B72,$F1)
+  VGLOH ($F1,$M148,$B71)
+  RSS ($B71,Pu_Z2_R1,$B72,$WSCRATCH)
+  UNDMN (0,3,$B72,Pu_Z2_R1,Pu_Z1_ST,$B73,$WSCRATCH)
+  ODR2 ($B73,Pu_Z2_ST,$B74)
+  UNDMN (2,$B74,Anl_WWB_R1,0,$B75,$B76)
+  BEFAUS (1,$B76,$B75,$WZERO,$WZERO,&M84,$WSCRATCH)
+  ;Zirkulation-Pumpe 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UHR (Pu_Z2_R1,$B78,$F2)
+  VGLOH ($F2,$M150,$B77)
+  RSS ($B77,Pu_Z1_R1,$B78,$WSCRATCH)
+  UNDMN (0,3,$B78,Pu_Z1_R1,Pu_Z2_ST,$B79,$WSCRATCH)
+  ODR2 ($B79,Pu_Z1_ST,$B80)
+  VVZ (Anl_WWB_R1,$M151,$M152,$B81)
+  UNDMN (2,$B80,$B81,0,$B82,$B83)
+  BEFAUS (1,$B83,$B82,$WZERO,$WZERO,&M87,$WSCRATCH)
+  ;Zirkulation-Pumpe 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  VGLEH (SP_Temp_WWB,SW_SP_Legio,$M154,$B84)
+  UND2 ($B84,Legion_R1,$B85)
+  VVZ ($B85,$M155,$M156,$B86)
+  ODR2 ($B86,$B88,$B87)
+  BEFAUS (1,$B87,$WZERO,$WZERO,$WZERO,&M157,$WSCRATCH)
+  VVZ (Legion_R1,$M158,$M159,$B88)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ODR2 (Pu_Z1_R1,Pu_Z2_R1,$B89)
+  VVZ (Anl_WWB_R1,$M160,$M161,$B90)
+  UND11 ($B90,$B89,$B91)
+  VVZ ($B91,$M162,$M163,Z_Pumpen_ST)
+  VGLEH (SP_Temp_WWB,SW_SP_WWB,$M164,$HB3)
+  NICHT ($HB3,$B92)
+  ODR2 ($B92,Legion_R1,$B93)
+  UND21 ($B93,Anl_WWB_R1,STB_WWB,$B94)
+  AWT ($B94,$M165,$M166,WWB_Ventil)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ANAUS (SW_Regler_Sock,$M167,&M168,$WSCRATCH)
+  ANAUS (SW_Regler_NW,$M169,&M170,$WSCRATCH)
+  ANAUS (SW_Regler_SO,$M171,&M172,$WSCRATCH)
+  ANAUS (SW_Regler_DG,$M173,&M174,$WSCRATCH)
+  ANAUS (WWB_Ventil,$M175,&M176,$WSCRATCH)
+  ;SW aktuell Sockelgesch
+  ; 
+  ;SW aktuell HZG SÅd/Ost
+  ; 
+  ;SW aktuell Nord/West
+  ; 
+  ;SW aktuell HZG DG
+  ; 
+  ;Ventil WWB
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (VE_Pumpe_R0,$B99,$B95)
+  NICHT (VE_Pumpe_R0,$B99)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B95,VE_Pumpe_Rep,$B96)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (VE_Pumpe_R1,$B100,$B97)
+  NICHT (VE_Pumpe_R1,$B100)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (VE_Pumpe_R1_1,$B97,$B98)
+  BEFAUS (1,$B96,$B98,$WZERO,$WZERO,&M74,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_FE_R0,$B104,$B101)
+  NICHT (Anl_FE_R0,$B104)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_FE_R1,$B105,$B102)
+  NICHT (Anl_FE_R1,$B105)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Anl_FE_R1_1,$B102,$B103)
+  ;Fernheizung
+  ; 
+  BEFAUS (1,$B101,$B103,$WZERO,$WZERO,&M28,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_NW_R0,$B112,$B106)
+  NICHT (Anl_HZ_NW_R0,$B112)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_NW_R1,$B113,$B107)
+  NICHT (Anl_HZ_NW_R1,$B113)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B106,Pu_NW_ST,$B108)
+  ODR2 (Anl_HZ_NW_R1_1,$B107,$B109)
+  BEFAUS (1,$B108,$B109,$WZERO,$WZERO,&M32,$WSCRATCH)
+  SETMEL ($M180,1,Pu_NW_ST,&M33,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (HZ_NW_Nacht,$B114,$B110)
+  NICHT (HZ_NW_Nacht,$B114)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Heizkreis Nord/West
+  ; 
+  ODR2 (HZ_NW_Nacht_1,$B110,$B111)
+  BEFAUS (1,$WZERO,$B111,$WZERO,$WZERO,&M182,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_Sock_R0,$B121,$B115)
+  NICHT (Anl_HZ_Sock_R0,$B121)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_Sock_R1,$B122,$B116)
+  NICHT (Anl_HZ_Sock_R1,$B122)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B115,Pu_Sock_ST,$B117)
+  ODR2 (Anl_HZ_Sock_R1_1,$B116,$B118)
+  BEFAUS (1,$B117,$B118,$WZERO,$WZERO,&M36,$WSCRATCH)
+  SETMEL ($M184,1,Pu_Sock_ST,&M37,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (HZ_Sock_Nacht,$B123,$B119)
+  NICHT (HZ_Sock_Nacht,$B123)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Heizkreis Sockelgescho·
+  ; 
+  ODR2 (HZ_Sock_Nacht_1,$B119,$B120)
+  BEFAUS (1,$WZERO,$B120,$WZERO,$WZERO,&M186,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_SO_R0,$B130,$B124)
+  NICHT (Anl_HZ_SO_R0,$B130)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_SO_R1,$B131,$B125)
+  NICHT (Anl_HZ_SO_R1,$B131)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B124,Pu_SO_ST,$B126)
+  ODR2 (Anl_HZ_SO_R1_1,$B125,$B127)
+  BEFAUS (1,$B126,$B127,$WZERO,$WZERO,&M40,$WSCRATCH)
+  SETMEL ($M188,1,Pu_SO_ST,&M41,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (HZ_SO_Nacht,$B132,$B128)
+  NICHT (HZ_SO_Nacht,$B132)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Heizkreis SÅd/Ost
+  ; 
+  ODR2 (HZ_SO_Nacht_1,$B128,$B129)
+  BEFAUS (1,$WZERO,$B129,$WZERO,$WZERO,&M190,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_DG_R0,$B139,$B133)
+  NICHT (Anl_HZ_DG_R0,$B139)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_HZ_DG_R1,$B140,$B134)
+  NICHT (Anl_HZ_DG_R1,$B140)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B133,Pu_DG_ST,$B135)
+  ODR2 (Anl_HZ_DG_R1_1,$B134,$B136)
+  BEFAUS (1,$B135,$B136,$WZERO,$WZERO,&M52,$WSCRATCH)
+  SETMEL ($M192,1,Pu_DG_ST,&M53,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (HZ_DG_Nacht,$B141,$B137)
+  NICHT (HZ_DG_Nacht,$B141)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Heizkreis DG TierstÑlle
+  ; 
+  ODR2 (HZ_DG_Nacht_1,$B137,$B138)
+  BEFAUS (1,$WZERO,$B138,$WZERO,$WZERO,&M194,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  UND2 (Pu1_LuV_ST,Pu2_LuV_ST,$B142)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_LuV_R0,$B147,$B143)
+  NICHT (Anl_LuV_R0,$B147)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_LuV_R1,$B148,$B144)
+  NICHT (Anl_LuV_R1,$B148)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B143,$B142,$B145)
+  ODR2 (Anl_LuV_R1_1,$B144,$B146)
+  BEFAUS (1,$B145,$B146,$WZERO,$WZERO,&M44,$WSCRATCH)
+  SETMEL ($M196,1,$B142,&M45,$WSCRATCH)
+  ;LÅftungsverteiler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_WWB_R0,$B156,$B149)
+  NICHT (Anl_WWB_R0,$B156)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_WWB_R1,$B157,$B150)
+  NICHT (Anl_WWB_R1,$B157)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 (Pu_Z1_ST,Pu_Z2_ST,$B151)
+  RSS (Z_Pumpen_ST,Entriegeln,$B152,$WSCRATCH)
+  ODRMN (3,$B151,STB_WWB,$B152,0,$B153,$WSCRATCH)
+  ODR2 ($B149,$B153,$B154)
+  ODRMN (3,Anl_WWB_R1_1,Anl_WWB_R1_2,$B150,0,$B155,$WSCRATCH)
+  BEFAUS (1,$B154,$B155,$WZERO,$WZERO,&M47,$WSCRATCH)
+  ;Warmwasserbereiter
+  ; 
+  SETMEL ($M199,1,$B153,&M48,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

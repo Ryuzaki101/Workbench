@@ -1,0 +1,200 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 06-04-03.GPS
+  ;*** Projektname    : MPI T.6 NSHV
+  ;*** Projektnummer  : 33101245
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Bormann
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 4
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (AR20,3)
+  WordV  Anl_Auto_R1_1
+  WordV  FU_Stoerung
+  FloatV Istwert_Regler
+  WordV  Anl_Auto_R0
+  FloatV Raumtemp-Trafo4
+  FloatV Raumtemp-Trafo1
+  FloatV Raumtemp-Trafo2
+  FloatV Raumtemp-Trafo3
+  WordK  K0 (0)
+  WordV  Quitt
+  WordV  Anl_Auto_R1_NWK
+  FloatV SG_Regler
+  WordK  Anl_Auto_R1 (0)
+  FloatK SW_Raumtemp (25.00)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAAW &M2 (1)
+  WordV  $WSCRATCH
+  IPAAW &M3 (2)
+  IPAAW &M4 (3)
+  IPAAW &M5 (4)
+  IPAAW &M6 (101)
+  FloatV $F1
+  FloatK $M7 (40.00)
+  FloatK $M8 (10.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M9 (10.00)
+  WordV  $B3
+  WordK  $M10 (1)
+  IPAMB &M12 (100,1)
+  IPAMB &M13 (100,3)
+  IPAMB &M14 (6,2)
+  WordV  $HB2
+  IPAMB &M15 (6,14)
+  IPAMB &M19 (6,11)
+  WordK  $M20 (1)
+  IPAMW &M21 (102)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B4
+  WordV  $B5
+  FloatK $M22 (0.00)
+  FloatK $M23 (5.00)
+  FloatK $M24 (2.00)
+  WordV  $B6
+  FloatK $M25 (60.00)
+  FloatK $M26 (60.00)
+  WordV  $B7
+  WordV  $B8
+  IPAMB &M27 (6,1)
+  FloatK $M28 (10.00)
+  FloatK $M29 (0.00)
+  WordV  $B9
+  IPAMB &M30 (6,9)
+  WordV  $B10
+  WordV  $B13
+  WordV  $B11
+  WordV  $B14
+  WordV  $B12
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Kunde   : MPI
+  ;Endkunde: MPI
+  ;Anlage : Trafo Station
+  ;ErklÑrung des Dateinamen
+  ;------------------------
+  ;03 = Linie 06
+  ;02 = Unterstation 04
+  ;03 = Programm in Modul
+  ;     mit der Nr. 03
+  ; 
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMicon  : 4.22
+  ;E
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_Auto_R1,Anl_Auto_R1_NWK)
+  ENDE 
+  TASK (2,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anl_Auto_R1_NWK,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,Anl_Auto_R1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANEIN (&M2,Raumtemp-Trafo1,$WSCRATCH)
+  ANEIN (&M3,Raumtemp-Trafo2,$WSCRATCH)
+  ANEIN (&M4,Raumtemp-Trafo3,$WSCRATCH)
+  ANEIN (&M5,Raumtemp-Trafo4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M6,$F1,$WSCRATCH)
+  LIMIT ($F1,$M7,$M8,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M9,$B3)
+  AWT ($B3,$F2,SW_Raumtemp,SW_Raumtemp)
+  ANAUS (SW_Raumtemp,$M10,&M6,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M12,1,Anl_Auto_R0,$WSCRATCH)
+  MELEIN (&M13,1,Anl_Auto_R1,$WSCRATCH)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,FU_Stoerung)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,Quitt,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MAX (4,Raumtemp-Trafo1,Raumtemp-Trafo2,Raumtemp-Trafo3,
+       Raumtemp-Trafo4,Istwert_Regler)
+  ANAUS (Istwert_Regler,$M20,&M21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  NICHT ($WZERO,$B4)
+  ODR2 (Anl_Auto_R0,FU_Stoerung,$B5)
+  REGLER (1,$B4,$B5,$M22,SG_Regler,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  VGLEH (SG_Regler,$M23,$M24,$B6)
+  VVZ ($B6,$M25,$M26,$B7)
+  UND21 ($B7,Anl_Auto_R1,FU_Stoerung,$B8)
+  NICHT ($B8,$HB0)
+  BEFAUS (1,$HB0,$B8,$WZERO,$WZERO,&M27,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  VVZ (Quitt,$M28,$M29,$B9)
+  BEFAUS (1,$B9,$WZERO,$WZERO,$WZERO,&M30,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Auto_R0,$B13,$B10)
+  NICHT (Anl_Auto_R0,$B13)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Auto_R1,$B14,$B11)
+  NICHT (Anl_Auto_R1,$B14)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Anl_Auto_R1_1,$B11,$B12)
+  BEFAUS (1,$B10,$B12,$WZERO,$WZERO,&M12,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

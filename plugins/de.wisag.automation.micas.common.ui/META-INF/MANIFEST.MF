@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Micas Workbench Common UI Components
+Bundle-SymbolicName: de.wisag.automation.micas.common.ui
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",
+ org.eclipse.ui;bundle-version="3.6.1",
+ org.eclipse.ui.console;bundle-version="3.5.0";resolution:=optional,
+ org.eclipse.core.databinding.property;bundle-version="1.3.0",
+ org.eclipse.jface.databinding;bundle-version="1.4.0",
+ org.eclipse.ui.forms;bundle-version="3.5.2",
+ org.eclipse.emf.databinding;bundle-version="1.2.0",
+ org.eclipse.osgi.services;bundle-version="3.2.100",
+ de.wisag.automation.micas.common;bundle-version="1.0.0"
+Export-Package: de.wisag.automation.micas.common.ui,
+ de.wisag.automation.micas.common.ui.databinding,
+ de.wisag.automation.micas.common.ui.dialogs
+Bundle-Activator: de.wisag.automation.micas.common.ui.internal.Activator
+Bundle-Vendor: WISAG Automatisierungstechnik GmbH & Co. KG
+Service-Component: OSGI-INF/workbenchmonitor.xml
+Bundle-ActivationPolicy: lazy

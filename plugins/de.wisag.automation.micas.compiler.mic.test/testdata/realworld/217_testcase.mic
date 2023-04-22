@@ -1,0 +1,347 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0304.GPS
+  ;*** Projektname    : Pumpenschaltung
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Braun
+  ;*** Prüfer         : Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 3
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  FREIG-EIN-GLT14 (0)
+  WordV  Anl.251RM-EIN
+  WordV  Anl.25-RM-EIN
+  WordK  KON0 (0)
+  WordK  FREIG-EIN-GLT21 (0)
+  WordV  ERR02
+  WordV  ERR01
+  WordK  FREIG-AUS-GLT21 (1)
+  WordV  ERR06
+  WordK  FREIG-AUS-GLT25 (0)
+  WordK  FREIG-EIN-GLT25 (1)
+  WordK  FREIG-AUS-GLT141 (1)
+  WordK  FREIG-EIN-GLT141 (0)
+  WordV  WERR
+  WordK  FREIG-EIN-GLT17 (0)
+  WordK  FREIG-EIN-GLT15 (1)
+  WordK  FREIG-AUS-GLT17 (1)
+  WordK  FREIG-AUS-GLT15 (0)
+  WordK  FREIG-AUS-GLT14 (1)
+  WordV  ERR07
+  WordV  ERR03
+  WordV  ZPK
+  WordV  ERR04
+  WordV  ERR09
+  WordV  ERR08
+  WordV  A25-Rep-Schalter
+  WordV  ERR05
+  WordV  Entriegelung
+  WordV  A251Rep-Schalter
+  WordV  A25_Trafo_EIN
+  WordV  Anl.251RM-AUS
+  WordV  A251Trafo_EIN
+  WordV  Anl.25-RM-AUS
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU1400BM20 (2,1)
+  IPAMB &BA1LU2100BF20 (3,1)
+  IPAMB &BA1LU1500BF20 (2,5)
+  IPAMB &BA1LU1700BF20 (17,13)
+  IPAMB &BA1LU2500BF01 (127,13)
+  IPAMB &BA1LU1401BM20 (3,13)
+  IPAMB &M0 (2,2)
+  IPAMB &M1 (2,3)
+  IPAMB &M2 (3,2)
+  IPAMB &M3 (3,3)
+  IPAMB &M4 (2,6)
+  IPAMB &M5 (2,7)
+  IPAMB &M6 (17,14)
+  IPAMB &M7 (17,15)
+  IPAMB &M8 (127,14)
+  IPAMB &M9 (127,15)
+  IPAMB &M10 (3,14)
+  IPAMB &M11 (3,15)
+  IPAMB &BA1LU2500WA21 (10,6)
+  WordV  $HB2
+  IPAMB &BA1LU2501WA21 (10,3)
+  IPAMB &BA1LU0000WA03 (15,9)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B19
+  WordV  $B8
+  WordV  $B9
+  FloatK $M12 (24.00)
+  FloatV $F1
+  FloatV $FSCRATCH
+  FloatK $M13 (24.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M14 (3600.00)
+  WordV  $B20
+  FloatK $M15 (1.00)
+  FloatK $M16 (0.00)
+  FloatV $F4
+  WordV  $B10
+  FloatV $F5
+  FloatK $M17 (3600.00)
+  WordV  $B21
+  FloatK $M18 (1.00)
+  FloatK $M19 (0.00)
+  FloatV $F6
+  WordV  $B11
+  FloatK $M20 (10.00)
+  WordV  $B12
+  FloatK $M21 (10.00)
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B24
+  WordV  $HB0
+  FloatV $F7
+  FloatK $M22 (48.00)
+  FloatV $F8
+  FloatK $M23 (3600.00)
+  FloatV $F9
+  FloatV $F10
+  WordV  $B25
+  FloatK $M24 (300.00)
+  WordV  $B22
+  WordV  $B26
+  WordV  $B23
+  WordV  $B29
+  FloatV $F11
+  FloatK $M25 (48.00)
+  FloatV $F12
+  FloatK $M26 (3600.00)
+  FloatV $F13
+  FloatV $F14
+  WordV  $B30
+  FloatK $M27 (300.00)
+  WordV  $B27
+  WordV  $B31
+  WordV  $B28
+  IPAMB &BA1LU2500BF20 (3,9)
+  IPAMB &BA1LU2501BF20 (15,13)
+  IPAMB &M28 (3,8)
+  IPAMB &M29 (3,10)
+  IPAMB &M30 (3,11)
+  IPAMB &M31 (15,12)
+  IPAMB &M32 (15,14)
+  IPAMB &M33 (15,15)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,FREIG-AUS-GLT14,FREIG-EIN-GLT14,$WZERO,$WZERO,
+          &BA1LU1400BM20,ERR01)
+  BEFAUS (1,FREIG-AUS-GLT21,FREIG-EIN-GLT21,$WZERO,$WZERO,
+          &BA1LU2100BF20,ERR02)
+  ;Anlage 14
+  ;Freigabe GLT
+  ; 
+  ;Anlage 21
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,FREIG-AUS-GLT15,FREIG-EIN-GLT15,$WZERO,$WZERO,
+          &BA1LU1500BF20,ERR03)
+  BEFAUS (1,FREIG-AUS-GLT17,FREIG-EIN-GLT17,$WZERO,$WZERO,
+          &BA1LU1700BF20,ERR04)
+  ;Anlage 15
+  ;Freigabe GLT
+  ; 
+  ;Anlage 17
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,FREIG-AUS-GLT25,FREIG-EIN-GLT25,$WZERO,$WZERO,
+          &BA1LU2500BF01,ERR05)
+  BEFAUS (1,FREIG-AUS-GLT141,FREIG-EIN-GLT141,$WZERO,$WZERO,
+          &BA1LU1401BM20,ERR06)
+  ;Anlage 25
+  ;Freigabe GLT
+  ; 
+  ;Anlage 14.1
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU1400BM20,3,FREIG-AUS-GLT14,ZPK,
+          FREIG-EIN-GLT14,ERR07)
+  MELEIN (&BA1LU2100BF20,3,FREIG-AUS-GLT21,ZPK,
+          FREIG-EIN-GLT21,ERR08)
+  MELEIN (&BA1LU1500BF20,3,FREIG-AUS-GLT15,ZPK,
+          FREIG-EIN-GLT15,ERR09)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1LU1700BF20,3,FREIG-AUS-GLT17,ZPK,
+          FREIG-EIN-GLT17,ERR07)
+  MELEIN (&BA1LU2500BF01,3,FREIG-AUS-GLT25,ZPK,
+          FREIG-EIN-GLT25,ERR08)
+  MELEIN (&BA1LU1401BM20,3,FREIG-AUS-GLT141,ZPK,
+          FREIG-EIN-GLT141,ERR09)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&BA1LU2500WA21,1,$HB2,WERR)
+  NICHT ($HB2,A25-Rep-Schalter)
+  MELEIN (&BA1LU2501WA21,1,$HB2,WERR)
+  NICHT ($HB2,A251Rep-Schalter)
+  MELEIN (&BA1LU0000WA03,1,$HB2,WERR)
+  NICHT ($HB2,Entriegelung)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (4,A25-Rep-Schalter,KON0,KON0,KON0,0,$B1,$WSCRATCH)
+  RSS ($B1,Entriegelung,$B2,$WSCRATCH)
+  ODRMN (4,A251Rep-Schalter,KON0,KON0,KON0,0,$B3,$WSCRATCH)
+  RSS ($B3,Entriegelung,$B4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,FREIG-EIN-GLT25,$B5,$WSCRATCH)
+  UNDMN (1,$WZERO,2,FREIG-EIN-GLT25,$WONE,$B6,$WSCRATCH)
+  UND2 (FREIG-EIN-GLT25,$WONE,$B7)
+  ODRMN (3,$B5,$B6,$B7,0,$B19,$WSCRATCH)
+  UND2 ($B4,$B19,$B8)
+  UND2 ($B2,$B19,$B9)
+  UST ($WZERO,$M12,$F1,$FSCRATCH)
+  UST ($WZERO,$M13,$F2,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (Anl.25-RM-EIN,$B20,$F3)
+  VGLOH ($F3,$M14,$B20)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B12,$M15,$WZERO,$M16,$WONE,$B20,$WZERO,$F4)
+  ATRA ($F4,$FSCRATCH)
+  VGLOH ($F4,$F1,$B10)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (Anl.251RM-EIN,$B21,$F5)
+  VGLOH ($F5,$M17,$B21)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B13,$M18,$WZERO,$M19,$WONE,$B21,$WZERO,$F6)
+  ATRA ($F6,$FSCRATCH)
+  VGLOH ($F6,$F2,$B11)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B10,$M20,$B12)
+  MOKY ($B11,$M21,$B13)
+  RSS ($B10,$B11,$B14,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B7,$B14,$B15)
+  UND2 ($B14,$B7,$B16)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B5,$B8,$B15,0,$B17,$WSCRATCH)
+  ODRMN (3,$B6,$B9,$B16,0,$B18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B23,$B2,$B24)
+  NICHT ($B24,$HB0)
+  UHR ($HB0,$B24,$F7)
+  UST ($WZERO,$M22,$F8,$FSCRATCH)
+  UST ($WZERO,$M23,$F9,$FSCRATCH)
+  MULT ($F8,$F9,$F10)
+  VGLOH ($F7,$F10,$B25)
+  MOKY ($B25,$M24,$B22)
+  ODR2 ($B17,$B22,$B26)
+  UND11 ($B26,$B2,$B23)
+  BTRA ($B23,A25_Trafo_EIN)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B28,$B4,$B29)
+  NICHT ($B29,$HB0)
+  UHR ($HB0,$B29,$F11)
+  UST ($WZERO,$M25,$F12,$FSCRATCH)
+  UST ($WZERO,$M26,$F13,$FSCRATCH)
+  MULT ($F12,$F13,$F14)
+  VGLOH ($F11,$F14,$B30)
+  MOKY ($B30,$M27,$B27)
+  ODR2 ($B18,$B27,$B31)
+  UND11 ($B31,$B4,$B28)
+  BTRA ($B28,A251Trafo_EIN)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (A25_Trafo_EIN,$HB0)
+  BEFAUS (1,$HB0,A25_Trafo_EIN,$WZERO,$WZERO,&BA1LU2500BF20,
+          ERR05)
+  NICHT (A251Trafo_EIN,$HB0)
+  BEFAUS (1,$HB0,A251Trafo_EIN,$WZERO,$WZERO,&BA1LU2501BF20,
+          ERR05)
+  ;Anlage 25
+  ;Freigabe GLT
+  ; 
+  ;Anlage 25.1
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&M28,4,ZPK,Anl.25-RM-AUS,ZPK,Anl.25-RM-EIN,ERR09)
+  MELEIN (&M31,4,ZPK,Anl.251RM-AUS,ZPK,Anl.251RM-EIN,ERR09)
+  ENDE 
+  ENDMODUL 

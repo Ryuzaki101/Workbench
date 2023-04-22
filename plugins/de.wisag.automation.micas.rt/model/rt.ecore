@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rt" nsURI="http://www.wisag.de/automation/schema/rt" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="RtModule">
+    <eOperations name="getWordConstants" upperBound="-1" eType="#//RtWordConstant">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getWordConstants(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getWordVariables" upperBound="-1" eType="#//RtWordVariable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getWordVariables(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getFloatConstants" upperBound="-1" eType="#//RtFloatConstant">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getFloatConstants(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getFloatVariables" upperBound="-1" eType="#//RtFloatVariable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getFloatVariables(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getReferences" upperBound="-1" eType="#//RtReferenceConstant">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getReferences(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="addSymbol">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="RtModuleUtils.addSymbol(this,symbol);"/>
+      </eAnnotations>
+      <eParameters name="symbol" eType="#//RtSymbol"/>
+    </eOperations>
+    <eOperations name="getSymbol" eType="#//RtSymbol">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getSymbol(this,id);"/>
+      </eAnnotations>
+      <eParameters name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eOperations>
+    <eOperations name="haveSymbol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.haveSymbol(this,id);"/>
+      </eAnnotations>
+      <eParameters name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eOperations>
+    <eOperations name="getModuleChecksum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getModuleChecksum(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="calculateProgramSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.calculateProgramSize(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="symbols" upperBound="-1"
+        eType="#//RtSymbol" containment="true" eOpposite="#//RtSymbol/module" eKeys="#//RtSymbol/address"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataSegmentAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tasks" upperBound="-1"
+        eType="#//RtTask" containment="true" eOpposite="#//RtTask/module"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startSegmentAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstTaskSegmentAddress"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="headModuleSegmentAddress"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataSegmentCheckSum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tasksCheckSum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wordConstOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="floatConstOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wordVarOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="floatVarOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endOfFloatVars" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataSegment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hwType" eType="#//RtHwType"
+        defaultValueLiteral="AC40"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fieldBus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pastValuesOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pastValuesLastOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="headModul" eType="#//RtHeadModule"
+        containment="true" eOpposite="#//RtHeadModule/module"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="headModuleSegment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceModificationStamp"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceChecksum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comments" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startSegment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"
+        transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtTask">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="#//RtModule"
+        eOpposite="#//RtModule/tasks"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="moduleInvocations" upperBound="-1"
+        eType="#//RtModuleInvocation" containment="true" eOpposite="#//RtModuleInvocation/task"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cyclTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pastValuesOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strategy" eType="#//RtTaskStrategy"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pastValuesCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtSymbol">
+    <eOperations name="getDisplayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return RtModuleUtils.getDisplayName(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="#//RtModule"
+        eOpposite="#//RtModule/symbols"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accessors" upperBound="-1"
+        eType="#//RtSymbolAccess" containment="true" eOpposite="#//RtSymbolAccess/symbol"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtConstant" eSuperTypes="#//RtSymbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RtVariable" eSuperTypes="#//RtSymbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RtWordConstant" eSuperTypes="#//RtConstant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtFloatConstant" eSuperTypes="#//RtConstant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtDirectValue" eSuperTypes="#//RtSymbol">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtWordVariable" eSuperTypes="#//RtVariable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtFloatVariable" eSuperTypes="#//RtVariable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtModuleInvocation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
+        eType="#//RtSymbolAccess" eOpposite="#//RtSymbolAccess/moduleInvocation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="task" eType="#//RtTask"
+        eOpposite="#//RtTask/moduleInvocations"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opcode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pastValuesCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtCommentModuleInvocation" eSuperTypes="#//RtModuleInvocation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RtTaskStrategy">
+    <eLiterals name="CYCL"/>
+    <eLiterals name="EVNT" value="1"/>
+    <eLiterals name="BACK" value="2"/>
+    <eLiterals name="INIT" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtReferenceConstant" eSuperTypes="#//RtConstant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="col" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="row" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EEnum ../../de.wisag.automation.micas.hwmodules/model/hwmodules.ecore#//PortDataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RtHwType">
+    <eLiterals name="AC40"/>
+    <eLiterals name="AR11" value="2"/>
+    <eLiterals name="AR20" value="4"/>
+    <eLiterals name="ER11" value="5"/>
+    <eLiterals name="ER12" value="6"/>
+    <eLiterals name="GW12" value="7"/>
+    <eLiterals name="GW13" value="8"/>
+    <eLiterals name="GW14" value="9"/>
+    <eLiterals name="MB11" value="10"/>
+    <eLiterals name="SP11" value="12"/>
+    <eLiterals name="SP20" value="13"/>
+    <eLiterals name="ZM12" value="14"/>
+    <eLiterals name="ZM13" value="15"/>
+    <eLiterals name="ZM14" value="16"/>
+    <eLiterals name="ZM15" value="17"/>
+    <eLiterals name="ZP12" value="19"/>
+    <eLiterals name="ZP13" value="20"/>
+    <eLiterals name="AR10" value="21" literal="AR10"/>
+    <eLiterals name="ZP10" value="22" literal="ZP10"/>
+    <eLiterals name="ZP20" value="23" literal="ZP20"/>
+    <eLiterals name="MB10" value="24" literal="MB10"/>
+    <eLiterals name="SP10" value="25" literal="SP10"/>
+    <eLiterals name="AR12" value="26" literal="AR12"/>
+    <eLiterals name="AC60" value="27" literal="AC60"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtSymbolAccess">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="symbol" eType="#//RtSymbol"
+        eOpposite="#//RtSymbol/accessors"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="moduleInvocation" eType="#//RtModuleInvocation"
+        eOpposite="#//RtModuleInvocation/arguments"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RtSymbolAccessType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RtSymbolAccessType">
+    <eLiterals name="READ"/>
+    <eLiterals name="WRITE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtHeadModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="#//RtModule"
+        eOpposite="#//RtModule/headModul"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="taskInfos" upperBound="-1"
+        eType="#//RtTaskInfo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="magic0" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="magic1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RtTaskInfo">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="task" eType="#//RtTask"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="convertedStrategy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+</ecore:EPackage>

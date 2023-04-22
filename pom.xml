@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.wisag.automation.micas</groupId>
+	<artifactId>de.wisag.automation.micas.parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.version>1.0.0</tycho.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<target.platform.uri>${project.baseUri}../../repositories/org.wisag.automation.target/p2</target.platform.uri>
+		<eclipse.repo.url>http://ftp-stud.hs-esslingen.de/pub/Mirrors/eclipse/releases/oxygen/201706281000/</eclipse.repo.url>
+		<eclipse.orbit.url>http://download.eclipse.org/tools/orbit/downloads/drops/R20170818183741/repository</eclipse.orbit.url>
+	</properties>
+	<modules>
+
+		<!-- Target platform -->
+		<module>repositories/org.wisag.automation.target</module>
+
+		<!-- Plugins: COMMON -->
+		<module>plugins/de.wisag.automation.micas.common</module>
+		<module>plugins/gnu.io.rxtx</module>
+		<!-- Plugins: COMPILER -->
+		<module>plugins/de.wisag.automation.micas.compiler.mic</module>
+		<module>plugins/de.wisag.automation.micas.compiler.mic.test</module>
+		<module>plugins/de.wisag.automation.micas.compiler.mic.ui</module>
+		<module>plugins/de.wisag.automation.micas.export.mic</module>
+		<module>plugins/de.wisag.automation.micas.mic</module>
+		<module>plugins/de.wisag.automation.micas.mic.ide</module>
+		<module>plugins/de.wisag.automation.micas.mic.ui</module>
+
+		<!-- Features: LICENSING -->
+		<module>features/de.wisag.automation.micas.workbench.licensing</module>
+		<!-- Plugins: LICENSING -->
+		<module>plugins/de.wisag.automation.micas.workbench.licmgr</module>
+		<module>plugins/de.wisag.automation.micas.workbench.licmgr.ui</module>
+		<module>plugins/de.wisag.automation.micas.workbench.licmgr.rcp</module>
+		<module>plugins/de.wisag.automation.micas.workbench.licmgr.admin</module>
+
+		<module>plugins/be.quodlibet.boxable</module>
+
+		<module>plugins/org.bouncycastle</module>
+		<module>plugins/org.bouncycastle.openpgp</module>
+		<module>plugins/org.bouncycastle.pkix</module>
+		<module>plugins/org.apache.pdfbox</module>
+		<module>plugins/org.apache.fontbox</module>
+
+		<!-- Plugins sshd -->
+		<module>plugins/com.google.code.findbugs.jsr305</module>
+		<module>plugins/net.i2p.crypto.eddsa</module>
+		<module>plugins/org.apache.mina.core</module>
+		<module>plugins/org.apache.sshd.core</module>
+		<module>plugins/org.apache.tomcat.jni</module>
+		<module>plugins/org.jline</module>
+		<module>plugins/org.mozilla.universalchardet</module>
+		<module>features/org.apache.sshd.feature</module>
+
+		<module>plugins/de.wisag.automation.micas.emulator.rcp</module>
+		<module>plugins/de.wisag.automation.micas.emulator</module>
+		<module>features/de.wisag.automation.micas.emulator.feature</module>
+		<module>features/de.wisag.automation.micas.emulator.plattform</module>
+
+		<!-- Plugins: MISC -->
+		<module>plugins/de.wisag.automation.micas.common.ui</module>
+		<module>plugins/de.wisag.automation.micas.diagram.core</module>
+		<module>plugins/de.wisag.automation.micas.diagram.core.intern</module>
+		<module>plugins/de.wisag.automation.micas.diagram.ui</module>
+		<module>plugins/de.wisag.automation.micas.h86</module>
+		<module>plugins/de.wisag.automation.micas.h86.test</module>
+		<module>plugins/de.wisag.automation.micas.h86.ui</module>
+		<module>plugins/de.wisag.automation.micas.importer</module>
+		<module>plugins/de.wisag.automation.micas.importer.test</module>
+		<module>plugins/de.wisag.automation.micas.importer.ui</module>
+		<module>plugins/de.wisag.automation.micas.module.ui</module>
+
+		<!-- Plugins: MODELS -->
+		<module>plugins/de.wisag.automation.micas.hwmodules</module>
+		<module>plugins/de.wisag.automation.micas.hwmodules.edit</module>
+		<module>plugins/de.wisag.automation.micas.hwmodules.editor</module>
+		<module>plugins/de.wisag.automation.micas.module</module>
+		<module>plugins/de.wisag.automation.micas.module.edit</module>
+		<module>plugins/de.wisag.automation.micas.module.editor</module>
+		<module>plugins/de.wisag.automation.micas.rt</module>
+		<module>plugins/de.wisag.automation.micas.rt.edit</module>
+		<module>plugins/de.wisag.automation.micas.rt.editor</module>
+
+		<!-- Features: OLT -->
+		<module>features/de.wisag.automation.micas.olt.plattform</module>
+		<!-- Plugins: OLT -->
+		<module>plugins/de.wisag.automation.micas.olt</module>
+		<module>plugins/de.wisag.automation.micas.olt.app</module>
+		<module>plugins/de.wisag.automation.micas.olt.base</module>
+		<module>plugins/de.wisag.automation.micas.olt.terminal</module>
+		<module>plugins/de.wisag.automation.micas.olt.terminal.serial</module>
+		<module>plugins/de.wisag.automation.micas.olt.terminal.ssh</module>
+		<module>plugins/de.wisag.automation.micas.olt.terminal.telnet</module>
+		<module>plugins/de.wisag.automation.micas.olt.terminal.view</module>
+		<module>plugins/de.wisag.automation.micas.olt.test</module>
+		<module>plugins/de.wisag.automation.micas.olt.ui</module>
+
+		<!-- Plugins: WORKBENCH -->
+		<module>plugins/de.wisag.automation.micas.workbench.ide</module>
+		<module>plugins/de.wisag.automation.micas.workbench.ide.help</module>
+
+		<!-- Features -->
+		<module>features/de.wisag.automation.micas.workbench</module>
+		<module>features/de.wisag.automation.micas.workbench.common</module>
+		<module>features/de.wisag.automation.micas.workbench.damos</module>
+		<module>features/de.wisag.automation.micas.workbench.xtext</module>
+
+		<module>features/de.wisag.automation.micas.jre</module>
+		<module>features/de.wisag.automation.micas.jre.win32.x86_64</module>
+
+		<module>features/org.bouncycastle.crypto</module>
+		<module>features/org.apache.pdfbox.feature</module>
+
+		<!-- Products (p2-repo) -->
+		<module>repositories/de.wisag.automation.micas.workbench.ide.product</module>
+
+	</modules>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<strictVersions>false</strictVersions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints>
+					<resolver>p2</resolver>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+					<!-- ignore unused optional dependencies -->
+					<filters>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.jdt.debug</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.apache.commons.cli</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.codegen.ecore</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.codegen</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.mwe.core</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.mwe.utils</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.mwe2.lib</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.emf.mwe2.runtime</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.jdt.core.manipulation</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.jdt.core</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.jdt.launching</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.jdt.ui</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtend.typesystem.emf</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtend</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.common.types.edit</id>
+							<removeAll />
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.common.types.ui</id>
+							<removeAll />
+						</filter>
+						<!--
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.smap</id>
+							<removeAll />
+						</filter>
+						-->
+					</filters>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>oxygen</id>
+			<layout>p2</layout>
+			<url>${eclipse.repo.url}</url>
+		</repository>
+		<repository>
+			<id>orbit</id>
+			<layout>p2</layout>
+			<url>${eclipse.orbit.url}</url>
+		</repository>
+		<repository>
+			<id>target-platform-damos</id>
+			<layout>p2</layout>
+			<url>jar:${target.platform.uri}/damos-sdk.zip!/</url>
+		</repository>
+	</repositories>
+</project>

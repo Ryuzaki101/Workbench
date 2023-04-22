@@ -1,0 +1,1604 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : NOW61413.GPS
+  ;*** Projektname    : MESSE-DÜSSELD-WILO
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Wolfgang Donner
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 14
+  ;*** Modul Typ      : AC40
+  ;*** Feldbus Nummer : 13
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  KAELTEANF.GEB.04
+  FloatV RK4_SPM_MW01
+  FloatV RK1_SPM_MW01
+  WordV  ERR2
+  WordK  K-FREI-RK6-AUS (0)
+  FloatV RK5_SPM_MW01
+  WordV  MERR24
+  WordV  MERR19
+  WordK  K-FREI-RK4-AUS (0)
+  WordK  K-FREI-RK3-EIN (1)
+  WordV  MERR12
+  WordV  MERR10
+  FloatV ISTWERT-KSB-FU
+  WordK  K-FREI-RK6-EIN (1)
+  FloatV RK2_SPM_MW01
+  WordV  KAELTEANF.GEB.05
+  FloatV RK3_SPM_MW01
+  WordV  KSB-P5-P7-BEREIT
+  WordV  PG-P1-P4/P8-ANFO
+  WordV  \TEST_SETZ13
+  WordV  MERR11
+  FloatV Y-SIGNAL-RK7
+  WordV  MERR7
+  WordV  MERR13
+  WordV  MERR8
+  WordV  PU1-2.21-2-STOER
+  WordV  MERR9
+  WordV  \TEST_SETZ12
+  WordV  SETZ-VORWAHL-RK7
+  WordV  PU2-2.21-2-STOER
+  WordV  /SETZ-HAND-01
+  WordV  KAELTEANF.GEB.13
+  WordV  QUITTIERUNG-US
+  WordV  KAEL-ANF-RK3
+  FloatK PG-ANZUG-VERZ01 (240.00)
+  WordK  K-FREI-RK2-EIN (1)
+  WordV  ERR1
+  FloatV /SETZ-WERT-HAND1
+  WordV  ERR_237
+  FloatK K_SOLLW_RK6 (0.80)
+  FloatK K-UMSCHAL-HYSTES (60.00)
+  WordK  K-FREI-RK4-EIN (1)
+  WordV  KAEL-ANF-RK1
+  WordK  K-FREI-RK3-AUS (0)
+  WordV  PG-P5-P7-ANFORDE
+  WordV  \TEST_SETZ10
+  FloatK K_SOLLW_RK2 (0.80)
+  WordV  KAEL-ANF-RK2
+  WordV  \TEST_SETZ11
+  WordV  ERR3
+  WordV  ERR4
+  WordK  K-FREI-RK5-EIN (1)
+  WordV  ERR6
+  WordK  K-FREI-RK5-AUS (0)
+  WordV  ERR18
+  FloatK K_SOLLW_RK1 (0.80)
+  WordV  ERR17
+  WordV  ERR19
+  FloatK K_SOLLW_RK4 (0.80)
+  WordV  /SETZ-HAND-03
+  WordV  ERR165
+  FloatK K_SOLLW_RK3 (0.80)
+  WordV  RK2-MASTER-REG
+  WordV  ERR174
+  WordV  RK3-MASTER-REG
+  WordV  ERR177
+  WordV  ZPK
+  FloatK KON300SEK (300.00)
+  FloatK KON30SEK (30.00)
+  FloatK KON40SEK (40.00)
+  WordV  RK7-MASTER-REG
+  WordV  ERR124
+  FloatV SOLLW-KSB-FU
+  WordV  ERR127
+  WordV  ERR142
+  WordV  ERR147-13
+  WordV  ERR148-01
+  FloatK KON60SEK (60.00)
+  WordK  K-FREI-RK2-AUS (0)
+  WordV  ERR148-05
+  WordV  RK7-MAX-AKTIV
+  WordK  K-FREI-RK1-EIN (1)
+  WordK  K-FREI-RK1-AUS (0)
+  WordV  ERR148-09
+  FloatK K_SOLLW_RK5 (0.80)
+  WordV  ERR168
+  FloatK KON50SEK (50.00)
+  WordV  RK1-MASTER-REG
+  WordV  ERR171
+  WordV  MERR20
+  FloatV RK7_SPM_MW01
+  WordV  MERR22
+  FloatV RK6_SPM_MW01
+  FloatK SW-UMSCHT-PU-GRU (300.00)
+  WordV  KAELTEANF.GEB.15
+  WordV  KAELTEANF.GEB.14
+  FloatK KON90SEK (90.00)
+  WordV  RK7-MW-ST
+  WordV  SETZ-VORWAHL-RK4
+  WordV  SETZ-VORWAHL-RK5
+  WordV  SETZ-VORWAHL-RK6
+  FloatK FKON-SETZ10 (0.80)
+  WordV  SETZ-VORWAHL-RK1
+  WordV  KSB-REG-FREIG
+  WordK  KON01 (1)
+  WordK  KON00 (0)
+  FloatV VOLUMENSTR-VERBR
+  WordV  MERR26
+  FloatV Y-SIGNAL-RK1
+  WordK  K_FREI_KSB_EIN (1)
+  WordV  Y-ERR01
+  WordK  K-FREI-RK7-AUS (0)
+  FloatV Y-SIGNAL-RK2
+  WordK  K-FREI-RK7-EIN (1)
+  WordV  ERR147-09
+  WordV  MERR28
+  WordV  Y-ERR03
+  FloatV Y-SIGNAL-RK3
+  WordV  MERR29
+  WordV  Y-ERR04
+  FloatV Y-SIGNAL-RK4
+  WordV  Y-ERR02
+  WordV  MERR27
+  WordK  K_FREI_KSB_AUS (0)
+  FloatV Y-SIGNAL-RK6
+  WordV  Y-ERR06
+  WordV  MERR31
+  FloatV Y-SIGNAL-RK5
+  WordV  Y-ERR05
+  WordV  MERR30
+  WordV  RK1-MW-ST
+  WordV  PG-P1-P4/P8-ST
+  FloatV Y-SIG-MAXAUSWAHL
+  WordV  RK1-MAX-AKTIV
+  WordV  RK6-MAX-AKTIV
+  WordV  RK5-MAX-AKTIV
+  WordV  RK4-MAX-AKTIV
+  WordV  RK3-MAX-AKTIV
+  WordV  RK2-MAX-AKTIV
+  FloatK KON70SEK (70.00)
+  FloatK KON80SEK (80.00)
+  WordV  RK4-MASTER-REG
+  WordV  RK5-MASTER-REG
+  WordV  RK6-MASTER-REG
+  WordV  RK1-ISTW-VORWAHL
+  WordV  RK3-ISTW-VORWAHL
+  WordV  RK2-ISTW-VORWAHL
+  WordV  RK4-ISTW-VORWAHL
+  WordV  RK5-ISTW-VORWAHL
+  WordV  RK6-ISTW-VORWAHL
+  FloatK KON-01 (-0.50)
+  WordV  ERR147-05
+  WordV  MERR33
+  WordK  K_VORWAHL-PG-AUS (0)
+  WordK  K_VORWA-PG-GROSS (0)
+  WordK  K_VORWA-PG-KLEIN (0)
+  WordV  /SETZ_AN_01
+  WordV  ERR164_01
+  FloatV /FKONSETZ01
+  WordV  ERR-HIGH-251
+  WordV  ERR148-13
+  WordV  ERR164-01
+  WordV  ERR147-01
+  WordV  KAELTEANF.VERBRA
+  WordV  ANF-PG-VON-VERB
+  WordV  /SETZ-HAND-02
+  WordV  GEB.01FREIG-REGL
+  WordV  Geb.01_RK/KLA-OK
+  WordV  GEB.03FREIG-REGL
+  WordV  GEB.04FREIG-REGL
+  WordV  GEB.05FREIG-REGL
+  WordV  GEB.15FREIG-REGL
+  WordV  GEB.17FREIG-REGL
+  WordV  GEB.21FREIG-REGL
+  WordV  PG-P5-7-SOLL-EIN
+  WordV  ERR_128
+  WordV  KAEL-ANF-RK4
+  WordV  \TEST_SETZ14
+  WordV  KAEL-ANF-RK5
+  WordV  \TEST_SETZ15
+  WordV  KAEL-ANF-RK6
+  WordV  ERR167
+  WordV  BM-1.PUMPE-EIM
+  FloatK FKON5MIN (300.00)
+  WordV  ERR_67_07
+  WordV  KAELTEANF.GEB.01
+  WordV  KAELTEANF.GEB.02
+  WordV  KAELTEANF.GEB.03
+  WordV  Geb.03-RK/KLA-OK
+  WordV  Geb.01-RK/KLA-OK
+  WordV  Geb.04-RK/KLA-OK
+  WordV  Geb.05-RK/KLA-OK
+  WordV  Geb.15-RK/KLA-OK
+  WordV  Geb.17-RK/KLA-OK
+  WordV  KL-21-2-K03-AUF
+  FloatK PG-ABFALL-VERZ02 (300.00)
+  WordV  Geb.21-RK/KLA-OK
+  WordV  KL-ABFR-RM-AUF
+  WordV  FREIG-REGEL-EIN
+  WordV  PG-P1-4/P8-BEREI
+  WordV  PG-P5-P7-ST
+  WordV  KAELTEANF.GEB.16
+  WordV  KAELTEANF.GEB.17
+  WordV  FRG-P5-P7-GLT
+  WordV  RK7-ISTW-VORWAHL
+  FloatV VOLUMENSTR-ERZEU
+  WordV  PU3-2.21-2-STOER
+  FloatK KONSETZ10 (0.80)
+  WordV  SETZ-VORWAHL-RK2
+  WordV  AUSWAHL-MANUELL
+  WordV  SETZ-VORWAHL-RK3
+  WordV  RK2-MW-ST
+  WordV  RK3-MW-ST
+  WordV  RK4-MW-ST
+  WordV  RK5-MW-ST
+  WordV  RK6-MW-ST
+  WordV  ERR-BF01
+  WordV  ERR-BF02
+  WordV  ERR-BF03
+  WordV  ERR-BF04
+  WordV  ERR-BF05
+  WordV  ERR-BF06
+  FloatK PG-ANZUG-VERZ02 (240.00)
+  WordV  KL-21-2-K16-ST
+  WordV  ERR8
+  FloatK K_SOLLW_RK7 (0.50)
+  WordV  ERR-HIGH-250
+  WordV  PU8-2.21-2-STOER
+  WordV  PU7-2.21-2-STOER
+  WordV  PU6-2.21-2-STOER
+  WordV  PU5-2.21-2-STOER
+  WordV  PU4-2.21-2-STOER
+  WordV  KL-21-2-K15-ST
+  WordV  KL-21-2-K14-ST
+  WordV  KL-21-2-K09-ST
+  WordV  KL-21-2-K13-AUF
+  WordV  KL-21-2-K13-HAND
+  WordV  KL-21-2-K13-ST
+  WordV  KL-21-2-K13-ZU
+  WordV  KL-21-2-K13-NOT
+  WordV  KL-21-2-K14-NOT
+  WordV  KL-21-2-K15-HAND
+  WordV  KL-21-2-K14-ZU
+  WordV  KL-21-2-K14-AUF
+  WordV  KL-21-2-K14-HAND
+  WordV  KL-21-2-K15-AUF
+  WordV  KL-21-2-K15-ZU
+  WordV  KL-21-2-K15-NOT
+  WordV  KL-21-2-K16-HAND
+  WordV  KL-21-2-K16-AUF
+  WordV  KL-21-2-K16-ZU
+  WordV  KL-21-2-K16-NOT
+  WordV  KL-21-2-K09-HAND
+  WordV  KL-21-2-K09-AUF
+  WordV  KL-21-2-K09-ZU
+  WordV  KL-21-2-K09-NOT
+  WordV  KL-21-2-K23-HAND
+  WordV  KL-21-2-K23-AUF
+  WordV  KL-21-2-K23-ZU
+  WordV  KL-21-2-K23-NOT
+  WordV  PU1-2.21-2-EIN
+  WordV  PU2-2.21-2-EIN
+  WordV  PU3-2.21-2-EIN
+  WordV  PU4-2.21-2-EIN
+  WordV  PU5-2.21-2-EIN
+  WordV  PU6-2.21-2-EIN
+  WordV  PU7-2.21-2-EIN
+  WordV  PU8-2.21-2-EIN
+  WordV  RM-P1-4/P8-EIN
+  WordV  RM-P5-P7-IST-EIN
+  WordV  ERR70_01
+  WordV  HAND-PG-P1-4/P8
+  WordV  /UMSCHALT-HAND
+  FloatV GES.VOLUMEN-VERB
+  WordV  ERR_191_15
+  WordV  HAND-PG-P5-P7
+  WordV  WAHL-KSB-AUTO
+  WordV  ERR_66_11
+  WordV  WAHL-KSB-EIN
+  WordV  ERR09
+  WordK  K_VORWA-PG-AUTOM (1)
+  WordV  ERR_145_02
+  WordV  ERR_70_00
+  WordV  ERR71_11
+  FloatV AUSW.Y-SIG-P5-P7
+  FloatV HANDSETZ_01
+  FloatK PG-ABFALL-VERZ01 (300.00)
+  WordV  ERR164-10
+  WordV  ERR_164_11
+  WordV  ERR164-13
+  WordV  ERR164-12
+  WordV  ERR164-14
+  WordV  ERR164-15
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &21KA06-600BF93 (148,13)
+  IPAMB &21KA06-600BF94 (164,1)
+  IPAMB &21KA06-901BF20 (147,1)
+  IPAMB &21KA06-902BF20 (147,5)
+  IPAMB &21KA06-903BF20 (147,9)
+  IPAMB &21KA06-904BF20 (147,13)
+  IPAMB &21KA06-905BF20 (148,1)
+  IPAMB &21KA06-906BF20 (148,5)
+  IPAMB &21KA06-907BF20 (148,9)
+  WordK  $M0 (1)
+  IPAAW &21KA06-901AA03 (168)
+  WordK  $M1 (1)
+  IPAAW &21KA06-902AA03 (171)
+  WordK  $M2 (1)
+  IPAAW &21KA06-903AA03 (174)
+  WordK  $M3 (1)
+  IPAAW &21KA06-900AA00 (165)
+  WordK  $M4 (1)
+  IPAAW &21KA06-904AA03 (177)
+  WordK  $M5 (1)
+  IPAAW &21KA06-905AA03 (124)
+  WordK  $M6 (1)
+  IPAAW &21KA06-906AA03 (127)
+  WordK  $M7 (1)
+  IPAAW &21KA06-907AA03 (142)
+  IPAMB &21KA06-901ST01 (147,2)
+  IPAMB &M8 (147,3)
+  WordV  $WSCRATCH
+  IPAMB &21KA06-902ST01 (147,6)
+  IPAMB &M9 (147,7)
+  IPAMB &21KA06-903ST01 (147,10)
+  IPAMB &M10 (147,11)
+  IPAMB &M11 (148,14)
+  IPAMB &M12 (148,15)
+  IPAMB &21KA06-904ST01 (147,14)
+  IPAMB &M13 (147,15)
+  IPAMB &21KA06-905ST01 (148,2)
+  IPAMB &M14 (148,3)
+  IPAMB &21KA06-906ST01 (148,6)
+  IPAMB &M15 (148,7)
+  IPAMB &21KA06-907ST01 (148,10)
+  IPAMB &M16 (148,11)
+  IPAMB &01KA00-000BM90 (250,7)
+  IPAMB &02KA00-000BM90 (250,8)
+  IPAMB &03KA00-000BM90 (250,9)
+  IPAMB &M17 (164,2)
+  IPAMB &M18 (164,3)
+  IPAMB &M19 (164,4)
+  IPAMB &M20 (164,5)
+  IPAMB &M21 (164,6)
+  IPAMB &M22 (164,7)
+  IPAMB &21KA06-901BM01 (237,1)
+  WordV  $B1
+  IPAMB &21KA06-902BM01 (237,2)
+  WordV  $B2
+  IPAMB &21KA06-903BM01 (237,3)
+  WordV  $B3
+  IPAMB &21KA06-904BM01 (237,4)
+  WordV  $B4
+  IPAMB &21KA06-905BM01 (237,5)
+  WordV  $B5
+  IPAMB &21KA06-906BM01 (237,6)
+  WordV  $B6
+  IPAMB &04KA00-000BM90 (250,10)
+  IPAMB &05KA00-000BM90 (250,6)
+  IPAMB &13KA00-000BM90 (250,11)
+  IPAMB &14KA00-000BM90 (250,12)
+  IPAMB &15KA00-000BM90 (250,13)
+  IPAMB &16KA00-000BM90 (250,14)
+  IPAMB &17KA00-000BM90 (250,15)
+  WordV  $B7
+  FloatK $M23 (60.00)
+  FloatK $M24 (60.00)
+  WordK  $M25 (1)
+  IPAMB &21KA06-900BM00 (164,10)
+  IPAMB &21KA92-300BM11 (204,6)
+  IPAMB &21KA06-001ST01 (64,7)
+  IPAMB &21KA06-002ST01 (65,7)
+  IPAMB &21KA06-003ST01 (64,15)
+  IPAMB &21KA06-004ST01 (65,15)
+  IPAMB &21KA06-005ST01 (134,3)
+  IPAMB &21KA06-006ST01 (135,2)
+  IPAMB &21KA06-007ST01 (135,7)
+  IPAMB &21KA06-008ST01 (66,7)
+  IPAMB &21KA06-001BM01 (64,3)
+  IPAMB &21KA06-002BM01 (65,3)
+  IPAMB &21KA06-003BM01 (64,11)
+  IPAMB &21KA06-004BM01 (65,11)
+  IPAMB &21KA06-005BM01 (134,2)
+  IPAMB &21KA06-006BM01 (134,7)
+  IPAMB &21KA06-007BM01 (135,6)
+  IPAMB &21KA06-008BM01 (66,3)
+  IPAMB &21KA06-113ST02 (62,15)
+  IPAMB &21KA06-214ST02 (63,10)
+  IPAMB &21KA06-315ST02 (63,11)
+  IPAMB &21KA06-316ST02 (63,14)
+  IPAMB &21KA06-409ST02 (62,14)
+  IPAMB &21KA06-113BM10 (61,11)
+  IPAMB &21KA06-113BM11 (62,6)
+  IPAMB &21KA06-113BM12 (62,7)
+  IPAMB &21KA06-113BM81 (60,4)
+  IPAMB &21KA06-214BM10 (61,14)
+  IPAMB &21KA06-214BM11 (63,2)
+  IPAMB &21KA06-214BM12 (63,3)
+  IPAMB &21KA06-214BM81 (61,0)
+  IPAMB &21KA06-315BM10 (61,15)
+  IPAMB &21KA06-315BM11 (63,6)
+  IPAMB &21KA06-315BM12 (63,7)
+  IPAMB &21KA06-315BM81 (61,4)
+  IPAMB &21KA06-316BM10 (63,15)
+  IPAMB &21KA06-316BM11 (62,10)
+  IPAMB &21KA06-316BM12 (62,11)
+  IPAMB &21KA06-316BM81 (60,8)
+  IPAMB &21KA06-409BM10 (61,10)
+  IPAMB &21KA06-409BM11 (62,2)
+  IPAMB &21KA06-409BM12 (62,3)
+  IPAMB &21KA06-409BM81 (60,0)
+  IPAMB &21KA06-523BM10 (133,15)
+  IPAMB &21KA06-523BM11 (132,14)
+  IPAMB &21KA06-523BM12 (132,15)
+  IPAMB &21KA06-523BM81 (145,6)
+  IPAMB &21KA06-001BM10 (71,11)
+  WordV  $B8
+  IPAMB &21KA06-600BF92 (159,3)
+  IPAMB &21KA06-600BM01 (134,11)
+  IPAMB &21KA06-600BF12RM (70,3)
+  IPAMB &21KA06-600BF02RM (132,3)
+  IPAMB &21KA00-032BM90 (67,7)
+  IPAMB &21KA00-032BM92 (66,11)
+  IPAMB &21KA06-600BM81 (145,2)
+  IPAMB &21KA06-600BM82 (70,0)
+  IPAAW &17KA06-000MW30 (108)
+  IPAAW &15KA06-000MW30 (107)
+  IPAAW &05KA06-000MW30 (106)
+  IPAAW &04KA06-000MW30 (105)
+  IPAAW &03KA06-000MW30 (100)
+  IPAAW &01KA06-000MW30 (99)
+  IPAAW &21KA10-200MW91 (196)
+  FloatV $F1
+  IPAAW &21KA95-900MW02 (217)
+  IPAAW &21KA95-900MW01 (216)
+  IPAAW &21KA06.000MW00 (251)
+  FloatV $F2
+  WordK  $M26 (1)
+  IPAAW &21KA06-600AA12 (9)
+  WordV  $B9
+  WordV  $B10
+  WordK  $M27 (1)
+  IPAMB &21KA06-600BM12 (164,14)
+  WordK  $M28 (1)
+  IPAMB &21KA06-600BM90 (164,11)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  IPAMB &21KA06-600BF12 (70,1)
+  WordV  $B24
+  WordV  $B25
+  FloatK $M29 (120.00)
+  FloatK $M30 (0.00)
+  WordV  $B26
+  WordK  $M31 (1)
+  IPAMB &21KA93-913BM98 (191,4)
+  WordK  $M32 (1)
+  IPAMB &21KA06-600ST93 (164,13)
+  WordV  $B27
+  WordK  $M33 (1)
+  IPAMB &21KA93-913BM96 (191,15)
+  WordV  $B28
+  WordV  $B29
+  FloatK $M34 (120.00)
+  FloatK $M35 (0.00)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  FloatK $M36 (180.00)
+  FloatK $M37 (0.00)
+  WordV  $B33
+  WordV  $B34
+  WordK  $M38 (1)
+  IPAMB &21KA06-600ST92 (164,12)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordK  $M39 (1)
+  IPAAW &21KA06-901AA13 (169)
+  WordV  $B44
+  FloatK $M40 (0.00)
+  FloatV $F3
+  FloatK $M41 (0.00)
+  WordK  $M42 (1)
+  IPAAW &21KA06-902AA13 (172)
+  WordV  $B45
+  FloatK $M43 (0.00)
+  FloatV $F4
+  FloatK $M44 (0.00)
+  WordK  $M45 (1)
+  IPAAW &21KA06-903AA13 (176)
+  WordV  $B46
+  FloatK $M46 (0.00)
+  FloatV $F5
+  FloatK $M47 (0.00)
+  WordK  $M48 (1)
+  IPAAW &21KA06-904AA13 (178)
+  WordV  $B47
+  FloatK $M49 (0.00)
+  FloatV $F6
+  FloatK $M50 (0.00)
+  WordK  $M51 (1)
+  IPAAW &21KA06-905AA13 (125)
+  WordV  $B48
+  FloatK $M52 (0.00)
+  FloatV $F7
+  FloatK $M53 (0.00)
+  WordK  $M54 (1)
+  IPAAW &21KA06-906AA13 (131)
+  WordV  $B49
+  FloatK $M55 (0.00)
+  FloatV $F8
+  FloatK $M56 (0.00)
+  WordK  $M57 (1)
+  IPAAW &21KA06-907AA13 (143)
+  WordV  $B50
+  FloatK $M58 (0.00)
+  FloatV $F9
+  FloatK $M59 (0.00)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $HB0
+  FloatK $M60 (1.00)
+  FloatK $M61 (0.00)
+  FloatV $F11
+  FloatK $M62 (1.00)
+  FloatK $M63 (0.00)
+  FloatV $F12
+  FloatK $M64 (1.00)
+  FloatK $M65 (0.00)
+  FloatV $F13
+  FloatK $M66 (1.00)
+  FloatK $M67 (0.00)
+  FloatV $F14
+  FloatK $M68 (1.00)
+  FloatK $M69 (0.00)
+  FloatV $F15
+  FloatK $M70 (1.00)
+  FloatK $M71 (0.00)
+  FloatV $F16
+  FloatK $M72 (1.00)
+  FloatK $M73 (0.00)
+  FloatV $F17
+  FloatK $M74 (1.00)
+  FloatK $M75 (0.00)
+  FloatV $F18
+  FloatK $M76 (1.00)
+  FloatK $M77 (0.00)
+  FloatV $F19
+  FloatK $M78 (1.00)
+  FloatK $M79 (0.00)
+  FloatV $F20
+  FloatK $FZERO (0.00)
+  FloatV $F10
+  FloatK $M80 (2.00)
+  FloatK $M81 (0.00)
+  WordV  $B72
+  FloatK $M82 (5.00)
+  FloatK $M83 (10.00)
+  WordV  $B73
+  WordV  $B74
+  FloatK $M84 (7.00)
+  FloatK $M85 (0.00)
+  WordV  $B75
+  FloatK $M86 (6.00)
+  FloatK $M87 (0.00)
+  WordV  $B76
+  FloatK $M88 (5.00)
+  FloatK $M89 (0.00)
+  WordV  $B77
+  FloatK $M90 (4.00)
+  FloatK $M91 (0.00)
+  WordV  $B78
+  FloatK $M92 (3.00)
+  FloatK $M93 (0.00)
+  WordV  $B79
+  FloatK $M94 (2.00)
+  FloatK $M95 (0.00)
+  WordV  $B80
+  FloatK $M96 (8.00)
+  FloatK $M97 (0.00)
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  WordV  $HB1
+  WordK  $M98 (1)
+  IPAMB &21KA06-901BM50 (147,0)
+  WordV  $B84
+  WordV  $B85
+  WordK  $M99 (1)
+  IPAMB &21KA06-902BM50 (147,4)
+  WordV  $B86
+  WordV  $B87
+  WordK  $M100 (1)
+  IPAMB &21KA06-903BM50 (147,8)
+  WordV  $B88
+  WordV  $B89
+  WordK  $M101 (1)
+  IPAMB &21KA06-904BM50 (147,12)
+  WordV  $B90
+  WordV  $B91
+  WordK  $M102 (1)
+  IPAMB &21KA06-905BM50 (148,0)
+  WordV  $B92
+  WordV  $B93
+  WordK  $M103 (1)
+  IPAMB &21KA06-906BM50 (148,4)
+  WordV  $B94
+  WordV  $B95
+  WordK  $M104 (1)
+  IPAMB &21KA06-907BM50 (148,8)
+  FloatV $F21
+  FloatV $F22
+  FloatV $F23
+  FloatV $F24
+  FloatV $F25
+  FloatV $F26
+  WordK  $M105 (1)
+  IPAAW &21KA06-600AA11 (8)
+  WordK  $M106 (1)
+  IPAAW &21KA06-900AA16 (167)
+  FloatV $F27
+  FloatV $F28
+  FloatV $F29
+  FloatV $F30
+  FloatV $F31
+  FloatV $F32
+  WordK  $M107 (1)
+  IPAAW &21KA06-600AA10 (7)
+  WordK  $M108 (1)
+  IPAAW &21KA06-900AA13 (166)
+  FloatV $F33
+  FloatV $F34
+  FloatV $F35
+  FloatV $F36
+  FloatV $F37
+  FloatV $F38
+  WordV  $B96
+  WordV  $B97
+  FloatK $M109 (0.00)
+  FloatK $M110 (0.70)
+  FloatK $M111 (100.00)
+  FloatK $M112 (2.50)
+  FloatV $F39
+  FloatV $F40
+  FloatK $M113 (0.00)
+  FloatV $F41
+  WordK  $M114 (1)
+  IPAAW &21KA06-600AA01 (128)
+  WordV  $B98
+  WordV  $B99
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  FloatK $M115 (10.00)
+  FloatK $M116 (3.00)
+  WordV  $B103
+  WordV  $B104
+  WordV  $B105
+  FloatK $M117 (10.00)
+  WordK  $M118 (1)
+  WordV  $B106
+  WordV  $B107
+  FloatK $M119 (10.00)
+  WordK  $M120 (1)
+  WordV  $B108
+  WordV  $B109
+  FloatK $M121 (10.00)
+  WordK  $M122 (1)
+  WordV  $B110
+  WordV  $B111
+  FloatK $M123 (10.00)
+  WordK  $M124 (1)
+  WordV  $B112
+  WordV  $B113
+  FloatK $M125 (10.00)
+  WordK  $M126 (1)
+  WordV  $B114
+  WordV  $B115
+  FloatK $M127 (10.00)
+  WordK  $M128 (1)
+  WordV  $B116
+  WordV  $B117
+  FloatK $M129 (10.00)
+  WordK  $M130 (1)
+  FloatK $M131 (10.00)
+  FloatK $M132 (0.00)
+  WordV  $B118
+  FloatK $M133 (10.00)
+  FloatK $M134 (0.00)
+  WordV  $B119
+  FloatK $M135 (10.00)
+  FloatK $M136 (0.00)
+  WordV  $B120
+  FloatK $M137 (10.00)
+  FloatK $M138 (0.00)
+  WordV  $B121
+  FloatK $M139 (10.00)
+  FloatK $M140 (0.00)
+  WordV  $B122
+  FloatK $M141 (10.00)
+  FloatK $M142 (0.00)
+  WordV  $B123
+  FloatK $M143 (10.00)
+  FloatK $M144 (0.00)
+  WordV  $B124
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;------------------------
+  ;KSB  Pumpenschrank
+  ;Kälteverbund
+  ;Messezentrum SÜD
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  BEFAUS (1,K_FREI_KSB_AUS,K_FREI_KSB_EIN,$WZERO,$WZERO,
+          &21KA06-600BF93,ERR148-13)
+  BEFAUS (3,K_VORWAHL-PG-AUS,K_VORWA-PG-KLEIN,
+          K_VORWA-PG-GROSS,K_VORWA-PG-AUTOM,&21KA06-600BF94,
+          ERR164-01)
+  ;AUS= Keine AUSWAHL
+  ;EIN1= Auswahl PG 5-7
+  ;EIN2= Auswahl PG1-4/8
+  ;EIN3= Automatikauswahl
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,K-FREI-RK1-AUS,K-FREI-RK1-EIN,$WZERO,$WZERO,
+          &21KA06-901BF20,ERR147-01)
+  BEFAUS (1,K-FREI-RK2-AUS,K-FREI-RK2-EIN,$WZERO,$WZERO,
+          &21KA06-902BF20,ERR147-05)
+  BEFAUS (1,K-FREI-RK3-AUS,K-FREI-RK3-EIN,$WZERO,$WZERO,
+          &21KA06-903BF20,ERR147-09)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-FREI-RK4-AUS,K-FREI-RK4-EIN,$WZERO,$WZERO,
+          &21KA06-904BF20,ERR147-13)
+  BEFAUS (1,K-FREI-RK5-AUS,K-FREI-RK5-EIN,$WZERO,$WZERO,
+          &21KA06-905BF20,ERR148-01)
+  BEFAUS (1,K-FREI-RK6-AUS,K-FREI-RK6-EIN,$WZERO,$WZERO,
+          &21KA06-906BF20,ERR148-05)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,K-FREI-RK7-AUS,K-FREI-RK7-EIN,$WZERO,$WZERO,
+          &21KA06-907BF20,ERR148-09)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANAUS (K_SOLLW_RK1,$M0,&21KA06-901AA03,ERR168)
+  ANAUS (K_SOLLW_RK2,$M1,&21KA06-902AA03,ERR171)
+  ANAUS (K_SOLLW_RK3,$M2,&21KA06-903AA03,ERR174)
+  ANAUS (SW-UMSCHT-PU-GRU,$M3,&21KA06-900AA00,ERR165)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANAUS (K_SOLLW_RK4,$M4,&21KA06-904AA03,ERR177)
+  ANAUS (K_SOLLW_RK5,$M5,&21KA06-905AA03,ERR124)
+  ANAUS (K_SOLLW_RK6,$M6,&21KA06-906AA03,ERR127)
+  ANAUS (K_SOLLW_RK7,$M7,&21KA06-907AA03,ERR142)
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&21KA06-901BF20,3,K-FREI-RK1-AUS,$WSCRATCH,
+          K-FREI-RK1-EIN,ERR2)
+  MELEIN (&21KA06-902BF20,3,K-FREI-RK2-AUS,$WSCRATCH,
+          K-FREI-RK2-EIN,ERR3)
+  MELEIN (&21KA06-903BF20,3,K-FREI-RK3-AUS,$WSCRATCH,
+          K-FREI-RK3-EIN,ERR4)
+  MELEIN (&21KA06-600BF93,3,K_FREI_KSB_AUS,ZPK,
+          K_FREI_KSB_EIN,ERR1)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&21KA06-904BF20,3,K-FREI-RK4-AUS,$WSCRATCH,
+          K-FREI-RK4-EIN,ERR6)
+  MELEIN (&21KA06-905BF20,3,K-FREI-RK5-AUS,$WSCRATCH,
+          K-FREI-RK5-EIN,ERR17)
+  MELEIN (&21KA06-906BF20,3,K-FREI-RK6-AUS,$WSCRATCH,
+          K-FREI-RK6-EIN,ERR18)
+  MELEIN (&21KA06-907BF20,3,K-FREI-RK7-AUS,$WSCRATCH,
+          K-FREI-RK7-EIN,ERR19)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&01KA00-000BM90,3,KAELTEANF.GEB.01,
+          KAELTEANF.GEB.02,KAELTEANF.GEB.03,ERR-HIGH-250)
+  MELEIN (&21KA06-600BF94,7,K_VORWAHL-PG-AUS,ZPK,
+          K_VORWA-PG-KLEIN,ZPK,K_VORWA-PG-GROSS,ZPK,
+          K_VORWA-PG-AUTOM,ERR164_01)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&21KA06-901BM01,1,$B1,ERR_237)
+  ODR2 ($B1,\TEST_SETZ10,KAEL-ANF-RK1)
+  MELEIN (&21KA06-902BM01,1,$B2,ERR_237)
+  ODR2 ($B2,\TEST_SETZ11,KAEL-ANF-RK2)
+  MELEIN (&21KA06-903BM01,1,$B3,ERR_237)
+  ODR2 ($B3,\TEST_SETZ12,KAEL-ANF-RK3)
+  MELEIN (&21KA06-904BM01,1,$B4,ERR_237)
+  ODR2 ($B4,\TEST_SETZ13,KAEL-ANF-RK4)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&21KA06-905BM01,1,$B5,ERR_237)
+  ODR2 ($B5,\TEST_SETZ14,KAEL-ANF-RK5)
+  MELEIN (&21KA06-906BM01,1,$B6,ERR_237)
+  ODR2 ($B6,\TEST_SETZ15,KAEL-ANF-RK6)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&04KA00-000BM90,1,KAELTEANF.GEB.04,ERR-HIGH-250)
+  MELEIN (&05KA00-000BM90,1,KAELTEANF.GEB.05,ERR-HIGH-250)
+  MELEIN (&13KA00-000BM90,5,KAELTEANF.GEB.13,
+          KAELTEANF.GEB.14,KAELTEANF.GEB.15,KAELTEANF.GEB.16,
+          KAELTEANF.GEB.17,ERR-HIGH-250)
+  ODRMN (10,KAEL-ANF-RK1,KAEL-ANF-RK2,KAEL-ANF-RK3,
+         KAEL-ANF-RK4,KAEL-ANF-RK5,KAEL-ANF-RK6,KON00,KON00,
+         KON00,KON00,0,$B7,$WSCRATCH)
+  VVZ ($B7,$M23,$M24,KAELTEANF.VERBRA)
+  SETMEL ($M25,1,$B7,&21KA06-900BM00,ERR164-10)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&21KA92-300BM11,1,KL-21-2-K03-AUF,ERR-HIGH-250)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-001ST01,1,PU1-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-002ST01,1,PU2-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-003ST01,1,PU3-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-004ST01,1,PU4-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-005ST01,1,PU5-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-006ST01,1,PU6-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-007ST01,1,PU7-2.21-2-STOER,$WSCRATCH)
+  MELEIN (&21KA06-008ST01,1,PU8-2.21-2-STOER,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-001BM01,1,PU1-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-002BM01,1,PU2-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-003BM01,1,PU3-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-004BM01,1,PU4-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-005BM01,1,PU5-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-006BM01,1,PU6-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-007BM01,1,PU7-2.21-2-EIN,$WSCRATCH)
+  MELEIN (&21KA06-008BM01,1,PU8-2.21-2-EIN,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-113ST02,1,KL-21-2-K13-ST,$WSCRATCH)
+  MELEIN (&21KA06-214ST02,1,KL-21-2-K14-ST,$WSCRATCH)
+  MELEIN (&21KA06-315ST02,1,KL-21-2-K15-ST,$WSCRATCH)
+  MELEIN (&21KA06-316ST02,1,KL-21-2-K16-ST,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-409ST02,1,KL-21-2-K09-ST,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-113BM10,1,KL-21-2-K13-HAND,$WSCRATCH)
+  MELEIN (&21KA06-113BM11,1,KL-21-2-K13-AUF,$WSCRATCH)
+  MELEIN (&21KA06-113BM12,1,KL-21-2-K13-ZU,$WSCRATCH)
+  MELEIN (&21KA06-113BM81,1,KL-21-2-K13-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-214BM10,1,KL-21-2-K14-HAND,$WSCRATCH)
+  MELEIN (&21KA06-214BM11,1,KL-21-2-K14-AUF,$WSCRATCH)
+  MELEIN (&21KA06-214BM12,1,KL-21-2-K14-ZU,$WSCRATCH)
+  MELEIN (&21KA06-214BM81,1,KL-21-2-K14-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-315BM10,1,KL-21-2-K15-HAND,$WSCRATCH)
+  MELEIN (&21KA06-315BM11,1,KL-21-2-K15-AUF,$WSCRATCH)
+  MELEIN (&21KA06-315BM12,1,KL-21-2-K15-ZU,$WSCRATCH)
+  MELEIN (&21KA06-315BM81,1,KL-21-2-K15-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-316BM10,1,KL-21-2-K16-HAND,$WSCRATCH)
+  MELEIN (&21KA06-316BM11,1,KL-21-2-K16-AUF,$WSCRATCH)
+  MELEIN (&21KA06-316BM12,1,KL-21-2-K16-ZU,$WSCRATCH)
+  MELEIN (&21KA06-316BM81,1,KL-21-2-K16-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-409BM10,1,KL-21-2-K09-HAND,$WSCRATCH)
+  MELEIN (&21KA06-409BM11,1,KL-21-2-K09-AUF,$WSCRATCH)
+  MELEIN (&21KA06-409BM12,1,KL-21-2-K09-ZU,$WSCRATCH)
+  MELEIN (&21KA06-409BM81,1,KL-21-2-K09-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&21KA06-523BM10,1,KL-21-2-K23-HAND,$WSCRATCH)
+  MELEIN (&21KA06-523BM11,1,KL-21-2-K23-AUF,$WSCRATCH)
+  MELEIN (&21KA06-523BM12,1,KL-21-2-K23-ZU,$WSCRATCH)
+  MELEIN (&21KA06-523BM81,1,KL-21-2-K23-NOT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&21KA06-001BM10,1,$B8,ERR71_11)
+  MELEIN (&21KA06-600BF92,1,FRG-P5-P7-GLT,ERR8)
+  MELEIN (&21KA06-600BM01,1,KSB-P5-P7-BEREIT,ERR8)
+  ODR2 ($B8,/SETZ-HAND-01,QUITTIERUNG-US)
+  ;Rückmeldung Freigabe
+  ;P1-P4/P8 ist ein
+  ; 
+  MELEIN (&21KA06-600BF12RM,1,RM-P1-4/P8-EIN,ERR8)
+  ;Rückmeldung Freigabe
+  ;P5-P7    ist ein
+  ; 
+  MELEIN (&21KA06-600BF02RM,1,RM-P5-P7-IST-EIN,ERR8)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MELEIN (&21KA00-032BM90,1,WAHL-KSB-AUTO,ERR_67_07)
+  ;Wahlschalter Auto ist
+  ;ein KSB P1-P4/P8
+  ; 
+  MELEIN (&21KA00-032BM92,1,WAHL-KSB-EIN,ERR_66_11)
+  ;Wahlschalter Hand ist
+  ;ein KSB P1-P4/P8
+  ; 
+  MELEIN (&21KA06-600BM81,1,HAND-PG-P5-P7,ERR_145_02)
+  MELEIN (&21KA06-600BM82,1,HAND-PG-P1-4/P8,ERR_70_00)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ANEIN (&21KA06-901AA03,K_SOLLW_RK1,MERR7)
+  ANEIN (&21KA06-902AA03,K_SOLLW_RK2,MERR8)
+  ANEIN (&21KA06-903AA03,K_SOLLW_RK3,MERR9)
+  ANEIN (&21KA06-904AA03,K_SOLLW_RK4,MERR10)
+  ANEIN (&21KA06-905AA03,K_SOLLW_RK5,MERR11)
+  ANEIN (&21KA06-906AA03,K_SOLLW_RK6,MERR12)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ANEIN (&21KA06-907AA03,K_SOLLW_RK7,MERR12)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ANEIN (&17KA06-000MW30,RK6_SPM_MW01,MERR20)
+  ANEIN (&15KA06-000MW30,RK5_SPM_MW01,MERR24)
+  ANEIN (&05KA06-000MW30,RK4_SPM_MW01,MERR22)
+  ANEIN (&04KA06-000MW30,RK3_SPM_MW01,MERR20)
+  ANEIN (&03KA06-000MW30,RK2_SPM_MW01,MERR19)
+  ANEIN (&01KA06-000MW30,RK1_SPM_MW01,MERR13)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ANEIN (&21KA10-200MW91,RK7_SPM_MW01,MERR20)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&21KA06-900AA00,$F1,MERR20)
+  AWT (/SETZ-HAND-03,$F1,/SETZ-WERT-HAND1,SW-UMSCHT-PU-GRU)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ANEIN (&21KA95-900MW02,VOLUMENSTR-VERBR,MERR20)
+  ANEIN (&21KA95-900MW01,VOLUMENSTR-ERZEU,MERR20)
+  ;zur Zeit nicht benutzt
+  ; 
+  ;zur Zeit nicht benutzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&21KA06.000MW00,$F2,ERR-HIGH-251)
+  AWT (/SETZ_AN_01,$F2,/FKONSETZ01,GES.VOLUMEN-VERB)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ANAUS (GES.VOLUMEN-VERB,$M26,&21KA06-600AA12,ERR09)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,2000)
+  ODRMN (7,PU1-2.21-2-STOER,PU2-2.21-2-STOER,
+         PU3-2.21-2-STOER,PU4-2.21-2-STOER,PU8-2.21-2-STOER,
+         KON00,KON00,0,$B9,$WSCRATCH)
+  ODRMN (3,KON01,KON01,KON01,2,KON00,KON00,$B10,$WSCRATCH)
+  UND2 ($B9,$B10,PG-P1-4/P8-BEREI)
+  SETMEL ($M27,1,PG-P1-4/P8-BEREI,&21KA06-600BM12,ERR164-14)
+  ;Einschaltbereit
+  ;Pumpengruppe groß
+  ;Solange eine Pumpe
+  ;nicht auf Störung ist
+  ;gilt die Pumpengruppe
+  ;OK
+  ;M
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UNDMN (3,K-FREI-RK1-EIN,KAELTEANF.VERBRA,KL-21-2-K13-AUF,0,
+         Geb.01_RK/KLA-OK,$WSCRATCH)
+  UNDMN (3,K-FREI-RK2-EIN,KAELTEANF.VERBRA,KL-21-2-K13-AUF,0,
+         Geb.03-RK/KLA-OK,$WSCRATCH)
+  UNDMN (3,K-FREI-RK3-EIN,KAELTEANF.VERBRA,KL-21-2-K14-AUF,0,
+         Geb.04-RK/KLA-OK,$WSCRATCH)
+  UNDMN (4,K-FREI-RK4-EIN,KAELTEANF.VERBRA,KL-21-2-K15-AUF,
+         KL-21-2-K16-AUF,0,Geb.05-RK/KLA-OK,$WSCRATCH)
+  UNDMN (3,K-FREI-RK5-EIN,KAELTEANF.VERBRA,KL-21-2-K09-AUF,0,
+         Geb.15-RK/KLA-OK,$WSCRATCH)
+  UNDMN (3,K-FREI-RK6-EIN,KAELTEANF.VERBRA,KL-21-2-K09-AUF,0,
+         Geb.17-RK/KLA-OK,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UNDMN (4,K-FREI-RK7-EIN,KAELTEANF.VERBRA,KL-21-2-K23-AUF,
+         KL-21-2-K03-AUF,0,Geb.21-RK/KLA-OK,$WSCRATCH)
+  ODRMN (8,Geb.21-RK/KLA-OK,Geb.01_RK/KLA-OK,
+         Geb.03-RK/KLA-OK,Geb.04-RK/KLA-OK,Geb.05-RK/KLA-OK,
+         Geb.15-RK/KLA-OK,Geb.17-RK/KLA-OK,/SETZ-HAND-02,0,
+         KL-ABFR-RM-AUF,$WSCRATCH)
+  BTRA (KL-ABFR-RM-AUF,ANF-PG-VON-VERB)
+  SETMEL ($M28,1,KL-ABFR-RM-AUF,&21KA06-600BM90,ERR_164_11)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  VGLEH (GES.VOLUMEN-VERB,SW-UMSCHT-PU-GRU,K-UMSCHAL-HYSTES,
+         $B11)
+  UNDMN (5,KON01,KAELTEANF.VERBRA,ANF-PG-VON-VERB,
+         KL-ABFR-RM-AUF,KON01,1,K_VORWAHL-PG-AUS,$B12,
+         $WSCRATCH)
+  UNDMN (3,$B11,$B12,K_FREI_KSB_EIN,0,$B13,$WSCRATCH)
+  UND2 ($B12,K_VORWA-PG-GROSS,$B14)
+  UND11 ($B12,FRG-P5-P7-GLT,$B15)
+  ODRMN (3,$B13,$B14,$B15,0,$B16,$WSCRATCH)
+  VVZ ($B16,PG-ANZUG-VERZ01,PG-ABFALL-VERZ01,
+       PG-P1-P4/P8-ANFO)
+  UNDMN (2,$B12,FRG-P5-P7-GLT,2,$B11,$B16,$B17,$WSCRATCH)
+  UND2 ($B12,K_VORWA-PG-KLEIN,$B18)
+  UND11 ($B12,K_FREI_KSB_EIN,$B19)
+  ODRMN (3,$B17,$B18,$B19,0,$B20,$WSCRATCH)
+  VVZ ($B20,PG-ANZUG-VERZ02,PG-ABFALL-VERZ02,
+       PG-P5-P7-ANFORDE)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ODR2 (PG-P5-P7-ST,PG-P1-P4/P8-ANFO,$B21)
+  UNDMN (5,PG-P1-4/P8-BEREI,$B21,K_FREI_KSB_EIN,
+         WAHL-KSB-AUTO,KON01,0,$B22,$B23)
+  BEFAUS (1,$B23,$B22,$WZERO,$WZERO,&21KA06-600BF12,ERR70_01)
+  XOR2 ($B22,RM-P1-4/P8-EIN,$B24)
+  UND11 ($B24,HAND-PG-P1-4/P8,$B25)
+  VVZ ($B25,$M29,$M30,$B26)
+  RSS ($B26,QUITTIERUNG-US,PG-P1-P4/P8-ST,$WSCRATCH)
+  SETMEL ($M31,1,$B22,&21KA93-913BM98,ERR164-15)
+  SETMEL ($M32,1,PG-P1-P4/P8-ST,&21KA06-600ST93,ERR164-13)
+  ;Einschalt.P1-P4/P8 Freq
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;Einschalt.P5-P7 Freq
+  ; 
+  ODR2 (PG-P1-P4/P8-ST,PG-P5-P7-ANFORDE,$B27)
+  UNDMN (4,KON01,$B27,FRG-P5-P7-GLT,KON01,0,PG-P5-7-SOLL-EIN,
+         $WSCRATCH)
+  SETMEL ($M33,1,PG-P5-7-SOLL-EIN,&21KA93-913BM96,ERR_191_15)
+  XOR2 (PG-P5-7-SOLL-EIN,RM-P5-P7-IST-EIN,$B28)
+  UND2 ($B28,HAND-PG-P5-P7,$B29)
+  VVZ ($B29,$M34,$M35,$B30)
+  ODRMN (3,PU5-2.21-2-EIN,PU6-2.21-2-EIN,PU7-2.21-2-EIN,0,
+         $WSCRATCH,$B31)
+  UNDMN (3,KON01,PG-P5-7-SOLL-EIN,$B31,0,$B32,$WSCRATCH)
+  VVZ ($B32,$M36,$M37,$B33)
+  ODR2 ($B30,$B33,$B34)
+  RSS ($B34,QUITTIERUNG-US,PG-P5-P7-ST,$WSCRATCH)
+  SETMEL ($M38,1,PG-P5-P7-ST,&21KA06-600ST92,ERR164-12)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ODRMN (4,RM-P1-4/P8-EIN,RM-P5-P7-IST-EIN,WAHL-KSB-EIN,
+         KON00,0,$B35,$WSCRATCH)
+  ODR2 (K_FREI_KSB_EIN,FRG-P5-P7-GLT,$B36)
+  UND2 ($B35,$B36,FREIG-REGEL-EIN)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  UND2 (FREIG-REGEL-EIN,Geb.01_RK/KLA-OK,$B37)
+  UND2 (FREIG-REGEL-EIN,Geb.03-RK/KLA-OK,$B38)
+  UND2 (FREIG-REGEL-EIN,Geb.04-RK/KLA-OK,$B39)
+  UND2 (FREIG-REGEL-EIN,Geb.05-RK/KLA-OK,$B40)
+  UND2 (FREIG-REGEL-EIN,Geb.15-RK/KLA-OK,$B41)
+  UND2 (FREIG-REGEL-EIN,Geb.17-RK/KLA-OK,$B42)
+  UND2 (FREIG-REGEL-EIN,Geb.21-RK/KLA-OK,$B43)
+  UND2 ($B37,KAEL-ANF-RK1,GEB.01FREIG-REGL)
+  UND2 ($B38,KAEL-ANF-RK1,GEB.03FREIG-REGL)
+  UND2 ($B39,KAEL-ANF-RK2,GEB.04FREIG-REGL)
+  UND2 ($B40,KAEL-ANF-RK3,GEB.05FREIG-REGL)
+  UND2 ($B41,KAEL-ANF-RK4,GEB.15FREIG-REGL)
+  UND2 ($B42,KAEL-ANF-RK4,GEB.17FREIG-REGL)
+  UND2 ($B43,KAEL-ANF-RK5,GEB.21FREIG-REGL)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ;Gebäude 1
+  ; 
+  ANAUS (RK1_SPM_MW01,$M39,&21KA06-901AA13,MERR26)
+  ODRMN (1,K-FREI-RK1-AUS,1,GEB.01FREIG-REGL,$B44,$WSCRATCH)
+  REGLER (6,KON01,$B44,$M40,$F3,Y-ERR01)
+  AWT ($B44,$F3,$M41,Y-SIGNAL-RK1)
+  ;Gebäude 3
+  ; 
+  ANAUS (RK2_SPM_MW01,$M42,&21KA06-902AA13,MERR27)
+  ODRMN (1,K-FREI-RK2-AUS,1,GEB.03FREIG-REGL,$B45,$WSCRATCH)
+  REGLER (7,KON01,$B45,$M43,$F4,Y-ERR02)
+  AWT ($B45,$F4,$M44,Y-SIGNAL-RK2)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ;Gebäude 4
+  ; 
+  ANAUS (RK3_SPM_MW01,$M45,&21KA06-903AA13,MERR28)
+  ODRMN (1,K-FREI-RK3-AUS,1,GEB.04FREIG-REGL,$B46,$WSCRATCH)
+  REGLER (8,KON01,$B46,$M46,$F5,Y-ERR03)
+  AWT ($B46,$F5,$M47,Y-SIGNAL-RK3)
+  ;Gebäude 5
+  ; 
+  ANAUS (RK4_SPM_MW01,$M48,&21KA06-904AA13,MERR29)
+  ODRMN (1,K-FREI-RK4-AUS,1,GEB.05FREIG-REGL,$B47,$WSCRATCH)
+  REGLER (9,KON01,$B47,$M49,$F6,Y-ERR04)
+  AWT ($B47,$F6,$M50,Y-SIGNAL-RK4)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ;Gebäude 15
+  ; 
+  ANAUS (RK5_SPM_MW01,$M51,&21KA06-905AA13,MERR30)
+  ODRMN (1,K-FREI-RK5-AUS,1,GEB.15FREIG-REGL,$B48,$WSCRATCH)
+  REGLER (10,KON01,$B48,$M52,$F7,Y-ERR05)
+  AWT ($B48,$F7,$M53,Y-SIGNAL-RK5)
+  ;Gebäude 17
+  ; 
+  ANAUS (RK6_SPM_MW01,$M54,&21KA06-906AA13,MERR31)
+  ODRMN (1,K-FREI-RK6-AUS,1,GEB.17FREIG-REGL,$B49,$WSCRATCH)
+  REGLER (11,KON01,$B49,$M55,$F8,Y-ERR06)
+  AWT ($B49,$F8,$M56,Y-SIGNAL-RK6)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ;Gebäude 21
+  ; 
+  ANAUS (RK7_SPM_MW01,$M57,&21KA06-907AA13,MERR31)
+  ODRMN (1,K-FREI-RK7-AUS,1,GEB.21FREIG-REGL,$B50,$WSCRATCH)
+  REGLER (12,KON01,$B50,$M58,$F9,Y-ERR06)
+  AWT ($B50,$F9,$M59,Y-SIGNAL-RK7)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,2000)
+  UNDMN (3,FREIG-REGEL-EIN,KON01,KON01,0,KSB-REG-FREIG,
+         $WSCRATCH)
+  MAX (7,Y-SIGNAL-RK1,Y-SIGNAL-RK2,Y-SIGNAL-RK3,Y-SIGNAL-RK4,
+       Y-SIGNAL-RK5,Y-SIGNAL-RK6,Y-SIGNAL-RK7,
+       Y-SIG-MAXAUSWAHL)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  VGLOH (Y-SIGNAL-RK1,Y-SIG-MAXAUSWAHL,$B51)
+  VGLOH (Y-SIGNAL-RK2,Y-SIG-MAXAUSWAHL,$B52)
+  VGLOH (Y-SIGNAL-RK3,Y-SIG-MAXAUSWAHL,$B53)
+  VGLOH (Y-SIGNAL-RK4,Y-SIG-MAXAUSWAHL,$B54)
+  VGLOH (Y-SIGNAL-RK5,Y-SIG-MAXAUSWAHL,$B55)
+  VGLOH (Y-SIGNAL-RK6,Y-SIG-MAXAUSWAHL,$B56)
+  UND2 ($B51,GEB.01FREIG-REGL,RK1-MAX-AKTIV)
+  UND2 ($B52,GEB.03FREIG-REGL,RK2-MAX-AKTIV)
+  UND2 ($B53,GEB.04FREIG-REGL,RK3-MAX-AKTIV)
+  UND2 ($B54,GEB.05FREIG-REGL,RK4-MAX-AKTIV)
+  UND2 ($B55,GEB.15FREIG-REGL,RK5-MAX-AKTIV)
+  UND2 ($B56,GEB.17FREIG-REGL,RK6-MAX-AKTIV)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  VGLOH (Y-SIGNAL-RK7,Y-SIG-MAXAUSWAHL,$B57)
+  UND2 ($B57,GEB.21FREIG-REGL,RK7-MAX-AKTIV)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  UNDMN (3,K-FREI-RK1-EIN,RK1-MAX-AKTIV,KSB-REG-FREIG,0,$B58,
+         $WSCRATCH)
+  VVZ ($B58,KON30SEK,KON300SEK,$B59)
+  UND2 (K-FREI-RK1-EIN,$B59,RK1-MASTER-REG)
+  UNDMN (3,K-FREI-RK2-EIN,RK2-MAX-AKTIV,KSB-REG-FREIG,0,$B60,
+         $WSCRATCH)
+  VVZ ($B60,KON40SEK,KON300SEK,$B61)
+  UND2 (K-FREI-RK2-EIN,$B61,RK2-MASTER-REG)
+  UNDMN (3,K-FREI-RK3-EIN,RK3-MAX-AKTIV,KSB-REG-FREIG,0,$B62,
+         $WSCRATCH)
+  VVZ ($B62,KON50SEK,KON300SEK,$B63)
+  UND2 (K-FREI-RK3-EIN,$B63,RK3-MASTER-REG)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  UNDMN (3,K-FREI-RK4-EIN,RK4-MAX-AKTIV,KSB-REG-FREIG,0,$B64,
+         $WSCRATCH)
+  VVZ ($B64,KON60SEK,KON300SEK,$B65)
+  UND2 (K-FREI-RK4-EIN,$B65,RK4-MASTER-REG)
+  UNDMN (3,K-FREI-RK5-EIN,RK5-MAX-AKTIV,KSB-REG-FREIG,0,$B66,
+         $WSCRATCH)
+  VVZ ($B66,KON70SEK,KON300SEK,$B67)
+  UND2 (K-FREI-RK5-EIN,$B67,RK5-MASTER-REG)
+  UNDMN (3,K-FREI-RK6-EIN,RK6-MAX-AKTIV,KSB-REG-FREIG,0,$B68,
+         $WSCRATCH)
+  VVZ ($B68,KON80SEK,KON300SEK,$B69)
+  UND2 (K-FREI-RK6-EIN,$B69,RK6-MASTER-REG)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  UNDMN (3,K-FREI-RK7-EIN,RK7-MAX-AKTIV,KSB-REG-FREIG,0,$B70,
+         $WSCRATCH)
+  VVZ ($B70,KON90SEK,KON300SEK,$B71)
+  UND2 (K-FREI-RK7-EIN,$B71,RK7-MASTER-REG)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (RK1-MASTER-REG,$HB0)
+  AWT ($HB0,$M60,$M61,$F11)
+  NICHT (RK2-MASTER-REG,$HB0)
+  AWT ($HB0,$M62,$M63,$F12)
+  NICHT (RK3-MASTER-REG,$HB0)
+  AWT ($HB0,$M64,$M65,$F13)
+  NICHT (RK4-MASTER-REG,$HB0)
+  AWT ($HB0,$M66,$M67,$F14)
+  NICHT (RK5-MASTER-REG,$HB0)
+  AWT ($HB0,$M68,$M69,$F15)
+  NICHT (RK6-MASTER-REG,$HB0)
+  AWT ($HB0,$M70,$M71,$F16)
+  NICHT (RK7-MASTER-REG,$HB0)
+  AWT ($HB0,$M72,$M73,$F17)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M74,$M75,$F18)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M76,$M77,$F19)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M78,$M79,$F20)
+  ADSU (10,$F11,$F12,$F13,$F14,$F15,$F16,$F17,$F18,$F19,$F20,
+        9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$F10)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLEH ($F10,$M80,$M81,$B72)
+  VVZ ($B72,$M82,$M83,$B73)
+  ODRMN (7,RK1-ISTW-VORWAHL,RK2-ISTW-VORWAHL,
+         RK3-ISTW-VORWAHL,RK4-ISTW-VORWAHL,RK5-ISTW-VORWAHL,
+         RK6-ISTW-VORWAHL,RK7-ISTW-VORWAHL,0,$B74,$WSCRATCH)
+  UND11 ($B73,$B74,AUSWAHL-MANUELL)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  VVZ ($B75,$M84,$M85,SETZ-VORWAHL-RK6)
+  UND2 (AUSWAHL-MANUELL,RK6-MASTER-REG,$B75)
+  VVZ ($B76,$M86,$M87,SETZ-VORWAHL-RK5)
+  UND2 (AUSWAHL-MANUELL,RK5-MASTER-REG,$B76)
+  VVZ ($B77,$M88,$M89,SETZ-VORWAHL-RK4)
+  UND2 (AUSWAHL-MANUELL,RK4-MASTER-REG,$B77)
+  VVZ ($B78,$M90,$M91,SETZ-VORWAHL-RK3)
+  UND2 (AUSWAHL-MANUELL,RK3-MASTER-REG,$B78)
+  VVZ ($B79,$M92,$M93,SETZ-VORWAHL-RK2)
+  UND2 (AUSWAHL-MANUELL,RK2-MASTER-REG,$B79)
+  VVZ ($B80,$M94,$M95,SETZ-VORWAHL-RK1)
+  UND2 (AUSWAHL-MANUELL,RK1-MASTER-REG,$B80)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  VVZ ($B81,$M96,$M97,SETZ-VORWAHL-RK7)
+  UND2 (AUSWAHL-MANUELL,RK7-MASTER-REG,$B81)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  UNDMN (1,RK1-MASTER-REG,6,RK2-MASTER-REG,RK3-MASTER-REG,
+         RK4-MASTER-REG,RK5-MASTER-REG,RK6-MASTER-REG,
+         RK7-MASTER-REG,$B82,$WSCRATCH)
+  ODR2 ($B82,SETZ-VORWAHL-RK1,$B83)
+  NICHT (RK1-MASTER-REG,$HB1)
+  RSS ($B83,$HB1,RK1-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M98,1,RK1-ISTW-VORWAHL,&21KA06-901BM50,$WSCRATCH)
+  UNDMN (1,RK2-MASTER-REG,6,RK1-MASTER-REG,RK3-MASTER-REG,
+         RK4-MASTER-REG,RK5-MASTER-REG,RK6-MASTER-REG,
+         RK7-MASTER-REG,$B84,$WSCRATCH)
+  ODR2 ($B84,SETZ-VORWAHL-RK2,$B85)
+  NICHT (RK2-MASTER-REG,$HB1)
+  RSS ($B85,$HB1,RK2-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M99,1,RK2-ISTW-VORWAHL,&21KA06-902BM50,$WSCRATCH)
+  UNDMN (1,RK3-MASTER-REG,6,RK2-MASTER-REG,RK1-MASTER-REG,
+         RK4-MASTER-REG,RK5-MASTER-REG,RK6-MASTER-REG,
+         RK7-MASTER-REG,$B86,$WSCRATCH)
+  ODR2 ($B86,SETZ-VORWAHL-RK3,$B87)
+  NICHT (RK3-MASTER-REG,$HB1)
+  RSS ($B87,$HB1,RK3-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M100,1,RK3-ISTW-VORWAHL,&21KA06-903BM50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  UNDMN (1,RK4-MASTER-REG,6,RK2-MASTER-REG,RK3-MASTER-REG,
+         RK1-MASTER-REG,RK5-MASTER-REG,RK6-MASTER-REG,
+         RK7-MASTER-REG,$B88,$WSCRATCH)
+  ODR2 ($B88,SETZ-VORWAHL-RK4,$B89)
+  NICHT (RK4-MASTER-REG,$HB1)
+  RSS ($B89,$HB1,RK4-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M101,1,RK4-ISTW-VORWAHL,&21KA06-904BM50,$WSCRATCH)
+  UNDMN (1,RK5-MASTER-REG,6,RK1-MASTER-REG,RK3-MASTER-REG,
+         RK4-MASTER-REG,RK2-MASTER-REG,RK6-MASTER-REG,
+         RK7-MASTER-REG,$B90,$WSCRATCH)
+  ODR2 ($B90,SETZ-VORWAHL-RK5,$B91)
+  NICHT (RK5-MASTER-REG,$HB1)
+  RSS ($B91,$HB1,RK5-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M102,1,RK5-ISTW-VORWAHL,&21KA06-905BM50,$WSCRATCH)
+  UNDMN (1,RK6-MASTER-REG,6,RK2-MASTER-REG,RK1-MASTER-REG,
+         RK4-MASTER-REG,RK5-MASTER-REG,RK3-MASTER-REG,
+         RK7-MASTER-REG,$B92,$WSCRATCH)
+  ODR2 ($B92,SETZ-VORWAHL-RK6,$B93)
+  NICHT (RK6-MASTER-REG,$HB1)
+  RSS ($B93,$HB1,RK6-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M103,1,RK6-ISTW-VORWAHL,&21KA06-906BM50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  UNDMN (1,RK7-MASTER-REG,6,RK2-MASTER-REG,RK1-MASTER-REG,
+         RK4-MASTER-REG,RK5-MASTER-REG,RK3-MASTER-REG,
+         RK6-MASTER-REG,$B94,$WSCRATCH)
+  ODR2 ($B94,SETZ-VORWAHL-RK7,$B95)
+  NICHT (RK7-MASTER-REG,$HB1)
+  RSS ($B95,$HB1,RK7-ISTW-VORWAHL,$WSCRATCH)
+  SETMEL ($M104,1,RK7-ISTW-VORWAHL,&21KA06-907BM50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  AWT (RK1-ISTW-VORWAHL,FKON-SETZ10,RK1_SPM_MW01,$F21)
+  AWT (RK2-ISTW-VORWAHL,$F21,RK2_SPM_MW01,$F22)
+  AWT (RK3-ISTW-VORWAHL,$F22,RK3_SPM_MW01,$F23)
+  AWT (RK4-ISTW-VORWAHL,$F23,RK4_SPM_MW01,$F24)
+  AWT (RK5-ISTW-VORWAHL,$F24,RK5_SPM_MW01,$F25)
+  AWT (RK6-ISTW-VORWAHL,$F25,RK6_SPM_MW01,$F26)
+  AWT (RK7-ISTW-VORWAHL,$F26,RK7_SPM_MW01,ISTWERT-KSB-FU)
+  ANAUS (ISTWERT-KSB-FU,$M105,&21KA06-600AA11,MERR33)
+  ANAUS (ISTWERT-KSB-FU,$M106,&21KA06-900AA16,ERR167)
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  AWT (RK1-ISTW-VORWAHL,KONSETZ10,K_SOLLW_RK1,$F27)
+  AWT (RK2-ISTW-VORWAHL,$F27,K_SOLLW_RK2,$F28)
+  AWT (RK3-ISTW-VORWAHL,$F28,K_SOLLW_RK3,$F29)
+  AWT (RK4-ISTW-VORWAHL,$F29,K_SOLLW_RK4,$F30)
+  AWT (RK5-ISTW-VORWAHL,$F30,K_SOLLW_RK5,$F31)
+  AWT (RK6-ISTW-VORWAHL,$F31,K_SOLLW_RK6,$F32)
+  AWT (RK7-ISTW-VORWAHL,$F32,K_SOLLW_RK7,SOLLW-KSB-FU)
+  ANAUS (SOLLW-KSB-FU,$M107,&21KA06-600AA10,MERR33)
+  ANAUS (SOLLW-KSB-FU,$M108,&21KA06-900AA13,ERR167)
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  AWT (RK1-ISTW-VORWAHL,HANDSETZ_01,Y-SIGNAL-RK1,$F33)
+  AWT (RK2-ISTW-VORWAHL,$F33,Y-SIGNAL-RK2,$F34)
+  AWT (RK3-ISTW-VORWAHL,$F34,Y-SIGNAL-RK3,$F35)
+  AWT (RK4-ISTW-VORWAHL,$F35,Y-SIGNAL-RK4,$F36)
+  AWT (RK5-ISTW-VORWAHL,$F36,Y-SIGNAL-RK5,$F37)
+  AWT (RK6-ISTW-VORWAHL,$F37,Y-SIGNAL-RK6,$F38)
+  AWT (RK7-ISTW-VORWAHL,$F38,Y-SIGNAL-RK7,AUSW.Y-SIG-P5-P7)
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  UNDMN (3,PG-P5-7-SOLL-EIN,RM-P5-P7-IST-EIN,$B97,0,$B96,
+         $WSCRATCH)
+  ODRMN (7,GEB.01FREIG-REGL,GEB.03FREIG-REGL,
+         GEB.04FREIG-REGL,GEB.05FREIG-REGL,GEB.15FREIG-REGL,
+         GEB.17FREIG-REGL,GEB.21FREIG-REGL,0,$B97,$WSCRATCH)
+  FKG (AUSW.Y-SIG-P5-P7,4,$M109,$M110,$M111,$M112,$F39)
+  AWT (/UMSCHALT-HAND,$F39,SOLLW-KSB-FU,$F40)
+  AWT ($B96,$M113,$F40,$F41)
+  ANAUS ($F41,$M114,&21KA06-600AA01,ERR_128)
+  ;ANAUS
+  ;ZEILE A128
+  ;Ansteuerung P5-7
+  ; 
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  ENDE 
+  TASK (6,cycl,1000)
+  ODR2 (KON00,KON00,$B98)
+  ODRMN (0,8,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,
+         $B99,$WSCRATCH)
+  ODRMN (0,8,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,$WONE,
+         $B100,$WSCRATCH)
+  ODRMN (0,4,$WONE,$WONE,$WONE,$WONE,$B101,$WSCRATCH)
+  ODRMN (4,$B98,$B99,$B100,$B101,0,$B102,$WSCRATCH)
+  VVZ ($B102,$M115,$M116,$B103)
+  RSS ($B103,$WZERO,$WSCRATCH,$WSCRATCH)
+  ;muss Sammelstörung
+  ;programmiert werden,
+  ;oder ist das schon auf
+  ;ein anderes Modul
+  ;gemacht worden
+  ; 
+  ;*****************************************************************
+  ;*** Seite  56
+  ;*****************************************************************
+  ODRMN (8,PU1-2.21-2-EIN,PU2-2.21-2-EIN,PU3-2.21-2-EIN,
+         PU4-2.21-2-EIN,PU5-2.21-2-EIN,PU6-2.21-2-EIN,
+         PU7-2.21-2-EIN,PU8-2.21-2-EIN,0,BM-1.PUMPE-EIM,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  57
+  ;*****************************************************************
+  VGLOH (KON-01,RK1_SPM_MW01,$B104)
+  UND2 ($B104,BM-1.PUMPE-EIM,$B105)
+  VVZ ($B105,FKON5MIN,$M117,RK1-MW-ST)
+  SETMEL ($M118,1,RK1-MW-ST,&21KA06-901ST01,$WSCRATCH)
+  VGLOH (KON-01,RK2_SPM_MW01,$B106)
+  UND2 ($B106,BM-1.PUMPE-EIM,$B107)
+  VVZ ($B107,FKON5MIN,$M119,RK2-MW-ST)
+  SETMEL ($M120,1,RK2-MW-ST,&21KA06-902ST01,$WSCRATCH)
+  VGLOH (KON-01,RK3_SPM_MW01,$B108)
+  ;RK1-Fühler Störung
+  ; 
+  ;RK2-Fühler Störung
+  ; 
+  ;RK3-Fühler Störung
+  ; 
+  UND2 ($B108,BM-1.PUMPE-EIM,$B109)
+  VVZ ($B109,FKON5MIN,$M121,RK3-MW-ST)
+  SETMEL ($M122,1,RK3-MW-ST,&21KA06-903ST01,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  58
+  ;*****************************************************************
+  VGLOH (KON-01,RK4_SPM_MW01,$B110)
+  UND2 ($B110,BM-1.PUMPE-EIM,$B111)
+  VVZ ($B111,FKON5MIN,$M123,RK4-MW-ST)
+  SETMEL ($M124,1,RK4-MW-ST,&21KA06-904ST01,$WSCRATCH)
+  VGLOH (KON-01,RK5_SPM_MW01,$B112)
+  UND2 ($B112,BM-1.PUMPE-EIM,$B113)
+  VVZ ($B113,FKON5MIN,$M125,RK5-MW-ST)
+  SETMEL ($M126,1,RK5-MW-ST,&21KA06-905ST01,$WSCRATCH)
+  VGLOH (KON-01,RK6_SPM_MW01,$B114)
+  ;RK4-Fühler Störung
+  ; 
+  ;RK5-Fühler Störung
+  ; 
+  ;RK6-Fühler Störung
+  ; 
+  UND2 ($B114,BM-1.PUMPE-EIM,$B115)
+  VVZ ($B115,FKON5MIN,$M127,RK6-MW-ST)
+  SETMEL ($M128,1,RK6-MW-ST,&21KA06-906ST01,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  59
+  ;*****************************************************************
+  VGLOH (KON-01,RK7_SPM_MW01,$B116)
+  UND2 ($B116,BM-1.PUMPE-EIM,$B117)
+  VVZ ($B117,FKON5MIN,$M129,RK7-MW-ST)
+  SETMEL ($M130,1,RK7-MW-ST,&21KA06-907ST01,$WSCRATCH)
+  ;RK6-Fühler Störung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  60
+  ;*****************************************************************
+  VVZ (RK1-MW-ST,$M131,$M132,$B118)
+  BEFAUS (1,$B118,$WZERO,$WZERO,$WZERO,&21KA06-901BF20,
+          ERR-BF01)
+  VVZ (RK2-MW-ST,$M133,$M134,$B119)
+  BEFAUS (1,$B119,$WZERO,$WZERO,$WZERO,&21KA06-902BF20,
+          ERR-BF02)
+  VVZ (RK3-MW-ST,$M135,$M136,$B120)
+  BEFAUS (1,$B120,$WZERO,$WZERO,$WZERO,&21KA06-903BF20,
+          ERR-BF03)
+  ;*****************************************************************
+  ;*** Seite  61
+  ;*****************************************************************
+  VVZ (RK4-MW-ST,$M137,$M138,$B121)
+  BEFAUS (1,$B121,$WZERO,$WZERO,$WZERO,&21KA06-904BF20,
+          ERR-BF04)
+  VVZ (RK5-MW-ST,$M139,$M140,$B122)
+  BEFAUS (1,$B122,$WZERO,$WZERO,$WZERO,&21KA06-905BF20,
+          ERR-BF05)
+  VVZ (RK6-MW-ST,$M141,$M142,$B123)
+  BEFAUS (1,$B123,$WZERO,$WZERO,$WZERO,&21KA06-906BF20,
+          ERR-BF06)
+  ;*****************************************************************
+  ;*** Seite  62
+  ;*****************************************************************
+  VVZ (RK7-MW-ST,$M143,$M144,$B124)
+  BEFAUS (1,$B124,$WZERO,$WZERO,$WZERO,&21KA06-907BF20,
+          ERR-BF06)
+  ENDE 
+  ENDMODUL 

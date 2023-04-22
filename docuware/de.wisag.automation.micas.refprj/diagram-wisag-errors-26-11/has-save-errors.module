@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dml="http://www.eclipselabs.org/damos/DML/1.0.0" xmlns:dmlnotation="http://www.eclipselabs.org/damos/DMLNotation/1.0.0" xmlns:module="http://www.wisag.de/Automation/Micas/Module" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <module:Module processor="mkr1" examiner="xxx" name="test">
+    <attributes xsi:type="module:ReferenceAttribute" name="mo1" dataType="Reference" row="30"/>
+    <attributes xsi:type="module:ReferenceAttribute" name="aw1" dataType="Reference" row="31"/>
+    <attributes xsi:type="module:VariableAttribute" name="linie"/>
+    <attributes xsi:type="module:VariableAttribute" name="linie1"/>
+    <attributes xsi:type="module:ConstantAttribute" name="enable" dataType="Word">
+      <value xsi:type="module:WordValue" value="1"/>
+    </attributes>
+    <attributes xsi:type="module:ReferenceAttribute" name="bin_0_0" dataType="Reference" column="0"/>
+    <attributes xsi:type="module:ReferenceAttribute" name="melaus_1_0" dataType="Reference" row="1" column="0"/>
+    <attributes xsi:type="module:VariableAttribute" name="linieW0" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="linieW1" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="linieW2" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="linieW3" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error0" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error1" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error2" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error3" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error4" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="error5" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="frostschutz_anlage_111"/>
+    <attributes xsi:type="module:ReferenceAttribute" name="melein" dataType="Reference" row="11" column="0"/>
+    <attributes xsi:type="module:ReferenceAttribute" name="bef1" dataType="Reference" row="11" column="1"/>
+    <attributes xsi:type="module:VariableAttribute" name="befW1" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="befW2" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="befW3" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="$M0" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="$M1" dataType="Word"/>
+    <attributes xsi:type="module:VariableAttribute" name="$M2" dataType="Word"/>
+    <tasks index="1" name="init"/>
+    <tasks kind="CYCLIC" cycleTime="1000" index="2" name="run">
+      <pages name="Seite 1">
+        <fragmentElements xsi:type="dml:Block" name="ANEIN">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANEIN.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.17"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANEIN.blocktype.dml#_wYaLEIsyEd-AFYnRH2VIEQ"/>
+          </outputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.11"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANEIN.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="1"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANEIN.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.0"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.1/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.0/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Block" name="ANAUS">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANAUS.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANAUS.blocktype.dml#_Nld2wJdKEd-YKM09ARBjYA"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANAUS.blocktype.dml#_SBWMMJdKEd-YKM09ARBjYA"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.12"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANAUS.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="12"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/ANAUS.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.0/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="module:Constant">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.4"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.5/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.1/@ports.0"/>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.1"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.7/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.2/@ports.0"/>
+        <fragmentElements xsi:type="dml:Block" name="MELEIN">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.8"/>
+            </ports>
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.9"/>
+            </ports>
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.10"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_1eRDga-CEd-BLuEWVmQTyw"/>
+          </outputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.13"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="3"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Block" name="SETMEL">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/SETMEL.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <ports xsi:type="dml:BlockInputPort"/>
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/SETMEL.blocktype.dml#_U8SBYJdMEd-YKM09ARBjYA"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/SETMEL.blocktype.dml#_ldiNMJdMEd-YKM09ARBjYA"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.15"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/SETMEL.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="8"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/SETMEL.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Block" name="NICHT">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.7"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_wYaLEIsyEd-AFYnRH2VIEQ"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="5"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.11/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.11/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.1" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.1"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.2" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.2"/>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.5"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.16/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.9/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.6"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.18/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.2/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.5/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Block" name="BENDE">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/administration/BENDE.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="19"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/administration/BENDE.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Block" name="ODRMN">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <ports xsi:type="dml:BlockInputPort"/>
+            <ports xsi:type="dml:BlockInputPort"/>
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/ODRMN.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/ODRMN.blocktype.dml#_sFqjgIsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.16"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/ODRMN.blocktype.dml#_wYaLEIsyEd-AFYnRH2VIEQ"/>
+          </outputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/ODRMN.blocktype.dml#_a5oDAK-JEd-c8JZG3Y1__A"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="14"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/binary/ODRMN.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.22/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.21/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.0/@outputs.1/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.1/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.1"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.10/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.2"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.3/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.3"/>
+        <fragmentElements xsi:type="module:OutgoingOffpageConnector">
+          <inputs>
+            <ports/>
+          </inputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.1/@pages.0/@fragmentElements.0/@outputs.0/@ports.0" targetPort="/0/@tasks.1/@pages.0/@fragmentElements.28/@inputs.0/@ports.0"/>
+      </pages>
+    </tasks>
+    <tasks kind="CYCLIC" cycleTime="550" index="3" name="geht">
+      <pages name="Seite 1">
+        <fragmentElements xsi:type="dml:Block" name="MELEIN">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.23"/>
+            </ports>
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.24"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_1eRDga-CEd-BLuEWVmQTyw"/>
+          </outputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="1"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/MELEIN.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Block" name="BEFAUS">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_5RGwQJdKEd-YKM09ARBjYA"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_6S5kcJdKEd-YKM09ARBjYA"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_7mALEJdKEd-YKM09ARBjYA"/>
+          </inputs>
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_FJlaIJdLEd-YKM09ARBjYA"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_qCsKcJCpEd-AgqF4Izs_FA"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="4"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/transfer/BEFAUS.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.18"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.2/@outputs.0/@ports.0" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.0/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Block" name="NICHT">
+          <inputs xsi:type="dml:BlockInput">
+            <ports xsi:type="dml:BlockInputPort"/>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_j_On4IsyEd-AFYnRH2VIEQ"/>
+          </inputs>
+          <outputs xsi:type="dml:BlockOutput">
+            <ports xsi:type="dml:BlockOutputPort">
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.21"/>
+            </ports>
+            <definition href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_wYaLEIsyEd-AFYnRH2VIEQ"/>
+          </outputs>
+          <arguments>
+            <value xsi:type="dml:ExpressionSpecification" expression="3"/>
+            <parameter xsi:type="dml:ExpressionParameter" href="http://www.wisag.de/automation/micas/library/1.0.0/Block.category.dml#_-McSwI2PEd-xLIzFfuJVQQ"/>
+          </arguments>
+          <type href="http://www.wisag.de/automation/micas/library/1.0.0/binary/NICHT.blocktype.dml#_bO6BwIsyEd-AFYnRH2VIEQ"/>
+        </fragmentElements>
+        <fragmentElements xsi:type="module:Reference">
+          <outputs>
+            <ports>
+              <signal xsi:type="module:AttributeSpecification" attribute="/0/@attributes.19"/>
+            </ports>
+          </outputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.5/@outputs.0/@ports.0" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.4/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.4/@outputs.0/@ports.0" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.1/@ports.0"/>
+        <fragmentElements xsi:type="module:OutgoingOffpageConnector">
+          <inputs>
+            <ports/>
+          </inputs>
+        </fragmentElements>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.0/@ports.0" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.8/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.0/@ports.1" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.0/@ports.0"/>
+        <fragmentElements xsi:type="dml:Connection" sourcePort="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.0/@ports.1" targetPort="/0/@tasks.2/@pages.0/@fragmentElements.4/@inputs.0/@ports.0"/>
+      </pages>
+    </tasks>
+  </module:Module>
+  <notation:Diagram element="/0/@tasks.1/@pages.0" name="Seite 1" measurementUnit="Himetric">
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.0">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.0/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.0/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.0/@outputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="4220" y="3202"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.1">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.1/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="752" y="3662"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.3">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.3/@inputs.2/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.3/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="11470" y="3202"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.5">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.5/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="8890" y="4139"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.7">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.7/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="8876" y="5076"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.9">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.9/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.1">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.9/@outputs.0/@ports.2">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="3376" y="7174"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.10">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.2/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.1">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.10/@inputs.1/@ports.2">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="12238" y="6678"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.11">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.11/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.11/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="9009" y="6752"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.16">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.16/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="633" y="7634"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.18">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.18/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="8440" y="9706"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.21">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.21/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="13082" y="12038"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.22">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.1">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@outputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.2">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.22/@inputs.0/@ports.3">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="9551" y="12038"/>
+    </children>
+    <children element="/0/@tasks.1/@pages.0/@fragmentElements.28">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.1/@pages.0/@fragmentElements.28/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="9630" y="767"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.2" source="/1/@children.1/@children.1" target="/1/@children.0/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -136, 6]$[136, -6, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.4" source="/1/@children.0/@children.2" target="/1/@children.2/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -144, -15]$[144, 15, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.6" source="/1/@children.3/@children.1" target="/1/@children.2/@children.2">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -96, 103]$[96, -103, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.8" source="/1/@children.4/@children.1" target="/1/@children.2/@children.3">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -1177, 422]$[422, 0, -755, 422]$[422, -422, -755, 0]$[1177, -422, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.12" source="/1/@children.5/@children.2" target="/1/@children.7/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -57, -19]$[57, 19, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.13" source="/1/@children.7/@children.2" target="/1/@children.6/@children.2">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -93, 0]$[93, 0, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.14" source="/1/@children.5/@children.4" target="/1/@children.6/@children.5">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -196, 0]$[196, 0, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.15" source="/1/@children.5/@children.5" target="/1/@children.6/@children.6">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -196, 0]$[196, 0, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.17" source="/1/@children.8/@children.1" target="/1/@children.5/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -54, -3]$[54, 3, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.19" source="/1/@children.9/@children.1" target="/1/@children.6/@children.3">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -55, 33]$[55, -33, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.20" source="/1/@children.3/@children.1" target="/1/@children.6/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -1958, -2999]$[673, 0, -1285, -2999]$[673, 2999, -1285, 0]$[1958, 2999, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.23" source="/1/@children.11/@children.3" target="/1/@children.10/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -58, 17]$[58, -17, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.24" source="/1/@children.0/@children.3" target="/1/@children.11/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -118, -316]$[118, 316, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.25" source="/1/@children.5/@children.3" target="/1/@children.11/@children.2">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -94, -146]$[94, 146, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.26" source="/1/@children.6/@children.4" target="/1/@children.11/@children.5">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 5105, -6352]$[1377, 0, 6482, -6352]$[1377, 8161, 6482, 1809]$[-7275, 8161, -2170, 1809]$[-7275, 6352, -2170, 0]$[-5105, 6352, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.27" source="/1/@children.2/@children.4" target="/1/@children.11/@children.6">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 5873, -10324]$[821, 0, 6694, -10324]$[821, 11849, 6694, 1525]$[-8809, 11849, -2936, 1525]$[-8809, 10324, -2936, 0]$[-5873, 10324, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.1/@pages.0/@fragmentElements.29" source="/1/@children.0/@children.2" target="/1/@children.12/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -121, 110]$[121, -110, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram name="Seite 2" measurementUnit="Himetric">
+    <children>
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="5371" y="1428"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+  </notation:Diagram>
+  <notation:Diagram element="/0/@tasks.2/@pages.0" name="Seite 1" measurementUnit="Himetric">
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.0">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.0/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.0/@outputs.0/@ports.1">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="3587" y="3906"/>
+    </children>
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.1">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.1/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.2/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.3/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@inputs.4/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.1/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="13504" y="5437"/>
+    </children>
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.2">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.2/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="633" y="4366"/>
+    </children>
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.4">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.4/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.4/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="8862" y="7321"/>
+    </children>
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.5">
+      <children visible="false" type="_blockName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.5/@outputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="11183" y="8925"/>
+    </children>
+    <children element="/0/@tasks.2/@pages.0/@fragmentElements.8">
+      <children visible="false" type="_componentName">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children element="/0/@tasks.2/@pages.0/@fragmentElements.8/@inputs.0/@ports.0">
+        <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="8" lineColor="0"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="dmlnotation:ComponentLayoutConstraint" x="14189" y="1899"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.3" source="/3/@children.2/@children.1" target="/3/@children.0/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -37, 56]$[37, -56, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.6" source="/3/@children.4/@children.1" target="/3/@children.1/@children.5">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -126, 9]$[126, -9, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.7" source="/3/@children.3/@children.2" target="/3/@children.1/@children.2">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -3490, 1388]$[1574, 0, -1916, 1388]$[1574, -1388, -1916, 0]$[3490, -1388, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.9" source="/3/@children.0/@children.2" target="/3/@children.5/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -239, 102]$[239, -102, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.10" source="/3/@children.0/@children.4" target="/3/@children.1/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -236, -39]$[236, 39, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+    <edges element="/0/@tasks.2/@pages.0/@fragmentElements.11" source="/3/@children.0/@children.4" target="/3/@children.3/@children.1">
+      <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -60, -110]$[60, 110, 0, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="port"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

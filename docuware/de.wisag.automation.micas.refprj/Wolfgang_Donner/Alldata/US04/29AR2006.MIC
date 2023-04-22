@@ -1,0 +1,345 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0406.GPS
+  ;*** Projektname    : ARAG KAELTE
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (AR20,6)
+  WordV  WERR
+  WordV  K-ENTRIEGELN-AUS
+  WordV  K-ENTRIEGELN-EIN
+  WordV  K-IBM-PUMPEN-EIN
+  WordV  K-IBM-PUMPEN-AUS
+  WordV  KWS1-HK-PU-1-AUS
+  WordV  KWS1-HK-PU-1-ST
+  WordV  KWS1-HK-PU-1-EIN
+  WordV  KWS1-HK-PU-2-AUS
+  WordV  KWS1-HK-PU-2-ST
+  WordV  KWS1-HK-PU-2-EIN
+  WordV  KWS-1-AUS
+  WordV  KWS-1-EIN
+  WordV  UMSCH-KWS2-HK-PU
+  WordV  HARDW-PUM-1-AUS
+  WordV  HARDW-PUM-1-ST
+  WordV  HARDW-PUM-1-EIN
+  WordV  HARDW-PUM-2-AUS
+  WordV  HARDW-PUM-2-ST
+  WordV  KWS-2-EIN
+  WordV  KWS-2-AUS
+  WordV  UMSCH-KWS1-HK-PU
+  WordV  KWS2-HK-PU-1-AUS
+  WordV  KWS2-HK-PU-1-ST
+  WordV  KWS2-HK-PU-1-EIN
+  WordV  KWS2-HK-PU-2-AUS
+  WordV  KWS2-HK-PU-2-ST
+  WordV  KWS2-HK-PU-2-EIN
+  WordV  HARDW-PUM-2-EIN
+  WordV  REP-SCH-HW-PUM-1
+  WordV  REP-SCH-HW-PUM-2
+  WordV  UMSCH-HARDW-PUMP
+  WordV  VOR-ORT-ENTRIEG
+  FloatK K-LAUFZEIT1 (0.00)
+  FloatK K-LAUFZEIT4 (0.00)
+  FloatK KZEIT04 (86400.00)
+  FloatK K-LAUFZEIT3 (0.00)
+  FloatK KZEIT03 (86400.00)
+  FloatK K-LAUFZEIT2 (0.00)
+  FloatK KZEIT01 (86400.00)
+  FloatK KZEIT02 (86400.00)
+  FloatK K-LAUFZEIT5 (0.00)
+  FloatK K-LAUFZEIT6 (0.00)
+  FloatK KZEIT05 (86400.00)
+  FloatK KZEIT06 (86400.00)
+  WordV  HAND-M6-STEUER-1
+  WordV  HAND-M6-STEUER-2
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1KA0004BF60 (102,9)
+  IPAMB &BA1KA0204BF01 (102,5)
+  IPAMB &M0 (102,10)
+  IPAMB &M1 (102,11)
+  WordV  $WSCRATCH
+  IPAMB &M2 (102,6)
+  IPAMB &M3 (102,7)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &BA1KA0201BM11 (6,1)
+  IPAMB &M4 (6,2)
+  IPAMB &M5 (6,3)
+  IPAMB &BA1KA0201BM12 (6,5)
+  IPAMB &M6 (6,6)
+  IPAMB &M7 (6,7)
+  IPAMB &BA1KA0201BM02 (4,13)
+  IPAMB &M8 (4,14)
+  IPAMB &M9 (4,15)
+  IPAMB &BA1KA0202BM02 (5,13)
+  IPAMB &M10 (5,14)
+  IPAMB &M11 (5,15)
+  IPAMB &BA1KA0202BM11 (7,13)
+  IPAMB &M12 (7,14)
+  IPAMB &M13 (7,15)
+  IPAMB &BA1KA0202BM12 (7,1)
+  IPAMB &M14 (7,2)
+  IPAMB &M15 (7,3)
+  IPAMB &BA1KA0204BM01 (7,9)
+  IPAMB &M16 (7,10)
+  IPAMB &M17 (7,11)
+  IPAMB &BA1KA0204BM02 (7,5)
+  IPAMB &M18 (7,6)
+  IPAMB &M19 (7,7)
+  IPAMB &BA1KA0204WA51 (17,4)
+  IPAMB &BA1KA0204WA52 (17,5)
+  IPAMB &BA1KA0000WA74 (6,10)
+  IPAMB &BA1KA0000AL39 (6,11)
+  IPAMB &M20 (6,12)
+  IPAMB &M21 (6,13)
+  IPAMB &BA1KA0000WA75 (6,14)
+  WordV  $B3
+  FloatK $M22 (4.00)
+  WordV  $B4
+  WordV  $B5
+  FloatK $M23 (0.00)
+  FloatK $M24 (300.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  FloatK $M25 (10.00)
+  FloatK $M26 (0.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordK  $M27 (1)
+  IPAMB &BA1KA0201ST63 (103,15)
+  FloatK $M28 (0.00)
+  FloatK $M29 (300.00)
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M30 (10.00)
+  FloatK $M31 (0.00)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordK  $M32 (1)
+  IPAMB &BA1KA0201ST64 (104,0)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatK $M33 (0.00)
+  FloatK $M34 (300.00)
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  FloatK $M35 (10.00)
+  FloatK $M36 (0.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordK  $M37 (1)
+  IPAMB &BA1KA0202ST63 (104,1)
+  FloatK $M38 (0.00)
+  FloatK $M39 (300.00)
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  FloatK $M40 (10.00)
+  FloatK $M41 (0.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordK  $M42 (1)
+  IPAMB &BA1KA0202ST64 (104,2)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  FloatK $M43 (0.00)
+  FloatK $M44 (20.00)
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  FloatK $M45 (0.00)
+  FloatK $M46 (20.00)
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  FloatK $M47 (20.00)
+  FloatK $M48 (0.00)
+  WordV  $B53
+  WordV  $B54
+  WordK  $M49 (1)
+  IPAMB &BA1KA0204AL01 (85,10)
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;EDV-KAELTE
+  ;STANDORT:
+  ;2.KG Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-ENTRIEGELN-AUS,K-ENTRIEGELN-EIN,$WZERO,$WZERO,
+          &BA1KA0004BF60,WERR)
+  BEFAUS (1,K-IBM-PUMPEN-AUS,K-IBM-PUMPEN-EIN,$WZERO,$WZERO,
+          &BA1KA0204BF01,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&BA1KA0004BF60,3,K-ENTRIEGELN-AUS,$WSCRATCH,
+          K-ENTRIEGELN-EIN,WERR)
+  MELEIN (&BA1KA0204BF01,3,$B1,$WSCRATCH,$B2,WERR)
+  MELEIN (&BA1KA0201BM11,3,KWS1-HK-PU-1-AUS,KWS1-HK-PU-1-ST,
+          KWS1-HK-PU-1-EIN,WERR)
+  BTRA ($B1,K-IBM-PUMPEN-AUS)
+  BTRA ($B2,K-IBM-PUMPEN-EIN)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&BA1KA0201BM12,3,KWS1-HK-PU-2-AUS,KWS1-HK-PU-2-ST,
+          KWS1-HK-PU-2-EIN,WERR)
+  MELEIN (&BA1KA0201BM02,3,KWS-1-AUS,$WSCRATCH,KWS-1-EIN,
+          WERR)
+  MELEIN (&BA1KA0202BM02,3,KWS-2-AUS,$WSCRATCH,KWS-2-EIN,
+          WERR)
+  MELEIN (&BA1KA0202BM11,3,KWS2-HK-PU-1-AUS,KWS2-HK-PU-1-ST,
+          KWS2-HK-PU-1-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&BA1KA0202BM12,3,KWS2-HK-PU-2-AUS,KWS2-HK-PU-2-ST,
+          KWS2-HK-PU-2-EIN,WERR)
+  MELEIN (&BA1KA0204BM01,3,HARDW-PUM-1-AUS,HARDW-PUM-1-ST,
+          HARDW-PUM-1-EIN,WERR)
+  MELEIN (&BA1KA0204BM02,3,HARDW-PUM-2-AUS,HARDW-PUM-2-ST,
+          HARDW-PUM-2-EIN,WERR)
+  MELEIN (&BA1KA0204WA51,2,REP-SCH-HW-PUM-1,REP-SCH-HW-PUM-2,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1KA0000WA74,5,HAND-M6-STEUER-1,VOR-ORT-ENTRIEG,
+          $WSCRATCH,$WSCRATCH,HAND-M6-STEUER-2,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  ODR2 (K-ENTRIEGELN-EIN,VOR-ORT-ENTRIEG,$B3)
+  MOKY ($B3,$M22,$B4)
+  NICHT ($B4,$B5)
+  BEFAUS (1,$B5,$B4,$WZERO,$WZERO,&BA1KA0004BF60,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  VVZ (KWS-1-EIN,$M23,$M24,$B6)
+  XOR2 ($B12,KWS1-HK-PU-1-EIN,$B7)
+  UND11 ($B7,HAND-M6-STEUER-1,$B8)
+  VVZ ($B8,$M25,$M26,$B9)
+  RSS ($B9,K-ENTRIEGELN-EIN,$B10,$WSCRATCH)
+  UNDMN (1,$B6,2,UMSCH-KWS1-HK-PU,$B10,$B11,$WSCRATCH)
+  ODRMN (2,$B11,KWS1-HK-PU-2-ST,0,$B12,$B13)
+  BEFAUS (1,$B13,$B12,$WZERO,$WZERO,&BA1KA0201BM11,WERR)
+  SETMEL ($M27,1,$B10,&BA1KA0201ST63,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  VVZ (KWS-1-EIN,$M28,$M29,$B14)
+  XOR2 ($B20,KWS1-HK-PU-2-EIN,$B15)
+  UND11 ($B15,HAND-M6-STEUER-1,$B16)
+  VVZ ($B16,$M30,$M31,$B17)
+  RSS ($B17,K-ENTRIEGELN-EIN,$B18,$WSCRATCH)
+  UND21 (UMSCH-KWS1-HK-PU,$B14,$B18,$B19)
+  ODRMN (2,$B19,KWS1-HK-PU-1-ST,0,$B20,$B21)
+  BEFAUS (1,$B21,$B20,$WZERO,$WZERO,&BA1KA0201BM12,WERR)
+  SETMEL ($M32,1,$B18,&BA1KA0201ST64,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UHR (KWS1-HK-PU-1-EIN,UMSCH-KWS1-HK-PU,K-LAUFZEIT5)
+  VGLOH (K-LAUFZEIT5,KZEIT05,$B22)
+  RSS ($B22,$B24,UMSCH-KWS1-HK-PU,$B23)
+  UHR (KWS1-HK-PU-2-EIN,$B23,K-LAUFZEIT6)
+  VGLOH (K-LAUFZEIT6,KZEIT06,$B24)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  VVZ (KWS-2-EIN,$M33,$M34,$B25)
+  XOR2 ($B31,KWS2-HK-PU-1-EIN,$B26)
+  UND11 ($B26,HAND-M6-STEUER-2,$B27)
+  VVZ ($B27,$M35,$M36,$B28)
+  RSS ($B28,K-ENTRIEGELN-EIN,$B29,$WSCRATCH)
+  UNDMN (1,$B25,2,UMSCH-KWS1-HK-PU,$B29,$B30,$WSCRATCH)
+  ODRMN (2,$B30,KWS2-HK-PU-2-ST,0,$B31,$B32)
+  BEFAUS (1,$B32,$B31,$WZERO,$WZERO,&BA1KA0202BM11,WERR)
+  SETMEL ($M37,1,$B29,&BA1KA0202ST63,WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  VVZ (KWS-2-EIN,$M38,$M39,$B33)
+  XOR2 ($B39,KWS2-HK-PU-2-EIN,$B34)
+  UND11 ($B34,HAND-M6-STEUER-2,$B35)
+  VVZ ($B35,$M40,$M41,$B36)
+  RSS ($B36,K-ENTRIEGELN-EIN,$B37,$WSCRATCH)
+  UND21 (UMSCH-KWS1-HK-PU,$B33,$B37,$B38)
+  ODRMN (2,$B38,KWS2-HK-PU-1-ST,0,$B39,$B40)
+  BEFAUS (1,$B40,$B39,$WZERO,$WZERO,&BA1KA0202BM12,WERR)
+  SETMEL ($M42,1,$B37,&BA1KA0202ST64,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UHR (KWS2-HK-PU-1-EIN,UMSCH-KWS2-HK-PU,K-LAUFZEIT1)
+  VGLOH (K-LAUFZEIT1,KZEIT01,$B41)
+  RSS ($B41,$B43,UMSCH-KWS2-HK-PU,$B42)
+  UHR (KWS2-HK-PU-2-EIN,$B42,K-LAUFZEIT2)
+  VGLOH (K-LAUFZEIT2,KZEIT02,$B43)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UND21 (REP-SCH-HW-PUM-2,UMSCH-HARDW-PUMP,HARDW-PUM-2-ST,
+         $B44)
+  VVZ ($B44,$M43,$M44,$B45)
+  ODRMN (2,$B54,$B45,0,$B46,$B47)
+  BEFAUS (1,$B47,$B46,$WZERO,$WZERO,&BA1KA0204BM02,WERR)
+  UNDMN (1,REP-SCH-HW-PUM-1,2,HARDW-PUM-1-ST,
+         UMSCH-HARDW-PUMP,$B48,$WSCRATCH)
+  VVZ ($B48,$M45,$M46,$B49)
+  ODRMN (2,$B54,$B49,0,$B50,$B51)
+  BEFAUS (1,$B51,$B50,$WZERO,$WZERO,&BA1KA0204BM01,WERR)
+  UND2 (HARDW-PUM-1-AUS,HARDW-PUM-2-AUS,$B52)
+  VVZ ($B52,$M47,$M48,$B53)
+  RSS ($B53,K-ENTRIEGELN-EIN,$B54,$WSCRATCH)
+  SETMEL ($M49,1,$B54,&BA1KA0204AL01,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UHR (HARDW-PUM-1-EIN,UMSCH-HARDW-PUMP,K-LAUFZEIT3)
+  VGLOH (K-LAUFZEIT3,KZEIT03,$B55)
+  RSS ($B55,$B57,UMSCH-HARDW-PUMP,$B56)
+  UHR (HARDW-PUM-2-EIN,$B56,K-LAUFZEIT4)
+  VGLOH (K-LAUFZEIT4,KZEIT04,$B57)
+  ENDE 
+  ENDMODUL 

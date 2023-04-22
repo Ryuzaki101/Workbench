@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Name: %pluginName
+Bundle-SymbolicName: de.wisag.automation.micas.olt.terminal.telnet;singleton:=true
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/dsd
+ p:de.wisag.automation.micas.olt.core/terminal/de.wisag.automation.micas.olt.terminal.telnet;tag=v20
+ 0909160005
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.wisag.automation.micas.olt.terminal;bundle-version="[3.0.0,3.1.0)"
+Export-Package: de.wisag.automation.micas.olt.internal.terminal.telnet;x-internal:=true
+Bundle-Version: 2.0.101.v200909160005
+Bundle-ManifestVersion: 2
+

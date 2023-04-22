@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+# Copyright (c) 2003, 2008 Wind River Systems, Inc. and others.
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the Eclipse Public License v1.0
+# which accompanies this distribution, and is available at
+# http://www.eclipse.org/legal/epl-v10.html
+#
+# Initial Contributors:
+# The following Wind River employees contributed to the Terminal component
+# that contains this file: Chris Thew, Fran Litterio, Stephen Lamb,
+# Helmut Haigermoser and Ted Williams.
+#
+# Contributors:
+# Michael Scharf (Wind River) - split into core, view and connector plugins 
+# Martin Oberhuber (Wind River) - fixed copyright headers and beautified
+-->
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="%terminal.views.category.name"
+            id="Terminal">
+      </category>
+      <view
+            allowMultiple="true"
+            class="de.wisag.automation.micas.olt.internal.terminal.view.TerminalView"
+            icon="icons/cview16/terminal_view.gif"
+            category="Terminal"
+            name="%terminal.views.view.name"
+            id="de.wisag.automation.micas.olt.terminal.view.terminalview">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="%terminal.views.view.name"
+            class="de.wisag.automation.micas.olt.internal.terminal.view.TerminalPreferencePage"
+            id="de.wisag.automation.micas.olt.terminal.TerminalPreferencePage">
+      </page>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.fontDefinitions">
+      <fontDefinition
+            label="%terminal.views.view.font.label"
+            defaultsTo="org.eclipse.jface.textfont"
+            id="terminal.views.view.font.definition">
+         <description>
+            %terminal.views.view.font.description
+         </description>
+      </fontDefinition>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="de.wisag.automation.micas.olt.internal.terminal.view.TerminalPreferenceInitializer"/>
+   </extension>
+
+	<!-- ============================================ -->
+	<!-- Define Help Context                          -->
+	<!-- ============================================ -->
+	<extension point="org.eclipse.help.contexts">
+  		<contexts file="HelpContexts.xml"/>
+  		<contexts file="TerminalContexts.xml" plugin="de.wisag.automation.micas.olt.terminal"/> 
+	</extension>
+	<extension point="org.eclipse.help.toc">
+		<toc file="toc.xml"/>
+	</extension>
+
+ </plugin>

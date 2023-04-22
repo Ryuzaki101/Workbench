@@ -1,0 +1,589 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01205.GPS
+  ;*** Projektname    : MPI BTL1
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Meyer
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 12
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (ar20,5)
+  FloatK SW_ZL_Temp_Z3 (20.00)
+  FloatK SW_AL_Temp_R126 (22.00)
+  FloatK SW_AL_Temp_R213 (22.00)
+  WordV  Anl_WC_Da_R1_1
+  WordV  Anl_WC_He_R1_1
+  FloatK SW_AL_Temp_R212 (22.00)
+  FloatK SW_AL_Temp_R214 (22.00)
+  FloatK SW_AL_Temp_R215 (22.00)
+  FloatK SW_AL_Temp_R216 (22.00)
+  WordV  Anl_WC_He_EIN1
+  WordV  Anl_WC_Da_EIN1
+  WordK  K0 (0)
+  WordK  Anl_WC_Damen_R1 (0)
+  WordK  Anl_WC_Herren_R1 (0)
+  WordV  K1
+  FloatK SW_ZL_Temp_Z1 (20.00)
+  FloatK SW_ZL_Feu_Z1 (65.00)
+  FloatK SW_ZL_Temp_Anl (17.00)
+  FloatK SW_ZL_Temp_Z2 (20.00)
+  FloatK SW_ZL_Feu_Z2 (55.00)
+  FloatK SW_ZL_Temp_Z4 (19.00)
+  FloatK SW_ZL_Feu_Z4 (55.00)
+  FloatK SW_AL_Temp_R127 (22.00)
+  FloatK SW_AL_Temp_R210 (22.00)
+  FloatK SW_AL_Temp_R101 (20.00)
+  FloatK SW_AL_Temp_R104 (20.00)
+  WordV  Hauptanl_R0
+  WordV  Hauptanl_ST
+  WordV  Hauptanl_R1
+  WordV  Hauptanl_R2
+  FloatK SW_AL_Temp_Verha (22.00)
+  FloatK SW_RL_Temp_Haupt (10.00)
+  FloatK SW_AT_GW_PU_Haup (10.00)
+  FloatK SW_AT_GW_PU_Spue (10.00)
+  FloatK SW_ZU-Te_n_WRG (5.00)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (10.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B3
+  FloatK $M2 (10.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B4
+  IPAMB &M4 (145,1)
+  WordV  $WSCRATCH
+  IPAMB &M5 (145,2)
+  IPAMB &M6 (145,3)
+  IPAMB &M7 (145,5)
+  IPAMB &M8 (0,0)
+  IPAMB &M10 (37,3)
+  IPAMB &M11 (37,7)
+  IPAAW &M12 (127)
+  FloatV $F1
+  FloatK $M13 (45.00)
+  FloatK $M14 (15.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M15 (10.00)
+  WordV  $B5
+  WordK  $M16 (1)
+  IPAAW &M18 (128)
+  FloatV $F3
+  FloatK $M19 (45.00)
+  FloatK $M20 (15.00)
+  FloatV $F4
+  FloatK $M21 (10.00)
+  WordV  $B6
+  WordK  $M22 (1)
+  IPAAW &M24 (129)
+  FloatV $F5
+  FloatK $M25 (45.00)
+  FloatK $M26 (15.00)
+  FloatV $F6
+  FloatK $M27 (10.00)
+  WordV  $B7
+  WordK  $M28 (1)
+  IPAAW &M30 (130)
+  FloatV $F7
+  FloatK $M31 (75.00)
+  FloatK $M32 (35.00)
+  FloatV $F8
+  FloatK $M33 (10.00)
+  WordV  $B8
+  WordK  $M34 (1)
+  IPAAW &M36 (131)
+  FloatV $F9
+  FloatK $M37 (45.00)
+  FloatK $M38 (15.00)
+  FloatV $F10
+  FloatK $M39 (10.00)
+  WordV  $B9
+  WordK  $M40 (1)
+  IPAAW &M42 (132)
+  FloatV $F11
+  FloatK $M43 (75.00)
+  FloatK $M44 (35.00)
+  FloatV $F12
+  FloatK $M45 (10.00)
+  WordV  $B10
+  WordK  $M46 (1)
+  IPAAW &M48 (133)
+  FloatV $F13
+  FloatK $M49 (45.00)
+  FloatK $M50 (15.00)
+  FloatV $F14
+  FloatK $M51 (10.00)
+  WordV  $B11
+  WordK  $M52 (1)
+  IPAAW &M54 (134)
+  FloatV $F15
+  FloatK $M55 (75.00)
+  FloatK $M56 (35.00)
+  FloatV $F16
+  FloatK $M57 (10.00)
+  WordV  $B12
+  WordK  $M58 (1)
+  IPAAW &M60 (135)
+  FloatV $F17
+  FloatK $M61 (45.00)
+  FloatK $M62 (15.00)
+  FloatV $F18
+  FloatK $M63 (10.00)
+  WordV  $B13
+  WordK  $M64 (1)
+  IPAAW &M66 (136)
+  FloatV $F19
+  FloatK $M67 (45.00)
+  FloatK $M68 (15.00)
+  FloatV $F20
+  FloatK $M69 (10.00)
+  WordV  $B14
+  WordK  $M70 (1)
+  IPAAW &M72 (137)
+  FloatV $F21
+  FloatK $M73 (45.00)
+  FloatK $M74 (15.00)
+  FloatV $F22
+  FloatK $M75 (10.00)
+  WordV  $B15
+  WordK  $M76 (1)
+  IPAAW &M78 (138)
+  FloatV $F23
+  FloatK $M79 (45.00)
+  FloatK $M80 (15.00)
+  FloatV $F24
+  FloatK $M81 (10.00)
+  WordV  $B16
+  WordK  $M82 (1)
+  IPAAW &M84 (139)
+  FloatV $F25
+  FloatK $M85 (45.00)
+  FloatK $M86 (15.00)
+  FloatV $F26
+  FloatK $M87 (10.00)
+  WordV  $B17
+  WordK  $M88 (1)
+  IPAAW &M90 (140)
+  FloatV $F27
+  FloatK $M91 (45.00)
+  FloatK $M92 (15.00)
+  FloatV $F28
+  FloatK $M93 (10.00)
+  WordV  $B18
+  WordK  $M94 (1)
+  IPAAW &M96 (141)
+  FloatV $F29
+  FloatK $M97 (45.00)
+  FloatK $M98 (15.00)
+  FloatV $F30
+  FloatK $M99 (10.00)
+  WordV  $B19
+  WordK  $M100 (1)
+  IPAAW &M102 (142)
+  FloatV $F31
+  FloatK $M103 (45.00)
+  FloatK $M104 (15.00)
+  FloatV $F32
+  FloatK $M105 (10.00)
+  WordV  $B20
+  WordK  $M106 (1)
+  IPAAW &M108 (143)
+  FloatV $F33
+  FloatK $M109 (45.00)
+  FloatK $M110 (15.00)
+  FloatV $F34
+  FloatK $M111 (10.00)
+  WordV  $B21
+  WordK  $M112 (1)
+  IPAAW &M114 (144)
+  FloatV $F35
+  FloatK $M115 (45.00)
+  FloatK $M116 (15.00)
+  FloatV $F36
+  FloatK $M117 (10.00)
+  WordV  $B22
+  WordK  $M118 (1)
+  IPAAW &M120 (154)
+  FloatV $F37
+  FloatK $M121 (45.00)
+  FloatK $M122 (15.00)
+  FloatV $F38
+  FloatK $M123 (10.00)
+  WordV  $B23
+  WordK  $M124 (1)
+  IPAAW &M126 (165)
+  FloatV $F39
+  FloatK $M127 (40.00)
+  FloatK $M128 (10.00)
+  FloatV $F40
+  FloatK $M129 (10.00)
+  WordV  $B24
+  WordK  $M130 (1)
+  IPAAW &M132 (166)
+  FloatV $F41
+  FloatK $M133 (50.00)
+  FloatK $M134 (0.00)
+  FloatV $F42
+  FloatK $M135 (10.00)
+  WordV  $B25
+  WordK  $M136 (1)
+  IPAAW &M138 (167)
+  FloatV $F43
+  FloatK $M139 (50.00)
+  FloatK $M140 (0.00)
+  FloatV $F44
+  FloatK $M141 (10.00)
+  WordV  $B26
+  WordK  $M142 (1)
+  IPAAW &M144 (168)
+  FloatV $F45
+  FloatK $M145 (20.00)
+  FloatK $M146 (-5.00)
+  FloatV $F46
+  FloatK $M147 (10.00)
+  WordV  $B27
+  WordK  $M148 (1)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B34
+  WordV  $B30
+  IPAMB &M150 (37,5)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B35
+  WordV  $B33
+  IPAMB &M151 (37,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Sanierung
+  ;         BTL 1
+  ;Anlage:  Sollwerte
+  ;         Hauptanlage
+  ;         ABL-Ventilato-
+  ;         ren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_WC_Herren_R1,Anl_WC_He_EIN1)
+  BTRA (Anl_WC_Damen_R1,Anl_WC_Da_EIN1)
+  ENDE 
+  TASK (2,cycl,3000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anl_WC_He_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B3,Anl_WC_He_R1_1)
+  NICHT ($B1,$B3)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_WC_Da_EIN1,$M2,$M3,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B4,Anl_WC_Da_R1_1)
+  NICHT ($B2,$B4)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M4,1,Hauptanl_R0,$WSCRATCH)
+  MELEIN (&M5,1,Hauptanl_ST,$WSCRATCH)
+  MELEIN (&M6,1,Hauptanl_R1,$WSCRATCH)
+  MELEIN (&M7,1,Hauptanl_R2,$WSCRATCH)
+  MELEIN (&M8,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M8,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M10,1,Anl_WC_Damen_R1,$WSCRATCH)
+  MELEIN (&M11,1,Anl_WC_Herren_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M12,$F1,$WSCRATCH)
+  LIMIT ($F1,$M13,$M14,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M15,$B5)
+  AWT ($B5,$F2,SW_ZL_Temp_Anl,SW_ZL_Temp_Anl)
+  ANAUS (SW_ZL_Temp_Anl,$M16,&M12,$WSCRATCH)
+  ANEIN (&M18,$F3,$WSCRATCH)
+  LIMIT ($F3,$M19,$M20,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M21,$B6)
+  AWT ($B6,$F4,SW_ZL_Temp_Z3,SW_ZL_Temp_Z3)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Temp_Z3,$M22,&M18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M24,$F5,$WSCRATCH)
+  LIMIT ($F5,$M25,$M26,$F6)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M27,$B7)
+  AWT ($B7,$F6,SW_ZL_Temp_Z1,SW_ZL_Temp_Z1)
+  ANAUS (SW_ZL_Temp_Z1,$M28,&M24,$WSCRATCH)
+  ANEIN (&M30,$F7,$WSCRATCH)
+  LIMIT ($F7,$M31,$M32,$F8)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M33,$B8)
+  AWT ($B8,$F8,SW_ZL_Feu_Z1,SW_ZL_Feu_Z1)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Feu_Z1,$M34,&M30,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M36,$F9,$WSCRATCH)
+  LIMIT ($F9,$M37,$M38,$F10)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M39,$B9)
+  AWT ($B9,$F10,SW_ZL_Temp_Z2,SW_ZL_Temp_Z2)
+  ANAUS (SW_ZL_Temp_Z2,$M40,&M36,$WSCRATCH)
+  ANEIN (&M42,$F11,$WSCRATCH)
+  LIMIT ($F11,$M43,$M44,$F12)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M45,$B10)
+  AWT ($B10,$F12,SW_ZL_Feu_Z2,SW_ZL_Feu_Z2)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Feu_Z2,$M46,&M42,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M48,$F13,$WSCRATCH)
+  LIMIT ($F13,$M49,$M50,$F14)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M51,$B11)
+  AWT ($B11,$F14,SW_ZL_Temp_Z4,SW_ZL_Temp_Z4)
+  ANAUS (SW_ZL_Temp_Z4,$M52,&M48,$WSCRATCH)
+  ANEIN (&M54,$F15,$WSCRATCH)
+  LIMIT ($F15,$M55,$M56,$F16)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M57,$B12)
+  AWT ($B12,$F16,SW_ZL_Feu_Z4,SW_ZL_Feu_Z4)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Feu_Z4,$M58,&M54,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M60,$F17,$WSCRATCH)
+  LIMIT ($F17,$M61,$M62,$F18)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M63,$B13)
+  AWT ($B13,$F18,SW_AL_Temp_R126,SW_AL_Temp_R126)
+  ANAUS (SW_AL_Temp_R126,$M64,&M60,$WSCRATCH)
+  ANEIN (&M66,$F19,$WSCRATCH)
+  LIMIT ($F19,$M67,$M68,$F20)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M69,$B14)
+  AWT ($B14,$F20,SW_AL_Temp_R212,SW_AL_Temp_R212)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AL_Temp_R212,$M70,&M66,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M72,$F21,$WSCRATCH)
+  LIMIT ($F21,$M73,$M74,$F22)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M75,$B15)
+  AWT ($B15,$F22,SW_AL_Temp_R213,SW_AL_Temp_R213)
+  ANAUS (SW_AL_Temp_R213,$M76,&M72,$WSCRATCH)
+  ANEIN (&M78,$F23,$WSCRATCH)
+  LIMIT ($F23,$M79,$M80,$F24)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M81,$B16)
+  AWT ($B16,$F24,SW_AL_Temp_R214,SW_AL_Temp_R214)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AL_Temp_R214,$M82,&M78,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M84,$F25,$WSCRATCH)
+  LIMIT ($F25,$M85,$M86,$F26)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M87,$B17)
+  AWT ($B17,$F26,SW_AL_Temp_R215,SW_AL_Temp_R215)
+  ANAUS (SW_AL_Temp_R215,$M88,&M84,$WSCRATCH)
+  ANEIN (&M90,$F27,$WSCRATCH)
+  LIMIT ($F27,$M91,$M92,$F28)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M93,$B18)
+  AWT ($B18,$F28,SW_AL_Temp_R216,SW_AL_Temp_R216)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AL_Temp_R216,$M94,&M90,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M96,$F29,$WSCRATCH)
+  LIMIT ($F29,$M97,$M98,$F30)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M99,$B19)
+  AWT ($B19,$F30,SW_AL_Temp_R127,SW_AL_Temp_R127)
+  ANAUS (SW_AL_Temp_R127,$M100,&M96,$WSCRATCH)
+  ANEIN (&M102,$F31,$WSCRATCH)
+  LIMIT ($F31,$M103,$M104,$F32)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M105,$B20)
+  AWT ($B20,$F32,SW_AL_Temp_R210,SW_AL_Temp_R210)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AL_Temp_R210,$M106,&M102,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M108,$F33,$WSCRATCH)
+  LIMIT ($F33,$M109,$M110,$F34)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M111,$B21)
+  AWT ($B21,$F34,SW_AL_Temp_R101,SW_AL_Temp_R101)
+  ANAUS (SW_AL_Temp_R101,$M112,&M108,$WSCRATCH)
+  ANEIN (&M114,$F35,$WSCRATCH)
+  LIMIT ($F35,$M115,$M116,$F36)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M117,$B22)
+  AWT ($B22,$F36,SW_AL_Temp_R104,SW_AL_Temp_R104)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AL_Temp_R104,$M118,&M114,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M120,$F37,$WSCRATCH)
+  LIMIT ($F37,$M121,$M122,$F38)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M123,$B23)
+  AWT ($B23,$F38,SW_AL_Temp_Verha,SW_AL_Temp_Verha)
+  ANAUS (SW_AL_Temp_Verha,$M124,&M120,$WSCRATCH)
+  ANEIN (&M126,$F39,$WSCRATCH)
+  LIMIT ($F39,$M127,$M128,$F40)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M129,$B24)
+  AWT ($B24,$F40,SW_RL_Temp_Haupt,SW_RL_Temp_Haupt)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_RL_Temp_Haupt,$M130,&M126,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&M132,$F41,$WSCRATCH)
+  LIMIT ($F41,$M133,$M134,$F42)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M135,$B25)
+  AWT ($B25,$F42,SW_AT_GW_PU_Haup,SW_AT_GW_PU_Haup)
+  ANAUS (SW_AT_GW_PU_Haup,$M136,&M132,$WSCRATCH)
+  ANEIN (&M138,$F43,$WSCRATCH)
+  LIMIT ($F43,$M139,$M140,$F44)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M141,$B26)
+  AWT ($B26,$F44,SW_AT_GW_PU_Spue,SW_AT_GW_PU_Spue)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AT_GW_PU_Spue,$M142,&M138,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&M144,$F45,$WSCRATCH)
+  LIMIT ($F45,$M145,$M146,$F46)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M147,$B27)
+  AWT ($B27,$F46,SW_ZU-Te_n_WRG,SW_ZU-Te_n_WRG)
+  ANAUS (SW_ZU-Te_n_WRG,$M148,&M144,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODR2 (Hauptanl_R1,Hauptanl_R2,$B28)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B28,$B34,$B29)
+  NICHT ($B28,$B34)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Anl_WC_He_R1_1,$B29,$B30)
+  BEFAUS (1,Hauptanl_R0,$B30,$WZERO,$WZERO,&M150,$WSCRATCH)
+  ODR2 (Hauptanl_R1,Hauptanl_R2,$B31)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B31,$B35,$B32)
+  NICHT ($B31,$B35)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Anl_WC_Da_R1_1,$B32,$B33)
+  BEFAUS (1,Hauptanl_R0,$B33,$WZERO,$WZERO,&M151,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

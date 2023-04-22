@@ -1,0 +1,75 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0402.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-GES-A-SOLE-AUS (0)
+  WordK  K-GES-A-SOLE-EIN (1)
+  WordK  K-ENTRIEGELN-AUS (0)
+  WordK  K-ENTRIEGELN-EIN (1)
+  WordK  K-GES-A-IBM-AUS (0)
+  WordK  K-GES-A-IBM-EIN (1)
+  WordK  K-KWS-3-AUS (0)
+  WordK  K-KWS-3-EIN (1)
+  WordK  K-GLYKOL-AUS (0)
+  WordK  K-GLYKOL-EIN1 (0)
+  WordK  K-GLYKOL-EIN2 (0)
+  WordK  K-GLYKOL-EIN3 (1)
+  WordK  K-KWS1+2-AUS (0)
+  WordK  K-KWS1+2-EIN1 (0)
+  WordK  K-KWS1+2-EIN2 (0)
+  WordK  K-KWS1+2-EIN3 (1)
+  FloatK K-SW-KUEHLKOND (41.00)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1KA0000BF01 (102,1)
+  IPAMB &BA1KA0204BF01 (102,5)
+  IPAMB &BA1KA0004BF60 (102,9)
+  IPAMB &BA1KA0203BF02 (102,13)
+  IPAMB &BA1KA0000BF02 (100,9)
+  IPAMB &BA1KA0200BF02 (100,1)
+  WordK  $M0 (1)
+  IPAAW &BA1KA0201AA92 (118)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;EDV-Kaelte KG.
+  ;Einbauort:
+  ;Schaltschrank
+  ;Keller 2.UG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-GES-A-SOLE-AUS,K-GES-A-SOLE-EIN,$WZERO,$WZERO,
+          &BA1KA0000BF01,WERR)
+  BEFAUS (1,K-GES-A-IBM-AUS,K-GES-A-IBM-EIN,$WZERO,$WZERO,
+          &BA1KA0204BF01,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,K-ENTRIEGELN-AUS,K-ENTRIEGELN-EIN,$WZERO,$WZERO,
+          &BA1KA0004BF60,WERR)
+  BEFAUS (1,K-KWS-3-AUS,K-KWS-3-EIN,$WZERO,$WZERO,
+          &BA1KA0203BF02,WERR)
+  BEFAUS (1,K-GLYKOL-AUS,K-GLYKOL-EIN1,K-GLYKOL-EIN2,
+          K-GLYKOL-EIN3,&BA1KA0000BF02,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-KWS1+2-AUS,K-KWS1+2-EIN1,K-KWS1+2-EIN2,
+          K-KWS1+2-EIN3,&BA1KA0200BF02,WERR)
+  ANAUS (K-SW-KUEHLKOND,$M0,&BA1KA0201AA92,WERR)
+  ENDE 
+  ENDMODUL 

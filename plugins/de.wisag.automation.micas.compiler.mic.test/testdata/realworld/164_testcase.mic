@@ -1,0 +1,679 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 37_07_07.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 34101734
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 7
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  E_BTL_BM_LU1245
+  WordV  E_BTL_BM_NOTB
+  WordV  R_QUITT_AUS
+  WordK  K_1_STATUS (1)
+  WordV  S_PK
+  FloatV E_292_X_ZL1_TEMP
+  WordV  S_ERR
+  WordV  E_BTL_BM_QUITT
+  WordK  K_0_STATUS (0)
+  WordV  E_292_ST_EH_2
+  WordK  K_292_VP_FR_DDC (1)
+  WordV  E_292_ST_AL_BSK
+  FloatV Z_292_W_ZL_TEMP
+  WordV  E_292_ST_EH_1
+  WordV  Z_INIT_TASK_EIN
+  FloatV E_BTL_MW_AU_TEMP
+  FloatV E_292_W_AL_TEMP
+  WordV  E_292_ST_ZL1_BSK
+  FloatV E_292_X_ZL2_TEMP
+  WordV  A_292_EH2_TE_ST
+  WordV  A_292_SAMMEL_ST
+  WordV  A_292_DDC_FR_AUS
+  WordV  A_292_DDC_FR_EIN
+  WordV  A_292_EH1_EIN
+  WordV  A_292_EH2_EIN
+  FloatV A_292_EH1_HEIZ
+  FloatV A_292_EH2_HEIZ
+  WordV  Z_292_HAUPT
+  WordV  E_292_VP_FR_DDC
+  WordV  Z_292_QUITT
+  FloatV E_292_X_AL_TEMP
+  WordV  Z_292_HAUPT_ST
+  WordV  E_292_ST_ZL2_BSK
+  WordV  A_292_EH1_TE_ST
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (216,1)
+  IPAMB &M1 (216,3)
+  IPAMB &M2 (56,2)
+  WordV  $B1
+  IPAMB &M3 (56,6)
+  WordV  $B2
+  IPAMB &M4 (75,6)
+  WordV  $B3
+  IPAMB &M5 (75,7)
+  WordV  $B4
+  IPAMB &M6 (74,10)
+  WordV  $B5
+  IPAMB &M7 (255,3)
+  IPAMB &M8 (255,2)
+  IPAMB &M9 (255,1)
+  IPAAW &M10 (60)
+  IPAAW &M11 (58)
+  IPAAW &M12 (59)
+  IPAAW &M13 (253)
+  FloatK $M14 (8.00)
+  WordV  $B6
+  FloatK $M15 (8.00)
+  WordV  $B7
+  FloatK $M16 (8.00)
+  WordV  $B8
+  FloatK $M17 (8.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $WSCRATCH
+  FloatK $M18 (4.00)
+  FloatK $M19 (4.00)
+  FloatK $M20 (0.00)
+  WordV  $B11
+  FloatK $M21 (4.00)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  FloatK $M22 (4.00)
+  WordV  $B18
+  WordV  $B19
+  FloatK $M23 (4.00)
+  WordV  $HB3
+  FloatK $M24 (0.00)
+  FloatK $M25 (0.00)
+  FloatK $M26 (0.00)
+  FloatK $M27 (5.00)
+  FloatK $M28 (2.00)
+  WordV  $B20
+  FloatK $M29 (0.00)
+  FloatK $M30 (300.00)
+  WordV  $B21
+  FloatV $F1
+  FloatK $M31 (1.00)
+  WordV  $B22
+  WordV  $B23
+  WordV  $HB1
+  FloatV $F2
+  FloatK $M32 (3600.00)
+  WordV  $B24
+  WordV  $B25
+  FloatK $M33 (5.00)
+  FloatK $M34 (2.00)
+  WordV  $B26
+  FloatK $M35 (0.00)
+  FloatK $M36 (300.00)
+  WordV  $B27
+  FloatV $F3
+  FloatK $M37 (1.00)
+  WordV  $B28
+  WordV  $B29
+  FloatV $F4
+  FloatK $M38 (3600.00)
+  WordV  $B30
+  WordV  $B31
+  IPAMB &M39 (216,6)
+  IPAMB &M40 (216,8)
+  IPAMB &M41 (216,0)
+  IPAMB &M43 (80,5)
+  IPAMB &M44 (81,1)
+  IPAMB &M45 (81,5)
+  IPAMB &M46 (56,1)
+  IPAMB &M47 (56,5)
+  IPAAW &M48 (66)
+  IPAAW &M49 (67)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Neubau Biologisches
+  ;Tierlabor 2
+  ;KUNDE:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Bio-physikalische
+  ;Chemie Göttingen
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Raum 292
+  ;
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (K_1_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter aktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  TASK (2,cycl,500)
+  NICHT (Z_INIT_TASK_EIN,$HB0)
+  BENDE ($HB0)
+  ;Initialisierung
+  ;durchfühhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;BTLLU22-92A-X50
+  ; 
+  NICHT (K_292_VP_FR_DDC,$HB0)
+  BEFAUS (1,$HB0,K_292_VP_FR_DDC,$WZERO,$WZERO,&M0,S_ERR)
+  ;DDC FREIGABE
+  ;Nachfahren
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  BTRA (K_0_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter
+  ;deaktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;DDC Freigabe
+  ;Raum 292
+  ; 
+  ;BTLLU22-92A-X50
+  ; 
+  MELEIN (&M1,1,K_292_VP_FR_DDC,S_ERR)
+  BTRA (K_292_VP_FR_DDC,E_292_VP_FR_DDC)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Störung
+  ;Elektroerhitzer 1
+  ;Raum 292
+  ; 
+  NICHT ($B1,E_292_ST_EH_1)
+  MELEIN (&M2,1,$B1,S_ERR)
+  ;Störung
+  ;Elektroerhitzer 2
+  ;Raum 292
+  ; 
+  NICHT ($B2,E_292_ST_EH_2)
+  MELEIN (&M3,1,$B2,S_ERR)
+  ;BTLLU22-92A-X16
+  ; 
+  ;BTLLU22-92A-X06
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Störung
+  ;Zuluft 1 BSK
+  ;Raum 292
+  ; 
+  NICHT ($B3,E_292_ST_ZL1_BSK)
+  MELEIN (&M4,1,$B3,S_ERR)
+  ;BTLLU22-92A-A02
+  ;R
+  ; 
+  ;Störung
+  ;Zuluft 2 BSK
+  ;Raum 292
+  ; 
+  NICHT ($B4,E_292_ST_ZL2_BSK)
+  MELEIN (&M5,1,$B4,S_ERR)
+  ;Störung
+  ;Abluft   BSK
+  ;Raum 292
+  ; 
+  NICHT ($B5,E_292_ST_AL_BSK)
+  MELEIN (&M6,1,$B5,S_ERR)
+  ;BTLLU22-92A-A01
+  ;R
+  ; 
+  ;BTLLU22-92A-A03
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Meldung
+  ;Minbetrieb BTL 2
+  ; 
+  ;BTLAS06-00B-V04
+  ; 
+  MELEIN (&M7,1,E_BTL_BM_LU1245,S_ERR)
+  ;Meldung
+  ;Notbetrieb BTL 2
+  ; 
+  ;BTLAS06-00B-V03
+  ; 
+  MELEIN (&M8,1,E_BTL_BM_NOTB,S_ERR)
+  ;Meldung
+  ;Quittierung BTL 2
+  ; 
+  ;BTLAS06-00B-V02
+  ; 
+  MELEIN (&M9,1,E_BTL_BM_QUITT,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M10,E_292_X_AL_TEMP,S_ERR)
+  ;BTLLU22-92A-T12
+  ; 
+  ;Istwert
+  ;Ablufttemperatur
+  ;Raum 292
+  ; 
+  ANEIN (&M11,E_292_X_ZL1_TEMP,S_ERR)
+  ;BTLLU22-92A-T11
+  ; 
+  ;Istwert
+  ;Zulufttemperatur 1
+  ;Raum 292
+  ; 
+  ANEIN (&M12,E_292_X_ZL2_TEMP,S_ERR)
+  ;BTLLU22-92A-T21
+  ; 
+  ;Istwert
+  ;Zulufttemperatur 2
+  ;Raum 292
+  ; 
+  ANEIN (&M13,E_BTL_MW_AU_TEMP,S_ERR)
+  ;BTLAS06-00B-V20
+  ; 
+  ;Messwert
+  ;Aussentemperatur
+  ;BTL 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  SOLKEN (15,K_1_STATUS,E_292_W_AL_TEMP,S_ERR)
+  ;Sollkennlinie
+  ;Raum 292
+  ; 
+  ;BTLLU22-92A-T50
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  TASK (4,cycl,2000)
+  ;Kopfsteuerung der
+  ;Anlage:
+  ;- virtuelle Störungen
+  ;- Sammelstörung
+  ;- Hauptstörung
+  ;- Anlage Einschalten
+  ; 
+  ;Steuerungs und
+  ;Regelungs-
+  ;Funktionen der Anlage
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MOKY (E_BTL_BM_QUITT,$M14,$B6)
+  MOKY (E_292_VP_FR_DDC,$M15,$B7)
+  MOKY (K_0_STATUS,$M16,$B8)
+  MOKY (K_0_STATUS,$M17,$B9)
+  ODRMN (4,$B6,$B7,$B8,$B9,0,$B10,$WSCRATCH)
+  MOKY ($B10,$M18,Z_292_QUITT)
+  VVZ ($B10,$M19,$M20,$B11)
+  MOKY ($B11,$M21,R_QUITT_AUS)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- Rückm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ;_
+  ; 
+  ;Es kann die Software
+  ;und die Hardware
+  ;Veriegelung quittiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODRMN (9,E_292_ST_AL_BSK,E_292_ST_ZL1_BSK,E_292_ST_ZL2_BSK,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,0,$B12,$WSCRATCH)
+  ODRMN (3,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B13,$WSCRATCH)
+  ODR2 ($B12,$B13,$B14)
+  RSS ($B14,Z_292_QUITT,Z_292_HAUPT_ST,S_PK)
+  ;Anlagenstörung
+  ;Störungen die zum
+  ;Abschalten der Anlage
+  ;führen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODRMN (9,E_292_ST_EH_1,E_292_ST_EH_2,K_0_STATUS,
+         A_292_EH1_TE_ST,A_292_EH2_TE_ST,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B15,$WSCRATCH)
+  ODRMN (3,K_0_STATUS,K_0_STATUS,Z_292_HAUPT_ST,0,$B16,
+         $WSCRATCH)
+  ODR2 ($B15,$B16,$B17)
+  RSS ($B17,Z_292_QUITT,A_292_SAMMEL_ST,S_PK)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UND11 (E_292_VP_FR_DDC,Z_292_HAUPT_ST,Z_292_HAUPT)
+  MOKY (Z_292_HAUPT_ST,$M22,$B18)
+  ODRMN (3,$B18,E_BTL_BM_NOTB,E_BTL_BM_LU1245,0,
+         A_292_DDC_FR_AUS,$WSCRATCH)
+  UNDMN (0,2,E_BTL_BM_NOTB,E_BTL_BM_LU1245,$B19,$WSCRATCH)
+  MOKY ($B19,$M23,A_292_DDC_FR_EIN)
+  ;Anlage EINSCHALTEN
+  ;- DDC Freigabe
+  ;- Hauptstörung
+  ;- BTL Notbetrieb
+  ;- BTL Lüftungbetriebs-
+  ;  Art 1,2,4,5
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  NICHT (Z_292_HAUPT,$HB3)
+  REGLER (30,K_1_STATUS,$HB3,$M24,Z_292_W_ZL_TEMP,S_ERR)
+  ;Ablufttemperaturregler
+  ;- Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT (Z_292_HAUPT,$HB3)
+  REGLER (31,K_1_STATUS,$HB3,$M25,A_292_EH1_HEIZ,S_ERR)
+  ;Zulufttemperaturregler
+  ;Erhitzer 1
+  ;- Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  NICHT (Z_292_HAUPT,$HB3)
+  REGLER (32,K_1_STATUS,$HB3,$M26,A_292_EH2_HEIZ,S_ERR)
+  ;Zulufttemperaturregler
+  ;Erhitzer 2
+  ;- Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  VGLEH (A_292_EH1_HEIZ,$M27,$M28,$B20)
+  VVZ ($B20,$M29,$M30,$B21)
+  UND21 ($B21,Z_292_HAUPT,E_292_ST_EH_1,A_292_EH1_EIN)
+  ;Bedarfabhängiges
+  ;Einschalten des
+  ;Elektroerhitzers
+  ;Y>5> Erhitzer Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Erhitzer Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  SUB2 (Z_292_W_ZL_TEMP,E_292_X_ZL1_TEMP,$F1)
+  VGLOH ($F1,$M31,$B22)
+  UND21 ($B22,Z_292_HAUPT,Z_292_QUITT,$B23)
+  NICHT ($B23,$HB1)
+  UHR (K_1_STATUS,$HB1,$F2)
+  VGLOH ($F2,$M32,$B24)
+  UND2 ($B24,Z_292_HAUPT,$B25)
+  RSS ($B25,Z_292_QUITT,A_292_EH1_TE_ST,S_PK)
+  ;Ist die Regeldifferenz
+  ;zwischen Ist- Sollwert
+  ;größer als   -1K und
+  ;hält dieser Zustand
+  ;länger als 60 Minuten an
+  ;wird eine virtuelle
+  ;Störung gesetzt.
+  ;Überwachung für
+  ;Temperaturregelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  VGLEH (A_292_EH2_HEIZ,$M33,$M34,$B26)
+  VVZ ($B26,$M35,$M36,$B27)
+  UND21 ($B27,Z_292_HAUPT,E_292_ST_EH_2,A_292_EH2_EIN)
+  ;Bedarfabhängiges
+  ;Einschalten des
+  ;Elektroerhitzers
+  ;Y>5> Erhitzer Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Erhitzer Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  SUB2 (Z_292_W_ZL_TEMP,E_292_X_ZL2_TEMP,$F3)
+  VGLOH ($F3,$M37,$B28)
+  UND21 ($B28,Z_292_HAUPT,Z_292_QUITT,$B29)
+  NICHT ($B29,$HB1)
+  UHR (K_1_STATUS,$HB1,$F4)
+  VGLOH ($F4,$M38,$B30)
+  UND2 ($B30,Z_292_HAUPT,$B31)
+  RSS ($B31,Z_292_QUITT,A_292_EH2_TE_ST,S_PK)
+  ;Ist die Regeldifferenz
+  ;zwischen Ist- Sollwert
+  ;größer als   -1K und
+  ;hält dieser Zustand
+  ;länger als 60 Minuten an
+  ;wird eine virtuelle
+  ;Störung gesetzt.
+  ;Überwachung für
+  ;Temperaturregelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  TASK (5,cycl,1000)
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Digitale Werte
+  ;g
+  ; 
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_292_EH1_TE_ST,&M39,S_ERR)
+  ;BTLLU22-92A-S61
+  ; 
+  SETMEL (K_1_STATUS,1,A_292_EH2_TE_ST,&M40,S_ERR)
+  ;Temperatur Störung
+  ;E-Erhitz.1 Raum 292
+  ; 
+  ;BTLLU22-92A-S62
+  ; 
+  SETMEL (K_1_STATUS,1,A_292_SAMMEL_ST,&M41,S_ERR)
+  ;Temperatur Störung
+  ;E-Erhitz.2 Raum 292
+  ; 
+  ;BTLLU22-92A-S50
+  ; 
+  ;Sammelstörung
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;BTLLU22-92A-X50
+  ; 
+  BEFAUS (1,A_292_DDC_FR_AUS,A_292_DDC_FR_EIN,$WZERO,$WZERO,
+          &M0,S_ERR)
+  ;DDC Freigabe
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ;BTLLU22-92A-X11
+  ; 
+  NICHT (Z_292_HAUPT,$HB0)
+  BEFAUS (1,$HB0,Z_292_HAUPT,$WZERO,$WZERO,&M43,S_ERR)
+  ;Zuluftklappe 1
+  ;Raum 292
+  ; 
+  ;BTLLU22-92A-X21
+  ; 
+  NICHT (Z_292_HAUPT,$HB0)
+  BEFAUS (1,$HB0,Z_292_HAUPT,$WZERO,$WZERO,&M44,S_ERR)
+  ;Zuluftklappe 2
+  ;Raum 292
+  ; 
+  ;BTLLU22-65A-X12
+  ; 
+  NICHT (Z_292_HAUPT,$HB0)
+  BEFAUS (1,$HB0,Z_292_HAUPT,$WZERO,$WZERO,&M45,S_ERR)
+  ;Abluftklappe
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ;BTLLU22-92A-X06
+  ; 
+  NICHT (A_292_EH1_EIN,$HB0)
+  BEFAUS (1,$HB0,A_292_EH1_EIN,$WZERO,$WZERO,&M46,S_ERR)
+  ;Elektroerhitzer 1
+  ;Raum 292
+  ; 
+  ;BTLLU22-92A-X16
+  ; 
+  NICHT (A_292_EH2_EIN,$HB0)
+  BEFAUS (1,$HB0,A_292_EH2_EIN,$WZERO,$WZERO,&M47,S_ERR)
+  ;Elektroerhitzer 2
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ;BTLLU22-92A-Y06
+  ; 
+  ANAUS (A_292_EH1_HEIZ,K_1_STATUS,&M48,S_ERR)
+  ;Elektroerhitzer 1
+  ;Raum 292
+  ; 
+  ;BTLLU22-92A-Y16
+  ; 
+  ANAUS (A_292_EH2_HEIZ,K_1_STATUS,&M49,S_ERR)
+  ;Elektroerhitzer 2
+  ;Raum 292
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

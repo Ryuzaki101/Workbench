@@ -1,0 +1,124 @@
+Wisag 09.05.2011
+	PRIO 1: Bug: #63 
+	Onlinetest wählt nicht immer das richtige Gerät aus (CHD 12)
+
+PRIO 1: Bug: #64
+	RMB auf h86 lädt immer auf Gerät 2!
+	
+Bug:
+    MB10, SP10 fehlen
+
+Bug: 
+	Mic Import werden die Seiten nicht hochgezählt.
+
+Bug: 
+	Mic Import Bausteine werden nicht hochgezählt (Alle Prio 1).
+
+Bug Diagrammeditor:
+		Erkennung von FKGX (X=(1,2)) nur "FKG" wird erkannt.
+		
+Bug Diagrammeditor:
+		beim Kopieren vom FKG werden die Parameter nicht mitkopiert. 	
+
+PRIO 1 Bug Diagrammeditor (#65) : 
+		bei Änderung der Referenz wird das Diagramm nicht aktualisiert.
+
+PRIO 1 Bug beim Symbolimport (#66):
+		Referenzen sollen aktualisiert werden (per Namen zuordnen, dann werte Ändern).	
+	
+Feature Diagrammeditor :
+     Suche nach Variablen, Referenzen, Konstanten im Module Editor
+
+PRIO 1 Feature Onlinetest (#67):
+	 Anzeige der Onlinetestwerte im Diagramm	 
+
+PRIO 1 Feature Onlinetest (#68) :
+	 Add all Variable from One Page
+	 Add Multi Selection, Variables 	
+	 Add Selection from Tableviewer (Overviewpage) 
+	 
+Feature Importer:
+    Ungenutzte Errorvariable (nur verbunden) nicht importieren.
+	
+Feature Diagrammeditor:
+	Kreuzungen sollen besser erkennbar sein, sollten DIN-gerecht angezeigt werden (Kreung mit Schleifchen).
+	(Andreas Unger fragen)
+				
+Feature :
+	Beim Import FGText importieren, mit in Referenzen aufnehmen. Als Tooltip bei Referenzen aufnehmen.
+
+Feature Onlinetest:
+	Bei Bitwerten
+
+PRIO 1 : Feature Licensemanager (#69):
+	- nur Lizensierter Modus kann etwas schreiben.
+======================================================================================================================
+Servicemanager:
+	- 16.06. 2011 Managementtermin
+
+Feature Servicemanager (Ablaufferfolgung für Servicemanager) :
+	- run thin HW discovery, only 
+	- Seriennummer
+	  (Vergeben bei alten Geräten!?)
+	- aus Knowlegbase Seriennummer->Knowlegbase->bekannte Probleme, Release Notes
+	- Knowlegbase (/mkb/[docId]:
+	  PageMetadata ([docid].xml):
+	  + Title         : 
+	  + Created       :
+	  + Type          : 
+	  + Last modified : 
+	  + DocId		  : int
+	  + Gerätetyp -> Verweis auf HWDB
+	  + Hardware Version -> Available HwRevisions
+	  + Firmware Version -> Available FwRevisions 
+	  + Kategorie (Zuordnung zu Funktionsgruppen)
+	  + ShortSolution
+	  + ActionForMaintenancePlan:
+	  
+	  PageContent ([docid].wiki)::
+	  + WikiSyntax, stored in svn
+	  + rendered by wiki engine
+	  + possible links to other articles.
+	  mkb.index:
+	  + MetaDataIndex, FulltextIndex 
+	  
+	  
+	  http://matheclipse.org/en/Java_Wikipedia_API
+	  http://jamwiki.org
+      	  
+	- Seriennummer in MAC-Adresse vergraben
+	- Wartungsplan :
+		http://www.reliableplant.com/Read/338/effective-maintenance-plan
+		Formale Beschreibung.
+	    Typ der Wartung,
+		Partial derived from Knowlegebase
+		
+	- Wartungsbericht : 
+		- über getauschte Batterien.	
+		- geänderte HW
+	- ca 270 Kunden. 	
+	- Taggen von Servicemanager aus (SVN!)
+	- Speichern der ServiceId 
+	- vollständige HW-Datenbank aus gatmod.h
+	
+	
+=====================================================================================================================	
+BUKL:
+	- Abbildung von Adressen in die Datenbank
+	- FGAdresse in der Datenbank 6 (x2*16 Bit)
+
+Datenbank:
+	- 
+
+Mapping :
+	- Konfiguration der Dialog "Einzelmeldungen"
+	- 1 stufige Schaltbefehle
+
+Mapping ist abgebildet in die Datenbank:
+     FGLIST		-> IPZEIL  (Schliesser, Öffner
+		|		-> IPMELD  (EreignistextNr, SelbstmeldendKommend)
+		|
+		+--------> FGAdr, Zeile, Spalte
+
+Unterstation 255 Zeile :
+	

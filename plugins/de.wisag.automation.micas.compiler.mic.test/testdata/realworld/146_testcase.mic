@@ -1,0 +1,891 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI20404.GPS
+  ;*** Projektname    : MPI Turm 2
+  ;*** Projektnummer  : 59100480
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Peters
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 4
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Außentemp<10
+  WordV  1_Keilr_Zul_Vent
+  WordV  2_Tableau_Aus
+  WordV  2_Tableau_Ein1
+  WordV  1_Tableau_Aus
+  WordV  1_Tableau_Ein1
+  WordV  1_Tableau_Ein2
+  WordV  2_Tableau_Ein2
+  WordK  K0 (0)
+  WordV  2_BSK_Abl_3
+  WordV  2_BSK_Abl_2
+  FloatK 2_SW_Zul_Temp (22.00)
+  WordV  1_Keilr_Abl_Vent
+  WordV  1_vorgespuelt
+  WordV  1_Anlage_gestoe
+  WordV  2_Zul_Vent_R2
+  WordV  2_Abl_Vent_R0
+  FloatK 1_SW_Zul_Temp (22.00)
+  WordV  2_Abl_Vent_ST
+  WordV  2_Abl_Vent_R1
+  WordV  2_Abl_Vent_R2
+  WordV  2_Aul_Klp_R1
+  WordV  2_Laufueberw_Zul
+  WordV  2_Laufueberw_Abl
+  WordV  2_Frostwaechter
+  WordV  2_BSK_Abl_1
+  WordV  2_Anlage_R1_1
+  WordV  2_Anlage_R2_1
+  WordV  1_Anlage_R1_2
+  WordV  1_Anlage_R2_2
+  WordV  2_Anlage_R1_2
+  WordV  Entriegeln
+  WordV  2_Anlage_ST
+  WordV  1_Zul_Vent_R0
+  WordV  2_Aul_Klp_R0
+  WordV  2_Zul_Vent_ST
+  WordV  2_Zul_Vent_R1
+  WordV  2_Anlage_gestoe
+  WordK  1_Anlage_R1 (0)
+  WordK  2_Anlage_R1 (0)
+  FloatV 1_ERH_vorgespuel
+  WordK  2_Anlage_R2 (0)
+  WordK  1_Anlage_R2 (0)
+  WordV  1_Anlage_EIN1
+  WordV  1_Anlage_EIN2
+  WordV  2_Anlage_EIN1
+  WordV  2_Anlage_EIN2
+  WordV  1_Zul_Vent_R1
+  WordV  1_Abl_Vent_R1
+  WordV  1_Aul_Klp_R1
+  WordV  1_Anlage_ST
+  WordV  1_Anlage_R1_1
+  WordV  1_Frostwaechter
+  WordV  1_Anlage_R2_1
+  FloatV Aussentemp
+  FloatV 1_ERH_Frost
+  FloatV 2_ERH_vorspuelen
+  FloatV 2_ERH_Ventil
+  WordV  Entr.Befehl
+  WordV  1_vorspuelen
+  WordV  1_Vent_einschal
+  FloatV 2_ZL_Temp
+  FloatV 1_ZL_Temp
+  WordV  1_Abl_Vent_R0
+  WordV  1_Zul_Vent_R2
+  WordV  1_BSK_Abl_1
+  WordV  1_Anlage_R0
+  FloatV 2_Regler_SG
+  WordV  2_Zul_Vent_R0
+  WordV  2_Anlage_R0
+  WordV  2_Anlage_R2_2
+  FloatV 2_ERH_Frost
+  FloatV 2_ERH_vorgespuel
+  WordV  Unterspannung
+  WordV  K1
+  FloatV 1_ERH_Ventil
+  WordV  Entr.Taster
+  WordV  1_Laufueberw_Zul
+  WordV  1_Abl_Vent_ST
+  WordV  1_BSK_Abl_2
+  WordV  1_Aul_Klp_R0
+  WordV  1_Zul_Vent_ST
+  WordV  1_Laufueberw_Abl
+  FloatV 1_ERH_vorspuelen
+  WordV  1_Briket_voll
+  FloatV 1_Regler_SG
+  WordV  2_Außentemp<10
+  WordV  2_vorgespuelt
+  WordV  2_vorspuelen
+  WordV  2_Vent_einschal
+  FloatV 2_Aussentemp
+  WordV  2_Keilr_Abl_Vent
+  WordV  2_Keilr_Zul_Vent
+  WordV  2_Rep-Schal_Abl
+  WordV  2_Rep_Abl_Ven_ST
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B5
+  FloatK $M2 (4.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B6
+  FloatK $M4 (4.00)
+  FloatK $M5 (0.00)
+  WordV  $B3
+  WordV  $B7
+  FloatK $M6 (4.00)
+  FloatK $M7 (0.00)
+  WordV  $B4
+  WordV  $B8
+  IPAMB &M8 (110,1)
+  WordV  $WSCRATCH
+  IPAMB &M9 (110,2)
+  IPAMB &M10 (110,3)
+  IPAMB &M11 (110,5)
+  IPAMB &M12 (110,9)
+  IPAMB &M13 (110,10)
+  IPAMB &M14 (110,11)
+  IPAMB &M15 (110,13)
+  IPAMB &M16 (29,9)
+  IPAMB &M17 (29,10)
+  IPAMB &M18 (29,11)
+  IPAMB &M19 (29,13)
+  IPAMB &M20 (32,5)
+  IPAMB &M21 (32,6)
+  IPAMB &M22 (32,7)
+  IPAMB &M23 (23,0)
+  IPAMB &M24 (31,13)
+  IPAMB &M25 (31,15)
+  IPAMB &M26 (35,10)
+  IPAMB &M27 (35,11)
+  IPAMB &M28 (35,14)
+  WordV  $HB2
+  IPAMB &M29 (40,10)
+  IPAMB &M30 (40,11)
+  IPAMB &M31 (38,6)
+  IPAMB &M32 (27,1)
+  IPAMB &M33 (27,2)
+  IPAMB &M34 (27,3)
+  IPAMB &M35 (27,5)
+  IPAMB &M36 (28,1)
+  IPAMB &M37 (28,2)
+  IPAMB &M38 (28,3)
+  IPAMB &M39 (28,5)
+  IPAMB &M40 (32,9)
+  IPAMB &M41 (32,11)
+  IPAMB &M42 (35,2)
+  IPAMB &M43 (35,3)
+  IPAMB &M44 (35,6)
+  IPAMB &M45 (40,14)
+  IPAMB &M46 (40,15)
+  IPAMB &M47 (41,2)
+  IPAMB &M48 (28,11)
+  IPAMB &M49 (27,11)
+  IPAMB &M50 (27,15)
+  IPAMB &M51 (36,11)
+  IPAMB &M52 (35,15)
+  IPAMB &M53 (36,10)
+  IPAMB &M54 (35,7)
+  IPAMB &M61 (37,11)
+  IPAMB &M62 (23,11)
+  IPAMB &M63 (23,14)
+  IPAAW &M64 (4)
+  IPAAW &M65 (5)
+  IPAMW &M66 (255)
+  FloatK $M67 (11.00)
+  FloatK $M68 (1.00)
+  WordV  $HB3
+  WordV  $B9
+  FloatK $M69 (60.00)
+  FloatK $M70 (60.00)
+  IPAAW &M71 (250)
+  FloatK $M72 (11.00)
+  FloatK $M73 (1.00)
+  WordV  $B10
+  FloatK $M74 (60.00)
+  FloatK $M75 (60.00)
+  IPAAW &M76 (111)
+  FloatV $F1
+  FloatK $M77 (32.00)
+  FloatK $M78 (15.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M79 (10.00)
+  WordV  $B11
+  WordK  $M80 (1)
+  IPAAW &M82 (113)
+  FloatV $F3
+  FloatK $M83 (32.00)
+  FloatK $M84 (15.00)
+  FloatV $F4
+  FloatK $M85 (10.00)
+  WordV  $B12
+  WordK  $M86 (1)
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  FloatK $M88 (30.00)
+  FloatK $M89 (0.00)
+  WordV  $B16
+  WordK  $M90 (1)
+  IPAMB &M91 (110,6)
+  WordV  $B17
+  WordV  $B18
+  FloatK $M92 (30.00)
+  FloatK $M93 (0.00)
+  WordV  $B19
+  WordK  $M94 (1)
+  IPAMB &M95 (110,7)
+  WordV  $B20
+  WordV  $B21
+  FloatK $M96 (120.00)
+  FloatK $M97 (0.00)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $HB1
+  FloatK $M99 (0.00)
+  FloatK $M100 (0.00)
+  FloatK $M101 (100.00)
+  FloatK $M102 (0.00)
+  FloatV $F5
+  WordV  $B25
+  FloatK $M103 (100.00)
+  FloatK $M104 (0.00)
+  FloatV $F6
+  FloatK $M105 (180.00)
+  FloatV $F7
+  FloatK $M106 (0.00)
+  FloatK $M107 (0.00)
+  FloatK $M108 (100.00)
+  WordV  $B26
+  WordV  $B27
+  FloatK $M109 (0.00)
+  FloatK $M110 (10.00)
+  WordV  $B28
+  WordV  $B29
+  FloatK $M111 (15.00)
+  FloatK $M112 (0.00)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  WordV  $B36
+  WordV  $B42
+  WordV  $B37
+  WordV  $B38
+  WordV  $B43
+  WordV  $B39
+  WordV  $B40
+  WordV  $B44
+  WordV  $B41
+  WordK  $M116 (1)
+  IPAMB &M118 (24,9)
+  IPAMB &M119 (25,13)
+  IPAMB &M120 (26,9)
+  WordV  $B45
+  WordV  $B46
+  IPAMB &M121 (24,13)
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  FloatK $M122 (30.00)
+  FloatK $M123 (0.00)
+  WordV  $B50
+  WordK  $M124 (1)
+  IPAMB &M125 (110,14)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  FloatK $M126 (30.00)
+  FloatK $M127 (0.00)
+  WordV  $B54
+  WordK  $M128 (1)
+  IPAMB &M129 (110,15)
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  FloatK $M130 (120.00)
+  FloatK $M131 (0.00)
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  FloatK $M133 (0.00)
+  FloatK $M134 (0.00)
+  FloatK $M135 (100.00)
+  FloatK $M136 (0.00)
+  FloatV $F8
+  WordV  $B62
+  FloatK $M137 (100.00)
+  FloatK $M138 (0.00)
+  FloatV $F9
+  FloatK $M139 (180.00)
+  FloatV $F10
+  FloatK $M140 (0.00)
+  FloatK $M141 (0.00)
+  FloatK $M142 (100.00)
+  WordV  $B63
+  WordV  $B64
+  FloatK $M143 (0.00)
+  FloatK $M144 (10.00)
+  WordV  $B65
+  WordV  $B66
+  FloatK $M145 (15.00)
+  FloatK $M146 (0.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  FloatK $M148 (0.00)
+  FloatK $M149 (10.00)
+  WordV  $B73
+  WordV  $B74
+  FloatK $M150 (25.00)
+  FloatK $M151 (0.00)
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  WordV  $B78
+  FloatK $M153 (10.00)
+  FloatK $M154 (0.00)
+  WordV  $B79
+  WordK  $M155 (1)
+  IPAAW &M156 (9)
+  WordK  $M157 (1)
+  IPAAW &M158 (10)
+  WordV  $B80
+  WordV  $B86
+  WordV  $B81
+  WordV  $B82
+  WordV  $B87
+  WordV  $B83
+  WordV  $B84
+  WordV  $B88
+  WordV  $B85
+  WordK  $M160 (1)
+  IPAMB &M162 (42,9)
+  WordV  $B89
+  IPAMB &M163 (41,9)
+  WordV  $B90
+  IPAMB &M164 (41,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0010
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         Turm 2
+  ;Anlage:  Späneabsaugung
+  ;         Vorzeichen 1_
+  ;         und
+  ;         Fahrbereitscha.
+  ;         Vorzeichen 2_
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (1_Anlage_R1,1_Anlage_EIN1)
+  BTRA (1_Anlage_R2,1_Anlage_EIN2)
+  BTRA (2_Anlage_R1,2_Anlage_EIN1)
+  BTRA (2_Anlage_R2,2_Anlage_EIN2)
+  ENDE 
+  TASK (2,cycl,2000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (1_Anlage_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B5,1_Anlage_R1_1)
+  NICHT ($B1,$B5)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (1_Anlage_EIN2,$M2,$M3,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B6,1_Anlage_R2_1)
+  NICHT ($B2,$B6)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (2_Anlage_EIN1,$M4,$M5,$B3)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B3,$B7,2_Anlage_R1_1)
+  NICHT ($B3,$B7)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (2_Anlage_EIN2,$M6,$M7,$B4)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B4,$B8,2_Anlage_R2_1)
+  NICHT ($B4,$B8)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,1_Anlage_R0,$WSCRATCH)
+  MELEIN (&M9,1,1_Anlage_ST,$WSCRATCH)
+  MELEIN (&M10,1,1_Anlage_R1,$WSCRATCH)
+  MELEIN (&M11,1,1_Anlage_R2,$WSCRATCH)
+  MELEIN (&M12,1,2_Anlage_R0,$WSCRATCH)
+  MELEIN (&M13,1,2_Anlage_ST,$WSCRATCH)
+  MELEIN (&M14,1,2_Anlage_R1,$WSCRATCH)
+  MELEIN (&M15,1,2_Anlage_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,1_Zul_Vent_R0,$WSCRATCH)
+  MELEIN (&M17,1,1_Zul_Vent_ST,$WSCRATCH)
+  MELEIN (&M18,1,1_Zul_Vent_R1,$WSCRATCH)
+  MELEIN (&M19,1,1_Zul_Vent_R2,$WSCRATCH)
+  MELEIN (&M20,1,1_Abl_Vent_R0,$WSCRATCH)
+  MELEIN (&M21,1,1_Abl_Vent_ST,$WSCRATCH)
+  MELEIN (&M22,1,1_Abl_Vent_R1,$WSCRATCH)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,1_Aul_Klp_R0,$WSCRATCH)
+  MELEIN (&M25,1,1_Aul_Klp_R1,$WSCRATCH)
+  MELEIN (&M26,1,1_Laufueberw_Zul,$WSCRATCH)
+  MELEIN (&M27,1,1_Laufueberw_Abl,$WSCRATCH)
+  MELEIN (&M28,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1_Frostwaechter)
+  MELEIN (&M29,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1_BSK_Abl_1)
+  MELEIN (&M30,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1_BSK_Abl_2)
+  MELEIN (&M31,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1_Briket_voll)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,2_Zul_Vent_R0,$WSCRATCH)
+  MELEIN (&M33,1,2_Zul_Vent_ST,$WSCRATCH)
+  MELEIN (&M34,1,2_Zul_Vent_R1,$WSCRATCH)
+  MELEIN (&M35,1,2_Zul_Vent_R2,$WSCRATCH)
+  MELEIN (&M36,1,2_Abl_Vent_R0,$WSCRATCH)
+  MELEIN (&M37,1,2_Abl_Vent_ST,$WSCRATCH)
+  MELEIN (&M38,1,2_Abl_Vent_R1,$WSCRATCH)
+  MELEIN (&M39,1,2_Abl_Vent_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,2_Aul_Klp_R0,$WSCRATCH)
+  MELEIN (&M41,1,2_Aul_Klp_R1,$WSCRATCH)
+  MELEIN (&M42,1,2_Laufueberw_Zul,$WSCRATCH)
+  MELEIN (&M43,1,2_Laufueberw_Abl,$WSCRATCH)
+  MELEIN (&M44,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2_Frostwaechter)
+  MELEIN (&M45,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2_BSK_Abl_1)
+  MELEIN (&M46,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2_BSK_Abl_2)
+  MELEIN (&M47,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2_BSK_Abl_3)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M48,1,1_Tableau_Aus,$WSCRATCH)
+  MELEIN (&M49,1,1_Tableau_Ein1,$WSCRATCH)
+  MELEIN (&M50,1,1_Tableau_Ein2,$WSCRATCH)
+  MELEIN (&M51,1,2_Tableau_Aus,$WSCRATCH)
+  MELEIN (&M52,1,2_Tableau_Ein1,$WSCRATCH)
+  MELEIN (&M53,1,2_Tableau_Ein2,$WSCRATCH)
+  MELEIN (&M54,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2_Rep-Schal_Abl)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M61,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  MELEIN (&M62,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M63,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M64,1_ZL_Temp,$WSCRATCH)
+  ANEIN (&M65,2_ZL_Temp,$WSCRATCH)
+  ANEIN (&M66,Aussentemp,$WSCRATCH)
+  VGLEH (Aussentemp,$M67,$M68,$HB3)
+  NICHT ($HB3,$B9)
+  VVZ ($B9,$M69,$M70,Außentemp<10)
+  ANEIN (&M71,2_Aussentemp,$WSCRATCH)
+  VGLEH (2_Aussentemp,$M72,$M73,$HB3)
+  NICHT ($HB3,$B10)
+  VVZ ($B10,$M74,$M75,2_Außentemp<10)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M76,$F1,$WSCRATCH)
+  LIMIT ($F1,$M77,$M78,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M79,$B11)
+  AWT ($B11,$F2,1_SW_Zul_Temp,1_SW_Zul_Temp)
+  ANAUS (1_SW_Zul_Temp,$M80,&M76,$WSCRATCH)
+  ANEIN (&M82,$F3,$WSCRATCH)
+  LIMIT ($F3,$M83,$M84,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M85,$B12)
+  AWT ($B12,$F4,2_SW_Zul_Temp,2_SW_Zul_Temp)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;Default-Werte setzen
+  ;8
+  ; 
+  ANAUS (2_SW_Zul_Temp,$M86,&M82,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ODR2 (1_Zul_Vent_R1,1_Zul_Vent_R2,$B13)
+  XOR2 ($B13,1_Laufueberw_Zul,$B14)
+  UND2 ($B13,$B14,$B15)
+  VVZ ($B15,$M88,$M89,$B16)
+  RSS ($B16,Entriegeln,1_Keilr_Zul_Vent,$WSCRATCH)
+  SETMEL ($M90,1,1_Keilr_Zul_Vent,&M91,$WSCRATCH)
+  XOR2 (1_Abl_Vent_R1,1_Laufueberw_Abl,$B17)
+  UND2 (1_Abl_Vent_R1,$B17,$B18)
+  VVZ ($B18,$M92,$M93,$B19)
+  RSS ($B19,Entriegeln,1_Keilr_Abl_Vent,$WSCRATCH)
+  SETMEL ($M94,1,1_Keilr_Abl_Vent,&M95,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ODRMN (8,1_Frostwaechter,1_Keilr_Zul_Vent,1_Keilr_Abl_Vent,
+         1_Zul_Vent_ST,1_Abl_Vent_ST,1_BSK_Abl_1,1_BSK_Abl_2,
+         1_Briket_voll,0,$B20,$WSCRATCH)
+  RSS ($B20,Entriegeln,1_Anlage_gestoe,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  NICHT (1_Anlage_R0,$B21)
+  VVZ ($B21,$M96,$M97,$B22)
+  ODRMN (1,$B22,1,Außentemp<10,$B23,$WSCRATCH)
+  UND2 ($B23,$B21,$B24)
+  NICHT ($B21,$HB1)
+  RSS ($B24,$HB1,1_vorgespuelt,$WSCRATCH)
+  UND11 ($B21,1_vorgespuelt,1_vorspuelen)
+  UND21 (1_vorgespuelt,$B21,1_Anlage_gestoe,1_Vent_einschal)
+  NICHT (1_Vent_einschal,$HB0)
+  BEFAUS (1,$HB0,1_Vent_einschal,$WZERO,$WZERO,&M24,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  NICHT (1_Vent_einschal,$HB3)
+  REGLER (2,K1,$HB3,$M99,1_Regler_SG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  AWT (1_vorspuelen,$M100,$M101,1_ERH_vorspuelen)
+  AWT (1_Anlage_R0,1_Regler_SG,$M102,$F5)
+  UND11 (Außentemp<10,1_Anlage_R0,$B25)
+  AWT (1_vorgespuelt,$M103,$M104,$F6)
+  PT1 ($F6,$M105,$F7)
+  AWT ($B25,$M106,$F7,1_ERH_vorgespuel)
+  AWT (1_Frostwaechter,$M107,$M108,1_ERH_Frost)
+  MAX (4,$F5,1_ERH_vorspuelen,1_ERH_vorgespuel,1_ERH_Frost,
+       1_ERH_Ventil)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UND2 (1_Anlage_R1,1_Vent_einschal,$B26)
+  UND2 (1_Vent_einschal,1_Anlage_R2,$B27)
+  VVZ (1_Zul_Vent_R2,$M109,$M110,$B28)
+  UND11 ($B26,$B28,$B29)
+  VVZ ($B27,$M111,$M112,$B30)
+  UND11 ($B27,$B30,$B31)
+  ODR2 ($B29,$B31,$B32)
+  UNDMN (0,2,$B32,$B30,$B33,$WSCRATCH)
+  BEFAUS (2,$B33,$B32,$B30,$WZERO,&M16,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODR2 (1_Anlage_R1,1_Anlage_R2,$B34)
+  NICHT ($B34,$B35)
+  BEFAUS (1,$B35,$B34,$WZERO,$WZERO,&M20,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Anlage_R0,$B42,$B36)
+  NICHT (1_Anlage_R0,$B42)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B36,1_Tableau_Aus,1_Anlage_gestoe,0,$B37,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Anlage_R1,$B43,$B38)
+  NICHT (1_Anlage_R1,$B43)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B38,1_Anlage_R1_1,1_Anlage_R1_2,1_Tableau_Ein1,0,
+         $B39,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_Anlage_R2,$B44,$B40)
+  NICHT (1_Anlage_R2,$B44)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B40,1_Anlage_R2_1,1_Anlage_R2_2,1_Tableau_Ein2,0,
+         $B41,$WSCRATCH)
+  BEFAUS (2,$B37,$B39,$B41,$WZERO,&M8,$WSCRATCH)
+  SETMEL ($M116,1,1_Anlage_gestoe,&M9,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NICHT (1_Anlage_gestoe,$HB0)
+  BEFAUS (1,$HB0,1_Anlage_gestoe,$WZERO,$WZERO,&M118,
+          $WSCRATCH)
+  NICHT (1_Zul_Vent_R1,$HB0)
+  BEFAUS (1,$HB0,1_Zul_Vent_R1,$WZERO,$WZERO,&M119,$WSCRATCH)
+  NICHT (1_Zul_Vent_R2,$HB0)
+  BEFAUS (1,$HB0,1_Zul_Vent_R2,$WZERO,$WZERO,&M120,$WSCRATCH)
+  ;SSM Tableau
+  ;Spaeneanlage
+  ;=
+  ; 
+  ;Stufe 1
+  ;Spaeneanlage
+  ; 
+  ;Stufe 2
+  ;Spaeneanlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODRMN (2,1_BSK_Abl_1,1_BSK_Abl_2,0,$B45,$B46)
+  BEFAUS (1,$B46,$B45,$WZERO,$WZERO,&M121,$WSCRATCH)
+  ;BSK Tableau
+  ;Spaeneanlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (2_Zul_Vent_R1,2_Zul_Vent_R2,$B47)
+  XOR2 ($B47,2_Laufueberw_Zul,$B48)
+  UND2 ($B47,$B48,$B49)
+  VVZ ($B49,$M122,$M123,$B50)
+  RSS ($B50,Entriegeln,2_Keilr_Zul_Vent,$WSCRATCH)
+  SETMEL ($M124,1,2_Keilr_Zul_Vent,&M125,$WSCRATCH)
+  ODR2 (2_Abl_Vent_R1,2_Abl_Vent_R2,$B51)
+  XOR2 ($B51,2_Laufueberw_Abl,$B52)
+  UND2 ($B51,$B52,$B53)
+  VVZ ($B53,$M126,$M127,$B54)
+  RSS ($B54,Entriegeln,2_Keilr_Abl_Vent,$WSCRATCH)
+  SETMEL ($M128,1,2_Keilr_Abl_Vent,&M129,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UND2 ($B56,2_Rep-Schal_Abl,$B55)
+  RSS ($B55,Entriegeln,2_Rep_Abl_Ven_ST,$WSCRATCH)
+  ODR2 (2_Anlage_R1,2_Anlage_R2,$B56)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODRMN (9,2_Frostwaechter,2_Keilr_Zul_Vent,2_Keilr_Abl_Vent,
+         2_Zul_Vent_ST,2_Abl_Vent_ST,2_BSK_Abl_1,2_BSK_Abl_2,
+         2_BSK_Abl_3,2_Rep_Abl_Ven_ST,0,$B57,$WSCRATCH)
+  RSS ($B57,Entriegeln,2_Anlage_gestoe,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT (2_Anlage_R0,$B58)
+  VVZ ($B58,$M130,$M131,$B59)
+  ODRMN (1,$B59,1,2_Außentemp<10,$B60,$WSCRATCH)
+  UND2 ($B60,$B58,$B61)
+  NICHT ($B58,$HB1)
+  RSS ($B61,$HB1,2_vorgespuelt,$WSCRATCH)
+  UND11 ($B58,2_vorgespuelt,2_vorspuelen)
+  UND21 (2_vorgespuelt,$B58,2_Anlage_gestoe,2_Vent_einschal)
+  NICHT (2_Vent_einschal,$HB0)
+  BEFAUS (1,$HB0,2_Vent_einschal,$WZERO,$WZERO,&M40,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  NICHT (2_Vent_einschal,$HB3)
+  REGLER (3,K1,$HB3,$M133,2_Regler_SG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  AWT (2_vorspuelen,$M134,$M135,2_ERH_vorspuelen)
+  AWT (2_Anlage_R0,2_Regler_SG,$M136,$F8)
+  UND11 (2_Außentemp<10,2_Anlage_R0,$B62)
+  AWT (2_vorgespuelt,$M137,$M138,$F9)
+  PT1 ($F9,$M139,$F10)
+  AWT ($B62,$M140,$F10,2_ERH_vorgespuel)
+  AWT (2_Frostwaechter,$M141,$M142,2_ERH_Frost)
+  MAX (4,$F8,2_ERH_vorspuelen,2_ERH_vorgespuel,2_ERH_Frost,
+       2_ERH_Ventil)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UND2 (2_Anlage_R1,2_Vent_einschal,$B63)
+  UND2 (2_Vent_einschal,2_Anlage_R2,$B64)
+  VVZ (2_Zul_Vent_R2,$M143,$M144,$B65)
+  UND11 ($B63,$B65,$B66)
+  VVZ ($B64,$M145,$M146,$B67)
+  UND11 ($B64,$B67,$B68)
+  ODR2 ($B66,$B68,$B69)
+  UNDMN (0,2,$B69,$B67,$B70,$WSCRATCH)
+  BEFAUS (2,$B70,$B69,$B67,$WZERO,&M32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UND2 (2_Anlage_R1,2_Vent_einschal,$B71)
+  UND2 (2_Vent_einschal,2_Anlage_R2,$B72)
+  VVZ (2_Abl_Vent_R2,$M148,$M149,$B73)
+  UND11 ($B79,$B73,$B74)
+  VVZ ($B72,$M150,$M151,$B75)
+  UND11 ($B72,$B75,$B76)
+  ODR2 ($B74,$B76,$B77)
+  UNDMN (0,2,$B77,$B75,$B78,$WSCRATCH)
+  BEFAUS (2,$B78,$B77,$B75,$WZERO,&M36,$WSCRATCH)
+  VVZ ($B71,$M153,$M154,$B79)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ANAUS (1_ERH_Ventil,$M155,&M156,$WSCRATCH)
+  ANAUS (2_ERH_Ventil,$M157,&M158,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2_Anlage_R0,$B86,$B80)
+  NICHT (2_Anlage_R0,$B86)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B80,2_Tableau_Aus,2_Anlage_gestoe,0,$B81,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2_Anlage_R1,$B87,$B82)
+  NICHT (2_Anlage_R1,$B87)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B82,2_Anlage_R1_1,2_Anlage_R1_2,2_Tableau_Ein1,0,
+         $B83,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2_Anlage_R2,$B88,$B84)
+  NICHT (2_Anlage_R2,$B88)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B84,2_Anlage_R2_1,2_Anlage_R2_2,2_Tableau_Ein2,0,
+         $B85,$WSCRATCH)
+  BEFAUS (2,$B81,$B83,$B85,$WZERO,&M12,$WSCRATCH)
+  SETMEL ($M160,1,2_Anlage_gestoe,&M13,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  NICHT (2_Anlage_gestoe,$HB0)
+  BEFAUS (1,$HB0,2_Anlage_gestoe,$WZERO,$WZERO,&M162,
+          $WSCRATCH)
+  ODR2 (2_Zul_Vent_R1,2_Abl_Vent_R1,$B89)
+  NICHT ($B89,$HB0)
+  BEFAUS (1,$HB0,$B89,$WZERO,$WZERO,&M163,$WSCRATCH)
+  ODR2 (2_Abl_Vent_R2,2_Zul_Vent_R2,$B90)
+  NICHT ($B90,$HB0)
+  BEFAUS (1,$HB0,$B90,$WZERO,$WZERO,&M164,$WSCRATCH)
+  ;SSM Tableau
+  ;Fahrbereitschaft
+  ; 
+  ;Stufe 1
+  ;Fahrbereitschaft
+  ; 
+  ;Stufe 2
+  ;Fahrbereitschaft
+  ; 
+  ENDE 
+  ENDMODUL 

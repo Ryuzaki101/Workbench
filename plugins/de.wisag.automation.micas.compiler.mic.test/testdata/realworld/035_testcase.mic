@@ -1,0 +1,351 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60605.GPS
+  ;*** Projektname    : MPI Turm 6
+  ;*** Projektnummer  : 23101147
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Bormann
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 6
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  KW-RL-Pu2-KM1-ST
+  WordV  KM1-Kaeltekr1-ST
+  WordV  KW-RL-Pu1-KM1-ST
+  WordV  KM1-Kaeltekr2-ST
+  WordV  KW-RL-Pu1-KM2-ST
+  WordV  KW-RL-Pu2-KM2-ST
+  WordV  KM2-Kaeltekr1-ST
+  WordV  Steuerspg_24VAC
+  WordV  Steuerspg_24VDC
+  WordV  Steuerspg_230VAC
+  WordV  GWDG-neu-Pum1-ST
+  WordV  GWDG-neu-Pum2-ST
+  WordV  KM2-Kaeltekr2-ST
+  WordV  GWDG-alt-Pum1-ST
+  WordV  GWDG-alt-Pum2-ST
+  WordV  neuer_Filter_Coo
+  WordV  Sammel_ST_2
+  WordV  230VAC-ST=S02
+  WordV  24VAC-ST=S02
+  WordV  24VDC-ST=S02
+  WordV  Untersp-ST=S02
+  WordV  Uebersp-ST=S02
+  WordV  P2_WT_K_Netz_z
+  WordV  GWDG_KT1_gestoer
+  WordV  GWDG_KT2_gestoer
+  WordV  GWDG_Filter_voll
+  WordV  GWDG_VL-Tsek_hoc
+  WordV  Entriegeln
+  WordV  KW-Pump_Grubm_ST
+  WordV  Sammel_ST
+  WordV  Filter_EG
+  WordV  Filter_WT_K_Netz
+  WordV  Voralarm_EG
+  WordV  Alarm_EG
+  WordV  Feuchte_Doppelb
+  WordV  P1_WT_K_Netz
+  WordV  P2_WT_K_Netz
+  WordK  K0 (0)
+  WordV  Filter_GWDG
+  WordV  Sammel_ST_1
+  WordV  SSM_Cube1
+  WordV  P1_WT_K_Netz_z
+  WordV  SSM_Cube2
+  WordV  Ueberbrue_F_Elek
+  WordV  Entriegel_Taster
+  WordV  Entriegel_Befehl
+  WordV  Ueberspannung
+  WordV  Unterspannung
+  WordV  KW_VL_Temp_Hoch
+  WordV  P1_EG
+  WordV  P2_EG
+  IPAMB &M0 (37,7)
+  WordV  $HB2
+  WordV  $WSCRATCH
+  IPAMB &M1 (38,2)
+  IPAMB &M2 (38,3)
+  IPAMB &M3 (38,6)
+  IPAMB &M4 (38,7)
+  IPAMB &M5 (25,11)
+  IPAMB &M6 (0,0)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M12 (39,15)
+  IPAMB &M13 (26,3)
+  IPAMB &M14 (26,7)
+  IPAMB &M15 (36,15)
+  IPAMB &M16 (35,7)
+  IPAMB &M17 (35,6)
+  IPAMB &M18 (35,2)
+  IPAMB &M19 (35,3)
+  IPAMB &M20 (25,10)
+  IPAMB &M21 (1,2)
+  IPAMB &M22 (1,6)
+  IPAMB &M23 (14,6)
+  IPAMB &M24 (37,2)
+  IPAMB &M25 (37,3)
+  IPAMB &M26 (37,10)
+  IPAMB &M27 (37,11)
+  IPAMB &M28 (37,14)
+  IPAMB &M29 (50,0)
+  IPAMB &M30 (1,15)
+  IPAMB &M31 (1,14)
+  IPAMB &M32 (54,11)
+  IPAMB &M33 (54,15)
+  IPAMB &M34 (54,6)
+  IPAMB &M35 (54,7)
+  IPAMB &M36 (55,11)
+  IPAMB &M37 (55,15)
+  IPAMB &M38 (55,6)
+  IPAMB &M39 (55,7)
+  IPAMB &M40 (70,3)
+  IPAMB &M41 (70,7)
+  IPAMB &M42 (71,3)
+  IPAMB &M43 (71,7)
+  IPAMB &M44 (70,15)
+  IPAMB &M45 (71,10)
+  IPAMB &M46 (71,11)
+  IPAMB &M47 (71,14)
+  IPAMB &M48 (71,15)
+  IPAMB &M49 (37,6)
+  FloatK $M56 (60.00)
+  FloatK $M57 (0.00)
+  FloatK $M58 (60.00)
+  FloatK $M59 (0.00)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $HB0
+  IPAMB &M60 (1,9)
+  FloatK $M61 (10.00)
+  FloatK $M62 (0.00)
+  WordV  $B9
+  IPAMB &M63 (1,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AF X 0005
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt:Turm 6
+  ;        Kälteerzeugung/
+  ;        Verteilung
+  ;Anlage: Sammelstörung
+  ;        Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Ueberspannung)
+  MELEIN (&M1,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  MELEIN (&M2,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_230VAC)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_24VAC)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_24VDC)
+  MELEIN (&M5,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Ueberbrue_F_Elek)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M12,1,KW_VL_Temp_Hoch,$WSCRATCH)
+  MELEIN (&M13,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,P1_EG)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,P2_EG)
+  MELEIN (&M15,1,Filter_GWDG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,Filter_EG,$WSCRATCH)
+  MELEIN (&M17,1,Filter_WT_K_Netz,$WSCRATCH)
+  MELEIN (&M18,1,Voralarm_EG,$WSCRATCH)
+  MELEIN (&M19,1,Alarm_EG,$WSCRATCH)
+  MELEIN (&M20,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Feuchte_Doppelb)
+  MELEIN (&M21,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,P1_WT_K_Netz)
+  MELEIN (&M22,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,P2_WT_K_Netz)
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-Pump_Grubm_ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_Cube1)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_Cube2)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG_KT1_gestoer)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG_KT2_gestoer)
+  MELEIN (&M28,1,GWDG_Filter_voll,$WSCRATCH)
+  MELEIN (&M29,1,GWDG_VL-Tsek_hoc,$WSCRATCH)
+  MELEIN (&M30,1,Entriegel_Befehl,$WSCRATCH)
+  MELEIN (&M31,1,Entriegel_Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entriegel_Taster,Entriegel_Befehl,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu1-KM1-ST)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu2-KM1-ST)
+  MELEIN (&M34,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM1-Kaeltekr1-ST)
+  MELEIN (&M35,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM1-Kaeltekr2-ST)
+  MELEIN (&M36,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu1-KM2-ST)
+  MELEIN (&M37,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu2-KM2-ST)
+  MELEIN (&M38,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM2-Kaeltekr1-ST)
+  MELEIN (&M39,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM2-Kaeltekr2-ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-alt-Pum1-ST)
+  MELEIN (&M41,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-alt-Pum2-ST)
+  MELEIN (&M42,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-neu-Pum1-ST)
+  MELEIN (&M43,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-neu-Pum2-ST)
+  MELEIN (&M44,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Uebersp-ST=S02)
+  MELEIN (&M45,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Untersp-ST=S02)
+  MELEIN (&M46,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,230VAC-ST=S02)
+  MELEIN (&M47,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24VAC-ST=S02)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M48,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24VDC-ST=S02)
+  MELEIN (&M49,1,neuer_Filter_Coo,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  VVZ (P1_WT_K_Netz,$M56,$M57,P1_WT_K_Netz_z)
+  VVZ (P2_WT_K_Netz,$M58,$M59,P2_WT_K_Netz_z)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODRMN (10,Unterspannung,Steuerspg_230VAC,Steuerspg_24VAC,
+         Steuerspg_24VDC,K0,Filter_EG,Filter_WT_K_Netz,
+         KW_VL_Temp_Hoch,P1_EG,P2_EG,0,$B1,$WSCRATCH)
+  ODRMN (10,P1_WT_K_Netz_z,P2_WT_K_Netz_z,Voralarm_EG,
+         Alarm_EG,Filter_GWDG,Feuchte_Doppelb,
+         Ueberbrue_F_Elek,K0,K0,K0,0,$B2,$WSCRATCH)
+  ODR2 ($B1,$B2,Sammel_ST_1)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (8,K0,K0,K0,K0,SSM_Cube1,SSM_Cube2,K0,Sammel_ST_1,0,
+         $B3,$WSCRATCH)
+  ODRMN (10,GWDG_Filter_voll,GWDG_KT1_gestoer,
+         GWDG_KT2_gestoer,GWDG_VL-Tsek_hoc,KW-Pump_Grubm_ST,
+         K0,K0,K0,K0,K0,0,$B4,$WSCRATCH)
+  ODR2 ($B3,$B4,Sammel_ST_2)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (8,230VAC-ST=S02,24VAC-ST=S02,24VDC-ST=S02,
+         GWDG-alt-Pum1-ST,GWDG-alt-Pum2-ST,GWDG-neu-Pum1-ST,
+         GWDG-neu-Pum2-ST,Sammel_ST_2,0,$B5,$WSCRATCH)
+  ODRMN (10,KM1-Kaeltekr1-ST,KM1-Kaeltekr2-ST,
+         KM2-Kaeltekr1-ST,KM2-Kaeltekr2-ST,KW-Pump_Grubm_ST,
+         KW-RL-Pu1-KM1-ST,KW-RL-Pu1-KM2-ST,KW-RL-Pu2-KM1-ST,
+         KW-RL-Pu2-KM2-ST,K0,0,$B6,$WSCRATCH)
+  ODR2 ($B5,$B6,Sammel_ST)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UND11 (Entriegeln,Sammel_ST,$B7)
+  RSS (Sammel_ST,$B7,$B8,$WSCRATCH)
+  NICHT ($B8,$HB0)
+  BEFAUS (1,$HB0,$B8,$WZERO,$WZERO,&M60,$WSCRATCH)
+  VVZ (Entriegel_Befehl,$M61,$M62,$B9)
+  BEFAUS (1,$B9,$WZERO,$WZERO,$WZERO,&M63,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

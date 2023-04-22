@@ -1,0 +1,298 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI20907.GPS
+  ;*** Projektname    : Kältenetz
+  ;*** Projektnummer  : 33101454
+  ;*** Bearbeiter     : Rohlfs
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 9
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV SIGNAL_VENTIL
+  WordV  Entr.Taster
+  FloatV RL_TEMP
+  WordV  PUMPE_EIN
+  WordV  Entr.Befehl
+  WordV  PUMPE_ST
+  WordV  PUMPE_AUS
+  WordV  Unterspannung
+  WordV  KW_FREIGABE_AUS
+  WordV  KW_FREIGABE_EIN
+  WordK  K0 (0)
+  FloatV SG_KW_VENTIL
+  WordV  STOERUNG_VENTIL
+  FloatV VL_TEMP
+  WordK  K1 (1)
+  FloatK SW_VLTEMP (12.00)
+  WordV  PU_08B_ST
+  WordV  PU_08C_ST
+  WordV  PU_08B_AUS
+  WordV  PU_08B_EIN
+  WordV  PU_08C_AUS
+  WordV  PU_08C_EIN
+  WordV  FREIGABE_08B
+  WordV  FREIGABE_08C
+  WordV  Entriegeln
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B1
+  IPAMB &M0 (152,1)
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &M1 (152,5)
+  WordV  $B3
+  IPAMB &M2 (152,9)
+  IPAAW &M3 (68)
+  IPAAW &M4 (66)
+  IPAAW &M5 (67)
+  IPAMB &M7 (152,3)
+  IPAMB &M8 (41,1)
+  IPAMB &M9 (41,2)
+  IPAMB &M10 (41,3)
+  WordV  $HB5
+  IPAMB &M11 (152,7)
+  IPAMB &M12 (152,11)
+  IPAMB &M13 (40,1)
+  IPAMB &M14 (40,2)
+  IPAMB &M15 (40,3)
+  IPAMB &M16 (40,5)
+  IPAMB &M17 (40,6)
+  IPAMB &M18 (40,7)
+  IPAMB &M19 (0,0)
+  IPAMB &M24 (106,2)
+  WordV  $HB2
+  IPAMB &M25 (40,11)
+  IPAMB &M26 (60,14)
+  IPAAW &M27 (153)
+  FloatV $F1
+  FloatK $M28 (14.00)
+  FloatK $M29 (8.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M30 (10.00)
+  WordV  $B4
+  WordK  $M31 (1)
+  FloatV $F3
+  FloatV $F4
+  FloatK $M33 (10.00)
+  WordV  $B5
+  WordV  $B6
+  WordV  $HB1
+  FloatV $F5
+  FloatK $M34 (300.00)
+  WordV  $B7
+  WordK  $M35 (1)
+  IPAMB &M36 (152,4)
+  WordV  $B8
+  WordK  $M37 (1)
+  IPAMB &M38 (152,6)
+  WordV  $B9
+  WordK  $M39 (1)
+  IPAMB &M40 (152,10)
+  WordV  $B10
+  FloatK $M41 (172800.00)
+  FloatK $M42 (0.00)
+  WordV  $B11
+  FloatK $M43 (300.00)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M45 (172800.00)
+  FloatK $M46 (0.00)
+  WordV  $B17
+  FloatK $M47 (300.00)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  FloatK $M49 (172800.00)
+  FloatK $M50 (0.00)
+  WordV  $B23
+  FloatK $M51 (300.00)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  FloatK $M53 (0.00)
+  FloatV $F6
+  FloatK $M54 (0.00)
+  WordK  $M55 (1)
+  IPAAW &M56 (75)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AAE0003
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         Turm 2
+  ;Anlage:  KW-Abgänge SOG:
+  ;- Dr. Hell (ungereg.) B
+  ;- SOG (ungeregelt) C
+  ;- wissenschaftl. Geräte
+  ;  SOG (auf 12 Grad ger-
+  ;  gelt) D
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  NICHT ($WZERO,$B1)
+  BEFAUS (1,$WZERO,$B1,$WZERO,$WZERO,&M0,$WSCRATCH)
+  NICHT ($WZERO,$B2)
+  BEFAUS (1,$WZERO,$B2,$WZERO,$WZERO,&M1,$WSCRATCH)
+  NICHT ($WZERO,$B3)
+  BEFAUS (1,$WZERO,$B3,$WZERO,$WZERO,&M2,$WSCRATCH)
+  ;wissentschaftliche
+  ;Geräte SOG (12/18 Gr.)
+  ; 
+  ;Dr. Hell
+  ; 
+  ;SOG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ANEIN (&M3,SIGNAL_VENTIL,$WSCRATCH)
+  ANEIN (&M4,VL_TEMP,$WSCRATCH)
+  ANEIN (&M5,RL_TEMP,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&M0,1,KW_FREIGABE_AUS,$WSCRATCH)
+  MELEIN (&M7,1,KW_FREIGABE_EIN,$WSCRATCH)
+  MELEIN (&M8,3,PUMPE_AUS,$HB5,PUMPE_EIN,$WSCRATCH)
+  NICHT ($HB5,PUMPE_ST)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M11,1,FREIGABE_08B,$WSCRATCH)
+  MELEIN (&M12,1,FREIGABE_08C,$WSCRATCH)
+  MELEIN (&M13,3,PU_08B_AUS,$HB5,PU_08B_EIN,$WSCRATCH)
+  NICHT ($HB5,PU_08B_ST)
+  MELEIN (&M16,3,PU_08C_AUS,$HB5,PU_08C_EIN,$WSCRATCH)
+  NICHT ($HB5,PU_08C_ST)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  MELEIN (&M25,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M26,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M27,$F1,$WSCRATCH)
+  LIMIT ($F1,$M28,$M29,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M30,$B4)
+  AWT ($B4,$F2,SW_VLTEMP,SW_VLTEMP)
+  ANAUS (SW_VLTEMP,$M31,&M27,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  SUB2 (SG_KW_VENTIL,SIGNAL_VENTIL,$F3)
+  ABSWER ($F3,$F4)
+  VGLOH ($F4,$M33,$B5)
+  UND11 ($B5,Entriegeln,$B6)
+  NICHT ($B6,$HB1)
+  UHR (K1,$HB1,$F5)
+  VGLOH ($F5,$M34,$B7)
+  RSS ($B7,Entriegeln,STOERUNG_VENTIL,$WSCRATCH)
+  SETMEL ($M35,1,STOERUNG_VENTIL,&M36,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  RSS (PU_08B_ST,Entriegeln,$B8,$WSCRATCH)
+  SETMEL ($M37,1,$B8,&M38,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  RSS (PU_08C_ST,Entriegeln,$B9,$WSCRATCH)
+  SETMEL ($M39,1,$B9,&M40,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  UNDMN (0,2,KW_FREIGABE_EIN,$B12,$B10,$WSCRATCH)
+  VVZ ($B10,$M41,$M42,$B11)
+  MOKY ($B11,$M43,$B12)
+  ODR2 ($B12,KW_FREIGABE_EIN,$B13)
+  UNDMN (1,$B13,1,PUMPE_ST,$B14,$B15)
+  BEFAUS (1,$B15,$B14,$WZERO,$WZERO,&M8,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  UNDMN (0,2,FREIGABE_08B,$B18,$B16,$WSCRATCH)
+  VVZ ($B16,$M45,$M46,$B17)
+  MOKY ($B17,$M47,$B18)
+  ODR2 ($B18,FREIGABE_08B,$B19)
+  UNDMN (1,$B19,1,PU_08B_ST,$B20,$B21)
+  BEFAUS (1,$B21,$B20,$WZERO,$WZERO,&M13,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UNDMN (0,2,FREIGABE_08C,$B24,$B22,$WSCRATCH)
+  VVZ ($B22,$M49,$M50,$B23)
+  MOKY ($B23,$M51,$B24)
+  ODR2 ($B24,FREIGABE_08C,$B25)
+  UNDMN (1,$B25,1,PU_08C_ST,$B26,$B27)
+  BEFAUS (1,$B27,$B26,$WZERO,$WZERO,&M16,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  REGLER (6,K1,KW_FREIGABE_AUS,$M53,$F6,$WSCRATCH)
+  AWT (KW_FREIGABE_AUS,$F6,$M54,SG_KW_VENTIL)
+  ANAUS (SG_KW_VENTIL,$M55,&M56,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

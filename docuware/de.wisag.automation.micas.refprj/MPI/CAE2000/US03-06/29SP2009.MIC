@@ -1,0 +1,323 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI30609.GPS
+  ;*** Projektname    : MPI Turm 3
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** PrÅfer         : H.Meyer
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 6
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 9
+  ;*****************************************************************
+  MODUL (sp20,9)
+  WordV  SSM_US03_04
+  WordV  SSM_Abwasserbeck
+  WordV  MIN_Temp_Kuehlr
+  WordV  MAX_Temp_Kuehlr
+  WordV  Steuerspg_230_NN
+  WordV  Ueberspg_EN
+  WordV  Steuerspg_AC_EN
+  WordV  Steuerspg_DC_EN
+  WordV  MIN_Steuerluft
+  WordV  MAX_Steuerluft
+  WordV  Steuerspg_230_EN
+  WordV  STB_WWB
+  WordV  Kompressor
+  WordV  Entriegeln
+  WordV  Hzg_Pu_S/O
+  WordV  Hzg_Pu2_Lueftung
+  WordV  Anl_Laser_Labor
+  WordV  SSM_Raum007
+  WordV  Hzg_Pu1_Lueftung
+  WordV  Anl_Zubringer
+  WordV  BSK_ZUL_R331
+  WordV  Anl_Innenraeume
+  WordV  BSK_ZUL_FLUR
+  WordV  BSK_ABL_R320
+  WordV  BSK_ZUL_BUERO
+  WordV  BSK_ZUL_LABOR
+  WordV  BMZ_T3_3OG_DG
+  WordV  Anl_Galvanik
+  WordV  Hzg_Pu_Sockel
+  WordV  Hzg_Pu_N/W
+  WordV  Sammel_ST_1
+  WordV  Entr.Befehl
+  WordV  Sammel_ST_2
+  WordV  Sammel_ST_3
+  WordV  GW_Fernleitung
+  WordK  K0 (0)
+  WordV  Anl_WBB
+  WordV  SSM_US0308
+  WordV  Anl_Labor_2OG
+  WordV  SSM_US0307
+  WordV  Anl_Magnetraum
+  WordV  Entr.Taster
+  WordV  BSK_ABL_WC
+  WordV  BSK_ABL_R331
+  IPAMB &M0 (85,2)
+  WordV  $WSCRATCH
+  IPAMB &M1 (70,2)
+  IPAMB &M2 (79,10)
+  IPAMB &M3 (71,2)
+  IPAMB &M4 (116,6)
+  IPAMB &M5 (122,2)
+  IPAMB &M6 (0,0)
+  IPAMB &M7 (79,2)
+  IPAMB &M9 (52,6)
+  IPAMB &M10 (52,2)
+  IPAMB &M11 (53,2)
+  IPAMB &M12 (51,2)
+  IPAMB &M13 (51,6)
+  IPAMB &M14 (59,3)
+  WordV  $HB2
+  IPAMB &M15 (59,6)
+  IPAMB &M16 (58,7)
+  IPAMB &M17 (56,11)
+  IPAMB &M24 (45,2)
+  IPAMB &M25 (45,3)
+  IPAMB &M26 (45,6)
+  IPAMB &M27 (45,7)
+  IPAMB &M28 (46,2)
+  IPAMB &M29 (46,3)
+  IPAMB &M30 (46,6)
+  IPAMB &M36 (58,2)
+  IPAMB &M37 (57,10)
+  IPAMB &M39 (57,14)
+  IPAMB &M40 (57,15)
+  IPAMB &M41 (58,3)
+  IPAMB &M42 (58,6)
+  IPAMB &M44 (58,10)
+  IPAMB &M45 (58,11)
+  IPAMB &M47 (58,15)
+  IPAMB &M48 (59,2)
+  IPAMB &M53 (60,2)
+  IPAMB &M54 (60,3)
+  IPAMB &M56 (107,0)
+  IPAMB &M62 (0,11)
+  IPAMB &M63 (0,14)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M64 (0,13)
+  FloatK $M65 (10.00)
+  FloatK $M66 (0.00)
+  WordV  $B9
+  IPAMB &M67 (0,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (2,cycl,2000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Sanierung
+  ;         Turm 3
+  ;Anlage:  Sammelstîrung
+  ;         Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,Anl_Zubringer,$WSCRATCH)
+  MELEIN (&M1,1,Anl_Labor_2OG,$WSCRATCH)
+  MELEIN (&M2,1,Anl_Magnetraum,$WSCRATCH)
+  MELEIN (&M3,1,Anl_Innenraeume,$WSCRATCH)
+  MELEIN (&M4,1,Anl_WBB,$WSCRATCH)
+  MELEIN (&M5,1,Anl_Laser_Labor,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,Anl_Galvanik,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M9,1,Hzg_Pu_N/W,$WSCRATCH)
+  MELEIN (&M10,1,Hzg_Pu_Sockel,$WSCRATCH)
+  MELEIN (&M11,1,Hzg_Pu_S/O,$WSCRATCH)
+  MELEIN (&M12,1,Hzg_Pu1_Lueftung,$WSCRATCH)
+  MELEIN (&M13,1,Hzg_Pu2_Lueftung,$WSCRATCH)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_US0308)
+  MELEIN (&M15,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_US0307)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Kompressor)
+  MELEIN (&M17,1,SSM_Raum007,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ABL_WC)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ABL_R331)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ZUL_R331)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ZUL_FLUR)
+  MELEIN (&M28,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ABL_R320)
+  MELEIN (&M29,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ZUL_BUERO)
+  MELEIN (&M30,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ZUL_LABOR)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_T3_3OG_DG)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M36,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_230_NN)
+  MELEIN (&M37,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Ueberspg_EN)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M39,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_AC_EN)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_DC_EN)
+  MELEIN (&M41,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,MIN_Steuerluft)
+  MELEIN (&M42,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,MAX_Steuerluft)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M44,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_230_EN)
+  MELEIN (&M45,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_WWB)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M47,1,SSM_US03_04,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M48,1,SSM_Abwasserbeck,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M53,1,MIN_Temp_Kuehlr,$WSCRATCH)
+  MELEIN (&M54,1,MAX_Temp_Kuehlr,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M56,1,GW_Fernleitung,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M62,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M63,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODRMN (11,Anl_Magnetraum,K0,K0,Anl_Galvanik,
+         Anl_Innenraeume,Anl_Labor_2OG,K0,Anl_Laser_Labor,
+         Anl_WBB,K0,Anl_Zubringer,0,$B1,$WSCRATCH)
+  ODRMN (8,K0,K0,K0,Hzg_Pu1_Lueftung,Hzg_Pu2_Lueftung,
+         Hzg_Pu_N/W,Hzg_Pu_S/O,Hzg_Pu_Sockel,0,$B2,$WSCRATCH)
+  ODR2 ($B1,$B2,Sammel_ST_1)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (12,Kompressor,MAX_Steuerluft,MAX_Temp_Kuehlr,
+         MIN_Steuerluft,MIN_Temp_Kuehlr,K0,K0,
+         SSM_Abwasserbeck,BSK_ABL_WC,BSK_ABL_R320,
+         BSK_ABL_R331,BSK_ZUL_BUERO,0,$B3,$WSCRATCH)
+  ODRMN (11,BSK_ZUL_FLUR,BSK_ZUL_LABOR,SSM_Raum007,
+         BSK_ZUL_R331,BMZ_T3_3OG_DG,SSM_US03_04,K0,K0,K0,
+         STB_WWB,Sammel_ST_1,0,$B4,$WSCRATCH)
+  ODR2 ($B3,$B4,Sammel_ST_2)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (11,Steuerspg_230_EN,Steuerspg_230_NN,
+         Steuerspg_AC_EN,K0,Steuerspg_DC_EN,K0,Ueberspg_EN,
+         K0,K0,K0,GW_Fernleitung,0,$B5,$WSCRATCH)
+  ODR2 ($B5,Sammel_ST_2,Sammel_ST_3)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UND11 (Entriegeln,Sammel_ST_3,$B6)
+  RSS (Sammel_ST_3,$B6,$B7,$WSCRATCH)
+  ODRMN (3,$B7,SSM_US0307,SSM_US0308,0,$B8,$WSCRATCH)
+  NICHT ($B8,$HB0)
+  BEFAUS (1,$HB0,$B8,$WZERO,$WZERO,&M64,$WSCRATCH)
+  VVZ (Entr.Befehl,$M65,$M66,$B9)
+  BEFAUS (1,$B9,$WZERO,$WZERO,$WZERO,&M67,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

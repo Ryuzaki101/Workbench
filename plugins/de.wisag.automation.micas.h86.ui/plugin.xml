@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="de.wisag.automation.micas.h86.ui.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="de.wisag.automation.micas.h86.ui.commands.category"
+            id="de.wisag.automation.micas.h86.ui.commands.decompile"
+            name="Micas H86 Decompiler">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.wisag.automation.micas.h86.ui.handlers.H86DecompilerHandler"
+            commandId="de.wisag.automation.micas.h86.ui.commands.decompile">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.h86.ui.commands.decompile"
+               label="Decompile H86"
+               style="push">
+            <visibleWhen>
+               <with
+                     variable="selection">
+                  <iterate
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.core.resources.IResource">
+                     </instanceof>
+                     <test
+                           property="org.eclipse.core.resources.name"
+                           value="*.H86">
+                     </test>
+                     <test
+                           property="org.eclipse.core.resources.name"
+                           value="*.h86">
+                     </test>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+</plugin>

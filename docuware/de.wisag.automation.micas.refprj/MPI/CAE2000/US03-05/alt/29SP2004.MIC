@@ -1,0 +1,1176 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 03_05_04.GPS
+  ;*** Projektname    : MPI GôTTINGEN
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** PrÅfer         : MS TEPLAN
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 5
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (sp20,4)
+  FloatV 1_D_LFT_RKW2
+  WordV  1_E_ST_RKW2
+  WordV  1_E_RM_RKW1
+  FloatV 2_E_MW_RA_TEMP
+  WordV  1_E_ST_RKW1
+  WordV  1_E_RM_RKW2
+  WordV  1_A_RKW2
+  FloatV 1_D_LZT_RKW1
+  WordV  2_Z_HAUPT
+  WordV  2_A_BF_LU1_2ST
+  WordV  2_A_BF_KL1
+  WordV  2_Z_ANF_LU2_1ST
+  WordV  2_Z_LU1_1ST
+  FloatV 2_E_VP_GW_T2
+  WordV  2_Z_LU1_ST
+  WordV  2_A_BF_LU1_1ST
+  WordV  2_R_RM_LU2_E1
+  FloatV 2_E_VP_GW_T3
+  WordV  2_A_BF_KL2
+  WordV  2_R_RM_LU1_E2
+  WordV  2_Z_LU1_2ST
+  WordV  1_E_BM_QUITT_SUG
+  WordV  2_R_ENTRAUCH
+  WordV  1_A_RKW1
+  FloatV 2_E_VP_GW_T1
+  FloatV 2_E_VP_GW_T4
+  WordV  2_Z_ANF_LU1_1ST
+  WordV  2_Z_ANF_LU1_2ST
+  WordV  2_Z_ANF_LU2_2ST
+  WordV  2_Z_KL1
+  WordV  2_Z_KL2
+  WordV  1_A_MV1
+  WordV  1_A_MV_2
+  WordV  S_ERR
+  WordK  K_1_STATUS (1)
+  WordV  Anl_wieder_eins1
+  WordV  2_R_ST_LU1_BI
+  WordV  2_E_ST_LU1_KL
+  WordV  2_R_ST_LU2_BI
+  WordV  2_E_ST_LU1_REPS
+  WordV  2_R_ST_LU1_F
+  WordV  2_R_ST_LU1_P
+  WordV  2_E_ST_LU2_KL
+  WordV  2_R_ST_LU1_N
+  WordV  2_E_ST_LU2_REPS
+  WordV  2_R_ST_LU2_P
+  WordV  2_R_ST_LU2_N
+  WordV  2_R_ST_LU2_F
+  WordV  2_Z_LU2_ST
+  WordV  2_Z_LU2_1ST
+  WordV  2_Z_LU2_2ST
+  WordV  2_R_RM_LU2_E2
+  WordV  Phasenueberwach.
+  WordV  2_A_BF_LU2_2ST
+  WordV  2_A_BF_LU2_1ST
+  WordV  2_E_VP_FREIG
+  WordK  K_0_STATUS (0)
+  WordV  2_A_SAMMEL_ST
+  WordV  3_E_ST_BLITZ_E
+  WordV  3_E_ST_BLITZ_D
+  WordV  3_E_ST_SICH
+  WordV  3_A_ST_SAM_ST
+  WordV  1_E_ST_PU
+  WordV  1_E_BM_QUITT
+  WordV  2_R_RM_LU1_E1
+  WordV  4_A_ST_RKW
+  WordV  1_E_VP_FREIG
+  WordV  1_E_RM_QUITT_GLT
+  WordK  K_VP_FREIG_1 (1)
+  WordV  1_Z_HAUPT
+  WordV  1_Z_QUITT
+  WordV  1_A_HAUPT_ST
+  WordV  1_A_SAMMEL_ST
+  WordV  1_R_HAUPT_ST_1
+  WordV  1_E_BM_QUITT_1OG
+  WordK  K_VP_FREIG_2 (1)
+  FloatK K_VP_GW_T1_2 (20.00)
+  FloatK K_VP_GW_T2_2 (25.00)
+  FloatK K_VP_GW_T3_2 (30.00)
+  FloatK K_VP_GW_T4_2 (35.00)
+  WordV  3_E_ST_PHASE
+  WordK  k0 (0)
+  WordV  Anl_wieder_eins2
+  WordV  mehrfache_Entrie
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (168,1)
+  IPAMB &M1 (168,5)
+  IPAAW &M2 (169)
+  IPAAW &M3 (170)
+  IPAAW &M4 (171)
+  IPAAW &M5 (172)
+  IPAMB &M6 (168,3)
+  IPAMB &M7 (1,14)
+  IPAMB &M8 (254,10)
+  IPAMB &M9 (254,11)
+  IPAMB &M10 (15,3)
+  IPAMB &M11 (11,10)
+  IPAMB &M12 (9,15)
+  WordV  $B1
+  IPAMB &M13 (11,14)
+  IPAMB &M14 (11,11)
+  IPAMB &M15 (11,15)
+  IPAMB &M16 (168,7)
+  IPAMB &M17 (12,2)
+  WordV  $B2
+  IPAMB &M18 (14,3)
+  WordV  $B3
+  IPAMB &M19 (13,2)
+  WordV  $B4
+  IPAMB &M20 (14,7)
+  WordV  $B5
+  IPAMB &M21 (12,3)
+  IPAMB &M22 (12,5)
+  IPAMB &M23 (13,3)
+  IPAMB &M24 (13,5)
+  IPAMB &M25 (0,11)
+  WordV  $B6
+  IPAMB &M26 (0,14)
+  WordV  $B7
+  IPAMB &M27 (0,15)
+  WordV  $B8
+  IPAMB &M28 (1,11)
+  WordV  $B9
+  IPAAW &M33 (17)
+  FloatK $M34 (1.00)
+  WordV  $B10
+  FloatK $M35 (1.00)
+  WordV  $B11
+  FloatK $M36 (1.00)
+  WordV  $B12
+  FloatK $M37 (1.00)
+  WordV  $B13
+  WordV  $WSCRATCH
+  FloatK $M38 (10.00)
+  FloatK $M39 (0.00)
+  WordV  $B14
+  FloatK $M40 (1.00)
+  WordV  $B15
+  WordV  $B16
+  FloatK $M41 (4.00)
+  IPAMB &M42 (252,3)
+  WordV  $B17
+  FloatK $M43 (2.00)
+  FloatK $M44 (30.00)
+  WordV  $B18
+  FloatK $M45 (10.00)
+  FloatK $M46 (0.00)
+  WordV  $B19
+  WordV  $B20
+  FloatK $M47 (15.00)
+  FloatK $M48 (0.00)
+  WordV  $B21
+  FloatK $M49 (0.00)
+  FloatK $M50 (10.00)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $HB1
+  WordV  $B31
+  WordV  $B28
+  WordV  $B29
+  WordV  $B32
+  WordV  $B30
+  WordV  $B33
+  FloatK $M52 (15.00)
+  FloatK $M53 (0.00)
+  WordV  $B34
+  FloatK $M54 (0.00)
+  FloatK $M55 (10.00)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B44
+  WordV  $B41
+  WordV  $B42
+  WordV  $B45
+  WordV  $B43
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  FloatK $M57 (360000.00)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  FloatK $M58 (360000.00)
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  FloatK $M59 (4.00)
+  WordV  $B57
+  FloatK $M60 (4.00)
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  FloatK $M61 (1.00)
+  WordV  $B61
+  FloatK $M62 (1.00)
+  WordV  $B62
+  FloatK $M63 (1.00)
+  WordV  $B63
+  FloatK $M64 (1.00)
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  FloatK $M65 (60.00)
+  FloatK $M66 (60.00)
+  FloatK $M67 (60.00)
+  FloatK $M68 (60.00)
+  FloatK $M69 (60.00)
+  FloatK $M70 (0.00)
+  FloatK $M71 (60.00)
+  FloatK $M72 (0.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  FloatK $M73 (4.00)
+  WordV  $B72
+  WordV  $B73
+  FloatK $M74 (30.00)
+  FloatK $M75 (4.00)
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  FloatK $M76 (0.00)
+  FloatK $M77 (15.00)
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  WordV  $B82
+  FloatK $M78 (4.00)
+  WordV  $B83
+  WordV  $B84
+  FloatK $M79 (30.00)
+  FloatK $M80 (4.00)
+  WordV  $B85
+  WordV  $B86
+  WordV  $B87
+  FloatK $M81 (0.00)
+  FloatK $M82 (15.00)
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  IPAMB &M83 (168,2)
+  IPAMB &M84 (168,0)
+  IPAMB &M85 (10,9)
+  IPAMB &M86 (10,13)
+  IPAMB &M87 (11,9)
+  IPAMB &M88 (11,13)
+  IPAMB &M89 (168,4)
+  IPAMB &M90 (13,9)
+  IPAMB &M91 (13,13)
+  IPAMB &M92 (12,1)
+  WordV  $B91
+  WordV  $B92
+  WordV  $B93
+  IPAMB &M93 (13,1)
+  WordV  $B94
+  WordV  $B95
+  WordV  $B96
+  IPAMB &M94 (168,9)
+  IPAMB &M95 (254,7)
+  IPAMB &M96 (254,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;KUNDE:
+  ;------------------------
+  ;STANGL GmbH
+  ; 
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;1= RKW Linde KÑlte
+  ;2= LÅftung KÑlte
+  ;3= Sammelstîrung
+  ;   Schaltschrank
+  ;4= Highbus
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;fÅr Bio-Physikalische-
+  ;Chemie Gîttingen
+  ;Umbau Turm 3
+  ;Dachgeschoss
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;MS TEPLAN
+  ;Weidrichstra·e 29
+  ;65795 Hattersheim
+  ;email:
+  ;ms-teplan@t-online.de
+  ;www.ms-teplan.de
+  ;tel. 06145/938603
+  ;fax  06145/938604
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrÅcklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB GebÑudeautomation
+  ;geÑndert oder kopiert
+  ;werden.
+  ; 
+  ;Programmierumgebung:
+  ;- EEPROM Version > 5.0
+  ;- Compileroption:
+  ;  -OD-V5
+  ;- MIC.EXE Version:
+  ;  07.09.99
+  ;- Zielhardware:
+  ;  ar20 / sp20 / zp20
+  ; 
+  ;Druckereinstellung:
+  ;Laserjet-150-Portrait
+  ;Raster= Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Daten Einlesen
+  ;Task 3= Steuerung und
+  ;        Regelung
+  ;Task 4= Daten ausgeben
+  ;
+  ; 
+  ;BLATT-BENNUNG
+  ;------------------------
+  ;1. Anlagenindex
+  ;2. Anlagenkomponente
+  ;3. Funktion oder
+  ;   Tranfer
+  ;Beispiel
+  ;1 VE MELEIN
+  ;oder
+  ;2 LU 1F
+  ; 
+  ;ANLAGENKOMPONENTE
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- VE = Vorerhitzer
+  ;- KU = KÅhler
+  ;- WR = WRG
+  ;- BE = Befeuchter
+  ;- LU = LÅfter
+  ;- KL = Klappen
+  ;usw.
+  ; 
+  ;ANLAGENFUNKTION
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- 1F = einstufig
+  ;- FU = Frequenzumf.
+  ;- WA = Wartung
+  ;- VE = Ventil
+  ;- PU = Pumpe
+  ;- BE = Bedarf
+  ;usw.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;1_ = Anlagenindex
+  ;_Z_= Zwischenvariable
+  ;_E_= Eingabevariable
+  ;_A_= Ausgabevariable
+  ;_K_= Konstante
+  ;_D_= Displayvariable
+  ;_S_= Systemvariable
+  ;_R_= Reservarariable
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Stîrungs Var.
+  ;_RM_ = RÅckmeld. Var.
+  ;_MW_ = Me·wert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ER_  =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;T3-KA04-01A-X50
+  ;_
+  ; 
+  NICHT (K_VP_FREIG_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_1,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ;nachfahren
+  ; 
+  ;T3-LU04-20A-X50
+  ; 
+  NICHT (K_VP_FREIG_2,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_2,$WZERO,$WZERO,&M1,S_ERR)
+  ;Freigabe
+  ;nachfahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;T3-LU04-20A-V51
+  ; 
+  ANAUS (K_VP_GW_T1_2,K_1_STATUS,&M2,S_ERR)
+  ;Grenzwert
+  ;nachfahren
+  ; 
+  ;T3-LU04-20A-V52
+  ; 
+  ANAUS (K_VP_GW_T2_2,K_1_STATUS,&M3,S_ERR)
+  ;Grenzwert
+  ;nachfahren
+  ; 
+  ;T3-LU04-20A-V53
+  ; 
+  ANAUS (K_VP_GW_T3_2,K_1_STATUS,&M4,S_ERR)
+  ;Grenzwert
+  ;nachfahren
+  ; 
+  ;T3-LU04-20A-V54
+  ; 
+  ANAUS (K_VP_GW_T4_2,K_1_STATUS,&M5,S_ERR)
+  ;Grenzwert
+  ;nachfahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1500)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;RÅckmeldung
+  ;Freigabe
+  ; 
+  ;T3-KA04-01A-X50
+  ; 
+  MELEIN (&M6,1,K_VP_FREIG_1,S_ERR)
+  BTRA (K_VP_FREIG_1,1_E_VP_FREIG)
+  ;Meldung Ein
+  ;Quittierung DG
+  ; 
+  MELEIN (&M7,1,1_E_BM_QUITT,S_ERR)
+  ;T3-UV04-00A-B00
+  ; 
+  ;Meldung Ein
+  ;Quittierung SUG
+  ;Highbus
+  ; 
+  MELEIN (&M8,1,1_E_BM_QUITT_SUG,S_ERR)
+  ;T3-AS03-02B-V10
+  ; 
+  ;Meldung Ein
+  ;Quittierung 1.OG
+  ;Highbus
+  ; 
+  MELEIN (&M9,1,1_E_BM_QUITT_1OG,S_ERR)
+  ;T3-AS03-02B-V11
+  ; 
+  ;RÅckmeldung Ein
+  ;Quittierung GLT
+  ; 
+  MELEIN (&M10,1,1_E_RM_QUITT_GLT,S_ERR)
+  ;T3-UV04-01A-X00
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;Stîrung
+  ;RKW 1
+  ; 
+  ;Stîrung
+  ;Pumpeneinheit
+  ; 
+  MELEIN (&M11,1,1_E_ST_RKW1,S_ERR)
+  ;Stîrung
+  ;RKW 2
+  ; 
+  MELEIN (&M12,1,$B1,S_ERR)
+  MELEIN (&M13,1,1_E_ST_RKW2,S_ERR)
+  ;T3-KA04-01A-X12
+  ; 
+  ;RÅckmeldung Ein
+  ;RKW 1
+  ; 
+  MELEIN (&M14,1,1_E_RM_RKW1,S_ERR)
+  ;RÅckmeldung Ein
+  ;RKW 2
+  ; 
+  MELEIN (&M15,1,1_E_RM_RKW2,S_ERR)
+  ;T3-KA04-01A-X12
+  ; 
+  ;T3-KA04-01A-X11
+  ; 
+  ;T3-KA04-01A-A10
+  ; 
+  NICHT ($B1,1_E_ST_PU)
+  ;T3-KA04-01A-X11
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;Freigabe
+  ; 
+  ;T3-LU04-20A-X50
+  ; 
+  MELEIN (&M16,1,K_VP_FREIG_2,S_ERR)
+  BTRA (K_VP_FREIG_2,2_E_VP_FREIG)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Stîrung
+  ;Kaltleiter
+  ;LÅfter 1
+  ; 
+  NICHT ($B2,2_E_ST_LU1_KL)
+  MELEIN (&M17,1,$B2,S_ERR)
+  ;Stîrung
+  ;Reparaturschalter
+  ;LÅfter 1
+  ; 
+  NICHT ($B3,2_E_ST_LU1_REPS)
+  MELEIN (&M18,1,$B3,S_ERR)
+  ;T3-LU04-20A-W01
+  ; 
+  ;Stîrung
+  ;Kaltleiter
+  ;LÅfter 2
+  ; 
+  NICHT ($B4,2_E_ST_LU2_KL)
+  MELEIN (&M19,1,$B4,S_ERR)
+  ;Stîrung
+  ;Reparaturschalter
+  ;LÅfter 2
+  ; 
+  NICHT ($B5,2_E_ST_LU2_REPS)
+  MELEIN (&M20,1,$B5,S_ERR)
+  ;T3-LU04-20A-W02
+  ; 
+  ;T3-LU04-20A-X02
+  ; 
+  ;T3-LU04-20A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;LÅfter 1
+  ;Stufe 1
+  ; 
+  MELEIN (&M21,1,2_R_RM_LU1_E1,S_ERR)
+  ;RÅckmeldung Ein
+  ;LÅfter 1
+  ;Stufe 2
+  ; 
+  MELEIN (&M22,1,2_R_RM_LU1_E2,S_ERR)
+  ;T3-LU04-20A-X01
+  ; 
+  ;RÅckmeldung Ein
+  ;LÅfter 2
+  ;Stufe 1
+  ; 
+  MELEIN (&M23,1,2_R_RM_LU2_E1,S_ERR)
+  ;RÅckmeldung Ein
+  ;LÅfter 2
+  ;Stufe 2
+  ; 
+  MELEIN (&M24,1,2_R_RM_LU2_E2,S_ERR)
+  ;T3-LU04-20A-X02
+  ; 
+  ;T3-LU04-20A-X02
+  ; 
+  ;T3-LU04-20A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Stîrung
+  ;PhasenÅberwachung
+  ; 
+  MELEIN (&M25,1,$B6,S_ERR)
+  ;Stîrung
+  ;Blitzschutz
+  ;Einspeisung
+  ; 
+  MELEIN (&M26,1,$B7,S_ERR)
+  ;T3-UV04-00A-S02
+  ;E
+  ; 
+  ;Stîrung
+  ;Blitzschutz
+  ;DDC
+  ;
+  ; 
+  MELEIN (&M27,1,$B8,S_ERR)
+  ;Stîrung
+  ;Steuersicherung
+  ; 
+  MELEIN (&M28,1,$B9,S_ERR)
+  ;T3-UV04-00A-S03
+  ; 
+  ;T3-UV04-00A-S04
+  ; 
+  ;T3-UV04-00A-S01
+  ; 
+  NICHT ($B6,3_E_ST_PHASE)
+  NICHT ($B7,3_E_ST_BLITZ_E)
+  NICHT ($B8,3_E_ST_BLITZ_D)
+  NICHT ($B9,3_E_ST_SICH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M2,K_VP_GW_T1_2,S_ERR)
+  ATRA (K_VP_GW_T1_2,2_E_VP_GW_T1)
+  ;T3-LU04-20A-V51
+  ; 
+  ;Grenzwert
+  ;Temperatur 1
+  ; 
+  ANEIN (&M3,K_VP_GW_T2_2,S_ERR)
+  ATRA (K_VP_GW_T2_2,2_E_VP_GW_T2)
+  ;T3-LU04-20A-V52
+  ; 
+  ;Grenzwert
+  ;Temperatur 2
+  ; 
+  ANEIN (&M4,K_VP_GW_T3_2,S_ERR)
+  ATRA (K_VP_GW_T3_2,2_E_VP_GW_T3)
+  ;T3-LU04-20A-V53
+  ; 
+  ;Grenzwert
+  ;Temperatur 3
+  ; 
+  ANEIN (&M5,K_VP_GW_T4_2,S_ERR)
+  ATRA (K_VP_GW_T4_2,2_E_VP_GW_T4)
+  ;T3-LU04-20A-V54
+  ; 
+  ;Grenzwert
+  ;Temperatur 4
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&M33,2_E_MW_RA_TEMP,S_ERR)
+  ;T3-LU04-20A-T10
+  ; 
+  ;Messwert
+  ;Raumtemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MOKY (1_E_BM_QUITT,$M34,$B10)
+  MOKY (1_E_RM_QUITT_GLT,$M35,$B11)
+  MOKY (1_E_BM_QUITT_SUG,$M36,$B12)
+  MOKY (1_E_BM_QUITT_1OG,$M37,$B13)
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M38,$M39,$B14)
+  MOKY ($B14,$M40,$B15)
+  ODRMN (5,$B10,$B11,$B12,$B13,$B15,0,$B16,$WSCRATCH)
+  MOKY ($B16,$M41,1_Z_QUITT)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&M42,1,Phasenueberwach.,$WSCRATCH)
+  ;PhasenwÑchter in EZ aus-
+  ;gelîst (1F auf Mod.08)
+  ; 
+  ;1F steht 60 sec. an
+  ;g
+  ; 
+  UND21 (Phasenueberwach.,$B18,mehrfache_Entrie,$B17)
+  MOKY ($B19,$M43,mehrfache_Entrie)
+  MOKY (Phasenueberwach.,$M44,$B18)
+  VVZ ($B17,$M45,$M46,$B19)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UNDMN (0,2,Phasenueberwach.,1_A_HAUPT_ST,$B20,$WSCRATCH)
+  VVZ ($B20,$M47,$M48,$B21)
+  VVZ (1_E_VP_FREIG,$M49,$M50,$B22)
+  UND11 ($B22,$B21,$B23)
+  RSS ($B23,1_E_VP_FREIG,$B24,$WSCRATCH)
+  UND2 ($B24,$B21,$B25)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B25,$B26,Anl_wieder_eins1)
+  NICHT ($B25,$B26)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Die Anlage wird nach
+  ;Netzausfall und nach
+  ;erfolgreicher automat.
+  ;Entriegelung automatisch
+  ;wieder eingeschaltet,
+  ;wenn sie vor dem Netz-
+  ;ausfalle EIN war.
+  ;Sonst nicht !
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B31,1_E_VP_FREIG,$B27)
+  NICHT (1_E_VP_FREIG,$HB1)
+  NICHT ($HB1,$B31)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B27,k0,1_A_HAUPT_ST,0,$B28,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1_E_VP_FREIG,$B32,$B29)
+  NICHT (1_E_VP_FREIG,$B32)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,k0,Anl_wieder_eins1,k0,$B29,0,$B30,$WSCRATCH)
+  BEFAUS (1,$B28,$B30,$WZERO,$WZERO,&M0,$WSCRATCH)
+  ;Anlagenbefehl
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UNDMN (0,2,Phasenueberwach.,k0,$B33,$WSCRATCH)
+  VVZ ($B33,$M52,$M53,$B34)
+  VVZ (2_E_VP_FREIG,$M54,$M55,$B35)
+  UND11 ($B35,$B34,$B36)
+  RSS ($B36,2_E_VP_FREIG,$B37,$WSCRATCH)
+  UND2 ($B37,$B34,$B38)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B38,$B39,Anl_wieder_eins2)
+  NICHT ($B38,$B39)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Die Anlage wird nach
+  ;Netzausfall und nach
+  ;erfolgreicher automat.
+  ;Entriegelung automatisch
+  ;wieder eingeschaltet,
+  ;wenn sie vor dem Netz-
+  ;ausfalle EIN war.
+  ;Sonst nicht !
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B44,2_E_VP_FREIG,$B40)
+  NICHT (2_E_VP_FREIG,$HB1)
+  NICHT ($HB1,$B44)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B40,k0,k0,0,$B41,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2_E_VP_FREIG,$B45,$B42)
+  NICHT (2_E_VP_FREIG,$B45)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,k0,Anl_wieder_eins2,k0,$B42,0,$B43,$WSCRATCH)
+  BEFAUS (1,$B41,$B43,$WZERO,$WZERO,&M1,$WSCRATCH)
+  ;Anlagenbefehl
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODRMN (9,1_R_HAUPT_ST_1,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B46,$WSCRATCH)
+  UND2 (1_E_ST_RKW1,1_E_ST_RKW2,$B47)
+  ODR2 ($B46,$B47,$B48)
+  RSS ($B48,1_Z_QUITT,1_A_HAUPT_ST,$WSCRATCH)
+  ;Anlagenstîrung
+  ;Stîrungen die zum
+  ;Abschalten der Anlage
+  ;fÅhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (8,1_E_ST_RKW1,1_E_ST_RKW2,1_E_ST_PU,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B49,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B50,
+         $WSCRATCH)
+  ODR2 ($B49,$B50,1_A_SAMMEL_ST)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UND11 (1_E_VP_FREIG,1_A_HAUPT_ST,1_Z_HAUPT)
+  ;Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  UHR (1_E_RM_RKW1,$B58,1_D_LFT_RKW2)
+  VGLOH (1_D_LFT_RKW2,$M57,$B51)
+  ODRMN (1,1_E_ST_RKW2,1,$B51,$B52,$WSCRATCH)
+  UNDMN (3,$B52,$B56,1_Z_HAUPT,1,1_E_ST_RKW1,1_A_MV1,$B53)
+  BTRA (1_A_MV1,1_A_RKW1)
+  UHR (1_E_RM_RKW2,$B57,1_D_LZT_RKW1)
+  VGLOH (1_D_LZT_RKW1,$M58,$B54)
+  ODRMN (1,1_E_ST_RKW1,1,$B54,$B55,$WSCRATCH)
+  UNDMN (3,$B53,$B55,1_Z_HAUPT,1,1_E_ST_RKW2,1_A_MV_2,$B56)
+  BTRA (1_A_MV_2,1_A_RKW2)
+  MOKY ($B51,$M59,$B57)
+  ;Redundante RÅckkÅhlwerke
+  ;Umschaltung bei:
+  ;- Stîrung
+  ;- 100 Stunden Betrieb
+  ; 
+  MOKY ($B54,$M60,$B58)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (8,2_E_ST_LU1_KL,2_E_ST_LU1_REPS,2_E_ST_LU2_KL,
+         2_E_ST_LU2_REPS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B59,$WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B60,
+         $WSCRATCH)
+  ODR2 ($B59,$B60,2_A_SAMMEL_ST)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UND11 (2_E_VP_FREIG,K_0_STATUS,2_Z_HAUPT)
+  ;Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  VGLEH (2_E_MW_RA_TEMP,2_E_VP_GW_T1,$M61,$B61)
+  VGLEH (2_E_MW_RA_TEMP,2_E_VP_GW_T2,$M62,$B62)
+  VGLEH (2_E_MW_RA_TEMP,2_E_VP_GW_T3,$M63,$B63)
+  VGLEH (2_E_MW_RA_TEMP,2_E_VP_GW_T4,$M64,$B64)
+  UND2 (2_Z_HAUPT,$B61,$B65)
+  UND2 (2_Z_HAUPT,$B62,$B66)
+  UND2 (2_Z_HAUPT,$B63,2_Z_KL1)
+  UND2 (2_Z_HAUPT,$B64,2_Z_KL2)
+  VVZ ($B65,$M65,$M66,2_Z_ANF_LU1_1ST)
+  VVZ ($B66,$M67,$M68,2_Z_ANF_LU1_2ST)
+  VVZ (2_Z_KL1,$M69,$M70,2_Z_ANF_LU2_1ST)
+  VVZ (2_Z_KL2,$M71,$M72,2_Z_ANF_LU2_2ST)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UND11 (2_Z_KL1,2_R_ENTRAUCH,$B67)
+  UND11 (2_Z_KL2,2_R_ENTRAUCH,$B68)
+  ODR2 ($B67,2_R_ENTRAUCH,2_A_BF_KL1)
+  ODR2 ($B68,2_R_ENTRAUCH,2_A_BF_KL2)
+  ;Klappen Auffahren
+  ;- Freigabe Anlage
+  ;- Entrauchung Zufahren
+  ;- Entrauchung Auffahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODRMN (6,2_E_ST_LU1_KL,2_R_ST_LU1_BI,2_E_ST_LU1_REPS,
+         2_R_ST_LU1_P,2_R_ST_LU1_N,2_R_ST_LU1_F,0,2_Z_LU1_ST,
+         $WSCRATCH)
+  ;Stîrung LÅfter
+  ;- Kaltleiter Motor
+  ;- Bimetall Motor
+  ;- Reparaturschalter
+  ;- Keilriemen Diff-Druck
+  ;- Keilriemen Oppermann
+  ;- Keilriemen Strîmung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UND11 (2_Z_ANF_LU1_1ST,2_Z_ANF_LU1_2ST,$B69)
+  UND11 ($B69,2_R_ENTRAUCH,2_Z_LU1_1ST)
+  ODR2 (2_Z_ANF_LU1_2ST,2_R_ENTRAUCH,2_Z_LU1_2ST)
+  ;Stufenschaltung fÅr
+  ;zweistufigen LÅfter
+  ;- Bedingung Stufe 2
+  ;- Freigabe Anlage
+  ;- Anfahrbetrieb
+  ;- Entrauchung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UND11 (2_Z_LU1_1ST,$B77,$B70)
+  ODR2 ($B76,$B70,$B71)
+  UND11 ($B71,2_Z_LU1_ST,2_A_BF_LU1_1ST)
+  MOKY (2_Z_LU1_2ST,$M73,$B72)
+  UND11 ($B72,2_A_BF_LU1_1ST,$B73)
+  VVZ (2_A_BF_LU1_1ST,$M74,$M75,$B74)
+  ODRMN (2,$B74,2_Z_LU1_ST,1,2_Z_LU1_2ST,$B75,$WSCRATCH)
+  RSS ($B73,$B75,$B76,$WSCRATCH)
+  VVZ (2_A_BF_LU1_2ST,$M76,$M77,$B77)
+  ;Zweistufiger LÅfter
+  ;- Mindest Drehzahl
+  ;Stufe 1
+  ;- Austrudelzeit
+  ; 
+  UND2 (2_Z_LU1_2ST,$B74,$B78)
+  ODRMN (1,2_Z_LU1_ST,1,2_Z_LU1_2ST,$B79,$WSCRATCH)
+  RSS ($B78,$B79,2_A_BF_LU1_2ST,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ODRMN (6,2_E_ST_LU2_KL,2_R_ST_LU2_BI,2_E_ST_LU2_REPS,
+         2_R_ST_LU2_P,2_R_ST_LU2_N,2_R_ST_LU2_F,0,2_Z_LU2_ST,
+         $WSCRATCH)
+  ;Stîrung LÅfter
+  ;- Kaltleiter Motor
+  ;- Bimetall Motor
+  ;- Reparaturschalter
+  ;- Keilriemen Diff-Druck
+  ;- Keilriemen Oppermann
+  ;- Keilriemen Strîmung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  UND11 (2_Z_ANF_LU2_1ST,2_Z_ANF_LU2_2ST,$B80)
+  UND11 ($B80,2_R_ENTRAUCH,2_Z_LU2_1ST)
+  ODR2 (2_Z_ANF_LU2_2ST,2_R_ENTRAUCH,2_Z_LU2_2ST)
+  ;Stufenschaltung fÅr
+  ;zweistufigen LÅfter
+  ;- Bedingung Stufe 2
+  ;- Freigabe Anlage
+  ;- Anfahrbetrieb
+  ;- Entrauchung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  UND11 (2_Z_LU2_1ST,$B88,$B81)
+  ODR2 ($B87,$B81,$B82)
+  UND11 ($B82,2_Z_LU2_ST,2_A_BF_LU2_1ST)
+  MOKS (2_Z_LU2_2ST,$M78,$B83)
+  UND11 ($B83,2_A_BF_LU2_1ST,$B84)
+  VVZ (2_A_BF_LU2_1ST,$M79,$M80,$B85)
+  ODRMN (2,$B85,2_Z_LU2_ST,1,2_Z_LU2_2ST,$B86,$WSCRATCH)
+  RSS ($B84,$B86,$B87,$WSCRATCH)
+  VVZ (2_A_BF_LU2_2ST,$M81,$M82,$B88)
+  ;Zweistufiger LÅfter
+  ;- Mindest Drehzahl
+  ;Stufe 1
+  ;- Austrudelzeit
+  ; 
+  UND2 (2_Z_LU2_2ST,$B85,$B89)
+  ODRMN (1,2_Z_LU2_ST,1,2_Z_LU2_2ST,$B90,$WSCRATCH)
+  RSS ($B89,$B90,2_A_BF_LU2_2ST,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODRMN (4,3_E_ST_BLITZ_D,3_E_ST_BLITZ_E,3_E_ST_PHASE,
+         3_E_ST_SICH,0,3_A_ST_SAM_ST,$WSCRATCH)
+  ;Sammelstîrung
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  UND2 (1_E_ST_RKW1,1_E_ST_RKW2,4_A_ST_RKW)
+  ;Sammelstîrung DG fÅr
+  ;Betriebstechnik
+  ;Stîrung RKW fÅr
+  ;Abschaltung Abtauung
+  ;KÅhlrÑume 1.OG
+  ;-
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,1_A_HAUPT_ST,&M83,S_ERR)
+  ;T3-KA04-01A-A50
+  ;B
+  ; 
+  SETMEL (K_1_STATUS,1,1_A_SAMMEL_ST,&M84,S_ERR)
+  ;Abschaltstîrung
+  ; 
+  ;T3-KA04-01A-S50
+  ; 
+  ;Sammelstîrung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ;T3-KA04-01A-X01
+  ; 
+  NICHT (1_A_MV1,$HB0)
+  BEFAUS (1,$HB0,1_A_MV1,$WZERO,$WZERO,&M85,S_ERR)
+  ;Magnetventil 1
+  ; 
+  ;T3-KA04-01A-X02
+  ; 
+  NICHT (1_A_MV_2,$HB0)
+  BEFAUS (1,$HB0,1_A_MV_2,$WZERO,$WZERO,&M86,S_ERR)
+  ;Magnetventil 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  ;T3-KA04-01A-X11
+  ; 
+  NICHT (1_A_RKW1,$HB0)
+  BEFAUS (1,$HB0,1_A_RKW1,$WZERO,$WZERO,&M87,S_ERR)
+  ;Freigabe
+  ;RKW 1
+  ; 
+  ;T3-KA04-01A-X12
+  ; 
+  NICHT (1_A_RKW2,$HB0)
+  BEFAUS (1,$HB0,1_A_RKW2,$WZERO,$WZERO,&M88,S_ERR)
+  ;Freigabe
+  ;RKW 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,2_A_SAMMEL_ST,&M89,S_ERR)
+  ;T3-LU04-20A-S50
+  ; 
+  ;Sammelstîrung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ;T3-LU04-20A-X11
+  ; 
+  NICHT (2_A_BF_KL1,$HB0)
+  BEFAUS (1,$HB0,2_A_BF_KL1,$WZERO,$WZERO,&M90,S_ERR)
+  ;Nachstrîmklappe 1
+  ; 
+  ;T3-LU04-20A-X21
+  ; 
+  NICHT (2_A_BF_KL2,$HB0)
+  BEFAUS (1,$HB0,2_A_BF_KL2,$WZERO,$WZERO,&M91,S_ERR)
+  ;Nachstrîmklappe 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  ;T3-LU04-20A-X01
+  ; 
+  BEFAUS (2,$B91,$B92,$B93,$WZERO,&M92,S_ERR)
+  ;AblÅfter 1
+  ; 
+  UNDMN (0,3,K_0_STATUS,2_A_BF_LU1_1ST,2_A_BF_LU1_2ST,$B91,
+         $WSCRATCH)
+  UND11 (2_A_BF_LU1_1ST,K_0_STATUS,$B92)
+  UND11 (2_A_BF_LU1_2ST,K_0_STATUS,$B93)
+  ;T3-LU04-20A-X02
+  ; 
+  BEFAUS (2,$B94,$B95,$B96,$WZERO,&M93,S_ERR)
+  ;AblÅfter 2
+  ; 
+  UNDMN (0,3,K_0_STATUS,2_A_BF_LU2_1ST,2_A_BF_LU2_2ST,$B94,
+         $WSCRATCH)
+  UND11 (2_A_BF_LU2_1ST,K_0_STATUS,$B95)
+  UND11 (2_A_BF_LU2_2ST,K_0_STATUS,$B96)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,3_A_ST_SAM_ST,&M94,S_ERR)
+  ;T3-UV04-00A-S50
+  ; 
+  ;Sammelstîrung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,4_A_ST_RKW,&M95,S_ERR)
+  ;T3-AS03-02B-V07
+  ; 
+  ;Sammelstîrung DG
+  ;Highbus Betriebst.
+  ; 
+  SETMEL (K_1_STATUS,1,4_A_ST_RKW,&M96,S_ERR)
+  ;T3-AS03-02B-V09
+  ; 
+  ;Stîrung RKW fÅr
+  ;KÅhlrÑume
+  ; 
+  ENDE 
+  ENDMODUL 

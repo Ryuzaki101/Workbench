@@ -1,0 +1,152 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0409.GPS
+  ;*** Projektname    : ARAG KAELTE
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : MB13
+  ;*** Feldbus Nummer : 9
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-ENTRIEGELN-AUS (0)
+  WordK  K-ENTRIEGELN-EIN (1)
+  WordV  OELDRUCK-KWS-2
+  WordV  OELDRUCK-KWS-1
+  WordV  OELDRUCK-KWS-3
+  WordV  KWS-2-VERD-1-EIN
+  WordV  KWS-2-VERD-2-EIN
+  WordV  KWS-1-VERD-1-EIN
+  WordV  KWS-1-VERD-2-EIN
+  WordV  KWS-3-VERD-1-EIN
+  WordV  KWS-3-VERD-2-EIN
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1KA0004BF60 (102,9)
+  IPAMB &M0 (102,10)
+  IPAMB &M1 (102,11)
+  WordV  $WSCRATCH
+  IPAMB &BA1KA0202ST06 (16,14)
+  IPAMB &BA1KA0201ST06 (7,12)
+  IPAMB &BA1KA0203ST06 (114,0)
+  IPAMB &BA1KA0202BM14 (16,5)
+  IPAMB &BA1KA0202BM24 (16,9)
+  IPAMB &BA1KA0201BM14 (18,8)
+  IPAMB &BA1KA0201BM24 (19,0)
+  IPAMB &BA1KA0203BM14 (114,3)
+  IPAMB &BA1KA0203BM24 (114,4)
+  WordV  $B1
+  FloatK $M2 (60.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B3
+  WordK  $M4 (1)
+  IPAMB &BA1KA0201ST71 (85,2)
+  WordV  $B4
+  FloatK $M5 (60.00)
+  FloatK $M6 (0.00)
+  WordV  $B5
+  WordV  $B6
+  WordK  $M7 (1)
+  IPAMB &BA1KA0201ST72 (85,3)
+  WordV  $B7
+  FloatK $M8 (60.00)
+  FloatK $M9 (0.00)
+  WordV  $B8
+  WordV  $B9
+  WordK  $M10 (1)
+  IPAMB &BA1KA0202ST71 (85,0)
+  WordV  $B10
+  FloatK $M11 (60.00)
+  FloatK $M12 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordK  $M13 (1)
+  IPAMB &BA1KA0202ST72 (85,1)
+  WordV  $B13
+  FloatK $M14 (60.00)
+  FloatK $M15 (0.00)
+  WordV  $B14
+  WordV  $B15
+  WordK  $M16 (1)
+  IPAMB &BA1KA0203ST71 (85,8)
+  WordV  $B16
+  FloatK $M17 (60.00)
+  FloatK $M18 (0.00)
+  WordV  $B17
+  WordV  $B18
+  WordK  $M19 (1)
+  IPAMB &BA1KA0203ST72 (85,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;EDV-KAELTE
+  ;STANDORT:
+  ;2.KG Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-ENTRIEGELN-AUS,K-ENTRIEGELN-EIN,$WZERO,$WZERO,
+          &BA1KA0004BF60,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&BA1KA0004BF60,3,K-ENTRIEGELN-AUS,$WSCRATCH,
+          K-ENTRIEGELN-EIN,WERR)
+  MELEIN (&BA1KA0202ST06,1,OELDRUCK-KWS-2,WERR)
+  MELEIN (&BA1KA0201ST06,1,OELDRUCK-KWS-1,WERR)
+  MELEIN (&BA1KA0203ST06,1,OELDRUCK-KWS-3,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&BA1KA0202BM14,1,KWS-2-VERD-1-EIN,WERR)
+  MELEIN (&BA1KA0202BM24,1,KWS-2-VERD-2-EIN,WERR)
+  MELEIN (&BA1KA0201BM14,1,KWS-1-VERD-1-EIN,WERR)
+  MELEIN (&BA1KA0201BM24,1,KWS-1-VERD-2-EIN,WERR)
+  MELEIN (&BA1KA0203BM14,2,KWS-3-VERD-1-EIN,KWS-3-VERD-2-EIN,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  UND2 (KWS-1-VERD-1-EIN,OELDRUCK-KWS-1,$B1)
+  VVZ ($B1,$M2,$M3,$B2)
+  RSS ($B2,K-ENTRIEGELN-EIN,$B3,$WSCRATCH)
+  SETMEL ($M4,1,$B3,&BA1KA0201ST71,WERR)
+  UND2 (KWS-1-VERD-2-EIN,OELDRUCK-KWS-1,$B4)
+  VVZ ($B4,$M5,$M6,$B5)
+  RSS ($B5,K-ENTRIEGELN-EIN,$B6,$WSCRATCH)
+  SETMEL ($M7,1,$B6,&BA1KA0201ST72,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  UND2 (KWS-2-VERD-1-EIN,OELDRUCK-KWS-2,$B7)
+  VVZ ($B7,$M8,$M9,$B8)
+  RSS ($B8,K-ENTRIEGELN-EIN,$B9,$WSCRATCH)
+  SETMEL ($M10,1,$B9,&BA1KA0202ST71,WERR)
+  UND2 (KWS-2-VERD-2-EIN,OELDRUCK-KWS-2,$B10)
+  VVZ ($B10,$M11,$M12,$B11)
+  RSS ($B11,K-ENTRIEGELN-EIN,$B12,$WSCRATCH)
+  SETMEL ($M13,1,$B12,&BA1KA0202ST72,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  UND2 (KWS-3-VERD-1-EIN,OELDRUCK-KWS-3,$B13)
+  VVZ ($B13,$M14,$M15,$B14)
+  RSS ($B14,K-ENTRIEGELN-EIN,$B15,$WSCRATCH)
+  SETMEL ($M16,1,$B15,&BA1KA0203ST71,WERR)
+  UND2 (KWS-3-VERD-2-EIN,OELDRUCK-KWS-3,$B16)
+  VVZ ($B16,$M17,$M18,$B17)
+  RSS ($B17,K-ENTRIEGELN-EIN,$B18,$WSCRATCH)
+  SETMEL ($M19,1,$B18,&BA1KA0203ST72,WERR)
+  ENDE 
+  ENDMODUL 

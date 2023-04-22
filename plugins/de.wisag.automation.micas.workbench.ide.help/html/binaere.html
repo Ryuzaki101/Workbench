@@ -1,0 +1,1289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+         <!---title>binäre Bausteine</title--->
+</head>
+
+<body>
+
+<div id="logo">&nbsp;MICAS Workbench</div>
+
+<hr>
+
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a></p>
+<h1>Bin&auml;r-Bausteine</h1>
+
+<p>
+<a href="#AEQ" title="&Auml;quivalenz">AEQ</a>&nbsp;
+<a href="#BTRA" title="Werttransfer Bin&auml;r">BTRA</a>&nbsp;
+<a href="#NAND2" title="Negiertes UND mit 2 Eing&auml;ngen">NAND2</a>&nbsp;
+<a href="#NICHT" title="Inverter-Funktion">NICHT</a>&nbsp;
+<a href="#NOR2" title="Negiertes ODER mit 2 Eing&auml;ngen">NOR2</a>&nbsp;
+<a href="#ODR2" title="ODER mit 2 Eing&auml;ngen">ODR2</a>&nbsp;
+<a href="#ODRMN" title="ODER mit M direkten und N invertierten Eing&auml;ngen" >ODRMN</a>&nbsp;
+<a href="#RSS" title="R&uuml;cksetzbarer Speicher">RSS</a>&nbsp;
+<a href="#TFF" title="Triggerbares Flipflop" >TFF</a>&nbsp;
+<a href="#UND11" title="UND mit 1 direkten und 1 negierten Eingang">UND11</a>&nbsp;
+<a href="#UND2" title="UND mit 2 direkten Eing&auml;ng">UND2</a>&nbsp;
+<a href="#UND21" title="UND mit 2 direkten und 1 negierten Eingang">UND21</a>&nbsp;
+<a href="#UNDMN" title="UND mit M direkten und N invertierten Eing&auml;ngen">UNDMN</a>&nbsp;
+<a href="#UVO" title="UND vor ODER">UVO</a>&nbsp;
+<a href="#XOR2" title="Exklusiv ODER">XOR2</a>
+</p>
+
+<h2><a name="AEQ">AEQ</a> - &Auml;quivalenz</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A identisch ist mit dem Wert am Eingang B,
+dann wird der Ausgang Xa=1, sonst bleibt der Ausgang Xa=0 <br>
+(&Auml;quivalenzFunktion).
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein AEQ" src="img/sym_aeq.png" alt="" border="0" width="48" height="82">
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="BTRA">BTRA</a> - Werttransfer Bin&auml;r</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der am Eingang A liegende Wert wird auf den Ausgang Xa &uuml;bertragen, damit
+der Ausgangs-Variablen ein anderer Name zugeordnet werden kann als der
+Eingangs-Variablen.
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein BTRA" src="img/sym_btra.png" alt="" border="0" width="48" height="68">
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="NAND2">NAND2</a> - Negiertes UND mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A und der Wert am Eingang B 1-Signal haben,
+dann wird der Ausgang Xa = 0, sonst wird der Ausgang Xa = 1 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein NAND2" src="img/sym_nand2.png" alt="" border="0" width="57" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+ </table>
+
+<h2><a name="NICHT">NICHT</a> - Inverter-Funktion</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A = 0 ist, wird der Ausgang Xa = 1,
+wird der Eingang A = 1, wird der Ausgang Xa = 0 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein NICHT" src="img/sym_nicht.png" alt="" border="0" width="53" height="68">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="NOR2">NOR2</a> - Negiertes ODER mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A und der Wert am Eingang B 0-Signal haben,
+dann wird der Ausgang Xa = 1, sonst wird der Ausgang Xa = 0 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein NOR2" src="img/sym_nor2.png" alt="" border="0" width="49" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="ODR2">ODR2</a> - ODER mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A und der Wert am Eingang B 0-Signal haben,
+dann wird der Ausgang Xa = 0, sonst wird der Ausgang Xa = 1 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ODR2" src="img/sym_odr2.png" alt="" border="0" width="49" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+
+<h2><a name="ODRMN">ODRMN</a> - ODER mit M nicht-invertierten und N invertierten Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Bin&auml;res ODER-Gatter mit bis zu 15 nicht invertierten und bis zu 15 invertierten Eing&auml;ngen.<br>
+Eine der beiden Gruppen darf 0 Eing&auml;nge haben.<br>
+0 &lt;= M &lt;= 15<br>
+0 &lt;= N &lt;= 15<br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A1</th>
+  <th scope="col">A2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">AM</th>
+  <th scope="col">Ai1</th>
+  <th scope="col">Ai2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">AiN</th>
+  <th scope="col">Xa</th>
+  <th scope="col">XaInv</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<table width="50%" border="0" cellpadding="2" cellspacing="2">
+ <tr>
+  <td>ODRMN Mindestgr&ouml;&szlig;e</td>
+  <td>ODRMN mit 7 nicht-invertierten<br>und 4 invertierten Eing&auml;ngen</td>
+ </tr>
+ <tr>
+  <td valign="top"><img title="MICAS-Baustein Mindetsgr&ouml;&szlig;e" src="img/sym_odrmn.png" alt="" border="0" width="76" height="82">&nbsp;</td>
+  <td valign="top"><img title="MICAS-Baustein mit 7 direkten und 4 invertierten Eing&auml;ngen" src="img/sym_odrmn_7n_4i.png" alt="" border="0" width="76" height="241">&nbsp;</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A1</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>A2</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>AM</td>
+   <td>Word</td>
+   <td>Eingang M </td>
+  </tr>
+  <tr align="center">
+   <td>Ai1</td>
+   <td>Word</td>
+   <td>Eingang 1 inv.</td>
+  </tr>
+  <tr align="center">
+   <td>Ai2</td>
+   <td>Word</td>
+   <td>Eingang 2 inv.</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>AiN</td>
+   <td>Word</td>
+   <td>Eingang N inv.</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+  <tr align="center">
+   <td>XaInv</td>
+   <td>Word</td>
+   <td>Ausgang 2</td>
+  </tr>
+</table>
+
+
+<h2><a name="RSS">RSS</a> - RS-Speicher</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der R&uuml;cksetzeingang R ist dominierend: Wenn R=1 ist, wird der nicht
+invertierende Ausgang Xa=0, unabh&auml;ngig vom Zustand des Setzeingangs S.<br>
+Ist R=0 und S=1, so wird der nicht invertierende Ausgang Xa auf 1 gesetzt.<br>
+Haben beide Eing&auml;nge 0-Signal, so bleibt der alte Zustand am Ausgang
+erhalten (A1, A2).<br>
+Der invertierende Ausgang XaInv besitzt immer das entgegengesetzte Signal des
+nicht invertierenden Ausgangs Xa.<br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">S</th>
+  <th scope="col">R</th>
+  <th scope="col">Xa</th>
+  <th scope="col">XaInv</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>A1</td>
+  <td>A2</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein RSS" src="img/sym_rss.png" alt="" border="0" width="81" height="84">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>S</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>R</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  <tr align="center">
+   <td>XaInv</td>
+   <td>Word</td>
+   <td>Ausgang 2</td>
+  </tr>
+ </table>
+
+<h2><a name="TFF">TFF</a> - T-Flipflop</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn das Signal am Eingang T von 0 auf 1 wechselt (Flancke), dann wechseln die
+Ausg&auml;nge Xa und XaInv ihren Signal-Zustand.<br>
+Am Ausgang XaInv liegt immer das inverse Signal zum Signal am Ausgang Xa.<br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">T</th>
+  <th scope="col">Xa</th>
+  <th scope="col">XaInv</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0->1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1->0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0->1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+</table>
+<p>usw.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein TFF" src="img/sym_tff.png" alt="" border="0" width="80" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>T</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  <tr align="center">
+   <td>XaInv</td>
+   <td>Word</td>
+   <td>Ausgang 2</td>
+  </tr>
+</table>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/TFF.png" alt="" border="0" width="650" height="502">
+
+
+<h2><a name="UND11">UND11</a> - UND mit je einem nicht-invertierten und invertierten Eingang</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A auf 1 und der Wert am Eingang Ainv auf 0 liegt,
+dann wird der Ausgang Xa = 1, sonst wird der Ausgang Xa = 0 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">Ainv</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein UND11" src="img/sym_und11.png" alt="" border="0" width="66" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>Ainv</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="UND2">UND2</a> - UND mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A und der Wert am Eingang B 1-Signal haben,
+dann wird der Ausgang Xa = 1, sonst wird der Ausgang Xa = 0 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein UND2" src="img/sym_und2.png" alt="" border="0" width="49" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<h2><a name="UND21">UND21</a> - UND mit 2 nicht-invertierten und 1 invertierten Eingang</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn der Wert am Eingang A und B 1-Signal haben und Eingang Cinv 0-Signal,
+dann wird der Ausgang Xa = 1, sonst wird der Ausgang Xa = 0 <br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Cinv</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein UND21" src="img/sym_und21.png" alt="" border="0" width="66" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Cinv</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+
+<h2><a name="UNDMN">UNDMN</a> - UND mit M nicht-invertierten und N invertierten Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Bin&auml;res UND-Gatter mit bis zu 15 nicht invertierten und bis zu 15 invertierten Eing&auml;ngen.<br>
+Eine der beiden Gruppen darf 0 Eing&auml;nge haben.<br>
+0 &lt;= M &lt;= 15<br>
+0 &lt;= N &lt;= 15<br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">Xe 1</th>
+  <th scope="col">Xe 2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">Xe M</th>
+  <th scope="col">XeInv 1</th>
+  <th scope="col">XeInv 2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">XeInv N</th>
+  <th scope="col">Xa</th>
+  <th scope="col">XaInv</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<table width="50%" border="0" cellpadding="2" cellspacing="2">
+ <tr>
+  <td>UNDMN Mindestgr&ouml;&szlig;e</td>
+  <td>UNDMN mit 6 nicht-invertierten<br>und 7 invertierten Eing&auml;ngen</td>
+ </tr>
+ <tr>
+  <td valign="top"><img title="MICAS-Baustein UNDMN Mindestgr&ouml;&szlig;e" src="img/sym_undmn.png" alt="" border="0" width="76" height="83">
+&nbsp;</td>
+  <td valign="top"><img title="MICAS-Baustein UNDMN mit 6 direkten und 7 invertierten Eing&auml;ngen" src="img/sym_undmn_6n_7i.png" alt="" border="0" width="80" height="277">
+&nbsp;</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe 1</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>Xe 2</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>Xe M</td>
+   <td>Word</td>
+   <td>Eingang M bzw N</td>
+  </tr>
+  <tr align="center">
+   <td>XeInv 1</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>XeInv 2</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>XeInv N</td>
+   <td>Word</td>
+   <td>Eingang M bzw N</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+  <tr align="center">
+   <td>XaInv</td>
+   <td>Word</td>
+   <td>Ausgang 2</td>
+  </tr>
+</table>
+
+
+<h2><a name="UVO">UVO</a> - UND vor ODER mit variablen Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Zwei unabh&auml;ngige UND-Glieder mit jeweils bis zu 15 direkten und 15 invertierten Eing&auml;ngen,<br>
+auf ein ODER mit einem unabh&auml;ngigen Eingang zusammengef&uuml;hrt, mit zwei Ausg&auml;ngen Xa und XaInv. Ist Xa = 1, wird der Ausgang XaInv = 0<br>
+</p>
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">Or</th>
+  <th scope="col">And1 1</th>
+  <th scope="col">And1 2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">And1 15</th>
+  <th scope="col">And2 1</th>
+  <th scope="col">And2 2</th>
+  <th scope="col"> ... </th>
+  <th scope="col">And2 15</th>
+  <th scope="col">Xa</th>
+  <th scope="col">XaInv</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>...</td>
+  <td>0</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>...</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td> ... </td>
+  <td>1</td>
+  <td>0</td>
+  <td>0</td>
+  <td>...</td>
+  <td>0</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td> ... </td>
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+  <td>...</td>
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein UVO" src="img/sym_uvo.png" alt="" border="0" width="80" height="135">
+<p>Beispiel einer ausprogrammierten <br>UND-vor-ODER-Funktion:</p>
+<img src="img/sym_und_vor_oder_diskret.png" alt="" border="0" width="559" height="364">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Or</td>
+   <td>Word</td>
+   <td>Eingang 1 ODER-Direkt</td>
+  </tr>
+  <tr align="center">
+   <td>And1 1</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>And1 2</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>And1 15</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+   <tr align="center">
+   <td>And2 1</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>And2 2</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>And2 15</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+  <tr align="center">
+   <td>XaInv</td>
+   <td>Word</td>
+   <td>Ausgang 2</td>
+  </tr>
+</table>
+
+
+<h2><a name="XOR2">XOR2</a> - Exklusiv ODER</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Wenn die beiden Eing&auml;nge ungleiches Signal haben, dann geht der Ausgang
+auf 1-Signal, sonst ist er auf 0-Signal (Exclusiv ODER-Funktion).<br>
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein XOR2" src="img/sym_xor2.png" alt="" border="0" width="48" height="82">
+
+<h3>Ein-/Ausgangswerte</h3>
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+ <tr align="center">
+  <th scope="col">A</th>
+  <th scope="col">B</th>
+  <th scope="col">Xa</th>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+ </tr>
+ <tr align="center">
+  <td>0</td>
+  <td>1</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align="center">
+  <td>1</td>
+  <td>1</td>
+  <td>0</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingang 1</td>
+  </tr>
+  <tr align="center">
+   <td>B</td>
+   <td>Word</td>
+   <td>Eingang 2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgang 1</td>
+  </tr>
+</table>
+
+<br />
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+</body>
+</html>

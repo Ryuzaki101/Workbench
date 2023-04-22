@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.wisag.automation.micas.module.editor.presentation.ModuleModelWizardID"
+            name="%_UI_ModuleModelWizard_label"
+            class="de.wisag.automation.micas.module.presentation.CustomModuleModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/blockdiagram.gif">
+         <description>%_UI_ModuleModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="de.wisag.automation.micas.module.presentation.ModuleEditorID"
+            name="%_UI_ModuleEditor_label"
+            icon="icons/full/obj16/blockdiagram.gif"
+            extensions="module"
+            class="de.wisag.automation.micas.module.presentation.ModuleEditor"
+            contributorClass="de.wisag.automation.micas.module.presentation.ModuleActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

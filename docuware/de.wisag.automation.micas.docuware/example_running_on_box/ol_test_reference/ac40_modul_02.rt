@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RtModule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wisag.de/automation/schema/rt" dataSegmentAddress="30464" startSegmentAddress="30464" firstTaskSegmentAddress="-2147483648" headModuleSegmentAddress="31872" dataSegmentCheckSum="28402" tasksCheckSum="62882" wordConstOffset="48" floatConstOffset="64" wordVarOffset="80" floatVarOffset="112" endOfFloatVars="116" fieldBus="2" pastValuesOffset="128" pastValuesLastOffset="160" sourceModificationStamp="5392" sourceName="ac40_modul_02.module" sourceChecksum="e5757e0448655464e2b5cae3212f6317">
+  <symbols xsi:type="RtWordConstant" address="48" name="$WZERO">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+  </symbols>
+  <symbols xsi:type="RtReferenceConstant" address="50" name="0002-003-00-C-MW" row="3" type="FGA_MEASURED_VALUE">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.1"/>
+  </symbols>
+  <symbols xsi:type="RtReferenceConstant" address="52" name="0002-001-01-C-1D" col="1" row="1" type="FGA_MESSAGE_CONST">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtFloatVariable" address="112" name="$M0">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.1"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.3"/>
+  </symbols>
+  <symbols xsi:type="RtFloatConstant" address="64" name="tempGrenze" value="25.0">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.3"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="80" name="$M1">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.4"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="82" name="$M2">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.3"/>
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.4"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="84" name="$M3">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="86" name="$M4">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="88" name="$M5">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="90" name="$M6">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="92" name="$out-anein-0-error">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.1" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtDirectValue" value="1">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="94" name="$out-befaus-1-error">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.2" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtDirectValue" value="8">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="96" name="$out-melein-2-meldepunkt">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="98" name="$out-melein-3-meldepunkt">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="100" name="$out-melein-4-meldepunkt">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="102" name="$out-melein-5-meldepunkt">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5" type="WRITE"/>
+  </symbols>
+  <symbols xsi:type="RtWordVariable" address="104" name="$out-melein-6-error">
+    <accessors moduleInvocation="//@tasks.1/@moduleInvocations.5" type="WRITE"/>
+  </symbols>
+  <tasks id="1" segment="30474" pastValuesOffset="128" strategy="INIT" runtime="100" comment="name : Task_init">
+    <moduleInvocations name="ENDE" opcode="12288" pastValuesCount="0" runtime="100"/>
+  </tasks>
+  <tasks id="2" cyclTime="1000" segment="30475" pastValuesOffset="144" runtime="600" pastValuesCount="12" comment="name : Task_run_1">
+    <moduleInvocations xsi:type="RtCommentModuleInvocation" text="Page 1 Title : wes net"/>
+    <moduleInvocations arguments="//@symbols[address='50']/@accessors.0 //@symbols[address='112']/@accessors.0 //@symbols[address='92']/@accessors.0" name="ANEIN" index="1" opcode="12335" pastValuesCount="2" runtime="100"/>
+    <moduleInvocations arguments="//@symbols[address='0']/@accessors.0 //@symbols[address='82']/@accessors.0 //@symbols[address='80']/@accessors.0 //@symbols[address='48']/@accessors.0 //@symbols[address='48']/@accessors.1 //@symbols[address='52']/@accessors.0 //@symbols[address='94']/@accessors.0" name="BEFAUS" index="2" opcode="12339" pastValuesCount="6" runtime="100"/>
+    <moduleInvocations arguments="//@symbols[address='112']/@accessors.1 //@symbols[address='64']/@accessors.0 //@symbols[address='82']/@accessors.1" name="VGLOH" index="3" opcode="12326" pastValuesCount="0" runtime="150"/>
+    <moduleInvocations arguments="//@symbols[address='82']/@accessors.2 //@symbols[address='80']/@accessors.1" name="NICHT" index="4" opcode="12311" pastValuesCount="0" runtime="50"/>
+    <moduleInvocations arguments="//@symbols[address='52']/@accessors.1 //@symbols[address='0']/@accessors.0 //@symbols[address='84']/@accessors.0 //@symbols[address='86']/@accessors.0 //@symbols[address='88']/@accessors.0 //@symbols[address='90']/@accessors.0 //@symbols[address='96']/@accessors.0 //@symbols[address='98']/@accessors.0 //@symbols[address='100']/@accessors.0 //@symbols[address='102']/@accessors.0 //@symbols[address='104']/@accessors.0" name="MELEIN" index="5" opcode="12337" pastValuesCount="4" runtime="100"/>
+    <moduleInvocations name="ENDE" opcode="12288" pastValuesCount="0" runtime="100"/>
+  </tasks>
+  <headModul magic0="61440" magic1="8192" taskCount="2">
+    <taskInfos task="//@tasks.0" convertedStrategy="4"/>
+    <taskInfos task="//@tasks.1" convertedStrategy="1"/>
+  </headModul>
+</RtModule>

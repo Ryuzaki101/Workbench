@@ -1,0 +1,157 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : AR20-03.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 2
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatK K6.2-bar (6.20)
+  WordK  KON00 (0)
+  WordK  KON01 (1)
+  FloatK K9.0-bar (9.00)
+  FloatK KON50 (50.00)
+  FloatK KSOLLW-DRUCK-REG (100.00)
+  FloatK FKON10SEK (10.00)
+  FloatK FKON30SEK (30.00)
+  FloatV DRUCK-ZULUFT
+  FloatV STellgr.REG-26
+  WordV  ERR-MELD
+  WordV  ERR-HIGH-BUS
+  WordV  Anlage_9_AUS
+  WordV  Anlage_9_EIN1
+  WordV  Anlage_9_EIN2
+  WordV  Bef_Anl9_AUS
+  WordV  Bef_Anl9_EIN1
+  WordV  Bef_Anl9_EIN2
+  WordK  $M0 (1)
+  IPAAW &04A-KL120-149 (151)
+  WordV  $WSCRATCH
+  IPAMB &04A-KL120-104 (200,3)
+  WordV  $HB2
+  WordV  $B1
+  FloatK $M1 (5.00)
+  FloatK $M2 (0.00)
+  WordV  $B2
+  WordK  $M3 (1)
+  IPAMB &ABSCHALT-ANL12 (254,6)
+  IPAAW &04A-KL120-132 (202)
+  FloatV $F1
+  WordK  $M4 (1)
+  IPAAW &04A-KL120-133 (150)
+  WordV  $B3
+  IPAMB &04A-KL120-107 (200,2)
+  WordV  $B4
+  FloatK $M5 (0.00)
+  FloatV $F2
+  WordK  $M6 (1)
+  IPAAW &04A-KL120-116 (208)
+  IPAAW &04A-LU260-919 (203)
+  FloatV $F3
+  WordV  $B5
+  FloatK $M7 (60.00)
+  FloatK $M8 (0.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordK  $M9 (1)
+  IPAMB &INT-MEL06-HIGH (253,5)
+  IPAMB &04A-KL002-092 (201,11)
+  IPAMB &04A-KL002-093 (201,14)
+  IPAMB &04A-KL002-094 (201,15)
+  IPAMB &04A-KL090-900 (160,1)
+  IPAMB &M10 (160,2)
+  IPAMB &M11 (160,3)
+  IPAMB &M12 (160,4)
+  IPAMB &M13 (160,5)
+  WordV  $B10
+  FloatK $M14 (5.00)
+  FloatK $M15 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &Lampe_EIN1 (201,9)
+  WordV  $B14
+  FloatK $M16 (5.00)
+  FloatK $M17 (0.00)
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  IPAMB &Lampe_EIN2 (201,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ANAUS (KSOLLW-DRUCK-REG,$M0,&04A-KL120-149,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&04A-KL120-104,1,$HB2,ERR-MELD)
+  NICHT ($HB2,$B1)
+  VVZ ($B1,$M1,$M2,$B2)
+  SETMEL ($M3,1,$B2,&ABSCHALT-ANL12,ERR-HIGH-BUS)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANEIN (&04A-KL120-132,DRUCK-ZULUFT,$WSCRATCH)
+  PT1 (DRUCK-ZULUFT,FKON10SEK,$F1)
+  ANAUS ($F1,$M4,&04A-KL120-133,$WSCRATCH)
+  ANEIN (&04A-KL120-149,KSOLLW-DRUCK-REG,$WSCRATCH)
+  REGLER (26,KON01,$B3,KON50,STellgr.REG-26,$WSCRATCH)
+  MOKY ($B4,FKON30SEK,$B3)
+  MELEIN (&04A-KL120-107,1,$B4,$WSCRATCH)
+  AWT ($B4,$M5,STellgr.REG-26,$F2)
+  ANAUS ($F2,$M6,&04A-KL120-116,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&04A-LU260-919,$F3,$WSCRATCH)
+  VGLOH (K6.2-bar,$F3,$B5)
+  VVZ ($B5,$M7,$M8,$B6)
+  ODR2 ($B6,KON00,$B7)
+  RSS ($B7,$B9,$B8,$WSCRATCH)
+  VGLOH ($F3,K9.0-bar,$B9)
+  SETMEL ($M9,1,$B8,&INT-MEL06-HIGH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  MELEIN (&04A-KL002-092,1,Anlage_9_AUS,$WSCRATCH)
+  MELEIN (&04A-KL002-093,1,Anlage_9_EIN1,$WSCRATCH)
+  MELEIN (&04A-KL002-094,1,Anlage_9_EIN2,$WSCRATCH)
+  MELEIN (&04A-KL090-900,5,Bef_Anl9_AUS,$WSCRATCH,
+          Bef_Anl9_EIN1,$WSCRATCH,Bef_Anl9_EIN2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODR2 (Anlage_9_EIN1,Bef_Anl9_EIN1,$B10)
+  VVZ ($B10,$M14,$M15,$B11)
+  ODRMN (4,Anlage_9_AUS,Anlage_9_AUS,Bef_Anl9_AUS,$B14,0,
+         $B12,$WSCRATCH)
+  RSS ($B11,$B12,$B13,$WSCRATCH)
+  NICHT ($B13,$HB0)
+  BEFAUS (1,$HB0,$B13,$WZERO,$WZERO,&Lampe_EIN1,$WSCRATCH)
+  ODR2 (Anlage_9_EIN2,Bef_Anl9_EIN2,$B14)
+  VVZ ($B14,$M16,$M17,$B15)
+  ODRMN (4,$B10,$B10,Anlage_9_AUS,Bef_Anl9_AUS,0,$B16,
+         $WSCRATCH)
+  RSS ($B15,$B16,$B17,$WSCRATCH)
+  NICHT ($B17,$HB0)
+  BEFAUS (1,$HB0,$B17,$WZERO,$WZERO,&Lampe_EIN2,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

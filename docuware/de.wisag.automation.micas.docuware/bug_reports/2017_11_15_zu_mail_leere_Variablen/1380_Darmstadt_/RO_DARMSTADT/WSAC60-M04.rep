@@ -1,0 +1,4176 @@
+******************* Hardware parameter  ****************
+Type : AC60
+StartSegmentAddress  	 : 7700
+DataSegmentAddress  	 : 7700
+DataSegmentChecksum 	 : 943F
+TaskSegmentChecksum 	 : 0B3F
+HeadModuleSegmentAddress : 7C80
+WordConstOffset     	 : 0030
+WordConstCount     	     : 3553
+FloatConstOffset         : 00F0
+FloatConstCount     	 : 25
+WordVarsOffset     	 : 0160
+WordVarsCount     	     : 300
+FloatVarsOffset         : 03C0
+FloatVarsCount     	 : 45
+PastValuesOffset         : 0480
+PastValuesLastOffset     : 0740
+******************* HEAD Module ****************
+Task Count       : 4
+Segment Address  : 7C80
+    TaskId                     : 0001
+      Strategy                 : 0004
+      Task Segment  		   : 7774
+      Task CyclTime 		   : 0000
+      Task PastValues Offset   : 0480
+      Task PastValues Count    : 136
+    TaskId                     : 0002
+      Strategy                 : 0001
+      Task Segment  		   : 7788
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 0510
+      Task PastValues Count    : 152
+    TaskId                     : 0003
+      Strategy                 : 0001
+      Task Segment  		   : 77C7
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 05B0
+      Task PastValues Count    : 274
+    TaskId                     : 0004
+      Strategy                 : 0001
+      Task Segment  		   : 7814
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 06D0
+      Task PastValues Count    : 104
+******************* Task Details ****************
+    TaskId                 : 0001
+    Runtime                : 2100
+    Task CyclTime 		   : 0000
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_stat_Heizung_AUS
+          read    : true
+          address : 0042
+          symbol  : K_Freigabe_stat_Heizung_EIN
+          read    : true
+          address : 0044
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI01BF900
+          read    : true
+          address : 005A
+          symbol  : $out-befaus-0-error
+          read    : false
+          address : 029E
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_stat_Heizung_Nachtabsenkung_AUS
+          read    : true
+          address : 0032
+          symbol  : K_Freigabe_stat_Heizung_Nachtabsenkung_EIN
+          read    : true
+          address : 0034
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI01BF901
+          read    : true
+          address : 005C
+          symbol  : $out-befaus-1-error
+          read    : false
+          address : 02A0
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_LagerOG_AUS
+          read    : true
+          address : 003A
+          symbol  : K_Freigabe_LagerOG_EIN
+          read    : true
+          address : 003C
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI02BF900
+          read    : true
+          address : 0078
+          symbol  : $out-befaus-2-error
+          read    : false
+          address : 02A2
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_WarenausgabeEG_AUS
+          read    : true
+          address : 0036
+          symbol  : K_Freigabe_WarenausgabeEG_EIN
+          read    : true
+          address : 0038
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI03BF900
+          read    : true
+          address : 0054
+          symbol  : $out-befaus-3-error
+          read    : false
+          address : 02A4
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_EingangAusgang_AUS
+          read    : true
+          address : 00B0
+          symbol  : K_Freigabe_EingangAusgang_EIN
+          read    : true
+          address : 00B2
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI04BF900
+          read    : true
+          address : 0080
+          symbol  : $out-befaus-4-error
+          read    : false
+          address : 02A6
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_Kassenzone_AUS
+          read    : true
+          address : 0098
+          symbol  : K_Freigabe_Kassenzone_EIN
+          read    : true
+          address : 009A
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI05BF900
+          read    : true
+          address : 0096
+          symbol  : $out-befaus-5-error
+          read    : false
+          address : 02A8
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_LagerbueroEG_AUS
+          read    : true
+          address : 009C
+          symbol  : K_Freigabe_LagerbueroEG_EIN
+          read    : true
+          address : 009E
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI06BF900
+          read    : true
+          address : 0086
+          symbol  : $out-befaus-6-error
+          read    : false
+          address : 02AA
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_neueAnlieferung_AUS
+          read    : true
+          address : 003E
+          symbol  : K_Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0040
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI07BF900
+          read    : true
+          address : 0058
+          symbol  : $out-befaus-7-error
+          read    : false
+          address : 02AC
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_Nebenlueftung_AUS
+          read    : true
+          address : 00CA
+          symbol  : K_Freigabe_Nebenlueftung_EIN
+          read    : true
+          address : 00CC
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE07BF900
+          read    : true
+          address : 00C8
+          symbol  : $out-befaus-8-error
+          read    : false
+          address : 02AE
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_Abluefter_LagerWC_AUS
+          read    : true
+          address : 00CE
+          symbol  : K_Freigabe_Abluefter_LagerWC_EIN
+          read    : true
+          address : 00D0
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE04BF900
+          read    : true
+          address : 00D6
+          symbol  : $out-befaus-9-error
+          read    : false
+          address : 02B0
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_Abluefter_KundenWC_AUS
+          read    : true
+          address : 00D2
+          symbol  : K_Freigabe_Abluefter_KundenWC_EIN
+          read    : true
+          address : 00D4
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE05BF900
+          read    : true
+          address : 00D8
+          symbol  : $out-befaus-10-error
+          read    : false
+          address : 02B2
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_Freigabe_Abluefter_AMR_AUS
+          read    : true
+          address : 00DC
+          symbol  : K_Freigabe_Abluefter_AMR_EIN
+          read    : true
+          address : 00DE
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE09BF900
+          read    : true
+          address : 00DA
+          symbol  : $out-befaus-11-error
+          read    : false
+          address : 02B4
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_AT_Abschaltung
+          read    : true
+          address : 00F0
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI00SW900
+          read    : true
+          address : 0076
+          symbol  : $out-anaus-12-error
+          read    : false
+          address : 02B6
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_LagerOG
+          read    : true
+          address : 00F4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI02SW900
+          read    : true
+          address : 0052
+          symbol  : $out-anaus-13-error
+          read    : false
+          address : 02B8
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_WarenausgabeEG
+          read    : true
+          address : 00F8
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI03SW900
+          read    : true
+          address : 007E
+          symbol  : $out-anaus-14-error
+          read    : false
+          address : 02BA
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_Kassenzone
+          read    : true
+          address : 00FC
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI05SW900
+          read    : true
+          address : 0084
+          symbol  : $out-anaus-15-error
+          read    : false
+          address : 02BC
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 0100
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI06SW900
+          read    : true
+          address : 0070
+          symbol  : $out-anaus-16-error
+          read    : false
+          address : 02BE
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_LagerbueroEG_TLS
+          read    : true
+          address : 0104
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI06SW901
+          read    : true
+          address : 0072
+          symbol  : $out-anaus-17-error
+          read    : false
+          address : 02C0
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_neueAnlieferung
+          read    : true
+          address : 0108
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI07SW900
+          read    : true
+          address : 0088
+          symbol  : $out-anaus-18-error
+          read    : false
+          address : 02C2
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_SW_EingangAusgang
+          read    : true
+          address : 0110
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI04SW900
+          read    : true
+          address : 0060
+          symbol  : $out-anaus-19-error
+          read    : false
+          address : 02C4
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0002
+    Runtime                : 11900
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI01BF900
+          read    : true
+          address : 005A
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_stat_Heizung_AUS
+          read    : true
+          address : 0160
+          symbol  : $out-melein-20-meldepunkt
+          read    : false
+          address : 02C6
+          symbol  : Freigabe_stat_Heizung_EIN
+          read    : true
+          address : 0162
+          symbol  : $out-melein-21-error
+          read    : false
+          address : 02C8
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_stat_Heizung_AUS
+          read    : true
+          address : 0160
+          symbol  : K_Freigabe_EIN
+          read    : true
+          address : 00A0
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_stat_Heizung_EIN
+          read    : true
+          address : 0162
+          symbol  : K_Freigabe_AUS
+          read    : true
+          address : 00A2
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI01BF901
+          read    : true
+          address : 005C
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_AUS
+          read    : true
+          address : 0166
+          symbol  : $out-melein-22-meldepunkt
+          read    : false
+          address : 02CA
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_EIN
+          read    : true
+          address : 0164
+          symbol  : $out-melein-23-error
+          read    : false
+          address : 02CC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_AUS
+          read    : true
+          address : 0166
+          symbol  : K_Freigabe_Temperaturregelung_AUS
+          read    : true
+          address : 00A4
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_EIN
+          read    : true
+          address : 0164
+          symbol  : K_Freigabe_Temperaturregelung_EIN
+          read    : true
+          address : 00A6
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI03BF900
+          read    : true
+          address : 0054
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_WarenausgabeEG_AUS
+          read    : true
+          address : 016A
+          symbol  : $out-melein-24-meldepunkt
+          read    : false
+          address : 02CE
+          symbol  : Freigabe_WarenausgabeEG_EIN
+          read    : true
+          address : 0168
+          symbol  : $out-melein-25-error
+          read    : false
+          address : 02D0
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_WarenausgabeEG_AUS
+          read    : true
+          address : 016A
+          symbol  : K_Freigabe_CO2_AUS
+          read    : true
+          address : 00A8
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_WarenausgabeEG_EIN
+          read    : true
+          address : 0168
+          symbol  : K_Freigabe_CO2_EIN
+          read    : true
+          address : 00AA
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI02BF900
+          read    : true
+          address : 0078
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_LagerOG_AUS
+          read    : true
+          address : 016E
+          symbol  : $out-melein-26-meldepunkt
+          read    : false
+          address : 02D2
+          symbol  : Freigabe_LagerOG_EIN
+          read    : true
+          address : 016C
+          symbol  : $out-melein-27-error
+          read    : false
+          address : 02D4
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_LagerOG_AUS
+          read    : true
+          address : 016E
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_LagerOG_EIN
+          read    : true
+          address : 016C
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI05BF900
+          read    : true
+          address : 0096
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_Kassenzone_AUS
+          read    : true
+          address : 0174
+          symbol  : $out-melein-28-meldepunkt
+          read    : false
+          address : 02D6
+          symbol  : Freigabe_Kassenzone_EIN
+          read    : true
+          address : 0172
+          symbol  : $out-melein-29-error
+          read    : false
+          address : 02D8
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Kassenzone_AUS
+          read    : true
+          address : 0174
+          symbol  : K_Freigabe_EIN
+          read    : true
+          address : 00A0
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Kassenzone_EIN
+          read    : true
+          address : 0172
+          symbol  : K_Freigabe_AUS
+          read    : true
+          address : 00A2
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI06BF900
+          read    : true
+          address : 0086
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_LagerbueroEG_AUS
+          read    : true
+          address : 0170
+          symbol  : $out-melein-30-meldepunkt
+          read    : false
+          address : 02DA
+          symbol  : Freigabe_LagerbueroEG_EIN
+          read    : true
+          address : 0178
+          symbol  : $out-melein-31-error
+          read    : false
+          address : 02DC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_LagerbueroEG_AUS
+          read    : true
+          address : 0170
+          symbol  : K_Freigabe_Temperaturregelung_AUS
+          read    : true
+          address : 00A4
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_LagerbueroEG_EIN
+          read    : true
+          address : 0178
+          symbol  : K_Freigabe_Temperaturregelung_EIN
+          read    : true
+          address : 00A6
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI07BF900
+          read    : true
+          address : 0058
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_neueAnlieferung_AUS
+          read    : true
+          address : 017A
+          symbol  : $out-melein-32-meldepunkt
+          read    : false
+          address : 02DE
+          symbol  : Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0176
+          symbol  : $out-melein-33-error
+          read    : false
+          address : 02E0
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_neueAnlieferung_AUS
+          read    : true
+          address : 017A
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0176
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI04BF900
+          read    : true
+          address : 0080
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_EingangAusgang_AUS
+          read    : true
+          address : 017E
+          symbol  : $out-melein-34-meldepunkt
+          read    : false
+          address : 02E2
+          symbol  : Freigabe_EingangAusgang_EIN
+          read    : true
+          address : 017C
+          symbol  : $out-melein-35-error
+          read    : false
+          address : 02E4
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_EingangAusgang_AUS
+          read    : true
+          address : 017E
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_EingangAusgang_EIN
+          read    : true
+          address : 017C
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE07BF900
+          read    : true
+          address : 00C8
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_Nebenlueftung_AUS
+          read    : true
+          address : 027A
+          symbol  : $out-melein-36-meldepunkt
+          read    : false
+          address : 02E6
+          symbol  : Freigabe_Nebenlueftung_EIN
+          read    : true
+          address : 0276
+          symbol  : $out-melein-37-error
+          read    : false
+          address : 02E8
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Nebenlueftung_AUS
+          read    : true
+          address : 027A
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Nebenlueftung_EIN
+          read    : true
+          address : 0276
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE05BF900
+          read    : true
+          address : 00D8
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_Abluefter_KundenWC_AUS
+          read    : true
+          address : 0290
+          symbol  : $out-melein-38-meldepunkt
+          read    : false
+          address : 02EA
+          symbol  : Freigabe_Abluefter_KundenWC_EIN
+          read    : true
+          address : 028C
+          symbol  : $out-melein-39-error
+          read    : false
+          address : 02EC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_KundenWC_AUS
+          read    : true
+          address : 0290
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_KundenWC_EIN
+          read    : true
+          address : 028C
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE04BF900
+          read    : true
+          address : 00D6
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_Abluefter_LagerWC_AUS
+          read    : true
+          address : 028E
+          symbol  : $out-melein-40-meldepunkt
+          read    : false
+          address : 02EE
+          symbol  : Freigabe_Abluefter_LagerWC_EIN
+          read    : true
+          address : 028A
+          symbol  : $out-melein-41-error
+          read    : false
+          address : 02F0
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_LagerWC_AUS
+          read    : true
+          address : 028E
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_LagerWC_EIN
+          read    : true
+          address : 028A
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE09BF900
+          read    : true
+          address : 00DA
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Freigabe_Abluefter_AMR_AUS
+          read    : true
+          address : 0294
+          symbol  : $out-melein-42-meldepunkt
+          read    : false
+          address : 02F2
+          symbol  : Freigabe_Abluefter_AMR_EIN
+          read    : true
+          address : 0292
+          symbol  : $out-melein-43-error
+          read    : false
+          address : 02F4
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_AMR_AUS
+          read    : true
+          address : 0294
+          symbol  : K_Handbetrieb_AUS
+          read    : true
+          address : 00AC
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : Freigabe_Abluefter_AMR_EIN
+          read    : true
+          address : 0292
+          symbol  : K_Handbetrieb_EIN
+          read    : true
+          address : 00AE
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI00SW900
+          read    : true
+          address : 0076
+          symbol  : SW_AT_Abschaltung
+          read    : true
+          address : 03C0
+          symbol  : $out-anein-44-error
+          read    : false
+          address : 02F6
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_AT_Abschaltung
+          read    : true
+          address : 03C0
+          symbol  : K_SW_WRG
+          read    : true
+          address : 0128
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI02SW900
+          read    : true
+          address : 0052
+          symbol  : SW_LagerOG
+          read    : true
+          address : 03C4
+          symbol  : $out-anein-45-error
+          read    : false
+          address : 02F8
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_LagerOG
+          read    : true
+          address : 03C4
+          symbol  : K_SW_Auskuehlschutz
+          read    : true
+          address : 012C
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI03SW900
+          read    : true
+          address : 007E
+          symbol  : SW_WarenausgabeEG
+          read    : true
+          address : 03C8
+          symbol  : $out-anein-46-error
+          read    : false
+          address : 02FA
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_WarenausgabeEG
+          read    : true
+          address : 03C8
+          symbol  : K_SW_Differnz_Raumtemperatur_Aussentemperatur
+          read    : true
+          address : 0114
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI04SW900
+          read    : true
+          address : 0060
+          symbol  : SW_EingangAusgang
+          read    : true
+          address : 03CC
+          symbol  : $out-anein-47-error
+          read    : false
+          address : 02FC
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_EingangAusgang
+          read    : true
+          address : 03CC
+          symbol  : K_SW_Mindestdrehzahl_Zuluftventilator
+          read    : true
+          address : 0118
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI05SW900
+          read    : true
+          address : 0084
+          symbol  : SW_Kassenzone
+          read    : true
+          address : 03D0
+          symbol  : $out-anein-48-error
+          read    : false
+          address : 02FE
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_Kassenzone
+          read    : true
+          address : 03D0
+          symbol  : K_SW_Mindestdrehzahl_Abluftventilator
+          read    : true
+          address : 011C
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI06SW900
+          read    : true
+          address : 0070
+          symbol  : SW_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 03D4
+          symbol  : $out-anein-49-error
+          read    : false
+          address : 0300
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 03D4
+          symbol  : K_SW_Sperren_Heizen
+          read    : true
+          address : 0120
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI06SW901
+          read    : true
+          address : 0072
+          symbol  : SW_LagerbueroEG_TLS
+          read    : true
+          address : 03D8
+          symbol  : $out-anein-50-error
+          read    : false
+          address : 0302
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_LagerbueroEG_TLS
+          read    : true
+          address : 03D8
+          symbol  : K_SW_Sperren_Kuehlen
+          read    : true
+          address : 0124
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI07SW900
+          read    : true
+          address : 0088
+          symbol  : SW_neueAnlieferung
+          read    : true
+          address : 03DC
+          symbol  : $out-anein-51-error
+          read    : false
+          address : 0304
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : SW_neueAnlieferung
+          read    : true
+          address : 03DC
+          symbol  : K_SW_Mindestfrischluftanteil
+          read    : true
+          address : 010C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE00BF920
+          read    : true
+          address : 008A
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_Fernquittierung_AUS
+          read    : true
+          address : 0192
+          symbol  : $out-melein-52-meldepunkt
+          read    : false
+          address : 0306
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $out-melein-53-error
+          read    : false
+          address : 0308
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI07BF001
+          read    : true
+          address : 0050
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_neueAnlieferung_Lufterhitzer_G1_AUS
+          read    : true
+          address : 01A6
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G1
+          read    : true
+          address : 01AA
+          symbol  : BF_neueAnlieferung_Lufterhitzer_G1_EIN
+          read    : true
+          address : 01A8
+          symbol  : $out-melein-54-error
+          read    : false
+          address : 030A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI07BF002
+          read    : true
+          address : 004E
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_neueAnlieferung_Lufterhitzer_G2_AUS
+          read    : true
+          address : 01AC
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G2
+          read    : true
+          address : 01B0
+          symbol  : BF_neueAnlieferung_Lufterhitzer_G2_EIN
+          read    : true
+          address : 01AE
+          symbol  : $out-melein-55-error
+          read    : false
+          address : 030C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI07BF003
+          read    : true
+          address : 004C
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_neueAnlieferung_Ansperrventil_G1_AUS
+          read    : true
+          address : 01B2
+          symbol  : $out-melein-56-meldepunkt
+          read    : false
+          address : 030E
+          symbol  : BF_neueAnlieferung_Ansperrventil_G1_EIN
+          read    : true
+          address : 01B4
+          symbol  : $out-melein-57-error
+          read    : false
+          address : 0310
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI07BF005
+          read    : true
+          address : 00C4
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_neueAnlieferung_Lufterhitzer_G3_AUS
+          read    : true
+          address : 0262
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G3
+          read    : true
+          address : 025A
+          symbol  : BF_neueAnlieferung_G3_EIN
+          read    : true
+          address : 0260
+          symbol  : $out-melein-58-error
+          read    : false
+          address : 0312
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G1
+          read    : true
+          address : 01AA
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G1
+          read    : true
+          address : 01AA
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G2
+          read    : true
+          address : 01B0
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G2
+          read    : true
+          address : 01B0
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G3
+          read    : true
+          address : 025A
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G3
+          read    : true
+          address : 025A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE07BF001
+          read    : true
+          address : 00C6
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_Nebenlueftung_Lager_Aus
+          read    : true
+          address : 027C
+          symbol  : Stoerung_Nebenluftanlage_Lager
+          read    : true
+          address : 029A
+          symbol  : BF_Nebenlueftung_Lager_EIN
+          read    : true
+          address : 027E
+          symbol  : $out-melein-59-error
+          read    : false
+          address : 0314
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI01BF001
+          read    : true
+          address : 006A
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_statHeizung_Pumpe_AUS
+          read    : true
+          address : 0180
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  : BF_statHeizung_Pumpe_EIN
+          read    : true
+          address : 018E
+          symbol  : $out-melein-60-error
+          read    : false
+          address : 0316
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI02BF001
+          read    : true
+          address : 0074
+          symbol  :  direct value
+          read    : true
+          value  : 6
+          symbol  : BF_LagerOG_Lufterhitzer_AUS_Stufe1
+          read    : true
+          address : 0184
+          symbol  : $M154
+          read    : true
+          address : 0268
+          symbol  : BF_LagerOG_Lufterhitzer_EIN_Stufe1
+          read    : true
+          address : 0190
+          symbol  : BF_LagerOG_Lufterhitzer_AUS_Stufe2
+          read    : true
+          address : 023A
+          symbol  : $M155
+          read    : true
+          address : 026A
+          symbol  : BF_LagerOG_Lufterhitzer_EIN_Stufe2
+          read    : true
+          address : 023E
+          symbol  : $out-melein-61-error
+          read    : false
+          address : 0318
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI03BF001
+          read    : true
+          address : 0056
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_WarenausgabeEG_TLS_AUS
+          read    : true
+          address : 0188
+          symbol  : $M156
+          read    : true
+          address : 026C
+          symbol  : BF_WarenausgabeEG_TLS_EIN
+          read    : true
+          address : 018C
+          symbol  : $out-melein-62-error
+          read    : false
+          address : 031A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI04BF001
+          read    : true
+          address : 0082
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_EingangAusgang_TLS_AUS
+          read    : true
+          address : 0196
+          symbol  : Stoerung_EingangAusgang_TLS
+          read    : true
+          address : 0198
+          symbol  : BF_EingangAusgang_TLS_EIN
+          read    : true
+          address : 019A
+          symbol  : $out-melein-63-error
+          read    : false
+          address : 031C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI05BF001
+          read    : true
+          address : 0046
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_Kassenzone_Absperrventil_AUS
+          read    : true
+          address : 019C
+          symbol  : $out-melein-64-meldepunkt
+          read    : false
+          address : 031E
+          symbol  : BF_Kassenzone_Absperrventil_EIN
+          read    : true
+          address : 019E
+          symbol  : $out-melein-65-error
+          read    : false
+          address : 0320
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI06BF001
+          read    : true
+          address : 007C
+          symbol  :  direct value
+          read    : true
+          value  : 6
+          symbol  : BF_LagerbueroEG_Lufterhitzer_AUS_Stufe1
+          read    : true
+          address : 01A0
+          symbol  : $M158
+          read    : true
+          address : 0270
+          symbol  : BF_LagerbueroEG_Lufterhitzer_EIN_Stufe1
+          read    : true
+          address : 01A2
+          symbol  : BF_LagerbueroEG_Lufterhitzer_AUS_Stufe2
+          read    : true
+          address : 0240
+          symbol  : $M159
+          read    : true
+          address : 0272
+          symbol  : BF_LagerbueroEG_Lufterhitzer_EIN_Stufe2
+          read    : true
+          address : 0244
+          symbol  : $out-melein-66-error
+          read    : false
+          address : 0322
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI08BF001
+          read    : true
+          address : 00BE
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_Pumpe_RLT_AUS
+          read    : true
+          address : 0246
+          symbol  : $M157
+          read    : true
+          address : 026E
+          symbol  : BF_Pumpe_RLT_EIN
+          read    : true
+          address : 024A
+          symbol  : $out-melein-67-error
+          read    : false
+          address : 0324
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380HEI09BF001
+          read    : true
+          address : 00B8
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : BF_Pumpe_Erhitzer_AUS
+          read    : true
+          address : 024E
+          symbol  : $M160
+          read    : true
+          address : 0274
+          symbol  : BF_Pumpe_Erhitzer_EIN
+          read    : true
+          address : 0250
+          symbol  : $out-melein-68-error
+          read    : false
+          address : 0326
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M157
+          read    : true
+          address : 026E
+          symbol  : Stoerung_Pumpe_RLT
+          read    : true
+          address : 0248
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M160
+          read    : true
+          address : 0274
+          symbol  : Stoerung_Pumpe_Erhitzer
+          read    : true
+          address : 0252
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE00GF020
+          read    : true
+          address : 0062
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Entrauchung_Abschalt
+          read    : true
+          address : 0264
+          symbol  : $out-melein-69-error
+          read    : false
+          address : 0328
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M156
+          read    : true
+          address : 026C
+          symbol  : Stoerung_WarenausgabeEG_TLS
+          read    : true
+          address : 018A
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M155
+          read    : true
+          address : 026A
+          symbol  : Stoerung_LagerOG_Lufterhitzer_Stufe2
+          read    : true
+          address : 023C
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M154
+          read    : true
+          address : 0268
+          symbol  : Stoerung_LagerOG_Lufterhitzer_Stufe1
+          read    : true
+          address : 0186
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M158
+          read    : true
+          address : 0270
+          symbol  : Stoerung_LagerbueroEG_Lufterhitzer_Stufe1
+          read    : true
+          address : 01A4
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M159
+          read    : true
+          address : 0272
+          symbol  : Stoerung_LagerbueroEG_Lufterhitzer_Stufe2
+          read    : true
+          address : 0242
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_EingangAusgang_TLS
+          read    : true
+          address : 0198
+          symbol  : Stoerung_EingangAusgang_TLS
+          read    : true
+          address : 0198
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 1380LUE00GF021
+          read    : true
+          address : 0064
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : FWT_Abschaltung
+          read    : true
+          address : 0266
+          symbol  : $out-melein-70-error
+          read    : false
+          address : 032A
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380LUE00MW000
+          read    : true
+          address : 007A
+          symbol  : MW_Aussentemperatur
+          read    : true
+          address : 03E0
+          symbol  : $out-anein-71-error
+          read    : false
+          address : 032C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI07MW001
+          read    : true
+          address : 0048
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G1
+          read    : true
+          address : 0458
+          symbol  : $out-anein-72-error
+          read    : false
+          address : 032E
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI07MW002
+          read    : true
+          address : 004A
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G2
+          read    : true
+          address : 03E4
+          symbol  : $out-anein-73-error
+          read    : false
+          address : 0330
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI01MW001
+          read    : true
+          address : 008E
+          symbol  : MW_statHeizung_Vorlauftemperatur
+          read    : true
+          address : 03E8
+          symbol  : $out-anein-74-error
+          read    : false
+          address : 0332
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI01MW002
+          read    : true
+          address : 0090
+          symbol  : MW_statHeizung_Ruecklauftemperatur
+          read    : true
+          address : 03EC
+          symbol  : $out-anein-75-error
+          read    : false
+          address : 0334
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI02MW001
+          read    : true
+          address : 0068
+          symbol  : MW_LagerOG_Raumtemperatur1
+          read    : true
+          address : 03F0
+          symbol  : $out-anein-76-error
+          read    : false
+          address : 0336
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI02MW002
+          read    : true
+          address : 006C
+          symbol  : MW_LagerOG_Raumtemperatur2
+          read    : true
+          address : 03F4
+          symbol  : $out-anein-77-error
+          read    : false
+          address : 0338
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI03MW001
+          read    : true
+          address : 0066
+          symbol  : MW_WarenausgabeEG_Raumtemperatur
+          read    : true
+          address : 03F8
+          symbol  : $out-anein-78-error
+          read    : false
+          address : 033A
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI04MW001
+          read    : true
+          address : 006E
+          symbol  : MW_EingangAusgang_Raumtemperatur
+          read    : true
+          address : 03FC
+          symbol  : $out-anein-79-error
+          read    : false
+          address : 033C
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI05MW001
+          read    : true
+          address : 005E
+          symbol  : MW_Kassenzone_Raumtemperatur
+          read    : true
+          address : 0400
+          symbol  : $out-anein-80-error
+          read    : false
+          address : 033E
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI06MW001
+          read    : true
+          address : 0094
+          symbol  : MW_LagerbueroEG_Raumtemperatur_Lufterhitzer
+          read    : true
+          address : 0404
+          symbol  : $out-anein-81-error
+          read    : false
+          address : 0340
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 1380HEI07MW003
+          read    : true
+          address : 00C2
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G3
+          read    : true
+          address : 0464
+          symbol  : $out-anein-82-error
+          read    : false
+          address : 0342
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0003
+    Runtime                : 95750
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  :  direct value
+          read    : true
+          value  : 6
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G1
+          read    : true
+          address : 01AA
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G2
+          read    : true
+          address : 01B0
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  : Stoerung_LagerOG_Lufterhitzer_Stufe1
+          read    : true
+          address : 0186
+          symbol  : Stoerung_LagerbueroEG_Lufterhitzer_Stufe1
+          read    : true
+          address : 01A4
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G3
+          read    : true
+          address : 025A
+          symbol  : $M40
+          read    : true
+          address : 01BE
+          symbol  : $out-odrmn-83-binv
+          read    : false
+          address : 0344
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  :  direct value
+          read    : true
+          value  : 9
+          symbol  : Stoerung_WarenausgabeEG_TLS
+          read    : true
+          address : 018A
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : Entrauchung_Abschalt
+          read    : true
+          address : 0264
+          symbol  : FWT_Abschaltung
+          read    : true
+          address : 0266
+          symbol  : $M39
+          read    : true
+          address : 01BC
+          symbol  : $out-odrmn-84-binv
+          read    : false
+          address : 0346
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : $M38
+          read    : true
+          address : 01BA
+          symbol  : $out-odrmn-85-binv
+          read    : false
+          address : 0348
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M40
+          read    : true
+          address : 01BE
+          symbol  : $M39
+          read    : true
+          address : 01BC
+          symbol  : $M38
+          read    : true
+          address : 01BA
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M37
+          read    : true
+          address : 01B8
+          symbol  : $out-odrmn-86-binv
+          read    : false
+          address : 034A
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : $M41
+          read    : true
+          address : 01C0
+          symbol  : $out-odrmn-87-binv
+          read    : false
+          address : 034C
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M41
+          read    : true
+          address : 01C0
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : Stoerung_Sammelstoerung_BEFAUS
+          read    : true
+          address : 01C2
+          symbol  : $out-rss-88-binv
+          read    : false
+          address : 034E
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M37
+          read    : true
+          address : 01B8
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : $out-rss-89-binv
+          read    : false
+          address : 0350
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : MW_Aussentemperatur
+          read    : true
+          address : 03E0
+          symbol  : SW_AT_Abschaltung
+          read    : true
+          address : 03C0
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M50
+          read    : true
+          address : 01C4
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M50
+          read    : true
+          address : 01C4
+          symbol  : K_float_300
+          read    : true
+          address : 0130
+          symbol  : K_float_300
+          read    : true
+          address : 0130
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : SOLKEN
+     pastvalues            : 8
+     opcode                : 3038
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_AUS
+          read    : true
+          address : 0166
+          symbol  : Sollwert_Regler08_Tag
+          read    : true
+          address : 0408
+          symbol  : $out-solken-90-error
+          read    : false
+          address : 0352
+     Modulecall            : SOLKEN
+     pastvalues            : 8
+     opcode                : 3038
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : Freigabe_stat_Heizung_Nachtabsenkung_EIN
+          read    : true
+          address : 0164
+          symbol  : Sollwert_Regler08_Nacht
+          read    : true
+          address : 040C
+          symbol  : $out-solken-91-error
+          read    : false
+          address : 0354
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : Freigabe_stat_Heizung_EIN
+          read    : true
+          address : 0162
+          symbol  : $M53
+          read    : true
+          address : 01C8
+          symbol  : $out-undmn-92-binv
+          read    : false
+          address : 0356
+     Modulecall            : REGLER
+     pastvalues            : 38
+     opcode                : 3037
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : $M53
+          read    : true
+          address : 01C8
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : Ansteuerung_Ventil
+          read    : true
+          address : 0410
+          symbol  : $out-regler-93-error
+          read    : false
+          address : 0358
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : Ansteuerung_Ventil
+          read    : true
+          address : 0410
+          symbol  : K_float_5
+          read    : true
+          address : 0140
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M63
+          read    : true
+          address : 01CC
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M63
+          read    : true
+          address : 01CC
+          symbol  : K_float_5
+          read    : true
+          address : 0140
+          symbol  : K_float_300
+          read    : true
+          address : 0130
+          symbol  : Pumpe_statHeizung_Soll_EIN
+          read    : true
+          address : 01CA
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : Sollwert_Regler08_Tag
+          read    : true
+          address : 0408
+          symbol  : $out-atra-94-y
+          read    : false
+          address : 0468
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : Sollwert_Regler08_Nacht
+          read    : true
+          address : 040C
+          symbol  : $out-atra-95-y
+          read    : false
+          address : 046C
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : MW_statHeizung_Vorlauftemperatur
+          read    : true
+          address : 03E8
+          symbol  : $out-atra-96-y
+          read    : false
+          address : 0470
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ODR2
+     pastvalues            : 0
+     opcode                : 3013
+          symbol  : Pumpe_statHeizung_Soll_EIN
+          read    : true
+          address : 01CA
+          symbol  : $M65
+          read    : true
+          address : 01CE
+          symbol  : $M71
+          read    : true
+          address : 01D6
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M71
+          read    : true
+          address : 01D6
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  : $M70
+          read    : true
+          address : 01D4
+          symbol  : $M68
+          read    : true
+          address : 01D2
+     Modulecall            : UHR
+     pastvalues            : 4
+     opcode                : 302A
+          symbol  : $M68
+          read    : true
+          address : 01D2
+          symbol  : $M70
+          read    : true
+          address : 01D4
+          symbol  : $M64
+          read    : true
+          address : 0414
+     Modulecall            : MULT
+     pastvalues            : 0
+     opcode                : 3007
+          symbol  : K_float_168
+          read    : true
+          address : 0144
+          symbol  : K_float_3600
+          read    : true
+          address : 0148
+          symbol  : $M67
+          read    : true
+          address : 0418
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : $M64
+          read    : true
+          address : 0414
+          symbol  : $M67
+          read    : true
+          address : 0418
+          symbol  : $M66
+          read    : true
+          address : 01D0
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : $M66
+          read    : true
+          address : 01D0
+          symbol  : K_float_300
+          read    : true
+          address : 0130
+          symbol  : $M65
+          read    : true
+          address : 01CE
+     Modulecall            : UND2
+     pastvalues            : 0
+     opcode                : 300E
+          symbol  : $M71
+          read    : true
+          address : 01D6
+          symbol  : Stoerung_statHeizung_Pumpe
+          read    : true
+          address : 0182
+          symbol  : Freigabe_Pumpe_statHeizung_BEFAUS
+          read    : true
+          address : 01D8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGL3P
+     pastvalues            : 0
+     opcode                : 3029
+          symbol  : K_float_100
+          read    : true
+          address : 013C
+          symbol  : K_float_40
+          read    : true
+          address : 014C
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $out-vgl3p-97-bgr
+          read    : false
+          address : 035A
+          symbol  : $out-vgl3p-98-bkl
+          read    : false
+          address : 035C
+          symbol  : $M90
+          read    : true
+          address : 01E2
+     Modulecall            : VGL3P
+     pastvalues            : 0
+     opcode                : 3029
+          symbol  : K_float_100
+          read    : true
+          address : 013C
+          symbol  : K_float_40
+          read    : true
+          address : 014C
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $out-vgl3p-99-bgr
+          read    : false
+          address : 035E
+          symbol  : $out-vgl3p-100-bkl
+          read    : false
+          address : 0360
+          symbol  : $M87
+          read    : true
+          address : 01E0
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M78
+          read    : true
+          address : 01DE
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M80
+          read    : true
+          address : 0428
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M78
+          read    : true
+          address : 01DE
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $M72
+          read    : true
+          address : 041C
+          symbol  : $M82
+          read    : true
+          address : 0430
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M90
+          read    : true
+          address : 01E2
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M92
+          read    : true
+          address : 0448
+     Modulecall            : PT1
+     pastvalues            : 22
+     opcode                : 301D
+          symbol  : MW_LagerOG_Raumtemperatur1
+          read    : true
+          address : 03F0
+          symbol  : K_float_20
+          read    : true
+          address : 0150
+          symbol  : $M73
+          read    : true
+          address : 0420
+     Modulecall            : ADSU
+     pastvalues            : 0
+     opcode                : 3002
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $M79
+          read    : true
+          address : 0424
+          symbol  : $M80
+          read    : true
+          address : 0428
+          symbol  : $M91
+          read    : true
+          address : 0444
+          symbol  : $M92
+          read    : true
+          address : 0448
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M84
+          read    : true
+          address : 0438
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M76
+          read    : true
+          address : 01DC
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M79
+          read    : true
+          address : 0424
+     Modulecall            : PT1
+     pastvalues            : 22
+     opcode                : 301D
+          symbol  : MW_LagerOG_Raumtemperatur2
+          read    : true
+          address : 03F4
+          symbol  : K_float_20
+          read    : true
+          address : 0150
+          symbol  : $M72
+          read    : true
+          address : 041C
+     Modulecall            : VGL3P
+     pastvalues            : 0
+     opcode                : 3029
+          symbol  : MW_LagerOG_Raumtemperatur2
+          read    : true
+          address : 03F4
+          symbol  : K_float_40
+          read    : true
+          address : 014C
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $out-vgl3p-101-bgr
+          read    : false
+          address : 0362
+          symbol  : $out-vgl3p-102-bkl
+          read    : false
+          address : 0364
+          symbol  : $M78
+          read    : true
+          address : 01DE
+     Modulecall            : PT1
+     pastvalues            : 22
+     opcode                : 301D
+          symbol  : K_float_100
+          read    : true
+          address : 013C
+          symbol  : K_float_20
+          read    : true
+          address : 0150
+          symbol  : $M85
+          read    : true
+          address : 043C
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M87
+          read    : true
+          address : 01E0
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M91
+          read    : true
+          address : 0444
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M87
+          read    : true
+          address : 01E0
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $M85
+          read    : true
+          address : 043C
+          symbol  : $M93
+          read    : true
+          address : 044C
+     Modulecall            : ADSU
+     pastvalues            : 0
+     opcode                : 3002
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $M81
+          read    : true
+          address : 042C
+          symbol  : $M82
+          read    : true
+          address : 0430
+          symbol  : $M93
+          read    : true
+          address : 044C
+          symbol  : $M94
+          read    : true
+          address : 0450
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M83
+          read    : true
+          address : 0434
+     Modulecall            : VGL3P
+     pastvalues            : 0
+     opcode                : 3029
+          symbol  : MW_LagerOG_Raumtemperatur1
+          read    : true
+          address : 03F0
+          symbol  : K_float_40
+          read    : true
+          address : 014C
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $out-vgl3p-103-bgr
+          read    : false
+          address : 0366
+          symbol  : $out-vgl3p-104-bkl
+          read    : false
+          address : 0368
+          symbol  : $M76
+          read    : true
+          address : 01DC
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M90
+          read    : true
+          address : 01E2
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $M88
+          read    : true
+          address : 0440
+          symbol  : $M94
+          read    : true
+          address : 0450
+     Modulecall            : PT1
+     pastvalues            : 22
+     opcode                : 301D
+          symbol  : K_float_100
+          read    : true
+          address : 013C
+          symbol  : K_float_20
+          read    : true
+          address : 0150
+          symbol  : $M88
+          read    : true
+          address : 0440
+     Modulecall            : MULDI
+     pastvalues            : 0
+     opcode                : 3006
+          symbol  : $M83
+          read    : true
+          address : 0434
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M84
+          read    : true
+          address : 0438
+          symbol  : MW_RT_Mittelwert_Lager_OG
+          read    : true
+          address : 0454
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M76
+          read    : true
+          address : 01DC
+          symbol  : K_float_0
+          read    : true
+          address : 0138
+          symbol  : $M73
+          read    : true
+          address : 0420
+          symbol  : $M81
+          read    : true
+          address : 042C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_LagerOG
+          read    : true
+          address : 03C4
+          symbol  : MW_RT_Mittelwert_Lager_OG
+          read    : true
+          address : 0454
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M98
+          read    : true
+          address : 01E4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M98
+          read    : true
+          address : 01E4
+          symbol  : Freigabe_LagerOG_EIN
+          read    : true
+          address : 016C
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M99
+          read    : true
+          address : 01E6
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_LagerOG_BEFAUS
+          read    : true
+          address : 01E8
+          symbol  : $out-undmn-105-binv
+          read    : false
+          address : 036A
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M117
+          read    : true
+          address : 0208
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M99
+          read    : true
+          address : 01E6
+          symbol  : $out-rss-106-binv
+          read    : false
+          address : 036C
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_LagerOG_Lufterhitzer_Stufe1
+          read    : true
+          address : 0186
+          symbol  : $M117
+          read    : true
+          address : 0208
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_WarenausgabeEG
+          read    : true
+          address : 03C8
+          symbol  : MW_WarenausgabeEG_Raumtemperatur
+          read    : true
+          address : 03F8
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M104
+          read    : true
+          address : 01EE
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M104
+          read    : true
+          address : 01EE
+          symbol  : Freigabe_WarenausgabeEG_EIN
+          read    : true
+          address : 0168
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M105
+          read    : true
+          address : 01F0
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_WarenausgabeEG_BEFAUS
+          read    : true
+          address : 01F2
+          symbol  : $out-undmn-107-binv
+          read    : false
+          address : 036E
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M116
+          read    : true
+          address : 020A
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M105
+          read    : true
+          address : 01F0
+          symbol  : $out-rss-108-binv
+          read    : false
+          address : 0370
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_WarenausgabeEG_TLS
+          read    : true
+          address : 018A
+          symbol  : $M116
+          read    : true
+          address : 020A
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_EingangAusgang
+          read    : true
+          address : 03CC
+          symbol  : MW_EingangAusgang_Raumtemperatur
+          read    : true
+          address : 03FC
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M106
+          read    : true
+          address : 01F4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M106
+          read    : true
+          address : 01F4
+          symbol  : Freigabe_EingangAusgang_EIN
+          read    : true
+          address : 017C
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M107
+          read    : true
+          address : 01F6
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_EingangAusgang_BEFAUS
+          read    : true
+          address : 01F8
+          symbol  : $out-undmn-109-binv
+          read    : false
+          address : 0372
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M119
+          read    : true
+          address : 020C
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M107
+          read    : true
+          address : 01F6
+          symbol  : $out-rss-110-binv
+          read    : false
+          address : 0374
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_EingangAusgang_TLS
+          read    : true
+          address : 0198
+          symbol  : $M119
+          read    : true
+          address : 020C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_Kassenzone
+          read    : true
+          address : 03D0
+          symbol  : MW_Kassenzone_Raumtemperatur
+          read    : true
+          address : 0400
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M110
+          read    : true
+          address : 01FC
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M110
+          read    : true
+          address : 01FC
+          symbol  : Freigabe_Kassenzone_EIN
+          read    : true
+          address : 0172
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M111
+          read    : true
+          address : 01FE
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_Kassenzone_BEFAUS
+          read    : true
+          address : 0200
+          symbol  : $out-undmn-111-binv
+          read    : false
+          address : 0376
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : K_0
+          read    : true
+          address : 00B6
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M111
+          read    : true
+          address : 01FE
+          symbol  : $out-rss-112-binv
+          read    : false
+          address : 0378
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 03D4
+          symbol  : MW_LagerbueroEG_Raumtemperatur_Lufterhitzer
+          read    : true
+          address : 0404
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M114
+          read    : true
+          address : 0204
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M114
+          read    : true
+          address : 0204
+          symbol  : Freigabe_LagerbueroEG_EIN
+          read    : true
+          address : 0178
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M115
+          read    : true
+          address : 0206
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 0210
+          symbol  : $out-undmn-113-binv
+          read    : false
+          address : 037A
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M118
+          read    : true
+          address : 020E
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M115
+          read    : true
+          address : 0206
+          symbol  : $out-rss-114-binv
+          read    : false
+          address : 037C
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_LagerbueroEG_Lufterhitzer_Stufe1
+          read    : true
+          address : 01A4
+          symbol  : $M118
+          read    : true
+          address : 020E
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_neueAnlieferung
+          read    : true
+          address : 03DC
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G1
+          read    : true
+          address : 0458
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M127
+          read    : true
+          address : 0214
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M127
+          read    : true
+          address : 0214
+          symbol  : Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0176
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M128
+          read    : true
+          address : 0216
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : $out-undmn-115-binv
+          read    : false
+          address : 037E
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M129
+          read    : true
+          address : 0218
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M128
+          read    : true
+          address : 0216
+          symbol  : $out-rss-116-binv
+          read    : false
+          address : 0380
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G1
+          read    : true
+          address : 01AA
+          symbol  : $M129
+          read    : true
+          address : 0218
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_neueAnlieferung
+          read    : true
+          address : 03DC
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G2
+          read    : true
+          address : 03E4
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M130
+          read    : true
+          address : 021A
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M130
+          read    : true
+          address : 021A
+          symbol  : Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0176
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M131
+          read    : true
+          address : 021C
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_neueAnlieferung_Gruppe2
+          read    : true
+          address : 0222
+          symbol  : $out-undmn-117-binv
+          read    : false
+          address : 0382
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M132
+          read    : true
+          address : 021E
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M131
+          read    : true
+          address : 021C
+          symbol  : $out-rss-118-binv
+          read    : false
+          address : 0384
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G2
+          read    : true
+          address : 01B0
+          symbol  : $M132
+          read    : true
+          address : 021E
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : SW_neueAnlieferung
+          read    : true
+          address : 03DC
+          symbol  : MW_neueAnlieferung_Raumtemperatur_G3
+          read    : true
+          address : 0464
+          symbol  : K_float_1
+          read    : true
+          address : 0134
+          symbol  : $M149
+          read    : true
+          address : 0258
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M149
+          read    : true
+          address : 0258
+          symbol  : Freigabe_neueAnlieferung_EIN
+          read    : true
+          address : 0176
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : Sommerbetrieb
+          read    : true
+          address : 01C6
+          symbol  : $M148
+          read    : true
+          address : 0256
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_neueAnlieferung_Gruppe3
+          read    : true
+          address : 025C
+          symbol  : $out-undmn-119-binv
+          read    : false
+          address : 0386
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M147
+          read    : true
+          address : 0254
+          symbol  : BF_Fernquittierung_EIN
+          read    : true
+          address : 0194
+          symbol  : $M148
+          read    : true
+          address : 0256
+          symbol  : $out-rss-120-binv
+          read    : false
+          address : 0388
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_neueAnlieferung_Lufterhitzer_G3
+          read    : true
+          address : 025A
+          symbol  : $M147
+          read    : true
+          address : 0254
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ODR2
+     pastvalues            : 0
+     opcode                : 3013
+          symbol  : $M145
+          read    : true
+          address : 0238
+          symbol  : $M138
+          read    : true
+          address : 022A
+          symbol  : $M144
+          read    : true
+          address : 0232
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M144
+          read    : true
+          address : 0232
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_RLT_Pumpe
+          read    : true
+          address : 0236
+          symbol  : $M143
+          read    : true
+          address : 0230
+          symbol  : $M141
+          read    : true
+          address : 022E
+     Modulecall            : UHR
+     pastvalues            : 4
+     opcode                : 302A
+          symbol  : $M141
+          read    : true
+          address : 022E
+          symbol  : $M143
+          read    : true
+          address : 0230
+          symbol  : $M137
+          read    : true
+          address : 045C
+     Modulecall            : MULT
+     pastvalues            : 0
+     opcode                : 3007
+          symbol  : K_float_168
+          read    : true
+          address : 0144
+          symbol  : K_float_3600
+          read    : true
+          address : 0148
+          symbol  : $M140
+          read    : true
+          address : 0460
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : $M137
+          read    : true
+          address : 045C
+          symbol  : $M140
+          read    : true
+          address : 0460
+          symbol  : $M139
+          read    : true
+          address : 022C
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : $M139
+          read    : true
+          address : 022C
+          symbol  : K_float_300
+          read    : true
+          address : 0130
+          symbol  : $M138
+          read    : true
+          address : 022A
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : Freigabe_Kassenzone_BEFAUS
+          read    : true
+          address : 0200
+          symbol  : Freigabe_LagerOG_BEFAUS
+          read    : true
+          address : 01E8
+          symbol  : Freigabe_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 0210
+          symbol  : Freigabe_WarenausgabeEG_BEFAUS
+          read    : true
+          address : 01F2
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : Freigabe_neueAnlieferung_Gruppe2
+          read    : true
+          address : 0222
+          symbol  : BF_Pumpe_Erhitzer_EIN
+          read    : true
+          address : 0250
+          symbol  : Freigabe_neueAnlieferung_Gruppe3
+          read    : true
+          address : 025C
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M145
+          read    : true
+          address : 0238
+          symbol  : $out-odrmn-121-binv
+          read    : false
+          address : 038A
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M144
+          read    : true
+          address : 0232
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_RLT_Pumpe
+          read    : true
+          address : 0236
+          symbol  : Freigabe_Pumpe_RLT_BEFAUS
+          read    : true
+          address : 0234
+          symbol  : $out-undmn-122-binv
+          read    : false
+          address : 038C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Freigabe_Nebenlueftung_EIN
+          read    : true
+          address : 0276
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M185
+          read    : true
+          address : 029C
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_Nebenlueftung_BEFAUS
+          read    : true
+          address : 0278
+          symbol  : $out-undmn-123-binv
+          read    : false
+          address : 038E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Freigabe_Abluefter_LagerWC_EIN
+          read    : true
+          address : 028A
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_Abluefter_LagerWC_BEFAUS
+          read    : true
+          address : 0284
+          symbol  : $out-undmn-124-binv
+          read    : false
+          address : 0390
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Freigabe_Abluefter_KundenWC_EIN
+          read    : true
+          address : 028C
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_Abluefter_KundenWC_BEFAUS
+          read    : true
+          address : 0288
+          symbol  : $out-undmn-125-binv
+          read    : false
+          address : 0392
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Freigabe_Abluefter_AMR_EIN
+          read    : true
+          address : 0292
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : Freigabe_Abluefter_AMR_BEFAUS
+          read    : true
+          address : 0296
+          symbol  : $out-undmn-126-binv
+          read    : false
+          address : 0394
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Stoerung_Nebenluftanlage_Lager
+          read    : true
+          address : 029A
+          symbol  : $M185
+          read    : true
+          address : 029C
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0004
+    Runtime                : 2550
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : Stoerung_Abschaltstoerung
+          read    : true
+          address : 01B6
+          symbol  : 1380HEI00ST920
+          read    : true
+          address : 0092
+          symbol  : $out-setmel-127-error
+          read    : false
+          address : 0396
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Pumpe_statHeizung_BEFAUS
+          read    : true
+          address : 01D8
+          symbol  : $M75
+          read    : true
+          address : 01DA
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M75
+          read    : true
+          address : 01DA
+          symbol  : Freigabe_Pumpe_statHeizung_BEFAUS
+          read    : true
+          address : 01D8
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI01BF001
+          read    : true
+          address : 006A
+          symbol  : $out-befaus-128-error
+          read    : false
+          address : 0398
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : Ansteuerung_Ventil
+          read    : true
+          address : 0410
+          symbol  : K_1
+          read    : true
+          address : 00B4
+          symbol  : 1380HEI01SB001
+          read    : true
+          address : 008C
+          symbol  : $out-anaus-129-error
+          read    : false
+          address : 039A
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_LagerOG_BEFAUS
+          read    : true
+          address : 01E8
+          symbol  : $M100
+          read    : true
+          address : 01EA
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M100
+          read    : true
+          address : 01EA
+          symbol  : Freigabe_LagerOG_BEFAUS
+          read    : true
+          address : 01E8
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI02BF001
+          read    : true
+          address : 0074
+          symbol  : $out-befaus-130-error
+          read    : false
+          address : 039C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_WarenausgabeEG_BEFAUS
+          read    : true
+          address : 01F2
+          symbol  : $M102
+          read    : true
+          address : 01EC
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M102
+          read    : true
+          address : 01EC
+          symbol  : Freigabe_WarenausgabeEG_BEFAUS
+          read    : true
+          address : 01F2
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI03BF001
+          read    : true
+          address : 0056
+          symbol  : $out-befaus-131-error
+          read    : false
+          address : 039E
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_EingangAusgang_BEFAUS
+          read    : true
+          address : 01F8
+          symbol  : $M108
+          read    : true
+          address : 01FA
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M108
+          read    : true
+          address : 01FA
+          symbol  : Freigabe_EingangAusgang_BEFAUS
+          read    : true
+          address : 01F8
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI04BF001
+          read    : true
+          address : 0082
+          symbol  : $out-befaus-132-error
+          read    : false
+          address : 03A0
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Kassenzone_BEFAUS
+          read    : true
+          address : 0200
+          symbol  : $M112
+          read    : true
+          address : 0202
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M112
+          read    : true
+          address : 0202
+          symbol  : Freigabe_Kassenzone_BEFAUS
+          read    : true
+          address : 0200
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI05BF001
+          read    : true
+          address : 0046
+          symbol  : $out-befaus-133-error
+          read    : false
+          address : 03A2
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 0210
+          symbol  : $M123
+          read    : true
+          address : 0212
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M123
+          read    : true
+          address : 0212
+          symbol  : Freigabe_LagerbueroEG_Lufterhitzer
+          read    : true
+          address : 0210
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI06BF001
+          read    : true
+          address : 007C
+          symbol  : $out-befaus-134-error
+          read    : false
+          address : 03A4
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : $M133
+          read    : true
+          address : 0224
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M133
+          read    : true
+          address : 0224
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI07BF001
+          read    : true
+          address : 0050
+          symbol  : $out-befaus-135-error
+          read    : false
+          address : 03A6
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : $M134
+          read    : true
+          address : 0226
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M134
+          read    : true
+          address : 0226
+          symbol  : Freigabe_neueAnlieferung_Gruppe1
+          read    : true
+          address : 0220
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI07BF003
+          read    : true
+          address : 004C
+          symbol  : $out-befaus-136-error
+          read    : false
+          address : 03A8
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_neueAnlieferung_Gruppe2
+          read    : true
+          address : 0222
+          symbol  : $M135
+          read    : true
+          address : 0228
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M135
+          read    : true
+          address : 0228
+          symbol  : Freigabe_neueAnlieferung_Gruppe2
+          read    : true
+          address : 0222
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI07BF002
+          read    : true
+          address : 004E
+          symbol  : $out-befaus-137-error
+          read    : false
+          address : 03AA
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_neueAnlieferung_Gruppe3
+          read    : true
+          address : 025C
+          symbol  : $M150
+          read    : true
+          address : 025E
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M150
+          read    : true
+          address : 025E
+          symbol  : Freigabe_neueAnlieferung_Gruppe3
+          read    : true
+          address : 025C
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI07BF005
+          read    : true
+          address : 00C4
+          symbol  : $out-befaus-138-error
+          read    : false
+          address : 03AC
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Pumpe_RLT_BEFAUS
+          read    : true
+          address : 0234
+          symbol  : $M146
+          read    : true
+          address : 024C
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M146
+          read    : true
+          address : 024C
+          symbol  : Freigabe_Pumpe_RLT_BEFAUS
+          read    : true
+          address : 0234
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380HEI08BF001
+          read    : true
+          address : 00BE
+          symbol  : $out-befaus-139-error
+          read    : false
+          address : 03AE
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Nebenlueftung_BEFAUS
+          read    : true
+          address : 0278
+          symbol  : $M181
+          read    : true
+          address : 0280
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M181
+          read    : true
+          address : 0280
+          symbol  : Freigabe_Nebenlueftung_BEFAUS
+          read    : true
+          address : 0278
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE07BF001
+          read    : true
+          address : 00C6
+          symbol  : $out-befaus-140-error
+          read    : false
+          address : 03B0
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Abluefter_LagerWC_BEFAUS
+          read    : true
+          address : 0284
+          symbol  : $M182
+          read    : true
+          address : 0282
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M182
+          read    : true
+          address : 0282
+          symbol  : Freigabe_Abluefter_LagerWC_BEFAUS
+          read    : true
+          address : 0284
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE04BF001
+          read    : true
+          address : 00BA
+          symbol  : $out-befaus-141-error
+          read    : false
+          address : 03B2
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Abluefter_KundenWC_BEFAUS
+          read    : true
+          address : 0288
+          symbol  : $M183
+          read    : true
+          address : 0286
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M183
+          read    : true
+          address : 0286
+          symbol  : Freigabe_Abluefter_KundenWC_BEFAUS
+          read    : true
+          address : 0288
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE05BF001
+          read    : true
+          address : 00BC
+          symbol  : $out-befaus-142-error
+          read    : false
+          address : 03B4
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : Freigabe_Abluefter_AMR_BEFAUS
+          read    : true
+          address : 0296
+          symbol  : $M184
+          read    : true
+          address : 0298
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M184
+          read    : true
+          address : 0298
+          symbol  : Freigabe_Abluefter_AMR_BEFAUS
+          read    : true
+          address : 0296
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 1380LUE09BF001
+          read    : true
+          address : 00C0
+          symbol  : $out-befaus-143-error
+          read    : false
+          address : 03B6
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+Task id;Modulename;Pastvaluecount
+ Task1;null;-1;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;BEFAUS;6;
+ Task1;null;-1;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;ENDE;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;MELEIN;4;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;NICHT;0;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ENDE;0;
+ Task3;null;-1;
+ Task3;ODRMN;0;
+ Task3;ODRMN;0;
+ Task3;ODRMN;0;
+ Task3;ODRMN;0;
+ Task3;ODRMN;0;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;VVZ;26;
+ Task3;null;-1;
+ Task3;SOLKEN;8;
+ Task3;SOLKEN;8;
+ Task3;UNDMN;0;
+ Task3;REGLER;38;
+ Task3;VGLEH;2;
+ Task3;VVZ;26;
+ Task3;ATRA;0;
+ Task3;ATRA;0;
+ Task3;ATRA;0;
+ Task3;null;-1;
+ Task3;ODR2;0;
+ Task3;ODRMN;0;
+ Task3;UHR;4;
+ Task3;MULT;0;
+ Task3;VGLOH;0;
+ Task3;MOKY;16;
+ Task3;UND2;0;
+ Task3;null;-1;
+ Task3;VGL3P;0;
+ Task3;VGL3P;0;
+ Task3;AWT;0;
+ Task3;AWT;0;
+ Task3;AWT;0;
+ Task3;PT1;22;
+ Task3;ADSU;0;
+ Task3;AWT;0;
+ Task3;PT1;22;
+ Task3;VGL3P;0;
+ Task3;PT1;22;
+ Task3;AWT;0;
+ Task3;AWT;0;
+ Task3;ADSU;0;
+ Task3;VGL3P;0;
+ Task3;AWT;0;
+ Task3;PT1;22;
+ Task3;MULDI;0;
+ Task3;AWT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;ODR2;0;
+ Task3;ODRMN;0;
+ Task3;UHR;4;
+ Task3;MULT;0;
+ Task3;VGLOH;0;
+ Task3;MOKY;16;
+ Task3;ODRMN;0;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;NICHT;0;
+ Task3;ENDE;0;
+ Task4;null;-1;
+ Task4;SETMEL;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;ANAUS;8;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;null;-1;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;NICHT;0;
+ Task4;BEFAUS;6;
+ Task4;ENDE;0;

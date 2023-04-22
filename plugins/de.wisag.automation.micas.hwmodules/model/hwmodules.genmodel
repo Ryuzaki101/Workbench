@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.wisag.automation.micas.hwmodules/src-gen" editDirectory="/de.wisag.automation.micas.hwmodules.edit/src-gen"
+    editorDirectory="/de.wisag.automation.micas.hwmodules.editor/src-gen" modelPluginID="de.wisag.automation.micas.hwmodules"
+    modelName="Hwmodules" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false">
+  <foreignModel>hwmodules.ecore</foreignModel>
+  <genPackages prefix="Hwmodules" basePackage="de.wisag.automation.micas" disposableProviderFactory="true"
+      fileExtensions="hw" ecorePackage="hwmodules.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hwmodules.ecore#//HardwareType">
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/ACXX"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/ZPXX"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/ERXX"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/MBXX"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/XX20"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/WSXX"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//HardwareType/UNKNOWN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hwmodules.ecore#//PortDataType">
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/WORD_CONST"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/WORD_VAR"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FLOAT_CONST"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FLOAT_VAR"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FGA_VALUE"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FGA_MESSAGE_CONST"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FGA_MEASURED_VALUE"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/FGA_ANALOG_VALUE"/>
+      <genEnumLiterals ecoreEnumLiteral="hwmodules.ecore#//PortDataType/DIRECT_VALUE"/>
+    </genEnums>
+    <genClasses ecoreClass="hwmodules.ecore#//HardwareTypeDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hwmodules.ecore#//HardwareTypeDefinition/aliases"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/databaseSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/databaseChecksumAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/addressConversionListAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/headSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/endModuleOpcode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/dataSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/stackSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/programSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/maxProgramSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/pastValuesOffsetFirstTask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareTypeDefinition/maxTaskCount"/>
+    </genClasses>
+    <genClasses ecoreClass="hwmodules.ecore#//HardwareAlias">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//HardwareAlias/name"/>
+    </genClasses>
+    <genClasses ecoreClass="hwmodules.ecore#//ModuleDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hwmodules.ecore#//ModuleDefinition/inputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hwmodules.ecore#//ModuleDefinition/outputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/runtime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/pastValueCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/displayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//ModuleDefinition/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hwmodules.ecore#//ModuleDefinition/supportedByHardware"/>
+      <genOperations ecoreOperation="hwmodules.ecore#//ModuleDefinition/getPortGroupsCount"/>
+      <genOperations ecoreOperation="hwmodules.ecore#//ModuleDefinition/getPortsCount"/>
+    </genClasses>
+    <genClasses ecoreClass="hwmodules.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/allowedPortDataTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/inputPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/displayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//Port/description"/>
+    </genClasses>
+    <genClasses ecoreClass="hwmodules.ecore#//PortGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//PortGroup/runtime"/>
+    </genClasses>
+    <genClasses ecoreClass="hwmodules.ecore#//MicasModules">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//MicasModules/modulesById"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hwmodules.ecore#//MicasModules/modulesByName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hwmodules.ecore#//MicasModules/modules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hwmodules.ecore#//MicasModules/types"/>
+      <genOperations ecoreOperation="hwmodules.ecore#//MicasModules/findModuleById">
+        <genParameters ecoreParameter="hwmodules.ecore#//MicasModules/findModuleById/id"/>
+      </genOperations>
+      <genOperations ecoreOperation="hwmodules.ecore#//MicasModules/findModuleByName">
+        <genParameters ecoreParameter="hwmodules.ecore#//MicasModules/findModuleByName/name"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

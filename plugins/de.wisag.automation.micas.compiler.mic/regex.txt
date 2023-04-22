@@ -1,0 +1,30 @@
+
+ParameterSection
+      FLOATK         7700:0060       10
+      WORDV          7700:0090       41
+      FLOATV         7700:00F0       0
+
+^\\s+((WORD(V|K)|FLOAT(V|K)))\\s+([a-fA-F0-9]{4}:[a-fA-F0-9]{4})\\s+(\\d+)$
+ WORDK 			 : 2
+ Adresse 1. Wert : 5
+ Anzahl 		 : 6
+ 
+ Vergangenheitswerte von 7700:0100 bis 7700:01E0
+ ^Vergangenheitswerte\\s+von\\s+([a-fA-F0-9]{4}:[a-fA-F0-9]{4})\\s+bis\\s+([a-fA-F0-9]{4}:[a-fA-F0-9]{4})\\s+$
+ Start=1
+ end=2
+ 
+   $B1                           WORDV      00B8       ? ? ?
+ ^\\s+(\\S+)\\s+(WORDV)\\s+([a-fA-F0-9]+)\\s+(\\?\\s?)+$
+ 
+   $WONE                         WORDK      0030           1   (0001H)
+ ^\\s+(\\S+)\\s+(WORDK)\\s+([a-fA-F0-9]+)\\s+(\\d+).+$
+ 
+   &M0                           IPAMB      0034           0, 1
+ ^\\s+(\\S+)\\s+(IPAMB)\\s+([a-fA-F0-9]+)\\s+(\\d+),\\s*(\\d+)$
+ 
+  TV_001                        FLOATK     0060         100          
+ ^\\s+(\\S+)\\s+(FLOATK)\\s+([a-fA-F0-9]+)\\s+((\\d+)(.\\d+)?)\\s*$
+   
+ ^Micas-Konverter\s+V(\d+\.\d+)\s+([A-Z0-9]+\.K..)$
+ 

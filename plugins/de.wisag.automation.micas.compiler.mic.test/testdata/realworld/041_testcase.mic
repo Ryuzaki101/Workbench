@@ -1,0 +1,135 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 0010-12A.GPS
+  ;*** Projektname    : VE-Wasserkühlung
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : H. Peters
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 10
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV SW-VL-Temp-sek
+  FloatV KW-Ventil
+  FloatV Ruecksign-Ventil
+  FloatV VL-Temp-sek.
+  WordV  Freigabe-EIN
+  FloatK K-SW-VL-Temp-sek (1.00)
+  WordK  K-Freigabebefehl (1)
+  WordV  Quittiertaster
+  WordV  Quittierbefehl
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (74,1)
+  WordV  $WSCRATCH
+  WordK  $M1 (1)
+  IPAAW &M2 (76)
+  IPAMB &M3 (47,15)
+  IPAAW &M4 (63)
+  IPAMB &M6 (74,3)
+  IPAAW &M7 (65)
+  IPAMB &M8 (47,14)
+  WordV  $HB3
+  FloatK $M9 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatK $M10 (10.00)
+  WordV  $B1
+  WordV  $B2
+  WordV  $HB1
+  FloatV $F3
+  FloatK $M11 (1800.00)
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordK  $M12 (1)
+  IPAMB &M13 (74,0)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;- VE-Wasserkühlung
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max- Planck- Institut
+  ;für bio- physikalische
+  ;chemie Göttingen
+  ;Neubau NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  NICHT (K-Freigabebefehl,$HB0)
+  BEFAUS (1,$HB0,K-Freigabebefehl,$WZERO,$WZERO,&M0,
+          $WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  ANAUS (K-SW-VL-Temp-sek,$M1,&M2,$WSCRATCH)
+  ;Freigabe
+  ;VE-Wasserkühlung
+  ; 
+  ;Sollwert VL-Temp.
+  ;sek.
+  ; 
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;GLT Schaltbefehl
+  ;Quittierung
+  ; 
+  MELEIN (&M3,1,Quittierbefehl,$WSCRATCH)
+  ANEIN (&M4,VL-Temp-sek.,$WSCRATCH)
+  ;Rückmeldung Ein
+  ;Freigabe
+  ;VE-Wasserkühlung
+  ; 
+  ANEIN (&M2,SW-VL-Temp-sek,$WSCRATCH)
+  MELEIN (&M6,1,K-Freigabebefehl,$WSCRATCH)
+  BTRA (K-Freigabebefehl,Freigabe-EIN)
+  ANEIN (&M7,Ruecksign-Ventil,$WSCRATCH)
+  ;Meldung
+  ;Schaltschrank
+  ;Quittierung
+  ; 
+  MELEIN (&M8,1,Quittiertaster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  NICHT (Freigabe-EIN,$HB3)
+  REGLER (6,$WONE,$HB3,$M9,KW-Ventil,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  SUB2 (KW-Ventil,Ruecksign-Ventil,$F1)
+  ABSWER ($F1,$F2)
+  VGLOH ($F2,$M10,$B1)
+  UND11 ($B1,$B4,$B2)
+  NICHT ($WONE,$WSCRATCH)
+  NICHT ($B2,$HB1)
+  UHR ($WONE,$HB1,$F3)
+  VGLOH ($F3,$M11,$B3)
+  ODR2 (Quittiertaster,Quittiertaster,$B4)
+  RSS ($B3,$B4,$B5,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  NICHT ($WONE,$WSCRATCH)
+  SETMEL ($M12,1,$B5,&M13,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

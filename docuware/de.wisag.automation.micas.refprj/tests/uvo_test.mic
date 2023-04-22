@@ -1,0 +1,65 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : neues.module
+  ;*** Projektname    : ich wieder mol
+  ;*** Projektnummer  : <<TODO>>
+  ;*** Bearbeiter     :
+  ;*** Pruefer         :
+  ;*** Line Nummer    : <<TODO>>
+  ;*** User Number    : <<TODO>>
+  ;*** Modul Typ      : AC40
+  ;*** Feldbus Nummer : 2
+  ;*** Qualifier      : 29
+  ;*****************************************************************
+  MODUL ( AC40, 2)
+  IPAAW &Zeile_10 (10)
+  IPAAW &Zeile_11 (11)
+  IPAMB &Zeile_0 (0,0)
+  IPAMB &Zeile_1 (1,0)
+  FloatV LF1
+  FloatV LF2
+  FloatV LF3
+  WordK enable (1)
+  WordV LW1
+  WordV LW2
+  WordV LW3
+  WordV LW5
+  WordV LW6
+  IPAMB &Zeile_0_9 (0,9)
+  IPAMB &Zeile_1_9 (1,9)
+  WordV LW4
+  WordV $W_SCRATCH_
+  WordV werr-melein-Error484
+  WordV werr-melein2-Error142
+  WordK $IN-BEFAUS_Ein2_7107 (0)
+  WordK $IN-BEFAUS_Ein3_10780 (0)
+  WordV werr-befaus-Error21
+  WordK $IN-BEFAUS2_Ein2_7398 (0)
+  WordK $IN-BEFAUS2_Ein3_2866 (0)
+  WordV werr-befaus2-Error302
+
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init )
+  ENDE
+
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (2,cycl ,1000)
+
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  MELEIN (&Zeile_0,1,LW1,werr-melein-Error484)
+  MELEIN (&Zeile_1,1,LW3,werr-melein2-Error142)
+  UVO (LW6,1,LW1,1,LW3,0,0,LW4,werr-melein2-Error142)
+  NICHT (LW1,LW2)
+  BEFAUS (0,LW1,LW2,$IN-BEFAUS_Ein2_7107,$IN-BEFAUS_Ein3_10780,&Zeile_0_9,
+   werr-befaus-Error21)
+  BEFAUS (0,LW4,LW3,$IN-BEFAUS2_Ein2_7398,$IN-BEFAUS2_Ein3_2866,&Zeile_1_9,
+   werr-befaus2-Error302)
+  NICHT (LW3,LW4)
+  ENDE
+  ENDMODUL

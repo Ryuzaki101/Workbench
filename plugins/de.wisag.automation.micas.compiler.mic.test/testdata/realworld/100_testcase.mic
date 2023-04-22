@@ -1,0 +1,1269 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI30606.GPS
+  ;*** Projektname    : MPI Turm 3
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Meyer
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 6
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Zul_Magnet_ST
+  WordV  vorgespuelt_Gal
+  WordV  Anl_Magnet_R2_3
+  WordV  Zul_Gal_Keilr_St
+  WordV  Außentemp<10
+  FloatV Regler_SG_Gal
+  WordV  Abl_Gal_i_ein
+  WordV  Abl_Magnet_R1
+  WordV  Abl_Gal_Keilr
+  WordV  Frost_Gal
+  WordV  Zul_Magnet_i_ein
+  WordV  Zul_Gal_Keilr
+  WordV  Abl_Magnet_Keilr
+  WordV  ZL_Klp_Gal_auf
+  FloatK Zul_SW_Gal (21.00)
+  WordV  Abl_Chemie_ST
+  WordV  Zul_Gal_R1
+  WordV  Zul_Gal_R2
+  WordV  Abl_Laser_R1
+  WordV  Abl_Gal_R0
+  WordV  Abl_Gal_R1
+  WordV  Abl_Gal_R2
+  WordV  Abl_Laser_i_ein
+  WordV  Abl_Chemie_i_ein
+  WordV  BMZ-Meldung_SUG
+  WordV  Abl_Las_Keilr_St
+  WordK  K0 (0)
+  FloatV Zul_Temp_Gal
+  WordV  Abl_Chem_gestört
+  WordV  Zul_Magn_gestoer
+  WordV  vorspuelen_Magne
+  WordV  Abl_Chemie_R2
+  WordV  Anl_Gal_R2_1
+  WordV  vorgespuelt_Magn
+  WordV  Anl_Magne_einsch
+  WordV  Abl_Gal_einsch
+  WordV  Entr_Befehl
+  WordV  ZUL-BSK_Magnetra
+  WordV  Zul_Magnet_R1
+  WordV  Abl_Magnet_i_ein
+  WordV  Zul_Magnet_R2
+  WordV  Abl_Laser_Keilr
+  WordV  Anfor_Chemie_St1
+  WordV  Entriegeln
+  WordV  Zul_Magnet_Keilr
+  FloatV Zul_Temp_Magnet
+  FloatK Zul_SW_Magnet (21.00)
+  WordV  Zul_Gal_ST
+  WordV  Anl_Gal_R1_1
+  WordV  Abl_Che_Keilr_St
+  WordV  Frost_Magnet
+  WordV  Zul_Mag_Keilr_St
+  FloatV ERH_Gal_vorspuel
+  WordV  Anl_Magnet_EIN1
+  WordV  Zul_Gal_einsch
+  WordV  Abl_Gal_ST
+  FloatV ERH_Ventil_Gal
+  WordV  Anl_Magnet_R2_2
+  WordV  Anl_Magnet_R1_2
+  WordV  Abl_Magnet_R0
+  WordV  Anl_Magnet_R0
+  FloatV ERH_Ventil_Magne
+  WordV  Anfor_Gal_St0
+  WordV  Anl_Magnet_ST
+  WordV  Abl_Magnet_R2
+  WordV  Anl_Gal_R1_2
+  WordV  Abl_Chemie_R1
+  WordV  Anl_Gal_R0
+  WordV  Anfor_Gal_St2
+  WordV  FOL_KL_Laser_R1
+  WordV  Zul_Gal_R0
+  WordV  Entr_Taster
+  WordV  FOL_Klp_ST
+  WordV  Anl_Gal_ST
+  WordV  ABL-BSK_Magnetra
+  WordV  Zul_Gal_gestört
+  FloatV Aussentemp
+  WordV  Anl_Magnet_EIN2
+  WordV  Abl_Magn_gestoer
+  WordV  Zul_Gal_i_ein
+  WordV  Abl_Gal_gestört
+  WordV  Abl_Gal_Keilr_St
+  WordV  Abl_Magnet_ST
+  FloatV ERH_Gal_gespuelt
+  WordV  Anl_Gal_R2_2
+  FloatV ERH_Gal_Frost
+  WordV  Abl_Mag_Keilr_St
+  WordV  Sauerstoff_gerin
+  WordV  Anl_Laser_R1_2
+  FloatV ERH_Mag_gespuelt
+  WordV  Ausl_Klappe_B1
+  WordV  Abl_Lase_gestört
+  WordK  Anl_Magnet_R2 (1)
+  WordV  Anfor_Chemie_St2
+  WordV  Anl_Gal_EIN2
+  WordV  Anl_Gal_EIN1
+  WordV  Anl_Laser_R0
+  WordV  Abl_Chemie_Keilr
+  WordV  Anl_Laser_ST
+  WordV  Unterspannung_NN
+  WordV  Anl_Magnet_R1_1
+  WordV  Anl_Magnet_R2_1
+  WordV  Zul_Magnet_R0
+  WordV  Anfor_Gal_St1
+  WordV  Abl_Chemie_R0
+  WordK  Anl_Gal_R1 (0)
+  WordK  Anl_Laser_R1 (1)
+  WordV  Abl_Laser_ST
+  FloatV Regler_SG_Magnet
+  WordV  Abl_Laser_R0
+  WordV  Ausl_Klappe_AUS
+  WordV  Anl_Laser_EIN1
+  WordK  K1 (1)
+  WordV  vorspuelen_Gal
+  WordK  Anl_Magnet_R1 (0)
+  WordV  Ausl_Klappe_Ein
+  WordV  Anl_Laser_R1_1
+  WordK  Anl_Gal_R2 (1)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B5
+  FloatK $M2 (4.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  WordV  $B6
+  FloatK $M4 (6.00)
+  FloatK $M5 (0.00)
+  WordV  $B3
+  WordV  $B7
+  FloatK $M6 (6.00)
+  FloatK $M7 (0.00)
+  WordV  $B4
+  WordV  $B8
+  FloatK $M8 (8.00)
+  FloatK $M9 (0.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $HB0
+  FloatK $M10 (20.00)
+  FloatK $M11 (0.00)
+  WordV  $B11
+  FloatK $M12 (0.00)
+  FloatK $M13 (5.00)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $WSCRATCH
+  WordV  $B15
+  WordV  $B21
+  FloatK $M14 (20.00)
+  FloatK $M15 (0.00)
+  WordV  $B16
+  FloatK $M16 (0.00)
+  FloatK $M17 (5.00)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B22
+  FloatK $M18 (20.00)
+  FloatK $M19 (0.00)
+  WordV  $B23
+  FloatK $M20 (0.00)
+  FloatK $M21 (5.00)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B33
+  FloatK $M22 (20.00)
+  FloatK $M23 (0.00)
+  WordV  $B28
+  FloatK $M24 (0.00)
+  FloatK $M25 (5.00)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $B34
+  FloatK $M26 (20.00)
+  FloatK $M27 (0.00)
+  WordV  $B35
+  FloatK $M28 (0.00)
+  FloatK $M29 (5.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  IPAMB &M30 (79,1)
+  IPAMB &M31 (79,2)
+  IPAMB &M32 (79,3)
+  IPAMB &M33 (79,5)
+  IPAMB &M34 (79,9)
+  IPAMB &M35 (79,10)
+  IPAMB &M36 (79,11)
+  IPAMB &M37 (79,13)
+  IPAMB &M38 (122,1)
+  IPAMB &M39 (122,2)
+  IPAMB &M40 (122,3)
+  IPAMB &M41 (62,9)
+  IPAMB &M42 (62,10)
+  IPAMB &M43 (62,11)
+  IPAMB &M44 (62,13)
+  IPAMB &M45 (19,2)
+  IPAMB &M46 (47,1)
+  IPAMB &M47 (47,2)
+  IPAMB &M48 (47,3)
+  IPAMB &M49 (47,5)
+  IPAMB &M50 (48,1)
+  IPAMB &M51 (48,2)
+  IPAMB &M52 (48,3)
+  IPAMB &M53 (48,5)
+  IPAMB &M54 (61,9)
+  IPAMB &M55 (61,10)
+  IPAMB &M56 (61,11)
+  IPAMB &M57 (61,13)
+  IPAMB &M58 (0,0)
+  IPAMB &M59 (61,6)
+  WordV  $HB2
+  WordV  $B41
+  IPAMB &M60 (61,2)
+  WordV  $B42
+  IPAMB &M61 (61,3)
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  IPAMB &M64 (62,3)
+  IPAMB &M65 (62,6)
+  IPAMB &M67 (57,3)
+  IPAMB &M68 (0,14)
+  IPAMB &M69 (0,11)
+  IPAMB &M70 (36,3)
+  IPAMB &M71 (36,6)
+  IPAMB &M72 (36,7)
+  IPAMB &M73 (37,2)
+  IPAMB &M75 (37,3)
+  IPAMB &M76 (47,11)
+  IPAMB &M78 (44,13)
+  IPAMB &M79 (56,10)
+  IPAMB &M80 (44,15)
+  IPAMB &M81 (43,15)
+  IPAMB &M82 (54,9)
+  IPAMB &M83 (54,10)
+  IPAMB &M84 (54,11)
+  IPAMB &M85 (54,13)
+  IPAMB &M86 (60,6)
+  IPAMB &M87 (60,7)
+  IPAMB &M88 (18,7)
+  IPAMB &M89 (63,10)
+  IPAMB &M90 (59,11)
+  IPAMB &M91 (59,10)
+  IPAMB &M92 (19,13)
+  IPAMB &M93 (19,15)
+  IPAMW &M94 (25)
+  FloatK $M95 (11.00)
+  FloatK $M96 (1.00)
+  WordV  $HB3
+  WordV  $B47
+  FloatK $M97 (60.00)
+  FloatK $M98 (60.00)
+  IPAMW &M99 (5)
+  IPAMW &M100 (6)
+  IPAAW &M101 (80)
+  FloatV $F1
+  FloatK $M102 (45.00)
+  FloatK $M103 (15.00)
+  FloatV $F2
+  FloatK $M104 (10.00)
+  WordV  $B48
+  WordK  $M105 (1)
+  IPAAW &M107 (81)
+  FloatV $F3
+  FloatK $M108 (45.00)
+  FloatK $M109 (15.00)
+  FloatV $F4
+  FloatK $M110 (10.00)
+  WordV  $B49
+  WordK  $M111 (1)
+  WordV  $B50
+  WordV  $B51
+  FloatK $M113 (30.00)
+  FloatK $M114 (0.00)
+  WordV  $B52
+  WordK  $M115 (1)
+  IPAMB &M116 (84,0)
+  WordV  $B53
+  WordV  $B54
+  FloatK $M117 (30.00)
+  FloatK $M118 (0.00)
+  WordV  $B55
+  WordK  $M119 (1)
+  IPAMB &M120 (84,1)
+  WordV  $B56
+  FloatK $M121 (120.00)
+  FloatK $M122 (0.00)
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  WordV  $HB1
+  WordV  $B60
+  IPAMB &M123 (47,9)
+  FloatK $M124 (0.00)
+  FloatK $M125 (0.00)
+  FloatV $F5
+  FloatK $M126 (0.00)
+  FloatK $M127 (100.00)
+  FloatK $M128 (0.00)
+  FloatV $F6
+  FloatK $M129 (180.00)
+  FloatK $M130 (0.00)
+  FloatK $M131 (100.00)
+  WordV  $B61
+  WordV  $B62
+  FloatK $M132 (0.00)
+  FloatK $M133 (10.00)
+  WordV  $B63
+  WordV  $B64
+  WordV  $B65
+  FloatK $M134 (15.00)
+  FloatK $M135 (0.00)
+  WordV  $B66
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  FloatK $M137 (0.00)
+  FloatK $M138 (10.00)
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  FloatK $M139 (15.00)
+  FloatK $M140 (0.00)
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  WordV  $B78
+  FloatK $M142 (30.00)
+  FloatK $M143 (0.00)
+  WordV  $B79
+  WordK  $M144 (1)
+  IPAMB &M145 (84,2)
+  WordV  $B80
+  WordV  $B81
+  FloatK $M146 (30.00)
+  FloatK $M147 (0.00)
+  WordV  $B82
+  WordK  $M148 (1)
+  IPAMB &M149 (84,5)
+  WordV  $B83
+  FloatK $M150 (120.00)
+  FloatK $M151 (0.00)
+  WordV  $B84
+  WordV  $B85
+  WordV  $B86
+  FloatK $M152 (0.00)
+  FloatK $M153 (0.00)
+  FloatV $F7
+  FloatK $M154 (0.00)
+  FloatK $M155 (100.00)
+  FloatV $F8
+  FloatK $M156 (0.00)
+  FloatV $F9
+  FloatK $M157 (180.00)
+  FloatK $M158 (0.00)
+  FloatK $M159 (100.00)
+  FloatV $F10
+  WordV  $B87
+  WordV  $B88
+  FloatK $M160 (0.00)
+  FloatK $M161 (10.00)
+  WordV  $B89
+  WordV  $B90
+  WordV  $B91
+  FloatK $M162 (15.00)
+  FloatK $M163 (0.00)
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  WordV  $B95
+  WordV  $B96
+  FloatK $M166 (0.00)
+  FloatK $M167 (10.00)
+  WordV  $B97
+  WordV  $B98
+  WordV  $B99
+  FloatK $M168 (15.00)
+  FloatK $M169 (0.00)
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  WordV  $B103
+  WordV  $B104
+  WordV  $B105
+  FloatK $M171 (30.00)
+  FloatK $M172 (0.00)
+  WordV  $B106
+  WordK  $M173 (1)
+  IPAMB &M174 (84,3)
+  WordV  $B107
+  FloatK $M175 (180.00)
+  FloatK $M176 (0.00)
+  WordV  $B108
+  WordV  $B109
+  FloatK $M177 (180.00)
+  FloatK $M178 (0.00)
+  WordV  $B110
+  WordV  $B111
+  WordK  $M179 (1)
+  IPAMB &M180 (84,6)
+  WordV  $B112
+  WordV  $B113
+  FloatK $M181 (30.00)
+  FloatK $M182 (0.00)
+  WordV  $B114
+  WordK  $M183 (1)
+  IPAMB &M184 (84,4)
+  WordV  $B115
+  IPAMB &M186 (43,13)
+  WordV  $B116
+  WordV  $B117
+  FloatK $M187 (0.00)
+  FloatK $M188 (10.00)
+  WordV  $B118
+  WordV  $B119
+  WordV  $B120
+  FloatK $M189 (15.00)
+  FloatK $M190 (0.00)
+  WordV  $B121
+  WordV  $B122
+  WordV  $B123
+  FloatK $M192 (0.00)
+  FloatK $M193 (0.00)
+  FloatK $M194 (2.00)
+  FloatK $M195 (20.00)
+  FloatK $M196 (100.00)
+  FloatK $M197 (100.00)
+  FloatV $F11
+  WordK  $M198 (1)
+  IPAAW &M199 (13)
+  FloatK $M200 (0.00)
+  FloatK $M201 (0.00)
+  FloatK $M202 (2.00)
+  FloatK $M203 (20.00)
+  FloatK $M204 (100.00)
+  FloatK $M205 (100.00)
+  FloatV $F12
+  WordK  $M206 (1)
+  IPAAW &M207 (11)
+  WordV  $B124
+  WordV  $B125
+  WordV  $B131
+  WordV  $B126
+  WordV  $B127
+  WordV  $B132
+  WordV  $B128
+  WordV  $B129
+  WordV  $B133
+  WordV  $B130
+  WordK  $M209 (1)
+  WordV  $B134
+  WordV  $B135
+  WordV  $B141
+  WordV  $B136
+  WordV  $B137
+  WordV  $B142
+  WordV  $B138
+  WordV  $B139
+  WordV  $B143
+  WordV  $B140
+  WordK  $M212 (1)
+  WordV  $B144
+  WordV  $B148
+  WordV  $B145
+  WordV  $B146
+  WordV  $B149
+  WordV  $B147
+  WordK  $M215 (1)
+  IPAMB &M217 (63,1)
+  IPAMB &M218 (63,5)
+  IPAMB &M219 (64,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         Turm 3
+  ;Anlage:  7.4
+  ;         Galvanik
+  ;         Magnetraum SUG
+  ;         037b
+  ;         Abluft Laser
+  ;         Abluft Chemie
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_Gal_R1,Anl_Gal_EIN1)
+  BTRA (Anl_Gal_R2,Anl_Gal_EIN2)
+  BTRA (Anl_Magnet_R1,Anl_Magnet_EIN1)
+  BTRA (Anl_Magnet_R2,Anl_Magnet_EIN2)
+  BTRA (Anl_Laser_R1,Anl_Laser_EIN1)
+  ENDE 
+  TASK (2,cycl,2000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anl_Gal_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B5,Anl_Gal_R1_1)
+  NICHT ($B1,$B5)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_Gal_EIN2,$M2,$M3,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B6,Anl_Gal_R2_1)
+  NICHT ($B2,$B6)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_Magnet_EIN1,$M4,$M5,$B3)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B3,$B7,Anl_Magnet_R1_1)
+  NICHT ($B3,$B7)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_Magnet_EIN2,$M6,$M7,$B4)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B4,$B8,Anl_Magnet_R2_1)
+  NICHT ($B4,$B8)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (Anl_Laser_EIN1,$M8,$M9,$B9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B9,$B10,Anl_Laser_R1_1)
+  NICHT ($B9,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M10,$M11,$B11)
+  VVZ (Anl_Gal_R1,$M12,$M13,$B12)
+  UND11 ($B12,$B11,$B13)
+  RSS ($B13,Anl_Gal_R1,$B14,$WSCRATCH)
+  UND2 ($B14,$B11,$B15)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B15,$B21,Anl_Gal_R1_2)
+  NICHT ($B15,$B21)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M14,$M15,$B16)
+  VVZ (Anl_Gal_R2,$M16,$M17,$B17)
+  UND11 ($B17,$B16,$B18)
+  RSS ($B18,Anl_Gal_R2,$B19,$WSCRATCH)
+  UND2 ($B19,$B16,$B20)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B20,$B22,Anl_Gal_R2_2)
+  NICHT ($B20,$B22)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M18,$M19,$B23)
+  VVZ (Anl_Magnet_R1,$M20,$M21,$B24)
+  UND11 ($B24,$B23,$B25)
+  RSS ($B25,Anl_Magnet_R1,$B26,$WSCRATCH)
+  UND2 ($B26,$B23,$B27)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B27,$B33,Anl_Magnet_R1_2)
+  NICHT ($B27,$B33)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M22,$M23,$B28)
+  VVZ (Anl_Magnet_R2,$M24,$M25,$B29)
+  UND11 ($B29,$B28,$B30)
+  RSS ($B30,Anl_Magnet_R2,$B31,$WSCRATCH)
+  UND2 ($B31,$B28,$B32)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B32,$B34,Anl_Magnet_R2_2)
+  NICHT ($B32,$B34)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M26,$M27,$B35)
+  VVZ (Anl_Laser_R1,$M28,$M29,$B36)
+  UND11 ($B36,$B35,$B37)
+  RSS ($B37,Anl_Laser_R1,$B38,$WSCRATCH)
+  UND2 ($B38,$B35,$B39)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B39,$B40,Anl_Laser_R1_2)
+  NICHT ($B39,$B40)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M30,1,Anl_Gal_R0,$WSCRATCH)
+  MELEIN (&M31,1,Anl_Gal_ST,$WSCRATCH)
+  MELEIN (&M32,1,Anl_Gal_R1,$WSCRATCH)
+  MELEIN (&M33,1,Anl_Gal_R2,$WSCRATCH)
+  MELEIN (&M34,1,Anl_Magnet_R0,$WSCRATCH)
+  MELEIN (&M35,1,Anl_Magnet_ST,$WSCRATCH)
+  MELEIN (&M36,1,Anl_Magnet_R1,$WSCRATCH)
+  MELEIN (&M37,1,Anl_Magnet_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M38,1,Anl_Laser_R0,$WSCRATCH)
+  MELEIN (&M39,1,Anl_Laser_ST,$WSCRATCH)
+  MELEIN (&M40,1,Anl_Laser_R1,$WSCRATCH)
+  MELEIN (&M41,1,Abl_Magnet_R0,$WSCRATCH)
+  MELEIN (&M42,1,Abl_Magnet_ST,$WSCRATCH)
+  MELEIN (&M43,1,Abl_Magnet_R1,$WSCRATCH)
+  MELEIN (&M44,1,Abl_Magnet_R2,$WSCRATCH)
+  MELEIN (&M45,1,Abl_Magnet_Keilr,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M46,1,Zul_Gal_R0,$WSCRATCH)
+  MELEIN (&M47,1,Zul_Gal_ST,$WSCRATCH)
+  MELEIN (&M48,1,Zul_Gal_R1,$WSCRATCH)
+  MELEIN (&M49,1,Zul_Gal_R2,$WSCRATCH)
+  MELEIN (&M50,1,Abl_Gal_R0,$WSCRATCH)
+  MELEIN (&M51,1,Abl_Gal_ST,$WSCRATCH)
+  MELEIN (&M52,1,Abl_Gal_R1,$WSCRATCH)
+  MELEIN (&M53,1,Abl_Gal_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M54,1,Zul_Magnet_R0,$WSCRATCH)
+  MELEIN (&M55,1,Zul_Magnet_ST,$WSCRATCH)
+  MELEIN (&M56,1,Zul_Magnet_R1,$WSCRATCH)
+  MELEIN (&M57,1,Zul_Magnet_R2,$WSCRATCH)
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M59,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B41)
+  MELEIN (&M60,1,$B42,$WSCRATCH)
+  MELEIN (&M61,1,$B43,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B41,$B44,Anfor_Gal_St0)
+  NICHT ($B41,$B44)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B42,$B45,Anfor_Gal_St1)
+  NICHT ($B42,$B45)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B43,$B46,Anfor_Gal_St2)
+  NICHT ($B43,$B46)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M64,1,Anfor_Chemie_St1,$WSCRATCH)
+  MELEIN (&M65,1,Anfor_Chemie_St2,$WSCRATCH)
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M67,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung_NN)
+  MELEIN (&M68,1,Entr_Taster,$WSCRATCH)
+  MELEIN (&M69,1,Entr_Befehl,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M70,1,Zul_Gal_Keilr,$WSCRATCH)
+  MELEIN (&M71,1,Abl_Gal_Keilr,$WSCRATCH)
+  MELEIN (&M72,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_Gal)
+  MELEIN (&M73,1,Zul_Magnet_Keilr,$WSCRATCH)
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M75,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_Magnet)
+  MELEIN (&M76,1,ZL_Klp_Gal_auf,$WSCRATCH)
+  MELEIN (&M58,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr_Taster,Entr_Befehl,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M78,1,Abl_Laser_R0,$WSCRATCH)
+  MELEIN (&M79,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Abl_Laser_ST)
+  MELEIN (&M80,1,Abl_Laser_R1,$WSCRATCH)
+  MELEIN (&M81,1,FOL_KL_Laser_R1,$WSCRATCH)
+  MELEIN (&M82,1,Abl_Chemie_R0,$WSCRATCH)
+  MELEIN (&M83,1,Abl_Chemie_ST,$WSCRATCH)
+  MELEIN (&M84,1,Abl_Chemie_R1,$WSCRATCH)
+  MELEIN (&M85,1,Abl_Chemie_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M86,1,Abl_Laser_Keilr,$WSCRATCH)
+  MELEIN (&M87,1,Abl_Chemie_Keilr,$WSCRATCH)
+  MELEIN (&M88,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL-BSK_Magnetra)
+  MELEIN (&M89,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL-BSK_Magnetra)
+  MELEIN (&M90,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Sauerstoff_gerin)
+  MELEIN (&M91,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ-Meldung_SUG)
+  MELEIN (&M92,1,Ausl_Klappe_AUS,$WSCRATCH)
+  MELEIN (&M93,1,Ausl_Klappe_Ein,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M94,Aussentemp,$WSCRATCH)
+  VGLEH (Aussentemp,$M95,$M96,$HB3)
+  NICHT ($HB3,$B47)
+  VVZ ($B47,$M97,$M98,Außentemp<10)
+  ANEIN (&M99,Zul_Temp_Gal,$WSCRATCH)
+  ANEIN (&M100,Zul_Temp_Magnet,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M101,$F1,$WSCRATCH)
+  LIMIT ($F1,$M102,$M103,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M104,$B48)
+  AWT ($B48,$F2,Zul_SW_Gal,Zul_SW_Gal)
+  ANAUS (Zul_SW_Gal,$M105,&M101,$WSCRATCH)
+  ANEIN (&M107,$F3,$WSCRATCH)
+  LIMIT ($F3,$M108,$M109,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M110,$B49)
+  AWT ($B49,$F4,Zul_SW_Magnet,Zul_SW_Magnet)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (Zul_SW_Magnet,$M111,&M107,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODR2 (Zul_Gal_R1,Zul_Gal_R2,Zul_Gal_i_ein)
+  XOR2 (Zul_Gal_i_ein,Zul_Gal_Keilr,$B50)
+  UND2 (Zul_Gal_i_ein,$B50,$B51)
+  VVZ ($B51,$M113,$M114,$B52)
+  RSS ($B52,Entriegeln,Zul_Gal_Keilr_St,$WSCRATCH)
+  ODRMN (3,Zul_Gal_Keilr_St,Frost_Gal,Zul_Gal_ST,0,
+         Zul_Gal_gestört,$WSCRATCH)
+  SETMEL ($M115,1,Zul_Gal_Keilr_St,&M116,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODR2 (Abl_Gal_R1,Abl_Gal_R2,Abl_Gal_i_ein)
+  XOR2 (Abl_Gal_i_ein,Abl_Gal_Keilr,$B53)
+  UND2 (Abl_Gal_i_ein,$B53,$B54)
+  VVZ ($B54,$M117,$M118,$B55)
+  RSS ($B55,Entriegeln,Abl_Gal_Keilr_St,$WSCRATCH)
+  ODRMN (3,Abl_Gal_Keilr_St,Frost_Gal,Abl_Gal_ST,0,
+         Abl_Gal_gestört,$WSCRATCH)
+  SETMEL ($M119,1,Abl_Gal_Keilr_St,&M120,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NICHT (Anl_Gal_R0,$B56)
+  VVZ ($B56,$M121,$M122,$B57)
+  ODRMN (1,$B57,1,Außentemp<10,$B58,$WSCRATCH)
+  UND2 ($B58,$B56,$B59)
+  NICHT ($B56,$HB1)
+  RSS ($B59,$HB1,vorgespuelt_Gal,$WSCRATCH)
+  UND11 ($B56,vorgespuelt_Gal,vorspuelen_Gal)
+  UNDMN (2,$B56,vorgespuelt_Gal,2,Zul_Gal_gestört,
+         Abl_Gal_gestört,$B60,$WSCRATCH)
+  NICHT ($B60,$HB0)
+  BEFAUS (1,$HB0,$B60,$WZERO,$WZERO,&M123,$WSCRATCH)
+  UND2 (ZL_Klp_Gal_auf,$B60,Zul_Gal_einsch)
+  BTRA (Zul_Gal_einsch,Abl_Gal_einsch)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  REGLER (4,K1,Anl_Gal_R0,$M124,Regler_SG_Gal,$WSCRATCH)
+  AWT (Anl_Gal_R0,Regler_SG_Gal,$M125,$F5)
+  AWT (vorspuelen_Gal,$M126,$M127,ERH_Gal_vorspuel)
+  AWT (vorgespuelt_Gal,ERH_Gal_vorspuel,$M128,$F6)
+  PT1 ($F6,$M129,ERH_Gal_gespuelt)
+  AWT (Frost_Gal,$M130,$M131,ERH_Gal_Frost)
+  MAX (4,$F5,ERH_Gal_vorspuel,ERH_Gal_gespuelt,ERH_Gal_Frost,
+       ERH_Ventil_Gal)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UND2 (Anl_Gal_R1,Zul_Gal_einsch,$B61)
+  UND2 (Zul_Gal_einsch,Anl_Gal_R2,$B62)
+  VVZ (Zul_Gal_R2,$M132,$M133,$B63)
+  UNDMN (0,2,$B68,$B66,$B64,$WSCRATCH)
+  UND11 ($B61,$B63,$B65)
+  VVZ ($B62,$M134,$M135,$B66)
+  UND11 ($B62,$B66,$B67)
+  ODR2 ($B65,$B67,$B68)
+  BEFAUS (2,$B64,$B68,$B66,$WZERO,&M46,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  UND2 (Anl_Gal_R1,Abl_Gal_einsch,$B69)
+  UND2 (Abl_Gal_einsch,Anl_Gal_R2,$B70)
+  VVZ (Abl_Gal_R2,$M137,$M138,$B71)
+  UNDMN (0,2,$B76,$B74,$B72,$WSCRATCH)
+  UND11 ($B69,$B71,$B73)
+  VVZ ($B70,$M139,$M140,$B74)
+  UND11 ($B70,$B74,$B75)
+  ODR2 ($B73,$B75,$B76)
+  BEFAUS (2,$B72,$B76,$B74,$WZERO,&M50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (Zul_Magnet_R1,Zul_Magnet_R2,Zul_Magnet_i_ein)
+  XOR2 (Zul_Magnet_i_ein,Zul_Magnet_Keilr,$B77)
+  UND2 (Zul_Magnet_i_ein,$B77,$B78)
+  VVZ ($B78,$M142,$M143,$B79)
+  RSS ($B79,Entriegeln,Zul_Mag_Keilr_St,$WSCRATCH)
+  ODRMN (3,Zul_Mag_Keilr_St,Frost_Magnet,Zul_Magnet_ST,0,
+         Zul_Magn_gestoer,$WSCRATCH)
+  SETMEL ($M144,1,Zul_Mag_Keilr_St,&M145,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODR2 (Abl_Magnet_R1,Abl_Magnet_R2,Abl_Magnet_i_ein)
+  XOR2 (Abl_Magnet_i_ein,Abl_Magnet_Keilr,$B80)
+  UND2 (Abl_Magnet_i_ein,$B80,$B81)
+  VVZ ($B81,$M146,$M147,$B82)
+  RSS ($B82,Entriegeln,Abl_Mag_Keilr_St,$WSCRATCH)
+  ODRMN (3,Abl_Mag_Keilr_St,K0,Abl_Magnet_ST,0,
+         Abl_Magn_gestoer,$WSCRATCH)
+  SETMEL ($M148,1,Abl_Mag_Keilr_St,&M149,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  NICHT (Anl_Magnet_R0,$B83)
+  VVZ ($B83,$M150,$M151,$B84)
+  ODRMN (1,$B84,1,Außentemp<10,$B85,$WSCRATCH)
+  UND2 ($B85,$B83,$B86)
+  NICHT ($B83,$HB1)
+  RSS ($B86,$HB1,vorgespuelt_Magn,$WSCRATCH)
+  UND11 ($B83,vorgespuelt_Magn,vorspuelen_Magne)
+  UND21 (vorgespuelt_Magn,$B83,Zul_Magn_gestoer,
+         Anl_Magne_einsch)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT (Zul_Magnet_i_ein,$HB3)
+  REGLER (5,K1,$HB3,$M152,Regler_SG_Magnet,$WSCRATCH)
+  AWT (Zul_Magnet_i_ein,$M153,Regler_SG_Magnet,$F7)
+  AWT (vorspuelen_Magne,$M154,$M155,$F8)
+  AWT (vorgespuelt_Magn,$F8,$M156,$F9)
+  PT1 ($F9,$M157,ERH_Mag_gespuelt)
+  AWT (Frost_Magnet,$M158,$M159,$F10)
+  MAX (4,$F7,$F8,ERH_Mag_gespuelt,$F10,ERH_Ventil_Magne)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UND2 (Anl_Magnet_R1,Anl_Magne_einsch,$B87)
+  UND2 (Anl_Magne_einsch,Anl_Magnet_R2,$B88)
+  VVZ (Zul_Magnet_R2,$M160,$M161,$B89)
+  UNDMN (0,2,$B94,$B92,$B90,$WSCRATCH)
+  UND11 ($B87,$B89,$B91)
+  VVZ ($B88,$M162,$M163,$B92)
+  UND11 ($B88,$B92,$B93)
+  ODR2 ($B91,$B93,$B94)
+  BEFAUS (2,$B90,$B94,$B92,$WZERO,&M54,$WSCRATCH)
+  ODR2 ($B94,$B92,Ausl_Klappe_B1)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  NICHT (Ausl_Klappe_B1,$HB0)
+  BEFAUS (1,$HB0,Ausl_Klappe_B1,$WZERO,$WZERO,&M92,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UND21 (Anl_Magnet_R1,Anl_Magne_einsch,Anl_Magnet_R2_3,$B95)
+  UND2 (Anl_Magne_einsch,Anl_Magnet_R2,$B96)
+  VVZ (Abl_Magnet_R2,$M166,$M167,$B97)
+  UNDMN (0,2,$B102,$B100,$B98,$WSCRATCH)
+  UND11 ($B95,$B97,$B99)
+  VVZ ($B103,$M168,$M169,$B100)
+  UND11 ($B103,$B100,$B101)
+  ODR2 ($B99,$B101,$B102)
+  BEFAUS (2,$B98,$B102,$B100,$WZERO,&M41,$WSCRATCH)
+  ODR2 ($B96,Anl_Magnet_R2_3,$B103)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (1,Sauerstoff_gerin,2,Abl_Magn_gestoer,
+         ABL-BSK_Magnetra,Anl_Magnet_R2_3,$WSCRATCH)
+  ;Bei zu niedrigem Sauer-
+  ;stoffgehalt (= zu hoher
+  ;Stickstoffgehalt) soll
+  ;die Anlage in Stufe 2
+  ;betrieben werden.
+  ;Mindestens jedoch der
+  ;Ablüfter in Stufe 2,
+  ;wenn der Zulüfter nicht
+  ;laufen darf (z.B. wegen
+  ;Frost, ZUL-BSK etc).
+  ; 
+  ;Die Rückschaltung der
+  ;Anlage in Stufe 1 oder
+  ;AUS erfolgt nach dem
+  ;Luftaustausch wieder vom
+  ;Zeitschaltprogramm der
+  ;GLT oder manuell.
+  ;Wurde  nur der Ablüfter
+  ;in St.2 geschaltet, wird
+  ;er automatisch wieder
+  ;ausgeschaltet, wenn
+  ;Sauerstoff wieder i.O.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODR2 (Abl_Laser_R1,Abl_Laser_R1,Abl_Laser_i_ein)
+  XOR2 (Abl_Laser_i_ein,Abl_Laser_Keilr,$B104)
+  UND2 (Abl_Laser_i_ein,$B104,$B105)
+  VVZ ($B105,$M171,$M172,$B106)
+  RSS ($B106,Entriegeln,Abl_Las_Keilr_St,$WSCRATCH)
+  ODR2 (Abl_Las_Keilr_St,Abl_Laser_ST,Abl_Lase_gestört)
+  SETMEL ($M173,1,Abl_Las_Keilr_St,&M174,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UND11 (Anl_Laser_R1,FOL_KL_Laser_R1,$B107)
+  VVZ ($B107,$M175,$M176,$B108)
+  UND11 (FOL_KL_Laser_R1,Anl_Laser_R1,$B109)
+  VVZ ($B109,$M177,$M178,$B110)
+  ODR2 ($B108,$B110,$B111)
+  RSS ($B111,Entriegeln,FOL_Klp_ST,$WSCRATCH)
+  SETMEL ($M179,1,FOL_Klp_ST,&M180,$WSCRATCH)
+  ;Laufüberwachung Antrieb:
+  ;Erreicht der Antrieb
+  ;nach Ansteuerung Auf und
+  ;Ablauf der Überwachungs-
+  ;zeit seine Endlage Auf
+  ;nicht oder verläßt er
+  ;seine Endlage Auf nach
+  ;Ansteuerung Zu und Ab-
+  ;lauf der Überwachungs-
+  ;zeit nicht, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODR2 (Abl_Chemie_R1,Abl_Chemie_R2,Abl_Chemie_i_ein)
+  XOR2 (Abl_Chemie_i_ein,Abl_Chemie_Keilr,$B112)
+  UND2 (Abl_Chemie_i_ein,$B112,$B113)
+  VVZ ($B113,$M181,$M182,$B114)
+  RSS ($B114,Entriegeln,Abl_Che_Keilr_St,$WSCRATCH)
+  ODR2 (Abl_Che_Keilr_St,Abl_Chemie_ST,Abl_Chem_gestört)
+  SETMEL ($M183,1,Abl_Che_Keilr_St,&M184,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UND11 (Anl_Laser_R1,Abl_Lase_gestört,$B115)
+  NICHT ($B115,$HB0)
+  BEFAUS (1,$HB0,$B115,$WZERO,$WZERO,&M78,$WSCRATCH)
+  ;Fortluftklappe
+  ; 
+  NICHT ($B115,$HB0)
+  BEFAUS (1,$HB0,$B115,$WZERO,$WZERO,&M186,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UND11 (Anfor_Chemie_St1,Abl_Chem_gestört,$B116)
+  UND11 (Anfor_Chemie_St2,Abl_Chem_gestört,$B117)
+  VVZ (Abl_Chemie_R2,$M187,$M188,$B118)
+  UNDMN (0,2,$B123,$B121,$B119,$WSCRATCH)
+  UND11 ($B116,$B118,$B120)
+  VVZ ($B117,$M189,$M190,$B121)
+  UND11 ($B117,$B121,$B122)
+  ODR2 ($B120,$B122,$B123)
+  BEFAUS (2,$B119,$B123,$B121,$WZERO,&M82,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  FKG (ERH_Ventil_Gal,6,$M192,$M193,$M194,$M195,$M196,$M197,
+       $F11)
+  ANAUS ($F11,$M198,&M199,$WSCRATCH)
+  FKG (ERH_Ventil_Magne,6,$M200,$M201,$M202,$M203,$M204,
+       $M205,$F12)
+  ANAUS ($F12,$M206,&M207,$WSCRATCH)
+  ;Umwandlung Stelgröße
+  ;0-100  28682n Ausgabe
+  ;20-100 
+  ;X1 0  Y1 0  
+  ;X2 2  Y2 20 
+  ;X3 100Y3 100
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODR2 (Abl_Gal_gestört,Zul_Gal_gestört,$B124)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gal_R0,$B131,$B125)
+  NICHT (Anl_Gal_R0,$B131)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B125,Anfor_Gal_St0,$B124,0,$B126,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gal_R1,$B132,$B127)
+  NICHT (Anl_Gal_R1,$B132)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Anl_Gal_R1_1,Anl_Gal_R1_2,$B127,Anfor_Gal_St1,0,
+         $B128,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gal_R2,$B133,$B129)
+  NICHT (Anl_Gal_R2,$B133)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Anl_Gal_R2_1,Anl_Gal_R2_2,$B129,Anfor_Gal_St2,0,
+         $B130,$WSCRATCH)
+  BEFAUS (2,$B126,$B128,$B130,$WZERO,&M30,$WSCRATCH)
+  SETMEL ($M209,1,$B124,&M31,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (5,Abl_Magn_gestoer,Zul_Magn_gestoer,
+         ZUL-BSK_Magnetra,ABL-BSK_Magnetra,BMZ-Meldung_SUG,0,
+         $B134,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Magnet_R0,$B141,$B135)
+  NICHT (Anl_Magnet_R0,$B141)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B135,$B134,$B136)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Magnet_R1,$B142,$B137)
+  NICHT (Anl_Magnet_R1,$B142)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,Anl_Magnet_R1_1,Anl_Magnet_R1_2,$B137,0,$B138,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Magnet_R2,$B143,$B139)
+  NICHT (Anl_Magnet_R2,$B143)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Anl_Magnet_R2_1,Anl_Magnet_R2_2,$B139,
+         Anl_Magnet_R2_3,0,$B140,$WSCRATCH)
+  BEFAUS (2,$B136,$B138,$B140,$WZERO,&M34,$WSCRATCH)
+  SETMEL ($M212,1,$B134,&M35,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Laser_R0,$B148,$B144)
+  NICHT (Anl_Laser_R0,$B148)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B144,Abl_Lase_gestört,$B145)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Laser_R1,$B149,$B146)
+  NICHT (Anl_Laser_R1,$B149)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,Anl_Laser_R1_1,Anl_Laser_R1_2,$B146,0,$B147,
+         $WSCRATCH)
+  BEFAUS (1,$B145,$B147,$WZERO,$WZERO,&M38,$WSCRATCH)
+  SETMEL ($M215,1,Abl_Lase_gestört,&M39,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  NICHT (Zul_Gal_gestört,$HB0)
+  BEFAUS (1,$HB0,Zul_Gal_gestört,$WZERO,$WZERO,&M217,
+          $WSCRATCH)
+  NICHT (Abl_Gal_gestört,$HB0)
+  BEFAUS (1,$HB0,Abl_Gal_gestört,$WZERO,$WZERO,&M218,
+          $WSCRATCH)
+  ;Zulüfter
+  ; 
+  ;Ablüfter
+  ; 
+  NICHT (Abl_Lase_gestört,$HB0)
+  BEFAUS (1,$HB0,Abl_Lase_gestört,$WZERO,$WZERO,&M219,
+          $WSCRATCH)
+  ;Ablüfter
+  ; 
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,293 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI50611.GPS
+  ;*** Projektname    : MPI Turm 5
+  ;*** Projektnummer  : 23101125
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Bormann
+  ;*** Line Nummer    : 5
+  ;*** User Number    : 6
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 11
+  ;*****************************************************************
+  MODUL (sp20,11)
+  FloatK SW_Abl_Druck_510 (350.00)
+  FloatK SW_Ra_Q1_510 (21.00)
+  FloatK SW_Ra_Q2_510 (21.00)
+  FloatK SW_Ra_Flur_510 (22.00)
+  WordK  K0 (0)
+  FloatK SW_AT_Grenze_PU (8.00)
+  FloatK SW_Zul_n_WRG_521 (14.00)
+  FloatK SW_Zul_Druck_521 (315.00)
+  FloatK SW_Abl_Druck_521 (430.00)
+  FloatK SW_Abl_Feu_510 (8.00)
+  FloatK SW_Zul_n_VE_510 (14.00)
+  FloatK SW_Zul_Druck_510 (350.00)
+  FloatK SW_WRG_Eintr_521 (5.00)
+  FloatK SW_ERH_RL_521 (10.00)
+  FloatK SW_ERH_RL_510 (10.00)
+  FloatK SW_Zul_Temp_521 (22.00)
+  FloatK SW_WRG_Eintr_510 (5.00)
+  FloatK SW_Ra_Verhal_510 (22.00)
+  IPAAW &M0 (118)
+  FloatV $F1
+  WordV  $WSCRATCH
+  WordV  $HB0
+  FloatK $M1 (10.00)
+  WordV  $B1
+  WordK  $M2 (1)
+  IPAAW &M4 (119)
+  FloatV $F2
+  FloatK $M5 (10.00)
+  WordV  $B2
+  WordK  $M6 (1)
+  IPAAW &M8 (120)
+  FloatV $F3
+  FloatK $M9 (10.00)
+  WordV  $B3
+  WordK  $M10 (1)
+  IPAAW &M12 (121)
+  FloatV $F4
+  FloatK $M13 (10.00)
+  WordV  $B4
+  WordK  $M14 (1)
+  IPAAW &M16 (122)
+  FloatV $F5
+  FloatK $M17 (10.00)
+  WordV  $B5
+  WordK  $M18 (1)
+  IPAAW &M20 (149)
+  FloatV $F6
+  FloatK $M21 (10.00)
+  WordV  $B6
+  WordK  $M22 (1)
+  IPAAW &M24 (150)
+  FloatV $F7
+  FloatK $M25 (10.00)
+  WordV  $B7
+  WordK  $M26 (1)
+  IPAAW &M28 (151)
+  FloatV $F8
+  FloatK $M29 (10.00)
+  WordV  $B8
+  WordK  $M30 (1)
+  IPAAW &M32 (152)
+  FloatV $F9
+  FloatK $M33 (10.00)
+  WordV  $B9
+  WordK  $M34 (1)
+  IPAAW &M36 (137)
+  FloatV $F10
+  FloatK $M37 (10.00)
+  WordV  $B10
+  WordK  $M38 (1)
+  IPAAW &M40 (144)
+  FloatV $F11
+  FloatK $M41 (10.00)
+  WordV  $B11
+  WordK  $M42 (1)
+  IPAAW &M44 (142)
+  FloatV $F12
+  FloatK $M45 (10.00)
+  WordV  $B12
+  WordK  $M46 (1)
+  IPAAW &M48 (143)
+  FloatV $F13
+  FloatK $M49 (10.00)
+  WordV  $B13
+  WordK  $M50 (1)
+  IPAAW &M52 (138)
+  FloatV $F14
+  FloatK $M53 (10.00)
+  WordV  $B14
+  WordK  $M54 (1)
+  IPAAW &M56 (139)
+  FloatV $F15
+  FloatK $M57 (10.00)
+  WordV  $B15
+  WordK  $M58 (1)
+  IPAAW &M60 (140)
+  FloatV $F16
+  FloatK $M61 (10.00)
+  WordV  $B16
+  WordK  $M62 (1)
+  IPAAW &M64 (141)
+  FloatV $F17
+  FloatK $M65 (10.00)
+  WordV  $B17
+  WordK  $M66 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,3000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Sanierung
+  ;         Turm 5
+  ;Anlage:  Sollwerte
+  ;         US05.06
+  ;         521=Labore 2.OG
+  ;         510=TierstÑlle
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ANEIN (&M0,$F1,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M1,$B1)
+  AWT ($B1,$F1,SW_AT_Grenze_PU,SW_AT_Grenze_PU)
+  ANAUS (SW_AT_Grenze_PU,$M2,&M0,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANEIN (&M4,$F2,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M5,$B2)
+  AWT ($B2,$F2,SW_Zul_Temp_521,SW_Zul_Temp_521)
+  ANAUS (SW_Zul_Temp_521,$M6,&M4,$WSCRATCH)
+  ANEIN (&M8,$F3,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M9,$B3)
+  AWT ($B3,$F3,SW_Zul_n_WRG_521,SW_Zul_n_WRG_521)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Zul_n_WRG_521,$M10,&M8,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANEIN (&M12,$F4,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M13,$B4)
+  AWT ($B4,$F4,SW_Zul_Druck_521,SW_Zul_Druck_521)
+  ANAUS (SW_Zul_Druck_521,$M14,&M12,$WSCRATCH)
+  ANEIN (&M16,$F5,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M17,$B5)
+  AWT ($B5,$F5,SW_Abl_Druck_521,SW_Abl_Druck_521)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Abl_Druck_521,$M18,&M16,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M20,$F6,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M21,$B6)
+  AWT ($B6,$F6,SW_ERH_RL_521,SW_ERH_RL_521)
+  ANAUS (SW_ERH_RL_521,$M22,&M20,$WSCRATCH)
+  ANEIN (&M24,$F7,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M25,$B7)
+  AWT ($B7,$F7,SW_WRG_Eintr_521,SW_WRG_Eintr_521)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_WRG_Eintr_521,$M26,&M24,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M28,$F8,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M29,$B8)
+  AWT ($B8,$F8,SW_ERH_RL_510,SW_ERH_RL_510)
+  ANAUS (SW_ERH_RL_510,$M30,&M28,$WSCRATCH)
+  ANEIN (&M32,$F9,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M33,$B9)
+  AWT ($B9,$F9,SW_WRG_Eintr_510,SW_WRG_Eintr_510)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_WRG_Eintr_510,$M34,&M32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M36,$F10,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M37,$B10)
+  AWT ($B10,$F10,SW_Zul_n_VE_510,SW_Zul_n_VE_510)
+  ANAUS (SW_Zul_n_VE_510,$M38,&M36,$WSCRATCH)
+  ANEIN (&M40,$F11,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M41,$B11)
+  AWT ($B11,$F11,SW_Abl_Feu_510,SW_Abl_Feu_510)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Abl_Feu_510,$M42,&M40,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M44,$F12,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M45,$B12)
+  AWT ($B12,$F12,SW_Zul_Druck_510,SW_Zul_Druck_510)
+  ANAUS (SW_Zul_Druck_510,$M46,&M44,$WSCRATCH)
+  ANEIN (&M48,$F13,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M49,$B13)
+  AWT ($B13,$F13,SW_Abl_Druck_510,SW_Abl_Druck_510)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Abl_Druck_510,$M50,&M48,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M52,$F14,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M53,$B14)
+  AWT ($B14,$F14,SW_Ra_Q1_510,SW_Ra_Q1_510)
+  ANAUS (SW_Ra_Q1_510,$M54,&M52,$WSCRATCH)
+  ANEIN (&M56,$F15,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M57,$B15)
+  AWT ($B15,$F15,SW_Ra_Q2_510,SW_Ra_Q2_510)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Ra_Q2_510,$M58,&M56,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M60,$F16,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M61,$B16)
+  AWT ($B16,$F16,SW_Ra_Verhal_510,SW_Ra_Verhal_510)
+  ANAUS (SW_Ra_Verhal_510,$M62,&M60,$WSCRATCH)
+  ANEIN (&M64,$F17,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M65,$B17)
+  AWT ($B17,$F17,SW_Ra_Flur_510,SW_Ra_Flur_510)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_Ra_Flur_510,$M66,&M64,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

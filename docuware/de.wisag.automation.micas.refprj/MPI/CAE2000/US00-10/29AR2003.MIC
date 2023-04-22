@@ -1,0 +1,1364 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 0010-03C.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 10
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (ar20,3)
+  WordK  K_1_STATUS (1)
+  WordV  S_ERR
+  WordV  MS-Ri-S-NMR2-aus
+  WordV  E_ST_KOND_3
+  WordV  MS-TrS2-NMR1-aus
+  WordV  MS-Ku-S-NMR2-aus
+  WordV  MS-TrS1-NMR2-aus
+  WordV  MS-TrS2-NMR2-aus
+  WordV  USV-Ei-netz-n-iO
+  WordV  60V-Anl-Sammelst
+  WordV  60V-Anl-Steuersi
+  WordV  Tr-1-S-N-NMR2-Wa
+  WordV  Tr-1-S-N-NMR2-Ab
+  WordV  NS-E-Sch-G-N-aus
+  WordV  NS-E-Sch-S-N-aus
+  WordV  Tr-2-G-N-NMR2-Ab
+  WordV  Tr-2-G-N-NMR2-Wa
+  FloatK K_VP_HZ_NA_WT_1 (0.00)
+  FloatK K_VP_HZ_NA_WT_2 (5.00)
+  FloatK K_W_RA_T_Z2 (21.00)
+  WordK  K_VP_FREIG_2 (1)
+  WordK  K_0_STATUS (0)
+  WordV  E_BM_QUITT
+  WordK  K_VP_FREIG_1 (1)
+  WordK  K_VP_HZ_NA_1 (0)
+  WordK  K_VP_HZ_NA_2 (0)
+  WordV  TW-Behaelt-Ueber
+  WordV  Leckage-Konsole
+  WordV  E_ST_HEBE_3
+  WordV  MS-Ku-S-NMR1-aus
+  WordV  E_ST_LU_NMR2_3
+  FloatV D_HZ_LU_ZT_P_1
+  WordV  Z_HZ_LU_ANF_P_1
+  WordV  E_BM_HZ_LU_PU_1
+  WordV  E_ST_HZ_LU_P_1
+  WordV  A_BF_HZ_STA_P_1
+  WordV  A_BM_QUITT
+  WordV  E_ST_HZ_WW_P_1
+  WordV  A_BF_HZ_LU_P_1
+  FloatK K_GW_HZ_2 (22.00)
+  WordV  Z_HAUPT_1
+  WordV  E_VP_FREIG_1
+  WordV  Z_HZ_STA_WA_P_1
+  WordV  E_ST_HZ_STA_P_1
+  WordV  E_ST_NEUTRA_3
+  FloatV A_AS_HZ_VE_1
+  FloatV E_MW_HZ_VE_1
+  WordV  A_ST_HZ_VE_1
+  FloatV E_W_SK_HZ_1
+  FloatV E_GW_HZ_2
+  WordV  E_RM_HZ_LU_P_1
+  WordV  Z_HZ_LU_WA_P_1
+  WordV  Z_HZ_STA_ANF_P_1
+  WordV  A_BF_QUITT_A
+  FloatV A_W_HZ_VL_T_2
+  FloatV E_X_RA_T_Z2
+  FloatV E_VP_HZ_NA_WT_2
+  WordV  E_RM_QUITT
+  FloatV A_AS_HZ_VE_2
+  WordV  E_ST_FEUER_3
+  WordV  E_VP_HZ_NA_2
+  WordV  Z_HAUPT_2
+  FloatV E_W_RA_T_Z2
+  WordV  A_BF_HZ_VE_Z2
+  WordV  E_RM_HZ_STA_P_1
+  FloatV D_HZ_STA_ZT_P_1
+  WordV  E_ST_DRUCKER_3
+  WordV  A_HZ_SAM_ST_1
+  FloatV E_X_HZ_VL_T_1
+  WordV  E_VP_FREIG_2
+  FloatV E_VP_HZ_NA_WT_1
+  FloatV E_MW_HZ_VE_2
+  WordV  A_ST_HZ_VE_2
+  FloatV E_MW_AU_TEMP
+  FloatV A_W_HZ_VL_T_1
+  WordV  E_VP_HZ_NA_1
+  WordV  Z_QUITT
+  FloatV E_W_SK_HZ_2
+  WordV  A_HZ_SAM_ST_2
+  FloatK K_20_WERT (20.00)
+  FloatV E_X_HZ_VL_T_2
+  WordV  ST-Betr-tech-4
+  WordV  ST-Betr-tech-3
+  WordV  ST-Betr-tech-1
+  WordV  ST-Betr-tech-2
+  WordV  USV_R0027_Batter
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (160,1)
+  IPAMB &M1 (160,9)
+  IPAMB &M2 (161,1)
+  IPAMB &M3 (161,9)
+  IPAAW &M4 (164)
+  IPAAW &M5 (167)
+  IPAAW &M6 (169)
+  IPAAW &M7 (180)
+  IPAMB &M8 (47,15)
+  IPAMB &M9 (255,2)
+  IPAMB &M10 (255,1)
+  IPAMB &M11 (47,14)
+  IPAMB &M12 (48,10)
+  WordV  $B1
+  IPAMB &M13 (45,2)
+  WordV  $B2
+  IPAMB &M14 (45,11)
+  WordV  $B3
+  IPAMB &M15 (48,2)
+  WordV  $B4
+  IPAMB &M16 (49,15)
+  WordV  $B5
+  IPAMB &M17 (160,3)
+  IPAMB &M18 (160,11)
+  IPAMB &M19 (161,3)
+  IPAMB &M20 (161,11)
+  IPAMB &M21 (1,2)
+  WordV  $B6
+  IPAMB &M22 (1,3)
+  IPAMB &M23 (0,2)
+  WordV  $B7
+  IPAMB &M24 (0,3)
+  IPAMB &M25 (0,6)
+  WordV  $B8
+  IPAMB &M26 (49,2)
+  WordV  $B9
+  IPAMB &M27 (51,10)
+  WordV  $B10
+  IPAMB &M28 (55,2)
+  WordV  $B11
+  IPAMB &M29 (55,3)
+  WordV  $B12
+  IPAMB &M30 (54,3)
+  WordV  $B13
+  IPAMB &M31 (54,7)
+  WordV  $B14
+  IPAMB &M32 (55,6)
+  WordV  $B15
+  IPAMB &M33 (55,7)
+  WordV  $B16
+  IPAMB &M34 (58,3)
+  IPAMB &M35 (58,6)
+  WordV  $B17
+  IPAMB &M36 (55,11)
+  WordV  $B18
+  IPAMB &M37 (58,2)
+  IPAMB &M38 (58,7)
+  WordV  $B19
+  IPAMB &M39 (58,10)
+  WordV  $B20
+  IPAMB &M40 (59,3)
+  WordV  $B21
+  IPAMB &M41 (58,14)
+  WordV  $B22
+  IPAMB &M42 (59,2)
+  WordV  $B23
+  IPAAW &M47 (2)
+  IPAAW &M48 (4)
+  IPAAW &M49 (6)
+  IPAAW &M50 (8)
+  IPAAW &M51 (7)
+  IPAAW &M52 (22)
+  FloatK $M53 (8.00)
+  WordV  $B24
+  FloatK $M54 (8.00)
+  WordV  $B25
+  FloatK $M55 (8.00)
+  WordV  $B26
+  FloatK $M56 (8.00)
+  WordV  $B27
+  WordV  $B28
+  WordV  $WSCRATCH
+  FloatK $M57 (12.00)
+  FloatK $M58 (4.00)
+  FloatK $M59 (0.00)
+  WordV  $B29
+  FloatK $M60 (4.00)
+  WordV  $B30
+  FloatK $M61 (20.00)
+  FloatK $M62 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  IPAMB &M63 (172,15)
+  WordV  $B31
+  IPAMB &M64 (77,11)
+  WordV  $B32
+  WordV  $B33
+  FloatK $M65 (85.00)
+  WordV  $HB3
+  FloatK $M66 (0.00)
+  FloatV $F5
+  FloatV $F6
+  FloatK $M67 (10.00)
+  WordV  $B34
+  WordV  $B35
+  WordV  $HB1
+  FloatV $F7
+  FloatK $M68 (180.00)
+  WordV  $B36
+  WordV  $B37
+  FloatK $M69 (172800.00)
+  WordV  $B38
+  FloatK $M70 (300.00)
+  FloatK $M71 (5.00)
+  FloatK $M72 (2.00)
+  WordV  $B39
+  FloatK $M73 (0.00)
+  FloatK $M74 (300.00)
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  FloatK $M75 (172800.00)
+  WordV  $B44
+  FloatK $M76 (300.00)
+  FloatK $M77 (12.00)
+  FloatK $M78 (2.00)
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  FloatK $M79 (30.00)
+  FloatK $M80 (15.00)
+  FloatV $F8
+  FloatK $M81 (1.00)
+  WordV  $B48
+  FloatK $M82 (20.00)
+  FloatK $M83 (0.00)
+  FloatV $F9
+  FloatV $F10
+  FloatV $F11
+  FloatK $M84 (0.00)
+  FloatV $F12
+  FloatV $F13
+  FloatK $M85 (10.00)
+  WordV  $B49
+  WordV  $B50
+  FloatV $F14
+  FloatK $M86 (180.00)
+  WordV  $B51
+  FloatK $M87 (1.00)
+  FloatK $M88 (1.00)
+  WordV  $HB4
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  IPAMB &M89 (55,14)
+  WordV  $B56
+  IPAMB &M90 (255,8)
+  WordV  $B57
+  IPAMB &M91 (51,11)
+  WordV  $HB2
+  WordV  $B58
+  IPAMB &M92 (44,2)
+  WordV  $B59
+  IPAMB &M93 (44,3)
+  WordV  $B60
+  IPAMB &M94 (44,10)
+  WordV  $B61
+  IPAMB &M95 (44,11)
+  WordV  $B62
+  IPAMB &M96 (51,7)
+  WordV  $B63
+  IPAMB &M97 (51,15)
+  WordV  $B64
+  IPAMB &M98 (84,2)
+  WordV  $B65
+  FloatK $M99 (900.00)
+  FloatK $M100 (0.00)
+  WordV  $B66
+  IPAMB &M101 (83,7)
+  IPAMB &M102 (0,0)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  FloatK $M109 (30.00)
+  FloatK $M110 (0.00)
+  WordV  $B75
+  WordV  $B76
+  IPAMB &M111 (255,0)
+  IPAMB &M112 (160,0)
+  IPAMB &M113 (161,0)
+  IPAMB &M114 (160,4)
+  IPAMB &M115 (161,4)
+  IPAMB &M116 (47,13)
+  IPAMB &M117 (47,9)
+  IPAMB &M118 (0,1)
+  IPAMB &M119 (1,1)
+  IPAMB &M120 (1,5)
+  IPAAW &M121 (165)
+  IPAAW &M122 (253)
+  IPAAW &M123 (170)
+  IPAAW &M124 (10)
+  IPAAW &M125 (12)
+  IPAMB &M126 (30,3)
+  WordV  $B77
+  IPAAW &M127 (36)
+  FloatV $F15
+  FloatK $M128 (5.00)
+  FloatK $M129 (2.00)
+  WordV  $B78
+  WordV  $B79
+  IPAMB &M130 (31,3)
+  WordV  $B80
+  FloatK $M131 (0.00)
+  FloatK $M132 (60.00)
+  WordV  $B81
+  WordV  $B82
+  FloatK $M133 (5.00)
+  WordV  $B83
+  IPAMB &M134 (31,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;KUNDE:
+  ;------------------------
+  ;ABB GebÑudetechnik AG
+  ;Lufttechnik
+  ;Hannover
+  ; 
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;- Heizung bzw. Fern-
+  ;  wÑrmeÅbergabe; die
+  ;  BlÑtter sind mit HZ 1
+  ;  bezeichnet
+  ;- stat. Heizung HZ 2
+  ;- Sammelstîrung Betriebs
+  ;  technik
+  ;- Highbus
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max- Planck- Institut
+  ;fÅr bio- physikalische
+  ;chemie Gîttingen
+  ;Neubau NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;MS TEPLAN
+  ;Weidrichstra·e 29
+  ;65795 Hattersheim
+  ;email:
+  ;ms-teplan@t-online.de
+  ;www.ms-teplan.de
+  ;tel. 06145/938603
+  ;fax  06145/938604
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrÅcklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB GebÑudeautomation
+  ;geÑndert oder kopiert
+  ;werden.
+  ; 
+  ;Programmierumgebung:
+  ;- EEPROM Version > 5.0
+  ;- Compileroption:
+  ;  -OD-V5
+  ;- MIC.EXE Version:
+  ;  07.09.99
+  ;- Zielhardware:
+  ;  ar20 / sp20 / zp20
+  ; 
+  ;Druckereinstellung:
+  ;Laserjet-150-Portrait
+  ;Raster= Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Daten Einlesen
+  ;Task 3= Steuerung und
+  ;        Regelung
+  ;Task 4= Daten ausgeben
+  ;
+  ; 
+  ;BLATT-BENNUNG
+  ;------------------------
+  ;1. Anlagenindex
+  ;2. Anlagenkomponente
+  ;3. Funktion oder
+  ;   Tranfer
+  ;Beispiel
+  ;1 VE MELEIN
+  ;oder
+  ;2 LU 1F
+  ; 
+  ;ANLAGENKOMPONENTE
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- VE = Vorerhitzer
+  ;- KU = KÅhler
+  ;- WR = WRG
+  ;- BE = Befeuchter
+  ;- LU = LÅfter
+  ;- KL = Klappen
+  ;usw.
+  ; 
+  ;ANLAGENFUNKTION
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- 1F = einstufig
+  ;- FU = Frequenzumf.
+  ;- WA = Wartung
+  ;- VE = Ventil
+  ;- PU = Pumpe
+  ;- BE = Bedarf
+  ;usw.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;1_ = Anlagenindex
+  ;_Z_= Zwischenvariable
+  ;_E_= Eingabevariable
+  ;_A_= Ausgabevariable
+  ;_K_= Konstante
+  ;_D_= Displayvariable
+  ;_S_= Systemvariable
+  ;_R_= Reservarariable
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Stîrungs Var.
+  ;_RM_ = RÅckmeld. Var.
+  ;_MW_ = Me·wert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ER_  =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;NMRHE20-01A-X50
+  ;_
+  ; 
+  NICHT (K_VP_FREIG_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_1,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ; 
+  ;NMRHE20-01A-X51
+  ; 
+  NICHT (K_VP_HZ_NA_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_HZ_NA_1,$WZERO,$WZERO,&M1,S_ERR)
+  ;Nachtabsenkung
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;NMRHE20-03A-X50
+  ; 
+  NICHT (K_VP_FREIG_2,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_2,$WZERO,$WZERO,&M2,S_ERR)
+  ;Freigabe
+  ; 
+  ;NMRHE20-03A-X51
+  ; 
+  NICHT (K_VP_HZ_NA_2,$HB0)
+  BEFAUS (1,$HB0,K_VP_HZ_NA_2,$WZERO,$WZERO,&M3,S_ERR)
+  ;Nachtabsenkung
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;NMRHE20-01A-V52
+  ; 
+  ANAUS (K_VP_HZ_NA_WT_1,K_1_STATUS,&M4,S_ERR)
+  ;Wert
+  ;Nachtabsenkung
+  ; 
+  ;NMRHE20-03A-V50
+  ; 
+  ANAUS (K_GW_HZ_2,K_1_STATUS,&M5,S_ERR)
+  ;Grenzwert
+  ;Aussentemperatur
+  ; 
+  ;NMRHE20-03A-V52
+  ; 
+  ANAUS (K_VP_HZ_NA_WT_2,K_1_STATUS,&M6,S_ERR)
+  ;Wert
+  ;Nachtabsenkung
+  ; 
+  ;NMRHE20-04A-T50
+  ; 
+  ANAUS (K_W_RA_T_Z2,K_1_STATUS,&M7,S_ERR)
+  ;Sollwert HZ-Zone
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;Einlesen der
+  ;Proze·daten
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Reihenfolge:
+  ;1. Melein
+  ;2. Anein
+  ;3. Sollkennlinie
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;GLT Schaltbefehl
+  ;Quittierung
+  ; 
+  MELEIN (&M8,1,E_RM_QUITT,S_ERR)
+  ;NMRUV20-01A-X01
+  ; 
+  ;Meldung Anford.
+  ;Heizung aus LU
+  ;Åber Highbus
+  ; 
+  MELEIN (&M9,1,E_BM_HZ_LU_PU_1,S_ERR)
+  ;NMRAS10-00A-B02
+  ; 
+  ;Stîrung LÅftung
+  ;Åber Highbus fÅr
+  ;Betriebstechnik
+  ; 
+  MELEIN (&M10,1,E_ST_LU_NMR2_3,S_ERR)
+  ;NMRAS10-00A-B01
+  ; 
+  ;Meldung
+  ;Schaltschrank
+  ;Quittierung
+  ; 
+  MELEIN (&M11,1,E_BM_QUITT,S_ERR)
+  ;NMRUV20-01A-B00
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Stîrung
+  ;Hebeanlage
+  ; 
+  MELEIN (&M12,1,$B1,S_ERR)
+  ;NMRSA20-02A-S01
+  ; 
+  NICHT ($B1,E_ST_HEBE_3)
+  ;Stîrung
+  ;Kondensatanlage
+  ; 
+  MELEIN (&M13,1,$B2,S_ERR)
+  ;NMRHE20-10A-S01
+  ; 
+  NICHT ($B2,E_ST_KOND_3)
+  ;Stîrung
+  ;Feuerloeschanlage
+  ; 
+  MELEIN (&M14,1,$B3,S_ERR)
+  ;NMRBM20-01A-S01
+  ; 
+  NICHT ($B3,E_ST_FEUER_3)
+  ;Stîrung
+  ;Druckerhoehungsanl
+  ; 
+  MELEIN (&M15,1,$B4,S_ERR)
+  ;NMRHE20-10A-S01
+  ; 
+  NICHT ($B4,E_ST_DRUCKER_3)
+  ;Stîrung
+  ;Neutralisation
+  ; 
+  MELEIN (&M16,1,$B5,S_ERR)
+  ;NMRHE20-10A-S01
+  ; 
+  NICHT ($B5,E_ST_NEUTRA_3)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;Freigabe
+  ; 
+  ;NMRHE20-01A-X50
+  ; 
+  MELEIN (&M17,1,K_VP_FREIG_1,S_ERR)
+  BTRA (K_VP_FREIG_1,E_VP_FREIG_1)
+  ;RÅckmeldung Ein
+  ;Nachtabsenkung
+  ; 
+  ;NMRHE20-01A-X51
+  ; 
+  MELEIN (&M18,1,K_VP_HZ_NA_1,S_ERR)
+  BTRA (K_VP_HZ_NA_1,E_VP_HZ_NA_1)
+  ;RÅckmeldung Ein
+  ;Freigabe
+  ; 
+  ;NMRHE20-03A-X50
+  ; 
+  MELEIN (&M19,1,K_VP_FREIG_2,S_ERR)
+  BTRA (K_VP_FREIG_2,E_VP_FREIG_2)
+  ;RÅckmeldung Ein
+  ;Nachtabsenkung
+  ; 
+  ;NMRHE20-03A-X51
+  ; 
+  MELEIN (&M20,1,K_VP_HZ_NA_2,S_ERR)
+  BTRA (K_VP_HZ_NA_2,E_VP_HZ_NA_2)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Stîrung
+  ;Pumpe
+  ;Statische Heizung
+  ; 
+  MELEIN (&M21,1,$B6,S_ERR)
+  ;RÅckmeldung Ein
+  ;Pumpe
+  ;Statische Heizung
+  ; 
+  MELEIN (&M22,1,E_RM_HZ_STA_P_1,S_ERR)
+  ;NMRHE20-01A-X01
+  ; 
+  ;NMRHE20-01A-X01
+  ; 
+  ;Stîrung
+  ;Pumpe LÅftung
+  ;Heizung
+  ; 
+  MELEIN (&M23,1,$B7,S_ERR)
+  ;RÅckmeldung Ein
+  ;Pumpe LÅftung
+  ;Heizung
+  ; 
+  MELEIN (&M24,1,E_RM_HZ_LU_P_1,S_ERR)
+  ;NMRKA20-03A-X01
+  ; 
+  ;NMRHE20-03A-X01
+  ; 
+  NICHT ($B6,E_ST_HZ_STA_P_1)
+  NICHT ($B7,E_ST_HZ_LU_P_1)
+  ;Stîrung
+  ;Pumpe WWB
+  ;Heizung
+  ; 
+  MELEIN (&M25,1,$B8,S_ERR)
+  ;NMRHE20-02A-X01
+  ; 
+  NICHT ($B8,E_ST_HZ_WW_P_1)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;
+  ; 
+  MELEIN (&M26,1,$B9,S_ERR)
+  ;
+  ; 
+  MELEIN (&M27,1,$B10,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M28,1,$B11,S_ERR)
+  ;
+  ; 
+  MELEIN (&M29,1,$B12,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  NICHT ($B9,TW-Behaelt-Ueber)
+  NICHT ($B11,MS-Ri-S-NMR2-aus)
+  ;
+  ; 
+  MELEIN (&M30,1,$B13,S_ERR)
+  ;
+  ; 
+  MELEIN (&M31,1,$B14,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  NICHT ($B13,MS-Ku-S-NMR1-aus)
+  NICHT ($B14,MS-TrS2-NMR1-aus)
+  NICHT ($B12,MS-Ku-S-NMR2-aus)
+  NICHT ($B10,Leckage-Konsole)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;
+  ; 
+  MELEIN (&M32,1,$B15,S_ERR)
+  ;
+  ; 
+  MELEIN (&M33,1,$B16,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M34,1,60V-Anl-Steuersi,S_ERR)
+  ;
+  ; 
+  MELEIN (&M35,1,$B17,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  NICHT ($B15,MS-TrS1-NMR2-aus)
+  NICHT ($B16,MS-TrS2-NMR2-aus)
+  ;
+  ; 
+  MELEIN (&M36,1,$B18,S_ERR)
+  ;
+  ; 
+  MELEIN (&M37,1,60V-Anl-Sammelst,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  NICHT ($B18,USV-Ei-netz-n-iO)
+  NICHT ($B17,Tr-1-S-N-NMR2-Wa)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;
+  ; 
+  MELEIN (&M38,1,$B19,S_ERR)
+  ;
+  ; 
+  MELEIN (&M39,1,$B20,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M40,1,$B21,S_ERR)
+  NICHT ($B20,NS-E-Sch-G-N-aus)
+  NICHT ($B19,Tr-1-S-N-NMR2-Ab)
+  NICHT ($B23,Tr-2-G-N-NMR2-Wa)
+  ;
+  ; 
+  NICHT ($B21,Tr-2-G-N-NMR2-Ab)
+  ;
+  ; 
+  MELEIN (&M41,1,$B22,S_ERR)
+  ;
+  ; 
+  MELEIN (&M42,1,$B23,S_ERR)
+  ;
+  ; 
+  ;
+  ; 
+  NICHT ($B22,NS-E-Sch-S-N-aus)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&M4,K_VP_HZ_NA_WT_1,S_ERR)
+  ATRA (K_VP_HZ_NA_WT_1,E_VP_HZ_NA_WT_1)
+  ;NMRHE20-01A-V52
+  ; 
+  ;Wert
+  ;Nachtabsenkung
+  ;Heizung Gesamt
+  ; 
+  ANEIN (&M5,K_GW_HZ_2,S_ERR)
+  ATRA (K_GW_HZ_2,E_GW_HZ_2)
+  ;NMRHE20-03A-V50
+  ;H
+  ; 
+  ;Grenzwert AU-Temp
+  ;Heizung
+  ;Statische Heizung
+  ; 
+  ANEIN (&M6,K_VP_HZ_NA_WT_2,S_ERR)
+  ATRA (K_VP_HZ_NA_WT_2,E_VP_HZ_NA_WT_2)
+  ;NMRHE20-03A-V52
+  ; 
+  ;Wert
+  ;Nachtabsenkung
+  ;Statische Heizung
+  ; 
+  ANEIN (&M7,K_W_RA_T_Z2,S_ERR)
+  ATRA (K_W_RA_T_Z2,E_W_RA_T_Z2)
+  ;NMRHE20-04A-T50
+  ;S
+  ; 
+  ;Sollwert
+  ;Raum-Temp
+  ;Heizung Zone
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&M47,E_MW_AU_TEMP,S_ERR)
+  ;NMRHE20-01A-T00
+  ; 
+  ;Messwert
+  ;Aussentemperatur
+  ; 
+  ANEIN (&M48,E_X_HZ_VL_T_1,S_ERR)
+  ;NMRHE20-01A-T11
+  ; 
+  ;Istwert
+  ;Vorlauftemperatur
+  ;Heizung Gesamt
+  ; 
+  ANEIN (&M49,E_MW_HZ_VE_1,S_ERR)
+  ;NMRHE20-01A-M01
+  ; 
+  ;Messwert
+  ;HZ-Ventil
+  ;Heizung Gesamt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&M50,E_X_RA_T_Z2,S_ERR)
+  ;NMRHE20-04A-T01
+  ; 
+  ;Istwert
+  ;Raumtemperatur
+  ; 
+  ANEIN (&M51,E_X_HZ_VL_T_2,S_ERR)
+  ;NMRHE20-03A-T11
+  ; 
+  ;Istwert
+  ;Vorlauftemperatur
+  ;Statische Heizung
+  ; 
+  ANEIN (&M52,E_MW_HZ_VE_2,S_ERR)
+  ;NMRHE20-03A-M01
+  ; 
+  ;Messwert
+  ;HZ-Ventil
+  ;Statische Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  SOLKEN (1,K_1_STATUS,E_W_SK_HZ_1,S_ERR)
+  ;NMRHE20-01A-T50
+  ; 
+  SOLKEN (2,K_1_STATUS,E_W_SK_HZ_2,S_ERR)
+  ;NMRHE20-03A-T50
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MOKY (E_BM_QUITT,$M53,$B24)
+  MOKY (E_RM_QUITT,$M54,$B25)
+  MOKY (K_0_STATUS,$M55,$B26)
+  MOKY (K_0_STATUS,$M56,$B27)
+  ODRMN (4,$B24,$B25,$B26,$B27,0,$B28,$WSCRATCH)
+  MOKY ($B28,$M57,Z_QUITT)
+  BTRA (Z_QUITT,A_BM_QUITT)
+  VVZ ($B28,$M58,$M59,$B29)
+  MOKY ($B29,$M60,A_BF_QUITT_A)
+  ;Stîrungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- RÅckm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ;_
+  ; 
+  ;Es kann die Software
+  ;und die Hardware
+  ;Veriegelung quittiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODRMN (8,E_ST_HZ_STA_P_1,K_0_STATUS,E_ST_HZ_LU_P_1,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B30,$WSCRATCH)
+  ODR2 ($B30,K_0_STATUS,A_HZ_SAM_ST_1)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UND11 (E_VP_FREIG_1,K_0_STATUS,Z_HAUPT_1)
+  ;Anlagen Freigabe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  LIMIT (E_VP_HZ_NA_WT_1,$M61,$M62,$F1)
+  SUB2 (E_W_SK_HZ_1,$F1,$F2)
+  AWT (E_VP_HZ_NA_1,E_W_SK_HZ_1,$F2,$F3)
+  MAX (2,$F3,K_20_WERT,$F4)
+  MELEIN (&M63,1,$B31,$WSCRATCH)
+  MELEIN (&M64,1,$B32,$WSCRATCH)
+  ODR2 ($B31,$B32,$B33)
+  AWT ($B33,$F4,$M65,A_W_HZ_VL_T_1)
+  ;Sollwert Sollkennlinie
+  ;mit Nachtabsenkung
+  ;Begrenzung des
+  ;Nachtabsenkungswertes
+  ;von 0 bis 20 Grad
+  ; 
+  ;WÑhrend der therm.
+  ;Desinfektion der WWB
+  ;Labore oder Sozial =>
+  ;FernwÑre auf 85 Grad
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  NICHT (Z_HAUPT_1,$HB3)
+  REGLER (1,K_1_STATUS,$HB3,$M66,A_AS_HZ_VE_1,S_ERR)
+  ;Heizungs-
+  ;Vorlauftemperatur-
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  SUB2 (A_AS_HZ_VE_1,E_MW_HZ_VE_1,$F5)
+  ABSWER ($F5,$F6)
+  VGLOH ($F6,$M67,$B34)
+  UND11 ($B34,Z_QUITT,$B35)
+  NICHT ($B35,$HB1)
+  UHR (K_1_STATUS,$HB1,$F7)
+  VGLOH ($F7,$M68,$B36)
+  RSS ($B36,Z_QUITT,A_ST_HZ_VE_1,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODR2 (E_RM_HZ_STA_P_1,Z_HZ_STA_WA_P_1,$B37)
+  UHR (K_1_STATUS,$B37,D_HZ_STA_ZT_P_1)
+  VGLOH (D_HZ_STA_ZT_P_1,$M69,$B38)
+  MOKY ($B38,$M70,Z_HZ_STA_WA_P_1)
+  ;Pumpe
+  ;Wartungslauf
+  ;Hat die Pumpe lÑnger
+  ;als 48 Stunden gestanden
+  ;wird sie fÅr 5 Min
+  ;eingeschaltet.
+  ;d
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  VGLEH (A_AS_HZ_VE_2,$M71,$M72,$B39)
+  VVZ ($B39,$M73,$M74,$B40)
+  UND2 ($B40,Z_HAUPT_1,Z_HZ_STA_ANF_P_1)
+  ;BedarfabhÑngiges
+  ;Einschalten der
+  ;Pumpe
+  ;Y>5> Pumpe Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Pumpe Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UND2 (Z_HAUPT_1,Z_HAUPT_2,$B41)
+  ODRMN (3,$B41,Z_HZ_STA_ANF_P_1,Z_HZ_STA_WA_P_1,0,$B42,
+         $WSCRATCH)
+  UND11 ($B42,E_ST_HZ_STA_P_1,A_BF_HZ_STA_P_1)
+  ;Heizungspumpe
+  ;- Stîrung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODR2 (E_RM_HZ_LU_P_1,Z_HZ_LU_WA_P_1,$B43)
+  UHR (K_1_STATUS,$B43,D_HZ_LU_ZT_P_1)
+  VGLOH (D_HZ_LU_ZT_P_1,$M75,$B44)
+  MOKY ($B44,$M76,Z_HZ_LU_WA_P_1)
+  ;Pumpe
+  ;Wartungslauf
+  ;Hat die Pumpe lÑnger
+  ;als 48 Stunden gestanden
+  ;wird sie fÅr 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  VGLEH (E_MW_AU_TEMP,$M77,$M78,$HB3)
+  NICHT ($HB3,$B45)
+  ODR2 (E_BM_HZ_LU_PU_1,$B45,Z_HZ_LU_ANF_P_1)
+  ;Bedarf Åber Highbus
+  ;Registerpumpen
+  ;LÅftung
+  ;oder
+  ;Aussentemp
+  ;w
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ODRMN (3,Z_HAUPT_1,Z_HZ_LU_ANF_P_1,Z_HZ_LU_WA_P_1,0,$B46,
+         $WSCRATCH)
+  UND11 ($B46,E_ST_HZ_LU_P_1,A_BF_HZ_LU_P_1)
+  ;Heizungspumpe
+  ;- Stîrung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ODRMN (8,E_ST_HZ_STA_P_1,A_ST_HZ_VE_2,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B47,$WSCRATCH)
+  ODR2 ($B47,K_0_STATUS,A_HZ_SAM_ST_2)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  LIMIT (E_GW_HZ_2,$M79,$M80,$F8)
+  VGLEH (E_MW_AU_TEMP,$F8,$M81,$HB3)
+  NICHT ($HB3,$B48)
+  UND2 (E_VP_FREIG_2,$B48,Z_HAUPT_2)
+  ;Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  LIMIT (E_VP_HZ_NA_WT_2,$M82,$M83,$F9)
+  SUB2 (E_W_SK_HZ_2,$F9,$F10)
+  AWT (E_VP_HZ_NA_2,E_W_SK_HZ_2,$F10,$F11)
+  MAX (2,$F11,K_20_WERT,A_W_HZ_VL_T_2)
+  ;Sollwert Sollkennlinie
+  ;mit Nachtabsenkung
+  ;Begrenzung des
+  ;Nachtabsenkungswertes
+  ;von 0 bis 20 Grad
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  NICHT (Z_HAUPT_2,$HB3)
+  REGLER (2,K_1_STATUS,$HB3,$M84,A_AS_HZ_VE_2,S_ERR)
+  ;Heizungs-
+  ;Vorlauftemperatur-
+  ;Regelung
+  ;B
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  SUB2 (A_AS_HZ_VE_2,E_MW_HZ_VE_2,$F12)
+  ABSWER ($F12,$F13)
+  VGLOH ($F13,$M85,$B49)
+  UND11 ($B49,Z_QUITT,$B50)
+  NICHT ($B50,$HB1)
+  UHR (K_1_STATUS,$HB1,$F14)
+  VGLOH ($F14,$M86,$B51)
+  RSS ($B51,Z_QUITT,A_ST_HZ_VE_2,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  VGLUH (E_X_RA_T_Z2,E_W_RA_T_Z2,$M87,$M88,$HB4)
+  NICHT ($HB4,$B52)
+  UND2 ($B52,Z_HAUPT_2,A_BF_HZ_VE_Z2)
+  ;Zweipunkt Regelung
+  ;Radiatoren
+  ;Heizung Zone
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ODRMN (8,E_ST_HEBE_3,E_ST_KOND_3,E_ST_LU_NMR2_3,
+         A_HZ_SAM_ST_1,E_ST_FEUER_3,E_ST_DRUCKER_3,
+         E_ST_NEUTRA_3,TW-Behaelt-Ueber,0,$B53,$WSCRATCH)
+  ODRMN (8,Leckage-Konsole,MS-Ku-S-NMR1-aus,MS-TrS2-NMR1-aus,
+         MS-Ri-S-NMR2-aus,MS-Ku-S-NMR2-aus,MS-TrS1-NMR2-aus,
+         MS-TrS2-NMR2-aus,USV-Ei-netz-n-iO,0,$B54,$WSCRATCH)
+  ODRMN (7,60V-Anl-Sammelst,60V-Anl-Steuersi,
+         Tr-1-S-N-NMR2-Wa,Tr-1-S-N-NMR2-Ab,NS-E-Sch-G-N-aus,
+         NS-E-Sch-S-N-aus,Tr-2-G-N-NMR2-Wa,0,$B55,$WSCRATCH)
+  ODRMN (4,$B53,$B54,$B55,Tr-2-G-N-NMR2-Ab,0,ST-Betr-tech-1,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  MELEIN (&M89,1,$B56,$WSCRATCH)
+  MELEIN (&M90,1,$B57,$WSCRATCH)
+  MELEIN (&M91,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B58)
+  MELEIN (&M92,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B59)
+  MELEIN (&M93,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B60)
+  ;NEA-Anl. Abschalt-Stîrun
+  ; 
+  ;Raumt.Åberschr.Therm.rau
+  ; 
+  ;Wassermangel Magnetkueh.
+  ; 
+  ;STW WWB Labor
+  ;(alte WWB)
+  ; 
+  ;STW WWB Sozia
+  ;l (neue WWB)
+  ; 
+  ODRMN (6,ST-Betr-tech-1,$B56,$B57,$B58,$B59,$B60,0,
+         ST-Betr-tech-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  MELEIN (&M94,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B61)
+  MELEIN (&M95,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B62)
+  MELEIN (&M96,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B63)
+  MELEIN (&M97,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B64)
+  MELEIN (&M98,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,$B65)
+  ;Stîrung KÅhlhood 1 Lab.2
+  ; 
+  ;Stîrung KÅhlhood 2 Lab.2
+  ; 
+  ;Stîrung Mag.kÅhlpumpe 1
+  ; 
+  ;Stîrung Mag.kÅhlpumpe 2
+  ; 
+  ;TK-Schrank
+  ;Labor 4 / R.06
+  ;lt. H.Laukart
+  ;vom 12.07.06
+  ; 
+  VVZ ($B65,$M99,$M100,$B66)
+  ODRMN (6,ST-Betr-tech-2,$B61,$B62,$B63,$B64,$B66,0,
+         ST-Betr-tech-3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M101,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,USV_R0027_Batter)
+  MELEIN (&M102,1,$B67,$WSCRATCH)
+  MELEIN (&M102,1,$B68,$WSCRATCH)
+  MELEIN (&M102,1,$B69,$WSCRATCH)
+  MELEIN (&M102,1,$B70,$WSCRATCH)
+  MELEIN (&M102,1,$B71,$WSCRATCH)
+  MELEIN (&M102,1,$B72,$WSCRATCH)
+  MELEIN (&M102,1,$B73,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (9,ST-Betr-tech-3,USV_R0027_Batter,$B67,$B68,$B69,
+         $B70,$B71,$B72,$B73,0,$B74,$WSCRATCH)
+  VVZ ($B74,$M109,$M110,$B75)
+  UND11 (Z_QUITT,$B75,$B76)
+  RSS ($B75,$B76,ST-Betr-tech-4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_BM_QUITT,&M111,S_ERR)
+  ;NMRAS10-00A-B00
+  ; 
+  SETMEL (K_1_STATUS,1,A_HZ_SAM_ST_1,&M112,S_ERR)
+  ;Quittierung NMR 2
+  ;Highbus US 00.10
+  ; 
+  ;NMRHE20-01A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_HZ_SAM_ST_2,&M113,S_ERR)
+  ;Sammelstîrung
+  ;FernwÑrme-Heizung
+  ; 
+  ;NMRHE20-03A-S50
+  ; 
+  ;Sammelstîrung
+  ;stat. Heizung
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_HZ_VE_1,&M114,S_ERR)
+  ;NMRHE20-01A-S51
+  ; 
+  ;Lauf-Stîrung
+  ;HZ-Ventil FernwÑrme
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_HZ_VE_2,&M115,S_ERR)
+  ;NMRHE20-03A-S51
+  ; 
+  ;Lauf-Stîrung
+  ;HZ-Ventil stat. HZG
+  ; 
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  ;NMRUV20-01A-X01
+  ; 
+  BEFAUS (1,A_BF_QUITT_A,$WZERO,$WZERO,$WZERO,&M116,S_ERR)
+  ;Quittierung GLT
+  ;zurÅckschalten
+  ; 
+  ;NMRUV20-01A-X00
+  ; 
+  NICHT (ST-Betr-tech-4,$HB0)
+  BEFAUS (1,$HB0,ST-Betr-tech-4,$WZERO,$WZERO,&M117,S_ERR)
+  ;Stîrmeldung
+  ;Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  ;NMRHE20-01A-X01
+  ; 
+  NICHT (A_BF_HZ_LU_P_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_HZ_LU_P_1,$WZERO,$WZERO,&M118,S_ERR)
+  ;Heizungspumpe
+  ;RLT-Anlagen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ;NMRHE20-03A-X01
+  ; 
+  NICHT (A_BF_HZ_STA_P_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_HZ_STA_P_1,$WZERO,$WZERO,&M119,S_ERR)
+  ;Heizungspumpe
+  ;Statische Heizung
+  ; 
+  ;NMRHE20-04A-X01
+  ; 
+  NICHT (A_BF_HZ_VE_Z2,$HB0)
+  BEFAUS (1,$HB0,A_BF_HZ_VE_Z2,$WZERO,$WZERO,&M120,S_ERR)
+  ;Heizungsventil
+  ;Heizung Zone
+  ; 
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  ;NMRHE20-01A-T50
+  ; 
+  ANAUS (A_W_HZ_VL_T_1,K_1_STATUS,&M121,S_ERR)
+  ;Sollwert Heizung
+  ;Vorlauf Gesamt
+  ; 
+  ;NMRAS10-00A-T00
+  ; 
+  ANAUS (E_MW_AU_TEMP,K_1_STATUS,&M122,S_ERR)
+  ;Aussentemperatur
+  ;NMR 2 US 00.10
+  ; 
+  ;NMRHE20-03A-T50
+  ; 
+  ANAUS (A_W_HZ_VL_T_2,K_1_STATUS,&M123,S_ERR)
+  ;Sollwert Heizung
+  ;Statische Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  ;NMRHE20-01A-Y01
+  ; 
+  ANAUS (A_AS_HZ_VE_1,K_1_STATUS,&M124,S_ERR)
+  ;Heizungsventil
+  ;Heizung Gesamt
+  ; 
+  ;NMRHE20-03A-Y01
+  ; 
+  ANAUS (A_AS_HZ_VE_2,K_1_STATUS,&M125,S_ERR)
+  ;Heizungsventil
+  ;Statische Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  MELEIN (&M126,1,$B77,$WSCRATCH)
+  ANEIN (&M127,$F15,$WSCRATCH)
+  VGLEH ($F15,$M128,$M129,$B78)
+  UND2 ($B77,$B78,$B79)
+  MELEIN (&M130,1,$B80,$WSCRATCH)
+  ;Druckerhîhungsanlage ein
+  ;wenn:
+  ;FernkÑltepumpe EIN und
+  ;MagnetkÅhlventil > 5
+  ;sowie nach ZurÅckschalt.
+  ;von HAND in AUTO-Betr.
+  ; 
+  VVZ ($B80,$M131,$M132,$B81)
+  ODR2 ($B81,$B79,$B82)
+  MOKY ($B82,$M133,$B83)
+  BEFAUS (1,$WZERO,$B83,$WZERO,$WZERO,&M134,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

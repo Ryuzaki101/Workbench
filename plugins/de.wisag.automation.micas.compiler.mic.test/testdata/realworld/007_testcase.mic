@@ -1,0 +1,340 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MD710_12.GPS
+  ;*** Projektname    : MSC Kälte 12.OG
+  ;*** Projektnummer  : 33101664
+  ;*** Bearbeiter     : Bresser H.J.
+  ;*** Prüfer         : Bresser H.J.
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 10
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  KON01 (1)
+  WordV  KD-Gesamt-ST
+  WordV  KD-Gesamt-R1
+  WordV  KD-Gesamt-R2
+  WordV  KD-Gesamt-R0
+  WordV  Min.Wächter_KD
+  WordV  Anford.Pumpen
+  FloatV SW_AT_12.OG
+  FloatV SW_VL_12.OG
+  FloatK FKON_AT_12.OG (15.00)
+  FloatV SW_KD_12.OG
+  WordV  /Test_min.
+  FloatK FKON_SW_12.OG (16.00)
+  WordV  KDP_1_12.OG_R1
+  WordV  KDP_2_12.OG_R0
+  WordV  KDP_2_12.OG_R1
+  WordV  Freig.KD12.OG_R0
+  WordV  KDP_2_12.OG_ST
+  FloatK FKON8_Grd (8.00)
+  FloatK FKON40P (40.00)
+  WordV  KDP_1_12.OG_R0
+  WordV  Entgasungsauto
+  WordV  Leitwertmessgert
+  WordK  KON00 (0)
+  WordV  /Test_Ein1
+  WordV  /Test_Ein2
+  FloatV SG-Regler
+  WordV  Freigabe_Regler
+  FloatK FKON_VL_12.OG (15.50)
+  FloatV /SW_Test_AT
+  FloatV Referenz>SW
+  FloatV AT
+  FloatV SW_RR_12.OG
+  FloatV VL-Temp.KD_12.OG
+  WordV  KDP_1_12.OG_ST
+  FloatK FKON_RR_12.OG (24.00)
+  FloatK FKON39P (39.00)
+  WordV  /Test_12.OG
+  WordK  FKON_Kuehld-R1 (0)
+  WordK  FKON_Kuehld-R2 (0)
+  WordV  Freig.KD12.OG_R1
+  FloatK /SW_Test_12.OG (24.00)
+  WordV  ST-Quit
+  WordV  /Test_AT
+  WordV  $B1
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &&41KA03-012BF01 (109,1)
+  WordK  $M0 (1)
+  IPAAW &&41KA03-912AA03 (86)
+  WordK  $M1 (1)
+  IPAAW &&41KA03-912AA20 (88)
+  WordK  $M2 (1)
+  IPAAW &&41KA03-912AA21 (89)
+  WordK  $M3 (1)
+  IPAAW &&41KA03-912AA31 (104)
+  IPAMB &M4 (109,2)
+  IPAMB &M5 (109,3)
+  IPAMB &M6 (109,4)
+  IPAMB &M7 (109,5)
+  WordV  $WSCRATCH
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  IPAMB &&41KA03-012ST30 (62,6)
+  IPAMB &&41KA03-012ST31 (62,7)
+  WordV  $HB3
+  IPAMB &&41KA03-012BM01 (61,1)
+  IPAMB &M8 (61,2)
+  IPAMB &M9 (61,3)
+  IPAMB &M10 (61,4)
+  IPAMB &&41KA03-012BM02 (61,5)
+  IPAMB &M11 (61,6)
+  IPAMB &M12 (61,7)
+  IPAMB &&41KA03-012BF02 (61,9)
+  IPAMB &M13 (61,10)
+  IPAMB &M14 (61,11)
+  IPAMB &&41KA03-012ST01 (62,2)
+  WordV  $B6
+  IPAMB &&41KA00-012BM00 (62,14)
+  IPAMW &&41LT01-706MW91 (254)
+  FloatV $F1
+  IPAMW &&41KA03-012MW01 (63)
+  IPAAW &&41KA03-912MW01 (103)
+  FloatV $F2
+  WordV  $B7
+  FloatK $M15 (0.00)
+  FloatK $M16 (60.00)
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  FloatK $M17 (0.00)
+  FloatK $M18 (60.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B26
+  WordV  $HB0
+  FloatV $F3
+  FloatK $M19 (168.00)
+  FloatV $F4
+  FloatV $FSCRATCH
+  FloatK $M20 (3600.00)
+  FloatV $F5
+  FloatV $F6
+  WordV  $B27
+  FloatK $M21 (300.00)
+  WordV  $B24
+  WordV  $B28
+  WordV  $B25
+  WordV  $B19
+  FloatK $M22 (0.00)
+  FloatK $M23 (900.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  FloatK $M24 (100.00)
+  FloatK $M25 (0.00)
+  FloatK $M26 (100.00)
+  FloatK $M27 (100.00)
+  FloatK $M28 (0.00)
+  FloatV $F7
+  WordV  $B29
+  FloatK $M29 (0.00)
+  FloatK $M30 (600.00)
+  WordV  $B30
+  WordK  $M31 (1)
+  IPAMB &&41KA03-912BM00 (81,15)
+  FloatK $M32 (0.00)
+  FloatV $F8
+  WordK  $M33 (1)
+  IPAAW &&41KA03-012AA01 (64)
+  WordV  $B31
+  WordV  $B32
+  IPAMB &&41KA00-012ST00 (62,13)
+  FloatK $M34 (1.00)
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  IPAMB &&41SA12-012BM01 (61,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  NOR2 (FKON_Kuehld-R2,FKON_Kuehld-R1,$B1)
+  BEFAUS (2,$B1,FKON_Kuehld-R1,FKON_Kuehld-R2,$WZERO,
+          &&41KA03-012BF01,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (FKON_SW_12.OG,$M0,&&41KA03-912AA03,WERR)
+  ANAUS (FKON_AT_12.OG,$M1,&&41KA03-912AA20,WERR)
+  ANAUS (FKON_VL_12.OG,$M2,&&41KA03-912AA21,WERR)
+  ANAUS (FKON_RR_12.OG,$M3,&&41KA03-912AA31,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&&41KA03-012BF01,5,KD-Gesamt-R0,KD-Gesamt-ST,
+          KD-Gesamt-R1,$WSCRATCH,KD-Gesamt-R2,WERR)
+  ODR2 (KD-Gesamt-R2,KD-Gesamt-R0,$B2)
+  RSS (KD-Gesamt-R1,$B2,$B3,$WSCRATCH)
+  BTRA ($B3,FKON_Kuehld-R1)
+  ODR2 (KD-Gesamt-R0,KD-Gesamt-R1,$B4)
+  RSS (KD-Gesamt-R2,$B4,$B5,$WSCRATCH)
+  BTRA ($B5,FKON_Kuehld-R2)
+  MELEIN (&&41KA03-012ST30,2,$HB3,Leitwertmessgert,WERR)
+  NICHT ($HB3,Entgasungsauto)
+  ;Gesamtanlage Kühld.12.OG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&&41KA03-012BM01,7,KDP_1_12.OG_R0,KDP_1_12.OG_ST,
+          KDP_1_12.OG_R1,$WSCRATCH,KDP_2_12.OG_R0,
+          KDP_2_12.OG_ST,KDP_2_12.OG_R1,WERR)
+  MELEIN (&&41KA03-012BF02,3,Freig.KD12.OG_R0,$WSCRATCH,
+          Freig.KD12.OG_R1,WERR)
+  MELEIN (&&41KA03-012ST01,1,$B6,WERR)
+  MELEIN (&&41KA00-012BM00,1,ST-Quit,WERR)
+  ODR2 ($B6,/Test_min.,Min.Wächter_KD)
+  ;Kühldecke Pumpe 1 (M9)
+  ; 
+  ;Kühldecke Pumpe 2 (M10)
+  ; 
+  ;Freigabe Wilo Pumpen
+  ; 
+  ;Min.Wächter VL-Kühldecke
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;Aussentemperatur von
+  ;Unterstation 6
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&41LT01-706MW91,$F1,WERR)
+  AWT (/Test_AT,$F1,/SW_Test_AT,AT)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;VL-Temp.Kühld.7.-12.OG
+  ; 
+  ANEIN (&&41KA03-012MW01,VL-Temp.KD_12.OG,WERR)
+  ;Max.Temperatur R-Räume
+  ;7.-12.OG
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&41KA03-912MW01,$F2,WERR)
+  AWT (/Test_12.OG,$F2,/SW_Test_12.OG,Referenz>SW)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&&41KA03-912AA03,SW_KD_12.OG,WERR)
+  ATRA (SW_KD_12.OG,FKON_SW_12.OG)
+  ANEIN (&&41KA03-912AA20,SW_AT_12.OG,WERR)
+  ATRA (SW_AT_12.OG,FKON_AT_12.OG)
+  ANEIN (&&41KA03-912AA21,SW_VL_12.OG,WERR)
+  ATRA (SW_VL_12.OG,FKON_VL_12.OG)
+  ANEIN (&&41KA03-912AA31,SW_RR_12.OG,WERR)
+  ATRA (SW_RR_12.OG,FKON_RR_12.OG)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  VGLOH (AT,FKON_AT_12.OG,$B7)
+  VVZ ($B7,$M15,$M16,$B8)
+  UND2 ($B8,KD-Gesamt-R1,$B9)
+  VGLOH (Referenz>SW,SW_RR_12.OG,$B10)
+  VVZ ($B10,$M17,$M18,$B11)
+  UND2 ($B11,KD-Gesamt-R1,$B12)
+  ODRMN (3,$B9,$B12,KD-Gesamt-R2,0,Anford.Pumpen,$WSCRATCH)
+  ODR2 (KDP_1_12.OG_R1,KDP_2_12.OG_R1,$B13)
+  VGLOH (VL-Temp.KD_12.OG,SW_VL_12.OG,$B14)
+  UND2 ($B13,$B14,$B15)
+  UND11 ($B15,KD-Gesamt-R2,Freigabe_Regler)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ODRMN (2,KDP_1_12.OG_ST,KDP_2_12.OG_ST,0,$B16,$B17)
+  ODR2 (Anford.Pumpen,Min.Wächter_KD,$B18)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B25,$B17,$B26)
+  NICHT ($B26,$HB0)
+  UHR ($HB0,$B26,$F3)
+  UST ($WZERO,$M19,$F4,$FSCRATCH)
+  UST ($WZERO,$M20,$F5,$FSCRATCH)
+  MULT ($F4,$F5,$F6)
+  VGLOH ($F3,$F6,$B27)
+  MOKY ($B27,$M21,$B24)
+  ODR2 (Anford.Pumpen,$B24,$B28)
+  UND11 ($B28,$B17,$B25)
+  BTRA ($B25,$B19)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ ($B18,$M22,$M23,$B20)
+  UNDMN (2,$B19,$B20,0,$B21,$B22)
+  BEFAUS (1,$B22,$B21,$WZERO,$WZERO,&&41KA03-012BF02,WERR)
+  NAND2 ($B16,$B20,$B23)
+  BEFAUS (2,$B23,/Test_Ein1,/Test_Ein2,$WZERO,
+          &&41KA03-012BF01,WERR)
+  ;Freigabe Pumpen
+  ;Kühldecken 12.OG
+  ;-
+  ; 
+  ;Störungen
+  ;K
+  ; 
+  ;Gesamtanlage Kühl-
+  ;decken 7.-12.OG
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  NICHT (Freigabe_Regler,$HB3)
+  REGLER (6,KON01,$HB3,$M24,SG-Regler,WERR)
+  FKG (SG-Regler,4,$M25,$M26,$M27,$M28,$F7)
+  VGLEH ($F7,FKON40P,FKON39P,$B29)
+  VVZ ($B29,$M29,$M30,$B30)
+  SETMEL ($M31,1,$B30,&&41KA03-912BM00,WERR)
+  AWT (Min.Wächter_KD,$M32,$F7,$F8)
+  ANAUS ($F8,$M33,&&41KA03-012AA01,WERR)
+  ;Kälteanforderung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODRMN (6,KON00,KON00,KON00,KON00,KON00,KON00,4,
+         KDP_1_12.OG_ST,KDP_2_12.OG_ST,Entgasungsauto,
+         Leitwertmessgert,$B31,$B32)
+  BEFAUS (1,$B32,$B31,$WZERO,$WZERO,&&41KA00-012ST00,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  VGLEH (FKON8_Grd,AT,$M34,$B33)
+  UNDMN (2,$B33,$B33,0,$B34,$B35)
+  BEFAUS (1,$B35,$B34,$WZERO,$WZERO,&&41SA12-012BM01,WERR)
+  ENDE 
+  ENDMODUL 

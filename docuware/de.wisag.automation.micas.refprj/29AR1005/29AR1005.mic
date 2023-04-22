@@ -1,0 +1,59 @@
+  MODUL ( AR10, 5)
+  
+  WordV linie2
+  WordV linie3
+  FloatV linie4R
+  FloatV linie5R
+  FloatV linie6R
+  FloatV linie7R
+  WordV error2
+  WordK bink0 (1)
+  IPAMB &ID_00002-000-00-C-BM (2,0)
+  IPAAW &ID_00002-006-00-C-MW (6)
+  IPAAW &ID_00002-007-00-C-MW (7)
+  IPAAW &ID_00002-016-00-C-AS (16)
+  IPAZW &ID_0002-028-00-C-ZW (28)
+  WordK $WZERO (0)
+  IPAZW &ZW_4711 (12)
+  WordV Line1W
+  WordV MP1
+  WordV MP2
+  WordV werr-anein-Error112
+  WordK $IN-BEFAUS_ON2_25425 (0)
+  WordK $IN-BEFAUS_ON3_22640 (0)
+  WordV werr-befaus-Error114
+  WordV werr-anein2-Error289
+  WordV werr-anaus-Error497
+  WordV werr-zwein-Error400
+  FloatK $IN-ZWAUS_Delta_29919 (0.0)
+  WordK $IN-ZWAUS_Mode_22034 (0)
+  WordV werr-zwaus-Error89
+
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init )
+  ENDE
+
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (2,cycl ,1000)
+
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANEIN (&ID_00002-006-00-C-MW,linie4R,werr-anein-Error112)
+  NICHT (linie2,linie3)
+  BEFAUS (2,linie3,Line1W,$IN-BEFAUS_ON2_25425,$IN-BEFAUS_ON3_22640,&ID_00002-000-00-C-BM,
+   werr-befaus-Error114)
+  ANEIN (&ID_00002-007-00-C-MW,linie5R,werr-anein2-Error289)
+  ADD2 (linie4R,linie5R,linie6R)
+  ANAUS (linie6R,bink0,&ID_00002-016-00-C-AS,werr-anaus-Error497)
+  ZWEIN (&ID_0002-028-00-C-ZW,linie7R,werr-zwein-Error400)
+  ZWAUS (bink0,$IN-ZWAUS_Delta_29919,$IN-ZWAUS_Mode_22034,linie7R,&ZW_4711,
+   werr-zwaus-Error89)
+  MELEIN (&ID_00002-000-00-C-BM,1,Line1W,linie2)
+  SETMEL ($WZERO,2,MP1,MP2,&ID_00002-000-00-C-BM,error2)
+  ENDE
+  ENDMODUL

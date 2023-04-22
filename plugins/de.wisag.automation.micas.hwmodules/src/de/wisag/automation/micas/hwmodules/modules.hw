@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MicasModules xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wisag.de/automation/schema/hwmodules">
+  <modules id="12288" name="ENDE" runtime="100"/>
+  <modules id="12290" name="ADSU" runtime="100">
+    <inputs xsi:type="PortGroup" inputPort="true" name="XPlus" runtime="500">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" name="XMinus" runtime="500">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12291" name="ADD2" runtime="700">
+    <inputs inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12292" name="SUB2" runtime="700">
+    <inputs inputPort="true" name="XPlus">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="XMinus">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12293" name="CHS" runtime="100">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12294" name="MULDI" runtime="2200">
+    <inputs inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="X3">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12295" name="MULT" runtime="700">
+    <inputs inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12296" name="ABSWER" runtime="100">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12297" name="MAX" runtime="50">
+    <inputs xsi:type="PortGroup" inputPort="true" name="X" runtime="100">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12298" name="MIN" runtime="50">
+    <inputs xsi:type="PortGroup" inputPort="true" name="X" runtime="100">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12299" name="LIMIT" runtime="250">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="XeOG">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="XeUG">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12300" name="ABSFEU" runtime="55000" pastValueCount="28">
+    <inputs inputPort="true" name="relFeuchte">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temperatur">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Druck">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12301" name="ENTHA" runtime="4000" pastValueCount="12">
+    <inputs inputPort="true" name="absFeuchte">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temperatur">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Enthalpie">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12302" name="UND2" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12303" name="UND11" runtime="50">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Ainv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12304" name="UND21" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Ainv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12305" name="UNDMN" runtime="50">
+    <inputs xsi:type="PortGroup" inputPort="true" name="A" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" name="Ainv" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Binv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12306" name="NAND2" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12307" name="ODR2" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12308" name="ODRMN" runtime="50">
+    <inputs xsi:type="PortGroup" inputPort="true" name="A1" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" name="A2" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Binv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12309" name="NOR2" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12310" name="XOR2" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12311" name="NICHT" runtime="50">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12312" name="UVO" runtime="100">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" name="A1" runtime="200">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="2" inputPort="true" name="And1inv" runtime="200">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="3" inputPort="true" name="A2" runtime="200">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="4" inputPort="true" name="And2inv" runtime="200">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="5" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="6" name="Binv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12313" name="AEQ" runtime="50">
+    <inputs inputPort="true" name="A1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="A2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12314" name="RSS" runtime="100" pastValueCount="2">
+    <inputs inputPort="true" name="S">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="R">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="BInv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12315" name="TFF" runtime="100" pastValueCount="4">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="Binv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12316" name="INTE" runtime="1000" pastValueCount="16">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Ti">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Setzen">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Setzwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="4" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12317" name="PT1" runtime="1000" pastValueCount="22">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="T1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12318" name="VRZ" runtime="1000" pastValueCount="8">
+    <inputs inputPort="true" name="R">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Delta">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="S">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Setzwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Freigabe">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="Auf">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Ab">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="7" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12319" name="AWT" runtime="100">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12320" name="UST" runtime="100">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Y2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12321" name="SCHR" runtime="200" pastValueCount="4">
+    <inputs inputPort="true" name="R">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="VB">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="FR">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="3" inputPort="true" name="X" runtime="2000">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="4" name="AKT">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="5" name="BS">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="6" name="BSinv">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs xsi:type="PortGroup" index="7" name="Y" runtime="2000">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12322" name="FKG" runtime="4800">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" runtime="400">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12323" name="MAZ" runtime="300" pastValueCount="6">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="S">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Xo">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12324" name="SEQ2" runtime="10000" pastValueCount="30">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="H">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="P">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="4" name="Y1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="5" name="Y2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="6" name="S">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12325" name="SEQ3" runtime="18000" pastValueCount="64">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="H1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="H2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="P1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="P2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="YMIN">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="SW">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="9" name="Y1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="10" name="Y2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="11" name="Y3">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="12" name="Y4">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="13" name="S1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="14" name="S2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12326" name="VGLOH" runtime="150">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Grenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12327" name="VGLEH" runtime="250" pastValueCount="2">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Grenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Hyst">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12328" name="VGLUH" runtime="350" pastValueCount="2">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Grenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="oHyst">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="uHyst">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="4" name="Y">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12329" name="VGL3P" runtime="550">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="oGrenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="uGrenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Bgr">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="4" name="Bkl">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="5" name="Bmi">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12330" name="UHR" runtime="300" pastValueCount="4">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Reset">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Zeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12331" name="VVZ" runtime="4000" pastValueCount="26">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="T1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="T2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12332" name="MOKY" runtime="100" pastValueCount="16">
+    <inputs inputPort="true" name="Trigger">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="T">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12333" name="MOKS" runtime="100" pastValueCount="16">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="T">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12334" name="PDM" runtime="10000" pastValueCount="26">
+    <inputs inputPort="true" name="Tastverh">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Periode">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12335" name="ANEIN" runtime="100" pastValueCount="2">
+    <inputs inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_ANALOG_VALUE</allowedPortDataTypes>
+      <allowedPortDataTypes>FGA_MEASURED_VALUE</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12336" name="ZWEIN" runtime="100" pastValueCount="2">
+    <inputs inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_VALUE</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12337" name="MELEIN" runtime="100" pastValueCount="4">
+    <inputs inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs xsi:type="PortGroup" index="1" name="Meldepunkt" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12376" name="HMHL" runtime="100" pastValueCount="8" supportedByHardware="//@types.5/@aliases.0 //@types.3/@aliases.6">
+    <inputs inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Led1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Led2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Led3">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Led4">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="LP">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Hupe1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="Hupe2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="Hupe3">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="9" inputPort="true" name="Hupe4">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="10" inputPort="true" name="Hupe5">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="11" inputPort="true" name="Hupe6">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="12" inputPort="true" name="Hupe7">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="13" inputPort="true" name="Hupe8">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="14" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12338" name="ANAUS" runtime="100" pastValueCount="8">
+    <inputs inputPort="true" name="Ausgabewert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_ANALOG_VALUE</allowedPortDataTypes>
+      <allowedPortDataTypes>FGA_MEASURED_VALUE</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12339" name="BEFAUS" runtime="100" pastValueCount="6">
+    <inputs inputPort="true" name="OnCounter">
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="AUS">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Ein1">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Ein2">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Ein3">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="6" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12340" name="SETMEL" runtime="100" pastValueCount="6">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs xsi:type="PortGroup" index="1" inputPort="true" name="M" runtime="100">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12341" name="ZWAUS" runtime="100" pastValueCount="2">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Delta">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Mode">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Setzwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="PA-ADR">
+      <allowedPortDataTypes>FGA_VALUE</allowedPortDataTypes>
+    </inputs>
+    <outputs index="5" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12342" name="DSTAUS" runtime="100" pastValueCount="18">
+    <inputs inputPort="true" name="Ausgabewert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Ausfuehrkontrollzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="PA-ADR analog">
+      <allowedPortDataTypes>FGA_MEASURED_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="PA-ADR digital">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="5" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12343" name="REGLER" runtime="50000" pastValueCount="38">
+    <inputs inputPort="true">
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="AusEin">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="AusgangFesteGrenze">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="FesteGrenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="4" name="StellbefehlY">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="5" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12344" name="SOLKEN" runtime="10000" pastValueCount="8">
+    <inputs inputPort="true">
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12345" name="UREG" runtime="50000" pastValueCount="38">
+    <inputs inputPort="true">
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Istwert">
+      <allowedPortDataTypes>FGA_ANALOG_VALUE</allowedPortDataTypes>
+      <allowedPortDataTypes>FGA_MEASURED_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Sollwert">
+      <allowedPortDataTypes>FGA_ANALOG_VALUE</allowedPortDataTypes>
+      <allowedPortDataTypes>FGA_MEASURED_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Halt">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="EingangFesteGrenze">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="REGELM">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="ReglerTyp">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="Abtastzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="9" inputPort="true" name="Proportionalbereich">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="10" inputPort="true" name="Nachstellzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="11" inputPort="true" name="Vorhaltzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="12" inputPort="true" name="uGrenzeSollwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="13" inputPort="true" name="oGrenzeSollwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="14" inputPort="true" name="Hysterese">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="15" inputPort="true" name="StellgroesseTyp">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="16" inputPort="true" name="uGrenzeStellgroesse">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="17" inputPort="true" name="oGrenzeStellgroesse">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="18" inputPort="true">
+      <allowedPortDataTypes>FGA_ANALOG_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="19" inputPort="true">
+      <allowedPortDataTypes>FGA_MESSAGE_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="20" name="wesnet">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="21" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12346" name="ATRA" runtime="200">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12347" name="BTRA" runtime="200">
+    <inputs inputPort="true" name="A">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="B">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12348" name="TTZEIT" runtime="500" pastValueCount="84">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Totzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12349" name="BENDE" runtime="150">
+    <inputs inputPort="true" name="Ende">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+  </modules>
+  <modules id="12350" name="SIN" runtime="25000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12351" name="COS" runtime="25000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12352" name="EHOX" runtime="40000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12353" name="LN" runtime="15000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12354" name="LOG" runtime="15000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12355" name="XHOY" runtime="45000">
+    <inputs inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12356" name="RAD" runtime="1500">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12357" name="DEG" runtime="700">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12358" name="SQRT" runtime="11000">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12359" name="QUAD" runtime="700">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12360" name="REZI" runtime="1500">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12361" name="MULK2" runtime="250">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12362" name="DIVK2" runtime="250">
+    <inputs inputPort="true" name="X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12363" name="OPORTB" runtime="100">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Portwert">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Portadresse">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+  </modules>
+  <modules id="12364" name="IPORTB" runtime="100">
+    <inputs inputPort="true" name="Portadresse">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Portwert">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12365" name="MSET" runtime="1000">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Value">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="AnzahlByte">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="SegmentAdr">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="OffsetAdr">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+  </modules>
+  <modules id="12366" name="MCPY" runtime="1000">
+    <inputs inputPort="true" name="Enable">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="AnzahlByte">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="SegmentAdrSource">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="OffsetAdrSource">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="SegmentAdrDest">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+  </modules>
+  <modules id="12367" name="HLG" runtime="500" pastValueCount="16">
+    <inputs inputPort="true" name="Schalter">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="X1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="X2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Steigung1">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Steigung2">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="Halten">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Setzen">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="Setzwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="8" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12368" name="TSTART" runtime="200" supportedByHardware="//@types.0/@aliases.0 //@types.1/@aliases.0 //@types.1/@aliases.1 //@types.1/@aliases.5 //@types.1/@aliases.6 //@types.1/@aliases.7">
+    <outputs name="relStartzeit">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12369" name="TMESS" runtime="200" pastValueCount="10" supportedByHardware="//@types.0/@aliases.0 //@types.1/@aliases.0 //@types.1/@aliases.1 //@types.1/@aliases.5 //@types.1/@aliases.6 //@types.1/@aliases.7">
+    <inputs inputPort="true" name="relStartzeit">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="minLaufzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="maxLaufzeit">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="AnzahlMesszyklen">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12370" name="LREG" runtime="50000" pastValueCount="38">
+    <inputs inputPort="true" name="Istwert X">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Sollwert W">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Aus/Ein">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="EingangFesteGrenze">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="ReglerTyp P/PI/PID">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="Abtastzeit">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Proportionalbereich Xp">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="Nachstellzeit Tn">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="Vorhaltzeit Tv">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="9" inputPort="true" name="uGrenzeSollwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="10" inputPort="true" name="oGrenzeSollwert">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="11" inputPort="true" name="Hysterese">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="12" inputPort="true" name="uGrenzeStellgroesse">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="13" inputPort="true" name="oGrenzeStellgroesse">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="14" inputPort="true" name="Unbekannter Eingang">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="15" name="Stellbefehl Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="16" name="Error">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12371" name="KALUHR" runtime="500" supportedByHardware="//@types.0/@aliases.0 //@types.1/@aliases.0 //@types.1/@aliases.1 //@types.1/@aliases.5 //@types.1/@aliases.6 //@types.1/@aliases.7 //@types.3/@aliases.6 //@types.5/@aliases.0 //@types.1/@aliases.2">
+    <inputs inputPort="true" name="AlarmMin">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="AlarmHour">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="AlarmDay">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="AlarmMonth">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="AlarmYear">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="AlarmWD">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="AlarmKW">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="7" name="Minute">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="8" name="Stunde">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="9" name="Tag">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="10" name="Monat">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="11" name="Jahr">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="12" name="Wochentag">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="13" name="KW">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="14" name="AB">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12377" name="AWTB" runtime="500" supportedByHardware="//@types.5/@aliases.0 //@types.3/@aliases.6">
+    <inputs inputPort="true" name="Wahl">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="EingangA">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="EingangB">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs name="Ausgang">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12378" name="USTB" runtime="500" supportedByHardware="//@types.5/@aliases.0 //@types.3/@aliases.6">
+    <inputs inputPort="true" name="Wahl">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="EingangA">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="EingangB">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs name="Ausgang">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12372" name="ABFEUG" runtime="50000" pastValueCount="28">
+    <inputs inputPort="true" name="relFeuchte">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temperatur">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Druck">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" name="Y">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12373" name="ENTHAG" runtime="5500" pastValueCount="12">
+    <inputs inputPort="true" name="absFeuchte">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temperatur">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Enthalpie">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12374" name="FTOB" runtime="500" supportedByHardware="//@types.0/@aliases.0 //@types.1/@aliases.0 //@types.1/@aliases.1 //@types.1/@aliases.5 //@types.1/@aliases.6 //@types.1/@aliases.7">
+    <inputs inputPort="true" name="FLOAT">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="1" name="Bit00">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="2" name="Bit01">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Bit02">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="4" name="Bit03">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="5" name="Bit04">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="6" name="Bit05">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="7" name="Bit06">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="8" name="Bit07">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="9" name="Bit08">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="10" name="Bit09">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="11" name="Bit10">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="12" name="Bit11">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="13" name="Bit12">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="14" name="Bit13">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="15" name="Bit14">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+    <outputs index="16" name="Bit15">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12375" name="BTOF" runtime="500" supportedByHardware="//@types.0/@aliases.0 //@types.1/@aliases.0 //@types.1/@aliases.1 //@types.1/@aliases.5 //@types.1/@aliases.6 //@types.1/@aliases.7">
+    <inputs inputPort="true" name="Bit00">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Bit01">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="Bit02">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Bit03">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="4" inputPort="true" name="Bit04">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="Bit05">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Bit06">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="Bit07">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="Bit08">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="9" inputPort="true" name="Bit09">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="10" inputPort="true" name="Bit10">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="11" inputPort="true" name="Bit11">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="12" inputPort="true" name="Bit12">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="13" inputPort="true" name="Bit13">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="14" inputPort="true" name="Bit14">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <inputs index="15" inputPort="true" name="Bit15">
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+    </inputs>
+    <outputs index="16" name="FLOAT">
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12379" name="TAUPT" runtime="500" pastValueCount="20" supportedByHardware="//@types.5/@aliases.0 //@types.3/@aliases.6">
+    <inputs inputPort="true" name="rel_Feuchte">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temp">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="2" name="Taupunkt">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Error">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12380" name="FEUKT" runtime="500" pastValueCount="24" supportedByHardware="//@types.3/@aliases.6 //@types.5/@aliases.0">
+    <inputs inputPort="true" name="rel_Feuchte">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1" inputPort="true" name="Temp">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="3" inputPort="true" name="FeuchtKTemp">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="3" name="Error">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <modules id="12381" name="HXSTRA" runtime="300" pastValueCount="62" supportedByHardware="//@types.3/@aliases.6 //@types.5/@aliases.0">
+    <inputs>
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="1">
+      <allowedPortDataTypes>DIRECT_VALUE</allowedPortDataTypes>
+    </inputs>
+    <inputs index="2" inputPort="true" name="relFeuchte">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="3" inputPort="true" name="Temperatur"/>
+    <inputs index="4" inputPort="true" name="Druck">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="5" inputPort="true" name="Temperatur Sollwert">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="6" inputPort="true" name="Temperatur Hysteres">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="7" inputPort="true" name="relFeuchte Sollwert">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="8" inputPort="true" name="relFeuchte Hysterese">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <inputs index="9" inputPort="true" name="absFeuchte max">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </inputs>
+    <outputs index="10" name="Sollwert Temperatur">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="11" name="Sollwert relFeuchte">
+      <allowedPortDataTypes>FLOAT_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>FLOAT_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="12" name="im Behaglichkeitsfeld">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="13" name="Kuehlen und Befeuchten">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="14" name="nur Befeuchten">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="15" name="Heizen und Befeuchten">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="16" name="nur Heizen">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="17" name="Entfeuchten und Nacherhitzen">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="18" name="nur Kuehlen">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+    <outputs index="19" name="Error">
+      <allowedPortDataTypes>WORD_CONST</allowedPortDataTypes>
+      <allowedPortDataTypes>WORD_VAR</allowedPortDataTypes>
+    </outputs>
+  </modules>
+  <types type="ACXX" databaseSegment="20992" databaseChecksumAddress="21232" addressConversionListAddress="31904" headSegment="31872" endModuleOpcode="12288" dataSegment="30464" stackSegment="31744" programSegment="30464" maxProgramSize="20480">
+    <aliases name="AC40"/>
+    <aliases name="ER12"/>
+  </types>
+  <types type="ZPXX" databaseSegment="4608" databaseChecksumAddress="4848" addressConversionListAddress="15520" headSegment="15488" endModuleOpcode="12288" dataSegment="14080" stackSegment="15360" programSegment="14080" maxProgramSize="20480">
+    <aliases name="ZP12"/>
+    <aliases name="ZP13"/>
+    <aliases name="ZP20"/>
+    <aliases name="ZP10"/>
+    <aliases name="GW12"/>
+    <aliases name="GW13"/>
+    <aliases name="GW14"/>
+    <aliases name="ZM12"/>
+    <aliases name="ZM13"/>
+    <aliases name="ZM14"/>
+    <aliases name="ZM15"/>
+  </types>
+  <types type="ERXX" databaseSegment="4608" databaseChecksumAddress="4848" headSegment="1280" endModuleOpcode="12288" dataSegment="1296" stackSegment="1856" programSegment="1296" maxProgramSize="8960">
+    <aliases name="ER11"/>
+  </types>
+  <types type="MBXX" databaseSegment="4608" databaseChecksumAddress="4848" headSegment="1280" endModuleOpcode="12288" dataSegment="1296" stackSegment="2016" programSegment="1296" maxProgramSize="11520">
+    <aliases name="MB11"/>
+    <aliases name="AR11"/>
+    <aliases name="AR10"/>
+    <aliases name="SP11"/>
+    <aliases name="MB10"/>
+    <aliases name="SP10"/>
+    <aliases name="AR12"/>
+  </types>
+  <types type="XX20" databaseSegment="4608" databaseChecksumAddress="4848" headSegment="8144" endModuleOpcode="12288" dataSegment="2560" stackSegment="4096" programSegment="8128" maxProgramSize="24576">
+    <aliases name="AR20"/>
+    <aliases name="SP20"/>
+  </types>
+  <types type="WSXX" databaseSegment="20992" databaseChecksumAddress="21232" addressConversionListAddress="31904" headSegment="31872" endModuleOpcode="12288" dataSegment="30464" stackSegment="31744" programSegment="30464" maxProgramSize="65535">
+    <aliases name="AC60"/>
+  </types>
+</MicasModules>

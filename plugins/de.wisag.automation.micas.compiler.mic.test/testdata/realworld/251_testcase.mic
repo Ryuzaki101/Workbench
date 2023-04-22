@@ -1,0 +1,762 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2004.GPS
+  ;*** Projektname    : ALLDATA
+  ;*** Projektnummer  : 23100965
+  ;*** Bearbeiter     : Wolfgang Donner
+  ;*** Prüfer         : Wolfgang Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 6
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  A12-ZUL1-RM-AUS
+  WordV  ZPK
+  WordV  A12_ZUL_Hand
+  WordK  KON00 (0)
+  WordV  FREIG-EIN-GLT
+  WordV  ERR20
+  FloatV A12-RAUMTEMP.
+  FloatV A12-ZUL-TEMP
+  WordV  A09-ZUL-RM-AUS
+  WordV  BA1LU0900BM10RM
+  WordV  NOT-AUS
+  WordV  A09-WRG-STÖRUNG
+  WordV  STEUER-SPG-24V
+  WordV  A12-REP-ZUL
+  WordV  A12-KEIL-BM-ABL
+  WordV  STEUER-SPG-220V
+  WordV  PHASENAUSFALL
+  WordV  ABSCHALT-BRAND
+  FloatV A12-VE-RL-TEMP
+  FloatV A12-Y-FROST
+  WordV  FREIG-AUS-GLT
+  WordV  A12-REP-ABL
+  WordV  A12-FROST
+  WordV  A12-RAUCHMELDER
+  WordV  ERR09
+  WordV  ERR29
+  WordK  KON01 (1)
+  WordV  ERR30
+  FloatV A12-SIG-KLAPPEN
+  WordV  MERR10
+  FloatV Y-SIGNAL-ZUL-REG
+  WordV  MERR09
+  WordV  SAMMELSTANL12
+  FloatV A12-SIG-VORH-ZUL
+  WordV  ERR17
+  WordV  ERR18
+  WordV  ERR19
+  WordV  ERR21
+  WordV  ERR22
+  WordV  ERR23
+  WordK  Fernquit_a12.ein (1)
+  WordV  QUITTIERUNG-A12
+  FloatV A12-AUSSEN-TEMP
+  WordV  ERR24
+  WordV  ERR25
+  WordV  ERR26
+  WordV  ERR27
+  WordV  ERR28
+  WordV  MERR3
+  WordV  A12-ZUL-KEIL-ST
+  WordV  MERR4
+  WordV  MERR5
+  WordV  PK18
+  WordV  MERR6
+  WordV  A12-ABL-KEIL-ST
+  WordV  MERR7
+  WordV  MERR8
+  WordV  A12-ZUL-AUTO-ST
+  WordV  A12-ABL-AUTO-ST
+  WordV  A12-FREIG-FROST
+  WordV  A12-FREIG-LU-EIN
+  WordV  ERR16
+  WordV  ERR06
+  WordV  ERR07
+  WordV  ERR08
+  WordV  A12-FROST-ST
+  WordV  ERR11
+  WordV  A12_ABL_Hand
+  WordV  ERR12
+  WordV  A12-ANLAGE-AUS
+  WordV  ERR13
+  WordV  ERR14
+  WordV  A12-ZUL2-RM-AUS
+  WordV  A12-ABL2-RM-ST
+  WordV  ERR15
+  FloatV A12-STELL-VORERH
+  WordV  A12-ABL1-RM-ST
+  WordV  A12-ABL1-RM-EIN1
+  WordV  A12-ANLAGE-EIN1
+  WordV  A12-ABL1-RM-AUS
+  WordV  ERR03
+  WordV  ZPK-OE
+  WordV  A12-ABL2-RM-AUS
+  WordV  A12-VE-RM-ST
+  WordV  ERR04
+  WordV  ERR05
+  WordV  TESTSETZ01
+  WordV  A16-ABL-RM-ST
+  WordK  A16-ABL-RM-EIN (1)
+  WordV  ERR01
+  FloatK FKON2G (2.00)
+  WordV  ERR02
+  WordV  MERR01
+  FloatK A12-MIN-AUSSENL (40.00)
+  WordV  MERR02
+  WordV  A12-ZUL2-RM-EIN1
+  WordV  A12-ABL2-RM-EIN1
+  WordV  A12-VE-RM-EIN1
+  WordV  ERR10
+  WordK  A16-ABL-RM-AUS (0)
+  WordV  A12-KEIL-BM-ZUL
+  WordK  Fernquit_a12.aus (0)
+  WordK  FREIG-EIN1-GLT (1)
+  WordV  A12-FREIG-LUFTG
+  WordV  A12-FREIG-LU-AUS
+  WordK  FREIG-EIN2-GLT (0)
+  FloatK A12-SOLLW-ZULTEM (18.00)
+  WordV  A12-ZUL2-RM-ST
+  WordV  A12-ZUL1-RM-ST
+  WordV  A12-ZUL1-RM-EIN1
+  WordV  A12-VE-RM-AUS
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU1200BF01 (103,1)
+  IPAMB &BA1LU1600BM20 (2,9)
+  WordK  $M0 (1)
+  IPAAW &BA1LU1200AA91 (108)
+  WordK  $M1 (1)
+  IPAAW &BA1LU1200AA55 (113)
+  IPAMB &M2 (103,0)
+  IPAMB &M3 (103,2)
+  IPAMB &M4 (103,3)
+  IPAMB &M5 (103,4)
+  IPAMB &M6 (103,5)
+  IPAMB &BA1LU1200BM10 (1,5)
+  IPAMB &M7 (1,6)
+  IPAMB &M8 (1,7)
+  IPAMB &BA1LU1200BM11 (1,9)
+  IPAMB &M9 (1,10)
+  IPAMB &M10 (1,11)
+  IPAMB &BA1LU1200BM20 (2,1)
+  IPAMB &M11 (2,2)
+  IPAMB &M12 (2,3)
+  IPAMB &BA1LU1200BM21 (2,5)
+  IPAMB &M13 (2,6)
+  IPAMB &M14 (2,7)
+  IPAMB &BA1LU1200BM40 (1,13)
+  IPAMB &M15 (1,14)
+  IPAMB &M16 (1,15)
+  IPAMB &M17 (2,8)
+  IPAMB &M18 (2,10)
+  IPAMB &M19 (2,11)
+  IPAMB &BA1LU0000ST30 (4,0)
+  IPAMB &BA1LU0000ST31 (4,1)
+  IPAMB &BA1LU0900ST51 (4,2)
+  IPAMB &BA1LU0000ST33 (4,3)
+  IPAMB &BA1LU0000ST32 (4,4)
+  WordV  $HB6
+  WordV  $HB7
+  WordV  $HB8
+  WordV  $HB9
+  WordV  $HB10
+  IPAMB &BA1LU1200WA11 (7,4)
+  WordV  $HB2
+  IPAMB &BA1LU1200WA21 (7,5)
+  IPAMB &BA1LU1200AL01 (4,9)
+  IPAMB &BA1LU1200GF01 (4,10)
+  WordV  $HB3
+  WordV  $HB4
+  IPAMB &BA1LU1200BM15 (7,6)
+  IPAMB &BA1LU1200BM25 (7,7)
+  IPAAW &BA1LU1200MW22 (40)
+  IPAAW &BA1LU1200MW03 (41)
+  IPAAW &BA1LU0900MW01 (34)
+  IPAAW &BA1LU1200MW13 (42)
+  WordV  $B1
+  FloatK $M20 (120.00)
+  FloatK $M21 (0.00)
+  WordV  $B2
+  WordV  $WSCRATCH
+  WordK  $M22 (1)
+  IPAMB &BA1LU1200ST83 (111,6)
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  FloatK $M23 (120.00)
+  FloatK $M24 (0.00)
+  WordV  $B6
+  WordK  $M25 (1)
+  IPAMB &BA1LU1200ST82 (111,5)
+  WordV  $B7
+  WordV  $HB0
+  IPAMB &BA1LU0000BF03 (17,9)
+  IPAMB &BA1LU1200BF02 (111,13)
+  IPAMB &M26 (111,14)
+  IPAMB &M27 (111,15)
+  IPAMB &BA1LU0000BM99 (17,15)
+  WordV  $B8
+  WordV  $B9
+  FloatK $M28 (5.00)
+  FloatK $M29 (3.00)
+  FloatK $M30 (0.00)
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  FloatK $M31 (300.00)
+  FloatK $M32 (0.00)
+  WordV  $B16
+  WordK  $M33 (1)
+  IPAMB &BA1LU1200ST77 (111,1)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  FloatK $M34 (300.00)
+  FloatK $M35 (0.00)
+  WordV  $B21
+  WordK  $M36 (1)
+  IPAMB &BA1LU1200ST78 (111,2)
+  WordV  $B22
+  FloatK $M37 (0.00)
+  FloatK $M38 (100.00)
+  FloatV $F5
+  WordV  $B29
+  FloatK $M39 (600.00)
+  FloatK $M40 (0.00)
+  WordV  $B30
+  FloatK $M41 (1.00)
+  FloatK $M42 (0.50)
+  WordV  $B24
+  FloatK $M43 (1.00)
+  FloatK $M44 (0.50)
+  WordV  $B25
+  FloatK $M45 (10.00)
+  FloatK $M46 (1.00)
+  WordV  $B33
+  FloatK $M47 (29.00)
+  FloatK $M48 (2.00)
+  WordV  $B34
+  WordV  $HB1
+  WordV  $B35
+  WordV  $B26
+  FloatK $M49 (30.00)
+  FloatK $M50 (10.00)
+  FloatV $F7
+  FloatK $M51 (0.00)
+  WordK  $M52 (2)
+  FloatK $M53 (2.00)
+  FloatK $M54 (10.00)
+  FloatK $M55 (300.00)
+  FloatK $M56 (0.00)
+  FloatK $M57 (0.00)
+  FloatK $M58 (40.00)
+  FloatK $M59 (0.00)
+  FloatK $M60 (0.00)
+  FloatK $M61 (100.00)
+  FloatV $F8
+  FloatK $M62 (10.00)
+  FloatK $M63 (0.00)
+  WordK  $M64 (2)
+  FloatK $M65 (2.00)
+  FloatK $M66 (10.00)
+  FloatK $M67 (300.00)
+  FloatK $M68 (0.00)
+  FloatK $M69 (0.00)
+  FloatK $M70 (20.00)
+  FloatK $M71 (0.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (100.00)
+  FloatV $F1
+  FloatK $M74 (0.00)
+  FloatV $F2
+  WordV  $B32
+  FloatK $M75 (10.00)
+  FloatV $F6
+  FloatK $M76 (5.00)
+  FloatK $M77 (1.00)
+  WordV  $B31
+  WordV  $B27
+  FloatK $M78 (10.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B28
+  FloatK $M79 (0.00)
+  FloatV $F3
+  FloatK $M80 (0.00)
+  FloatV $F4
+  WordV  $B23
+  WordK  $M81 (1)
+  IPAMB &BA1LU1200ST79 (111,0)
+  WordV  $B38
+  FloatK $M82 (5.00)
+  FloatK $M83 (0.00)
+  WordV  $B39
+  WordV  $B40
+  FloatK $M84 (5.00)
+  FloatK $M85 (0.00)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  FloatK $M86 (5.00)
+  FloatK $M87 (0.00)
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  FloatK $M88 (5.00)
+  FloatK $M89 (0.00)
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  FloatK $M90 (5.00)
+  FloatK $M91 (0.00)
+  WordV  $B50
+  FloatV $F9
+  FloatK $M92 (0.00)
+  FloatK $M93 (1800.00)
+  FloatV $F10
+  WordV  $B53
+  FloatK $M94 (3.00)
+  FloatK $M95 (2.00)
+  WordV  $B56
+  FloatK $M96 (0.00)
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  FloatV $F11
+  FloatK $M97 (172800.00)
+  WordV  $B60
+  FloatK $M98 (300.00)
+  WordV  $B54
+  WordV  $B61
+  WordV  $B55
+  WordV  $B51
+  WordV  $B62
+  WordV  $B52
+  FloatK $M99 (4.00)
+  FloatK $M100 (0.00)
+  WordV  $B63
+  WordK  $M101 (1)
+  IPAMB &BA1LU1200ST81 (111,4)
+  FloatK $M102 (0.00)
+  FloatK $M103 (0.00)
+  FloatK $M104 (100.00)
+  FloatK $M105 (50.00)
+  FloatK $M106 (0.00)
+  FloatV $F12
+  FloatK $M107 (50.00)
+  FloatK $M108 (0.00)
+  FloatK $M109 (100.00)
+  FloatK $M110 (100.00)
+  FloatV $F13
+  FloatK $M111 (0.00)
+  FloatV $F14
+  FloatK $M112 (0.00)
+  FloatV $F15
+  FloatK $M113 (0.00)
+  FloatK $M114 (0.00)
+  FloatV $F16
+  FloatK $M115 (1.00)
+  WordV  $B64
+  FloatK $M116 (300.00)
+  FloatK $M117 (300.00)
+  WordV  $B65
+  FloatV $F17
+  FloatK $M118 (0.00)
+  FloatK $M119 (100.00)
+  FloatK $M120 (100.00)
+  FloatK $M121 (0.00)
+  FloatV $F18
+  FloatK $M122 (0.00)
+  FloatV $F19
+  FloatV $F20
+  WordK  $M123 (1)
+  IPAAW &BA1LU1200AA52 (78)
+  FloatK $M124 (0.00)
+  FloatV $F21
+  WordK  $M125 (1)
+  IPAAW &BA1LU1200AA01 (79)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE :
+  ;--------
+  ;Anlage 12
+  ;STEUERUNG UND REGELUNG
+  ; 
+  ;MODUL - EINBAU - ORT :
+  ;----------------------
+  ;LÜFTUNGSCHALTSCHRANK
+  ;LU12
+  ;Kellergeschoss
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (3,FREIG-AUS-GLT,FREIG-EIN1-GLT,FREIG-EIN2-GLT,
+          $WZERO,&BA1LU1200BF01,ERR01)
+  BEFAUS (1,A16-ABL-RM-AUS,A16-ABL-RM-EIN,$WZERO,$WZERO,
+          &BA1LU1600BM20,ERR02)
+  ;          A12
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (A12-SOLLW-ZULTEM,$M0,&BA1LU1200AA91,MERR01)
+  ANAUS (A12-MIN-AUSSENL,$M1,&BA1LU1200AA55,MERR02)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M2,6,ZPK-OE,FREIG-AUS-GLT,ZPK,FREIG-EIN1-GLT,ZPK,
+          FREIG-EIN2-GLT,ERR03)
+  MELEIN (&BA1LU1200BM10,3,A12-ZUL1-RM-AUS,A12-ZUL1-RM-ST,
+          A12-ZUL1-RM-EIN1,ERR04)
+  MELEIN (&BA1LU1200BM11,3,A12-ZUL2-RM-AUS,A12-ZUL2-RM-ST,
+          A12-ZUL2-RM-EIN1,ERR05)
+  ODR2 (FREIG-EIN2-GLT,FREIG-EIN1-GLT,FREIG-EIN-GLT)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU1200BM20,3,A12-ABL1-RM-AUS,A12-ABL1-RM-ST,
+          A12-ABL1-RM-EIN1,ERR06)
+  MELEIN (&BA1LU1200BM21,3,A12-ABL2-RM-AUS,A12-ABL2-RM-ST,
+          A12-ABL2-RM-EIN1,ERR07)
+  MELEIN (&BA1LU1200BM40,3,A12-VE-RM-AUS,A12-VE-RM-ST,
+          A12-VE-RM-EIN1,ERR08)
+  MELEIN (&M17,4,ZPK,A16-ABL-RM-AUS,A16-ABL-RM-ST,
+          A16-ABL-RM-EIN,ERR09)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1LU0000ST30,5,$HB6,$HB7,$HB8,$HB9,$HB10,ERR10)
+  NICHT ($HB6,PHASENAUSFALL)
+  NICHT ($HB7,STEUER-SPG-220V)
+  NICHT ($HB8,A09-WRG-STÖRUNG)
+  NICHT ($HB9,NOT-AUS)
+  NICHT ($HB10,STEUER-SPG-24V)
+  MELEIN (&BA1LU1200WA11,1,$HB2,ERR11)
+  NICHT ($HB2,A12-REP-ZUL)
+  MELEIN (&BA1LU1200WA21,1,$HB2,ERR12)
+  NICHT ($HB2,A12-REP-ABL)
+  MELEIN (&BA1LU1200AL01,2,$HB3,$HB4,ERR13)
+  NICHT ($HB3,A12-RAUCHMELDER)
+  NICHT ($HB4,A12-FROST)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&BA1LU1200BM15,1,A12-KEIL-BM-ZUL,ERR14)
+  MELEIN (&BA1LU1200BM25,1,A12-KEIL-BM-ABL,ERR15)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU1200MW22,A12-VE-RL-TEMP,MERR3)
+  ANEIN (&BA1LU1200MW03,A12-ZUL-TEMP,MERR4)
+  ANEIN (&BA1LU0900MW01,A12-AUSSEN-TEMP,MERR6)
+  ANEIN (&BA1LU1200MW13,A12-RAUMTEMP.,MERR5)
+  ;A12 Raumtemperatur
+  ; 
+  ;A12 VE- Rücklauftemp
+  ; 
+  ;A12 Zulufttemperatur
+  ; 
+  ;A12 Raumtemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&BA1LU1200AA91,A12-SOLLW-ZULTEM,MERR7)
+  ANEIN (&BA1LU1200AA55,A12-MIN-AUSSENL,MERR8)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  UND11 ($B4,A12-KEIL-BM-ABL,$B1)
+  VVZ ($B1,$M20,$M21,$B2)
+  RSS ($B2,QUITTIERUNG-A12,A12-ABL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M22,1,A12-ABL-KEIL-ST,&BA1LU1200ST83,ERR17)
+  ODR2 (A12-ZUL1-RM-EIN1,A12-ZUL2-RM-EIN1,$B3)
+  ODR2 (A12-ABL1-RM-EIN1,A12-ABL2-RM-EIN1,$B4)
+  ;DiffDruck Zulüfter
+  ; 
+  ;DiffDruck Ablüfter
+  ; 
+  UND11 ($B3,A12-KEIL-BM-ZUL,$B5)
+  VVZ ($B5,$M23,$M24,$B6)
+  RSS ($B6,QUITTIERUNG-A12,A12-ZUL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M25,1,A12-ZUL-KEIL-ST,&BA1LU1200ST82,ERR16)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODRMN (13,A12-ABL-AUTO-ST,A12-ZUL-AUTO-ST,A12-ZUL-KEIL-ST,
+         A12-ABL-KEIL-ST,A12-REP-ABL,A12-REP-ZUL,
+         A12-RAUCHMELDER,A12-FROST,KON00,KON00,KON00,KON00,
+         KON00,0,$B7,$WSCRATCH)
+  RSS ($B7,QUITTIERUNG-A12,SAMMELSTANL12,$WSCRATCH)
+  NICHT (SAMMELSTANL12,$HB0)
+  BEFAUS (1,$HB0,SAMMELSTANL12,$WZERO,$WZERO,&BA1LU0000BF03,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&BA1LU1200BF02,3,Fernquit_a12.aus,PK18,
+          Fernquit_a12.ein,ERR18)
+  MELEIN (&BA1LU0000BM99,1,$B8,$WSCRATCH)
+  ODR2 (Fernquit_a12.ein,$B14,$B9)
+  MOKY ($B9,$M28,QUITTIERUNG-A12)
+  VVZ (QUITTIERUNG-A12,$M29,$M30,$B10)
+  UND11 ($B13,$B10,$B11)
+  RSS ($B11,$B10,$B12,$B13)
+  BEFAUS (1,$B12,$B10,$WZERO,$WZERO,&BA1LU1200BF02,ERR19)
+  ;StörQuitt
+  ;  "Rücksetzen"
+  ; 
+  ;StörQuitt "setzen"
+  ; 
+  ODR2 (TESTSETZ01,$B8,$B14)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UNDMN (1,A12-FREIG-LUFTG,2,A12_ZUL_Hand,$B19,$B15,
+         $WSCRATCH)
+  VVZ ($B15,$M31,$M32,$B16)
+  RSS ($B16,QUITTIERUNG-A12,A12-ZUL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M33,1,A12-ZUL-AUTO-ST,&BA1LU1200ST77,ERR20)
+  ODR2 (A12-ZUL-AUTO-ST,A12-ABL-AUTO-ST,$B17)
+  UNDMN (1,A12-FREIG-LUFTG,2,A12_ABL_Hand,$B20,$B18,
+         $WSCRATCH)
+  ODR2 (A12-ZUL1-RM-EIN1,A12-ZUL2-RM-EIN1,$B19)
+  ODR2 (A12-ABL1-RM-EIN1,A12-ABL2-RM-EIN1,$B20)
+  VVZ ($B18,$M34,$M35,$B21)
+  RSS ($B21,QUITTIERUNG-A12,A12-ABL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M36,1,A12-ABL-AUTO-ST,&BA1LU1200ST78,ERR22)
+  BEFAUS (3,$B17,$WZERO,$WZERO,$WZERO,&BA1LU1200BF01,ERR21)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODRMN (1,A12-FROST,1,KON01,$B22,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B28,$M37,$M38,$F5)
+  MAX (3,$F5,$F4,$F3,A12-Y-FROST)
+  UND11 (FREIG-EIN-GLT,$B25,$B29)
+  VVZ ($B29,$M39,$M40,$B30)
+  VGLEH (A12-ZUL-TEMP,$M41,$M42,$B24)
+  ODR2 ($B30,$B26,A12-FREIG-FROST)
+  VGLEH (A12-VE-RL-TEMP,$M43,$M44,$B25)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (A12-AUSSEN-TEMP,$M45,$M46,$B33)
+  VGLEH (A12-VE-RL-TEMP,$M47,$M48,$B34)
+  NICHT (FREIG-EIN-GLT,$HB1)
+  RSS ($B32,$HB1,$B35,$WSCRATCH)
+  BTRA ($B35,$B26)
+  AWT ($B35,$M49,$M50,$F7)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A12-VE-RL-TEMP,$F7,$WONE,$B33,$M51,$M52,$M53,$M54,
+        $M55,$M56,$M57,$M58,$M59,$M60,$M61,$F8,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A12-ZUL-TEMP,$M62,$WONE,$WZERO,$M63,$M64,$M65,$M66,
+        $M67,$M68,$M69,$M70,$M71,$M72,$M73,$F1,$WSCRATCH)
+  AWT ($B33,$F8,$M74,$F2)
+  ;Version 2.0
+  ; 
+  ODR2 ($B34,$B33,$B32)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B25,$M75,A12-VE-RL-TEMP,$F6)
+  VGLEH ($F6,$M76,$M77,$HB3)
+  NICHT ($HB3,$B31)
+  ODR2 ($B31,$B22,$B27)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIERUNG-A12,$M78,$B36)
+  UND11 ($B36,$B27,$B37)
+  RSS ($B27,$B37,$B28,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B28,A12-FROST-ST)
+  AWT ($B25,$M79,$F2,$F3)
+  AWT ($B24,$M80,$F1,$F4)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (1,A12-FREIG-FROST,6,A12-ZUL-KEIL-ST,A12-ABL-KEIL-ST,
+         ABSCHALT-BRAND,A12-ZUL1-RM-ST,A12-ABL1-RM-ST,KON00,
+         $B23,$WSCRATCH)
+  SETMEL ($M81,1,A12-FROST-ST,&BA1LU1200ST79,ERR23)
+  ;Programmstörung
+  ;Frost/ Meldung
+  ;an GLT
+  ;q
+  ; 
+  UNDMN (1,$B23,4,KON00,A12-RAUCHMELDER,A12-FROST-ST,
+         SAMMELSTANL12,A12-FREIG-LU-EIN,A12-FREIG-LU-AUS)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;Ansteuerung AbsperrKl.
+  ;Anlage 12
+  ;Zuluft/Abluftklappe
+  ; 
+  ;Freigabe der Anlage
+  ;wenn Klappen geöffnet
+  ;sind
+  ; 
+  UNDMN (2,A12-FREIG-LU-EIN,KON01,0,$B38,A12-ANLAGE-AUS)
+  VVZ ($B38,$M82,$M83,A12-ANLAGE-EIN1)
+  ;Keine Absperrklappen
+  ;die separat angesteuert
+  ;werden, Befehl von DDC
+  ;fehlt. Zuluftklappe wird
+  ;über Zuluftvent.
+  ;angesteuert
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  UNDMN (2,A12-ANLAGE-EIN1,FREIG-EIN1-GLT,1,A12-ZUL2-RM-EIN1,
+         $B39,$B40)
+  VVZ ($B39,$M84,$M85,$B41)
+  BEFAUS (1,$B40,$B41,$WZERO,$WZERO,&BA1LU1200BM10,ERR24)
+  UNDMN (2,A12-ANLAGE-EIN1,FREIG-EIN2-GLT,1,A12-ZUL1-RM-EIN1,
+         $B42,$B43)
+  VVZ ($B42,$M86,$M87,$B44)
+  BEFAUS (1,$B43,$B44,$WZERO,$WZERO,&BA1LU1200BM11,ERR25)
+  ODR2 (A12-ZUL1-RM-EIN1,A12-ZUL2-RM-EIN1,A12-FREIG-LUFTG)
+  ;A12 Zuluft 1 Stufe ein
+  ; 
+  ;A12 Zuluft 2 Stufe ein
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UNDMN (3,A12-ANLAGE-EIN1,FREIG-EIN1-GLT,A12-ZUL1-RM-EIN1,1,
+         A12-ABL2-RM-EIN1,$B45,$B46)
+  VVZ ($B45,$M88,$M89,$B47)
+  BEFAUS (1,$B46,$B47,$WZERO,$WZERO,&BA1LU1200BM20,ERR26)
+  UNDMN (3,A12-ANLAGE-EIN1,FREIG-EIN2-GLT,A12-ZUL2-RM-EIN1,1,
+         A12-ABL1-RM-EIN1,$B48,$B49)
+  VVZ ($B48,$M90,$M91,$B50)
+  BEFAUS (1,$B49,$B50,$WZERO,$WZERO,&BA1LU1200BM21,ERR27)
+  ;A12 Abluft 1 Stufe ein
+  ; 
+  ;A12 Abluft 2 Stufe ein
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MAX (2,A12-STELL-VORERH,A12-Y-FROST,$F9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M92,$M93,$F10)
+  MOKY (KON01,$F10,$B53)
+  VGLEH ($F9,$M94,$M95,$B56)
+  VVZ ($B56,$M96,$F10,$B57)
+  UND2 (KON01,$B57,$B58)
+  ODR2 (A12-VE-RM-ST,$B55,$B59)
+  NICHT ($B59,$HB0)
+  UHR ($HB0,$B59,$F11)
+  VGLOH ($F11,$M97,$B60)
+  MOKY ($B60,$M98,$B54)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (4,$B53,$B58,A12-FROST,$B54,0,$B61,$WSCRATCH)
+  UND11 ($B61,A12-VE-RM-ST,$B55)
+  BTRA ($B55,$B51)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 ($B51,A12-VE-RM-EIN1,$B62)
+  RSS ($B63,QUITTIERUNG-A12,$B52,$WSCRATCH)
+  VVZ ($B62,$M99,$M100,$B63)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;FREIG-VE-PUMPE
+  ; 
+  NICHT ($B51,$HB0)
+  BEFAUS (1,$HB0,$B51,$WZERO,$WZERO,&BA1LU1200BM40,ERR29)
+  SETMEL ($M101,1,$B52,&BA1LU1200ST81,ERR28)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ENDE 
+  TASK (4,CYCL,1000)
+  REGLER (3,KON01,KON00,$M102,Y-SIGNAL-ZUL-REG,ERR30)
+  ;Zulufttemp.
+  ;Regelung Anl.12
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  FKG (Y-SIGNAL-ZUL-REG,4,$M103,$M104,$M105,$M106,$F12)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M107,$M108,$M109,$M110,$F13)
+  AWT (A12-FREIG-LUFTG,$M111,$F12,$F14)
+  AWT (A12-FREIG-LUFTG,$M112,$F13,$F15)
+  ;REGELUNG Zulufttemp.
+  ;nur Klappen/Vorerhitzer
+  ;Anlage 12
+  ; 
+  AWT ($WZERO,$F14,$M113,A12-SIG-KLAPPEN)
+  AWT ($WZERO,$F15,$M114,A12-SIG-VORH-ZUL)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ADD2 (A12-RAUMTEMP.,FKON2G,$F16)
+  VGLEH (A12-AUSSEN-TEMP,$F16,$M115,$B64)
+  VVZ ($B64,$M116,$M117,$B65)
+  AWT ($B65,A12-SIG-KLAPPEN,$F18,$F17)
+  FKG (A12-SIG-KLAPPEN,4,$M118,$M119,$M120,$M121,$F18)
+  AWT (A12-FREIG-LUFTG,$M122,$F20,$F19)
+  MAX (2,$F17,A12-MIN-AUSSENL,$F20)
+  ANAUS ($F19,$M123,&BA1LU1200AA52,MERR09)
+  ;Ansteuerung Klappen
+  ;wenn Aussen>Raum
+  ;dann Wirksinnumschaltung
+  ; 
+  ;100= 100AUSSEN
+  ;0=100Umluft
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  AWT (A12-FREIG-LUFTG,$M124,A12-SIG-VORH-ZUL,$F21)
+  MAX (2,$F21,A12-Y-FROST,A12-STELL-VORERH)
+  ANAUS (A12-STELL-VORERH,$M125,&BA1LU1200AA01,MERR10)
+  ;VORERHITZER
+  ; 
+  ENDE 
+  ENDMODUL 

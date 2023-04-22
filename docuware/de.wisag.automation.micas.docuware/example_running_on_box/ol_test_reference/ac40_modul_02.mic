@@ -1,0 +1,39 @@
+MODUL (AC40,2)
+  WordK $WZERO (0)
+  IPAMW &0002-003-00-C-MW (3)
+  IPAMB &0002-001-01-C-1D (1,1)
+  FloatV $M0
+  FloatK tempGrenze (25.00)
+  WordV $M1
+  WordV $M2
+  WordV $M3
+  WordV $M4
+  WordV $M5
+  WordV $M6
+  WordV $out-anein-0-error
+  WordV $out-befaus-1-error
+  WordV $out-melein-2-meldepunkt
+  WordV $out-melein-3-meldepunkt
+  WordV $out-melein-4-meldepunkt
+  WordV $out-melein-5-meldepunkt
+  WordV $out-melein-6-error
+ ;name : Task_init
+ TASK (1,init)
+ ENDE 
+ ;name : Task_run_1
+ TASK (2,cycl,1000)
+ ;Page 1 Title : wes net
+  ;prio : 1 
+  ANEIN (&0002-003-00-C-MW,$M0,$out-anein-0-error)
+  ;prio : 2 
+  BEFAUS (1,$M2,$M1,$WZERO,$WZERO,&0002-001-01-C-1D,$out-befaus-1-error)
+  ;prio : 3 
+  VGLOH ($M0,tempGrenze,$M2)
+  ;prio : 4 
+  NICHT ($M2,$M1)
+  ;prio : 5 
+  MELEIN (&0002-001-01-C-1D,8,$M3,$M4,$M5,$M6,$out-melein-2-meldepunkt,
+   $out-melein-3-meldepunkt,$out-melein-4-meldepunkt,$out-melein-5-meldepunkt,
+   $out-melein-6-error)
+ ENDE 
+ENDMODUL

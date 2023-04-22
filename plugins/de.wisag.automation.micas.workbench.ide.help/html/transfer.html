@@ -1,0 +1,469 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<div id="logo">MICAS Workbench</div>
+
+<hr>
+
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Transfer-Bausteine</h1>
+
+<p>
+ <a href="#ANAUS" title="Ausgabe Analogwert (AS, MWf)">ANAUS</a>&nbsp;
+ <a href="#ANEIN" title="Einlesen Analogwerte (MW, AS)">ANEIN</a>&nbsp;
+ <a href="#BEFAUS" title="Ausgabe Schaltbefehle (xF)">BEFAUS</a>&nbsp;
+ <a href="#DSTAUS" title="Ausgabe Dreipunkststellbefehl (SA)">DSTAUS</a>&nbsp;
+ <a href="#MELEIN" title="Einlesen Meldungen (BM,AL,GF,ST,GO,GU,WA,OE,R0,R1,R2,R3)">MELEIN</a>&nbsp;
+ <a href="#SETMEL" title="Ausgabe fiktive Meldungen">SETMEL</a>&nbsp;
+ <a href="#ZWAUS" title="Fiktiven Z&auml;hlwert setzen/ausgeben">ZWAUS</a>&nbsp;
+ <a href="#ZWEIN" title="Einlesen Z&auml;hlwert">ZWEIN</a>&nbsp;
+</p>
+<br>
+
+<h2><a name="ANAUS">ANAUS</a> - Ausgabe von Analogsignalen (AS, 0-10V Signal) oder fiktiven Messwerten (MO,MF)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein schreibt einen Analogwert oder fiktiven Me&szlig;wert in die durch die
+PA-Adresse (IPADR) adressierte Zeile der Proze&szlig;-Datenbank.
+</p>
+<p>Ist beim Lesen des Datenpunktes ein Fehler aufgetreten, wird der Errorhandler
+aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+<br>Der Baustein schreibt nur dann einen Analogwert in die Proze&szlig;-Datenbank,
+wenn am Eingang "Enable" eine 1 anliegt.
+</p>
+<p>Am Ausgang FG-ADR wird im Online-Test der Name des Signals (FG-Adresse) durch den
+aktuellen Wert &uuml;berschrieben.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Ausgabewert</td>
+   <td>Float</td>
+   <td>Auszugebender Analogwert</td>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Freigabe-Signal (Enable)</td>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE)</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ANEIN">ANEIN</a> - Einlesen von Messwerten und Analogen Stellbefehlen (MO,MF,AS)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein liest einen Me&szlig;wert oder einen Analogwert aus der Proze&szlig;-
+Datenbank ein. Der eingelesene Wert wird auf den Ausgang Xa geschrieben.
+</p>
+<p>Wird beim Einlesen des Datenpunktes ein Fehler entdeckt, wird der Errorhandler
+aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+</p>
+<p>Am Eingang FG-ADR wird im Online-Test der Name des Signals durch den
+aktuellen Wert &uuml;berschrieben
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE)</td>
+  </tr>
+  <tr align="center">
+   <td>Ausgabewert Xa</td>
+   <td>Float</td>
+   <td>Eingelesener Analogwert</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="BEFAUS">BEFAUS</a> - Ausgabe von ein- bis dreistufigen Schaltbefehlen (1F,2F,3F)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein gibt einen ein- bis dreistufigen Schaltbefehl auf den
+durch PA-ADR (IP-Adresse) adressierten Datenpunkt aus.
+</p>
+<p>Der Befehl wird so lange ausgegeben, bis die Quittierung des Befehls erfolgt
+ist. Ein nicht quittierter Befehl wird mit einer im System fest projektierten Zeit
+wiederholt.
+</p>
+<p>Ist beim Lesen des Datenpunktes ein Fehler aufgetreten, wird der
+Errorhandler aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+</p>
+<p>Im Online-Test wird dem Ausgang FG-ADR der logische Zustand des durch
+die IP-Adresse angegebenen Bits R0 zugeordnet. Zus&auml;tzlich wird im Baustein
+unterhalb des Feldes FG-ADR der aktuelle Schaltzustand als Ziffer 0, 1, 2 oder
+3 eingeblendet.
+</p>
+<p>Die Schaltzust&auml;nde an den Eing&auml;ngen AUS, EIN1, EIN2 und EIN3 m&uuml;ssen mit eindeutigen Signalflanken
+(0 -&gt; 1 - Wechsel) angesteuert werden, damit der Baustein den Schaltbefehl setzt. Liegt mehr als ein
+Eingang auf 1-Signal, erfolgt keine Ausgabe.</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>AUS</td>
+   <td>Word</td>
+   <td>Schaltzustand AUS</td>
+  </tr>
+  <tr align="center">
+   <td>EIN1</td>
+   <td>Word</td>
+   <td>Schaltzustand EIN1</td>
+  </tr>
+  <tr align="center">
+   <td>EIN2</td>
+   <td>Word</td>
+   <td>Schaltzustand EIN2</td>
+  </tr>
+  <tr align="center">
+   <td>EIN3</td>
+   <td>Word</td>
+   <td>Schaltzustand EIN3</td>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE)</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="DSTAUS">DSTAUS</a> - Ausgabe von Dreipunkt-Stellbefehlen (SA)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein gibt einen 3-Punkt-Stellbefehl aus, d. h. er gibt solange einen
+Schaltbefehl auf PA-ADR digital (IPAMB) zum Verstellen in Richtung AUF oder ZU aus,
+bis der &uuml;ber den Eingang PA-ADR-analog (IPAMW) eingelesene Wert dem Stellungs-Sollwert Xe entspricht.
+</p>
+<p>Erreicht der Stellungs-Istwert innerhalb der &uuml;ber den Eingang "Ausf&uuml;hrKontrollzeit" vorgegebenen
+Zeit nicht den Stellungs-Sollwert Xe, so wird der Ausgang "Error" auf 1 gesetzt und die Befehlsausgabe
+abgebrochen.
+</p>
+<p>Ein Dreipunkt-Stellbefehl wird nur ausgegeben, wenn am Eingang "Enable" eine 1 anliegt.
+</p>
+<p>Im Online-Test wird am Ausgang FG-ADR anstelle des Signal-Namens der
+&uuml;ber die IP-Adresse IPAMW erfa&szlig;te aktuelle Stellungs-Me&szlig;wert eingeblendet.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Einzustellender Sollwert</td>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Freigabe-Signal (Enable)</td>
+  </tr>
+  <tr align="center">
+   <td>Ausfuehrkontrollzeit</td>
+   <td>Float</td>
+   <td>Ausf&uuml;hrkontrollzeit in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR analog</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE)<br> Stellungsr&uuml;ckf&uuml;hrung</td>
+  <tr align="center">
+   <td>PA-ADR digital</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE,SP)<br> Stellbefehl Kleiner / Gr&ouml;&szlig;er</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MELEIN">MELEIN</a> - Einlesen von digitalen Eing&auml;ngen (BM,AL,GF,ST,GO,GU,WA,OE,R0,R1,R2,R3)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein liest den Zustand von 1 bis maximal 8 aufeinanderfolgenden Meldebits
+aus der Proze&szlig;-Datenbank und schreibt die Meldezust&auml;nde in die Ausgangsvariablen.
+<br>Ist das entsprechende Meldebit im Prozessabbild = 1 wird die
+entsprechende Ausgangsvariable auf 1 gesetzt, ansonsten auf 0.
+</p>
+<p>Ist beim Lesen eines Meldepunktes ein Fehler aufgetreten, wird der Errorhandler
+aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+</p>
+<p>Im Online-Test wird einer angeschlossenen (an den linken Blattrand herausgef&uuml;hrten)
+FG-Adresse derselbe logische Zustand zugeordnet, den das zugeh&ouml;rige Meldebit f&uuml;hrt.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR analog</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE,SP)<br> des ersten Bits</td>
+  </tr>
+  <tr align="center">
+   <td>Meldepunkt 1</td>
+   <td>Word</td>
+   <td>Ausgangswert Bit 1</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>Meldepunkt 8</td>
+   <td>Word</td>
+   <td>Ausgangswert Bit 8</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="SETMEL">SETMEL</a> - Setzen fiktiver Meldungen (BM,AL,GF,ST,GO,GU,WA,OE,R0,R1,R2,R3)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein kann bis zu 8 aufeinanderfolgende fiktive Meldepunkte auf 1
+oder 0 setzen, wobei die an den Eing&auml;ngen liegenden bin&auml;r Zust&auml;nde ab
+derjenigen Bitstelle in diejenige Zeile der Proze&szlig;-Datenbank geschrieben
+werden, die durch die PA-ADR (IP-Adresse) vorgegeben wird.
+<br>Die Anzahl der zu ver&auml;ndernden Bits mu&szlig; immer kleiner gleich 8 sein.
+<br>Die Ausgabe erfolgt, wenn der Eingang "Enable" auf 1 gesetzt ist.
+</p>
+<p>Im Online-Test wird einer angeschlossenen, d. h. an den linken Blattrand
+herausgef&uuml;hrten FG-Adresse derselbe logische Zustand zugeordnet, den das
+zugeh&ouml;rige Meldebit einnimmt.
+</p>
+<p>Tritt beim Setzen eines Meldebits ein Fehler auf, so wird der Ausgang "Error" auf
+1 gesetzt.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Freigabe-Signal (Enable)</td>
+  </tr>
+  <tr align="center">
+   <td>M 1</td>
+   <td>Word</td>
+   <td>Auszugebendes Meldebit 1</td>
+  </tr>
+  <tr align="center">
+   <td>:</td>
+   <td>:</td>
+   <td>:</td>
+  </tr>
+  <tr align="center">
+   <td>M 8</td>
+   <td>Word</td>
+   <td>Auszugebendes Meldebit 8</td>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE,SP)<br> erstes Bit</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ZWAUS">ZWAUS</a> - Fiktiven Z&auml;hlwert setzen/ausgeben (ZO,ZF)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein ZWAUS ist ein Vorw&auml;rtsz&auml;hler, dessen Z&auml;hlerstand in eine
+fiktive Z&auml;hlwertzeile der Proze&szlig;-Datenbank geschrieben werden kann. Ein
+Schreiben in eine reale Z&auml;hlwertzeile ist unzul&auml;ssig und wird als Fehler
+gemeldet. Der Baustein kennt zwei Modi, welche &uuml;ber den Eingang MODE
+eingestellt werden k&ouml;nnen:
+<ul>
+<li>MODE = 1 ist Setzmode</li>
+<li>MODE = 0 ist Z&auml;hlmode</li>
+</ul>
+Im Setzmode wird die durch die PA-ADR (IP-Adresse IPAZW) adressierte fiktive
+Z&auml;hlwertzeile auf den Setzwert SW gesetzt.<br>
+Im Z&auml;hlmode wird die durch die PA-ADR (IP-Adresse IPAZW) adressierte Z&auml;hlwertzeile
+pro Task-Zyklus um den am Eingang "Delta" vorgegebenen Wert erh&ouml;ht. Der
+Befehl wird so lange ausgegeben, bis die Quittierung des Befehls erfolgt ist.
+</p>
+<p>Ist beim Schreiben des Datenpunktes ein Fehler aufgetreten, wird der
+Errorhandler aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+</p>
+<p>Setzen und Z&auml;hlen erfolgt nur, wenn am Eingang "Enable" eine 1 anliegt.<br>
+Im Online-Test wird am Ausgang FG-ADR anstelle des Signalnamens (FG-Adresse)
+der aktuelle Z&auml;hlwert eingeblendet.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Freigabe-Signal (Enable)</td>
+  </tr>
+  <tr align="center">
+   <td>Delta</td>
+   <td>Float</td>
+   <td>Wert, um den der Z&auml;hler erh&ouml;ht werden soll</td>
+  </tr>
+  <tr align="center">
+   <td>Mode</td>
+   <td>Word</td>
+   <td>Einstellung f&uuml;r Setzmodus (=1) bzw. Z&auml;hlmodus (=0)</td>
+  </tr>
+  <tr align="center">
+   <td>Setzwert</td>
+   <td>Float</td>
+   <td>Anfangswert im Modus Setzen</td>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE,SP)<br> erstes Bit</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ZWEIN">ZWEIN</a> - Einlesen eines Z&auml;hlwertes (ZO,ZF)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein liest einen realen oder fiktiven Z&auml;hlwert aus der Proze&szlig;-
+Datenbank ein und schreibt ihn auf den Ausgang Xa.
+</p>
+<p>Wird beim Lesen des Datenpunktes ein Fehler entdeckt, wird der Errorhandler
+aufgerufen und der Ausgang "Error" auf 1 gesetzt.
+</p>
+<p>Im Online-Test wird am Eingang FG-ADR anstelle des Signalnamens (FGAdresse)
+der aktuelle Z&auml;hlerstand eingeblendet.
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>PA-ADR</td>
+   <td>Referenz</td>
+   <td>Prozessabbildadresse (ZE,SP)<br> erstes Bit</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Eingelesener Z&auml;hlwert</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+<br>
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+
+ </body>
+</html>

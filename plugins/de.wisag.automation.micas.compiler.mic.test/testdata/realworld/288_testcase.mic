@@ -1,0 +1,131 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AC4100.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 8
+  ;*** Modul Typ      : AC40
+  ;*** Feldbus Nummer : 10
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  Bel_BF02_AUS (0)
+  WordK  Bel_BF02_EIN1 (1)
+  WordK  Bel_BF04_EIN1 (1)
+  WordK  Bel_BF04_AUS (0)
+  WordK  Bel_BF06_AUS (0)
+  WordK  Bel_BF06_EIN1 (1)
+  WordK  Bel_BF07_AUS (0)
+  WordK  Bel_BF07_EIN1 (1)
+  WordV  ERR33-13
+  WordK  Bel_BF08_AUS (0)
+  WordK  Bel_BF08_EIN1 (1)
+  WordV  ERR33-09
+  WordV  ERR33-05
+  WordV  ERR32-09
+  WordV  ERR32-13
+  WordK  Bel_BF01_AUS (0)
+  WordK  Bel_BF01_EIN1 (1)
+  WordV  ERR32-01
+  WordV  ZPK
+  WordV  ERR32-05
+  WordK  Bel_BF03_AUS (0)
+  WordK  Bel_BF03_EIN1 (1)
+  WordK  Bel_BF05_AUS (0)
+  WordK  Bel_BF05_EIN1 (1)
+  WordV  ERR33-01
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &01C-SH001-017 (32,1)
+  IPAMB &01C-SH001-018 (32,5)
+  IPAMB &01C-SH001-019 (33,1)
+  IPAMB &01C-SH001-020 (33,5)
+  IPAMB &01C-SH001-021 (32,9)
+  IPAMB &01C-SH001-022 (32,13)
+  IPAMB &01C-SH001-023 (33,9)
+  IPAMB &01C-SH001-024 (33,13)
+  IPAMB &M0 (32,0)
+  IPAMB &M1 (32,2)
+  IPAMB &M2 (32,3)
+  IPAMB &M3 (32,4)
+  IPAMB &M4 (32,6)
+  IPAMB &M5 (32,7)
+  IPAMB &M6 (33,0)
+  IPAMB &M7 (33,2)
+  IPAMB &M8 (33,3)
+  IPAMB &M9 (33,4)
+  IPAMB &M10 (33,6)
+  IPAMB &M11 (33,7)
+  IPAMB &M12 (32,8)
+  IPAMB &M13 (32,10)
+  IPAMB &M14 (32,11)
+  IPAMB &M15 (32,12)
+  IPAMB &M16 (32,14)
+  IPAMB &M17 (32,15)
+  IPAMB &M18 (33,8)
+  IPAMB &M19 (33,10)
+  IPAMB &M20 (33,11)
+  IPAMB &M21 (33,12)
+  IPAMB &M22 (33,14)
+  IPAMB &M23 (33,15)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 8
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,Bel_BF01_AUS,Bel_BF01_EIN1,$WZERO,$WZERO,
+          &01C-SH001-017,ERR32-01)
+  BEFAUS (1,Bel_BF02_AUS,Bel_BF02_EIN1,$WZERO,$WZERO,
+          &01C-SH001-018,ERR32-05)
+  BEFAUS (1,Bel_BF03_AUS,Bel_BF03_EIN1,$WZERO,$WZERO,
+          &01C-SH001-019,ERR33-01)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,Bel_BF04_AUS,Bel_BF04_EIN1,$WZERO,$WZERO,
+          &01C-SH001-020,ERR33-05)
+  BEFAUS (1,Bel_BF05_AUS,Bel_BF05_EIN1,$WZERO,$WZERO,
+          &01C-SH001-021,ERR32-09)
+  BEFAUS (1,Bel_BF06_AUS,Bel_BF06_EIN1,$WZERO,$WZERO,
+          &01C-SH001-022,ERR32-13)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,Bel_BF07_AUS,Bel_BF07_EIN1,$WZERO,$WZERO,
+          &01C-SH001-023,ERR33-09)
+  BEFAUS (1,Bel_BF08_AUS,Bel_BF08_EIN1,$WZERO,$WZERO,
+          &01C-SH001-024,ERR33-13)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&M0,4,ZPK,Bel_BF01_AUS,ZPK,Bel_BF01_EIN1,ERR32-01)
+  MELEIN (&M3,4,ZPK,Bel_BF02_AUS,ZPK,Bel_BF02_EIN1,ERR32-05)
+  MELEIN (&M6,4,ZPK,Bel_BF03_AUS,ZPK,Bel_BF03_EIN1,ERR33-01)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&M9,4,ZPK,Bel_BF04_AUS,ZPK,Bel_BF04_EIN1,ERR33-05)
+  MELEIN (&M12,4,ZPK,Bel_BF05_AUS,ZPK,Bel_BF05_EIN1,ERR32-09)
+  MELEIN (&M15,4,ZPK,Bel_BF06_AUS,ZPK,Bel_BF06_EIN1,ERR32-13)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&M18,4,ZPK,Bel_BF07_AUS,ZPK,Bel_BF07_EIN1,ERR33-09)
+  MELEIN (&M21,4,ZPK,Bel_BF08_AUS,ZPK,Bel_BF08_EIN1,ERR33-13)
+  ENDE 
+  ENDMODUL 

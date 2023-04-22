@@ -1,0 +1,175 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : CAN_DO.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 0
+  ;*** Modul Typ      : AC40
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (AC40,2)
+  FloatK TV_001 (100.00)
+  FloatK TP_001 (20.00)
+  FloatK TV_002 (100.00)
+  WordV  DO_01_01
+  FloatK TV_003 (100.00)
+  FloatK TP_003 (20.00)
+  FloatK TV_004 (100.00)
+  FloatK TP_004 (20.00)
+  FloatK TV_005 (100.00)
+  FloatK TP_005 (20.00)
+  FloatK TP_002 (20.00)
+  WordV  DO_01_05
+  WordV  DO_01_09
+  WordV  DO_01_15
+  WordV  DO_02_01
+  WordV  DO_02_05
+  WordV  DO_02_09
+  WordV  DO_02_15
+  WordV  DO_03_01
+  WordV  DO_03_05
+  WordV  DO_03_09
+  WordV  DO_03_15
+  WordV  DO_04_01
+  WordV  DO_04_05
+  WordV  DO_04_09
+  WordV  DO_04_15
+  WordV  DO_05_01
+  WordV  DO_05_05
+  WordV  DO_05_09
+  WordV  DO_05_15
+  WordV  $B1
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (0,1)
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &M1 (0,5)
+  WordV  $B3
+  IPAMB &M2 (0,9)
+  WordV  $B4
+  IPAMB &M3 (0,13)
+  WordV  $B5
+  IPAMB &M4 (1,1)
+  WordV  $B6
+  IPAMB &M5 (1,5)
+  WordV  $B7
+  IPAMB &M6 (1,9)
+  WordV  $B8
+  IPAMB &M7 (1,13)
+  WordV  $B9
+  IPAMB &M8 (2,1)
+  WordV  $B10
+  IPAMB &M9 (2,5)
+  WordV  $B11
+  IPAMB &M10 (2,9)
+  WordV  $B12
+  IPAMB &M11 (2,13)
+  WordV  $B13
+  IPAMB &M12 (3,1)
+  WordV  $B14
+  IPAMB &M13 (3,5)
+  WordV  $B15
+  IPAMB &M14 (3,9)
+  WordV  $B16
+  IPAMB &M15 (3,13)
+  WordV  $B17
+  IPAMB &M16 (4,1)
+  WordV  $B18
+  IPAMB &M17 (4,5)
+  WordV  $B19
+  IPAMB &M18 (4,9)
+  WordV  $B20
+  IPAMB &M19 (4,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  PDM (TV_001,TP_001,DO_01_15)
+  BTRA (DO_01_15,DO_01_01)
+  BTRA (DO_01_15,DO_01_05)
+  BTRA (DO_01_15,DO_01_09)
+  PDM (TV_002,TP_002,DO_02_15)
+  BTRA (DO_02_15,DO_02_01)
+  BTRA (DO_02_15,DO_02_05)
+  BTRA (DO_02_15,DO_02_09)
+  PDM (TV_003,TP_003,DO_03_15)
+  BTRA (DO_03_15,DO_03_01)
+  BTRA (DO_03_15,DO_03_05)
+  BTRA (DO_03_15,DO_03_09)
+  PDM (TV_004,TP_004,DO_04_15)
+  BTRA (DO_04_15,DO_04_01)
+  BTRA (DO_04_15,DO_04_05)
+  BTRA (DO_04_15,DO_04_09)
+  PDM (TV_005,TP_005,DO_05_15)
+  BTRA (DO_05_15,DO_05_01)
+  BTRA (DO_05_15,DO_05_05)
+  BTRA (DO_05_15,DO_05_09)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  NICHT (DO_01_01,$B1)
+  BEFAUS (1,$B1,DO_01_01,$WZERO,$WZERO,&M0,$WSCRATCH)
+  NICHT (DO_01_05,$B2)
+  BEFAUS (1,$B2,DO_01_05,$WZERO,$WZERO,&M1,$WSCRATCH)
+  NICHT (DO_01_09,$B3)
+  BEFAUS (1,$B3,DO_01_09,$WZERO,$WZERO,&M2,$WSCRATCH)
+  NICHT (DO_01_15,$B4)
+  BEFAUS (1,$B4,DO_01_15,$WZERO,$WZERO,&M3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT (DO_02_01,$B5)
+  BEFAUS (1,$B5,DO_02_01,$WZERO,$WZERO,&M4,$WSCRATCH)
+  NICHT (DO_02_05,$B6)
+  BEFAUS (1,$B6,DO_02_05,$WZERO,$WZERO,&M5,$WSCRATCH)
+  NICHT (DO_02_09,$B7)
+  BEFAUS (1,$B7,DO_02_09,$WZERO,$WZERO,&M6,$WSCRATCH)
+  NICHT (DO_02_15,$B8)
+  BEFAUS (1,$B8,DO_02_15,$WZERO,$WZERO,&M7,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  NICHT (DO_03_01,$B9)
+  BEFAUS (1,$B9,DO_03_01,$WZERO,$WZERO,&M8,$WSCRATCH)
+  NICHT (DO_03_05,$B10)
+  BEFAUS (1,$B10,DO_03_05,$WZERO,$WZERO,&M9,$WSCRATCH)
+  NICHT (DO_03_09,$B11)
+  BEFAUS (1,$B11,DO_03_09,$WZERO,$WZERO,&M10,$WSCRATCH)
+  NICHT (DO_03_15,$B12)
+  BEFAUS (1,$B12,DO_03_15,$WZERO,$WZERO,&M11,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  NICHT (DO_04_01,$B13)
+  BEFAUS (1,$B13,DO_04_01,$WZERO,$WZERO,&M12,$WSCRATCH)
+  NICHT (DO_04_05,$B14)
+  BEFAUS (1,$B14,DO_04_05,$WZERO,$WZERO,&M13,$WSCRATCH)
+  NICHT (DO_04_09,$B15)
+  BEFAUS (1,$B15,DO_04_09,$WZERO,$WZERO,&M14,$WSCRATCH)
+  NICHT (DO_04_15,$B16)
+  BEFAUS (1,$B16,DO_04_15,$WZERO,$WZERO,&M15,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT (DO_05_01,$B17)
+  BEFAUS (1,$B17,DO_05_01,$WZERO,$WZERO,&M16,$WSCRATCH)
+  NICHT (DO_05_05,$B18)
+  BEFAUS (1,$B18,DO_05_05,$WZERO,$WZERO,&M17,$WSCRATCH)
+  NICHT (DO_05_09,$B19)
+  BEFAUS (1,$B19,DO_05_09,$WZERO,$WZERO,&M18,$WSCRATCH)
+  NICHT (DO_05_15,$B20)
+  BEFAUS (1,$B20,DO_05_15,$WZERO,$WZERO,&M19,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 
+*** Warnung 3 in Zeile 173:	Parameter "$WONE" nicht benutzt!
+  ENDMODUL 

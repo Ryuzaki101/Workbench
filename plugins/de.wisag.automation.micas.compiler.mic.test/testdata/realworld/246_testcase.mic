@@ -1,0 +1,158 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0502.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-GE-ANL-WT1-EIN (1)
+  WordK  K-GE-ANL-WT2-AUS (0)
+  WordK  K-GE-ANL-WT3-EIN (1)
+  WordK  K-GE-ANL-WT2-EIN (1)
+  WordK  K-GE-ANL-WT3-AUS (0)
+  WordK  K-GE-ANL-WT1-AUS (0)
+  WordK  K-GE-ANL-NO-AUS (0)
+  WordK  K-GE-ANL-NO-EIN (1)
+  WordK  K-GE-ANL-SW-AUS (0)
+  WordK  K-GE-ANL-SW-EIN (1)
+  WordK  K-GE-ANL-EDV-AUS (0)
+  WordK  K-GE-ANL-EDV-EIN (1)
+  WordK  K-GE-ANL-NE-AUS (0)
+  WordK  K-GE-ANL-NE-EIN (1)
+  WordK  K-GE-ANL-5OG-AUS (0)
+  WordK  K-GE-ANL-5OG-EIN (1)
+  WordK  K-GE-ANL-1UG-AUS (0)
+  WordK  K-GE-ANL-1UG-EIN (1)
+  WordK  K-GE-ANL-2UG-AUS (0)
+  WordK  K-GE-ANL-2UG-EIN (1)
+  FloatK K-SW-VL-TEMP-WRG (46.00)
+  FloatK K-SW-DIFF-DR-NE (200.00)
+  FloatK K-SW-DIFF-DR-WT2 (300.00)
+  FloatK K-SW-DIFF-DR-WT1 (300.00)
+  FloatK K-SW-DIFF-DR-1UG (500.00)
+  FloatK K-SW-DIFF-DR-WT3 (600.00)
+  FloatK K-SW-DIFF-DR-NO (350.00)
+  FloatK K-SW-DIFF-DR-SW (350.00)
+  FloatK K-SW-DIFF-DR-EDV (200.00)
+  FloatK K-SW-DIFF-DR-2UG (350.00)
+  FloatK K-SW-AUSSEN-ABSC (18.00)
+  FloatK K-SW-DIFF-DR-5OG (550.00)
+  FloatK K-SW-VL-TEMP-ERH (42.00)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1HZ0001BF90 (104,1)
+  IPAMB &BA1HZ0002BF90 (104,5)
+  IPAMB &BA1HZ0003BF90 (104,9)
+  IPAMB &BA1HZ0100BF90 (104,13)
+  IPAMB &BA1HZ0200BF90 (105,1)
+  IPAMB &BA1HZ0300BF90 (105,5)
+  IPAMB &BA1HZ0400BF90 (105,9)
+  IPAMB &BA1HZ0500BF90 (105,13)
+  IPAMB &BA1HZ0600BF90 (106,1)
+  IPAMB &BA1HZ0700BF90 (106,5)
+  WordK  $M0 (1)
+  IPAAW &BA1HZ0000AA99 (121)
+  WordK  $M1 (1)
+  IPAAW &BA1HZ0400AA90 (110)
+  WordK  $M2 (1)
+  IPAAW &BA1HZ0500AA90 (111)
+  WordK  $M3 (1)
+  IPAAW &BA1HZ0100AA90 (101)
+  WordK  $M4 (1)
+  IPAAW &BA1HZ0003AA90 (100)
+  WordK  $M5 (1)
+  IPAAW &BA1HZ0002AA90 (99)
+  WordK  $M6 (1)
+  IPAAW &BA1HZ0001AA90 (98)
+  WordK  $M7 (1)
+  IPAAW &BA1HZ0600AA90 (112)
+  WordK  $M8 (1)
+  IPAAW &BA1HZ0200AA90 (102)
+  WordK  $M9 (1)
+  IPAAW &BA1HZ0300AA90 (103)
+  WordK  $M10 (1)
+  IPAAW &BA1HZ0700AA90 (30)
+  WordK  $M11 (1)
+  IPAAW &BA1HZ0000AA87 (117)
+  WordK  $M12 (1)
+  IPAAW &BA1HZ0000AA82 (109)
+  FloatV $F1
+  FloatV $F2
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Einbauort:2.Kellergesch.
+  ;Raum xxx
+  ;Schaltschrank:
+  ;Feld: xx
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-GE-ANL-WT1-AUS,K-GE-ANL-WT1-EIN,$WZERO,$WZERO,
+          &BA1HZ0001BF90,WERR)
+  BEFAUS (1,K-GE-ANL-WT2-AUS,K-GE-ANL-WT2-EIN,$WZERO,$WZERO,
+          &BA1HZ0002BF90,WERR)
+  BEFAUS (1,K-GE-ANL-WT3-AUS,K-GE-ANL-WT3-EIN,$WZERO,$WZERO,
+          &BA1HZ0003BF90,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,K-GE-ANL-NO-AUS,K-GE-ANL-NO-EIN,$WZERO,$WZERO,
+          &BA1HZ0100BF90,WERR)
+  BEFAUS (1,K-GE-ANL-SW-AUS,K-GE-ANL-SW-EIN,$WZERO,$WZERO,
+          &BA1HZ0200BF90,WERR)
+  BEFAUS (1,K-GE-ANL-EDV-AUS,K-GE-ANL-EDV-EIN,$WZERO,$WZERO,
+          &BA1HZ0300BF90,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-GE-ANL-NE-AUS,K-GE-ANL-NE-EIN,$WZERO,$WZERO,
+          &BA1HZ0400BF90,WERR)
+  BEFAUS (1,K-GE-ANL-5OG-AUS,K-GE-ANL-5OG-EIN,$WZERO,$WZERO,
+          &BA1HZ0500BF90,WERR)
+  BEFAUS (1,K-GE-ANL-1UG-AUS,K-GE-ANL-1UG-EIN,$WZERO,$WZERO,
+          &BA1HZ0600BF90,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,K-GE-ANL-2UG-AUS,K-GE-ANL-2UG-EIN,$WZERO,$WZERO,
+          &BA1HZ0700BF90,WERR)
+  ANAUS (K-SW-VL-TEMP-WRG,$M0,&BA1HZ0000AA99,WERR)
+  ANAUS (K-SW-DIFF-DR-NE,$M1,&BA1HZ0400AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-5OG,$M2,&BA1HZ0500AA90,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANAUS (K-SW-DIFF-DR-NO,$M3,&BA1HZ0100AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-WT3,$M4,&BA1HZ0003AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-WT2,$M5,&BA1HZ0002AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-WT1,$M6,&BA1HZ0001AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-1UG,$M7,&BA1HZ0600AA90,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANAUS (K-SW-DIFF-DR-SW,$M8,&BA1HZ0200AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-EDV,$M9,&BA1HZ0300AA90,WERR)
+  ANAUS (K-SW-DIFF-DR-2UG,$M10,&BA1HZ0700AA90,WERR)
+  ANAUS (K-SW-AUSSEN-ABSC,$M11,&BA1HZ0000AA87,WERR)
+  ANAUS (K-SW-VL-TEMP-ERH,$M12,&BA1HZ0000AA82,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ANEIN (&BA1HZ0000AA87,$F1,WERR)
+  ATRA ($F1,K-SW-AUSSEN-ABSC)
+  ANEIN (&BA1HZ0000AA82,$F2,WERR)
+  ATRA ($F2,K-SW-VL-TEMP-ERH)
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,537 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 0010-10A.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 10
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 10
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  S_ERR
+  WordV  E_ST_HZ_WW_P_1
+  WordV  E_ST_VL-STB_1
+  WordV  E_VP_FREIG_1
+  FloatV A_AS_HZ_VE_1
+  WordK  K_0_STATUS (0)
+  WordV  E_BM_QUITT
+  WordV  A_ST_SAM_ST_1
+  WordV  E_RM_HZ_WW_P_1
+  FloatV D_HZ_ZT_PU_A_1
+  WordV  E_RM_HZ_LD_PU_1
+  FloatV E_X_LD_T_1
+  WordK  K_VP_FREIG_1 (1)
+  FloatV E_MW_HZ_VE_1
+  FloatV E_X_T_O_1
+  WordV  Z_HZ_WA_PU_1
+  WordV  Z_HZ_WW_WA_P_1
+  WordV  E_RM_QUITT
+  WordV  A_BF_HZ_LD_PU_1
+  WordV  E_VP_TH-DES_1
+  WordV  Z_HAUPT_1
+  WordV  E_ST_HZ_LD_PU_1
+  WordV  R_BF_QUITT_A
+  WordK  K_1_STATUS (1)
+  WordK  K_VP_TH-DES_1 (0)
+  FloatV E_X_T_U_1
+  FloatK K_GW_T_O_1 (62.00)
+  WordV  Z_QUITT
+  WordV  A_ST_HZ_VE_1
+  FloatV SW-Ladetemp
+  FloatK K-delta-Ladetemp (5.00)
+  FloatV SW-Sp-Temp-unten
+  FloatV SW-Sp-Temp-oben2
+  FloatV SW-Sp-Temp-oben
+  WordV  th-Desinf-aussch
+  WordV  A_BF_HZ_WW_P_1
+  FloatV D_HZ_WW_ZT_P_1
+  WordV  Z_HZ_WW_ANF_P_1
+  FloatK K_GW_T_U_1 (60.00)
+  WordV  Zirk-Pumpe-gesto
+  WordV  Ladung-EIN
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (77,1)
+  IPAMB &M1 (77,9)
+  IPAAW &M2 (80)
+  IPAAW &M3 (81)
+  IPAMB &M4 (47,15)
+  IPAMB &M5 (47,14)
+  IPAMB &M6 (77,3)
+  IPAMB &M7 (60,6)
+  WordV  $B1
+  IPAMB &M8 (77,11)
+  IPAMB &M9 (60,7)
+  IPAMB &M10 (60,2)
+  WordV  $B2
+  IPAMB &M11 (60,3)
+  IPAMB &M12 (44,3)
+  WordV  $B3
+  IPAMB &M13 (15,6)
+  WordV  $B4
+  IPAAW &M16 (69)
+  IPAAW &M17 (73)
+  IPAAW &M18 (70)
+  IPAAW &M19 (71)
+  FloatK $M20 (8.00)
+  WordV  $B5
+  FloatK $M21 (8.00)
+  WordV  $B6
+  FloatK $M22 (8.00)
+  WordV  $B7
+  FloatK $M23 (8.00)
+  WordV  $B8
+  WordV  $B9
+  WordV  $WSCRATCH
+  FloatK $M24 (12.00)
+  FloatK $M25 (4.00)
+  FloatK $M26 (0.00)
+  WordV  $B10
+  FloatK $M27 (4.00)
+  WordV  $B11
+  WordV  $B12
+  FloatK $M28 (70.00)
+  FloatK $M29 (55.00)
+  FloatV $F1
+  FloatK $M30 (80.00)
+  FloatK $M31 (75.00)
+  FloatK $M32 (0.00)
+  WordV  $B13
+  FloatK $M33 (66.00)
+  FloatK $M34 (0.00)
+  WordV  $B14
+  WordV  $B15
+  FloatK $M35 (1200.00)
+  FloatK $M36 (0.00)
+  FloatK $M37 (2.00)
+  WordV  $HB3
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  FloatK $M38 (0.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M39 (10.00)
+  WordV  $B23
+  WordV  $B24
+  WordV  $HB1
+  FloatV $F4
+  FloatK $M40 (1800.00)
+  WordV  $B25
+  WordV  $B26
+  FloatK $M41 (172800.00)
+  WordV  $B27
+  FloatK $M42 (300.00)
+  WordV  $B28
+  FloatK $M43 (30.00)
+  FloatK $M44 (5.00)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  FloatK $M45 (172800.00)
+  WordV  $B32
+  FloatK $M46 (300.00)
+  FloatK $M47 (5.00)
+  FloatK $M48 (2.00)
+  WordV  $B33
+  FloatK $M49 (0.00)
+  FloatK $M50 (15.00)
+  WordV  $B34
+  WordV  $B35
+  IPAMB &M51 (77,2)
+  IPAMB &M52 (77,4)
+  IPAMB &M54 (60,5)
+  IPAMB &M55 (60,1)
+  IPAAW &M56 (79)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;KUNDE:
+  ;------------------------
+  ;ABB Gebäudetechnik AG
+  ;Lufttechnik
+  ;Hannover
+  ; 
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;- WWB Sozial
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max- Planck- Institut
+  ;für bio- physikalische
+  ;chemie Göttingen
+  ;Neubau NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  NICHT (K_VP_FREIG_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_1,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ; 
+  NICHT (K_VP_TH-DES_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_TH-DES_1,$WZERO,$WZERO,&M1,S_ERR)
+  ;Thermische
+  ;Desinfektion
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K_GW_T_U_1,K_1_STATUS,&M2,S_ERR)
+  ;SW Speichertemp.
+  ;unten
+  ; 
+  ANAUS (K_GW_T_O_1,K_1_STATUS,&M3,S_ERR)
+  ;SW Speichertemp.
+  ;oben
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Reihenfolge:
+  ;1. Melein
+  ;2. Anein
+  ;3. Sollkennlinie
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;GLT Schaltbefehl
+  ;Quittierung
+  ; 
+  MELEIN (&M4,1,E_RM_QUITT,S_ERR)
+  ;Meldung
+  ;Schaltschrank
+  ;Quittierung
+  ; 
+  MELEIN (&M5,1,E_BM_QUITT,S_ERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  MELEIN (&M6,1,K_VP_FREIG_1,S_ERR)
+  BTRA (K_VP_FREIG_1,E_VP_FREIG_1)
+  ;Störung
+  ;Pumpe WWB
+  ;Heizung
+  ; 
+  MELEIN (&M7,1,$B1,S_ERR)
+  ;Rückmeldung Ein
+  ;Pumpe WWB
+  ;Heizung
+  ; 
+  ;Rückmeldung Ein
+  ;Thermische
+  ;Desinfektion
+  ; 
+  MELEIN (&M8,1,K_VP_TH-DES_1,S_ERR)
+  BTRA (K_VP_TH-DES_1,E_VP_TH-DES_1)
+  MELEIN (&M9,1,E_RM_HZ_WW_P_1,S_ERR)
+  NICHT ($B1,E_ST_HZ_WW_P_1)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;Störung
+  ;Ladepumpe WWB
+  ;D
+  ; 
+  MELEIN (&M10,1,$B2,S_ERR)
+  ;Rückmeldung Ein
+  ;Ladepumpe WWB
+  ; 
+  MELEIN (&M11,1,E_RM_HZ_LD_PU_1,S_ERR)
+  NICHT ($B2,E_ST_HZ_LD_PU_1)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;Störung
+  ;VL-STB
+  ;WWB Sozial
+  ; 
+  MELEIN (&M12,1,$B3,S_ERR)
+  ;Störung
+  ;Zirkulationspumpe
+  ;Sozial
+  ; 
+  NICHT ($B3,E_ST_VL-STB_1)
+  MELEIN (&M13,1,$B4,S_ERR)
+  NICHT ($B4,Zirk-Pumpe-gesto)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M2,K_GW_T_U_1,S_ERR)
+  ATRA (K_GW_T_U_1,SW-Sp-Temp-unten)
+  ;Sollwert
+  ;Speichertemperatur
+  ;unten Ladung AUS
+  ; 
+  ANEIN (&M3,K_GW_T_O_1,S_ERR)
+  ATRA (K_GW_T_O_1,SW-Sp-Temp-oben)
+  ;Sollwert
+  ;Speichertemperatur
+  ;oben Ladung EIN
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M16,E_X_LD_T_1,S_ERR)
+  ;Istwert
+  ;Vorlauf-
+  ;Ladetemperatur
+  ; 
+  ANEIN (&M17,E_MW_HZ_VE_1,S_ERR)
+  ;Messwert
+  ;HZ-Ventil WWB
+  ;Rücksignal
+  ; 
+  ANEIN (&M18,E_X_T_U_1,S_ERR)
+  ;Istwert
+  ;Speichertemperatur
+  ;WWB Unten
+  ; 
+  ANEIN (&M19,E_X_T_O_1,S_ERR)
+  ;Istwert
+  ;Speichertemperatur
+  ;WWB Oben
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MOKY (E_BM_QUITT,$M20,$B5)
+  MOKY (E_RM_QUITT,$M21,$B6)
+  MOKY (K_0_STATUS,$M22,$B7)
+  MOKY (K_0_STATUS,$M23,$B8)
+  ODRMN (4,$B5,$B6,$B7,$B8,0,$B9,$WSCRATCH)
+  MOKY ($B9,$M24,Z_QUITT)
+  VVZ ($B9,$M25,$M26,$B10)
+  MOKY ($B10,$M27,R_BF_QUITT_A)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- Rückm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ; 
+  ;Es kann die Software
+  ;und die Hardware
+  ;Veriegelung quittiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODRMN (8,E_ST_HZ_LD_PU_1,E_ST_HZ_WW_P_1,Zirk-Pumpe-gesto,
+         E_ST_VL-STB_1,A_ST_HZ_VE_1,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B11,$WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B12,
+         $WSCRATCH)
+  ODR2 ($B11,$B12,A_ST_SAM_ST_1)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UND11 (E_VP_FREIG_1,K_0_STATUS,Z_HAUPT_1)
+  ;Anlage Einschalten
+  ;- Freigabe DDC
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  LIMIT (SW-Sp-Temp-oben,$M28,$M29,$F1)
+  AWT (E_VP_TH-DES_1,$F1,$M30,SW-Sp-Temp-oben2)
+  ADD2 (SW-Sp-Temp-oben2,K-delta-Ladetemp,SW-Ladetemp)
+  VGLEH (E_X_T_O_1,$M31,$M32,$B13)
+  VGLEH (E_X_T_U_1,$M33,$M34,$B14)
+  UND2 ($B13,$B14,$B15)
+  VVZ ($B15,$M35,$M36,th-Desinf-aussch)
+  ;Am Ende der Zirk.leit-
+  ;ungen sitzen Thermo-
+  ;regler, die nach ca.
+  ;20min bei 70grädrigem
+  ;Wasser zum Rücklauf hin
+  ;öffnen, damit auch der
+  ;RL desinfiziert werden
+  ;kann. Daher muß ca.
+  ;30 min über 75 C im VL
+  ;sein.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  VGLEH (E_X_T_O_1,SW-Sp-Temp-oben2,$M37,$HB3)
+  NICHT ($HB3,$B16)
+  VGLOH (E_X_T_U_1,SW-Sp-Temp-unten,$B17)
+  ODR2 ($B16,E_VP_TH-DES_1,$B18)
+  UND11 ($B17,$B18,$B19)
+  NICHT (E_ST_VL-STB_1,$B20)
+  RSS ($B18,$B19,$B21,$WSCRATCH)
+  UND2 ($B21,$B20,Ladung-EIN)
+  ;Warmwasserbereiter
+  ;wird über obere
+  ;Temperatur aktiviert
+  ;und über untere
+  ;Temperatur deaktiviert
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  UND2 (Z_HAUPT_1,Ladung-EIN,$B22)
+  NICHT ($B22,$HB3)
+  REGLER (7,K_1_STATUS,$HB3,$M38,A_AS_HZ_VE_1,S_ERR)
+  ;WWB- Lade-
+  ;Vorlauftemperatur-
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  SUB2 (A_AS_HZ_VE_1,E_MW_HZ_VE_1,$F2)
+  ABSWER ($F2,$F3)
+  VGLOH ($F3,$M39,$B23)
+  UND11 ($B23,Z_QUITT,$B24)
+  NICHT ($B24,$HB1)
+  UHR (K_1_STATUS,$HB1,$F4)
+  VGLOH ($F4,$M40,$B25)
+  RSS ($B25,Z_QUITT,A_ST_HZ_VE_1,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODR2 (E_RM_HZ_LD_PU_1,Z_HZ_WA_PU_1,$B26)
+  UHR (K_1_STATUS,$B26,D_HZ_ZT_PU_A_1)
+  VGLOH (D_HZ_ZT_PU_A_1,$M41,$B27)
+  MOKY ($B27,$M42,Z_HZ_WA_PU_1)
+  ;Pumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ;d
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  UNDMN (3,Z_HAUPT_1,Ladung-EIN,E_RM_HZ_WW_P_1,0,$B28,
+         $WSCRATCH)
+  VVZ ($B28,$M43,$M44,$B29)
+  ODR2 ($B29,Z_HZ_WA_PU_1,$B30)
+  UND11 ($B30,E_ST_HZ_LD_PU_1,A_BF_HZ_LD_PU_1)
+  ;Pumpe
+  ;- Störung Pumpe
+  ;- Freigabe Anlage
+  ;- Anforderung Regelung
+  ;- HZ-Pumpe läuft bereits
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (E_RM_HZ_WW_P_1,Z_HZ_WW_WA_P_1,$B31)
+  UHR (K_1_STATUS,$B31,D_HZ_WW_ZT_P_1)
+  VGLOH (D_HZ_WW_ZT_P_1,$M45,$B32)
+  MOKY ($B32,$M46,Z_HZ_WW_WA_P_1)
+  ;Pumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  VGLEH (A_AS_HZ_VE_1,$M47,$M48,$B33)
+  VVZ ($B33,$M49,$M50,$B34)
+  UND2 ($B34,Z_HAUPT_1,Z_HZ_WW_ANF_P_1)
+  ;Bedarfabhängiges
+  ;Einschalten der
+  ;Pumpe
+  ;Y>5> Pumpe Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Pumpe Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODR2 (Z_HZ_WW_ANF_P_1,Z_HZ_WW_WA_P_1,$B35)
+  UND11 ($B35,E_ST_HZ_WW_P_1,A_BF_HZ_WW_P_1)
+  ;Heizungspumpe
+  ;- Störung Pumpe
+  ;- Bedarfsab. Anforderung
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_1,&M51,S_ERR)
+  SETMEL (K_1_STATUS,1,A_ST_HZ_VE_1,&M52,S_ERR)
+  ;Sammelstörung
+  ; 
+  ;Lauf-Störung
+  ;HZ-Ventil
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  BEFAUS (1,th-Desinf-aussch,$WZERO,$WZERO,$WZERO,&M1,S_ERR)
+  NICHT (A_BF_HZ_WW_P_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_HZ_WW_P_1,$WZERO,$WZERO,&M54,S_ERR)
+  NICHT (A_BF_HZ_LD_PU_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_HZ_LD_PU_1,$WZERO,$WZERO,&M55,S_ERR)
+  ;Thermische
+  ;Desinfektion
+  ;ausschalten
+  ; 
+  ;Heizungspumpe
+  ;WWB
+  ; 
+  ;Ladepumpe
+  ;WWB
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ANAUS (SW-Ladetemp,K_1_STATUS,&M56,S_ERR)
+  ;Sollwert Ladetemp.
+  ;WWB
+  ; 
+  ENDE 
+  ENDMODUL 

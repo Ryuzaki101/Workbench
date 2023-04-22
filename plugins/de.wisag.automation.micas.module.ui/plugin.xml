@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="de.wisag.automation.micas.module.ui.editor.ModulesFormEditor"
+            default="true"
+            extensions="module"
+            icon="icons/blockdiagram.gif"
+            id="de.wisag.automation.micas.module.ui.ModuleEditor"
+            matchingStrategy="de.wisag.automation.micas.module.ui.editor.DiagramEditorMatchingStrategy"
+            name="MICAS Module and Diagram Editor">
+      </editor>
+      <editor
+            default="true"
+            extensions="pdf"
+            icon="icons/pdfview.gif"
+            id="de.wisag.automation.micas.module.ui.pdfviewer"
+            launcher="de.wisag.automation.micas.module.ui.editor.PdfViewerLauncher"
+            name="External Pdf Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="de.wisag.automation.micas.module.ui.category"
+            class="de.wisag.automation.micas.module.ui.wizards.NewMicasProjectWizard"
+            finalPerspective="de.wisag.automation.micas.workbench.perspective"
+            icon="icons/wprj_obj.gif"
+            id="de.wisag.automation.micas.module.ui.wizards.newmicasprojectwizard"
+            name="Wisag MICAS Project"
+            project="true">
+      </wizard>
+      <category
+            id="de.wisag.automation.micas.module.ui.category"
+            name="MICAS Project">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.ide.projectNatureImages">
+      <image
+            icon="icons/wprj_obj.gif"
+            id="de.wisag.automation.micas.module.ui.micasimage"
+            natureId="de.wisag.automation.micas.nature">
+      </image>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="de.wisag.automation.micas.module.ui.properties.MicasCompilerPropertiesPage"
+            id="de.wisag.automation.micas.module.ui.properties.micasproperties"
+            name="MICAS Project  Settings">
+         <enabledWhen>
+            <and>
+               <instanceof
+                     value="org.eclipse.core.resources.IProject">
+               </instanceof>
+               <test
+                     property="org.eclipse.core.resources.projectNature"
+                     value="de.wisag.automation.micas.nature">
+               </test>
+            </and>
+         </enabledWhen>
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.createReferenceCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.editReferenceCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.createVariableCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.editVariableCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.createConstantCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.editConstantCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.handlers.SymbolHandler"
+            commandId="de.wisag.automation.micas.module.ui.commands.assignSymbolCommand">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.module.ui.filehistory.ShowLocalHistoryHandler"
+            commandId="de.wisag.automation.micas.module.ui.showlocalhistory">
+      </handler>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.menus">
+         <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu?after=additions">
+         <menu
+               label="MICAS Symbols">
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.assignSymbolCommand" style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <or>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.invarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.outvarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.referenceselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.constantselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.connectionbetweenblocks">
+                     </reference>
+                  </or>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.createReferenceCommand"
+                  style="push">
+               <visibleWhen checkEnabled="false">
+                  <reference definitionId="de.wisag.automation.micas.module.ui.referenceselected">
+                  </reference>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.editReferenceCommand"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <reference
+                        definitionId="de.wisag.automation.micas.module.ui.referenceselected">
+                  </reference>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.createVariableCommand"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <or>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.invarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.outvarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.connectionbetweenblocks">
+                     </reference>
+                  </or>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.editVariableCommand"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <or>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.invarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.outvarselected">
+                     </reference>
+                     <reference
+                           definitionId="de.wisag.automation.micas.module.ui.connectionbetweenblocks">
+                     </reference>
+                  </or>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.createConstantCommand"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <reference
+                        definitionId="de.wisag.automation.micas.module.ui.constantselected">
+                  </reference>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="de.wisag.automation.micas.module.ui.commands.editConstantCommand"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <reference
+                        definitionId="de.wisag.automation.micas.module.ui.constantselected">
+                  </reference>
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+         <menuContribution
+               allPopups="false"
+               locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+            <menu
+                  label="MICAS File History">
+               <command
+                     commandId="de.wisag.automation.micas.module.ui.showlocalhistory"
+                     label="Show local file history"
+                     style="push">
+                  <visibleWhen>
+               <with variable="selection">
+                  <iterate
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.core.resources.IResource">
+                     </instanceof>
+                  </iterate>
+               </with>
+            </visibleWhen>
+               </command>
+            </menu>
+         </menuContribution>
+
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="de.wisag.automation.micas.module.ui.commands.category"
+            name="Module Editor">
+      </category>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.createReferenceCommand"
+            name="Create Reference Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.editReferenceCommand"
+            name="Edit Reference Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.createVariableCommand"
+            name="Create Variable Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.editVariableCommand"
+            name="Edit Variable Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.createConstantCommand"
+            name="Create Constant Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.editConstantCommand"
+            name="Edit Constant Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.commands.assignSymbolCommand"
+            name="Assign Symbol">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.module.ui.commands.category"
+            id="de.wisag.automation.micas.module.ui.showlocalhistory"
+            name="Show File History">
+      </command>
+   </extension>
+   <extension point="org.eclipse.core.expressions.definitions">
+
+	<definition id="de.wisag.automation.micas.module.ui.referenceselected">
+      <with variable="selection">
+        <and>
+          <count value="1"></count>
+          <iterate>
+            <instanceof value="de.wisag.automation.micas.diagram.ui.editparts.ReferenceEditPart"></instanceof>
+          </iterate>
+        </and>
+      </with>
+    </definition>
+
+    <definition id="de.wisag.automation.micas.module.ui.constantselected">
+      <with variable="selection">
+        <and>
+          <count value="1"></count>
+          <iterate>
+            <instanceof value="de.wisag.automation.micas.diagram.ui.editparts.ConstantEditPart"></instanceof>
+          </iterate>
+        </and>
+      </with>
+    </definition>
+
+    <definition id="de.wisag.automation.micas.module.ui.invarselected">
+      <with variable="selection">
+        <and>
+          <count value="1"></count>
+          <iterate>
+            <instanceof value="de.wisag.automation.micas.diagram.ui.editparts.IncomingOffpageConnectorEditPart"></instanceof>
+          </iterate>
+        </and>
+      </with>
+    </definition>
+
+    <definition id="de.wisag.automation.micas.module.ui.outvarselected">
+      <with variable="selection">
+        <and>
+          <count value="1"></count>
+          <iterate>
+            <instanceof value="de.wisag.automation.micas.diagram.ui.editparts.OutgoingOffpageConnectorEditPart"></instanceof>
+          </iterate>
+        </and>
+      </with>
+    </definition>
+    <definition
+          id="de.wisag.automation.micas.module.ui.connectionselected">
+       <with
+             variable="selection">
+          <and>
+             <count
+                   value="1">
+             </count>
+             <iterate>
+                <instanceof value="de.wisag.automation.micas.diagram.ui.editparts.ConnectionEditPart">
+                </instanceof>
+             </iterate>
+          </and>
+       </with>
+    </definition>
+    <definition
+          id="de.wisag.automation.micas.module.ui.connectionbetweenblocks">
+       <with
+             variable="selection">
+          <and>
+             <count
+                   value="1">
+             </count>
+             <iterate  operator="and">
+                <test property="de.wisag.automation.micas.diagram.ui.isBlockInterconnection" >
+                </test>
+             </iterate>
+          </and>
+       </with>
+    </definition>
+    </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+   </extension>
+
+</plugin>

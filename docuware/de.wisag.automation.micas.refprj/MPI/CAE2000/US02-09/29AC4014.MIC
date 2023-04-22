@@ -1,0 +1,262 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI20914.GPS
+  ;*** Projektname    : MPI Turm 2
+  ;*** Projektnummer  : 33101454
+  ;*** Bearbeiter     : H.G„nz
+  ;*** Prfer         :  
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 9
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 14
+  ;*****************************************************************
+  MODUL (ac40,14)
+  WordV  Steuerspg_DC_NN
+  WordV  Frost2
+  WordV  Uml_Laufueberw2
+  WordV  Aul_Laufueberw2
+  WordV  Steuerspg_230_NN
+  WordK  K0 (0)
+  WordV  Phasenueberw
+  WordV  BSK_2_Ueberstroe
+  WordV  Uml_Vent1_ST
+  WordV  FU_Uml_Vent1_ST
+  WordV  Entriegeln
+  WordV  U>_Uml_Vent1_ST
+  WordV  ERH_PU1_ST
+  WordV  Frost1
+  WordV  FU_Uml_Vent2_ST
+  WordV  Uml_Laufueberw1
+  WordV  Aul_Laufueberw1
+  WordV  U>_Uml_Vent2_ST
+  WordV  ERH_PU2_ST
+  WordV  Uml_Vent2_ST
+  WordV  KW_Pu_sek_WT1_ST
+  WordV  KW_Pu_sek_WT2_ST
+  WordV  Stroemung_WT2
+  WordV  Entr.Befehl_SS2
+  WordV  Druck_Alarm_WT1
+  WordV  Druck_Stoer_WT2
+  WordV  Druck_Stoer_WT1
+  WordV  Entr.Taster_SS2
+  WordV  KW_Pu_prim_ST
+  WordV  BSK_1_Ueberstroe
+  WordV  Entr.Befehl_SS1
+  WordV  BMZ_ausgeloest
+  WordV  Stroemung_WT1
+  WordV  Druck_Alarm_WT2
+  WordV  Entr.Taster_SS1
+  WordV  Sammel_ST_1
+  WordV  Sammel_ST_2
+  WordV  Steuerspg_AC_NN
+  IPAMB &M0 (167,11)
+  WordV  $HB2
+  WordV  $WSCRATCH
+  IPAMB &M1 (180,12)
+  IPAMB &M2 (180,15)
+  IPAMB &M3 (164,11)
+  IPAMB &M4 (164,15)
+  IPAMB &M5 (180,11)
+  IPAMB &M6 (180,14)
+  IPAMB &M7 (164,2)
+  IPAMB &M8 (164,6)
+  IPAMB &M9 (165,2)
+  IPAMB &M10 (165,14)
+  IPAMB &M11 (165,15)
+  IPAMB &M12 (170,0)
+  IPAMB &M16 (156,6)
+  IPAMB &M17 (158,10)
+  IPAMB &M18 (78,2)
+  IPAMB &M19 (157,2)
+  IPAMB &M20 (158,11)
+  IPAMB &M21 (170,12)
+  IPAMB &M22 (170,13)
+  IPAMB &M24 (160,6)
+  IPAMB &M25 (162,10)
+  IPAMB &M26 (79,2)
+  IPAMB &M27 (161,2)
+  IPAMB &M28 (162,11)
+  IPAMB &M29 (183,12)
+  IPAMB &M30 (183,13)
+  IPAMB &M32 (166,14)
+  IPAMB &M33 (166,15)
+  IPAMB &M34 (167,10)
+  IPAMB &M35 (166,11)
+  IPAMB &M36 (159,7)
+  IPAMB &M37 (158,2)
+  IPAMB &M38 (40,11)
+  IPAMB &M39 (60,14)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M40 (159,1)
+  FloatK $M41 (10.00)
+  FloatK $M42 (0.00)
+  WordV  $B7
+  IPAMB &M43 (159,5)
+  FloatK $M44 (10.00)
+  WordV  $B8
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (2,cycl,2000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.31
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fr diese Unterlagen
+  ;lautet:
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:  MPI G”ttingen
+  ;Projekt:Turm 2
+  ;        Lasertechnik SOG
+  ;Anlage: Sammelst”rung
+  ;        Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_ausgeloest)
+  MELEIN (&M1,1,Druck_Alarm_WT1,$WSCRATCH)
+  MELEIN (&M2,1,Druck_Alarm_WT2,$WSCRATCH)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Stroemung_WT1)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Stroemung_WT2)
+  MELEIN (&M5,1,Druck_Stoer_WT1,$WSCRATCH)
+  MELEIN (&M6,1,Druck_Stoer_WT2,$WSCRATCH)
+  MELEIN (&M7,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW_Pu_prim_ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW_Pu_sek_WT1_ST)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW_Pu_sek_WT2_ST)
+  MELEIN (&M10,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_1_Ueberstroe)
+  MELEIN (&M11,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_2_Ueberstroe)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Uml_Vent1_ST)
+  MELEIN (&M17,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,FU_Uml_Vent1_ST)
+  MELEIN (&M18,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,U>_Uml_Vent1_ST)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ERH_PU1_ST)
+  MELEIN (&M20,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost1)
+  MELEIN (&M21,1,Uml_Laufueberw1,$WSCRATCH)
+  MELEIN (&M22,1,Aul_Laufueberw1,$WSCRATCH)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Uml_Vent2_ST)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,FU_Uml_Vent2_ST)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,U>_Uml_Vent2_ST)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ERH_PU2_ST)
+  MELEIN (&M28,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost2)
+  MELEIN (&M29,1,Uml_Laufueberw2,$WSCRATCH)
+  MELEIN (&M30,1,Aul_Laufueberw2,$WSCRATCH)
+  MELEIN (&M12,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_230_NN)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_AC_NN)
+  MELEIN (&M34,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_DC_NN)
+  MELEIN (&M35,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Phasenueberw)
+  MELEIN (&M36,1,Entr.Befehl_SS2,$WSCRATCH)
+  MELEIN (&M37,1,Entr.Taster_SS2,$WSCRATCH)
+  MELEIN (&M38,1,Entr.Befehl_SS1,$WSCRATCH)
+  MELEIN (&M39,1,Entr.Taster_SS1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Entr.Taster_SS1,Entr.Befehl_SS1,Entr.Taster_SS2,
+         Entr.Befehl_SS2,0,Entriegeln,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ODRMN (11,Aul_Laufueberw1,Aul_Laufueberw2,BMZ_ausgeloest,
+         BSK_1_Ueberstroe,BSK_2_Ueberstroe,Druck_Alarm_WT1,
+         Druck_Alarm_WT2,Druck_Stoer_WT1,Druck_Stoer_WT2,
+         ERH_PU1_ST,ERH_PU2_ST,0,$B1,$WSCRATCH)
+  ODRMN (8,FU_Uml_Vent1_ST,FU_Uml_Vent2_ST,Frost1,Frost2,
+         KW_Pu_prim_ST,KW_Pu_sek_WT1_ST,KW_Pu_sek_WT2_ST,K0,
+         0,$B2,$WSCRATCH)
+  ODR2 ($B1,$B2,Sammel_ST_1)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ODRMN (9,Phasenueberw,Steuerspg_230_NN,Steuerspg_AC_NN,
+         Steuerspg_DC_NN,Stroemung_WT1,Stroemung_WT2,
+         U>_Uml_Vent1_ST,U>_Uml_Vent2_ST,K0,0,$B3,$WSCRATCH)
+  ODRMN (11,Uml_Laufueberw1,Uml_Laufueberw2,Uml_Vent1_ST,
+         Uml_Vent2_ST,K0,K0,K0,K0,K0,K0,Sammel_ST_1,0,$B4,
+         $WSCRATCH)
+  ODR2 ($B3,$B4,Sammel_ST_2)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  UND11 ($B8,Sammel_ST_2,$B5)
+  RSS (Sammel_ST_2,$B5,$B6,$WSCRATCH)
+  NICHT ($B6,$HB0)
+  BEFAUS (1,$HB0,$B6,$WZERO,$WZERO,&M40,$WSCRATCH)
+  VVZ (Entr.Befehl_SS2,$M41,$M42,$B7)
+  BEFAUS (1,$B7,$WZERO,$WZERO,$WZERO,&M43,$WSCRATCH)
+  MOKY (Entriegeln,$M44,$B8)
+  ENDE 
+  ENDMODUL 

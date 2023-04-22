@@ -1,0 +1,345 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI50509.GPS
+  ;*** Projektname    : MPI Turm 5
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Meyer
+  ;*** Line Nummer    : 5
+  ;*** User Number    : 5
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 9
+  ;*****************************************************************
+  MODUL (sp20,9)
+  FloatK SW_RL_Temp_Geweb (10.00)
+  FloatK SW_ZL_Temp_Geweb (16.00)
+  FloatK SW_ZL_Druck_Gewe (200.00)
+  WordK  K0 (0)
+  FloatK SW_AT_GW_PU_Gewe (8.00)
+  FloatK SW_AT_GW_Pumpen (8.00)
+  FloatK SW_RL_Temp_2OG (10.00)
+  FloatK SW_SP_Legio (65.00)
+  FloatK SW_ZL_Temp_1OG (22.00)
+  FloatK SW_AT_Grenze_NW (20.00)
+  FloatK SW_AT_Grenze_Soc (20.00)
+  FloatK SW_AT_Grenze_SO (20.00)
+  FloatK SW_SP_WWB (63.00)
+  FloatK SW_ZL_Druck_1OG (200.00)
+  FloatK SW_AT_Grenze_DG (17.00)
+  FloatK SW_GW_Fernltg (60.00)
+  FloatK SW_ZL_Temp_2OG (22.00)
+  FloatK SW_ZL_Druck_2OG (170.00)
+  FloatK SW_ZL_Temp_Innen (22.00)
+  FloatK SW_RA_Temp_122 (37.00)
+  FloatK SW_RA_Temp_Zellk (22.00)
+  IPAAW &M0 (86)
+  FloatV $F1
+  WordV  $WSCRATCH
+  WordV  $HB0
+  FloatK $M1 (10.00)
+  WordV  $B1
+  WordK  $M2 (1)
+  IPAAW &M4 (85)
+  FloatV $F2
+  FloatK $M5 (10.00)
+  WordV  $B2
+  WordK  $M6 (1)
+  IPAAW &M8 (87)
+  FloatV $F3
+  FloatK $M9 (10.00)
+  WordV  $B3
+  WordK  $M10 (1)
+  IPAAW &M12 (88)
+  FloatV $F4
+  FloatK $M13 (10.00)
+  WordV  $B4
+  WordK  $M14 (1)
+  IPAAW &M16 (89)
+  FloatV $F5
+  FloatK $M17 (10.00)
+  WordV  $B5
+  WordK  $M18 (1)
+  IPAAW &M20 (90)
+  FloatV $F6
+  FloatK $M21 (10.00)
+  WordV  $B6
+  WordK  $M22 (1)
+  IPAAW &M24 (84)
+  FloatV $F7
+  FloatK $M25 (10.00)
+  WordV  $B7
+  WordK  $M26 (1)
+  IPAAW &M28 (107)
+  FloatV $F8
+  FloatK $M29 (10.00)
+  WordV  $B8
+  WordK  $M30 (1)
+  IPAAW &M32 (108)
+  FloatV $F9
+  FloatK $M33 (10.00)
+  WordV  $B9
+  WordK  $M34 (1)
+  IPAAW &M36 (109)
+  FloatV $F10
+  FloatK $M37 (10.00)
+  WordV  $B10
+  WordK  $M38 (1)
+  IPAAW &M40 (110)
+  FloatV $F11
+  FloatK $M41 (10.00)
+  WordV  $B11
+  WordK  $M42 (1)
+  IPAAW &M44 (115)
+  FloatV $F12
+  FloatK $M45 (10.00)
+  WordV  $B12
+  WordK  $M46 (1)
+  IPAAW &M48 (116)
+  FloatV $F13
+  FloatK $M49 (10.00)
+  WordV  $B13
+  WordK  $M50 (1)
+  IPAAW &M52 (130)
+  FloatV $F14
+  FloatK $M53 (10.00)
+  WordV  $B14
+  WordK  $M54 (1)
+  IPAAW &M56 (142)
+  FloatV $F15
+  FloatK $M57 (10.00)
+  WordV  $B15
+  WordK  $M58 (1)
+  IPAAW &M60 (131)
+  FloatV $F16
+  FloatK $M61 (10.00)
+  WordV  $B16
+  WordK  $M62 (1)
+  IPAAW &M64 (145)
+  FloatV $F17
+  FloatK $M65 (10.00)
+  WordV  $B17
+  WordK  $M66 (1)
+  IPAAW &M68 (152)
+  FloatV $F18
+  FloatK $M69 (10.00)
+  WordV  $B18
+  WordK  $M70 (1)
+  IPAAW &M72 (151)
+  FloatV $F19
+  FloatK $M73 (10.00)
+  WordV  $B19
+  WordK  $M74 (1)
+  IPAAW &M76 (155)
+  FloatV $F20
+  FloatK $M77 (10.00)
+  WordV  $B20
+  WordK  $M78 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,3000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Sanierung
+  ;         Turm 5
+  ;Anlage:  Sollwerte
+  ;         US05.05
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ANEIN (&M0,$F1,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M1,$B1)
+  AWT ($B1,$F1,SW_AT_Grenze_NW,SW_AT_Grenze_NW)
+  ANAUS (SW_AT_Grenze_NW,$M2,&M0,$WSCRATCH)
+  ANEIN (&M4,$F2,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M5,$B2)
+  AWT ($B2,$F2,SW_AT_Grenze_Soc,SW_AT_Grenze_Soc)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AT_Grenze_Soc,$M6,&M4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANEIN (&M8,$F3,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M9,$B3)
+  AWT ($B3,$F3,SW_AT_Grenze_SO,SW_AT_Grenze_SO)
+  ANAUS (SW_AT_Grenze_SO,$M10,&M8,$WSCRATCH)
+  ANEIN (&M12,$F4,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M13,$B4)
+  AWT ($B4,$F4,SW_AT_Grenze_DG,SW_AT_Grenze_DG)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AT_Grenze_DG,$M14,&M12,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANEIN (&M16,$F5,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M17,$B5)
+  AWT ($B5,$F5,SW_SP_WWB,SW_SP_WWB)
+  ANAUS (SW_SP_WWB,$M18,&M16,$WSCRATCH)
+  ANEIN (&M20,$F6,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M21,$B6)
+  AWT ($B6,$F6,SW_SP_Legio,SW_SP_Legio)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_SP_Legio,$M22,&M20,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M24,$F7,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M25,$B7)
+  AWT ($B7,$F7,SW_GW_Fernltg,SW_GW_Fernltg)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_GW_Fernltg,$M26,&M24,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M28,$F8,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M29,$B8)
+  AWT ($B8,$F8,SW_ZL_Temp_1OG,SW_ZL_Temp_1OG)
+  ANAUS (SW_ZL_Temp_1OG,$M30,&M28,$WSCRATCH)
+  ANEIN (&M32,$F9,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M33,$B9)
+  AWT ($B9,$F9,SW_ZL_Druck_1OG,SW_ZL_Druck_1OG)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Druck_1OG,$M34,&M32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M36,$F10,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M37,$B10)
+  AWT ($B10,$F10,SW_ZL_Temp_2OG,SW_ZL_Temp_2OG)
+  ANAUS (SW_ZL_Temp_2OG,$M38,&M36,$WSCRATCH)
+  ANEIN (&M40,$F11,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M41,$B11)
+  AWT ($B11,$F11,SW_ZL_Druck_2OG,SW_ZL_Druck_2OG)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_ZL_Druck_2OG,$M42,&M40,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M44,$F12,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M45,$B12)
+  AWT ($B12,$F12,SW_ZL_Temp_Innen,SW_ZL_Temp_Innen)
+  ANAUS (SW_ZL_Temp_Innen,$M46,&M44,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M48,$F13,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M49,$B13)
+  AWT ($B13,$F13,SW_RA_Temp_122,SW_RA_Temp_122)
+  ANAUS (SW_RA_Temp_122,$M50,&M48,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M52,$F14,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M53,$B14)
+  AWT ($B14,$F14,SW_ZL_Temp_Geweb,SW_ZL_Temp_Geweb)
+  ANAUS (SW_ZL_Temp_Geweb,$M54,&M52,$WSCRATCH)
+  ANEIN (&M56,$F15,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M57,$B15)
+  AWT ($B15,$F15,SW_RL_Temp_Geweb,SW_RL_Temp_Geweb)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_RL_Temp_Geweb,$M58,&M56,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M60,$F16,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M61,$B16)
+  AWT ($B16,$F16,SW_ZL_Druck_Gewe,SW_ZL_Druck_Gewe)
+  ANAUS (SW_ZL_Druck_Gewe,$M62,&M60,$WSCRATCH)
+  ANEIN (&M64,$F17,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M65,$B17)
+  AWT ($B17,$F17,SW_AT_GW_PU_Gewe,SW_AT_GW_PU_Gewe)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AT_GW_PU_Gewe,$M66,&M64,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M68,$F18,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M69,$B18)
+  AWT ($B18,$F18,SW_RA_Temp_Zellk,SW_RA_Temp_Zellk)
+  ANAUS (SW_RA_Temp_Zellk,$M70,&M68,$WSCRATCH)
+  ANEIN (&M72,$F19,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M73,$B19)
+  AWT ($B19,$F19,SW_AT_GW_Pumpen,SW_AT_GW_Pumpen)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW_AT_GW_Pumpen,$M74,&M72,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M76,$F20,$WSCRATCH)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M77,$B20)
+  AWT ($B20,$F20,SW_RL_Temp_2OG,SW_RL_Temp_2OG)
+  ANAUS (SW_RL_Temp_2OG,$M78,&M76,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ENDE 
+  ENDMODUL 

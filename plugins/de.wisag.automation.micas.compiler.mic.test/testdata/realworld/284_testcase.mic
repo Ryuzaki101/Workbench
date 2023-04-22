@@ -1,0 +1,36 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29SP2005.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 2
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Schalter_EIN
+  WordK  KON00 (0)
+  WordV  ERR01
+  WordV  ERR02
+  WordV  $HB0
+  IPAMB &04A-KA400-405 (6,5)
+  IPAMB &04A-KA400-415 (7,2)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Lüftung Lager Haustech-
+  ;nik Aalto-Theater Essen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  NICHT (Schalter_EIN,$HB0)
+  BEFAUS (1,$HB0,Schalter_EIN,KON00,KON00,&04A-KA400-405,
+          ERR01)
+  MELEIN (&04A-KA400-415,1,Schalter_EIN,ERR02)
+  ENDE 
+  ENDMODUL 

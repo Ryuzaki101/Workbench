@@ -1,0 +1,129 @@
+        770E:0000       F200
+//        770E:0002       302F    ;ANEINassertEquals(0x302F, BinaryUtils.getUShort(taskData, 0x0002));
+//        770E:0004       0034    ;&ID_00002-006-00-C-MW 
+ assertEquals(0x0034, BinaryUtils.getUShort(taskData, 0x0004));
+//        770E:0006       0080    ;LINIE4R 
+ assertEquals(0x0080, BinaryUtils.getUShort(taskData, 0x0006));
+//        770E:0008       006C    ;WERR-ANEIN-ERROR112 
+ assertEquals(0x006C, BinaryUtils.getUShort(taskData, 0x0008));
+//        770E:000A       F201 
+ assertEquals(0xF201, BinaryUtils.getUShort(taskData, 0x000A));
+//        770E:000C       3017    ;NICHT 
+ assertEquals(0x3017, BinaryUtils.getUShort(taskData, 0x000C));
+//        770E:000E       0060    ;LINIE2 
+ assertEquals(0x0060, BinaryUtils.getUShort(taskData, 0x000E));
+//        770E:0010       0062    ;LINIE3 
+ assertEquals(0x0062, BinaryUtils.getUShort(taskData, 0x0010));
+//        770E:0012       F202 
+ assertEquals(0xF202, BinaryUtils.getUShort(taskData, 0x0012));
+//        770E:0014       3033    ;BEFAUS 
+ assertEquals(0x3033, BinaryUtils.getUShort(taskData, 0x0014));
+//        770E:0016       0002 
+ assertEquals(0x0002, BinaryUtils.getUShort(taskData, 0x0016));
+//        770E:0018       0062    ;LINIE3 
+ assertEquals(0x0062, BinaryUtils.getUShort(taskData, 0x0018));
+//        770E:001A       0066    ;LINE1W 
+ assertEquals(0x0066, BinaryUtils.getUShort(taskData, 0x001A));
+//        770E:001C       0040    ;$IN-BEFAUS_ON2_25425 
+ assertEquals(0x0040, BinaryUtils.getUShort(taskData, 0x001C));
+//        770E:001E       0042    ;$IN-BEFAUS_ON3_22640 
+ assertEquals(0x0042, BinaryUtils.getUShort(taskData, 0x001E));
+//        770E:0020       0032    ;&ID_00002-000-00-C-BM 
+ assertEquals(0x0032, BinaryUtils.getUShort(taskData, 0x0020));
+//        770E:0022       006E    ;WERR-BEFAUS-ERROR114 
+ assertEquals(0x006E, BinaryUtils.getUShort(taskData, 0x0022));
+//        770E:0024       F203 
+ assertEquals(0xF203, BinaryUtils.getUShort(taskData, 0x0024));
+//        770E:0026       302F    ;ANEIN 
+ assertEquals(0x302F, BinaryUtils.getUShort(taskData, 0x0026));
+//        770E:0028       0036    ;&ID_00002-007-00-C-MW 
+ assertEquals(0x0036, BinaryUtils.getUShort(taskData, 0x0028));
+//        770E:002A       0084    ;LINIE5R 
+ assertEquals(0x0084, BinaryUtils.getUShort(taskData, 0x002A));
+//        770E:002C       0070    ;WERR-ANEIN2-ERROR289 
+ assertEquals(0x0070, BinaryUtils.getUShort(taskData, 0x002C));
+//        770E:002E       F204 
+ assertEquals(0xF204, BinaryUtils.getUShort(taskData, 0x002E));
+//        770E:0030       3003    ;ADD2 
+ assertEquals(0x3003, BinaryUtils.getUShort(taskData, 0x0030));
+//        770E:0032       0080    ;LINIE4R 
+ assertEquals(0x0080, BinaryUtils.getUShort(taskData, 0x0032));
+//        770E:0034       0084    ;LINIE5R 
+ assertEquals(0x0084, BinaryUtils.getUShort(taskData, 0x0034));
+//        770E:0036       0088    ;LINIE6R 
+ assertEquals(0x0088, BinaryUtils.getUShort(taskData, 0x0036));
+//        770E:0038       F205 
+ assertEquals(0xF205, BinaryUtils.getUShort(taskData, 0x0038));
+//        770E:003A       3032    ;ANAUS 
+ assertEquals(0x3032, BinaryUtils.getUShort(taskData, 0x003A));
+//        770E:003C       0088    ;LINIE6R 
+ assertEquals(0x0088, BinaryUtils.getUShort(taskData, 0x003C));
+//        770E:003E       0030    ;BINK0 
+ assertEquals(0x0030, BinaryUtils.getUShort(taskData, 0x003E));
+					- 2 -
+
+Micas-Konverter V4.33      29AC4005.LST
+Hardware: AC40, Modul  5			  Samstag    11.09.110  20:19
+//
+        770E:0040       0038    ;&ID_00002-016-00-C-AS 
+ assertEquals(0x0038, BinaryUtils.getUShort(taskData, 0x0040));
+//        770E:0042       0072    ;WERR-ANAUS-ERROR497 
+ assertEquals(0x0072, BinaryUtils.getUShort(taskData, 0x0042));
+//        770E:0044       F206 
+ assertEquals(0xF206, BinaryUtils.getUShort(taskData, 0x0044));
+//        770E:0046       3030    ;ZWEIN 
+ assertEquals(0x3030, BinaryUtils.getUShort(taskData, 0x0046));
+//        770E:0048       003A    ;&ID_0002-028-00-C-ZW 
+ assertEquals(0x003A, BinaryUtils.getUShort(taskData, 0x0048));
+//        770E:004A       008C    ;LINIE7R 
+ assertEquals(0x008C, BinaryUtils.getUShort(taskData, 0x004A));
+//        770E:004C       0074    ;WERR-ZWEIN-ERROR400 
+ assertEquals(0x0074, BinaryUtils.getUShort(taskData, 0x004C));
+//        770E:004E       F207 
+ assertEquals(0xF207, BinaryUtils.getUShort(taskData, 0x004E));
+//        770E:0050       3035    ;ZWAUS 
+ assertEquals(0x3035, BinaryUtils.getUShort(taskData, 0x0050));
+//        770E:0052       0030    ;BINK0 
+ assertEquals(0x0030, BinaryUtils.getUShort(taskData, 0x0052));
+//        770E:0054       0050    ;$IN-ZWAUS_DELTA_29919 
+ assertEquals(0x0050, BinaryUtils.getUShort(taskData, 0x0054));
+//        770E:0056       0044    ;$IN-ZWAUS_MODE_22034 
+ assertEquals(0x0044, BinaryUtils.getUShort(taskData, 0x0056));
+//        770E:0058       008C    ;LINIE7R 
+ assertEquals(0x008C, BinaryUtils.getUShort(taskData, 0x0058));
+//        770E:005A       003E    ;&ZW_4711 
+ assertEquals(0x003E, BinaryUtils.getUShort(taskData, 0x005A));
+//        770E:005C       0076    ;WERR-ZWAUS-ERROR89 
+ assertEquals(0x0076, BinaryUtils.getUShort(taskData, 0x005C));
+//        770E:005E       F208 
+ assertEquals(0xF208, BinaryUtils.getUShort(taskData, 0x005E));
+//        770E:0060       3031    ;MELEIN 
+ assertEquals(0x3031, BinaryUtils.getUShort(taskData, 0x0060));
+//        770E:0062       0032    ;&ID_00002-000-00-C-BM 
+ assertEquals(0x0032, BinaryUtils.getUShort(taskData, 0x0062));
+//        770E:0064       0001 
+ assertEquals(0x0001, BinaryUtils.getUShort(taskData, 0x0064));
+//        770E:0066       0066    ;LINE1W 
+ assertEquals(0x0066, BinaryUtils.getUShort(taskData, 0x0066));
+//        770E:0068       0060    ;LINIE2 
+ assertEquals(0x0060, BinaryUtils.getUShort(taskData, 0x0068));
+//        770E:006A       F209 
+ assertEquals(0xF209, BinaryUtils.getUShort(taskData, 0x006A));
+//        770E:006C       3034    ;SETMEL 
+ assertEquals(0x3034, BinaryUtils.getUShort(taskData, 0x006C));
+//        770E:006E       003C    ;$WZERO 
+ assertEquals(0x003C, BinaryUtils.getUShort(taskData, 0x006E));
+//        770E:0070       0002 
+ assertEquals(0x0002, BinaryUtils.getUShort(taskData, 0x0070));
+//        770E:0072       0068    ;MP1 
+ assertEquals(0x0068, BinaryUtils.getUShort(taskData, 0x0072));
+//        770E:0074       006A    ;MP2 
+ assertEquals(0x006A, BinaryUtils.getUShort(taskData, 0x0074));
+//        770E:0076       0032    ;&ID_00002-000-00-C-BM 
+ assertEquals(0x0032, BinaryUtils.getUShort(taskData, 0x0076));
+//        770E:0078       0064    ;ERROR2 
+ assertEquals(0x0064, BinaryUtils.getUShort(taskData, 0x0078));
+//        770E:007A       F20A 
+ assertEquals(0xF20A, BinaryUtils.getUShort(taskData, 0x007A));
+//        770E:007C       3000    ;ENDE 
+ assertEquals(0x3000, BinaryUtils.getUShort(taskData, 0x007C));

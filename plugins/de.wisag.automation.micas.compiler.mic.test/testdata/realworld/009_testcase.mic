@@ -1,0 +1,1125 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : AR05_03.GPS
+  ;*** Projektname    : NOWEA-MSC 
+  ;*** Projektnummer  : 33101664
+  ;*** Bearbeiter     : Fließgarten
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 5
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  K-GES-ANL-EIN (0)
+  WordV  WERR
+  WordV  ENTFEUCHTEN
+  FloatK K-SW-ABSFEU (8.50)
+  WordV  REGELUNG-AUS
+  WordV  ZL-STOERUNG
+  WordV  GES-ANL-EIN
+  WordV  FROST-LUFT
+  WordV  AU-FO-KL-AUF
+  WordV  UM-KLAPPE-AUF
+  FloatV SW-TAUPUNKT
+  FloatV ZL-TEMP
+  FloatV UL-TEMP
+  FloatV VE-RL-TEMP
+  FloatV KH-RL-TEMP
+  FloatV AL-TEMP
+  FloatV TP-TEMP
+  FloatV ZL-FEUCHTE
+  FloatK K-GLEIT-SW-ZL-1 (0.00)
+  FloatK K-GLEIT-SW-ZL-2 (0.00)
+  FloatV SW-ABSFEU
+  FloatV 41LU10-912AA23I
+  FloatV 41LU10-912AA13I
+  FloatV AUSSENTEMP
+  WordV  BETRIEBSBEREIT
+  FloatV Y-FROST-VE
+  FloatV SW-ZL-REGLER
+  WordK  KON1 (1)
+  FloatV ABSFEU
+  FloatV Y-REGLER-ZL
+  FloatK KON12 (12.00)
+  WordV  SOMMER/WINTER
+  FloatV Y-VE
+  FloatV Y-NE
+  FloatV Y-KUEHLER
+  FloatV Y-WRG-KUEHLEN
+  FloatV Y-WRG-HEIZEN
+  FloatV Y-NE-ENTF-WINTER
+  FloatV Y-NE-ENTF-SOMMER
+  FloatK KON30 (30.00)
+  FloatK KON20 (20.00)
+  FloatV Y-KUE-FROST
+  WordV  FROSTAUSLOESUNG
+  FloatK KON8 (8.00)
+  WordV  AU-UM-FO-KLAPPE
+  WordV  UL-TEMP-20GRD
+  WordV  AUSSENTEMP-<8GRD
+  FloatV GLEIT-SW-ZL-1
+  FloatV GLEIT-SW-ZL-2
+  FloatV AUSSENFEUCHTE
+  WordV  ST-KLAPPEN
+  WordV  VE-PUMPE-EIN
+  WordV  NE-PUMPE-EIN
+  WordV  KLAPPEN-AUF
+  FloatV Y-KUEHL-TAUPUNKT
+  FloatV Y-REG-TAUPUNKT
+  WordV  AL-STOERUNG
+  WordV  ZL-EIN
+  WordV  AL-EIN
+  WordV  VE-PUMPE-ST
+  WordV  NE-PUMPE-ST
+  WordV  QUITTIEREN
+  WordV  VE-PU-BEREIT
+  WordV  BMZ
+  WordV  KUEHLEN-SOMMER
+  WordV  FROST
+  FloatV NE-MAX-SIGNAL
+  FloatV VE-MAX-SIGNAL
+  WordV  BSK-E.2.1
+  WordV  BSK-E.2.2
+  WordV  BSK-2.2.3
+  WordV  BSK-2.2.5
+  WordV  BSK-2.2.4
+  WordV  BSK-2.2.6
+  WordV  RDK-3
+  WordV  RDK-4
+  WordV  RDK-5
+  WordV  RDK-6
+  WordV  RDK-16
+  WordV  RDK-17
+  WordV  RDK-18
+  WordV  RDK-19
+  WordV  RDK-20
+  WordV  RDK-21
+  WordV  RDK-22
+  WordV  RDK-23
+  WordV  RDK-24
+  WordV  RDK-25
+  WordV  RDK-26
+  WordV  RDK-27
+  WordV  RDK-28
+  WordV  WEERR
+  WordV  RDK-29
+  WordV  RDK-30
+  WordV  RDK-31
+  WordV  RDK-32
+  WordV  RDK-33
+  WordV  RDK-34
+  WordV  RDK-35
+  WordV  SAMMELST-BSK-1
+  WordV  SAMMELST-BSK-2
+  WordV  SAMMELSTOERUNG
+  WordV  DIFF.-DRUCK-WRG
+  WordV  DRUCK-WRG-ST
+  WordV  BSK-2.0.1
+  WordV  BSK-2.0.2
+  WordV  BSK-2.0.3
+  WordV  BSK-2.0.4
+  WordV  ZL-HAND
+  FloatV VE-FROST
+  WordV  ST-AL
+  WordV  ANFORDER-KAELTE
+  FloatK KON90 (90.00)
+  FloatK KON2 (2.00)
+  FloatK KON0 (0.00)
+  WordV  NE-PU-BEREIT
+  FloatV ABSFEU-AUSSEN
+  WordV  ZL-A2-KEILR
+  WordV  AB-A2-KEILR
+  FloatK KON5 (5.00)
+  FloatK K2 (2.00)
+  FloatV AU-TEMP-FROST
+  FloatK K0.6 (0.60)
+  WordV  ST-ZL
+  WordV  ST-VE-PUMPE
+  WordV  ST-NE-PUMPE
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &41LU10-200BF00 (25,1)
+  WordK  $M0 (1)
+  IPAAW &41LU10-912AA13 (23)
+  WordK  $M1 (1)
+  IPAAW &41LU10-912AA23 (24)
+  WordK  $M2 (1)
+  IPAAW &41LU10-912AA04 (19)
+  IPAMB &41LU10-200BF00I (25,3)
+  IPAMB &41LU10-210ST02 (0,2)
+  IPAMB &41LU10-200BM01 (0,6)
+  IPAMB &41LU10-200BM03 (0,7)
+  IPAMB &41LU10-210BF01I (222,5)
+  IPAMB &41LU10-211BF01I (223,5)
+  IPAMB &41LU10-212BF01I (224,3)
+  IPAMB &41LU10-214BF01I (225,3)
+  IPAMB &41LU10-210ST01 (222,2)
+  IPAMB &41LU10-211ST01 (223,2)
+  IPAMB &41LU10-212ST01 (224,2)
+  IPAMB &41LU10-214ST01 (225,2)
+  IPAMB &41LU00-002BM01 (66,14)
+  IPAMB &41LU00-002-GF01 (66,11)
+  IPAMB &41LU10-218BM10 (1,7)
+  IPAMB &41LU10-210BM01 (222,0)
+  IPAMB &41LU10-211GF01 (166,14)
+  IPAMB &41LU10-210GF01 (166,15)
+  IPAMB &41LU10-210GF02 (167,10)
+  IPAMB &41LU10-211GF02 (167,11)
+  IPAMB &41LU10-210GF03 (167,12)
+  IPAMB &41LU10-211GF03 (167,13)
+  IPAMB &41LU10-211GF81 (174,9)
+  IPAMB &41LU10-210GF81 (174,10)
+  IPAMB &41LU10-210GF82 (174,11)
+  IPAMB &41LU10-211GF82 (174,12)
+  IPAMB &41LU10-211GF83 (175,3)
+  IPAMB &41LU10-210GF83 (175,4)
+  IPAMB &41LU10-211GF84 (175,5)
+  IPAMB &41LU10-210GF84 (175,6)
+  IPAMB &41LU10-211GF85 (175,7)
+  IPAMB &41LU10-210GF85 (175,8)
+  IPAMB &41LU10-211GF86 (175,9)
+  IPAMB &41LU10-210GF86 (175,10)
+  WordV  $HB13
+  WordV  $HB15
+  WordV  $HB16
+  IPAMB &41LU10-210GF87 (175,11)
+  IPAMB &41LU10-211GF87 (175,12)
+  IPAMB &41LU10-210GF88 (175,13)
+  IPAMB &41LU10-211GF88 (175,14)
+  IPAMB &41LU10-210GF89 (175,15)
+  IPAMB &41LU10-211GF89 (176,0)
+  IPAMB &41LU10-210GF90 (176,1)
+  IPAMB &41LU10-211GF90 (176,2)
+  IPAMB &41LU10-210GF91 (176,3)
+  IPAMB &41LU10-211GF91 (176,4)
+  IPAMB &41LU10-210GF92 (176,5)
+  IPAMB &41LU10-211GF92 (176,6)
+  WordK  $M3 (1)
+  IPAAW &41LU10-906MW11 (27)
+  WordK  $M4 (1)
+  IPAAW &41LU10-906MW12 (28)
+  IPAMB &41LU00-211GF01 (167,14)
+  IPAMB &41LU00-211GF02 (167,15)
+  IPAMB &41LU00-211GF03 (168,0)
+  IPAMB &41LU00-211GF04 (168,1)
+  IPAAW &41LU10-210MW01 (2)
+  IPAAW &41LU10-200MW01 (3)
+  IPAAW &41LU10-212MW01 (4)
+  IPAAW &41LU10-213MW01 (5)
+  IPAAW &41LU10-211MW01 (6)
+  IPAAW &41LU10-210MW03 (7)
+  IPAAW &41LU10-210MW02 (8)
+  IPAAW &41LU10-001MW01 (254)
+  IPAAW &41LU10-001MW02 (255)
+  FloatK $M5 (0.00)
+  FloatK $M6 (100.00)
+  FloatV $F6
+  FloatV $F1
+  WordV  $B10
+  FloatK $M7 (600.00)
+  FloatK $M8 (0.00)
+  WordV  $B11
+  FloatK $M9 (1.00)
+  FloatK $M10 (0.50)
+  WordV  $B5
+  FloatK $M11 (1.00)
+  FloatK $M12 (0.50)
+  WordV  $B6
+  FloatK $M13 (10.00)
+  FloatK $M14 (1.00)
+  WordV  $B14
+  FloatK $M15 (29.00)
+  FloatK $M16 (2.00)
+  WordV  $B15
+  WordV  $HB1
+  WordV  $B16
+  WordV  $WSCRATCH
+  WordV  $B7
+  FloatK $M17 (30.00)
+  FloatK $M18 (10.00)
+  FloatV $F8
+  FloatK $M19 (0.00)
+  WordK  $M20 (2)
+  FloatK $M21 (2.00)
+  FloatK $M22 (12.00)
+  FloatK $M23 (120.00)
+  FloatK $M24 (0.00)
+  FloatK $M25 (0.00)
+  FloatK $M26 (40.00)
+  FloatK $M27 (0.00)
+  FloatK $M28 (0.00)
+  FloatK $M29 (100.00)
+  FloatV $F9
+  FloatK $M30 (10.00)
+  FloatK $M31 (0.00)
+  WordK  $M32 (2)
+  FloatK $M33 (2.00)
+  FloatK $M34 (12.00)
+  FloatK $M35 (120.00)
+  FloatK $M36 (0.00)
+  FloatK $M37 (0.00)
+  FloatK $M38 (20.00)
+  FloatK $M39 (0.00)
+  FloatK $M40 (0.00)
+  FloatK $M41 (100.00)
+  FloatV $F2
+  FloatK $M42 (0.00)
+  FloatV $F3
+  WordV  $B13
+  FloatK $M43 (10.00)
+  FloatV $F7
+  FloatK $M44 (5.00)
+  FloatK $M45 (1.00)
+  WordV  $HB3
+  WordV  $B12
+  WordV  $B8
+  FloatK $M46 (10.00)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B9
+  FloatK $M47 (0.00)
+  FloatV $F4
+  FloatK $M48 (0.00)
+  FloatV $F5
+  FloatK $M49 (1.00)
+  WordV  $B1
+  FloatK $M50 (1.00)
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  FloatK $M51 (0.00)
+  FloatK $M52 (50.00)
+  FloatK $M53 (120.00)
+  FloatK $M54 (0.00)
+  WordK  $M55 (1)
+  IPAAW &41LU10-912AA03 (21)
+  FloatK $M56 (0.00)
+  FloatK $M57 (0.20)
+  WordV  $B19
+  WordV  $B20
+  FloatK $M58 (0.00)
+  FloatK $M59 (900.00)
+  FloatK $M60 (101325.00)
+  FloatK $M61 (101325.00)
+  WordK  $M62 (1)
+  IPAAW &41LU10-912AA14 (22)
+  WordK  $M63 (1)
+  IPAMB &41LU10-912BM14 (252,5)
+  FloatK $M64 (100.00)
+  WordV  $B21
+  FloatK $M65 (60.00)
+  FloatK $M66 (0.00)
+  WordV  $B22
+  FloatK $M67 (101325.00)
+  FloatV $F10
+  FloatK $M68 (7.15)
+  WordV  $B23
+  FloatV $F11
+  FloatV $F12
+  FloatK $M69 (0.40)
+  FloatK $M70 (-27.32)
+  FloatK $M71 (1.76)
+  FloatK $M72 (-10.00)
+  FloatK $M73 (1.91)
+  FloatK $M74 (-8.00)
+  FloatK $M75 (2.09)
+  FloatK $M76 (-7.00)
+  FloatK $M77 (2.27)
+  FloatK $M78 (-6.00)
+  FloatK $M79 (2.48)
+  FloatK $M80 (-5.00)
+  FloatK $M81 (2.70)
+  FloatK $M82 (-4.00)
+  FloatK $M83 (2.90)
+  FloatK $M84 (-3.00)
+  FloatK $M85 (3.20)
+  FloatK $M86 (-2.00)
+  FloatK $M87 (3.48)
+  FloatK $M88 (-1.00)
+  FloatK $M89 (3.77)
+  FloatK $M90 (0.00)
+  FloatK $M91 (4.06)
+  FloatK $M92 (1.00)
+  FloatK $M93 (4.37)
+  FloatK $M94 (2.00)
+  FloatK $M95 (4.69)
+  FloatK $M96 (3.00)
+  FloatK $M97 (5.04)
+  FloatK $M98 (4.00)
+  FloatK $M99 (5.41)
+  FloatK $M100 (5.00)
+  FloatK $M101 (5.80)
+  FloatK $M102 (6.00)
+  FloatK $M103 (6.25)
+  FloatK $M104 (7.00)
+  FloatK $M105 (6.70)
+  FloatK $M106 (8.00)
+  FloatK $M107 (7.15)
+  FloatK $M108 (9.00)
+  FloatV $F13
+  FloatK $M109 (7.15)
+  FloatK $M110 (9.00)
+  FloatK $M111 (7.64)
+  FloatK $M112 (10.00)
+  FloatK $M113 (8.18)
+  FloatK $M114 (11.00)
+  FloatK $M115 (8.74)
+  FloatK $M116 (12.00)
+  FloatK $M117 (9.36)
+  FloatK $M118 (13.00)
+  FloatK $M119 (9.99)
+  FloatK $M120 (14.00)
+  FloatK $M121 (10.65)
+  FloatK $M122 (15.00)
+  FloatK $M123 (11.36)
+  FloatK $M124 (16.00)
+  FloatK $M125 (12.13)
+  FloatK $M126 (17.00)
+  FloatK $M127 (12.94)
+  FloatK $M128 (18.00)
+  FloatK $M129 (13.79)
+  FloatK $M130 (19.00)
+  FloatK $M131 (14.70)
+  FloatK $M132 (20.00)
+  FloatK $M133 (16.66)
+  FloatK $M134 (22.00)
+  FloatK $M135 (18.86)
+  FloatK $M136 (24.00)
+  FloatK $M137 (21.32)
+  FloatK $M138 (26.00)
+  FloatK $M139 (50.20)
+  FloatK $M140 (40.50)
+  FloatV $F14
+  WordK  $M141 (1)
+  IPAAW &41LU10-912AA15 (26)
+  FloatK $M142 (0.00)
+  FloatK $M143 (100.00)
+  FloatK $M144 (100.00)
+  FloatK $M145 (0.00)
+  FloatK $M146 (5.00)
+  WordV  $B24
+  WordV  $B25
+  FloatK $M147 (5.00)
+  WordV  $B26
+  WordV  $B27
+  FloatK $M148 (1.00)
+  FloatK $M149 (50.00)
+  FloatK $M150 (0.00)
+  FloatK $M151 (70.00)
+  FloatK $M152 (100.00)
+  FloatK $M153 (50.00)
+  FloatK $M154 (0.00)
+  FloatK $M155 (100.00)
+  FloatK $M156 (100.00)
+  FloatK $M157 (70.00)
+  FloatK $M158 (0.00)
+  FloatK $M159 (100.00)
+  FloatK $M160 (100.00)
+  FloatK $M161 (80.00)
+  FloatK $M162 (0.00)
+  FloatK $M163 (100.00)
+  FloatK $M164 (100.00)
+  FloatK $M165 (30.00)
+  FloatK $M166 (100.00)
+  FloatK $M167 (50.00)
+  FloatK $M168 (0.00)
+  FloatK $M169 (30.00)
+  FloatV $F15
+  FloatK $M170 (30.00)
+  FloatK $M171 (0.00)
+  FloatK $M172 (50.00)
+  FloatK $M173 (100.00)
+  FloatK $M174 (0.00)
+  FloatK $M175 (100.00)
+  FloatK $M176 (30.00)
+  FloatK $M177 (0.00)
+  FloatV $F16
+  FloatK $M178 (2.00)
+  FloatK $M179 (0.00)
+  FloatK $M180 (25.00)
+  FloatK $M181 (100.00)
+  FloatK $M182 (35.00)
+  FloatK $M183 (0.00)
+  FloatV $F17
+  FloatK $M184 (0.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  FloatK $M185 (300.00)
+  FloatK $M186 (0.00)
+  WordV  $B32
+  WordV  $B33
+  FloatK $M187 (10.00)
+  FloatK $M188 (0.00)
+  WordV  $B34
+  WordV  $B35
+  FloatK $M189 (15.00)
+  FloatK $M190 (100.00)
+  FloatK $M191 (30.00)
+  FloatK $M192 (0.00)
+  FloatV $F18
+  FloatK $M193 (0.00)
+  FloatK $M194 (1.00)
+  FloatK $M195 (20.00)
+  FloatK $M196 (1.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordK  $M197 (1)
+  IPAMB &41LU10-200GF00 (25,10)
+  IPAMB &41LU10-210ST03 (222,6)
+  WordV  $B44
+  IPAMB &41LU10-210ST10 (222,8)
+  WordV  $B45
+  IPAMB &41LU10-210ST07 (222,13)
+  WordV  $B46
+  IPAMB &41LU10-210ST09 (222,14)
+  WordV  $B47
+  WordV  $B48
+  FloatK $M198 (1.00)
+  FloatK $M199 (0.00)
+  WordV  $B49
+  WordK  $M200 (1)
+  IPAMB &41LU10-210ST14 (25,11)
+  IPAMB &41LU10-211ST03 (223,6)
+  WordV  $B50
+  IPAMB &41LU10-211ST10 (223,8)
+  WordV  $B51
+  IPAMB &41LU10-211ST07 (223,13)
+  WordV  $B52
+  IPAMB &41LU10-211ST09 (223,14)
+  WordV  $B53
+  WordV  $B54
+  FloatK $M201 (1.00)
+  FloatK $M202 (0.00)
+  WordV  $B55
+  WordK  $M203 (1)
+  IPAMB &41LU10-211ST14 (25,12)
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  FloatK $M204 (600.00)
+  FloatK $M205 (0.00)
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  FloatK $M206 (600.00)
+  FloatK $M207 (0.00)
+  WordV  $B65
+  WordV  $B66
+  WordK  $M208 (1)
+  IPAMB &41LU10-213BM01 (252,2)
+  FloatK $M209 (0.00)
+  FloatV $F19
+  WordK  $M210 (1)
+  IPAAW &41LU10-212AA01 (10)
+  WordV  $B67
+  FloatK $M211 (0.00)
+  FloatV $F20
+  WordV  $B68
+  FloatK $M212 (0.00)
+  FloatV $F21
+  WordK  $M213 (1)
+  IPAAW &41LU10-214AA01 (12)
+  FloatK $M214 (0.00)
+  FloatV $F22
+  FloatK $M215 (0.00)
+  FloatV $F23
+  FloatV $F24
+  WordK  $M216 (1)
+  IPAAW &41LU10-213AA01 (11)
+  FloatK $M217 (0.00)
+  FloatV $F25
+  FloatK $M218 (0.00)
+  FloatV $F26
+  FloatV $F27
+  WordK  $M219 (1)
+  IPAAW &41LU10-218AA01 (13)
+  WordV  $B69
+  FloatK $M220 (100.00)
+  FloatK $M221 (0.00)
+  FloatV $F28
+  WordK  $M222 (1)
+  IPAAW &41LU10-200AA01 (14)
+  WordV  $B70
+  WordV  $B71
+  FloatK $M223 (210.00)
+  FloatK $M224 (0.00)
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  IPAMB &41LU10-210BF01 (222,1)
+  WordV  $B80
+  FloatK $M225 (90.00)
+  FloatK $M226 (0.00)
+  WordK  $M227 (1)
+  IPAMB &41LU10-210BM91 (25,4)
+  FloatK $M228 (5.00)
+  FloatK $M229 (0.00)
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  WordV  $B84
+  WordV  $B85
+  IPAMB &41LU10-211BF01 (223,1)
+  WordV  $B86
+  FloatK $M230 (90.00)
+  FloatK $M231 (0.00)
+  WordK  $M232 (1)
+  IPAMB &41LU10-211BM91 (25,5)
+  FloatK $M233 (0.00)
+  FloatK $M234 (1800.00)
+  FloatV $F29
+  WordV  $B91
+  FloatK $M235 (3.00)
+  FloatK $M236 (2.00)
+  WordV  $B94
+  FloatK $M237 (0.00)
+  WordV  $B95
+  WordV  $B96
+  WordV  $B97
+  FloatV $F30
+  FloatK $M238 (172800.00)
+  WordV  $B98
+  FloatK $M239 (300.00)
+  WordV  $B92
+  WordV  $B99
+  WordV  $B93
+  WordV  $B87
+  WordV  $B88
+  WordV  $B89
+  IPAMB &41LU10-212BF01 (224,1)
+  WordV  $B90
+  FloatK $M240 (90.00)
+  FloatK $M241 (0.00)
+  WordK  $M242 (1)
+  IPAMB &41LU10-212BM91 (25,13)
+  FloatK $M243 (3.00)
+  FloatK $M244 (2.00)
+  WordV  $B106
+  FloatK $M245 (0.00)
+  FloatK $M246 (1800.00)
+  WordV  $B107
+  WordV  $B108
+  WordV  $B109
+  FloatV $F31
+  FloatK $M247 (172800.00)
+  WordV  $B110
+  FloatK $M248 (300.00)
+  WordV  $B104
+  WordV  $B111
+  WordV  $B105
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  IPAMB &41LU10-214BF01 (225,1)
+  WordV  $B103
+  FloatK $M249 (90.00)
+  FloatK $M250 (0.00)
+  WordK  $M251 (1)
+  IPAMB &41LU10-214BM91 (25,14)
+  WordV  $B112
+  WordK  $M252 (1)
+  IPAMB &41LU10-912ST02 (252,0)
+  WordK  $M253 (1)
+  IPAMB &41LU10-210GF00 (25,6)
+  IPAMB &41LU10-218WA01 (25,7)
+  IPAMB &41LU10-200ST01 (25,8)
+  IPAMB &41LU10-200ST00 (25,9)
+  WordV  $B113
+  WordK  $M254 (1)
+  IPAMB &41LU10-200BF00II (25,2)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage :
+  ;--------
+  ;RLT-Anlage 2
+  ;Büro und Foyer 2.OG
+  ; 
+  ;Modul-Einbau Ort:
+  ;----------------
+  ;ISO-Kasten =A5.3 2.OG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  NICHT (K-GES-ANL-EIN,$HB0)
+  BEFAUS (1,$HB0,K-GES-ANL-EIN,$WZERO,$WZERO,&41LU10-200BF00,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K-GLEIT-SW-ZL-1,$M0,&41LU10-912AA13,WERR)
+  ANAUS (K-GLEIT-SW-ZL-2,$M1,&41LU10-912AA23,WERR)
+  ANAUS (K-SW-ABSFEU,$M2,&41LU10-912AA04,WERR)
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  TASK (2,CYCL,1000)
+  MELEIN (&41LU10-200BF00I,1,GES-ANL-EIN,WERR)
+  BTRA (GES-ANL-EIN,K-GES-ANL-EIN)
+  MELEIN (&41LU10-210ST02,1,FROST-LUFT,WERR)
+  MELEIN (&41LU10-200BM01,2,AU-FO-KL-AUF,UM-KLAPPE-AUF,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&41LU10-210BF01I,1,ZL-EIN,WERR)
+  MELEIN (&41LU10-211BF01I,1,AL-EIN,WERR)
+  MELEIN (&41LU10-212BF01I,1,VE-PUMPE-EIN,WERR)
+  MELEIN (&41LU10-214BF01I,1,NE-PUMPE-EIN,WERR)
+  MELEIN (&41LU10-210ST01,1,ZL-STOERUNG,WERR)
+  MELEIN (&41LU10-211ST01,1,AL-STOERUNG,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&41LU10-212ST01,1,VE-PUMPE-ST,WERR)
+  MELEIN (&41LU10-214ST01,1,NE-PUMPE-ST,WERR)
+  MELEIN (&41LU00-002BM01,1,QUITTIEREN,WERR)
+  MELEIN (&41LU00-002-GF01,1,BMZ,WERR)
+  MELEIN (&41LU10-218BM10,1,DIFF.-DRUCK-WRG,WERR)
+  MELEIN (&41LU10-210BM01,1,ZL-HAND,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&41LU10-211GF01,2,BSK-E.2.1,BSK-E.2.2,WERR)
+  MELEIN (&41LU10-210GF02,4,BSK-2.2.3,BSK-2.2.5,BSK-2.2.4,
+          BSK-2.2.6,WERR)
+  MELEIN (&41LU10-211GF81,4,RDK-3,RDK-4,RDK-5,RDK-6,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&41LU10-211GF83,8,RDK-16,RDK-17,RDK-18,RDK-19,
+          $HB13,RDK-21,$HB15,$HB16,WERR)
+  NICHT ($HB13,RDK-20)
+  NICHT ($HB15,RDK-22)
+  NICHT ($HB16,RDK-23)
+  MELEIN (&41LU10-210GF87,5,RDK-24,RDK-25,RDK-26,RDK-27,
+          RDK-28,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&41LU10-211GF89,7,RDK-29,RDK-30,RDK-31,RDK-32,
+          RDK-33,RDK-34,RDK-35,WEERR)
+  ANAUS (AUSSENTEMP,$M3,&41LU10-906MW11,WERR)
+  ANAUS (AUSSENFEUCHTE,$M4,&41LU10-906MW12,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&41LU00-211GF01,2,BSK-2.0.1,BSK-2.0.2,WERR)
+  MELEIN (&41LU00-211GF03,2,BSK-2.0.3,BSK-2.0.4,WERR)
+  ADD2 (AUSSENTEMP,K2,AU-TEMP-FROST)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&41LU10-210MW01,ZL-TEMP,WERR)
+  ANEIN (&41LU10-200MW01,UL-TEMP,WERR)
+  ANEIN (&41LU10-212MW01,VE-RL-TEMP,WERR)
+  ANEIN (&41LU10-213MW01,KH-RL-TEMP,WERR)
+  ANEIN (&41LU10-211MW01,AL-TEMP,WERR)
+  ANEIN (&41LU10-210MW03,TP-TEMP,WERR)
+  ANEIN (&41LU10-210MW02,ZL-FEUCHTE,WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&41LU10-912AA13,GLEIT-SW-ZL-1,WERR)
+  ATRA (GLEIT-SW-ZL-1,K-GLEIT-SW-ZL-1)
+  ANEIN (&41LU10-912AA23,GLEIT-SW-ZL-2,WERR)
+  ATRA (GLEIT-SW-ZL-2,K-GLEIT-SW-ZL-2)
+  ANEIN (&41LU10-912AA04,SW-ABSFEU,WERR)
+  ATRA (SW-ABSFEU,K-SW-ABSFEU)
+  ANEIN (&41LU10-001MW01,AUSSENTEMP,WERR)
+  ANEIN (&41LU10-001MW02,AUSSENFEUCHTE,WERR)
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  TASK (3,cycl,1200)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B9,$M5,$M6,$F6)
+  MAX (3,$F6,$F5,$F4,$F1)
+  UND11 (GES-ANL-EIN,$B6,$B10)
+  VVZ ($B10,$M7,$M8,$B11)
+  VGLEH (ZL-TEMP,$M9,$M10,$B5)
+  ODR2 ($B11,$B7,BETRIEBSBEREIT)
+  VGLEH (VE-RL-TEMP,$M11,$M12,$B6)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (AU-TEMP-FROST,$M13,$M14,$B14)
+  VGLEH (VE-RL-TEMP,$M15,$M16,$B15)
+  NICHT (GES-ANL-EIN,$HB1)
+  RSS ($B13,$HB1,$B16,$WSCRATCH)
+  BTRA ($B16,$B7)
+  AWT ($B16,$M17,$M18,$F8)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (VE-RL-TEMP,$F8,$WONE,$B14,$M19,$M20,$M21,$M22,$M23,
+        $M24,$M25,$M26,$M27,$M28,$M29,$F9,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (ZL-TEMP,$M30,$WONE,$WZERO,$M31,$M32,$M33,$M34,$M35,
+        $M36,$M37,$M38,$M39,$M40,$M41,$F2,$WSCRATCH)
+  AWT ($B14,$F9,$M42,$F3)
+  ;Version 2.0
+  ; 
+  ODR2 ($B15,$B14,$B13)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B6,$M43,VE-RL-TEMP,$F7)
+  VGLEH ($F7,$M44,$M45,$HB3)
+  NICHT ($HB3,$B12)
+  ODR2 ($B12,FROST,$B8)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIEREN,$M46,$B17)
+  UND11 ($B17,$B8,$B18)
+  RSS ($B8,$B18,$B9,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B9,FROSTAUSLOESUNG)
+  AWT ($B6,$M47,$F3,$F4)
+  AWT ($B5,$M48,$F2,$F5)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLEH (KON5,AUSSENTEMP,$M49,$B1)
+  VGLEH (KON20,VE-RL-TEMP,$M50,$B2)
+  UNDMN (3,BETRIEBSBEREIT,$B1,$B2,0,$B3,$WSCRATCH)
+  ODRMN (2,$B3,FROST,1,BETRIEBSBEREIT,$B4,$WSCRATCH)
+  AWT ($B4,$M51,$F1,Y-FROST-VE)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  REGLER (1,KON1,REGELUNG-AUS,$M52,Y-REGLER-ZL,WERR)
+  VVZ (BETRIEBSBEREIT,$M53,$M54,$HB3)
+  NICHT ($HB3,REGELUNG-AUS)
+  SOLKEN (1,KON1,41LU10-912AA13I,WERR)
+  SOLKEN (2,KON1,41LU10-912AA23I,WERR)
+  MIN (2,GLEIT-SW-ZL-1,GLEIT-SW-ZL-2,SW-ZL-REGLER)
+  ANAUS (SW-ZL-REGLER,$M55,&41LU10-912AA03,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  VGLUH (ABSFEU,SW-ABSFEU,$M56,$M57,$B19)
+  UNDMN (3,$B19,SOMMER/WINTER,BETRIEBSBEREIT,0,$B20,
+         $WSCRATCH)
+  VVZ ($B20,$M58,$M59,ENTFEUCHTEN)
+  ABFEUG (AUSSENFEUCHTE,AUSSENTEMP,$M60,ABSFEU-AUSSEN)
+  ABFEUG (ZL-FEUCHTE,ZL-TEMP,$M61,ABSFEU)
+  ANAUS (ABSFEU,$M62,&41LU10-912AA14,WERR)
+  SETMEL ($M63,1,ENTFEUCHTEN,&41LU10-912BM14,WERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  REGLER (2,KON1,$B22,$M64,Y-REG-TAUPUNKT,WERR)
+  UND2 (BETRIEBSBEREIT,ENTFEUCHTEN,$B21)
+  VVZ ($B21,$M65,$M66,$HB3)
+  NICHT ($HB3,$B22)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ABFEUG (AUSSENFEUCHTE,AUSSENTEMP,$M67,$F10)
+  VGLOH ($F10,$M68,$B23)
+  UST ($B23,$F10,$F11,$F12)
+  FKG ($F11,40,$M69,$M70,$M71,$M72,$M73,$M74,$M75,$M76,$M77,
+       $M78,$M79,$M80,$M81,$M82,$M83,$M84,$M85,$M86,$M87,
+       $M88,$M89,$M90,$M91,$M92,$M93,$M94,$M95,$M96,$M97,
+       $M98,$M99,$M100,$M101,$M102,$M103,$M104,$M105,$M106,
+       $M107,$M108,$F13)
+  FKG ($F12,32,$M109,$M110,$M111,$M112,$M113,$M114,$M115,
+       $M116,$M117,$M118,$M119,$M120,$M121,$M122,$M123,$M124,
+       $M125,$M126,$M127,$M128,$M129,$M130,$M131,$M132,$M133,
+       $M134,$M135,$M136,$M137,$M138,$M139,$M140,$F14)
+  AWT ($B23,$F13,$F14,SW-TAUPUNKT)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ANAUS (SW-TAUPUNKT,$M141,&41LU10-912AA15,WERR)
+  FKG (Y-REG-TAUPUNKT,4,$M142,$M143,$M144,$M145,
+       Y-KUEHL-TAUPUNKT)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  UND21 (AU-FO-KL-AUF,BETRIEBSBEREIT,DIFF.-DRUCK-WRG,
+         DRUCK-WRG-ST)
+  VGLOH (VE-MAX-SIGNAL,$M146,$B24)
+  VGLOH (KON0,VE-MAX-SIGNAL,$B25)
+  RSS ($B24,$B25,VE-PU-BEREIT,$WSCRATCH)
+  VGLOH (NE-MAX-SIGNAL,$M147,$B26)
+  VGLOH (KON0,NE-MAX-SIGNAL,$B27)
+  RSS ($B26,$B27,NE-PU-BEREIT,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  VGLEH (AUSSENTEMP,KON12,$M148,SOMMER/WINTER)
+  FKG (Y-REGLER-ZL,4,$M149,$M150,$M151,$M152,Y-VE)
+  FKG (Y-REGLER-ZL,4,$M153,$M154,$M155,$M156,
+       Y-NE-ENTF-WINTER)
+  FKG (Y-REGLER-ZL,4,$M157,$M158,$M159,$M160,Y-NE)
+  FKG (Y-REGLER-ZL,4,$M161,$M162,$M163,$M164,
+       Y-NE-ENTF-SOMMER)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  FKG (Y-REGLER-ZL,4,$M165,$M166,$M167,$M168,Y-WRG-KUEHLEN)
+  AWT (REGELUNG-AUS,Y-REGLER-ZL,$M169,$F15)
+  FKG ($F15,4,$M170,$M171,$M172,$M173,Y-WRG-HEIZEN)
+  FKG ($F15,4,$M174,$M175,$M176,$M177,Y-KUEHLER)
+  ADD2 (AL-TEMP,K0.6,$F16)
+  VGLUH (AUSSENTEMP,$F16,$M178,$M179,KUEHLEN-SOMMER)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  FKG (VE-RL-TEMP,4,$M180,$M181,$M182,$M183,$F17)
+  AWT (FROST-LUFT,$F17,$M184,VE-FROST)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  VGLOH (KON30,VE-RL-TEMP,$B28)
+  VGLOH (KON20,KH-RL-TEMP,$B29)
+  ODR2 ($B28,$B29,$B30)
+  UND11 ($B30,FROST-LUFT,$B31)
+  VVZ ($B31,$M185,$M186,$B32)
+  ODRMN (3,$B32,$B34,$B35,0,FROST,$WSCRATCH)
+  UNDMN (0,2,FROST-LUFT,VE-PUMPE-EIN,$B33,$WSCRATCH)
+  VVZ ($B33,$M187,$M188,$B34)
+  UNDMN (0,2,VE-PUMPE-ST,FROST-LUFT,$B35,$WSCRATCH)
+  FKG (KH-RL-TEMP,4,$M189,$M190,$M191,$M192,$F18)
+  AWT (FROST-LUFT,$F18,$M193,Y-KUE-FROST)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  VGLEH (KON8,AUSSENTEMP,$M194,AUSSENTEMP-<8GRD)
+  VGLEH (UL-TEMP,$M195,$M196,UL-TEMP-20GRD)
+  ODRMN (0,2,FROST-LUFT,BETRIEBSBEREIT,$B36,$WSCRATCH)
+  UNDMN (4,BETRIEBSBEREIT,AUSSENTEMP-<8GRD,UL-TEMP-20GRD,
+         FROST-LUFT,0,$B37,$WSCRATCH)
+  UND21 (BETRIEBSBEREIT,FROST-LUFT,AUSSENTEMP-<8GRD,$B38)
+  ODR2 ($B37,$B38,$B39)
+  RSS ($B36,$B39,AU-UM-FO-KLAPPE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (11,BSK-2.2.3,BSK-2.2.4,BSK-2.2.5,BSK-2.2.6,
+         BSK-E.2.1,BSK-E.2.2,RDK-16,RDK-17,RDK-18,RDK-19,
+         RDK-20,0,$B40,$WSCRATCH)
+  ODRMN (11,RDK-21,RDK-22,RDK-23,RDK-24,RDK-25,RDK-26,RDK-27,
+         RDK-28,RDK-29,RDK-30,RDK-31,0,$B41,$WSCRATCH)
+  ODR2 ($B40,$B41,SAMMELST-BSK-1)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (8,RDK-3,RDK-4,RDK-5,RDK-6,RDK-32,RDK-33,RDK-34,
+         RDK-35,0,SAMMELST-BSK-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (8,FROSTAUSLOESUNG,SAMMELST-BSK-1,SAMMELST-BSK-2,
+         ST-KLAPPEN,ZL-A2-KEILR,AB-A2-KEILR,ST-ZL,ST-AL,3,
+         ZL-STOERUNG,AL-STOERUNG,BMZ,$B42,$WSCRATCH)
+  UND11 ($B42,ZL-HAND,SAMMELSTOERUNG)
+  ODR2 (SAMMELST-BSK-1,SAMMELST-BSK-2,$B43)
+  SETMEL ($M197,1,$B43,&41LU10-200GF00,WERR)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  MELEIN (&41LU10-210ST03,1,$B44,$WSCRATCH)
+  MELEIN (&41LU10-210ST10,1,$B45,$WSCRATCH)
+  MELEIN (&41LU10-210ST07,1,$B46,$WSCRATCH)
+  MELEIN (&41LU10-210ST09,1,$B47,$WSCRATCH)
+  UNDMN (4,$B44,$B45,$B46,$B47,1,ZL-STOERUNG,$B48,$WSCRATCH)
+  VVZ ($B48,$M198,$M199,$B49)
+  RSS ($B49,QUITTIEREN,ZL-A2-KEILR,$WSCRATCH)
+  SETMEL ($M200,1,ZL-A2-KEILR,&41LU10-210ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  MELEIN (&41LU10-211ST03,1,$B50,$WSCRATCH)
+  MELEIN (&41LU10-211ST10,1,$B51,$WSCRATCH)
+  MELEIN (&41LU10-211ST07,1,$B52,$WSCRATCH)
+  MELEIN (&41LU10-211ST09,1,$B53,$WSCRATCH)
+  UNDMN (4,$B50,$B51,$B52,$B53,1,AL-STOERUNG,$B54,$WSCRATCH)
+  VVZ ($B54,$M201,$M202,$B55)
+  RSS ($B55,QUITTIEREN,AB-A2-KEILR,$WSCRATCH)
+  SETMEL ($M203,1,AB-A2-KEILR,&41LU10-211ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  VGLOH (Y-KUEHL-TAUPUNKT,KON90,$B56)
+  UND2 ($B56,SOMMER/WINTER,$B57)
+  ODR2 ($B57,$B61,$B58)
+  VVZ ($B58,$M204,$M205,$B59)
+  RSS ($B59,$B66,ANFORDER-KAELTE,$WSCRATCH)
+  VGLOH (Y-KUEHLER,KON90,$B60)
+  UND2 ($B60,SOMMER/WINTER,$B61)
+  VGLOH (KON2,Y-KUEHL-TAUPUNKT,$B62)
+  VGLOH (KON2,Y-KUEHLER,$B63)
+  UNDMN (3,$B62,ANFORDER-KAELTE,$B63,0,$B64,$WSCRATCH)
+  VVZ ($B64,$M206,$M207,$B65)
+  ODRMN (1,$B65,1,SOMMER/WINTER,$B66,$WSCRATCH)
+  SETMEL ($M208,1,ANFORDER-KAELTE,&41LU10-213BM01,WERR)
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  TASK (4,cycl,1200)
+  AWT (ENTFEUCHTEN,Y-VE,$M209,$F19)
+  MAX (3,$F19,Y-FROST-VE,VE-FROST,VE-MAX-SIGNAL)
+  ANAUS (VE-MAX-SIGNAL,$M210,&41LU10-212AA01,WERR)
+  UND2 (ENTFEUCHTEN,KUEHLEN-SOMMER,$B67)
+  AWT ($B67,$M211,Y-NE-ENTF-SOMMER,$F20)
+  UND11 (ENTFEUCHTEN,KUEHLEN-SOMMER,$B68)
+  AWT ($B68,$M212,Y-NE-ENTF-WINTER,$F21)
+  MAX (3,$F20,$F21,Y-NE,NE-MAX-SIGNAL)
+  ANAUS (NE-MAX-SIGNAL,$M213,&41LU10-214AA01,WERR)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  AWT (FROST-LUFT,Y-KUE-FROST,$M214,$F22)
+  AWT (SOMMER/WINTER,$M215,Y-KUEHLER,$F23)
+  MAX (3,$F22,Y-KUEHL-TAUPUNKT,$F23,$F24)
+  ANAUS ($F24,$M216,&41LU10-213AA01,WERR)
+  AWT ($B69,Y-WRG-HEIZEN,$M217,$F25)
+  AWT (KUEHLEN-SOMMER,$M218,Y-WRG-KUEHLEN,$F26)
+  MAX (2,$F25,$F26,$F27)
+  ANAUS ($F27,$M219,&41LU10-218AA01,WERR)
+  UND11 (ENTFEUCHTEN,KUEHLEN-SOMMER,$B69)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  AWT (AU-UM-FO-KLAPPE,$M220,$M221,$F28)
+  ANAUS ($F28,$M222,&41LU10-200AA01,WERR)
+  UNDMN (0,2,AU-UM-FO-KLAPPE,AU-FO-KL-AUF,$B70,$WSCRATCH)
+  UND11 (AU-UM-FO-KLAPPE,UM-KLAPPE-AUF,$B71)
+  ODR2 ($B72,$B73,KLAPPEN-AUF)
+  VVZ (KLAPPEN-AUF,$M223,$M224,ST-KLAPPEN)
+  ODR2 ($B70,$B74,$B72)
+  ODR2 ($B75,$B71,$B73)
+  UND11 (UM-KLAPPE-AUF,AU-UM-FO-KLAPPE,$B74)
+  UND2 (AU-UM-FO-KLAPPE,AU-FO-KL-AUF,$B75)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UNDMN (3,BETRIEBSBEREIT,ZL-STOERUNG,AL-STOERUNG,3,
+         SAMMELST-BSK-1,SAMMELST-BSK-2,ST-ZL,$B76,$B77)
+  UND11 ($B76,ZL-EIN,$B78)
+  UND2 ($B76,ZL-EIN,$B79)
+  BEFAUS (2,$B77,$B78,$B79,$WZERO,&41LU10-210BF01,$B80)
+  VVZ ($B80,$M225,$M226,ST-ZL)
+  SETMEL ($M227,1,$B79,&41LU10-210BM91,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  VVZ (ZL-EIN,$M228,$M229,$B81)
+  UNDMN (3,BETRIEBSBEREIT,AL-STOERUNG,$B81,1,ST-AL,$B82,$B83)
+  UND11 ($B82,AL-EIN,$B84)
+  UND2 ($B82,AL-EIN,$B85)
+  BEFAUS (2,$B83,$B84,$B85,$WZERO,&41LU10-211BF01,$B86)
+  VVZ ($B86,$M230,$M231,ST-AL)
+  SETMEL ($M232,1,$B85,&41LU10-211BM91,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M233,$M234,$F29)
+  MOKY (VE-PU-BEREIT,$F29,$B91)
+  VGLEH (VE-MAX-SIGNAL,$M235,$M236,$B94)
+  VVZ ($B94,$M237,$F29,$B95)
+  UND2 (VE-PU-BEREIT,$B95,$B96)
+  ODR2 ($B88,$B93,$B97)
+  NICHT ($B97,$HB0)
+  UHR ($HB0,$B97,$F30)
+  VGLOH ($F30,$M238,$B98)
+  MOKY ($B98,$M239,$B92)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (3,$B91,$B96,$B92,1,FROST-LUFT,$B99,$WSCRATCH)
+  UND11 ($B99,$B88,$B93)
+  BTRA ($B93,$B87)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (1,ST-VE-PUMPE,1,VE-PUMPE-ST,$B88,$WSCRATCH)
+  NICHT ($B87,$B89)
+  BEFAUS (2,$B89,$B87,$WZERO,$WZERO,&41LU10-212BF01,$B90)
+  VVZ ($B90,$M240,$M241,ST-VE-PUMPE)
+  SETMEL ($M242,1,$B87,&41LU10-212BM91,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (NE-MAX-SIGNAL,$M243,$M244,$B106)
+  VVZ ($B106,$M245,$M246,$B107)
+  UND2 (NE-PU-BEREIT,$B107,$B108)
+  ODR2 ($B101,$B105,$B109)
+  NICHT ($B109,$HB0)
+  UHR ($HB0,$B109,$F31)
+  VGLOH ($F31,$M247,$B110)
+  MOKY ($B110,$M248,$B104)
+  ODR2 ($B108,$B104,$B111)
+  UND11 ($B111,$B101,$B105)
+  BTRA ($B105,$B100)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (1,ST-NE-PUMPE,1,NE-PUMPE-ST,$B101,$WSCRATCH)
+  NICHT ($B100,$B102)
+  BEFAUS (2,$B102,$B100,$WZERO,$WZERO,&41LU10-214BF01,$B103)
+  VVZ ($B103,$M249,$M250,ST-NE-PUMPE)
+  SETMEL ($M251,1,$B100,&41LU10-214BM91,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  BEFAUS (1,SAMMELSTOERUNG,$WZERO,$WZERO,$WZERO,
+          &41LU10-200BF00,WERR)
+  NICHT (FROST-LUFT,$B112)
+  SETMEL ($M252,1,$B112,&41LU10-912ST02,WERR)
+  SETMEL ($M253,4,FROSTAUSLOESUNG,DRUCK-WRG-ST,ST-KLAPPEN,
+          $B113,&41LU10-210GF00,WERR)
+  ODRMN (3,SAMMELSTOERUNG,ST-VE-PUMPE,ST-NE-PUMPE,2,
+         NE-PUMPE-ST,VE-PUMPE-ST,$B113,$WSCRATCH)
+  SETMEL ($M254,1,SAMMELSTOERUNG,&41LU10-200BF00II,WERR)
+  ENDE 
+  ENDMODUL 

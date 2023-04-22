@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="de.wisag.automation.micas.diagram.ui.part.DiagramEditor"
+            contributorClass="de.wisag.automation.micas.diagram.ui.part.CustomBlockDiagramActionBarContributor"
+            default="false"
+            icon="icons/blockdiagram.gif"
+            id="de.wisag.automation.micas.diagram.ui.blockDiagramEditor"
+            matchingStrategy="org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditorMatchingStrategy"
+            name="Micas Block Diagram Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+      <editpartProvider
+            class="de.wisag.automation.micas.diagram.ui.providers.EditPartProvider">
+         <Priority
+               name="Low">
+         </Priority>
+      </editpartProvider>
+   </extension>
+   <extension
+         point="org.eclipse.gmf.runtime.diagram.ui.paletteProviders">
+      <paletteProvider
+            class="de.wisag.automation.micas.diagram.ui.palette.PaletteProvider">
+         <Priority
+               name="Low">
+         </Priority>
+         <editor
+               id="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+         </editor>
+      </paletteProvider>
+   </extension>
+   <extension
+         point="org.eclipse.gmf.runtime.diagram.ui.resources.editor.documentProviders">
+      <provider
+            class="de.wisag.automation.micas.diagram.ui.part.DocumentProvider"
+            documentType="org.eclipse.gmf.runtime.diagram.ui.resources.editor.document.IDiagramDocument"
+            id="de.wisag.automation.micas.diagram.ui.part.documentProvider"
+            inputTypes="de.wisag.automation.micas.diagram.ui.part.DiagramEditorInput">
+      </provider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="de.wisag.automation.micas.diagram.ui.commands.openDiagram"
+            name="Open Diagram">
+      </command>
+      <command
+            id="de.wisag.automation.micas.diagram.ui.commands.setsymbolwritable"
+            name="Set Writable">
+      </command>
+      <command
+            id="de.wisag.automation.micas.diagram.ui.commands.setsymbolreadonly"
+            name="Set ReadOnly">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.diagram.ui.commands.openDiagram"
+               label="Open Diagram..."
+               style="push">
+            <visibleWhen>
+               <and>
+                  <count
+                        value="1">
+                  </count>
+                  <iterate>
+                     <instanceof
+                           value="de.wisag.automation.micas.module.Page">
+                     </instanceof>
+                  </iterate>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.diagram.ui.commands.setsymbolwritable"
+               label="Set Symbol writable"
+               style="push">
+            <visibleWhen>
+               <and>
+                  <with
+                        variable="activeEditorId">
+                     <equals
+                           value="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+                     </equals>
+                  </with>
+               </and>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="de.wisag.automation.micas.diagram.ui.commands.setsymbolreadonly"
+               label="Set Symbol ReadOnly"
+               style="push">
+            <visibleWhen>
+               <and>
+                  <with
+                        variable="activeEditorId">
+                     <equals
+                           value="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+                     </equals>
+                  </with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.wisag.automation.micas.diagram.ui.handlers.OpenDiagramHandler"
+            commandId="de.wisag.automation.micas.diagram.ui.commands.openDiagram">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.diagram.ui.handlers.SetSymbolWritable"
+            commandId="de.wisag.automation.micas.diagram.ui.commands.setsymbolwritable">
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.diagram.ui.handlers.SetSymbolReadOnly"
+            commandId="de.wisag.automation.micas.diagram.ui.commands.setsymbolreadonly">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections
+            contributorId="org.eclipselabs.damos.diagram.ui">
+         <propertySection
+               afterSection="org.eclipselabs.damos.diagram.ui.sections.blockName"
+               class="de.wisag.automation.micas.diagram.ui.properties.VariablePropertySection"
+               filter="de.wisag.automation.micas.diagram.ui.properties.VariablePropertySectionFilter"
+               id="de.wisag.automation.micas.diagram.ui.sections.variable"
+               tab="org.eclipselabs.damos.diagram.ui.tabs.general">
+         </propertySection>
+         <propertySection
+               afterSection="org.eclipselabs.damos.diagram.ui.sections.blockName"
+               class="de.wisag.automation.micas.diagram.ui.properties.ConstantPropertySection"
+               filter="de.wisag.automation.micas.diagram.ui.properties.ConstantPropertySectionFilter"
+               id="de.wisag.automation.micas.diagram.ui.sections.constant"
+               tab="org.eclipselabs.damos.diagram.ui.tabs.general">
+         </propertySection>
+         <propertySection
+               afterSection="org.eclipselabs.damos.diagram.ui.sections.blockName"
+               class="de.wisag.automation.micas.diagram.ui.properties.ReferencePropertySection"
+               filter="de.wisag.automation.micas.diagram.ui.properties.ReferencePropertySectionFilter"
+               id="de.wisag.automation.micas.diagram.ui.sections.reference"
+               tab="org.eclipselabs.damos.diagram.ui.tabs.general">
+         </propertySection>
+         <propertySection
+               afterSection="org.eclipselabs.damos.diagram.ui.sections.blockName"
+               class="de.wisag.automation.micas.diagram.ui.properties.FKGParameterPropertySection"
+               filter="de.wisag.automation.micas.diagram.ui.properties.FKGParameterPropertySectionFilter"
+               id="de.wisag.automation.micas.diagram.ui.sections.parameters"
+               tab="org.eclipselabs.damos.diagram.ui.tabs.parameters">
+         </propertySection>
+      </propertySections>
+   </extension>
+   
+   
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="blockDiagramPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <!--	
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="blockDiagramPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      -->
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="blockDiagramRender">
+         <Priority name="Lowest"/>
+         <ViewId id="de.wisag.automation.micas.diagram.ui.blockDiagramEditor">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+   	 <!--
+     <extension
+         point="org.eclipse.ui.popupMenus">
+	 	<objectContribution
+            adaptable="false"
+            id="de.wisag.automation.micas.diagram.ui.contribution.printing"
+            nameFilter="*.module"
+            objectClass="org.eclipse.core.resources.IFile">
+	         <action
+	               class="de.wisag.automation.micas.diagram.ui.handlers.PrintModuleDiagramsAction"
+	               id="de.wisag.automation.micas.diagram.ui.actions.printing"
+	               label="Print all diagrams">
+	         </action>
+		</objectContribution>
+   </extension>
+   -->
+   <extension
+         point="org.eclipse.gmf.runtime.emf.clipboard.core.clipboardSupport">
+      <factory
+            class="de.wisag.automation.micas.diagram.ui.clipboard.CustomClipboardSupportFactory"
+            nsURI="http://www.eclipse.org/gmf/runtime/1.0.2/notation"
+            priority="medium">
+      </factory>
+      <factory
+            class="de.wisag.automation.micas.diagram.ui.clipboard.CustomClipboardSupportFactory"
+            nsURI="http://www.eclipselabs.org/damos/DMLNotation/1.0.0"
+            priority="medium">
+      </factory>
+      <factory
+            class="de.wisag.automation.micas.diagram.ui.clipboard.CustomClipboardSupportFactory"
+            nsURI="http://www.eclipselabs.org/damos/DML/1.0.0"
+            priority="medium">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="de.wisag.automation.micas.diagram.ui.util.ConnectionPropertyTester"
+            id="de.wisag.automation.micas.diagram.ui.connections"
+            namespace="de.wisag.automation.micas.diagram.ui"
+            properties="isBlockInterconnection"
+            type="de.wisag.automation.micas.diagram.ui.editparts.ConnectionEditPart">
+      </propertyTester>
+   </extension>
+   
+   <!-- here comes the validation specific stuff
+   
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <MarkerNavigationProvider class="de.wisag.automation.micas.diagram.ui.providers.BlockMarkerNavigationProvider">
+         <MarkerType name="de.wisag.automation.micas.diagram.ui.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+   <extension id="diagnostic" name="Mindmap Plugin problems" point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension>   
+
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <decoratorProvider class="de.wisag.automation.micas.diagram.ui.providers.BlockValidationDecoratorProvider">
+         <Priority name="High"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+   
+   <extension point="org.eclipse.emf.validation.constraintProviders">
+      <category id="de.wisag.automation.micas.diagram.ui.audits" mandatory="false" name="Block Audits">
+         <![CDATA[Audits to detect problems in Block diagrams.]]>
+      </category>
+      <constraintProvider cache="true">
+        <package namespaceUri="http://www.eclipselabs.org/damos/DML/1.0.0"/>
+        <constraints categories="de.wisag.automation.micas.diagram.ui.audits">
+         <constraint id="cycle"
+            lang="Java" class="de.wisag.automation.micas.diagram.ui.providers.BlockValidationProvider$Adapter1"
+            name="Cyclic relationship check"
+            mode="Live"
+            severity="ERROR" statusCode="200">
+            <description><![CDATA[This audit detects (simple) cycles between Topic relationships]]></description>
+            <message><![CDATA[A cycle was found in relationships between two Topic elements.]]></message>
+            <target class="dml.Port"/>
+         </constraint>
+         <constraint id="topic.name"
+            lang="Java" class="de.wisag.automation.micas.diagram.ui.providers.BlockValidationProvider$Adapter2"
+            name="Topic name audit"
+            mode="Live"
+            severity="ERROR" statusCode="200">
+            <description><![CDATA[A Topic must have a name provided.]]></description>
+            <message><![CDATA[Topics must have a name]]></message>
+            <target class="dml.Port"/>
+         </constraint>
+        </constraints>
+      </constraintProvider>
+   </extension>
+
+   <extension point="org.eclipse.emf.validation.constraintBindings">
+      <clientContext default="false" id="de.wisag.automation.micas.diagram.ui.diagramDefaultCtx">
+         <selector class="de.wisag.automation.micas.diagram.ui.providers.BlockValidationProvider$DefaultCtx"/>
+      </clientContext>
+      <binding context="de.wisag.automation.micas.diagram.ui.diagramDefaultCtx">
+      		<constraint ref="de.wisag.automation.micas.diagram.ui.cycle"/>
+            <constraint ref="de.wisag.automation.micas.diagram.ui.topic.name"/>
+      </binding>
+   </extension>
+
+   <extension point="org.eclipse.emf.validation.ui.UIRegisteredClientContext">
+      <clientContext id="de.wisag.automation.micas.diagram.ui.diagramDefaultCtx"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.editorActions"> 
+      <editorContribution 
+         id="de.wisag.automation.micas.diagram.ui.editorContribution" 
+         targetID="de.wisag.automation.micas.diagram.ui.blockDiagramEditor"> 
+         <menu
+               label="Validation"
+               path="additions"
+               id="org.eclipse.emf.validationMenuID">
+            <separator name="additions"/>
+         </menu>
+         <action
+               label="Batch Validtion"
+               class="de.wisag.automation.micas.diagram.ui.validation.BatchValidationDelegate"
+               menubarPath="org.eclipse.emf.validationMenuID/additions"
+               id="org.eclipse.gmf.examples.mindmap.ui.validateAction"/>
+         <action
+               label="Live Validation"
+               class="de.wisag.automation.micas.diagram.ui.validation.EnableLiveValidationDelegate"
+               menubarPath="org.eclipse.emf.validationMenuID/additions"
+               id="org.eclipse.gmf.examples.mindmap.ui.enableLiveValidationAction"/>
+      </editorContribution> 
+   </extension>
+   -->
+     
+</plugin>

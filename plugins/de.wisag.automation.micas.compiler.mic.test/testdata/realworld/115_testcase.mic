@@ -1,0 +1,793 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI50505.GPS
+  ;*** Projektname    : MPI Turm 5
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Meyer
+  ;*** Line Nummer    : 5
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV SW_Zul_Temp
+  FloatV SW_RL_Temp
+  WordV  Abl_Gewebe_i_ein
+  WordV  Zul_Zone1_R0
+  WordV  Zul_Zone1_ST
+  WordV  Zul_Zone1_R1
+  WordV  Außentemp<10
+  WordV  Zul_Zone_gestört
+  WordV  Zul_Z1_Keilr_St
+  WordV  Gewebe_gestört
+  WordV  Zul_Z1_i_ein
+  WordV  Abl_Vent_einsch
+  WordV  Zul_Vent_einsch
+  WordV  vorspuelen
+  WordV  vorgespuelt
+  WordV  Klappen_oeffnen
+  WordV  RL_Temp>40
+  FloatV Regler_SG
+  WordV  Zul_Zone1_Keilr
+  WordV  Frost_Gewebe
+  WordV  Klp_Gewebe_auf
+  FloatV RL_Temp_Gewebe
+  FloatV Zul_Temp_Z1
+  FloatV Abl_Temp_Z2
+  FloatV Zul_Temp_Z2
+  FloatV Abl_Temp_Z3
+  FloatV Zul_Temp_Z3
+  FloatV SW_Abl_Temp_Z3
+  FloatV SW_Abl_Temp_Z1
+  FloatV SW_Abl_Temp_Z2
+  FloatV SW_Zul_Druck
+  WordV  Tab_Gewebe_Aus
+  WordV  Tab_Gewebe_Ein1
+  WordV  Tab_Gewebe_Ein2
+  WordV  Anl_Gewebe_R0
+  WordV  Anl_Gewebe_ST
+  WordV  Zul_Gewebe_R1
+  WordV  Zul_Gewebe_R2
+  WordV  Abl_Gewebe_R0
+  WordV  Abl_Gewebe_ST
+  WordV  Abl_Gewebe_R1
+  WordV  Abl_Gewebe_R2
+  WordV  Zul_Gewebe_Keilr
+  WordV  Abl_Gewebe_Keilr
+  WordV  Unterspannung_NN
+  WordK  Anl_Gewebe_R1 (0)
+  WordK  Anl_Gewebe_R2 (0)
+  WordV  Anl_Gewebe_EIN1
+  WordV  Anl_Gewebe_EIN2
+  FloatV Zul_Druck_Gewe_G
+  WordV  Entriegeln
+  WordV  Anl_Gewebe_R1_2
+  WordV  Anl_Gewebe_R2_2
+  WordV  Zul_Gew_gestört
+  FloatV Zul_Temp_Gewebe
+  WordV  Zul_Gewebe_R0
+  WordV  Abl_Gew_gestört
+  WordV  Abl_Gew_Keilr_St
+  FloatV Aussentemp
+  FloatV VE_Regler
+  FloatV ERH_Ventil
+  WordV  Anl_Gewebe_R2_1
+  FloatV Regler_SG_Druck
+  FloatV Erhitzer_Zone_3
+  FloatV Regler_SW_Zone1
+  WordV  Zul_Gew_Keilr_St
+  FloatV Zul_Druck_Gewebe
+  WordV  Anl_Gewebe_R1_1
+  WordV  AU_Temp<SW_Pu
+  WordV  Erh_Pumpe_ST
+  FloatV SW_AT_Grenze_Pu
+  FloatV Regler_SG_Zone1
+  WordV  Erh_Pumpe_R1
+  WordV  Zul_Gewebe_ST
+  FloatV Kuehler_Zone_2
+  WordV  Entr.Befehl
+  FloatV Kuehler_Zone_1
+  FloatV Erhitzer_Zone_1
+  WordV  Zul_Gewebe_i_ein
+  FloatV Abl_Temp_Z1
+  FloatV Erhitzer_Zone_2
+  FloatV Regler_SW_Zone2
+  WordV  K1
+  FloatV Regler_SG_Zone2
+  FloatV Regler_SG_Zone3
+  WordV  Entr.Taster
+  FloatV Regler_SW_Zone3
+  FloatV Kuehler_Zone_3
+  IPAMB &M0 (71,11)
+  WordV  $WSCRATCH
+  IPAMB &M1 (71,14)
+  IPAMB &M2 (71,15)
+  IPAMB &M3 (0,0)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M8 (4.00)
+  FloatK $M9 (0.00)
+  WordV  $B1
+  WordV  $B3
+  FloatK $M10 (4.00)
+  FloatK $M11 (0.00)
+  WordV  $B2
+  WordV  $B4
+  WordV  $HB0
+  FloatK $M12 (20.00)
+  FloatK $M13 (0.00)
+  WordV  $B5
+  FloatK $M14 (0.00)
+  FloatK $M15 (5.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B15
+  FloatK $M16 (20.00)
+  FloatK $M17 (0.00)
+  WordV  $B10
+  FloatK $M18 (0.00)
+  FloatK $M19 (5.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B16
+  IPAMB &M20 (143,1)
+  IPAMB &M21 (143,2)
+  IPAMB &M22 (143,3)
+  IPAMB &M23 (143,5)
+  IPAMB &M28 (57,9)
+  IPAMB &M29 (57,10)
+  IPAMB &M30 (57,11)
+  IPAMB &M31 (57,13)
+  IPAMB &M32 (58,9)
+  IPAMB &M33 (58,10)
+  WordV  $HB2
+  IPAMB &M34 (58,11)
+  IPAMB &M35 (58,13)
+  IPAMB &M36 (66,3)
+  IPAMB &M37 (66,6)
+  IPAMB &M38 (66,7)
+  IPAMB &M39 (65,7)
+  IPAMB &M40 (18,3)
+  IPAMB &M41 (19,1)
+  IPAMB &M42 (19,2)
+  IPAMB &M43 (19,3)
+  IPAMB &M44 (18,6)
+  IPAMB &M45 (18,7)
+  IPAMB &M49 (69,3)
+  IPAMB &M50 (0,11)
+  IPAMB &M51 (0,14)
+  IPAMW &M52 (41)
+  FloatK $M53 (11.00)
+  FloatK $M54 (1.00)
+  WordV  $HB3
+  WordV  $B17
+  FloatK $M55 (60.00)
+  FloatK $M56 (60.00)
+  FloatK $M57 (1.00)
+  WordV  $B18
+  FloatK $M58 (60.00)
+  FloatK $M59 (60.00)
+  IPAMW &M60 (8)
+  IPAMW &M61 (73)
+  FloatK $M62 (40.00)
+  FloatK $M63 (1.00)
+  IPAMW &M64 (9)
+  FloatK $M65 (30.00)
+  IPAMW &M66 (30)
+  IPAMW &M67 (27)
+  IPAMW &M68 (31)
+  IPAMW &M69 (28)
+  IPAMW &M70 (32)
+  IPAMW &M71 (29)
+  IPAAW &M72 (130)
+  IPAAW &M73 (131)
+  IPAAW &M74 (142)
+  IPAAW &M75 (145)
+  WordV  $B19
+  WordV  $B20
+  FloatK $M76 (30.00)
+  FloatK $M77 (0.00)
+  WordV  $B21
+  WordK  $M78 (1)
+  IPAMB &M79 (143,12)
+  WordV  $B22
+  WordV  $B23
+  FloatK $M80 (30.00)
+  FloatK $M81 (0.00)
+  WordV  $B24
+  WordK  $M82 (1)
+  IPAMB &M83 (143,14)
+  FloatK $M84 (80.00)
+  FloatK $M85 (1.00)
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  FloatK $M86 (120.00)
+  FloatK $M87 (0.00)
+  WordV  $B28
+  WordK  $M88 (1)
+  IPAMB &M89 (143,15)
+  WordV  $B29
+  FloatK $M90 (120.00)
+  FloatK $M91 (0.00)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $HB1
+  FloatK $M92 (5.00)
+  FloatK $M93 (0.00)
+  WordV  $HB4
+  FloatK $M94 (0.00)
+  WordK  $M95 (2)
+  FloatK $M96 (3.00)
+  FloatK $M97 (10.00)
+  FloatK $M98 (120.00)
+  FloatK $M99 (0.00)
+  FloatK $M100 (10.00)
+  FloatK $M101 (40.00)
+  FloatK $M102 (0.20)
+  FloatK $M103 (0.00)
+  FloatK $M104 (100.00)
+  FloatK $M105 (0.00)
+  WordV  $B34
+  FloatK $M106 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatK $M107 (100.00)
+  FloatK $M108 (0.00)
+  WordV  $B35
+  FloatK $FZERO (0.00)
+  FloatK $M109 (50.00)
+  FloatK $M110 (48.00)
+  FloatK $M111 (4.00)
+  FloatK $M112 (0.00)
+  FloatK $M113 (50.00)
+  FloatK $M114 (48.00)
+  FloatK $M115 (4.00)
+  FloatK $M116 (0.00)
+  FloatK $M117 (50.00)
+  FloatK $M118 (48.00)
+  FloatK $M119 (4.00)
+  FloatK $M120 (0.00)
+  WordV  $B36
+  FloatK $M121 (604800.00)
+  FloatK $M122 (0.00)
+  WordV  $B37
+  FloatK $M123 (300.00)
+  WordV  $B38
+  FloatK $M124 (5.00)
+  FloatK $M125 (2.00)
+  WordV  $B39
+  FloatK $M126 (0.00)
+  FloatK $M127 (600.00)
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  IPAMB &M128 (18,5)
+  IPAMB &M129 (18,1)
+  WordV  $B45
+  IPAMB &M130 (56,9)
+  WordV  $B46
+  WordV  $B47
+  FloatK $M131 (0.00)
+  FloatK $M132 (10.00)
+  WordV  $B48
+  WordV  $B49
+  FloatK $M133 (15.00)
+  FloatK $M134 (0.00)
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  FloatK $M136 (0.00)
+  FloatK $M137 (10.00)
+  WordV  $B56
+  WordV  $B57
+  FloatK $M138 (15.00)
+  FloatK $M139 (0.00)
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordK  $M142 (1)
+  IPAAW &M143 (16)
+  WordK  $M144 (1)
+  IPAAW &M145 (132)
+  WordK  $M146 (1)
+  IPAAW &M147 (34)
+  WordK  $M148 (1)
+  IPAAW &M149 (33)
+  WordK  $M150 (1)
+  IPAAW &M151 (36)
+  WordK  $M152 (1)
+  IPAAW &M153 (35)
+  WordK  $M154 (1)
+  IPAAW &M155 (38)
+  WordK  $M156 (1)
+  IPAAW &M157 (37)
+  WordV  $B64
+  WordV  $B70
+  WordV  $B65
+  WordV  $B66
+  WordV  $B71
+  WordV  $B67
+  WordV  $B68
+  WordV  $B72
+  WordV  $B69
+  WordK  $M159 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         Turm 5
+  ;Anlage:  Gewebezucht
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_Gewebe_R1,Anl_Gewebe_EIN1)
+  BTRA (Anl_Gewebe_R2,Anl_Gewebe_EIN2)
+  ENDE 
+  TASK (2,cycl,300)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,Tab_Gewebe_Aus,$WSCRATCH)
+  MELEIN (&M1,1,Tab_Gewebe_Ein1,$WSCRATCH)
+  MELEIN (&M2,1,Tab_Gewebe_Ein2,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,2000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (Anl_Gewebe_EIN1,$M8,$M9,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B3,Anl_Gewebe_R1_1)
+  NICHT ($B1,$B3)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Anl_Gewebe_EIN2,$M10,$M11,$B2)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B4,Anl_Gewebe_R2_1)
+  NICHT ($B2,$B4)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M12,$M13,$B5)
+  VVZ (Anl_Gewebe_R1,$M14,$M15,$B6)
+  UND11 ($B6,$B5,$B7)
+  RSS ($B7,Anl_Gewebe_R1,$B8,$WSCRATCH)
+  UND2 ($B8,$B5,$B9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B9,$B15,Anl_Gewebe_R1_2)
+  NICHT ($B9,$B15)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (Unterspannung_NN,$HB0)
+  VVZ ($HB0,$M16,$M17,$B10)
+  VVZ (Anl_Gewebe_R2,$M18,$M19,$B11)
+  UND11 ($B11,$B10,$B12)
+  RSS ($B12,Anl_Gewebe_R2,$B13,$WSCRATCH)
+  UND2 ($B13,$B10,$B14)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B14,$B16,Anl_Gewebe_R2_2)
+  NICHT ($B14,$B16)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M20,1,Anl_Gewebe_R0,$WSCRATCH)
+  MELEIN (&M21,1,Anl_Gewebe_ST,$WSCRATCH)
+  MELEIN (&M22,1,Anl_Gewebe_R1,$WSCRATCH)
+  MELEIN (&M23,1,Anl_Gewebe_R2,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M28,1,Zul_Gewebe_R0,$WSCRATCH)
+  MELEIN (&M29,1,Zul_Gewebe_ST,$WSCRATCH)
+  MELEIN (&M30,1,Zul_Gewebe_R1,$WSCRATCH)
+  MELEIN (&M31,1,Zul_Gewebe_R2,$WSCRATCH)
+  MELEIN (&M32,1,Abl_Gewebe_R0,$WSCRATCH)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Abl_Gewebe_ST)
+  MELEIN (&M34,1,Abl_Gewebe_R1,$WSCRATCH)
+  MELEIN (&M35,1,Abl_Gewebe_R2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M36,1,Zul_Gewebe_Keilr,$WSCRATCH)
+  MELEIN (&M37,1,Abl_Gewebe_Keilr,$WSCRATCH)
+  MELEIN (&M38,1,Zul_Zone1_Keilr,$WSCRATCH)
+  MELEIN (&M39,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_Gewebe)
+  MELEIN (&M40,1,Klp_Gewebe_auf,$WSCRATCH)
+  MELEIN (&M41,1,Zul_Zone1_R0,$WSCRATCH)
+  MELEIN (&M42,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Zul_Zone1_ST)
+  MELEIN (&M43,1,Zul_Zone1_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M44,1,Erh_Pumpe_ST,$WSCRATCH)
+  MELEIN (&M45,1,Erh_Pumpe_R1,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M49,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung_NN)
+  MELEIN (&M50,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M51,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M52,Aussentemp,$WSCRATCH)
+  VGLEH (Aussentemp,$M53,$M54,$HB3)
+  NICHT ($HB3,$B17)
+  VVZ ($B17,$M55,$M56,Außentemp<10)
+  VGLEH (SW_AT_Grenze_Pu,Aussentemp,$M57,$B18)
+  VVZ ($B18,$M58,$M59,AU_Temp<SW_Pu)
+  ANEIN (&M60,Zul_Temp_Gewebe,$WSCRATCH)
+  ANEIN (&M61,RL_Temp_Gewebe,$WSCRATCH)
+  VGLEH (RL_Temp_Gewebe,$M62,$M63,RL_Temp>40)
+  ANEIN (&M64,Zul_Druck_Gewebe,$WSCRATCH)
+  PT1 (Zul_Druck_Gewebe,$M65,Zul_Druck_Gewe_G)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M66,Abl_Temp_Z1,$WSCRATCH)
+  ANEIN (&M67,Zul_Temp_Z1,$WSCRATCH)
+  ANEIN (&M68,Abl_Temp_Z2,$WSCRATCH)
+  ANEIN (&M69,Zul_Temp_Z2,$WSCRATCH)
+  ANEIN (&M70,Abl_Temp_Z3,$WSCRATCH)
+  ANEIN (&M71,Zul_Temp_Z3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M72,SW_Zul_Temp,$WSCRATCH)
+  ANEIN (&M73,SW_Zul_Druck,$WSCRATCH)
+  ANEIN (&M74,SW_RL_Temp,$WSCRATCH)
+  SOLKEN (11,K1,SW_Abl_Temp_Z1,$WSCRATCH)
+  SOLKEN (12,K1,SW_Abl_Temp_Z2,$WSCRATCH)
+  SOLKEN (13,K1,SW_Abl_Temp_Z3,$WSCRATCH)
+  ;Sollwerte Zone 1 bis 3
+  ;AT-geführte Abluft-
+  ;Zuluftkaskade
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M75,SW_AT_Grenze_Pu,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  NICHT (Zul_Gewebe_R0,Zul_Gewebe_i_ein)
+  XOR2 (Zul_Gewebe_i_ein,Zul_Gewebe_Keilr,$B19)
+  UND2 (Zul_Gewebe_i_ein,$B19,$B20)
+  VVZ ($B20,$M76,$M77,$B21)
+  RSS ($B21,Entriegeln,Zul_Gew_Keilr_St,$WSCRATCH)
+  ODRMN (3,Zul_Gew_Keilr_St,Frost_Gewebe,Zul_Gewebe_ST,0,
+         Zul_Gew_gestört,$WSCRATCH)
+  SETMEL ($M78,1,Zul_Gew_Keilr_St,&M79,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  NICHT (Abl_Gewebe_R0,Abl_Gewebe_i_ein)
+  XOR2 (Abl_Gewebe_i_ein,Abl_Gewebe_Keilr,$B22)
+  UND2 (Abl_Gewebe_i_ein,$B22,$B23)
+  VVZ ($B23,$M80,$M81,$B24)
+  RSS ($B24,Entriegeln,Abl_Gew_Keilr_St,$WSCRATCH)
+  ODRMN (3,Abl_Gew_Keilr_St,Frost_Gewebe,Abl_Gewebe_ST,0,
+         Abl_Gew_gestört,$WSCRATCH)
+  SETMEL ($M82,1,Abl_Gew_Keilr_St,&M83,$WSCRATCH)
+  ODR2 (Abl_Gew_gestört,Zul_Gew_gestört,Gewebe_gestört)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  VGLEH (Regler_SG_Druck,$M84,$M85,$B25)
+  UND2 (Zul_Zone1_R1,$B25,Zul_Z1_i_ein)
+  XOR2 (Zul_Z1_i_ein,Zul_Zone1_Keilr,$B26)
+  UND2 (Zul_Z1_i_ein,$B26,$B27)
+  VVZ ($B27,$M86,$M87,$B28)
+  RSS ($B28,Entriegeln,Zul_Z1_Keilr_St,$WSCRATCH)
+  ODRMN (3,Zul_Z1_Keilr_St,Frost_Gewebe,Zul_Zone1_ST,0,
+         Zul_Zone_gestört,$WSCRATCH)
+  SETMEL ($M88,1,Zul_Z1_Keilr_St,&M89,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NICHT (Anl_Gewebe_R0,$B29)
+  VVZ ($B29,$M90,$M91,$B30)
+  ODR2 ($B30,RL_Temp>40,$B31)
+  ODRMN (1,$B31,1,Außentemp<10,$B32,$WSCRATCH)
+  UND2 ($B32,$B29,$B33)
+  NICHT ($B29,$HB1)
+  RSS ($B33,$HB1,vorgespuelt,$WSCRATCH)
+  UND11 ($B29,vorgespuelt,vorspuelen)
+  UND21 (vorgespuelt,$B29,Gewebe_gestört,Klappen_oeffnen)
+  UND2 (Klp_Gewebe_auf,Klappen_oeffnen,Zul_Vent_einsch)
+  VVZ (Zul_Vent_einsch,$M92,$M93,Abl_Vent_einsch)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  NICHT (Außentemp<10,$HB4)
+  LREG (RL_Temp_Gewebe,SW_RL_Temp,K1,$HB4,$M94,$M95,$M96,
+        $M97,$M98,$M99,$M100,$M101,$M102,$M103,$M104,
+        VE_Regler,$WSCRATCH)
+  ;X =  Istwert
+  ;W =  Sollwert
+  ;FW = Festwert
+  ;TA = Zykluszeit
+  ;XP = Prop.-Bereich
+  ;TN = Nachstellzeit
+  ;TV = Vorhaltezeit
+  ;WU = SW-Grenz.unten
+  ;WO = SW-Grenz.oben
+  ;HY = Hysteres
+  ;YU = SG-Grenz.unten
+  ;YO = SG-Grenz.oben
+  ; 
+  ;RT = Reglertyp
+  ;     1 = P-Regler
+  ;     2 = PI-Regler
+  ;     3 = PID-Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  REGLER (17,K1,Anl_Gewebe_R0,$M105,Regler_SG,$WSCRATCH)
+  ODR2 (Frost_Gewebe,vorspuelen,$B34)
+  AWT (Anl_Gewebe_R0,Regler_SG,$M106,$F1)
+  MAX (2,$F1,VE_Regler,$F2)
+  AWT ($B34,$F2,$M107,ERH_Ventil)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  REGLER (24,K1,$B35,$M108,Regler_SG_Druck,$WSCRATCH)
+  ODR2 (Zul_Zone1_R0,Zul_Gewebe_R0,$B35)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  REGLER (18,K1,$WZERO,$FZERO,Regler_SW_Zone1,$WSCRATCH)
+  REGLER (19,K1,Anl_Gewebe_R0,$M109,Regler_SG_Zone1,
+          $WSCRATCH)
+  SEQ2 (Regler_SG_Zone1,$M110,$M111,$M112,Kuehler_Zone_1,
+        Erhitzer_Zone_1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  REGLER (20,K1,$WZERO,$FZERO,Regler_SW_Zone2,$WSCRATCH)
+  REGLER (21,K1,Anl_Gewebe_R0,$M113,Regler_SG_Zone2,
+          $WSCRATCH)
+  SEQ2 (Regler_SG_Zone2,$M114,$M115,$M116,Kuehler_Zone_2,
+        Erhitzer_Zone_2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  REGLER (22,K1,$WZERO,$FZERO,Regler_SW_Zone3,$WSCRATCH)
+  REGLER (23,K1,Anl_Gewebe_R0,$M117,Regler_SG_Zone3,
+          $WSCRATCH)
+  SEQ2 (Regler_SG_Zone3,$M118,$M119,$M120,Kuehler_Zone_3,
+        Erhitzer_Zone_3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  UNDMN (0,2,Erh_Pumpe_R1,$B38,$B36,$WSCRATCH)
+  VVZ ($B36,$M121,$M122,$B37)
+  MOKY ($B37,$M123,$B38)
+  VGLEH (ERH_Ventil,$M124,$M125,$B39)
+  VVZ ($B39,$M126,$M127,$B40)
+  UND11 (AU_Temp<SW_Pu,Anl_Gewebe_R0,$B41)
+  ODRMN (3,$B38,$B40,$B41,0,$B42,$WSCRATCH)
+  UNDMN (1,$B42,1,Erh_Pumpe_ST,$B43,$B44)
+  BEFAUS (1,$B44,$B43,$WZERO,$WZERO,&M128,$WSCRATCH)
+  ;7 Tage = 604.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  NICHT (Klappen_oeffnen,$HB0)
+  BEFAUS (1,$HB0,Klappen_oeffnen,$WZERO,$WZERO,&M129,
+          $WSCRATCH)
+  ODR2 (Gewebe_gestört,Zul_Zone_gestört,$B45)
+  NICHT ($B45,$HB0)
+  BEFAUS (1,$HB0,$B45,$WZERO,$WZERO,&M130,$WSCRATCH)
+  ;Aussen und Fortluft-
+  ;klappe
+  ; 
+  ;Störmeldeleuchte
+  ;Tableau
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  UND2 (Anl_Gewebe_R1,Zul_Vent_einsch,$B46)
+  UND2 (Zul_Vent_einsch,Anl_Gewebe_R2,$B47)
+  VVZ (Zul_Gewebe_R2,$M131,$M132,$B48)
+  UND11 ($B46,$B48,$B49)
+  VVZ ($B47,$M133,$M134,$B50)
+  UND11 ($B47,$B50,$B51)
+  ODR2 ($B49,$B51,$B52)
+  UNDMN (0,2,$B52,$B50,$B53,$WSCRATCH)
+  BEFAUS (2,$B53,$B52,$B50,$WZERO,&M28,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UND2 (Anl_Gewebe_R1,Abl_Vent_einsch,$B54)
+  UND2 (Abl_Vent_einsch,Anl_Gewebe_R2,$B55)
+  VVZ (Abl_Gewebe_R2,$M136,$M137,$B56)
+  UND11 ($B54,$B56,$B57)
+  VVZ ($B55,$M138,$M139,$B58)
+  UND11 ($B55,$B58,$B59)
+  ODR2 ($B57,$B59,$B60)
+  UNDMN (0,2,$B60,$B58,$B61,$WSCRATCH)
+  BEFAUS (2,$B61,$B60,$B58,$WZERO,&M32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (1,Zul_Vent_einsch,2,Anl_Gewebe_R0,Zul_Zone_gestört,
+         $B62,$B63)
+  BEFAUS (1,$B63,$B62,$WZERO,$WZERO,&M41,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ANAUS (ERH_Ventil,$M142,&M143,$WSCRATCH)
+  ANAUS (Zul_Druck_Gewe_G,$M144,&M145,$WSCRATCH)
+  ANAUS (Kuehler_Zone_1,$M146,&M147,$WSCRATCH)
+  ANAUS (Erhitzer_Zone_1,$M148,&M149,$WSCRATCH)
+  ;Zul-Druck geglättet
+  ; 
+  ;Erhitzerventil         G
+  ; 
+  ;Erhitzerventil Zone 1
+  ; 
+  ;Kühlerventil Zone 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ANAUS (Kuehler_Zone_2,$M150,&M151,$WSCRATCH)
+  ANAUS (Erhitzer_Zone_2,$M152,&M153,$WSCRATCH)
+  ANAUS (Kuehler_Zone_3,$M154,&M155,$WSCRATCH)
+  ANAUS (Erhitzer_Zone_3,$M156,&M157,$WSCRATCH)
+  ;Erhitzerventil Zone 1
+  ; 
+  ;Kühlerventil Zone 1
+  ; 
+  ;Erhitzerventil Zone 1
+  ; 
+  ;Kühlerventil Zone 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gewebe_R0,$B70,$B64)
+  NICHT (Anl_Gewebe_R0,$B70)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B64,Tab_Gewebe_Aus,Gewebe_gestört,0,$B65,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gewebe_R1,$B71,$B66)
+  NICHT (Anl_Gewebe_R1,$B71)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Anl_Gewebe_R1_1,Anl_Gewebe_R1_2,$B66,
+         Tab_Gewebe_Ein1,0,$B67,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_Gewebe_R2,$B72,$B68)
+  NICHT (Anl_Gewebe_R2,$B72)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,Anl_Gewebe_R2_1,Anl_Gewebe_R2_2,$B68,
+         Tab_Gewebe_Ein2,0,$B69,$WSCRATCH)
+  ;Anlagenbef.Gewebezucht
+  ; 
+  BEFAUS (2,$B65,$B67,$B69,$WZERO,&M20,$WSCRATCH)
+  SETMEL ($M159,1,Gewebe_gestört,&M21,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

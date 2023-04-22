@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Micas Workbench  Diagram Export
+Bundle-SymbolicName: de.wisag.automation.micas.export.mic;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0",
+ org.eclipse.core.resources;bundle-version="3.5.2",
+ org.eclipse.ui;bundle-version="3.5.2",
+ org.apache.commons.io;bundle-version="1.4.0",
+ org.apache.commons.lang;bundle-version="2.4.0",
+ org.eclipselabs.damos.dml;bundle-version="0.2.0",
+ org.eclipselabs.damos.diagram.dmlnotation;bundle-version="0.2.0",
+ de.wisag.automation.micas.rt;bundle-version="1.0.0",
+ de.wisag.automation.micas.module;bundle-version="1.0.0",
+ de.wisag.automation.micas.h86;bundle-version="1.0.0",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.5.0",
+ de.wisag.automation.micas.common;bundle-version="1.0.0",
+ com.google.guava
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Activator: de.wisag.automation.micas.export.mic.internal.Activator
+Bundle-ActivationPolicy: lazy
+Export-Package: de.wisag.automation.micas.export.mic
+Bundle-Vendor: WISAG Automatisierungstechnik GmbH & Co. KG

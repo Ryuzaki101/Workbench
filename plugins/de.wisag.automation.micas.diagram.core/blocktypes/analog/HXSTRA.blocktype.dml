@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dml:BlockType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dml="http://www.eclipselabs.org/damos/DML/1.0.0" xmlns:module="http://www.wisag.de/Automation/Micas/Module" xmi:id="__CDgIGyVEeiX4tWYMMmuaw" qualifiedName="de.wisag.automation.micas.library.HXSTRA">
+  <belongingCategories href="../Block.category.dml#_9k-qII2PEd-xLIzFfuJVQQ"/>
+  <parameters xsi:type="dml:ExpressionParameter" xmi:id="_zH5eoGy-Eei3vNtIYFkICQ" name="HXSTRA Nummer">
+    <defaultExpression xmi:id="_53Q5oGy-Eei3vNtIYFkICQ" expression="1"/>
+  </parameters>
+  <parameters xsi:type="dml:ExpressionParameter" xmi:id="_3VBXoGzEEeitss1LbqqnfQ" name="HXSTRA Text">
+    <defaultExpression xmi:id="_4z2tIGzEEeitss1LbqqnfQ" expression="2"/>
+  </parameters>
+  <inputDefinitions xmi:id="_d5PPsGyWEeiX4tWYMMmuaw" name="relFeuchte">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_ZuScwGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_egRagGyWEeiX4tWYMMmuaw" name="Temperatur">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_afugwGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_fJaeIGyWEeiX4tWYMMmuaw" name="Druck">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_bEZUEGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_g8ciAGyWEeiX4tWYMMmuaw" name="Temp Sollwert">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_bnD8QGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_hces8GyWEeiX4tWYMMmuaw" name="Temp Hysterese">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_cHM04GyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_h_vyEGyWEeiX4tWYMMmuaw" name="relFeuchte Sollwert">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_coBqAGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_iZsjIGyWEeiX4tWYMMmuaw" name="relFeuchte Hysterese">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_dQxsEGyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <inputDefinitions xmi:id="_i4HkgGyWEeiX4tWYMMmuaw" name="absFeuchte max">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_d4HY4GyXEeiX4tWYMMmuaw"/>
+  </inputDefinitions>
+  <outputDefinitions xmi:id="_5qWJsGyXEeiX4tWYMMmuaw" name="Sollwert Temp">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_6SrVAGyXEeiX4tWYMMmuaw"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_lYHcEGyWEeiX4tWYMMmuaw" name="Sollwert relFeuchte">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_ekUXkGyXEeiX4tWYMMmuaw"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_l8hJoGyWEeiX4tWYMMmuaw" name="im Behaglichkeitsfeld">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_fSAkAGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_mbLbkGyWEeiX4tWYMMmuaw" name="Kuehlen und Befeuchten">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_f6x0MGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_m1NFIGyWEeiX4tWYMMmuaw" name="nur Befeuchten">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_gcgoQGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_nQCnAGyWEeiX4tWYMMmuaw" name="Heizen und Befeuchten">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_hHWVAGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_nw6fcGyWEeiX4tWYMMmuaw" name="nur Heizen">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_h61ncGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_oTeZ8GyWEeiX4tWYMMmuaw" name="Entfeuchten und Nacherhitzen">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_iihSgGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_ozhL8GyWEeiX4tWYMMmuaw" name="nurKuehlen">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_jPrTcGyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+  <outputDefinitions xmi:id="_pQwhkGyWEeiX4tWYMMmuaw" name="Error">
+    <dataType xsi:type="module:MicasDataTypeSpecification" xmi:id="_j3kZ4GyXEeiX4tWYMMmuaw" dataType="Word"/>
+  </outputDefinitions>
+</dml:BlockType>

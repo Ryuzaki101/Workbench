@@ -1,0 +1,178 @@
+/* -- Allgemeines -- */
+body {
+  background: #eFeFeF; /* Hier sollte man, auch wenn man ein Bild als Hintergrund hat, nicht vergessen die Hintergrundfarbe zu setzen. Es könnte nämlich sein dass man aus versehen für den Text die gleiche Farbe hat wie für den Hintergrund wobei die Leute mit ausgeschalteten Bildern nichts erkennen können. */
+  color: black;
+  margin: 0;
+  padding: 1%; /* Ein wenig Abstand, damit der Anschein eines Blattes auf der Wand immer erhalten bleibt. */
+  min-width: 640px; /* Bei weniger als 640px Breite soll ein Scrollbalken erscheinen. */
+  font-size: 100.01%; /* umgeht den Font-Size-Bug im Safari, älteren Operas und IE */
+  font-family: tahoma, verdana, arial, sans-serif ;
+}
+/* -- Links und Co -- */
+a {
+  /*color: #0B4D8C; text-decoration: underline;  /* Alle unbesuchten Links bekommen eine leicht bläuliche Farbe und werden unterstrichen, damit man Sie gleich im Text erkennt. */
+  color: blue;
+  text-decoration: underline;  /* Alle unbesuchten Links bekommen eine leicht bläuliche Farbe und werden unterstrichen, damit man Sie gleich im Text erkennt. */
+  font-size: 0.9em
+}
+a:hover {
+  background: #efefef;
+  color: blue;
+}
+a:visited {
+  color: #0B4D8C;
+}
+.skip { /* Da ein wichtiger Screenreader das display: none; auch für sich versteht und nichts vorließt obwohl das hier sich vor allem an Blinde richtet, muss man es so lösen dass man diesen Link außerhalb des Sichtfeldes bringt. Somit wird er trotzdem vorgelesen. */
+  position: absolute;
+  margin-left: -999px;
+  width: 990px;
+}
+/* -- Überschriften -- */
+h1 { /* Die Überschrift jeder Seite stellen wir besonders da, denn sie ist sehr wichtig. */
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 0.6em;
+  padding: 0.6em 0 0.2em 2%;
+  margin: 0;
+  /*border-bottom: 1px dashed #5577AA; /*#E6E6FA;*/
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+  border-top: 1px dashed #5577AA; /*#E6E6FA;*/
+  padding: 0.6em 0 0 0;
+  /*border-bottom: 1px dashed #5577AA; /*#E6E6FA;*/
+}
+h3, h4 {
+  font-weight: bold; 
+  font-size: 1.1em;
+}
+h1, h2, h3, h4, h5, h6 { /* Alle Überschriften bekommen eine besondere Farbe, und da sie sehr groß sind, können wir es uns erlauben hier eine Schrift mit Serifen zu wählen. Wir spielen hier ein wenig mit Typographie, und entgegen dem Einheitsbrei auf vielen Seiten. */
+  color: #5577AA; /* color: #6699CC; */
+  font-family: tahoma, verdana, arial, sans-serif ;
+}
+/* -- Trennlinie -- */
+hr {
+  /*border: 1px dashed #5577AA; /*#E6E6FA;*/
+  border: 1px solid #5577AA; /*#E6E6FA;*/
+}
+/* -- Bilderrahmen -- */
+img { /* Alle Bilder bekommen einen schönen Rahmen. */
+  /*border: solid 1px #aaa;*/
+  padding: 1px;
+  max-width: 95%; /* Gute Browser machen ein zu großes Bild, welches das Design sprengen würde, entsprechend kleiner. Funktioniert beim IE leider nicht. */
+}
+/* -- Tabellen -- */
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+th {
+  background: #BBCCEE;
+}
+tr {
+  text-align: center;
+}
+/* -- Textformatierungen -- */
+.fleft { /* Sachen, an denen der Text vorbeifließen soll, werden dieser Klassen zugewiesen. */
+  float: left;
+  margin: 0 1em 0.2em 0; /* Man sollte einen schönen Abstand wählen, sonst kleben die Sachen so am Text. */
+}
+.fright {
+  float: right;
+  margin: 0 0 0.2em 1em;
+  padding: 1px;
+}
+
+/* -- Layoutspezifisches -- */
+#container { /* Ist dafür gedacht dass die viele Formatierungen einfacher werden, und auch ein gemeinsammer Rand entstehen kann, der nicht ganz außen am Fenster ist. */
+  font-size: 0.8em; /* Ein Kompromiss über den man sicherlich streiten kann, aber viele Leute empfinden die von Ihnen selbst eingestellte Textgröße für zu groß, wissen aber nicht wie man das ändert. */
+  max-width: 70em; /* Eine Begrenzung der Breite auf höhstens 70em. Das machen wir um nicht zu lange Textbreiten zu erhalten, welche dann schlecht zu lesen sind. Für den IE gibt es in ielte6.css einen Woraround. */
+  margin: auto; /* Hiermit zentrieren wir unsere Seite. */
+  border: 1px solid #aaa; /* Eine kleine optische Abgränzung. */
+  border-top: 0; /* Ganz oben allerdings würde es mit dem grauen komisch aussehen, deshalb weg damit. */
+  background: white;
+}
+#footer {
+  clear: both; /* Damit #main mindestens so hoch ausgedehnt wird wie #subnav, falls #subnav länger sein sollte. */
+  padding: 0 20px;
+}
+
+/* - Logo bzw. Kopf - */
+#logo {
+  background: url(../img/logo_3a_transp.png) 99% 0 no-repeat;
+  height: 60px; /* Höhe des Bildes = höhe für Kopfbereich */
+  padding: 0 20px;
+  text-align: left;
+  line-height: 28px;
+  font-size: 28px; /* Das Logo soll auch in unseren Kopf passen deswegen ist es ein wenig kleiner. Durch die Angabe der Textgröße in px verhindern wir im IE die Vergrößerung und zerstörung des Layouts durch den Benutzer. Der Opera vergrößert das Bild proportional mit also kann da auch nichts passieren. */
+  overflow: hidden; /* Einzig der Mozilla könnte den Text unverhältnissmäßig zum Hintergrund verändern. Damit dann wenigstens das Menü benutzbar bleibt schneiden wir alles was herausragt ab. */
+  letter-spacing: -1px; /* Wieder ein wenig Typografie damit das Logo besser aussieht. */
+  margin: 0; /* Manche Browser haben das schon voreingestellt aber nicht alle, deshalb vereinheitlichen wir das. */
+  font-size: 2.0em;
+  font-weight: bold;
+  /*line-height: 0.6em;*/
+  padding: 0.6em 0 0.2em 2%;
+  color: #5577AA; /* color: #6699CC; */
+  font-family: tahoma, verdana, arial, sans-serif ;
+}
+#logo a {
+  color: black;
+  text-decoration: none;
+}
+#logo a span { /* Buchstaben zwischen span-/span werden anders dargestellt */
+  color: black;
+  background: white;
+  padding-right: 0.1em; /* Ein Hack, damit das weiße rechts und links genau so breit ist. */
+}
+
+/* - Menü - */
+#menu {
+  background: #ffff33;
+  padding: 5px 5%; /* Je kleiner das Fenster desto kleiner soll auch der Abstand des Menüs rechts und links sein. */
+  margin: 0;
+  text-align: right;
+  color: blue; /* Hier definieren wir die Farbe des Menüpunktes, der kein Link ist, also den Menüpunkt der Seite auf der wir uns gerade befinden. */
+}
+#menu li {
+  font-size: 1.0em;
+  display: inline; /* Damit die Menüpunkte nebeneinander und nicht untereinander erscheinen. */
+  list-style-type: none; /* Die Bullets vor den Menüpunkten schalten wir ab. */
+  /*border-left: 1px solid black; Ein optischer Trennungsstrich */
+  padding: 0 10px 0 15px;
+  font-weight: bold;
+}
+#menu li a {
+  color: black; /* Linkfarbe */
+  text-decoration: none;
+}
+
+
+/* - Subnavigation, Rechte Spalte - */
+#subnav {
+  width: 26%; /* Je kleiner das Fenster desto kleiner soll auch die Breite der Subnavigation werden, damit immer genügend Platz für den richtigen Inhalt bleibt. */
+  min-width: 10em; /* Damit uns die Subnavigarion nicht zu sehr zusammengeschoben wird. */
+  float: right; /* Damit erreichen wir dass der Inhalt links neben der Subnavigation vorbeifließt und nicht erst unten drunter anfängt. */
+  padding: 75px 1% 1em 1%;
+  margin: 1em 1% 0 1%;
+  border-left: 1px dotted #aaa; /* Hiermit trennen wir optisch die Subnavigation vom eigentlichen Inhalt ab. */
+  font-size: 0.9em; /* Die Schriftgröße setzen wir hier ein wenig herunter damit erkennbar wird dass das Informationen zweiter Rangordnung sind. */
+}
+#subnav dt { /* Die einzelnen Überschriften in der Subnavigation */
+  font-size: 1.2em;
+  font-family: tahoma, verdana, arial, sans-serif ;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-top: 1px dotted #aaa; /* Hier eine optische Trennungslinie zwischen den einzelnen Bereichen der Subnavigation. */
+}
+#subnav dd { /* Die Unterpunkte der Subnavigation. */
+  padding: 0;
+  margin: 0.2em 0;
+}
+
+/* - Der Hauptinhaltsteil - */
+#main {
+  background: url(../img/cadillac_h95_trans.gif) no-repeat 95% 0 white;  /*Die kleine, blaue, halbdurchsichtige Blume wird als Hintergrundbild, welches rechts oben in der Ecke steht, definiert. */
+  padding: 0 31% 0 20px; /* Der rechte Abstand (31%) stellt sicher, dass auch nach dem Umfließen der Subnavigation der Text genau so breit wird wie oben und ein zwei-Spalten Eindruck entsteht. */
+  line-height: 1.5em; /* Zur besseren Lesbarkeit erhöhen wir die Zeilenhöhe. */
+}

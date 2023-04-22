@@ -1,0 +1,1053 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60504.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (AR20,4)
+  WordV  WERR
+  WordK  K-GES-ANL-LA-AUS (0)
+  WordK  K-GES-ANL-LA-EIN (1)
+  WordK  K-GES-ANL-DG-AUS (0)
+  WordK  K-GES-ANL-DG-EIN (1)
+  WordK  K-NACHT-DG-SUG (0)
+  WordK  K-TAG-DG-SUG (1)
+  WordK  K-GES-ANL-IN-AUS (0)
+  WordK  K-GES-ANL-IN-EIN (1)
+  WordK  K-NACHT-NORD-INN (0)
+  WordK  K-TAG-NORD-INN (1)
+  WordK  K-GES-ANL-SU-AUS (0)
+  WordK  K-GES-ANL-SU-EIN (1)
+  WordK  K-NACHT-SUED (0)
+  WordK  K-TAG-SUED (1)
+  FloatV SW-VL-TEMP-DG-SG
+  FloatV VL-TEMP-DG-SUG
+  FloatV SW-VL-TEMP-NO-IN
+  FloatV VL-TEMP-NORD-IN
+  FloatV SW-VL-TEMP-SUED
+  FloatV VL-TEMP-SUED
+  FloatV AUSSENTEMPERATUR
+  WordK  KON01 (1)
+  WordK  KON00 (0)
+  FloatV SK_VL-TE_DG_NACH
+  WordV  LAB-FU-BETR-ST
+  FloatV STELL-VENT-DG
+  WordV  PUMPE-1-DG-AUS
+  WordV  PUMPE-1-DG-ST
+  WordV  PUMPE-1-DG-EIN
+  WordV  PUMPE-2-DG-AUS
+  WordV  PUMPE-2-DG-ST
+  WordV  PUMPE-2-DG-EIN
+  WordV  PUMPE-1-NORD-AUS
+  WordV  PUMPE-1-NORD-ST
+  WordV  PUMPE-1-NORD-EIN
+  WordV  PUMPE-2-NORD-AUS
+  WordV  PUMPE-2-NORD-ST
+  WordV  PUMPE-2-NORD-EIN
+  FloatV SK_VL-TE_DG_TAG
+  FloatV SK_VL-TE_NO_NACH
+  FloatV STELL-VENT-NORD
+  WordV  PUMPE-EIN-NORD
+  WordV  PUMPE-EIN-SUED
+  FloatV STELL-VENT-SUED
+  FloatV SK_VL-TE_SD_TAG
+  FloatV SK_VL-TE_SD_NACH
+  WordV  LAB-FU-BETR-AUS
+  WordV  PUMPE-SUED-AUS
+  WordV  PUMPE-SUED-ST
+  WordV  PUMPE-SUED-EIN
+  WordV  LAB-FU-BETR-EIN
+  WordV  LAB-ABL-VENT-AUS
+  WordV  LAB-ABL-VENT-ST
+  WordV  LAB-ABL-VENT-EIN
+  WordV  LAB-VE-PUMPE-AUS
+  WordV  LAB-VE-PUMPE-ST
+  WordV  LAB-VE-PUMPE-EIN
+  WordV  T6-LU12-41C-S02
+  WordV  T6-LU12-41C-S11
+  WordV  LAB-FROSTSCH-1
+  WordV  LAB-FROSTSCH-2
+  WordV  LAB-ZUL-KEILRIEM
+  WordV  LAB-HYGROSTAT
+  WordV  LAB-ABL-KEILRIEM
+  FloatV SW-ZUL-TEMP-LAB
+  WordV  GES-ANL-EIN-LAB
+  FloatV LAB-ZUL-TEMP
+  FloatV LAB-ZUL-FEUCHTE
+  FloatV LAB-ABL-DRUCK
+  FloatV STELL-ZL-DR-LAB
+  FloatV LAB-ZUL-DRUCK
+  FloatV SOKENN-7
+  WordV  Phasenausfall
+  WordV  LAB-BYP-BETR-EIN
+  WordV  LAB-BYP-BETR-ST
+  WordV  LAB-BYP-BETR-AUS
+  WordK  K-GES-ANL-HV-EIN (1)
+  WordK  K-GES-ANL-HV-AUS (0)
+  WordV  VERTEI-PUM-1-AUS
+  WordV  VERTEI-PUM-1-ST
+  WordV  VERTEI-PUM-1-EIN
+  WordV  VERTEI-PUM-2-AUS
+  WordV  VERTEI-PUM-2-ST
+  WordV  VERTEI-PUM-2-EIN
+  FloatV VERTEIL-VL-TEMP
+  FloatV SW-VERT-VL-TEMP
+  WordV  VORSPUEL-VE-LAB
+  FloatV STELL-VEN-LAB-VE
+  WordV  Wiedereinschalt
+  WordV  VORGESPUELT
+  FloatV STELL-VENT-VERT
+  WordV  AU-FO-KLAPPE-AUF
+  FloatK K-SW-ABL-DR-LAB (260.00)
+  FloatK K-SW-ZUL-DR-LAB (170.00)
+  WordV  LAB-ZUL-EIN
+  FloatK K-SW_REL-ZU-FEU (45.00)
+  FloatV IW_ABS-ZU-FEUCHT
+  WordV  T6_LU17-41C-A01
+  WordV  LAB-ABL-FEU-WAEC
+  WordV  ENTRIEGELN
+  WordV  T6-LU17-41C-S50
+  FloatV SW_ABS-ZU-FEUCHT
+  FloatV LAB-ABL-TEMP
+  FloatV STELL-ZL-FEUCHTE
+  FloatV STELL-ABL-DR-LAB
+  WordV  KEILRI-STOER-ZUL
+  WordV  KEILRI-STOER-ABL
+  FloatV SOKENN-8
+  WordV  REP-SCH-ZUL-LAB
+  WordV  REP-SCH-ABL-LAB
+  FloatV ANST-VORSPUELEN
+  FloatV ZU-TEMP-N-WRG
+  WordV  ZU-TE-WRG>10
+  WordV  AUS-FEUERWEHRSCH
+  FloatV RL-TEMP-VORERH
+  WordV  EH-PUMPE-EIN_AU
+  FloatK K-GR-AU_ERP-EIN- (10.00)
+  FloatK K-SW-MIN-RL-TEMP (15.00)
+  FloatK K-GW-PU-AUS_D-S (20.00)
+  FloatK K-GW-PU-AUS_N-I (20.00)
+  FloatK K-GW-PU-AUS_SUED (20.00)
+  WordV  PUM-2-EIN-DG-SUG
+  WordV  PUM-1-EIN-DG-SUG
+  FloatV SK_VL-TE_NO_TAG
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &T6-LU12-41C-X50 (164,1)
+  IPAMB &T6-HE12-41B-X50 (164,5)
+  IPAMB &T6-HE12-41B-X51 (164,9)
+  IPAMB &T6-HE12-41B-X52 (164,13)
+  IPAMB &T6-HE12-41B-X53 (137,1)
+  IPAMB &T6-HE12-41B-X54 (137,5)
+  IPAMB &T6-HE12-41B-X55 (137,9)
+  WordK  $M0 (1)
+  IPAAW &T6-LU12-41C-P50 (165)
+  WordK  $M1 (1)
+  IPAAW &T6-LU17-41C-P50 (179)
+  WordK  $M2 (1)
+  IPAAW &T6-LU12-41C-Y63 (187)
+  IPAMB &T6-HE12-41A-X50 (137,13)
+  WordK  $M3 (1)
+  IPAAW &T6-LU12-41C-Y52 (193)
+  WordK  $M4 (1)
+  IPAAW &T6-LU12-41C-Y53 (196)
+  WordK  $M5 (1)
+  IPAAW &T6-HE12-41B-Y56 (198)
+  WordK  $M6 (1)
+  IPAAW &T6-HE12-41B-Y57 (199)
+  WordK  $M7 (1)
+  IPAAW &T6-HE12-41B-Y58 (200)
+  IPAMB &M8 (164,2)
+  IPAMB &M9 (164,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &M10 (164,6)
+  IPAMB &M11 (164,7)
+  WordV  $B3
+  WordV  $B4
+  IPAMB &M12 (164,10)
+  IPAMB &M13 (164,11)
+  WordV  $B5
+  WordV  $B6
+  IPAMB &M14 (164,14)
+  IPAMB &M15 (164,15)
+  WordV  $B7
+  WordV  $B8
+  IPAMB &M16 (137,2)
+  IPAMB &M17 (137,3)
+  WordV  $B9
+  WordV  $B10
+  IPAMB &M18 (137,6)
+  IPAMB &M19 (137,7)
+  WordV  $B11
+  WordV  $B12
+  IPAMB &M20 (137,10)
+  IPAMB &M21 (137,11)
+  WordV  $B13
+  WordV  $B14
+  IPAMB &T6-HE12-41B-X02 (37,1)
+  IPAMB &M22 (37,2)
+  IPAMB &M23 (37,3)
+  IPAMB &T6-HE12-41B-X03 (37,5)
+  IPAMB &M24 (37,6)
+  IPAMB &M25 (37,7)
+  IPAMB &T6-HE12-41B-X04 (38,1)
+  IPAMB &M26 (38,2)
+  IPAMB &M27 (38,3)
+  IPAMB &T6-HE12-41B-X05 (38,5)
+  IPAMB &M28 (38,6)
+  IPAMB &M29 (38,7)
+  IPAMB &T6-HE12-41B-X06 (39,1)
+  IPAMB &M30 (39,2)
+  IPAMB &M31 (39,3)
+  IPAMB &T6-LU12-41C-X01 (18,1)
+  IPAMB &M32 (18,2)
+  IPAMB &M33 (18,3)
+  IPAMB &T6-LU17-41C-X02 (19,1)
+  IPAMB &M34 (19,2)
+  IPAMB &M35 (19,3)
+  IPAMB &T6-LU12-41C-X03 (19,5)
+  IPAMB &M36 (19,6)
+  IPAMB &M37 (19,7)
+  IPAMB &T6-LU12-41C-B01 (26,10)
+  IPAMB &M38 (26,11)
+  IPAMB &T6-LU12-41C-S10 (26,14)
+  IPAMB &M39 (26,15)
+  IPAMB &T6-LU17-41C-B02 (27,10)
+  IPAMB &M40 (27,11)
+  IPAMB &M41 (137,14)
+  IPAMB &M42 (137,15)
+  WordV  $B15
+  WordV  $B16
+  IPAMB &T6-HE12-41A-X03 (36,1)
+  IPAMB &M43 (36,2)
+  IPAMB &M44 (36,3)
+  IPAMB &T6-HE12-41A-X04 (36,5)
+  IPAMB &M45 (36,6)
+  IPAMB &M46 (36,7)
+  IPAMB &T6-LU12-41C-X02 (18,5)
+  IPAMB &M47 (18,6)
+  IPAMB &M48 (18,7)
+  IPAMB &T6-AS12-41A-X00 (0,11)
+  IPAMB &M49 (18,15)
+  IPAMB &M50 (34,11)
+  WordV  $HB2
+  IPAMB &M51 (47,15)
+  IPAMB &M52 (47,11)
+  IPAMB &M53 (35,7)
+  IPAAW &T6-HE12-41B-Y50 (170)
+  IPAAW &T6-HE12-41B-T01 (21)
+  IPAAW &T6-HE12-41B-Y52 (172)
+  IPAAW &T6-HE12-41B-T02 (22)
+  IPAAW &T6-HE12-41B-Y54 (174)
+  IPAAW &T6-HE12-41B-T03 (23)
+  IPAAW &T6-AS17-00A-T00 (103)
+  FloatV $F1
+  IPAAW &T6-LU12-41C-Y50 (167)
+  FloatV $F2
+  IPAAW &T6-LU12-41C-T02 (6)
+  IPAAW &T6-LU12-41C-F01 (7)
+  IPAAW &T6-LU12-41C-P01 (8)
+  FloatV $F3
+  FloatK $M54 (30.00)
+  WordK  $M55 (1)
+  IPAAW &T6-LU12-41C-P70 (177)
+  IPAAW &T6-LU17-41C-P02 (9)
+  FloatV $F4
+  FloatK $M56 (30.00)
+  WordK  $M57 (1)
+  IPAAW &T6-LU17-41C-P70 (178)
+  IPAAW &T6-HE12-41A-T01 (20)
+  IPAAW &T6-HE12-41A-Y50 (176)
+  FloatV $F5
+  IPAAW &T6-LU17-41C-T03 (121)
+  IPAAW &M58 (5)
+  IPAAW &M60 (190)
+  FloatV $F6
+  FloatV $F7
+  FloatV $F8
+  WordK  $M62 (1)
+  IPAAW &M63 (201)
+  WordK  $M64 (1)
+  WordK  $M66 (1)
+  IPAAW &M67 (202)
+  FloatK $M68 (1.00)
+  WordV  $B17
+  FloatK $M69 (0.00)
+  FloatV $F9
+  FloatK $M70 (0.00)
+  WordK  $M71 (1)
+  IPAAW &T6-HE12-41B-Y01 (29)
+  FloatK $M72 (10.00)
+  FloatK $M73 (0.00)
+  FloatV $F10
+  FloatK $M74 (86400.00)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  FloatK $M75 (175200.00)
+  FloatK $M76 (300.00)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatV $F11
+  FloatK $M77 (86400.00)
+  WordV  $B25
+  WordV  $B26
+  FloatK $M78 (0.00)
+  FloatK $M79 (2.00)
+  WordV  $B27
+  WordV  $B28
+  FloatK $M80 (175200.00)
+  FloatK $M81 (300.00)
+  WordV  $B29
+  WordV  $B30
+  FloatK $M82 (10.00)
+  FloatK $M83 (0.00)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordK  $M84 (1)
+  IPAAW &M85 (203)
+  WordK  $M86 (1)
+  WordK  $M88 (1)
+  IPAAW &M89 (204)
+  FloatK $M90 (1.00)
+  WordV  $B34
+  FloatK $M91 (0.00)
+  FloatV $F12
+  FloatK $M92 (0.00)
+  WordK  $M93 (1)
+  IPAAW &T6-HE12-41B-Y02 (30)
+  FloatV $F13
+  FloatK $M94 (86400.00)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  FloatK $M95 (175200.00)
+  FloatK $M96 (300.00)
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  FloatV $F14
+  FloatK $M97 (86400.00)
+  WordV  $B42
+  WordV  $B43
+  FloatK $M98 (0.00)
+  FloatK $M99 (2.00)
+  WordV  $B44
+  WordV  $B45
+  FloatK $M100 (175200.00)
+  FloatK $M101 (300.00)
+  WordV  $B46
+  WordV  $B47
+  FloatK $M102 (10.00)
+  FloatK $M103 (0.00)
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  FloatK $M104 (10.00)
+  FloatK $M105 (0.00)
+  WordV  $B51
+  WordK  $M106 (1)
+  IPAAW &M107 (205)
+  WordK  $M108 (1)
+  WordK  $M110 (1)
+  IPAAW &M111 (206)
+  FloatK $M112 (1.00)
+  WordV  $B52
+  FloatK $M113 (0.00)
+  FloatV $F15
+  FloatK $M114 (0.00)
+  WordK  $M115 (1)
+  IPAAW &T6-HE12-41B-Y03 (31)
+  FloatK $M116 (86400.00)
+  FloatK $M117 (300.00)
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  FloatK $M118 (0.00)
+  FloatV $F16
+  FloatK $M119 (0.00)
+  WordK  $M120 (1)
+  IPAAW &T6-HE12-41A-Y01 (28)
+  FloatV $F17
+  FloatK $M121 (86400.00)
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  FloatK $M122 (175200.00)
+  FloatK $M123 (300.00)
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  FloatV $F18
+  FloatK $M124 (86400.00)
+  WordV  $B64
+  WordV  $B65
+  FloatK $M125 (0.00)
+  FloatK $M126 (2.00)
+  WordV  $B66
+  WordV  $B67
+  FloatK $M127 (175200.00)
+  FloatK $M128 (300.00)
+  WordV  $B68
+  WordV  $B69
+  FloatK $M129 (10.00)
+  FloatK $M130 (0.00)
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  WordV  $HB0
+  FloatK $M131 (20.00)
+  FloatK $M132 (0.00)
+  FloatK $M133 (0.00)
+  FloatK $M134 (10.00)
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  FloatK $M135 (0.00)
+  FloatK $M136 (5.00)
+  FloatK $M137 (1.00)
+  WordV  $B77
+  FloatK $M138 (60.00)
+  FloatK $M139 (60.00)
+  WordV  $B78
+  FloatK $M140 (120.00)
+  FloatK $M141 (0.00)
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  WordV  $HB1
+  FloatK $M142 (10.00)
+  FloatK $M143 (1.00)
+  FloatK $M144 (40.00)
+  WordV  $B82
+  WordV  $B83
+  FloatK $M145 (0.00)
+  FloatK $M146 (100.00)
+  FloatV $F19
+  FloatK $M147 (0.00)
+  WordK  $M148 (2)
+  FloatK $M149 (3.00)
+  FloatK $M150 (10.00)
+  FloatK $M151 (120.00)
+  FloatK $M152 (0.00)
+  FloatK $M153 (10.00)
+  FloatK $M154 (40.00)
+  FloatK $M155 (0.20)
+  FloatK $M156 (0.00)
+  FloatK $M157 (100.00)
+  FloatV $F20
+  WordV  $B84
+  FloatV $F21
+  WordV  $B85
+  FloatK $M158 (0.00)
+  FloatV $F22
+  FloatK $M159 (0.00)
+  FloatV $F23
+  FloatK $M160 (100.00)
+  WordK  $M161 (1)
+  IPAAW &T6-HE12-41C-Y01 (14)
+  FloatK $M162 (5.00)
+  FloatK $M163 (2.00)
+  WordV  $B86
+  FloatK $M164 (0.00)
+  FloatK $M165 (300.00)
+  WordV  $B87
+  FloatK $M166 (86400.00)
+  FloatK $M167 (300.00)
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  WordV  $B91
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  FloatK $M168 (0.00)
+  FloatV $F24
+  FloatK $M169 (0.00)
+  WordK  $M170 (1)
+  IPAAW &T6-LU12-41C-Y03 (16)
+  WordV  $B95
+  WordV  $B96
+  WordV  $B97
+  WordV  $B98
+  WordV  $B99
+  WordV  $B100
+  FloatK $M171 (60.00)
+  FloatK $M172 (0.00)
+  WordV  $B101
+  WordK  $M173 (1)
+  IPAMB &T6-LU12-41C-S50 (164,0)
+  WordV  $B102
+  FloatK $M174 (0.00)
+  WordK  $M175 (1)
+  IPAAW &T6-LU17-41C-Y11 (48)
+  FloatK $M176 (0.00)
+  FloatV $F25
+  WordV  $B103
+  FloatK $M177 (60.00)
+  FloatK $M178 (0.00)
+  WordV  $B104
+  WordV  $B105
+  WordV  $B106
+  WordK  $M179 (1)
+  IPAMB &M180 (164,8)
+  WordV  $B107
+  WordV  $B108
+  IPAMB &T6-LU12-41C-X10 (18,13)
+  FloatK $M181 (101325.00)
+  WordK  $M182 (1)
+  IPAAW &T6-LU12-41C-Y60 (168)
+  FloatK $M183 (101325.00)
+  WordK  $M184 (1)
+  IPAAW &T6-LU12-41C-Y61 (169)
+  WordV  $B109
+  FloatK $M185 (0.00)
+  FloatV $F26
+  FloatK $M186 (0.00)
+  FloatK $M187 (0.00)
+  FloatK $M188 (0.00)
+  FloatK $M189 (50.00)
+  FloatK $M190 (100.00)
+  FloatV $F27
+  WordK  $M191 (1)
+  IPAAW &T6-LU12-41C-Y04 (32)
+  FloatK $M192 (50.00)
+  FloatK $M193 (0.00)
+  FloatK $M194 (100.00)
+  FloatK $M195 (100.00)
+  FloatV $F28
+  WordK  $M196 (1)
+  IPAAW &T6-LU12-41C-Y05 (33)
+  WordV  $B110
+  WordV  $B111
+  WordK  $M197 (1)
+  IPAMB &T6-LU12-41B-S50 (164,4)
+  WordV  $B112
+  FloatK $M198 (4.00)
+  FloatK $M199 (0.00)
+  WordV  $B113
+  WordK  $M200 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;Lftung Labor
+  ;Heizung DG-SUG/
+  ;Nord-Innenzone/Sd/
+  ;Fernw„rme/
+  ;EINBAUORT:
+  ;Technikzentrale
+  ;Sockelgeschoss
+  ; 
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BEFAUS (1,K-GES-ANL-LA-AUS,K-GES-ANL-LA-EIN,$WZERO,$WZERO,
+          &T6-LU12-41C-X50,WERR)
+  BEFAUS (1,K-GES-ANL-DG-AUS,K-GES-ANL-DG-EIN,$WZERO,$WZERO,
+          &T6-HE12-41B-X50,WERR)
+  BEFAUS (1,K-NACHT-DG-SUG,K-TAG-DG-SUG,$WZERO,$WZERO,
+          &T6-HE12-41B-X51,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,K-GES-ANL-IN-AUS,K-GES-ANL-IN-EIN,$WZERO,$WZERO,
+          &T6-HE12-41B-X52,WERR)
+  BEFAUS (1,K-NACHT-NORD-INN,K-TAG-NORD-INN,$WZERO,$WZERO,
+          &T6-HE12-41B-X53,WERR)
+  BEFAUS (1,K-GES-ANL-SU-AUS,K-GES-ANL-SU-EIN,$WZERO,$WZERO,
+          &T6-HE12-41B-X54,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-NACHT-SUED,K-TAG-SUED,$WZERO,$WZERO,
+          &T6-HE12-41B-X55,WERR)
+  ANAUS (K-SW-ZUL-DR-LAB,$M0,&T6-LU12-41C-P50,WERR)
+  ANAUS (K-SW-ABL-DR-LAB,$M1,&T6-LU17-41C-P50,WERR)
+  ANAUS (K-SW_REL-ZU-FEU,$M2,&T6-LU12-41C-Y63,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,K-GES-ANL-HV-AUS,K-GES-ANL-HV-EIN,$WZERO,$WZERO,
+          &T6-HE12-41A-X50,WERR)
+  ANAUS (K-SW-MIN-RL-TEMP,$M3,&T6-LU12-41C-Y52,WERR)
+  ANAUS (K-GR-AU_ERP-EIN-,$M4,&T6-LU12-41C-Y53,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANAUS (K-GW-PU-AUS_D-S,$M5,&T6-HE12-41B-Y56,WERR)
+  ANAUS (K-GW-PU-AUS_N-I,$M6,&T6-HE12-41B-Y57,WERR)
+  ANAUS (K-GW-PU-AUS_SUED,$M7,&T6-HE12-41B-Y58,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,2000)
+  MELEIN (&T6-LU12-41C-X50,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-GES-ANL-LA-AUS)
+  BTRA ($B2,K-GES-ANL-LA-EIN)
+  MELEIN (&T6-HE12-41B-X50,3,$B3,$WSCRATCH,$B4,WERR)
+  BTRA ($B3,K-GES-ANL-DG-AUS)
+  BTRA ($B4,K-GES-ANL-DG-EIN)
+  MELEIN (&T6-HE12-41B-X51,3,$B5,$WSCRATCH,$B6,WERR)
+  BTRA ($B5,K-NACHT-DG-SUG)
+  BTRA ($B6,K-TAG-DG-SUG)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&T6-HE12-41B-X52,3,$B7,$WSCRATCH,$B8,WERR)
+  BTRA ($B7,K-GES-ANL-IN-AUS)
+  BTRA ($B8,K-GES-ANL-IN-EIN)
+  MELEIN (&T6-HE12-41B-X53,3,$B9,$WSCRATCH,$B10,WERR)
+  BTRA ($B9,K-NACHT-NORD-INN)
+  BTRA ($B10,K-TAG-NORD-INN)
+  MELEIN (&T6-HE12-41B-X54,3,$B11,$WSCRATCH,$B12,WERR)
+  BTRA ($B11,K-GES-ANL-SU-AUS)
+  BTRA ($B12,K-GES-ANL-SU-EIN)
+  MELEIN (&T6-HE12-41B-X55,3,$B13,$WSCRATCH,$B14,WERR)
+  BTRA ($B13,K-NACHT-SUED)
+  BTRA ($B14,K-TAG-SUED)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&T6-HE12-41B-X02,3,PUMPE-1-DG-AUS,PUMPE-1-DG-ST,
+          PUMPE-1-DG-EIN,WERR)
+  MELEIN (&T6-HE12-41B-X03,3,PUMPE-2-DG-AUS,PUMPE-2-DG-ST,
+          PUMPE-2-DG-EIN,WERR)
+  MELEIN (&T6-HE12-41B-X04,3,PUMPE-1-NORD-AUS,
+          PUMPE-1-NORD-ST,PUMPE-1-NORD-EIN,WERR)
+  MELEIN (&T6-HE12-41B-X05,3,PUMPE-2-NORD-AUS,
+          PUMPE-2-NORD-ST,PUMPE-2-NORD-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&T6-HE12-41B-X06,3,PUMPE-SUED-AUS,PUMPE-SUED-ST,
+          PUMPE-SUED-EIN,WERR)
+  MELEIN (&T6-LU12-41C-X01,3,LAB-FU-BETR-AUS,LAB-FU-BETR-ST,
+          LAB-FU-BETR-EIN,WERR)
+  MELEIN (&T6-LU17-41C-X02,3,LAB-ABL-VENT-AUS,
+          LAB-ABL-VENT-ST,LAB-ABL-VENT-EIN,WERR)
+  MELEIN (&T6-LU12-41C-X03,3,LAB-VE-PUMPE-AUS,
+          LAB-VE-PUMPE-ST,LAB-VE-PUMPE-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&T6-LU12-41C-B01,2,LAB-ZUL-KEILRIEM,LAB-HYGROSTAT,
+          WERR)
+  MELEIN (&T6-LU12-41C-S10,2,LAB-FROSTSCH-1,LAB-FROSTSCH-2,
+          WERR)
+  MELEIN (&T6-LU17-41C-B02,2,LAB-ABL-KEILRIEM,
+          LAB-ABL-FEU-WAEC,WERR)
+  MELEIN (&T6-HE12-41A-X50,3,$B15,$WSCRATCH,$B16,WERR)
+  BTRA ($B15,K-GES-ANL-HV-AUS)
+  BTRA ($B16,K-GES-ANL-HV-EIN)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&T6-HE12-41A-X03,3,VERTEI-PUM-1-AUS,
+          VERTEI-PUM-1-ST,VERTEI-PUM-1-EIN,WERR)
+  MELEIN (&T6-HE12-41A-X04,3,VERTEI-PUM-2-AUS,
+          VERTEI-PUM-2-ST,VERTEI-PUM-2-EIN,WERR)
+  MELEIN (&T6-LU12-41C-X02,3,LAB-BYP-BETR-AUS,
+          LAB-BYP-BETR-ST,LAB-BYP-BETR-EIN,WERR)
+  MELEIN (&T6-AS12-41A-X00,1,ENTRIEGELN,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&M49,1,AU-FO-KLAPPE-AUF,WERR)
+  MELEIN (&M50,1,$HB2,WERR)
+  NICHT ($HB2,Phasenausfall)
+  MELEIN (&M51,1,REP-SCH-ZUL-LAB,WERR)
+  MELEIN (&M52,1,REP-SCH-ABL-LAB,WERR)
+  MELEIN (&M53,1,$HB2,WERR)
+  NICHT ($HB2,AUS-FEUERWEHRSCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&T6-HE12-41B-Y50,SW-VL-TEMP-DG-SG,WERR)
+  ANEIN (&T6-HE12-41B-T01,VL-TEMP-DG-SUG,WERR)
+  ANEIN (&T6-HE12-41B-Y52,SW-VL-TEMP-NO-IN,WERR)
+  ANEIN (&T6-HE12-41B-T02,VL-TEMP-NORD-IN,WERR)
+  ANEIN (&T6-HE12-41B-Y54,SW-VL-TEMP-SUED,WERR)
+  ANEIN (&T6-HE12-41B-T03,VL-TEMP-SUED,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&T6-AS17-00A-T00,AUSSENTEMPERATUR,WERR)
+  ANEIN (&T6-LU12-41C-P50,$F1,WERR)
+  ATRA ($F1,K-SW-ZUL-DR-LAB)
+  ANEIN (&T6-LU12-41C-Y50,SW-ZUL-TEMP-LAB,WERR)
+  ANEIN (&T6-LU12-41C-Y63,$F2,WERR)
+  ANEIN (&T6-LU12-41C-T02,LAB-ZUL-TEMP,WERR)
+  ANEIN (&T6-LU12-41C-F01,LAB-ZUL-FEUCHTE,WERR)
+  ATRA ($F2,K-SW_REL-ZU-FEU)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&T6-LU12-41C-P01,$F3,WERR)
+  PT1 ($F3,$M54,LAB-ZUL-DRUCK)
+  ANAUS (LAB-ZUL-DRUCK,$M55,&T6-LU12-41C-P70,WERR)
+  ANEIN (&T6-LU17-41C-P02,$F4,WERR)
+  PT1 ($F4,$M56,LAB-ABL-DRUCK)
+  ANAUS (LAB-ABL-DRUCK,$M57,&T6-LU17-41C-P70,WERR)
+  ANEIN (&T6-HE12-41A-T01,VERTEIL-VL-TEMP,WERR)
+  ANEIN (&T6-HE12-41A-Y50,SW-VERT-VL-TEMP,WERR)
+  ANEIN (&T6-LU17-41C-P50,$F5,WERR)
+  ATRA ($F5,K-SW-ABL-DR-LAB)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&T6-LU17-41C-T03,LAB-ABL-TEMP,WERR)
+  ANEIN (&M58,ZU-TEMP-N-WRG,WERR)
+  ANEIN (&T6-LU12-41C-Y52,K-SW-MIN-RL-TEMP,WERR)
+  ANEIN (&M60,RL-TEMP-VORERH,WERR)
+  ANEIN (&T6-LU12-41C-Y53,K-GR-AU_ERP-EIN-,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&T6-HE12-41B-Y56,$F6,WERR)
+  ATRA ($F6,K-GW-PU-AUS_D-S)
+  ANEIN (&T6-HE12-41B-Y57,$F7,WERR)
+  ATRA ($F7,K-GW-PU-AUS_N-I)
+  ANEIN (&T6-HE12-41B-Y58,$F8,WERR)
+  ATRA ($F8,K-GW-PU-AUS_SUED)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,2000)
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (1,$WONE,SK_VL-TE_DG_TAG,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (2,$WONE,SK_VL-TE_DG_NACH,$WSCRATCH)
+  ANAUS (SK_VL-TE_DG_TAG,$M62,&M63,$WSCRATCH)
+  AWT (K-NACHT-DG-SUG,SK_VL-TE_DG_TAG,SK_VL-TE_DG_NACH,
+       SW-VL-TEMP-DG-SG)
+  ANAUS (SW-VL-TEMP-DG-SG,$M64,&T6-HE12-41B-Y50,$WSCRATCH)
+  ANAUS (SK_VL-TE_DG_NACH,$M66,&M67,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,K-GW-PU-AUS_D-S,$M68,$B17)
+  UND11 (K-GES-ANL-DG-EIN,$B17,PUM-1-EIN-DG-SUG)
+  REGLER (14,KON01,KON00,$M69,$F9,WERR)
+  AWT (PUM-1-EIN-DG-SUG,$M70,$F9,STELL-VENT-DG)
+  ANAUS (STELL-VENT-DG,$M71,&T6-HE12-41B-Y01,WERR)
+  VVZ (PUM-1-EIN-DG-SUG,$M72,$M73,PUM-2-EIN-DG-SUG)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UHR (PUMPE-1-DG-EIN,$B19,$F10)
+  VGLOH ($F10,$M74,$B18)
+  RSS ($B18,PUMPE-2-DG-EIN,$B19,$WSCRATCH)
+  UNDMN (1,PUM-1-EIN-DG-SUG,2,$B19,PUMPE-2-DG-EIN,$B20,
+         $WSCRATCH)
+  VVZ (PUMPE-1-DG-AUS,$M75,$M76,$B21)
+  ODRMN (3,$B20,PUMPE-2-DG-ST,$B21,0,$B22,$WSCRATCH)
+  UNDMN (2,$B22,K-GES-ANL-DG-EIN,1,PUMPE-1-DG-ST,$B23,$B24)
+  BEFAUS (1,$B24,$B23,$WZERO,$WZERO,&T6-HE12-41B-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UHR (PUMPE-2-DG-EIN,$B26,$F11)
+  VGLOH ($F11,$M77,$B25)
+  RSS ($B25,$B27,$B26,$WSCRATCH)
+  VVZ (PUMPE-1-DG-EIN,$M78,$M79,$B27)
+  UNDMN (1,PUM-2-EIN-DG-SUG,2,$B26,$B27,$B28,$WSCRATCH)
+  VVZ (PUMPE-2-DG-AUS,$M80,$M81,$B29)
+  ODRMN (3,$B28,PUMPE-1-DG-ST,$B29,0,$B30,$WSCRATCH)
+  VVZ (K-GES-ANL-DG-EIN,$M82,$M83,$B31)
+  UNDMN (2,$B30,$B31,1,PUMPE-2-NORD-ST,$B32,$B33)
+  BEFAUS (1,$B33,$B32,$WZERO,$WZERO,&T6-HE12-41B-X03,WERR)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (3,$WONE,SK_VL-TE_NO_TAG,$WSCRATCH)
+  ANAUS (SK_VL-TE_NO_TAG,$M84,&M85,$WSCRATCH)
+  AWT (K-NACHT-NORD-INN,SK_VL-TE_NO_TAG,SK_VL-TE_NO_NACH,
+       SW-VL-TEMP-NO-IN)
+  ANAUS (SW-VL-TEMP-NO-IN,$M86,&T6-HE12-41B-Y52,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (4,$WONE,SK_VL-TE_NO_NACH,$WSCRATCH)
+  ANAUS (SK_VL-TE_NO_NACH,$M88,&M89,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,K-GW-PU-AUS_N-I,$M90,$B34)
+  UND11 (K-GES-ANL-IN-EIN,$B34,PUMPE-EIN-NORD)
+  REGLER (15,KON01,KON00,$M91,$F12,WERR)
+  AWT (PUMPE-EIN-NORD,$M92,$F12,STELL-VENT-NORD)
+  ANAUS (STELL-VENT-NORD,$M93,&T6-HE12-41B-Y02,WERR)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  UHR (PUMPE-1-NORD-EIN,$B36,$F13)
+  VGLOH ($F13,$M94,$B35)
+  RSS ($B35,PUMPE-2-NORD-EIN,$B36,$WSCRATCH)
+  UNDMN (1,PUMPE-EIN-NORD,2,$B36,PUMPE-2-NORD-EIN,$B37,
+         $WSCRATCH)
+  VVZ (PUMPE-1-NORD-AUS,$M95,$M96,$B38)
+  ODRMN (3,$B37,PUMPE-2-NORD-ST,$B38,0,$B39,$WSCRATCH)
+  UNDMN (2,$B39,K-GES-ANL-IN-EIN,1,PUMPE-1-NORD-ST,$B40,$B41)
+  BEFAUS (1,$B41,$B40,$WZERO,$WZERO,&T6-HE12-41B-X04,WERR)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UHR (PUMPE-2-NORD-EIN,$B43,$F14)
+  VGLOH ($F14,$M97,$B42)
+  RSS ($B42,$B44,$B43,$WSCRATCH)
+  VVZ (PUMPE-1-NORD-EIN,$M98,$M99,$B44)
+  UNDMN (1,$B51,2,$B43,$B44,$B45,$WSCRATCH)
+  VVZ (PUMPE-2-NORD-AUS,$M100,$M101,$B46)
+  ODRMN (3,$B45,PUMPE-1-NORD-ST,$B46,0,$B47,$WSCRATCH)
+  VVZ (K-GES-ANL-IN-EIN,$M102,$M103,$B48)
+  UNDMN (2,$B47,$B48,1,PUMPE-2-NORD-ST,$B49,$B50)
+  BEFAUS (1,$B50,$B49,$WZERO,$WZERO,&T6-HE12-41B-X05,WERR)
+  VVZ (PUMPE-EIN-NORD,$M104,$M105,$B51)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (5,$WONE,SK_VL-TE_SD_TAG,$WSCRATCH)
+  ANAUS (SK_VL-TE_SD_TAG,$M106,&M107,$WSCRATCH)
+  AWT (K-NACHT-SUED,SK_VL-TE_SD_TAG,SK_VL-TE_SD_NACH,
+       SW-VL-TEMP-SUED)
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (6,$WONE,SK_VL-TE_SD_NACH,$WSCRATCH)
+  ANAUS (SW-VL-TEMP-SUED,$M108,&T6-HE12-41B-Y54,$WSCRATCH)
+  ANAUS (SK_VL-TE_SD_NACH,$M110,&M111,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,K-GW-PU-AUS_SUED,$M112,$B52)
+  UND11 (K-GES-ANL-SU-EIN,$B52,PUMPE-EIN-SUED)
+  REGLER (16,KON01,KON00,$M113,$F15,WERR)
+  AWT (PUMPE-EIN-SUED,$M114,$F15,STELL-VENT-SUED)
+  ANAUS (STELL-VENT-SUED,$M115,&T6-HE12-41B-Y03,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  VVZ (PUMPE-SUED-AUS,$M116,$M117,$B53)
+  ODR2 (PUMPE-EIN-SUED,$B53,$B54)
+  UNDMN (2,$B54,PUMPE-SUED-ST,0,$B55,$B56)
+  BEFAUS (1,$B56,$B55,$WZERO,$WZERO,&T6-HE12-41B-X06,WERR)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  REGLER (17,KON01,KON00,$M118,$F16,WERR)
+  AWT (K-GES-ANL-HV-EIN,$M119,$F16,STELL-VENT-VERT)
+  ANAUS (STELL-VENT-VERT,$M120,&T6-HE12-41A-Y01,WERR)
+  SOLKEN (7,KON01,SOKENN-7,WERR)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UHR (VERTEI-PUM-1-EIN,$B58,$F17)
+  VGLOH ($F17,$M121,$B57)
+  RSS ($B57,VERTEI-PUM-2-EIN,$B58,$WSCRATCH)
+  UNDMN (0,2,$B58,VERTEI-PUM-2-EIN,$B59,$WSCRATCH)
+  VVZ (VERTEI-PUM-1-AUS,$M122,$M123,$B60)
+  ODRMN (3,$B59,VERTEI-PUM-2-ST,$B60,0,$B61,$WSCRATCH)
+  UNDMN (2,$B61,K-GES-ANL-HV-EIN,1,VERTEI-PUM-1-ST,$B62,$B63)
+  BEFAUS (1,$B63,$B62,$WZERO,$WZERO,&T6-HE12-41A-X03,WERR)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UHR (VERTEI-PUM-2-EIN,$B65,$F18)
+  VGLOH ($F18,$M124,$B64)
+  RSS ($B64,$B66,$B65,$WSCRATCH)
+  VVZ (VERTEI-PUM-1-EIN,$M125,$M126,$B66)
+  UNDMN (1,$B70,2,$B65,$B66,$B67,$WSCRATCH)
+  VVZ (VERTEI-PUM-2-AUS,$M127,$M128,$B68)
+  ODRMN (3,$B67,VERTEI-PUM-1-ST,$B68,0,$B69,$WSCRATCH)
+  VVZ (K-GES-ANL-HV-EIN,$M129,$M130,$B70)
+  UNDMN (1,$B69,1,VERTEI-PUM-2-ST,$B71,$B72)
+  BEFAUS (1,$B72,$B71,$WZERO,$WZERO,&T6-HE12-41A-X04,WERR)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  NICHT (Phasenausfall,$HB0)
+  VVZ ($HB0,$M131,$M132,Wiedereinschalt)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ;Wenn die Anlage ein war
+  ;und das Netz ausf„llt,
+  ;wird die
+  ;Anlage -nachdem sie aus-
+  ;geschaltet wurde und das
+  ;Netz wieder zurckkehrte
+  ;- in dieselbe Stufe ge-
+  ;schaltet, in der sie
+  ;sich zuvor befand.
+  ; 
+  VVZ (K-GES-ANL-LA-EIN,$M133,$M134,$B73)
+  UND11 ($B73,Wiedereinschalt,$B74)
+  RSS ($B74,K-GES-ANL-LA-EIN,$B75,$WSCRATCH)
+  UND2 ($B75,Wiedereinschalt,$B76)
+  VVZ ($B76,$M135,$M136,GES-ANL-EIN-LAB)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  BEFAUS (1,AUS-FEUERWEHRSCH,GES-ANL-EIN-LAB,$WZERO,$WZERO,
+          &T6-LU12-41C-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  VGLEH (K-GR-AU_ERP-EIN-,ZU-TEMP-N-WRG,$M137,$B77)
+  VVZ ($B77,$M138,$M139,EH-PUMPE-EIN_AU)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  NICHT (K-GES-ANL-LA-AUS,$B78)
+  VVZ ($B78,$M140,$M141,$B79)
+  ODRMN (3,$B79,ZU-TE-WRG>10,$B83,0,$B80,$WSCRATCH)
+  UND2 ($B80,$B78,$B81)
+  NICHT ($B78,$HB1)
+  RSS ($B81,$HB1,VORGESPUELT,$WSCRATCH)
+  UND11 ($B78,VORGESPUELT,VORSPUEL-VE-LAB)
+  VGLEH (ZU-TEMP-N-WRG,$M142,$M143,ZU-TE-WRG>10)
+  VGLOH (RL-TEMP-VORERH,$M144,$B82)
+  UND2 ($B78,$B82,$B83)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  AWT (VORSPUEL-VE-LAB,$M145,$M146,$F19)
+  LREG (RL-TEMP-VORERH,K-SW-MIN-RL-TEMP,KON01,ZU-TE-WRG>10,
+        $M147,$M148,$M149,$M150,$M151,$M152,$M153,$M154,
+        $M155,$M156,$M157,$F20,$WSCRATCH)
+  MAX (2,$F19,$F20,ANST-VORSPUELEN)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  UND2 (LAB-FROSTSCH-1,LAB-FROSTSCH-2,$B84)
+  MAX (2,ANST-VORSPUELEN,$F23,$F21)
+  ODR2 (LAB-FU-BETR-EIN,LAB-BYP-BETR-EIN,$B85)
+  UND2 ($B85,AU-FO-KLAPPE-AUF,LAB-ZUL-EIN)
+  REGLER (18,KON01,KON00,$M158,$F22,WERR)
+  AWT (LAB-ZUL-EIN,$M159,$F22,$F23)
+  NICHT ($B84,$HB0)
+  AWT ($HB0,$F21,$M160,STELL-VEN-LAB-VE)
+  ANAUS (STELL-VEN-LAB-VE,$M161,&T6-HE12-41C-Y01,WERR)
+  SOLKEN (8,KON01,SOKENN-8,WERR)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  VGLEH (STELL-VEN-LAB-VE,$M162,$M163,$B86)
+  VVZ ($B86,$M164,$M165,$B87)
+  VVZ (LAB-VE-PUMPE-AUS,$M166,$M167,$B88)
+  NAND2 (LAB-FROSTSCH-1,LAB-FROSTSCH-2,$B89)
+  ODRMN (4,$B87,$B88,$B89,$B91,0,$B90,$WSCRATCH)
+  UND2 (EH-PUMPE-EIN_AU,K-GES-ANL-LA-EIN,$B91)
+  UNDMN (1,$B90,1,LAB-VE-PUMPE-ST,$B92,$B93)
+  BEFAUS (1,$B93,$B92,$WZERO,$WZERO,&T6-LU12-41C-X03,WERR)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  UND2 (AU-FO-KLAPPE-AUF,LAB-FU-BETR-EIN,$B94)
+  REGLER (19,KON01,KON00,$M168,$F24,WERR)
+  AWT ($B94,$M169,$F24,STELL-ZL-DR-LAB)
+  ANAUS (STELL-ZL-DR-LAB,$M170,&T6-LU12-41C-Y03,WERR)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  UND2 (LAB-FROSTSCH-1,LAB-FROSTSCH-2,$B95)
+  UNDMN (4,LAB-FU-BETR-ST,AU-FO-KLAPPE-AUF,$B95,
+         LAB-ABL-VENT-EIN,3,VORSPUEL-VE-LAB,KEILRI-STOER-ZUL,
+         REP-SCH-ZUL-LAB,$B96,$B97)
+  BEFAUS (1,$B97,$B96,$WZERO,$WZERO,&T6-LU12-41C-X01,WERR)
+  UNDMN (4,AU-FO-KLAPPE-AUF,LAB-BYP-BETR-ST,$B95,
+         LAB-ABL-VENT-EIN,4,LAB-FU-BETR-ST,VORSPUEL-VE-LAB,
+         KEILRI-STOER-ZUL,REP-SCH-ZUL-LAB,$B98,$B99)
+  BEFAUS (1,$B99,$B98,$WZERO,$WZERO,&T6-LU12-41C-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  XOR2 (LAB-ZUL-EIN,LAB-ZUL-KEILRIEM,$B100)
+  VVZ ($B100,$M171,$M172,$B101)
+  RSS ($B101,ENTRIEGELN,KEILRI-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M173,1,KEILRI-STOER-ZUL,&T6-LU12-41C-S50,WERR)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  UNDMN (3,AU-FO-KLAPPE-AUF,LAB-ABL-VENT-EIN,LAB-HYGROSTAT,0,
+         $B102,$WSCRATCH)
+  AWT ($B102,$M174,$F25,STELL-ABL-DR-LAB)
+  ANAUS (STELL-ABL-DR-LAB,$M175,&T6-LU17-41C-Y11,WERR)
+  REGLER (20,KON01,KON00,$M176,$F25,WERR)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  XOR2 (LAB-ABL-VENT-EIN,LAB-ABL-KEILRIEM,$B103)
+  VVZ ($B103,$M177,$M178,$B104)
+  RSS ($B104,ENTRIEGELN,KEILRI-STOER-ABL,$WSCRATCH)
+  UNDMN (3,AU-FO-KLAPPE-AUF,LAB-FROSTSCH-1,LAB-FROSTSCH-2,4,
+         LAB-ABL-VENT-ST,KEILRI-STOER-ABL,VORSPUEL-VE-LAB,
+         REP-SCH-ABL-LAB,$B105,$B106)
+  BEFAUS (1,$B106,$B105,$WZERO,$WZERO,&T6-LU17-41C-X02,WERR)
+  SETMEL ($M179,1,KEILRI-STOER-ABL,&M180,WERR)
+  UNDMN (1,K-GES-ANL-LA-EIN,1,VORSPUEL-VE-LAB,$B107,$B108)
+  BEFAUS (1,$B108,$B107,$WZERO,$WZERO,&T6-LU12-41C-X10,WERR)
+  ;AUSSEN/FORTLUFT-KL
+  ; 
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  ABFEUG (LAB-ZUL-FEUCHTE,LAB-ZUL-TEMP,$M181,
+          IW_ABS-ZU-FEUCHT)
+  ANAUS (IW_ABS-ZU-FEUCHT,$M182,&T6-LU12-41C-Y60,WERR)
+  ABFEUG (K-SW_REL-ZU-FEU,SW-ZUL-TEMP-LAB,$M183,
+          SW_ABS-ZU-FEUCHT)
+  ANAUS (SW_ABS-ZU-FEUCHT,$M184,&T6-LU12-41C-Y61,WERR)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  UNDMN (3,LAB-ZUL-EIN,LAB-HYGROSTAT,LAB-ABL-FEU-WAEC,0,
+         $B109,$WSCRATCH)
+  REGLER (21,KON01,KON00,$M185,$F26,WERR)
+  AWT ($B109,$M186,$F26,STELL-ZL-FEUCHTE)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  FKG (STELL-ZL-FEUCHTE,4,$M187,$M188,$M189,$M190,$F27)
+  ANAUS ($F27,$M191,&T6-LU12-41C-Y04,WERR)
+  FKG (STELL-ZL-FEUCHTE,4,$M192,$M193,$M194,$M195,$F28)
+  ANAUS ($F28,$M196,&T6-LU12-41C-Y05,WERR)
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  ODRMN (7,PUMPE-1-DG-ST,PUMPE-2-DG-ST,PUMPE-1-NORD-ST,
+         PUMPE-2-NORD-ST,KEILRI-STOER-ZUL,KEILRI-STOER-ABL,
+         LAB-ABL-VENT-ST,1,PUMPE-SUED-ST,$B110,$WSCRATCH)
+  ODRMN (4,$B110,LAB-VE-PUMPE-ST,VERTEI-PUM-2-ST,
+         VERTEI-PUM-1-ST,5,LAB-BYP-BETR-ST,LAB-FU-BETR-ST,
+         LAB-HYGROSTAT,LAB-FROSTSCH-1,LAB-FROSTSCH-2,$B111,
+         $WSCRATCH)
+  SETMEL ($M197,1,$B111,&T6-LU12-41B-S50,WERR)
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  ODRMN (5,KEILRI-STOER-ABL,LAB-ABL-VENT-ST,KEILRI-STOER-ZUL,
+         REP-SCH-ZUL-LAB,REP-SCH-ABL-LAB,4,LAB-BYP-BETR-ST,
+         LAB-FU-BETR-ST,LAB-FROSTSCH-1,LAB-FROSTSCH-2,$B112,
+         $WSCRATCH)
+  VVZ ($B112,$M198,$M199,$B113)
+  SETMEL ($M200,1,$B113,&M8,WERR)
+  BEFAUS (1,$B113,$WZERO,$WZERO,$WZERO,&T6-LU12-41C-X50,WERR)
+  ENDE 
+  ENDMODUL 

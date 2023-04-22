@@ -1,0 +1,4938 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MD61506.GPS
+  ;*** Projektname    : MD Kälte Süd
+  ;*** Projektnummer  : 04100028
+  ;*** Bearbeiter     : Bresser H.J.
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 15
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR_131_03
+  WordV  K3_GOI123_ST
+  WordV  K3_GOI123_AUF
+  WordV  K3_NB_113_DG
+  WordV  K3_GOI113_ZU
+  WordV  K3_GOI113_ST
+  WordV  K3_GOI113_AUF
+  WordV  K4_NB_124_DG
+  WordV  K4_GOI124_ZU
+  WordV  K4_GOI124_ST
+  WordV  K4_GOI124_AUF
+  WordV  K4_NB_114_DG
+  WordV  K4_GOI114_ZU
+  WordV  K4_GOI114_ST
+  WordV  WERR_Z61_8-15
+  WordV  T2_ok
+  WordV  KüW-Pumpe_Ein
+  WordV  K3_NB_123_DG
+  WordV  Küw1-P1-R1
+  WordV  K3_GOI123_ZU
+  WordV  KT_Seq1_Anf.KT9
+  WordV  KT_Seq1_Anf.KT8
+  WordV  KT_Seq1_Anf.KT7
+  WordV  KT_Seq1_Anf.KT6
+  WordV  KT_Seq1_Anf.KT4
+  WordV  KT_Seq1_Anf.KT3
+  WordV  KT_Seq1_Anf.KT2
+  WordV  KT_Seq1_Anf.KT1
+  WordV  KT-Folge_1
+  WordV  WERR_26_8-15
+  FloatV Summe_Turbo_ASK
+  WordV  T1_gestört
+  WordV  WERR_Z61_0-7
+  WordV  T4_gestört
+  WordV  WERR_24_8-15
+  WordV  KT_Seq2_Anf.KT1
+  WordV  WERR_24_0-7
+  WordV  KT-Folge_4
+  WordV  KT-Folge_3
+  WordV  KT-Folge_2
+  WordV  KT_Seq1_Anf.KT10
+  WordV  T1_Wicklg_4-6
+  WordV  Küw4-P4-R1
+  WordV  KT_Seq3_Anf.KT4
+  WordV  T3_Wicklg_4-6
+  WordV  KT_Seq3_Anf.KT3
+  WordK  KON00 (0)
+  WordV  KT_Seq3_Anf.KT5
+  FloatK FKON_ZK_Fall_5 (5.00)
+  FloatK FKON_ZK_Fall_6 (5.00)
+  FloatK FKON_ZK_Fall_7 (5.00)
+  WordV  T2_10KV_K08_EIN
+  WordV  T4_10KV_K05_EIN
+  WordV  Küw2-P2-R1
+  WordV  K4_GOI114_AUF
+  WordV  WERR_Z72_0-7
+  WordV  WERR_Z72_8-15
+  WordV  K5_NB_125_DG
+  WordV  K5_GOI125_ZU
+  WordV  K5_GOI125_ST
+  WordV  K5_GOI125_AUF
+  WordV  K5_NB_115_DG
+  WordV  K5_GOI115_ZU
+  WordV  K5_GOI115_ST
+  WordV  K5_GOI115_AUF
+  WordV  K6_NB_126_DG
+  WordV  K6_GOI126_ZU
+  WordV  K6_GOI126_ST
+  WordV  K6_GOI126_AUF
+  WordV  K6_NB_116_DG
+  WordV  K6_GOI116_ZU
+  WordV  K6_GOI116_ST
+  WordV  K6_GOI116_AUF
+  WordV  K7_NB_127_DG
+  WordV  K7_GOI127_ZU
+  WordV  K7_GOI127_ST
+  WordV  K7_GOI127_AUF
+  WordV  K7_NB_117_DG
+  WordV  K7_GOI117_ZU
+  WordV  K7_GOI117_ST
+  FloatV ZK_Matrix_Fall_7
+  FloatV LZ_Fall_6
+  FloatV LZ_Fall_7
+  WordV  Fall_7_Anf.T4
+  WordV  Fall_5_Anf.T4
+  WordV  Fall_3_Anf.T4
+  WordV  Fall_2_Anf.1.gr
+  WordV  Fall_4_Anf.2.gr
+  WordV  Fall_6_Anf.3.gr
+  FloatK FKON_ZK_Fall_1 (5.00)
+  FloatK FKON_ZK_Fall_2 (5.00)
+  FloatK FKON_ZK_Fall_3 (5.00)
+  FloatK FKON_ZK_Fall_4 (5.00)
+  WordV  KT_Seq3_Anf.KT6
+  FloatV ZK_Matrix_Fall_3
+  WordV  T3_Wicklg_1-3
+  FloatV ZK_Matrix_Fall_4
+  WordV  KT_Seq3_Anf.KT1
+  WordV  KT_Seq3_Anf.KT9
+  WordV  KT_Seq3_Anf.KT8
+  FloatV ZK_Matrix_Fall_5
+  FloatV LZ_Fall_3
+  WordV  T2_ASK_KW_146_ST
+  FloatV LZ_Fall_2
+  WordV  KT_Seq3_Anf.KT7
+  FloatV LZ_Fall_5
+  FloatV LZ_Fall_4
+  FloatV ZK_Matrix_Fall_6
+  WordV  KT_Seq4_Anf.KT4
+  WordV  Reset_Turbo_1-4
+  WordV  Nachtbetr_F6
+  FloatV Kälteleistung
+  WordV  KT_Seq3_Anf.KT2
+  FloatV LZ_Fall_1
+  WordV  Fall_1_Anf.T4
+  FloatV ZK_Matrix_Fall_1
+  FloatV ZK_Matrix_Fall_2
+  WordV  K7_GOI117_AUF
+  WordV  K8_NB_128_DG
+  WordV  K8_GOI128_ZU
+  WordV  K8_GOI128_ST
+  WordV  K8_GOI128_AUF
+  WordV  K8_NB_118_DG
+  WordV  K8_GOI118_ZU
+  WordV  K8_GOI118_ST
+  WordV  K8_GOI118_AUF
+  WordV  WERR_Z101_0-7
+  WordV  WERR_Z101_8-15
+  WordV  K9_NB_129_DG
+  WordV  K9_GOI129_ZU
+  WordV  K9_GOI129_ST
+  WordV  K9_GOI129_AUF
+  WordV  K9_NB_119_DG
+  WordV  K9_GOI119_ZU
+  WordV  K9_GOI119_ST
+  WordV  K9_GOI119_AUF
+  WordV  K10_NB_130_DG
+  WordV  K10_GOI130_ZU
+  WordV  K10_GOI130_ST
+  WordV  K10_GOI130_AUF
+  WordV  K10_NB_120_DG
+  WordV  K10_GOI120_ZU
+  WordV  K10_GOI120_AUF
+  WordV  K10_GOI120_ST
+  WordV  KT_Seq6_Anf.KT9
+  WordV  KT_Seq6_Anf.KT10
+  WordV  KT_Seq6_Anf.KT1
+  WordV  KT_Seq6_Anf.KT2
+  WordV  KT_Seq6_Anf.KT3
+  WordV  KT_Seq6_Anf.KT4
+  WordV  KT_Seq6_Anf.KT5
+  WordV  KT_Seq7_Anf.KT7
+  WordV  KT_Seq7_Anf.KT8
+  WordV  KT_Seq7_Anf.KT9
+  WordV  KT_Seq7_Anf.KT10
+  WordV  KT_Seq7_Anf.KT1
+  WordV  KT_Seq7_Anf.KT2
+  WordV  KT_Seq7_Anf.KT3
+  WordV  KT_Seq7_Anf.KT4
+  WordV  KT_Seq7_Anf.KT5
+  WordV  KT_Seq7_Anf.KT6
+  WordV  KT_Seq8_Anf.KT8
+  WordV  KT_Seq8_Anf.KT9
+  WordV  KT_Seq8_Anf.KT10
+  WordV  KT_Seq8_Anf.KT1
+  WordV  KT_Seq8_Anf.KT2
+  WordV  KT_Seq8_Anf.KT3
+  WordV  KT_Seq8_Anf.KT4
+  WordV  KT_Seq8_Anf.KT5
+  WordV  KT_Seq8_Anf.KT6
+  WordV  KT_Seq8_Anf.KT7
+  WordV  KT_Seq9_Anf.KT9
+  WordV  KT_Seq9_Anf.KT10
+  WordV  KT_Seq9_Anf.KT1
+  WordV  KT_Seq9_Anf.KT2
+  WordV  KT_Seq9_Anf.KT3
+  WordV  KT_Seq9_Anf.KT4
+  WordV  KT_Seq9_Anf.KT5
+  WordV  KT_Seq9_Anf.KT6
+  WordV  KT_Seq9_Anf.KT7
+  WordV  KT_Seq9_Anf.KT8
+  WordV  KT_SeqA_Anf.KT10
+  WordV  KT_SeqA_Anf.KT1
+  WordV  KT_SeqA_Anf.KT2
+  WordV  KT_SeqA_Anf.KT3
+  WordV  KT_SeqA_Anf.KT4
+  WordV  KT_SeqA_Anf.KT5
+  WordV  KT_SeqA_Anf.KT6
+  WordV  KT_SeqA_Anf.KT7
+  WordV  KT_SeqA_Anf.KT8
+  WordV  KT_SeqA_Anf.KT9
+  WordV  Freigabe_KT1
+  WordV  WERR130-1
+  WordV  WERR130-0
+  WordV  Freigabe_KT2
+  WordV  Freigabe_KT3
+  WordV  WERR130-3
+  WordV  Freigabe_KT4
+  WordV  WERR130-2
+  WordV  Freigabe_KT5
+  WordV  Freigabe_KT6
+  WordV  Freigabe_KT7
+  WordV  Freigabe_KT8
+  WordV  Freigabe_KT9
+  WordV  Freigabe_KT10
+  WordV  Sammelst.KT_1
+  WordV  Sammelst.KT_2
+  WordV  Sammelst.KT_3
+  WordV  Sammelst.KT_4
+  WordV  Sammelst.KT_5
+  WordV  Sammelst.KT_6
+  WordV  Sammelst.KT_7
+  WordV  Sammelst.KT_8
+  WordV  Sammelst.KT_9
+  WordV  Sammelst.KT_10
+  WordV  K5_Ventilator_ST
+  WordV  K5_Ventilator_R0
+  WordV  WERR_Z98_8-15
+  WordV  K5_NB_Lueft_DG
+  WordV  WERR_Z98_0-7
+  WordV  K1_NB_Lueft_DG
+  WordV  K1_Ventilator_R0
+  WordV  K1_Ventilator_ST
+  WordV  K1_Ventilator_R1
+  WordV  K2_NB_RK102_DG
+  WordV  K3_NB_RK103_DG
+  WordV  K2_NB_Lueft_DG
+  WordV  K2_Ventilator_R0
+  WordV  K2_Ventilator_ST
+  WordV  K2_Ventilator_R1
+  WordV  K2_Ventilator_R2
+  WordV  K4_NB_RK104_DG
+  WordV  K5_NB_RK105_DG
+  WordV  K6_NB_RK106_DG
+  WordV  WERR_Z97_8-15
+  WordV  WERR_Z96_8-15
+  WordV  WERR_Z97_0-7
+  WordV  K3_NB_Lueft_DG
+  WordV  K3_Ventilator_R0
+  WordV  WM_u_TEMP-ANF-F4
+  WordV  F_2_P4_gestört
+  WordV  F_4_P4_gestört
+  WordV  F_6_P4_gestört
+  FloatV RK_1_Leistung
+  WordV  T2_KW_Druckwaech
+  WordV  WM_u_TEMP-ANF-F7
+  WordV  KW-TEMP>8GRAD
+  WordV  WM_u_TEMP-ANF-F5
+  WordV  WM_u_TEMP-ANF-F2
+  WordV  Nachtbetr_F5
+  WordV  KT_Seq4_Anf.KT7
+  WordV  KT_Seq4_Anf.KT6
+  WordV  KT_Seq4_Anf.KT5
+  WordV  T4ASK_KüW_144_ST
+  WordV  T4_KW_Druckwaech
+  WordV  T4_Motork.Druckw
+  WordV  Anf.Kälte_RK1-4
+  WordV  F5_T1-3_gestört
+  WordV  T4_Betrieb
+  WordV  KüW-Ppe_1_Ueberh
+  WordV  T4_ASK_KüW_Rep
+  WordV  T4_Störg.Druckw
+  WordV  T4_10KV_Bereit
+  WordV  T1_KW-Ppe_Rep
+  FloatV T4_SW_BStd
+  FloatV T2_B-Stunden
+  WordV  KT_Seq4_Anf.KT9
+  WordV  KT_Seq4_Anf.KT8
+  WordV  K3_Ventilator_ST
+  WordV  K3_Ventilator_R1
+  WordV  K7_NB_RK107_DG
+  WordV  K8_Ventilator_R2
+  WordV  K8_NB_RK108_DG
+  WordV  K9_NB_RK109_DG
+  WordV  K4_NB_Lueft_DG
+  WordV  K4_Ventilator_R0
+  WordV  K4_Ventilator_ST
+  WordV  K4_Ventilator_R1
+  WordV  K10_NB_RK110_DG
+  WordV  K4_Ventilator_R2
+  WordV  Ppe_WZ_NB_DG
+  WordV  Ppe_WZ_NB_Ein_DG
+  WordV  Trockenlauf
+  WordV  T1_B-Bereit
+  WordV  T2_BStd>24
+  WordV  WERR_25_8-15
+  WordV  WERR_25_0-7
+  WordV  KüW-Ppe_1_Rep
+  WordV  T4_Freigabe_NB
+  WordV  KüW-Ppe_3_Ueberh
+  WordV  T3_KW_Druckwaech
+  WordV  WERR143
+  FloatV T2_KW-Eing-Temp.
+  WordV  T4_KW-Pumpe_ST
+  WordV  T4_KW-Pumpe_R1
+  WordV  T4_Sammelstörung
+  WordV  T4_ASK_KW_148AUF
+  WordV  WERR_27_0-7
+  WordV  KüW-Ppe_3_Rep
+  WordV  T4_KüW_Druckwaec
+  WordV  T4ASK_KüW_144AUF
+  WordV  KüW-Ppe_4_Ueberh
+  WordV  T4_Wicklg_1-3
+  WordV  T4_Wicklg_4-6
+  WordV  T1_10KV_K04_EIN
+  WordV  T3_10KV_K09_EIN
+  WordV  Nachtbetrieb_KT
+  WordV  T2_Wicklg_4-6
+  WordV  T2_Wicklg_1-3
+  WordV  KT-Folge_6
+  WordV  WERR_27_8-15
+  WordV  T3_ASK_KüW_Rep
+  FloatV T3_SW_BStd
+  WordV  KüW_MAX_Druck
+  WordV  T2_B-Bereit
+  WordV  T1_BStd>24
+  FloatV T4_B-Stunden
+  WordV  T3_ASK_KW_Rep
+  WordV  T2_Betrieb
+  WordV  KüW-Ppe_2_Ueberh
+  WordV  T3_BStd>24
+  WordV  KüW-Ppe_2_Rep
+  WordV  T3_B-Bereit
+  WordV  T_zyk_2-3-1
+  WordV  T4_BStd>24
+  WordV  KüW-Ppe_4_Rep
+  WordV  WERR23_0-7
+  WordV  T3_Sammelstörung
+  WordV  T3_ASK_KW_147AUF
+  WordV  T4_ASK_KW_148_ST
+  WordV  WM_u_TEMP-ANF-F6
+  WordV  WERR23_8-15
+  WordV  WERR_26_0-7
+  WordV  T1_ok
+  WordV  Masch.Raum_EIN
+  WordV  T3_KüW_Druckwaec
+  WordV  T3ASK_KüW_143AUF
+  WordV  T3_Freigabe_NB
+  WordV  T3_KW-Pumpe_NB
+  WordV  T3_KW-Pumpe_R0
+  WordV  KT-Folge_7
+  WordV  T3_ASK_KW_147_NB
+  WordV  T3_ASK_KW_147_ZU
+  WordV  T3_KW-Pumpe_ST
+  FloatV T3_KW-Eing-Temp.
+  WordV  T3_KW-Pumpe_R1
+  WordV  WERR22_0-7
+  WordV  WERR22_8-15
+  FloatK FKON_24h (24.00)
+  WordV  F_1_T1-3_gestört
+  WordV  T3ASK_KüW_143_NB
+  WordV  T2ASK_KüW_142AUF
+  WordV  F3_T1-3_gestört
+  WordV  WM_F4_2.gr.Turbo
+  WordV  WM_F6_3.gr.Turbo
+  WordV  T3ASK_KüW_143_ZU
+  WordV  T2_Freigabe_NB
+  WordV  T2_Sammelstörung
+  WordV  T2_ASK_KW_146AUF
+  WordV  T1_10KV_Bereit
+  WordV  T4_KW-Pumpe_NB
+  WordV  KüW-P1_gestört
+  WordV  T4_KW-Pumpe_R0
+  WordV  WM_Fall_7_Anf.T4
+  WordV  T3_Freigabe_R0
+  WordV  T2_KüW_Druckwaec
+  WordV  T3_Freigabe_R1
+  WordV  T4_Freigabe_R0
+  WordV  KT-Folge_8
+  WordV  T4_Freigabe_R1
+  WordV  T4_ASK_KW_148_NB
+  WordV  T4_ASK_KW_148_ZU
+  WordV  T4ASK_KüW_144_NB
+  WordV  T4ASK_KüW_144_ZU
+  WordV  T2_KW-Pumpe_ST
+  WordV  T2_KW-Pumpe_R1
+  WordV  T1ASK_KüW_141_ZU
+  WordV  T1_ASK_KW_145_NB
+  WordV  T1_KW-Pumpe_R0
+  WordV  T1_Freigabe_NB
+  WordV  T1_KW_Druckwaech
+  WordV  T1ASK_KüW_141_ST
+  WordV  WERR00_0-7
+  WordV  WERR00_8-15
+  WordV  WERR11_0-7
+  WordV  KüW-P2_gestört
+  WordV  WERR11_8-15
+  WordV  /Test_T4_OK
+  WordV  T1_ASK_KW_145_ZU
+  WordV  /MW_Test_KW_<12G
+  FloatV /T3_MW_KW_Eintr
+  WordV  WM_>_1500_m3/h
+  WordV  T1_KüW_Druckwaec
+  WordV  KT-Folge_9
+  WordV  KüW-P1_ok
+  WordV  T1ASK_KüW_141AUF
+  WordV  T1_KW-Pumpe_ST
+  WordV  T1_KW-Pumpe_R1
+  WordV  KT_Seq2_Anf.KT2
+  WordV  KW_Eintritt_<12G
+  WordV  T1ASK_KüW_141_NB
+  WordV  KT-Folge_10
+  FloatV /T2_MW_KW_Eintr
+  WordV  WM_Freigabe<12G
+  WordV  T1_Freigabe_R1
+  WordV  T3_Motork.Druckw
+  WordV  /T2_BStd_auf_0
+  WordV  /T1_BStd_auf_0
+  WordV  KT_Seq2_Anf.KT10
+  WordV  KT_Seq2_Anf.KT9
+  WordV  KT_Seq2_Anf.KT8
+  WordV  KT_Seq2_Anf.KT7
+  WordV  KT_Seq2_Anf.KT6
+  WordV  KT_Seq2_Anf.KT5
+  WordV  KT_Seq2_Anf.KT4
+  WordV  KT_Seq2_Anf.KT3
+  WordV  6.15_Gesamt_R0
+  WordV  KT_Seq4_Anf.KT2
+  WordV  WM_F2_1.gr.Turbo
+  WordK  KON01 (1)
+  WordV  KüW-P3_ok
+  WordV  T2_KW-Pumpe_R0
+  WordV  /T3_BStd_auf_0
+  WordV  T2_ASK_KW_146_NB
+  WordV  T2_ASK_KW_146_ZU
+  WordV  T1_Freigabe_R0
+  WordV  T1_KW-Pumpe_NB
+  WordV  KT_Seq4_Anf.KT1
+  WordV  T3ASK_KüW_143_ST
+  WordV  T3_10KV_Bereit
+  WordV  K1_Ventilator_R2
+  WordV  K1_NB_RK101_DG
+  WordV  WERR_Z96_0-7
+  WordV  K5_Ventilator_R1
+  WordV  K5_Ventilator_R2
+  WordV  K6_NB_Lueft_DG
+  WordV  K6_Ventilator_R0
+  WordV  K6_Ventilator_ST
+  WordV  K6_Ventilator_R1
+  WordV  K6_Ventilator_R2
+  WordV  WERR_Z99_0-7
+  WordV  WERR_Z99_8-15
+  WordV  K7_NB_Lueft_DG
+  WordV  K7_Ventilator_R0
+  WordV  K7_Ventilator_ST
+  WordV  K7_Ventilator_R1
+  WordV  K7_Ventilator_R2
+  WordV  K8_NB_Lueft_DG
+  WordV  K8_Ventilator_R0
+  WordV  K8_Ventilator_ST
+  WordV  K8_Ventilator_R1
+  WordV  K3_Ventilator_R2
+  WordV  WERR_Z100_0-7
+  WordV  WERR_Z100_8-15
+  WordV  K9_NB_Lueft_DG
+  WordV  K9_Ventilator_R0
+  WordV  K9_Ventilator_ST
+  WordV  K9_Ventilator_R1
+  WordV  K9_Ventilator_R2
+  WordV  K10_NB_Lueft_DG
+  WordV  K10Ventilator_R0
+  WordV  K10Ventilator_ST
+  WordV  K10Ventilator_R1
+  WordV  K10Ventilator_R2
+  WordV  Seq3_KT_AUS
+  WordV  Seq5_KT_AUS
+  WordV  Seq4_KT_AUS
+  WordV  Seq6_KT_AUS
+  WordV  Seq1_KT_AUS
+  WordV  KT9_in_Betrieb
+  WordV  KT10_in_Betrieb
+  WordV  Seq10_KT_AUS
+  WordV  KT1_in_Betrieb
+  WordV  KT2_in_Betrieb
+  WordV  KT4_in_Betrieb
+  WordV  KT3_in_Betrieb
+  FloatV T1_B-Stunden
+  WordV  KT_Seq5_Anf.KT7
+  WordV  KT_Seq5_Anf.KT6
+  WordV  /T4_BStd_auf_0
+  WordV  T3_ok
+  WordV  T2_gestört
+  WordV  T2_Störg.Druckw
+  WordV  T3_gestört
+  WordV  KT_Seq5_Anf.KT5
+  WordV  KT_Seq4_Anf.KT3
+  WordV  WM_Fall_3_Anf.T4
+  WordV  T2_KW-Pumpe_NB
+  WordV  KT_Seq6_Anf.KT6
+  WordV  T1_ASK_KW_145_ST
+  WordV  KT_Seq5_Anf.KT4
+  WordV  KT_Seq5_Anf.KT3
+  WordV  Freigabe_Kältem
+  WordV  KT_Seq5_Anf.KT2
+  WordV  KT_Seq5_Anf.KT1
+  WordV  T2_ASK_KüW_Rep
+  WordV  KT_Seq5_Anf.KT10
+  FloatV T3_B-Stunden
+  WordV  KT_Seq5_Anf.KT9
+  WordV  T2ASK_KüW_142_ZU
+  WordV  KT_Seq5_Anf.KT8
+  WordV  KT_Seq3_Anf.KT10
+  WordV  KT-Folge_5
+  FloatV T1_KW-Eing-Temp.
+  WordV  KT_Seq1_Anf.KT5
+  WordV  KT_Seq6_Anf.KT8
+  FloatV T1_SW_BStd
+  WordV  KT_Seq6_Anf.KT7
+  WordV  T4_B-Bereit
+  WordV  T2_Freigabe_R0
+  WordV  T2_Freigabe_R1
+  WordV  T2ASK_KüW_142_NB
+  WordV  T_zyk_1-2-3
+  WordV  Ppe-WZ-ST
+  WordV  Seq_T-1-2-3
+  WordV  K2_GOI122_AUF
+  WordV  T3_Betrieb
+  WordV  K2_GOI112_ST
+  WordV  Ppe-WZ-R0
+  WordV  K2_GOI112_AUF
+  WordV  KT_Seq4_Anf.KT10
+  WordV  Ppe-WZ-R1
+  WordV  T4_ok
+  WordV  WERR_Z29_8-15
+  FloatV T2_SW_BStd
+  WordV  Küw1-P1-Notbet
+  WordV  Küw1-P1-ST
+  WordV  Ppe_WZ_Not_KG
+  WordV  T1_ASK_KW_Rep
+  WordV  T2_ASK_KW_Rep
+  WordV  Küw3-P3-ST
+  WordV  T3_ASK_KW_147_ST
+  WordV  K2_GOI122_ST
+  WordV  T1_Sammelstörung
+  WordV  T1_ASK_KW_145AUF
+  WordV  Küw2-P2-Notbet
+  WordV  /Test_T1_OK
+  WordV  WERR_Z29_0-7
+  WordV  K2_GOI112_ZU
+  WordV  Kälte_Gesamt_R1
+  WordV  K1_GOI121_ST
+  WordV  K1_GOI121_AUF
+  WordV  K1_GOI111_ST
+  WordV  K1_GOI111_AUF
+  WordV  Küw3-P3-Notbet
+  WordV  Küw3-P3-R0
+  WordV  K1_GOI121_ZU
+  WordV  K1_NB_111_DG
+  WordV  Seq_T-2-3-1
+  WordV  K2_NB_122_DG
+  WordV  Küw2-P2-R0
+  WordV  T4_ASK_KW_Rep
+  WordV  K1_GOI111_ZU
+  WordV  K2_GOI122_ZU
+  WordV  Küw2-P2-ST
+  WordV  K2_NB_112_DG
+  WordV  Küw1-P1-R0
+  WordV  WM_>_1000_m3/h
+  FloatV /T4_MW_KW_Eintr
+  WordV  K1_NB_121_DG
+  FloatV KorrAnzahl_gefKT
+  WordV  NOTAUS
+  WordV  WERR_Z28_0-7
+  WordV  T2ASK_KüW_142_ST
+  WordV  T1_ASK_KüW_Rep
+  WordV  WERR_250_0-7
+  WordV  K4_GOI154_ST
+  FloatV Summe_Durchfluss
+  FloatV T4_KW-Eing-Temp.
+  FloatV /T1_MW_KW_Eintr
+  WordV  KT8_nicht_bereit
+  WordV  KT9_nicht_bereit
+  WordV  Enthaertg_Betr
+  WordV  Küw3-P3-R1
+  WordV  /SW_Durchfluss
+  WordV  WM_u_TEMP-ANF-F3
+  WordV  T1_Betrieb
+  WordV  KT10nicht_bereit
+  WordV  Küw4-P4-R2
+  FloatV Anzahl_gest.KT
+  WordV  /TEST-KON03
+  WordV  Anf.Freig.Turbo4
+  WordV  Freigabe_Turbo_1
+  WordV  Anf.Freig.Turbo3
+  WordV  Anf.Freig.Turbo2
+  FloatV /MW_Durchfluss
+  FloatV KW_Verteil-Temp.
+  FloatV KW_RücklaufTemp.
+  WordV  Kälte_Gesamt_R0
+  WordV  Anf.Freig.Turbo1
+  FloatV Summe_KT_ASK_auf
+  WordV  WERR_Z48_8-15
+  WordV  Freigabe_Turbo_4
+  WordV  Freigabe_Turbo_2
+  WordV  Freigabe_Turbo_3
+  WordV  T2_10KV_Bereit
+  WordV  /SW_KW_Rücklauf
+  FloatV /MW_KW_Rücklauf
+  WordV  WERR_Z48_0-7
+  WordV  T2_KW-Ppe_Rep
+  WordV  WM_Fall_5_Anf.T4
+  WordV  T3_KW-Ppe_Rep
+  WordV  T3_Störg.Druckw
+  WordV  Seq_T-3-1-2
+  WordV  T4_KW-Ppe_Rep
+  WordV  Turbo_1-3_EIN
+  WordV  Reset_Turbo_1-3
+  WordV  T_zyk_3-1-2
+  FloatV /MW_Durchfluss_T
+  WordV  KT5_in_Betrieb
+  WordV  KT6_in_Betrieb
+  WordV  KT7_in_Betrieb
+  WordV  KT8_in_Betrieb
+  WordV  Seq9_KT_AUS
+  WordV  Seq8_KT_AUS
+  WordV  Seq7_KT_AUS
+  WordV  Seq2_KT_AUS
+  WordV  WERR240
+  WordV  /KT6_BStd_auf_0
+  WordV  /KT1_BStd_auf_0
+  WordV  KT2_BStd>24
+  FloatV KT5_SW_BStd
+  WordV  KT4_BStd>24
+  WordV  KT3_BStd>24
+  WordV  Seq_KT_Reset_ST
+  FloatV KT4_SW_BStd
+  FloatV KT1_B-Stunden
+  FloatV KT4_B-Stunden
+  FloatV KT3_B-Stunden
+  FloatV KT2_B-Stunden
+  FloatV KT6_SW_BStd
+  WordV  KT1_BStd>24
+  FloatV KT1_SW_BStd
+  WordV  /KT2_BStd_auf_0
+  FloatV KT3_SW_BStd
+  WordV  /KT5_BStd_auf_0
+  FloatV KT2_SW_BStd
+  WordV  /KT3_BStd_auf_0
+  WordV  /KT4_BStd_auf_0
+  WordV  Anf.Turbo_1-4
+  FloatV KT7_SW_BStd
+  WordV  /KT7_BStd_auf_0
+  FloatV KT8_SW_BStd
+  WordV  /KT8_BStd_auf_0
+  WordV  KT5_BStd>24
+  FloatV KT5_B-Stunden
+  WordV  KT6_BStd>24
+  FloatV KT6_B-Stunden
+  WordV  KT7_BStd>24
+  FloatV KT7_B-Stunden
+  WordV  KT8_BStd>24
+  FloatV KT8_B-Stunden
+  FloatV KT9_SW_BStd
+  WordV  /KT9_BStd_auf_0
+  FloatV KT10_SW_BStd
+  WordV  /KT10_BStd_auf_0
+  WordV  KT9_BStd>24
+  FloatV KT9_B-Stunden
+  WordV  KT10_BStd>24
+  FloatV KT10_B-Stunden
+  WordV  Reset_KT1-10
+  WordV  /T1_SW_KW_Austr
+  WordV  Seq_KT_Aus_DIGZ
+  WordV  KT7_nicht_bereit
+  FloatK FKON1 (1.00)
+  FloatK FKON60-FAELLE (60.00)
+  FloatV Summe_KT_Seq_AUS
+  WordV  WERR151
+  FloatV /T1_MW_KW_Austr
+  WordV  /T2_SW_KW_Austr
+  FloatV /T2_MW_KW_Austr
+  WordV  /T3_SW_KW_Austr
+  FloatV /T3_MW_KW_Austr
+  WordV  /T4_SW_KW_Austr
+  FloatV /MW_KW_Verteiler
+  FloatV /T4_MW_KW_Austr
+  FloatV T1_KW-Ausg-Temp.
+  FloatV T2_KW-Ausg-Temp.
+  FloatV T3_KW-Ausg-Temp.
+  FloatV T4_KW-Ausg-Temp.
+  WordV  WERR245
+  WordV  Küw4-P4-R0
+  WordV  Enthaertg_oertl
+  WordV  KT4_nicht_bereit
+  WordV  KT5_nicht_bereit
+  WordV  KT6_nicht_bereit
+  WordV  Küw4-P4-ST
+  WordV  Küw4-P4-Notbet
+  WordV  WERR_137_0-3
+  WordV  6.15_Gesamt_R1
+  WordV  NOTAUS_an_US6.14
+  WordV  WERR_250_0-3
+  WordV  ST_Quitt_Keller
+  WordV  ST_Quitt_Dach
+  WordV  WERR_31-14
+  WordV  WERR_128-14
+  WordV  Störg_QUITT
+  FloatV Durchfluss_Turbo
+  WordV  /SW_Durchfluss_T
+  WordV  WERR144
+  WordV  WERR145
+  WordV  WERR146
+  WordV  WERR147
+  WordV  WERR148
+  WordV  WERR149
+  WordV  /SW_KW_Verteiler
+  FloatV Summe_Turbo_Ein
+  WordV  3_gr.Turbo_Ein
+  WordV  2_gr.Turbo_Ein
+  WordV  KüW-P4_ok
+  WordV  1_gr.Turbo_Ein
+  WordV  KüW-P4_Ein
+  WordV  WERR255
+  WordV  WERR254
+  WordV  WERR253
+  WordV  WERR252
+  WordV  WERR251
+  WordV  WERR249
+  WordV  WERR248
+  WordV  WERR247
+  WordV  WERR246
+  WordV  WERR137-12
+  WordV  WERR137-13
+  WordV  WERR137-14
+  WordV  WERR30-8
+  WordV  WERR30-9
+  WordV  WERR30-10
+  WordV  WERR30-11
+  WordV  WERR30-12
+  WordV  WERR30-13
+  WordV  WERR30-14
+  WordV  WERR137-8
+  WordV  WERR137-9
+  WordV  WERR137-10
+  WordV  WERR137-11
+  WordV  WERR00-13
+  WordV  WERR11-13
+  WordV  WERR22-13
+  WordV  WERR23-13
+  WordV  WERR150_0-7
+  WordV  WERR150_8-9
+  WordV  WERR_Z83_0-7
+  WordV  WERR_Z83_8-15
+  WordV  WERR130-4
+  WordV  WERR130-5
+  WordV  WERR130-6
+  WordV  WERR130-7
+  WordV  WERR130-8
+  WordV  WERR130-9
+  WordV  Anfahr_Fall_2
+  WordV  Anfahr_Fall_3
+  WordV  Anfahrbetr_Fall2
+  WordV  Anfahrbetr_Fall3
+  WordV  _F2_1.GR.TURBO
+  WordV  _FALL_3_ANF.T4
+  WordV  _F4_2.GR.TURBO
+  WordV  _FALL_5_ANF.T4
+  WordV  _F6_3.GR.TURBO
+  WordV  _FALL_7_ANF.T4
+  WordV  WERR243
+  WordV  WERR244
+  WordV  /Test_T3_OK
+  WordV  T2_Motork.Druckw
+  WordV  /Test_T2_OK
+  WordV  T1_Wicklg_1-3
+  FloatK FKON01 (1.00)
+  FloatV Anzahl_gef.KT
+  WordV  2_KT_gefordert
+  WordV  3_KT_gefordert
+  WordV  5_KT_gefordert
+  WordV  6_KT_gefordert
+  WordV  8_KT_gefordert
+  WordV  9_KT_gefordert
+  WordV  10_KT_gefordert
+  WordV  WERR242
+  WordV  WERR241
+  FloatV RK_2_Leistung
+  FloatV RK_4_Leistung
+  WordV  /SW_RK1_Leistung
+  FloatV /MW_RK1_Leistung
+  WordV  /SW_RK2_Leistung
+  FloatV /MW_RK2_Leistung
+  FloatV /MW_RK4_Leistung
+  WordV  /SW_RK4_Leistung
+  WordV  WERR_153_0-7
+  WordV  /Test_Berechnung
+  WordV  T1_Vorwahl_Auto
+  WordV  T1_Vorwahl_Ein
+  WordV  T2_Vorwahl_Auto
+  WordV  T2_Vorwahl_Ein
+  WordV  T3_Vorwahl_Auto
+  WordV  T3_Vorwahl_Ein
+  WordV  T4_Vorwahl_Auto
+  WordV  T4_Vorwahl_Ein
+  WordV  WERR_154_8-11
+  WordV  T2_KW-P_Überhitz
+  WordV  T1_KW-P_Überhitz
+  WordV  T3_KW-P_Überhitz
+  WordV  T4_KW-P_Überhitz
+  WordV  T1_Störg.Druckw
+  WordV  Kälteanfordg.H2
+  WordV  Tagbetrieb_KT
+  WordV  T1_Motork.Druckw
+  WordV  Kälteanfordg.H1
+  WordV  Kälteanfordg.H3
+  WordV  Kälteanfordg.H4
+  WordV  Kälteanfordg.H17
+  WordV  Kälteanfordg.H16
+  WordV  Kälteanfordg.H13
+  WordV  Kälteanfordg.H14
+  WordV  Kälteanfordg.H15
+  WordV  /Anf.Kälte_RK1-4
+  WordV  1_KT_gefordert
+  WordV  4_KT_gefordert
+  WordV  7_KT_gefordert
+  WordV  KT1_nicht_bereit
+  WordV  KT2_nicht_bereit
+  WordV  KT3_nicht_bereit
+  WordV  K4_GOI154_ZU
+  WordV  K4_GOI154_AUF
+  WordV  K3_GOI153_ST
+  WordV  K2_GOI152_ST
+  WordV  K3_GOI153_ZU
+  WordV  K3_GOI153_AUF
+  WordV  K1_GOI151_AUF
+  WordV  WERR_Z161_0-7
+  WordV  WERR_Z161_8-15
+  WordV  K1_GOI151_ST
+  WordV  K1_GOI151_ZU
+  WordV  K2_GOI152_AUF
+  WordV  K2_GOI152_ZU
+  WordV  K5_GOI155_ZU
+  WordV  K5_GOI155_AUF
+  WordV  K5_GOI155_ST
+  WordV  WERR_Z162_0-7
+  WordV  WERR_Z162_8-15
+  WordV  K6_GOI156_ZU
+  WordV  K6_GOI156_AUF
+  WordV  K6_GOI156_ST
+  WordV  K7_GOI157_ZU
+  WordV  K7_GOI157_ST
+  WordV  K7_GOI157_AUF
+  WordV  K8_GOI158_ZU
+  WordV  K8_GOI158_AUF
+  WordV  K8_GOI158_ST
+  WordV  K9_GOI159_ZU
+  WordV  K9_GOI159_AUF
+  WordV  K9_GOI159_ST
+  WordV  K10_GOI160_ZU
+  WordV  K10_GOI160_AUF
+  WordV  K10_GOI160_ST
+  WordV  WERR_163-12
+  WordV  WERR_147
+  WordV  WERR_148
+  WordV  WERR_149
+  WordV  WERR_131_01
+  WordV  WERR_131_02
+  WordV  WERR_131_04
+  WordV  WERR_130_11
+  WordV  WERR_130_12
+  WordV  WERR_130_13
+  WordV  WERR_130_14
+  WordV  WERR_130_15
+  WordV  WERR_131_00
+  WordV  Fall_1_Anf.T4N
+  WordV  Fall_2_Anf.1.grN
+  WordV  Fall_3_Anf.T4N
+  WordV  Fall_4_Anf.2.grN
+  WordV  Fall_5_Anf.T4N
+  WordV  Fall_6_Anf.3.grN
+  WordV  Fall_7_Anf.T4N
+  WordV  /Test_Anf_1
+  WordV  ERR178
+  WordV  Anfahrbetr_Fall1
+  WordV  Anfahrbetrieb
+  WordV  WM_Fall_1_Anf.T4
+  WordV  Anfahrbetrieb_F1
+  WordV  Anfahrbetrieb_F2
+  WordV  Anfahrbetrieb_F3
+  WordV  Anfahrbetrieb_F4
+  WordV  Anfahrbetrieb_F5
+  WordV  Anfahrbetrieb_F6
+  WordV  Anfahrbetrieb_F7
+  WordV  Fall_1_Anf.T4A
+  WordV  Fall_2_Anf.1.grA
+  WordV  Fall_3_Anf.T4A
+  WordV  Fall_4_Anf.2.grA
+  WordV  Fall_5_Anf.T4A
+  WordV  Fall_6_Anf.3.grA
+  WordV  Fall_7_Anf.T4A
+  WordV  Abw_Anf_Fall1
+  WordV  Abw_Anf_Fall3
+  WordV  Abw_Anf_Fall2
+  WordV  WM_<_1000_m3/h
+  WordV  KüW-P3_gestört
+  WordV  KüW-P2_ok
+  WordV  KüW-P4_gestört
+  WordV  Fall_1_Betrieb
+  WordV  Fall_2_Betrieb
+  WordV  Fall_3_Betrieb
+  WordV  Fall_4_Betrieb
+  WordV  Fall_5_Betrieb
+  WordV  Fall_6_Betrieb
+  WordV  Fall_7_Betrieb
+  WordV  3-Grosse-T-EIN
+  WordV  F_2_T4_gestört
+  FloatK FKON60 (60.00)
+  WordV  2-Grosse-T-EIN
+  WordV  1-Grosser-T-EIN
+  WordV  F_4_T4_gestört
+  WordV  F_6_T4_gestört
+  WordV  Nachtbetr_F7
+  WordV  Nachtbetr_F4
+  WordV  ANf_T1_Hand
+  WordV  Anf_T2_Hand
+  WordV  Anf_T3_Hand
+  WordV  Anf_T4_Hand
+  WordV  Anf_F2_Hand
+  WordV  Anf_F3_Hand
+  WordV  Anf_F4_Hand
+  WordV  Anf_F5_Hand
+  WordV  Anf_F6_Hand
+  WordV  Anf_F7_Hand
+  WordV  Anf_F1_Hand
+  WordV  T1_Hand
+  WordV  T2_Hand
+  WordV  T3_Hand
+  WordV  T4_Hand
+  WordV  ERR
+  WordV  ZPK
+  WordV  T1_GOI141_STAntr
+  WordV  T4_GOI144_STAntr
+  WordV  T2_GOI142_STAntr
+  WordV  T1_GOI145_STAntr
+  WordV  T2_GOI146_STAntr
+  WordV  T3_GOI143_STAntr
+  WordV  T3_GOI147_STAntr
+  WordV  T4_GOI148_STAntr
+  WordV  KT10_SOLL_EIN
+  WordV  ABWAHL-F7-ST-KT
+  WordV  ABWAHL-F6-ST-KT
+  WordV  ABWAHL-F5-ST-KT
+  WordV  ABWAHL-F4-ST-KT
+  WordV  ABWAHL-F3-ST-KT
+  FloatV Anzahl_gest.KT99
+  WordV  TEST11
+  WordV  KT1_SOLL_EIN
+  FloatV BERECHNUNG-TEST
+  WordV  KT2_SOLL_EIN
+  WordV  KT3_SOLL_EIN
+  WordV  KT4_SOLL_EIN
+  WordV  ERRTEST
+  WordV  /TEST-KON01
+  WordV  /TEST-KON02
+  WordV  KT5_SOLL_EIN
+  WordV  KT6_SOLL_EIN
+  WordV  KT7_SOLL_EIN
+  WordV  KT8_SOLL_EIN
+  WordV  KT9_SOLL_EIN
+  WordV  ERR170
+  FloatK KSOLLW-KW-GLT (8.00)
+  FloatK FKON1GRAD (1.00)
+  WordV  T1_nicht_ok_AUTO
+  WordV  T2_nicht_ok_AUTO
+  WordV  T3_nicht_ok_AUTO
+  WordV  ERR171
+  WordV  ERR172
+  WordV  ERR173
+  WordV  ERR174
+  WordV  ERR177
+  WordK  $M0 (1)
+  IPAAW &&21KA00-900AA01 (143)
+  WordK  $M1 (1)
+  IPAAW &&21KA00-900AA02 (144)
+  WordK  $M2 (1)
+  IPAAW &&21KA00-900AA03 (145)
+  WordK  $M3 (1)
+  IPAAW &&21KA00-900AA04 (146)
+  WordK  $M4 (1)
+  IPAAW &&21KA00-900AA05 (147)
+  WordK  $M5 (1)
+  IPAAW &&21KA00-900AA06 (148)
+  WordK  $M6 (1)
+  IPAAW &&21KA00-900AA07 (149)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &21KA24-900BF01 (30,5)
+  IPAMB &M7 (140,0)
+  IPAMB &&21KA04-141ST20 (140,1)
+  IPAMB &&21KA04-142ST20 (140,2)
+  IPAMB &&21KA04-143ST20 (140,3)
+  IPAMB &&21KA04-144ST20 (140,4)
+  IPAMB &&21KA03-145ST20 (139,5)
+  IPAMB &&21KA03-146ST20 (139,6)
+  IPAMB &&21KA03-147ST20 (139,7)
+  IPAMB &&21KA03-148ST20 (139,8)
+  IPAMB &&21KA04-400BM91 (28,0)
+  IPAMB &&21KA04-400BM01 (28,1)
+  IPAMB &M8 (28,2)
+  IPAMB &M9 (28,3)
+  IPAMB &M10 (28,4)
+  IPAMB &M11 (28,5)
+  IPAMB &&21KA24-400BM00 (28,6)
+  IPAMB &&21KA24-400BM01 (28,7)
+  WordV  $HB11
+  WordV  $WSCRATCH
+  IPAMB &&21KA04-100BM91 (29,0)
+  IPAMB &&21KA04-100BM01 (29,1)
+  IPAMB &M12 (29,2)
+  IPAMB &M13 (29,3)
+  IPAMB &&21KA04-200BM91 (29,4)
+  IPAMB &&21KA04-200BM01 (29,5)
+  IPAMB &M14 (29,6)
+  IPAMB &M15 (29,7)
+  WordV  $HB15
+  IPAMB &&21KA04-300BM91 (29,8)
+  IPAMB &&21KA04-300BM01 (29,9)
+  IPAMB &M16 (29,10)
+  IPAMB &M17 (29,11)
+  IPAMB &&21KA04-500BM91 (29,12)
+  IPAMB &&21KA04-500BM01 (29,13)
+  IPAMB &M18 (29,14)
+  IPAMB &M19 (29,15)
+  IPAMB &&21KA01-000BM01 (31,14)
+  IPAMB &&21KA02-000BM01 (128,14)
+  WordV  $B1
+  FloatK $M20 (5.00)
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  FloatV $F5
+  FloatV $F6
+  FloatV $F7
+  IPAMW &&21KA03.100MW91 (255)
+  FloatV $F8
+  IPAMW &&21KA03.200MW91 (254)
+  FloatV $F9
+  IPAMW &&21KA03.300MW91 (253)
+  FloatV $F10
+  IPAMW &&21KA03.400MW91 (252)
+  FloatV $F11
+  IPAMW &&21KA06.000MW90 (251)
+  FloatV $F12
+  IPAMW &&21KA03.100MW92 (249)
+  FloatV $F13
+  IPAMW &&21KA03.200MW92 (248)
+  FloatV $F14
+  IPAMW &&21KA03.300MW92 (247)
+  FloatV $F15
+  IPAMW &&21KA03.400MW92 (246)
+  FloatV $F16
+  IPAMW &&21KA01.000MW90 (245)
+  FloatV $F17
+  IPAMW &&21KA01.000MW91 (244)
+  FloatV $F18
+  IPAMW &&21KA01.000MW92 (243)
+  FloatV $F19
+  IPAMW &&01KA00-000MW92 (242)
+  FloatV $F20
+  IPAMW &&04KA00-000MW92 (241)
+  FloatV $F21
+  IPAMW &&11KA00-000MW92 (240)
+  FloatV $F22
+  IPAMB &&21KA03-100BM91 (0,0)
+  IPAMB &&21KA03-100BM01 (0,1)
+  IPAMB &M21 (0,2)
+  IPAMB &M22 (0,3)
+  IPAMB &&21KA03-101BM91 (0,4)
+  IPAMB &&21KA03-101BM01 (0,5)
+  IPAMB &M23 (0,6)
+  IPAMB &M24 (0,7)
+  IPAMB &&21KA04-101BM91 (0,8)
+  IPAMB &&21KA04-101BM01 (0,9)
+  IPAMB &M25 (0,10)
+  IPAMB &M26 (0,11)
+  IPAMB &&21KA01-100BM91 (0,12)
+  IPAMB &&21KA01-100BF01 (0,13)
+  IPAMB &M27 (0,15)
+  IPAMB &&21KA03-200BM91 (11,0)
+  IPAMB &&21KA03-200BM01 (11,1)
+  IPAMB &M28 (11,2)
+  IPAMB &M29 (11,3)
+  IPAMB &&21KA03-201BM91 (11,4)
+  IPAMB &&21KA03-201BM01 (11,5)
+  IPAMB &M30 (11,6)
+  IPAMB &M31 (11,7)
+  IPAMB &&21KA04-201BM91 (11,8)
+  IPAMB &&21KA04-201BM01 (11,9)
+  IPAMB &M32 (11,10)
+  IPAMB &M33 (11,11)
+  IPAMB &&21KA01-200BM91 (11,12)
+  IPAMB &&21KA01-200BF01 (11,13)
+  IPAMB &M34 (11,15)
+  IPAMB &&21KA03-300BM91 (22,0)
+  IPAMB &&21KA03-300BM01 (22,1)
+  IPAMB &M35 (22,2)
+  IPAMB &M36 (22,3)
+  IPAMB &&21KA03-301BM91 (22,4)
+  IPAMB &&21KA03-301BM01 (22,5)
+  IPAMB &M37 (22,6)
+  IPAMB &M38 (22,7)
+  IPAMB &&21KA04-301BM91 (22,8)
+  IPAMB &&21KA04-301BM01 (22,9)
+  IPAMB &M39 (22,10)
+  IPAMB &M40 (22,11)
+  IPAMB &&21KA01-300BM91 (22,12)
+  IPAMB &&21KA01-300BF01 (22,13)
+  IPAMB &M41 (22,15)
+  IPAMB &&21KA03-400BM91 (23,0)
+  IPAMB &&21KA03-400BM01 (23,1)
+  IPAMB &M42 (23,2)
+  IPAMB &M43 (23,3)
+  IPAMB &&21KA03-401BM91 (23,4)
+  IPAMB &&21KA03-401BM01 (23,5)
+  IPAMB &M44 (23,6)
+  IPAMB &M45 (23,7)
+  IPAMB &&21KA04-401BM91 (23,8)
+  IPAMB &&21KA04-401BM01 (23,9)
+  IPAMB &M46 (23,10)
+  IPAMB &M47 (23,11)
+  IPAMB &&21KA01-400BM91 (23,12)
+  IPAMB &&21KA01-400BF01 (23,13)
+  IPAMB &M48 (23,15)
+  IPAMB &&21KA01-100BM01 (24,0)
+  IPAMB &&21KA01-100BM02 (24,1)
+  IPAMB &&21KA01-100BM10 (24,2)
+  IPAMB &&21KA01-100BM11 (24,3)
+  IPAMB &&21KA01-100ST01 (24,4)
+  IPAMB &&21KA01-100ST03 (24,5)
+  IPAMB &&21KA01-100ST04 (24,6)
+  IPAMB &&21KA03-100BM14 (24,7)
+  WordV  $HB13
+  IPAMB &&21KA03-100ST10 (24,8)
+  IPAMB &&21KA03-101ST10 (24,9)
+  IPAMB &&21KA04-100BM14 (24,10)
+  IPAMB &&21KA04-100ST10 (24,11)
+  IPAMB &&21KA04-101ST10 (24,12)
+  IPAMB &&21KA04-100GF01 (24,13)
+  IPAMB &&21KA04-100ST24 (24,14)
+  IPAMB &&21KA04-200ST24 (24,15)
+  IPAMB &&21KA01-200BM01 (25,0)
+  IPAMB &&21KA01-200BM02 (25,1)
+  IPAMB &&21KA01-200BM10 (25,2)
+  IPAMB &&21KA01-200BM11 (25,3)
+  IPAMB &&21KA01-200ST01 (25,4)
+  IPAMB &&21KA01-200ST03 (25,5)
+  IPAMB &&21KA01-200ST04 (25,6)
+  IPAMB &&21KA03-200BM14 (25,7)
+  IPAMB &&21KA03-200ST10 (25,8)
+  IPAMB &&21KA03-201ST10 (25,9)
+  IPAMB &&21KA04-200BM14 (25,10)
+  IPAMB &&21KA04-200ST10 (25,11)
+  IPAMB &&21KA04-201ST10 (25,12)
+  IPAMB &&21KA04-200GF01 (25,13)
+  IPAMB &&21KA04-000GF20 (25,14)
+  IPAMB &&21LU20-100BM01 (25,15)
+  IPAMB &&21KA01-300BM01 (26,0)
+  IPAMB &&21KA01-300BM02 (26,1)
+  IPAMB &&21KA01-300BM10 (26,2)
+  IPAMB &&21KA01-300BM11 (26,3)
+  IPAMB &&21KA01-300ST01 (26,4)
+  IPAMB &&21KA01-300ST03 (26,5)
+  IPAMB &&21KA01-300ST04 (26,6)
+  IPAMB &&21KA03-300BM14 (26,7)
+  IPAMB &&21KA03-300ST10 (26,8)
+  IPAMB &&21KA03-301ST10 (26,9)
+  IPAMB &&21KA04-300BM14 (26,10)
+  IPAMB &&21KA04-300ST10 (26,11)
+  IPAMB &&21KA04-301ST10 (26,12)
+  IPAMB &&21KA04-300GF01 (26,13)
+  IPAMB &&21KA04-300ST24 (26,14)
+  IPAMB &&21KA04-400ST24 (26,15)
+  IPAMB &&21KA01-400BM01 (27,0)
+  IPAMB &&21KA01-400BM02 (27,1)
+  IPAMB &&21KA01-400BM10 (27,2)
+  IPAMB &&21KA01-400BM11 (27,3)
+  IPAMB &&21KA01-400ST01 (27,4)
+  IPAMB &&21KA01-400ST03 (27,5)
+  IPAMB &&21KA01-400ST04 (27,6)
+  IPAMB &&21KA03-400BM14 (27,7)
+  IPAMB &&21KA03-400ST10 (27,8)
+  IPAMB &&21KA03-401ST10 (27,9)
+  IPAMB &&21KA04-400BM14 (27,10)
+  IPAMB &&21KA04-400ST10 (27,11)
+  IPAMB &&21KA04-401ST10 (27,12)
+  IPAMB &&21KA04-400GF01 (27,13)
+  IPAMB &M49 (27,14)
+  IPAMB &&21KA01-000GF01 (27,15)
+  IPAMB &&21KA01-100BM30 (153,0)
+  IPAMB &&21KA01-100BM31 (153,1)
+  IPAMB &&21KA01-200BM30 (153,2)
+  IPAMB &&21KA01-200BM31 (153,3)
+  IPAMB &&21KA01-300BM30 (153,4)
+  IPAMB &&21KA01-300BM31 (153,5)
+  IPAMB &&21KA01-400BM30 (153,6)
+  IPAMB &&21KA01-400BM31 (153,7)
+  IPAMB &&21KA03-100GF01 (154,8)
+  IPAMB &&21KA03-200GF01 (154,9)
+  IPAMB &&21KA03-300GF01 (154,10)
+  IPAMB &&21KA03-400GF01 (154,11)
+  IPAMB &M50 (137,0)
+  IPAMB &&21KA00-000BF01 (137,1)
+  IPAMB &M51 (137,2)
+  IPAMB &M52 (137,3)
+  IPAMB &21KA00-615BF01 (250,1)
+  IPAMB &M53 (250,0)
+  IPAMB &M54 (250,2)
+  IPAMB &M55 (250,3)
+  IPAMB &M56 (250,4)
+  IPAMB &M57 (250,5)
+  IPAMB &M58 (250,6)
+  IPAMB &&01KA06-000BM90 (250,7)
+  IPAMB &M59 (137,4)
+  IPAMB &&21KA02-000BF03 (137,5)
+  IPAMB &M60 (137,6)
+  IPAMB &M61 (137,7)
+  IPAMB &&21KA04-000GF01 (45,7)
+  IPAMB &&02KA06-000BM90 (250,8)
+  IPAMB &&03KA06-000BM90 (250,9)
+  IPAMB &&04KA06-000BM90 (250,10)
+  IPAMB &&13KA06-000BM90 (250,11)
+  IPAMB &&14KA06-000BM90 (250,12)
+  IPAMB &&15KA06-000BM90 (250,13)
+  IPAMB &&16KA06-000BM90 (250,14)
+  IPAMB &&17KA06-000BM90 (250,15)
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  WordK  $M62 (1)
+  IPAMB &21KA95-901BM01 (214,4)
+  WordK  $M63 (1)
+  IPAMB &21KA95-902BM01 (214,5)
+  WordK  $M64 (1)
+  IPAMB &21KA95-903BM01 (214,6)
+  WordK  $M65 (1)
+  IPAMB &21KA95-904BM01 (214,7)
+  WordV  $B30
+  FloatK $M66 (300.00)
+  FloatK $M67 (0.00)
+  WordV  $B31
+  WordK  $M68 (1)
+  IPAMB &21KA00-000BM01 (30,15)
+  WordV  $B32
+  FloatK $M69 (0.00)
+  FloatK $M70 (-24.00)
+  FloatV $F23
+  FloatK $M71 (0.00)
+  FloatK $M72 (-24.00)
+  FloatV $F24
+  FloatK $M73 (0.00)
+  FloatK $M74 (-24.00)
+  FloatV $F25
+  FloatK $M75 (0.00)
+  FloatK $M76 (-24.00)
+  FloatV $F26
+  FloatV $F27
+  FloatK $M77 (3600.00)
+  WordV  $B40
+  FloatK $M78 (1.00)
+  FloatV $F28
+  WordV  $B33
+  FloatV $F29
+  FloatK $M79 (3600.00)
+  WordV  $B41
+  FloatK $M80 (1.00)
+  FloatV $F30
+  WordV  $B34
+  FloatV $F31
+  FloatK $M81 (3600.00)
+  WordV  $B42
+  FloatK $M82 (1.00)
+  FloatV $F32
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  FloatV $F33
+  FloatK $M83 (3600.00)
+  WordV  $B44
+  FloatK $M84 (1.00)
+  FloatV $F34
+  WordV  $B43
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  WordK  $M85 (1)
+  IPAMB &&21KA01-000BM11 (137,12)
+  WordK  $M86 (1)
+  IPAMB &&21KA01-000BM12 (137,13)
+  WordK  $M87 (1)
+  IPAMB &&21KA01-000BM13 (137,14)
+  WordV  $HB0
+  FloatK $M88 (1.00)
+  FloatK $M89 (0.00)
+  FloatV $F35
+  FloatK $M90 (1.00)
+  FloatK $M91 (0.00)
+  FloatV $F36
+  FloatK $M92 (1.00)
+  FloatK $M93 (0.00)
+  FloatV $F37
+  FloatK $M94 (1.00)
+  FloatK $M95 (0.00)
+  FloatV $F38
+  FloatK $M96 (1.00)
+  FloatK $M97 (0.00)
+  FloatV $F39
+  FloatK $M98 (1.00)
+  FloatK $M99 (0.00)
+  FloatV $F40
+  FloatK $M100 (1.00)
+  FloatK $M101 (0.00)
+  FloatV $F41
+  FloatK $M102 (1.00)
+  FloatK $M103 (0.00)
+  FloatV $F42
+  FloatK $M104 (1.00)
+  FloatK $M105 (0.00)
+  FloatV $F43
+  FloatK $M106 (1.00)
+  FloatK $M107 (0.00)
+  FloatV $F44
+  FloatK $FZERO (0.00)
+  FloatK $M108 (0.90)
+  FloatK $M109 (1.90)
+  FloatK $M110 (2.90)
+  WordV  $B67
+  WordV  $B68
+  FloatK $M111 (5.00)
+  FloatK $M112 (0.00)
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  FloatK $M113 (1200.00)
+  FloatK $M114 (0.00)
+  WordV  $B73
+  WordV  $B74
+  WordV  $HB1
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  WordV  $B84
+  WordV  $B85
+  WordV  $B86
+  WordV  $B87
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  WordV  $B91
+  WordV  $B92
+  FloatV $F45
+  FloatV $F46
+  WordK  $M115 (1)
+  IPAAW &&21KA00-900MW10 (151)
+  WordV  $B93
+  WordV  $B94
+  FloatK $M116 (300.00)
+  FloatK $M117 (0.00)
+  FloatK $M118 (401.00)
+  FloatK $M119 (0.00)
+  WordV  $B95
+  FloatK $M120 (821.00)
+  FloatK $M121 (0.00)
+  WordV  $B96
+  FloatK $M122 (1253.00)
+  FloatK $M123 (0.00)
+  WordV  $B97
+  FloatK $M124 (1683.00)
+  FloatK $M125 (0.00)
+  WordV  $B98
+  FloatK $M126 (2115.00)
+  FloatK $M127 (0.00)
+  WordV  $B99
+  FloatK $M128 (2545.00)
+  FloatK $M129 (0.00)
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  WordV  $B103
+  WordV  $B104
+  WordV  $B105
+  WordV  $B106
+  WordV  $B107
+  WordV  $B108
+  WordV  $B109
+  FloatV $F47
+  WordV  $B110
+  WordV  $B111
+  WordV  $B112
+  WordV  $B113
+  FloatV $F48
+  WordV  $B114
+  WordV  $B115
+  WordV  $B116
+  WordV  $B117
+  FloatV $F49
+  WordV  $B118
+  WordV  $B119
+  WordV  $B120
+  WordV  $B121
+  FloatV $F50
+  WordV  $B122
+  WordV  $B123
+  WordV  $B124
+  FloatV $F51
+  WordV  $B125
+  WordV  $B126
+  WordV  $B127
+  WordV  $B128
+  WordV  $B129
+  WordV  $B130
+  FloatV $F52
+  WordV  $B131
+  WordV  $B132
+  WordV  $B133
+  WordV  $B134
+  FloatV $F53
+  WordV  $B135
+  WordV  $B136
+  WordV  $B137
+  IPAAW &21KA00-900AA11 (170)
+  IPAAW &21KA00-900AA12 (171)
+  IPAAW &21KA00-900AA13 (172)
+  IPAAW &21KA00-900AA14 (173)
+  IPAAW &21KA00-900AA15 (174)
+  IPAAW &21KA00-900AA16 (177)
+  IPAAW &21KA00-900AA17 (178)
+  FloatK $M130 (1.00)
+  FloatK $M131 (0.00)
+  FloatV $F54
+  FloatK $M132 (1.00)
+  FloatK $M133 (0.00)
+  FloatV $F55
+  FloatK $M134 (1.00)
+  FloatK $M135 (0.00)
+  FloatV $F56
+  FloatK $M136 (1.00)
+  FloatK $M137 (0.00)
+  FloatV $F57
+  FloatK $M138 (1.00)
+  FloatK $M139 (0.00)
+  FloatV $F58
+  FloatK $M140 (1.00)
+  FloatK $M141 (0.00)
+  FloatV $F59
+  FloatK $M142 (1.00)
+  FloatK $M143 (0.00)
+  FloatV $F60
+  FloatK $M144 (1.00)
+  FloatK $M145 (0.00)
+  FloatV $F61
+  FloatK $M146 (1.00)
+  FloatK $M147 (0.00)
+  FloatV $F62
+  FloatK $M148 (1.00)
+  FloatK $M149 (0.00)
+  FloatV $F63
+  WordV  $B138
+  WordV  $B139
+  WordV  $B140
+  WordV  $B141
+  FloatK $M150 (1.00)
+  WordV  $B142
+  WordV  $B143
+  FloatK $M151 (30.00)
+  FloatK $M152 (10.00)
+  FloatK $M153 (2.00)
+  WordV  $B144
+  WordV  $B145
+  FloatK $M154 (30.00)
+  FloatK $M155 (10.00)
+  FloatK $M156 (3.00)
+  WordV  $B146
+  WordV  $B147
+  FloatK $M157 (30.00)
+  FloatK $M158 (10.00)
+  FloatK $M159 (5.00)
+  FloatK $M160 (1.00)
+  FloatV $F64
+  WordV  $B148
+  WordV  $B149
+  FloatK $M161 (30.00)
+  FloatK $M162 (10.00)
+  FloatK $M163 (8.00)
+  FloatK $M164 (2.00)
+  FloatV $F65
+  WordV  $B150
+  WordV  $B151
+  FloatK $M165 (30.00)
+  FloatK $M166 (10.00)
+  WordV  $B152
+  WordV  $B153
+  WordV  $B154
+  WordV  $B155
+  WordV  $B156
+  WordV  $B157
+  WordV  $B158
+  WordV  $B159
+  WordV  $B160
+  WordV  $B161
+  WordV  $B162
+  WordV  $B163
+  WordV  $B164
+  WordV  $B165
+  WordV  $B166
+  WordV  $B167
+  WordV  $B168
+  WordV  $B169
+  WordV  $B170
+  WordV  $B171
+  WordV  $B172
+  WordV  $B173
+  WordV  $B174
+  WordV  $B175
+  WordV  $B176
+  WordV  $B177
+  WordV  $B178
+  WordV  $B179
+  WordV  $B180
+  WordV  $B181
+  WordV  $B182
+  WordV  $B183
+  WordV  $B184
+  WordV  $B185
+  WordV  $B186
+  WordV  $B187
+  WordV  $B188
+  WordV  $B189
+  WordV  $B190
+  WordV  $B191
+  WordV  $B192
+  WordV  $B193
+  WordV  $B194
+  WordV  $B195
+  WordV  $B196
+  WordV  $B197
+  WordV  $B198
+  WordV  $B199
+  WordV  $B200
+  WordV  $B201
+  WordV  $B202
+  WordV  $B203
+  WordV  $B204
+  FloatK $M167 (5.00)
+  FloatK $M168 (20.00)
+  WordV  $B205
+  FloatK $M169 (5.00)
+  FloatK $M170 (20.00)
+  WordV  $B206
+  FloatK $M171 (5.00)
+  FloatK $M172 (20.00)
+  WordV  $B207
+  FloatK $M173 (5.00)
+  FloatK $M174 (20.00)
+  WordV  $B208
+  WordV  $B209
+  WordV  $B210
+  WordV  $B211
+  WordV  $B212
+  WordV  $B213
+  WordK  $M175 (1)
+  IPAMB &&21KA01-900BM01 (30,8)
+  WordK  $M176 (1)
+  IPAMB &&21KA01-900BM02 (30,9)
+  WordK  $M177 (1)
+  IPAMB &&21KA01-900BM03 (30,10)
+  WordK  $M178 (1)
+  IPAMB &&21KA01-900BM04 (30,11)
+  WordK  $M179 (1)
+  IPAMB &&21KA01-900BM05 (30,12)
+  WordK  $M180 (1)
+  IPAMB &&21KA01-900BM06 (30,13)
+  WordK  $M181 (1)
+  IPAMB &&21KA01-900BM07 (30,14)
+  WordV  $B214
+  WordV  $B215
+  WordV  $B216
+  WordV  $B217
+  WordV  $B218
+  WordV  $B219
+  WordV  $B220
+  WordV  $B221
+  WordV  $B222
+  WordV  $B223
+  WordV  $B224
+  WordV  $B225
+  WordV  $B226
+  WordV  $B227
+  WordV  $B228
+  WordV  $B229
+  WordV  $B230
+  WordV  $B231
+  WordV  $B232
+  WordV  $B233
+  WordV  $B234
+  WordV  $B235
+  WordV  $B236
+  WordV  $B237
+  WordV  $B238
+  WordV  $B239
+  WordV  $B240
+  WordV  $B241
+  WordK  $M182 (1)
+  IPAMB &&21KA01.100BM50 (137,8)
+  FloatK $M183 (1.00)
+  FloatK $M184 (10.00)
+  WordV  $B242
+  WordV  $B243
+  WordK  $M185 (1)
+  IPAMB &&21KA01.200BM50 (137,9)
+  FloatK $M186 (1.00)
+  FloatK $M187 (10.00)
+  WordV  $B244
+  WordV  $B245
+  WordK  $M188 (1)
+  IPAMB &&21KA01.300BM50 (137,10)
+  FloatK $M189 (1.00)
+  FloatK $M190 (10.00)
+  WordV  $B246
+  WordK  $M191 (1)
+  IPAMB &&21KA01.400BM50 (137,11)
+  WordV  $B247
+  WordV  $B248
+  WordV  $B249
+  FloatK $M192 (1.00)
+  FloatK $M193 (10.00)
+  WordV  $B250
+  WordV  $B251
+  WordV  $B252
+  WordV  $B253
+  WordV  $B254
+  WordV  $B255
+  WordV  $B256
+  WordV  $B257
+  IPAMB &&21KA02-901ST00 (150,0)
+  IPAMB &&21KA02-902ST00 (150,1)
+  IPAMB &&21KA02-903ST00 (150,2)
+  IPAMB &&21KA02-904ST00 (150,3)
+  IPAMB &&21KA02-905ST00 (150,4)
+  IPAMB &&21KA02-906ST00 (150,5)
+  IPAMB &&21KA02-907ST00 (150,6)
+  IPAMB &&21KA02-908ST00 (150,7)
+  IPAMB &&21KA02-909ST00 (150,8)
+  IPAMB &&21KA02-910ST00 (150,9)
+  IPAMB &&21KA02-101BM82 (48,0)
+  IPAMB &&21KA02-101BM02 (48,1)
+  IPAMB &M194 (48,2)
+  IPAMB &M195 (48,3)
+  IPAMB &&21KA02-101BM83 (48,4)
+  IPAMB &&21KA02-101BM03 (48,5)
+  IPAMB &M196 (48,6)
+  IPAMB &M197 (48,7)
+  IPAMB &&21KA02-102BM82 (48,8)
+  IPAMB &&21KA02-102BM02 (48,9)
+  IPAMB &M198 (48,10)
+  IPAMB &M199 (48,11)
+  IPAMB &&21KA02-102BM83 (48,12)
+  IPAMB &&21KA02-102BM03 (48,13)
+  IPAMB &M200 (48,14)
+  IPAMB &M201 (48,15)
+  IPAMB &&21KA02-103BM82 (61,0)
+  IPAMB &&21KA02-103BM02 (61,1)
+  IPAMB &M202 (61,2)
+  IPAMB &M203 (61,3)
+  IPAMB &&21KA02-103BM83 (61,4)
+  IPAMB &&21KA02-103BM03 (61,5)
+  IPAMB &M204 (61,6)
+  IPAMB &M205 (61,7)
+  IPAMB &&21KA02-104BM82 (61,8)
+  IPAMB &&21KA02-104BM02 (61,9)
+  IPAMB &M206 (61,10)
+  IPAMB &M207 (61,11)
+  IPAMB &&21KA02-104BM83 (61,12)
+  IPAMB &&21KA02-104BM03 (61,13)
+  IPAMB &M208 (61,14)
+  IPAMB &M209 (61,15)
+  IPAMB &&21KA02-105BM82 (72,0)
+  IPAMB &&21KA02-105BM02 (72,1)
+  IPAMB &M210 (72,2)
+  IPAMB &M211 (72,3)
+  IPAMB &&21KA02-105BM83 (72,4)
+  IPAMB &&21KA02-105BM03 (72,5)
+  IPAMB &M212 (72,6)
+  IPAMB &M213 (72,7)
+  IPAMB &&21KA02-106BM82 (72,8)
+  IPAMB &&21KA02-106BM02 (72,9)
+  IPAMB &M214 (72,10)
+  IPAMB &M215 (72,11)
+  IPAMB &&21KA02-106BM83 (72,12)
+  IPAMB &&21KA02-106BM03 (72,13)
+  IPAMB &M216 (72,14)
+  IPAMB &M217 (72,15)
+  IPAMB &&21KA02-109BM82 (101,0)
+  IPAMB &&21KA02-109BM02 (101,1)
+  IPAMB &M218 (101,2)
+  IPAMB &M219 (101,3)
+  IPAMB &&21KA02-109BM83 (101,4)
+  IPAMB &&21KA02-109BM03 (101,5)
+  IPAMB &M220 (101,6)
+  IPAMB &M221 (101,7)
+  IPAMB &&21KA02-110BM82 (101,8)
+  IPAMB &&21KA02-110BM02 (101,9)
+  IPAMB &M222 (101,10)
+  IPAMB &M223 (101,11)
+  IPAMB &&21KA02-110BM83 (101,12)
+  IPAMB &&21KA02-110BM03 (101,13)
+  IPAMB &M224 (101,14)
+  IPAMB &M225 (101,15)
+  IPAMB &&21KA02-107BM82 (83,0)
+  IPAMB &&21KA02-107BM02 (83,1)
+  IPAMB &M226 (83,2)
+  IPAMB &M227 (83,3)
+  IPAMB &&21KA02-107BM83 (83,4)
+  IPAMB &&21KA02-107BM03 (83,5)
+  IPAMB &M228 (83,6)
+  IPAMB &M229 (83,7)
+  IPAMB &&21KA02-108BM82 (83,8)
+  IPAMB &&21KA02-108BM02 (83,9)
+  IPAMB &M230 (83,10)
+  IPAMB &M231 (83,11)
+  IPAMB &&21KA02-108BM83 (83,12)
+  IPAMB &&21KA02-108BM03 (83,13)
+  IPAMB &M232 (83,14)
+  IPAMB &M233 (83,15)
+  IPAMB &&21KA02-151BM01 (161,0)
+  IPAMB &&21KA02-151BM02 (161,1)
+  IPAMB &&21KA02-151ST01 (161,2)
+  IPAMB &&21KA02-152BM01 (161,3)
+  IPAMB &&21KA02-152BM02 (161,4)
+  IPAMB &&21KA02-152ST01 (161,5)
+  IPAMB &&21KA02-153BM01 (161,6)
+  IPAMB &&21KA02-153BM02 (161,7)
+  IPAMB &&21KA02-153ST01 (161,8)
+  IPAMB &&21KA02-154BM01 (161,9)
+  IPAMB &&21KA02-154BM02 (161,10)
+  IPAMB &&21KA02-154ST01 (161,11)
+  IPAMB &&21KA02-155BM01 (161,12)
+  IPAMB &&21KA02-155BM02 (161,13)
+  IPAMB &&21KA02-155ST01 (161,14)
+  IPAMB &M234 (161,15)
+  IPAMB &&21KA02-156BM01 (162,0)
+  IPAMB &&21KA02-156BM02 (162,1)
+  IPAMB &&21KA02-156ST01 (162,2)
+  IPAMB &&21KA02-157BM01 (162,3)
+  IPAMB &&21KA02-157BM02 (162,4)
+  IPAMB &&21KA02-157ST01 (162,5)
+  IPAMB &&21KA02-158BM01 (162,6)
+  IPAMB &&21KA02-158BM02 (162,7)
+  IPAMB &&21KA02-158ST01 (162,8)
+  IPAMB &&21KA02-159BM01 (162,9)
+  IPAMB &&21KA02-159BM02 (162,10)
+  IPAMB &&21KA02-159ST01 (162,11)
+  IPAMB &&21KA02-160BM01 (162,12)
+  IPAMB &&21KA02-160BM02 (162,13)
+  IPAMB &&21KA02-160ST01 (162,14)
+  IPAMB &M235 (162,15)
+  IPAMB &&21KA02-101BM81 (96,0)
+  IPAMB &&21KA02-101BM01 (96,1)
+  IPAMB &M236 (96,2)
+  IPAMB &M237 (96,3)
+  IPAMB &&21KA02-101BM80 (96,4)
+  IPAMB &M238 (96,5)
+  IPAMB &&21KA02-102BM80 (96,6)
+  IPAMB &&21KA02-103BM80 (96,7)
+  IPAMB &&21KA02-102BM81 (96,8)
+  IPAMB &&21KA02-102BM01 (96,9)
+  IPAMB &M239 (96,10)
+  IPAMB &M240 (96,11)
+  IPAMB &&21KA02-104BM80 (96,12)
+  IPAMB &M241 (96,13)
+  IPAMB &&21KA02-105BM80 (96,14)
+  IPAMB &&21KA02-106BM80 (96,15)
+  IPAMB &&21KA02-103BM81 (97,0)
+  IPAMB &&21KA02-103BM01 (97,1)
+  IPAMB &M242 (97,2)
+  IPAMB &M243 (97,3)
+  IPAMB &&21KA02-107BM80 (97,4)
+  IPAMB &M244 (97,5)
+  IPAMB &&21KA02-108BM80 (97,6)
+  IPAMB &&21KA02-109BM80 (97,7)
+  IPAMB &&21KA02-104BM81 (97,8)
+  IPAMB &&21KA02-104BM01 (97,9)
+  IPAMB &M245 (97,10)
+  IPAMB &M246 (97,11)
+  IPAMB &&21KA02-110BM80 (97,12)
+  IPAMB &M247 (97,13)
+  IPAMB &&21KA04-500BM81 (97,14)
+  IPAMB &&21KA04-500BM82 (97,15)
+  IPAMB &&21KA02-105BM81 (98,0)
+  IPAMB &&21KA02-105BM01 (98,1)
+  IPAMB &M248 (98,2)
+  IPAMB &M249 (98,3)
+  IPAMB &M250 (98,4)
+  IPAMB &M251 (98,5)
+  WordV  $HB9
+  IPAMB &&21KA02-106BM81 (98,8)
+  IPAMB &&21KA02-106BM01 (98,9)
+  IPAMB &M252 (98,10)
+  IPAMB &M253 (98,11)
+  IPAMB &M254 (98,12)
+  IPAMB &M255 (98,13)
+  IPAMB &&21KA02-107BM81 (99,0)
+  IPAMB &&21KA02-107BM01 (99,1)
+  IPAMB &M256 (99,2)
+  IPAMB &M257 (99,3)
+  IPAMB &M258 (99,4)
+  IPAMB &M259 (99,5)
+  IPAMB &&21KA02-108BM81 (99,8)
+  IPAMB &&21KA02-108BM01 (99,9)
+  IPAMB &M260 (99,10)
+  IPAMB &M261 (99,11)
+  IPAMB &M262 (99,12)
+  IPAMB &M263 (99,13)
+  IPAMB &&21KA02-109BM81 (100,0)
+  IPAMB &&21KA02-109BM01 (100,1)
+  IPAMB &M264 (100,2)
+  IPAMB &M265 (100,3)
+  IPAMB &M266 (100,4)
+  IPAMB &M267 (100,5)
+  IPAMB &&21KA02-110BM81 (100,8)
+  IPAMB &&21KA02-110BM01 (100,9)
+  IPAMB &M268 (100,10)
+  IPAMB &M269 (100,11)
+  IPAMB &M270 (100,12)
+  IPAMB &M271 (100,13)
+  WordV  $B258
+  WordV  $B259
+  WordV  $B260
+  FloatK $M272 (0.00)
+  FloatK $M273 (10.00)
+  WordV  $HB3
+  WordV  $B261
+  FloatK $M274 (1.00)
+  FloatK $M275 (5.00)
+  WordV  $B262
+  WordV  $B263
+  WordV  $B264
+  FloatV $F66
+  FloatK $M276 (3600.00)
+  WordV  $B270
+  FloatK $M277 (1.00)
+  FloatV $F67
+  WordV  $B265
+  WordV  $B266
+  FloatV $F68
+  FloatK $M278 (3600.00)
+  WordV  $B271
+  FloatK $M279 (1.00)
+  FloatV $F69
+  WordV  $B267
+  FloatV $F70
+  FloatK $M280 (3600.00)
+  WordV  $B272
+  FloatK $M281 (1.00)
+  FloatV $F71
+  WordV  $B268
+  FloatV $F72
+  FloatK $M282 (3600.00)
+  WordV  $B273
+  FloatK $M283 (1.00)
+  FloatV $F73
+  WordV  $B269
+  FloatV $F74
+  FloatK $M284 (3600.00)
+  WordV  $B278
+  FloatK $M285 (1.00)
+  FloatV $F75
+  WordV  $B274
+  FloatV $F76
+  FloatK $M286 (3600.00)
+  WordV  $B279
+  FloatK $M287 (1.00)
+  FloatV $F77
+  WordV  $B275
+  FloatV $F78
+  FloatK $M288 (3600.00)
+  WordV  $B280
+  FloatK $M289 (1.00)
+  FloatV $F79
+  WordV  $B276
+  FloatV $F80
+  FloatK $M290 (3600.00)
+  WordV  $B281
+  FloatK $M291 (1.00)
+  FloatV $F81
+  WordV  $B277
+  FloatV $F82
+  FloatK $M292 (3600.00)
+  WordV  $B284
+  FloatK $M293 (1.00)
+  FloatV $F83
+  WordV  $B282
+  FloatV $F84
+  FloatK $M294 (3600.00)
+  WordV  $B285
+  FloatK $M295 (1.00)
+  FloatV $F85
+  WordV  $B283
+  FloatK $M296 (0.00)
+  FloatK $M297 (-24.00)
+  FloatV $F86
+  FloatK $M298 (0.00)
+  FloatK $M299 (-24.00)
+  FloatV $F87
+  FloatK $M300 (0.00)
+  FloatK $M301 (-24.00)
+  FloatV $F88
+  FloatK $M302 (0.00)
+  FloatK $M303 (-24.00)
+  FloatV $F89
+  FloatK $M304 (0.00)
+  FloatK $M305 (-24.00)
+  FloatV $F90
+  FloatK $M306 (0.00)
+  FloatK $M307 (-24.00)
+  FloatV $F91
+  FloatK $M308 (0.00)
+  FloatK $M309 (-24.00)
+  FloatV $F92
+  FloatK $M310 (0.00)
+  FloatK $M311 (-24.00)
+  FloatV $F93
+  FloatK $M312 (0.00)
+  FloatK $M313 (-24.00)
+  FloatV $F94
+  FloatK $M314 (0.00)
+  FloatK $M315 (-24.00)
+  FloatV $F95
+  FloatK $M316 (1.00)
+  FloatK $M317 (0.00)
+  FloatV $F96
+  FloatK $M318 (1.00)
+  FloatK $M319 (0.00)
+  FloatV $F97
+  FloatK $M320 (1.00)
+  FloatK $M321 (0.00)
+  FloatV $F98
+  FloatK $M322 (1.00)
+  FloatK $M323 (0.00)
+  FloatV $F99
+  FloatK $M324 (1.00)
+  FloatK $M325 (0.00)
+  FloatV $F100
+  FloatK $M326 (1.00)
+  FloatK $M327 (0.00)
+  FloatV $F101
+  FloatK $M328 (1.00)
+  FloatK $M329 (0.00)
+  FloatV $F102
+  FloatK $M330 (1.00)
+  FloatK $M331 (0.00)
+  FloatV $F103
+  FloatK $M332 (1.00)
+  FloatK $M333 (0.00)
+  FloatV $F104
+  FloatK $M334 (1.00)
+  FloatK $M335 (0.00)
+  FloatV $F105
+  FloatK $M336 (9.50)
+  WordV  $B286
+  WordV  $B287
+  WordV  $B288
+  WordV  $B289
+  WordV  $B290
+  WordV  $B291
+  WordV  $B292
+  WordV  $B293
+  WordV  $B294
+  WordV  $B295
+  WordV  $B296
+  WordV  $B297
+  WordV  $B298
+  WordV  $B299
+  WordV  $B300
+  WordV  $B301
+  WordV  $B302
+  WordV  $B303
+  WordV  $B304
+  WordV  $B305
+  WordV  $B306
+  WordV  $B307
+  WordV  $B308
+  WordV  $B309
+  WordV  $B310
+  WordV  $B311
+  WordV  $B312
+  WordV  $B313
+  WordV  $B314
+  WordV  $B315
+  WordK  $M337 (1)
+  IPAMB &&21KA02-000BM11 (130,11)
+  WordK  $M338 (1)
+  IPAMB &&21KA02-000BM12 (130,12)
+  WordK  $M339 (1)
+  IPAMB &&21KA02-000BM13 (130,13)
+  WordK  $M340 (1)
+  IPAMB &&21KA02-000BM14 (130,14)
+  WordK  $M341 (1)
+  IPAMB &&21KA02-000BM15 (130,15)
+  WordK  $M342 (1)
+  IPAMB &&21KA02-000BM16 (131,0)
+  WordK  $M343 (1)
+  IPAMB &&21KA02-000BM17 (131,1)
+  WordK  $M344 (1)
+  IPAMB &&21KA02-000BM18 (131,2)
+  WordK  $M345 (1)
+  IPAMB &&21KA02-000BM19 (131,3)
+  WordK  $M346 (1)
+  IPAMB &&21KA02-000BM20 (131,4)
+  FloatK $M347 (1.00)
+  FloatK $M348 (0.00)
+  FloatV $F106
+  FloatK $M349 (1.00)
+  FloatK $M350 (0.00)
+  FloatV $F107
+  FloatK $M351 (1.00)
+  FloatK $M352 (0.00)
+  FloatV $F108
+  FloatK $M353 (1.00)
+  FloatK $M354 (0.00)
+  FloatV $F109
+  FloatK $M355 (1.00)
+  FloatK $M356 (0.00)
+  FloatV $F110
+  FloatK $M357 (1.00)
+  FloatK $M358 (0.00)
+  FloatV $F111
+  FloatK $M359 (1.00)
+  FloatK $M360 (0.00)
+  FloatV $F112
+  FloatK $M361 (1.00)
+  FloatK $M362 (0.00)
+  FloatV $F113
+  FloatK $M363 (1.00)
+  FloatK $M364 (0.00)
+  FloatV $F114
+  FloatK $M365 (1.00)
+  FloatK $M366 (0.00)
+  FloatV $F115
+  FloatK $M367 (1.00)
+  FloatK $M368 (0.00)
+  FloatV $F116
+  FloatK $M369 (1.00)
+  FloatK $M370 (0.00)
+  FloatV $F117
+  FloatK $M371 (1.00)
+  FloatK $M372 (0.00)
+  FloatV $F118
+  FloatK $M373 (1.00)
+  FloatK $M374 (0.00)
+  FloatV $F119
+  FloatK $M375 (1.00)
+  FloatK $M376 (0.00)
+  FloatV $F120
+  FloatK $M377 (1.00)
+  FloatK $M378 (0.00)
+  FloatV $F121
+  FloatK $M379 (1.00)
+  FloatK $M380 (0.00)
+  FloatV $F122
+  FloatK $M381 (1.00)
+  FloatK $M382 (0.00)
+  FloatV $F123
+  FloatK $M383 (1.00)
+  FloatK $M384 (0.00)
+  FloatV $F124
+  FloatK $M385 (1.00)
+  FloatK $M386 (0.00)
+  FloatV $F125
+  WordV  $B316
+  WordV  $B317
+  WordV  $B318
+  WordV  $B319
+  WordV  $B320
+  WordV  $B321
+  WordV  $B322
+  WordV  $B323
+  WordV  $B324
+  WordV  $B325
+  WordV  $B326
+  WordV  $B327
+  WordV  $B328
+  WordV  $B329
+  WordV  $B330
+  WordV  $B331
+  WordV  $B332
+  WordV  $B333
+  WordV  $B334
+  FloatK $M387 (0.00)
+  FloatK $M388 (300.00)
+  WordV  $B335
+  FloatK $M389 (0.00)
+  FloatK $M390 (300.00)
+  WordV  $B336
+  FloatK $M391 (0.00)
+  FloatK $M392 (300.00)
+  WordV  $B337
+  FloatK $M393 (0.00)
+  FloatK $M394 (300.00)
+  WordV  $B338
+  FloatK $M395 (0.00)
+  FloatK $M396 (300.00)
+  WordV  $B339
+  FloatK $M397 (0.00)
+  FloatK $M398 (300.00)
+  WordV  $B340
+  FloatK $M399 (0.00)
+  FloatK $M400 (300.00)
+  WordV  $B341
+  WordV  $B342
+  WordV  $B343
+  WordV  $B344
+  WordV  $B345
+  WordV  $B346
+  WordV  $B347
+  WordV  $B348
+  WordV  $B349
+  WordV  $B350
+  WordV  $B351
+  FloatK $M401 (1.00)
+  FloatK $M402 (0.00)
+  FloatV $F126
+  FloatK $M403 (1.00)
+  FloatK $M404 (0.00)
+  FloatV $F127
+  FloatK $M405 (1.00)
+  FloatK $M406 (0.00)
+  FloatV $F128
+  FloatK $M407 (1.00)
+  FloatK $M408 (0.00)
+  FloatV $F129
+  FloatK $M409 (1.00)
+  FloatK $M410 (0.00)
+  FloatV $F130
+  FloatK $M411 (1.00)
+  FloatK $M412 (0.00)
+  FloatV $F131
+  FloatK $M413 (1.00)
+  FloatK $M414 (0.00)
+  FloatV $F132
+  FloatK $M415 (1.00)
+  FloatK $M416 (0.00)
+  FloatV $F133
+  FloatK $M417 (1.00)
+  FloatK $M418 (0.00)
+  FloatV $F134
+  FloatK $M419 (1.00)
+  FloatK $M420 (0.00)
+  FloatV $F135
+  WordV  $B352
+  FloatK $M421 (0.00)
+  FloatK $M422 (2.00)
+  WordV  $B353
+  WordV  $B354
+  WordV  $B355
+  WordV  $B356
+  WordV  $B357
+  WordV  $B358
+  WordV  $B359
+  FloatK $M423 (0.00)
+  FloatK $M424 (2.00)
+  WordV  $B360
+  WordV  $B361
+  WordV  $B362
+  WordV  $B363
+  WordV  $B364
+  WordV  $B365
+  WordV  $B366
+  FloatK $M425 (0.00)
+  FloatK $M426 (2.00)
+  WordV  $B367
+  WordV  $B368
+  WordV  $B369
+  WordV  $B370
+  WordV  $B371
+  WordV  $B372
+  WordV  $B373
+  FloatK $M427 (0.00)
+  FloatK $M428 (2.00)
+  WordV  $B374
+  WordV  $B375
+  WordV  $B376
+  WordV  $B377
+  WordV  $B378
+  WordV  $B379
+  WordV  $B380
+  FloatK $M429 (0.00)
+  FloatK $M430 (2.00)
+  WordV  $B381
+  WordV  $B382
+  WordV  $B383
+  WordV  $B384
+  WordV  $B385
+  WordV  $B386
+  WordV  $B387
+  FloatK $M431 (0.00)
+  FloatK $M432 (2.00)
+  WordV  $B388
+  WordV  $B389
+  WordV  $B390
+  WordV  $B391
+  WordV  $B392
+  WordV  $B393
+  WordV  $B394
+  FloatK $M433 (0.00)
+  FloatK $M434 (2.00)
+  WordV  $B395
+  WordV  $B396
+  WordV  $B397
+  WordV  $B398
+  WordV  $B399
+  WordV  $B400
+  WordV  $B401
+  FloatK $M435 (0.00)
+  FloatK $M436 (2.00)
+  WordV  $B402
+  WordV  $B403
+  WordV  $B404
+  WordV  $B405
+  WordV  $B406
+  WordV  $B407
+  WordV  $B408
+  FloatK $M437 (0.00)
+  FloatK $M438 (2.00)
+  WordV  $B409
+  WordV  $B410
+  WordV  $B411
+  WordV  $B412
+  WordV  $B413
+  WordV  $B414
+  WordV  $B415
+  FloatK $M439 (0.00)
+  FloatK $M440 (2.00)
+  WordV  $B416
+  WordV  $B417
+  WordV  $B418
+  WordV  $B419
+  WordV  $B420
+  WordV  $B421
+  FloatK $M441 (1.00)
+  FloatK $M442 (0.00)
+  FloatV $F137
+  FloatK $M443 (1.00)
+  FloatK $M444 (0.00)
+  FloatV $F138
+  FloatK $M445 (1.00)
+  FloatK $M446 (0.00)
+  FloatV $F139
+  FloatK $M447 (1.00)
+  FloatK $M448 (0.00)
+  FloatV $F140
+  FloatK $M449 (1.00)
+  FloatK $M450 (0.00)
+  FloatV $F141
+  FloatK $M451 (1.00)
+  FloatK $M452 (0.00)
+  FloatV $F142
+  FloatK $M453 (1.00)
+  FloatK $M454 (0.00)
+  FloatV $F143
+  FloatK $M455 (1.00)
+  FloatK $M456 (0.00)
+  FloatV $F144
+  FloatK $M457 (1.00)
+  FloatK $M458 (0.00)
+  FloatV $F145
+  FloatK $M459 (1.00)
+  FloatK $M460 (0.00)
+  FloatV $F146
+  IPAMB &&21KA24-902BM90 (163,12)
+  WordV  $B422
+  FloatK $M461 (10.00)
+  FloatV $F136
+  FloatK $M462 (0.90)
+  FloatK $M463 (1.90)
+  FloatK $M464 (2.90)
+  FloatK $M465 (3.90)
+  FloatK $M466 (4.90)
+  FloatK $M467 (5.90)
+  FloatK $M468 (6.90)
+  FloatK $M469 (7.90)
+  FloatK $M470 (8.90)
+  FloatK $M471 (9.90)
+  WordV  $B423
+  WordV  $B424
+  FloatK $M472 (2.00)
+  FloatK $M473 (300.00)
+  WordK  $M474 (1)
+  IPAMB &&21KA02-901BM90 (130,0)
+  WordV  $B425
+  WordV  $B426
+  FloatK $M475 (2.00)
+  FloatK $M476 (300.00)
+  WordK  $M477 (1)
+  IPAMB &&21KA02-902BM90 (130,1)
+  WordV  $B427
+  FloatK $M478 (2.00)
+  FloatK $M479 (300.00)
+  WordV  $B428
+  WordK  $M480 (1)
+  IPAMB &&21KA02-903BM90 (130,2)
+  FloatK $M481 (2.00)
+  FloatK $M482 (300.00)
+  WordV  $B429
+  WordK  $M483 (1)
+  IPAMB &&21KA02-904BM90 (130,3)
+  WordV  $B430
+  FloatK $M484 (2.00)
+  FloatK $M485 (300.00)
+  WordK  $M486 (1)
+  IPAMB &&21KA02-905BM90 (130,4)
+  WordV  $B431
+  FloatK $M487 (2.00)
+  FloatK $M488 (300.00)
+  WordK  $M489 (1)
+  IPAMB &&21KA02-906BM90 (130,5)
+  WordV  $B432
+  FloatK $M490 (2.00)
+  FloatK $M491 (300.00)
+  WordK  $M492 (1)
+  IPAMB &&21KA02-907BM90 (130,6)
+  WordV  $B433
+  FloatK $M493 (2.00)
+  FloatK $M494 (300.00)
+  WordK  $M495 (1)
+  IPAMB &&21KA02-908BM90 (130,7)
+  WordV  $B434
+  FloatK $M496 (2.00)
+  FloatK $M497 (300.00)
+  WordK  $M498 (1)
+  IPAMB &&21KA02-909BM90 (130,8)
+  WordV  $B435
+  WordV  $B436
+  FloatK $M499 (2.00)
+  FloatK $M500 (300.00)
+  WordK  $M501 (1)
+  IPAMB &&21KA02-910BM90 (130,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;08.06.2006 Fn
+  ;Nachrüsten SETMEL an
+  ;Master 6.13
+  ;T1-T4   betriebsbereit
+  ;#######################
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;Messe Düsseldorf
+  ;Kältezentrale Süd MZ
+  ;Keller
+  ;Schrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  TASK (1,init)
+  ANAUS (FKON_ZK_Fall_1,$M0,&&21KA00-900AA01,ERR)
+  ANAUS (FKON_ZK_Fall_2,$M1,&&21KA00-900AA02,ERR)
+  ANAUS (FKON_ZK_Fall_3,$M2,&&21KA00-900AA03,ERR)
+  ANAUS (FKON_ZK_Fall_4,$M3,&&21KA00-900AA04,ERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (FKON_ZK_Fall_5,$M4,&&21KA00-900AA05,WERR_147)
+  ANAUS (FKON_ZK_Fall_6,$M5,&&21KA00-900AA06,WERR_148)
+  ANAUS (FKON_ZK_Fall_7,$M6,&&21KA00-900AA07,WERR_149)
+  BEFAUS (1,KON00,KON01,$WZERO,$WZERO,&21KA24-900BF01,
+          ERRTEST)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&M7,5,ZPK,T1_GOI141_STAntr,T2_GOI142_STAntr,
+          T3_GOI143_STAntr,T4_GOI144_STAntr,ERR)
+  MELEIN (&&21KA03-145ST20,3,T1_GOI145_STAntr,
+          T2_GOI146_STAntr,T3_GOI147_STAntr,ERR)
+  MELEIN (&&21KA03-148ST20,1,T4_GOI148_STAntr,ERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&&21KA04-400BM91,8,Küw4-P4-Notbet,Küw4-P4-R0,$HB11,
+          Küw4-P4-R1,$WSCRATCH,Küw4-P4-R2,Enthaertg_oertl,
+          Enthaertg_Betr,WERR_Z28_0-7)
+  NICHT ($HB11,Küw4-P4-ST)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&&21KA04-100BM91,8,Küw1-P1-Notbet,Küw1-P1-R0,$HB11,
+          Küw1-P1-R1,Küw2-P2-Notbet,Küw2-P2-R0,$HB15,
+          Küw2-P2-R1,WERR_Z29_0-7)
+  NICHT ($HB11,Küw1-P1-ST)
+  NICHT ($HB15,Küw2-P2-ST)
+  MELEIN (&&21KA04-300BM91,8,Küw3-P3-Notbet,Küw3-P3-R0,$HB11,
+          Küw3-P3-R1,Ppe_WZ_Not_KG,Ppe-WZ-R0,Ppe-WZ-ST,
+          Ppe-WZ-R1,WERR_Z29_8-15)
+  NICHT ($HB11,Küw3-P3-ST)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&&21KA01-000BM01,1,ST_Quitt_Keller,WERR_31-14)
+  MELEIN (&&21KA02-000BM01,1,ST_Quitt_Dach,WERR_128-14)
+  ODR2 (ST_Quitt_Keller,ST_Quitt_Dach,$B1)
+  MOKY ($B1,$M20,Störg_QUITT)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;Zeitkonst.Matrixfall 1
+  ; 
+  ANEIN (&&21KA00-900AA01,$F1,WERR143)
+  ATRA ($F1,FKON_ZK_Fall_1)
+  MULDI ($F1,FKON60,FKON1,ZK_Matrix_Fall_1)
+  ANEIN (&&21KA00-900AA02,$F2,WERR144)
+  ATRA ($F2,FKON_ZK_Fall_2)
+  MULDI ($F2,FKON60,FKON1,ZK_Matrix_Fall_2)
+  ANEIN (&&21KA00-900AA03,$F3,WERR145)
+  ATRA ($F3,FKON_ZK_Fall_3)
+  MULDI ($F3,FKON60,FKON1,ZK_Matrix_Fall_3)
+  ANEIN (&&21KA00-900AA04,$F4,WERR146)
+  ATRA ($F4,FKON_ZK_Fall_4)
+  MULDI ($F4,FKON60,FKON1,ZK_Matrix_Fall_4)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Zeitkonst.Matrixfall 5
+  ; 
+  ANEIN (&&21KA00-900AA05,$F5,WERR147)
+  ATRA ($F5,FKON_ZK_Fall_5)
+  MULDI ($F5,FKON60,FKON1,ZK_Matrix_Fall_5)
+  ANEIN (&&21KA00-900AA06,$F6,WERR148)
+  ATRA ($F6,FKON_ZK_Fall_6)
+  MULDI ($F6,FKON60,FKON1,ZK_Matrix_Fall_6)
+  ANEIN (&&21KA00-900AA07,$F7,WERR149)
+  MULDI ($F7,FKON60,FKON1,ZK_Matrix_Fall_7)
+  ATRA ($F7,FKON_ZK_Fall_7)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.100MW91,$F8,WERR255)
+  AWT ($WZERO,$F8,/T1_MW_KW_Eintr,T1_KW-Eing-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.200MW91,$F9,WERR254)
+  AWT ($WZERO,$F9,/T2_MW_KW_Eintr,T2_KW-Eing-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.300MW91,$F10,WERR253)
+  AWT ($WZERO,$F10,/T3_MW_KW_Eintr,T3_KW-Eing-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.400MW91,$F11,WERR252)
+  AWT ($WZERO,$F11,/T4_MW_KW_Eintr,T4_KW-Eing-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA06.000MW90,$F12,WERR251)
+  AWT (/SW_Durchfluss,$F12,/MW_Durchfluss,Summe_Durchfluss)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;T1 Kaltw.Eintritt-Temp.
+  ; 
+  ; 
+  ;T2 Kaltw.Eintritt-Temp.
+  ; 
+  ;T3 Kaltw.Eintritt-Temp.
+  ; 
+  ;T4 Kaltw.Eintritt-Temp.
+  ; 
+  ;Gesamt Durchfluß Verbr.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.100MW92,$F13,WERR249)
+  AWT (/T1_SW_KW_Austr,$F13,/T1_MW_KW_Austr,T1_KW-Ausg-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.200MW92,$F14,WERR248)
+  AWT (/T2_SW_KW_Austr,$F14,/T2_MW_KW_Austr,T2_KW-Ausg-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.300MW92,$F15,WERR247)
+  AWT (/T3_SW_KW_Austr,$F15,/T3_MW_KW_Austr,T3_KW-Ausg-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA03.400MW92,$F16,WERR246)
+  AWT (/T4_SW_KW_Austr,$F16,/T4_MW_KW_Austr,T4_KW-Ausg-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA01.000MW90,$F17,WERR245)
+  AWT (/SW_Durchfluss_T,$F17,/MW_Durchfluss_T,
+       Durchfluss_Turbo)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;T1 Kaltw.Austritt-Temp.
+  ; 
+  ; 
+  ;T2 Kaltw.Austritt-Temp.
+  ; 
+  ;T3 Kaltw.Austritt-Temp.
+  ; 
+  ;T4 Kaltw.Austritt-Temp.
+  ; 
+  ;Gesamt Durchfluß Turbos
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA01.000MW91,$F18,WERR243)
+  AWT (/SW_KW_Verteiler,$F18,/MW_KW_Verteiler,
+       KW_Verteil-Temp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&21KA01.000MW92,$F19,WERR244)
+  AWT (/SW_KW_Rücklauf,$F19,/MW_KW_Rücklauf,KW_RücklaufTemp.)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&01KA00-000MW92,$F20,WERR242)
+  AWT (/SW_RK1_Leistung,$F20,/MW_RK1_Leistung,RK_1_Leistung)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&04KA00-000MW92,$F21,WERR241)
+  AWT (/SW_RK2_Leistung,$F21,/MW_RK2_Leistung,RK_2_Leistung)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&11KA00-000MW92,$F22,WERR240)
+  AWT (/SW_RK4_Leistung,$F22,/MW_RK4_Leistung,RK_4_Leistung)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;KW Verteilertemperatir
+  ; 
+  ;KW Rücklauftemperatur
+  ; 
+  ;RK 1 KW Leistung Gesamt
+  ; 
+  ;RK 2 KW Leistung Gesamt
+  ; 
+  ;RK 4 KW Leistung Gesamt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&&21KA03-100BM91,8,T1_KW-Pumpe_NB,T1_KW-Pumpe_R0,
+          $HB11,T1_KW-Pumpe_R1,T1_ASK_KW_145_NB,
+          T1_ASK_KW_145_ZU,$HB15,T1_ASK_KW_145AUF,WERR00_0-7)
+  NICHT ($HB11,T1_KW-Pumpe_ST)
+  NICHT ($HB15,T1_ASK_KW_145_ST)
+  MELEIN (&&21KA04-101BM91,6,T1ASK_KüW_141_NB,
+          T1ASK_KüW_141_ZU,T1ASK_KüW_141_ST,T1ASK_KüW_141AUF,
+          T1_Freigabe_NB,T1_Freigabe_R0,WERR00_8-15)
+  MELEIN (&M27,1,T1_Freigabe_R1,ERR)
+  ;Turbo 1 ASK KW  GOI 145
+  ; 
+  ;Turbo 1 Kaltwasserpumpe
+  ; 
+  ;Turbo 1 ASK KüW GOI 141
+  ; 
+  ;Freigabe Turbo 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  MELEIN (&&21KA03-200BM91,8,T2_KW-Pumpe_NB,T2_KW-Pumpe_R0,
+          $HB11,T2_KW-Pumpe_R1,T2_ASK_KW_146_NB,
+          T2_ASK_KW_146_ZU,$HB15,T2_ASK_KW_146AUF,WERR11_0-7)
+  NICHT ($HB11,T2_KW-Pumpe_ST)
+  NICHT ($HB15,T2_ASK_KW_146_ST)
+  MELEIN (&&21KA04-201BM91,6,T2ASK_KüW_142_NB,
+          T2ASK_KüW_142_ZU,T2ASK_KüW_142_ST,T2ASK_KüW_142AUF,
+          T2_Freigabe_NB,T2_Freigabe_R0,WERR11_8-15)
+  MELEIN (&M34,1,T2_Freigabe_R1,ERR)
+  ;Turbo 2 ASK KW  GOI 146
+  ; 
+  ;Turbo 2 Kaltwasserpumpe
+  ; 
+  ;Turbo 2 ASK KüW GOI 142
+  ; 
+  ;Freigabe Turbo 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&&21KA03-300BM91,8,T3_KW-Pumpe_NB,T3_KW-Pumpe_R0,
+          $HB11,T3_KW-Pumpe_R1,T3_ASK_KW_147_NB,
+          T3_ASK_KW_147_ZU,$HB15,T3_ASK_KW_147AUF,WERR22_0-7)
+  NICHT ($HB11,T3_KW-Pumpe_ST)
+  NICHT ($HB15,T3_ASK_KW_147_ST)
+  MELEIN (&&21KA04-301BM91,6,T3ASK_KüW_143_NB,
+          T3ASK_KüW_143_ZU,T3ASK_KüW_143_ST,T3ASK_KüW_143AUF,
+          T3_Freigabe_NB,T3_Freigabe_R0,WERR22_8-15)
+  MELEIN (&M41,1,T3_Freigabe_R1,ERR)
+  ;Turbo 3 ASK KW  GOI 147
+  ; 
+  ;Turbo 3 Kaltwasserpumpe
+  ; 
+  ;Turbo 3 ASK KüW GOI 143
+  ; 
+  ;Freigabe Turbo 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&&21KA03-400BM91,8,T4_KW-Pumpe_NB,T4_KW-Pumpe_R0,
+          $HB11,T4_KW-Pumpe_R1,T4_ASK_KW_148_NB,
+          T4_ASK_KW_148_ZU,$HB15,T4_ASK_KW_148AUF,WERR23_0-7)
+  NICHT ($HB11,T4_KW-Pumpe_ST)
+  NICHT ($HB15,T4_ASK_KW_148_ST)
+  MELEIN (&&21KA04-401BM91,6,T4ASK_KüW_144_NB,
+          T4ASK_KüW_144_ZU,T4ASK_KüW_144_ST,T4ASK_KüW_144AUF,
+          T4_Freigabe_NB,T4_Freigabe_R0,WERR23_8-15)
+  MELEIN (&M48,1,T4_Freigabe_R1,ERR)
+  ;Turbo 4 ASK KW  GOI 148
+  ; 
+  ;Turbo 4 Kaltwasserpumpe
+  ; 
+  ;Turbo 4 ASK KüW GOI 144
+  ; 
+  ;Freigabe Turbo 4
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&&21KA01-100BM01,8,T1_B-Bereit,T1_Betrieb,
+          T1_10KV_Bereit,T1_10KV_K04_EIN,$HB13,T1_Wicklg_1-3,
+          T1_Wicklg_4-6,T1_KW_Druckwaech,WERR_24_0-7)
+  NICHT ($HB13,T1_Sammelstörung)
+  MELEIN (&&21KA03-100ST10,8,T1_KW-Ppe_Rep,T1_ASK_KW_Rep,
+          T1_KüW_Druckwaec,KüW-Ppe_1_Rep,T1_ASK_KüW_Rep,
+          KüW-Ppe_1_Ueberh,T1_Motork.Druckw,T2_Motork.Druckw,
+          WERR_24_8-15)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MELEIN (&&21KA01-200BM01,8,T2_B-Bereit,T2_Betrieb,
+          T2_10KV_Bereit,T2_10KV_K08_EIN,$HB13,T2_Wicklg_1-3,
+          T2_Wicklg_4-6,T2_KW_Druckwaech,WERR_25_0-7)
+  NICHT ($HB13,T2_Sammelstörung)
+  MELEIN (&&21KA03-200ST10,8,T2_KW-Ppe_Rep,T2_ASK_KW_Rep,
+          T2_KüW_Druckwaec,KüW-Ppe_2_Rep,T2_ASK_KüW_Rep,
+          KüW-Ppe_2_Ueberh,KüW_MAX_Druck,Masch.Raum_EIN,
+          WERR_25_8-15)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MELEIN (&&21KA01-300BM01,8,T3_B-Bereit,T3_Betrieb,
+          T3_10KV_Bereit,T3_10KV_K09_EIN,$HB13,T3_Wicklg_1-3,
+          T3_Wicklg_4-6,T3_KW_Druckwaech,WERR_26_0-7)
+  NICHT ($HB13,T3_Sammelstörung)
+  MELEIN (&&21KA03-300ST10,8,T3_KW-Ppe_Rep,T3_ASK_KW_Rep,
+          T3_KüW_Druckwaec,KüW-Ppe_3_Rep,T3_ASK_KüW_Rep,
+          KüW-Ppe_3_Ueberh,T3_Motork.Druckw,T4_Motork.Druckw,
+          WERR_26_8-15)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  MELEIN (&&21KA01-400BM01,8,T4_B-Bereit,T4_Betrieb,
+          T4_10KV_Bereit,T4_10KV_K05_EIN,$HB13,T4_Wicklg_1-3,
+          T4_Wicklg_4-6,T4_KW_Druckwaech,WERR_27_0-7)
+  NICHT ($HB13,T4_Sammelstörung)
+  MELEIN (&&21KA03-400ST10,8,T4_KW-Ppe_Rep,T4_ASK_KW_Rep,
+          T4_KüW_Druckwaec,KüW-Ppe_4_Rep,T4_ASK_KüW_Rep,
+          KüW-Ppe_4_Ueberh,$WSCRATCH,NOTAUS,WERR_27_8-15)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MELEIN (&&21KA01-100BM30,8,T1_Vorwahl_Auto,T1_Vorwahl_Ein,
+          T2_Vorwahl_Auto,T2_Vorwahl_Ein,T3_Vorwahl_Auto,
+          T3_Vorwahl_Ein,T4_Vorwahl_Auto,T4_Vorwahl_Ein,
+          WERR_153_0-7)
+  MELEIN (&&21KA03-100GF01,4,T1_KW-P_Überhitz,
+          T2_KW-P_Überhitz,T3_KW-P_Überhitz,T4_KW-P_Überhitz,
+          WERR_154_8-11)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  MELEIN (&M50,4,$WSCRATCH,Kälte_Gesamt_R0,$WSCRATCH,
+          Kälte_Gesamt_R1,WERR_137_0-3)
+  BEFAUS (1,Kälte_Gesamt_R0,Kälte_Gesamt_R1,$WZERO,$WZERO,
+          &21KA00-615BF01,WERR_250_0-3)
+  MELEIN (&M53,8,$WSCRATCH,6.15_Gesamt_R0,$WSCRATCH,
+          6.15_Gesamt_R1,Anf.Kälte_RK1-4,NOTAUS_an_US6.14,
+          $WSCRATCH,Kälteanfordg.H1,WERR_250_0-7)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  MELEIN (&M59,4,$WSCRATCH,Tagbetrieb_KT,$WSCRATCH,
+          Nachtbetrieb_KT,ERR)
+  MELEIN (&&21KA04-000GF01,1,Trockenlauf,ERR)
+  MELEIN (&&02KA06-000BM90,8,Kälteanfordg.H2,Kälteanfordg.H3,
+          Kälteanfordg.H4,Kälteanfordg.H13,Kälteanfordg.H14,
+          Kälteanfordg.H15,Kälteanfordg.H16,Kälteanfordg.H17,
+          ERR)
+  ;14.05.2008 J.Bresser
+  ;Geb.13+14 kein Verbund
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ;Turbo 1 gestört
+  ;G
+  ; 
+  ODR2 (T1_Vorwahl_Ein,T1_Vorwahl_Auto,$B2)
+  ODRMN (2,/Test_T1_OK,$B5,0,$B3,$B4)
+  UND2 ($B3,$B2,T1_ok)
+  UND2 ($B4,$B6,T1_gestört)
+  UNDMN (9,NOTAUS,T1_10KV_Bereit,Trockenlauf,
+         T1_Sammelstörung,T1_Wicklg_1-3,T1_Wicklg_4-6,
+         T1_KW-P_Überhitz,T1_KW-Pumpe_ST,$B7,0,$B5,$B6)
+  UNDMN (8,T1_KW-Ppe_Rep,T1_ASK_KW_145_ST,T1_ASK_KW_Rep,
+         T1ASK_KüW_141_ST,T1_ASK_KüW_Rep,T1_Störg.Druckw,
+         T1_GOI141_STAntr,T1_GOI145_STAntr,0,$B7,$WSCRATCH)
+  UNDMN (3,T1_KW_Druckwaech,T1_KüW_Druckwaec,
+         T1_Motork.Druckw,0,$WSCRATCH,$B8)
+  RSS ($B8,Störg_QUITT,$WSCRATCH,T1_Störg.Druckw)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ;Turbo 2 gestört
+  ; 
+  ODR2 (T2_Vorwahl_Ein,T2_Vorwahl_Auto,$B9)
+  ODRMN (2,/Test_T2_OK,$B12,0,$B10,$B11)
+  UND2 ($B10,$B9,T2_ok)
+  UND2 ($B11,$B13,T2_gestört)
+  UNDMN (9,NOTAUS,T2_10KV_Bereit,Trockenlauf,
+         T2_Sammelstörung,T2_Wicklg_1-3,T2_Wicklg_4-6,
+         T2_KW-P_Überhitz,T2_KW-Pumpe_ST,$B14,0,$B12,$B13)
+  UNDMN (8,T2_KW-Ppe_Rep,T2_ASK_KW_146_ST,T2_ASK_KW_Rep,
+         T2ASK_KüW_142_ST,T2_ASK_KüW_Rep,T2_Störg.Druckw,
+         T2_GOI142_STAntr,T2_GOI146_STAntr,0,$B14,$WSCRATCH)
+  UNDMN (3,T2_KW_Druckwaech,T2_KüW_Druckwaec,
+         T2_Motork.Druckw,0,$WSCRATCH,$B15)
+  RSS ($B15,Störg_QUITT,$WSCRATCH,T2_Störg.Druckw)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ;Turbo 3 gestört
+  ; 
+  ODR2 (T3_Vorwahl_Ein,T3_Vorwahl_Auto,$B16)
+  ODRMN (2,/Test_T3_OK,$B19,0,$B17,$B18)
+  UND2 ($B17,$B16,T3_ok)
+  UND2 ($B18,$B20,T3_gestört)
+  UNDMN (9,NOTAUS,T3_10KV_Bereit,Trockenlauf,
+         T3_Sammelstörung,T3_Wicklg_1-3,T3_Wicklg_4-6,
+         T3_KW-P_Überhitz,T3_KW-Pumpe_ST,$B21,0,$B19,$B20)
+  UNDMN (8,T3_KW-Ppe_Rep,T3_ASK_KW_147_ST,T3_ASK_KW_Rep,
+         T3ASK_KüW_143_ST,T3_ASK_KüW_Rep,T3_Störg.Druckw,
+         T3_GOI143_STAntr,T3_GOI147_STAntr,0,$B21,$WSCRATCH)
+  UNDMN (3,T3_KW_Druckwaech,T3_KüW_Druckwaec,
+         T3_Motork.Druckw,0,$WSCRATCH,$B22)
+  RSS ($B22,Störg_QUITT,$WSCRATCH,T3_Störg.Druckw)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ;Turbo 4 gestört
+  ; 
+  ODR2 (T4_Vorwahl_Ein,T4_Vorwahl_Auto,$B23)
+  ODRMN (2,/Test_T4_OK,$B26,0,$B24,$B25)
+  UND2 ($B24,$B23,T4_ok)
+  UND2 ($B25,$B27,T4_gestört)
+  UNDMN (9,NOTAUS,T4_10KV_Bereit,Trockenlauf,
+         T4_Sammelstörung,T4_Wicklg_1-3,T4_Wicklg_4-6,
+         T4_KW-P_Überhitz,T4_KW-Pumpe_ST,$B28,0,$B26,$B27)
+  UNDMN (8,T4_KW-Ppe_Rep,T4_ASK_KW_148_ST,T4_ASK_KW_Rep,
+         T4ASK_KüW_144_ST,T4_ASK_KüW_Rep,T4_Störg.Druckw,
+         T4_GOI144_STAntr,T4_GOI148_STAntr,0,$B28,$WSCRATCH)
+  UNDMN (3,T4_KW_Druckwaech,T4_KüW_Druckwaec,
+         T4_Motork.Druckw,0,$WSCRATCH,$B29)
+  RSS ($B29,Störg_QUITT,$WSCRATCH,T4_Störg.Druckw)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  SETMEL ($M62,1,T1_ok,&21KA95-901BM01,ERR)
+  SETMEL ($M63,1,T2_ok,&21KA95-902BM01,ERR)
+  SETMEL ($M64,1,T3_ok,&21KA95-903BM01,ERR)
+  SETMEL ($M65,1,T4_ok,&21KA95-904BM01,ERR)
+  ;an Master Turbo 1 bereit
+  ; 
+  ;an Master Turbo 2 bereit
+  ; 
+  ;an Master Turbo 3 bereit
+  ; 
+  ;an Master Turbo 4 bereit
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODRMN (3,T1_Betrieb,T2_Betrieb,T3_Betrieb,0,Turbo_1-3_EIN,
+         $WSCRATCH)
+  UND2 (Kälte_Gesamt_R1,Anf.Kälte_RK1-4,$B30)
+  VVZ ($B30,$M66,$M67,$B31)
+  ODR2 ($B31,/Anf.Kälte_RK1-4,Freigabe_Kältem)
+  SETMEL ($M68,1,Freigabe_Kältem,&21KA00-000BM01,$WSCRATCH)
+  ;Freigabe Kältemaschinen
+  ; 
+  ;ACHTUNG ! ! !
+  ;Eingang /Anf.Kälte_RK1-4
+  ;für Testzwecke.
+  ;Nicht mit Prozess
+  ;verknüpft.
+  ;Anf.Kälte_RK1-4
+  ;kommt von US6.14
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UNDMN (3,T1_BStd>24,T2_BStd>24,T3_BStd>24,0,$B32,$WSCRATCH)
+  UND11 ($B32,Turbo_1-3_EIN,Reset_Turbo_1-3)
+  AWT (T1_BStd>24,$M69,$M70,$F23)
+  ADD2 ($F23,T1_B-Stunden,T1_SW_BStd)
+  AWT (T2_BStd>24,$M71,$M72,$F24)
+  ADD2 ($F24,T2_B-Stunden,T2_SW_BStd)
+  AWT (T3_BStd>24,$M73,$M74,$F25)
+  ADD2 ($F25,T3_B-Stunden,T3_SW_BStd)
+  AWT (T4_BStd>24,$M75,$M76,$F26)
+  ADD2 ($F26,T4_B-Stunden,T4_SW_BStd)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (T1_Betrieb,$B40,$F27)
+  VGLOH ($F27,$M77,$B40)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/T1_BStd_auf_0,$M78,Reset_Turbo_1-3,T1_SW_BStd,$WONE,
+       $B40,$WZERO,$F28)
+  ATRA ($F28,T1_B-Stunden)
+  VGLOH ($F28,FKON_24h,$B33)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (T2_Betrieb,$B41,$F29)
+  VGLOH ($F29,$M79,$B41)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/T2_BStd_auf_0,$M80,Reset_Turbo_1-3,T2_SW_BStd,$WONE,
+       $B41,$WZERO,$F30)
+  ATRA ($F30,T2_B-Stunden)
+  VGLOH ($F30,FKON_24h,$B34)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (T3_Betrieb,$B42,$F31)
+  VGLOH ($F31,$M81,$B42)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/T3_BStd_auf_0,$M82,Reset_Turbo_1-3,T3_SW_BStd,$WONE,
+       $B42,$WZERO,$F32)
+  ATRA ($F32,T3_B-Stunden)
+  VGLOH ($F32,FKON_24h,$B35)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (3,T1_ok,T2_ok,T3_ok,0,$B36,$WSCRATCH)
+  UND2 ($B36,$B33,$B37)
+  UND2 ($B36,$B34,$B38)
+  UND2 ($B36,$B35,$B39)
+  ODR2 ($B37,/TEST-KON01,T1_BStd>24)
+  ODR2 ($B38,/TEST-KON02,T2_BStd>24)
+  ODR2 ($B39,/TEST-KON03,T3_BStd>24)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (T4_Betrieb,$B44,$F33)
+  VGLOH ($F33,$M83,$B44)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/T4_BStd_auf_0,$M84,Reset_Turbo_1-4,T4_SW_BStd,$WONE,
+       $B44,$WZERO,$F34)
+  ATRA ($F34,T4_B-Stunden)
+  VGLOH ($F34,FKON_24h,$B43)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 (T4_ok,$B43,T4_BStd>24)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  UND21 (Freigabe_Kältem,T1_ok,T1_BStd>24,$B45)
+  UNDMN (3,$B45,$B56,$B52,0,$B46,$WSCRATCH)
+  ODRMN (0,3,T1_ok,Freigabe_Kältem,T2_ok,$B47,$WSCRATCH)
+  RSS ($B46,$B47,T_zyk_1-2-3,$B48)
+  UND21 (Freigabe_Kältem,T2_ok,T2_BStd>24,$B49)
+  UNDMN (3,$B49,$B48,$B56,0,$B50,$WSCRATCH)
+  ODRMN (0,3,T2_ok,Freigabe_Kältem,T3_ok,$B51,$WSCRATCH)
+  RSS ($B50,$B51,T_zyk_2-3-1,$B52)
+  UND21 (Freigabe_Kältem,T3_ok,T3_BStd>24,$B53)
+  UNDMN (3,$B53,$B48,$B52,0,$B54,$WSCRATCH)
+  ODRMN (0,3,T3_ok,Freigabe_Kältem,T1_ok,$B55,$WSCRATCH)
+  RSS ($B54,$B55,T_zyk_3-1-2,$B56)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  UND11 (T1_Vorwahl_Auto,T1_ok,T1_nicht_ok_AUTO)
+  UND11 (T2_Vorwahl_Auto,T2_ok,T2_nicht_ok_AUTO)
+  UND11 (T3_Vorwahl_Auto,T3_ok,T3_nicht_ok_AUTO)
+  UNDMN (3,T2_nicht_ok_AUTO,T3_nicht_ok_AUTO,Freigabe_Kältem,
+         0,$B57,$WSCRATCH)
+  ODRMN (2,T_zyk_1-2-3,$B57,0,$B58,$B59)
+  UNDMN (3,T3_nicht_ok_AUTO,T1_nicht_ok_AUTO,Freigabe_Kältem,
+         0,$B60,$WSCRATCH)
+  ODRMN (2,T_zyk_2-3-1,$B60,0,$B61,$B62)
+  UNDMN (3,T1_nicht_ok_AUTO,T2_nicht_ok_AUTO,Freigabe_Kältem,
+         0,$B63,$WSCRATCH)
+  ODRMN (2,T_zyk_3-1-2,$B63,0,$B64,$B65)
+  UNDMN (3,$B59,$B62,$B65,0,$WSCRATCH,$B66)
+  UND2 ($B58,$B66,Seq_T-1-2-3)
+  UND2 ($B61,$B66,Seq_T-2-3-1)
+  UND2 ($B64,$B66,Seq_T-3-1-2)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  SETMEL ($M85,1,Seq_T-1-2-3,&&21KA01-000BM11,WERR137-12)
+  SETMEL ($M86,1,Seq_T-2-3-1,&&21KA01-000BM12,WERR137-13)
+  SETMEL ($M87,1,Seq_T-3-1-2,&&21KA01-000BM13,WERR137-14)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  BTRA (KON01,KW_Eintritt_<12G)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (T1_Betrieb,$HB0)
+  AWT ($HB0,$M88,$M89,$F35)
+  NICHT (T2_Betrieb,$HB0)
+  AWT ($HB0,$M90,$M91,$F36)
+  NICHT (T3_Betrieb,$HB0)
+  AWT ($HB0,$M92,$M93,$F37)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M94,$M95,$F38)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M96,$M97,$F39)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M98,$M99,$F40)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M100,$M101,$F41)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M102,$M103,$F42)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M104,$M105,$F43)
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M106,$M107,$F44)
+  ADSU (10,$F35,$F36,$F37,$F38,$F39,$F40,$F41,$F42,$F43,$F44,
+        9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,Summe_Turbo_Ein)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLOH (Summe_Turbo_Ein,$M108,1_gr.Turbo_Ein)
+  VGLOH (Summe_Turbo_Ein,$M109,2_gr.Turbo_Ein)
+  VGLOH (Summe_Turbo_Ein,$M110,3_gr.Turbo_Ein)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  UND2 (Freigabe_Kältem,KW_Eintritt_<12G,$B67)
+  UNDMN (1,$B67,2,Anfahrbetrieb,/MW_Test_KW_<12G,$B68,
+         $WSCRATCH)
+  VVZ ($B68,$M111,$M112,WM_Freigabe<12G)
+  UNDMN (1,WM_<_1000_m3/h,4,Abw_Anf_Fall2,Abw_Anf_Fall3,
+         Anfahrbetr_Fall2,Anfahrbetr_Fall3,$B69,$WSCRATCH)
+  UND2 (Freigabe_Kältem,$B69,$B70)
+  RSS ($B70,Abw_Anf_Fall1,$B71,$WSCRATCH)
+  UNDMN (2,WM_<_1000_m3/h,WM_Freigabe<12G,6,WM_F2_1.gr.Turbo,
+         WM_Fall_3_Anf.T4,WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,
+         WM_F6_3.gr.Turbo,WM_Fall_7_Anf.T4,$B72,$WSCRATCH)
+  VVZ ($B71,$M113,$M114,$B73)
+  ODR2 ($B73,/Test_Anf_1,$B74)
+  NICHT (Freigabe_Kältem,$HB1)
+  RSS ($B74,$HB1,Abw_Anf_Fall1,$WSCRATCH)
+  ODR2 ($B71,$B72,WM_Fall_1_Anf.T4)
+  UNDMN (1,$B71,2,Anfahrbetr_Fall2,Anfahrbetr_Fall3,
+         Anfahrbetr_Fall1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  BTRA (KON00,WM_>_1000_m3/h)
+  BTRA (KON00,WM_>_1500_m3/h)
+  BTRA (KON01,WM_<_1000_m3/h)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ODRMN (2,Anfahrbetr_Fall1,KON00,0,$B75,$B76)
+  RSS ($B75,$B76,Anfahrbetrieb,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B78,$B77,$WSCRATCH)
+  ODRMN (6,WM_F2_1.gr.Turbo,WM_Fall_3_Anf.T4,
+         WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,WM_F6_3.gr.Turbo,
+         WM_Fall_7_Anf.T4,0,$B78,$WSCRATCH)
+  UND21 ($B77,WM_Fall_1_Anf.T4,Anfahrbetrieb,
+         Anfahrbetrieb_F1)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B80,$B79,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_Fall_3_Anf.T4,
+         WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,WM_F6_3.gr.Turbo,
+         WM_Fall_7_Anf.T4,0,$B80,$WSCRATCH)
+  UND21 ($B79,WM_F2_1.gr.Turbo,Anfahrbetrieb,
+         Anfahrbetrieb_F2)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B82,$B81,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_F2_1.gr.Turbo,
+         WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,WM_F6_3.gr.Turbo,
+         WM_Fall_7_Anf.T4,0,$B82,$WSCRATCH)
+  UND21 ($B81,WM_Fall_3_Anf.T4,Anfahrbetrieb,
+         Anfahrbetrieb_F3)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B84,$B83,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_F2_1.gr.Turbo,
+         WM_Fall_3_Anf.T4,WM_Fall_5_Anf.T4,WM_F6_3.gr.Turbo,
+         WM_Fall_7_Anf.T4,0,$B84,$WSCRATCH)
+  UND21 ($B83,WM_F4_2.gr.Turbo,Anfahrbetrieb,
+         Anfahrbetrieb_F4)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B86,$B85,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_F2_1.gr.Turbo,
+         WM_Fall_3_Anf.T4,WM_F4_2.gr.Turbo,WM_F6_3.gr.Turbo,
+         WM_Fall_7_Anf.T4,0,$B86,$WSCRATCH)
+  UND21 ($B85,WM_Fall_5_Anf.T4,Anfahrbetrieb,
+         Anfahrbetrieb_F5)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B88,$B87,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_F2_1.gr.Turbo,
+         WM_Fall_3_Anf.T4,WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,
+         WM_Fall_7_Anf.T4,0,$B88,$WSCRATCH)
+  UND21 ($B87,WM_F6_3.gr.Turbo,Anfahrbetrieb,
+         Anfahrbetrieb_F6)
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  RSS (Anfahrbetrieb,$B90,$B89,$WSCRATCH)
+  ODRMN (6,WM_Fall_1_Anf.T4,WM_F2_1.gr.Turbo,
+         WM_Fall_3_Anf.T4,WM_F4_2.gr.Turbo,WM_Fall_5_Anf.T4,
+         WM_F6_3.gr.Turbo,0,$B90,$WSCRATCH)
+  UND21 ($B89,WM_Fall_7_Anf.T4,Anfahrbetrieb,
+         Anfahrbetrieb_F7)
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  UNDMN (2,WM_u_TEMP-ANF-F2,WM_Freigabe<12G,5,
+         WM_u_TEMP-ANF-F3,WM_u_TEMP-ANF-F4,WM_u_TEMP-ANF-F5,
+         WM_u_TEMP-ANF-F6,WM_u_TEMP-ANF-F7,_F2_1.GR.TURBO,
+         $WSCRATCH)
+  UNDMN (2,WM_Freigabe<12G,WM_u_TEMP-ANF-F3,4,
+         WM_u_TEMP-ANF-F4,WM_u_TEMP-ANF-F5,WM_u_TEMP-ANF-F6,
+         WM_u_TEMP-ANF-F7,_FALL_3_ANF.T4,$WSCRATCH)
+  UNDMN (2,WM_Freigabe<12G,WM_u_TEMP-ANF-F4,3,
+         WM_u_TEMP-ANF-F5,WM_u_TEMP-ANF-F6,WM_u_TEMP-ANF-F7,
+         _F4_2.GR.TURBO,$WSCRATCH)
+  UNDMN (2,WM_Freigabe<12G,WM_u_TEMP-ANF-F5,2,
+         WM_u_TEMP-ANF-F6,WM_u_TEMP-ANF-F7,_FALL_5_ANF.T4,
+         $WSCRATCH)
+  UND21 (WM_u_TEMP-ANF-F6,WM_Freigabe<12G,WM_u_TEMP-ANF-F7,
+         _F6_3.GR.TURBO)
+  UND2 (WM_Freigabe<12G,WM_u_TEMP-ANF-F7,_FALL_7_ANF.T4)
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  UND2 (WM_Freigabe<12G,_F2_1.GR.TURBO,$B91)
+  UND11 ($B91,WM_Fall_3_Anf.T4,WM_F2_1.gr.Turbo)
+  UND11 (Anfahrbetr_Fall2,WM_Fall_3_Anf.T4,Anfahr_Fall_2)
+  UND2 (WM_Freigabe<12G,_FALL_3_ANF.T4,$B92)
+  UND11 ($B92,WM_F2_1.gr.Turbo,WM_Fall_3_Anf.T4)
+  UND11 (Anfahrbetr_Fall3,WM_F2_1.gr.Turbo,Anfahr_Fall_3)
+  UNDMN (1,_F4_2.GR.TURBO,2,Anfahrbetr_Fall2,
+         Anfahrbetr_Fall3,WM_F4_2.gr.Turbo,$WSCRATCH)
+  UNDMN (1,_FALL_5_ANF.T4,2,Anfahrbetr_Fall2,
+         Anfahrbetr_Fall3,WM_Fall_5_Anf.T4,$WSCRATCH)
+  UNDMN (1,_F6_3.GR.TURBO,2,Anfahrbetr_Fall2,
+         Anfahrbetr_Fall3,WM_F6_3.gr.Turbo,$WSCRATCH)
+  UNDMN (1,_FALL_7_ANF.T4,2,Anfahrbetr_Fall2,
+         Anfahrbetr_Fall3,WM_Fall_7_Anf.T4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  ADD2 (RK_1_Leistung,RK_2_Leistung,$F45)
+  ADD2 ($F45,RK_4_Leistung,$F46)
+  AWT (/Test_Berechnung,$F46,BERECHNUNG-TEST,Kälteleistung)
+  ANAUS (Kälteleistung,$M115,&&21KA00-900MW10,WERR151)
+  ;VERBRAUCHERLEISTUNG
+  ; 
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  VGLEH (KW_Verteil-Temp.,KSOLLW-KW-GLT,FKON1GRAD,$B93)
+  UNDMN (3,$B93,Freigabe_Kältem,KON01,0,$B94,$WSCRATCH)
+  VVZ ($B94,$M116,$M117,KW-TEMP>8GRAD)
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  VGLEH (Summe_Durchfluss,$M118,$M119,$B95)
+  VGLEH (Summe_Durchfluss,$M120,$M121,$B96)
+  VGLEH (Summe_Durchfluss,$M122,$M123,$B97)
+  VGLEH (Summe_Durchfluss,$M124,$M125,$B98)
+  VGLEH (Summe_Durchfluss,$M126,$M127,$B99)
+  VGLEH (Summe_Durchfluss,$M128,$M129,$B100)
+  UNDMN (3,WM_Freigabe<12G,$B100,KW-TEMP>8GRAD,0,$B101,
+         $WSCRATCH)
+  UNDMN (3,$B99,WM_Freigabe<12G,KW-TEMP>8GRAD,0,$B102,
+         $WSCRATCH)
+  UNDMN (3,$B98,WM_Freigabe<12G,KW-TEMP>8GRAD,0,$B103,
+         $WSCRATCH)
+  UNDMN (3,$B97,WM_Freigabe<12G,KW-TEMP>8GRAD,0,$B104,
+         $WSCRATCH)
+  UNDMN (3,WM_Freigabe<12G,KW-TEMP>8GRAD,$B96,0,$B105,
+         $WSCRATCH)
+  UNDMN (3,WM_Freigabe<12G,KW-TEMP>8GRAD,$B95,0,$B106,
+         $WSCRATCH)
+  NICHT ($B100,$HB1)
+  RSS ($B101,$HB1,WM_u_TEMP-ANF-F7,$WSCRATCH)
+  NICHT ($B99,$HB1)
+  RSS ($B102,$HB1,WM_u_TEMP-ANF-F6,$WSCRATCH)
+  NICHT ($B98,$HB1)
+  RSS ($B103,$HB1,WM_u_TEMP-ANF-F5,$WSCRATCH)
+  NICHT ($B97,$HB1)
+  RSS ($B104,$HB1,WM_u_TEMP-ANF-F4,$WSCRATCH)
+  NICHT ($B96,$HB1)
+  RSS ($B105,$HB1,WM_u_TEMP-ANF-F3,$WSCRATCH)
+  NICHT ($B95,$HB1)
+  RSS ($B106,$HB1,WM_u_TEMP-ANF-F2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  56
+  ;*****************************************************************
+  ENDE 
+  TASK (6,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite  57
+  ;*****************************************************************
+  ODRMN (2,WM_Fall_1_Anf.T4,KON00,0,$B107,$B108)
+  UND11 ($B107,$B110,$B109)
+  UHR ($B109,$B108,$F47)
+  VGLOH ($F47,ZK_Matrix_Fall_1,$B110)
+  MULDI ($F47,FKON01,FKON60-FAELLE,LZ_Fall_1)
+  ODRMN (3,$B110,Anfahrbetr_Fall1,Anfahrbetrieb_F1,0,
+         Fall_1_Anf.T4A,$WSCRATCH)
+  ODRMN (2,WM_F2_1.gr.Turbo,KON00,0,$B111,$B112)
+  UND11 ($B111,$B114,$B113)
+  UHR ($B113,$B112,$F48)
+  VGLOH ($F48,ZK_Matrix_Fall_2,$B114)
+  MULDI ($F48,FKON01,FKON60-FAELLE,LZ_Fall_2)
+  ODRMN (4,$B114,Anfahr_Fall_2,Anfahrbetrieb_F2,
+         ABWAHL-F3-ST-KT,0,Fall_2_Anf.1.grA,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  58
+  ;*****************************************************************
+  ODRMN (2,WM_Fall_3_Anf.T4,KON00,0,$B115,$B116)
+  UND11 ($B115,$B118,$B117)
+  UHR ($B117,$B116,$F49)
+  VGLOH ($F49,ZK_Matrix_Fall_3,$B118)
+  MULDI ($F49,FKON01,FKON60-FAELLE,LZ_Fall_3)
+  ODRMN (4,$B118,Anfahr_Fall_3,Anfahrbetrieb_F3,
+         ABWAHL-F4-ST-KT,0,Fall_3_Anf.T4A,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  59
+  ;*****************************************************************
+  ODRMN (2,WM_F4_2.gr.Turbo,KON00,0,$B119,$B120)
+  UND11 ($B119,$B122,$B121)
+  UHR ($B121,$B120,$F50)
+  VGLOH ($F50,ZK_Matrix_Fall_4,$B122)
+  MULDI ($F50,FKON01,FKON60-FAELLE,LZ_Fall_4)
+  ODRMN (4,$B122,Anfahrbetrieb_F4,Nachtbetr_F4,
+         ABWAHL-F5-ST-KT,0,Fall_4_Anf.2.grA,$WSCRATCH)
+  ODRMN (2,WM_Fall_5_Anf.T4,KON00,0,$B123,$B124)
+  UHR ($B125,$B124,$F51)
+  UND11 ($B123,$B126,$B125)
+  VGLOH ($F51,ZK_Matrix_Fall_5,$B126)
+  ODRMN (3,$B126,Anfahrbetrieb_F5,ABWAHL-F6-ST-KT,0,$B127,
+         $WSCRATCH)
+  UND11 ($B127,Nachtbetrieb_KT,Fall_5_Anf.T4A)
+  MULDI ($F51,FKON01,FKON60-FAELLE,LZ_Fall_5)
+  ;*****************************************************************
+  ;*** Seite  60
+  ;*****************************************************************
+  ODRMN (2,WM_F6_3.gr.Turbo,KON00,0,$B128,$B129)
+  UND11 ($B128,$B131,$B130)
+  UHR ($B130,$B129,$F52)
+  VGLOH ($F52,ZK_Matrix_Fall_6,$B131)
+  ODRMN (3,$B131,Anfahrbetrieb_F6,ABWAHL-F7-ST-KT,0,$B132,
+         $WSCRATCH)
+  UND11 ($B132,Nachtbetrieb_KT,Fall_6_Anf.3.grA)
+  MULDI ($F52,FKON01,FKON60-FAELLE,LZ_Fall_6)
+  ODRMN (2,WM_Fall_7_Anf.T4,KON00,0,$B133,$B134)
+  UHR ($B135,$B134,$F53)
+  UND11 ($B133,$B136,$B135)
+  VGLOH ($F53,ZK_Matrix_Fall_7,$B136)
+  ODR2 ($B136,Anfahrbetrieb_F7,$B137)
+  UND11 ($B137,Nachtbetrieb_KT,Fall_7_Anf.T4A)
+  MULDI ($F53,FKON01,FKON60-FAELLE,LZ_Fall_7)
+  ;*****************************************************************
+  ;*** Seite  61
+  ;*****************************************************************
+  ANAUS (LZ_Fall_1,KON01,&21KA00-900AA11,ERR170)
+  ANAUS (LZ_Fall_2,KON01,&21KA00-900AA12,ERR171)
+  ANAUS (LZ_Fall_3,KON01,&21KA00-900AA13,ERR172)
+  ANAUS (LZ_Fall_4,KON01,&21KA00-900AA14,ERR173)
+  ANAUS (LZ_Fall_5,KON01,&21KA00-900AA15,ERR174)
+  ANAUS (LZ_Fall_6,KON01,&21KA00-900AA16,ERR177)
+  ANAUS (LZ_Fall_7,KON01,&21KA00-900AA17,ERR178)
+  ;*****************************************************************
+  ;*** Seite  62
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B138,$M130,$M131,$F54)
+  AWT ($B139,$M132,$M133,$F55)
+  AWT ($B140,$M134,$M135,$F56)
+  AWT (Sammelst.KT_4,$M136,$M137,$F57)
+  AWT (Sammelst.KT_5,$M138,$M139,$F58)
+  AWT (Sammelst.KT_6,$M140,$M141,$F59)
+  AWT (Sammelst.KT_7,$M142,$M143,$F60)
+  AWT (Sammelst.KT_8,$M144,$M145,$F61)
+  AWT (Sammelst.KT_9,$M146,$M147,$F62)
+  AWT ($B141,$M148,$M149,$F63)
+  ADSU (10,$F54,$F55,$F56,$F57,$F58,$F59,$F60,$F61,$F62,$F63,
+        9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,Anzahl_gest.KT99)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Nachtbetrieb_KT,Sammelst.KT_1,$B138)
+  ODR2 (Nachtbetrieb_KT,Sammelst.KT_2,$B139)
+  ODR2 (Nachtbetrieb_KT,Sammelst.KT_3,$B140)
+  ODR2 (Nachtbetrieb_KT,Sammelst.KT_10,$B141)
+  ;Sammelstoerung
+  ;nur für Abwahl
+  ;der einzelen
+  ;Fälle.
+  ;Bei Störung
+  ;Kühltürme
+  ;Bei Nachtbetrieb
+  ;KT1/2/3/10 wird
+  ;Störung nicht
+  ;weiterverarbeit.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  63
+  ;*****************************************************************
+  VGLOH (Anzahl_gest.KT99,$M150,$B142)
+  UND2 (Fall_7_Anf.T4A,$B142,$B143)
+  VVZ ($B143,$M151,$M152,ABWAHL-F7-ST-KT)
+  VGLOH (Anzahl_gest.KT99,$M153,$B144)
+  UND2 (Fall_6_Anf.3.grA,$B144,$B145)
+  VVZ ($B145,$M154,$M155,ABWAHL-F6-ST-KT)
+  VGLOH (Anzahl_gest.KT99,$M156,$B146)
+  UND2 (Fall_5_Anf.T4A,$B146,$B147)
+  VVZ ($B147,$M157,$M158,ABWAHL-F5-ST-KT)
+  AWT (Nachtbetrieb_KT,$M159,$M160,$F64)
+  VGLOH (Anzahl_gest.KT99,$F64,$B148)
+  UND2 (Fall_4_Anf.2.grA,$B148,$B149)
+  VVZ ($B149,$M161,$M162,ABWAHL-F4-ST-KT)
+  AWT (Nachtbetrieb_KT,$M163,$M164,$F65)
+  VGLOH (Anzahl_gest.KT99,$F65,$B150)
+  UND2 (Fall_3_Anf.T4A,$B150,$B151)
+  VVZ ($B151,$M165,$M166,ABWAHL-F3-ST-KT)
+  ;*****************************************************************
+  ;*** Seite  64
+  ;*****************************************************************
+  UNDMN (3,Fall_1_Anf.T4A,Freigabe_Kältem,1-Grosser-T-EIN,1,
+         Küw4-P4-R2,$B152,$WSCRATCH)
+  ODR2 ($B152,$B154,$B153)
+  UNDMN (3,F_1_T1-3_gestört,Freigabe_Kältem,1-Grosser-T-EIN,
+         1,Küw4-P4-R2,$B154,$WSCRATCH)
+  RSS ($B153,$B157,Fall_1_Anf.T4,$WSCRATCH)
+  ODRMN (6,Fall_2_Betrieb,Fall_3_Betrieb,Fall_4_Betrieb,
+         Fall_5_Betrieb,Fall_6_Betrieb,Fall_7_Betrieb,0,
+         $B155,$WSCRATCH)
+  UND11 ($B155,$B153,$B156)
+  ODRMN (1,$B156,1,Freigabe_Kältem,$B157,$WSCRATCH)
+  UND2 (Fall_1_Anf.T4,T4_Betrieb,Fall_1_Betrieb)
+  ;*****************************************************************
+  ;*** Seite  65
+  ;*****************************************************************
+  UNDMN (3,Fall_2_Anf.1.grA,Freigabe_Kältem,1-Grosser-T-EIN,
+         0,$B158,$WSCRATCH)
+  UNDMN (3,F_2_T4_gestört,1-Grosser-T-EIN,Freigabe_Kältem,0,
+         $B159,$WSCRATCH)
+  UNDMN (3,F_2_P4_gestört,1-Grosser-T-EIN,Freigabe_Kältem,0,
+         $B160,$WSCRATCH)
+  ODRMN (3,$B158,$B159,$B160,0,$B161,$WSCRATCH)
+  RSS ($B161,$B164,Fall_2_Anf.1.gr,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_3_Betrieb,Fall_4_Betrieb,
+         Fall_5_Betrieb,Fall_6_Betrieb,Fall_7_Betrieb,0,
+         $B162,$WSCRATCH)
+  UND11 ($B162,$B161,$B163)
+  ODRMN (1,$B163,1,Freigabe_Kältem,$B164,$WSCRATCH)
+  ODRMN (3,T1_Betrieb,T2_Betrieb,T3_Betrieb,0,$B165,
+         $WSCRATCH)
+  UND2 ($B165,Fall_2_Anf.1.gr,Fall_2_Betrieb)
+  ;*****************************************************************
+  ;*** Seite  66
+  ;*****************************************************************
+  UNDMN (3,Fall_3_Anf.T4A,Freigabe_Kältem,1-Grosser-T-EIN,1,
+         Küw4-P4-R2,$B166,$WSCRATCH)
+  UNDMN (3,F3_T1-3_gestört,Freigabe_Kältem,1-Grosser-T-EIN,1,
+         Küw4-P4-R2,$B167,$WSCRATCH)
+  ODR2 ($B166,$B167,$B168)
+  RSS ($B168,$B171,Fall_3_Anf.T4,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_2_Betrieb,Fall_4_Betrieb,
+         Fall_5_Betrieb,Fall_6_Betrieb,Fall_7_Betrieb,0,
+         $B169,$WSCRATCH)
+  UND11 ($B169,$B168,$B170)
+  ODRMN (2,$B170,ABWAHL-F3-ST-KT,1,Freigabe_Kältem,$B171,
+         $WSCRATCH)
+  ODRMN (3,T1_Betrieb,T2_Betrieb,T3_Betrieb,0,$B172,
+         $WSCRATCH)
+  UNDMN (3,$B172,T4_Betrieb,Fall_3_Anf.T4,0,Fall_3_Betrieb,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  67
+  ;*****************************************************************
+  UNDMN (3,Fall_4_Anf.2.grA,Freigabe_Kältem,2-Grosse-T-EIN,0,
+         $B173,$WSCRATCH)
+  UNDMN (3,F_4_T4_gestört,Freigabe_Kältem,2-Grosse-T-EIN,0,
+         $B174,$WSCRATCH)
+  UNDMN (3,F_4_P4_gestört,2-Grosse-T-EIN,Freigabe_Kältem,0,
+         $B175,$WSCRATCH)
+  ODRMN (3,$B173,$B174,$B175,0,$B176,$WSCRATCH)
+  RSS ($B176,$B179,Fall_4_Anf.2.gr,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_2_Betrieb,Fall_3_Betrieb,
+         Fall_5_Betrieb,Fall_6_Betrieb,Fall_7_Betrieb,0,
+         $B177,$WSCRATCH)
+  UND11 ($B177,$B176,$B178)
+  ODRMN (2,$B178,ABWAHL-F4-ST-KT,1,Freigabe_Kältem,$B179,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  68
+  ;*****************************************************************
+  UND2 (T1_Betrieb,T2_Betrieb,$B180)
+  UND2 (T2_Betrieb,T3_Betrieb,$B181)
+  UND2 (T1_Betrieb,T3_Betrieb,$B182)
+  ODRMN (3,$B180,$B181,$B182,0,$B183,$WSCRATCH)
+  UND2 ($B183,Fall_4_Anf.2.gr,Fall_4_Betrieb)
+  ;*****************************************************************
+  ;*** Seite  69
+  ;*****************************************************************
+  UNDMN (3,Fall_5_Anf.T4A,Freigabe_Kältem,2-Grosse-T-EIN,2,
+         Küw4-P4-R2,Nachtbetrieb_KT,$B184,$WSCRATCH)
+  UNDMN (3,F5_T1-3_gestört,Freigabe_Kältem,2-Grosse-T-EIN,2,
+         Küw4-P4-R2,Nachtbetrieb_KT,$B185,$WSCRATCH)
+  ODR2 ($B184,$B185,$B186)
+  RSS ($B186,$B189,Fall_5_Anf.T4,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_2_Betrieb,Fall_3_Betrieb,
+         Fall_4_Betrieb,Fall_6_Betrieb,Fall_7_Betrieb,0,
+         $B187,$WSCRATCH)
+  UND11 ($B187,$B186,$B188)
+  ODRMN (3,$B188,ABWAHL-F5-ST-KT,Nachtbetrieb_KT,1,
+         Freigabe_Kältem,$B189,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  70
+  ;*****************************************************************
+  UND2 (T1_Betrieb,T2_Betrieb,$B190)
+  UND2 (T2_Betrieb,T3_Betrieb,$B191)
+  UND2 (T1_Betrieb,T3_Betrieb,$B192)
+  ODRMN (3,$B190,$B191,$B192,0,$B193,$WSCRATCH)
+  UNDMN (3,T4_Betrieb,$B193,Fall_5_Anf.T4,0,Fall_5_Betrieb,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  71
+  ;*****************************************************************
+  UNDMN (3,Fall_6_Anf.3.grA,Freigabe_Kältem,3-Grosse-T-EIN,1,
+         Nachtbetrieb_KT,$B194,$WSCRATCH)
+  UNDMN (3,F_6_T4_gestört,Freigabe_Kältem,3-Grosse-T-EIN,1,
+         Nachtbetrieb_KT,$B195,$WSCRATCH)
+  UNDMN (3,F_6_P4_gestört,3-Grosse-T-EIN,Freigabe_Kältem,1,
+         Nachtbetrieb_KT,$B196,$WSCRATCH)
+  ODRMN (3,$B194,$B195,$B196,0,$B197,$WSCRATCH)
+  RSS ($B197,$B200,Fall_6_Anf.3.gr,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_2_Betrieb,Fall_3_Betrieb,
+         Fall_4_Betrieb,Fall_5_Betrieb,Fall_7_Betrieb,0,
+         $B198,$WSCRATCH)
+  UND11 ($B198,$B197,$B199)
+  ODRMN (3,$B199,Nachtbetrieb_KT,ABWAHL-F6-ST-KT,1,
+         Freigabe_Kältem,$B200,$WSCRATCH)
+  UNDMN (4,T1_Betrieb,T2_Betrieb,T3_Betrieb,Fall_6_Anf.3.gr,
+         0,Fall_6_Betrieb,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  72
+  ;*****************************************************************
+  UNDMN (3,Fall_7_Anf.T4A,Freigabe_Kältem,3-Grosse-T-EIN,2,
+         Küw4-P4-R2,Nachtbetrieb_KT,$B201,$WSCRATCH)
+  RSS ($B201,$B204,Fall_7_Anf.T4,$WSCRATCH)
+  ODRMN (6,Fall_1_Betrieb,Fall_2_Betrieb,Fall_3_Anf.T4,
+         Fall_4_Betrieb,Fall_5_Betrieb,Fall_6_Betrieb,0,
+         $B202,$WSCRATCH)
+  UND11 ($B202,$B201,$B203)
+  ODRMN (3,$B203,Nachtbetrieb_KT,ABWAHL-F7-ST-KT,1,
+         Freigabe_Kältem,$B204,$WSCRATCH)
+  UNDMN (5,T1_Betrieb,T2_Betrieb,T3_Betrieb,T4_Betrieb,
+         Fall_7_Anf.T4,0,Fall_7_Betrieb,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  73
+  ;*****************************************************************
+  VVZ (Fall_5_Betrieb,$M167,$M168,$B205)
+  UND2 (Nachtbetrieb_KT,$B205,Nachtbetr_F5)
+  VVZ (Fall_6_Betrieb,$M169,$M170,$B206)
+  UND2 (Nachtbetrieb_KT,$B206,Nachtbetr_F6)
+  VVZ (Fall_7_Betrieb,$M171,$M172,$B207)
+  UND2 (Nachtbetrieb_KT,$B207,Nachtbetr_F7)
+  VVZ (ABWAHL-F5-ST-KT,$M173,$M174,$B208)
+  UND2 (Nachtbetrieb_KT,$B208,$B209)
+  ODRMN (4,Nachtbetr_F5,Nachtbetr_F6,Nachtbetr_F7,$B209,0,
+         Nachtbetr_F4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  74
+  ;*****************************************************************
+  UND2 (Fall_1_Anf.T4,T4_gestört,F_2_T4_gestört)
+  UND2 (Fall_3_Anf.T4,T4_gestört,F_4_T4_gestört)
+  UND2 (Fall_5_Anf.T4,T4_gestört,F_6_T4_gestört)
+  UNDMN (4,Fall_2_Anf.1.gr,T1_gestört,T2_gestört,T3_gestört,
+         0,F_1_T1-3_gestört,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  75
+  ;*****************************************************************
+  UNDMN (3,Fall_4_Anf.2.gr,T1_gestört,T2_gestört,0,$B210,
+         $WSCRATCH)
+  UNDMN (3,Fall_4_Anf.2.gr,T2_gestört,T3_gestört,0,$B211,
+         $WSCRATCH)
+  UNDMN (3,Fall_4_Anf.2.gr,T1_gestört,T3_gestört,0,$B212,
+         $WSCRATCH)
+  ODRMN (3,$B210,$B211,$B212,0,F3_T1-3_gestört,$WSCRATCH)
+  ODRMN (3,T1_gestört,T2_gestört,T3_gestört,0,$B213,
+         $WSCRATCH)
+  UND2 ($B213,Fall_6_Anf.3.gr,F5_T1-3_gestört)
+  ;*****************************************************************
+  ;*** Seite  76
+  ;*****************************************************************
+  UND2 (Fall_1_Anf.T4,KüW-P4_gestört,F_2_P4_gestört)
+  UND2 (Fall_3_Anf.T4,KüW-P4_gestört,F_4_P4_gestört)
+  UND2 (Fall_5_Anf.T4,KüW-P4_gestört,F_6_P4_gestört)
+  ;*****************************************************************
+  ;*** Seite  77
+  ;*****************************************************************
+  SETMEL ($M175,1,Fall_1_Anf.T4,&&21KA01-900BM01,WERR30-8)
+  SETMEL ($M176,1,Fall_2_Anf.1.gr,&&21KA01-900BM02,WERR30-9)
+  SETMEL ($M177,1,Fall_3_Anf.T4,&&21KA01-900BM03,WERR30-10)
+  SETMEL ($M178,1,Fall_4_Anf.2.gr,&&21KA01-900BM04,WERR30-11)
+  SETMEL ($M179,1,Fall_5_Anf.T4,&&21KA01-900BM05,WERR30-12)
+  ;*****************************************************************
+  ;*** Seite  78
+  ;*****************************************************************
+  SETMEL ($M180,1,Fall_6_Anf.3.gr,&&21KA01-900BM06,WERR30-13)
+  SETMEL ($M181,1,Fall_7_Anf.T4,&&21KA01-900BM07,WERR30-14)
+  ;*****************************************************************
+  ;*** Seite  79
+  ;*****************************************************************
+  ;Anforderung Turbo 4
+  ; 
+  ODRMN (4,Fall_3_Anf.T4,Fall_5_Anf.T4,Fall_7_Anf.T4,
+         Fall_1_Anf.T4,0,$B214,$WSCRATCH)
+  UND2 (KüW-P4_gestört,Fall_7_Anf.T4,$B215)
+  UNDMN (1,$B214,2,Küw4-P4-R2,KüW-P4_gestört,$B216,$WSCRATCH)
+  ODR2 ($B216,$B215,Anf.Freig.Turbo4)
+  ;*****************************************************************
+  ;*** Seite  80
+  ;*****************************************************************
+  ODRMN (6,Fall_2_Anf.1.gr,Fall_3_Anf.T4,Fall_4_Anf.2.gr,
+         Fall_5_Anf.T4,Fall_6_Anf.3.gr,Fall_7_Anf.T4,0,$B217,
+         $WSCRATCH)
+  ODRMN (4,Fall_4_Anf.2.gr,Fall_5_Anf.T4,Fall_6_Anf.3.gr,
+         Fall_7_Anf.T4,0,$B218,$WSCRATCH)
+  ODR2 (Fall_7_Anf.T4,Fall_6_Anf.3.gr,$B219)
+  UND2 (Seq_T-2-3-1,$B217,$B220)
+  UND2 (Seq_T-3-1-2,$B218,$B221)
+  UND2 (Seq_T-2-3-1,$B218,$B222)
+  UND2 (Seq_T-3-1-2,$B219,$B223)
+  UND2 (Seq_T-1-2-3,$B217,$B224)
+  UND2 (Seq_T-3-1-2,$B217,$B225)
+  UND2 (Seq_T-1-2-3,$B218,$B226)
+  UND2 (Seq_T-2-3-1,$B219,$B227)
+  UND2 (Seq_T-1-2-3,$B219,$B228)
+  ODRMN (3,$B224,$B221,$B227,0,Anf.Freig.Turbo1,$WSCRATCH)
+  ODRMN (3,$B220,$B226,$B223,0,Anf.Freig.Turbo2,$WSCRATCH)
+  ODRMN (3,$B225,$B222,$B228,0,Anf.Freig.Turbo3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  81
+  ;*****************************************************************
+  ODRMN (4,Küw1-P1-R1,Küw2-P2-R1,Küw3-P3-R1,Küw4-P4-R2,0,
+         KüW-Pumpe_Ein,$WSCRATCH)
+  ODRMN (4,Anf.Freig.Turbo1,Anf.Freig.Turbo2,
+         Anf.Freig.Turbo3,Anf.Freig.Turbo4,0,$B229,$WSCRATCH)
+  ODRMN (5,$B229,ANf_T1_Hand,Anf_T2_Hand,Anf_T3_Hand,
+         Anf_T4_Hand,0,Anf.Turbo_1-4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  82
+  ;*****************************************************************
+  ;Kühlwasserp.1 gestört
+  ; 
+  UNDMN (6,KüW-Ppe_1_Ueberh,Küw1-P1-ST,KON01,KüW-Ppe_1_Rep,
+         KüW_MAX_Druck,Trockenlauf,0,KüW-P1_ok,
+         KüW-P1_gestört)
+  ;Kühlwasserp.2 gestört
+  ; 
+  UNDMN (6,KüW_MAX_Druck,KüW-Ppe_2_Ueberh,Küw2-P2-ST,KON01,
+         KüW-Ppe_2_Rep,Trockenlauf,0,KüW-P2_ok,
+         KüW-P2_gestört)
+  ;Kühlwasserp.3 gestört
+  ; 
+  UNDMN (6,KüW_MAX_Druck,KüW-Ppe_3_Ueberh,Küw3-P3-ST,KON01,
+         KüW-Ppe_3_Rep,Trockenlauf,0,KüW-P3_ok,
+         KüW-P3_gestört)
+  ;*****************************************************************
+  ;*** Seite  83
+  ;*****************************************************************
+  ;Kühlwasserp.4 gestört
+  ; 
+  UNDMN (6,KüW-Ppe_4_Ueberh,Küw4-P4-ST,KON01,KüW-Ppe_4_Rep,
+         KüW_MAX_Druck,Trockenlauf,0,KüW-P4_ok,
+         KüW-P4_gestört)
+  ODR2 (Küw4-P4-R1,Küw4-P4-R2,KüW-P4_Ein)
+  ;*****************************************************************
+  ;*** Seite  84
+  ;*****************************************************************
+  ODRMN (4,KüW-P1_ok,KüW-P2_ok,KüW-P3_ok,KüW-P4_ok,0,
+         1-Grosser-T-EIN,$WSCRATCH)
+  UND2 (KüW-P1_ok,KüW-P2_ok,$B230)
+  UND2 (KüW-P1_ok,KüW-P3_ok,$B231)
+  UND2 (KüW-P2_ok,KüW-P3_ok,$B232)
+  UND2 (KüW-P1_ok,KüW-P4_ok,$B233)
+  UND2 (KüW-P2_ok,KüW-P4_ok,$B234)
+  UND2 (KüW-P3_ok,KüW-P4_ok,$B235)
+  ODRMN (6,$B230,$B231,$B232,$B233,$B234,$B235,0,
+         2-Grosse-T-EIN,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  85
+  ;*****************************************************************
+  UNDMN (3,KüW-P1_ok,KüW-P2_ok,KüW-P3_ok,0,$B236,$WSCRATCH)
+  UNDMN (3,KüW-P1_ok,KüW-P2_ok,KüW-P4_ok,0,$B237,$WSCRATCH)
+  UNDMN (3,KüW-P2_ok,KüW-P3_ok,KüW-P4_ok,0,$B238,$WSCRATCH)
+  UNDMN (3,KüW-P1_ok,KüW-P3_ok,KüW-P4_ok,0,$B239,$WSCRATCH)
+  ODRMN (4,$B236,$B237,$B238,$B239,0,3-Grosse-T-EIN,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  86
+  ;*****************************************************************
+  ODRMN (3,T1_Vorwahl_Ein,Anf.Freig.Turbo1,KON00,0,$B240,
+         $WSCRATCH)
+  UNDMN (3,T1_ok,$B240,T1_Freigabe_NB,0,ANf_T1_Hand,
+         $WSCRATCH)
+  UNDMN (5,ANf_T1_Hand,T1_KW-Pumpe_R1,T1_ASK_KW_145AUF,
+         T1ASK_KüW_141AUF,KüW-Pumpe_Ein,0,$B241,$WSCRATCH)
+  SETMEL ($M182,1,ANf_T1_Hand,&&21KA01.100BM50,WERR137-8)
+  VVZ ($B241,$M183,$M184,Freigabe_Turbo_1)
+  ;Anforderung Turbo 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  87
+  ;*****************************************************************
+  ODRMN (3,T2_Vorwahl_Ein,Anf.Freig.Turbo2,KON00,0,$B242,
+         $WSCRATCH)
+  UNDMN (3,T2_ok,$B242,T2_Freigabe_NB,0,Anf_T2_Hand,
+         $WSCRATCH)
+  UNDMN (5,Anf_T2_Hand,T2_KW-Pumpe_R1,T2_ASK_KW_146AUF,
+         T2ASK_KüW_142AUF,KüW-Pumpe_Ein,0,$B243,$WSCRATCH)
+  SETMEL ($M185,1,Anf_T2_Hand,&&21KA01.200BM50,WERR137-9)
+  VVZ ($B243,$M186,$M187,Freigabe_Turbo_2)
+  ;Anforderung Turbo 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  88
+  ;*****************************************************************
+  ODRMN (3,T3_Vorwahl_Ein,Anf.Freig.Turbo3,KON00,0,$B244,
+         $WSCRATCH)
+  UNDMN (3,T3_ok,$B244,T3_Freigabe_NB,0,Anf_T3_Hand,
+         $WSCRATCH)
+  UNDMN (5,Anf_T3_Hand,T3_KW-Pumpe_R1,T3_ASK_KW_147AUF,
+         T3ASK_KüW_143AUF,KüW-Pumpe_Ein,0,$B245,$WSCRATCH)
+  SETMEL ($M188,1,Anf_T3_Hand,&&21KA01.300BM50,WERR137-10)
+  VVZ ($B245,$M189,$M190,Freigabe_Turbo_3)
+  ;Anforderung Turbo 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  89
+  ;*****************************************************************
+  ODRMN (3,T4_Vorwahl_Ein,Anf.Freig.Turbo4,KON00,0,$B246,
+         $WSCRATCH)
+  UNDMN (3,T4_ok,$B246,T4_Freigabe_NB,0,Anf_T4_Hand,
+         $WSCRATCH)
+  SETMEL ($M191,1,Anf_T4_Hand,&&21KA01.400BM50,WERR137-11)
+  UND2 (Fall_7_Anf.T4,KüW-P4_gestört,$B247)
+  ODR2 (Küw4-P4-R1,$B247,$B248)
+  UNDMN (5,Anf_T4_Hand,T4_KW-Pumpe_R1,T4_ASK_KW_148AUF,
+         T4ASK_KüW_144AUF,$B248,0,$B249,$WSCRATCH)
+  VVZ ($B249,$M192,$M193,Freigabe_Turbo_4)
+  ;Anforderung Turbo 4
+  ; 
+  ;*****************************************************************
+  ;*** Seite  90
+  ;*****************************************************************
+  UNDMN (3,Freigabe_Turbo_1,T1_ok,T1_Freigabe_NB,0,$B250,
+         $B251)
+  BEFAUS (1,$B251,$B250,$WZERO,$WZERO,&&21KA01-100BF01,
+          WERR00-13)
+  UNDMN (3,Freigabe_Turbo_2,T2_ok,T2_Freigabe_NB,0,$B252,
+         $B253)
+  BEFAUS (1,$B253,$B252,$WZERO,$WZERO,&&21KA01-200BF01,
+          WERR11-13)
+  UNDMN (3,Freigabe_Turbo_3,T3_ok,T3_Freigabe_NB,0,$B254,
+         $B255)
+  BEFAUS (1,$B255,$B254,$WZERO,$WZERO,&&21KA01-300BF01,
+          WERR22-13)
+  ;Freigabe Turbo 1
+  ; 
+  ;Freigabe Turbo 2
+  ; 
+  ;Freigabe Turbo 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  91
+  ;*****************************************************************
+  UNDMN (3,Freigabe_Turbo_4,T4_ok,T4_Freigabe_NB,0,$B256,
+         $B257)
+  BEFAUS (1,$B257,$B256,$WZERO,$WZERO,&&21KA01-400BF01,
+          WERR23-13)
+  ;Freigabe Turbo 4
+  ; 
+  ;*****************************************************************
+  ;*** Seite  92
+  ;*****************************************************************
+  ENDE 
+  TASK (7,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  93
+  ;*****************************************************************
+  MELEIN (&&21KA02-901ST00,8,Sammelst.KT_1,Sammelst.KT_2,
+          Sammelst.KT_3,Sammelst.KT_4,Sammelst.KT_5,
+          Sammelst.KT_6,Sammelst.KT_7,Sammelst.KT_8,
+          WERR150_0-7)
+  MELEIN (&&21KA02-909ST00,2,Sammelst.KT_9,Sammelst.KT_10,
+          WERR150_8-9)
+  ;*****************************************************************
+  ;*** Seite  94
+  ;*****************************************************************
+  MELEIN (&&21KA02-101BM82,8,K1_NB_121_DG,K1_GOI121_ZU,
+          K1_GOI121_ST,K1_GOI121_AUF,K1_NB_111_DG,
+          K1_GOI111_ZU,K1_GOI111_ST,K1_GOI111_AUF,
+          WERR_Z48_0-7)
+  MELEIN (&&21KA02-102BM82,8,K2_NB_122_DG,K2_GOI122_ZU,
+          K2_GOI122_ST,K2_GOI122_AUF,K2_NB_112_DG,
+          K2_GOI112_ZU,K2_GOI112_ST,K2_GOI112_AUF,
+          WERR_Z48_8-15)
+  ;*****************************************************************
+  ;*** Seite  95
+  ;*****************************************************************
+  MELEIN (&&21KA02-103BM82,8,K3_NB_123_DG,K3_GOI123_ZU,
+          K3_GOI123_ST,K3_GOI123_AUF,K3_NB_113_DG,
+          K3_GOI113_ZU,K3_GOI113_ST,K3_GOI113_AUF,
+          WERR_Z61_0-7)
+  MELEIN (&&21KA02-104BM82,8,K4_NB_124_DG,K4_GOI124_ZU,
+          K4_GOI124_ST,K4_GOI124_AUF,K4_NB_114_DG,
+          K4_GOI114_ZU,K4_GOI114_ST,K4_GOI114_AUF,
+          WERR_Z61_8-15)
+  ;*****************************************************************
+  ;*** Seite  96
+  ;*****************************************************************
+  MELEIN (&&21KA02-105BM82,8,K5_NB_125_DG,K5_GOI125_ZU,
+          K5_GOI125_ST,K5_GOI125_AUF,K5_NB_115_DG,
+          K5_GOI115_ZU,K5_GOI115_ST,K5_GOI115_AUF,
+          WERR_Z72_0-7)
+  MELEIN (&&21KA02-106BM82,8,K6_NB_126_DG,K6_GOI126_ZU,
+          K6_GOI126_ST,K6_GOI126_AUF,K6_NB_116_DG,
+          K6_GOI116_ZU,K6_GOI116_ST,K6_GOI116_AUF,
+          WERR_Z72_8-15)
+  ;*****************************************************************
+  ;*** Seite  97
+  ;*****************************************************************
+  MELEIN (&&21KA02-109BM82,8,K9_NB_129_DG,K9_GOI129_ZU,
+          K9_GOI129_ST,K9_GOI129_AUF,K9_NB_119_DG,
+          K9_GOI119_ZU,K9_GOI119_ST,K9_GOI119_AUF,
+          WERR_Z101_0-7)
+  MELEIN (&&21KA02-110BM82,8,K10_NB_130_DG,K10_GOI130_ZU,
+          K10_GOI130_ST,K10_GOI130_AUF,K10_NB_120_DG,
+          K10_GOI120_ZU,K10_GOI120_ST,K10_GOI120_AUF,
+          WERR_Z101_8-15)
+  ;*****************************************************************
+  ;*** Seite  98
+  ;*****************************************************************
+  MELEIN (&&21KA02-107BM82,8,K7_NB_127_DG,K7_GOI127_ZU,
+          K7_GOI127_ST,K7_GOI127_AUF,K7_NB_117_DG,
+          K7_GOI117_ZU,K7_GOI117_ST,K7_GOI117_AUF,
+          WERR_Z83_0-7)
+  MELEIN (&&21KA02-108BM82,8,K8_NB_128_DG,K8_GOI128_ZU,
+          K8_GOI128_ST,K8_GOI128_AUF,K8_NB_118_DG,
+          K8_GOI118_ZU,K8_GOI118_ST,K8_GOI118_AUF,
+          WERR_Z83_8-15)
+  ;*****************************************************************
+  ;*** Seite  99
+  ;*****************************************************************
+  MELEIN (&&21KA02-151BM01,8,K1_GOI151_ZU,K1_GOI151_AUF,
+          K1_GOI151_ST,K2_GOI152_ZU,K2_GOI152_AUF,
+          K2_GOI152_ST,K3_GOI153_ZU,K3_GOI153_AUF,
+          WERR_Z161_0-7)
+  MELEIN (&&21KA02-153ST01,8,K3_GOI153_ST,K4_GOI154_ZU,
+          K4_GOI154_AUF,K4_GOI154_ST,K5_GOI155_ZU,
+          K5_GOI155_AUF,K5_GOI155_ST,$WSCRATCH,
+          WERR_Z161_8-15)
+  ;*****************************************************************
+  ;*** Seite 100
+  ;*****************************************************************
+  MELEIN (&&21KA02-156BM01,8,K6_GOI156_ZU,K6_GOI156_AUF,
+          K6_GOI156_ST,K7_GOI157_ZU,K7_GOI157_AUF,
+          K7_GOI157_ST,K8_GOI158_ZU,K8_GOI158_AUF,
+          WERR_Z162_0-7)
+  MELEIN (&&21KA02-158ST01,8,K8_GOI158_ST,K9_GOI159_ZU,
+          K9_GOI159_AUF,K9_GOI159_ST,K10_GOI160_ZU,
+          K10_GOI160_AUF,K10_GOI160_ST,$WSCRATCH,
+          WERR_Z162_8-15)
+  ;*****************************************************************
+  ;*** Seite 101
+  ;*****************************************************************
+  MELEIN (&&21KA02-101BM81,8,K1_NB_Lueft_DG,K1_Ventilator_R0,
+          $HB11,K1_Ventilator_R1,K1_NB_RK101_DG,
+          K1_Ventilator_R2,K2_NB_RK102_DG,K3_NB_RK103_DG,
+          WERR_Z96_0-7)
+  NICHT ($HB11,K1_Ventilator_ST)
+  MELEIN (&&21KA02-102BM81,8,K2_NB_Lueft_DG,K2_Ventilator_R0,
+          $HB11,K2_Ventilator_R1,K4_NB_RK104_DG,
+          K2_Ventilator_R2,K5_NB_RK105_DG,K6_NB_RK106_DG,
+          WERR_Z96_8-15)
+  NICHT ($HB11,K2_Ventilator_ST)
+  ;RKW 1 Ventilator
+  ; 
+  ;RKW 2 Ventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite 102
+  ;*****************************************************************
+  MELEIN (&&21KA02-103BM81,8,K3_NB_Lueft_DG,K3_Ventilator_R0,
+          $HB11,K3_Ventilator_R1,K7_NB_RK107_DG,
+          K3_Ventilator_R2,K8_NB_RK108_DG,K9_NB_RK109_DG,
+          WERR_Z97_0-7)
+  NICHT ($HB11,K3_Ventilator_ST)
+  MELEIN (&&21KA02-104BM81,8,K4_NB_Lueft_DG,K4_Ventilator_R0,
+          $HB11,K4_Ventilator_R1,K10_NB_RK110_DG,
+          K4_Ventilator_R2,Ppe_WZ_NB_DG,Ppe_WZ_NB_Ein_DG,
+          WERR_Z97_8-15)
+  NICHT ($HB11,K4_Ventilator_ST)
+  ;RKW 3 Ventilator
+  ; 
+  ;RKW 4 Ventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite 103
+  ;*****************************************************************
+  MELEIN (&&21KA02-105BM81,6,K5_NB_Lueft_DG,K5_Ventilator_R0,
+          $HB9,K5_Ventilator_R1,$WSCRATCH,K5_Ventilator_R2,
+          WERR_Z98_0-7)
+  NICHT ($HB9,K5_Ventilator_ST)
+  MELEIN (&&21KA02-106BM81,6,K6_NB_Lueft_DG,K6_Ventilator_R0,
+          $HB9,K6_Ventilator_R1,$WSCRATCH,K6_Ventilator_R2,
+          WERR_Z98_8-15)
+  NICHT ($HB9,K6_Ventilator_ST)
+  ;RKW 5 Ventilator
+  ; 
+  ;RKW 6 Ventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite 104
+  ;*****************************************************************
+  MELEIN (&&21KA02-107BM81,6,K7_NB_Lueft_DG,K7_Ventilator_R0,
+          $HB9,K7_Ventilator_R1,$WSCRATCH,K7_Ventilator_R2,
+          WERR_Z99_0-7)
+  NICHT ($HB9,K7_Ventilator_ST)
+  MELEIN (&&21KA02-108BM81,6,K8_NB_Lueft_DG,K8_Ventilator_R0,
+          $HB9,K8_Ventilator_R1,$WSCRATCH,K8_Ventilator_R2,
+          WERR_Z99_8-15)
+  NICHT ($HB9,K8_Ventilator_ST)
+  ;RKW 7 Ventilator
+  ; 
+  ;RKW 8 Ventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite 105
+  ;*****************************************************************
+  MELEIN (&&21KA02-109BM81,6,K9_NB_Lueft_DG,K9_Ventilator_R0,
+          $HB9,K9_Ventilator_R1,$WSCRATCH,K9_Ventilator_R2,
+          WERR_Z100_0-7)
+  NICHT ($HB9,K9_Ventilator_ST)
+  MELEIN (&&21KA02-110BM81,6,K10_NB_Lueft_DG,
+          K10Ventilator_R0,$HB9,K10Ventilator_R1,$WSCRATCH,
+          K10Ventilator_R2,WERR_Z100_8-15)
+  NICHT ($HB9,K10Ventilator_ST)
+  ;RKW 9 Ventilator
+  ; 
+  ;RKW10 Ventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite 106
+  ;*****************************************************************
+  ODR2 (K1_Ventilator_R1,K1_Ventilator_R2,KT1_in_Betrieb)
+  ODR2 (K2_Ventilator_R1,K2_Ventilator_R2,KT2_in_Betrieb)
+  ODR2 (K3_Ventilator_R1,K3_Ventilator_R2,KT3_in_Betrieb)
+  ODR2 (K4_Ventilator_R1,K4_Ventilator_R2,KT4_in_Betrieb)
+  ODR2 (K5_Ventilator_R1,K5_Ventilator_R2,KT5_in_Betrieb)
+  ODR2 (K6_Ventilator_R1,K6_Ventilator_R2,KT6_in_Betrieb)
+  ODR2 (K7_Ventilator_R1,K7_Ventilator_R2,KT7_in_Betrieb)
+  ODR2 (K8_Ventilator_R1,K8_Ventilator_R2,KT8_in_Betrieb)
+  ODR2 (K9_Ventilator_R1,K9_Ventilator_R2,KT9_in_Betrieb)
+  ODR2 (K10Ventilator_R1,K10Ventilator_R2,KT10_in_Betrieb)
+  ;*****************************************************************
+  ;*** Seite 107
+  ;*****************************************************************
+  UNDMN (5,Seq1_KT_AUS,Seq2_KT_AUS,Seq3_KT_AUS,Seq4_KT_AUS,
+         Seq5_KT_AUS,0,$B258,$WSCRATCH)
+  UNDMN (5,Seq6_KT_AUS,Seq7_KT_AUS,Seq8_KT_AUS,Seq9_KT_AUS,
+         Seq10_KT_AUS,0,$B259,$WSCRATCH)
+  UND2 ($B258,$B259,$B260)
+  VVZ ($B260,$M272,$M273,$HB3)
+  NICHT ($HB3,$B261)
+  NICHT (Anf.Turbo_1-4,$HB0)
+  VVZ ($HB0,$M274,$M275,$B262)
+  ODR2 ($B261,$B262,Seq_KT_Reset_ST)
+  UNDMN (5,KT1_BStd>24,KT2_BStd>24,KT3_BStd>24,KT4_BStd>24,
+         KT5_BStd>24,0,$B263,$WSCRATCH)
+  UNDMN (5,KT6_BStd>24,KT7_BStd>24,KT8_BStd>24,KT9_BStd>24,
+         KT10_BStd>24,0,$B264,$WSCRATCH)
+  UND21 ($B264,$B263,Anf.Turbo_1-4,Reset_KT1-10)
+  ;*****************************************************************
+  ;*** Seite 108
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT1_in_Betrieb,$B270,$F66)
+  VGLOH ($F66,$M276,$B270)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT1_BStd_auf_0,$M277,Reset_KT1-10,KT1_SW_BStd,$WONE,
+       $B270,$WZERO,$F67)
+  ATRA ($F67,KT1_B-Stunden)
+  VGLOH ($F67,FKON_24h,$B265)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B265,Seq_KT_Reset_ST,$B266)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT2_in_Betrieb,$B271,$F68)
+  VGLOH ($F68,$M278,$B271)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT2_BStd_auf_0,$M279,Reset_KT1-10,KT2_SW_BStd,$WONE,
+       $B271,$WZERO,$F69)
+  ATRA ($F69,KT2_B-Stunden)
+  VGLOH ($F69,FKON_24h,$B267)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B267,Seq_KT_Reset_ST,KT2_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT3_in_Betrieb,$B272,$F70)
+  VGLOH ($F70,$M280,$B272)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT3_BStd_auf_0,$M281,Reset_KT1-10,KT3_SW_BStd,$WONE,
+       $B272,$WZERO,$F71)
+  ATRA ($F71,KT3_B-Stunden)
+  VGLOH ($F71,FKON_24h,$B268)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B268,Seq_KT_Reset_ST,KT3_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT4_in_Betrieb,$B273,$F72)
+  VGLOH ($F72,$M282,$B273)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT4_BStd_auf_0,$M283,Reset_KT1-10,KT4_SW_BStd,$WONE,
+       $B273,$WZERO,$F73)
+  ATRA ($F73,KT4_B-Stunden)
+  VGLOH ($F73,FKON_24h,$B269)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B269,Seq_KT_Reset_ST,KT4_BStd>24)
+  ODR2 ($B266,TEST11,KT1_BStd>24)
+  ;*****************************************************************
+  ;*** Seite 109
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT5_in_Betrieb,$B278,$F74)
+  VGLOH ($F74,$M284,$B278)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT5_BStd_auf_0,$M285,Reset_KT1-10,KT5_SW_BStd,$WONE,
+       $B278,$WZERO,$F75)
+  ATRA ($F75,KT5_B-Stunden)
+  VGLOH ($F75,FKON_24h,$B274)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B274,Seq_KT_Reset_ST,KT5_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT6_in_Betrieb,$B279,$F76)
+  VGLOH ($F76,$M286,$B279)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT6_BStd_auf_0,$M287,Reset_KT1-10,KT6_SW_BStd,$WONE,
+       $B279,$WZERO,$F77)
+  ATRA ($F77,KT6_B-Stunden)
+  VGLOH ($F77,FKON_24h,$B275)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B275,Seq_KT_Reset_ST,KT6_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT7_in_Betrieb,$B280,$F78)
+  VGLOH ($F78,$M288,$B280)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT7_BStd_auf_0,$M289,Reset_KT1-10,KT7_SW_BStd,$WONE,
+       $B280,$WZERO,$F79)
+  ATRA ($F79,KT7_B-Stunden)
+  VGLOH ($F79,FKON_24h,$B276)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B276,Seq_KT_Reset_ST,KT7_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT8_in_Betrieb,$B281,$F80)
+  VGLOH ($F80,$M290,$B281)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT8_BStd_auf_0,$M291,Reset_KT1-10,KT8_SW_BStd,$WONE,
+       $B281,$WZERO,$F81)
+  ATRA ($F81,KT8_B-Stunden)
+  VGLOH ($F81,FKON_24h,$B277)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B277,Seq_KT_Reset_ST,KT8_BStd>24)
+  ;*****************************************************************
+  ;*** Seite 110
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT9_in_Betrieb,$B284,$F82)
+  VGLOH ($F82,$M292,$B284)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT9_BStd_auf_0,$M293,Reset_KT1-10,KT9_SW_BStd,$WONE,
+       $B284,$WZERO,$F83)
+  ATRA ($F83,KT9_B-Stunden)
+  VGLOH ($F83,FKON_24h,$B282)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B282,Seq_KT_Reset_ST,KT9_BStd>24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KT10_in_Betrieb,$B285,$F84)
+  VGLOH ($F84,$M294,$B285)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (/KT10_BStd_auf_0,$M295,Reset_KT1-10,KT10_SW_BStd,
+       $WONE,$B285,$WZERO,$F85)
+  ATRA ($F85,KT10_B-Stunden)
+  VGLOH ($F85,FKON_24h,$B283)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UND2 ($B283,Seq_KT_Reset_ST,KT10_BStd>24)
+  ;*****************************************************************
+  ;*** Seite 111
+  ;*****************************************************************
+  AWT (KT1_BStd>24,$M296,$M297,$F86)
+  ADD2 ($F86,KT1_B-Stunden,KT1_SW_BStd)
+  AWT (KT2_BStd>24,$M298,$M299,$F87)
+  ADD2 ($F87,KT2_B-Stunden,KT2_SW_BStd)
+  AWT (KT3_BStd>24,$M300,$M301,$F88)
+  ADD2 ($F88,KT3_B-Stunden,KT3_SW_BStd)
+  AWT (KT4_BStd>24,$M302,$M303,$F89)
+  ADD2 ($F89,KT4_B-Stunden,KT4_SW_BStd)
+  AWT (KT5_BStd>24,$M304,$M305,$F90)
+  ADD2 ($F90,KT5_B-Stunden,KT5_SW_BStd)
+  ;*****************************************************************
+  ;*** Seite 112
+  ;*****************************************************************
+  AWT (KT6_BStd>24,$M306,$M307,$F91)
+  ADD2 ($F91,KT6_B-Stunden,KT6_SW_BStd)
+  AWT (KT7_BStd>24,$M308,$M309,$F92)
+  ADD2 ($F92,KT7_B-Stunden,KT7_SW_BStd)
+  AWT (KT8_BStd>24,$M310,$M311,$F93)
+  ADD2 ($F93,KT8_B-Stunden,KT8_SW_BStd)
+  AWT (KT9_BStd>24,$M312,$M313,$F94)
+  ADD2 ($F94,KT9_B-Stunden,KT9_SW_BStd)
+  AWT (KT10_BStd>24,$M314,$M315,$F95)
+  ADD2 ($F95,KT10_B-Stunden,KT10_SW_BStd)
+  ;*****************************************************************
+  ;*** Seite 113
+  ;*****************************************************************
+  ;Abfrage der Sequenzen
+  ;KT 1-10 AUS
+  ;e
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (Seq1_KT_AUS,$HB0)
+  AWT ($HB0,$M316,$M317,$F96)
+  NICHT (Seq2_KT_AUS,$HB0)
+  AWT ($HB0,$M318,$M319,$F97)
+  NICHT (Seq3_KT_AUS,$HB0)
+  AWT ($HB0,$M320,$M321,$F98)
+  NICHT (Seq4_KT_AUS,$HB0)
+  AWT ($HB0,$M322,$M323,$F99)
+  NICHT (Seq5_KT_AUS,$HB0)
+  AWT ($HB0,$M324,$M325,$F100)
+  NICHT (Seq6_KT_AUS,$HB0)
+  AWT ($HB0,$M326,$M327,$F101)
+  NICHT (Seq7_KT_AUS,$HB0)
+  AWT ($HB0,$M328,$M329,$F102)
+  NICHT (Seq8_KT_AUS,$HB0)
+  AWT ($HB0,$M330,$M331,$F103)
+  NICHT (Seq9_KT_AUS,$HB0)
+  AWT ($HB0,$M332,$M333,$F104)
+  NICHT (Seq10_KT_AUS,$HB0)
+  AWT ($HB0,$M334,$M335,$F105)
+  ADSU (10,$F96,$F97,$F98,$F99,$F100,$F101,$F102,$F103,$F104,
+        $F105,9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,Summe_KT_Seq_AUS)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLOH (Summe_KT_Seq_AUS,$M336,Seq_KT_Aus_DIGZ)
+  ;*****************************************************************
+  ;*** Seite 114
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_1,KT1_BStd>24,$B286)
+  UNDMN (2,Anf.Turbo_1-4,Sammelst.KT_1,1,Nachtbetrieb_KT,
+         $WSCRATCH,$B287)
+  UNDMN (11,$B286,Seq_KT_Aus_DIGZ,Seq2_KT_AUS,Seq3_KT_AUS,
+         Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B288,
+         $WSCRATCH)
+  RSS ($B288,$B287,KT-Folge_1,Seq1_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 115
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_2,KT2_BStd>24,$B289)
+  UNDMN (2,Anf.Turbo_1-4,Sammelst.KT_2,1,Nachtbetrieb_KT,
+         $WSCRATCH,$B290)
+  UNDMN (11,$B289,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq3_KT_AUS,
+         Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B291,
+         $WSCRATCH)
+  RSS ($B291,$B290,KT-Folge_2,Seq2_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 116
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_3,KT3_BStd>24,$B292)
+  UNDMN (2,Anf.Turbo_1-4,Sammelst.KT_3,1,Nachtbetrieb_KT,
+         $WSCRATCH,$B293)
+  UNDMN (11,$B292,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B294,
+         $WSCRATCH)
+  RSS ($B294,$B293,KT-Folge_3,Seq3_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 117
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_4,KT4_BStd>24,$B295)
+  NAND2 (Sammelst.KT_4,Anf.Turbo_1-4,$B296)
+  UNDMN (11,$B295,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B297,
+         $WSCRATCH)
+  RSS ($B297,$B296,KT-Folge_4,Seq4_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 118
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_5,KT5_BStd>24,$B298)
+  NAND2 (Sammelst.KT_5,Anf.Turbo_1-4,$B299)
+  UNDMN (11,$B298,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq6_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B300,
+         $WSCRATCH)
+  RSS ($B300,$B299,KT-Folge_5,Seq5_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 119
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_6,KT6_BStd>24,$B301)
+  NAND2 (Sammelst.KT_6,Anf.Turbo_1-4,$B302)
+  UNDMN (11,$B301,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq5_KT_AUS,Seq7_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B303,
+         $WSCRATCH)
+  RSS ($B303,$B302,KT-Folge_6,Seq6_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 120
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_7,KT7_BStd>24,$B304)
+  NAND2 (Sammelst.KT_7,Anf.Turbo_1-4,$B305)
+  UNDMN (11,$B304,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,
+         Seq8_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B306,
+         $WSCRATCH)
+  RSS ($B306,$B305,KT-Folge_7,Seq7_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 121
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_8,KT8_BStd>24,$B307)
+  NAND2 (Sammelst.KT_8,Anf.Turbo_1-4,$B308)
+  UNDMN (11,$B307,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,
+         Seq7_KT_AUS,Seq9_KT_AUS,Seq10_KT_AUS,0,$B309,
+         $WSCRATCH)
+  RSS ($B309,$B308,KT-Folge_8,Seq8_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 122
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_9,KT9_BStd>24,$B310)
+  NAND2 (Sammelst.KT_9,Anf.Turbo_1-4,$B311)
+  UNDMN (11,$B310,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,
+         Seq7_KT_AUS,Seq8_KT_AUS,Seq10_KT_AUS,0,$B312,
+         $WSCRATCH)
+  RSS ($B312,$B311,KT-Folge_9,Seq9_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 123
+  ;*****************************************************************
+  UND21 (Anf.Turbo_1-4,Sammelst.KT_10,KT10_BStd>24,$B313)
+  UNDMN (2,Anf.Turbo_1-4,Sammelst.KT_10,1,Nachtbetrieb_KT,
+         $WSCRATCH,$B314)
+  UNDMN (11,$B313,Seq_KT_Aus_DIGZ,Seq1_KT_AUS,Seq2_KT_AUS,
+         Seq3_KT_AUS,Seq4_KT_AUS,Seq5_KT_AUS,Seq6_KT_AUS,
+         Seq7_KT_AUS,Seq8_KT_AUS,Seq9_KT_AUS,0,$B315,
+         $WSCRATCH)
+  RSS ($B315,$B314,KT-Folge_10,Seq10_KT_AUS)
+  ;*****************************************************************
+  ;*** Seite 124
+  ;*****************************************************************
+  SETMEL ($M337,1,KT-Folge_1,&&21KA02-000BM11,WERR_130_11)
+  SETMEL ($M338,1,KT-Folge_2,&&21KA02-000BM12,WERR_130_12)
+  SETMEL ($M339,1,KT-Folge_3,&&21KA02-000BM13,WERR_130_13)
+  SETMEL ($M340,1,KT-Folge_4,&&21KA02-000BM14,WERR_130_14)
+  SETMEL ($M341,1,KT-Folge_5,&&21KA02-000BM15,WERR_130_15)
+  SETMEL ($M342,1,KT-Folge_6,&&21KA02-000BM16,WERR_131_00)
+  ;*****************************************************************
+  ;*** Seite 125
+  ;*****************************************************************
+  SETMEL ($M343,1,KT-Folge_7,&&21KA02-000BM17,WERR_131_01)
+  SETMEL ($M344,1,KT-Folge_8,&&21KA02-000BM18,WERR_131_02)
+  SETMEL ($M345,1,KT-Folge_9,&&21KA02-000BM19,WERR_131_03)
+  SETMEL ($M346,1,KT-Folge_10,&&21KA02-000BM20,WERR_131_04)
+  ;*****************************************************************
+  ;*** Seite 126
+  ;*****************************************************************
+  ;Anzahl der geöffneten
+  ;KT Absperrklappen
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (K1_GOI121_AUF,$HB0)
+  AWT ($HB0,$M347,$M348,$F106)
+  NICHT (K2_GOI122_AUF,$HB0)
+  AWT ($HB0,$M349,$M350,$F107)
+  NICHT (K3_GOI123_AUF,$HB0)
+  AWT ($HB0,$M351,$M352,$F108)
+  NICHT (K4_GOI124_AUF,$HB0)
+  AWT ($HB0,$M353,$M354,$F109)
+  NICHT (K5_GOI125_AUF,$HB0)
+  AWT ($HB0,$M355,$M356,$F110)
+  NICHT (K6_GOI126_AUF,$HB0)
+  AWT ($HB0,$M357,$M358,$F111)
+  NICHT (K7_GOI127_AUF,$HB0)
+  AWT ($HB0,$M359,$M360,$F112)
+  NICHT (K8_GOI128_AUF,$HB0)
+  AWT ($HB0,$M361,$M362,$F113)
+  NICHT (K9_GOI129_AUF,$HB0)
+  AWT ($HB0,$M363,$M364,$F114)
+  NICHT (K10_GOI130_AUF,$HB0)
+  AWT ($HB0,$M365,$M366,$F115)
+  ADSU (10,$F106,$F107,$F108,$F109,$F110,$F111,$F112,$F113,
+        $F114,$F115,9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,Summe_KT_ASK_auf)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Anzahl der geöffneten
+  ;Turbo Absperrklappen
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (T1ASK_KüW_141AUF,$HB0)
+  AWT ($HB0,$M367,$M368,$F116)
+  NICHT (T2ASK_KüW_142AUF,$HB0)
+  AWT ($HB0,$M369,$M370,$F117)
+  NICHT (T3ASK_KüW_143AUF,$HB0)
+  AWT ($HB0,$M371,$M372,$F118)
+  NICHT (T4ASK_KüW_144AUF,$HB0)
+  AWT ($HB0,$M373,$M374,$F119)
+  AWT (KON01,$M375,$M376,$F120)
+  AWT (KON01,$M377,$M378,$F121)
+  AWT (KON01,$M379,$M380,$F122)
+  AWT (KON01,$M381,$M382,$F123)
+  AWT (KON01,$M383,$M384,$F124)
+  AWT (KON01,$M385,$M386,$F125)
+  ADSU (10,$F116,$F117,$F118,$F119,$F120,$F121,$F122,$F123,
+        $F124,$F125,9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,Summe_Turbo_ASK)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite 127
+  ;*****************************************************************
+  UNDMN (3,Anf_T4_Hand,T4_Vorwahl_Ein,Kälte_Gesamt_R0,9,
+         T1_Vorwahl_Ein,T2_Vorwahl_Ein,T3_Vorwahl_Ein,
+         Anf_F2_Hand,Anf_F3_Hand,Anf_F4_Hand,Anf_F5_Hand,
+         Anf_F6_Hand,Anf_F7_Hand,Anf_F1_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 128
+  ;*****************************************************************
+  UNDMN (3,T1_Vorwahl_Ein,ANf_T1_Hand,Kälte_Gesamt_R0,0,
+         T1_Hand,$WSCRATCH)
+  UNDMN (3,T2_Vorwahl_Ein,Anf_T2_Hand,Kälte_Gesamt_R0,0,
+         T2_Hand,$WSCRATCH)
+  UNDMN (3,T3_Vorwahl_Ein,Anf_T3_Hand,Kälte_Gesamt_R0,0,
+         T3_Hand,$WSCRATCH)
+  UNDMN (3,T4_Vorwahl_Ein,Anf_T4_Hand,Kälte_Gesamt_R0,0,
+         T4_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 129
+  ;*****************************************************************
+  UNDMN (1,ANf_T1_Hand,2,Anf_T2_Hand,Anf_T3_Hand,$B316,
+         $WSCRATCH)
+  UNDMN (1,Anf_T2_Hand,2,ANf_T1_Hand,Anf_T3_Hand,$B317,
+         $WSCRATCH)
+  UNDMN (1,Anf_T3_Hand,2,ANf_T1_Hand,Anf_T2_Hand,$B318,
+         $WSCRATCH)
+  ODRMN (3,$B316,$B317,$B318,0,$B319,$WSCRATCH)
+  UNDMN (1,$B319,7,T4_Hand,Anf_F1_Hand,Anf_F3_Hand,
+         Anf_F4_Hand,Anf_F5_Hand,Anf_F6_Hand,Anf_F7_Hand,
+         Anf_F2_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 130
+  ;*****************************************************************
+  UNDMN (1,ANf_T1_Hand,2,Anf_T2_Hand,Anf_T3_Hand,$B320,
+         $WSCRATCH)
+  UNDMN (1,Anf_T2_Hand,2,ANf_T1_Hand,Anf_T3_Hand,$B321,
+         $WSCRATCH)
+  UNDMN (1,Anf_T3_Hand,2,ANf_T1_Hand,Anf_T2_Hand,$B322,
+         $WSCRATCH)
+  ODRMN (3,$B320,$B321,$B322,0,$B323,$WSCRATCH)
+  UNDMN (2,$B323,T4_Hand,6,Anf_F1_Hand,Anf_F2_Hand,
+         Anf_F4_Hand,Anf_F5_Hand,Anf_F6_Hand,Anf_F7_Hand,
+         Anf_F3_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 131
+  ;*****************************************************************
+  UND21 (ANf_T1_Hand,Anf_T2_Hand,Anf_T3_Hand,$B324)
+  UND21 (Anf_T2_Hand,Anf_T3_Hand,ANf_T1_Hand,$B325)
+  UND21 (Anf_T3_Hand,ANf_T1_Hand,Anf_T2_Hand,$B326)
+  ODRMN (3,$B324,$B325,$B326,0,$B327,$WSCRATCH)
+  UNDMN (1,$B327,7,T4_Hand,Anf_F1_Hand,Anf_F2_Hand,
+         Anf_F3_Hand,Anf_F5_Hand,Anf_F6_Hand,Anf_F7_Hand,
+         Anf_F4_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 132
+  ;*****************************************************************
+  UND21 (ANf_T1_Hand,Anf_T2_Hand,Anf_T3_Hand,$B328)
+  UND21 (Anf_T2_Hand,Anf_T3_Hand,ANf_T1_Hand,$B329)
+  UND21 (Anf_T3_Hand,ANf_T1_Hand,Anf_T2_Hand,$B330)
+  ODRMN (3,$B328,$B329,$B330,0,$B331,$WSCRATCH)
+  UNDMN (2,$B331,T4_Hand,6,Anf_F1_Hand,Anf_F2_Hand,
+         Anf_F3_Hand,Anf_F4_Hand,Anf_F6_Hand,Anf_F7_Hand,
+         Anf_F5_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 133
+  ;*****************************************************************
+  UNDMN (3,Anf_T3_Hand,ANf_T1_Hand,Anf_T2_Hand,0,$B332,
+         $WSCRATCH)
+  UNDMN (1,$B332,7,T4_Hand,Anf_F1_Hand,Anf_F2_Hand,
+         Anf_F3_Hand,Anf_F4_Hand,Anf_F5_Hand,Anf_F7_Hand,
+         Anf_F6_Hand,$WSCRATCH)
+  UNDMN (3,Anf_T3_Hand,ANf_T1_Hand,Anf_T2_Hand,0,$B333,
+         $WSCRATCH)
+  UNDMN (2,$B333,T4_Hand,6,Anf_F1_Hand,Anf_F2_Hand,
+         Anf_F3_Hand,Anf_F4_Hand,Anf_F6_Hand,Anf_F5_Hand,
+         Anf_F7_Hand,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 134
+  ;*****************************************************************
+  ODR2 (Fall_1_Anf.T4,Anf_F1_Hand,$B334)
+  VVZ ($B334,$M387,$M388,Fall_1_Anf.T4N)
+  ODR2 (Fall_2_Anf.1.gr,Anf_F2_Hand,$B335)
+  VVZ ($B335,$M389,$M390,Fall_2_Anf.1.grN)
+  ODR2 (Fall_3_Anf.T4,Anf_F3_Hand,$B336)
+  VVZ ($B336,$M391,$M392,Fall_3_Anf.T4N)
+  ODR2 (Fall_4_Anf.2.gr,Anf_F4_Hand,$B337)
+  VVZ ($B337,$M393,$M394,Fall_4_Anf.2.grN)
+  ODR2 (Fall_5_Anf.T4,Anf_F5_Hand,$B338)
+  VVZ ($B338,$M395,$M396,Fall_5_Anf.T4N)
+  ODR2 (Fall_6_Anf.3.gr,Anf_F6_Hand,$B339)
+  VVZ ($B339,$M397,$M398,Fall_6_Anf.3.grN)
+  ODR2 (Fall_7_Anf.T4,Anf_F7_Hand,$B340)
+  VVZ ($B340,$M399,$M400,Fall_7_Anf.T4N)
+  ;*****************************************************************
+  ;*** Seite 135
+  ;*****************************************************************
+  ODRMN (7,Fall_1_Anf.T4N,Fall_2_Anf.1.grN,Fall_3_Anf.T4N,
+         Fall_4_Anf.2.grN,Fall_5_Anf.T4N,Fall_6_Anf.3.grN,
+         Fall_7_Anf.T4N,0,$B341,$WSCRATCH)
+  ODRMN (6,Fall_2_Anf.1.grN,Fall_3_Anf.T4N,Fall_4_Anf.2.grN,
+         Fall_5_Anf.T4N,Fall_6_Anf.3.grN,Fall_7_Anf.T4N,0,
+         $B342,$WSCRATCH)
+  UND2 (Fall_1_Anf.T4N,Fall_2_Anf.1.grN,$B343)
+  ODRMN (6,Fall_3_Anf.T4N,Fall_4_Anf.2.grN,Fall_5_Anf.T4N,
+         Fall_6_Anf.3.grN,Fall_7_Anf.T4N,$B343,0,$B344,
+         $WSCRATCH)
+  ODRMN (4,Fall_4_Anf.2.grN,Fall_5_Anf.T4N,Fall_6_Anf.3.grN,
+         Fall_7_Anf.T4N,0,$B345,$WSCRATCH)
+  UND2 (Fall_3_Anf.T4N,Fall_4_Anf.2.grN,$B346)
+  ODRMN (4,Fall_5_Anf.T4N,Fall_6_Anf.3.grN,Fall_7_Anf.T4N,
+         $B346,0,$B347,$WSCRATCH)
+  UND2 (Fall_5_Anf.T4N,Fall_6_Anf.3.grN,$B348)
+  ODRMN (3,Fall_7_Anf.T4N,Fall_6_Anf.3.grN,$B348,0,$B349,
+         $WSCRATCH)
+  ;6 KT
+  ; 
+  ;3 KT
+  ; 
+  ;2 KT
+  ; 
+  ;5 KT
+  ; 
+  UND2 (Fall_5_Anf.T4N,Fall_6_Anf.3.grN,$B350)
+  ODR2 ($B350,Fall_7_Anf.T4N,$B351)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($B341,$HB0)
+  AWT ($HB0,$M401,$M402,$F126)
+  NICHT ($B341,$HB0)
+  AWT ($HB0,$M403,$M404,$F127)
+  NICHT ($B342,$HB0)
+  AWT ($HB0,$M405,$M406,$F128)
+  NICHT ($B344,$HB0)
+  AWT ($HB0,$M407,$M408,$F129)
+  NICHT ($B344,$HB0)
+  AWT ($HB0,$M409,$M410,$F130)
+  NICHT ($B345,$HB0)
+  AWT ($HB0,$M411,$M412,$F131)
+  NICHT ($B347,$HB0)
+  AWT ($HB0,$M413,$M414,$F132)
+  NICHT ($B347,$HB0)
+  AWT ($HB0,$M415,$M416,$F133)
+  NICHT ($B349,$HB0)
+  AWT ($HB0,$M417,$M418,$F134)
+  NICHT ($B351,$HB0)
+  AWT ($HB0,$M419,$M420,$F135)
+  ADSU (10,$F126,$F127,$F128,$F129,$F130,$F131,$F132,$F133,
+        $F134,$F135,9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,Anzahl_gef.KT)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite 136
+  ;*****************************************************************
+  UND11 (KT1_SOLL_EIN,Sammelst.KT_1,$B352)
+  RSS ($B352,$B358,KT1_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_1,$M421,$M422,$B353)
+  UND11 ($B353,Sammelst.KT_1,$B354)
+  NICHT (Sammelst.KT_1,$HB1)
+  RSS ($B354,$HB1,$B355,$WSCRATCH)
+  UND11 ($B355,KT-Folge_1,$B356)
+  UND11 (KT-Folge_2,Sammelst.KT_1,$B357)
+  ODRMN (3,Sammelst.KT_1,$B356,$B357,0,$B358,$WSCRATCH)
+  UND11 (KT2_SOLL_EIN,Sammelst.KT_2,$B359)
+  RSS ($B359,$B365,KT2_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_2,$M423,$M424,$B360)
+  UND11 ($B360,Sammelst.KT_2,$B361)
+  NICHT (Sammelst.KT_2,$HB1)
+  RSS ($B361,$HB1,$B362,$WSCRATCH)
+  UND11 ($B362,KT-Folge_2,$B363)
+  UND11 (KT-Folge_3,Sammelst.KT_2,$B364)
+  ODRMN (3,Sammelst.KT_2,$B363,$B364,0,$B365,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 137
+  ;*****************************************************************
+  UND11 (KT3_SOLL_EIN,Sammelst.KT_3,$B366)
+  RSS ($B366,$B372,KT3_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_3,$M425,$M426,$B367)
+  UND11 ($B367,Sammelst.KT_3,$B368)
+  NICHT (Sammelst.KT_3,$HB1)
+  RSS ($B368,$HB1,$B369,$WSCRATCH)
+  UND11 ($B369,KT-Folge_3,$B370)
+  UND11 (KT-Folge_4,Sammelst.KT_3,$B371)
+  ODRMN (3,Sammelst.KT_3,$B370,$B371,0,$B372,$WSCRATCH)
+  UND11 (KT4_SOLL_EIN,Sammelst.KT_4,$B373)
+  RSS ($B373,$B379,KT4_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_4,$M427,$M428,$B374)
+  UND11 ($B374,Sammelst.KT_4,$B375)
+  NICHT (Sammelst.KT_4,$HB1)
+  RSS ($B375,$HB1,$B376,$WSCRATCH)
+  UND11 ($B376,KT-Folge_4,$B377)
+  UND11 (KT-Folge_5,Sammelst.KT_4,$B378)
+  ODRMN (3,Sammelst.KT_4,$B377,$B378,0,$B379,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 138
+  ;*****************************************************************
+  UND11 (KT5_SOLL_EIN,Sammelst.KT_5,$B380)
+  RSS ($B380,$B386,KT5_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_5,$M429,$M430,$B381)
+  UND11 ($B381,Sammelst.KT_5,$B382)
+  NICHT (Sammelst.KT_5,$HB1)
+  RSS ($B382,$HB1,$B383,$WSCRATCH)
+  UND11 ($B383,KT-Folge_5,$B384)
+  UND11 (KT-Folge_6,Sammelst.KT_5,$B385)
+  ODRMN (3,Sammelst.KT_5,$B384,$B385,0,$B386,$WSCRATCH)
+  UND11 (KT6_SOLL_EIN,Sammelst.KT_6,$B387)
+  RSS ($B387,$B393,KT6_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_6,$M431,$M432,$B388)
+  UND11 ($B388,Sammelst.KT_6,$B389)
+  NICHT (Sammelst.KT_6,$HB1)
+  RSS ($B389,$HB1,$B390,$WSCRATCH)
+  UND11 ($B390,KT-Folge_6,$B391)
+  UND11 (KT-Folge_7,Sammelst.KT_6,$B392)
+  ODRMN (3,Sammelst.KT_6,$B391,$B392,0,$B393,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 139
+  ;*****************************************************************
+  UND11 (KT7_SOLL_EIN,Sammelst.KT_7,$B394)
+  RSS ($B394,$B400,KT7_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_7,$M433,$M434,$B395)
+  UND11 ($B395,Sammelst.KT_7,$B396)
+  NICHT (Sammelst.KT_7,$HB1)
+  RSS ($B396,$HB1,$B397,$WSCRATCH)
+  UND11 ($B397,KT-Folge_7,$B398)
+  UND11 (KT-Folge_8,Sammelst.KT_7,$B399)
+  ODRMN (3,Sammelst.KT_7,$B398,$B399,0,$B400,$WSCRATCH)
+  UND11 (KT8_SOLL_EIN,Sammelst.KT_8,$B401)
+  RSS ($B401,$B407,KT8_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_8,$M435,$M436,$B402)
+  UND11 ($B402,Sammelst.KT_8,$B403)
+  NICHT (Sammelst.KT_8,$HB1)
+  RSS ($B403,$HB1,$B404,$WSCRATCH)
+  UND11 ($B404,KT-Folge_8,$B405)
+  UND11 (KT-Folge_9,Sammelst.KT_8,$B406)
+  ODRMN (3,Sammelst.KT_8,$B405,$B406,0,$B407,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 140
+  ;*****************************************************************
+  UND11 (KT9_SOLL_EIN,Sammelst.KT_9,$B408)
+  RSS ($B408,$B414,KT9_nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_9,$M437,$M438,$B409)
+  UND11 ($B409,Sammelst.KT_9,$B410)
+  NICHT (Sammelst.KT_9,$HB1)
+  RSS ($B410,$HB1,$B411,$WSCRATCH)
+  UND11 ($B411,KT-Folge_9,$B412)
+  UND11 (KT-Folge_10,Sammelst.KT_9,$B413)
+  ODRMN (3,Sammelst.KT_9,$B412,$B413,0,$B414,$WSCRATCH)
+  UND11 (KT10_SOLL_EIN,Sammelst.KT_10,$B415)
+  RSS ($B415,$B421,KT10nicht_bereit,$WSCRATCH)
+  VVZ (KT-Folge_10,$M439,$M440,$B416)
+  UND11 ($B416,Sammelst.KT_10,$B417)
+  NICHT (Sammelst.KT_10,$HB1)
+  RSS ($B417,$HB1,$B418,$WSCRATCH)
+  UND11 ($B418,KT-Folge_10,$B419)
+  UND11 (KT-Folge_1,Sammelst.KT_10,$B420)
+  ODRMN (3,Sammelst.KT_10,$B419,$B420,0,$B421,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite 141
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (KT1_nicht_bereit,$HB0)
+  AWT ($HB0,$M441,$M442,$F137)
+  NICHT (KT2_nicht_bereit,$HB0)
+  AWT ($HB0,$M443,$M444,$F138)
+  NICHT (KT3_nicht_bereit,$HB0)
+  AWT ($HB0,$M445,$M446,$F139)
+  NICHT (KT4_nicht_bereit,$HB0)
+  AWT ($HB0,$M447,$M448,$F140)
+  NICHT (KT5_nicht_bereit,$HB0)
+  AWT ($HB0,$M449,$M450,$F141)
+  NICHT (KT6_nicht_bereit,$HB0)
+  AWT ($HB0,$M451,$M452,$F142)
+  NICHT (KT7_nicht_bereit,$HB0)
+  AWT ($HB0,$M453,$M454,$F143)
+  NICHT (KT8_nicht_bereit,$HB0)
+  AWT ($HB0,$M455,$M456,$F144)
+  NICHT (KT9_nicht_bereit,$HB0)
+  AWT ($HB0,$M457,$M458,$F145)
+  NICHT (KT10nicht_bereit,$HB0)
+  AWT ($HB0,$M459,$M460,$F146)
+  ADSU (10,$F137,$F138,$F139,$F140,$F141,$F142,$F143,$F144,
+        $F145,$F146,9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,Anzahl_gest.KT)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MELEIN (&&21KA24-902BM90,1,$B422,WERR_163-12)
+  AWT ($B422,Anzahl_gef.KT,$M461,$F136)
+  ADD2 (Anzahl_gest.KT,$F136,KorrAnzahl_gefKT)
+  ;NEU 27.05.99
+  ;Anforderung aller
+  ;KT Absperrklappen
+  ;wenn bei Stillstand
+  ;Anforderung Dosierung
+  ;Biozid.
+  ; 
+  ;*****************************************************************
+  ;*** Seite 142
+  ;*****************************************************************
+  VGLOH (KorrAnzahl_gefKT,$M462,1_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M463,2_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M464,3_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M465,4_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M466,5_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M467,6_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M468,7_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M469,8_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M470,9_KT_gefordert)
+  VGLOH (KorrAnzahl_gefKT,$M471,10_KT_gefordert)
+  ;*****************************************************************
+  ;*** Seite 143
+  ;*****************************************************************
+  UND2 (KT-Folge_1,2_KT_gefordert,KT_Seq1_Anf.KT1)
+  UND2 (KT-Folge_1,2_KT_gefordert,KT_Seq1_Anf.KT2)
+  UND2 (KT-Folge_1,3_KT_gefordert,KT_Seq1_Anf.KT3)
+  UND2 (KT-Folge_1,4_KT_gefordert,KT_Seq1_Anf.KT4)
+  UND2 (KT-Folge_1,5_KT_gefordert,KT_Seq1_Anf.KT5)
+  UND2 (KT-Folge_1,6_KT_gefordert,KT_Seq1_Anf.KT6)
+  UND2 (KT-Folge_1,7_KT_gefordert,KT_Seq1_Anf.KT7)
+  UND2 (KT-Folge_1,8_KT_gefordert,KT_Seq1_Anf.KT8)
+  UND2 (KT-Folge_1,9_KT_gefordert,KT_Seq1_Anf.KT9)
+  UND2 (KT-Folge_1,10_KT_gefordert,KT_Seq1_Anf.KT10)
+  ;*****************************************************************
+  ;*** Seite 144
+  ;*****************************************************************
+  UND2 (KT-Folge_2,2_KT_gefordert,KT_Seq2_Anf.KT2)
+  UND2 (KT-Folge_2,2_KT_gefordert,KT_Seq2_Anf.KT3)
+  UND2 (KT-Folge_2,3_KT_gefordert,KT_Seq2_Anf.KT4)
+  UND2 (KT-Folge_2,4_KT_gefordert,KT_Seq2_Anf.KT5)
+  UND2 (KT-Folge_2,5_KT_gefordert,KT_Seq2_Anf.KT6)
+  UND2 (KT-Folge_2,6_KT_gefordert,KT_Seq2_Anf.KT7)
+  UND2 (KT-Folge_2,7_KT_gefordert,KT_Seq2_Anf.KT8)
+  UND2 (KT-Folge_2,8_KT_gefordert,KT_Seq2_Anf.KT9)
+  UND2 (KT-Folge_2,9_KT_gefordert,KT_Seq2_Anf.KT10)
+  UND2 (KT-Folge_2,10_KT_gefordert,KT_Seq2_Anf.KT1)
+  ;*****************************************************************
+  ;*** Seite 145
+  ;*****************************************************************
+  UND2 (KT-Folge_3,2_KT_gefordert,KT_Seq3_Anf.KT3)
+  UND2 (KT-Folge_3,2_KT_gefordert,KT_Seq3_Anf.KT4)
+  UND2 (KT-Folge_3,3_KT_gefordert,KT_Seq3_Anf.KT5)
+  UND2 (KT-Folge_3,4_KT_gefordert,KT_Seq3_Anf.KT6)
+  UND2 (KT-Folge_3,5_KT_gefordert,KT_Seq3_Anf.KT7)
+  UND2 (KT-Folge_3,6_KT_gefordert,KT_Seq3_Anf.KT8)
+  UND2 (KT-Folge_3,7_KT_gefordert,KT_Seq3_Anf.KT9)
+  UND2 (KT-Folge_3,8_KT_gefordert,KT_Seq3_Anf.KT10)
+  UND2 (KT-Folge_3,9_KT_gefordert,KT_Seq3_Anf.KT1)
+  UND2 (KT-Folge_3,10_KT_gefordert,KT_Seq3_Anf.KT2)
+  ;*****************************************************************
+  ;*** Seite 146
+  ;*****************************************************************
+  UND2 (KT-Folge_4,2_KT_gefordert,KT_Seq4_Anf.KT4)
+  UND2 (KT-Folge_4,2_KT_gefordert,KT_Seq4_Anf.KT5)
+  UND2 (KT-Folge_4,3_KT_gefordert,KT_Seq4_Anf.KT6)
+  UND2 (KT-Folge_4,4_KT_gefordert,KT_Seq4_Anf.KT7)
+  UND2 (KT-Folge_4,5_KT_gefordert,KT_Seq4_Anf.KT8)
+  UND2 (KT-Folge_4,6_KT_gefordert,KT_Seq4_Anf.KT9)
+  UND2 (KT-Folge_4,7_KT_gefordert,KT_Seq4_Anf.KT10)
+  UND2 (KT-Folge_4,8_KT_gefordert,KT_Seq4_Anf.KT1)
+  UND2 (KT-Folge_4,9_KT_gefordert,KT_Seq4_Anf.KT2)
+  UND2 (KT-Folge_4,10_KT_gefordert,KT_Seq4_Anf.KT3)
+  ;*****************************************************************
+  ;*** Seite 147
+  ;*****************************************************************
+  UND2 (KT-Folge_5,2_KT_gefordert,KT_Seq5_Anf.KT5)
+  UND2 (KT-Folge_5,2_KT_gefordert,KT_Seq5_Anf.KT6)
+  UND2 (KT-Folge_5,3_KT_gefordert,KT_Seq5_Anf.KT7)
+  UND2 (KT-Folge_5,4_KT_gefordert,KT_Seq5_Anf.KT8)
+  UND2 (KT-Folge_5,5_KT_gefordert,KT_Seq5_Anf.KT9)
+  UND2 (KT-Folge_5,6_KT_gefordert,KT_Seq5_Anf.KT10)
+  UND2 (KT-Folge_5,7_KT_gefordert,KT_Seq5_Anf.KT1)
+  UND2 (KT-Folge_5,8_KT_gefordert,KT_Seq5_Anf.KT2)
+  UND2 (KT-Folge_5,9_KT_gefordert,KT_Seq5_Anf.KT3)
+  UND2 (KT-Folge_5,10_KT_gefordert,KT_Seq5_Anf.KT4)
+  ;*****************************************************************
+  ;*** Seite 148
+  ;*****************************************************************
+  UND2 (KT-Folge_6,2_KT_gefordert,KT_Seq6_Anf.KT6)
+  UND2 (KT-Folge_6,2_KT_gefordert,KT_Seq6_Anf.KT7)
+  UND2 (KT-Folge_6,3_KT_gefordert,KT_Seq6_Anf.KT8)
+  UND2 (KT-Folge_6,4_KT_gefordert,KT_Seq6_Anf.KT9)
+  UND2 (KT-Folge_6,5_KT_gefordert,KT_Seq6_Anf.KT10)
+  UND2 (KT-Folge_6,6_KT_gefordert,KT_Seq6_Anf.KT1)
+  UND2 (KT-Folge_6,7_KT_gefordert,KT_Seq6_Anf.KT2)
+  UND2 (KT-Folge_6,8_KT_gefordert,KT_Seq6_Anf.KT3)
+  UND2 (KT-Folge_6,9_KT_gefordert,KT_Seq6_Anf.KT4)
+  UND2 (KT-Folge_6,10_KT_gefordert,KT_Seq6_Anf.KT5)
+  ;*****************************************************************
+  ;*** Seite 149
+  ;*****************************************************************
+  UND2 (KT-Folge_7,2_KT_gefordert,KT_Seq7_Anf.KT7)
+  UND2 (KT-Folge_7,2_KT_gefordert,KT_Seq7_Anf.KT8)
+  UND2 (KT-Folge_7,3_KT_gefordert,KT_Seq7_Anf.KT9)
+  UND2 (KT-Folge_7,4_KT_gefordert,KT_Seq7_Anf.KT10)
+  UND2 (KT-Folge_7,5_KT_gefordert,KT_Seq7_Anf.KT1)
+  UND2 (KT-Folge_7,6_KT_gefordert,KT_Seq7_Anf.KT2)
+  UND2 (KT-Folge_7,7_KT_gefordert,KT_Seq7_Anf.KT3)
+  UND2 (KT-Folge_7,8_KT_gefordert,KT_Seq7_Anf.KT4)
+  UND2 (KT-Folge_7,9_KT_gefordert,KT_Seq7_Anf.KT5)
+  UND2 (KT-Folge_7,10_KT_gefordert,KT_Seq7_Anf.KT6)
+  ;*****************************************************************
+  ;*** Seite 150
+  ;*****************************************************************
+  UND2 (KT-Folge_8,2_KT_gefordert,KT_Seq8_Anf.KT8)
+  UND2 (KT-Folge_8,2_KT_gefordert,KT_Seq8_Anf.KT9)
+  UND2 (KT-Folge_8,3_KT_gefordert,KT_Seq8_Anf.KT10)
+  UND2 (KT-Folge_8,4_KT_gefordert,KT_Seq8_Anf.KT1)
+  UND2 (KT-Folge_8,5_KT_gefordert,KT_Seq8_Anf.KT2)
+  UND2 (KT-Folge_8,6_KT_gefordert,KT_Seq8_Anf.KT3)
+  UND2 (KT-Folge_8,7_KT_gefordert,KT_Seq8_Anf.KT4)
+  UND2 (KT-Folge_8,8_KT_gefordert,KT_Seq8_Anf.KT5)
+  UND2 (KT-Folge_8,9_KT_gefordert,KT_Seq8_Anf.KT6)
+  UND2 (KT-Folge_8,10_KT_gefordert,KT_Seq8_Anf.KT7)
+  ;*****************************************************************
+  ;*** Seite 151
+  ;*****************************************************************
+  UND2 (KT-Folge_9,2_KT_gefordert,KT_Seq9_Anf.KT9)
+  UND2 (KT-Folge_9,2_KT_gefordert,KT_Seq9_Anf.KT10)
+  UND2 (KT-Folge_9,3_KT_gefordert,KT_Seq9_Anf.KT1)
+  UND2 (KT-Folge_9,4_KT_gefordert,KT_Seq9_Anf.KT2)
+  UND2 (KT-Folge_9,5_KT_gefordert,KT_Seq9_Anf.KT3)
+  UND2 (KT-Folge_9,6_KT_gefordert,KT_Seq9_Anf.KT4)
+  UND2 (KT-Folge_9,7_KT_gefordert,KT_Seq9_Anf.KT5)
+  UND2 (KT-Folge_9,8_KT_gefordert,KT_Seq9_Anf.KT6)
+  UND2 (KT-Folge_9,9_KT_gefordert,KT_Seq9_Anf.KT7)
+  UND2 (KT-Folge_9,10_KT_gefordert,KT_Seq9_Anf.KT8)
+  ;*****************************************************************
+  ;*** Seite 152
+  ;*****************************************************************
+  UND2 (KT-Folge_10,2_KT_gefordert,KT_SeqA_Anf.KT10)
+  UND2 (KT-Folge_10,2_KT_gefordert,KT_SeqA_Anf.KT1)
+  UND2 (KT-Folge_10,3_KT_gefordert,KT_SeqA_Anf.KT2)
+  UND2 (KT-Folge_10,4_KT_gefordert,KT_SeqA_Anf.KT3)
+  UND2 (KT-Folge_10,5_KT_gefordert,KT_SeqA_Anf.KT4)
+  UND2 (KT-Folge_10,6_KT_gefordert,KT_SeqA_Anf.KT5)
+  UND2 (KT-Folge_10,7_KT_gefordert,KT_SeqA_Anf.KT6)
+  UND2 (KT-Folge_10,8_KT_gefordert,KT_SeqA_Anf.KT7)
+  UND2 (KT-Folge_10,9_KT_gefordert,KT_SeqA_Anf.KT8)
+  UND2 (KT-Folge_10,10_KT_gefordert,KT_SeqA_Anf.KT9)
+  ;*****************************************************************
+  ;*** Seite 153
+  ;*****************************************************************
+  ODRMN (10,KT_Seq1_Anf.KT1,KT_Seq2_Anf.KT1,KT_Seq3_Anf.KT1,
+         KT_Seq4_Anf.KT1,KT_Seq5_Anf.KT1,KT_Seq6_Anf.KT1,
+         KT_Seq7_Anf.KT1,KT_Seq8_Anf.KT1,KT_Seq9_Anf.KT1,
+         KT_SeqA_Anf.KT1,0,$B423,$WSCRATCH)
+  UND11 ($B423,Nachtbetrieb_KT,KT1_SOLL_EIN)
+  UND2 (KT1_SOLL_EIN,Sammelst.KT_1,$B424)
+  VVZ ($B424,$M472,$M473,Freigabe_KT1)
+  SETMEL ($M474,1,Freigabe_KT1,&&21KA02-901BM90,WERR130-0)
+  ODRMN (10,KT_Seq1_Anf.KT2,KT_Seq2_Anf.KT2,KT_Seq3_Anf.KT2,
+         KT_Seq4_Anf.KT2,KT_Seq5_Anf.KT2,KT_Seq6_Anf.KT2,
+         KT_Seq7_Anf.KT2,KT_Seq8_Anf.KT2,KT_Seq9_Anf.KT2,
+         KT_SeqA_Anf.KT2,0,$B425,$WSCRATCH)
+  UND11 ($B425,Nachtbetrieb_KT,KT2_SOLL_EIN)
+  UND2 (KT2_SOLL_EIN,Sammelst.KT_2,$B426)
+  VVZ ($B426,$M475,$M476,Freigabe_KT2)
+  SETMEL ($M477,1,Freigabe_KT2,&&21KA02-902BM90,WERR130-1)
+  ;*****************************************************************
+  ;*** Seite 154
+  ;*****************************************************************
+  ODRMN (10,KT_Seq1_Anf.KT3,KT_Seq2_Anf.KT3,KT_Seq3_Anf.KT3,
+         KT_Seq4_Anf.KT3,KT_Seq5_Anf.KT3,KT_Seq6_Anf.KT3,
+         KT_Seq7_Anf.KT3,KT_Seq8_Anf.KT3,KT_Seq9_Anf.KT3,
+         KT_SeqA_Anf.KT3,0,$B427,$WSCRATCH)
+  UND11 ($B427,Nachtbetrieb_KT,KT3_SOLL_EIN)
+  VVZ ($B428,$M478,$M479,Freigabe_KT3)
+  UND2 (KT3_SOLL_EIN,Sammelst.KT_3,$B428)
+  SETMEL ($M480,1,Freigabe_KT3,&&21KA02-903BM90,WERR130-2)
+  ODRMN (10,KT_Seq1_Anf.KT4,KT_Seq2_Anf.KT4,KT_Seq3_Anf.KT4,
+         KT_Seq4_Anf.KT4,KT_Seq5_Anf.KT4,KT_Seq6_Anf.KT4,
+         KT_Seq7_Anf.KT4,KT_Seq8_Anf.KT4,KT_Seq9_Anf.KT4,
+         KT_SeqA_Anf.KT4,0,KT4_SOLL_EIN,$WSCRATCH)
+  VVZ ($B429,$M481,$M482,Freigabe_KT4)
+  UND2 (KT4_SOLL_EIN,Sammelst.KT_4,$B429)
+  SETMEL ($M483,1,Freigabe_KT4,&&21KA02-904BM90,WERR130-3)
+  ;*****************************************************************
+  ;*** Seite 155
+  ;*****************************************************************
+  ODRMN (10,KT_Seq1_Anf.KT5,KT_Seq2_Anf.KT5,KT_Seq3_Anf.KT5,
+         KT_Seq4_Anf.KT5,KT_Seq5_Anf.KT5,KT_Seq6_Anf.KT5,
+         KT_Seq7_Anf.KT5,KT_Seq8_Anf.KT5,KT_Seq9_Anf.KT5,
+         KT_SeqA_Anf.KT5,0,KT5_SOLL_EIN,$WSCRATCH)
+  UND2 (KT5_SOLL_EIN,Sammelst.KT_5,$B430)
+  VVZ ($B430,$M484,$M485,Freigabe_KT5)
+  SETMEL ($M486,1,Freigabe_KT5,&&21KA02-905BM90,WERR130-4)
+  ODRMN (10,KT_Seq1_Anf.KT6,KT_Seq2_Anf.KT6,KT_Seq3_Anf.KT6,
+         KT_Seq4_Anf.KT6,KT_Seq5_Anf.KT6,KT_Seq6_Anf.KT6,
+         KT_Seq7_Anf.KT6,KT_Seq8_Anf.KT6,KT_Seq9_Anf.KT6,
+         KT_SeqA_Anf.KT6,0,KT6_SOLL_EIN,$WSCRATCH)
+  UND2 (KT6_SOLL_EIN,Sammelst.KT_6,$B431)
+  VVZ ($B431,$M487,$M488,Freigabe_KT6)
+  SETMEL ($M489,1,Freigabe_KT6,&&21KA02-906BM90,WERR130-5)
+  ;*****************************************************************
+  ;*** Seite 156
+  ;*****************************************************************
+  ODRMN (10,KT_Seq1_Anf.KT7,KT_Seq2_Anf.KT7,KT_Seq3_Anf.KT7,
+         KT_Seq4_Anf.KT7,KT_Seq5_Anf.KT7,KT_Seq6_Anf.KT7,
+         KT_Seq7_Anf.KT7,KT_Seq8_Anf.KT7,KT_Seq9_Anf.KT7,
+         KT_SeqA_Anf.KT7,0,KT7_SOLL_EIN,$WSCRATCH)
+  UND2 (KT7_SOLL_EIN,Sammelst.KT_7,$B432)
+  VVZ ($B432,$M490,$M491,Freigabe_KT7)
+  SETMEL ($M492,1,Freigabe_KT7,&&21KA02-907BM90,WERR130-6)
+  ODRMN (10,KT_Seq1_Anf.KT8,KT_Seq2_Anf.KT8,KT_Seq3_Anf.KT8,
+         KT_Seq4_Anf.KT8,KT_Seq5_Anf.KT8,KT_Seq6_Anf.KT8,
+         KT_Seq7_Anf.KT8,KT_Seq8_Anf.KT8,KT_Seq9_Anf.KT8,
+         KT_SeqA_Anf.KT8,0,KT8_SOLL_EIN,$WSCRATCH)
+  UND2 (KT8_SOLL_EIN,Sammelst.KT_8,$B433)
+  VVZ ($B433,$M493,$M494,Freigabe_KT8)
+  SETMEL ($M495,1,Freigabe_KT8,&&21KA02-908BM90,WERR130-7)
+  ;*****************************************************************
+  ;*** Seite 157
+  ;*****************************************************************
+  ODRMN (10,KT_Seq1_Anf.KT9,KT_Seq2_Anf.KT9,KT_Seq3_Anf.KT9,
+         KT_Seq4_Anf.KT9,KT_Seq5_Anf.KT9,KT_Seq6_Anf.KT9,
+         KT_Seq7_Anf.KT9,KT_Seq8_Anf.KT9,KT_Seq9_Anf.KT9,
+         KT_SeqA_Anf.KT9,0,KT9_SOLL_EIN,$WSCRATCH)
+  UND2 (KT9_SOLL_EIN,Sammelst.KT_9,$B434)
+  VVZ ($B434,$M496,$M497,Freigabe_KT9)
+  SETMEL ($M498,1,Freigabe_KT9,&&21KA02-909BM90,WERR130-8)
+  ODRMN (10,KT_Seq1_Anf.KT10,KT_Seq2_Anf.KT10,
+         KT_Seq3_Anf.KT10,KT_Seq4_Anf.KT10,KT_Seq5_Anf.KT10,
+         KT_Seq6_Anf.KT10,KT_Seq7_Anf.KT10,KT_Seq8_Anf.KT10,
+         KT_Seq9_Anf.KT10,KT_SeqA_Anf.KT10,0,$B435,$WSCRATCH)
+  UND11 ($B435,Nachtbetrieb_KT,KT10_SOLL_EIN)
+  UND2 (KT10_SOLL_EIN,Sammelst.KT_10,$B436)
+  VVZ ($B436,$M499,$M500,Freigabe_KT10)
+  SETMEL ($M501,1,Freigabe_KT10,&&21KA02-910BM90,WERR130-9)
+  ENDE 
+  ENDMODUL 

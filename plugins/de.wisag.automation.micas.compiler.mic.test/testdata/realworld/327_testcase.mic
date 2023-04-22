@@ -1,0 +1,255 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MA-IN-04.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 13
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  K-GLT-PRIO1-AUS (1)
+  WordK  K-GLT-PRIO1-EIN (0)
+  WordK  K-GLT-PRIO2-AUS (1)
+  WordK  K-GLT-PRIO2-EIN (0)
+  WordK  K-GLT-PRIO3-AUS (1)
+  WordK  K-GLT-PRIO3-EIN (0)
+  WordK  K-GLT-PRIO4-AUS (1)
+  WordK  K-GLT-PRIO4-EIN (0)
+  WordK  K-GLT-PRIO5-AUS (1)
+  WordK  K-GLT-PRIO5-EIN (0)
+  WordV  ERR-INIT-GLT01
+  WordV  ERR-INIT-GLT02
+  WordV  ERR-INIT-GLT03
+  WordV  ERR-INIT-GLT04
+  WordV  ERR-INIT-GLT05
+  FloatK GRW-VOL-UEBERDEK (30.00)
+  FloatK GRW-VOL-UNTERDEK (15.00)
+  FloatK HYST-VOLUMSTROM (10.00)
+  FloatK ZT-VZ-FOLG.MASCH (1200.00)
+  FloatK ZT-VZ-VERBUN-EIN (160.00)
+  FloatK ZT-VERZ-ANF-BETR (60.00)
+  FloatK ZT-VZ-ABWAHL-MAS (1200.00)
+  FloatK 41-VOLUMEN-HYSTE (5.00)
+  FloatK 41-VOLUMEN-GRENZ (10.00)
+  FloatK 42-VOLUMEN-HYSTE (5.00)
+  FloatK 42-VOLUMEN-GRENZ (10.00)
+  FloatK 21+VOLUMEN-GRENZ (10.00)
+  FloatK 21+VOLUMEN-HYSTE (5.00)
+  FloatK 21-VOLUMEN-GRENZ (30.00)
+  FloatK 21-VOLUMEN-HYSTE (10.00)
+  FloatK ZT-VERZ-GZ-VOLUM (120.00)
+  WordK  KON-TRANSFER-EIN (1)
+  WordV  ZPK
+  WordV  ERR
+  WordK  K-GLT-PRIO6-AUS (1)
+  WordK  K-GLT-PRIO6-EIN (0)
+  WordV  ERR-INIT-GLT06
+  WordK  K-GLT-PRIO7-AUS (1)
+  WordK  K-GLT-PRIO8-AUS (1)
+  WordK  K-GLT-PRIO7-EIN (0)
+  WordK  K-GLT-PRIO8-EIN (0)
+  WordV  ERR-INIT-GLT08
+  WordV  ERR-INIT-GLT07
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &21KA93-913BF01 (64,1)
+  IPAMB &21KA93-913BF02 (64,5)
+  IPAMB &21KA93-913BF03 (64,9)
+  IPAMB &21KA93-913BF04 (64,13)
+  IPAMB &21KA93-913BF05 (65,1)
+  IPAMB &21KA93-913BF06 (65,5)
+  IPAMB &21KA93-913BF07 (65,9)
+  IPAMB &21KA93-913BF08 (65,13)
+  IPAAW &21KA93-913AA04 (80)
+  IPAAW &21KA93-913AA01 (87)
+  IPAAW &21KA93-913AA05 (81)
+  IPAAW &21KA93-913AA07 (82)
+  IPAAW &21KA93-913AA08 (83)
+  IPAAW &21KA93-913AA09 (84)
+  IPAAW &21KA93-913AA06 (90)
+  IPAAW &42KA93-913AA02 (114)
+  IPAAW &41KA93-913AA02 (116)
+  IPAAW &21KA93-913AA22 (118)
+  IPAAW &21KA93-913AA32 (120)
+  IPAAW &42KA93-913AA03 (115)
+  IPAAW &41KA93-913AA03 (117)
+  IPAAW &21KA93-913AA23 (119)
+  IPAAW &21KA93-913AA33 (121)
+  IPAAW &21KA93-913AA12 (122)
+  IPAMB &M0 (64,2)
+  IPAMB &M1 (64,3)
+  IPAMB &M2 (64,6)
+  IPAMB &M3 (64,7)
+  IPAMB &M4 (64,10)
+  IPAMB &M5 (64,11)
+  IPAMB &M6 (64,14)
+  IPAMB &M7 (64,15)
+  IPAMB &M8 (65,2)
+  IPAMB &M9 (65,3)
+  IPAMB &M10 (65,6)
+  IPAMB &M11 (65,7)
+  IPAMB &M12 (65,10)
+  IPAMB &M13 (65,11)
+  IPAMB &M14 (65,14)
+  IPAMB &M15 (65,15)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;26.03.09PS
+  ;Sollwertanpassung gemäss
+  ;Vorgabe MD:108m3/h für
+  ;Sollwert Volumenstrom
+  ;21KA10-901AA03
+  ;#######################
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-GLT-PRIO1-AUS,K-GLT-PRIO1-EIN,$WZERO,$WZERO,
+          &21KA93-913BF01,ERR-INIT-GLT01)
+  BEFAUS (1,K-GLT-PRIO2-AUS,K-GLT-PRIO2-EIN,$WZERO,$WZERO,
+          &21KA93-913BF02,ERR-INIT-GLT02)
+  BEFAUS (1,K-GLT-PRIO3-AUS,K-GLT-PRIO3-EIN,$WZERO,$WZERO,
+          &21KA93-913BF03,ERR-INIT-GLT03)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,K-GLT-PRIO4-AUS,K-GLT-PRIO4-EIN,$WZERO,$WZERO,
+          &21KA93-913BF04,ERR-INIT-GLT04)
+  BEFAUS (1,K-GLT-PRIO5-AUS,K-GLT-PRIO5-EIN,$WZERO,$WZERO,
+          &21KA93-913BF05,ERR-INIT-GLT05)
+  BEFAUS (1,K-GLT-PRIO6-AUS,K-GLT-PRIO6-EIN,$WZERO,$WZERO,
+          &21KA93-913BF06,ERR-INIT-GLT06)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  BEFAUS (1,K-GLT-PRIO7-AUS,K-GLT-PRIO7-EIN,$WZERO,$WZERO,
+          &21KA93-913BF07,ERR-INIT-GLT07)
+  BEFAUS (1,K-GLT-PRIO8-AUS,K-GLT-PRIO8-EIN,$WZERO,$WZERO,
+          &21KA93-913BF08,ERR-INIT-GLT08)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANAUS (GRW-VOL-UEBERDEK,KON-TRANSFER-EIN,&21KA93-913AA04,
+         ERR-INIT-GLT01)
+  ANAUS (GRW-VOL-UNTERDEK,KON-TRANSFER-EIN,&21KA93-913AA01,
+         ERR-INIT-GLT01)
+  ANAUS (HYST-VOLUMSTROM,KON-TRANSFER-EIN,&21KA93-913AA05,
+         ERR-INIT-GLT01)
+  ;Grenzwerte für
+  ;Gesamtverbund
+  ;Alle Erzeuger und
+  ;Verbraucher
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANAUS (ZT-VERZ-ANF-BETR,KON-TRANSFER-EIN,&21KA93-913AA07,
+         ERR-INIT-GLT01)
+  ANAUS (ZT-VZ-FOLG.MASCH,KON-TRANSFER-EIN,&21KA93-913AA08,
+         ERR-INIT-GLT01)
+  ANAUS (ZT-VZ-VERBUN-EIN,KON-TRANSFER-EIN,&21KA93-913AA09,
+         ERR-INIT-GLT01)
+  ANAUS (ZT-VZ-ABWAHL-MAS,KON-TRANSFER-EIN,&21KA93-913AA06,
+         ERR-INIT-GLT01)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANAUS (42-VOLUMEN-GRENZ,KON-TRANSFER-EIN,&42KA93-913AA02,
+         ERR-INIT-GLT01)
+  ANAUS (41-VOLUMEN-GRENZ,KON-TRANSFER-EIN,&41KA93-913AA02,
+         ERR-INIT-GLT01)
+  ANAUS (21+VOLUMEN-GRENZ,KON-TRANSFER-EIN,&21KA93-913AA22,
+         ERR-INIT-GLT01)
+  ANAUS (21-VOLUMEN-GRENZ,KON-TRANSFER-EIN,&21KA93-913AA32,
+         ERR-INIT-GLT01)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANAUS (42-VOLUMEN-HYSTE,KON-TRANSFER-EIN,&42KA93-913AA03,
+         ERR-INIT-GLT01)
+  ANAUS (41-VOLUMEN-HYSTE,KON-TRANSFER-EIN,&41KA93-913AA03,
+         ERR-INIT-GLT01)
+  ANAUS (21+VOLUMEN-HYSTE,KON-TRANSFER-EIN,&21KA93-913AA23,
+         ERR-INIT-GLT01)
+  ANAUS (21-VOLUMEN-HYSTE,KON-TRANSFER-EIN,&21KA93-913AA33,
+         ERR-INIT-GLT01)
+  ANAUS (ZT-VERZ-GZ-VOLUM,KON-TRANSFER-EIN,&21KA93-913AA12,
+         ERR-INIT-GLT01)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,5000)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&21KA93-913BF01,3,K-GLT-PRIO1-AUS,ZPK,
+          K-GLT-PRIO1-EIN,ERR)
+  MELEIN (&21KA93-913BF02,3,K-GLT-PRIO2-AUS,ZPK,
+          K-GLT-PRIO2-EIN,ERR)
+  MELEIN (&21KA93-913BF03,3,K-GLT-PRIO3-AUS,ZPK,
+          K-GLT-PRIO3-EIN,ERR)
+  MELEIN (&21KA93-913BF04,3,K-GLT-PRIO4-AUS,ZPK,
+          K-GLT-PRIO4-EIN,ERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&21KA93-913BF05,3,K-GLT-PRIO5-AUS,ZPK,
+          K-GLT-PRIO5-EIN,ERR)
+  MELEIN (&21KA93-913BF06,3,K-GLT-PRIO6-AUS,ZPK,
+          K-GLT-PRIO6-EIN,ERR)
+  MELEIN (&21KA93-913BF07,3,K-GLT-PRIO7-AUS,ZPK,
+          K-GLT-PRIO7-EIN,ERR)
+  MELEIN (&21KA93-913BF08,3,K-GLT-PRIO8-AUS,ZPK,
+          K-GLT-PRIO8-EIN,ERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&21KA93-913AA04,GRW-VOL-UEBERDEK,ERR)
+  ANEIN (&21KA93-913AA01,GRW-VOL-UNTERDEK,ERR)
+  ANEIN (&21KA93-913AA05,HYST-VOLUMSTROM,ERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&42KA93-913AA02,42-VOLUMEN-GRENZ,ERR)
+  ANEIN (&41KA93-913AA02,41-VOLUMEN-GRENZ,ERR)
+  ANEIN (&21KA93-913AA22,21+VOLUMEN-GRENZ,ERR)
+  ANEIN (&21KA93-913AA32,21-VOLUMEN-GRENZ,ERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&42KA93-913AA03,42-VOLUMEN-HYSTE,ERR)
+  ANEIN (&41KA93-913AA03,41-VOLUMEN-HYSTE,ERR)
+  ANEIN (&21KA93-913AA23,21+VOLUMEN-HYSTE,ERR)
+  ANEIN (&21KA93-913AA33,21-VOLUMEN-HYSTE,ERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&21KA93-913AA07,ZT-VERZ-ANF-BETR,ERR)
+  ANEIN (&21KA93-913AA08,ZT-VZ-FOLG.MASCH,ERR)
+  ANEIN (&21KA93-913AA09,ZT-VZ-VERBUN-EIN,ERR)
+  ANEIN (&21KA93-913AA06,ZT-VZ-ABWAHL-MAS,ERR)
+  ANEIN (&21KA93-913AA12,ZT-VERZ-GZ-VOLUM,ERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

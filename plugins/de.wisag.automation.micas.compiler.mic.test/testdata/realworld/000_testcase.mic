@@ -1,0 +1,1220 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : AR04_05.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 4
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordV  KLAPP-AUF-ANL-5
+  WordV  ANLAGE-7.1-EIN
+  WordV  ANLAGE-5-EIN
+  WordV  ANLAGE-8-EIN
+  WordV  FROST-LUFT-A-5
+  FloatK K-SW-ZL-ANL-7.1 (20.00)
+  WordV  ANLAGE-7-EIN
+  WordV  KEILR-ZL-ANL-5
+  FloatK K-SW-ZL-ANL-5 (20.00)
+  WordV  FROST-LUFT-A-7.1
+  WordV  VE-P-ST-ANL-7.1
+  WordV  KL-AUF-ANL-7.1
+  FloatV Y-REGLER-ZL-A5
+  FloatV VE-RL-TEMP-A-5
+  WordV  KEILR-AL-ANL-5
+  FloatV ZL-TEMP-ANL-7.1
+  FloatV VE-RL-TEMP-A-7.1
+  FloatV AUSSENTEMP
+  FloatV ZL-TEMP-ANL-5
+  WordV  BSV-2.1.5
+  WordV  ZL-EIN-ANL-5
+  WordV  QUITTIEREN
+  WordV  VE-P-EIN-ANL-7.1
+  WordV  ZL-ST-ANL-7.1
+  WordV  ZL-EIN-ANL-7.1
+  WordV  BMZ
+  WordV  VE-P-ST-ANL-5
+  WordV  VE-P-EIN-ANL-5
+  WordV  AL-EIN-ANL-5
+  WordV  AL-ST-ANL-5
+  WordV  ZL-ST-ANL-5
+  WordV  FROST-ANL.5
+  WordV  BSK-K.5.1
+  WordV  BSK-K.71.1
+  WordV  BSK-K.71.2
+  WordV  BSV-E.71.1
+  WordV  BSV-1.71.1
+  WordV  BSV-2.71.1
+  WordV  BSV-3.71.1
+  WordV  BSV-4.71.1
+  WordV  BSV-5.71.1
+  WordV  BSV-6.71.1
+  WordV  BSV-7.71.1
+  WordV  BSV-8.71.1
+  WordV  BSV-9.71.1
+  WordV  BSV-10.71.1
+  WordV  BSV-11.71-1
+  WordV  BSV-12.71.1
+  FloatK KON30 (30.00)
+  WordV  BETRIEBSBER-A5
+  FloatV Y-FROST-VE-A7.1
+  FloatV Y-FROST-VE-A5
+  WordK  KON1 (1)
+  WordV  BETRIEBSBER-A7.1
+  FloatV Y-REGLER-ZL-A7.1
+  WordV  AUSSENTEMP-<8GRD
+  FloatV SW-ZL-ANL-5
+  FloatV SW-ZL-ANL-7.1
+  WordV  FROST-ANL.7.1
+  WordV  FROSTAUSL-A7.1
+  WordV  SAMMELST-ANL.3
+  WordV  SAMMELST-ANL.4
+  WordV  FROSTAUSL-A5
+  FloatV VE-MAX-ANL.5
+  FloatV VE-MAX-ANL.7.1
+  WordV  ST-BSK-ANL.7.1
+  WordV  SAMMELST-ANL.7.1
+  WordV  SAMMELST-ANL.5
+  WordV  ZL-ST-ANL.8
+  WordV  ST-KLAPPE-A7.1
+  WordV  ST-KLAPPE-A5
+  WordV  ZL-ST-ANL.7
+  WordV  VE-PU-BER-A5
+  WordV  VE-PU-BER-A7.1
+  FloatK KON8 (8.00)
+  WordV  BSK-2.0.1
+  WordV  BSK-2.0.2
+  WordV  BSK-2.0.3
+  WordV  BSK-2.0.4
+  WordV  BSK-K.0.1
+  WordV  BSK-K.0.2
+  WordV  BSK-K.0.3
+  WordV  BSK-K.0.4
+  WordV  BSK-K.0.5
+  WordV  BSV-E.70.1
+  WordV  BSV-1.70.1
+  WordV  BSV-2.70.1
+  WordV  BSV-3.70.1
+  WordV  BSV-4.70.1
+  WordV  BSV-5.70.1
+  WordV  BSV-6.70.1
+  WordV  BSV-7.70.1
+  WordV  BSV-8.70.1
+  WordV  BSV-9.70.1
+  WordV  BSV-10.70.1
+  WordV  BSV-11.70.1
+  WordV  BSV-12.70.1
+  WordV  BSK-K.70.2
+  WordV  BSK-k.70.1
+  WordV  BSK-K.8.1
+  WordV  ST-BSK-ANL-5
+  WordV  ST-BSK-ANL.7
+  WordK  K-ANLAGE-5-EIN (0)
+  WordK  K-ANLAGE-7.1-EIN (0)
+  WordV  ZL-HAND-ANL-5
+  WordV  ZL-HAND-ANL-7.1
+  WordV  ANL-3-WRG-ST
+  WordV  ANL-4-WRG-ST
+  FloatK K0 (0.00)
+  WordK  KONSTANTE0 (0)
+  FloatV VE-FROST-ANL-5
+  FloatV VE-FROST-ANL-7.1
+  WordV  KEILR-ZL-A7.1
+  WordV  ANL-7-SAMMELST
+  WordV  KEILR-ZL-ANL-7
+  WordV  ANL-8-SAMMELST
+  WordV  KEILR-ZL-ANL-8
+  FloatK K2 (2.00)
+  FloatK KON5 (5.00)
+  FloatK KON20 (20.00)
+  FloatV AU-TEMP-FROST
+  WordV  ST-ZL-A5
+  WordV  ST-AL-A5
+  WordV  ST-VE-PUMPE-A5
+  WordV  ST-ZL-A7.1
+  WordV  ST-VE-PUMPE-A7.1
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &41LU16-100BF00 (79,1)
+  WordV  $WSCRATCH
+  IPAMB &41LU20-300BF00 (79,9)
+  WordK  $M0 (1)
+  IPAAW &41LU16-902AA03 (81)
+  WordK  $M1 (1)
+  IPAAW &41LU20-922AA03 (83)
+  IPAMB &41LU16-100BF00I (79,3)
+  IPAMB &41LU20-200BF00I (79,7)
+  IPAMB &41LU20-300BF00I (79,11)
+  IPAMB &41LU20-400BF00I (79,15)
+  IPAMB &41LU16-110ST02 (61,2)
+  IPAMB &41LU20-310ST02 (61,7)
+  IPAMB &41LU16-100BM01 (61,6)
+  IPAMB &41LU16-110BF01I (193,3)
+  IPAMB &41LU16-111BF01I (194,3)
+  IPAMB &41LU16-112BF01I (195,3)
+  IPAMB &41LU16-110ST01 (193,2)
+  IPAMB &41LU16-111ST01 (194,2)
+  IPAMB &41LU16-112ST01 (195,2)
+  IPAMB &41LU20-300BM01 (62,3)
+  IPAMB &41LU20-310BF01I (183,3)
+  IPAMB &41LU20-312BF01I (196,3)
+  IPAMB &41LU20-310ST01 (183,2)
+  IPAMB &41LU20-312ST01 (196,2)
+  IPAMB &41LU10-300ST00 (17,8)
+  IPAMB &41LU00-003BM01 (62,7)
+  WordV  $B1
+  IPAMB &41LU00-003-GF01 (61,10)
+  IPAMB &41LU16-110GF51 (169,1)
+  IPAMB &41LU16-110GF01 (169,6)
+  IPAMB &41LU20-311GF01 (169,12)
+  IPAMB &41LU20-100ST00 (48,8)
+  FloatK $M2 (5.00)
+  IPAMB &41LU20-210ST01 (182,2)
+  IPAMB &41LU20-410ST01 (184,2)
+  IPAMB &41LU10-318ST01 (1,3)
+  IPAMB &41LU20-118ST01 (32,3)
+  IPAMB &41LU16-110BM01 (193,0)
+  IPAMB &41LU20-310BM01 (183,0)
+  IPAMB &41LU20-311GF02 (169,15)
+  IPAMB &41LU20-311GF51 (165,13)
+  IPAMB &41LU20-311GF52 (165,14)
+  IPAMB &41LU20-311GF53 (165,15)
+  IPAMB &41LU20-311GF54 (166,0)
+  IPAMB &41LU20-311GF55 (166,1)
+  IPAMB &41LU20-311GF56 (166,2)
+  IPAMB &41LU20-311GF57 (166,3)
+  IPAMB &41LU20-311GF58 (166,4)
+  IPAMB &41LU20-311GF59 (166,5)
+  IPAMB &41LU20-311GF60 (166,6)
+  IPAMB &41LU20-311GF61 (166,7)
+  IPAMB &41LU20-311GF62 (166,8)
+  IPAMB &41LU20-311GF63 (166,9)
+  IPAMB &41LU00-211GF01 (167,14)
+  IPAMB &41LU00-211GF02 (167,15)
+  IPAMB &41LU00-211GF03 (168,0)
+  IPAMB &41LU00-211GF04 (168,1)
+  IPAMB &41LU00-211GF06 (169,7)
+  IPAMB &41LU00-211GF07 (169,8)
+  IPAMB &41LU00-211GF08 (169,14)
+  IPAMB &41LU00-211GF05 (169,3)
+  IPAMB &41LU00-210GF01 (169,11)
+  IPAMB &41LU20-211GF51 (165,0)
+  IPAMB &41LU20-211GF52 (165,1)
+  IPAMB &41LU20-211GF53 (165,2)
+  IPAMB &41LU20-211GF54 (165,3)
+  IPAMB &41LU20-211GF55 (165,4)
+  IPAMB &41LU20-211GF56 (165,5)
+  IPAMB &41LU20-211GF57 (165,6)
+  IPAMB &41LU20-211GF58 (165,7)
+  IPAMB &41LU20-211GF59 (165,8)
+  IPAMB &41LU20-211GF60 (165,9)
+  IPAMB &41LU20-211GF61 (165,10)
+  IPAMB &41LU20-211GF62 (165,11)
+  IPAMB &41LU20-211GF63 (165,12)
+  IPAMB &41LU20-211GF01 (169,9)
+  IPAMB &41LU20-210GF01 (169,10)
+  IPAMB &41LU20-411GF01 (169,13)
+  IPAAW &41LU20-310MW01 (67)
+  IPAAW &41LU20-312MW01 (65)
+  IPAAW &41LU10-001MW01 (254)
+  IPAAW &41LU16-110MW01 (63)
+  IPAAW &41LU16-112MW01 (64)
+  FloatK $M3 (0.00)
+  FloatK $M4 (100.00)
+  FloatV $F6
+  FloatV $F1
+  WordV  $B11
+  FloatK $M5 (600.00)
+  FloatK $M6 (0.00)
+  WordV  $B12
+  FloatK $M7 (1.00)
+  FloatK $M8 (0.50)
+  WordV  $B6
+  FloatK $M9 (1.00)
+  FloatK $M10 (0.50)
+  WordV  $B7
+  FloatK $M11 (10.00)
+  FloatK $M12 (1.00)
+  WordV  $B15
+  FloatK $M13 (29.00)
+  FloatK $M14 (2.00)
+  WordV  $B16
+  WordV  $HB1
+  WordV  $B17
+  WordV  $B8
+  FloatK $M15 (30.00)
+  FloatK $M16 (10.00)
+  FloatV $F8
+  FloatK $M17 (0.00)
+  WordK  $M18 (2)
+  FloatK $M19 (2.00)
+  FloatK $M20 (12.00)
+  FloatK $M21 (120.00)
+  FloatK $M22 (0.00)
+  FloatK $M23 (0.00)
+  FloatK $M24 (40.00)
+  FloatK $M25 (0.00)
+  FloatK $M26 (0.00)
+  FloatK $M27 (100.00)
+  FloatV $F9
+  FloatK $M28 (10.00)
+  FloatK $M29 (0.00)
+  WordK  $M30 (2)
+  FloatK $M31 (2.00)
+  FloatK $M32 (12.00)
+  FloatK $M33 (120.00)
+  FloatK $M34 (0.00)
+  FloatK $M35 (0.00)
+  FloatK $M36 (20.00)
+  FloatK $M37 (0.00)
+  FloatK $M38 (0.00)
+  FloatK $M39 (100.00)
+  FloatV $F2
+  FloatK $M40 (0.00)
+  FloatV $F3
+  WordV  $B14
+  FloatK $M41 (10.00)
+  FloatV $F7
+  FloatK $M42 (5.00)
+  FloatK $M43 (1.00)
+  WordV  $HB3
+  WordV  $B13
+  WordV  $B9
+  FloatK $M44 (10.00)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B10
+  FloatK $M45 (0.00)
+  FloatV $F4
+  FloatK $M46 (0.00)
+  FloatV $F5
+  FloatK $M47 (1.00)
+  WordV  $B2
+  FloatK $M48 (1.00)
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  FloatK $M49 (0.00)
+  FloatK $M50 (0.00)
+  FloatK $M51 (100.00)
+  FloatV $F15
+  FloatV $F10
+  WordV  $B29
+  FloatK $M52 (600.00)
+  FloatK $M53 (0.00)
+  WordV  $B30
+  FloatK $M54 (1.00)
+  FloatK $M55 (0.50)
+  WordV  $B24
+  FloatK $M56 (1.00)
+  FloatK $M57 (0.50)
+  WordV  $B25
+  FloatK $M58 (10.00)
+  FloatK $M59 (1.00)
+  WordV  $B33
+  FloatK $M60 (29.00)
+  FloatK $M61 (2.00)
+  WordV  $B34
+  WordV  $B35
+  WordV  $B26
+  FloatK $M62 (30.00)
+  FloatK $M63 (10.00)
+  FloatV $F17
+  FloatK $M64 (0.00)
+  WordK  $M65 (2)
+  FloatK $M66 (2.00)
+  FloatK $M67 (12.00)
+  FloatK $M68 (120.00)
+  FloatK $M69 (0.00)
+  FloatK $M70 (0.00)
+  FloatK $M71 (40.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (0.00)
+  FloatK $M74 (100.00)
+  FloatV $F18
+  FloatK $M75 (10.00)
+  FloatK $M76 (0.00)
+  WordK  $M77 (2)
+  FloatK $M78 (2.00)
+  FloatK $M79 (12.00)
+  FloatK $M80 (120.00)
+  FloatK $M81 (0.00)
+  FloatK $M82 (0.00)
+  FloatK $M83 (20.00)
+  FloatK $M84 (0.00)
+  FloatK $M85 (0.00)
+  FloatK $M86 (100.00)
+  FloatV $F11
+  FloatK $M87 (0.00)
+  FloatV $F12
+  WordV  $B32
+  FloatK $M88 (10.00)
+  FloatV $F16
+  FloatK $M89 (5.00)
+  FloatK $M90 (1.00)
+  WordV  $B31
+  WordV  $B27
+  FloatK $M91 (10.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B28
+  FloatK $M92 (0.00)
+  FloatV $F13
+  FloatK $M93 (0.00)
+  FloatV $F14
+  FloatK $M94 (1.00)
+  WordV  $B20
+  FloatK $M95 (1.00)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  FloatK $M96 (0.00)
+  FloatK $M97 (0.00)
+  FloatK $M98 (0.00)
+  FloatK $M99 (120.00)
+  FloatK $M100 (0.00)
+  WordV  $B38
+  FloatK $M101 (120.00)
+  FloatK $M102 (0.00)
+  WordV  $B39
+  FloatK $M103 (1.00)
+  FloatK $M104 (5.00)
+  WordV  $B40
+  WordV  $B41
+  FloatK $M105 (5.00)
+  WordV  $B42
+  WordV  $B43
+  FloatK $M106 (25.00)
+  FloatK $M107 (100.00)
+  FloatK $M108 (35.00)
+  FloatK $M109 (0.00)
+  FloatV $F19
+  FloatK $M110 (0.00)
+  FloatK $M111 (25.00)
+  FloatK $M112 (100.00)
+  FloatK $M113 (35.00)
+  FloatK $M114 (0.00)
+  FloatV $F20
+  FloatK $M115 (0.00)
+  WordV  $B44
+  WordV  $B45
+  FloatK $M116 (120.00)
+  FloatK $M117 (0.00)
+  WordV  $B46
+  WordV  $B47
+  FloatK $M118 (10.00)
+  FloatK $M119 (0.00)
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  FloatK $M120 (120.00)
+  FloatK $M121 (0.00)
+  WordV  $B52
+  WordV  $B53
+  FloatK $M122 (10.00)
+  FloatK $M123 (0.00)
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  IPAMB &41LU16-110ST03 (193,6)
+  WordV  $B57
+  IPAMB &41LU16-110ST10 (193,8)
+  WordV  $B58
+  IPAMB &41LU16-110ST07 (193,13)
+  WordV  $B59
+  IPAMB &41LU16-110ST09 (193,14)
+  WordV  $B60
+  WordV  $B61
+  FloatK $M124 (1.00)
+  FloatK $M125 (0.00)
+  WordV  $B62
+  WordK  $M126 (1)
+  IPAMB &41LU16-110ST14 (80,11)
+  IPAMB &41LU16-111ST03 (194,6)
+  WordV  $B63
+  IPAMB &41LU16-111ST10 (194,8)
+  WordV  $B64
+  IPAMB &41LU16-111ST07 (194,13)
+  WordV  $B65
+  IPAMB &41LU16-111ST09 (194,14)
+  WordV  $B66
+  WordV  $B67
+  FloatK $M127 (1.00)
+  FloatK $M128 (0.00)
+  WordV  $B68
+  WordK  $M129 (1)
+  IPAMB &41LU16-111ST14 (80,12)
+  WordV  $B69
+  WordK  $M130 (1)
+  IPAMB &41LU16-100GF00 (80,5)
+  IPAMB &41LU20-200GF00 (80,6)
+  IPAMB &41LU20-300GF00 (80,7)
+  IPAMB &41LU20-400GF00 (80,8)
+  IPAMB &41LU20-210ST03 (182,6)
+  WordV  $B70
+  IPAMB &41LU20-210ST10 (182,8)
+  WordV  $B71
+  IPAMB &41LU20-210ST07 (182,13)
+  WordV  $B72
+  IPAMB &41LU20-210ST09 (182,14)
+  WordV  $B73
+  WordV  $B74
+  FloatK $M131 (1.00)
+  FloatK $M132 (0.00)
+  WordV  $B75
+  WordK  $M133 (1)
+  IPAMB &41LU20-210ST14 (80,13)
+  IPAMB &41LU20-410ST03 (184,6)
+  WordV  $B76
+  IPAMB &41LU20-410ST10 (184,8)
+  WordV  $B77
+  IPAMB &41LU20-410ST07 (184,13)
+  WordV  $B78
+  IPAMB &41LU20-410ST09 (184,14)
+  WordV  $B79
+  WordV  $B80
+  FloatK $M134 (1.00)
+  FloatK $M135 (0.00)
+  WordV  $B81
+  WordK  $M136 (1)
+  IPAMB &41LU20-410ST14 (80,14)
+  WordV  $B82
+  IPAMB &41LU20-310ST03 (183,6)
+  WordV  $B83
+  IPAMB &41LU20-310ST10 (183,8)
+  WordV  $B84
+  IPAMB &41LU20-310ST07 (183,13)
+  WordV  $B85
+  IPAMB &41LU20-310ST09 (183,14)
+  WordV  $B86
+  WordV  $B87
+  FloatK $M137 (1.00)
+  FloatK $M138 (0.00)
+  WordV  $B88
+  WordK  $M139 (1)
+  IPAMB &41LU20-310ST14 (80,15)
+  WordK  $M140 (1)
+  IPAAW &41LU16-112AA01 (71)
+  WordK  $M141 (1)
+  IPAAW &41LU20-312AA01 (73)
+  FloatK $M142 (0.00)
+  FloatK $M143 (100.00)
+  FloatV $F21
+  WordK  $M144 (1)
+  IPAAW &41LU16-100AA01 (72)
+  WordV  $B89
+  FloatK $M145 (180.00)
+  FloatK $M146 (0.00)
+  WordV  $B90
+  WordV  $B91
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  WordV  $B95
+  FloatK $M147 (0.00)
+  FloatK $M148 (100.00)
+  FloatV $F22
+  WordK  $M149 (1)
+  IPAAW &41LU20-300AA01 (74)
+  WordV  $B96
+  FloatK $M150 (180.00)
+  FloatK $M151 (0.00)
+  WordV  $B97
+  WordV  $B98
+  WordV  $B99
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  WordV  $B103
+  WordV  $B104
+  IPAMB &41LU16-110BF01 (193,1)
+  WordV  $B105
+  FloatK $M152 (90.00)
+  FloatK $M153 (0.00)
+  WordK  $M154 (1)
+  IPAMB &41LU16-110BM91 (79,12)
+  WordK  $M155 (1)
+  IPAMB &41LU16-100BF00II (79,2)
+  FloatK $M156 (5.00)
+  FloatK $M157 (0.00)
+  WordV  $B106
+  WordV  $B107
+  WordV  $B108
+  IPAMB &41LU16-111BF01 (194,1)
+  WordV  $B109
+  FloatK $M158 (90.00)
+  FloatK $M159 (0.00)
+  WordK  $M160 (1)
+  IPAMB &41LU16-111BM91 (79,4)
+  WordV  $B110
+  WordV  $B111
+  IPAMB &41LU20-310BF01 (183,1)
+  WordV  $B112
+  FloatK $M161 (90.00)
+  FloatK $M162 (0.00)
+  WordK  $M163 (1)
+  IPAMB &41LU20-300BF00II (79,10)
+  WordK  $M164 (1)
+  IPAMB &41LU20-310BM91 (79,0)
+  WordV  $B113
+  WordV  $B114
+  IPAMB &41LU20-210BF01 (182,1)
+  IPAMB &41LU20-200BF00 (79,5)
+  WordK  $M165 (1)
+  IPAMB &41LU20-200BF00II (79,6)
+  WordV  $B115
+  WordV  $B116
+  IPAMB &41LU20-410BF01 (184,1)
+  IPAMB &41LU20-400BF00 (79,13)
+  WordK  $M166 (1)
+  IPAMB &41LU20-400BF00II (79,14)
+  FloatK $M167 (0.00)
+  FloatK $M168 (1800.00)
+  FloatV $F23
+  WordV  $B121
+  FloatK $M169 (3.00)
+  FloatK $M170 (2.00)
+  WordV  $B124
+  FloatK $M171 (0.00)
+  WordV  $B125
+  WordV  $B126
+  WordV  $B127
+  FloatV $F24
+  FloatK $M172 (172800.00)
+  WordV  $B128
+  FloatK $M173 (300.00)
+  WordV  $B122
+  WordV  $B129
+  WordV  $B123
+  WordV  $B117
+  WordV  $B118
+  WordV  $B119
+  IPAMB &41LU16-112BF01 (195,1)
+  WordV  $B120
+  FloatK $M174 (90.00)
+  FloatK $M175 (0.00)
+  WordK  $M176 (1)
+  IPAMB &41LU16-112BM91 (79,8)
+  FloatK $M177 (0.00)
+  FloatK $M178 (1800.00)
+  FloatV $F25
+  WordV  $B134
+  FloatK $M179 (3.00)
+  FloatK $M180 (2.00)
+  WordV  $B137
+  FloatK $M181 (0.00)
+  WordV  $B138
+  WordV  $B139
+  WordV  $B140
+  FloatV $F26
+  FloatK $M182 (172800.00)
+  WordV  $B141
+  FloatK $M183 (300.00)
+  WordV  $B135
+  WordV  $B142
+  WordV  $B136
+  WordV  $B130
+  WordV  $B131
+  WordV  $B132
+  IPAMB &41LU20-312BF01 (196,1)
+  WordV  $B133
+  FloatK $M184 (90.00)
+  FloatK $M185 (0.00)
+  WordK  $M186 (1)
+  IPAMB &41LU20-312BM91 (80,0)
+  WordK  $M187 (1)
+  IPAMB &41LU16-110GF00 (80,1)
+  IPAMB &41LU16-100ST01 (80,2)
+  IPAMB &41LU16-300ST01 (80,3)
+  IPAMB &41LU16-310GF00 (80,4)
+  WordV  $B143
+  WordV  $B144
+  WordK  $M188 (1)
+  IPAMB &41LU16-100ST00 (80,9)
+  IPAMB &41LU20-300ST00 (80,10)
+  WordV  $B145
+  WordV  $B146
+  IPAMB &41LU00-003BF01 (62,13)
+  WordV  $B147
+  WordV  $B148
+  WordK  $M189 (1)
+  IPAMB &41LU16-902ST02 (251,6)
+  IPAMB &41LU20-922ST02 (251,7)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage :
+  ;--------
+  ;RLT-Anlage 5/7.1
+  ;Technikraum KG
+  ;Treppenhaus
+  ; 
+  ;Modul-Einbau Ort:
+  ;----------------
+  ;ISO-Kasten =A4.5 KG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  NICHT (K-ANLAGE-5-EIN,$HB0)
+  BEFAUS (1,$HB0,K-ANLAGE-5-EIN,$WZERO,$WZERO,
+          &41LU16-100BF00,$WSCRATCH)
+  NICHT (K-ANLAGE-7.1-EIN,$HB0)
+  BEFAUS (1,$HB0,K-ANLAGE-7.1-EIN,$WZERO,$WZERO,
+          &41LU20-300BF00,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K-SW-ZL-ANL-5,$M0,&41LU16-902AA03,WERR)
+  ANAUS (K-SW-ZL-ANL-7.1,$M1,&41LU20-922AA03,WERR)
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  TASK (2,CYCL,1000)
+  MELEIN (&41LU16-100BF00I,1,ANLAGE-5-EIN,WERR)
+  MELEIN (&41LU20-200BF00I,1,ANLAGE-7-EIN,WERR)
+  MELEIN (&41LU20-300BF00I,1,ANLAGE-7.1-EIN,WERR)
+  MELEIN (&41LU20-400BF00I,1,ANLAGE-8-EIN,WERR)
+  MELEIN (&41LU16-110ST02,1,FROST-LUFT-A-5,WERR)
+  MELEIN (&41LU20-310ST02,1,FROST-LUFT-A-7.1,WERR)
+  MELEIN (&41LU16-100BM01,1,KLAPP-AUF-ANL-5,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&41LU16-110BF01I,1,ZL-EIN-ANL-5,WERR)
+  MELEIN (&41LU16-111BF01I,1,AL-EIN-ANL-5,WERR)
+  MELEIN (&41LU16-112BF01I,1,VE-P-EIN-ANL-5,WERR)
+  MELEIN (&41LU16-110ST01,1,ZL-ST-ANL-5,WERR)
+  MELEIN (&41LU16-111ST01,1,AL-ST-ANL-5,WERR)
+  MELEIN (&41LU16-112ST01,1,VE-P-ST-ANL-5,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&41LU20-300BM01,1,KL-AUF-ANL-7.1,WERR)
+  MELEIN (&41LU20-310BF01I,1,ZL-EIN-ANL-7.1,WERR)
+  MELEIN (&41LU20-312BF01I,1,VE-P-EIN-ANL-7.1,WERR)
+  MELEIN (&41LU20-310ST01,1,ZL-ST-ANL-7.1,WERR)
+  MELEIN (&41LU20-312ST01,1,VE-P-ST-ANL-7.1,WERR)
+  MELEIN (&41LU10-300ST00,1,SAMMELST-ANL.3,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&41LU00-003BM01,1,$B1,WERR)
+  MELEIN (&41LU00-003-GF01,1,BMZ,WERR)
+  MELEIN (&41LU16-110GF51,1,BSV-2.1.5,WERR)
+  MELEIN (&41LU16-110GF01,1,BSK-K.5.1,WERR)
+  MELEIN (&41LU20-311GF01,1,BSK-K.71.1,WERR)
+  MELEIN (&41LU20-100ST00,1,SAMMELST-ANL.4,WERR)
+  MOKY ($B1,$M2,QUITTIEREN)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&41LU20-210ST01,1,ZL-ST-ANL.7,WERR)
+  MELEIN (&41LU20-410ST01,1,ZL-ST-ANL.8,WERR)
+  MELEIN (&41LU10-318ST01,1,ANL-3-WRG-ST,$WSCRATCH)
+  MELEIN (&41LU20-118ST01,1,ANL-4-WRG-ST,$WSCRATCH)
+  BTRA (ANLAGE-5-EIN,K-ANLAGE-5-EIN)
+  BTRA (ANLAGE-7.1-EIN,K-ANLAGE-7.1-EIN)
+  MELEIN (&41LU16-110BM01,1,ZL-HAND-ANL-5,WERR)
+  MELEIN (&41LU20-310BM01,1,ZL-HAND-ANL-7.1,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&41LU20-311GF02,1,BSK-K.71.2,WERR)
+  MELEIN (&41LU20-311GF51,3,BSV-E.71.1,BSV-1.71.1,BSV-2.71.1,
+          WERR)
+  MELEIN (&41LU20-311GF54,8,BSV-3.71.1,BSV-4.71.1,BSV-5.71.1,
+          BSV-6.71.1,BSV-7.71.1,BSV-8.71.1,BSV-9.71.1,
+          BSV-10.71.1,WERR)
+  MELEIN (&41LU20-311GF62,2,BSV-11.71-1,BSV-12.71.1,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&41LU00-211GF01,2,BSK-2.0.1,BSK-2.0.2,WERR)
+  MELEIN (&41LU00-211GF03,2,BSK-2.0.3,BSK-2.0.4,WERR)
+  MELEIN (&41LU00-211GF06,2,BSK-K.0.1,BSK-K.0.2,WERR)
+  MELEIN (&41LU00-211GF08,1,BSK-K.0.3,WERR)
+  MELEIN (&41LU00-211GF05,1,BSK-K.0.4,WERR)
+  MELEIN (&41LU00-210GF01,1,BSK-K.0.5,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&41LU20-211GF51,8,BSV-E.70.1,BSV-1.70.1,BSV-2.70.1,
+          BSV-3.70.1,BSV-4.70.1,BSV-5.70.1,BSV-6.70.1,
+          BSV-7.70.1,WERR)
+  MELEIN (&41LU20-211GF59,5,BSV-8.70.1,BSV-9.70.1,
+          BSV-10.70.1,BSV-11.70.1,BSV-12.70.1,WERR)
+  MELEIN (&41LU20-211GF01,2,BSK-K.70.2,BSK-k.70.1,WERR)
+  MELEIN (&41LU20-411GF01,1,BSK-K.8.1,WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&41LU20-310MW01,ZL-TEMP-ANL-7.1,WERR)
+  ANEIN (&41LU20-312MW01,VE-RL-TEMP-A-7.1,WERR)
+  ANEIN (&41LU16-902AA03,SW-ZL-ANL-5,WERR)
+  ATRA (SW-ZL-ANL-5,K-SW-ZL-ANL-5)
+  ANEIN (&41LU20-922AA03,SW-ZL-ANL-7.1,WERR)
+  ATRA (SW-ZL-ANL-7.1,K-SW-ZL-ANL-7.1)
+  ANEIN (&41LU10-001MW01,AUSSENTEMP,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ADD2 (AUSSENTEMP,K2,AU-TEMP-FROST)
+  ANEIN (&41LU16-110MW01,ZL-TEMP-ANL-5,WERR)
+  ANEIN (&41LU16-112MW01,VE-RL-TEMP-A-5,WERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B10,$M3,$M4,$F6)
+  MAX (3,$F6,$F5,$F4,$F1)
+  UND11 (ANLAGE-5-EIN,$B7,$B11)
+  VVZ ($B11,$M5,$M6,$B12)
+  VGLEH (ZL-TEMP-ANL-5,$M7,$M8,$B6)
+  ODR2 ($B12,$B8,BETRIEBSBER-A5)
+  VGLEH (VE-RL-TEMP-A-5,$M9,$M10,$B7)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (AU-TEMP-FROST,$M11,$M12,$B15)
+  VGLEH (VE-RL-TEMP-A-5,$M13,$M14,$B16)
+  NICHT (ANLAGE-5-EIN,$HB1)
+  RSS ($B14,$HB1,$B17,$WSCRATCH)
+  BTRA ($B17,$B8)
+  AWT ($B17,$M15,$M16,$F8)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (VE-RL-TEMP-A-5,$F8,$WONE,$B15,$M17,$M18,$M19,$M20,
+        $M21,$M22,$M23,$M24,$M25,$M26,$M27,$F9,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (ZL-TEMP-ANL-5,$M28,$WONE,$WZERO,$M29,$M30,$M31,$M32,
+        $M33,$M34,$M35,$M36,$M37,$M38,$M39,$F2,$WSCRATCH)
+  AWT ($B15,$F9,$M40,$F3)
+  ;Version 2.0
+  ; 
+  ODR2 ($B16,$B15,$B14)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B7,$M41,VE-RL-TEMP-A-5,$F7)
+  VGLEH ($F7,$M42,$M43,$HB3)
+  NICHT ($HB3,$B13)
+  ODR2 ($B13,FROST-ANL.5,$B9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIEREN,$M44,$B18)
+  UND11 ($B18,$B9,$B19)
+  RSS ($B9,$B19,$B10,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B10,FROSTAUSL-A5)
+  AWT ($B7,$M45,$F3,$F4)
+  AWT ($B6,$M46,$F2,$F5)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLEH (KON5,AUSSENTEMP,$M47,$B2)
+  VGLEH (KON20,VE-RL-TEMP-A-5,$M48,$B3)
+  UNDMN (3,BETRIEBSBER-A5,$B2,$B3,0,$B4,$WSCRATCH)
+  ODRMN (2,$B4,FROST-ANL.5,1,BETRIEBSBER-A5,$B5,$WSCRATCH)
+  AWT ($B5,$M49,$F1,Y-FROST-VE-A5)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B28,$M50,$M51,$F15)
+  MAX (3,$F15,$F14,$F13,$F10)
+  UND11 (ANLAGE-7.1-EIN,$B25,$B29)
+  VVZ ($B29,$M52,$M53,$B30)
+  VGLEH (ZL-TEMP-ANL-7.1,$M54,$M55,$B24)
+  ODR2 ($B30,$B26,BETRIEBSBER-A7.1)
+  VGLEH (VE-RL-TEMP-A-7.1,$M56,$M57,$B25)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (AU-TEMP-FROST,$M58,$M59,$B33)
+  VGLEH (VE-RL-TEMP-A-7.1,$M60,$M61,$B34)
+  NICHT (ANLAGE-7.1-EIN,$HB1)
+  RSS ($B32,$HB1,$B35,$WSCRATCH)
+  BTRA ($B35,$B26)
+  AWT ($B35,$M62,$M63,$F17)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (VE-RL-TEMP-A-7.1,$F17,$WONE,$B33,$M64,$M65,$M66,$M67,
+        $M68,$M69,$M70,$M71,$M72,$M73,$M74,$F18,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (ZL-TEMP-ANL-7.1,$M75,$WONE,$WZERO,$M76,$M77,$M78,
+        $M79,$M80,$M81,$M82,$M83,$M84,$M85,$M86,$F11,
+        $WSCRATCH)
+  AWT ($B33,$F18,$M87,$F12)
+  ;Version 2.0
+  ; 
+  ODR2 ($B34,$B33,$B32)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B25,$M88,VE-RL-TEMP-A-7.1,$F16)
+  VGLEH ($F16,$M89,$M90,$HB3)
+  NICHT ($HB3,$B31)
+  ODR2 ($B31,FROST-ANL.7.1,$B27)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIEREN,$M91,$B36)
+  UND11 ($B36,$B27,$B37)
+  RSS ($B27,$B37,$B28,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B28,FROSTAUSL-A7.1)
+  AWT ($B25,$M92,$F12,$F13)
+  AWT ($B24,$M93,$F11,$F14)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLEH (KON5,AUSSENTEMP,$M94,$B20)
+  VGLEH (KON20,VE-RL-TEMP-A-7.1,$M95,$B21)
+  UNDMN (3,BETRIEBSBER-A7.1,$B20,$B21,0,$B22,$WSCRATCH)
+  ODRMN (2,$B22,FROST-ANL.7.1,1,BETRIEBSBER-A7.1,$B23,
+         $WSCRATCH)
+  AWT ($B23,$M96,$F10,Y-FROST-VE-A7.1)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  REGLER (7,KON1,$B39,$M97,Y-REGLER-ZL-A5,WERR)
+  REGLER (8,KON1,$B38,$M98,Y-REGLER-ZL-A7.1,WERR)
+  VVZ (BETRIEBSBER-A7.1,$M99,$M100,$HB3)
+  NICHT ($HB3,$B38)
+  VVZ (BETRIEBSBER-A5,$M101,$M102,$HB3)
+  NICHT ($HB3,$B39)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  VGLEH (KON8,AUSSENTEMP,$M103,AUSSENTEMP-<8GRD)
+  VGLOH (VE-MAX-ANL.5,$M104,$B40)
+  VGLOH (K0,VE-MAX-ANL.5,$B41)
+  RSS ($B40,$B41,VE-PU-BER-A5,$WSCRATCH)
+  VGLOH (VE-MAX-ANL.7.1,$M105,$B42)
+  VGLOH (K0,VE-MAX-ANL.7.1,$B43)
+  RSS ($B42,$B43,VE-PU-BER-A7.1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  FKG (VE-RL-TEMP-A-5,4,$M106,$M107,$M108,$M109,$F19)
+  AWT (FROST-LUFT-A-5,$F19,$M110,VE-FROST-ANL-5)
+  FKG (VE-RL-TEMP-A-7.1,4,$M111,$M112,$M113,$M114,$F20)
+  AWT (FROST-LUFT-A-7.1,$F20,$M115,VE-FROST-ANL-7.1)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  VGLOH (KON30,VE-RL-TEMP-A-5,$B44)
+  UND11 ($B44,FROST-LUFT-A-5,$B45)
+  VVZ ($B45,$M116,$M117,$B46)
+  ODRMN (3,$B46,$B48,$B49,0,FROST-ANL.5,$WSCRATCH)
+  UNDMN (0,2,FROST-LUFT-A-5,VE-P-EIN-ANL-5,$B47,$WSCRATCH)
+  VVZ ($B47,$M118,$M119,$B48)
+  UNDMN (0,2,FROST-LUFT-A-5,VE-P-ST-ANL-5,$B49,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  VGLOH (KON30,VE-RL-TEMP-A-7.1,$B50)
+  UND11 ($B50,FROST-LUFT-A-7.1,$B51)
+  VVZ ($B51,$M120,$M121,$B52)
+  ODRMN (3,$B52,$B54,$B55,0,FROST-ANL.7.1,$WSCRATCH)
+  UNDMN (0,2,FROST-LUFT-A-7.1,VE-P-EIN-ANL-7.1,$B53,
+         $WSCRATCH)
+  VVZ ($B53,$M122,$M123,$B54)
+  UNDMN (0,2,FROST-LUFT-A-7.1,VE-P-ST-ANL-7.1,$B55,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODRMN (7,FROSTAUSL-A5,ST-KLAPPE-A5,ST-BSK-ANL-5,
+         KEILR-ZL-ANL-5,KEILR-AL-ANL-5,ST-ZL-A5,ST-AL-A5,4,
+         ZL-ST-ANL-5,AL-ST-ANL-5,BMZ,FROST-LUFT-A-5,$B56,
+         $WSCRATCH)
+  UND11 ($B56,ZL-HAND-ANL-5,SAMMELST-ANL.5)
+  ODRMN (11,BSK-2.0.1,BSK-2.0.2,BSK-2.0.3,BSK-2.0.4,
+         BSK-K.0.1,BSK-K.0.2,BSK-K.0.3,KONSTANTE0,KONSTANTE0,
+         BSK-K.5.1,KONSTANTE0,0,ST-BSK-ANL-5,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MELEIN (&41LU16-110ST03,1,$B57,$WSCRATCH)
+  MELEIN (&41LU16-110ST10,1,$B58,$WSCRATCH)
+  MELEIN (&41LU16-110ST07,1,$B59,$WSCRATCH)
+  MELEIN (&41LU16-110ST09,1,$B60,$WSCRATCH)
+  UNDMN (4,$B57,$B58,$B59,$B60,1,ZL-ST-ANL-5,$B61,$WSCRATCH)
+  VVZ ($B61,$M124,$M125,$B62)
+  RSS ($B62,QUITTIEREN,KEILR-ZL-ANL-5,$WSCRATCH)
+  SETMEL ($M126,1,KEILR-ZL-ANL-5,&41LU16-110ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  MELEIN (&41LU16-111ST03,1,$B63,$WSCRATCH)
+  MELEIN (&41LU16-111ST10,1,$B64,$WSCRATCH)
+  MELEIN (&41LU16-111ST07,1,$B65,$WSCRATCH)
+  MELEIN (&41LU16-111ST09,1,$B66,$WSCRATCH)
+  UNDMN (4,$B63,$B64,$B65,$B66,1,AL-ST-ANL-5,$B67,$WSCRATCH)
+  VVZ ($B67,$M127,$M128,$B68)
+  RSS ($B68,QUITTIEREN,KEILR-AL-ANL-5,$WSCRATCH)
+  SETMEL ($M129,1,KEILR-AL-ANL-5,&41LU16-111ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (4,BSK-k.70.1,BSK-K.70.2,BSK-2.0.3,BSK-2.0.4,0,
+         ST-BSK-ANL.7,$WSCRATCH)
+  ODRMN (4,BSK-K.8.1,BSK-2.0.3,BSK-K.0.5,BSK-2.0.4,0,$B69,
+         $WSCRATCH)
+  SETMEL ($M130,4,ST-BSK-ANL-5,ST-BSK-ANL.7,ST-BSK-ANL.7.1,
+          $B69,&41LU16-100GF00,WERR)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  MELEIN (&41LU20-210ST03,1,$B70,$WSCRATCH)
+  MELEIN (&41LU20-210ST10,1,$B71,$WSCRATCH)
+  MELEIN (&41LU20-210ST07,1,$B72,$WSCRATCH)
+  MELEIN (&41LU20-210ST09,1,$B73,$WSCRATCH)
+  UNDMN (4,$B70,$B71,$B72,$B73,1,ZL-ST-ANL.7,$B74,$WSCRATCH)
+  VVZ ($B74,$M131,$M132,$B75)
+  RSS ($B75,QUITTIEREN,KEILR-ZL-ANL-7,$WSCRATCH)
+  SETMEL ($M133,1,KEILR-ZL-ANL-7,&41LU20-210ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  MELEIN (&41LU20-410ST03,1,$B76,$WSCRATCH)
+  MELEIN (&41LU20-410ST10,1,$B77,$WSCRATCH)
+  MELEIN (&41LU20-410ST07,1,$B78,$WSCRATCH)
+  MELEIN (&41LU20-410ST09,1,$B79,$WSCRATCH)
+  UNDMN (4,$B76,$B77,$B78,$B79,1,ZL-ST-ANL.8,$B80,$WSCRATCH)
+  VVZ ($B80,$M134,$M135,$B81)
+  RSS ($B81,QUITTIEREN,KEILR-ZL-ANL-8,$WSCRATCH)
+  SETMEL ($M136,1,KEILR-ZL-ANL-8,&41LU20-410ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODRMN (5,BSK-K.71.1,BSK-K.71.2,BSK-K.0.5,BSK-2.0.3,
+         BSK-2.0.4,0,ST-BSK-ANL.7.1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (5,ST-BSK-ANL.7.1,ST-KLAPPE-A7.1,FROSTAUSL-A7.1,
+         KEILR-ZL-A7.1,ST-ZL-A7.1,3,ZL-ST-ANL-7.1,
+         FROST-LUFT-A-7.1,BMZ,$B82,$WSCRATCH)
+  UND11 ($B82,ZL-HAND-ANL-7.1,SAMMELST-ANL.7.1)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  MELEIN (&41LU20-310ST03,1,$B83,$WSCRATCH)
+  MELEIN (&41LU20-310ST10,1,$B84,$WSCRATCH)
+  MELEIN (&41LU20-310ST07,1,$B85,$WSCRATCH)
+  MELEIN (&41LU20-310ST09,1,$B86,$WSCRATCH)
+  UNDMN (4,$B83,$B84,$B85,$B86,1,ZL-ST-ANL-7.1,$B87,
+         $WSCRATCH)
+  VVZ ($B87,$M137,$M138,$B88)
+  RSS ($B88,QUITTIEREN,KEILR-ZL-A7.1,$WSCRATCH)
+  SETMEL ($M139,1,KEILR-ZL-A7.1,&41LU20-310ST14,WERR)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  MAX (3,Y-REGLER-ZL-A5,Y-FROST-VE-A5,VE-FROST-ANL-5,
+       VE-MAX-ANL.5)
+  ANAUS (VE-MAX-ANL.5,$M140,&41LU16-112AA01,WERR)
+  MAX (3,Y-REGLER-ZL-A7.1,Y-FROST-VE-A7.1,VE-FROST-ANL-7.1,
+       VE-MAX-ANL.7.1)
+  ANAUS (VE-MAX-ANL.7.1,$M141,&41LU20-312AA01,WERR)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  AWT (BETRIEBSBER-A5,$M142,$M143,$F21)
+  ANAUS ($F21,$M144,&41LU16-100AA01,WERR)
+  UND11 (BETRIEBSBER-A5,KLAPP-AUF-ANL-5,$B89)
+  VVZ ($B89,$M145,$M146,$B90)
+  RSS ($B90,QUITTIEREN,$B91,$WSCRATCH)
+  ODR2 ($B91,$B95,ST-KLAPPE-A5)
+  UND2 (BETRIEBSBER-A5,KLAPP-AUF-ANL-5,$B92)
+  NICHT (BETRIEBSBER-A5,$HB1)
+  RSS ($B92,$HB1,$B93,$WSCRATCH)
+  UND11 ($B93,KLAPP-AUF-ANL-5,$B94)
+  RSS ($B94,QUITTIEREN,$B95,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  AWT (BETRIEBSBER-A7.1,$M147,$M148,$F22)
+  ANAUS ($F22,$M149,&41LU20-300AA01,WERR)
+  UND11 (BETRIEBSBER-A7.1,KL-AUF-ANL-7.1,$B96)
+  VVZ ($B96,$M150,$M151,$B97)
+  RSS ($B97,QUITTIEREN,$B98,$WSCRATCH)
+  ODR2 ($B98,$B102,ST-KLAPPE-A7.1)
+  UND2 (BETRIEBSBER-A7.1,KL-AUF-ANL-7.1,$B99)
+  NICHT (BETRIEBSBER-A7.1,$HB1)
+  RSS ($B99,$HB1,$B100,$WSCRATCH)
+  UND11 ($B100,KL-AUF-ANL-7.1,$B101)
+  RSS ($B101,QUITTIEREN,$B102,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  UNDMN (4,BETRIEBSBER-A5,ZL-ST-ANL-5,AL-ST-ANL-5,
+         KLAPP-AUF-ANL-5,3,SAMMELST-ANL.5,ST-ZL-A5,ST-AL-A5,
+         $B103,$B104)
+  BEFAUS (2,$B104,$B103,$WZERO,$WZERO,&41LU16-110BF01,$B105)
+  VVZ ($B105,$M152,$M153,ST-ZL-A5)
+  SETMEL ($M154,1,$B103,&41LU16-110BM91,$WSCRATCH)
+  SETMEL ($M155,1,SAMMELST-ANL.5,&41LU16-100BF00II,$WSCRATCH)
+  BEFAUS (1,SAMMELST-ANL.5,$WZERO,$WZERO,$WZERO,
+          &41LU16-100BF00,WERR)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  VVZ (ZL-EIN-ANL-5,$M156,$M157,$B106)
+  UNDMN (3,BETRIEBSBER-A5,AL-ST-ANL-5,$B106,2,ST-ZL-A5,
+         ST-AL-A5,$B107,$B108)
+  BEFAUS (2,$B108,$B107,$WZERO,$WZERO,&41LU16-111BF01,$B109)
+  VVZ ($B109,$M158,$M159,ST-AL-A5)
+  SETMEL ($M160,1,$B107,&41LU16-111BM91,WERR)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  UNDMN (3,BETRIEBSBER-A7.1,ZL-ST-ANL-7.1,KL-AUF-ANL-7.1,1,
+         SAMMELST-ANL.7.1,$B110,$B111)
+  BEFAUS (2,$B111,$B110,$WZERO,$WZERO,&41LU20-310BF01,$B112)
+  VVZ ($B112,$M161,$M162,ST-ZL-A7.1)
+  BEFAUS (1,SAMMELST-ANL.7.1,$WZERO,$WZERO,$WZERO,
+          &41LU20-300BF00,WERR)
+  SETMEL ($M163,1,SAMMELST-ANL.7.1,&41LU20-300BF00II,WERR)
+  SETMEL ($M164,1,$B110,&41LU20-310BM91,WERR)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UNDMN (1,ANLAGE-7-EIN,1,ANL-7-SAMMELST,$B113,$B114)
+  BEFAUS (2,$B114,$B113,$WZERO,$WZERO,&41LU20-210BF01,WERR)
+  ODRMN (1,KEILR-ZL-ANL-7,1,ZL-ST-ANL.7,ANL-7-SAMMELST,
+         $WSCRATCH)
+  BEFAUS (1,ANL-7-SAMMELST,$WZERO,$WZERO,$WZERO,
+          &41LU20-200BF00,WERR)
+  SETMEL ($M165,1,ANL-7-SAMMELST,&41LU20-200BF00II,WERR)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  UNDMN (1,ANLAGE-8-EIN,1,ANL-8-SAMMELST,$B115,$B116)
+  BEFAUS (2,$B116,$B115,$WZERO,$WZERO,&41LU20-410BF01,WERR)
+  BEFAUS (1,ANL-8-SAMMELST,$WZERO,$WZERO,$WZERO,
+          &41LU20-400BF00,WERR)
+  SETMEL ($M166,1,ANL-8-SAMMELST,&41LU20-400BF00II,WERR)
+  ODRMN (1,KEILR-ZL-ANL-8,1,ZL-ST-ANL.8,ANL-8-SAMMELST,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M167,$M168,$F23)
+  MOKY (VE-PU-BER-A5,$F23,$B121)
+  VGLEH (VE-MAX-ANL.5,$M169,$M170,$B124)
+  VVZ ($B124,$M171,$F23,$B125)
+  UND2 (VE-PU-BER-A5,$B125,$B126)
+  ODR2 ($B118,$B123,$B127)
+  NICHT ($B127,$HB0)
+  UHR ($HB0,$B127,$F24)
+  VGLOH ($F24,$M172,$B128)
+  MOKY ($B128,$M173,$B122)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (3,$B121,$B126,$B122,1,FROST-LUFT-A-5,$B129,
+         $WSCRATCH)
+  UND11 ($B129,$B118,$B123)
+  BTRA ($B123,$B117)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (1,ST-VE-PUMPE-A5,1,VE-P-ST-ANL-5,$B118,$WSCRATCH)
+  NICHT ($B117,$B119)
+  BEFAUS (2,$B119,$B117,$WZERO,$WZERO,&41LU16-112BF01,$B120)
+  VVZ ($B120,$M174,$M175,ST-VE-PUMPE-A5)
+  SETMEL ($M176,1,$B117,&41LU16-112BM91,WERR)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M177,$M178,$F25)
+  MOKY (VE-PU-BER-A7.1,$F25,$B134)
+  VGLEH (VE-MAX-ANL.7.1,$M179,$M180,$B137)
+  VVZ ($B137,$M181,$F25,$B138)
+  UND2 (VE-PU-BER-A7.1,$B138,$B139)
+  ODR2 ($B131,$B136,$B140)
+  NICHT ($B140,$HB0)
+  UHR ($HB0,$B140,$F26)
+  VGLOH ($F26,$M182,$B141)
+  MOKY ($B141,$M183,$B135)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (3,$B134,$B139,$B135,1,FROST-LUFT-A-7.1,$B142,
+         $WSCRATCH)
+  UND11 ($B142,$B131,$B136)
+  BTRA ($B136,$B130)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (1,ST-VE-PUMPE-A7.1,1,VE-P-ST-ANL-7.1,$B131,
+         $WSCRATCH)
+  NICHT ($B130,$B132)
+  BEFAUS (2,$B132,$B130,$WZERO,$WZERO,&41LU20-312BF01,$B133)
+  VVZ ($B133,$M184,$M185,ST-VE-PUMPE-A7.1)
+  SETMEL ($M186,1,$B130,&41LU20-312BM91,WERR)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  SETMEL ($M187,4,FROSTAUSL-A5,ST-KLAPPE-A5,ST-KLAPPE-A7.1,
+          FROSTAUSL-A7.1,&41LU16-110GF00,WERR)
+  ODRMN (2,SAMMELST-ANL.5,ST-VE-PUMPE-A5,1,VE-P-ST-ANL-5,
+         $B143,$WSCRATCH)
+  ODRMN (2,SAMMELST-ANL.7.1,ST-VE-PUMPE-A7.1,1,
+         VE-P-ST-ANL-7.1,$B144,$WSCRATCH)
+  SETMEL ($M188,2,$B143,$B144,&41LU16-100ST00,WERR)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ODRMN (10,ANL-3-WRG-ST,ANL-4-WRG-ST,SAMMELST-ANL.3,
+         SAMMELST-ANL.4,SAMMELST-ANL.5,SAMMELST-ANL.7.1,
+         ANL-7-SAMMELST,ANL-8-SAMMELST,ST-VE-PUMPE-A5,
+         ST-VE-PUMPE-A7.1,2,VE-P-ST-ANL-5,VE-P-ST-ANL-7.1,
+         $B145,$B146)
+  BEFAUS (1,$B146,$B145,$WZERO,$WZERO,&41LU00-003BF01,WERR)
+  NICHT (FROST-LUFT-A-5,$B147)
+  NICHT (FROST-LUFT-A-7.1,$B148)
+  SETMEL ($M189,2,$B147,$B148,&41LU16-902ST02,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

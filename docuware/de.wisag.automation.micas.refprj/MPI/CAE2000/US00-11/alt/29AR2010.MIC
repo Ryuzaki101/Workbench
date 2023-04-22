@@ -1,0 +1,548 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01110.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 11
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 10
+  ;*****************************************************************
+  MODUL (AR20,10)
+  WordV  WERR
+  WordV  TASTER-WC-ABL-3
+  WordV  TASTER-WC-ABL-4
+  WordV  TASTER-WC-ABL-1
+  WordV  TASTER-WC-ABL-2
+  WordV  TASTER-WC-ABL-5
+  WordV  TASTER-WC-ABL-6
+  FloatV ST-HEIZ-STELL-VE
+  FloatK K-LAUFZEIT-ABL (300.00)
+  WordV  ST-HEIZ-PUM-AUS
+  WordV  ST-HEIZ-PUM-STOE
+  WordV  ST-HEIZ-PUM-EIN1
+  FloatV SOKENN5
+  FloatV SOKENN6
+  FloatV FE-HEIZ-VL-TEMP
+  FloatV ST-HEIZ-SOLLW
+  FloatV ST-HEIZ-VL-TEMP
+  WordK  KON01 (1)
+  FloatV FE-HEIZ-SOLLW
+  WordK  KON00 (0)
+  FloatV SOKENN4
+  WordK  K-NACHTABS-AUS (0)
+  WordK  K-NACHTABS-EIN1 (1)
+  FloatV AUSSENTEMPERATUR
+  WordK  K-FE-HEIZ-AUS (0)
+  WordK  K-FE-HEIZ-EIN1 (1)
+  FloatV VL-Temp-pr-Strah
+  WordK  K-ST-HEIZ-AUS (0)
+  WordK  K-ST-HEIZ-EIN1 (1)
+  WordK  K-HEIZVERT-AUS (0)
+  WordK  K-HEIZVERT-EIN1 (1)
+  WordV  HEIZVE-PUM1-EIN1
+  WordV  HEIZVE-PUM1-STOE
+  WordV  HEIZVE-PUM1-AUS
+  WordV  HEIZVE-PUM2-AUS
+  WordV  HEIZVE-PUM2-STOE
+  WordV  HEIZVE-PUM2-EIN1
+  WordK  K-WWB-AUS (0)
+  WordK  K-WWB-EIN1 (1)
+  WordV  WWB-LADEPUM-AUS
+  WordV  WWB-LADEPUM-STOE
+  WordV  WWB-LADEPUM-EIN1
+  WordV  WWB-STB
+  FloatV WWB-SPEICH-TEMP
+  FloatK K-WWB-SW-SP-TEMP (60.00)
+  WordV  WWB-ZI-PUM2-AUS
+  WordV  WWB-ZI-PUM1-STOE
+  WordV  WWB-ZI-PUM1-EIN1
+  WordV  WWB-ZI-PUM1-AUS
+  WordV  WWB-ZI-PUM2-STOE
+  WordV  WWB-ZI-PUM2-EIN1
+  WordV  WWB-STRA-PUM-STO
+  WordK  K-WWB-LIGON-AUS (0)
+  WordK  K-WWB-LIGON-EIN1 (1)
+  FloatK K-GRWU-BATTERIE (22.00)
+  FloatV BATT-RAUM-TEMP
+  FloatK K-GRWO-BATTERIE (24.00)
+  WordV  BATT-ABL-STOER
+  WordK  K-BATT-ANL-EIN1 (1)
+  WordV  ST-HEIZ-PUMP-EIN
+  WordK  K-BATT-ANL-AUS (0)
+  FloatK K72 (72.00)
+  FloatV Y-VL-Te-Reg-Str_
+  FloatV Y-Reg-SP-Te-WWB
+  FloatK K-SW-SP-TEMP-LEG (65.00)
+  FloatK K1 (1.00)
+  FloatV akt_SW_SP-Temp
+  WordK  $M0 (1)
+  IPAAW &AI-LU12-13G-Y50 (79)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &AI-HE12-13B-X50 (76,1)
+  IPAMB &AI-HE12-13C-X50 (76,5)
+  IPAMB &AI-HE12-13A-X50 (76,13)
+  IPAMB &AI-HE12-13C-X51 (76,9)
+  IPAMB &AI-HE12-13D-X50 (99,1)
+  IPAMB &AI-HE12-13D-X51 (99,5)
+  WordK  $M1 (1)
+  IPAAW &AI-HE12-13D-Y50 (114)
+  WordK  $M2 (1)
+  IPAAW &AI-HE12-13D-Y53 (112)
+  WordK  $M3 (1)
+  IPAAW &AI-LU12-13G-Y51 (16)
+  WordK  $M4 (1)
+  IPAAW &AI-LU12-13G-Y52 (17)
+  IPAMB &AI-HE12-13G-X53 (15,1)
+  IPAMB &AI-LU13-01G-B01 (40,2)
+  IPAMB &AI-LU13-02G-B01 (40,6)
+  IPAMB &AI-LU13-03G-B01 (41,2)
+  IPAMB &AI-LU13-04G-B01 (41,6)
+  IPAMB &AI-LU13-05G-B01 (40,10)
+  IPAMB &AI-LU13-06G-B01 (40,14)
+  IPAMB &M5 (76,2)
+  IPAMB &M6 (76,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &M7 (15,2)
+  IPAMB &M8 (15,3)
+  WordV  $B3
+  WordV  $B4
+  IPAMB &M9 (76,6)
+  IPAMB &M10 (76,7)
+  WordV  $B5
+  WordV  $B6
+  IPAMB &M11 (76,10)
+  IPAMB &M12 (76,11)
+  WordV  $B7
+  WordV  $B8
+  IPAMB &AI-HE12-13C-X03 (103,5)
+  IPAMB &M13 (103,6)
+  IPAMB &M14 (103,7)
+  IPAMB &M15 (76,14)
+  IPAMB &M16 (76,15)
+  WordV  $B9
+  WordV  $B10
+  IPAMB &AI-HE12-13A-X01 (106,1)
+  IPAMB &M17 (106,2)
+  IPAMB &M18 (106,3)
+  WordV  $HB5
+  IPAMB &AI-HE12-13A-X02 (106,5)
+  IPAMB &M19 (106,6)
+  IPAMB &M20 (106,7)
+  IPAMB &M21 (99,2)
+  IPAMB &M22 (99,3)
+  WordV  $B11
+  WordV  $B12
+  IPAMB &AI-HE12-13D-X03 (107,13)
+  IPAMB &M23 (107,14)
+  IPAMB &M24 (107,15)
+  IPAMB &M25 (99,6)
+  IPAMB &M26 (99,7)
+  WordV  $B13
+  WordV  $B14
+  IPAMB &AI-HE12-13D-S03 (110,7)
+  IPAMB &AI-HE12-13D-S01 (110,6)
+  IPAMB &AI-HE12-13D-X01 (107,5)
+  IPAMB &M27 (107,6)
+  IPAMB &M28 (107,7)
+  IPAMB &AI-HE12-13D-X02 (108,9)
+  IPAMB &M29 (108,10)
+  IPAMB &M30 (108,11)
+  IPAAW &AI-AS14-00A-T00 (86)
+  IPAAW &AI-HE12-13D-T01 (84)
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  IPAAW &AI-LU12-13G-T01 (85)
+  IPAAW &AI-LU12-13G-T02 (18)
+  FloatV $F5
+  IPAAW &AI-HE12-13B-T01 (82)
+  IPAAW &AI-HE12-13B-Y50 (77)
+  IPAAW &AI-HE12-13C-T01 (83)
+  IPAAW &AI-HE12-13C-Y50 (97)
+  FloatK $M31 (0.00)
+  WordV  $B15
+  WordV  $B16
+  IPAMB &AI-LU12-13G-X01 (80,1)
+  FloatK $M32 (0.00)
+  WordV  $B17
+  WordV  $B18
+  IPAMB &AI-LU12-13G-X02 (80,5)
+  FloatK $M33 (0.00)
+  WordV  $B19
+  WordV  $B20
+  IPAMB &AI-LU12-13G-X03 (81,1)
+  FloatK $M34 (0.00)
+  WordV  $B21
+  WordV  $B22
+  IPAMB &AI-LU12-13G-X04 (81,5)
+  FloatK $M35 (0.00)
+  WordV  $B23
+  WordV  $B24
+  IPAMB &AI-LU12-13G-X05 (100,1)
+  FloatK $M36 (0.00)
+  WordV  $B25
+  WordV  $B26
+  IPAMB &AI-LU12-13G-X06 (100,5)
+  WordV  $HB0
+  WordV  $B27
+  WordK  $M37 (1)
+  FloatK $M39 (0.00)
+  FloatV $F6
+  FloatK $M40 (0.00)
+  FloatV $F7
+  WordK  $M41 (1)
+  IPAAW &AI-HE12-13B-Y01 (90)
+  FloatK $M42 (20.00)
+  FloatK $M43 (1.00)
+  WordV  $B28
+  FloatK $M44 (0.00)
+  FloatV $F8
+  FloatK $M45 (0.00)
+  WordK  $M46 (1)
+  IPAAW &AI-HE12-13C-Y01 (91)
+  FloatK $M47 (86400.00)
+  FloatK $M48 (300.00)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $HB1
+  WordK  $M49 (1)
+  FloatV $F9
+  FloatK $M51 (86400.00)
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  FloatV $F10
+  FloatK $M52 (86400.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  FloatK $M53 (10.00)
+  FloatK $M54 (0.00)
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordK  $M55 (1)
+  FloatK $M57 (0.00)
+  WordK  $M58 (1)
+  FloatK $M59 (3.00)
+  FloatK $M60 (25.00)
+  FloatK $M61 (100.00)
+  FloatK $M62 (0.00)
+  FloatK $M63 (50.00)
+  FloatK $M64 (90.00)
+  FloatK $M65 (0.00)
+  FloatK $M66 (0.00)
+  FloatK $M67 (100.00)
+  WordV  $B51
+  WordK  $M68 (1)
+  IPAAW &AI-HE12-13D-Y52 (113)
+  FloatK $M69 (0.00)
+  FloatK $M70 (0.00)
+  FloatV $F11
+  WordK  $M71 (1)
+  IPAAW &AI-HE12-13D-Y01 (50)
+  FloatV $F12
+  WordV  $B52
+  FloatK $M72 (600.00)
+  FloatK $M73 (0.00)
+  WordV  $B53
+  FloatV $F13
+  FloatK $M74 (7200.00)
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  IPAMB &AI-LU14-00G-X04 (102,5)
+  WordK  $M75 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage: Allgemeiner
+  ;Institutsbau
+  ;Einbauort:Schaltschrank
+  ;LÅftung 1.UG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ANAUS (K-LAUFZEIT-ABL,$M0,&AI-LU12-13G-Y50,WERR)
+  BEFAUS (1,K-FE-HEIZ-AUS,K-FE-HEIZ-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13B-X50,WERR)
+  BEFAUS (1,K-ST-HEIZ-AUS,K-ST-HEIZ-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13C-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,K-HEIZVERT-AUS,K-HEIZVERT-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13A-X50,WERR)
+  BEFAUS (1,K-NACHTABS-AUS,K-NACHTABS-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13C-X51,WERR)
+  BEFAUS (1,K-WWB-AUS,K-WWB-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13D-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-WWB-LIGON-AUS,K-WWB-LIGON-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13D-X51,WERR)
+  ANAUS (K-WWB-SW-SP-TEMP,$M1,&AI-HE12-13D-Y50,WERR)
+  ANAUS (K-SW-SP-TEMP-LEG,$M2,&AI-HE12-13D-Y53,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANAUS (K-GRWO-BATTERIE,$M3,&AI-LU12-13G-Y51,WERR)
+  ANAUS (K-GRWU-BATTERIE,$M4,&AI-LU12-13G-Y52,WERR)
+  BEFAUS (1,K-BATT-ANL-AUS,K-BATT-ANL-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13G-X53,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,500)
+  MELEIN (&AI-LU13-01G-B01,1,TASTER-WC-ABL-1,WERR)
+  MELEIN (&AI-LU13-02G-B01,1,TASTER-WC-ABL-2,WERR)
+  MELEIN (&AI-LU13-03G-B01,1,TASTER-WC-ABL-3,WERR)
+  MELEIN (&AI-LU13-04G-B01,1,TASTER-WC-ABL-4,WERR)
+  MELEIN (&AI-LU13-05G-B01,1,TASTER-WC-ABL-5,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&AI-LU13-06G-B01,1,TASTER-WC-ABL-6,WERR)
+  MELEIN (&AI-HE12-13B-X50,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-FE-HEIZ-AUS)
+  BTRA ($B2,K-FE-HEIZ-EIN1)
+  MELEIN (&AI-HE12-13G-X53,3,$B3,$WSCRATCH,$B4,WERR)
+  BTRA ($B3,K-BATT-ANL-AUS)
+  BTRA ($B4,K-BATT-ANL-EIN1)
+  MELEIN (&AI-HE12-13C-X50,3,$B5,$WSCRATCH,$B6,WERR)
+  BTRA ($B5,K-ST-HEIZ-AUS)
+  BTRA ($B6,K-ST-HEIZ-EIN1)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&AI-HE12-13C-X51,3,$B7,$WSCRATCH,$B8,WERR)
+  BTRA ($B7,K-NACHTABS-AUS)
+  BTRA ($B8,K-NACHTABS-EIN1)
+  MELEIN (&AI-HE12-13C-X03,3,ST-HEIZ-PUM-AUS,
+          ST-HEIZ-PUM-STOE,ST-HEIZ-PUM-EIN1,WERR)
+  MELEIN (&AI-HE12-13A-X50,3,$B9,$WSCRATCH,$B10,WERR)
+  BTRA ($B9,K-HEIZVERT-AUS)
+  BTRA ($B10,K-HEIZVERT-EIN1)
+  MELEIN (&AI-HE12-13A-X01,3,HEIZVE-PUM1-AUS,$HB5,
+          HEIZVE-PUM1-EIN1,WERR)
+  NICHT ($HB5,HEIZVE-PUM1-STOE)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&AI-HE12-13A-X02,3,HEIZVE-PUM2-AUS,$HB5,
+          HEIZVE-PUM2-EIN1,WERR)
+  NICHT ($HB5,HEIZVE-PUM2-STOE)
+  MELEIN (&AI-HE12-13D-X50,3,$B11,$WSCRATCH,$B12,WERR)
+  BTRA ($B11,K-WWB-AUS)
+  BTRA ($B12,K-WWB-EIN1)
+  MELEIN (&AI-HE12-13D-X03,3,WWB-LADEPUM-AUS,
+          WWB-LADEPUM-STOE,WWB-LADEPUM-EIN1,WERR)
+  MELEIN (&AI-HE12-13D-X51,3,$B13,$WSCRATCH,$B14,WERR)
+  BTRA ($B13,K-WWB-LIGON-AUS)
+  BTRA ($B14,K-WWB-LIGON-EIN1)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&AI-HE12-13D-S03,1,WWB-STRA-PUM-STO,WERR)
+  MELEIN (&AI-HE12-13D-S01,1,WWB-STB,WERR)
+  MELEIN (&AI-HE12-13D-X01,3,WWB-ZI-PUM1-AUS,
+          WWB-ZI-PUM1-STOE,WWB-ZI-PUM1-EIN1,WERR)
+  MELEIN (&AI-HE12-13D-X02,3,WWB-ZI-PUM2-AUS,$WSCRATCH,
+          WWB-ZI-PUM2-EIN1,WERR)
+  NICHT ($WONE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&AI-AS14-00A-T00,AUSSENTEMPERATUR,WERR)
+  ANEIN (&AI-HE12-13D-T01,WWB-SPEICH-TEMP,WERR)
+  ANEIN (&AI-HE12-13D-Y53,$F1,WERR)
+  ATRA ($F1,K-SW-SP-TEMP-LEG)
+  ANEIN (&AI-HE12-13D-Y50,$F2,WERR)
+  ATRA ($F2,K-WWB-SW-SP-TEMP)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13G-Y51,$F3,WERR)
+  ATRA ($F3,K-GRWO-BATTERIE)
+  ANEIN (&AI-LU12-13G-Y52,$F4,WERR)
+  ATRA ($F4,K-GRWU-BATTERIE)
+  ANEIN (&AI-LU12-13G-T01,BATT-RAUM-TEMP,WERR)
+  ANEIN (&AI-LU12-13G-T02,VL-Temp-pr-Strah,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13G-Y50,$F5,WERR)
+  ATRA ($F5,K-LAUFZEIT-ABL)
+  ANEIN (&AI-HE12-13B-T01,FE-HEIZ-VL-TEMP,WERR)
+  ANEIN (&AI-HE12-13B-Y50,FE-HEIZ-SOLLW,WERR)
+  ANEIN (&AI-HE12-13C-T01,ST-HEIZ-VL-TEMP,WERR)
+  ANEIN (&AI-HE12-13C-Y50,ST-HEIZ-SOLLW,WERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  VVZ (TASTER-WC-ABL-1,$M31,K-LAUFZEIT-ABL,$B15)
+  NICHT ($B15,$B16)
+  BEFAUS (1,$B16,$B15,$WZERO,$WZERO,&AI-LU12-13G-X01,WERR)
+  VVZ (TASTER-WC-ABL-2,$M32,K-LAUFZEIT-ABL,$B17)
+  NICHT ($B17,$B18)
+  BEFAUS (1,$B18,$B17,$WZERO,$WZERO,&AI-LU12-13G-X02,WERR)
+  VVZ (TASTER-WC-ABL-3,$M33,K-LAUFZEIT-ABL,$B19)
+  NICHT ($B19,$B20)
+  BEFAUS (1,$B20,$B19,$WZERO,$WZERO,&AI-LU12-13G-X03,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  VVZ (TASTER-WC-ABL-4,$M34,K-LAUFZEIT-ABL,$B21)
+  NICHT ($B21,$B22)
+  BEFAUS (1,$B22,$B21,$WZERO,$WZERO,&AI-LU12-13G-X04,WERR)
+  VVZ (TASTER-WC-ABL-5,$M35,K-LAUFZEIT-ABL,$B23)
+  NICHT ($B23,$B24)
+  BEFAUS (1,$B24,$B23,$WZERO,$WZERO,&AI-LU12-13G-X05,WERR)
+  VVZ (TASTER-WC-ABL-6,$M36,K-LAUFZEIT-ABL,$B25)
+  NICHT ($B25,$B26)
+  BEFAUS (1,$B26,$B25,$WZERO,$WZERO,&AI-LU12-13G-X06,WERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NICHT (K-HEIZVERT-EIN1,$HB0)
+  BEFAUS (1,$HB0,K-HEIZVERT-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13A-X01,WERR)
+  NICHT (K-HEIZVERT-EIN1,$HB0)
+  BEFAUS (1,$HB0,K-HEIZVERT-EIN1,$WZERO,$WZERO,
+          &AI-HE12-13A-X02,WERR)
+  UND2 (HEIZVE-PUM1-STOE,HEIZVE-PUM2-STOE,$B27)
+  SETMEL ($M37,1,$B27,&M15,$WSCRATCH)
+  ;Verteilerpumpe 1+2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  REGLER (17,KON01,KON00,$M39,$F6,WERR)
+  AWT (K-FE-HEIZ-EIN1,$M40,$F6,$F7)
+  ANAUS ($F7,$M41,&AI-HE12-13B-Y01,WERR)
+  SOLKEN (4,KON01,SOKENN4,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,$M42,$M43,$B28)
+  UND11 (K-ST-HEIZ-EIN1,$B28,ST-HEIZ-PUMP-EIN)
+  REGLER (18,KON01,KON00,$M44,$F8,WERR)
+  AWT (ST-HEIZ-PUMP-EIN,$M45,$F8,ST-HEIZ-STELL-VE)
+  ANAUS (ST-HEIZ-STELL-VE,$M46,&AI-HE12-13C-Y01,WERR)
+  SOLKEN (5,K-NACHTABS-AUS,SOKENN5,WERR)
+  SOLKEN (6,K-NACHTABS-EIN1,SOKENN6,WERR)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  VVZ (ST-HEIZ-PUM-AUS,$M47,$M48,$B29)
+  ODR2 (ST-HEIZ-PUMP-EIN,$B29,$B30)
+  UNDMN (2,$B30,ST-HEIZ-PUM-STOE,0,$B31,$B32)
+  BEFAUS (1,$B32,$B31,$WZERO,$WZERO,&AI-HE12-13C-X03,WERR)
+  NICHT (ST-HEIZ-PUM-STOE,$HB1)
+  SETMEL ($M49,0,&M9,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UHR (WWB-ZI-PUM1-EIN1,$B34,$F9)
+  VGLOH ($F9,$M51,$B33)
+  RSS ($B33,WWB-ZI-PUM2-EIN1,$B34,$WSCRATCH)
+  UNDMN (0,3,$B34,WWB-ZI-PUM2-EIN1,WWB-ZI-PUM1-STOE,$B35,
+         $WSCRATCH)
+  ODR2 ($B35,WWB-ZI-PUM2-STOE,$B36)
+  UNDMN (2,$B36,K-WWB-EIN1,0,$B37,$B38)
+  BEFAUS (1,$B38,$B37,$WZERO,$WZERO,&AI-HE12-13D-X01,WERR)
+  ;Zirkulation-Pumpe 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UHR (WWB-ZI-PUM2-EIN1,$B40,$F10)
+  VGLOH ($F10,$M52,$B39)
+  RSS ($B39,WWB-ZI-PUM1-EIN1,$B40,$WSCRATCH)
+  UNDMN (0,3,$B40,WWB-ZI-PUM1-EIN1,WWB-ZI-PUM2-STOE,$B41,
+         $WSCRATCH)
+  ODR2 ($B41,WWB-ZI-PUM1-STOE,$B42)
+  VVZ (K-WWB-EIN1,$M53,$M54,$B43)
+  UNDMN (2,$B42,$B43,0,$B44,$B45)
+  BEFAUS (1,$B45,$B44,$WZERO,$WZERO,&AI-HE12-13D-X02,WERR)
+  ;Zirkulation-Pumpe 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODR2 (K-WWB-LIGON-EIN1,K-WWB-EIN1,$B46)
+  UNDMN (3,$B46,WWB-STB,WWB-STRA-PUM-STO,1,WWB-LADEPUM-STOE,
+         $B47,$B48)
+  BEFAUS (1,$B48,$B47,$WZERO,$WZERO,&AI-HE12-13D-X03,WERR)
+  UNDMN (0,2,WWB-ZI-PUM1-STOE,WWB-ZI-PUM2-STOE,$B49,
+         $WSCRATCH)
+  UNDMN (3,WWB-STB,WWB-STRA-PUM-STO,$B49,1,WWB-LADEPUM-STOE,
+         $WSCRATCH,$B50)
+  SETMEL ($M55,1,$B50,&M21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  LREG (VL-Temp-pr-Strah,K72,KON01,KON00,$M57,$M58,$M59,$M60,
+        $M61,$M62,$M63,$M64,$M65,$M66,$M67,Y-VL-Te-Reg-Str_,
+        $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UNDMN (3,K-WWB-EIN1,WWB-STB,WWB-LADEPUM-EIN1,0,$B51,
+         $WSCRATCH)
+  AWT (K-WWB-LIGON-EIN1,K-WWB-SW-SP-TEMP,K-SW-SP-TEMP-LEG,
+       akt_SW_SP-Temp)
+  ANAUS (akt_SW_SP-Temp,$M68,&AI-HE12-13D-Y52,$WSCRATCH)
+  REGLER (19,KON01,KON00,$M69,Y-Reg-SP-Te-WWB,WERR)
+  AWT ($B51,$M70,$F12,$F11)
+  ANAUS ($F11,$M71,&AI-HE12-13D-Y01,WERR)
+  MIN (2,Y-Reg-SP-Te-WWB,Y-VL-Te-Reg-Str_,$F12)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  VGLOH (WWB-SPEICH-TEMP,$F13,$B52)
+  VVZ ($B52,$M72,$M73,$B53)
+  SUB2 (K-SW-SP-TEMP-LEG,K1,$F13)
+  MOKY (K-WWB-LIGON-EIN1,$M74,$B54)
+  NOR2 ($B53,$B54,$B55)
+  BEFAUS (1,$B55,$WZERO,$WZERO,$WZERO,&AI-HE12-13D-X51,WERR)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  VGL3P (BATT-RAUM-TEMP,K-GRWO-BATTERIE,K-GRWU-BATTERIE,$B56,
+         $WSCRATCH,$B57)
+  ODR2 ($B56,$B57,$B58)
+  UND21 ($B58,K-BATT-ANL-EIN1,BATT-ABL-STOER,$B59)
+  NICHT ($B59,$B60)
+  BEFAUS (1,$B60,$B59,$WZERO,$WZERO,&AI-LU14-00G-X04,WERR)
+  SETMEL ($M75,1,BATT-ABL-STOER,&M7,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

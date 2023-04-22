@@ -1,0 +1,441 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60608.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 6
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 8
+  ;*****************************************************************
+  MODUL (ac40,8)
+  FloatV KW-VL-T-GWDG-alt
+  WordV  GWDG-alt-Pum1-R1
+  WordV  KW-VL-T-R-EIN1_1
+  WordV  GWDG-alt-Pum2-R1
+  FloatV KW-VL-T-GWDG-neu
+  FloatV akt-IW-VL-T-Reg.
+  WordK  k0 (0)
+  WordV  GWDG-neu-Pum1-R1
+  FloatV KW-Ventil-direkt
+  WordV  GWDG-neu-Pum2-R1
+  FloatV KW-VL-T-prim-Gru
+  WordV  24VDC-ST
+  WordV  Prim.pump.Gru-R1
+  WordV  Entr.Taster=S02
+  FloatV Ventilstellung
+  WordV  GWDG-neu-Pum1-ST
+  WordV  GWDG-neu-Pum2-ST
+  WordV  Ueberspannung-ST
+  WordV  Unterspannung-ST
+  FloatV VL-T-Zentr.k.sek
+  FloatK SW-KW-VL-Temp (8.00)
+  WordV  230VAC-ST
+  WordV  24VAC-ST
+  WordV  Ent.Taster=S01
+  WordV  Entriegeln
+  WordK  K1 (1)
+  WordV  KW-VL-T-Reg-R0
+  FloatV KW-VL-T-MAX-Ausw
+  WordK  KW-VL-T-Reg-R1 (1)
+  WordV  Zentralkaelte-R1
+  WordV  GLT-Fernentrieg.
+  WordV  KW-VL-T-Reg-EIN1
+  WordV  KW-RL-Pu2-KM1-ST
+  WordV  KM1-Kaeltekr1-ST
+  WordV  KW-RL-Pu1-KM1-ST
+  WordV  KM1-Kaeltekr2-ST
+  WordV  KW-RL-Pu1-KM2-ST
+  WordV  KW-RL-Pu2-KM2-ST
+  WordV  KM2-Kaeltekr1-ST
+  WordV  KM2-Kaeltekr2-ST
+  WordV  Laufueber-GWDG-V
+  WordV  GWDG-alt-Pum1-ST
+  WordV  GWDG-alt-Pum2-ST
+  IPAMB &M0 (66,1)
+  WordV  $WSCRATCH
+  IPAMB &M1 (66,3)
+  IPAMB &M2 (1,0)
+  IPAMB &M3 (39,3)
+  IPAMB &M8 (54,11)
+  WordV  $HB2
+  IPAMB &M9 (54,15)
+  IPAMB &M10 (54,6)
+  IPAMB &M11 (54,7)
+  IPAMB &M12 (55,11)
+  IPAMB &M13 (55,15)
+  IPAMB &M14 (55,6)
+  IPAMB &M15 (55,7)
+  IPAMB &M16 (70,3)
+  IPAMB &M17 (70,7)
+  IPAMB &M18 (71,3)
+  IPAMB &M19 (71,7)
+  IPAMB &M20 (70,15)
+  IPAMB &M21 (71,10)
+  IPAMB &M22 (71,11)
+  IPAMB &M23 (71,14)
+  IPAMB &M24 (71,15)
+  IPAMB &M29 (1,14)
+  IPAMB &M30 (52,11)
+  IPAMB &M31 (52,10)
+  IPAMB &M32 (70,2)
+  IPAMB &M33 (70,6)
+  IPAMB &M34 (71,2)
+  IPAMB &M35 (71,6)
+  IPAMB &M36 (14,7)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M48 (52,13)
+  IPAMB &M49 (52,9)
+  FloatK $M50 (5.00)
+  FloatK $M51 (0.00)
+  WordV  $B5
+  FloatK $M52 (8.00)
+  FloatK $M53 (0.00)
+  WordV  $B6
+  WordV  $B7
+  IPAAW &M54 (67)
+  FloatV $F1
+  FloatK $M55 (150.00)
+  FloatK $M56 (-50.00)
+  FloatV $F2
+  FloatK $M57 (10.00)
+  WordV  $B8
+  WordK  $M58 (1)
+  IPAMW &M60 (62)
+  IPAMW &M61 (63)
+  IPAMW &M62 (5)
+  IPAMW &M63 (64)
+  IPAMW &M64 (28)
+  FloatV $FSCRATCH
+  FloatV $F3
+  FloatV $F4
+  FloatK $M66 (25.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $HB1
+  FloatV $F5
+  FloatK $M67 (300.00)
+  WordV  $B11
+  WordK  $M68 (1)
+  IPAMB &M69 (66,0)
+  WordV  $B12
+  FloatK $M70 (1.00)
+  FloatK $M71 (5.00)
+  WordV  $B13
+  FloatK $M72 (0.00)
+  FloatV $F6
+  WordV  $B14
+  FloatK $M73 (1.00)
+  FloatK $M74 (5.00)
+  WordV  $B15
+  FloatK $M75 (0.00)
+  FloatV $F7
+  FloatK $M76 (1.00)
+  FloatK $M77 (5.00)
+  WordV  $B16
+  FloatK $M78 (0.00)
+  FloatV $F8
+  FloatK $M79 (30.00)
+  WordV  $B17
+  FloatK $M80 (0.00)
+  WordK  $M81 (1)
+  IPAMW &M82 (68)
+  WordV  $B18
+  WordV  $B22
+  WordV  $B19
+  WordV  $B23
+  WordV  $B20
+  WordV  $B24
+  WordV  $B21
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Gîttingen
+  ;Projekt: Turm 6
+  ;         KÑlteerweiter.
+  ;         fÅr die GWDG
+  ;Anlage:  KW-VL-Temp.-
+  ;         Regelung (Not-
+  ;         einspeisung
+  ;         von Zentral-
+  ;         kÑlte und
+  ;         sonstiges
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (KW-VL-T-Reg-R1,KW-VL-T-Reg-EIN1)
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,KW-VL-T-Reg-R0,$WSCRATCH)
+  MELEIN (&M1,1,KW-VL-T-Reg-R1,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M3,1,Zentralkaelte-R1,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu1-KM1-ST)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu2-KM1-ST)
+  MELEIN (&M10,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM1-Kaeltekr1-ST)
+  MELEIN (&M11,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM1-Kaeltekr2-ST)
+  MELEIN (&M12,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu1-KM2-ST)
+  MELEIN (&M13,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-RL-Pu2-KM2-ST)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM2-Kaeltekr1-ST)
+  MELEIN (&M15,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KM2-Kaeltekr2-ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-alt-Pum1-ST)
+  MELEIN (&M17,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-alt-Pum2-ST)
+  MELEIN (&M18,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-neu-Pum1-ST)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,GWDG-neu-Pum2-ST)
+  MELEIN (&M20,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Ueberspannung-ST)
+  MELEIN (&M21,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung-ST)
+  MELEIN (&M22,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,230VAC-ST)
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24VAC-ST)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24VDC-ST)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M29,1,Ent.Taster=S01,$WSCRATCH)
+  MELEIN (&M30,1,GLT-Fernentrieg.,$WSCRATCH)
+  MELEIN (&M31,1,Entr.Taster=S02,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,GLT-Fernentrieg.,Entr.Taster=S02,Ent.Taster=S01,0,
+         Entriegeln,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,GWDG-alt-Pum1-R1,$WSCRATCH)
+  MELEIN (&M33,1,GWDG-alt-Pum2-R1,$WSCRATCH)
+  MELEIN (&M34,1,GWDG-neu-Pum1-R1,$WSCRATCH)
+  MELEIN (&M35,1,GWDG-neu-Pum2-R1,$WSCRATCH)
+  MELEIN (&M36,1,Prim.pump.Gru-R1,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ODRMN (8,230VAC-ST,24VAC-ST,24VDC-ST,GWDG-alt-Pum1-ST,
+         GWDG-alt-Pum2-ST,GWDG-neu-Pum1-ST,GWDG-neu-Pum2-ST,
+         KM1-Kaeltekr1-ST,0,$B1,$WSCRATCH)
+  ODRMN (8,KM1-Kaeltekr2-ST,KM2-Kaeltekr1-ST,
+         KM2-Kaeltekr2-ST,KW-RL-Pu1-KM1-ST,KW-RL-Pu1-KM2-ST,
+         KW-RL-Pu2-KM1-ST,KW-RL-Pu2-KM2-ST,Laufueber-GWDG-V,
+         0,$B2,$WSCRATCH)
+  ODRMN (6,Ueberspannung-ST,Unterspannung-ST,k0,k0,k0,k0,0,
+         $B3,$WSCRATCH)
+  ODRMN (3,$B1,$B2,$B3,0,$B4,$WSCRATCH)
+  NICHT ($B4,$HB0)
+  BEFAUS (1,$HB0,$B4,$WZERO,$WZERO,&M48,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  BEFAUS (1,$B5,$WZERO,$WZERO,$WZERO,&M49,$WSCRATCH)
+  VVZ (GLT-Fernentrieg.,$M50,$M51,$B5)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  VVZ (KW-VL-T-Reg-EIN1,$M52,$M53,$B6)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B6,$B7,KW-VL-T-R-EIN1_1)
+  NICHT ($B6,$B7)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M54,$F1,$WSCRATCH)
+  LIMIT ($F1,$M55,$M56,$F2)
+  NICHT ($WONE,$WSCRATCH)
+  MOKY ($WONE,$M57,$B8)
+  AWT ($B8,$F2,SW-KW-VL-Temp,SW-KW-VL-Temp)
+  ANAUS (SW-KW-VL-Temp,$M58,&M54,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;Default-Werte setzen
+  ;8
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M60,KW-VL-T-GWDG-alt,$WSCRATCH)
+  ANEIN (&M61,KW-VL-T-GWDG-neu,$WSCRATCH)
+  ANEIN (&M62,VL-T-Zentr.k.sek,$WSCRATCH)
+  ANEIN (&M63,Ventilstellung,$WSCRATCH)
+  ANEIN (&M64,$FSCRATCH,$WSCRATCH)
+  ANEIN (&M64,KW-VL-T-prim-Gru,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  SUB2 (KW-Ventil-direkt,Ventilstellung,$F3)
+  ABSWER ($F3,$F4)
+  VGLOH ($F4,$M66,$B9)
+  UND11 ($B9,Entriegeln,$B10)
+  NICHT ($B10,$HB1)
+  UHR (K1,$HB1,$F5)
+  VGLOH ($F5,$M67,$B11)
+  RSS ($B11,Entriegeln,Laufueber-GWDG-V,$WSCRATCH)
+  SETMEL ($M68,1,Laufueber-GWDG-V,&M69,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODR2 (GWDG-alt-Pum1-R1,GWDG-alt-Pum2-R1,$B12)
+  VVZ ($B12,$M70,$M71,$B13)
+  AWT ($B13,$M72,KW-VL-T-GWDG-alt,$F6)
+  ODR2 (GWDG-neu-Pum1-R1,GWDG-neu-Pum2-R1,$B14)
+  VVZ ($B14,$M73,$M74,$B15)
+  AWT ($B15,$M75,KW-VL-T-GWDG-neu,$F7)
+  VVZ (Prim.pump.Gru-R1,$M76,$M77,$B16)
+  AWT ($B16,$M78,KW-VL-T-prim-Gru,$F8)
+  MAX (3,$F6,$F7,$F8,KW-VL-T-MAX-Ausw)
+  ;da hydraulisch bedingt
+  ;nicht alle Bereiche
+  ;gleich versorgt werden,
+  ;ist diese MAX-Auswahl
+  ;notwendig.
+  ;d
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  PT1 (KW-VL-T-MAX-Ausw,$M79,akt-IW-VL-T-Reg.)
+  ODR2 (KW-VL-T-Reg-R0,k0,$B17)
+  NICHT ($WONE,$WSCRATCH)
+  REGLER (3,$WONE,$B17,$M80,KW-Ventil-direkt,$WSCRATCH)
+  ANAUS (akt-IW-VL-T-Reg.,$M81,&M82,$WSCRATCH)
+  ;KW-VL-Temp.-Regler
+  ;Noteinspeisung von
+  ;ZentralkÑlte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (KW-VL-T-Reg-R0,$B22,$B18)
+  NICHT (KW-VL-T-Reg-R0,$B22)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (KW-VL-T-Reg-R1,$B23,$B19)
+  NICHT (KW-VL-T-Reg-R1,$B23)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (k0,$B24,$B20)
+  NICHT (k0,$B24)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,$B19,KW-VL-T-R-EIN1_1,$B20,k0,0,$B21,$WSCRATCH)
+  BEFAUS (1,$B18,$B21,$WZERO,$WZERO,&M0,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

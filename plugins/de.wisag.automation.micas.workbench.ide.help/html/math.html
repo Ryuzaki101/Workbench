@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+         <!--title>analoge Bausteine</title-->
+</head>
+
+<body>
+
+<div id="logo">MICAS Workbench</div>
+
+<hr>
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Mathematische Bausteine</h1>
+
+
+<p>
+<a href="#ABSWER" title="*** Absolutwert (Betrag) einer Zahl - siehe Anlaogbausteine">ABSWER</a>&nbsp;
+<a href="#ADD2" title="*** Addierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine">ADD2</a>&nbsp;
+<a href="#ADSU" title="*** Addierer / Subtrahierer  - siehe Anlaogbausteine">ADSU</a>&nbsp;
+<a href="#CHS" title="*** Vorzeichenwechsel - siehe Anlaogbausteine">CHS</a>&nbsp;
+<a href="#COS" title="Cosinusfunktion">COS</a>&nbsp;
+<a href="#DEG" title="Konvertierung Bogenma&szlig; in Gradma&szlig;">DEG</a>&nbsp;
+<a href="#DIVK2" title="Division durch 2">DIVK2</a>&nbsp;
+<a href="#EHOX" title="Exponentialfunktion e^x">EHOX</a>&nbsp;
+<a href="#HLG" title="Hochlaufgeber mit Startwert und 2 Flanken">HLG</a>&nbsp;
+<a href="#LN" title="Logarithmus zur Basiszahl e (nat&uuml;rlicher Logarithmus)">LN</a>&nbsp;
+<a href="#LOG" title="Logarhitmus zur Basiszahl 10">LOG</a>&nbsp;
+<a href="#MULDI" title="*** Multiplizierer-Dividierer - siehe Anlaogbausteine">MULDI</a>&nbsp;
+<a href="#MULK2" title="Multiplikation mit 2">MULK2</a>&nbsp;
+<a href="#MULT" title="*** Multiplizierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine">MULT</a>&nbsp;
+<a href="#QUAD" title="Quadratfunktion x^2">QUAD</a>&nbsp;
+<a href="#RAD" title="Konvertierung Gradma&szlig; in Bogenma&szlig;">RAD</a>&nbsp;
+<a href="#REZI" title="Berechnung des Kehrwertes (Reziprokwert)">REZI</a>&nbsp;
+<a href="#SIN" title="Sinusfunktion">SIN</a>&nbsp;
+<a href="#SUB2" title="*** Subtrahierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine">SUB2</a>&nbsp;
+<a href="#SQRT" title="Quadratwurzelfunktion">SQRT</a>&nbsp;
+<a href="#XHOY" title="Funkrion x^y">XHOY</a>&nbsp;
+</p>
+
+<h2><a name="ABSWER">ABSWER</a> - *** Absolutwert (Betrag) einer Zahl - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ABSWER" src="img/sym_abswer.png" alt="" border="0" width="67" height="66">
+
+
+<h2><a name="ADD2">ADD2</a> - *** Addierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ADD2" src="img/sym_add2.png" alt="" border="0" width="62" height="82">
+
+
+<h2><a name="ADSU">ADSU</a> - *** Addierer / Subtrahierer  - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ADSU Mindestgr&ouml;&szlig;e" src="img/sym_adsu.png" alt="" border="0" width="86" height="83">&nbsp;&nbsp;&nbsp;
+<img title="MICAS-Baustein ADSU mit 7 Additions- und 5 Subtraktionseing&auml;ngen" src="img/sym_adsu_7p_5m.png" alt="" border="0" width="103" height="262">
+
+
+<h2><a name="CHS">CHS</a> - *** Vorzeichenwechsel - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein CHS" src="img/sym_chs.png" alt="" border="0" width="49" height="70">
+
+
+<h2><a name="COS"> COS</a> - Cosinusfunktion </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird der Cosinus vom Wert der Variablen am Eingang Xe gebildet und der
+Variablen am Ausgang Xa zugewiesen. Die Variable am Eingang Xe mu&szlig; eine
+Winkelangabe im Bogenma&szlig; enthalten.</p>
+<p>Xa = cos(Xe)</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein COS" src="img/sym_cos.png" alt="" border="0" width="49" height="70">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert in Bogenma&szlig;</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = cos(Xe)</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="DEG"> DEG</a> - Konvertierung Bogenma&szlig; in Gradma&szlig;</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein konvertiert einen am Eingang Xe liegenden Winkel im Bogenma&szlig;
+in einen am Ausgang Xa liegenden Winkel im Gradma&szlig;.</p>
+<p>Xa = deg(Xe)</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein DEG" src="img/sym_deg.png" alt="" border="0" width="49" height="68">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Winkel in Bogenma&szlig;</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Winkel in Gradma&szlig;</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="DIVK2"> DIVK2</a> - Division durch 2 </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein liefert am Ausgang Xa den durch 2 dividierten Wert der Variablen
+am Eingang Xe. </p>
+<p>Xa = Xe / 2</p>
+<p><i>Hinweis:<br>Dieser Baustein arbeitet besonders schnell und sollte deshalb bei einer
+Division durch 2 bevorzugt benutzt werden.</i></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein DIVK2" src="img/sym_divk2.png" alt="" border="0" width="53" height="68">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="EHOX"> EHOX</a> - Exponentialfunktion e^x </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird die Funktion Xa = e^Xe gebildet. Bei Unter- oder &Uuml;berschreiten des darstellbaren
+Zahlenbereichs wird die kleinste bzw. die gr&ouml;&szlig;te darstellbare Zahl der Ausgangs-
+Variablen zugewiesen.</p>
+<p>Xa = e^Xe</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein EHOX"
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = e^Xe</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="HLG"> HLG</a> - Hochlaufgeber </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Das Ausgangs-Signal Xa folgt dem Eingangs-Signal Xe mit einer konstanten
+Steigung und zwar so lange, bis der Ausgangswert den Eingangswert (Sollwert)
+erreicht hat.
+&Uuml;ber den Eingang Schalter wird der wirksame Eingang Xe1 oder Xe2 f&uuml;r den
+Sollwert bestimmt.
+</p
+<p>Die Richtung der &Auml;nderung zwischen Eingang (Sollwert) und Ausgang (Istwert)
+bestimmt, welcher Eingang der Steigung (Steigung1 oder Steigung2) gerade gilt:<br>
+<ul>
+ <li>Steigung1 wird bei positiver Differenz zwischen Eingang und Ausgang benutzt</li>
+ <li>Steigung2 wird bei negativer Differenz benutzt. Steigung2 mu&szlig; negativ angegeben werden!</li>
+</ul>
+<p>Die Steigung1 bzw. Steigung2 gibt an, um welches Delta Y sich das Ausgangs-Signal
+pro Sekunde &auml;ndern soll. Soll z. B. das Ausgangs-Signal bei einem Sprung des
+Eingangs-Signals von 0 auf 100 diesem in 40s folgen, so gilt: S=100/40=2,5.</p>
+<p>&Uuml;ber den Eingang Halten kann der Hochlauf angehalten werden (Halten=1).<br>
+&Uuml;ber den Eingang Setzen kann der Hochlaufgeber auf den am Eingang
+Setzwert anliegenden Wert gesetzt werden (Setzen=1).
+</p></p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Schalter</td>
+   <td>Word</td>
+   <td>Umschaltung zwischen Xe1 und Xe2</td>
+  </tr>
+  <tr align="center">
+   <td>Xe1</td>
+   <td>Float</td>
+   <td>Eingangswert bei Schalter = 0</td>
+  </tr>
+  <tr align="center">
+   <td>Xe2</td>
+   <td>Float</td>
+   <td>Eingangswert bei Schalter = 1</td>
+  </tr>
+  <tr align="center">
+   <td>Steigung1</td>
+   <td>Float</td>
+   <td>Steigung wenn Xe - Xa > 0</td>
+  </tr>
+  <tr align="center">
+   <td>Steigung2</td>
+   <td>Float</td>
+   <td>Steigung wenn Xe - Xa < 0</td>
+  </tr>
+  <tr align="center">
+   <td>Halten</td>
+   <td>Word</td>
+   <td>Hochlauf Stop wenn 1</td>
+  </tr>
+  <tr align="center">
+   <td>Setzen</td>
+   <td>Word</td>
+   <td>Xa auf Setzwert setzen wenn 1</td>
+  </tr>
+  <tr align="center">
+   <td>Setzwert</td>
+   <td>Float</td>
+   <td>Anfangswert</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="LN"> LN</a> - Logarithmus zur Basiszahl e (nat&uuml;rlicher Logarithmus)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Variablen am Ausgang Xa wird der nat&uuml;rliche Logarithmus der Variablen am
+Eingang Xe zugewiesen.</p>
+<p>Xa = ln(Xe)</p>
+<p>F&uuml;r Eingangswerte Xe &lt; = 0, f&uuml;r die der Logarithmus nicht definiert ist, wird der
+Ausgangs-Variablen der Wert 1.0 zugewiesen.</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="LOG"> LOG</a> - Logarithmus zur Basiszahl 10</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Variablen am Ausgang Xa wird der Logarithmus der Variablen am
+Eingang Xe zugewiesen.</p>
+<p>Xa = log(Xe)</p>
+<p>F&uuml;r Eingangswerte Xe &lt; = 0, f&uuml;r die der Logarithmus nicht definiert ist, wird der
+Ausgangs-Variablen der Wert 1.0 zugewiesen.</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="MULDI">MULDI</a> - *** Multiplizierer-Dividierer - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h2><a name="MULK2"> MULK2</a> - Multiplikation mit 2</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der Variablen am Eingang Xe wird mit 2 multipliziert und das Ergebnis
+der Variablen am Ausgang Xa zugewiesen.</p>
+<p>Xa = Xe * 2</p>
+<p><i>Hinweis:<br>
+Dieser Baustein arbeitet besonders
+schnell und sollte deshalb bei einer Multiplikation mit 2 benutzt werden.</i></p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="MULT">MULT</a> - *** Multiplizierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+
+<h2><a name="QUAD">QUAD</a> - Quadratfunktion</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der Variablen am Eingang Xe wird ins Quadrat gesetzt und das Ergebnis
+der Variablen am Ausgang Xa zugewiesen.</p>
+<p>Xa = Xe ^ 2</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = Xe ^ 2</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="RAD">RAD</a> - Konvertierung Gradma&szlig; in Bogenma&szlig;</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Funktion wandelt einen am Eingang Xe liegenden Winkelwert im Gradma&szlig;
+in den entsprechenden Winkelwert im Bogenma&szlig;, der der Variablen am
+Ausgang Xa zugewiesen wird.</p>
+<p>Xa = rad(Xe)</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = rad(Xe)</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="REZI">REZI</a> - Berechnung des Kehrwertes (Reziprokwert)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Funktion errechnet vom am Eingang Xe liegenden Wert den Kehrwert, der der Variablen am
+Ausgang Xa zugewiesen wird.</p>
+<p>Xa = 1 / Xe</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = 1 / Xe</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="SIN">SIN</a> - Sinusfunktion </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird die Funktion Xa = sin (Xe) gebildet. Der Winkel mu&szlig; am Eingang Xe im
+Bogenma&szlig; anliegen.</p>
+<p>Xa = sin(Xe)</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = sin(Xe)</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="SUB2">SUB2</a> - *** Subtrahierer mit 2 Eing&auml;ngen - siehe Anlaogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h2><a name="SQRT">SQRT</a> - Quadratwurzel </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird die Quadratwurzel aus Xe gebildet und dem Ausgang Xa zugewiesen.</p>
+<p>Xa = sqrt(Xe)</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = sqrt(Xe)</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="XHOY">XHOY</a> - Potenzfunktion x^y</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird die Potenz aus Xe hoxh Ye gebildet und dem Ausgang Xa zugewiesen.</p>
+<p>Xa = Xe ^ Ye</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert x</td>
+  </tr>
+  <tr align="center">
+   <td>Ye</td>
+   <td>Float</td>
+   <td>Eingangwert y</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = Xe ^Ye</td>
+  </tr>
+</table>
+<br>
+
+
+
+<br>
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+</body>
+</html>

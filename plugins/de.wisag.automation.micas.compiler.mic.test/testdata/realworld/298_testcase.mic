@@ -1,0 +1,405 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ANALOG-MODULE SETZEN.GPS
+  ;*** Projektname    : DULE SETZEN
+  ;*** Projektnummer  : G-MODULE LÖSCHEN
+
+  ;*** Bearbeiter     : LÖSCHEN
+
+  ;*** Prüfer         : AL-MODULE SETZEN
+  ;*** Line Nummer    : 14
+  ;*** User Number    : 21
+  ;*** Modul Typ      : SIGNAL-MODULE LÖSCHEN
+  ;*** Feldbus Nummer : 17487
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordK  KFREIG-GLT-EIN (0)
+  WordV  ERR18
+  WordV  ERR03
+  WordK  KFREIG-GLT-AUS (1)
+  WordV  ERR05
+  WordV  ERR06
+  WordV  ERR04
+  WordV  ERR07
+  WordV  ZPK
+  WordV  ERR01
+  WordV  Lampentest1
+  WordV  ERR-FREIG-GLT
+  WordV  ERR19
+  WordV  ERR02
+  WordV  Lampentest
+  WordV  ERR08
+  WordV  ERR17
+  WordV  Lampentest2
+  WordV  ERR09
+  WordV  ERR10
+  WordV  ERR11
+  WordV  ERR12
+  WordV  ERR13
+  WordV  ERR14
+  WordV  ERR15
+  WordV  ERR16
+  WordV  Lampentest3
+  WordV  ERR20
+  WordV  ERR21
+  WordV  ERR22
+  WordV  ERR23
+  WordV  ERR24
+  WordV  ERR27
+  WordV  Lampentest4
+  WordV  ERR25
+  WordV  ERR26
+  WordV  ERR28
+  WordV  ERR29
+  WordV  ERR30
+  WordV  ERR31
+  WordV  ERR32
+  WordV  ERR33
+  WordV  Lampentest5
+  WordV  ERR34
+  WordV  ERR35
+  WordV  ERR36
+  WordV  ERR37
+  WordV  ERR38
+  WordV  ERR39
+  WordV  ERR40
+  WordV  ERR41
+  WordV  Lampentest6
+  WordV  ERR43
+  WordV  ERR42
+  WordV  ERR44
+  WordV  ERR45
+  WordV  ERR46
+  WordV  ERR49
+  WordV  ERR48
+  WordV  ERR47
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &01C-SH009-900 (200,1)
+  IPAMB &01C-SH009-003 (2,6)
+  IPAMB &M0 (200,0)
+  IPAMB &M1 (200,2)
+  IPAMB &M2 (200,3)
+  WordV  $B1
+  FloatK $M3 (0.00)
+  FloatK $M4 (3.00)
+  FloatK $M5 (4.00)
+  FloatK $M6 (7.00)
+  FloatK $M7 (8.00)
+  FloatK $M8 (11.00)
+  FloatK $M9 (12.00)
+  FloatK $M10 (16.00)
+  FloatK $M11 (0.00)
+  FloatK $M12 (35.00)
+  WordV  $B2
+  FloatK $M13 (22.00)
+  FloatK $M14 (26.00)
+  FloatK $M15 (17.00)
+  FloatK $M16 (21.00)
+  WordV  $HB0
+  IPAMB &01C-SH001-063 (0,1)
+  IPAMB &01C-SH001-064 (0,5)
+  IPAMB &01C-SH001-065 (1,1)
+  IPAMB &01C-SH002-002 (1,5)
+  IPAMB &01C-SH002-003 (0,9)
+  IPAMB &01C-SH002-004 (0,13)
+  IPAMB &01C-SH001-066 (1,9)
+  IPAMB &01C-SH001-067 (1,13)
+  IPAMB &01C-SH001-068 (4,1)
+  IPAMB &01C-SH001-069 (4,5)
+  IPAMB &01C-SH001-070 (5,1)
+  IPAMB &01C-SH001-071 (5,5)
+  IPAMB &01C-SH001-072 (4,9)
+  IPAMB &01C-SH001-073 (4,13)
+  IPAMB &01C-SH002-005 (5,9)
+  IPAMB &01C-SH001-074 (5,13)
+  IPAMB &01C-SH001-075 (16,1)
+  IPAMB &01C-SH001-076 (16,5)
+  IPAMB &01C-SH001-077 (17,1)
+  IPAMB &01C-SH001-078 (17,5)
+  IPAMB &01C-SH002-006 (16,9)
+  IPAMB &01C-SH002-007 (16,13)
+  IPAMB &01C-SH002-008 (17,9)
+  IPAMB &01C-SH002-009 (17,13)
+  IPAMB &01C-SH001-079 (20,1)
+  IPAMB &01C-SH001-080 (20,5)
+  IPAMB &01C-SH001-081 (21,1)
+  IPAMB &01C-SH001-082 (21,5)
+  IPAMB &01C-SH002-010 (20,9)
+  IPAMB &01C-SH002-011 (20,13)
+  IPAMB &01C-SH002-012 (21,9)
+  IPAMB &01C-SH001-083 (21,13)
+  IPAMB &01C-SH001-084 (27,1)
+  IPAMB &01C-SH001-085 (27,5)
+  IPAMB &01C-SH001-086 (28,1)
+  IPAMB &01C-SH001-087 (28,5)
+  IPAMB &01C-SH001-088 (27,9)
+  IPAMB &01C-SH001-089 (27,13)
+  IPAMB &01C-SH001-090 (28,9)
+  IPAMB &01C-SH003-012 (28,13)
+  WordV  $B3
+  IPAMB &01C-SH002-013 (31,1)
+  WordV  $B4
+  IPAMB &01C-SH002-014 (32,1)
+  WordV  $B5
+  IPAMB &01C-SH002-015 (31,9)
+  WordV  $B6
+  IPAMB &01C-SH002-016 (32,9)
+  WordV  $B7
+  IPAMB &01C-SH002-017 (35,1)
+  WordV  $B8
+  IPAMB &01C-SH002-018 (36,1)
+  WordV  $B9
+  IPAMB &01C-SH002-019 (35,9)
+  WordV  $B10
+  IPAMB &01C-SH002-020 (36,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 09
+  ;Pförtnerbedienteil
+  ;EG
+  ;Lampentest
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,KFREIG-GLT-AUS,KFREIG-GLT-EIN,$WZERO,$WZERO,
+          &01C-SH009-900,ERR03)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&01C-SH009-003,1,Lampentest,ERR27)
+  MELEIN (&M0,4,ZPK,KFREIG-GLT-AUS,ZPK,KFREIG-GLT-EIN,
+          ERR-FREIG-GLT)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ODR2 (Lampentest,KFREIG-GLT-EIN,$B1)
+  VVZ ($B2,$M3,$M4,Lampentest1)
+  VVZ ($B2,$M5,$M6,Lampentest2)
+  VVZ ($B2,$M7,$M8,Lampentest3)
+  VVZ ($B2,$M9,$M10,Lampentest4)
+  VVZ ($B1,$M11,$M12,$B2)
+  VVZ ($B2,$M13,$M14,Lampentest6)
+  VVZ ($B2,$M15,$M16,Lampentest5)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH001-063,
+          ERR01)
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH001-064,
+          ERR02)
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH001-065,
+          ERR03)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH002-002,
+          ERR04)
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH002-003,
+          ERR05)
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH002-004,
+          ERR06)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH001-066,
+          ERR07)
+  NICHT (Lampentest1,$HB0)
+  BEFAUS (1,$HB0,Lampentest1,$WZERO,$WZERO,&01C-SH001-067,
+          ERR08)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-068,
+          ERR09)
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-069,
+          ERR10)
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-070,
+          ERR11)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-071,
+          ERR12)
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-072,
+          ERR13)
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-073,
+          ERR14)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH002-005,
+          ERR15)
+  NICHT (Lampentest2,$HB0)
+  BEFAUS (1,$HB0,Lampentest2,$WZERO,$WZERO,&01C-SH001-074,
+          ERR16)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH001-075,
+          ERR17)
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH001-076,
+          ERR18)
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH001-077,
+          ERR19)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH001-078,
+          ERR20)
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH002-006,
+          ERR21)
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH002-007,
+          ERR22)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH002-008,
+          ERR23)
+  NICHT (Lampentest3,$HB0)
+  BEFAUS (1,$HB0,Lampentest3,$WZERO,$WZERO,&01C-SH002-009,
+          ERR24)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH001-079,
+          ERR25)
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH001-080,
+          ERR26)
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH001-081,
+          ERR28)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH001-082,
+          ERR29)
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH002-010,
+          ERR30)
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH002-011,
+          ERR31)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH002-012,
+          ERR32)
+  NICHT (Lampentest4,$HB0)
+  BEFAUS (1,$HB0,Lampentest4,$WZERO,$WZERO,&01C-SH001-083,
+          ERR33)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-084,
+          ERR34)
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-085,
+          ERR35)
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-086,
+          ERR36)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-087,
+          ERR37)
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-088,
+          ERR38)
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-089,
+          ERR39)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH001-090,
+          ERR40)
+  NICHT (Lampentest5,$HB0)
+  BEFAUS (1,$HB0,Lampentest5,$WZERO,$WZERO,&01C-SH003-012,
+          ERR41)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODR2 (Lampentest6,Lampentest1,$B3)
+  NICHT ($B3,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-013,ERR42)
+  ODR2 (Lampentest6,Lampentest1,$B4)
+  NICHT ($B4,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-014,ERR43)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODR2 (Lampentest6,Lampentest1,$B5)
+  NICHT ($B5,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-015,ERR44)
+  ODR2 (Lampentest6,Lampentest1,$B6)
+  NICHT ($B6,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-016,ERR45)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODR2 (Lampentest6,Lampentest1,$B7)
+  NICHT ($B7,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-017,ERR46)
+  ODR2 (Lampentest6,Lampentest1,$B8)
+  NICHT ($B8,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-018,ERR47)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODR2 (Lampentest6,Lampentest1,$B9)
+  NICHT ($B9,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-019,ERR48)
+  ODR2 (Lampentest6,Lampentest1,$B10)
+  NICHT ($B10,$HB0)
+  BEFAUS (2,$HB0,Lampentest1,Lampentest6,$WZERO,
+          &01C-SH002-020,ERR49)
+  ENDE 
+  ENDMODUL 

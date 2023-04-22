@@ -1,0 +1,872 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MD710_03.GPS
+  ;*** Projektname    : MSC Heizung
+  ;*** Projektnummer  : 2006-710
+  ;*** Bearbeiter     : PS
+  ;*** PrÅfer         : Paluszkiewicz
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 10
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (AR20,3)
+  WordV  Freig_St-HzgP-ST
+  FloatK AU-Freig.verÑndb (24.00)
+  FloatV AU-Temp
+  WordV  WERR
+  WordV  ST-HZG-Gesamt-ST
+  FloatV /SW_Test_AU
+  WordV  Freig.RG_st.HZG
+  WordV  werr254e
+  WordV  Ruhebetr.St-Hzg
+  WordV  WWB_STB_75G
+  WordV  ST-HZG-Gesamt-R1
+  WordV  St-HZGP_M3-R1
+  WordV  St-HZGP_M4-R0
+  WordV  St-HZGP_M4-R1
+  WordV  ST-HZG-Gesamt-R0
+  FloatV SG-Regler_St.Hzg
+  WordV  Freig_St-HzgP-R1
+  WordV  werr_Sollkenn_2
+  FloatV St-Hzg_RL-Temp
+  WordK  FKON_ST-HZG-R1 (0)
+  WordV  Freig_St-HzgP-R0
+  WordV  /Test_WWB-ST1
+  WordK  KON01 (1)
+  FloatV St-Hzg_VL-Temp
+  WordV  St-HZGP_M3-R0
+  WordV  /Test_AU
+  WordV  /Test_WWB-ST2
+  FloatV SW-St-Heizung
+  WordV  St-HZGP_M3-ST
+  WordV  St-HZGP_M4-ST
+  WordV  Anlage_5_Frost
+  WordV  HZGRLT-Gesamt-R0
+  WordV  HZGRLT-Gesamt-ST
+  WordV  HZGRLT-Gesamt-R1
+  WordK  FKON_HZGRLT-R1 (0)
+  WordV  Freig_RLTHzgP-R0
+  WordV  Freig_RLTHzgP-ST
+  WordV  Freig_RLTHzgP-R1
+  WordV  HZGP_RLT_M1-R0
+  WordV  HZGP_RLT_M1-ST
+  WordV  HZGP_RLT_M1-R1
+  WordV  HZGP_RLT_M2-R0
+  WordV  HZGP_RLT_M2-ST
+  WordV  HZGP_RLT_M2-R1
+  FloatV RLT_Hzg_VL-Temp
+  FloatV RLT_Hzg_RL-Temp
+  WordV  AT_<_22_Grad_RLT
+  FloatK FKON_22G_RLT (22.00)
+  WordV  Anf.HZGP_RLT
+  WordV  Anlage_1_abs.F
+  WordV  RLT_HZGP-EIN
+  WordV  Freig.RG_RLT_HZG
+  WordV  Anlage_4_Frost
+  WordV  Anlage_3_Frost
+  WordV  Anlage_2_Frost
+  WordV  Anlage_1_Frost
+  FloatK FKON_Z2_RLTHZG (10.00)
+  FloatK FKON_Z1_RLTHZG (0.00)
+  WordV  Anlage_2_abs.F
+  WordV  Anlage_3_abs.F
+  WordV  Anlage_4_abs.F
+  WordV  /Test_HZG-RLT
+  FloatV SW-RLT-Heizung
+  FloatV SG-Regl_RLT_Hzg
+  WordV  WWB-Gesamt-R0
+  WordV  WWB-Gesamt-ST
+  WordV  WWB-Gesamt-R1
+  WordV  WWB-Gesamt-R2
+  WordK  FKON_WWB-R1 (0)
+  WordK  FKON_WWB-R2 (0)
+  WordV  WWB_E-HP-ST
+  WordV  WWB_E-HP-R0
+  WordV  WWB_E-HP-R1
+  FloatV WWB_Hzg_VL-Temp
+  FloatV WWB_Hzg_RL-Temp
+  FloatV WWB_Speichertemp
+  FloatV WWB_Zirkul.Temp
+  WordV  Anf.WWB-Ladepump
+  FloatK FKON_WWB_<60G (60.00)
+  FloatK FKON_Z2_WWB-EHP (0.00)
+  WordV  Anf.WWB_E-HP
+  FloatK FKON_Z1_WWB-EHP (180.00)
+  FloatK FKON_WWB-VL_<60G (60.00)
+  WordV  WWB_STB
+  WordV  /WWB_Test1
+  WordV  /WWB_Test2
+  FloatK FK_WWB_Z2_STB (0.00)
+  FloatK FK_WWB_Z1_STB (10.00)
+  WordV  WWB_Ladepumpe_ST
+  WordV  ST-Quit
+  FloatK FKONWWB_Zirk>60G (60.00)
+  WordV  Anf.WWB_Zirk.Ppe
+  FloatK FK_WWB_Z1_Zirk. (3600.00)
+  FloatK FK_WWB_Z2_Zirk. (0.00)
+  WordV  WWB_Zirk.Ppe_ST
+  FloatV SG-Regl_WWB
+  FloatV SW-Speichertemp.
+  FloatK FKON_WWB_60G (60.00)
+  FloatK FKON_WWB_70G (70.00)
+  WordV  Anf.st.HZG-Ppe
+  FloatK FKON_WWB_>75G (75.00)
+  WordV  WWB_STB_65G
+  FloatK FKON_WWB_>65G (65.00)
+  WordV  WWB_STB_ausgel
+  FloatK FKON_WWB_<70G (70.00)
+  WordV  WWB_Ladepumpe_R0
+  WordV  WWB_Ladepumpe_R1
+  WordV  WWB_Zirk.Ppe_R0
+  WordV  WWB_Zirk.Ppe_R1
+  WordV  WWB_ZirkP.STelek
+  WordV  WWB_Ladep.STelek
+  WordV  WWB_STB_GF
+  WordV  /Test_stat.HZG
+  FloatK FKON_WWB-VL_<40G (40.00)
+  WordV  Freig.vonAU-Temp
+  WordV  Anlage_7.1_Frost
+  WordV  werr_Sollkenn_1
+  WordV  werr_Regler_1
+  WordV  werr11a
+  WordV  werr_Regler_2
+  WordV  Anlage_6_Frost
+  WordV  Anlage_17_Frost
+  WordV  Anlage_15_Frost
+  WordV  werr12a
+  WordV  Ladepumpe_ST
+  WordV  ZIRKPUMPE_ST
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &&41HZ30-000BF01 (55,5)
+  IPAMB &&41HZ01-100BF01 (55,1)
+  WordV  $B1
+  IPAMB &&41SA01-000BF01 (56,1)
+  IPAMB &M0 (55,6)
+  IPAMB &M1 (55,7)
+  IPAMB &&41HZ30-016BF01 (0,5)
+  IPAMB &M2 (0,6)
+  IPAMB &M3 (0,7)
+  IPAMB &M4 (32,8)
+  IPAMB &&41HZ30-016BM01 (32,9)
+  IPAMB &M5 (32,10)
+  IPAMB &M6 (32,11)
+  IPAMB &M7 (32,12)
+  IPAMB &&41HZ30-016BM02 (32,13)
+  IPAMB &M8 (32,14)
+  IPAMB &M9 (32,15)
+  WordV  $WSCRATCH
+  IPAMW &&41HZ30-016MW01 (4)
+  IPAMW &&41HZ30-016MW02 (5)
+  IPAMW &&41LT01-706MW91 (254)
+  FloatV $F1
+  IPAMB &&41HZ00-000BM00 (1,6)
+  WordK  $M10 (1)
+  IPAMW &&41HZ00-706MW00 (108)
+  WordV  $B2
+  FloatK $M11 (0.00)
+  FloatK $M12 (60.00)
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B12
+  FloatV $F2
+  FloatK $M13 (168.00)
+  FloatV $F3
+  FloatV $FSCRATCH
+  FloatK $M14 (3600.00)
+  FloatV $F4
+  FloatV $F5
+  WordV  $B13
+  FloatK $M15 (300.00)
+  WordV  $B10
+  WordV  $B14
+  WordV  $B11
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $HB3
+  FloatK $M16 (0.00)
+  FloatK $M17 (0.00)
+  FloatK $M18 (0.00)
+  FloatK $M19 (100.00)
+  FloatK $M20 (100.00)
+  FloatV $F6
+  FloatK $M21 (65.00)
+  FloatK $M22 (100.00)
+  FloatK $M23 (70.00)
+  FloatK $M24 (0.00)
+  FloatV $F7
+  FloatV $F8
+  WordK  $M25 (1)
+  IPAAW &41HZ30-016AA01 (11)
+  IPAMB &M26 (55,2)
+  IPAMB &M27 (55,3)
+  IPAMB &&41HZ01-100BF02 (0,1)
+  IPAMB &M28 (0,2)
+  IPAMB &M29 (0,3)
+  IPAMB &M30 (32,0)
+  IPAMB &&41HZ01-100BM01 (32,1)
+  IPAMB &M31 (32,2)
+  IPAMB &M32 (32,3)
+  IPAMB &M33 (32,4)
+  IPAMB &&41HZ01-100BM02 (32,5)
+  IPAMB &M34 (32,6)
+  IPAMB &M35 (32,7)
+  IPAMB &M36 (253,0)
+  IPAMB &M37 (252,0)
+  IPAMB &M38 (251,0)
+  IPAMB &M39 (251,1)
+  IPAMB &M40 (251,6)
+  IPAMB &M41 (251,7)
+  IPAMB &M42 (252,6)
+  IPAMB &M43 (252,7)
+  IPAMB &M44 (252,8)
+  IPAMB &&41LU10-902BM14 (253,2)
+  IPAMB &&41LU10-912BM14 (252,5)
+  IPAMB &&41LU10-922BM14 (251,4)
+  IPAMB &&41LU20-902BM14 (251,5)
+  IPAMW &&41HZ01-100MW01 (2)
+  IPAMW &&41HZ01-100MW02 (3)
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B27
+  FloatV $F9
+  FloatK $M45 (168.00)
+  FloatV $F10
+  FloatK $M46 (3600.00)
+  FloatV $F11
+  FloatV $F12
+  WordV  $B28
+  FloatK $M47 (300.00)
+  WordV  $B25
+  WordV  $B29
+  WordV  $B26
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatK $M48 (0.00)
+  FloatK $M49 (0.00)
+  FloatK $M50 (0.00)
+  FloatK $M51 (100.00)
+  FloatK $M52 (100.00)
+  FloatV $F13
+  FloatK $M53 (65.00)
+  FloatK $M54 (100.00)
+  FloatK $M55 (70.00)
+  FloatK $M56 (0.00)
+  FloatV $F14
+  FloatV $F15
+  WordK  $M57 (1)
+  IPAAW &&41HZ01-100AA01 (12)
+  IPAMB &M58 (56,2)
+  IPAMB &M59 (56,3)
+  IPAMB &M60 (56,4)
+  IPAMB &M61 (56,5)
+  IPAMB &&41SA01-000BF02 (1,1)
+  IPAMB &M62 (1,2)
+  IPAMB &M63 (1,3)
+  IPAMB &&41SA03-100BF01 (197,1)
+  IPAMB &M64 (197,2)
+  IPAMB &M65 (197,3)
+  WordV  $HB5
+  IPAMB &&41SA01-100BF01 (198,1)
+  IPAMB &M66 (198,2)
+  IPAMB &M67 (198,3)
+  IPAMW &&41HZ01-200MW01 (6)
+  IPAMW &&41HZ01-200MW02 (7)
+  IPAMW &&41SA01-000MW01 (8)
+  IPAMW &&41SA01-000MW02 (9)
+  WordV  $B30
+  FloatK $M68 (2.00)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  FloatK $M69 (0.00)
+  FloatK $M70 (60.00)
+  WordV  $B34
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  WordV  $HB2
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B63
+  FloatV $F16
+  FloatK $M71 (168.00)
+  FloatV $F17
+  FloatK $M72 (3600.00)
+  FloatV $F18
+  FloatV $F19
+  WordV  $B64
+  FloatK $M73 (300.00)
+  WordV  $B61
+  WordV  $B65
+  WordV  $B62
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordK  $M74 (1)
+  IPAMB &&41SA03-100BM91 (107,0)
+  WordV  $B57
+  WordV  $B68
+  FloatV $F20
+  FloatK $M75 (168.00)
+  FloatV $F21
+  FloatK $M76 (3600.00)
+  FloatV $F22
+  FloatV $F23
+  WordV  $B69
+  FloatK $M77 (300.00)
+  WordV  $B66
+  WordV  $B70
+  WordV  $B67
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  WordK  $M78 (1)
+  IPAMB &&41SA01-100BM91 (107,3)
+  WordV  $B71
+  FloatK $M79 (120.00)
+  FloatK $M80 (0.00)
+  WordV  $B72
+  WordV  $B73
+  WordK  $M81 (1)
+  IPAMB &&41SA03-101ST20 (55,9)
+  WordV  $B74
+  FloatK $M82 (120.00)
+  FloatK $M83 (0.00)
+  WordV  $B75
+  WordV  $B76
+  WordK  $M84 (1)
+  IPAMB &&41SA01-101ST20 (55,10)
+  WordV  $B77
+  WordK  $M85 (1)
+  IPAMB &&41SA01-101GF91 (55,8)
+  FloatK $M86 (0.00)
+  FloatK $M87 (0.00)
+  FloatK $M88 (0.00)
+  FloatK $M89 (100.00)
+  FloatK $M90 (100.00)
+  FloatV $F24
+  WordK  $M91 (1)
+  IPAAW &&41SA03-200AA01 (13)
+  WordK  $M92 (1)
+  IPAAW &&41SA03-901AA01 (75)
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  FloatK $M93 (120.00)
+  FloatK $M94 (0.00)
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  IPAMB &&41HZ00-000ST00 (1,5)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  NICHT (FKON_ST-HZG-R1,$HB0)
+  BEFAUS (1,$HB0,FKON_ST-HZG-R1,$WZERO,$WZERO,
+          &&41HZ30-000BF01,WERR)
+  NICHT (FKON_HZGRLT-R1,$HB0)
+  BEFAUS (1,$HB0,FKON_HZGRLT-R1,$WZERO,$WZERO,
+          &&41HZ01-100BF01,WERR)
+  NOR2 (FKON_WWB-R2,FKON_WWB-R1,$B1)
+  BEFAUS (2,$B1,FKON_WWB-R1,FKON_WWB-R2,$WZERO,
+          &&41SA01-000BF01,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&&41HZ30-000BF01,3,ST-HZG-Gesamt-R0,
+          ST-HZG-Gesamt-ST,ST-HZG-Gesamt-R1,WERR)
+  BTRA (ST-HZG-Gesamt-R1,FKON_ST-HZG-R1)
+  MELEIN (&&41HZ30-016BF01,3,Freig_St-HzgP-R0,
+          Freig_St-HzgP-ST,Freig_St-HzgP-R1,WERR)
+  MELEIN (&M4,8,$WSCRATCH,St-HZGP_M3-R0,St-HZGP_M3-ST,
+          St-HZGP_M3-R1,$WSCRATCH,St-HZGP_M4-R0,
+          St-HZGP_M4-ST,St-HZGP_M4-R1,WERR)
+  ;Gesamtanlage St.Heizung
+  ; 
+  ;Freigabe St.Hzg.-Pumpen
+  ; 
+  ;St.Hzg.Pumpe 1 (M3)
+  ; 
+  ;St.Hzg.Pumpe 2 (M4)
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&&41HZ30-016MW01,St-Hzg_VL-Temp,WERR)
+  ANEIN (&&41HZ30-016MW02,St-Hzg_RL-Temp,WERR)
+  ;Stat.Hzg.Vorlauftemp.
+  ; 
+  ;Stat.Hzg.RÅcklauftemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;Aussentemperatur von
+  ;Unterstation 6
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&41LT01-706MW91,$F1,werr254e)
+  AWT (/Test_AU,$F1,/SW_Test_AU,AU-Temp)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MELEIN (&&41HZ00-000BM00,1,ST-Quit,WERR)
+  ANAUS (AU-Temp,$M10,&&41HZ00-706MW00,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLOH (AU-Freig.verÑndb,AU-Temp,$B2)
+  VVZ ($B2,$M11,$M12,Freig.vonAU-Temp)
+  ODR2 (St-HZGP_M3-R1,St-HZGP_M4-R1,$B3)
+  UND2 ($B3,$B4,Freig.RG_st.HZG)
+  UND2 (Freig.vonAU-Temp,ST-HZG-Gesamt-R1,$B4)
+  ODRMN (2,$B4,$WZERO,0,Anf.st.HZG-Ppe,Ruhebetr.St-Hzg)
+  ;AU- Freigabe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (2,St-HZGP_M3-ST,St-HZGP_M4-ST,0,$B5,$B6)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B11,$B6,$B12)
+  NICHT ($B12,$HB0)
+  UHR ($HB0,$B12,$F2)
+  UST ($WZERO,$M13,$F3,$FSCRATCH)
+  UST ($WZERO,$M14,$F4,$FSCRATCH)
+  MULT ($F3,$F4,$F5)
+  VGLOH ($F2,$F5,$B13)
+  MOKY ($B13,$M15,$B10)
+  ODR2 (Anf.st.HZG-Ppe,$B10,$B14)
+  UND11 ($B14,$B6,$B11)
+  BTRA ($B11,$B7)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (2,$B7,$B5,0,$B8,$B9)
+  BEFAUS (1,$B9,$B8,$WZERO,$WZERO,&&41HZ30-016BF01,WERR)
+  BEFAUS (1,$B6,/Test_stat.HZG,$WZERO,$WZERO,
+          &&41HZ30-000BF01,WERR)
+  ;Freigabe st.Hzg.-
+  ;Pumpen M3/M4
+  ; 
+  ;Blockierschutz
+  ;Stillst.>7 Tage
+  ; 
+  ;Gesamtanlage
+  ;statische Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (1,$WONE,SW-St-Heizung,werr_Sollkenn_1)
+  NICHT (Freig.RG_st.HZG,$HB3)
+  REGLER (1,KON01,$HB3,$M16,SG-Regler_St.Hzg,werr_Regler_1)
+  FKG (SG-Regler_St.Hzg,4,$M17,$M18,$M19,$M20,$F6)
+  FKG (St-Hzg_RL-Temp,4,$M21,$M22,$M23,$M24,$F7)
+  MIN (2,$F7,$F6,$F8)
+  ANAUS ($F8,$M25,&41HZ30-016AA01,werr11a)
+  ;öberwachung
+  ;RL-Temp.
+  ;NEU 12.05.2006
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&&41HZ01-100BF01,3,HZGRLT-Gesamt-R0,
+          HZGRLT-Gesamt-ST,HZGRLT-Gesamt-R1,WERR)
+  BTRA (HZGRLT-Gesamt-R1,FKON_HZGRLT-R1)
+  MELEIN (&&41HZ01-100BF02,3,Freig_RLTHzgP-R0,
+          Freig_RLTHzgP-ST,Freig_RLTHzgP-R1,WERR)
+  MELEIN (&M30,8,$WSCRATCH,HZGP_RLT_M1-R0,HZGP_RLT_M1-ST,
+          HZGP_RLT_M1-R1,$WSCRATCH,HZGP_RLT_M2-R0,
+          HZGP_RLT_M2-ST,HZGP_RLT_M2-R1,WERR)
+  ;Gesamtanlage Heizg.RLT
+  ; 
+  ;Freigabe Hzg.-Pumpen RLT
+  ; 
+  ;Hzg.- Pumpe 1 (M1) RLT
+  ; 
+  ;Hzg.- Pumpe 2 (M2) RLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&M36,1,Anlage_1_Frost,WERR)
+  MELEIN (&M37,1,Anlage_2_Frost,WERR)
+  MELEIN (&M38,2,Anlage_3_Frost,Anlage_4_Frost,WERR)
+  MELEIN (&M40,2,Anlage_5_Frost,Anlage_7.1_Frost,WERR)
+  ;Anlage 1 Frost Luft
+  ; 
+  ;Anlage 2 Frost Luft
+  ; 
+  ;Anlage 3 Frost Luft
+  ; 
+  ;Anlage 4 Frost Luft
+  ; 
+  ;Anlage 5 Frost Luft
+  ; 
+  ;Anlage 7.1 Frost Luft
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&M42,3,Anlage_6_Frost,Anlage_17_Frost,
+          Anlage_15_Frost,WERR)
+  ;Anlage 15 Frost Luft
+  ; 
+  ;Anlage 6 Frost Luft
+  ; 
+  ;Anlage 17 Frost Luft
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&&41LU10-902BM14,1,Anlage_1_abs.F,WERR)
+  MELEIN (&&41LU10-912BM14,1,Anlage_2_abs.F,WERR)
+  MELEIN (&&41LU10-922BM14,1,Anlage_3_abs.F,WERR)
+  MELEIN (&&41LU20-902BM14,1,Anlage_4_abs.F,WERR)
+  ;Anlage 1 abs.Feuchte>8,5
+  ; 
+  ;Anlage 2 abs.Feuchte>8,5
+  ; 
+  ;Anlage 3 abs.Feuchte>8,5
+  ; 
+  ;Anlage 4 abs.Feuchte>8,5
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&&41HZ01-100MW01,RLT_Hzg_VL-Temp,WERR)
+  ANEIN (&&41HZ01-100MW02,RLT_Hzg_RL-Temp,WERR)
+  ;RLT Hzg. Vorlauftemp.
+  ; 
+  ;RLT Hzg. RÅcklauftemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  VGLOH (FKON_22G_RLT,AU-Temp,AT_<_22_Grad_RLT)
+  ODRMN (4,Anlage_1_abs.F,Anlage_2_abs.F,Anlage_3_abs.F,
+         Anlage_4_abs.F,0,$B15,$WSCRATCH)
+  ODR2 (AT_<_22_Grad_RLT,$B15,$B16)
+  UND2 ($B16,HZGRLT-Gesamt-R1,$B17)
+  ODRMN (9,Anlage_1_Frost,Anlage_2_Frost,Anlage_3_Frost,
+         Anlage_4_Frost,Anlage_5_Frost,Anlage_6_Frost,
+         Anlage_7.1_Frost,Anlage_15_Frost,Anlage_17_Frost,0,
+         $B18,$WSCRATCH)
+  ODR2 ($B17,$B18,$B19)
+  VVZ ($B19,FKON_Z1_RLTHZG,FKON_Z2_RLTHZG,Anf.HZGP_RLT)
+  ODR2 (HZGP_RLT_M1-R1,HZGP_RLT_M2-R1,Freig.RG_RLT_HZG)
+  BTRA (Freig.RG_RLT_HZG,RLT_HZGP-EIN)
+  ;AT < 22 Grad
+  ; 
+  ;>8,5g/Kg
+  ; 
+  ;Frost Luft
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODRMN (2,HZGP_RLT_M1-ST,HZGP_RLT_M2-ST,0,$B20,$B21)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B26,$B21,$B27)
+  NICHT ($B27,$HB0)
+  UHR ($HB0,$B27,$F9)
+  UST ($WZERO,$M45,$F10,$FSCRATCH)
+  UST ($WZERO,$M46,$F11,$FSCRATCH)
+  MULT ($F10,$F11,$F12)
+  VGLOH ($F9,$F12,$B28)
+  MOKY ($B28,$M47,$B25)
+  ODR2 (Anf.HZGP_RLT,$B25,$B29)
+  UND11 ($B29,$B21,$B26)
+  BTRA ($B26,$B22)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (2,$B22,$B20,0,$B23,$B24)
+  BEFAUS (1,$B24,$B23,$WZERO,$WZERO,&&41HZ01-100BF02,WERR)
+  BEFAUS (1,$B21,/Test_HZG-RLT,$WZERO,$WZERO,
+          &&41HZ01-100BF01,WERR)
+  ;Freigabe RLT Hzg.-
+  ;Pumpen M1/M2
+  ; 
+  ;Blockierschutz
+  ;Stillst.>7 Tage
+  ; 
+  ;Gesamtanlage
+  ;RLT Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  SOLKEN (2,$WONE,SW-RLT-Heizung,werr_Sollkenn_2)
+  NICHT (Freig.RG_RLT_HZG,$HB3)
+  REGLER (2,KON01,$HB3,$M48,SG-Regl_RLT_Hzg,werr_Regler_2)
+  FKG (SG-Regl_RLT_Hzg,4,$M49,$M50,$M51,$M52,$F13)
+  FKG (RLT_Hzg_RL-Temp,4,$M53,$M54,$M55,$M56,$F14)
+  MIN (2,$F14,$F13,$F15)
+  ANAUS ($F15,$M57,&&41HZ01-100AA01,werr12a)
+  ;öberwachung
+  ;RL-Temp.
+  ;NEU 12.05.2006
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MELEIN (&&41SA01-000BF01,5,WWB-Gesamt-R0,WWB-Gesamt-ST,
+          WWB-Gesamt-R1,$WSCRATCH,WWB-Gesamt-R2,WERR)
+  BTRA (WWB-Gesamt-R1,FKON_WWB-R1)
+  BTRA (WWB-Gesamt-R2,FKON_WWB-R2)
+  MELEIN (&&41SA01-000BF02,3,WWB_E-HP-R0,WWB_E-HP-ST,
+          WWB_E-HP-R1,WERR)
+  ;Gesamtanlage WW-Bereiter
+  ; 
+  ;WWB E-Heizpatrone
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  MELEIN (&&41SA03-100BF01,3,WWB_Ladepumpe_R0,$HB5,
+          WWB_Ladepumpe_R1,WERR)
+  NICHT ($HB5,WWB_Ladepumpe_ST)
+  MELEIN (&&41SA01-100BF01,3,WWB_Zirk.Ppe_R0,$HB5,
+          WWB_Zirk.Ppe_R1,WERR)
+  NICHT ($HB5,WWB_Zirk.Ppe_ST)
+  ;WWB Ladepumpe
+  ; 
+  ;WWB Zirkulationspumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ANEIN (&&41HZ01-200MW01,WWB_Hzg_VL-Temp,WERR)
+  ANEIN (&&41HZ01-200MW02,WWB_Hzg_RL-Temp,WERR)
+  ANEIN (&&41SA01-000MW01,WWB_Speichertemp,WERR)
+  ANEIN (&&41SA01-000MW02,WWB_Zirkul.Temp,WERR)
+  ;WWB Heizwasser VL-Temp.
+  ; 
+  ;WWB Heizwasser RL-Temp.
+  ; 
+  ;WWB Speichertemperatur
+  ; 
+  ;WWB Zirkulationstemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  VGLOH (FKON_WWB_<60G,WWB_Speichertemp,$B30)
+  VGLEH (WWB_Hzg_VL-Temp,FKON_WWB-VL_<40G,$M68,$B31)
+  UNDMN (3,$B30,$B36,$B31,0,$B32,$WSCRATCH)
+  ODRMN (2,$B32,$B39,1,Anf.WWB_E-HP,$B33,$WSCRATCH)
+  VVZ ($B33,$M69,$M70,$B34)
+  UND2 ($B34,$B36,Anf.WWB-Ladepump)
+  VGLOH (FKON_WWB-VL_<60G,WWB_Hzg_VL-Temp,$B35)
+  ODR2 (WWB-Gesamt-R1,WWB-Gesamt-R2,$B36)
+  UND2 ($B35,$B36,$B37)
+  VGLOH (FKON_WWB_<70G,WWB_Speichertemp,$B38)
+  UND2 ($B38,WWB-Gesamt-R2,$B39)
+  VVZ ($B37,FKON_Z1_WWB-EHP,FKON_Z2_WWB-EHP,Anf.WWB_E-HP)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (2,WWB-Gesamt-R1,WWB-Gesamt-R2,0,$B40,$B41)
+  VGLOH (WWB_Zirkul.Temp,FKONWWB_Zirk>60G,$B42)
+  VVZ ($B42,FK_WWB_Z1_Zirk.,FK_WWB_Z2_Zirk.,$B43)
+  ODR2 ($B43,$B41,$B44)
+  RSS ($B40,$B44,Anf.WWB_Zirk.Ppe,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  VGLOH (FKON_WWB_>65G,WWB_Speichertemp,$HB2)
+  NICHT ($HB2,$B45)
+  VVZ ($B45,FK_WWB_Z1_STB,FK_WWB_Z2_STB,WWB_STB_65G)
+  VGLOH (FKON_WWB_>75G,WWB_Speichertemp,$HB2)
+  NICHT ($HB2,$B46)
+  VVZ ($B46,FK_WWB_Z1_STB,FK_WWB_Z2_STB,WWB_STB_75G)
+  UND2 (WWB-Gesamt-R1,WWB_STB_65G,$B47)
+  UND2 (WWB-Gesamt-R2,WWB_STB_75G,$B48)
+  ODRMN (2,$B47,$B48,0,WWB_STB_ausgel,WWB_STB)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UNDMN (1,Anf.WWB_E-HP,1,WWB_STB_GF,$B49,$B50)
+  BEFAUS (1,$B50,$B49,$WZERO,$WZERO,&&41SA01-000BF02,WERR)
+  ODRMN (0,2,/WWB_Test1,/WWB_Test2,$B51,$WSCRATCH)
+  UNDMN (1,$B51,2,WWB_Zirk.Ppe_ST,WWB_STB_GF,$WSCRATCH,$B52)
+  BEFAUS (2,$B52,/Test_WWB-ST1,/Test_WWB-ST2,$WZERO,
+          &&41SA01-000BF01,WERR)
+  ;Freigabe WWB
+  ;E-Heizpatrone
+  ; 
+  ;Stîrungen
+  ; 
+  ;Gesamtanlage
+  ;Warmwasserbereiter
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODR2 (WWB_Ladepumpe_ST,Ladepumpe_ST,$B53)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B62,$B53,$B63)
+  NICHT ($B63,$HB0)
+  UHR ($HB0,$B63,$F16)
+  UST ($WZERO,$M71,$F17,$FSCRATCH)
+  UST ($WZERO,$M72,$F18,$FSCRATCH)
+  MULT ($F17,$F18,$F19)
+  VGLOH ($F16,$F19,$B64)
+  MOKY ($B64,$M73,$B61)
+  ODR2 (Anf.WWB-Ladepump,$B61,$B65)
+  UND11 ($B65,$B53,$B62)
+  BTRA ($B62,$B54)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (1,$B54,1,WWB_STB_GF,$B55,$B56)
+  BEFAUS (2,$B56,$B55,$WZERO,$WZERO,&&41SA03-100BF01,
+          Ladepumpe_ST)
+  SETMEL ($M74,1,$B55,&&41SA03-100BM91,WERR)
+  ODR2 (WWB_Zirk.Ppe_ST,ZIRKPUMPE_ST,$B57)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B67,$B57,$B68)
+  NICHT ($B68,$HB0)
+  UHR ($HB0,$B68,$F20)
+  UST ($WZERO,$M75,$F21,$FSCRATCH)
+  UST ($WZERO,$M76,$F22,$FSCRATCH)
+  MULT ($F21,$F22,$F23)
+  VGLOH ($F20,$F23,$B69)
+  MOKY ($B69,$M77,$B66)
+  ODR2 (Anf.WWB_Zirk.Ppe,$B66,$B70)
+  UND11 ($B70,$B57,$B67)
+  BTRA ($B67,$B58)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (1,$B58,1,WWB_STB_GF,$B59,$B60)
+  BEFAUS (2,$B60,$B59,$WZERO,$WZERO,&&41SA01-100BF01,
+          ZIRKPUMPE_ST)
+  ;WWB Ladepumpe
+  ; 
+  ;WWB
+  ;Zirkulationspumpe
+  ; 
+  SETMEL ($M78,1,$B59,&&41SA01-100BM91,WERR)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UNDMN (1,Anf.WWB-Ladepump,2,WWB_Ladepumpe_R1,WWB_STB_GF,
+         $B71,$WSCRATCH)
+  VVZ ($B71,$M79,$M80,$B72)
+  RSS ($B72,ST-Quit,WWB_Ladep.STelek,$B73)
+  SETMEL ($M81,1,$B73,&&41SA03-101ST20,WERR)
+  UNDMN (1,Anf.WWB_Zirk.Ppe,2,WWB_Zirk.Ppe_R1,WWB_STB_GF,
+         $B74,$WSCRATCH)
+  VVZ ($B74,$M82,$M83,$B75)
+  RSS ($B75,ST-Quit,WWB_ZirkP.STelek,$B76)
+  SETMEL ($M84,1,$B76,&&41SA01-101ST20,WERR)
+  RSS (WWB_STB_ausgel,ST-Quit,WWB_STB_GF,$B77)
+  ;WWB Ladepumpe
+  ; 
+  ;WWB Zirkulationspumpe
+  ; 
+  ;WWB STB
+  ; 
+  SETMEL ($M85,1,$B77,&&41SA01-101GF91,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  NICHT (Anf.WWB-Ladepump,$HB3)
+  REGLER (3,KON01,$HB3,$M86,SG-Regl_WWB,WERR)
+  FKG (SG-Regl_WWB,4,$M87,$M88,$M89,$M90,$F24)
+  ANAUS ($F24,$M91,&&41SA03-200AA01,WERR)
+  AWT (WWB-Gesamt-R2,FKON_WWB_60G,FKON_WWB_70G,
+       SW-Speichertemp.)
+  ANAUS (SW-Speichertemp.,$M92,&&41SA03-901AA01,WERR)
+  ;SW Speichertemp.WWB
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODRMN (0,4,HZGP_RLT_M1-ST,HZGP_RLT_M2-ST,St-HZGP_M3-ST,
+         St-HZGP_M4-ST,$B78,$WSCRATCH)
+  ODRMN (5,WWB_Ladepumpe_ST,WWB_STB_GF,WWB_Zirk.Ppe_ST,
+         WWB_Ladep.STelek,WWB_ZirkP.STelek,0,$B79,$WSCRATCH)
+  ODR2 ($B78,$B79,$B80)
+  VVZ ($B80,$M93,$M94,$B81)
+  RSS ($B81,ST-Quit,$B82,$B83)
+  BEFAUS (1,$B83,$B82,$WZERO,$WZERO,&&41HZ00-000ST00,WERR)
+  ENDE 
+  ENDMODUL 

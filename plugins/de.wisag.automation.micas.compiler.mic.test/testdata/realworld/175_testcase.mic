@@ -1,0 +1,1060 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 0009-13A.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 9
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 13
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  E_BM_TAG_6c
+  WordV  E_BM_TAG_6d
+  FloatV E_MW_VVS_BOX_5
+  WordV  E_BM_TAG_3
+  WordV  E_BETRIEB_4
+  FloatV A_AS_VVS_BOX_3
+  WordV  S_ERR
+  FloatV E_MW_VVS_BOX_1
+  FloatV E_MW_VVS_BOX_3
+  WordV  Z_TAST_AKT_3
+  WordV  E_BM_TAG_6b
+  WordV  E_BM_TAG_6a
+  WordV  E_BM_TAG_5d
+  WordV  Z_TAST_AKT_6
+  WordV  A_BF_LA_NAC_6
+  WordV  A_BF_LA_TAG_3
+  WordV  A_BF_LA_TAG_6
+  FloatV E_MW_VVS_BOX_6
+  FloatV A_AS_VVS_BOX_5
+  WordV  A_BF_LA_NAC_5
+  WordV  A_BF_LA_TAG_5
+  WordV  A_BF_LA_NAC_3
+  WordK  K_1_STATUS (1)
+  WordV  E_BM_TAG_5c
+  WordV  E_BM_TAG_5b
+  WordV  E_BM_TAG_5a
+  WordV  E_RM_VE_P_A1_7
+  WordV  E_RM_VE_P_A3_7
+  WordV  E_RM_VE_P_A2_7
+  WordV  E_ST_RM1_8
+  WordV  A_ST_BETRIEB_7
+  WordV  E_VP_FREIG_4
+  WordV  A_BM_ANF_HZ_7
+  WordV  E_RM_NE2_P_A1_7
+  WordK  K_VP_FREIG_4 (1)
+  FloatV A_AS_VVS_BOX_6
+  WordV  Alle-RM-ausgel
+  WordV  E_ST_RM8_8
+  WordV  Z_TAST_AKT_5
+  WordV  E_ST_ANL1_7
+  FloatV A_AS_VVS_BOX_4
+  FloatV E_MW_VVS_BOX_2
+  WordV  A_BF_LA_TAG_2
+  WordV  A_BF_LA_NAC_2
+  WordV  Z_TAST_AKT_2
+  WordK  K_0_STATUS (0)
+  WordV  Z_TAST_AKT_1
+  WordV  E_ST_ANL2_7
+  WordV  E_ST_ANL3_7
+  WordV  E_ST_ANL4_7
+  WordV  E_RM_NE1_P_A1_7
+  FloatV E_MW_AU_T_7
+  FloatV A_MW_AU_T_7
+  WordV  E_ST_RM2_8
+  WordV  E_ST_RM3_8
+  WordV  E_ST_RM4_8
+  WordV  E_ST_RM5_8
+  WordV  E_BM_TAG_1
+  WordV  E_BM_TAG_2
+  WordV  A_BF_LA_TAG_1
+  WordV  A_BF_LA_NAC_1
+  FloatV A_AS_VVS_BOX_1
+  WordV  E_ST_RM6_8
+  FloatV A_AS_VVS_BOX_2
+  WordV  E_ST_RM7_8
+  WordV  E_ST_ANL_8
+  WordV  E_ST_ANL_10
+  WordV  E_RM_Vent_Anl10
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (244,1)
+  IPAMB &M1 (85,14)
+  IPAMB &M2 (98,14)
+  IPAMB &M3 (112,14)
+  IPAMB &M4 (150,6)
+  IPAMB &M5 (244,3)
+  IPAMB &M6 (126,2)
+  IPAMB &M7 (126,3)
+  IPAMB &M8 (126,6)
+  IPAMB &M9 (126,7)
+  IPAMB &M10 (127,2)
+  IPAMB &M11 (127,3)
+  IPAMB &M12 (127,6)
+  IPAMB &M13 (127,7)
+  IPAMB &M14 (160,2)
+  IPAMB &M15 (195,2)
+  IPAMB &M16 (203,2)
+  IPAMB &M17 (211,2)
+  IPAMB &M18 (154,2)
+  WordV  $B1
+  IPAMB &M19 (158,14)
+  IPAMB &M20 (14,3)
+  IPAMB &M21 (15,3)
+  IPAMB &M22 (15,7)
+  IPAMB &M23 (29,3)
+  IPAMB &M24 (43,3)
+  IPAMB &M25 (142,2)
+  WordV  $B2
+  IPAMB &M26 (142,3)
+  WordV  $B3
+  IPAMB &M27 (142,6)
+  WordV  $B4
+  IPAMB &M28 (142,7)
+  WordV  $B5
+  IPAMB &M29 (143,2)
+  WordV  $B6
+  IPAMB &M30 (143,3)
+  WordV  $B7
+  IPAMB &M31 (143,6)
+  WordV  $B8
+  IPAMB &M32 (143,7)
+  WordV  $B9
+  IPAMB &M33 (156,3)
+  IPAAW &M34 (80)
+  IPAAW &M35 (81)
+  IPAAW &M36 (83)
+  IPAAW &M37 (136)
+  IPAAW &M38 (137)
+  IPAAW &M39 (253)
+  WordV  $B10
+  WordV  $WSCRATCH
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M46 (0.00)
+  FloatK $M47 (8.00)
+  FloatK $M48 (95.00)
+  FloatK $M49 (5.00)
+  WordV  $HB2
+  FloatK $M50 (12.00)
+  FloatK $M51 (0.00)
+  FloatK $M52 (100.00)
+  FloatK $M53 (95.00)
+  FloatK $M54 (5.00)
+  FloatK $M55 (12.00)
+  FloatK $M56 (0.00)
+  FloatK $M57 (100.00)
+  FloatK $M58 (95.00)
+  FloatK $M59 (5.00)
+  FloatK $M60 (12.00)
+  FloatK $M61 (0.00)
+  FloatK $M62 (100.00)
+  WordV  $B17
+  FloatK $M63 (0.00)
+  FloatK $M64 (100.00)
+  FloatK $M65 (95.00)
+  FloatK $M66 (5.00)
+  WordV  $B18
+  FloatK $M67 (12.00)
+  FloatK $M68 (0.00)
+  FloatK $M69 (100.00)
+  FloatK $M70 (95.00)
+  FloatK $M71 (5.00)
+  WordV  $B19
+  FloatK $M72 (12.00)
+  WordV  $B20
+  FloatK $M73 (0.00)
+  FloatK $M74 (100.00)
+  FloatK $M75 (50.00)
+  FloatK $M76 (-25.00)
+  IPAMB &M77 (255,1)
+  IPAMB &M78 (255,2)
+  IPAMB &M79 (85,9)
+  IPAMB &M80 (85,13)
+  IPAMB &M81 (98,9)
+  IPAMB &M82 (98,13)
+  IPAMB &M83 (112,9)
+  IPAMB &M84 (112,13)
+  IPAMB &M85 (126,9)
+  IPAMB &M86 (126,13)
+  IPAMB &M87 (127,9)
+  IPAMB &M88 (127,13)
+  IPAMB &M89 (70,1)
+  IPAMB &M90 (70,5)
+  IPAMB &M91 (71,1)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  FloatK $M92 (8.00)
+  FloatK $M93 (0.00)
+  WordV  $B24
+  FloatK $M94 (8.00)
+  FloatK $M95 (0.00)
+  WordV  $B25
+  FloatK $M96 (8.00)
+  FloatK $M97 (0.00)
+  WordV  $B26
+  IPAMB &M98 (71,5)
+  IPAMB &M99 (112,1)
+  IPAMB &M100 (112,5)
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  FloatK $M101 (8.00)
+  FloatK $M102 (0.00)
+  WordV  $B30
+  FloatK $M103 (8.00)
+  FloatK $M104 (0.00)
+  WordV  $B31
+  FloatK $M105 (8.00)
+  FloatK $M106 (0.00)
+  WordV  $B32
+  IPAMB &M107 (113,1)
+  IPAMB &M108 (113,5)
+  WordV  $B33
+  WordV  $B34
+  FloatK $M109 (8.00)
+  FloatK $M110 (0.00)
+  WordV  $B35
+  FloatK $M111 (8.00)
+  FloatK $M112 (0.00)
+  WordV  $B36
+  IPAAW &M116 (139)
+  IPAAW &M119 (248)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;KUNDE:
+  ;------------------------
+  ;ABB Gebäudetechnik AG
+  ;Lufttechnik
+  ;Hannover
+  ;N
+  ; 
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;1 = Labor 3
+  ;2 = Labor 4
+  ;3 = Labor 7
+  ;4 = Pausenraum
+  ;5 = Chemielabor 1
+  ;6 = Chemielabor 2
+  ;7 = Highbus
+  ;8 = BMZ Rauchmelder
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max- Planck- Institut
+  ;für bio- physikalische
+  ;chemie Göttingen
+  ;Neubau NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;MS TEPLAN
+  ;Weidrichstraße 29
+  ;65795 Hattersheim
+  ;email:
+  ;ms-teplan@t-online.de
+  ;www.ms-teplan.de
+  ;tel. 06145/938603
+  ;fax  06145/938604
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ;1
+  ; 
+  ;Programmierumgebung:
+  ;- EEPROM Version > 5.0
+  ;- Compileroption:
+  ;  -OD-V5
+  ;- MIC.EXE Version:
+  ;  07.09.99
+  ;- Zielhardware:
+  ;  ar20 / sp20 / zp20
+  ; 
+  ;Druckereinstellung:
+  ;Laserjet-150-Portrait
+  ;Raster= Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Daten Einlesen
+  ;Task 3= Steuerung und
+  ;        Regelung
+  ;Task 4= Daten ausgeben
+  ;
+  ; 
+  ;BLATT-BENNUNG
+  ;------------------------
+  ;1. Anlagenindex
+  ;2. Anlagenkomponente
+  ;3. Funktion oder
+  ;   Tranfer
+  ;Beispiel
+  ;1 VE MELEIN
+  ;oder
+  ;2 LU 1F
+  ; 
+  ;ANLAGENKOMPONENTE
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- VE = Vorerhitzer
+  ;- KU = Kühler
+  ;- WR = WRG
+  ;- BE = Befeuchter
+  ;- LU = Lüfter
+  ;- KL = Klappen
+  ;usw.
+  ; 
+  ;ANLAGENFUNKTION
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- 1F = einstufig
+  ;- FU = Frequenzumf.
+  ;- WA = Wartung
+  ;- VE = Ventil
+  ;- PU = Pumpe
+  ;- BE = Bedarf
+  ;usw.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;1_ = Anlagenindex
+  ;_Z_= Zwischenvariable
+  ;_E_= Eingabevariable
+  ;_A_= Ausgabevariable
+  ;_K_= Konstante
+  ;_D_= Displayvariable
+  ;_S_= Systemvariable
+  ;_R_= Reservarariable
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ER_  =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;NMRLU22-26A-X50
+  ;_
+  ; 
+  NICHT (K_VP_FREIG_4,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_4,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1500)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Reihenfolge:
+  ;1. Melein
+  ;2. Anein
+  ;3. Sollkennlinie
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M1,1,E_BM_TAG_1,S_ERR)
+  ;NMRLU21-03A-B30
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M2,1,E_BM_TAG_2,S_ERR)
+  ;NMRLU21-04A-B30
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M3,1,E_BM_TAG_3,S_ERR)
+  ;NMRLU21-07A-B30
+  ; 
+  ;Meldung Ein
+  ;Schalter Betrieb
+  ; 
+  MELEIN (&M4,1,E_BETRIEB_4,S_ERR)
+  ;NMRLU22-26A-B01
+  ; 
+  ;Rückmeldung Ein
+  ;Freigabe
+  ; 
+  MELEIN (&M5,1,K_VP_FREIG_4,S_ERR)
+  BTRA (K_VP_FREIG_4,E_VP_FREIG_4)
+  ;NMRLU22-26A-X50
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M6,1,E_BM_TAG_5a,S_ERR)
+  ;NMRLU21-25A-B31
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M7,1,E_BM_TAG_5b,S_ERR)
+  ;NMRLU21-25A-B32
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M8,1,E_BM_TAG_5c,S_ERR)
+  ;NMRLU21-25A-B33
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M9,1,E_BM_TAG_5d,S_ERR)
+  ;NMRLU21-25A-B34
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M10,1,E_BM_TAG_6a,S_ERR)
+  ;NMRLU21-26A-B31
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M11,1,E_BM_TAG_6b,S_ERR)
+  ;NMRLU21-26A-B32
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M12,1,E_BM_TAG_6c,S_ERR)
+  ;NMRLU21-26A-B33
+  ; 
+  ;Meldung Ein
+  ;Taster Tagbetrieb
+  ; 
+  MELEIN (&M13,1,E_BM_TAG_6d,S_ERR)
+  ;NMRLU21-26A-B34
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Abschaltstörung
+  ;Anl.1
+  ; 
+  MELEIN (&M14,1,E_ST_ANL1_7,S_ERR)
+  ;NMRLU20-01A-A50
+  ; 
+  ;Abschaltstörung
+  ;Anl.2
+  ; 
+  MELEIN (&M15,1,E_ST_ANL2_7,S_ERR)
+  ;NMRLU20-02A-A50
+  ; 
+  ;Abschaltstörung
+  ;Anl.3
+  ; 
+  MELEIN (&M16,1,E_ST_ANL3_7,S_ERR)
+  ;NMRLU20-03A-A50
+  ; 
+  ;Abschaltstörung
+  ;Anl.4
+  ; 
+  MELEIN (&M17,1,E_ST_ANL4_7,S_ERR)
+  ;NMRLU20-04A-A50
+  ; 
+  ;Störung Fortlüfter
+  ;Anl.8
+  ; 
+  MELEIN (&M18,1,$B1,S_ERR)
+  ;Störung Fortlüfter
+  ;Anl.10
+  ; 
+  NICHT ($B1,E_ST_ANL_8)
+  MELEIN (&M19,1,E_ST_ANL_10,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Vorerhitzerpumpe
+  ;Anl. 1
+  ; 
+  MELEIN (&M20,1,E_RM_VE_P_A1_7,S_ERR)
+  ;NMRLU20-01A-X06
+  ; 
+  ;Rückmeldung Ein
+  ;Nacherhitzerpumpe
+  ;Halle Anl.1
+  ; 
+  MELEIN (&M21,1,E_RM_NE1_P_A1_7,S_ERR)
+  ;NMRLU20-01A-X21
+  ; 
+  ;Rückmeldung Ein
+  ;Nacherhitzerpumpe
+  ;Konsole Anl.1
+  ; 
+  MELEIN (&M22,1,E_RM_NE2_P_A1_7,S_ERR)
+  ;NMRLU20-01A-X22
+  ; 
+  ;Rückmeldung Ein
+  ;Vorerhitzerpumpe
+  ;Anl. 2
+  ; 
+  MELEIN (&M23,1,E_RM_VE_P_A2_7,S_ERR)
+  ;NMRLU20-02A-X06
+  ; 
+  ;Rückmeldung Ein
+  ;Vorerhitzerpumpe
+  ;Anl. 3
+  ; 
+  MELEIN (&M24,1,E_RM_VE_P_A3_7,S_ERR)
+  ;NMRLU20-03A-X06
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Störung
+  ;Rauchmelder
+  ;ZL ANL.1 Halle
+  ; 
+  MELEIN (&M25,1,$B2,S_ERR)
+  ;NMRLU20-01A-A10
+  ;Z
+  ; 
+  NICHT ($B2,E_ST_RM1_8)
+  ;Störung
+  ;Rauchmelder
+  ;ZL ANL.1 Konsole
+  ; 
+  MELEIN (&M26,1,$B3,S_ERR)
+  ;NMRLU20-01A-A20
+  ;Z
+  ; 
+  NICHT ($B3,E_ST_RM2_8)
+  ;Störung
+  ;Rauchmelder
+  ;AL ANL.1 1
+  ; 
+  MELEIN (&M27,1,$B4,S_ERR)
+  ;NMRLU20-01A-A12
+  ;A
+  ; 
+  NICHT ($B4,E_ST_RM3_8)
+  ;Störung
+  ;Rauchmelder
+  ;AL ANL.1 2
+  ; 
+  MELEIN (&M28,1,$B5,S_ERR)
+  ;NMRLU20-01A-A22
+  ;A
+  ; 
+  NICHT ($B5,E_ST_RM4_8)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Störung
+  ;Rauchmelder
+  ;ZL ANL.2
+  ; 
+  MELEIN (&M29,1,$B6,S_ERR)
+  ;NMRLU20-02A-A10
+  ;Z
+  ; 
+  NICHT ($B6,E_ST_RM5_8)
+  ;Störung
+  ;Rauchmelder
+  ;ZL ANL.3
+  ; 
+  MELEIN (&M30,1,$B7,S_ERR)
+  ;NMRLU20-03A-A20
+  ;Z
+  ; 
+  NICHT ($B7,E_ST_RM6_8)
+  ;Störung
+  ;Rauchmelder
+  ;AL ANL.4
+  ; 
+  MELEIN (&M31,1,$B8,S_ERR)
+  ;NMRLU20-04A-A10
+  ;A
+  ; 
+  NICHT ($B8,E_ST_RM7_8)
+  ;Störung
+  ;Rauchmelder
+  ;AL ANL.4
+  ; 
+  MELEIN (&M32,1,$B9,S_ERR)
+  ;NMRLU20-01A-A20
+  ;A
+  ; 
+  NICHT ($B9,E_ST_RM8_8)
+  ;Rückmeldung EIN
+  ;Abluftventilator
+  ;Anl.10
+  ; 
+  MELEIN (&M33,1,E_RM_Vent_Anl10,S_ERR)
+  ;NMRLU20-10A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M34,E_MW_VVS_BOX_1,S_ERR)
+  ;NMRLU21-03A-Y20
+  ; 
+  ;Stellsignal
+  ;VVS BOX
+  ; 
+  ANEIN (&M35,E_MW_VVS_BOX_2,S_ERR)
+  ;NMRLU21-04A-Y20
+  ; 
+  ;Stellsignal
+  ;VVS BOX
+  ; 
+  ANEIN (&M36,E_MW_VVS_BOX_3,S_ERR)
+  ;NMRLU21-07A-Y20
+  ; 
+  ;Stellsignal
+  ;VVS BOX
+  ; 
+  ANEIN (&M37,E_MW_VVS_BOX_5,S_ERR)
+  ;NMRLU21-25A-Y20
+  ; 
+  ;Stellsignal
+  ;VVS BOX
+  ; 
+  ANEIN (&M38,E_MW_VVS_BOX_6,S_ERR)
+  ;NMRLU21-26A-Y20
+  ; 
+  ;Stellsignal
+  ;VVS BOX
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ANEIN (&M39,E_MW_AU_T_7,S_ERR)
+  ;NMRAS10-00A-T00
+  ; 
+  ;Aussentemperatur
+  ;Highbus
+  ;US00.10
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&M25,1,$B10,$WSCRATCH)
+  MELEIN (&M26,1,$B11,$WSCRATCH)
+  MELEIN (&M27,1,$B12,$WSCRATCH)
+  MELEIN (&M28,1,$B13,$WSCRATCH)
+  UNDMN (0,6,$B10,$B11,$B12,$B13,$B15,$B16,$B14,$WSCRATCH)
+  MELEIN (&M30,1,$B15,$WSCRATCH)
+  MELEIN (&M31,1,$B16,$WSCRATCH)
+  VVZ ($B14,$M46,$M47,Alle-RM-ausgel)
+  ;Weitergabe eines Kanal-
+  ;rauchmelders an das BSK-
+  ;System
+  ;Wenn alle RM ange-
+  ;sprochen haben, ist von
+  ;Netzausfall auszugehen.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  VGLOH (E_MW_VVS_BOX_1,$M48,A_BF_LA_TAG_1)
+  VGLOH (E_MW_VVS_BOX_1,$M49,$HB2)
+  NICHT ($HB2,A_BF_LA_NAC_1)
+  MOKY (E_BM_TAG_1,$M50,Z_TAST_AKT_1)
+  AWT (Z_TAST_AKT_1,$M51,$M52,A_AS_VVS_BOX_1)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ;Das Signal schaltet die
+  ;Lampen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  VGLOH (E_MW_VVS_BOX_2,$M53,A_BF_LA_TAG_2)
+  VGLOH (E_MW_VVS_BOX_2,$M54,$HB2)
+  NICHT ($HB2,A_BF_LA_NAC_2)
+  MOKY (E_BM_TAG_2,$M55,Z_TAST_AKT_2)
+  AWT (Z_TAST_AKT_2,$M56,$M57,A_AS_VVS_BOX_2)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ;Das Signal schaltet die
+  ;Lampen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  VGLOH (E_MW_VVS_BOX_3,$M58,A_BF_LA_TAG_3)
+  VGLOH (E_MW_VVS_BOX_3,$M59,$HB2)
+  NICHT ($HB2,A_BF_LA_NAC_3)
+  MOKY (E_BM_TAG_3,$M60,Z_TAST_AKT_3)
+  AWT (Z_TAST_AKT_3,$M61,$M62,A_AS_VVS_BOX_3)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ;Das Signal schaltet die
+  ;Lampen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UND2 (E_BETRIEB_4,E_VP_FREIG_4,$B17)
+  AWT ($B17,$M63,$M64,A_AS_VVS_BOX_4)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  VGLOH (E_MW_VVS_BOX_5,$M65,A_BF_LA_TAG_5)
+  VGLOH (E_MW_VVS_BOX_5,$M66,$HB2)
+  NICHT ($HB2,A_BF_LA_NAC_5)
+  ODRMN (4,E_BM_TAG_5a,E_BM_TAG_5b,E_BM_TAG_5c,E_BM_TAG_5d,0,
+         $B18,$WSCRATCH)
+  MOKY ($B18,$M67,Z_TAST_AKT_5)
+  AWT (Z_TAST_AKT_5,$M68,$M69,A_AS_VVS_BOX_5)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ;Das Signal schaltet die
+  ;Lampen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  VGLOH (E_MW_VVS_BOX_6,$M70,A_BF_LA_TAG_6)
+  VGLOH (E_MW_VVS_BOX_6,$M71,$HB2)
+  NICHT ($HB2,A_BF_LA_NAC_6)
+  ODRMN (4,E_BM_TAG_6a,E_BM_TAG_6b,E_BM_TAG_6c,E_BM_TAG_6d,0,
+         $B19,$WSCRATCH)
+  MOKY ($B19,$M72,$B20)
+  ODR2 ($B20,E_RM_Vent_Anl10,Z_TAST_AKT_6)
+  AWT (Z_TAST_AKT_6,$M73,$M74,A_AS_VVS_BOX_6)
+  ;Stetige VVS-Boxen
+  ;durch Taster am
+  ;Digistorium auffahren
+  ;Über GLT kann in einem
+  ;Zeitschaltprogramm
+  ;die Box wieder zufahren
+  ;Das Signal schaltet die
+  ;Lampen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  LIMIT (E_MW_AU_T_7,$M75,$M76,A_MW_AU_T_7)
+  ;Aussentemperatur
+  ;NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (8,E_ST_ANL1_7,E_ST_ANL2_7,E_ST_ANL3_7,E_ST_ANL4_7,
+         E_ST_ANL_8,E_ST_ANL_10,K_0_STATUS,K_0_STATUS,0,
+         A_ST_BETRIEB_7,$WSCRATCH)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ;D
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (5,E_RM_VE_P_A1_7,E_RM_NE1_P_A1_7,E_RM_NE2_P_A1_7,
+         E_RM_VE_P_A2_7,E_RM_VE_P_A3_7,0,A_BM_ANF_HZ_7,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ST_BETRIEB_7,&M77,S_ERR)
+  ;NMRAS10-00A-B01
+  ; 
+  SETMEL (K_1_STATUS,1,A_BM_ANF_HZ_7,&M78,S_ERR)
+  ;Sammelstörung
+  ;Betriebstechnik
+  ; 
+  ;NMRAS10-00A-B02
+  ; 
+  ;Anforderung
+  ;Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ;NMRLU21-03A-X30
+  ; 
+  NICHT (A_BF_LA_TAG_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_TAG_1,$WZERO,$WZERO,&M79,S_ERR)
+  ;Lampe Tagbetrieb
+  ; 
+  ;NMRLU21-03A-X31
+  ; 
+  NICHT (A_BF_LA_NAC_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_NAC_1,$WZERO,$WZERO,&M80,S_ERR)
+  ;Lampe Nachtbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ;NMRLU21-04A-X30
+  ; 
+  NICHT (A_BF_LA_TAG_2,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_TAG_2,$WZERO,$WZERO,&M81,S_ERR)
+  ;Lampe Tagbetrieb
+  ; 
+  ;NMRLU21-04A-X31
+  ; 
+  NICHT (A_BF_LA_NAC_2,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_NAC_2,$WZERO,$WZERO,&M82,S_ERR)
+  ;Lampe Nachtbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ;NMRLU21-07A-X30
+  ; 
+  NICHT (A_BF_LA_TAG_3,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_TAG_3,$WZERO,$WZERO,&M83,S_ERR)
+  ;Lampe Tagbetrieb
+  ; 
+  ;NMRLU21-07A-X31
+  ; 
+  NICHT (A_BF_LA_NAC_3,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_NAC_3,$WZERO,$WZERO,&M84,S_ERR)
+  ;Lampe Nachtbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ;NMRLU21-25A-X30
+  ; 
+  NICHT (A_BF_LA_TAG_5,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_TAG_5,$WZERO,$WZERO,&M85,S_ERR)
+  ;Lampe Tagbetrieb
+  ; 
+  ;NMRLU21-25A-X31
+  ; 
+  NICHT (A_BF_LA_NAC_5,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_NAC_5,$WZERO,$WZERO,&M86,S_ERR)
+  ;Lampe Nachtbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ;NMRLU21-26A-X30
+  ; 
+  NICHT (A_BF_LA_TAG_6,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_TAG_6,$WZERO,$WZERO,&M87,S_ERR)
+  ;Lampe Tagbetrieb
+  ; 
+  ;NMRLU21-26A-X31
+  ; 
+  NICHT (A_BF_LA_NAC_6,$HB0)
+  BEFAUS (1,$HB0,A_BF_LA_NAC_6,$WZERO,$WZERO,&M88,S_ERR)
+  ;Lampe Nachtbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;NMRBM20-01A-X01
+  ; 
+  NICHT ($B25,$HB0)
+  BEFAUS (1,$HB0,$B25,$WZERO,$WZERO,&M89,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;ZL ANL.1 Halle
+  ; 
+  ;NMRBM20-01A-X02
+  ; 
+  NICHT ($B24,$HB0)
+  BEFAUS (1,$HB0,$B24,$WZERO,$WZERO,&M90,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;ZL ANL.1 Konsole
+  ; 
+  ;NMRBM20-01A-X03
+  ; 
+  NICHT ($B26,$HB0)
+  BEFAUS (1,$HB0,$B26,$WZERO,$WZERO,&M91,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;AL 1 ANL.1
+  ; 
+  UND11 (E_ST_RM1_8,Alle-RM-ausgel,$B21)
+  UND11 (E_ST_RM2_8,Alle-RM-ausgel,$B22)
+  UND11 (E_ST_RM3_8,Alle-RM-ausgel,$B23)
+  VVZ ($B22,$M92,$M93,$B24)
+  VVZ ($B21,$M94,$M95,$B25)
+  VVZ ($B23,$M96,$M97,$B26)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ;NMRBM20-01A-X04
+  ; 
+  NICHT ($B32,$HB0)
+  BEFAUS (1,$HB0,$B32,$WZERO,$WZERO,&M98,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;AL 2 ANL.1
+  ; 
+  ;NMRBM20-01A-X05
+  ; 
+  NICHT ($B30,$HB0)
+  BEFAUS (1,$HB0,$B30,$WZERO,$WZERO,&M99,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;ZL ANL.2
+  ; 
+  ;NMRBM20-01A-X06
+  ; 
+  NICHT ($B31,$HB0)
+  BEFAUS (1,$HB0,$B31,$WZERO,$WZERO,&M100,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;ZL ANL. 3
+  ; 
+  UND11 (E_ST_RM4_8,Alle-RM-ausgel,$B27)
+  UND11 (E_ST_RM5_8,Alle-RM-ausgel,$B28)
+  UND11 (E_ST_RM6_8,Alle-RM-ausgel,$B29)
+  VVZ ($B28,$M101,$M102,$B30)
+  VVZ ($B29,$M103,$M104,$B31)
+  VVZ ($B27,$M105,$M106,$B32)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ;NMRBM20-01A-X07
+  ; 
+  NICHT ($B36,$HB0)
+  BEFAUS (1,$HB0,$B36,$WZERO,$WZERO,&M107,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;AL ANL.4
+  ; 
+  ;NMRBM20-01A-X08
+  ; 
+  NICHT ($B35,$HB0)
+  BEFAUS (1,$HB0,$B35,$WZERO,$WZERO,&M108,S_ERR)
+  ;Rauchmelderkontakt
+  ;an BMZ
+  ;AL ANL.4
+  ; 
+  UND11 (E_ST_RM7_8,Alle-RM-ausgel,$B33)
+  UND11 (E_ST_RM8_8,Alle-RM-ausgel,$B34)
+  VVZ ($B34,$M109,$M110,$B35)
+  VVZ ($B33,$M111,$M112,$B36)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ;NMRLU21-03A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_1,Z_TAST_AKT_1,&M34,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;NMRLU21-04A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_2,Z_TAST_AKT_2,&M35,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;NMRLU21-07A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_3,Z_TAST_AKT_3,&M36,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;NMRLU22-26A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_4,K_1_STATUS,&M116,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ;NMRLU21-25A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_5,Z_TAST_AKT_5,&M37,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;NMRLU21-26A-Y20
+  ; 
+  ANAUS (A_AS_VVS_BOX_6,Z_TAST_AKT_6,&M38,S_ERR)
+  ;VVS-Boxen
+  ; 
+  ;NMRAS09-00A-T00
+  ; 
+  ANAUS (A_MW_AU_T_7,K_1_STATUS,&M119,S_ERR)
+  ;Aussentemperatur
+  ;NMR 2 US 00.09
+  ; 
+  ENDE 
+  ENDMODUL 

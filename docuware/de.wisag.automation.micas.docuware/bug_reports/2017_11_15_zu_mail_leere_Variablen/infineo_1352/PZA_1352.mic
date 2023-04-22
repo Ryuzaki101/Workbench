@@ -1,0 +1,777 @@
+MODUL (AC60,2)
+  WordV $WSCATCH
+  WordK $WZERO (0)
+  WordK FKON-01 (1)
+  WordK K_Freigabe_AUS (0)
+  WordK K_Freigabe_EIN (1)
+  WordV $M20
+  WordV $M22
+  WordK Hand-KLA-1-AUTO (1)
+  WordK Hand-KLA-1-AUS (0)
+  WordK Hand-KLA-1-EIN (0)
+  WordK Hand-KLA-2-AUTO (1)
+  WordK Hand-KLA-2-AUS (0)
+  WordK Hand-KLA-2-EIN (0)
+  WordK Hand-FU-1-AUTO (1)
+  WordK Hand-FU-1-AUS (0)
+  WordK Hand-FU-1-EIN (0)
+  WordK Hand-FU-2-AUTO (1)
+  WordK Hand-FU-2-AUS (0)
+  WordK Hand-FU-2-EIN (0)
+  FloatK FKON-T05 (5.00)
+  WordV PHASENW_VERZ
+  WordV Autoquitt_Netz
+  FloatK FKON-T60 (60.00)
+  FloatK FKON-T06 (6.00)
+  WordV Reset
+  FloatV Xp4
+  FloatV Xp5
+  FloatV Tn4
+  FloatV Tn5
+  FloatV SW_ABL_DRUCK
+  FloatK k_Xp4 (800.00)
+  FloatK k_Xp5 (800.00)
+  FloatK k_Tn4 (120.00)
+  FloatK k_Tn5 (120.00)
+  FloatK k_SW_ABL-DRUCK (350.00)
+  FloatV ABL_DRUCK_1_GLAT
+  FloatV ABL_DRUCK_2_GLAT
+  FloatV ABL_DRUCK_1
+  FloatV ABL_DRUCK_2
+  FloatK FKON-T30 (30.00)
+  FloatK FKON-T00 (0.00)
+  WordV HAND_FU-1
+  WordV HAND_FU-1-AUS
+  WordV HAND_FU-1-EIN
+  WordV HAND_FU-2
+  WordV HAND_FU-2-AUS
+  WordV HAND_FU-2-EIN
+  WordV HAND_AU-KL-1
+  WordV HAND_AU-KL-1-AUS
+  WordV HAND_AU-KL-1-EIN
+  WordV HAND_AU-KL-2
+  WordV HAND_AU-KL-2-AUS
+  WordV HAND_AU-KL-2-EIN
+  WordV HAND_FU-1-SG
+  WordV HAND_FU-2-SG
+  WordV $M4
+  WordV Freigabe
+  WordV REP-SCHALTER-ABL-1
+  WordV REP-SCHALTER-ABL-2
+  WordV ST-FU-ABL-1
+  WordV ST-FU-ABL-2
+  WordV $M8
+  WordV $M10
+  WordV $M12
+  WordV RM_ABL-1-EIN
+  WordV RM_ABL-2-EIN
+  WordV UEBERSPGSCHUTZ
+  WordV RM-KL-AU-1-AUF
+  WordV RM-KL-AU-2-AUF
+  WordV RM-KL-AU-1-ZU
+  WordV RM-KL-AU-2-ZU
+  WordV $M9
+  WordV BMZ
+  WordV $M11
+  WordV $M13
+  WordV $M14
+  WordV ENTRAUCHUNG
+  WordV RAUCHMELDER
+  WordV HAUPTSCHALTER
+  WordV Zeitumschaltung
+  WordV Quittierung
+  WordV Quittierung-TAST
+  WordV $M16
+  FloatK FKON-T10 (10.00)
+  WordV $M17
+  WordV $M23
+  WordV ST_AN-FU-ABL-1
+  WordV ST_AN-FU-ABL-2
+  WordV ST_LAUFUEB-ABL-1
+  WordV ST_LAUFUEB-ABL-2
+  WordV ST_AN-KL-AU-2
+  WordV $M21
+  WordV $M24
+  WordV Stoerung_PZA-1
+  WordV Stoerung_PZA-2
+  WordV $M25
+  WordV Sammelstoerung
+  WordV ST_AN-KL-AU-1
+  WordV $M26
+  WordV $M27
+  WordV $M28
+  WordV Sammeloertlich
+  WordV Sammelwartung
+  WordV $M30
+  WordV $M35
+  WordV $M36
+  FloatK FKON-T01 (1.00)
+  WordV Freigabe_Gesamt
+  FloatK FKON-T03 (3.00)
+  WordV $M39
+  WordV $M41
+  WordV $M44
+  WordV Umsch_PZA-2
+  WordV $M45
+  WordV $M46
+  WordV $M47
+  WordV $M48
+  WordV $M49
+  WordV Umsch_PZA-2_AUS
+  FloatK FKON-T120 (120.00)
+  WordV $M43
+  WordV $M50
+  WordV Freigabe_PZA-2
+  WordV Freigabe_PZA-1
+  FloatV DREHZ_ENTRAUCHUNG
+  FloatK FKON-T100 (100.00)
+  WordV $M54
+  WordV $M55
+  WordV $M56
+  WordV $M57
+  WordV $M58
+  WordV $M59
+  IPAAW &13-PZA052-AS-01 (40)
+  IPAAW &13-PZA052-AS-02 (41)
+  IPAMB &13-PZA052-ST-95 (111,5)
+  IPAMB &13-PZA052-RM-13 (0,6)
+  IPAMB &13-PZA052-RM-14 (1,6)
+  IPAMB &13-PZA052-ST-98 (111,6)
+  IPAMB &13-PZA052-ST-01 (0,2)
+  IPAMB &13-PZA052-ST-02 (1,2)
+  IPAMB &13-PZA052-BF-21 (2,9)
+  IPAMB &13-PZA052-BF-20 (2,13)
+  IPAAW &13-PZA052-MW-91 (103)
+  IPAAW &13-PZA052-MW-92 (104)
+  IPAMB &13-PZA052-ST-33 (112,13)
+  IPAMB &13-PZA052-ST-34 (112,14)
+  IPAMB &13-PZA052-BM-01 (113,12)
+  IPAMB &13-PZA052-BM-02 (114,4)
+  IPAMW &13-PZA052-MW-13 (38)
+  IPAMW &13-PZA052-MW-14 (39)
+  IPAMB &13-PZA052-BF-10 (0,5)
+  IPAMB &13-PZA052-BF-99 (115,9)
+  IPAMB &13-PZA052-BF-96 (118,9)
+  IPAMB &13-PZA052-BF-95 (118,1)
+  IPAMB &13-PZA052-BF-90 (115,1)
+  IPAMB &13-PZA052-BF-91 (113,9)
+  IPAMB &13-PZA052-BM-99 (2,6)
+  IPAMB &13-PZA052-BF-01 (0,1)
+  IPAMB &13-PZA052-GF-02 (3,14)
+  IPAAW &13-PZA052-SW-91 (100)
+  IPAMB &13-PZA052-BF-02 (1,1)
+  IPAMB &13-PZA052-GF-03 (3,10)
+  IPAMB &13-PZA052-GF-04 (3,11)
+  IPAAW &13-PZA052-SW-93 (102)
+  IPAAW &13-PZA052-SW-92 (101)
+  IPAMB &13-PZA052-BF-40 (3,5)
+  IPAMB &13-PZA052-BF-80 (115,5)
+  IPAAW &13-PZA052-SW-95 (108)
+  IPAAW &13-PZA052-SW-94 (107)
+  IPAMB &13-PZA052-ST-15 (2,7)
+  IPAMB &13-PZA052-ST-99 (111,7)
+  IPAMB &13-PZA052-ST-13 (3,15)
+  IPAMB &13-PZA052-ST-14 (3,2)
+  IPAMB &13-PZA052-WA-02 (2,3)
+  IPAMB &13-PZA052-WA-01 (2,2)
+  IPAMB &13-PZA052-BF-92 (114,1)
+  IPAMB &13-PZA052-BF-11 (1,5)
+  WordV $M60
+  WordK FKON-T300 (0)
+  WordV $M63
+  WordV $M65
+  WordV $M67
+  WordV $M68
+  WordV $M69
+  WordV $M70
+  WordV $M71
+  WordV $M72
+  FloatK FKON-T50 (50.00)
+  WordV $M74
+  WordV $M75
+  WordV $M77
+  WordV $M78
+  WordV $M79
+  WordV $M81
+  WordV $M83
+  WordV $M85
+  WordV $M87
+  WordV $M89
+  WordV $M90
+  FloatV YO_REG
+  FloatV SG-Reg_ABL-FU-1
+  FloatV $M91
+  FloatV $M92
+  FloatK FKON-T25 (25.00)
+  FloatV $M93
+  FloatV $M94
+  FloatV SG-Reg_ABL-FU-2
+  WordV $M97
+  FloatK YO_100 (100.00)
+  WordV $M98
+  FloatK FKON-3000 (3000.00)
+  FloatK FKON-001 (0.10)
+  WordK FKON-2 (0)
+  WordV $M99
+  WordV $M95
+  WordV $M100
+  WordV $M102
+  WordV $M103
+  WordV $M105
+  WordV $M106
+  WordV $M107
+  WordV $M108
+  WordV $M109
+  WordV $M112
+  WordV $M113
+  WordV $M114
+  WordV $M115
+  WordV $M118
+  WordV $M119
+  WordV $M120
+  WordV $M121
+  FloatK YO_50 (50.00)
+  FloatK YU_REG (0.00)
+  WordV $out-anaus-0-error
+  WordV $out-anaus-1-error
+  WordV $out-anaus-2-error
+  WordV $out-anaus-3-error
+  WordV $out-anaus-4-error
+  WordV $out-befaus-5-error
+  WordV $out-befaus-6-error
+  WordV $out-befaus-7-error
+  WordV $out-befaus-8-error
+  WordV $out-befaus-9-error
+  WordV $out-melein-10-error
+  WordV $out-rss-11-binv
+  WordV $out-rss-12-binv
+  WordV $out-setmel-13-error
+  WordV $out-anein-14-error
+  WordV $out-anein-15-error
+  WordV $out-anein-16-error
+  WordV $out-anein-17-error
+  WordV $out-anein-18-error
+  WordV $out-anein-19-error
+  WordV $out-anein-20-error
+  WordV $out-melein-21-meldepunkt
+  WordV $out-melein-22-meldepunkt
+  WordV $out-melein-23-error
+  WordV $out-melein-24-meldepunkt
+  WordV $out-melein-25-meldepunkt
+  WordV $out-melein-26-error
+  WordV $out-melein-27-meldepunkt
+  WordV $out-melein-28-meldepunkt
+  WordV $out-melein-29-error
+  WordV $out-melein-30-meldepunkt
+  WordV $out-melein-31-meldepunkt
+  WordV $out-melein-32-error
+  WordV $out-melein-33-error
+  WordV $out-melein-34-error
+  WordV $out-melein-35-meldepunkt
+  WordV $out-melein-36-meldepunkt
+  WordV $out-melein-37-error
+  WordV $out-melein-38-error
+  WordV $out-melein-39-error
+  WordV $out-melein-40-error
+  WordV $out-melein-41-error
+  WordV $out-melein-42-meldepunkt
+  WordV $out-melein-43-meldepunkt
+  WordV $out-melein-44-error
+  WordV $out-melein-45-meldepunkt
+  WordV $out-melein-46-meldepunkt
+  WordV $out-melein-47-error
+  WordV $out-melein-48-error
+  WordV $out-melein-49-meldepunkt
+  WordV $out-melein-50-meldepunkt
+  WordV $out-melein-51-error
+  WordV $out-melein-52-meldepunkt
+  WordV $out-melein-53-meldepunkt
+  WordV $out-melein-54-error
+  WordV $out-melein-55-error
+  WordV $out-melein-56-error
+  WordV $out-melein-57-error
+  WordV $out-melein-58-error
+  WordV $out-melein-59-error
+  WordV $out-melein-60-error
+  WordV $out-melein-61-meldepunkt
+  WordV $out-melein-62-meldepunkt
+  WordV $out-melein-63-error
+  WordV $out-melein-64-meldepunkt
+  WordV $out-melein-65-meldepunkt
+  WordV $out-melein-66-error
+  WordV $out-melein-67-error
+  WordV $out-odrmn-68-binv
+  WordV $out-befaus-69-error
+  WordV $out-odrmn-70-binv
+  WordV $out-odrmn-71-binv
+  WordV $out-rss-72-binv
+  WordV $out-rss-73-binv
+  WordV $out-odrmn-74-binv
+  WordV $out-odrmn-75-binv
+  WordV $out-rss-76-binv
+  WordV $out-undmn-77-binv
+  WordV $out-undmn-78-binv
+  WordV $out-befaus-79-error
+  WordV $out-undmn-80-binv
+  WordV $out-undmn-81-binv
+  WordV $out-undmn-82-binv
+  WordV $out-undmn-83-binv
+  WordV $out-odrmn-84-binv
+  WordV $out-odrmn-85-binv
+  WordV $out-undmn-86-binv
+  WordV $out-undmn-87-binv
+  WordV $out-odrmn-88-binv
+  WordV $out-odrmn-89-binv
+  WordV $out-undmn-90-binv
+  WordV $out-undmn-91-binv
+  WordV $out-befaus-92-error
+  WordV $out-rss-93-binv
+  WordV $out-setmel-94-error
+  WordV $out-odrmn-95-binv
+  WordV $out-odrmn-96-binv
+  WordV $out-undmn-97-binv
+  WordV $out-undmn-98-binv
+  WordV $out-befaus-99-error
+  WordV $out-rss-100-binv
+  WordV $out-setmel-101-error
+  WordV $out-undmn-102-binv
+  WordV $out-rss-103-binv
+  WordV $out-undmn-104-binv
+  WordV $out-odrmn-105-binv
+  WordV $out-undmn-106-binv
+  WordV $out-befaus-107-error
+  WordV $out-setmel-108-error
+  WordV $out-undmn-109-binv
+  WordV $out-rss-110-binv
+  WordV $out-undmn-111-binv
+  WordV $out-odrmn-112-binv
+  WordV $out-undmn-113-binv
+  WordV $out-befaus-114-error
+  WordV $out-setmel-115-error
+  WordV $out-undmn-116-binv
+  WordK $in-lreg-117-eingangfestegrenze (0)
+  FloatK $in-lreg-118-festwert (0.00)
+  FloatK $in-lreg-119-vorhaltzeittv (0.00)
+  WordV $out-lreg-120-error
+  FloatK $in-awt-121-x1 (0.00)
+  WordV $out-anaus-122-error
+  WordK $in-lreg-123-eingangfestegrenze (0)
+  FloatK $in-lreg-124-festwert (0.00)
+  WordK $in-lreg-125-reglertypp/pi/pid (0)
+  FloatK $in-lreg-126-vorhaltzeittv (0.00)
+  WordV $out-lreg-127-error
+  FloatK $in-awt-128-x1 (0.00)
+  WordV $out-anaus-129-error
+  WordV $out-befaus-130-error
+  WordV $out-befaus-131-error
+  WordV $out-anaus-132-error
+  WordV $out-anaus-133-error
+ ;name : Task_init
+ TASK (1,init)
+ ;Page 1 Title : INIT
+ ;Page 2 Title : INIT Regler
+  ;prio : 1 
+  ANAUS (k_Xp5,FKON-01,&13-PZA052-SW-94,$out-anaus-0-error)
+  ;prio : 2 
+  ANAUS (k_Tn5,FKON-01,&13-PZA052-SW-95,$out-anaus-1-error)
+  ;prio : 3 
+  ANAUS (k_Xp4,FKON-01,&13-PZA052-SW-92,$out-anaus-2-error)
+  ;prio : 4 
+  ANAUS (k_Tn4,FKON-01,&13-PZA052-SW-93,$out-anaus-3-error)
+  ;prio : 5 
+  ANAUS (k_SW_ABL-DRUCK,FKON-01,&13-PZA052-SW-91,$out-anaus-4-error)
+ ;Page 3 Title : INIT Hand
+  ;prio : 1 
+  BEFAUS (2,Hand-KLA-1-AUTO,Hand-KLA-1-AUS,Hand-KLA-1-EIN,$WZERO,
+   &13-PZA052-BF-95,$out-befaus-5-error)
+  ;prio : 3 
+  BEFAUS (1,K_Freigabe_AUS,K_Freigabe_EIN,$WZERO,$WZERO,&13-PZA052-BF-90,
+   $out-befaus-6-error)
+  ;prio : 4 
+  BEFAUS (2,Hand-KLA-2-AUTO,Hand-KLA-2-AUS,Hand-KLA-2-EIN,$WZERO,
+   &13-PZA052-BF-96,$out-befaus-7-error)
+  ;prio : 7 
+  BEFAUS (2,Hand-FU-1-AUTO,Hand-FU-1-AUS,Hand-FU-1-EIN,$WZERO,&13-PZA052-BF-91,
+   $out-befaus-8-error)
+  ;prio : 8 
+  BEFAUS (2,Hand-FU-2-AUTO,Hand-FU-2-AUS,Hand-FU-2-EIN,$WZERO,&13-PZA052-BF-92,
+   $out-befaus-9-error)
+ ENDE 
+ ;name : Phasenwaechter
+ TASK (2,cycl,50)
+ ;Page 1 Title : Phasenwaechter
+  ;prio : 1 
+  MELEIN (&13-PZA052-ST-15,1,$M95,$out-melein-10-error)
+  ;prio : 2 
+  RSS ($M100,$M20,PHASENW_VERZ,$out-rss-11-binv)
+  ;prio : 3 
+  VVZ (Reset,FKON-T05,FKON-T00,$M20)
+  ;prio : 4 
+  RSS (PHASENW_VERZ,$WSCATCH,$M22,$out-rss-12-binv)
+  ;prio : 5 
+  VVZ ($M22,FKON-T60,FKON-T00,$WSCATCH)
+  ;prio : 6 
+  VVZ ($WSCATCH,FKON-T00,FKON-T06,Autoquitt_Netz)
+  ;prio : 7 
+  SETMEL (FKON-01,1,PHASENW_VERZ,&13-PZA052-ST-95,$out-setmel-13-error)
+  ;prio : 8 
+  NICHT ($M95,$M100)
+ ENDE 
+ ;name : Einlesen
+ TASK (3,cycl,1000)
+ ;Page 1 Title : ANEIN fiktiv
+  ;prio : 1 
+  ANEIN (&13-PZA052-SW-92,Xp4,$out-anein-14-error)
+  ;prio : 2 
+  ANEIN (&13-PZA052-SW-94,Xp5,$out-anein-15-error)
+  ;prio : 3 
+  ANEIN (&13-PZA052-SW-93,Tn4,$out-anein-16-error)
+  ;prio : 4 
+  ANEIN (&13-PZA052-SW-95,Tn5,$out-anein-17-error)
+  ;prio : 5 
+  ANEIN (&13-PZA052-SW-91,SW_ABL_DRUCK,$out-anein-18-error)
+  ;prio : 6 
+  ATRA (Xp4,k_Xp4)
+ ;Page 2 Title : ANEIN Messwerte
+  ;prio : 1 
+  ANEIN (&13-PZA052-MW-13,ABL_DRUCK_1,$out-anein-19-error)
+  ;prio : 2 
+  ANEIN (&13-PZA052-MW-14,ABL_DRUCK_2,$out-anein-20-error)
+  ;prio : 3 
+  PT1 (ABL_DRUCK_1,FKON-T30,ABL_DRUCK_1_GLAT)
+  ;prio : 4 
+  PT1 (ABL_DRUCK_2,FKON-T30,ABL_DRUCK_2_GLAT)
+ ;Page 3 Title : MELEIN HAND
+  ;prio : 1 
+  MELEIN (&13-PZA052-BF-91,5,HAND_FU-1,$out-melein-21-meldepunkt,HAND_FU-1-AUS,
+   $out-melein-22-meldepunkt,HAND_FU-1-EIN,$out-melein-23-error)
+  ;prio : 2 
+  MELEIN (&13-PZA052-BF-92,5,HAND_FU-2,$out-melein-24-meldepunkt,HAND_FU-2-AUS,
+   $out-melein-25-meldepunkt,HAND_FU-2-EIN,$out-melein-26-error)
+  ;prio : 3 
+  MELEIN (&13-PZA052-BF-95,5,HAND_AU-KL-1,$out-melein-27-meldepunkt,
+   HAND_AU-KL-1-AUS,$out-melein-28-meldepunkt,HAND_AU-KL-1-EIN,
+   $out-melein-29-error)
+  ;prio : 6 
+  MELEIN (&13-PZA052-BF-96,5,HAND_AU-KL-2,$out-melein-30-meldepunkt,
+   HAND_AU-KL-2-AUS,$out-melein-31-meldepunkt,HAND_AU-KL-2-EIN,
+   $out-melein-32-error)
+  ;prio : 7 
+  MELEIN (&13-PZA052-BM-01,1,HAND_FU-1-SG,$out-melein-33-error)
+  ;prio : 8 
+  MELEIN (&13-PZA052-BM-02,1,HAND_FU-2-SG,$out-melein-34-error)
+ ;Page 4 Title : MELEIN1
+  ;prio : 1 
+  MELEIN (&13-PZA052-BF-90,3,$out-melein-35-meldepunkt,$out-melein-36-meldepunkt,
+   Freigabe,$out-melein-37-error)
+  ;prio : 2 
+  MELEIN (&13-PZA052-WA-01,1,$M4,$out-melein-38-error)
+  ;prio : 3 
+  MELEIN (&13-PZA052-WA-02,1,$M8,$out-melein-39-error)
+  ;prio : 4 
+  MELEIN (&13-PZA052-ST-01,1,$M10,$out-melein-40-error)
+  ;prio : 6 
+  NICHT ($M4,REP-SCHALTER-ABL-1)
+  ;prio : 7 
+  NICHT ($M8,REP-SCHALTER-ABL-2)
+  ;prio : 8 
+  NICHT ($M10,ST-FU-ABL-1)
+  ;prio : 9 
+  MELEIN (&13-PZA052-ST-02,1,$M12,$out-melein-41-error)
+  ;prio : 10 
+  MELEIN (&13-PZA052-BF-01,3,$out-melein-42-meldepunkt,$out-melein-43-meldepunkt,
+   RM_ABL-1-EIN,$out-melein-44-error)
+  ;prio : 11 
+  MELEIN (&13-PZA052-BF-02,3,$out-melein-45-meldepunkt,$out-melein-46-meldepunkt,
+   RM_ABL-2-EIN,$out-melein-47-error)
+  ;prio : 12 
+  MELEIN (&13-PZA052-ST-14,1,UEBERSPGSCHUTZ,$out-melein-48-error)
+  ;prio : 13 
+  NICHT ($M12,ST-FU-ABL-2)
+ ;Page 5 Title : MELEIN2
+  ;prio : 1 
+  MELEIN (&13-PZA052-BF-10,3,$out-melein-49-meldepunkt,$out-melein-50-meldepunkt,
+   RM-KL-AU-1-AUF,$out-melein-51-error)
+  ;prio : 3 
+  MELEIN (&13-PZA052-BF-11,3,$out-melein-52-meldepunkt,$out-melein-53-meldepunkt,
+   RM-KL-AU-2-AUF,$out-melein-54-error)
+  ;prio : 5 
+  MELEIN (&13-PZA052-RM-13,1,RM-KL-AU-1-ZU,$out-melein-55-error)
+  ;prio : 6 
+  MELEIN (&13-PZA052-RM-14,1,RM-KL-AU-2-ZU,$out-melein-56-error)
+  ;prio : 7 
+  MELEIN (&13-PZA052-GF-03,1,$M9,$out-melein-57-error)
+  ;prio : 13 
+  NICHT ($M9,BMZ)
+  ;prio : 14 
+  MELEIN (&13-PZA052-GF-04,1,$M11,$out-melein-58-error)
+  ;prio : 15 
+  NICHT ($M11,ENTRAUCHUNG)
+  ;prio : 16 
+  MELEIN (&13-PZA052-GF-02,1,$M13,$out-melein-59-error)
+  ;prio : 17 
+  NICHT ($M13,RAUCHMELDER)
+  ;prio : 18 
+  MELEIN (&13-PZA052-ST-13,1,$M14,$out-melein-60-error)
+  ;prio : 19 
+  NICHT ($M14,HAUPTSCHALTER)
+  ;prio : 20 
+  MELEIN (&13-PZA052-BF-99,3,$out-melein-61-meldepunkt,$out-melein-62-meldepunkt,
+   Zeitumschaltung,$out-melein-63-error)
+ ;Page 6 Title : MELEIN Quitt.
+  ;prio : 1 
+  MELEIN (&13-PZA052-BF-20,3,$out-melein-64-meldepunkt,$out-melein-65-meldepunkt,
+   Quittierung,$out-melein-66-error)
+  ;prio : 2 
+  MELEIN (&13-PZA052-BM-99,1,Quittierung-TAST,$out-melein-67-error)
+  ;prio : 3 
+  ODRMN (3,Quittierung,Quittierung-TAST,Autoquitt_Netz,0,$M16,
+   $out-odrmn-68-binv)
+  ;prio : 4 
+  BEFAUS (1,$M23,Reset,$WZERO,$WZERO,&13-PZA052-BF-20,$out-befaus-69-error)
+  ;prio : 6 
+  MOKY ($M16,FKON-T10,$M17)
+  ;prio : 7 
+  UNDMN (2,$M17,FKON-01,0,Reset,$M23)
+ ;Page 7 Title : Sammelstoerung
+  ;prio : 1 
+  ODRMN (8,ST-FU-ABL-1,ST-FU-ABL-2,ST_AN-FU-ABL-1,ST_AN-FU-ABL-2,
+   ST_LAUFUEB-ABL-1,ST_LAUFUEB-ABL-2,ST_AN-KL-AU-1,ST_AN-KL-AU-2,0,$M21,
+   $out-odrmn-70-binv)
+  ;prio : 2 
+  ODR2 ($M21,$M24,$M25)
+  ;prio : 3 
+  ODRMN (4,UEBERSPGSCHUTZ,PHASENW_VERZ,Stoerung_PZA-1,Stoerung_PZA-2,0,$M24,
+   $out-odrmn-71-binv)
+  ;prio : 4 
+  RSS ($M25,Reset,Sammelstoerung,$out-rss-72-binv)
+ ;Page 8 Title : ”rtlich
+  ;prio : 1 
+  ODRMN (6,$M102,$WSCATCH,$WSCATCH,$WSCATCH,HAND_FU-1-SG,HAND_FU-2-SG,0,$M26,
+   $M27)
+  ;prio : 2 
+  VVZ ($M27,FKON-T00,FKON-T10,$M28)
+  ;prio : 3 
+  RSS ($M26,$M28,Sammeloertlich,$out-rss-73-binv)
+  ;prio : 4 
+  NICHT (HAND_AU-KL-1,$M102)
+  ;prio : 5 
+  NICHT (HAND_AU-KL-2,$WSCATCH)
+  ;prio : 6 
+  NICHT (HAND_FU-1,$WSCATCH)
+  ;prio : 7 
+  NICHT (HAND_FU-2,$WSCATCH)
+ ;Page 9 Title : St”rumschaltung
+  ;prio : 1 
+  ODRMN (5,ST-FU-ABL-1,ST_AN-FU-ABL-1,ST_AN-KL-AU-1,ST_LAUFUEB-ABL-1,
+   REP-SCHALTER-ABL-1,0,Stoerung_PZA-1,$out-odrmn-74-binv)
+  ;prio : 2 
+  ODRMN (5,ST-FU-ABL-2,ST_AN-FU-ABL-2,ST_AN-KL-AU-2,ST_LAUFUEB-ABL-2,
+   REP-SCHALTER-ABL-2,0,Stoerung_PZA-2,$out-odrmn-75-binv)
+ ;Page 10 Title : Sammelwartung
+  ;prio : 1 
+  ODRMN (2,REP-SCHALTER-ABL-1,REP-SCHALTER-ABL-2,0,$M35,$M30)
+  ;prio : 2 
+  RSS ($M35,$M36,Sammelwartung,$out-rss-76-binv)
+  ;prio : 3 
+  VVZ ($M30,FKON-T01,FKON-T05,$M36)
+ ;Page 11 Title : Freigabe
+  ;prio : 1 
+  UNDMN (4,Freigabe,$M103,$M105,FKON-01,0,Freigabe_Gesamt,$out-undmn-77-binv)
+  ;prio : 2 
+  NICHT (BMZ,$M103)
+  ;prio : 3 
+  NICHT (HAUPTSCHALTER,$M105)
+ ;Page 12 Title : AutoLED Zeitums.
+  ;prio : 1 
+  PDM (FKON-T10,FKON-T03,$M106)
+  ;prio : 2 
+  UNDMN (2,$M106,Sammeloertlich,0,$M107,$out-undmn-78-binv)
+  ;prio : 3 
+  UNDMN (2,$M108,Freigabe_Gesamt,0,$M41,$M39)
+  ;prio : 4 
+  BEFAUS (1,$M39,$M41,$WZERO,$WZERO,&13-PZA052-BF-21,$out-befaus-79-error)
+  ;prio : 5 
+  NICHT (Zeitumschaltung,Umsch_PZA-2_AUS)
+  ;prio : 6 
+  UNDMN (2,FKON-01,Freigabe_Gesamt,0,$M44,$out-undmn-80-binv)
+  ;prio : 7 
+  UNDMN (2,Umsch_PZA-2,Freigabe_Gesamt,0,$M46,$out-undmn-81-binv)
+  ;prio : 8 
+  UNDMN (2,$M44,$WSCATCH,0,$M45,$out-undmn-82-binv)
+  ;prio : 9 
+  UNDMN (2,$M46,$M109,0,$M47,$out-undmn-83-binv)
+  ;prio : 10 
+  ODRMN (2,Stoerung_PZA-2,$M45,0,$M48,$out-odrmn-84-binv)
+  ;prio : 11 
+  ODRMN (2,Stoerung_PZA-1,$M47,0,$M50,$out-odrmn-85-binv)
+  ;prio : 12 
+  UNDMN (2,$M48,Freigabe_Gesamt,0,$M49,$out-undmn-86-binv)
+  ;prio : 13 
+  UNDMN (2,$M50,Freigabe_Gesamt,0,$M43,$out-undmn-87-binv)
+  ;prio : 14 
+  VVZ ($M49,FKON-T00,FKON-T120,Freigabe_PZA-1)
+  ;prio : 15 
+  VVZ ($M43,FKON-T00,FKON-T120,Freigabe_PZA-2)
+  ;prio : 16 
+  NICHT ($M107,$M108)
+  ;prio : 17 
+  NICHT (Stoerung_PZA-2,$M109)
+  ;prio : 18 
+  NICHT (Stoerung_PZA-1,$WSCATCH)
+  ;prio : 19 
+  BTRA (Zeitumschaltung,Umsch_PZA-2)
+ ;Page 13 Title : Entrauchung
+  ;prio : 1 
+  AWT (ENTRAUCHUNG,FKON-T00,FKON-T100,DREHZ_ENTRAUCHUNG)
+ ;Page 14 Title : Klappe 1 Sys 1
+  ;prio : 1 
+  ODRMN (3,HAND_AU-KL-1-EIN,ENTRAUCHUNG,Freigabe_PZA-1,0,$M55,
+   $out-odrmn-88-binv)
+  ;prio : 2 
+  ODRMN (2,$M55,Stoerung_PZA-2,0,$M56,$out-odrmn-89-binv)
+  ;prio : 3 
+  UNDMN (1,$M56,1,HAND_AU-KL-1-AUS,$M57,$out-undmn-90-binv)
+  ;prio : 4 
+  UNDMN (1,$M57,1,REP-SCHALTER-ABL-1,$M58,$out-undmn-91-binv)
+  ;prio : 5 
+  XOR2 ($M58,RM-KL-AU-1-AUF,$M60)
+  ;prio : 6 
+  VVZ ($M60,FKON-T300,FKON-T00,$M113)
+  ;prio : 7 
+  NICHT ($M58,$M59)
+  ;prio : 8 
+  BEFAUS (1,$M59,$M58,$WZERO,$WZERO,&13-PZA052-BF-10,$out-befaus-92-error)
+  ;prio : 9 
+  RSS ($M113,Reset,ST_AN-KL-AU-1,$out-rss-93-binv)
+  ;prio : 10 
+  VVZ (ST_AN-KL-AU-1,FKON-T00,FKON-T05,$M54)
+  ;prio : 11 
+  SETMEL (FKON-01,1,$M54,&13-PZA052-ST-33,$out-setmel-94-error)
+ ;Page 15 Title : Klappe 2 Sys 2
+  ;prio : 12 
+  ODRMN (3,HAND_AU-KL-2-EIN,ENTRAUCHUNG,Freigabe_PZA-2,0,$M70,
+   $out-odrmn-95-binv)
+  ;prio : 13 
+  ODRMN (2,$M70,Stoerung_PZA-1,0,$M69,$out-odrmn-96-binv)
+  ;prio : 14 
+  UNDMN (1,$M69,1,HAND_AU-KL-2-AUS,$M67,$out-undmn-97-binv)
+  ;prio : 15 
+  UNDMN (1,$M67,1,REP-SCHALTER-ABL-2,$M71,$out-undmn-98-binv)
+  ;prio : 16 
+  XOR2 ($M71,RM-KL-AU-2-AUF,$M63)
+  ;prio : 17 
+  VVZ ($M63,FKON-T300,FKON-T00,$M72)
+  ;prio : 18 
+  NICHT ($M71,$M68)
+  ;prio : 19 
+  BEFAUS (1,$M68,$M71,$WZERO,$WZERO,&13-PZA052-BF-11,$out-befaus-99-error)
+  ;prio : 20 
+  RSS ($M72,Reset,ST_AN-KL-AU-2,$out-rss-100-binv)
+  ;prio : 21 
+  VVZ (ST_AN-KL-AU-2,FKON-T00,FKON-T05,$M65)
+  ;prio : 22 
+  SETMEL (FKON-01,1,$M65,&13-PZA052-ST-34,$out-setmel-101-error)
+ ;Page 16 Title : FU-ABL-1 Ein
+  ;prio : 1 
+  VGLEH (ABL_DRUCK_1,FKON-T50,FKON-T00,$M114)
+  ;prio : 2 
+  UNDMN (3,$M115,RM_ABL-1-EIN,$M78,0,$M74,$out-undmn-102-binv)
+  ;prio : 3 
+  VVZ ($M74,FKON-T120,FKON-T00,$M75)
+  ;prio : 4 
+  RSS ($M75,Reset,ST_LAUFUEB-ABL-1,$out-rss-103-binv)
+  ;prio : 5 
+  UNDMN (2,Freigabe_PZA-1,RM-KL-AU-1-AUF,3,RM-KL-AU-1-ZU,ST_LAUFUEB-ABL-1,
+   REP-SCHALTER-ABL-1,$M118,$out-undmn-104-binv)
+  ;prio : 6 
+  ODRMN (4,$M118,HAND_FU-1-EIN,Stoerung_PZA-2,ENTRAUCHUNG,0,$M77,
+   $out-odrmn-105-binv)
+  ;prio : 7 
+  UNDMN (2,$M77,HAND_FU-1-AUS,0,$M78,$out-undmn-106-binv)
+  ;prio : 8 
+  NICHT ($M78,$M79)
+  ;prio : 9 
+  BEFAUS (1,$M79,$M78,$WZERO,$WZERO,&13-PZA052-BF-01,$out-befaus-107-error)
+  ;prio : 10 
+  SETMEL (FKON-01,1,ST_LAUFUEB-ABL-1,&13-PZA052-ST-98,$out-setmel-108-error)
+  ;prio : 11 
+  NICHT ($M114,$M115)
+ ;Page 17 Title : FU-ABL-2 Ein
+  ;prio : 11 
+  VGLEH (ABL_DRUCK_2,FKON-T50,FKON-T00,$M119)
+  ;prio : 12 
+  UNDMN (3,$M120,RM_ABL-2-EIN,$M89,0,$M81,$out-undmn-109-binv)
+  ;prio : 13 
+  VVZ ($M81,FKON-T120,FKON-T00,$M83)
+  ;prio : 14 
+  RSS ($M83,Reset,ST_LAUFUEB-ABL-2,$out-rss-110-binv)
+  ;prio : 15 
+  UNDMN (2,Freigabe_PZA-2,RM-KL-AU-2-AUF,3,RM-KL-AU-2-ZU,ST_LAUFUEB-ABL-2,
+   REP-SCHALTER-ABL-2,$M121,$out-undmn-111-binv)
+  ;prio : 16 
+  ODRMN (4,$M121,HAND_FU-2-EIN,Stoerung_PZA-1,ENTRAUCHUNG,0,$M87,
+   $out-odrmn-112-binv)
+  ;prio : 17 
+  UNDMN (2,$M87,HAND_FU-2-AUS,0,$M89,$out-undmn-113-binv)
+  ;prio : 18 
+  NICHT ($M89,$M85)
+  ;prio : 19 
+  BEFAUS (1,$M85,$M89,$WZERO,$WZERO,&13-PZA052-BF-02,$out-befaus-114-error)
+  ;prio : 20 
+  SETMEL (FKON-01,1,ST_LAUFUEB-ABL-2,&13-PZA052-ST-99,$out-setmel-115-error)
+  ;prio : 21 
+  NICHT ($M119,$M120)
+ ENDE 
+ ;name : Regelung
+ TASK (4,cycl,1000)
+ ;Page 1 Title : Regelung
+  ;prio : 1 
+  UNDMN (2,RM_ABL-1-EIN,RM_ABL-2-EIN,0,$M90,$out-undmn-116-binv)
+  ;prio : 2 
+  AWT ($M90,YO_100,YO_50,YO_REG)
+ ;Page 2 Title : REG 04 SG-ABL 01
+  ;prio : 1 
+  LREG (ABL_DRUCK_1_GLAT,SW_ABL_DRUCK,FKON-01,$in-lreg-117-eingangfestegrenze,
+   $in-lreg-118-festwert,FKON-2,FKON-T01,Xp4,Tn4,$in-lreg-119-vorhaltzeittv,
+   FKON-T25,FKON-3000,FKON-001,YU_REG,YO_REG,SG-Reg_ABL-FU-1,
+   $out-lreg-120-error)
+  ;prio : 2 
+  AWT (RM_ABL-1-EIN,$in-awt-121-x1,$M92,$M91)
+  ;prio : 3 
+  ANAUS ($M91,$M98,&13-PZA052-AS-01,$out-anaus-122-error)
+  ;prio : 4 
+  MAX (2,SG-Reg_ABL-FU-1,DREHZ_ENTRAUCHUNG,$M92)
+  ;prio : 5 
+  NICHT (HAND_FU-1-SG,$M98)
+ ;Page 3 Title : REG 05 ABL 02
+  ;prio : 5 
+  LREG (ABL_DRUCK_2_GLAT,SW_ABL_DRUCK,FKON-01,$in-lreg-123-eingangfestegrenze,
+   $in-lreg-124-festwert,$in-lreg-125-reglertypp/pi/pid,FKON-T01,Xp5,Tn5,
+   $in-lreg-126-vorhaltzeittv,FKON-T25,FKON-3000,FKON-001,YU_REG,YO_REG,
+   SG-Reg_ABL-FU-2,$out-lreg-127-error)
+  ;prio : 6 
+  AWT (RM_ABL-2-EIN,$in-awt-128-x1,$M94,$M93)
+  ;prio : 7 
+  ANAUS ($M93,$M99,&13-PZA052-AS-02,$out-anaus-129-error)
+  ;prio : 8 
+  MAX (2,SG-Reg_ABL-FU-2,DREHZ_ENTRAUCHUNG,$M94)
+  ;prio : 9 
+  NICHT (HAND_FU-2-SG,$M99)
+ ;Page 4 Title : Ausgaben
+  ;prio : 1 
+  NICHT (Sammelstoerung,$M112)
+  ;prio : 2 
+  BEFAUS (1,$M112,Sammelstoerung,$WZERO,$WZERO,&13-PZA052-BF-40,
+   $out-befaus-130-error)
+  ;prio : 3 
+  NICHT (Sammelwartung,$M97)
+  ;prio : 4 
+  BEFAUS (1,$M97,Sammelwartung,$WZERO,$WZERO,&13-PZA052-BF-80,
+   $out-befaus-131-error)
+  ;prio : 5 
+  ANAUS (ABL_DRUCK_1_GLAT,FKON-01,&13-PZA052-MW-91,$out-anaus-132-error)
+  ;prio : 6 
+  ANAUS (ABL_DRUCK_2_GLAT,FKON-01,&13-PZA052-MW-92,$out-anaus-133-error)
+ ENDE 
+ENDMODUL

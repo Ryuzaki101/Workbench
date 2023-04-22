@@ -1,0 +1,93 @@
+grammar de.wisag.automation.micas.MIC  hidden(SPACE,EOL)
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+generate mIC "http://www.wisag.de/automation/micas/MIC"
+
+
+Model :
+	Module;
+
+Module:
+	(moduleProlog+=MetaData*)
+	 'MODUL'  '(' type=ID ',' value=INT ')'
+	(decalarations+=Symbol*)
+	(tasks+=Task*)
+	 'ENDMODUL'
+	;
+
+Symbol:
+	WordValue|FloatValue|Reference|MetaData;
+
+MetaData: // create an abstract Superclass
+	 (name="°nothing")? value=RAW_METADATE
+	;
+
+WordValue:
+	WordVar|WordConst;
+
+WordVar :
+	 'WordV'  name=ID ;
+
+WordConst :
+	 'WordK'  name=ID  '('value=INT ')' ;
+
+FloatValue:
+	FloatVar|FloatConst;
+
+
+FloatVar :
+	 'FloatV'  name=ID ;
+
+FloatConst :
+	 'FloatK'  name=ID  '('value=Float')' ;
+
+DirectValue :
+	value=INT;
+
+Reference:
+	FGAMessageConstantReference|FGAAnalogValueReference|FGAValueReference|FGAMeasuredValueReference;
+
+// Meldungskonstante,FGA_MESSAGE_CONST
+FGAMessageConstantReference :
+     'IPAMB'   name=ID  '(' row=INT ',' column=INT ')' ;
+
+//  Analogwertkonstante,FGA_ANALOG_VALUE
+FGAAnalogValueReference :
+     'IPAAW'  name=ID  '(' row=INT ')' ;
+
+// Zaehlwertkonstante,FGA_VALUE
+FGAValueReference :
+     'IPAZW'  name=ID  '(' row=INT ')' ;
+// Messwertkonstante,FGA_MEASURED_VALUE
+FGAMeasuredValueReference :
+     'IPAMW'  name=ID  '(' row=INT ')' ;
+
+Task :
+	(taskProlog+=MetaData*)
+	'TASK'  '(' index=INT ',' type=TaskStrategy (',' cycleTime=INT) ? ')'
+	 (instructions+=Instruction*)
+	'ENDE' ;
+
+Instruction :
+	ModuleInvokation |  MetaData;
+
+
+ModuleInvokation:
+	moduleName=ID  '(' (arguments+=SymbolAccessor (',' arguments+=SymbolAccessor )* )? ')';
+
+SymbolAccessor:
+	( 'writeaccess=' writing?='true')? symbol=[Symbol]|DirectValue;
+
+
+Float 		 		 returns ecore::EDouble : XFLOAT;
+TaskStrategy		 returns ecore::EString : ( 'cycl' | 'back'|'init'|'cycls'|'evnts'|'backs'|'inits' | 'CYCL' | 'BACK'|'INIT'|'CYCLS'|'EVNTS'|'BACKS'|'INITS');
+
+terminal RAW_METADATE returns ecore::EString : ';' (!('\n'|'\r'))* ('\r'? '\n')?;
+//terminal INSTRUCTION_NAME : 'A'..'Z' ('A'..'Z' |'0'..'9')+;
+terminal XFLOAT			:('-'|'+')? ('0'..'9')+ '.' ('0'..'9')+;
+terminal INT 		 				returns ecore::EInt		: ('-')? ('0'..'9')+;
+// Problem : id kann nicht mit |'0'..'9' anfangen, sonst konflikt mit int
+terminal ID 		  	:  ('$'|'&'|'A'..'Z' | 'a'..'z'|'_'|'/'|'0'..'9'|'\\') // prefix
+										 ('&'|'A'..'Z' |'a'..'z'|'0'..'9'|'@'|'Ä'|'Ü'|'Ö'|'ä'|'ü'|'ö'|'ß'| '<'| '>'|'.'|'_'|'/'|'+'|'-'|'~'|'='|'?')+
+						   ;
+terminal SPACE          			: (' '|'\t');
+terminal EOL				: ('\r'|'\n')+;

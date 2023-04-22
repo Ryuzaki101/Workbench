@@ -1,0 +1,47 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : AR08_05.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 8
+  ;*** Modul Typ      : zp12
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatK KON3 (3.00)
+  FloatK KON1 (1.00)
+  FloatK KON16.5 (16.50)
+  IPAAW &41RR00-000AA01 (169)
+  FloatV $F1
+  WordV  $WSCRATCH
+  FloatV $F2
+  FloatK $FZERO (0.00)
+  FloatV $F3
+  WordK  $M0 (1)
+  IPAAW &41RR00-000AA02 (168)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage :
+  ;--------
+  ;EIB
+  ; 
+  ;Modul-Einbau Ort:
+  ;----------------
+  ;GLT-Schrank=N201 2.OG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (2,CYCL,1000)
+  ANEIN (&41RR00-000AA01,$F1,$WSCRATCH)
+  MULDI ($F1,KON3,KON1,$F2)
+  ADSU (11,$F2,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,8,KON16.5,$FZERO,$FZERO,
+        $FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$F3)
+  ANAUS ($F3,$M0,&41RR00-000AA02,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

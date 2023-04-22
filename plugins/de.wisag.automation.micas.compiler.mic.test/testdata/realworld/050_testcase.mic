@@ -1,0 +1,1123 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01104.GPS
+  ;*** Projektname    : MPI-Goettingen
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 11
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-QUITTIEREN-AUS (0)
+  WordK  K-QUITTIEREN-EIN (1)
+  WordV  Frost_Kueche
+  WordV  Frost_Hoersaal
+  WordV  SAMMELST-HOERSAL
+  WordV  QUITTIERUNG-ALLG
+  WordK  K-SEMI-ANL-EIN1 (1)
+  WordK  K-SEMI-ANL-AUS (0)
+  WordK  K-SEMI-ANL-EIN2 (0)
+  WordV  SEMI-ZU-VENT-AUS
+  WordV  SEMI-AB-VENT-AUS
+  WordV  SEM-ZU-VENT-STOE
+  WordV  SEM-ZU-VENT-EIN1
+  WordV  SEM-ZU-VENT-EIN2
+  WordV  SEM-AB-VENT-STOE
+  WordV  SEM-AB-VENT-EIN1
+  WordV  SEM-AB-VENT-EIN2
+  WordV  AI-LU12-13C-B05
+  WordV  SEMI-ZUL-KEILRI
+  WordV  SEMI-ABL-KEILRI
+  WordV  SEMI-FROST
+  WordV  AI-LU12-27C-B03
+  WordV  SEMI-TB-2STUFE
+  WordV  SEMI-TB-AUS
+  FloatK K-SEMI-ABL-TEMP (22.00)
+  FloatV SEMI-ZUL-TEMP
+  FloatV SEMI-ABL-TEMP
+  FloatV SEMI-SW-FERNVERS
+  WordV  SEMI-STOER-ABL
+  WordV  SE-SOLL-EIN2-ZUL
+  FloatV SEM-GEAEN-ABL-SW
+  WordV  SEMI-ZULUFT-EIN
+  WordV  VORSPUEL-SCHALT
+  FloatV SEMI-VORERH-STEL
+  WordV  SOLL-EIN2-ABL1-V
+  WordV  LESE-ABL-EIN1
+  WordV  LESE-VORSPUE-BET
+  WordV  SE-SOLL-EIN1-ZUL
+  WordV  LESE-ABL-EIN2
+  WordV  SOLL-EIN1-ABL1-V
+  WordK  KON00 (0)
+  WordV  ENTRIEGELN
+  WordV  LESE-ZUL-AUS
+  FloatV AUSSENTEMPERATUR
+  WordV  LESE-ZUL-STOER
+  WordV  LESE-ZUL-EIN1
+  WordV  LESE-ZUL-EIN2
+  FloatV SEMI-Y-ABL-SIGNA
+  WordV  LESE-ABL-AUS
+  WordV  LESE-ABL-STOER
+  WordK  KON01 (1)
+  WordV  SEMI-STOER-ZUL
+  WordV  SEMI-TB-1STUFE
+  FloatV LESE-ZUL-TEMP
+  WordV  K-LESE-ANL-AUS
+  WordK  K-LESE-ANL-EIN1 (1)
+  WordK  K-LESE-ANL-EIN2 (0)
+  WordV  AI-LU12-13B-S10
+  WordV  LESE-ABL-KEILRI
+  WordV  TEE-ZUL-VEN-STOE
+  WordV  LESE-FROSTSCHUTZ
+  WordV  LESE-ZUL-KEILRI
+  WordV  LESE-STOER-ZUL
+  WordV  LE-SOLL-EIN2-ZUL
+  WordV  LE-SOLL-EIN1-ZUL
+  WordV  LESE-STOER-ABL
+  WordV  LE-SOLL-EIN2-ABL
+  WordV  LE-SOLL-EIN1-ABL
+  WordV  SEMI-SAMMELSTOER
+  WordV  LESE-ZULUFT-EIN
+  FloatV LESE-VORERH-STEL
+  FloatK K-LESE-SW-ZUL-TE (20.00)
+  WordV  LESE-VORSPUE-SCH
+  WordV  TEE-FROSTSCHUTZ
+  WordV  TEE-ZUL-VEN-AUS
+  WordV  TEE-ZUL-VEN-EIN1
+  WordV  TEE-ZUL-VEN-EIN2
+  WordV  TEE-ABL-VEN-AUS
+  WordV  TEE-ABL-VEN-STOE
+  WordV  TEE-ABL-VEN-EIN1
+  WordV  TEE-ABL-VEN-EIN2
+  WordV  AI-LU12-13F-B02
+  WordK  K-TEE-ANL-EIN1 (1)
+  WordK  K-TEE-ANL-EIN2 (0)
+  WordV  TEE-STOER-ZUL
+  WordV  TEE-ZUL-KEILRIEM
+  WordV  TEE-ABL-KEILRIEM
+  FloatV TEE-ZUL-TEMP
+  FloatV TEE-ABL-TEMP
+  WordV  K-TEE-ANL-AUS
+  WordV  TEE-ZULUFT-EIN
+  WordV  TE-SOLL-EIN1-ZUL
+  WordV  TE-SOLL-EIN2-ZUL
+  WordV  TEE-STOER-ABL
+  WordV  TE-SOLL-EIN2-ABL
+  WordV  TE-SOLL-EIN1-ABL
+  WordV  BSK_2
+  FloatK K-TEE-SW-ABL-TEM (22.00)
+  WordV  FILM-SAMMELSTOER
+  WordV  KUECHE-SAMMELST
+  WordV  FREE-SAMMELSTOER
+  WordV  KAELTE-SAMMELST
+  FloatV FKON0
+  WordV  Frost_Verteiler
+  WordV  Frost_Eingangsh
+  WordV  Frost_Filmvorf
+  WordV  STOE_US00-04
+  WordV  Ueberspsch_NN
+  WordV  Phasenf_NN
+  WordV  STOE_230V_AC_NN
+  WordV  Ueberspsch_Not-N
+  WordV  Phasenf_Not-N
+  WordV  STOE_24V-AC_Notn
+  WordV  STOE_24V-DC_Notn
+  WordV  STOE_230V-AC_Not
+  WordV  SSM_Betriebst_1
+  WordV  BSK_1
+  WordV  SSM_Betriebst_2
+  FloatK K-GR_min_VL-T-Fe (60.00)
+  FloatV VL-Te-Fernw.prim
+  WordV  STOE_GR_VL-Te_FE
+  WordV  ST_KEILR-ZUL-SEM
+  WordV  ST_KEILR-ABL-SEM
+  WordV  ST_KEILR-ZUL-LES
+  WordV  ST_KEILR-ABL-LES
+  WordV  ST_KEILR-ZUL-TEE
+  WordV  ST_KEILR-ABL-TEE
+  WordV  SSM_TEERAUM
+  WordV  SSM_LESERAUM
+  WordV  SEMI-EIN+AU<10
+  WordV  LESE-EIN+AU<10
+  WordV  KAE-Pumpe-ST
+  WordV  230V_PL-V_S-NETZ
+  WordV  KAE-Filter
+  WordV  230V_PL-V_N-NETZ
+  WordV  NS_SCHALT_N-NETZ
+  FloatV Y-Regler_Teeraum
+  WordV  KAE-Temp-zu-hoch
+  WordV  WWB-STB
+  WordV  SSM_Seminar
+  WordV  BSK_ZUL_Seminar
+  WordV  BSK_ABL_Seminar
+  WordV  BSK_FOL_Leseraum
+  WordV  BSK_3
+  WordV  BSK_4
+  WordV  BSK_5
+  WordV  BSK_6
+  WordV  BSK_7
+  WordV  BSK_8
+  WordV  BSK_9
+  WordV  BSK_10
+  WordV  BSK_11
+  WordV  BSK_13
+  WordV  BSK_12
+  WordV  BSK_14
+  WordV  BSK_15
+  WordV  BSK_16
+  WordV  BSK_17
+  WordV  BSK_18
+  WordV  BSK_19
+  WordV  BSK_20
+  WordV  SSM_Betriebst_3
+  WordV  BSK_21
+  WordV  BSK_22
+  WordV  BSK_23
+  WordV  BSK_24
+  WordV  BSK_25
+  WordV  BSK_26
+  WordV  BSK_27
+  WordV  BSK_28
+  WordV  BSK_29
+  WordV  BSK_30
+  WordV  BSK_31
+  WordV  BSK_32
+  WordV  BSK_33
+  WordV  SSM_US00_08
+  WordV  SSM_AUFZUG
+  WordV  QUITTIER-US00-08
+  WordV  TEE-EIN+AU<10
+  WordV  TEE-VORSPUE-BET
+  WordV  UEBERSPG_N-NETZ
+  WordV  230V_NETZUMS_AUS
+  WordV  NS_SCHALT_S-NETZ
+  WordV  UEBERSPG_S-NETZ
+  WordV  KUPPELS_S-N-NETZ
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &AI-AS12-13A-X00 (21,13)
+  IPAMB &AI-LU12-13C-X50 (151,9)
+  IPAMB &AI-LU12-13B-X50 (151,1)
+  IPAMB &AI-LU12-13F-X50 (176,1)
+  WordK  $M0 (1)
+  IPAAW &AI-LU12-13C-T51 (170)
+  WordK  $M1 (1)
+  IPAAW &AI-LU12-13B-T50 (168)
+  WordK  $M2 (1)
+  IPAAW &AI-LU12-13F-T51 (185)
+  WordK  $M3 (1)
+  IPAAW &AI-HE12-13B-T50 (191)
+  IPAMB &M4 (21,14)
+  IPAMB &M5 (21,15)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &AI-AS12-13A-B00 (67,11)
+  IPAMB &AI-LU13-16I-X01 (41,7)
+  IPAMB &AI-AS13-20J-B50 (253,0)
+  IPAMB &M6 (151,10)
+  IPAMB &M7 (151,11)
+  IPAMB &M8 (151,12)
+  IPAMB &M9 (151,13)
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  IPAMB &AI-LU12-13C-X01 (68,1)
+  IPAMB &M10 (68,2)
+  IPAMB &M11 (68,3)
+  IPAMB &M12 (68,4)
+  IPAMB &M13 (68,5)
+  IPAMB &AI-LU12-13C-X02 (69,1)
+  IPAMB &M14 (69,2)
+  IPAMB &M15 (69,3)
+  IPAMB &M16 (69,4)
+  IPAMB &M17 (69,5)
+  IPAMB &AI-LU12-13C-B04 (71,14)
+  IPAMB &M18 (71,15)
+  IPAMB &AI-LU12-13C-S10 (74,10)
+  IPAMB &AI-LU12-27C-B02 (20,2)
+  IPAMB &M19 (20,3)
+  IPAMB &AI-LU12-27C-B01 (1,7)
+  IPAMB &AI-LU12-13B-B02 (71,10)
+  IPAMB &M20 (71,11)
+  IPAMB &M21 (151,2)
+  IPAMB &M22 (151,3)
+  IPAMB &M23 (151,4)
+  IPAMB &M24 (151,5)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  IPAMB &AI-LU12-13B-X01 (66,1)
+  IPAMB &M25 (66,2)
+  IPAMB &M26 (66,3)
+  IPAMB &M27 (66,4)
+  IPAMB &M28 (66,5)
+  IPAMB &AI-LU12-13B-X02 (67,1)
+  IPAMB &M29 (67,2)
+  IPAMB &M30 (67,3)
+  IPAMB &M31 (67,4)
+  IPAMB &M32 (67,5)
+  IPAMB &AI-LU12-13B-B01 (70,15)
+  IPAMB &AI-LU12-13F-X01 (74,1)
+  IPAMB &M33 (74,2)
+  IPAMB &M34 (74,3)
+  IPAMB &M35 (74,4)
+  IPAMB &M36 (74,5)
+  IPAMB &AI-LU12-13F-X02 (75,1)
+  IPAMB &M37 (75,2)
+  IPAMB &M38 (75,3)
+  IPAMB &M39 (75,4)
+  IPAMB &M40 (75,5)
+  IPAMB &AI-LU12-13F-S10 (108,6)
+  IPAMB &M41 (176,2)
+  IPAMB &M42 (176,3)
+  IPAMB &M43 (176,4)
+  IPAMB &M44 (176,5)
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  IPAMB &AI-LU12-13F-B01 (108,2)
+  IPAMB &M45 (108,3)
+  IPAMB &AI-LU13-16E-X02 (41,3)
+  IPAMB &AI-LU12-27A-S01 (40,1)
+  IPAMB &AI-LU12-37L-S01 (40,9)
+  IPAMB &AI-LU12-00G-X02 (95,11)
+  IPAMB &AI-LU12-13A-S10 (70,11)
+  IPAMB &AI-LU12-13D-S10 (74,15)
+  IPAMB &AI-LU12-13D-S11 (75,10)
+  IPAMB &AI-LU12-13E-S10 (75,15)
+  IPAMB &AI-LU12-13I-S10 (66,10)
+  IPAMB &AI-AL12-13A-S01 (70,10)
+  IPAMB &AI-UV12-13A-S01 (110,15)
+  IPAMB &AI-UV12-13A-S02 (111,10)
+  IPAMB &AI-UV12-13A-S05 (111,15)
+  IPAMB &AI-UV12-13A-S06 (108,15)
+  IPAMB &AI-UV12-13A-S07 (109,10)
+  IPAMB &AI-UV12-13A-S08 (109,11)
+  IPAMB &AI-UV12-13A-S09 (109,14)
+  IPAMB &AI-UV12-13A-S10 (109,15)
+  IPAMB &M46 (116,2)
+  IPAMB &M47 (116,11)
+  WordV  $HB2
+  IPAMB &M48 (125,14)
+  IPAMB &M49 (110,6)
+  IPAMB &M50 (0,0)
+  IPAMB &M51 (128,2)
+  IPAMB &M52 (129,10)
+  IPAMB &M53 (129,11)
+  IPAMB &M54 (110,10)
+  IPAMB &M55 (129,14)
+  IPAMB &M56 (129,15)
+  IPAMB &M57 (130,10)
+  IPAMB &M58 (130,11)
+  IPAMB &M59 (130,14)
+  IPAMB &M60 (130,15)
+  IPAMB &M61 (129,2)
+  IPAMB &M62 (129,3)
+  IPAMB &M63 (128,10)
+  IPAMB &M64 (128,11)
+  IPAMB &M65 (128,14)
+  IPAMB &M66 (128,15)
+  IPAMB &M67 (129,6)
+  IPAMB &M68 (129,7)
+  IPAMB &M69 (127,2)
+  WordV  $HB1
+  IPAMB &M70 (127,3)
+  IPAMB &M71 (127,6)
+  IPAMB &M72 (127,7)
+  IPAMB &M73 (128,3)
+  IPAMB &M74 (128,6)
+  IPAMB &M75 (128,7)
+  IPAMB &M76 (127,10)
+  IPAMB &M77 (127,14)
+  IPAMB &M78 (127,11)
+  IPAMB &M79 (127,15)
+  IPAMB &M80 (130,2)
+  IPAMB &M81 (130,3)
+  IPAMB &M82 (130,6)
+  IPAMB &M83 (130,7)
+  IPAMB &M84 (111,2)
+  IPAMB &M85 (111,3)
+  IPAMB &M86 (116,6)
+  IPAMB &M87 (116,14)
+  IPAMB &M88 (116,15)
+  IPAMB &M89 (117,2)
+  IPAMB &M90 (117,6)
+  IPAMB &M91 (117,15)
+  IPAMB &M92 (117,11)
+  IPAMB &M93 (117,14)
+  FloatV $F1
+  IPAAW &AI-LU12-13C-T01 (24)
+  IPAAW &AI-LU12-13C-T02 (25)
+  IPAAW &AI-LU12-27C-T01 (26)
+  IPAAW &AI-AS14-00A-T00 (86)
+  IPAAW &AI-LU12-13B-T01 (23)
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  IPAAW &AI-LU12-13F-T01 (48)
+  IPAAW &AI-LU12-13F-T02 (49)
+  IPAAW &AI-HE12-00A-T00 (38)
+  FloatK $M94 (10.00)
+  WordV  $B12
+  WordV  $B13
+  FloatK $M95 (1.00)
+  WordV  $B14
+  WordK  $M96 (1)
+  IPAMB &M97 (99,0)
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  IPAMB &AI-AS12-13A-X01 (20,9)
+  WordK  $M98 (1)
+  IPAMB &AI-LU12-13I-S50 (150,0)
+  FloatK $M99 (10.00)
+  WordV  $B26
+  WordV  $B27
+  WordK  $M100 (1)
+  IPAMB &M101 (254,0)
+  WordK  $M103 (1)
+  FloatK $M105 (10.00)
+  FloatK $M106 (1.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  FloatK $M107 (120.00)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  FloatK $M108 (10.00)
+  FloatK $M109 (10.00)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  IPAMB &AI-LU12-13C-X03 (1,13)
+  WordV  $B38
+  FloatK $M110 (30.00)
+  FloatK $M111 (0.00)
+  WordV  $B39
+  WordK  $M112 (1)
+  IPAMB &AI-LU12-13C-S51 (158,4)
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  FloatK $M113 (10.00)
+  FloatK $M114 (10.00)
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  FloatK $M115 (30.00)
+  FloatK $M116 (0.00)
+  WordV  $B47
+  WordK  $M117 (1)
+  IPAMB &AI-LU12-13C-S52 (158,5)
+  WordV  $B48
+  IPAMB &AI-LU13-27C-X01 (40,5)
+  WordV  $HB0
+  IPAMB &M118 (203,9)
+  WordK  $M119 (1)
+  IPAAW &AI-LU12-13C-T52 (162)
+  FloatK $FZERO (0.00)
+  FloatK $M120 (0.00)
+  FloatV $F5
+  FloatK $M121 (0.00)
+  WordV  $B49
+  FloatK $M122 (100.00)
+  FloatV $F6
+  WordV  $B50
+  FloatK $M123 (100.00)
+  FloatK $M124 (0.00)
+  FloatV $F7
+  FloatK $M125 (300.00)
+  FloatV $F8
+  FloatK $M126 (0.00)
+  FloatV $F9
+  FloatV $F10
+  WordK  $M127 (1)
+  IPAAW &AI-LU12-13C-Y01 (32)
+  FloatK $M128 (0.00)
+  FloatV $F11
+  FloatK $M129 (0.00)
+  FloatK $M130 (10.00)
+  FloatK $M131 (1.00)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  FloatK $M132 (120.00)
+  WordV  $B54
+  FloatK $M133 (100.00)
+  FloatV $F12
+  WordV  $B55
+  FloatK $M134 (100.00)
+  FloatK $M135 (0.00)
+  FloatV $F13
+  FloatK $M136 (300.00)
+  FloatV $F14
+  FloatK $M137 (0.00)
+  FloatV $F15
+  FloatV $F16
+  WordK  $M138 (1)
+  IPAAW &AI-LU12-13B-Y01 (31)
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  FloatK $M139 (10.00)
+  FloatK $M140 (10.00)
+  WordV  $B59
+  WordV  $B60
+  WordV  $B61
+  IPAMB &AI-LU12-13B-X03 (1,9)
+  WordV  $B62
+  FloatK $M141 (30.00)
+  FloatK $M142 (0.00)
+  WordV  $B63
+  WordK  $M143 (1)
+  IPAMB &AI-LU12-13B-S51 (158,6)
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  FloatK $M144 (10.00)
+  FloatK $M145 (10.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  FloatK $M146 (30.00)
+  FloatK $M147 (0.00)
+  WordV  $B71
+  WordK  $M148 (1)
+  IPAMB &AI-LU12-13B-S52 (158,7)
+  WordK  $M149 (1)
+  FloatV $FSCRATCH
+  FloatK $M151 (0.00)
+  FloatV $F17
+  FloatK $M152 (0.00)
+  FloatK $M153 (10.00)
+  FloatK $M154 (1.00)
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  FloatK $M155 (120.00)
+  WordV  $B75
+  FloatK $M156 (100.00)
+  FloatK $M157 (0.00)
+  FloatV $F18
+  FloatK $M158 (300.00)
+  FloatV $F19
+  FloatK $M159 (0.00)
+  FloatV $F20
+  FloatV $F21
+  WordV  $B76
+  FloatK $M160 (100.00)
+  FloatV $F22
+  WordK  $M161 (1)
+  IPAAW &AI-LU12-13F-Y01 (55)
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  FloatK $M162 (10.00)
+  FloatK $M163 (10.00)
+  WordV  $B80
+  WordV  $B81
+  WordV  $B82
+  IPAMB &AI-LU12-13F-X03 (21,9)
+  WordV  $B83
+  FloatK $M164 (30.00)
+  FloatK $M165 (0.00)
+  WordV  $B84
+  WordK  $M166 (1)
+  IPAMB &AI-LU12-13F-S51 (158,8)
+  WordV  $B85
+  WordV  $B86
+  WordV  $B87
+  FloatK $M167 (10.00)
+  FloatK $M168 (10.00)
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  WordV  $B91
+  FloatK $M169 (30.00)
+  FloatK $M170 (0.00)
+  WordV  $B92
+  WordK  $M171 (1)
+  IPAMB &AI-LU12-13F-S52 (158,9)
+  WordK  $M172 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;Sammel-Stoerung/Quittier
+  ;Seminar-Raum/Lese-Raum
+  ;Tee-Raum
+  ;Einbauort:
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-QUITTIEREN-AUS,K-QUITTIEREN-EIN,$WZERO,$WZERO,
+          &AI-AS12-13A-X00,WERR)
+  BEFAUS (2,K-SEMI-ANL-AUS,K-SEMI-ANL-EIN1,K-SEMI-ANL-EIN2,
+          $WZERO,&AI-LU12-13C-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (2,K-LESE-ANL-AUS,K-LESE-ANL-EIN1,K-LESE-ANL-EIN2,
+          $WZERO,&AI-LU12-13B-X50,WERR)
+  BEFAUS (2,K-TEE-ANL-AUS,K-TEE-ANL-EIN1,K-TEE-ANL-EIN2,
+          $WZERO,&AI-LU12-13F-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (K-SEMI-ABL-TEMP,$M0,&AI-LU12-13C-T51,WERR)
+  ANAUS (K-LESE-SW-ZUL-TE,$M1,&AI-LU12-13B-T50,WERR)
+  ANAUS (K-TEE-SW-ABL-TEM,$M2,&AI-LU12-13F-T51,WERR)
+  ANAUS (K-GR_min_VL-T-Fe,$M3,&AI-HE12-13B-T50,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&AI-AS12-13A-X00,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-QUITTIEREN-AUS)
+  BTRA ($B2,K-QUITTIEREN-EIN)
+  MELEIN (&AI-AS12-13A-B00,1,QUITTIERUNG-ALLG,WERR)
+  MELEIN (&AI-LU13-16I-X01,1,SAMMELST-HOERSAL,WERR)
+  MELEIN (&AI-AS13-20J-B50,1,QUITTIER-US00-08,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13C-X50,5,$B3,$WSCRATCH,$B4,$WSCRATCH,$B5,
+          WERR)
+  BTRA ($B3,K-SEMI-ANL-AUS)
+  BTRA ($B4,K-SEMI-ANL-EIN1)
+  BTRA ($B5,K-SEMI-ANL-EIN2)
+  MELEIN (&AI-LU12-13C-X01,5,SEMI-ZU-VENT-AUS,
+          SEM-ZU-VENT-STOE,SEM-ZU-VENT-EIN1,$WSCRATCH,
+          SEM-ZU-VENT-EIN2,WERR)
+  MELEIN (&AI-LU12-13C-X02,5,SEMI-AB-VENT-AUS,
+          SEM-AB-VENT-STOE,SEM-AB-VENT-EIN1,$WSCRATCH,
+          SEM-AB-VENT-EIN2,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13C-B04,2,SEMI-ZUL-KEILRI,SEMI-ABL-KEILRI,
+          WERR)
+  MELEIN (&AI-LU12-13C-S10,1,SEMI-FROST,WERR)
+  MELEIN (&AI-LU12-27C-B02,2,SEMI-TB-2STUFE,SEMI-TB-AUS,WERR)
+  MELEIN (&AI-LU12-27C-B01,1,SEMI-TB-1STUFE,WERR)
+  MELEIN (&AI-LU12-13B-B02,2,LESE-ABL-KEILRI,
+          LESE-FROSTSCHUTZ,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13B-X50,5,$B6,$WSCRATCH,$B7,$WSCRATCH,$B8,
+          WERR)
+  BTRA ($B6,K-LESE-ANL-AUS)
+  BTRA ($B7,K-LESE-ANL-EIN1)
+  BTRA ($B8,K-LESE-ANL-EIN2)
+  MELEIN (&AI-LU12-13B-X01,5,LESE-ZUL-AUS,LESE-ZUL-STOER,
+          LESE-ZUL-EIN1,$WSCRATCH,LESE-ZUL-EIN2,WERR)
+  MELEIN (&AI-LU12-13B-X02,5,LESE-ABL-AUS,LESE-ABL-STOER,
+          LESE-ABL-EIN1,$WSCRATCH,LESE-ABL-EIN2,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13B-B01,1,LESE-ZUL-KEILRI,WERR)
+  MELEIN (&AI-LU12-13F-X01,5,TEE-ZUL-VEN-AUS,
+          TEE-ZUL-VEN-STOE,TEE-ZUL-VEN-EIN1,$WSCRATCH,
+          TEE-ZUL-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13F-X02,5,TEE-ABL-VEN-AUS,
+          TEE-ABL-VEN-STOE,TEE-ABL-VEN-EIN1,$WSCRATCH,
+          TEE-ABL-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13F-S10,1,TEE-FROSTSCHUTZ,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13F-X50,5,$B9,$WSCRATCH,$B10,$WSCRATCH,
+          $B11,WERR)
+  BTRA ($B9,K-TEE-ANL-AUS)
+  BTRA ($B10,K-TEE-ANL-EIN1)
+  BTRA ($B11,K-TEE-ANL-EIN2)
+  MELEIN (&AI-LU12-13F-B01,2,TEE-ZUL-KEILRIEM,
+          TEE-ABL-KEILRIEM,WERR)
+  MELEIN (&AI-LU13-16E-X02,1,FILM-SAMMELSTOER,WERR)
+  MELEIN (&AI-LU12-27A-S01,1,KUECHE-SAMMELST,WERR)
+  MELEIN (&AI-LU12-37L-S01,1,FREE-SAMMELSTOER,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&AI-LU12-00G-X02,1,KAELTE-SAMMELST,WERR)
+  MELEIN (&AI-LU12-13A-S10,1,Frost_Kueche,WERR)
+  MELEIN (&AI-LU12-13D-S10,1,Frost_Eingangsh,WERR)
+  MELEIN (&AI-LU12-13D-S11,1,Frost_Verteiler,WERR)
+  MELEIN (&AI-LU12-13E-S10,1,Frost_Filmvorf,WERR)
+  MELEIN (&AI-LU12-13I-S10,1,Frost_Hoersaal,WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&AI-AL12-13A-S01,1,STOE_US00-04,WERR)
+  MELEIN (&AI-UV12-13A-S01,1,Ueberspsch_NN,WERR)
+  MELEIN (&AI-UV12-13A-S02,1,Phasenf_NN,WERR)
+  MELEIN (&AI-UV12-13A-S05,1,STOE_230V_AC_NN,WERR)
+  MELEIN (&AI-UV12-13A-S06,1,Ueberspsch_Not-N,WERR)
+  MELEIN (&AI-UV12-13A-S07,1,Phasenf_Not-N,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&AI-UV12-13A-S08,1,STOE_24V-AC_Notn,WERR)
+  MELEIN (&AI-UV12-13A-S09,1,STOE_24V-DC_Notn,WERR)
+  MELEIN (&AI-UV12-13A-S10,1,STOE_230V-AC_Not,WERR)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M46,1,KAE-Pumpe-ST,$WSCRATCH)
+  MELEIN (&M47,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KAE-Filter)
+  MELEIN (&M48,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KAE-Temp-zu-hoch)
+  MELEIN (&M49,1,WWB-STB,$WSCRATCH)
+  MELEIN (&M50,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M51,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_FOL_Leseraum)
+  MELEIN (&M52,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ZUL_Seminar)
+  MELEIN (&M53,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_ABL_Seminar)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M54,1,BSK_1,$WSCRATCH)
+  MELEIN (&M55,1,BSK_2,$WSCRATCH)
+  MELEIN (&M56,1,BSK_3,$WSCRATCH)
+  MELEIN (&M57,1,BSK_4,$WSCRATCH)
+  MELEIN (&M58,1,BSK_5,$WSCRATCH)
+  MELEIN (&M59,1,BSK_6,$WSCRATCH)
+  MELEIN (&M60,1,BSK_7,$WSCRATCH)
+  MELEIN (&M61,1,BSK_10,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M62,1,BSK_11,$WSCRATCH)
+  MELEIN (&M63,1,BSK_12,$WSCRATCH)
+  MELEIN (&M64,1,BSK_13,$WSCRATCH)
+  MELEIN (&M65,1,BSK_14,$WSCRATCH)
+  MELEIN (&M66,1,BSK_15,$WSCRATCH)
+  MELEIN (&M67,1,BSK_16,$WSCRATCH)
+  MELEIN (&M68,1,BSK_17,$WSCRATCH)
+  MELEIN (&M69,1,BSK_18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA (BSK_FOL_Leseraum,$HB1)
+  NICHT ($HB1,BSK_22)
+  BTRA (BSK_ABL_Seminar,$HB1)
+  NICHT ($HB1,BSK_9)
+  BTRA (BSK_ZUL_Seminar,$HB1)
+  NICHT ($HB1,BSK_8)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M70,1,BSK_19,$WSCRATCH)
+  MELEIN (&M71,1,BSK_20,$WSCRATCH)
+  MELEIN (&M72,1,BSK_21,$WSCRATCH)
+  MELEIN (&M73,1,BSK_23,$WSCRATCH)
+  MELEIN (&M74,1,BSK_24,$WSCRATCH)
+  MELEIN (&M75,1,BSK_25,$WSCRATCH)
+  MELEIN (&M76,1,BSK_26,$WSCRATCH)
+  MELEIN (&M77,1,BSK_27,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M78,1,BSK_28,$WSCRATCH)
+  MELEIN (&M79,1,BSK_29,$WSCRATCH)
+  MELEIN (&M80,1,BSK_30,$WSCRATCH)
+  MELEIN (&M81,1,BSK_31,$WSCRATCH)
+  MELEIN (&M82,1,BSK_32,$WSCRATCH)
+  MELEIN (&M83,1,BSK_33,$WSCRATCH)
+  MELEIN (&M84,1,SSM_AUFZUG,$WSCRATCH)
+  MELEIN (&M85,1,SSM_US00_08,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M86,1,UEBERSPG_N-NETZ,$WSCRATCH)
+  MELEIN (&M87,1,230V_NETZUMS_AUS,$WSCRATCH)
+  MELEIN (&M88,1,NS_SCHALT_S-NETZ,$WSCRATCH)
+  MELEIN (&M89,1,UEBERSPG_S-NETZ,$WSCRATCH)
+  MELEIN (&M90,1,230V_PL-V_S-NETZ,$WSCRATCH)
+  MELEIN (&M91,1,230V_PL-V_N-NETZ,$WSCRATCH)
+  MELEIN (&M92,1,NS_SCHALT_N-NETZ,$WSCRATCH)
+  MELEIN (&M93,1,KUPPELS_S-N-NETZ,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13C-T51,$F1,WERR)
+  ATRA ($F1,K-SEMI-ABL-TEMP)
+  ANEIN (&AI-LU12-13C-T01,SEMI-ZUL-TEMP,WERR)
+  ANEIN (&AI-LU12-13C-T02,SEMI-ABL-TEMP,WERR)
+  ANEIN (&AI-LU12-27C-T01,SEMI-SW-FERNVERS,WERR)
+  ANEIN (&AI-AS14-00A-T00,AUSSENTEMPERATUR,WERR)
+  ANEIN (&AI-LU12-13B-T01,LESE-ZUL-TEMP,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13B-T50,$F2,WERR)
+  ATRA ($F2,K-LESE-SW-ZUL-TE)
+  ANEIN (&AI-LU12-13F-T51,$F3,WERR)
+  ATRA ($F3,K-TEE-SW-ABL-TEM)
+  ANEIN (&AI-HE12-13B-T50,$F4,WERR)
+  ATRA ($F4,K-GR_min_VL-T-Fe)
+  ANEIN (&AI-LU12-13F-T01,TEE-ZUL-TEMP,WERR)
+  ANEIN (&AI-LU12-13F-T02,TEE-ABL-TEMP,WERR)
+  ANEIN (&AI-HE12-00A-T00,VL-Te-Fernw.prim,WERR)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  MOKY (K-QUITTIEREN-EIN,$M94,$B12)
+  NICHT ($B12,$B13)
+  BEFAUS (1,$B13,$B12,$WZERO,$WZERO,&AI-AS12-13A-X00,WERR)
+  VGLEH (VL-Te-Fernw.prim,K-GR_min_VL-T-Fe,$M95,
+         STOE_GR_VL-Te_FE)
+  NICHT (STOE_GR_VL-Te_FE,$B14)
+  SETMEL ($M96,1,$B14,&M97,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UNDMN (8,TEE-FROSTSCHUTZ,SEMI-FROST,LESE-FROSTSCHUTZ,
+         Frost_Eingangsh,Frost_Filmvorf,Frost_Hoersaal,
+         Frost_Kueche,Frost_Verteiler,0,$B15,$WSCRATCH)
+  UNDMN (6,STOE_US00-04,Ueberspsch_NN,Phasenf_NN,
+         STOE_230V_AC_NN,Ueberspsch_Not-N,Phasenf_Not-N,0,
+         $B16,$WSCRATCH)
+  UNDMN (4,STOE_24V-AC_Notn,STOE_24V-DC_Notn,
+         STOE_230V-AC_Not,STOE_GR_VL-Te_FE,0,$B17,$WSCRATCH)
+  UNDMN (4,KAE-Filter,KAE-Pumpe-ST,KAE-Temp-zu-hoch,WWB-STB,
+         0,$B18,$WSCRATCH)
+  UNDMN (4,$B15,$B16,$B17,$B18,0,$WSCRATCH,SSM_Betriebst_1)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UNDMN (9,BSK_1,BSK_2,BSK_3,BSK_4,BSK_5,BSK_6,BSK_7,BSK_8,
+         BSK_9,1,SSM_Betriebst_1,$B19,$WSCRATCH)
+  UNDMN (11,BSK_10,BSK_11,BSK_12,BSK_13,BSK_14,BSK_15,BSK_16,
+         BSK_17,BSK_18,BSK_19,BSK_20,0,$B20,$WSCRATCH)
+  NAND2 ($B19,$B20,SSM_Betriebst_2)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UNDMN (9,BSK_21,BSK_22,BSK_23,BSK_24,BSK_25,BSK_26,BSK_27,
+         BSK_28,BSK_29,1,SSM_Betriebst_2,$B21,$WSCRATCH)
+  UNDMN (6,BSK_30,BSK_31,BSK_32,BSK_33,SSM_AUFZUG,
+         SSM_US00_08,0,$B22,$WSCRATCH)
+  UNDMN (8,UEBERSPG_N-NETZ,UEBERSPG_S-NETZ,230V_NETZUMS_AUS,
+         230V_PL-V_N-NETZ,230V_PL-V_S-NETZ,KUPPELS_S-N-NETZ,
+         NS_SCHALT_N-NETZ,NS_SCHALT_S-NETZ,0,$B23,$WSCRATCH)
+  UNDMN (3,$B21,$B22,$B23,0,$WSCRATCH,SSM_Betriebst_3)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (3,K-QUITTIEREN-EIN,QUITTIERUNG-ALLG,
+         QUITTIER-US00-08,0,ENTRIEGELN,$WSCRATCH)
+  RSS (SSM_Betriebst_3,ENTRIEGELN,$B24,$WSCRATCH)
+  NICHT ($B24,$B25)
+  BEFAUS (1,$B25,$B24,$WZERO,$WZERO,&AI-AS12-13A-X01,WERR)
+  SETMEL ($M98,1,ENTRIEGELN,&AI-LU12-13I-S50,WERR)
+  MOKY (QUITTIERUNG-ALLG,$M99,$B26)
+  ODR2 (K-QUITTIEREN-EIN,$B26,$B27)
+  SETMEL ($M100,1,$B27,&M101,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  BEFAUS (2,$B31,SEMI-TB-1STUFE,SEMI-TB-2STUFE,$WZERO,
+          &AI-LU12-13C-X50,WERR)
+  ODRMN (6,SEMI-STOER-ZUL,ST_KEILR-ZUL-SEM,SEMI-STOER-ABL,
+         ST_KEILR-ABL-SEM,BSK_ZUL_Seminar,BSK_ABL_Seminar,1,
+         SEMI-FROST,SSM_Seminar,$WSCRATCH)
+  SETMEL ($M103,1,SSM_Seminar,&M6,$WSCRATCH)
+  VGLEH (AUSSENTEMPERATUR,$M105,$M106,$B28)
+  ODR2 (K-SEMI-ANL-EIN1,K-SEMI-ANL-EIN2,$B29)
+  UND11 ($B29,$B28,$B30)
+  NICHT ($B29,$HB1)
+  RSS ($B30,$HB1,SEMI-EIN+AU<10,$WSCRATCH)
+  MOKY (SEMI-EIN+AU<10,$M107,VORSPUEL-SCHALT)
+  ODR2 (SSM_Seminar,SEMI-TB-AUS,$B31)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODR2 (K-SEMI-ANL-EIN1,K-SEMI-ANL-EIN2,$B32)
+  UNDMN (1,$B32,2,VORSPUEL-SCHALT,$B35,$B33,$WSCRATCH)
+  UND11 ($B33,SEMI-STOER-ZUL,SE-SOLL-EIN1-ZUL)
+  UND11 (K-SEMI-ANL-EIN2,VORSPUEL-SCHALT,$B34)
+  VVZ ($B34,$M108,$M109,$B35)
+  UND21 ($B35,$B34,SEMI-STOER-ZUL,SE-SOLL-EIN2-ZUL)
+  NOR2 (SE-SOLL-EIN1-ZUL,SE-SOLL-EIN2-ZUL,$B36)
+  BEFAUS (2,$B36,SE-SOLL-EIN1-ZUL,SE-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13C-X01,WERR)
+  NICHT (SEMI-ZULUFT-EIN,$B37)
+  BEFAUS (1,$B37,SEMI-ZULUFT-EIN,$WZERO,$WZERO,
+          &AI-LU12-13C-X03,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODR2 (SEM-ZU-VENT-EIN1,SEM-ZU-VENT-EIN2,SEMI-ZULUFT-EIN)
+  XOR2 (SEMI-ZULUFT-EIN,SEMI-ZUL-KEILRI,$B38)
+  VVZ ($B38,$M110,$M111,$B39)
+  RSS ($B39,ENTRIEGELN,ST_KEILR-ZUL-SEM,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ZUL-SEM,SEM-ZU-VENT-STOE,1,SEMI-FROST,
+         SEMI-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M112,1,ST_KEILR-ZUL-SEM,&AI-LU12-13C-S51,WERR)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODR2 (K-SEMI-ANL-EIN1,K-SEMI-ANL-EIN2,$B40)
+  UNDMN (1,$B40,2,VORSPUEL-SCHALT,$B43,$B41,$WSCRATCH)
+  UND11 ($B41,SEMI-STOER-ABL,SOLL-EIN1-ABL1-V)
+  UND11 (K-SEMI-ANL-EIN2,VORSPUEL-SCHALT,$B42)
+  VVZ ($B42,$M113,$M114,$B43)
+  UND21 ($B43,$B42,SEMI-STOER-ABL,SOLL-EIN2-ABL1-V)
+  NOR2 (SOLL-EIN1-ABL1-V,SOLL-EIN2-ABL1-V,$B44)
+  BEFAUS (2,$B44,SOLL-EIN1-ABL1-V,SOLL-EIN2-ABL1-V,$WZERO,
+          &AI-LU12-13C-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODR2 (SEM-AB-VENT-EIN1,SEM-AB-VENT-EIN2,$B45)
+  XOR2 ($B45,SEMI-ABL-KEILRI,$B46)
+  VVZ ($B46,$M115,$M116,$B47)
+  RSS ($B47,ENTRIEGELN,ST_KEILR-ABL-SEM,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ABL-SEM,SEM-AB-VENT-STOE,1,SEMI-FROST,
+         SEMI-STOER-ABL,$WSCRATCH)
+  SETMEL ($M117,1,ST_KEILR-ABL-SEM,&AI-LU12-13C-S52,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODR2 (SEMI-STOER-ZUL,SEMI-STOER-ABL,SEMI-SAMMELSTOER)
+  NICHT (SEMI-SAMMELSTOER,$B48)
+  BEFAUS (1,$B48,SEMI-SAMMELSTOER,$WZERO,$WZERO,
+          &AI-LU13-27C-X01,WERR)
+  NICHT (SSM_Seminar,$HB0)
+  BEFAUS (2,$HB0,$WZERO,SSM_Seminar,$WZERO,&M118,$WSCRATCH)
+  ;Ansteuerung der LED im
+  ;Beijer Bediengerät
+  ;Filmvorführraum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ADD2 (K-SEMI-ABL-TEMP,SEMI-SW-FERNVERS,SEM-GEAEN-ABL-SW)
+  ANAUS (SEM-GEAEN-ABL-SW,$M119,&AI-LU12-13C-T52,WERR)
+  REGLER (4,KON01,$WZERO,$FZERO,SEMI-Y-ABL-SIGNA,WERR)
+  REGLER (5,KON01,KON00,$M120,$F5,WERR)
+  AWT (SEMI-ZULUFT-EIN,$M121,$F5,SEMI-VORERH-STEL)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ODRMN (1,VORSPUEL-SCHALT,1,SEMI-FROST,$B49,$WSCRATCH)
+  AWT ($B49,SEMI-VORERH-STEL,$M122,$F6)
+  UND11 (SEMI-EIN+AU<10,VORSPUEL-SCHALT,$B50)
+  AWT ($B50,$M123,$M124,$F7)
+  PT1 ($F7,$M125,$F8)
+  AWT (SEMI-EIN+AU<10,$M126,$F8,$F9)
+  MAX (2,$F6,$F9,$F10)
+  ANAUS ($F10,$M127,&AI-LU12-13C-Y01,WERR)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  BEFAUS (2,SSM_LESERAUM,$WZERO,$WZERO,$WZERO,
+          &AI-LU12-13B-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  REGLER (6,KON01,KON00,$M128,$F11,WERR)
+  AWT (LESE-ZULUFT-EIN,$M129,$F11,LESE-VORERH-STEL)
+  VGLEH (AUSSENTEMPERATUR,$M130,$M131,$B51)
+  ODR2 (K-LESE-ANL-EIN1,K-LESE-ANL-EIN2,$B52)
+  UND11 ($B52,$B51,$B53)
+  NICHT ($B52,$HB1)
+  RSS ($B53,$HB1,LESE-EIN+AU<10,$WSCRATCH)
+  MOKY (LESE-EIN+AU<10,$M132,LESE-VORSPUE-BET)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODRMN (1,LESE-VORSPUE-BET,1,LESE-FROSTSCHUTZ,$B54,
+         $WSCRATCH)
+  AWT ($B54,LESE-VORERH-STEL,$M133,$F12)
+  UND11 (LESE-EIN+AU<10,LESE-VORSPUE-BET,$B55)
+  AWT ($B55,$M134,$M135,$F13)
+  PT1 ($F13,$M136,$F14)
+  AWT (LESE-EIN+AU<10,$M137,$F14,$F15)
+  MAX (2,$F12,$F15,$F16)
+  ANAUS ($F16,$M138,&AI-LU12-13B-Y01,WERR)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODR2 (K-LESE-ANL-EIN1,K-LESE-ANL-EIN2,$B56)
+  UNDMN (1,$B56,2,LESE-VORSPUE-BET,$B59,$B57,$WSCRATCH)
+  UND11 ($B57,LESE-STOER-ZUL,LE-SOLL-EIN1-ZUL)
+  UND11 (K-LESE-ANL-EIN2,LESE-VORSPUE-BET,$B58)
+  VVZ ($B58,$M139,$M140,$B59)
+  UND21 ($B59,$B58,LESE-STOER-ZUL,LE-SOLL-EIN2-ZUL)
+  NOR2 (LE-SOLL-EIN1-ZUL,LE-SOLL-EIN2-ZUL,$B60)
+  BEFAUS (2,$B60,LE-SOLL-EIN1-ZUL,LE-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13B-X01,WERR)
+  NICHT (LESE-ZULUFT-EIN,$B61)
+  BEFAUS (1,$B61,LESE-ZULUFT-EIN,$WZERO,$WZERO,
+          &AI-LU12-13B-X03,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODR2 (LESE-ZUL-EIN1,LESE-ZUL-EIN2,LESE-ZULUFT-EIN)
+  XOR2 (LESE-ZULUFT-EIN,LESE-ZUL-KEILRI,$B62)
+  VVZ ($B62,$M141,$M142,$B63)
+  RSS ($B63,ENTRIEGELN,ST_KEILR-ZUL-LES,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ZUL-LES,LESE-ZUL-STOER,1,
+         LESE-FROSTSCHUTZ,LESE-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M143,1,ST_KEILR-ZUL-LES,&AI-LU12-13B-S51,WERR)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ODR2 (K-LESE-ANL-EIN1,K-LESE-ANL-EIN2,$B64)
+  UNDMN (1,$B64,2,LESE-VORSPUE-BET,$B67,$B65,$WSCRATCH)
+  UND11 ($B65,LESE-STOER-ABL,LE-SOLL-EIN1-ABL)
+  UND11 (K-LESE-ANL-EIN2,LESE-VORSPUE-BET,$B66)
+  VVZ ($B66,$M144,$M145,$B67)
+  UND21 ($B67,$B66,LESE-STOER-ABL,LE-SOLL-EIN2-ABL)
+  NOR2 (LE-SOLL-EIN1-ABL,LE-SOLL-EIN2-ABL,$B68)
+  BEFAUS (2,$B68,LE-SOLL-EIN1-ABL,LE-SOLL-EIN2-ABL,$WZERO,
+          &AI-LU12-13B-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ODR2 (LESE-ABL-EIN1,LESE-ABL-EIN2,$B69)
+  XOR2 ($B69,LESE-ABL-KEILRI,$B70)
+  VVZ ($B70,$M146,$M147,$B71)
+  RSS ($B71,ENTRIEGELN,ST_KEILR-ABL-LES,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ABL-LES,LESE-ABL-STOER,1,
+         LESE-FROSTSCHUTZ,LESE-STOER-ABL,$WSCRATCH)
+  SETMEL ($M148,1,ST_KEILR-ABL-LES,&AI-LU12-13B-S52,WERR)
+  ODRMN (5,LESE-STOER-ZUL,ST_KEILR-ZUL-LES,LESE-STOER-ABL,
+         ST_KEILR-ABL-LES,BSK_FOL_Leseraum,1,
+         LESE-FROSTSCHUTZ,SSM_LESERAUM,$WSCRATCH)
+  SETMEL ($M149,1,SSM_LESERAUM,&M21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  BEFAUS (2,SSM_TEERAUM,$WZERO,$WZERO,$WZERO,
+          &AI-LU12-13F-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  REGLER (7,KON01,$WZERO,$FZERO,$FSCRATCH,WERR)
+  REGLER (8,KON01,KON00,$M151,$F17,WERR)
+  AWT (TEE-ZULUFT-EIN,$M152,$F17,Y-Regler_Teeraum)
+  VGLEH (AUSSENTEMPERATUR,$M153,$M154,$B72)
+  ODR2 (K-TEE-ANL-EIN1,K-TEE-ANL-EIN2,$B73)
+  UND11 ($B73,$B72,$B74)
+  NICHT ($B73,$HB1)
+  RSS ($B74,$HB1,TEE-EIN+AU<10,$WSCRATCH)
+  MOKY (TEE-EIN+AU<10,$M155,TEE-VORSPUE-BET)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  UND11 (TEE-EIN+AU<10,TEE-VORSPUE-BET,$B75)
+  AWT ($B75,$M156,$M157,$F18)
+  PT1 ($F18,$M158,$F19)
+  AWT (TEE-EIN+AU<10,$M159,$F19,$F20)
+  MAX (2,Y-Regler_Teeraum,$F20,$F21)
+  ODRMN (1,TEE-VORSPUE-BET,1,TEE-FROSTSCHUTZ,$B76,$WSCRATCH)
+  AWT ($B76,$F21,$M160,$F22)
+  ANAUS ($F22,$M161,&AI-LU12-13F-Y01,WERR)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ODR2 (K-TEE-ANL-EIN1,K-TEE-ANL-EIN2,$B77)
+  UNDMN (1,$B77,2,TEE-VORSPUE-BET,$B80,$B78,$WSCRATCH)
+  UND11 ($B78,TEE-STOER-ZUL,TE-SOLL-EIN1-ZUL)
+  UND11 (K-TEE-ANL-EIN2,TEE-VORSPUE-BET,$B79)
+  VVZ ($B79,$M162,$M163,$B80)
+  UND21 ($B80,$B79,TEE-STOER-ZUL,TE-SOLL-EIN2-ZUL)
+  NOR2 (TE-SOLL-EIN1-ZUL,TE-SOLL-EIN2-ZUL,$B81)
+  BEFAUS (2,$B81,TE-SOLL-EIN1-ZUL,TE-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13F-X01,WERR)
+  NICHT (TEE-ZULUFT-EIN,$B82)
+  BEFAUS (1,$B82,TEE-ZULUFT-EIN,$WZERO,$WZERO,
+          &AI-LU12-13F-X03,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  ODR2 (TEE-ZUL-VEN-EIN1,TEE-ZUL-VEN-EIN2,TEE-ZULUFT-EIN)
+  XOR2 (TEE-ZULUFT-EIN,TEE-ZUL-KEILRIEM,$B83)
+  VVZ ($B83,$M164,$M165,$B84)
+  RSS ($B84,ENTRIEGELN,ST_KEILR-ZUL-TEE,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ZUL-TEE,TEE-ZUL-VEN-STOE,1,
+         TEE-FROSTSCHUTZ,TEE-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M166,1,ST_KEILR-ZUL-TEE,&AI-LU12-13F-S51,WERR)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  ODR2 (K-TEE-ANL-EIN1,K-TEE-ANL-EIN2,$B85)
+  UNDMN (1,$B85,2,TEE-VORSPUE-BET,$B88,$B86,$WSCRATCH)
+  UND11 ($B86,TEE-STOER-ABL,TE-SOLL-EIN1-ABL)
+  UND11 (K-TEE-ANL-EIN2,TEE-VORSPUE-BET,$B87)
+  VVZ ($B87,$M167,$M168,$B88)
+  UND21 ($B88,$B87,TEE-STOER-ABL,TE-SOLL-EIN2-ABL)
+  NOR2 (TE-SOLL-EIN1-ABL,TE-SOLL-EIN2-ABL,$B89)
+  BEFAUS (2,$B89,TE-SOLL-EIN1-ABL,TE-SOLL-EIN2-ABL,$WZERO,
+          &AI-LU12-13F-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ODR2 (TEE-ABL-VEN-EIN1,TEE-ABL-VEN-EIN2,$B90)
+  XOR2 ($B90,TEE-ABL-KEILRIEM,$B91)
+  VVZ ($B91,$M169,$M170,$B92)
+  RSS ($B92,ENTRIEGELN,ST_KEILR-ABL-TEE,$WSCRATCH)
+  ODRMN (2,ST_KEILR-ABL-TEE,TEE-ABL-VEN-STOE,1,
+         TEE-FROSTSCHUTZ,TEE-STOER-ABL,$WSCRATCH)
+  SETMEL ($M171,1,ST_KEILR-ABL-TEE,&AI-LU12-13F-S52,WERR)
+  ODRMN (4,TEE-STOER-ZUL,ST_KEILR-ZUL-TEE,TEE-STOER-ABL,
+         ST_KEILR-ABL-TEE,1,TEE-FROSTSCHUTZ,SSM_TEERAUM,
+         $WSCRATCH)
+  SETMEL ($M172,1,SSM_TEERAUM,&M41,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

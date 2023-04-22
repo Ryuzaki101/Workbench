@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.wisag.automation.micas.rt.presentation.RtModelWizardID"
+            name="%_UI_RtModelWizard_label"
+            class="de.wisag.automation.micas.rt.presentation.RtModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RtModelFile.gif">
+         <description>%_UI_RtModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="de.wisag.automation.micas.rt.presentation.RtEditorID"
+            name="%_UI_RtEditor_label"
+            icon="icons/full/obj16/RtModelFile.gif"
+            extensions="rt"
+            class="de.wisag.automation.micas.rt.presentation.RtEditor"
+            contributorClass="de.wisag.automation.micas.rt.presentation.RtActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

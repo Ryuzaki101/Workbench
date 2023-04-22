@@ -1,0 +1,1465 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MD710_07.GPS
+  ;*** Projektname    : MSC Kälte Macro
+  ;*** Projektnummer  : 33101664
+  ;*** Bearbeiter     : Bresser H.J.
+  ;*** Prüfer         : Bresser H.J.
+  ;*** Line Nummer    : 7
+  ;*** User Number    : 10
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Zubr.Pumpe1_ST
+  WordV  Zubr.Pumpe2_R0
+  WordV  Zubr.Pumpe1_R1
+  WordV  Zubr.Pumpe2_ST
+  WordV  WERR
+  WordV  Zubr.Pumpe2_R1
+  WordV  AKM2_Voralarm
+  WordV  AKM1_bereit
+  WordV  AKM1_Betrieb
+  WordV  AKM1_gestört
+  WordV  AKM1_Anf.KWPpe
+  WordK  /Test_Kl1 (0)
+  WordV  AKM1_Voralarm
+  WordV  AKM2_bereit
+  WordV  AKM2_Betrieb
+  WordV  AKM2_Anf.KüWPpe
+  WordV  AKM2_gestört
+  WordV  AKM2_AT-Ppe_R1
+  WordV  M7_Störg.elektr
+  WordV  M6_Störg.elektr
+  WordK  /M6 (0)
+  WordK  /M6_Test (0)
+  WordV  Freig.ZubrPpe_R0
+  WordV  Freig.ZubrPpe_R1
+  WordV  Zubr.Pumpe1_R0
+  WordV  AKM2_Anf.KWPpe
+  WordV  KT_W-Heizg.R0
+  WordV  KT_AU_Klappe1_R0
+  WordV  KT_W-Heizg.R1
+  WordV  KT_AU_Klappe2_R1
+  WordV  KT_AU_Klappe2_R0
+  WordV  KT_AU_Klappe1_R1
+  FloatV AKM1_HzgAustritt
+  FloatV AKM1_KW_Eintritt
+  FloatV AKM1_HzgEintritt
+  FloatV AKM1_KW_Austritt
+  FloatV AKM2_HzgEintritt
+  FloatV AKM2_HzgAustritt
+  FloatV AKM2_KW_Eintritt
+  FloatV AKM2_KW_Austritt
+  FloatV AKM1_KüWEintritt
+  FloatV AKM1_KüWAustritt
+  FloatV AKM2_KüWEintritt
+  FloatV AKM2_KüWAustritt
+  FloatV AKM1+2_KüW_VL
+  WordV  Freig.AKM1_Aus
+  WordV  Freig.AKM2_Aus
+  WordV  Freig.KWF-MV_R0
+  WordV  Freig.KüWF-MV_R0
+  WordV  Freig.AKM1_Ein
+  WordV  Freig.AKM2_Ein
+  WordV  Freig.KWF-MV_R1
+  WordV  Freig.KüWF-MV_R1
+  WordV  Gesamt-R0
+  WordV  AKM2_AT-Ppe_R0
+  WordV  AKM2_AT-Ppe_ST
+  WordK  /M14_Stufe_1 (0)
+  WordV  Gesamt-R1
+  WordV  Klappe_GOI2_ZU
+  FloatV /KA04-000AA01_Hd
+  WordV  Klappe_GOI2_AUF
+  WordK  KON01 (1)
+  WordV  Klappe_GOI3_ZU
+  WordV  AKM2_KW-Ppe_R2
+  WordV  KW-Filt.gestört
+  FloatK FKON_FW_Regler4 (0.00)
+  WordV  KüW-Filt.gestört
+  WordK  /M4 (0)
+  WordK  /M4_Test (0)
+  WordV  AKM2-Auto-R1
+  WordV  AKM1-Auto-ST
+  WordK  /M2_Test (0)
+  WordV  AKM2_KüW_Ppe_OK
+  WordV  Klappe_GOI1_AUF
+  WordV  AKM2_KüW-Ppe_R0
+  WordV  AKM2_KüW-Ppe_ST
+  WordV  AKM2_KüW-Ppe_R1
+  WordK  /M3 (0)
+  WordK  /M3_Test (0)
+  FloatV SW_KüW_AKM1+2
+  FloatK FKON_SW_KüW_AKM (27.00)
+  WordV  AKM1_Anf.KüWPpe
+  WordK  /M1 (0)
+  FloatK /SW_Test_AT (0.00)
+  WordV  AKM1-Auto-R0
+  WordV  AKM2_KüW-Ppe_R2
+  FloatV AT
+  WordV  AKM2-Auto-R0
+  WordV  AKM2_KW-Ppe_R0
+  WordV  AKM2_KW-Ppe_R1
+  WordV  AKM1_KüW-Ppe_R0
+  WordV  AKM2-Auto-ST
+  WordV  AKM1_KüW-Ppe_ST
+  WordV  AKM1_KüW-Ppe_R1
+  WordV  AKM1_KW-Ppe_ST
+  WordV  AKM1_KW-Ppe_R0
+  WordV  AKM1-Auto-R1
+  WordV  AKM1_KüW-Ppe_R2
+  WordV  AKM1_KW-Ppe_R2
+  WordV  Klappe_GOI1_ZU
+  WordV  Gesamt-ST
+  WordK  /Test_AT (0)
+  FloatV KWRL_MZ_nach_MSC
+  FloatV KWVL_MSC_nach_MZ
+  FloatV KWRL_MSC_nach_MZ
+  FloatV KWVL_Lüftg.MSC
+  FloatV KWRL_Lüftg.MSC
+  FloatV Durchfl.MSC-MZ
+  FloatV Puffersp.Temp.1
+  FloatV Durchfl.Lftg.MSC
+  FloatV Durchfl.MZ-MSC
+  FloatV Puffersp.Temp.2
+  FloatV KT_Austritt_1
+  FloatV KT_Eintritt_1
+  FloatV KT_Wannentemp
+  FloatV KT_Eintritt_2
+  FloatV KT_Austritt_2
+  WordV  AKM1_KW-Ppe_R1
+  WordV  AKM2_KW-Ppe_ST
+  WordK  /M14_Stufe_2 (0)
+  WordK  /M14 (0)
+  FloatK FKON_5_Sekunden (5.00)
+  FloatK FKON_Hy1_Kühlt (1.00)
+  FloatK FKON_Hy2_Kühlt (2.00)
+  FloatK FKON_Hy3_Kühlt (2.00)
+  WordV  Anf.KT_AU-Klappe
+  WordV  Anf.KT_Vent-ST1
+  WordV  Anf.KT_Vent-ST2
+  WordK  /M15_Stufe_1 (0)
+  WordK  /M15_Stufe_2 (0)
+  WordK  /M15 (0)
+  WordV  KTVentilator2_R0
+  WordV  KTVentilator1_R0
+  WordV  KTVentilator1_ST
+  WordV  KTVentilator1_R1
+  WordV  KTVentilator1_R2
+  WordV  KTVentilator2_ST
+  WordV  KTVentilator2_R1
+  WordV  KTVentilator2_R2
+  WordV  KTVent1_ST-elekt
+  WordV  AKM1_AT-Ppe_R1
+  WordV  KüW-Ppe2_ST-elek
+  WordV  KW-Ppe2_ST-elekt
+  WordV  KW-Ppe1_ST-elekt
+  WordV  KüW-Ppe1_ST-elek
+  WordV  KTVent2_ST-elekt
+  FloatV LZ_Uhr_KW-Pumpen
+  FloatV LZ_Uhr_KüW-Ppen
+  FloatV /41KA01-900AA01
+  WordV  Sammelstörung_1
+  WordV  Sammelstörung_2
+  WordK  /M7 (0)
+  WordK  /M7_Test (0)
+  WordV  AKM1_AT-Ppe_R0
+  WordV  AKM1_AT-Ppe_ST
+  WordV  Klappe_GOI3_AUF
+  WordV  Notbetr.Kühlturm
+  WordV  Niveau_max.Stand
+  WordV  Niveau_min.Stand
+  FloatV SW_AT_Freigabe
+  FloatK FKON_SW_AT_Freig (15.00)
+  WordV  Anf.abschlämmen
+  WordV  Anf.Kühlw.-Ppen
+  WordK  /M1_Test (0)
+  WordK  /Test_Kl2 (0)
+  FloatK FKON_KTAU (21.00)
+  FloatK FKON_KT_ST1 (23.00)
+  FloatK FKON_KT_ST2 (25.00)
+  WordV  Trockenlauf
+  WordV  AKM1_KüW_Ppe_OK
+  WordK  /M2 (0)
+  WordV  Absalzautom.ST
+  WordV  DosierbehälterST
+  WordV  Anf.Biocid
+  WordV  M3_ZEILE_ST
+  WordV  M1_ZEILE_ST
+  WordV  M6_ZEILE_ST
+  WordV  M4_ZEILE_ST
+  WordV  M2_ZEILE_ST
+  WordV  M7_ZEILE_ST
+  WordV  M14_ZEILE_ST
+  WordV  M15_ZEILE_ST
+  WordV  Sammelstörung_3
+  WordV  ST_quit
+  WordV  /Test_SW-ATFreig
+  WordV  /AKM1_Anf.KüWPpe
+  WordV  /AKM1_Anf.KWPpe
+  WordV  /AKM2_Anf.KüWPpe
+  WordV  /AKM2_Anf.KWPpe
+  FloatK FKON_120Sekunden (120.00)
+  WordV  /Min_sehen
+  WordV  KüW-Nachspg.EIN_
+  WordV  /Nachspg.sehen
+  WordV  Testanf.vonLZ_R0
+  WordV  Anf.HZvonAKM_1o2
+  WordV  Testanf.vonLZ_R1
+  WordV  WERR93-12A
+  WordV  WERR93-13E
+  WordV  WERR93-02A
+  WordV  WERR107-06A
+  WordV  WERR107-04A
+  WordV  WERR93-01A
+  WordV  WERR107-07A
+  WordV  WERR93-07A
+  WordV  WERR107-01A
+  WordV  WERR93-03A
+  WordV  WERR107-05A
+  WordV  WERR93-04A
+  WordV  WERR107-02A
+  WordV  WERR93-08A
+  WordV  WERR93-10A
+  WordV  P2P_710_gestört
+  WordV  werr70-13e
+  WordV  G41_Inselbetrieb
+  WordV  G41_Verbundbetr
+  WordV  Freigabe_Biocid
+  WordK  $M0 (1)
+  IPAAW &&41KA04-900AA03 (71)
+  WordK  $M1 (1)
+  IPAAW &&41KA01-900AA01 (90)
+  IPAMB &&41KA01-000BF01 (70,1)
+  IPAMB &M2 (70,2)
+  IPAMB &M3 (70,3)
+  IPAMB &&41KA01-100BF01 (70,5)
+  IPAMB &M4 (70,6)
+  IPAMB &M5 (70,7)
+  IPAMB &&41KA01-200BF01 (70,9)
+  IPAMB &M6 (70,10)
+  IPAMB &M7 (70,11)
+  IPAMB &&41KA06-101BM11 (18,10)
+  IPAMB &&41KA06-101BM12 (18,11)
+  IPAMB &&41KA06-101BM21 (18,12)
+  IPAMB &&41KA06-101BM22 (18,13)
+  IPAMB &&41KA06-101BM31 (18,14)
+  IPAMB &&41KA06-101BM32 (18,15)
+  IPAMB &&41KA07-003ST01 (19,0)
+  IPAMB &&41KA07-004ST01 (19,1)
+  IPAMB &&41KA24-000BM10 (19,2)
+  IPAMB &&41KA24-003ST01 (19,3)
+  IPAMB &&41KA24-001ST01 (19,4)
+  IPAMB &&41KA24-002MB10 (19,5)
+  IPAMB &&41KA02-000GF01 (19,6)
+  IPAMB &M8 (19,7)
+  WordV  $WSCRATCH
+  IPAMB &M9 (22,0)
+  IPAMB &&41KA01-100BF02 (22,1)
+  IPAMB &M10 (22,2)
+  IPAMB &M11 (22,3)
+  IPAMB &M12 (22,4)
+  IPAMB &&41KA01-200BF02 (22,5)
+  IPAMB &M13 (22,6)
+  IPAMB &M14 (22,7)
+  IPAMB &M15 (22,8)
+  IPAMB &&41KA07-003BF02 (22,9)
+  IPAMB &M16 (22,10)
+  IPAMB &M17 (22,11)
+  IPAMB &M18 (22,12)
+  IPAMB &&41KA07-004BF02 (22,13)
+  IPAMB &M19 (22,14)
+  IPAMB &M20 (22,15)
+  IPAMB &M21 (23,0)
+  IPAMB &&41KA06-100BF01 (23,1)
+  IPAMB &M22 (23,2)
+  IPAMB &M23 (23,3)
+  IPAMB &&41KA00-000BM00 (23,6)
+  IPAMB &M24 (33,0)
+  IPAMB &&41KA06-100BM01 (33,1)
+  IPAMB &M25 (33,2)
+  IPAMB &M26 (33,3)
+  IPAMB &M27 (33,4)
+  IPAMB &&41KA06-100BM02 (33,5)
+  IPAMB &M28 (33,6)
+  IPAMB &M29 (33,7)
+  IPAMB &&41KA01-100BM01 (43,0)
+  IPAMB &&41KA01-100BM02 (43,1)
+  IPAMB &&41KA01-100BM14 (43,2)
+  IPAMB &&41KA01-100BM15 (43,3)
+  IPAMB &&41KA01-100ST01 (43,4)
+  IPAMB &&41KA01-100ST02 (43,5)
+  IPAMB &M30 (43,6)
+  IPAMB &M31 (43,7)
+  FloatK $M32 (0.00)
+  FloatK $M33 (0.00)
+  IPAMB &&41KA01-200BM01 (43,8)
+  IPAMB &&41KA01-200BM02 (43,9)
+  IPAMB &&41KA01-200BM14 (43,10)
+  IPAMB &&41KA01-200BM15 (43,11)
+  IPAMB &&41KA01-200ST01 (43,12)
+  IPAMB &&41KA01-200ST02 (43,13)
+  IPAMB &M34 (43,14)
+  IPAMB &M35 (43,15)
+  FloatK $M36 (0.00)
+  FloatK $M37 (0.00)
+  IPAMB &M38 (65,0)
+  IPAMB &&41KA02-001BM01 (65,1)
+  IPAMB &M39 (65,2)
+  IPAMB &M40 (65,3)
+  IPAMB &M41 (65,4)
+  IPAMB &&41KA02-001BM02 (65,5)
+  IPAMB &M42 (65,6)
+  IPAMB &M43 (65,7)
+  IPAMB &M44 (65,8)
+  IPAMB &M45 (65,9)
+  IPAMB &&41KA02-000BM10 (65,10)
+  IPAMB &&41KA02-000BM02 (65,11)
+  IPAMB &M46 (65,12)
+  IPAMB &M47 (65,13)
+  IPAMB &&41KA02-000BM01 (65,14)
+  IPAMB &M48 (65,15)
+  IPAMB &M49 (66,0)
+  IPAMB &&41KA02-002BM01 (66,1)
+  IPAMB &M50 (66,2)
+  IPAMB &M51 (66,3)
+  IPAMB &&41KA21-100BF01 (201,1)
+  IPAMB &M52 (201,2)
+  IPAMB &M53 (201,3)
+  IPAMB &M54 (201,4)
+  IPAMB &M55 (201,5)
+  IPAMB &&41KA22-100BF01 (203,1)
+  IPAMB &M56 (203,2)
+  IPAMB &M57 (203,3)
+  IPAMB &M58 (203,4)
+  IPAMB &M59 (203,5)
+  IPAMB &&41KA21-200BF01 (202,1)
+  IPAMB &M60 (202,2)
+  IPAMB &M61 (202,3)
+  IPAMB &M62 (202,4)
+  IPAMB &M63 (202,5)
+  IPAMB &&41KA22-200BF01 (204,1)
+  IPAMB &M64 (204,2)
+  IPAMB &M65 (204,3)
+  IPAMB &M66 (204,4)
+  IPAMB &M67 (204,5)
+  IPAMB &&41KA09-100BF01 (199,1)
+  IPAMB &M68 (199,2)
+  IPAMB &M69 (199,3)
+  IPAMB &&41KA09-200BF01 (200,1)
+  IPAMB &M70 (200,2)
+  IPAMB &M71 (200,3)
+  IPAMB &&41KA02-001BF01 (241,1)
+  IPAMB &M72 (241,2)
+  IPAMB &M73 (241,3)
+  IPAMB &M74 (241,4)
+  IPAMB &M75 (241,5)
+  IPAMB &&41KA02-001BF02 (242,1)
+  IPAMB &M76 (242,2)
+  IPAMB &M77 (242,3)
+  IPAMB &M78 (242,4)
+  IPAMB &M79 (242,5)
+  IPAMW &&41LT01-706MW91 (254)
+  FloatV $F1
+  IPAMW &&41KA04-000MW01 (38)
+  IPAMW &&41KA09-100MW01 (24)
+  IPAMW &&41KA09-100MW02 (25)
+  IPAMW &&41KA03-100MW01 (26)
+  IPAMW &&41KA03-100MW02 (27)
+  IPAMW &&41KA04-100MW01 (34)
+  IPAMW &&41KA04-100MW02 (35)
+  IPAMW &&41KA09-200MW01 (28)
+  IPAMW &&41KA09-200MW02 (29)
+  IPAMW &&41KA03-200MW01 (30)
+  IPAMW &&41KA03-200MW02 (31)
+  IPAMW &&41KA04-200MW01 (36)
+  IPAMW &&41KA04-200MW02 (37)
+  IPAMW &&41KA06-200MW01 (40)
+  IPAMW &&41KA06-200MW02 (41)
+  IPAMW &&41KA06-300MW02 (45)
+  IPAMW &&41KA06-100MW01 (46)
+  IPAMW &&41KA06-100MW02 (47)
+  IPAMW &&41KA03-000MW01 (48)
+  IPAMW &&41KA03-000MW02 (49)
+  IPAMW &&41KA06-100MW03 (52)
+  IPAMW &&41KA06-200MW03 (51)
+  IPAMW &&41KA06-300MW03 (50)
+  IPAMW &&41KA04-000MW03 (67)
+  IPAMW &&41KA02-000MW01 (68)
+  IPAMW &&41KA04-000MW02 (69)
+  IPAMW &&41KA04-000MW04 (79)
+  IPAMW &&41KA04-000MW05 (80)
+  FloatV $F2
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  FloatK $M80 (120.00)
+  FloatK $M81 (0.00)
+  WordV  $HB3
+  WordK  $M82 (1)
+  IPAMB &&41KA21-100ST20 (93,1)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B4
+  WordV  $B10
+  WordV  $HB0
+  FloatV $F3
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M83 (168000.00)
+  FloatV $F4
+  FloatV $FSCRATCH
+  FloatK $M84 (3600.00)
+  FloatV $F5
+  FloatV $F6
+  WordV  $B11
+  FloatK $M85 (300.00)
+  WordV  $B8
+  WordV  $B12
+  WordV  $B9
+  WordV  $B5
+  WordK  $M86 (1)
+  IPAMB &&41KA21-100BM91 (107,6)
+  WordV  $B13
+  FloatK $M87 (120.00)
+  FloatK $M88 (0.00)
+  WordV  $B14
+  WordV  $B20
+  WordV  $B21
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordK  $M89 (1)
+  IPAMB &&41KA22-100BM91 (107,4)
+  WordK  $M90 (1)
+  IPAMB &&41KA22-100ST20 (93,2)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatK $M91 (120.00)
+  FloatK $M92 (0.00)
+  WordK  $M93 (1)
+  IPAMB &&41KA09-100ST20 (93,7)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordK  $M94 (1)
+  IPAMB &&41KA09-100BM91 (107,1)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  FloatK $M95 (120.00)
+  FloatK $M96 (0.00)
+  WordK  $M97 (1)
+  IPAMB &&41KA21-200ST20 (93,3)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B33
+  WordV  $B39
+  FloatV $F7
+  FloatK $M98 (168000.00)
+  FloatV $F8
+  FloatK $M99 (3600.00)
+  FloatV $F9
+  FloatV $F10
+  WordV  $B40
+  FloatK $M100 (300.00)
+  WordV  $B37
+  WordV  $B41
+  WordV  $B38
+  WordV  $B34
+  WordK  $M101 (1)
+  IPAMB &&41KA21-200BM91 (107,7)
+  WordV  $B42
+  FloatK $M102 (120.00)
+  FloatK $M103 (0.00)
+  WordV  $B43
+  WordV  $B49
+  WordV  $B50
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordK  $M104 (1)
+  IPAMB &&41KA22-200BM91 (107,5)
+  WordK  $M105 (1)
+  IPAMB &&41KA22-200ST20 (93,4)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  FloatK $M106 (120.00)
+  FloatK $M107 (0.00)
+  WordK  $M108 (1)
+  IPAMB &&41KA09-200ST20 (93,8)
+  WordV  $B57
+  WordV  $B58
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordK  $M109 (1)
+  IPAMB &&41KA09-200BM91 (107,2)
+  WordV  $B59
+  FloatV $F11
+  WordV  $B60
+  WordV  $B61
+  FloatK $M110 (0.00)
+  FloatV $F12
+  FloatV $F13
+  WordK  $M111 (1)
+  IPAAW &&41KA04-000AA01 (42)
+  FloatK $M112 (3.00)
+  FloatK $M113 (0.00)
+  WordV  $B62
+  WordV  $B63
+  FloatK $M114 (0.00)
+  FloatK $M115 (120.00)
+  WordV  $B64
+  FloatV $F14
+  WordV  $B65
+  WordV  $B66
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordV  $B83
+  WordV  $B84
+  WordV  $B74
+  FloatK $M116 (0.00)
+  WordV  $B75
+  WordV  $B85
+  WordV  $B86
+  WordV  $B76
+  FloatK $M117 (0.00)
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  WordV  $B82
+  WordK  $M118 (1)
+  IPAMB &&41KA02-110BM91 (107,10)
+  WordK  $M119 (1)
+  IPAMB &&41KA02-110BM92 (107,11)
+  WordV  $B87
+  WordV  $B97
+  WordV  $B98
+  WordV  $B88
+  FloatK $M120 (0.00)
+  WordV  $B89
+  WordV  $B99
+  WordV  $B100
+  WordV  $B90
+  FloatK $M121 (0.00)
+  WordV  $B91
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  WordV  $B95
+  WordV  $B96
+  WordK  $M122 (1)
+  IPAMB &&41KA02-110BM93 (107,12)
+  WordK  $M123 (1)
+  IPAMB &&41KA02-110BM94 (107,13)
+  WordV  $B101
+  WordV  $B102
+  WordV  $B103
+  WordV  $B104
+  FloatK $M124 (120.00)
+  FloatK $M125 (0.00)
+  WordV  $B105
+  WordK  $M126 (1)
+  IPAMB &&41KA02-001ST20 (93,5)
+  WordV  $B106
+  WordV  $B107
+  WordV  $B108
+  WordV  $B109
+  FloatK $M127 (120.00)
+  FloatK $M128 (0.00)
+  WordV  $B110
+  WordK  $M129 (1)
+  IPAMB &&41KA02-001ST21 (93,6)
+  WordV  $B111
+  WordV  $B112
+  FloatK $M130 (262800.00)
+  WordV  $B113
+  WordV  $HB1
+  WordV  $B114
+  WordV  $B115
+  FloatK $M131 (262800.00)
+  WordV  $B116
+  IPAMB &41KA06-900BF90 (70,13)
+  IPAMB &M132 (70,14)
+  IPAMB &M133 (70,15)
+  FloatK $M134 (0.50)
+  WordV  $B117
+  WordV  $B118
+  WordV  $B119
+  WordV  $B120
+  WordV  $B121
+  WordV  $B122
+  IPAMB &&41KA24-000BF02 (23,13)
+  FloatK $M135 (0.50)
+  WordV  $B123
+  WordV  $B124
+  FloatK $M136 (60.00)
+  FloatK $M137 (0.00)
+  WordV  $B125
+  WordV  $B126
+  FloatK $M138 (180.00)
+  FloatK $M139 (0.00)
+  WordV  $B127
+  WordV  $B128
+  WordV  $B129
+  WordV  $B130
+  WordV  $B131
+  IPAMB &&41KA24-000BF03 (0,9)
+  WordV  $B132
+  WordV  $B133
+  IPAMB &&41KA24-002BF01 (23,9)
+  WordV  $B134
+  WordV  $B135
+  WordV  $B136
+  FloatK $M140 (120.00)
+  FloatK $M141 (0.00)
+  WordV  $B137
+  WordV  $B138
+  WordV  $B139
+  IPAMB &&41KA00-000ST00 (23,5)
+  WordK  $M142 (1)
+  IPAMB &41LT00-710ST90 (93,10)
+  IPAMB &41KA99-999BF99 (93,13)
+  IPAMB &M143 (93,14)
+  IPAMB &M144 (93,15)
+  WordK  $M145 (1)
+  IPAMB &41KA99-999BM99 (93,12)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;28.11.2001 Bresser
+  ;BIOCID-Impfung gemäss
+  ;Festlegung 23.10.2001
+  ;mit Schweitzer Chemie
+  ;Herr Lux.
+  ;########################
+  ; 
+  ;02-10-2004 G-JB
+  ;Anpassung Anforderung
+  ;Kalt- und Kühlwasser-
+  ;pumpe.
+  ;Nachlaufzeit 120 Sek.
+  ;#######################
+  ;04.05.2005 Bresser
+  ;Anforderung Biocid
+  ;geändert.
+  ;########################
+  ;20.05.2005 GJB
+  ;Anf.HZ von AKM 1+2
+  ;_____________________
+  ; 
+  ;28.05.2005 Bresser
+  ;Anpassung Ansteuerung
+  ;KüW-KW-Austreiberpumpen
+  ;#######################
+  ;10.10.2006 Bresser
+  ;Anpassung Anforderung
+  ;Biocid geändert. Durch
+  ;Verbundbetrieb ist die
+  ;Gesamtanlage NICHT ein-
+  ;geschaltet!
+  ;ODER- Funktion ergänzt!
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (FKON_SW_KüW_AKM,$M0,&&41KA04-900AA03,WERR)
+  ANAUS (FKON_SW_AT_Freig,$M1,&&41KA01-900AA01,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&&41KA01-000BF01,3,Gesamt-R0,Gesamt-ST,Gesamt-R1,
+          WERR)
+  MELEIN (&&41KA01-100BF01,3,AKM1-Auto-R0,AKM1-Auto-ST,
+          AKM1-Auto-R1,WERR)
+  MELEIN (&&41KA01-200BF01,3,AKM2-Auto-R0,AKM2-Auto-ST,
+          AKM2-Auto-R1,WERR)
+  ;Gesamtanlage Kälte
+  ; 
+  ;AKM 1 Automatik
+  ; 
+  ;AKM 2 Automatik
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&&41KA06-101BM11,6,Klappe_GOI1_ZU,Klappe_GOI1_AUF,
+          Klappe_GOI2_ZU,Klappe_GOI2_AUF,Klappe_GOI3_ZU,
+          Klappe_GOI3_AUF,WERR)
+  MELEIN (&&41KA07-003ST01,8,KW-Filt.gestört,
+          KüW-Filt.gestört,Anf.abschlämmen,Absalzautom.ST,
+          DosierbehälterST,Anf.Biocid,Trockenlauf,$WSCRATCH,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&M9,8,$WSCRATCH,Freig.AKM1_Aus,$WSCRATCH,
+          Freig.AKM1_Ein,$WSCRATCH,Freig.AKM2_Aus,$WSCRATCH,
+          Freig.AKM2_Ein,WERR)
+  MELEIN (&M15,8,$WSCRATCH,Freig.KWF-MV_R0,$WSCRATCH,
+          Freig.KWF-MV_R1,$WSCRATCH,Freig.KüWF-MV_R0,
+          $WSCRATCH,Freig.KüWF-MV_R1,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&M21,4,$WSCRATCH,Freig.ZubrPpe_R0,$WSCRATCH,
+          Freig.ZubrPpe_R1,WERR)
+  MELEIN (&&41KA00-000BM00,1,ST_quit,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&M24,8,$WSCRATCH,Zubr.Pumpe1_R0,Zubr.Pumpe1_ST,
+          Zubr.Pumpe1_R1,$WSCRATCH,Zubr.Pumpe2_R0,
+          Zubr.Pumpe2_ST,Zubr.Pumpe2_R1,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&&41KA01-100BM01,8,AKM1_bereit,AKM1_Betrieb,
+          /AKM1_Anf.KüWPpe,/AKM1_Anf.KWPpe,AKM1_gestört,
+          AKM1_Voralarm,$WSCRATCH,$WSCRATCH,WERR)
+  VVZ (/AKM1_Anf.KüWPpe,$M32,FKON_120Sekunden,
+       AKM1_Anf.KüWPpe)
+  VVZ (/AKM1_Anf.KWPpe,$M33,FKON_120Sekunden,AKM1_Anf.KWPpe)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&&41KA01-200BM01,8,AKM2_bereit,AKM2_Betrieb,
+          /AKM2_Anf.KüWPpe,/AKM2_Anf.KWPpe,AKM2_gestört,
+          AKM2_Voralarm,$WSCRATCH,$WSCRATCH,WERR)
+  VVZ (/AKM2_Anf.KüWPpe,$M36,FKON_120Sekunden,
+       AKM2_Anf.KüWPpe)
+  VVZ (/AKM2_Anf.KWPpe,$M37,FKON_120Sekunden,AKM2_Anf.KWPpe)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&M38,8,$WSCRATCH,KT_AU_Klappe1_R0,$WSCRATCH,
+          KT_AU_Klappe1_R1,$WSCRATCH,KT_AU_Klappe2_R0,
+          $WSCRATCH,KT_AU_Klappe2_R1,WERR)
+  MELEIN (&M44,8,$WSCRATCH,$WSCRATCH,Notbetr.Kühlturm,
+          Niveau_max.Stand,$WSCRATCH,$WSCRATCH,
+          Niveau_min.Stand,$WSCRATCH,WERR)
+  ;Kühlturm Aussenluftkl.1
+  ; 
+  ;Kühlturm Aussenluftkl.2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&M49,4,$WSCRATCH,KT_W-Heizg.R0,$WSCRATCH,
+          KT_W-Heizg.R1,WERR)
+  ;Kühlturm Wannenheizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&&41KA21-100BF01,5,AKM1_KW-Ppe_R0,AKM1_KW-Ppe_ST,
+          AKM1_KW-Ppe_R1,$WSCRATCH,AKM1_KW-Ppe_R2,WERR)
+  MELEIN (&&41KA22-100BF01,5,AKM1_KüW-Ppe_R0,AKM1_KüW-Ppe_ST,
+          AKM1_KüW-Ppe_R1,$WSCRATCH,AKM1_KüW-Ppe_R2,WERR)
+  ;AKM 1 Kaltwasserp.M3
+  ; 
+  ;AKM 1 Kühlwasserp.M1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  MELEIN (&&41KA21-200BF01,5,AKM2_KW-Ppe_R0,AKM2_KW-Ppe_ST,
+          AKM2_KW-Ppe_R1,$WSCRATCH,AKM2_KW-Ppe_R2,WERR)
+  MELEIN (&&41KA22-200BF01,5,AKM2_KüW-Ppe_R0,AKM2_KüW-Ppe_ST,
+          AKM2_KüW-Ppe_R1,$WSCRATCH,AKM2_KüW-Ppe_R2,WERR)
+  ;AKM 2 Kaltwasserp.M4
+  ; 
+  ;AKM 2 Kühlwasserp.M2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&&41KA09-100BF01,3,AKM1_AT-Ppe_R0,AKM1_AT-Ppe_ST,
+          AKM1_AT-Ppe_R1,WERR)
+  MELEIN (&&41KA09-200BF01,3,AKM2_AT-Ppe_R0,AKM2_AT-Ppe_ST,
+          AKM2_AT-Ppe_R1,WERR)
+  ;AKM 1 Austreiberp.M6
+  ; 
+  ;AKM 2 Austreiberp.M7
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&&41KA02-001BF01,5,KTVentilator1_R0,
+          KTVentilator1_ST,KTVentilator1_R1,$WSCRATCH,
+          KTVentilator1_R2,WERR)
+  MELEIN (&&41KA02-001BF02,5,KTVentilator2_R0,
+          KTVentilator2_ST,KTVentilator2_R1,$WSCRATCH,
+          KTVentilator2_R2,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ;Aussentemperatur von
+  ;Unterstation 6
+  ;K
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&41LT01-706MW91,$F1,WERR)
+  AWT (/Test_AT,$F1,/SW_Test_AT,AT)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ANEIN (&&41KA04-000MW01,AKM1+2_KüW_VL,WERR)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ANEIN (&&41KA09-100MW01,AKM1_HzgEintritt,WERR)
+  ANEIN (&&41KA09-100MW02,AKM1_HzgAustritt,WERR)
+  ANEIN (&&41KA03-100MW01,AKM1_KW_Eintritt,WERR)
+  ANEIN (&&41KA03-100MW02,AKM1_KW_Austritt,WERR)
+  ANEIN (&&41KA04-100MW01,AKM1_KüWEintritt,WERR)
+  ANEIN (&&41KA04-100MW02,AKM1_KüWAustritt,WERR)
+  ;Heissw.Eintritt AKM1
+  ; 
+  ;Heissw.Eintritt AKM1
+  ; 
+  ;Kaltw.Eintritt AKM1
+  ; 
+  ;Kaltw.Austritt AKM1
+  ; 
+  ;Kühlw.Eintritt AKM1
+  ; 
+  ;Kühlw.Austritt AKM1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ANEIN (&&41KA09-200MW01,AKM2_HzgEintritt,WERR)
+  ANEIN (&&41KA09-200MW02,AKM2_HzgAustritt,WERR)
+  ANEIN (&&41KA03-200MW01,AKM2_KW_Eintritt,WERR)
+  ANEIN (&&41KA03-200MW02,AKM2_KW_Austritt,WERR)
+  ANEIN (&&41KA04-200MW01,AKM2_KüWEintritt,WERR)
+  ANEIN (&&41KA04-200MW02,AKM2_KüWAustritt,WERR)
+  ;Heissw.Eintritt AKM2
+  ; 
+  ;Heissw.Eintritt AKM2
+  ; 
+  ;Kaltw.Eintritt AKM2
+  ; 
+  ;Kaltw.Austritt AKM2
+  ; 
+  ;Kühlw.Eintritt AKM2
+  ; 
+  ;Kühlw.Austritt AKM2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ANEIN (&&41KA06-200MW01,KWRL_MZ_nach_MSC,WERR)
+  ANEIN (&&41KA06-200MW02,KWVL_MSC_nach_MZ,WERR)
+  ANEIN (&&41KA06-300MW02,KWRL_MSC_nach_MZ,WERR)
+  ANEIN (&&41KA06-100MW01,KWVL_Lüftg.MSC,WERR)
+  ANEIN (&&41KA06-100MW02,KWRL_Lüftg.MSC,WERR)
+  ;Kaltw. RL MZ nach MSC
+  ; 
+  ;Kaltw. VL MSC nach MZ
+  ; 
+  ;Kaltw. RL MSC nach MZ
+  ; 
+  ;Kaltw. VL Lüftung MSC
+  ; 
+  ;Kaltw. RL Lüftung MSC
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ANEIN (&&41KA03-000MW01,Puffersp.Temp.1,WERR)
+  ANEIN (&&41KA03-000MW02,Puffersp.Temp.2,WERR)
+  ANEIN (&&41KA06-100MW03,Durchfl.Lftg.MSC,WERR)
+  ANEIN (&&41KA06-200MW03,Durchfl.MZ-MSC,WERR)
+  ANEIN (&&41KA06-300MW03,Durchfl.MSC-MZ,WERR)
+  ;Kaltw. Puffersp./Sammler
+  ; 
+  ;Kaltw. Puffersp./Vert.
+  ; 
+  ;Durchfluß (P1) MSC/MZ
+  ; 
+  ;Durchfluß (P2) MZ/MSC
+  ; 
+  ;Durchfluß (P3) Lüftg.MSC
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ANEIN (&&41KA04-000MW03,KT_Austritt_1,WERR)
+  ANEIN (&&41KA02-000MW01,KT_Wannentemp,WERR)
+  ANEIN (&&41KA04-000MW02,KT_Eintritt_1,WERR)
+  ANEIN (&&41KA04-000MW04,KT_Eintritt_2,WERR)
+  ANEIN (&&41KA04-000MW05,KT_Austritt_2,WERR)
+  ;Kühlturm Austritt 1
+  ; 
+  ;Kühlturm Wannenheizung
+  ; 
+  ;Kühlturm Eintritt 1
+  ; 
+  ;Kühlturm Eintritt 2
+  ; 
+  ;Kühlturm Austritt 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ANEIN (&&41KA04-900AA03,SW_KüW_AKM1+2,WERR)
+  ATRA (SW_KüW_AKM1+2,FKON_SW_KüW_AKM)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ANEIN (&&41KA01-900AA01,$F2,WERR)
+  AWT (/Test_SW-ATFreig,$F2,/41KA01-900AA01,SW_AT_Freigabe)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ATRA (SW_AT_Freigabe,FKON_SW_AT_Freig)
+  ;SW Kühlwasser AKM 1+2
+  ; 
+  ;SW AT-Freigabe Kälte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (1,M3_ZEILE_ST,1,AKM1_KW-Ppe_ST,$B1,$WSCRATCH)
+  UND11 (AKM1_Anf.KWPpe,AKM1_KW-Ppe_R1,$B2)
+  ODR2 ($B1,$B2,$B3)
+  VVZ ($B3,$M80,$M81,$HB3)
+  NICHT ($HB3,KW-Ppe1_ST-elekt)
+  SETMEL ($M82,1,KW-Ppe1_ST-elekt,&&41KA21-100ST20,
+          WERR93-01A)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (AKM1_Anf.KWPpe,/M3,$B6)
+  UND2 (/M3,/M3_Test,$B7)
+  ODR2 ($B6,$B7,$B4)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODRMN (1,$B9,1,KW-Ppe1_ST-elekt,$B10,$WSCRATCH)
+  NICHT ($B10,$HB0)
+  UHR ($HB0,$B10,$F3)
+  UST ($WZERO,$M83,$F4,$FSCRATCH)
+  UST ($WZERO,$M84,$F5,$FSCRATCH)
+  MULT ($F4,$F5,$F6)
+  VGLOH ($F3,$F6,$B11)
+  MOKY ($B11,$M85,$B8)
+  ODR2 ($B4,$B8,$B12)
+  UND2 ($B12,KW-Ppe1_ST-elekt,$B9)
+  BTRA ($B9,$B5)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B5,$HB0)
+  BEFAUS (2,$HB0,$B5,$WZERO,$WZERO,&&41KA21-100BF01,
+          M3_ZEILE_ST)
+  SETMEL ($M86,1,$B5,&&41KA21-100BM91,WERR107-06A)
+  ;Kaltwasserpumpe M3
+  ;AKM 1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (2,$B15,AKM1_KüW-Ppe_ST,2,AKM1_KüW-Ppe_R2,
+         M1_ZEILE_ST,$B13,$WSCRATCH)
+  VVZ ($B13,$M87,$M88,$HB3)
+  NICHT ($HB3,KüW-Ppe1_ST-elek)
+  UND2 (KüW-Ppe1_ST-elek,Trockenlauf,AKM1_KüW_Ppe_OK)
+  ODR2 (AKM1_Anf.KüWPpe,Anf.Kühlw.-Ppen,$B14)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B14,/M1,$B20)
+  UND2 (/M1,/M1_Test,$B21)
+  ODR2 ($B20,$B21,$B15)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (3,AKM1_KüW-Ppe_R2,$B15,AKM1_KüW_Ppe_OK,0,$B16,
+         $WSCRATCH)
+  UNDMN (2,AKM1_KüW_Ppe_OK,$B15,0,$B17,$B18)
+  UND11 ($B17,$B16,$B19)
+  BEFAUS (2,$B18,$B19,$B16,$WZERO,&&41KA22-100BF01,
+          M1_ZEILE_ST)
+  ;Kühlwasserpumpe M1
+  ;AKM 1
+  ; 
+  SETMEL ($M89,1,$B16,&&41KA22-100BM91,WERR107-04A)
+  SETMEL ($M90,1,KüW-Ppe1_ST-elek,&&41KA22-100ST20,
+          WERR93-02A)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UND11 (AKM1_Betrieb,AKM1_AT-Ppe_R1,$B22)
+  UNDMN (1,AKM1_AT-Ppe_ST,1,M6_ZEILE_ST,$WSCRATCH,$B23)
+  ODR2 ($B22,$B23,$B24)
+  VVZ ($B24,$M91,$M92,$HB3)
+  NICHT ($HB3,M6_Störg.elektr)
+  SETMEL ($M93,1,M6_Störg.elektr,&&41KA09-100ST20,WERR93-07A)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (AKM1_Betrieb,/M6,$B28)
+  UND2 (/M6,/M6_Test,$B29)
+  ODR2 ($B28,$B29,$B25)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (2,$B25,M6_Störg.elektr,0,$B26,$B27)
+  BEFAUS (2,$B27,$B26,$WZERO,$WZERO,&&41KA09-100BF01,
+          M6_ZEILE_ST)
+  SETMEL ($M94,1,$B26,&&41KA09-100BM91,WERR107-01A)
+  ;Heizung Austreiber
+  ;pumpe M6 AKM1
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (1,M4_ZEILE_ST,1,AKM2_KW-Ppe_ST,$B30,$WSCRATCH)
+  UND11 (AKM2_Anf.KWPpe,AKM2_KW-Ppe_R1,$B31)
+  ODR2 ($B30,$B31,$B32)
+  VVZ ($B32,$M95,$M96,$HB3)
+  NICHT ($HB3,KW-Ppe2_ST-elekt)
+  SETMEL ($M97,1,KW-Ppe2_ST-elekt,&&41KA21-200ST20,
+          WERR93-03A)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (AKM2_Anf.KWPpe,/M4,$B35)
+  UND2 (/M4,/M4_Test,$B36)
+  ODR2 ($B35,$B36,$B33)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODRMN (1,$B38,1,KW-Ppe2_ST-elekt,$B39,$WSCRATCH)
+  NICHT ($B39,$HB0)
+  UHR ($HB0,$B39,$F7)
+  UST ($WZERO,$M98,$F8,$FSCRATCH)
+  UST ($WZERO,$M99,$F9,$FSCRATCH)
+  MULT ($F8,$F9,$F10)
+  VGLOH ($F7,$F10,$B40)
+  MOKY ($B40,$M100,$B37)
+  ODR2 ($B33,$B37,$B41)
+  UND2 ($B41,KW-Ppe2_ST-elekt,$B38)
+  BTRA ($B38,$B34)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B34,$HB0)
+  BEFAUS (2,$HB0,$B34,$WZERO,$WZERO,&&41KA21-200BF01,
+          M4_ZEILE_ST)
+  SETMEL ($M101,1,$B34,&&41KA21-200BM91,WERR107-07A)
+  ;Kaltwasserpumpe M4
+  ;AKM 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  UNDMN (2,$B44,AKM2_KüW-Ppe_ST,2,AKM2_KüW-Ppe_R2,
+         M2_ZEILE_ST,$B42,$WSCRATCH)
+  VVZ ($B42,$M102,$M103,$HB3)
+  NICHT ($HB3,KüW-Ppe2_ST-elek)
+  UND2 (KüW-Ppe2_ST-elek,Trockenlauf,AKM2_KüW_Ppe_OK)
+  ODR2 (AKM2_Anf.KüWPpe,Anf.Kühlw.-Ppen,$B43)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B43,/M2,$B49)
+  UND2 (/M2,/M2_Test,$B50)
+  ODR2 ($B49,$B50,$B44)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (3,AKM2_KüW-Ppe_R2,$B44,AKM2_KüW_Ppe_OK,0,$B45,
+         $WSCRATCH)
+  UNDMN (2,AKM2_KüW_Ppe_OK,$B44,0,$B46,$B47)
+  UND11 ($B46,$B45,$B48)
+  BEFAUS (2,$B47,$B48,$B45,$WZERO,&&41KA22-200BF01,
+          M2_ZEILE_ST)
+  ;Kühlwasserpumpe M2
+  ;AKM 2
+  ; 
+  SETMEL ($M104,1,$B45,&&41KA22-200BM91,WERR107-05A)
+  SETMEL ($M105,1,KüW-Ppe2_ST-elek,&&41KA22-200ST20,
+          WERR93-04A)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UND11 (AKM2_Betrieb,AKM2_AT-Ppe_R1,$B51)
+  UNDMN (1,AKM2_AT-Ppe_ST,1,M7_ZEILE_ST,$WSCRATCH,$B52)
+  ODR2 ($B51,$B52,$B53)
+  VVZ ($B53,$M106,$M107,$HB3)
+  NICHT ($HB3,M7_Störg.elektr)
+  SETMEL ($M108,1,M7_Störg.elektr,&&41KA09-200ST20,
+          WERR93-08A)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (AKM2_Betrieb,/M7,$B57)
+  UND2 (/M7,/M7_Test,$B58)
+  ODR2 ($B57,$B58,$B54)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (2,$B54,M7_Störg.elektr,0,$B55,$B56)
+  BEFAUS (2,$B56,$B55,$WZERO,$WZERO,&&41KA09-200BF01,
+          M7_ZEILE_ST)
+  SETMEL ($M109,1,$B55,&&41KA09-200BM91,WERR107-02A)
+  ;Heizung Austreiber
+  ;pumpe M7 AKM2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  NOR2 (AKM1_KüW-Ppe_R2,AKM2_KüW-Ppe_R2,$B59)
+  REGLER (4,KON01,$B59,FKON_FW_Regler4,$F11,$WSCRATCH)
+  NOR2 (AKM1_Betrieb,AKM2_Betrieb,$B60)
+  ODR2 ($B60,Gesamt-R0,$B61)
+  AWT ($B61,$F11,$M110,$F12)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B62,$F12,/KA04-000AA01_Hd,$F13)
+  ANAUS ($F13,$M111,&&41KA04-000AA01,$WSCRATCH)
+  VGLEH (/KA04-000AA01_Hd,$M112,$M113,$B62)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Änderung Sollwert
+  ;von 25Grad auf 27 Grad.
+  ;Angaben von Herrn
+  ;Schilling 04.05.99 Br
+  ; 
+  ;23.11.01 Bresser
+  ;Bei Stillstand
+  ;der Anlage Ventil
+  ;Strecke über
+  ;Kühlturm für
+  ;Biozid Impfung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODR2 (AKM1_KüW-Ppe_R2,AKM2_KüW-Ppe_R2,$B63)
+  VVZ ($B63,$M114,$M115,$B64)
+  MAX (2,KT_Austritt_1,KT_Austritt_2,$F14)
+  VGLEH ($F14,FKON_KTAU,FKON_Hy1_Kühlt,$B65)
+  UNDMN (3,$B65,$B64,Trockenlauf,0,Anf.KT_AU-Klappe,
+         $WSCRATCH)
+  VGLEH ($F14,FKON_KT_ST1,FKON_Hy2_Kühlt,$B66)
+  UNDMN (4,$B66,$B64,Trockenlauf,$B68,0,Anf.KT_Vent-ST1,
+         $WSCRATCH)
+  VGLEH ($F14,FKON_KT_ST2,FKON_Hy3_Kühlt,$B67)
+  UNDMN (3,$B67,$B64,Trockenlauf,0,Anf.KT_Vent-ST2,$B68)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (2,Anf.KT_AU-Klappe,/Test_Kl1,0,$B69,$B70)
+  BEFAUS (1,$B70,$B69,$WZERO,$WZERO,&&41KA02-001BM01,WERR)
+  ODRMN (2,Anf.KT_AU-Klappe,/Test_Kl2,0,$B71,$B72)
+  BEFAUS (1,$B72,$B71,$WZERO,$WZERO,&&41KA02-001BM02,WERR)
+  ;Aussenluftklappe 1
+  ; 
+  ;Aussenluftklappe 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UND21 (KTVentilator1_ST,KT_AU_Klappe1_R1,M14_ZEILE_ST,$B73)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (Anf.KT_Vent-ST1,/M14,$B83)
+  UND2 (/M14,/M14_Stufe_1,$B84)
+  ODR2 ($B83,$B84,$B74)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ ($B74,FKON_5_Sekunden,$M116,$B75)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (Anf.KT_Vent-ST2,/M14,$B85)
+  UND2 (/M14,/M14_Stufe_2,$B86)
+  ODR2 ($B85,$B86,$B76)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ ($B76,FKON_5_Sekunden,$M117,$B77)
+  UND2 ($B80,$B82,$B78)
+  UNDMN (2,$B75,$B73,0,$B79,$B80)
+  ;Ventilator 1 M14
+  ; 
+  UNDMN (2,$B77,$B73,0,$B81,$B82)
+  BEFAUS (2,$B78,$B79,$B81,$WZERO,&&41KA02-001BF01,
+          M14_ZEILE_ST)
+  SETMEL ($M118,1,$B79,&&41KA02-110BM91,WERR)
+  SETMEL ($M119,1,$B81,&&41KA02-110BM92,WERR)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  UND21 (KTVentilator2_ST,KT_AU_Klappe2_R1,M15_ZEILE_ST,$B87)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (Anf.KT_Vent-ST1,/M15,$B97)
+  UND2 (/M15,/M15_Stufe_1,$B98)
+  ODR2 ($B97,$B98,$B88)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ ($B88,FKON_5_Sekunden,$M120,$B89)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 (Anf.KT_Vent-ST2,/M15,$B99)
+  UND2 (/M15,/M15_Stufe_2,$B100)
+  ODR2 ($B99,$B100,$B90)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ ($B90,FKON_5_Sekunden,$M121,$B91)
+  UND2 ($B94,$B96,$B92)
+  UNDMN (2,$B89,$B87,0,$B93,$B94)
+  ;Ventilator 2 M15
+  ; 
+  UNDMN (2,$B91,$B87,0,$B95,$B96)
+  BEFAUS (2,$B92,$B93,$B95,$WZERO,&&41KA02-001BF02,
+          M15_ZEILE_ST)
+  SETMEL ($M122,1,$B93,&&41KA02-110BM93,WERR)
+  SETMEL ($M123,1,$B95,&&41KA02-110BM94,WERR)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  UNDMN (1,Anf.KT_Vent-ST1,2,KTVentilator1_R1,M14_ZEILE_ST,
+         $B101,$WSCRATCH)
+  UNDMN (1,Anf.KT_Vent-ST2,2,KTVentilator1_R2,M14_ZEILE_ST,
+         $B102,$WSCRATCH)
+  ODR2 ($B101,$B102,$B103)
+  UND11 ($B103,ST_quit,$B104)
+  VVZ ($B104,$M124,$M125,$B105)
+  RSS ($B105,ST_quit,$WSCRATCH,KTVent1_ST-elekt)
+  SETMEL ($M126,1,KTVent1_ST-elekt,&&41KA02-001ST20,WERR)
+  UNDMN (1,Anf.KT_Vent-ST1,2,KTVentilator2_R1,M15_ZEILE_ST,
+         $B106,$WSCRATCH)
+  UNDMN (1,Anf.KT_Vent-ST2,2,KTVentilator2_R2,M15_ZEILE_ST,
+         $B107,$WSCRATCH)
+  ODR2 ($B106,$B107,$B108)
+  UND11 ($B108,ST_quit,$B109)
+  VVZ ($B109,$M127,$M128,$B110)
+  RSS ($B110,ST_quit,$WSCRATCH,KTVent2_ST-elekt)
+  SETMEL ($M129,1,KTVent2_ST-elekt,&&41KA02-001ST21,WERR)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  UNDMN (2,Gesamt-R0,Gesamt-R0,0,$B111,$B112)
+  UHR ($B111,$B112,LZ_Uhr_KW-Pumpen)
+  VGLOH (LZ_Uhr_KW-Pumpen,$M130,$B113)
+  NICHT ($B113,$HB1)
+  BEFAUS (1,$B113,$HB1,$WZERO,$WZERO,&&41KA07-003BF02,WERR)
+  ;Magnetventil
+  ;Kaltwasserfilter
+  ;a
+  ; 
+  ;Kaltwasserpumpen
+  ;> 73 Stunden Aus
+  ;Magnetventil gesperrt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  UNDMN (2,Gesamt-R0,Gesamt-R0,0,$B114,$B115)
+  UHR ($B114,$B115,LZ_Uhr_KüW-Ppen)
+  VGLOH (LZ_Uhr_KüW-Ppen,$M131,$B116)
+  NICHT ($B116,$HB1)
+  BEFAUS (1,$B116,$HB1,$WZERO,$WZERO,&&41KA07-004BF02,WERR)
+  MELEIN (&41KA06-900BF90,3,G41_Inselbetrieb,$WSCRATCH,
+          G41_Verbundbetr,werr70-13e)
+  ;Magnetventil
+  ;Kühlwasserfilter
+  ;M
+  ; 
+  ;Kühlwasserpumpen
+  ;> 73 Stunden Aus
+  ;Magnetventil gesperrt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ODR2 (G41_Verbundbetr,Gesamt-R1,Freigabe_Biocid)
+  VGLEH (AT,SW_AT_Freigabe,$M134,$B117)
+  ODR2 (Anf.Biocid,$B117,$B118)
+  UNDMN (3,Freigabe_Biocid,Niveau_min.Stand,$B118,0,$B119,
+         $WSCRATCH)
+  UND2 (Gesamt-R0,G41_Inselbetrieb,$B120)
+  ODR2 (Niveau_max.Stand,$B120,$B121)
+  RSS ($B119,$B121,KüW-Nachspg.EIN_,$B122)
+  BEFAUS (1,$B122,KüW-Nachspg.EIN_,$WZERO,$WZERO,
+          &&41KA24-000BF02,WERR)
+  ;Motorkugelhahn 1+2
+  ;Kühlwasser-
+  ;nachspeisung
+  ;im Versorgungs-
+  ;schacht 12.OG
+  ; 
+  ;Min-Niveau als SL
+  ;Max-Niveau als SL
+  ;vereinbart
+  ; 
+  ;04.05.2005 Bresser
+  ;Biocid Anforderung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  BTRA (Niveau_min.Stand,/Min_sehen)
+  BTRA (KüW-Nachspg.EIN_,/Nachspg.sehen)
+  VGLEH (AT,SW_AT_Freigabe,$M135,$B123)
+  UNDMN (4,Freigabe_Biocid,Trockenlauf,Anf.abschlämmen,$B123,
+         0,$B124,$WSCRATCH)
+  VVZ ($B124,$M136,$M137,$B125)
+  ODR2 (AKM1_KüW-Ppe_R2,AKM2_KüW-Ppe_R2,$B126)
+  VVZ ($B126,$M138,$M139,$B127)
+  UNDMN (4,KON01,Trockenlauf,Freigabe_Biocid,Anf.Biocid,0,
+         $B128,$B129)
+  ODR2 ($B125,$B128,Anf.Kühlw.-Ppen)
+  UNDMN (3,$B125,$B127,$B129,0,$B130,$B131)
+  ;Motorkugelhahn an
+  ;Absalzautomatik
+  ;freigeben
+  ; 
+  BEFAUS (1,$B131,$B130,$WZERO,$WZERO,&&41KA24-000BF03,WERR)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  ODRMN (2,AKM1_KüW-Ppe_R2,AKM2_KüW-Ppe_R2,0,$B132,$B133)
+  BEFAUS (1,$B133,$B132,$WZERO,$WZERO,&&41KA24-002BF01,WERR)
+  ;Freigabe
+  ;Magnetventil Biocid
+  ;f
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ODRMN (2,AKM1_gestört,AKM2_gestört,12,AKM1_KW-Ppe_ST,
+         AKM1_KüW-Ppe_ST,AKM2_KW-Ppe_ST,AKM2_KüW-Ppe_ST,
+         KW-Ppe1_ST-elekt,KW-Ppe2_ST-elekt,KüW-Ppe1_ST-elek,
+         KüW-Ppe2_ST-elek,KW-Filt.gestört,KüW-Filt.gestört,
+         Zubr.Pumpe1_ST,Zubr.Pumpe2_ST,$B134,$WSCRATCH)
+  RSS ($B134,ST_quit,Sammelstörung_1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  ODRMN (0,8,KTVentilator1_ST,KON01,KTVentilator2_ST,KON01,
+         M6_Störg.elektr,M7_Störg.elektr,Trockenlauf,KON01,
+         $B135,$WSCRATCH)
+  RSS ($B135,ST_quit,Sammelstörung_2,$WSCRATCH)
+  ODRMN (8,M1_ZEILE_ST,M2_ZEILE_ST,M3_ZEILE_ST,M4_ZEILE_ST,
+         M6_ZEILE_ST,M7_ZEILE_ST,M14_ZEILE_ST,M15_ZEILE_ST,0,
+         $B136,$WSCRATCH)
+  VVZ ($B136,$M140,$M141,$B137)
+  RSS ($B137,ST_quit,Sammelstörung_3,P2P_710_gestört)
+  ;INSUM ZEILE NICHT AKTIV
+  ; 
+  ;04.05.2005 Bresser
+  ;Test Problem ST- Elektr.
+  ;mit P.Lindemann
+  ; 
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  ODRMN (3,Sammelstörung_1,Sammelstörung_2,Sammelstörung_3,0,
+         $B138,$B139)
+  BEFAUS (1,$B139,$B138,$WZERO,$WZERO,&&41KA00-000ST00,WERR)
+  SETMEL ($M142,1,P2P_710_gestört,&41LT00-710ST90,WERR93-10A)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  MELEIN (&41KA99-999BF99,3,Testanf.vonLZ_R0,$WSCRATCH,
+          Testanf.vonLZ_R1,WERR93-13E)
+  ODRMN (7,Testanf.vonLZ_R1,AKM1_Anf.KWPpe,AKM1_Anf.KüWPpe,
+         AKM1_Betrieb,AKM2_Anf.KWPpe,AKM2_Anf.KüWPpe,
+         AKM2_Betrieb,0,Anf.HZvonAKM_1o2,$WSCRATCH)
+  SETMEL ($M145,1,Anf.HZvonAKM_1o2,&41KA99-999BM99,
+          WERR93-12A)
+  ENDE 
+  ENDMODUL 

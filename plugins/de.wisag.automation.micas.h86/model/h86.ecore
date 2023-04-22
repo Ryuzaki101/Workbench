@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="h86"
+    nsURI="http://www.wisag.de/automation/schema/h86" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="Record" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RecordType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfBytes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="checksum" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddressRecord" eSuperTypes="#//Record">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataRecord" eSuperTypes="#//AddressRecord">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SegmentAddressRecord" eSuperTypes="#//AddressRecord"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExtendedSegmentAddressRecord" eSuperTypes="#//AddressRecord"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EOFRecord" eSuperTypes="#//Record"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="RecordType">
+    <eLiterals name="DATA"/>
+    <eLiterals name="EOF" value="1"/>
+    <eLiterals name="EXTENDED_SEGMENT_ADDRESS" value="2"/>
+    <eLiterals name="START_SEGMENT_ADDRESS" value="3"/>
+    <eLiterals name="EXTENDED_LINEAR_ADDRESS" value="4"/>
+    <eLiterals name="START_LINEAR_ADDRESS" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="H86Content">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="records" upperBound="-1"
+        eType="#//Record" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

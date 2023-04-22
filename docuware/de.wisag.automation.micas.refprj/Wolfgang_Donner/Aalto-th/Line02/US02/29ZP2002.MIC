@@ -1,0 +1,1798 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29ZP2002.GPS
+  ;*** Projektname    : Aalto-Theater Essen
+  ;*** Projektnummer  : 126187
+  ;*** Bearbeiter     : Herr Donner
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 2
+  ;*** User Number    : 2
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (ZP20,2)
+  FloatK FKON60 (60.00)
+  FloatV ZEITVERZ-SPITZ
+  WordV  ERR
+  WordV  ZPK
+  FloatK FKON01 (1.00)
+  WordV  KM1-KW-PP1-ST-EL
+  WordV  KM1-KW-PP2-ST-EL
+  WordV  KM1-KUW-P1-ST-EL
+  WordV  KM1-KUW-P2-ST-EL
+  WordV  KM2-KW-PP1-ST-EL
+  WordV  KM2-KW-PP2-ST-EL
+  WordV  KM2-KUW-P1-ST-EL
+  WordV  KM2-KUW-P2-ST-EL
+  WordV  KM1-ST-STROEM-WA
+  WordV  KM2-ST-STROEM-WA
+  WordV  SEK-KW-PP2-ST-EL
+  WordV  SEK-KW-PP1-ST-EL
+  WordV  SEK-KW-SOLL-EIN
+  FloatK WOCHENTAG (2.00)
+  FloatK KZEITVERZ-SPITZ (15.00)
+  WordV  QUITTIERUNG
+  WordK  KFREIG_KM_AUS (0)
+  WordK  KAUTO-KM-EIN (1)
+  WordV  KM2-VERD1-BM
+  WordV  KM2-LAST-ANF
+  WordV  KM2-VERD2-BM
+  WordV  KM2-KW-PP2-EIN
+  WordV  KM2-ANF.KUW-PP
+  WordV  LUFT-LAGER-REP
+  WordV  KM2-KUW-PP1-ANF
+  WordV  KM2-KUW-PP2-ANF
+  WordV  SEK-KW-PP1-ANF
+  WordV  SEK-KW-PP2-ANF
+  FloatK FKON4G (4.00)
+  WordV  DOSIERUNG-EIN-RM
+  WordV  DOSIER-NACHFUELL
+  WordV  KM1-DOSIER-EIN
+  WordV  KM2-DOSIER-EIN
+  WordV  ERR-BIO
+  WordV  KM2-STEUERSP-ST
+  WordV  KM2-STROEMM-BM
+  WordV  KM2-FREI-ANF
+  WordV  KM2-VERD1-ST
+  WordV  KM2-VERD2-ST
+  WordV  KM2-KW-PP1-REP
+  WordV  KM2-KW-PP2-REP
+  WordV  KM2-KUW-PP1-REP
+  WordK  KON01 (1)
+  WordV  KM2-KUW-PP2-REP
+  WordV  DIFF-DR-SEK-MAX
+  WordV  HAND-M4-BF-05-08
+  WordV  DIFF-DR-SEK-MIN
+  WordK  KON00 (0)
+  WordV  KM2-MASCHINE-EIN
+  WordV  KM2-KW-PP1-AUS
+  WordV  KM2-KW-PP1-ANF
+  WordV  KM2-KW-PP2-ANF
+  WordV  SEK-KW-PP2-REP
+  WordK  KTEST-AUSSENTEMP (1)
+  WordV  KM1-STEUERSP-ST
+  WordV  KM1-STROEMM-BM
+  WordV  KM1-VERD1-ST
+  WordV  KM2-KW-PP1-EIN
+  WordV  KM1-VERD2-ST
+  WordV  KM1-MASCHINE-EIN
+  WordV  HAND-M4-BF-01-04
+  WordV  KM1-KUW-PP2-REP
+  WordV  KM1-VERD1-BM
+  WordV  KM1-VERD2-BM
+  WordV  HAND-M3-BF-01-04
+  WordV  HAND-M3-BF-05-08
+  WordV  KM1-ANF.KUW-PP
+  WordV  KM2-KUW-PP2-EIN
+  WordV  KM2-KUW-PP1-EIN
+  WordV  HAND-M4_BF13-16
+  WordV  SEK-KW-PP-TEMP?
+  WordV  KM1-KW-PP1-REP
+  WordV  KM1-KW-PP2-REP
+  WordV  KM1-KUW-PP1-REP
+  WordV  GRUNDLAST-KM1
+  WordV  GRUNDLAST-KM2
+  WordV  KM2-KUW-PP2-ST
+  WordV  SEK-KW-PP2-ST
+  WordV  KM1-KW-PP1-ANF
+  WordV  SEK-KW-PP1-ST
+  WordV  HAND-M4_BF09-12
+  WordV  SEK-KW-PP1-REP
+  FloatV RUECKTEMP-KALTW
+  FloatV ZAEHLER-STAND
+  WordV  SPITZENLAST-EIN1
+  WordV  KM1-KW-PP1-ST
+  WordV  KM1-KW-PP2-ST
+  WordV  KM2-KW-PP1-ST
+  WordV  KM2-KW-PP2-ST
+  WordV  KM1-KUW-PP1-ST
+  WordV  KM1-KUW-PP2-ST
+  WordV  KM2-KUW-PP1-ST
+  WordV  SEK-KW-PP1-AUS
+  WordV  SEK-KW-PP2-AUS
+  WordV  SEK-KW-PP1-EIN
+  WordV  SEK-KW-PP2-EIN
+  FloatK KSOLLW-RL-TEMP (12.00)
+  WordV  EINSCHALTBE-KM1
+  WordV  EINSCHALTBE-KM2
+  WordV  KM2-KUW-PP2-AUS
+  WordV  KM1-KW-PP1-AUS
+  WordV  KM1-KW-PP1-EIN
+  WordV  KM1-KW-PP2-AUS
+  WordV  KM1-KW-PP2-EIN
+  WordV  KM2-KW-PP2-AUS
+  WordV  KM2-KUW-PP1-AUS
+  WordV  KM1-KUW-PP1-ANF
+  WordV  KM1-KUW-PP2-ANF
+  WordV  KM1-KUW-PP2-AUS
+  WordV  KM1-KUW-PP2-EIN
+  WordV  FREIG-AUSSENTEMP
+  WordV  ERR2
+  WordV  KM1-KUW-PP1-EIN
+  WordV  KM1-KUW-PP1-AUS
+  WordV  KM1-KW-PP2-ANF
+  WordV  KM1-FREI-ANF
+  WordV  KM1-LAST-ANF
+  WordK  KFREIG_KM2_EIN (0)
+  FloatV ZEIT-MIN
+  FloatV HAND-REDUNDANZ
+  WordV  SOFTWARE-HAND
+  FloatK ANZ-GERAETE+1 (3.00)
+  WordV  RESET
+  FloatV ZAEHLER
+  FloatV ZEIT-STD
+  WordV  ERR1
+  WordK  KFREIG_KM1_EIN (0)
+  WordV  VORWAHL-KM2
+  WordV  VORWAHL-KM1
+  IPAMB &04A-KA000-900 (160,1)
+  WordV  $WSCRATCH
+  WordK  $M0 (1)
+  IPAAW &04A-KA000-910 (180)
+  WordK  $M1 (1)
+  IPAAW &04A-KA000-980 (181)
+  IPAMB &M2 (160,0)
+  IPAMB &M3 (160,2)
+  IPAMB &M4 (160,3)
+  IPAMB &M5 (160,4)
+  IPAMB &M6 (160,5)
+  IPAMB &M7 (160,6)
+  IPAMB &M8 (160,7)
+  IPAMB &04A-KA100-111 (0,1)
+  IPAMB &04A-KA100-117 (0,2)
+  IPAMB &M9 (0,3)
+  IPAMB &04A-KA100-112 (0,5)
+  IPAMB &04A-KA100-118 (0,6)
+  IPAMB &M10 (0,7)
+  IPAMB &04A-KA200-211 (0,9)
+  IPAMB &04A-KA000-025 (0,10)
+  IPAMB &M11 (0,11)
+  IPAMB &04A-KA200-212 (0,13)
+  IPAMB &04A-KA000-026 (0,14)
+  IPAMB &M12 (0,15)
+  IPAMB &04A-KA100-121 (1,1)
+  IPAMB &04A-KA100-119 (1,2)
+  IPAMB &M13 (1,3)
+  IPAMB &04A-KA100-122 (1,5)
+  IPAMB &04A-KA100-120 (1,6)
+  IPAMB &M14 (1,7)
+  IPAMB &04A-KA200-221 (1,9)
+  IPAMB &M15 (1,10)
+  IPAMB &M16 (1,11)
+  IPAMB &04A-KA200-222 (1,13)
+  IPAMB &M17 (1,14)
+  IPAMB &M18 (1,15)
+  IPAMB &04A-KA000-311 (2,1)
+  IPAMB &04A-KA000-317 (2,2)
+  IPAMB &M19 (2,3)
+  IPAMB &04A-KA000-312 (2,5)
+  IPAMB &04A-KA000-318 (2,6)
+  IPAMB &M20 (2,7)
+  IPAMB &04A-KA000-920 (20,6)
+  IPAMB &04A-KA200-220 (5,15)
+  IPAMB &04A-KA200-219 (5,14)
+  IPAMB &04A-KA200-218 (5,11)
+  IPAMB &04A-KA200-217 (5,10)
+  IPAMB &04A-KA000-029 (3,10)
+  IPAMB &04A-KA000-301 (3,11)
+  IPAMB &04A-KA000-030 (3,14)
+  IPAMB &04A-KA000-307 (3,15)
+  IPAMB &04A-KA100-101 (4,2)
+  IPAMB &04A-KA100-102 (4,3)
+  IPAMB &04A-KA100-103 (4,6)
+  IPAMB &04A-KA100-104 (4,7)
+  IPAMB &04A-KA100-113 (4,10)
+  IPAMB &04A-KA100-114 (4,11)
+  IPAMB &04A-KA100-126 (4,14)
+  IPAMB &04A-KA000-302 (4,15)
+  IPAMB &04A-KA100-125 (5,2)
+  IPAMB &04A-KA100-107 (5,3)
+  IPAMB &04A-KA100-115 (5,6)
+  IPAMB &04A-KA100-116 (5,7)
+  IPAMB &04A-KA000-027 (2,10)
+  IPAMB &04A-KA000-314 (2,11)
+  WordV  $HB4
+  IPAMB &04A-KA000-028 (2,14)
+  IPAMB &04A-KA000-313 (2,15)
+  IPAMB &04A-KA200-226 (9,14)
+  IPAMB &04A-KA400-401 (9,15)
+  IPAMB &04A-KA000-001 (20,7)
+  WordV  $B1
+  FloatK $M21 (30.00)
+  FloatK $M22 (30.00)
+  WordV  $B2
+  IPAMB &04A-KA200-225 (8,10)
+  IPAMB &04A-KA200-207 (8,11)
+  IPAMB &04A-KA200-215 (8,14)
+  IPAMB &04A-KA200-216 (8,15)
+  IPAMB &04A-KA200-201 (9,2)
+  IPAMB &04A-KA200-202 (9,3)
+  IPAMB &04A-KA200-203 (9,6)
+  IPAMB &04A-KA200-204 (9,7)
+  IPAMB &04A-KA200-213 (9,10)
+  IPAMB &04A-KA200-214 (9,11)
+  IPAAW &04A-KA000-308 (10)
+  FloatK $M23 (1.00)
+  WordV  $HB2
+  WordV  $B6
+  WordV  $B7
+  FloatK $M24 (1.00)
+  WordV  $B4
+  WordV  $B8
+  FloatK $M25 (1.00)
+  FloatV $F4
+  FloatV $F2
+  FloatV $F1
+  FloatK $M26 (0.00)
+  FloatK $M27 (0.00)
+  FloatK $M28 (0.00)
+  FloatK $M29 (0.00)
+  FloatV $FSCRATCH
+  WordV  $B5
+  FloatK $M30 (1.00)
+  WordV  $B9
+  FloatK $M31 (0.00)
+  FloatK $M32 (1.00)
+  FloatV $F3
+  WordV  $B3
+  FloatK $M33 (0.00)
+  FloatK $M34 (30.00)
+  FloatK $M35 (0.00)
+  FloatK $M36 (7.00)
+  FloatK $M37 (1.50)
+  FloatK $M38 (0.50)
+  WordV  $B10
+  FloatK $M39 (2.50)
+  FloatK $M40 (1.50)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  FloatK $M41 (30.00)
+  FloatK $M42 (0.00)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  FloatK $M43 (30.00)
+  FloatK $M44 (0.00)
+  WordV  $B21
+  WordK  $M45 (1)
+  IPAMB &04A-KA200-907 (162,11)
+  WordK  $M46 (1)
+  IPAMB &04A-KA100-907 (162,10)
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordK  $M47 (1)
+  IPAMB &04A-KA100-900 (162,12)
+  WordV  $B27
+  FloatK $M48 (3.00)
+  FloatK $M49 (300.00)
+  WordV  $B28
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B45
+  WordV  $B34
+  WordV  $B35
+  FloatK $M50 (36.00)
+  FloatV $F5
+  FloatK $M51 (24.00)
+  FloatV $F6
+  FloatV $F7
+  FloatK $M52 (3600.00)
+  WordV  $B46
+  FloatK $M53 (1.00)
+  FloatK $M54 (0.00)
+  FloatV $F8
+  WordV  $B36
+  FloatV $F9
+  FloatK $M55 (3600.00)
+  WordV  $B47
+  FloatK $M56 (1.00)
+  FloatK $M57 (0.00)
+  FloatV $F10
+  WordV  $B37
+  FloatK $M58 (10.00)
+  WordV  $B38
+  FloatK $M59 (10.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  WordV  $B50
+  WordV  $HB0
+  FloatV $F11
+  FloatK $M60 (48.00)
+  FloatV $F12
+  FloatK $M61 (3600.00)
+  FloatV $F13
+  FloatV $F14
+  WordV  $B51
+  FloatK $M62 (300.00)
+  WordV  $B48
+  WordV  $B52
+  WordV  $B49
+  WordV  $B55
+  FloatV $F15
+  FloatK $M63 (48.00)
+  FloatV $F16
+  FloatK $M64 (3600.00)
+  FloatV $F17
+  FloatV $F18
+  WordV  $B56
+  FloatK $M65 (300.00)
+  WordV  $B53
+  WordV  $B57
+  WordV  $B54
+  FloatK $M66 (0.00)
+  FloatK $M67 (3.00)
+  WordV  $B29
+  FloatK $M68 (0.00)
+  FloatK $M69 (3.00)
+  WordV  $B30
+  WordV  $B58
+  WordV  $B59
+  FloatK $M70 (10.00)
+  FloatK $M71 (240.00)
+  FloatK $M72 (120.00)
+  FloatK $M73 (60.00)
+  IPAMB &04A-KA100-100 (3,5)
+  IPAMB &04A-KA100-105 (3,1)
+  WordV  $B60
+  WordV  $B61
+  WordV  $B62
+  FloatK $M74 (1.00)
+  FloatK $M75 (300.00)
+  WordV  $B63
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  WordV  $B78
+  WordV  $B67
+  WordV  $B68
+  FloatK $M76 (36.00)
+  FloatV $F19
+  FloatK $M77 (24.00)
+  FloatV $F20
+  FloatV $F21
+  FloatK $M78 (3600.00)
+  WordV  $B79
+  FloatK $M79 (1.00)
+  FloatK $M80 (0.00)
+  FloatV $F22
+  WordV  $B69
+  FloatV $F23
+  FloatK $M81 (3600.00)
+  WordV  $B80
+  FloatK $M82 (1.00)
+  FloatK $M83 (0.00)
+  FloatV $F24
+  WordV  $B70
+  FloatK $M84 (10.00)
+  WordV  $B71
+  FloatK $M85 (10.00)
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  WordV  $B83
+  FloatV $F25
+  FloatK $M86 (48.00)
+  FloatV $F26
+  FloatK $M87 (3600.00)
+  FloatV $F27
+  FloatV $F28
+  WordV  $B84
+  FloatK $M88 (300.00)
+  WordV  $B81
+  WordV  $B85
+  WordV  $B82
+  WordV  $B88
+  FloatV $F29
+  FloatK $M89 (48.00)
+  FloatV $F30
+  FloatK $M90 (3600.00)
+  FloatV $F31
+  FloatV $F32
+  WordV  $B89
+  FloatK $M91 (300.00)
+  WordV  $B86
+  WordV  $B90
+  WordV  $B87
+  WordV  $B91
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  WordV  $B95
+  WordK  $M92 (1)
+  IPAMB &04A-KA200-900 (162,13)
+  WordV  $B96
+  FloatK $M93 (3.00)
+  FloatK $M94 (300.00)
+  WordV  $B97
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  WordV  $B114
+  WordV  $B103
+  WordV  $B104
+  FloatK $M95 (36.00)
+  FloatV $F33
+  FloatK $M96 (24.00)
+  FloatV $F34
+  FloatV $F35
+  FloatK $M97 (3600.00)
+  WordV  $B115
+  FloatK $M98 (1.00)
+  FloatK $M99 (0.00)
+  FloatV $F36
+  WordV  $B105
+  FloatV $F37
+  FloatK $M100 (3600.00)
+  WordV  $B116
+  FloatK $M101 (1.00)
+  FloatK $M102 (0.00)
+  FloatV $F38
+  WordV  $B106
+  FloatK $M103 (10.00)
+  WordV  $B107
+  FloatK $M104 (10.00)
+  WordV  $B108
+  WordV  $B109
+  WordV  $B110
+  WordV  $B111
+  WordV  $B112
+  WordV  $B113
+  WordV  $B119
+  FloatV $F39
+  FloatK $M105 (48.00)
+  FloatV $F40
+  FloatK $M106 (3600.00)
+  FloatV $F41
+  FloatV $F42
+  WordV  $B120
+  FloatK $M107 (300.00)
+  WordV  $B117
+  WordV  $B121
+  WordV  $B118
+  WordV  $B124
+  FloatV $F43
+  FloatK $M108 (48.00)
+  FloatV $F44
+  FloatK $M109 (3600.00)
+  FloatV $F45
+  FloatV $F46
+  WordV  $B125
+  FloatK $M110 (300.00)
+  WordV  $B122
+  WordV  $B126
+  WordV  $B123
+  FloatK $M111 (0.00)
+  FloatK $M112 (3.00)
+  WordV  $B98
+  FloatK $M113 (0.00)
+  FloatK $M114 (3.00)
+  WordV  $B99
+  WordV  $B127
+  WordV  $B128
+  FloatK $M115 (10.00)
+  FloatK $M116 (240.00)
+  FloatK $M117 (120.00)
+  FloatK $M118 (60.00)
+  IPAMB &04A-KA200-200 (6,1)
+  IPAMB &04A-KA200-205 (7,1)
+  WordV  $B129
+  WordV  $B130
+  WordV  $B131
+  FloatK $M119 (1.00)
+  FloatK $M120 (300.00)
+  WordV  $B132
+  WordV  $B133
+  WordV  $B134
+  WordV  $B135
+  WordV  $B147
+  WordV  $B136
+  WordV  $B137
+  FloatK $M121 (36.00)
+  FloatV $F47
+  FloatK $M122 (24.00)
+  FloatV $F48
+  FloatV $F49
+  FloatK $M123 (3600.00)
+  WordV  $B148
+  FloatK $M124 (1.00)
+  FloatK $M125 (0.00)
+  FloatV $F50
+  WordV  $B138
+  FloatV $F51
+  FloatK $M126 (3600.00)
+  WordV  $B149
+  FloatK $M127 (1.00)
+  FloatK $M128 (0.00)
+  FloatV $F52
+  WordV  $B139
+  FloatK $M129 (10.00)
+  WordV  $B140
+  FloatK $M130 (10.00)
+  WordV  $B141
+  WordV  $B142
+  WordV  $B143
+  WordV  $B144
+  WordV  $B145
+  WordV  $B146
+  WordV  $B152
+  FloatV $F53
+  FloatK $M131 (48.00)
+  FloatV $F54
+  FloatK $M132 (3600.00)
+  FloatV $F55
+  FloatV $F56
+  WordV  $B153
+  FloatK $M133 (300.00)
+  WordV  $B150
+  WordV  $B154
+  WordV  $B151
+  WordV  $B157
+  FloatV $F57
+  FloatK $M134 (48.00)
+  FloatV $F58
+  FloatK $M135 (3600.00)
+  FloatV $F59
+  FloatV $F60
+  WordV  $B158
+  FloatK $M136 (300.00)
+  WordV  $B155
+  WordV  $B159
+  WordV  $B156
+  WordV  $B160
+  WordV  $B161
+  FloatK $M137 (1.00)
+  FloatK $M138 (120.00)
+  WordV  $B168
+  WordV  $B169
+  WordV  $B170
+  WordV  $B182
+  WordV  $B171
+  WordV  $B172
+  FloatK $M139 (36.00)
+  FloatV $F61
+  FloatK $M140 (24.00)
+  FloatV $F62
+  FloatV $F63
+  FloatK $M141 (3600.00)
+  WordV  $B183
+  FloatK $M142 (1.00)
+  FloatK $M143 (0.00)
+  FloatV $F64
+  WordV  $B173
+  FloatV $F65
+  FloatK $M144 (3600.00)
+  WordV  $B184
+  FloatK $M145 (1.00)
+  FloatK $M146 (0.00)
+  FloatV $F66
+  WordV  $B174
+  FloatK $M147 (10.00)
+  WordV  $B175
+  FloatK $M148 (10.00)
+  WordV  $B176
+  WordV  $B177
+  WordV  $B178
+  WordV  $B179
+  WordV  $B180
+  WordV  $B181
+  WordV  $B187
+  FloatV $F67
+  FloatK $M149 (48.00)
+  FloatV $F68
+  FloatK $M150 (3600.00)
+  FloatV $F69
+  FloatV $F70
+  WordV  $B188
+  FloatK $M151 (300.00)
+  WordV  $B185
+  WordV  $B189
+  WordV  $B186
+  WordV  $B192
+  FloatV $F71
+  FloatK $M152 (48.00)
+  FloatV $F72
+  FloatK $M153 (3600.00)
+  FloatV $F73
+  FloatV $F74
+  WordV  $B193
+  FloatK $M154 (300.00)
+  WordV  $B190
+  WordV  $B194
+  WordV  $B191
+  WordV  $B162
+  WordV  $B163
+  WordV  $B164
+  FloatK $M155 (60.00)
+  FloatK $M156 (0.00)
+  WordV  $B165
+  WordV  $B166
+  WordV  $B167
+  FloatK $M157 (1.00)
+  FloatK $M158 (0.00)
+  FloatV $F75
+  FloatK $M159 (1.00)
+  FloatK $M160 (0.00)
+  FloatV $F76
+  FloatK $M161 (1.00)
+  FloatK $M162 (0.00)
+  FloatV $F77
+  FloatK $M163 (1.00)
+  FloatK $M164 (0.00)
+  FloatV $F78
+  FloatK $M165 (1.00)
+  FloatK $M166 (0.00)
+  FloatV $F79
+  FloatK $M167 (1.00)
+  FloatK $M168 (0.00)
+  FloatV $F80
+  FloatK $M169 (1.00)
+  FloatK $M170 (0.00)
+  FloatV $F81
+  FloatK $M171 (1.00)
+  FloatK $M172 (0.00)
+  FloatV $F82
+  FloatK $M173 (1.00)
+  FloatK $M174 (0.00)
+  FloatV $F83
+  FloatK $M175 (1.00)
+  FloatK $M176 (0.00)
+  FloatV $F84
+  FloatK $FZERO (0.00)
+  FloatK $M177 (2.00)
+  WordV  $B195
+  FloatK $M178 (3.00)
+  WordV  $B196
+  WordK  $M179 (1)
+  IPAMB &04A-KA000-990 (161,0)
+  WordV  $B197
+  WordV  $B198
+  WordV  $B199
+  FloatK $M180 (10.00)
+  WordV  $B200
+  FloatK $M181 (1800.00)
+  FloatK $M182 (0.00)
+  WordV  $B201
+  WordV  $B202
+  WordV  $B203
+  FloatK $M183 (120.00)
+  FloatK $M184 (0.00)
+  WordV  $B204
+  WordK  $M185 (1)
+  IPAMB &04A-KA100-922 (161,4)
+  WordV  $B205
+  FloatK $M186 (120.00)
+  FloatK $M187 (0.00)
+  WordV  $B206
+  WordK  $M188 (1)
+  IPAMB &04A-KA100-921 (161,3)
+  WordV  $B207
+  FloatK $M189 (120.00)
+  FloatK $M190 (0.00)
+  WordV  $B208
+  WordK  $M191 (1)
+  IPAMB &04A-KA100-912 (161,2)
+  WordV  $B209
+  FloatK $M192 (120.00)
+  FloatK $M193 (0.00)
+  WordV  $B210
+  WordK  $M194 (1)
+  IPAMB &04A-KA100-911 (161,1)
+  WordV  $B211
+  FloatK $M195 (120.00)
+  FloatK $M196 (0.00)
+  WordV  $B212
+  WordK  $M197 (1)
+  IPAMB &04A-KA200-922 (162,4)
+  WordV  $B213
+  FloatK $M198 (120.00)
+  FloatK $M199 (0.00)
+  WordV  $B214
+  WordK  $M200 (1)
+  IPAMB &04A-KA200-921 (162,3)
+  WordV  $B215
+  FloatK $M201 (120.00)
+  FloatK $M202 (0.00)
+  WordV  $B216
+  WordK  $M203 (1)
+  IPAMB &04A-KA200-912 (162,2)
+  WordV  $B217
+  FloatK $M204 (120.00)
+  FloatK $M205 (0.00)
+  WordV  $B218
+  WordK  $M206 (1)
+  IPAMB &04A-KA200-911 (162,1)
+  WordV  $B219
+  FloatK $M207 (120.00)
+  FloatK $M208 (0.00)
+  WordV  $B220
+  WordK  $M209 (1)
+  IPAMB &04A-KL000-912 (162,15)
+  WordV  $B221
+  FloatK $M210 (120.00)
+  FloatK $M211 (0.00)
+  WordV  $B222
+  WordK  $M212 (1)
+  IPAMB &04A-KL000-911 (162,14)
+  WordV  $B223
+  WordV  $B224
+  WordV  $B225
+  FloatK $M213 (10.00)
+  FloatK $M214 (0.00)
+  WordV  $B226
+  IPAMB &04A-KA000-126 (20,1)
+  IPAMB &04A-KA000-100 (20,2)
+  IPAMB &04A-KA000-101 (21,7)
+  WordV  $B227
+  WordV  $B228
+  WordV  $B229
+  WordV  $B230
+  WordV  $B231
+  IPAMB &04A-KA000-103 (20,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;KÑltemaschinensteuerung
+  ;Aalto-Theater Essen
+  ;2 KaltwassersÑtze
+  ;2 Verdichter
+  ;pro Maschine
+  ; 
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BEFAUS (3,KFREIG_KM_AUS,KFREIG_KM1_EIN,KFREIG_KM2_EIN,
+          KAUTO-KM-EIN,&04A-KA000-900,$WSCRATCH)
+  ANAUS (KSOLLW-RL-TEMP,$M0,&04A-KA000-910,$WSCRATCH)
+  ANAUS (KZEITVERZ-SPITZ,$M1,&04A-KA000-980,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&M2,8,ZPK,KFREIG_KM_AUS,ZPK,KFREIG_KM1_EIN,ZPK,
+          KFREIG_KM2_EIN,ZPK,KAUTO-KM-EIN,ERR)
+  ;Freigabe der KÑlte
+  ;EIN1 KM1 lÑuft
+  ;EIN2 KM2 lÑuft
+  ;EIN3 AUTOMATIK Auswahl
+  ;erfolgt Åber Programm
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;Kaltw-Pumpe 1 KM1
+  ; 
+  MELEIN (&04A-KA100-111,3,KM1-KW-PP1-AUS,KM1-KW-PP1-ST,
+          KM1-KW-PP1-EIN,ERR1)
+  ;Kaltw.Pumpe 2 KM1
+  ; 
+  MELEIN (&04A-KA100-112,3,KM1-KW-PP2-AUS,KM1-KW-PP2-ST,
+          KM1-KW-PP2-EIN,ERR2)
+  ;Kaltw-Pumpe 1 KM2
+  ; 
+  MELEIN (&04A-KA200-211,3,KM2-KW-PP1-AUS,HAND-M3-BF-01-04,
+          KM2-KW-PP1-EIN,ERR1)
+  ;Kaltw.Pumpe 2 KM2
+  ; 
+  MELEIN (&04A-KA200-212,3,KM2-KW-PP2-AUS,HAND-M3-BF-05-08,
+          KM2-KW-PP2-EIN,ERR2)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;KUHLW-PUMPE 1 KM1
+  ; 
+  MELEIN (&04A-KA100-121,3,KM1-KUW-PP1-AUS,KM1-KUW-PP1-ST,
+          KM1-KUW-PP1-EIN,ERR1)
+  ;KUHLW-PUMPE 2 KM1
+  ; 
+  MELEIN (&04A-KA100-122,3,KM1-KUW-PP2-AUS,KM1-KUW-PP2-ST,
+          KM1-KUW-PP2-EIN,ERR2)
+  ;KUHLW-PUMPE 1 KM2
+  ; 
+  MELEIN (&04A-KA200-221,3,KM2-KUW-PP1-AUS,ZPK,
+          KM2-KUW-PP1-EIN,ERR1)
+  ;KUHLW-PUMPE 2 KM2
+  ; 
+  MELEIN (&04A-KA200-222,3,KM2-KUW-PP2-AUS,ZPK,
+          KM2-KUW-PP2-EIN,ERR2)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;SEK.KALTWASSERPUMPE 1
+  ; 
+  MELEIN (&04A-KA000-311,3,SEK-KW-PP1-AUS,SEK-KW-PP1-ST,
+          SEK-KW-PP1-EIN,ERR1)
+  ;SEK.KALTWASSERPUMPE 2
+  ; 
+  MELEIN (&04A-KA000-312,3,SEK-KW-PP2-AUS,SEK-KW-PP2-ST,
+          SEK-KW-PP2-EIN,ERR2)
+  MELEIN (&04A-KA000-920,1,QUITTIERUNG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&04A-KA200-220,1,KM2-KUW-PP2-ST,$WSCRATCH)
+  MELEIN (&04A-KA200-219,1,KM2-KUW-PP1-ST,$WSCRATCH)
+  MELEIN (&04A-KA200-218,1,KM2-KW-PP2-ST,$WSCRATCH)
+  MELEIN (&04A-KA200-217,1,KM2-KW-PP1-ST,$WSCRATCH)
+  ;KM2 Kaltwasserpumpen
+  ; 
+  ;KM2 Kuehlwasserpumpen
+  ; 
+  ;BI-Metall Pumpen Meld
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&04A-KA000-029,2,HAND-M4_BF09-12,SEK-KW-PP1-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA000-030,2,HAND-M4_BF13-16,SEK-KW-PP-TEMP?,
+          $WSCRATCH)
+  MELEIN (&04A-KA100-101,2,KM1-KW-PP1-REP,KM1-KW-PP2-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA100-103,2,KM1-KUW-PP1-REP,KM1-KUW-PP2-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA100-113,2,KM1-VERD1-BM,KM1-VERD2-BM,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&04A-KA100-126,2,KM1-ANF.KUW-PP,SEK-KW-PP2-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA100-125,2,KM1-STEUERSP-ST,KM1-STROEMM-BM,
+          $WSCRATCH)
+  MELEIN (&04A-KA100-115,2,KM1-VERD1-ST,KM1-VERD2-ST,
+          $WSCRATCH)
+  MELEIN (&04A-KA000-027,2,HAND-M4-BF-01-04,$HB4,$WSCRATCH)
+  NICHT ($HB4,DIFF-DR-SEK-MAX)
+  MELEIN (&04A-KA000-028,2,HAND-M4-BF-05-08,DIFF-DR-SEK-MIN,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,2000)
+  MELEIN (&04A-KA200-226,2,KM2-ANF.KUW-PP,LUFT-LAGER-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA000-001,1,$B1,$WSCRATCH)
+  VVZ ($B1,$M21,$M22,$B2)
+  ODR2 ($B2,KTEST-AUSSENTEMP,FREIG-AUSSENTEMP)
+  ;Meldung fehlt muss noch
+  ;verdrahtet werden
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&04A-KA200-225,2,KM2-STEUERSP-ST,KM2-STROEMM-BM,
+          $WSCRATCH)
+  MELEIN (&04A-KA200-215,2,KM2-VERD1-ST,KM2-VERD2-ST,
+          $WSCRATCH)
+  MELEIN (&04A-KA200-201,2,KM2-KW-PP1-REP,KM2-KW-PP2-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA200-203,2,KM2-KUW-PP1-REP,KM2-KUW-PP2-REP,
+          $WSCRATCH)
+  MELEIN (&04A-KA200-213,2,KM2-VERD1-BM,KM2-VERD2-BM,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&04A-KA000-308,RUECKTEMP-KALTW,ERR)
+  ANEIN (&04A-KA000-910,KSOLLW-RL-TEMP,ERR)
+  ANEIN (&04A-KA000-980,KZEITVERZ-SPITZ,ERR)
+  MULDI (KZEITVERZ-SPITZ,FKON60,FKON01,ZEITVERZ-SPITZ)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLOH ($F2,$M23,$HB2)
+  NICHT ($HB2,$B6)
+  VGLOH ($F2,ANZ-GERAETE+1,$B7)
+  MOKY (RESET,$M24,$B4)
+  ODRMN (3,$B6,$B7,$B4,0,$B8,$WSCRATCH)
+  AWT ($B8,$F2,$M25,$F4)
+  ADD2 ($F4,$F3,$F2)
+  ATRA ($F2,$F1)
+  KALUHR (ZEIT-MIN,ZEIT-STD,$M26,$M27,$M28,WOCHENTAG,$M29,
+          $FSCRATCH,$FSCRATCH,$FSCRATCH,$FSCRATCH,$FSCRATCH,
+          $FSCRATCH,$FSCRATCH,$B5)
+  MOKS ($B5,$M30,$B9)
+  AWT ($B9,$M31,$M32,$F3)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  AWT (SOFTWARE-HAND,$F1,HAND-REDUNDANZ,ZAEHLER)
+  ;Umschaltung der
+  ;Grundlast jeden
+  ;Dienstag um 7:30
+  ;Umschaltung erfolg
+  ;Åber interne Uhr
+  ;des ZP20
+  ; 
+  NICHT (KON00,$B3)
+  AWT ($B3,$M33,$M34,ZEIT-MIN)
+  AWT ($B3,$M35,$M36,ZEIT-STD)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  VGL3P (ZAEHLER,$M37,$M38,$WSCRATCH,$WSCRATCH,$B10)
+  VGL3P (ZAEHLER,$M39,$M40,$WSCRATCH,$WSCRATCH,$B11)
+  UND2 ($B10,KAUTO-KM-EIN,VORWAHL-KM1)
+  UND2 ($B11,KAUTO-KM-EIN,VORWAHL-KM2)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODRMN (3,$B14,KFREIG_KM1_EIN,VORWAHL-KM1,0,$B12,$WSCRATCH)
+  UNDMN (3,$B12,EINSCHALTBE-KM1,FREIG-AUSSENTEMP,0,
+         GRUNDLAST-KM1,$WSCRATCH)
+  UND11 ($B12,EINSCHALTBE-KM1,$B13)
+  UND11 ($B15,EINSCHALTBE-KM2,$B14)
+  ODRMN (3,$B13,KFREIG_KM2_EIN,VORWAHL-KM2,0,$B15,$WSCRATCH)
+  UNDMN (3,$B15,EINSCHALTBE-KM2,FREIG-AUSSENTEMP,0,
+         GRUNDLAST-KM2,$WSCRATCH)
+  ;Grundlastauswahl KM1/KM2
+  ;einschl.Stîrumschaltung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,2000)
+  ODR2 (KM2-KW-PP1-EIN,KM2-KW-PP2-EIN,$B16)
+  UND11 ($B16,KM2-STROEMM-BM,$B17)
+  VVZ ($B17,$M41,$M42,$B18)
+  RSS ($B18,QUITTIERUNG,KM2-ST-STROEM-WA,$WSCRATCH)
+  ODR2 (KM1-KW-PP1-EIN,KM1-KW-PP2-EIN,$B19)
+  UND11 ($B19,KM1-STROEMM-BM,$B20)
+  VVZ ($B20,$M43,$M44,$B21)
+  RSS ($B21,QUITTIERUNG,KM1-ST-STROEM-WA,$WSCRATCH)
+  SETMEL ($M45,1,KM2-ST-STROEM-WA,&04A-KA200-907,$WSCRATCH)
+  SETMEL ($M46,1,KM1-ST-STROEM-WA,&04A-KA100-907,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;Einschaltbereitschaft
+  ;1 KÑltemaschine
+  ; 
+  UND2 (KM1-KW-PP1-ST,KM1-KW-PP2-ST,$B22)
+  UND2 (KM1-KUW-PP1-ST,KM1-KUW-PP2-ST,$B23)
+  UND2 (KM1-VERD1-ST,KM1-VERD2-ST,$B24)
+  UND2 (KM1-KW-PP1-ST-EL,KM1-KW-PP2-ST-EL,$B25)
+  UND2 (KM1-KUW-P1-ST-EL,KM1-KUW-P2-ST-EL,$B26)
+  UNDMN (5,KM1-KW-PP2-REP,KM1-KW-PP1-REP,KM1-KUW-PP1-REP,
+         KM1-KUW-PP2-REP,KM1-STEUERSP-ST,6,$B22,$B23,$B24,
+         $B25,$B26,KM1-ST-STROEM-WA,EINSCHALTBE-KM1,
+         $WSCRATCH)
+  SETMEL ($M47,1,EINSCHALTBE-KM1,&04A-KA100-900,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (SPITZENLAST-EIN1,GRUNDLAST-KM1,$B27)
+  UNDMN (4,KON01,KON01,EINSCHALTBE-KM1,$B27,0,
+         KM1-MASCHINE-EIN,$WSCRATCH)
+  VVZ (KM1-MASCHINE-EIN,$M48,$M49,$B28)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B28,$B31,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B28,$WONE,$B32,$WSCRATCH)
+  UND2 ($B28,$WONE,$B33)
+  ODRMN (3,$B31,$B32,$B33,0,$B45,$WSCRATCH)
+  UND2 (KM1-KW-PP2-ST,$B45,$B34)
+  UND2 (KM1-KW-PP1-ST,$B45,$B35)
+  UST ($WZERO,$M50,$F5,$FSCRATCH)
+  UST ($WZERO,$M51,$F6,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM1-KW-PP1-EIN,$B46,$F7)
+  VGLOH ($F7,$M52,$B46)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B38,$M53,$WZERO,$M54,$WONE,$B46,$WZERO,$F8)
+  ATRA ($F8,$FSCRATCH)
+  VGLOH ($F8,$F5,$B36)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM1-KW-PP2-EIN,$B47,$F9)
+  VGLOH ($F9,$M55,$B47)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B39,$M56,$WZERO,$M57,$WONE,$B47,$WZERO,$F10)
+  ATRA ($F10,$FSCRATCH)
+  VGLOH ($F10,$F6,$B37)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B36,$M58,$B38)
+  MOKY ($B37,$M59,$B39)
+  RSS ($B36,$B37,$B40,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B33,$B40,$B41)
+  UND2 ($B40,$B33,$B42)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B31,$B34,$B41,0,$B43,$WSCRATCH)
+  ODRMN (3,$B32,$B35,$B42,0,$B44,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B49,KM1-KW-PP1-ST,$B50)
+  NICHT ($B50,$HB0)
+  UHR ($HB0,$B50,$F11)
+  UST ($WZERO,$M60,$F12,$FSCRATCH)
+  UST ($WZERO,$M61,$F13,$FSCRATCH)
+  MULT ($F12,$F13,$F14)
+  VGLOH ($F11,$F14,$B51)
+  MOKY ($B51,$M62,$B48)
+  ODR2 ($B43,$B48,$B52)
+  UND11 ($B52,KM1-KW-PP1-ST,$B49)
+  BTRA ($B49,KM1-KW-PP1-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B54,KM1-KW-PP2-ST,$B55)
+  NICHT ($B55,$HB0)
+  UHR ($HB0,$B55,$F15)
+  UST ($WZERO,$M63,$F16,$FSCRATCH)
+  UST ($WZERO,$M64,$F17,$FSCRATCH)
+  MULT ($F16,$F17,$F18)
+  VGLOH ($F15,$F18,$B56)
+  MOKY ($B56,$M65,$B53)
+  ODR2 ($B44,$B53,$B57)
+  UND11 ($B57,KM1-KW-PP2-ST,$B54)
+  BTRA ($B54,KM1-KW-PP2-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (KM1-KW-PP1-ANF,$M66,$M67,$B29)
+  NICHT ($B29,$HB0)
+  BEFAUS (1,$HB0,$B29,$WZERO,$WZERO,&04A-KA100-111,$WSCRATCH)
+  ;KM1 Kaltwasserpumpen
+  ; 
+  VVZ (KM1-KW-PP2-ANF,$M68,$M69,$B30)
+  NICHT ($B30,$HB0)
+  BEFAUS (1,$HB0,$B30,$WZERO,$WZERO,&04A-KA100-112,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODR2 (KM1-MASCHINE-EIN,KON00,$B58)
+  UNDMN (3,$B58,KM1-STROEMM-BM,FREIG-AUSSENTEMP,0,$B59,
+         $WSCRATCH)
+  VVZ ($B59,$M70,$M71,KM1-FREI-ANF)
+  ;FREIG.KéLTE KM1
+  ; 
+  VVZ ($B59,$M72,$M73,KM1-LAST-ANF)
+  ;LAST-FREIGABE KM1
+  ; 
+  NICHT (KM1-FREI-ANF,$HB0)
+  BEFAUS (1,$HB0,KM1-FREI-ANF,$WZERO,$WZERO,&04A-KA100-100,
+          $WSCRATCH)
+  NICHT (KM1-LAST-ANF,$HB0)
+  BEFAUS (1,$HB0,KM1-LAST-ANF,$WZERO,$WZERO,&04A-KA100-105,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODR2 (SPITZENLAST-EIN1,GRUNDLAST-KM1,$B60)
+  UNDMN (3,EINSCHALTBE-KM1,KM1-ANF.KUW-PP,$B60,0,$B61,
+         $WSCRATCH)
+  ODR2 ($B61,KM1-DOSIER-EIN,$B62)
+  VVZ ($B62,$M74,$M75,$B63)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B63,$B64,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B63,$WONE,$B65,$WSCRATCH)
+  UND2 ($B63,$WONE,$B66)
+  ODRMN (3,$B64,$B65,$B66,0,$B78,$WSCRATCH)
+  UND2 (KM1-KUW-PP2-ST,$B78,$B67)
+  UND2 (KM1-KUW-PP1-ST,$B78,$B68)
+  UST ($WZERO,$M76,$F19,$FSCRATCH)
+  UST ($WZERO,$M77,$F20,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM1-KUW-PP1-EIN,$B79,$F21)
+  VGLOH ($F21,$M78,$B79)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B71,$M79,$WZERO,$M80,$WONE,$B79,$WZERO,$F22)
+  ATRA ($F22,$FSCRATCH)
+  VGLOH ($F22,$F19,$B69)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM1-KUW-PP2-EIN,$B80,$F23)
+  VGLOH ($F23,$M81,$B80)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B72,$M82,$WZERO,$M83,$WONE,$B80,$WZERO,$F24)
+  ATRA ($F24,$FSCRATCH)
+  VGLOH ($F24,$F20,$B70)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B69,$M84,$B71)
+  MOKY ($B70,$M85,$B72)
+  RSS ($B69,$B70,$B73,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B66,$B73,$B74)
+  UND2 ($B73,$B66,$B75)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B64,$B67,$B74,0,$B76,$WSCRATCH)
+  ODRMN (3,$B65,$B68,$B75,0,$B77,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B82,KM1-KUW-PP1-ST,$B83)
+  NICHT ($B83,$HB0)
+  UHR ($HB0,$B83,$F25)
+  UST ($WZERO,$M86,$F26,$FSCRATCH)
+  UST ($WZERO,$M87,$F27,$FSCRATCH)
+  MULT ($F26,$F27,$F28)
+  VGLOH ($F25,$F28,$B84)
+  MOKY ($B84,$M88,$B81)
+  ODR2 ($B76,$B81,$B85)
+  UND11 ($B85,KM1-KUW-PP1-ST,$B82)
+  BTRA ($B82,KM1-KUW-PP1-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B87,KM1-KUW-PP2-ST,$B88)
+  NICHT ($B88,$HB0)
+  UHR ($HB0,$B88,$F29)
+  UST ($WZERO,$M89,$F30,$FSCRATCH)
+  UST ($WZERO,$M90,$F31,$FSCRATCH)
+  MULT ($F30,$F31,$F32)
+  VGLOH ($F29,$F32,$B89)
+  MOKY ($B89,$M91,$B86)
+  ODR2 ($B77,$B86,$B90)
+  UND11 ($B90,KM1-KUW-PP2-ST,$B87)
+  BTRA ($B87,KM1-KUW-PP2-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (KM1-KUW-PP1-ANF,$HB0)
+  BEFAUS (1,$HB0,KM1-KUW-PP1-ANF,$WZERO,$WZERO,
+          &04A-KA100-121,$WSCRATCH)
+  NICHT (KM1-KUW-PP2-ANF,$HB0)
+  BEFAUS (1,$HB0,KM1-KUW-PP2-ANF,$WZERO,$WZERO,
+          &04A-KA100-122,$WSCRATCH)
+  ;KÑltemaschine 1
+  ;Ansteuerung KÅhlwasser-
+  ;pumpen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ENDE 
+  TASK (6,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UND2 (KM2-KUW-P1-ST-EL,KM2-KUW-P2-ST-EL,$B91)
+  UND2 (KM2-KW-PP1-ST-EL,KM2-KW-PP2-ST-EL,$B92)
+  UND2 (KM2-VERD1-ST,KM2-VERD2-ST,$B93)
+  UND2 (KM2-KUW-PP1-ST,KM2-KUW-PP2-ST,$B94)
+  UND2 (KM2-KW-PP1-ST,KM2-KW-PP2-ST,$B95)
+  UNDMN (5,KM2-KW-PP2-REP,KM2-KW-PP1-REP,KM2-KUW-PP1-REP,
+         KM2-KUW-PP2-REP,KM2-STEUERSP-ST,6,$B95,$B94,$B93,
+         $B92,$B91,KM2-ST-STROEM-WA,EINSCHALTBE-KM2,
+         $WSCRATCH)
+  ;Einschaltbereitschaft
+  ;2 KÑltemaschine
+  ; 
+  SETMEL ($M92,1,EINSCHALTBE-KM2,&04A-KA200-900,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODR2 (SPITZENLAST-EIN1,GRUNDLAST-KM2,$B96)
+  UNDMN (4,KON01,KON01,EINSCHALTBE-KM2,$B96,0,
+         KM2-MASCHINE-EIN,$WSCRATCH)
+  VVZ (KM2-MASCHINE-EIN,$M93,$M94,$B97)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B97,$B100,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B97,$WONE,$B101,$WSCRATCH)
+  UND2 ($B97,$WONE,$B102)
+  ODRMN (3,$B100,$B101,$B102,0,$B114,$WSCRATCH)
+  UND2 (KM2-KW-PP2-ST,$B114,$B103)
+  UND2 (KM2-KW-PP1-ST,$B114,$B104)
+  UST ($WZERO,$M95,$F33,$FSCRATCH)
+  UST ($WZERO,$M96,$F34,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM2-KW-PP1-EIN,$B115,$F35)
+  VGLOH ($F35,$M97,$B115)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B107,$M98,$WZERO,$M99,$WONE,$B115,$WZERO,$F36)
+  ATRA ($F36,$FSCRATCH)
+  VGLOH ($F36,$F33,$B105)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM2-KW-PP2-EIN,$B116,$F37)
+  VGLOH ($F37,$M100,$B116)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B108,$M101,$WZERO,$M102,$WONE,$B116,$WZERO,$F38)
+  ATRA ($F38,$FSCRATCH)
+  VGLOH ($F38,$F34,$B106)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B105,$M103,$B107)
+  MOKY ($B106,$M104,$B108)
+  RSS ($B105,$B106,$B109,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B102,$B109,$B110)
+  UND2 ($B109,$B102,$B111)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B100,$B103,$B110,0,$B112,$WSCRATCH)
+  ODRMN (3,$B101,$B104,$B111,0,$B113,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B118,KM2-KW-PP1-ST,$B119)
+  NICHT ($B119,$HB0)
+  UHR ($HB0,$B119,$F39)
+  UST ($WZERO,$M105,$F40,$FSCRATCH)
+  UST ($WZERO,$M106,$F41,$FSCRATCH)
+  MULT ($F40,$F41,$F42)
+  VGLOH ($F39,$F42,$B120)
+  MOKY ($B120,$M107,$B117)
+  ODR2 ($B112,$B117,$B121)
+  UND11 ($B121,KM2-KW-PP1-ST,$B118)
+  BTRA ($B118,KM2-KW-PP1-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B123,KM2-KW-PP2-ST,$B124)
+  NICHT ($B124,$HB0)
+  UHR ($HB0,$B124,$F43)
+  UST ($WZERO,$M108,$F44,$FSCRATCH)
+  UST ($WZERO,$M109,$F45,$FSCRATCH)
+  MULT ($F44,$F45,$F46)
+  VGLOH ($F43,$F46,$B125)
+  MOKY ($B125,$M110,$B122)
+  ODR2 ($B113,$B122,$B126)
+  UND11 ($B126,KM2-KW-PP2-ST,$B123)
+  BTRA ($B123,KM2-KW-PP2-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (KM2-KW-PP1-ANF,$M111,$M112,$B98)
+  NICHT ($B98,$HB0)
+  BEFAUS (1,$HB0,$B98,$WZERO,$WZERO,&04A-KA200-211,$WSCRATCH)
+  VVZ (KM2-KW-PP2-ANF,$M113,$M114,$B99)
+  NICHT ($B99,$HB0)
+  BEFAUS (1,$HB0,$B99,$WZERO,$WZERO,&04A-KA200-212,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODR2 (KM2-MASCHINE-EIN,KON00,$B127)
+  UNDMN (3,$B127,KM2-STROEMM-BM,FREIG-AUSSENTEMP,0,$B128,
+         $WSCRATCH)
+  VVZ ($B128,$M115,$M116,KM2-FREI-ANF)
+  ;FREIG.KéLTE KM2
+  ; 
+  VVZ ($B128,$M117,$M118,KM2-LAST-ANF)
+  ;LAST-FREIGABE KM2
+  ; 
+  NICHT (KM2-FREI-ANF,$HB0)
+  BEFAUS (1,$HB0,KM2-FREI-ANF,$WZERO,$WZERO,&04A-KA200-200,
+          $WSCRATCH)
+  NICHT (KM2-LAST-ANF,$HB0)
+  BEFAUS (1,$HB0,KM2-LAST-ANF,$WZERO,$WZERO,&04A-KA200-205,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODR2 (SPITZENLAST-EIN1,GRUNDLAST-KM2,$B129)
+  UNDMN (3,EINSCHALTBE-KM2,KM2-ANF.KUW-PP,$B129,0,$B130,
+         $WSCRATCH)
+  ODR2 ($B130,KM2-DOSIER-EIN,$B131)
+  VVZ ($B131,$M119,$M120,$B132)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B132,$B133,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B132,$WONE,$B134,$WSCRATCH)
+  UND2 ($B132,$WONE,$B135)
+  ODRMN (3,$B133,$B134,$B135,0,$B147,$WSCRATCH)
+  UND2 (KM2-KUW-PP2-ST,$B147,$B136)
+  UND2 (KM2-KUW-PP1-ST,$B147,$B137)
+  UST ($WZERO,$M121,$F47,$FSCRATCH)
+  UST ($WZERO,$M122,$F48,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM2-KUW-PP1-EIN,$B148,$F49)
+  VGLOH ($F49,$M123,$B148)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B140,$M124,$WZERO,$M125,$WONE,$B148,$WZERO,$F50)
+  ATRA ($F50,$FSCRATCH)
+  VGLOH ($F50,$F47,$B138)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (KM2-KUW-PP2-EIN,$B149,$F51)
+  VGLOH ($F51,$M126,$B149)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B141,$M127,$WZERO,$M128,$WONE,$B149,$WZERO,$F52)
+  ATRA ($F52,$FSCRATCH)
+  VGLOH ($F52,$F48,$B139)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B138,$M129,$B140)
+  MOKY ($B139,$M130,$B141)
+  RSS ($B138,$B139,$B142,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B135,$B142,$B143)
+  UND2 ($B142,$B135,$B144)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B133,$B136,$B143,0,$B145,$WSCRATCH)
+  ODRMN (3,$B134,$B137,$B144,0,$B146,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B151,KM2-KUW-PP1-ST,$B152)
+  NICHT ($B152,$HB0)
+  UHR ($HB0,$B152,$F53)
+  UST ($WZERO,$M131,$F54,$FSCRATCH)
+  UST ($WZERO,$M132,$F55,$FSCRATCH)
+  MULT ($F54,$F55,$F56)
+  VGLOH ($F53,$F56,$B153)
+  MOKY ($B153,$M133,$B150)
+  ODR2 ($B145,$B150,$B154)
+  UND11 ($B154,KM2-KUW-PP1-ST,$B151)
+  BTRA ($B151,KM2-KUW-PP1-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B156,KM2-KUW-PP2-ST,$B157)
+  NICHT ($B157,$HB0)
+  UHR ($HB0,$B157,$F57)
+  UST ($WZERO,$M134,$F58,$FSCRATCH)
+  UST ($WZERO,$M135,$F59,$FSCRATCH)
+  MULT ($F58,$F59,$F60)
+  VGLOH ($F57,$F60,$B158)
+  MOKY ($B158,$M136,$B155)
+  ODR2 ($B146,$B155,$B159)
+  UND11 ($B159,KM2-KUW-PP2-ST,$B156)
+  BTRA ($B156,KM2-KUW-PP2-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (KM2-KUW-PP1-ANF,$HB0)
+  BEFAUS (1,$HB0,KM2-KUW-PP1-ANF,$WZERO,$WZERO,
+          &04A-KA200-221,$WSCRATCH)
+  NICHT (KM2-KUW-PP2-ANF,$HB0)
+  BEFAUS (1,$HB0,KM2-KUW-PP2-ANF,$WZERO,$WZERO,
+          &04A-KA200-222,$WSCRATCH)
+  ;KÑltemaschine 2
+  ;Ansteuerung KÅhlwasser-
+  ;pumpen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (3,KFREIG_KM1_EIN,KFREIG_KM2_EIN,$B162,0,$B160,
+         $WSCRATCH)
+  UNDMN (4,KON01,KON01,KON01,$B160,0,$B161,$WSCRATCH)
+  VVZ ($B161,$M137,$M138,SEK-KW-SOLL-EIN)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,SEK-KW-SOLL-EIN,$B168,$WSCRATCH)
+  UNDMN (1,$WZERO,2,SEK-KW-SOLL-EIN,$WONE,$B169,$WSCRATCH)
+  UND2 (SEK-KW-SOLL-EIN,$WONE,$B170)
+  ODRMN (3,$B168,$B169,$B170,0,$B182,$WSCRATCH)
+  UND2 (SEK-KW-PP2-ST,$B182,$B171)
+  UND2 (SEK-KW-PP1-ST,$B182,$B172)
+  UST ($WZERO,$M139,$F61,$FSCRATCH)
+  UST ($WZERO,$M140,$F62,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (SEK-KW-PP1-EIN,$B183,$F63)
+  VGLOH ($F63,$M141,$B183)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B175,$M142,$WZERO,$M143,$WONE,$B183,$WZERO,$F64)
+  ATRA ($F64,$FSCRATCH)
+  VGLOH ($F64,$F61,$B173)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (SEK-KW-PP2-EIN,$B184,$F65)
+  VGLOH ($F65,$M144,$B184)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B176,$M145,$WZERO,$M146,$WONE,$B184,$WZERO,$F66)
+  ATRA ($F66,$FSCRATCH)
+  VGLOH ($F66,$F62,$B174)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B173,$M147,$B175)
+  MOKY ($B174,$M148,$B176)
+  RSS ($B173,$B174,$B177,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B170,$B177,$B178)
+  UND2 ($B177,$B170,$B179)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B168,$B171,$B178,0,$B180,$WSCRATCH)
+  ODRMN (3,$B169,$B172,$B179,0,$B181,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B186,SEK-KW-PP1-ST,$B187)
+  NICHT ($B187,$HB0)
+  UHR ($HB0,$B187,$F67)
+  UST ($WZERO,$M149,$F68,$FSCRATCH)
+  UST ($WZERO,$M150,$F69,$FSCRATCH)
+  MULT ($F68,$F69,$F70)
+  VGLOH ($F67,$F70,$B188)
+  MOKY ($B188,$M151,$B185)
+  ODR2 ($B180,$B185,$B189)
+  UND11 ($B189,SEK-KW-PP1-ST,$B186)
+  BTRA ($B186,SEK-KW-PP1-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B191,SEK-KW-PP2-ST,$B192)
+  NICHT ($B192,$HB0)
+  UHR ($HB0,$B192,$F71)
+  UST ($WZERO,$M152,$F72,$FSCRATCH)
+  UST ($WZERO,$M153,$F73,$FSCRATCH)
+  MULT ($F72,$F73,$F74)
+  VGLOH ($F71,$F74,$B193)
+  MOKY ($B193,$M154,$B190)
+  ODR2 ($B181,$B190,$B194)
+  UND11 ($B194,SEK-KW-PP2-ST,$B191)
+  BTRA ($B191,SEK-KW-PP2-ANF)
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,KM1-KW-PP1-EIN,KM1-KW-PP2-EIN,KM2-KW-PP1-EIN,
+         KM2-KW-PP2-EIN,0,$B162,$WSCRATCH)
+  ODR2 (SEK-KW-PP1-ANF,$B166,$B163)
+  UND2 (DIFF-DR-SEK-MIN,SEK-KW-SOLL-EIN,$B164)
+  ;SEK-Pumpen Kaltw.
+  ; 
+  VVZ ($B164,$M155,$M156,$B165)
+  RSS ($B165,DIFF-DR-SEK-MAX,$B166,$WSCRATCH)
+  ODR2 (SEK-KW-PP2-ANF,$B166,$B167)
+  NICHT ($B167,$HB0)
+  BEFAUS (1,$HB0,$B167,$WZERO,$WZERO,&04A-KA000-312,
+          $WSCRATCH)
+  NICHT ($B163,$HB0)
+  BEFAUS (1,$HB0,$B163,$WZERO,$WZERO,&04A-KA000-311,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ENDE 
+  TASK (7,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT (KM1-VERD1-BM,$HB0)
+  AWT ($HB0,$M157,$M158,$F75)
+  NICHT (KM1-VERD1-ST,$HB0)
+  AWT ($HB0,$M159,$M160,$F76)
+  NICHT (KM1-VERD2-BM,$HB0)
+  AWT ($HB0,$M161,$M162,$F77)
+  NICHT (KM1-VERD2-ST,$HB0)
+  AWT ($HB0,$M163,$M164,$F78)
+  NICHT (KM2-VERD1-BM,$HB0)
+  AWT ($HB0,$M165,$M166,$F79)
+  NICHT (KM2-VERD1-ST,$HB0)
+  AWT ($HB0,$M167,$M168,$F80)
+  NICHT (KM2-VERD2-BM,$HB0)
+  AWT ($HB0,$M169,$M170,$F81)
+  NICHT (KM2-VERD2-ST,$HB0)
+  AWT ($HB0,$M171,$M172,$F82)
+  NICHT (KON00,$HB0)
+  AWT ($HB0,$M173,$M174,$F83)
+  NICHT (KON00,$HB0)
+  AWT ($HB0,$M175,$M176,$F84)
+  ADSU (10,$F75,$F76,$F77,$F78,$F79,$F80,$F81,$F82,$F83,$F84,
+        9,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,$FZERO,
+        $FZERO,$FZERO,ZAEHLER-STAND)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VGLOH (ZAEHLER-STAND,$M177,$B195)
+  VGLOH (ZAEHLER-STAND,$M178,$HB2)
+  NICHT ($HB2,$B196)
+  SETMEL ($M179,1,SPITZENLAST-EIN1,&04A-KA000-990,$WSCRATCH)
+  VGLEH (RUECKTEMP-KALTW,KSOLLW-RL-TEMP,FKON4G,$B197)
+  UNDMN (4,$B197,FREIG-AUSSENTEMP,KON01,$B195,0,$B198,
+         $WSCRATCH)
+  UND11 ($B196,$B197,$B199)
+  VVZ ($B198,ZEITVERZ-SPITZ,$M180,$B200)
+  VVZ ($B199,$M181,$M182,$B201)
+  RSS ($B200,$B201,$B202,$WSCRATCH)
+  UND2 ($B202,KAUTO-KM-EIN,SPITZENLAST-EIN1)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UNDMN (1,KM1-KUW-PP2-ANF,2,KM1-KUW-PP2-EIN,
+         HAND-M3-BF-01-04,$B203,$WSCRATCH)
+  VVZ ($B203,$M183,$M184,$B204)
+  RSS ($B204,QUITTIERUNG,KM1-KUW-P2-ST-EL,$WSCRATCH)
+  SETMEL ($M185,1,KM1-KUW-P2-ST-EL,&04A-KA100-922,$WSCRATCH)
+  UNDMN (1,KM1-KUW-PP1-ANF,2,KM1-KUW-PP1-EIN,
+         HAND-M3-BF-01-04,$B205,$WSCRATCH)
+  VVZ ($B205,$M186,$M187,$B206)
+  RSS ($B206,QUITTIERUNG,KM1-KUW-P1-ST-EL,$WSCRATCH)
+  SETMEL ($M188,1,KM1-KUW-P1-ST-EL,&04A-KA100-921,$WSCRATCH)
+  UNDMN (1,KM1-KW-PP2-ANF,2,KM1-KW-PP2-EIN,HAND-M3-BF-01-04,
+         $B207,$WSCRATCH)
+  VVZ ($B207,$M189,$M190,$B208)
+  RSS ($B208,QUITTIERUNG,KM1-KW-PP2-ST-EL,$WSCRATCH)
+  SETMEL ($M191,1,KM1-KW-PP2-ST-EL,&04A-KA100-912,$WSCRATCH)
+  UNDMN (1,KM1-KW-PP1-ANF,2,KM1-KW-PP1-EIN,HAND-M3-BF-01-04,
+         $B209,$WSCRATCH)
+  VVZ ($B209,$M192,$M193,$B210)
+  RSS ($B210,QUITTIERUNG,KM1-KW-PP1-ST-EL,$WSCRATCH)
+  SETMEL ($M194,1,KM1-KW-PP1-ST-EL,&04A-KA100-911,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UNDMN (1,KM2-KUW-PP2-ANF,2,KM2-KUW-PP2-EIN,
+         HAND-M3-BF-05-08,$B211,$WSCRATCH)
+  VVZ ($B211,$M195,$M196,$B212)
+  RSS ($B212,QUITTIERUNG,KM2-KUW-P2-ST-EL,$WSCRATCH)
+  SETMEL ($M197,1,KM2-KUW-P2-ST-EL,&04A-KA200-922,$WSCRATCH)
+  UNDMN (1,KM2-KUW-PP1-ANF,2,KM2-KUW-PP1-EIN,
+         HAND-M3-BF-05-08,$B213,$WSCRATCH)
+  VVZ ($B213,$M198,$M199,$B214)
+  RSS ($B214,QUITTIERUNG,KM2-KUW-P1-ST-EL,$WSCRATCH)
+  SETMEL ($M200,1,KM2-KUW-P1-ST-EL,&04A-KA200-921,$WSCRATCH)
+  UNDMN (1,KM2-KW-PP2-ANF,2,KM2-KW-PP2-EIN,HAND-M3-BF-05-08,
+         $B215,$WSCRATCH)
+  VVZ ($B215,$M201,$M202,$B216)
+  RSS ($B216,QUITTIERUNG,KM2-KW-PP2-ST-EL,$WSCRATCH)
+  SETMEL ($M203,1,KM2-KW-PP2-ST-EL,&04A-KA200-912,$WSCRATCH)
+  UNDMN (1,KM2-KW-PP1-ANF,2,KM2-KW-PP1-EIN,HAND-M3-BF-05-08,
+         $B217,$WSCRATCH)
+  VVZ ($B217,$M204,$M205,$B218)
+  RSS ($B218,QUITTIERUNG,KM2-KW-PP1-ST-EL,$WSCRATCH)
+  SETMEL ($M206,1,KM2-KW-PP1-ST-EL,&04A-KA200-911,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  UNDMN (1,SEK-KW-PP2-ANF,2,SEK-KW-PP2-EIN,HAND-M4-BF-01-04,
+         $B219,$WSCRATCH)
+  VVZ ($B219,$M207,$M208,$B220)
+  RSS ($B220,QUITTIERUNG,SEK-KW-PP2-ST-EL,$WSCRATCH)
+  SETMEL ($M209,1,SEK-KW-PP2-ST-EL,&04A-KL000-912,$WSCRATCH)
+  UNDMN (1,SEK-KW-PP1-ANF,2,SEK-KW-PP1-EIN,HAND-M4-BF-01-04,
+         $B221,$WSCRATCH)
+  VVZ ($B221,$M210,$M211,$B222)
+  RSS ($B222,QUITTIERUNG,SEK-KW-PP1-ST-EL,$WSCRATCH)
+  SETMEL ($M212,1,SEK-KW-PP1-ST-EL,&04A-KL000-911,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODRMN (4,SEK-KW-PP1-ST,SEK-KW-PP2-ST,SEK-KW-PP1-ST-EL,
+         SEK-KW-PP2-ST-EL,4,SEK-KW-PP1-REP,SEK-KW-PP2-REP,
+         EINSCHALTBE-KM1,EINSCHALTBE-KM2,$B223,$WSCRATCH)
+  RSS ($B226,QUITTIERUNG,$B224,$B225)
+  VVZ ($B223,$M213,$M214,$B226)
+  BEFAUS (1,$B225,$B224,$WZERO,$WZERO,&04A-KA000-126,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  MELEIN (&04A-KA000-100,1,DOSIERUNG-EIN-RM,$WSCRATCH)
+  MELEIN (&04A-KA000-101,1,DOSIER-NACHFUELL,$WSCRATCH)
+  UND2 (KM1-KUW-P1-ST-EL,KM1-KUW-P2-ST-EL,$B227)
+  UND2 (KM1-KUW-PP1-ST,KM1-KUW-PP2-ST,$B228)
+  ODR2 ($B228,$B227,$B229)
+  UNDMN (1,DOSIERUNG-EIN-RM,2,$B227,$B228,KM1-DOSIER-EIN,
+         $WSCRATCH)
+  UND2 (DOSIERUNG-EIN-RM,$B229,KM2-DOSIER-EIN)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODRMN (4,KM1-KUW-PP1-EIN,KM1-KUW-PP2-EIN,KM2-KUW-PP1-EIN,
+         KM2-KUW-PP2-EIN,0,$B230,$B231)
+  BEFAUS (1,$B231,$B230,$WZERO,$WZERO,&04A-KA000-103,ERR-BIO)
+  ENDE 
+  ENDMODUL 

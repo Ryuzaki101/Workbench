@@ -1,0 +1,69 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AC4040.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 3
+  ;*** Modul Typ      : AC40
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Bel_BF12_EIN1
+  WordV  Bel_BF16_AUS
+  WordV  Bel_BF16_EIN1
+  WordV  Bel_BF11_AUS
+  WordV  Bel_BF11_EIN1
+  WordV  ZPK
+  WordV  ERR8-01
+  WordV  ERR8-05
+  WordV  ERR8-09
+  WordV  Bel_BF12_AUS
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &02A-SL001-014 (10,5)
+  IPAMB &02A-SL001-015 (10,13)
+  IPAMB &02A-SL001-016 (10,1)
+  IPAMB &M0 (10,4)
+  IPAMB &M1 (10,6)
+  IPAMB &M2 (10,7)
+  IPAMB &M3 (10,12)
+  IPAMB &M4 (10,14)
+  IPAMB &M5 (10,15)
+  IPAMB &M6 (10,0)
+  IPAMB &M7 (10,2)
+  IPAMB &M8 (10,3)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 03
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,Bel_BF12_AUS,Bel_BF12_EIN1,$WZERO,$WZERO,
+          &02A-SL001-014,ERR8-01)
+  BEFAUS (1,Bel_BF16_AUS,Bel_BF16_EIN1,$WZERO,$WZERO,
+          &02A-SL001-015,ERR8-05)
+  BEFAUS (1,Bel_BF11_AUS,Bel_BF11_EIN1,$WZERO,$WZERO,
+          &02A-SL001-016,ERR8-09)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M0,4,ZPK,Bel_BF12_AUS,ZPK,Bel_BF12_EIN1,ERR8-01)
+  MELEIN (&M3,4,ZPK,Bel_BF16_AUS,ZPK,Bel_BF16_EIN1,ERR8-05)
+  MELEIN (&M6,4,ZPK,Bel_BF11_AUS,ZPK,Bel_BF11_EIN1,ERR8-09)
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Micas Workbench Common Components
+Bundle-SymbolicName: de.wisag.automation.micas.common
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",
+ org.eclipse.core.resources;bundle-version="3.6.0";resolution:=optional,
+ org.apache.commons.io;bundle-version="1.4.0",
+ org.eclipse.emf.ecore;bundle-version="2.6.1"
+Export-Package: de.wisag.automation.micas.common,
+ de.wisag.automation.micas.common.binary,
+ de.wisag.automation.micas.common.hashing,
+ de.wisag.automation.micas.common.licensing,
+ de.wisag.automation.micas.common.model,
+ de.wisag.automation.micas.common.osgi,
+ de.wisag.automation.micas.common.resource
+Bundle-Activator: de.wisag.automation.micas.common.internal.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: WISAG Automatisierungstechnik GmbH & Co. KG

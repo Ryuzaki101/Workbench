@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_62n-kHnoEd--071yZZQXrA" name="Wisag">
+  <elementImport xmi:id="_68FGUHnoEd--071yZZQXrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_680GIHnoEd--071yZZQXrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_680GIXnoEd--071yZZQXrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_680GInnoEd--071yZZQXrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AvPiUHnqEd--071yZZQXrA" name="Project">
+    <ownedAttribute xmi:id="_Q6dzwHnqEd--071yZZQXrA" name="modules" type="_Pq5CQHnqEd--071yZZQXrA" aggregation="composite" association="_TIYc0HnqEd--071yZZQXrA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SxPvMHnqEd--071yZZQXrA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SxQWQHnqEd--071yZZQXrA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mxkwUHnyEd-b6_IYL1NxCQ" name="name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oK9lIHnyEd-b6_IYL1NxCQ" name="date" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Pq5CQHnqEd--071yZZQXrA" name="Module">
+    <ownedAttribute xmi:id="_gp6vMHnqEd--071yZZQXrA" name="kind" type="_ci3aQHnqEd--071yZZQXrA" aggregation="composite"/>
+    <ownedAttribute xmi:id="_k9uGsHnqEd--071yZZQXrA" name="tasks" type="_kOMuQHnqEd--071yZZQXrA" aggregation="composite" association="_niMOkHnqEd--071yZZQXrA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nATCcHnqEd--071yZZQXrA" value="10"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nATCcXnqEd--071yZZQXrA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kSp20HnyEd-b6_IYL1NxCQ" name="number" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TIYc0HnqEd--071yZZQXrA" memberEnd="_TIYc0XnqEd--071yZZQXrA _Q6dzwHnqEd--071yZZQXrA">
+    <ownedEnd xmi:id="_TIYc0XnqEd--071yZZQXrA" type="_AvPiUHnqEd--071yZZQXrA" association="_TIYc0HnqEd--071yZZQXrA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_ci3aQHnqEd--071yZZQXrA" name="ModuleKind">
+    <ownedLiteral xmi:id="_dqDEwHnqEd--071yZZQXrA" name="AC40"/>
+    <ownedLiteral xmi:id="_fEmXMHnqEd--071yZZQXrA" name="AR11"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kOMuQHnqEd--071yZZQXrA" name="Task">
+    <ownedAttribute xmi:id="_ya2aMHnqEd--071yZZQXrA" name="pages" type="_UpVcwHnrEd--071yZZQXrA" aggregation="composite" association="_jFdIEHnrEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_if1SgHnrEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_if1SgXnrEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4PtUwHnqEd--071yZZQXrA" name="kind" type="_3Yn7wHnqEd--071yZZQXrA" aggregation="composite"/>
+    <ownedAttribute xmi:id="_acwvwHnyEd-7eME0JmdV5w" name="cycleTime" type="_3IMEUHnwEd-7eME0JmdV5w" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_niMOkHnqEd--071yZZQXrA" memberEnd="_niM1oHnqEd--071yZZQXrA _k9uGsHnqEd--071yZZQXrA">
+    <ownedEnd xmi:id="_niM1oHnqEd--071yZZQXrA" type="_Pq5CQHnqEd--071yZZQXrA" association="_niMOkHnqEd--071yZZQXrA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_q9ssIHnqEd--071yZZQXrA" name="Block">
+    <ownedAttribute xmi:id="_9OE2wHnrEd-7eME0JmdV5w" name="type" type="_8Ji3oHnrEd-7eME0JmdV5w" association="_-rcMoHnrEd-7eME0JmdV5w"/>
+    <ownedAttribute xmi:id="__7p3UHnrEd-7eME0JmdV5w" name="index" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ys8fUHnvEd-7eME0JmdV5w" name="inoutput" type="_UI4eQHnvEd-7eME0JmdV5w" aggregation="composite" association="_eEsnIHnvEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPBe8HnvEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cPCGAHnvEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_3Yn7wHnqEd--071yZZQXrA" name="TaskKind"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UpVcwHnrEd--071yZZQXrA" name="Page">
+    <ownedAttribute xmi:id="_kgb4UHnrEd-7eME0JmdV5w" name="blocks" type="_q9ssIHnqEd--071yZZQXrA" aggregation="composite" association="_sLW8oHnrEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_riPHIHnrEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_riPHIXnrEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jFdIEHnrEd-7eME0JmdV5w" memberEnd="_jFdIEXnrEd-7eME0JmdV5w _ya2aMHnqEd--071yZZQXrA">
+    <ownedEnd xmi:id="_jFdIEXnrEd-7eME0JmdV5w" type="_kOMuQHnqEd--071yZZQXrA" association="_jFdIEHnrEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sLW8oHnrEd-7eME0JmdV5w" memberEnd="_sLW8oXnrEd-7eME0JmdV5w _kgb4UHnrEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_sLW8oXnrEd-7eME0JmdV5w" type="_UpVcwHnrEd--071yZZQXrA" association="_sLW8oHnrEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8Ji3oHnrEd-7eME0JmdV5w" name="BlockType">
+    <ownedAttribute xmi:id="_LjA8AHnsEd-7eME0JmdV5w" name="inputs" type="_SO6zUHnsEd-7eME0JmdV5w" aggregation="composite" association="_g99aoHnsEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ecj04HnsEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ecj04XnsEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Y-b_UHnsEd-7eME0JmdV5w" name="outputs" type="_UpQu0HnsEd-7eME0JmdV5w" aggregation="composite" association="_hapWoHnsEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gjY-gHnsEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gjZlkHnsEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Py4j0HnuEd-7eME0JmdV5w" name="name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zK7PcHnuEd-7eME0JmdV5w" name="id" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-rcMoHnrEd-7eME0JmdV5w" memberEnd="_-rczsHnrEd-7eME0JmdV5w _9OE2wHnrEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_-rczsHnrEd-7eME0JmdV5w" type="_q9ssIHnqEd--071yZZQXrA" association="_-rcMoHnrEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SO6zUHnsEd-7eME0JmdV5w" name="InputDefinition">
+    <ownedAttribute xmi:id="_q9zH4HnsEd-7eME0JmdV5w" name="minimumPortCount" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__cbvQHnsEd-7eME0JmdV5w" name="maximumPortCount" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qnmY8HntEd-7eME0JmdV5w" name="portDataType" type="_1lfC0HntEd-7eME0JmdV5w" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UpQu0HnsEd-7eME0JmdV5w" name="OutputDefinition">
+    <ownedAttribute xmi:id="_B32o0HntEd-7eME0JmdV5w" name="minimumPortCount" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DSGZQHntEd-7eME0JmdV5w" name="maximumPortCount" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Z0YWkHnxEd-7eME0JmdV5w" name="portDataType" type="_1lfC0HntEd-7eME0JmdV5w" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g99aoHnsEd-7eME0JmdV5w" memberEnd="_g9-BsHnsEd-7eME0JmdV5w _LjA8AHnsEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_g9-BsHnsEd-7eME0JmdV5w" type="_8Ji3oHnrEd-7eME0JmdV5w" association="_g99aoHnsEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hapWoHnsEd-7eME0JmdV5w" memberEnd="_hapWoXnsEd-7eME0JmdV5w _Y-b_UHnsEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_hapWoXnsEd-7eME0JmdV5w" type="_8Ji3oHnrEd-7eME0JmdV5w" association="_hapWoHnsEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_1lfC0HntEd-7eME0JmdV5w" name="DataType">
+    <ownedAttribute xmi:id="_2VBCUHntEd-7eME0JmdV5w" name="Logic" aggregation="composite"/>
+    <ownedAttribute xmi:id="_3Iqs0HntEd-7eME0JmdV5w" name="Scalar" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UI4eQHnvEd-7eME0JmdV5w" name="Inoutput">
+    <ownedAttribute xmi:id="_WuOv4HnvEd-7eME0JmdV5w" name="ports" type="_XMgnUHnvEd-7eME0JmdV5w" aggregation="composite" association="_eeMFMHnvEd-7eME0JmdV5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dg9A4HnvEd-7eME0JmdV5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dg9n8HnvEd-7eME0JmdV5w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XMgnUHnvEd-7eME0JmdV5w" name="Port">
+    <ownedAttribute xmi:id="_frCS0HnvEd-7eME0JmdV5w" name="inverted" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eEsnIHnvEd-7eME0JmdV5w" memberEnd="_eEsnIXnvEd-7eME0JmdV5w _Ys8fUHnvEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_eEsnIXnvEd-7eME0JmdV5w" type="_q9ssIHnqEd--071yZZQXrA" association="_eEsnIHnvEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eeMFMHnvEd-7eME0JmdV5w" memberEnd="_eeMsQHnvEd-7eME0JmdV5w _WuOv4HnvEd-7eME0JmdV5w">
+    <ownedEnd xmi:id="_eeMsQHnvEd-7eME0JmdV5w" type="_UI4eQHnvEd-7eME0JmdV5w" association="_eeMFMHnvEd-7eME0JmdV5w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3IMEUHnwEd-7eME0JmdV5w" name="Real"/>
+</uml:Package>

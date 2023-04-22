@@ -1,0 +1,411 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : TH_0200A.GPS
+  ;*** Projektname    : Aalto Theater Essen
+  ;*** Projektnummer  : 126 187
+  ;*** Bearbeiter     : W.Donner
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 15
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (ZP20,2)
+  WordV  WERR
+  WordK  LU233-autom.AUS (1)
+  WordV  PK
+  WordV  KON00
+  WordV  Fernquit_a23.ein
+  WordK  LU231-autom.AUS (1)
+  WordK  LU233-autom.EIN1 (0)
+  WordK  LU232-autom.EIN1 (0)
+  WordV  Quitt.Taster-F23
+  WordK  LU241-autom.AUS (1)
+  WordK  LU235-autom.AUS (1)
+  WordK  LU245-autom.AUS (1)
+  WordK  LU244-autom.EIN1 (0)
+  WordK  LU244-autom.AUS (1)
+  WordK  LU243-autom.EIN1 (0)
+  WordK  LU234-autom.EIN1 (0)
+  WordV  Fernquit_a23.aus
+  WordK  LU242-autom.EIN1 (0)
+  WordK  LU241-autom.EIN1 (0)
+  WordK  LU246-autom.AUS (1)
+  WordK  LU245-autom.EIN1 (0)
+  WordK  LU243-autom.AUS (1)
+  WordK  LU242-autom.AUS (1)
+  WordV  Stoerung_quitA23
+  WordK  LU247-autom.EIN1 (0)
+  WordK  LU247-autom.AUS (1)
+  WordK  LU246-autom.EIN1 (0)
+  WordV  Quittierung07
+  WordV  Quittierung08
+  WordV  Quittierung09
+  WordV  Quitt_durch_DI8
+  WordK  LU235-autom.EIN1 (0)
+  WordK  LU234-autom.AUS (1)
+  WordK  LU231-autom.EIN1 (0)
+  WordK  LU232-autom.AUS (1)
+  WordV  Quittierung01
+  WordV  Quittierung02
+  WordV  Quittierung03
+  WordV  Quittierung04
+  WordV  Quittierung05
+  WordV  Quittierung06
+  IPAMB &03D-KL231-900 (160,1)
+  IPAMB &03D-KL232-900 (160,5)
+  IPAMB &03D-KL233-900 (160,9)
+  IPAMB &03D-KL234-900 (160,13)
+  IPAMB &03D-KL235-900 (161,1)
+  IPAMB &03D-KL241-900 (161,5)
+  IPAMB &03D-KL242-900 (161,9)
+  IPAMB &03D-KL243-900 (161,13)
+  IPAMB &03D-KL244-900 (162,1)
+  IPAMB &03D-KL245-900 (162,5)
+  IPAMB &03D-KL246-900 (162,9)
+  IPAMB &03D-KL247-900 (162,13)
+  IPAMB &M0 (160,0)
+  IPAMB &M1 (160,2)
+  IPAMB &M2 (160,3)
+  IPAMB &M3 (160,4)
+  IPAMB &M4 (160,6)
+  IPAMB &M5 (160,7)
+  IPAMB &M6 (160,8)
+  IPAMB &M7 (160,10)
+  IPAMB &M8 (160,11)
+  IPAMB &M9 (160,12)
+  IPAMB &M10 (160,14)
+  IPAMB &M11 (160,15)
+  IPAMB &M12 (161,0)
+  IPAMB &M13 (161,2)
+  IPAMB &M14 (161,3)
+  IPAMB &M15 (161,4)
+  IPAMB &M16 (161,6)
+  IPAMB &M17 (161,7)
+  IPAMB &M18 (161,8)
+  IPAMB &M19 (161,10)
+  IPAMB &M20 (161,11)
+  IPAMB &M21 (161,12)
+  IPAMB &M22 (161,14)
+  IPAMB &M23 (161,15)
+  IPAMB &M24 (162,0)
+  IPAMB &M25 (162,2)
+  IPAMB &M26 (162,3)
+  IPAMB &M27 (162,4)
+  IPAMB &M28 (162,6)
+  IPAMB &M29 (162,7)
+  IPAMB &M30 (162,8)
+  IPAMB &M31 (162,10)
+  IPAMB &M32 (162,11)
+  IPAMB &M33 (162,12)
+  IPAMB &M34 (162,14)
+  IPAMB &M35 (162,15)
+  WordK  $M36 (1)
+  IPAMB &M37 (2,13)
+  WordV  $WSCRATCH
+  WordK  $M38 (1)
+  IPAMB &M39 (2,14)
+  WordK  $M40 (1)
+  IPAMB &M41 (5,13)
+  WordK  $M42 (1)
+  IPAMB &M43 (5,14)
+  WordK  $M44 (1)
+  IPAMB &M45 (8,13)
+  WordK  $M46 (1)
+  IPAMB &M47 (8,14)
+  WordK  $M48 (1)
+  IPAMB &M49 (11,13)
+  WordK  $M50 (1)
+  IPAMB &M51 (11,14)
+  WordK  $M52 (1)
+  IPAMB &M53 (14,13)
+  WordK  $M54 (1)
+  IPAMB &M55 (14,14)
+  WordK  $M56 (1)
+  IPAMB &M57 (17,13)
+  WordK  $M58 (1)
+  IPAMB &M59 (17,14)
+  WordK  $M60 (1)
+  IPAMB &M61 (25,13)
+  WordK  $M62 (1)
+  IPAMB &M63 (25,14)
+  WordK  $M64 (1)
+  IPAMB &M65 (29,13)
+  WordK  $M66 (1)
+  IPAMB &M67 (29,14)
+  WordK  $M68 (1)
+  IPAMB &M69 (31,13)
+  WordK  $M70 (1)
+  IPAMB &M71 (31,14)
+  WordK  $M72 (1)
+  IPAMB &M73 (35,13)
+  WordK  $M74 (1)
+  IPAMB &M75 (35,14)
+  WordK  $M76 (1)
+  IPAMB &M77 (52,13)
+  WordK  $M78 (1)
+  IPAMB &M79 (52,14)
+  WordK  $M80 (1)
+  IPAMB &M81 (20,13)
+  WordK  $M82 (1)
+  IPAMB &M83 (20,14)
+  WordK  $M84 (1)
+  IPAMB &M85 (22,13)
+  WordK  $M86 (1)
+  IPAMB &M87 (22,14)
+  WordK  $M88 (1)
+  IPAMB &M89 (43,13)
+  WordK  $M90 (1)
+  IPAMB &M91 (43,14)
+  WordK  $M92 (1)
+  IPAMB &M93 (50,13)
+  WordK  $M94 (1)
+  IPAMB &M95 (50,14)
+  WordK  $M96 (1)
+  IPAMB &M97 (55,13)
+  WordK  $M98 (1)
+  IPAMB &M99 (55,14)
+  WordK  $M100 (1)
+  IPAMB &M101 (38,13)
+  WordK  $M102 (1)
+  IPAMB &M103 (38,14)
+  WordK  $M104 (1)
+  IPAMB &M105 (40,13)
+  WordK  $M106 (1)
+  IPAMB &M107 (40,14)
+  WordK  $M108 (1)
+  IPAMB &M109 (47,13)
+  WordK  $M110 (1)
+  IPAMB &M111 (47,14)
+  IPAMB &Anl23.1_DI8 (1,7)
+  WordV  $B1
+  IPAMB &Anl23.2_DI8 (4,7)
+  WordV  $B2
+  IPAMB &Anl23.3_DI8 (7,7)
+  WordV  $B3
+  IPAMB &Anl23.4_DI8 (10,7)
+  WordV  $B4
+  IPAMB &Anl23.5_DI8 (13,7)
+  WordV  $B5
+  IPAMB &Anl24.1_DI8 (16,7)
+  WordV  $B6
+  FloatK $M112 (10.00)
+  FloatK $M113 (10.00)
+  FloatK $M114 (10.00)
+  FloatK $M115 (10.00)
+  FloatK $M116 (10.00)
+  FloatK $M117 (10.00)
+  IPAMB &Anl24.2_DI8 (28,7)
+  WordV  $B7
+  IPAMB &Anl24.3_DI8 (34,7)
+  WordV  $B8
+  IPAMB &Anl24.4_DI8 (46,7)
+  WordV  $B9
+  FloatK $M118 (10.00)
+  FloatK $M119 (10.00)
+  FloatK $M120 (10.00)
+  IPAMB &03D-KL247-126 (57,1)
+  IPAMB &M121 (57,2)
+  IPAMB &M122 (57,3)
+  IPAMB &MEL_TASTER_?? (150,7)
+  WordV  $B10
+  FloatK $M123 (5.00)
+  FloatK $M124 (3.00)
+  FloatK $M125 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;--------------------
+  ;Entrauchung Anl.23
+  ;Anl.24
+  ; 
+  ;Moduleinbauort:
+  ;--------------------
+  ;Schaltschrank=K4
+  ;GebÑude
+  ;Klimazentrale 1
+  ; 
+  ;Engineeringhilfe..
+  ;--------------------
+  ;CAE2000 V6.2
+  ;ModConf V
+  ;EEPROM  V 10.7
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  BEFAUS (1,LU231-autom.AUS,LU231-autom.EIN1,KON00,KON00,
+          &03D-KL231-900,WERR)
+  BEFAUS (1,LU232-autom.AUS,LU232-autom.EIN1,KON00,KON00,
+          &03D-KL232-900,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,LU233-autom.AUS,LU233-autom.EIN1,KON00,KON00,
+          &03D-KL233-900,WERR)
+  BEFAUS (1,LU234-autom.AUS,LU234-autom.EIN1,KON00,KON00,
+          &03D-KL234-900,WERR)
+  BEFAUS (1,LU235-autom.AUS,LU235-autom.EIN1,KON00,KON00,
+          &03D-KL235-900,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,LU241-autom.AUS,LU241-autom.EIN1,KON00,KON00,
+          &03D-KL241-900,WERR)
+  BEFAUS (1,LU242-autom.AUS,LU242-autom.EIN1,KON00,KON00,
+          &03D-KL242-900,WERR)
+  BEFAUS (1,LU243-autom.AUS,LU243-autom.EIN1,KON00,KON00,
+          &03D-KL243-900,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,LU244-autom.AUS,LU244-autom.EIN1,KON00,KON00,
+          &03D-KL244-900,WERR)
+  BEFAUS (1,LU245-autom.AUS,LU245-autom.EIN1,KON00,KON00,
+          &03D-KL245-900,WERR)
+  BEFAUS (1,LU246-autom.AUS,LU246-autom.EIN1,KON00,KON00,
+          &03D-KL246-900,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  BEFAUS (1,LU247-autom.AUS,LU247-autom.EIN1,KON00,KON00,
+          &03D-KL247-900,WERR)
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&M0,4,PK,LU231-autom.AUS,PK,LU231-autom.EIN1,WERR)
+  MELEIN (&M3,4,PK,LU232-autom.AUS,PK,LU232-autom.EIN1,WERR)
+  MELEIN (&M6,4,PK,LU233-autom.AUS,PK,LU233-autom.EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&M9,4,PK,LU234-autom.AUS,PK,LU234-autom.EIN1,WERR)
+  MELEIN (&M12,4,PK,LU235-autom.AUS,PK,LU235-autom.EIN1,WERR)
+  MELEIN (&M15,4,PK,LU241-autom.AUS,PK,LU241-autom.EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&M18,4,PK,LU242-autom.AUS,PK,LU242-autom.EIN1,WERR)
+  MELEIN (&M21,4,PK,LU243-autom.AUS,PK,LU243-autom.EIN1,WERR)
+  MELEIN (&M24,4,PK,LU244-autom.AUS,PK,LU244-autom.EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&M27,4,PK,LU245-autom.AUS,PK,LU245-autom.EIN1,WERR)
+  MELEIN (&M30,4,PK,LU246-autom.AUS,PK,LU246-autom.EIN1,WERR)
+  MELEIN (&M33,4,PK,LU247-autom.AUS,PK,LU247-autom.EIN1,WERR)
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  SETMEL ($M36,1,LU231-autom.AUS,&M37,$WSCRATCH)
+  SETMEL ($M38,1,LU231-autom.EIN1,&M39,$WSCRATCH)
+  SETMEL ($M40,1,LU232-autom.AUS,&M41,$WSCRATCH)
+  SETMEL ($M42,1,LU232-autom.EIN1,&M43,$WSCRATCH)
+  SETMEL ($M44,1,LU233-autom.AUS,&M45,$WSCRATCH)
+  SETMEL ($M46,1,LU233-autom.EIN1,&M47,$WSCRATCH)
+  SETMEL ($M48,1,LU234-autom.AUS,&M49,$WSCRATCH)
+  SETMEL ($M50,1,LU234-autom.EIN1,&M51,$WSCRATCH)
+  SETMEL ($M52,1,LU235-autom.AUS,&M53,$WSCRATCH)
+  SETMEL ($M54,1,LU235-autom.EIN1,&M55,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  SETMEL ($M56,1,LU241-autom.AUS,&M57,$WSCRATCH)
+  SETMEL ($M58,1,LU241-autom.EIN1,&M59,$WSCRATCH)
+  SETMEL ($M60,1,LU241-autom.AUS,&M61,$WSCRATCH)
+  SETMEL ($M62,1,LU241-autom.EIN1,&M63,$WSCRATCH)
+  SETMEL ($M64,1,LU242-autom.AUS,&M65,$WSCRATCH)
+  SETMEL ($M66,1,LU242-autom.EIN1,&M67,$WSCRATCH)
+  SETMEL ($M68,1,LU242-autom.AUS,&M69,$WSCRATCH)
+  SETMEL ($M70,1,LU242-autom.EIN1,&M71,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  SETMEL ($M72,1,LU243-autom.AUS,&M73,$WSCRATCH)
+  SETMEL ($M74,1,LU243-autom.EIN1,&M75,$WSCRATCH)
+  SETMEL ($M76,1,LU244-autom.AUS,&M77,$WSCRATCH)
+  SETMEL ($M78,1,LU244-autom.EIN1,&M79,$WSCRATCH)
+  SETMEL ($M80,1,LU241-autom.AUS,&M81,$WSCRATCH)
+  SETMEL ($M82,1,LU241-autom.EIN1,&M83,$WSCRATCH)
+  SETMEL ($M84,1,LU241-autom.AUS,&M85,$WSCRATCH)
+  SETMEL ($M86,1,LU241-autom.EIN1,&M87,$WSCRATCH)
+  SETMEL ($M88,1,LU243-autom.AUS,&M89,$WSCRATCH)
+  SETMEL ($M90,1,LU243-autom.EIN1,&M91,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  SETMEL ($M92,1,LU244-autom.AUS,&M93,$WSCRATCH)
+  SETMEL ($M94,1,LU244-autom.EIN1,&M95,$WSCRATCH)
+  SETMEL ($M96,1,LU244-autom.AUS,&M97,$WSCRATCH)
+  SETMEL ($M98,1,LU244-autom.EIN1,&M99,$WSCRATCH)
+  SETMEL ($M100,1,LU243-autom.AUS,&M101,$WSCRATCH)
+  SETMEL ($M102,1,LU243-autom.EIN1,&M103,$WSCRATCH)
+  SETMEL ($M104,1,LU243-autom.AUS,&M105,$WSCRATCH)
+  SETMEL ($M106,1,LU243-autom.EIN1,&M107,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  SETMEL ($M108,1,LU244-autom.AUS,&M109,$WSCRATCH)
+  SETMEL ($M110,1,LU244-autom.EIN1,&M111,$WSCRATCH)
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&Anl23.1_DI8,1,$B1,$WSCRATCH)
+  MELEIN (&Anl23.2_DI8,1,$B2,$WSCRATCH)
+  MELEIN (&Anl23.3_DI8,1,$B3,$WSCRATCH)
+  MELEIN (&Anl23.4_DI8,1,$B4,$WSCRATCH)
+  MELEIN (&Anl23.5_DI8,1,$B5,$WSCRATCH)
+  MELEIN (&Anl24.1_DI8,1,$B6,$WSCRATCH)
+  MOKY ($B1,$M112,Quittierung01)
+  MOKY ($B2,$M113,Quittierung02)
+  MOKY ($B3,$M114,Quittierung03)
+  MOKY ($B4,$M115,Quittierung04)
+  MOKY ($B5,$M116,Quittierung05)
+  MOKY ($B6,$M117,Quittierung06)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&Anl24.2_DI8,1,$B7,$WSCRATCH)
+  MELEIN (&Anl24.3_DI8,1,$B8,$WSCRATCH)
+  MELEIN (&Anl24.4_DI8,1,$B9,$WSCRATCH)
+  ODRMN (9,Quittierung01,Quittierung02,Quittierung03,
+         Quittierung04,Quittierung05,Quittierung06,
+         Quittierung07,Quittierung08,Quittierung09,0,
+         Quitt_durch_DI8,$WSCRATCH)
+  MOKY ($B7,$M118,Quittierung07)
+  MOKY ($B8,$M119,Quittierung08)
+  MOKY ($B9,$M120,Quittierung09)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&03D-KL247-126,3,Fernquit_a23.aus,PK,
+          Fernquit_a23.ein,WERR)
+  MELEIN (&MEL_TASTER_??,1,Quitt.Taster-F23,$WSCRATCH)
+  ODRMN (3,Fernquit_a23.ein,Quitt.Taster-F23,Quitt_durch_DI8,
+         0,$B10,$WSCRATCH)
+  MOKY ($B10,$M123,Stoerung_quitA23)
+  VVZ (Stoerung_quitA23,$M124,$M125,$B11)
+  UND11 ($B14,$B11,$B12)
+  RSS ($B12,$B11,$B13,$B14)
+  BEFAUS (1,$B13,$B11,$WZERO,$WZERO,&03D-KL247-126,WERR)
+  ;StîrQuitt
+  ;  "RÅcksetzen"
+  ; 
+  ;StîrQuitt "setzen"
+  ; 
+  ENDE 
+  ENDMODUL 

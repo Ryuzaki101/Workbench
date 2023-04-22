@@ -1,0 +1,886 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01209.GPS
+  ;*** Projektname    : MPI Turm 3
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Meyer
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 12
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 9
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Zul_2_R0
+  WordV  Fernbed_Z1_R126
+  WordV  Fernbed_Z1_R129
+  WordV  Fernbed_Z1_R212
+  WordV  Fernbed_Z1_R213
+  WordV  Fernbed_Z1_R215
+  WordV  Fernbed_Z1_R214
+  WordV  Raum_Verh_ST
+  FloatV E_ERH_Raum210
+  WordV  STB_Z2_R127
+  FloatV E_ERH_Raum104
+  WordV  Abl_Verh_ST
+  WordV  Klp_Z1_R126
+  FloatV E_ERH_Verhalten
+  WordV  Klp_Z1_R129
+  WordV  Klp_Z1_R212
+  WordV  Klp_Z1_R213
+  WordV  Klp_Z1_R214
+  WordV  Klp_Z1_R215
+  WordV  Klp_Z1_R216
+  WordV  Klp_Z2_R128
+  FloatV E_ERH_Raum216
+  WordV  Klp_Z2_R210
+  WordV  Klp_Z4_R101
+  FloatV E_ERH_Raum127
+  WordV  Klp_Z2_R127
+  WordV  Klp_Z4_R104
+  FloatV Abl_Temp_Verhalt
+  WordV  Hygrostat_Z1
+  WordV  Hygrostat_Z2
+  WordV  ZL_Klp2_Haupt
+  WordV  ZL_Klp1_Haupt
+  WordV  Hygrostat_Z4
+  WordV  FL_Klp1_Haupt
+  FloatV E_ERH_Raum215
+  WordV  FL_Klp2_Haupt
+  WordV  AL_Klp_Haupt
+  FloatV E_ERH_Raum213
+  WordV  Entriegeln
+  FloatV E_ERH_Raum214
+  WordV  Anl_Haupt_ST
+  WordV  Zul_1_ST
+  WordV  Zul_1_R1
+  WordV  Zul_2_ST
+  WordV  Zul_1_R2
+  WordV  Raum101_ST
+  WordV  Zul_2_R1
+  WordV  Zul_2_R2
+  WordV  Zone2_R1
+  WordV  Zone3_R1
+  WordV  Zone4_R1
+  WordV  Zul_1_R0
+  WordV  Raum210_ST
+  FloatV E_ERH_Raum212
+  WordV  Fernbed_Z1_R216
+  WordV  Fernbed_Z2_R127
+  WordV  Fernbed_Z2_R128
+  WordV  Fernbed_Z2_R210
+  WordV  Fernbed_Z4_R101
+  WordV  Fernbed_Z4_R104
+  WordV  Stroem_Z1_R126
+  WordV  STB_Z1_R126
+  WordV  Stroem_Z1_R212
+  WordV  STB_Z1_R212
+  WordV  Stroem_Z1_R213
+  WordV  Stroem_Z1_R215
+  WordV  Stroem_Z1_R214
+  WordV  STB_Z1_R213
+  WordV  Raum212_ST
+  WordV  Raum213_ST
+  WordV  Raum126_ST
+  WordV  Raum127_ST
+  WordV  Raum214_ST
+  WordV  Raum216_ST
+  WordV  Raum215_ST
+  WordV  Anl_Haupt_R0
+  WordV  Zone1_R1
+  WordV  Zone2_R0
+  WordV  Entr.Befehl
+  WordV  Zone3_R0
+  WordV  Zone4_R0
+  WordV  Anl_Haupt_R1
+  WordV  Anl_Haupt_R2
+  WordV  K1
+  WordV  Raum104_ST
+  WordV  Entr.Taster
+  FloatV E_ERH_Raum126
+  FloatV SW_Al_Temp_Verh
+  WordV  STB_Z1_R214
+  WordV  STB_Z1_R215
+  WordV  Stroem_Z1_R216
+  WordV  STB_Z1_R216
+  WordV  Stroem_Z2_R127
+  FloatV E_ERH_Raum101
+  WordV  Stroem_Z4_R101
+  WordV  STB_Z2_R210
+  WordV  Stroem_Z2_R210
+  WordV  STB_Z4_R101
+  WordV  Stroem_Z4_R104
+  WordV  STB_Z4_R104
+  WordV  Stroem_Verhalten
+  WordV  STB_Verhalten
+  FloatV Abl_Temp_Z1_126
+  FloatV Abl_Temp_Z1_129
+  FloatV Abl_Temp_Z1_212
+  FloatV Abl_Temp_Z1_213
+  FloatV Abl_Temp_Z1_214
+  FloatV Abl_Temp_Z1_215
+  FloatV Abl_Temp_Z1_216
+  FloatV Mit-Wert_126_129
+  FloatV Abl_Temp_Z2_127
+  FloatV Abl_Temp_Z2_128
+  FloatV Abl_Temp_Z2_210
+  FloatV Abl_Temp_Z4_101
+  FloatV Abl_Temp_Z4_104
+  FloatV Mit-Wert_127_128
+  WordV  ANF-ABL-VERHALT
+  FloatV SW_AL_Z1_126_129
+  FloatV SW_AL_Z1_212
+  FloatV SW_AL_Z1_213
+  FloatV SW_AL_Z1_214
+  FloatV SW_AL_Z1_215
+  FloatV SW_AL_Z1_216
+  FloatV SW_AL_Z2_127_128
+  FloatV SW_AL_Z4_101
+  FloatV SW_AL_Z2_210
+  FloatV SW_AL_Z4_104
+  WordV  Zone1_R0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (145,1)
+  WordV  $WSCRATCH
+  IPAMB &M1 (145,2)
+  IPAMB &M2 (145,3)
+  IPAMB &M3 (145,5)
+  IPAMB &M4 (0,0)
+  IPAMB &M8 (146,1)
+  IPAMB &M9 (146,3)
+  IPAMB &M10 (146,5)
+  IPAMB &M11 (146,7)
+  IPAMB &M12 (146,9)
+  IPAMB &M13 (146,11)
+  IPAMB &M14 (146,13)
+  IPAMB &M15 (146,15)
+  IPAMB &M16 (85,1)
+  IPAMB &M17 (85,2)
+  IPAMB &M18 (85,3)
+  IPAMB &M19 (85,5)
+  IPAMB &M24 (86,1)
+  IPAMB &M25 (86,2)
+  IPAMB &M26 (86,3)
+  IPAMB &M27 (86,5)
+  IPAMB &M29 (95,11)
+  WordV  $HB2
+  IPAMB &M30 (96,10)
+  IPAMB &M31 (96,15)
+  IPAMB &M32 (36,11)
+  IPAMB &M33 (36,15)
+  IPAMB &M34 (37,11)
+  IPAMB &M35 (37,15)
+  IPAMB &M36 (55,3)
+  IPAMB &M37 (54,11)
+  IPAMB &M38 (54,15)
+  IPAMB &M40 (55,11)
+  IPAMB &M41 (55,15)
+  IPAMB &M42 (66,11)
+  IPAMB &M43 (66,15)
+  IPAMB &M44 (67,11)
+  IPAMB &M45 (67,15)
+  IPAMB &M46 (85,11)
+  IPAMB &M47 (85,15)
+  IPAMB &M48 (86,11)
+  IPAMB &M49 (86,15)
+  IPAMB &M51 (66,2)
+  IPAMB &M54 (0,11)
+  IPAMB &M55 (0,14)
+  IPAMB &M56 (97,2)
+  IPAMB &M57 (97,3)
+  IPAMB &M58 (97,6)
+  IPAMB &M59 (97,7)
+  IPAMB &M60 (98,2)
+  IPAMB &M61 (98,3)
+  IPAMB &M62 (98,6)
+  IPAMB &M64 (98,7)
+  IPAMB &M65 (97,10)
+  IPAMB &M66 (97,11)
+  IPAMB &M67 (97,14)
+  IPAMB &M68 (97,15)
+  IPAMB &M72 (99,2)
+  IPAMB &M73 (99,3)
+  IPAMB &M74 (99,6)
+  IPAMB &M75 (99,7)
+  IPAMB &M76 (100,2)
+  IPAMB &M77 (100,3)
+  IPAMB &M78 (100,6)
+  IPAMB &M79 (100,7)
+  IPAMB &M80 (99,10)
+  IPAMB &M81 (99,11)
+  IPAMB &M82 (99,14)
+  IPAMB &M83 (99,15)
+  IPAMB &M84 (100,10)
+  IPAMB &M85 (100,11)
+  IPAMB &M86 (100,14)
+  IPAMB &M87 (100,15)
+  IPAMB &M88 (101,2)
+  IPAMB &M89 (101,3)
+  IPAMB &M90 (101,6)
+  IPAMB &M91 (101,7)
+  IPAMB &M92 (102,2)
+  IPAMW &M96 (27)
+  IPAAW &M97 (154)
+  IPAMW &M98 (24)
+  IPAMW &M99 (25)
+  IPAMW &M100 (26)
+  IPAMW &M101 (38)
+  IPAMW &M102 (40)
+  IPAMW &M103 (42)
+  FloatV $F1
+  IPAMW &M104 (44)
+  IPAMW &M105 (56)
+  IPAMW &M106 (57)
+  IPAMW &M107 (58)
+  IPAMW &M108 (59)
+  IPAMW &M109 (60)
+  FloatV $F2
+  IPAAW &M110 (135)
+  IPAAW &M111 (136)
+  IPAAW &M112 (137)
+  IPAAW &M113 (138)
+  IPAAW &M114 (139)
+  IPAAW &M115 (140)
+  IPAAW &M116 (141)
+  IPAAW &M117 (142)
+  IPAAW &M118 (143)
+  IPAAW &M119 (144)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  FloatK $M120 (120.00)
+  FloatK $M121 (0.00)
+  WordV  $B5
+  WordK  $M122 (1)
+  IPAMB &M123 (147,0)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  FloatK $M124 (120.00)
+  FloatK $M125 (0.00)
+  WordV  $B10
+  WordK  $M126 (1)
+  IPAMB &M127 (147,1)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  FloatK $M128 (120.00)
+  FloatK $M129 (0.00)
+  WordV  $B15
+  WordK  $M130 (1)
+  IPAMB &M131 (147,2)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  FloatK $M132 (120.00)
+  FloatK $M133 (0.00)
+  WordV  $B20
+  WordK  $M134 (1)
+  IPAMB &M135 (147,3)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatK $M136 (120.00)
+  FloatK $M137 (0.00)
+  WordV  $B25
+  WordK  $M138 (1)
+  IPAMB &M139 (147,4)
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  FloatK $M140 (120.00)
+  FloatK $M141 (0.00)
+  WordV  $B30
+  WordK  $M142 (1)
+  IPAMB &M143 (147,5)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  FloatK $M144 (120.00)
+  FloatK $M145 (0.00)
+  WordV  $B35
+  WordK  $M146 (1)
+  IPAMB &M147 (147,6)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  FloatK $M148 (120.00)
+  FloatK $M149 (0.00)
+  WordV  $B40
+  WordK  $M150 (1)
+  IPAMB &M151 (147,7)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  FloatK $M152 (120.00)
+  FloatK $M153 (0.00)
+  WordV  $B45
+  WordK  $M154 (1)
+  IPAMB &M155 (147,8)
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  FloatK $M156 (120.00)
+  FloatK $M157 (0.00)
+  WordV  $B50
+  WordK  $M158 (1)
+  IPAMB &M159 (147,9)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  FloatK $M160 (120.00)
+  FloatK $M161 (0.00)
+  WordV  $B55
+  WordK  $M162 (1)
+  IPAMB &M163 (147,10)
+  WordV  $B56
+  WordV  $B57
+  FloatK $M164 (0.00)
+  WordV  $B58
+  FloatK $M165 (0.00)
+  WordV  $B59
+  FloatK $M166 (0.00)
+  WordV  $B60
+  FloatK $M167 (0.00)
+  WordV  $B61
+  FloatK $M168 (0.00)
+  WordV  $B62
+  FloatK $M169 (0.00)
+  WordV  $B63
+  WordV  $B64
+  FloatK $M170 (0.00)
+  WordV  $B65
+  FloatK $M171 (0.00)
+  WordV  $B66
+  FloatK $M172 (0.00)
+  WordV  $B67
+  FloatK $M173 (0.00)
+  WordV  $B68
+  FloatK $M174 (0.00)
+  WordK  $M175 (1)
+  IPAMW &M176 (162)
+  WordK  $M177 (1)
+  IPAMW &M178 (163)
+  WordV  $B69
+  WordV  $B70
+  IPAMB &M179 (54,9)
+  WordV  $B71
+  WordV  $B72
+  IPAMB &M180 (54,13)
+  WordV  $B73
+  WordV  $B74
+  IPAMB &M181 (55,9)
+  WordV  $B75
+  WordV  $B76
+  IPAMB &M182 (55,13)
+  WordV  $B77
+  WordV  $B78
+  IPAMB &M183 (66,9)
+  WordV  $B79
+  WordV  $B80
+  IPAMB &M184 (66,13)
+  WordV  $B81
+  WordV  $B82
+  IPAMB &M185 (67,9)
+  WordV  $B83
+  WordV  $B84
+  IPAMB &M186 (67,13)
+  WordV  $B85
+  WordV  $B86
+  IPAMB &M187 (85,9)
+  WordV  $B87
+  WordV  $B88
+  IPAMB &M188 (85,13)
+  WordV  $B89
+  WordV  $B90
+  IPAMB &M189 (86,9)
+  WordV  $B91
+  WordV  $B92
+  IPAMB &M190 (86,13)
+  WordV  $B93
+  WordV  $B94
+  IPAMB &M191 (66,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,3000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         BTL 1
+  ;Anlage:  RLT Hauptanlage
+  ;         Abluftregelung
+  ;         Räume
+  ;e
+  ; 
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,Anl_Haupt_R0,$WSCRATCH)
+  MELEIN (&M1,1,Anl_Haupt_ST,$WSCRATCH)
+  MELEIN (&M2,1,Anl_Haupt_R1,$WSCRATCH)
+  MELEIN (&M3,1,Anl_Haupt_R2,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,Zone1_R0,$WSCRATCH)
+  MELEIN (&M9,1,Zone1_R1,$WSCRATCH)
+  MELEIN (&M10,1,Zone2_R0,$WSCRATCH)
+  MELEIN (&M11,1,Zone2_R1,$WSCRATCH)
+  MELEIN (&M12,1,Zone3_R0,$WSCRATCH)
+  MELEIN (&M13,1,Zone3_R1,$WSCRATCH)
+  MELEIN (&M14,1,Zone4_R0,$WSCRATCH)
+  MELEIN (&M15,1,Zone4_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,Zul_1_R0,$WSCRATCH)
+  MELEIN (&M17,1,Zul_1_ST,$WSCRATCH)
+  MELEIN (&M18,1,Zul_1_R1,$WSCRATCH)
+  MELEIN (&M19,1,Zul_1_R2,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,Zul_2_R0,$WSCRATCH)
+  MELEIN (&M25,1,Zul_2_ST,$WSCRATCH)
+  MELEIN (&M26,1,Zul_2_R1,$WSCRATCH)
+  MELEIN (&M27,1,Zul_2_R2,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M29,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Hygrostat_Z1)
+  MELEIN (&M30,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Hygrostat_Z2)
+  MELEIN (&M31,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Hygrostat_Z4)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,ZL_Klp1_Haupt,$WSCRATCH)
+  MELEIN (&M33,1,ZL_Klp2_Haupt,$WSCRATCH)
+  MELEIN (&M34,1,FL_Klp1_Haupt,$WSCRATCH)
+  MELEIN (&M35,1,FL_Klp2_Haupt,$WSCRATCH)
+  MELEIN (&M36,1,AL_Klp_Haupt,$WSCRATCH)
+  MELEIN (&M37,1,Klp_Z1_R126,$WSCRATCH)
+  MELEIN (&M38,1,Klp_Z1_R129,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,Klp_Z1_R212,$WSCRATCH)
+  MELEIN (&M41,1,Klp_Z1_R213,$WSCRATCH)
+  MELEIN (&M42,1,Klp_Z1_R214,$WSCRATCH)
+  MELEIN (&M43,1,Klp_Z1_R215,$WSCRATCH)
+  MELEIN (&M44,1,Klp_Z1_R216,$WSCRATCH)
+  MELEIN (&M45,1,Klp_Z2_R127,$WSCRATCH)
+  MELEIN (&M46,1,Klp_Z2_R128,$WSCRATCH)
+  MELEIN (&M47,1,Klp_Z2_R210,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M48,1,Klp_Z4_R101,$WSCRATCH)
+  MELEIN (&M49,1,Klp_Z4_R104,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M51,1,Abl_Verh_ST,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M54,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M55,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M56,1,Fernbed_Z1_R126,$WSCRATCH)
+  MELEIN (&M57,1,Fernbed_Z1_R129,$WSCRATCH)
+  MELEIN (&M58,1,Fernbed_Z1_R212,$WSCRATCH)
+  MELEIN (&M59,1,Fernbed_Z1_R213,$WSCRATCH)
+  MELEIN (&M60,1,Fernbed_Z1_R214,$WSCRATCH)
+  MELEIN (&M61,1,Fernbed_Z1_R215,$WSCRATCH)
+  MELEIN (&M62,1,Fernbed_Z1_R216,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M64,1,Fernbed_Z2_R127,$WSCRATCH)
+  MELEIN (&M65,1,Fernbed_Z2_R128,$WSCRATCH)
+  MELEIN (&M66,1,Fernbed_Z2_R210,$WSCRATCH)
+  MELEIN (&M67,1,Fernbed_Z4_R101,$WSCRATCH)
+  MELEIN (&M68,1,Fernbed_Z4_R104,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M72,1,Stroem_Z1_R126,$WSCRATCH)
+  MELEIN (&M73,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R126)
+  MELEIN (&M74,1,Stroem_Z1_R212,$WSCRATCH)
+  MELEIN (&M75,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R212)
+  MELEIN (&M76,1,Stroem_Z1_R213,$WSCRATCH)
+  MELEIN (&M77,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R213)
+  MELEIN (&M78,1,Stroem_Z1_R214,$WSCRATCH)
+  MELEIN (&M79,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R214)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M80,1,Stroem_Z1_R215,$WSCRATCH)
+  MELEIN (&M81,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R215)
+  MELEIN (&M82,1,Stroem_Z1_R216,$WSCRATCH)
+  MELEIN (&M83,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z1_R216)
+  MELEIN (&M84,1,Stroem_Z2_R127,$WSCRATCH)
+  MELEIN (&M85,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z2_R127)
+  MELEIN (&M86,1,Stroem_Z2_R210,$WSCRATCH)
+  MELEIN (&M87,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z2_R210)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M88,1,Stroem_Z4_R101,$WSCRATCH)
+  MELEIN (&M89,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z4_R101)
+  MELEIN (&M90,1,Stroem_Z4_R104,$WSCRATCH)
+  MELEIN (&M91,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Z4_R104)
+  MELEIN (&M92,1,Stroem_Verhalten,$WSCRATCH)
+  MELEIN (&M89,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Verhalten)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M96,Abl_Temp_Verhalt,$WSCRATCH)
+  ANEIN (&M97,SW_Al_Temp_Verh,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M98,Abl_Temp_Z1_126,$WSCRATCH)
+  ANEIN (&M99,Abl_Temp_Z1_129,$WSCRATCH)
+  ANEIN (&M100,Abl_Temp_Z1_212,$WSCRATCH)
+  ANEIN (&M101,Abl_Temp_Z1_213,$WSCRATCH)
+  ANEIN (&M102,Abl_Temp_Z1_214,$WSCRATCH)
+  ANEIN (&M103,Abl_Temp_Z1_215,$WSCRATCH)
+  ADD2 (Abl_Temp_Z1_126,Abl_Temp_Z1_129,$F1)
+  DIVK2 ($F1,Mit-Wert_126_129)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M104,Abl_Temp_Z1_216,$WSCRATCH)
+  ANEIN (&M105,Abl_Temp_Z2_127,$WSCRATCH)
+  ANEIN (&M106,Abl_Temp_Z2_128,$WSCRATCH)
+  ANEIN (&M107,Abl_Temp_Z2_210,$WSCRATCH)
+  ANEIN (&M108,Abl_Temp_Z4_101,$WSCRATCH)
+  ANEIN (&M109,Abl_Temp_Z4_104,$WSCRATCH)
+  ADD2 (Abl_Temp_Z2_127,Abl_Temp_Z2_128,$F2)
+  DIVK2 ($F2,Mit-Wert_127_128)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M110,SW_AL_Z1_126_129,$WSCRATCH)
+  ANEIN (&M111,SW_AL_Z1_212,$WSCRATCH)
+  ANEIN (&M112,SW_AL_Z1_213,$WSCRATCH)
+  ANEIN (&M113,SW_AL_Z1_214,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M114,SW_AL_Z1_215,$WSCRATCH)
+  ANEIN (&M115,SW_AL_Z1_216,$WSCRATCH)
+  ANEIN (&M116,SW_AL_Z2_127_128,$WSCRATCH)
+  ANEIN (&M117,SW_AL_Z2_210,$WSCRATCH)
+  ANEIN (&M118,SW_AL_Z4_101,$WSCRATCH)
+  ANEIN (&M119,SW_AL_Z4_104,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B1)
+  UNDMN (3,$B1,Zone1_R1,Fernbed_Z1_R126,0,$B2,$WSCRATCH)
+  XOR2 ($B2,Stroem_Z1_R126,$B3)
+  UND2 ($B2,$B3,$B4)
+  VVZ ($B4,$M120,$M121,$B5)
+  RSS ($B5,Entriegeln,Raum126_ST,$WSCRATCH)
+  SETMEL ($M122,1,Raum126_ST,&M123,$WSCRATCH)
+  NAND2 (Zul_1_R0,Zul_2_R0,$B6)
+  UNDMN (3,$B6,Zone1_R1,Fernbed_Z1_R212,0,$B7,$WSCRATCH)
+  XOR2 ($B7,Stroem_Z1_R212,$B8)
+  UND2 ($B7,$B8,$B9)
+  VVZ ($B9,$M124,$M125,$B10)
+  RSS ($B10,Entriegeln,Raum212_ST,$WSCRATCH)
+  SETMEL ($M126,1,Raum212_ST,&M127,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B11)
+  UNDMN (3,$B11,Zone1_R1,Fernbed_Z1_R213,0,$B12,$WSCRATCH)
+  XOR2 ($B12,Stroem_Z1_R213,$B13)
+  UND2 ($B12,$B13,$B14)
+  VVZ ($B14,$M128,$M129,$B15)
+  RSS ($B15,Entriegeln,Raum213_ST,$WSCRATCH)
+  SETMEL ($M130,1,Raum213_ST,&M131,$WSCRATCH)
+  NAND2 (Zul_1_R0,Zul_2_R0,$B16)
+  UNDMN (3,$B16,Zone1_R1,Fernbed_Z1_R214,0,$B17,$WSCRATCH)
+  XOR2 ($B17,Stroem_Z1_R214,$B18)
+  UND2 ($B17,$B18,$B19)
+  VVZ ($B19,$M132,$M133,$B20)
+  RSS ($B20,Entriegeln,Raum214_ST,$WSCRATCH)
+  SETMEL ($M134,1,Raum214_ST,&M135,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B21)
+  UNDMN (3,$B21,Zone1_R1,Fernbed_Z1_R215,0,$B22,$WSCRATCH)
+  XOR2 ($B22,Stroem_Z1_R215,$B23)
+  UND2 ($B22,$B23,$B24)
+  VVZ ($B24,$M136,$M137,$B25)
+  RSS ($B25,Entriegeln,Raum215_ST,$WSCRATCH)
+  SETMEL ($M138,1,Raum215_ST,&M139,$WSCRATCH)
+  NAND2 (Zul_1_R0,Zul_2_R0,$B26)
+  UNDMN (3,$B26,Zone1_R1,Fernbed_Z1_R216,0,$B27,$WSCRATCH)
+  XOR2 ($B27,Stroem_Z1_R216,$B28)
+  UND2 ($B27,$B28,$B29)
+  VVZ ($B29,$M140,$M141,$B30)
+  RSS ($B30,Entriegeln,Raum216_ST,$WSCRATCH)
+  SETMEL ($M142,1,Raum216_ST,&M143,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B31)
+  UNDMN (3,$B31,Zone2_R1,Fernbed_Z2_R127,0,$B32,$WSCRATCH)
+  XOR2 ($B32,Stroem_Z2_R127,$B33)
+  UND2 ($B32,$B33,$B34)
+  VVZ ($B34,$M144,$M145,$B35)
+  RSS ($B35,Entriegeln,Raum127_ST,$WSCRATCH)
+  SETMEL ($M146,1,Raum127_ST,&M147,$WSCRATCH)
+  NAND2 (Zul_1_R0,Zul_2_R0,$B36)
+  UNDMN (3,$B36,Zone2_R1,Fernbed_Z2_R210,0,$B37,$WSCRATCH)
+  XOR2 ($B37,Stroem_Z2_R210,$B38)
+  UND2 ($B37,$B38,$B39)
+  VVZ ($B39,$M148,$M149,$B40)
+  RSS ($B40,Entriegeln,Raum210_ST,$WSCRATCH)
+  SETMEL ($M150,1,Raum210_ST,&M151,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B41)
+  UNDMN (3,$B41,Zone4_R1,Fernbed_Z4_R101,0,$B42,$WSCRATCH)
+  XOR2 ($B42,Stroem_Z4_R101,$B43)
+  UND2 ($B42,$B43,$B44)
+  VVZ ($B44,$M152,$M153,$B45)
+  RSS ($B45,Entriegeln,Raum101_ST,$WSCRATCH)
+  SETMEL ($M154,1,Raum101_ST,&M155,$WSCRATCH)
+  NAND2 (Zul_1_R0,Zul_2_R0,$B46)
+  UNDMN (3,$B46,Zone4_R1,Fernbed_Z4_R104,0,$B47,$WSCRATCH)
+  XOR2 ($B47,Stroem_Z4_R104,$B48)
+  UND2 ($B47,$B48,$B49)
+  VVZ ($B49,$M156,$M157,$B50)
+  RSS ($B50,Entriegeln,Raum104_ST,$WSCRATCH)
+  SETMEL ($M158,1,Raum104_ST,&M159,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  NAND2 (Zul_1_R0,Zul_2_R0,$B51)
+  UND2 ($B51,Zone1_R1,$B52)
+  XOR2 ($B52,Stroem_Verhalten,$B53)
+  UND2 ($B52,$B53,$B54)
+  VVZ ($B54,$M160,$M161,$B55)
+  RSS ($B55,Entriegeln,Raum_Verh_ST,$WSCRATCH)
+  SETMEL ($M162,1,Raum_Verh_ST,&M163,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UNDMN (0,2,Klp_Z1_R126,Klp_Z1_R129,$B56,$WSCRATCH)
+  ODRMN (5,Anl_Haupt_R0,STB_Z1_R126,Raum126_ST,Zone1_R0,$B56,
+         0,$B57,$WSCRATCH)
+  REGLER (12,K1,$B57,$M164,E_ERH_Raum126,$WSCRATCH)
+  ODRMN (4,Anl_Haupt_R0,STB_Z1_R212,Raum212_ST,Zone1_R0,1,
+         Klp_Z1_R212,$B58,$WSCRATCH)
+  REGLER (13,K1,$B58,$M165,E_ERH_Raum212,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODRMN (4,Anl_Haupt_R0,STB_Z1_R213,Raum213_ST,Zone1_R0,1,
+         Klp_Z1_R213,$B59,$WSCRATCH)
+  REGLER (14,K1,$B59,$M166,E_ERH_Raum213,$WSCRATCH)
+  ODRMN (4,Anl_Haupt_R0,STB_Z1_R214,Raum214_ST,Zone1_R0,1,
+         Klp_Z1_R214,$B60,$WSCRATCH)
+  REGLER (15,K1,$B60,$M167,E_ERH_Raum214,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODRMN (4,Anl_Haupt_R0,STB_Z1_R215,Raum215_ST,Zone1_R0,1,
+         Klp_Z1_R215,$B61,$WSCRATCH)
+  REGLER (16,K1,$B61,$M168,E_ERH_Raum215,$WSCRATCH)
+  ODRMN (4,Anl_Haupt_R0,STB_Z1_R216,Raum216_ST,Zone1_R0,1,
+         Klp_Z1_R216,$B62,$WSCRATCH)
+  REGLER (17,K1,$B62,$M169,E_ERH_Raum216,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  UNDMN (0,2,Klp_Z2_R127,Klp_Z2_R128,$B63,$WSCRATCH)
+  ODRMN (5,Anl_Haupt_R0,STB_Z2_R127,Raum127_ST,Zone2_R0,$B63,
+         0,$B64,$WSCRATCH)
+  REGLER (18,K1,$B64,$M170,E_ERH_Raum127,$WSCRATCH)
+  ODRMN (4,Anl_Haupt_R0,STB_Z2_R210,Raum210_ST,Zone2_R0,1,
+         Klp_Z2_R210,$B65,$WSCRATCH)
+  REGLER (19,K1,$B65,$M171,E_ERH_Raum210,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (4,Anl_Haupt_R0,STB_Z4_R101,Raum101_ST,Zone4_R0,1,
+         Klp_Z4_R101,$B66,$WSCRATCH)
+  REGLER (20,K1,$B66,$M172,E_ERH_Raum101,$WSCRATCH)
+  ODRMN (4,Anl_Haupt_R0,STB_Z4_R104,Raum104_ST,Zone4_R0,1,
+         Klp_Z4_R104,$B67,$WSCRATCH)
+  REGLER (21,K1,$B67,$M173,E_ERH_Raum104,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (4,Anl_Haupt_R0,STB_Verhalten,Raum_Verh_ST,Zone1_R0,
+         0,$B68,ANF-ABL-VERHALT)
+  REGLER (22,K1,$B68,$M174,E_ERH_Verhalten,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ANAUS (Mit-Wert_126_129,$M175,&M176,$WSCRATCH)
+  ANAUS (Mit-Wert_127_128,$M177,&M178,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R126,1,Anl_Haupt_R0,$B69,$B70)
+  BEFAUS (1,$B70,$B69,$WZERO,$WZERO,&M179,$WSCRATCH)
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R129,1,Anl_Haupt_R0,$B71,$B72)
+  BEFAUS (1,$B72,$B71,$WZERO,$WZERO,&M180,$WSCRATCH)
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R212,1,Anl_Haupt_R0,$B73,$B74)
+  BEFAUS (1,$B74,$B73,$WZERO,$WZERO,&M181,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R213,1,Anl_Haupt_R0,$B75,$B76)
+  BEFAUS (1,$B76,$B75,$WZERO,$WZERO,&M182,$WSCRATCH)
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R214,1,Anl_Haupt_R0,$B77,$B78)
+  BEFAUS (1,$B78,$B77,$WZERO,$WZERO,&M183,$WSCRATCH)
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R215,1,Anl_Haupt_R0,$B79,$B80)
+  BEFAUS (1,$B80,$B79,$WZERO,$WZERO,&M184,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UNDMN (2,Zone1_R1,Fernbed_Z1_R216,1,Anl_Haupt_R0,$B81,$B82)
+  BEFAUS (1,$B82,$B81,$WZERO,$WZERO,&M185,$WSCRATCH)
+  UNDMN (2,Zone2_R1,Fernbed_Z2_R127,1,Anl_Haupt_R0,$B83,$B84)
+  BEFAUS (1,$B84,$B83,$WZERO,$WZERO,&M186,$WSCRATCH)
+  UNDMN (2,Zone2_R1,Fernbed_Z2_R128,1,Anl_Haupt_R0,$B85,$B86)
+  BEFAUS (1,$B86,$B85,$WZERO,$WZERO,&M187,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  UNDMN (2,Zone2_R1,Fernbed_Z2_R210,1,Anl_Haupt_R0,$B87,$B88)
+  BEFAUS (1,$B88,$B87,$WZERO,$WZERO,&M188,$WSCRATCH)
+  UNDMN (2,Zone4_R1,Fernbed_Z4_R101,1,Anl_Haupt_R0,$B89,$B90)
+  BEFAUS (1,$B90,$B89,$WZERO,$WZERO,&M189,$WSCRATCH)
+  UNDMN (2,Zone4_R1,Fernbed_Z4_R104,1,Anl_Haupt_R0,$B91,$B92)
+  BEFAUS (1,$B92,$B91,$WZERO,$WZERO,&M190,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UNDMN (1,ANF-ABL-VERHALT,1,Abl_Verh_ST,$B93,$B94)
+  BEFAUS (1,$B94,$B93,$WZERO,$WZERO,&M191,$WSCRATCH)
+  ;Abluftventilator
+  ;Verhaltenslabor
+  ; 
+  ENDE 
+  ENDMODUL 

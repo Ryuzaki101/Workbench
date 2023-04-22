@@ -1,0 +1,1 @@
+7z a tools.7z %~dp0tools

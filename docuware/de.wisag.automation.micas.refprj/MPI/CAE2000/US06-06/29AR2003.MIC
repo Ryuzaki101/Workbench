@@ -1,0 +1,389 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60603.GPS
+  ;*** Projektname    : Turm 6
+  ;*** Projektnummer  : 2310147
+  ;*** Bearbeiter     : Romahn
+  ;*** PrÅfer         : Bormann
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 6
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (ar20,3)
+  FloatV RL_Temp_prim
+  FloatV VL_Temp_sek
+  FloatK SW_VL_Temp_sek (7.00)
+  WordV  Pumpe_2_R0
+  WordK  K0 (0)
+  FloatV SG_KW_Ventil
+  WordV  KW-Filter
+  WordV  Entriegeln
+  WordV  K1
+  WordV  Stoer_Ventil_1
+  WordV  Entr.Befehl
+  WordV  Entr.Taster
+  WordV  Anlage_R0
+  WordV  Anlage_ST
+  FloatV Volumenstrom
+  FloatV VL_Temp_prim
+  WordK  Anlage_R1 (0)
+  WordV  Anlage_EIN1
+  FloatV RL_Temp_sek
+  WordV  Pumpe_2_soll_ein
+  WordV  Pumpe_1_soll_ein
+  WordV  Stoer_Ventil_2
+  WordV  Anlage_R1_1
+  WordV  VL-Temp-zu-hoch
+  WordV  Pumpe_1_R0
+  WordV  Pumpe_1_R1
+  WordV  Pumpe_1_ST
+  WordV  Pumpe_2_ST
+  WordV  Pumpe_2_R1
+  FloatV Signal_Ventil_1
+  FloatV Signal_Ventil_2
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &M2 (39,1)
+  WordV  $WSCRATCH
+  IPAMB &M3 (39,2)
+  IPAMB &M4 (39,3)
+  IPAMB &M5 (1,0)
+  IPAMB &M6 (35,6)
+  IPAMB &M7 (1,1)
+  IPAMB &M8 (1,2)
+  WordV  $HB2
+  IPAMB &M9 (1,3)
+  IPAMB &M10 (1,5)
+  IPAMB &M11 (1,6)
+  IPAMB &M12 (1,7)
+  IPAMB &M16 (1,14)
+  IPAMB &M17 (1,15)
+  IPAAW &M18 (7)
+  IPAAW &M19 (8)
+  IPAAW &M20 (9)
+  IPAAW &M21 (3)
+  IPAAW &M22 (4)
+  IPAAW &M23 (5)
+  IPAAW &M24 (6)
+  IPAAW &M25 (40)
+  FloatV $F1
+  FloatK $M26 (10.00)
+  FloatK $M27 (5.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M28 (10.00)
+  WordV  $B3
+  WordK  $M29 (1)
+  FloatV $F3
+  FloatV $F4
+  FloatK $M31 (10.00)
+  WordV  $B4
+  WordV  $B5
+  WordV  $HB1
+  FloatV $F5
+  FloatK $M32 (300.00)
+  WordV  $B6
+  WordK  $M33 (1)
+  IPAMB &M34 (39,13)
+  FloatV $F6
+  FloatV $F7
+  FloatK $M35 (10.00)
+  WordV  $B7
+  WordV  $B8
+  FloatV $F8
+  FloatK $M36 (300.00)
+  WordV  $B9
+  WordK  $M37 (1)
+  IPAMB &M38 (39,14)
+  FloatK $M39 (2.00)
+  FloatK $M40 (0.00)
+  FloatV $F9
+  FloatV $F10
+  FloatK $M41 (1.00)
+  WordV  $B10
+  FloatK $M42 (60.00)
+  FloatK $M43 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordK  $M44 (1)
+  IPAMB &M45 (39,15)
+  FloatK $M46 (0.00)
+  FloatV $F11
+  FloatK $M47 (86400.00)
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M48 (10.00)
+  FloatK $M49 (0.00)
+  WordV  $B17
+  WordV  $B18
+  FloatK $M50 (6.00)
+  FloatK $M51 (0.00)
+  WordV  $B19
+  WordV  $B20
+  FloatV $F12
+  FloatK $M53 (86400.00)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  FloatK $M54 (10.00)
+  FloatK $M55 (0.00)
+  WordV  $B25
+  WordV  $B26
+  FloatK $M56 (12.00)
+  FloatK $M57 (0.00)
+  WordV  $B27
+  WordV  $B28
+  WordK  $M59 (1)
+  IPAAW &M60 (10)
+  WordK  $M61 (1)
+  IPAAW &M62 (11)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  WordV  $B35
+  WordV  $B32
+  WordV  $B33
+  WordV  $B36
+  WordV  $B34
+  WordK  $M64 (1)
+  WordV  $B37
+  WordV  $B38
+  WordK  $M66 (1)
+  IPAMB &M67 (39,0)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AF X 0005
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: KÑltenetz-
+  ;         sanierung
+  ;Anlage:  Turm 6
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anlage_R1,Anlage_EIN1)
+  ENDE 
+  TASK (2,cycl,1000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anlage_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,Anlage_R1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,Anlage_R0,$WSCRATCH)
+  MELEIN (&M3,1,Anlage_ST,$WSCRATCH)
+  MELEIN (&M4,1,Anlage_R1,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,KW-Filter,$WSCRATCH)
+  MELEIN (&M7,1,Pumpe_1_R0,$WSCRATCH)
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Pumpe_1_ST)
+  MELEIN (&M9,1,Pumpe_1_R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M10,1,Pumpe_2_R0,$WSCRATCH)
+  MELEIN (&M11,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Pumpe_2_ST)
+  MELEIN (&M12,1,Pumpe_2_R1,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M16,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M17,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&M18,Volumenstrom,$WSCRATCH)
+  ANEIN (&M19,Signal_Ventil_1,$WSCRATCH)
+  ANEIN (&M20,Signal_Ventil_2,$WSCRATCH)
+  ANEIN (&M21,VL_Temp_prim,$WSCRATCH)
+  ANEIN (&M22,RL_Temp_prim,$WSCRATCH)
+  ANEIN (&M23,VL_Temp_sek,$WSCRATCH)
+  ANEIN (&M24,RL_Temp_sek,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M25,$F1,$WSCRATCH)
+  LIMIT ($F1,$M26,$M27,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M28,$B3)
+  AWT ($B3,$F2,SW_VL_Temp_sek,SW_VL_Temp_sek)
+  ANAUS (SW_VL_Temp_sek,$M29,&M25,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  SUB2 (SG_KW_Ventil,Signal_Ventil_1,$F3)
+  ABSWER ($F3,$F4)
+  VGLOH ($F4,$M31,$B4)
+  UND11 ($B4,Entriegeln,$B5)
+  NICHT ($B5,$HB1)
+  UHR (K1,$HB1,$F5)
+  VGLOH ($F5,$M32,$B6)
+  RSS ($B6,Entriegeln,Stoer_Ventil_1,$WSCRATCH)
+  SETMEL ($M33,1,Stoer_Ventil_1,&M34,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  SUB2 (SG_KW_Ventil,Signal_Ventil_2,$F6)
+  ABSWER ($F6,$F7)
+  VGLOH ($F7,$M35,$B7)
+  UND11 ($B7,Entriegeln,$B8)
+  NICHT ($B8,$HB1)
+  UHR (K1,$HB1,$F8)
+  VGLOH ($F8,$M36,$B9)
+  RSS ($B9,Entriegeln,Stoer_Ventil_2,$WSCRATCH)
+  SETMEL ($M37,1,Stoer_Ventil_2,&M38,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  AWT ($WZERO,$M39,$M40,$F9)
+  ADD2 (SW_VL_Temp_sek,$F9,$F10)
+  VGLEH (VL_Temp_sek,$F10,$M41,$B10)
+  VVZ ($B10,$M42,$M43,$B11)
+  UND2 ($B11,Anlage_R1,$B12)
+  RSS ($B12,Entriegeln,VL-Temp-zu-hoch,$WSCRATCH)
+  SETMEL ($M44,1,VL-Temp-zu-hoch,&M45,$WSCRATCH)
+  REGLER (1,K1,Anlage_R0,$M46,SG_KW_Ventil,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UHR (Pumpe_1_R1,$B14,$F11)
+  VGLOH ($F11,$M47,$B13)
+  RSS ($B13,Pumpe_2_R1,$B14,$WSCRATCH)
+  UNDMN (0,2,$B14,Pumpe_2_R1,$B15,$WSCRATCH)
+  ODRMN (3,$B15,Pumpe_2_ST,$B18,0,$B16,$WSCRATCH)
+  VVZ (Pumpe_2_soll_ein,$M48,$M49,$B17)
+  UND11 ($B17,Pumpe_2_R1,$B18)
+  VVZ ($B16,$M50,$M51,$B19)
+  UNDMN (2,$B19,Anlage_R1,0,Pumpe_1_soll_ein,$B20)
+  BEFAUS (1,$B20,Pumpe_1_soll_ein,$WZERO,$WZERO,&M7,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  UHR (Pumpe_2_R1,$B22,$F12)
+  VGLOH ($F12,$M53,$B21)
+  RSS ($B21,Pumpe_1_R1,$B22,$WSCRATCH)
+  UNDMN (0,2,$B22,Pumpe_1_R1,$B23,$WSCRATCH)
+  ODRMN (3,$B23,Pumpe_1_ST,$B26,0,$B24,$WSCRATCH)
+  VVZ (Pumpe_1_soll_ein,$M54,$M55,$B25)
+  UND11 ($B25,Pumpe_1_R1,$B26)
+  VVZ ($B24,$M56,$M57,$B27)
+  UNDMN (2,$B27,Anlage_R1,0,Pumpe_2_soll_ein,$B28)
+  BEFAUS (1,$B28,Pumpe_2_soll_ein,$WZERO,$WZERO,&M10,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANAUS (SG_KW_Ventil,$M59,&M60,$WSCRATCH)
+  ANAUS (SG_KW_Ventil,$M61,&M62,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UND2 (Pumpe_1_ST,Pumpe_2_ST,$B29)
+  RSS ($B29,Entriegeln,$B30,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anlage_R0,$B35,$B31)
+  NICHT (Anlage_R0,$B35)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B31,$B30,$B32)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anlage_R1,$B36,$B33)
+  NICHT (Anlage_R1,$B36)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Anlage_R1_1,$B33,$B34)
+  BEFAUS (1,$B32,$B34,$WZERO,$WZERO,&M2,$WSCRATCH)
+  SETMEL ($M64,1,$B30,&M3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODRMN (6,Pumpe_1_ST,Pumpe_2_ST,KW-Filter,Stoer_Ventil_1,
+         Stoer_Ventil_2,VL-Temp-zu-hoch,0,$B37,$WSCRATCH)
+  RSS ($B37,Entriegeln,$B38,$WSCRATCH)
+  SETMEL ($M66,1,$B38,&M67,$WSCRATCH)
+  ;SSM Fernkaelteverteilung
+  ; 
+  ENDE 
+  ENDMODUL 

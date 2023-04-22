@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.wisag.automation.micas.rt/src-gen" editDirectory="/de.wisag.automation.micas.rt.edit/src-gen"
+    editorDirectory="/de.wisag.automation.micas.rt.editor/src-gen" modelPluginID="de.wisag.automation.micas.rt"
+    modelName="Rt" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" usedGenPackages="../../de.wisag.automation.micas.hwmodules/model/hwmodules.genmodel#//hwmodules">
+  <foreignModel>rt.ecore</foreignModel>
+  <genPackages prefix="Rt" basePackage="de.wisag.automation.micas" disposableProviderFactory="true"
+      contentTypeIdentifier="" ecorePackage="rt.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="rt.ecore#//RtTaskStrategy">
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtTaskStrategy/CYCL"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtTaskStrategy/EVNT"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtTaskStrategy/BACK"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtTaskStrategy/INIT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="rt.ecore#//RtHwType">
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AC40"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AR11"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AR20"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ER11"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ER12"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/GW12"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/GW13"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/GW14"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/MB11"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/SP11"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/SP20"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZM12"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZM13"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZM14"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZM15"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZP12"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZP13"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AR10"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZP10"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/ZP20"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/MB10"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/SP10"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AR12"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtHwType/AC60"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="rt.ecore#//RtSymbolAccessType">
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtSymbolAccessType/READ"/>
+      <genEnumLiterals ecoreEnumLiteral="rt.ecore#//RtSymbolAccessType/WRITE"/>
+    </genEnums>
+    <genClasses ecoreClass="rt.ecore#//RtModule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtModule/symbols"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/dataSegmentAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtModule/tasks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/startSegmentAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/firstTaskSegmentAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/headModuleSegmentAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/dataSegmentCheckSum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/tasksCheckSum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/wordConstOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/floatConstOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/wordVarOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/floatVarOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/endOfFloatVars"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/dataSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/hwType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/fieldBus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/pastValuesOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/pastValuesLastOffset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtModule/headModul"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/headModuleSegment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/sourceModificationStamp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/sourceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/sourceChecksum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/comments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModule/startSegment"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getWordConstants"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getWordVariables"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getFloatConstants"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getFloatVariables"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getReferences"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/addSymbol">
+        <genParameters ecoreParameter="rt.ecore#//RtModule/addSymbol/symbol"/>
+      </genOperations>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getSymbol">
+        <genParameters ecoreParameter="rt.ecore#//RtModule/getSymbol/id"/>
+      </genOperations>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/haveSymbol">
+        <genParameters ecoreParameter="rt.ecore#//RtModule/haveSymbol/id"/>
+      </genOperations>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/getModuleChecksum"/>
+      <genOperations ecoreOperation="rt.ecore#//RtModule/calculateProgramSize"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtTask">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rt.ecore#//RtTask/module"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtTask/moduleInvocations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/cyclTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/segment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/pastValuesOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/strategy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/data"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/runtime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/pastValuesCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTask/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtSymbol">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtSymbol/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtSymbol/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rt.ecore#//RtSymbol/module"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtSymbol/accessors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtSymbol/index"/>
+      <genOperations ecoreOperation="rt.ecore#//RtSymbol/getDisplayName"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtConstant"/>
+    <genClasses ecoreClass="rt.ecore#//RtVariable"/>
+    <genClasses ecoreClass="rt.ecore#//RtWordConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtWordConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtFloatConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtFloatConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtDirectValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtDirectValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtWordVariable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtWordVariable/value"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtFloatVariable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtFloatVariable/value"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtModuleInvocation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rt.ecore#//RtModuleInvocation/arguments"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rt.ecore#//RtModuleInvocation/task"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModuleInvocation/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModuleInvocation/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModuleInvocation/opcode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModuleInvocation/pastValuesCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtModuleInvocation/runtime"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtCommentModuleInvocation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtCommentModuleInvocation/text"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtReferenceConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtReferenceConstant/col"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtReferenceConstant/row"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtReferenceConstant/type"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtSymbolAccess">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rt.ecore#//RtSymbolAccess/symbol"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rt.ecore#//RtSymbolAccess/moduleInvocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtSymbolAccess/type"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtHeadModule">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rt.ecore#//RtHeadModule/module"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rt.ecore#//RtHeadModule/taskInfos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtHeadModule/magic0"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtHeadModule/magic1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtHeadModule/taskCount"/>
+    </genClasses>
+    <genClasses ecoreClass="rt.ecore#//RtTaskInfo">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rt.ecore#//RtTaskInfo/task"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rt.ecore#//RtTaskInfo/convertedStrategy"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

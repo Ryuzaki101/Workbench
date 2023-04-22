@@ -1,0 +1,913 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+         <!--title>analoge Bausteine</title-->
+</head>
+
+<body>
+
+<div id="logo">MICAS Workbench</div>
+
+<hr>
+
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Analog-Bausteine</h1>
+
+<p>
+<a href="#ABFEUG" title="Berechnung absolute Feuchte in g/kg">ABFEUG</a>&nbsp;
+<a href="#ABSFEU" title="Berechnung absolute Feuchte in kg/kg">ABSFEU</a>&nbsp;
+<a href="#ABSWER" title="Absolutwert (Betrag) einer Zahl">ABSWER</a>&nbsp;
+<a href="#ADD2" title="Addierer mit 2 Eing&auml;ngen">ADD2</a>&nbsp;
+<a href="#ADSU" title="Addierer / Subtrahierer mit bis zu 15 positiven und 15 negativen Eing&auml;ngen">ADSU</a>&nbsp;
+<a href="#ATRA" title="Werttransfer Analog">ATRA</a>&nbsp;
+<a href="#CHS" title="Vorzeichenwechsel">CHS</a>&nbsp;
+<a href="#ENTHA" title="Berechnung der Enthalpie in kJ/kg">ENTHA</a>&nbsp;
+<a href="#ENTHAG" title="Berechnung der Enthalpie in kJ/kg">ENTHAG</a>&nbsp;
+<a href="#INTE" title="Integrierer">INTE</a>&nbsp;
+<a href="#LIMIT" title="Begrenzer">LIMIT</a>&nbsp;
+<a href="#MAX" title="Maximalwert aus bis zu 15 Eing&auml;ngen">MAX</a>&nbsp;
+<a href="#MIN" title="Minimalwert aus bis zu 15 Eing&auml;ngen">MIN</a>&nbsp;
+<a href="#MULDI" title="Multiplizierer-Dividierer y=x1*x2/x3">MULDI</a>&nbsp;
+<a href="#MULK2" title="Multiplizierer mit Konstantwert 2">MULK2</a>&nbsp;
+<a href="#MULT" title="Multiplizierer mit 2 Eing&auml;ngen">MULT</a>&nbsp;
+<a href="#PT1" title="">PT1</a>&nbsp;
+<a href="#SUB2" title="">SUB2</a>&nbsp;
+<a href="#TTZEIT" title="">TTZEIT</a>&nbsp;
+</p>
+
+
+<h2><a name="ABFEUG"> ABFEUG</a> - Absolute Feuchte x in g Wasser / kg trockener Luft</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein berechnet die absolute Feuchte in g Wasser pro kg trockener Luft im
+Bereich -20 ... +80 Grad Celsius.<br>
+Umgebungsdruck= Pn (Normdruck) = 101325 Pa.</p>
+<p> Nimmt man 2% Fehler in Kauf, dann gilt sogar Pn = 105 Pa.<br>
+(Der Baustein ist erst ab GK-MICASVersionen &gt; 2.6 bzw. &gt; 7.8 nutzbar)
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ABFEUG" src="img/sym_absfueg.png" alt="" border="0" width="136" height="100">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>relFeuchte</td>
+    <td>Float</td>
+    <td>relative Feuchte rF in %</td>
+  </tr>
+  <tr align="center">
+    <td>Temperatur</td>
+    <td>Float</td>
+    <td>Temperatur T in &deg;C</td>
+  </tr>
+  <tr align="center">
+    <td>Druck</td>
+    <td>Float</td>
+    <td>Umgebungsdruck P in Pa</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>absolute Feuchte in<br> g H2O / kg trockener Luft</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ABSFEU">ABSFEU</a> - Absolute Feuchte x in kg Wasser / kg trockener Luft</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein berechnet die absolute Feuchte x in kg Wasser pro kg Luft im
+Bereich -20...+80 Grad Celsius.<br>
+Umgebungsdruck = Pn (Normdruck) = 101325 Pa.</p>
+<p>Nimmt man 2% Fehler in Kauf, dann gilt sogar Pn = 105 Pa.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ABSFEU" src="img/sym_absfeu.png" alt="" border="0" width="136" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>relFeuchte</td>
+    <td>Float</td>
+    <td>relative Feuchte rF in %</td>
+  </tr>
+  <tr align="center">
+    <td>Temperatur</td>
+    <td>Float</td>
+    <td>Temperatur in T &deg;C</td>
+  </tr>
+  <tr align="center">
+    <td>Druck</td>
+    <td>Float</td>
+    <td>Umgebungsdruck P in Pa</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>absolute Feuchte x in<br> kg H2O / kg trockener Luft</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ABSWER">ABSWER</a> - Absolutwert (Betrag) einer Zahl</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird der Absolutwert (Betrag) der am Eingang Xe liegenden Variablen
+gebildet und der Variablen am Ausgang Xa zugeordnet.</p>
+<p>Xa = |Xe|</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ABSWER" src="img/sym_abswer.png" alt="" border="0" width="67" height="66">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangswert Xe</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Betrag der Variablen am Eingang Xe</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ADD2">ADD2</a> - Addierer mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Variablen an den Eing&auml;ngen Xe1 und Xe2 werden addiert und das Ergebnis
+der Variablen am Ausgang Xa zugewiesen.</p>
+<p>Xa = Xe1 + Xe2</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ADD2" src="img/sym_add2.png" alt="" border="0" width="62" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>A</td>
+    <td>Float</td>
+    <td>Eingangs-Variable 1</td>
+  </tr>
+  <tr align="center">
+    <td>B</td>
+    <td>Float</td>
+    <td>Eingangs-Variable 2</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Summe der Eingangs-Variablen</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ADSU">ADSU</a> - Addierer/Subtrahierer</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein besitzt 19 Eing&auml;nge, von denen mindestens zwei benutzt werden
+m&uuml;ssen.<br>
+Jeder der urspr&uuml;nglich positiven Eing&auml;nge kann zu einem negativen Eingang
+ver&auml;ndert werden.</p>
+<p>Die Variablen an den positiven Eing&auml;ngen werden miteinander addiert und die
+Variablen an den negativen Eing&auml;ngen von dem Zwischenergebnis dann
+subtrahiert. Das Ergebnis wird der Variablen am Ausgang Xa zugewiesen
+</p>
+<p>Anzahl der zu addierenden Eing&auml;nge N und zu subtrahierenden Eing&auml;nge M:<br>
+0 &lt;= N &lt;= 15<br>
+0 &lt;= M &lt;= 15</p>
+
+<h3>Symbol</h3>
+<table width="50%" border="0" cellpadding="2" cellspacing="2">
+ <tr>
+  <td>ADSU Mindestgr&ouml;&szlig;e</td>
+  <td>ADSU mit 7 Additions-<br>und 5 Subtraktionseing&auml;ngen</td>
+ </tr>
+ <tr>
+  <td valign="top"><img title="MICAS-Baustein ADSU" src="img/sym_adsu.png" alt="" border="0" width="86" height="83">
+&nbsp;</td>
+  <td valign="top"><img src="img/sym_adsu_7p_5m.png" alt="" border="0" width="103" height="262">&nbsp;</td>
+ </tr>
+</table>
+
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>XePlus 1</td>
+    <td>Float</td>
+    <td>positive Eingangs-Variable 1</td>
+  </tr>
+  <tr align="center">
+    <td>XePlus 2</td>
+    <td>Float</td>
+    <td>positive Eingangs-Variable 2</td>
+  </tr>
+  <tr align="center">
+    <td>:</td>
+    <td>:</td>
+    <td>:</td>
+  </tr>
+  <tr align="center">
+    <td>XePlus N</td>
+    <td>Float</td>
+    <td>positive Eingangs-Variable N</td>
+  </tr>
+  <tr align="center">
+    <td align=center>XeMinus 1</td>
+    <td>Float</td>
+    <td>negative Eingangs-Variable 1</td>
+  </tr>
+  <tr align="center">
+    <td>XeMinus 2</td>
+    <td>Float</td>
+    <td>negative Eingangs-Variable 2</td>
+  </tr>
+  <tr align="center">
+    <td>:</td>
+    <td>:</td>
+    <td>:</td>
+  </tr>
+  <tr align="center">
+    <td>XeMinus M</a></td>
+    <td>Float</td>
+    <td>negative Eingangs-Variable M</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Summe aller Eingangs-Variablen</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ATRA">ATRA</a> - Werttransfer f&uuml;r eine Float-Variable</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der am Eingang Xe liegenden Variablen wird der Variablen am
+Ausgang Xa zugewiesen.
+Diese Funktion wird eingesetzt, um einer Float-Variablen einen
+anderen Namen zuordnen zu k&ouml;nnen.
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ATRA" src="img/sym_atra.png" alt="" border="0" width="49" height="67">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingang Xe</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Ausgang Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="CHS">CHS</a> - Vorzeichen-Umkehr (change sign)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die am Eingang Xe liegende Variable wird mit -1 multipliziert und der Variablen
+am Ausgang Xa zugewiesen.</p>
+<p>Xa = -1 * Xe</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein CHS" src="img/sym_chs.png" alt="" border="0" width="49" height="70">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangs-Variable Xe</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Rechen-Ergebnis Xa = -1 * Xe</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ENTHA">ENTHA</a> - Enthalpie H in kJ/kg Luft</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein berechnet aus der absoluten feuchte x und der Temperatur T die Enthalpie H in kJ/kg.
+<p><i>Hinweis:<br>
+<p>Die zur Berechnung ben&ouml;tigte absolute Feuchte x mu&szlig; mit dem Baustein ABSFEU berechnet werden,
+da er am Eingang "absFeuchte" die absolute Feuchte x in kg Wasser pro kg trockener Luft ben&ouml;tigt.</i></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ENTHA" src="img/sym_entha.png" alt="" border="0" width="137" height="84">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>absFeuchte</td>
+    <td>Float</td>
+    <td>Absolute Feuchte x in<br> kg Wasser / kg trockene Luft</td>
+  </tr>
+  <tr align="center">
+    <td>Temperatur</td>
+    <td>Float</td>
+    <td>Temperatur T in &deg;C</td>
+  </tr>
+  <tr align="center">
+    <td>Enthalpie</td>
+    <td>Float</td>
+    <td>Enthalpie H in kJ/kg</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="ENTHAG">ENTHAG</a> - Enthalpie H in kJ/kg Luft</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein berechnet die Enthalpie H in kJ/kg. Die zur Berechnung ben&ouml;tigte
+absolute Feuchte x mu&szlig; mit dem Baustein ABSFEUG berechnet werden, da er am Eingang
+"absFeuchte" die absolute Feuchte x in g Wasser pro kg trockener Luft ben&ouml;tigt.</p>
+<p><i>Hinweis:<br>
+Dieser Baustein mu&szlig; mit einem Baustein ABFEUG benutzt werden und
+darf keinesfalls direkt von einem Baustein ABSFEU angesteuert werden!<br>
+Der Baustein ist erst ab GK-MICAS-Versionen &gt; 2.6 bzw. &gt; 7.8 nutzbar!</i>
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein ENTHAG" src="img/sym_enthag.png" alt="" border="0" width="137" height="84">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>absFeuchte</td>
+    <td>Float</td>
+    <td>Absolute Feuchte x in<br> g Wasser/kg trockener Luft)</td>
+  </tr>
+  <tr align="center">
+    <td>Tempeartur</td>
+    <td>Float</td>
+    <td>Temperatur T in &deg;C</td>
+  </tr>
+  <tr align="center">
+    <td>Enthalpie</td>
+    <td>Float</td>
+    <td>Enthalpie H in kJ/kg</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="INTE">INTE</a> - Integrierer</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Es wird die &Uuml;bertragungs-Funktion F(p)=1/(pT) realisiert. Der Baustein entspricht
+somit einem einfachen Integrierer, der am Ausgang Xa folgende Funktion liefert:
+</p>
+<p>Xa = a + 1/Ti * &int;(Xe * dt)</p>
+
+<p>Ti entspricht der durch die Variable am Eingang Ti vorgegebenen Integrationszeit in Sekunden,
+Xe der Variablen am Eingang Xe und a dem Anfangswert am Eingang "Setzwert".
+Der Setzwert wird nur &uuml;bernommen, wenn die Variable am Eingang "Setzen" auf 1-Signal ist.
+</p>
+<p><i>Hinweis:<br>
+Es mu&szlig; gelten: Tz*10&lt;Ti (Tz = Task-Zykluszeit). Ist diese Bedingung
+nicht erf&uuml;llt, so erfolgt ein Eintrag im Fehlerspeicher des Betriebssystems.</i>
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein INTE" src="img/sym_inte.png" alt="" border="0" width="111" height="119">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangs-Variable Xe</td>
+  </tr>
+  <tr align="center">
+    <td>Ti</td>
+    <td>Float</td>
+    <td>Integrationszeit Ti in Sekunden</td>
+  </tr>
+  <tr align="center">
+    <td>Setzen</td>
+    <td>Word</td>
+    <td>Setzeingang <br>(1=Setzen auf Setzwert)</td>
+  </tr>
+  <tr align="center">
+    <td>Setzwert</td>
+    <td>Float</td>
+    <td>Setzwert (Anfangswert a)<br> Ausgabe wenn Setzen = 1</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Ausgangswert Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="LIMIT">LIMIT</a> - Begrenzer</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Variable am Eingang Xe wird auf den am Eingang XeOG liegenden oberen
+Grenzwert bzw. auf den am Eingang XeUG liegenden unteren Grenzwert
+begrenzt und &uuml;ber den Ausgang Xa ausgegeben.</p>
+
+<p>Voraussetzung: UG&lt;OG</p>
+
+<p>Es gelten folgende Bedingungen:</p>
+
+<table width="30%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Bedingung</th>
+    <th>Ausgabe</th>
+  </tr>
+  <tr align="center">
+    <td>Xe &lt; XeUG</td>
+    <td>Xa = XeUG</td>
+  </tr>
+  <tr align="center">
+    <td>XeUG &lt; Xe &lt; XeOG</td>
+    <td>Xa = Xe</td>
+  </tr>
+  <tr align="center">
+    <td>Xe &gt; XeOG</td>
+    <td>Xa = XeOG</td>
+  </tr>
+</table>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein LIMIT" src="img/sym_limit.png" alt="" border="0" width="80" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe</td>
+    <td>Float</td>
+    <td>Eingangs-Variable Xe</td>
+  </tr>
+  <tr align="center">
+    <td>XeOG</td>
+    <td>Float</td>
+    <td>Oberer Grenzwert XeOG</td>
+  </tr>
+  <tr align="center">
+    <td>XeUG</td>
+    <td>Float</td>
+    <td>Unterer Grenzwert XeUG</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Ausgangswert Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MAX">MAX</a> - Maximalwert aus maximal 15 Werten (Gr&ouml;&szlig;twert Bildner)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Variable Xe mit dem gr&ouml;&szlig;ten Wert aller Variablen, die an den bis zu 15
+Eing&auml;ngen anliegen, wird der Variablen am Ausgang Xa zugewiesen. Der
+Baustein ber&uuml;cksichtigt das Vorzeichen der Eingangswerte.</p>
+
+<h3>Symbol</h3>
+<table border="0" cellpadding="2" cellspacing="2">
+ <tr>
+  <td>MAX-Baustein <br>Mindestgr&ouml;&szlig;e&nbsp;</td>
+  <td>Maximalauswahl aus <br>15 Eing&auml;ngen</td>
+ </tr>
+ <tr>
+  <td valign="top"><img title="MICAS-Baustein MAX Mindestgr&ouml;&szlig;e" src="img/sym_max.png" alt="" border="0" width="48" height="82">
+&nbsp;</td>
+  <td valign="top"><img title="MICAS-Baustein MAX mit 15 Eing&auml;ngen" src="img/sym_max15.png" alt="" border="0" width="48" height="314">
+&nbsp;</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe 1</td>
+    <td>Float</td>
+    <td>Eingangswert Xe 1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe 2</td>
+    <td>Float</td>
+    <td>Eingangswert Xe 2</td>
+  </tr>
+  <tr align="center">
+    <td>:</td>
+    <td>:</td>
+    <td>:</td>
+  </tr>
+  <tr align="center">
+    <td>Xe n</td>
+    <td>Float</td>
+    <td>Eingangswert Xe n</td>
+  </tr>
+  <tr>
+    <td align=center>Xa</td>
+    <td>Float</td>
+    <td>Ausgangswert Xa</td>
+  </tr>
+  </table>
+<br>
+
+<h2><a name="MIN">MIN</a> - Minimalwert aus maximal 15 Werten (Kleinstwert Bildner)</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Variable Xe mit dem kleinsten Wert aller Variablen, die an den bis zu 15
+Eing&auml;ngen anliegen, wird der Variablen Xa am Ausgang zugewiesen.
+Der Baustein ber&uuml;cksichtigt das Vorzeichen der Eingangswerte.
+</p>
+
+<h3>Symbol</h3>
+<table border="0" cellpadding="2" cellspacing="2">
+ <tr>
+  <td>MIN-Baustein <br>Mindestgr&ouml;&szlig;e&nbsp;</td>
+  <td>Minimalauswahl aus <br>15 Eing&auml;ngen</td>
+ </tr>
+ <tr>
+  <td valign="top"><img title="MICAS-Baustein MIN Mindestgr&ouml;&szlig;e" src="img/sym_min.png" alt="" border="0" width="48" height="82">
+&nbsp;</td>
+  <td valign="top"><img title="MICAS-Baustein MIN mit 15 Eing&auml;ngen" src="img/sym_min15.png" alt="" border="0" width="48" height="314">
+&nbsp;</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe 1</td>
+    <td>Float</td>
+    <td>Eingangswert Xe 1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe 2</td>
+    <td>Float</td>
+    <td>Eingangswert Xe 2</td>
+  </tr>
+  <tr align="center">
+    <td>:</td>
+    <td>:</td>
+    <td>:</td>
+  </tr>
+  <tr align="center">
+    <td>Xe n</td>
+    <td>Float</td>
+    <td>Eingangswert Xe n</td>
+  </tr>
+  <tr>
+    <td align=center>Xa</td>
+    <td>Float</td>
+    <td>Ausgangswert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h2><a name="MULDI">MULDI</a> - Multiplizierer-Dividierer</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die am Eingang Xe1 liegende Variable wird mit der am Eingang Xe2 liegenden
+Variablen multipliziert und dann durch die am Eingang Xe3 liegende Variable
+dividiert. Das Ergebnis wird der Variablen am Ausgang Xa zugewiesen.</p>
+
+<p>Xa = Xe1 * Xe2 / Xe3
+</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein MULDI" src="img/sym_muldi.png" alt="" border="0" width="62" height="99">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+    <th>Parametername</th>
+    <th>Typ</th>
+    <th>Bedeutung</th>
+  </tr>
+  <tr align="center">
+    <td>Xe1</td>
+    <td>Float</td>
+    <td>Eingangswert Xe1</td>
+  </tr>
+  <tr align="center">
+    <td>Xe2</td>
+    <td>Float</td>
+    <td>Eingangswert Xe2</td>
+  </tr>
+  <tr align="center">
+    <td>Xe3</td>
+    <td>Float</td>
+    <td>Eingangswert Xe3</td>
+  </tr>
+  <tr align="center">
+    <td>Xa</td>
+    <td>Float</td>
+    <td>Ausgangswert Xa = Xe1 * Xe2 / Xe3</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MULK2"> MULK2</a> - Multiplikation mit Konstantwert 2</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der Variablen am Eingang Xe wird mit 2 multipliziert und das Ergebnis
+der Variablen am Ausgang Xa zugewiesen.</p>
+<p>Xa = Xe * 2</p>
+<p><i>Hinweis:<br>
+Dieser Baustein arbeitet besonders
+schnell und sollte deshalb bei einer Multiplikation mit 2 benutzt werden.</i></p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein MULK2" src="img/sym_mulk2.png" alt="" border="0" width="56" height="68">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MULT">MULT</a> - Multiplizierer mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der Variablen am Eingang Xe1 wird mit dem Wert der Variablen am
+Eingang Xe2 multipliziert und das Ergebnis der Variablen am Ausgang Xa zugewiesen.
+</p>
+<p>Xa = Xe1 * Xe2</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein MULT" src="img/sym_mult.png" alt="" border="0" width="62" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe1</td>
+   <td>Float</td>
+   <td>Eingangwert Xe1</td>
+  </tr>
+  <tr align="center">
+   <td>Xe2</td>
+   <td>Float</td>
+   <td>Eingangwert Xe2</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = Xe1 * Xe2</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="PT1">PT1</a> - PT1-Zeitglied</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Das Ausgangssignal Xa l&auml;uft nach einer e-Funktion gegen den am Eingang Xe
+liegenden Wert. Der Baustein stellt somit einen Tiefpa&szlig; erster Ordnung dar mit
+der &Uuml;bertragungs-Funktion <br>
+F(p) = 1 / (1 + pT1)
+</p>
+
+<p>Die am Eingang T1 liegende Variable enth&auml;lt die wirksame Zeitkonstante in
+Sekunden. Es mu&szlig; gelten Tz *10 &lt; T1 (Tz=Task-Zykluszeit), anderenfalls
+erfolgt ein Eintrag im Fehlerspeicher des Betriebssystems.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein PT1" src="img/sym_pt1.png" alt="" border="0" width="50" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe1/td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>T1</td>
+   <td>Float</td>
+   <td>Zeitkonstante T1 in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = 1 / (1 + pT1)</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="SUB2">SUB2</a> - Subtrahierer mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Wert der Variablen am Eingang XeMinus wird vom Wert der Variablen am
+Eingang XePlus subtrahiert und das Ergebnis der Variablen am Ausgang Xazugewiesen.</p>
+<p>Xa = XePlus - XeMinus</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein SUB2" src="img/sym_sub2.png" alt="" border="0" width="102" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert XePlus</td>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert XeMinus</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa = XePlus - XeMinus</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="TTZEIT">TTZEIT</a> - Subtrahierer mit 2 Eing&auml;ngen</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Die Float-Variable am Eingang Xe erscheint um die &uuml;ber den Eingang "Totzeit"
+vorgegebene Zeit in Sekunden verz&ouml;gert am Ausgang Xa.</p>
+
+<h3>Symbol</h3>
+<img title="MICAS-Baustein TTZEIT" src="img/sym_ttzeit.png" alt="" border="0" width="90" height="82">
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Float</td>
+   <td>Eingangwert Xe</td>
+  </tr>
+  <tr align="center">
+   <td>Totzeit</td>
+   <td>Float</td>
+   <td>Verz&ouml;gerungszeit</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+
+<br />
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Micas Compiler"
+            id="de.wisag.automation.micas.compiler.mic.ui.commands.category">
+      </category>
+      <command
+            name="Build Project"
+            categoryId="de.wisag.automation.micas.compiler.mic.ui.commands.category"
+            id="de.wisag.automation.micas.compiler.mic.ui.commands.buildproject">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.compiler.mic.ui.commands.category"
+            id="de.wisag.automation.micas.compiler.mic.ui.commands.micclean"
+            name="Clean Project">
+      </command>
+      <command
+            categoryId="de.wisag.automation.micas.compiler.mic.ui.commands.category"
+            id="de.wisag.automation.micas.compiler.mic.ui.commands.micmigrate"
+            name="Migrate legacy micfile(s)">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="de.wisag.automation.micas.compiler.mic.ui.commands.buildproject"
+            class="de.wisag.automation.micas.compiler.mic.ui.handlers.ProjectBuildHandler">
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <iterate
+                     ifEmpty="false">
+                  <adapt
+                        type="org.eclipse.core.resources.IProject">
+                     <test
+                           property="org.eclipse.core.resources.projectNature"
+                           value="de.wisag.automation.micas.nature">
+                     </test>
+                  </adapt>
+               </iterate>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.compiler.mic.ui.handlers.MicCleaner"
+            commandId="de.wisag.automation.micas.compiler.mic.ui.commands.micclean">
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <iterate
+                     ifEmpty="false">
+                  <adapt
+                        type="org.eclipse.core.resources.IProject">
+                     <test
+                           property="org.eclipse.core.resources.projectNature"
+                           value="de.wisag.automation.micas.nature">
+                     </test>
+                  </adapt>
+               </iterate>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="de.wisag.automation.micas.compiler.mic.ui.handlers.MicMigrate"
+            commandId="de.wisag.automation.micas.compiler.mic.ui.commands.micmigrate">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.compiler.mic.ui.commands.buildproject"
+               icon="icons/build.gif"
+               label="Build Project"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.compiler.mic.ui.commands.micclean"
+               icon="icons/clean.gif"
+               label="Clean Project"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.compiler.mic.ui.commands.micmigrate"
+               label="Migrate all legacy micfile(s) (Convert MIC-&gt;mic)ic)"
+               style="push">
+            <visibleWhen>
+               <with
+                     variable="selection">
+                  <iterate
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.core.resources.IResource">
+                     </instanceof>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="h86"
+            id="de.wisag.automation.micas.compiler.mic.ui.h86contenttype"
+            name="H86 File"
+            priority="normal">
+         <property
+               default="CP850"
+               name="charset">
+         </property>
+      </content-type>
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="rep"
+            id="de.wisag.automation.micas.compiler.mic.ui.repcontenttype"
+            name="Micas Report File"
+            priority="normal">
+         <property
+               default="CP850"
+               name="charset">
+         </property>
+      </content-type>
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="mf"
+            id="de.wisag.automation.micas.compiler.mic.ui.mfcontenttype"
+            name="Micas Manifest"
+            priority="normal">
+         <property
+               default="CP850"
+               name="charset">
+         </property>
+      </content-type>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.eclipse.ui.editors.text.TextEditor"
+            contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
+            icon="icons/h86_obj.gif"
+            id="de.wisag.automation.micas.ui.H86TextEditor"
+            name="H86 Editor">
+         <contentTypeBinding
+               contentTypeId="de.wisag.automation.micas.compiler.mic.ui.h86contenttype">
+         </contentTypeBinding>
+      </editor>
+      <editor
+            class="org.eclipse.ui.editors.text.TextEditor"
+            contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
+            icon="icons/report_obj.gif"
+            id="de.wisag.automation.micas.ui.RepTextEditortEditor"
+            name="Micas Report Editor">
+         <contentTypeBinding
+               contentTypeId="de.wisag.automation.micas.compiler.mic.ui.repcontenttype">
+         </contentTypeBinding>
+      </editor>
+      <editor
+            class="org.eclipse.ui.editors.text.TextEditor"
+            contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
+            icon="icons/mf_obj.gif"
+            id="de.wisag.automation.micas.ui.MfTextEditor"
+            name="Micas Manifest Editor">
+         <contentTypeBinding
+               contentTypeId="de.wisag.automation.micas.compiler.mic.ui.mfcontenttype">
+         </contentTypeBinding>
+      </editor>
+   </extension>
+</plugin>

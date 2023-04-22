@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="de.wisag.automation.micas.export.mic.addCustomTemplate"
+            nameFilter="*.module"
+            objectClass="org.eclipse.core.resources.IFile">
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="de.wisag.automation.micas.export.mic.contribution1"
+            nameFilter="*"
+            objectClass="org.eclipse.core.resources.IProject">
+         <action
+               class="de.wisag.automation.micas.export.mic.internal.builder.ToggleNatureAction"
+               enablesFor="+"
+               id="de.wisag.automation.micas.export.mic.addRemoveNatureAction"
+               label="Add/Remove Micas Nature"
+               menubarPath="additions">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         id="de.wisag.automation.micas.builder"
+         name="Micas Diagram Builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            hasNature="true">
+         <run
+               class="de.wisag.automation.micas.export.mic.internal.builder.MicasProjectBuilder">
+         </run>
+      </builder>
+   </extension>
+   <extension
+         id="de.wisag.automation.micas.nature"
+         name="Micas Project "
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="de.wisag.automation.micas.export.mic.internal.builder.MicasNature">
+         </run>
+      </runtime>
+      <builder
+            id="de.wisag.automation.micas.builder">
+      </builder>
+   </extension>
+   <extension
+         id="diagramProblem"
+         name="Diagram Problem"
+         point="org.eclipse.core.resources.markers">
+      <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <persistent
+            value="true">
+      </persistent>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="org.eclipse.core.resources.IFile"
+            class="de.wisag.automation.micas.export.mic.internal.RtSymbolTranslatorAdapterFactory">
+         <adapter
+               type="de.wisag.automation.micas.export.mic.IRtSymbolTranslator">
+         </adapter>
+      </factory>
+   </extension>
+
+</plugin>

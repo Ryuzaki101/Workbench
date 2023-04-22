@@ -1,0 +1,146 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0408.GPS
+  ;*** Projektname    : ARAG KAELTE
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 8
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-ENTRIEGELN-AUS (0)
+  WordK  K-ENTRIEGELN-EIN (1)
+  FloatV PUF-TEM-HK-OBEN
+  FloatV KALTW-EIN-TEMP-E
+  FloatV TEMP-SOLE-KAELTE
+  FloatV KW-TEMP-RECHNER1
+  FloatV KW-TEMP-RECHNER2
+  FloatV WRG-EINTR-TEMP
+  FloatV PUF-TEM-HK-UNTEN
+  FloatK K-SW-FREI/KAELTE (9.00)
+  FloatK K-SW-RECHN-UEB-W (14.00)
+  WordV  EINSCHALT-KWS
+  FloatK KON03_GRD (3.00)
+  WordV  EIN-BYPASS-WT
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1KA0004BF60 (102,9)
+  WordK  $M0 (1)
+  IPAAW &BA1KA0206AA70 (124)
+  WordK  $M1 (1)
+  IPAAW &BA1KA0000AA91 (126)
+  IPAMB &M2 (102,10)
+  IPAMB &M3 (102,11)
+  WordV  $WSCRATCH
+  IPAAW &BA1KA0200MW23 (23)
+  IPAAW &BA1KA0206MW22 (24)
+  IPAAW &BA1KA2060MW23 (25)
+  IPAAW &BA1KA0206MW01 (61)
+  IPAAW &BA1KA0000MW22 (45)
+  IPAAW &BA1KA0200MW22 (50)
+  IPAAW &BA1KA0206MW02 (62)
+  FloatV $F1
+  FloatV $F2
+  FloatK $M4 (0.00)
+  WordV  $B1
+  FloatK $M5 (0.00)
+  WordV  $B2
+  WordV  $B3
+  WordK  $M6 (1)
+  IPAMB &BA1KA0204AL02 (85,6)
+  WordV  $B4
+  FloatV $F3
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  IPAMB &BA1KA0200BM07 (11,9)
+  IPAMB &BA1KA0200BM08 (11,13)
+  WordV  $B8
+  WordV  $B9
+  IPAMB &BA1KA0200BM05 (10,1)
+  IPAMB &BA1KA0200BM06 (10,5)
+  FloatK $M7 (47.00)
+  FloatK $M8 (2.00)
+  WordV  $B10
+  WordV  $B11
+  IPAMB &BA1KA0000BM06 (11,5)
+  IPAMB &BA1KA0000BM05 (11,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;EDV-KAELTE
+  ;STANDORT:
+  ;2.KG Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-ENTRIEGELN-AUS,K-ENTRIEGELN-EIN,$WZERO,$WZERO,
+          &BA1KA0004BF60,WERR)
+  ANAUS (K-SW-RECHN-UEB-W,$M0,&BA1KA0206AA70,WERR)
+  ANAUS (K-SW-FREI/KAELTE,$M1,&BA1KA0000AA91,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&BA1KA0004BF60,3,K-ENTRIEGELN-AUS,$WSCRATCH,
+          K-ENTRIEGELN-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANEIN (&BA1KA0200MW23,WRG-EINTR-TEMP,WERR)
+  ANEIN (&BA1KA0206MW22,KW-TEMP-RECHNER1,WERR)
+  ANEIN (&BA1KA2060MW23,KW-TEMP-RECHNER2,WERR)
+  ANEIN (&BA1KA0206MW01,PUF-TEM-HK-OBEN,WERR)
+  ANEIN (&BA1KA0000MW22,TEMP-SOLE-KAELTE,WERR)
+  ANEIN (&BA1KA0200MW22,KALTW-EIN-TEMP-E,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANEIN (&BA1KA0206MW02,PUF-TEM-HK-UNTEN,WERR)
+  ANEIN (&BA1KA0206AA70,$F1,WERR)
+  ANEIN (&BA1KA0000AA91,$F2,WERR)
+  ATRA ($F1,K-SW-RECHN-UEB-W)
+  ATRA ($F2,K-SW-FREI/KAELTE)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  VGLEH (KW-TEMP-RECHNER1,K-SW-RECHN-UEB-W,$M4,$B1)
+  VGLEH (KW-TEMP-RECHNER2,K-SW-RECHN-UEB-W,$M5,$B2)
+  ODR2 ($B1,$B2,$B3)
+  RSS ($B3,K-ENTRIEGELN-EIN,EINSCHALT-KWS,$WSCRATCH)
+  SETMEL ($M6,1,EINSCHALT-KWS,&BA1KA0204AL02,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLOH (KALTW-EIN-TEMP-E,K-SW-FREI/KAELTE,$B4)
+  ADD2 (K-SW-FREI/KAELTE,KON03_GRD,$F3)
+  VGLOH ($F3,TEMP-SOLE-KAELTE,$B5)
+  RSS ($B4,$B5,EIN-BYPASS-WT,$WSCRATCH)
+  ODRMN (2,EIN-BYPASS-WT,EINSCHALT-KWS,0,$B6,$B7)
+  BEFAUS (1,$B7,$B6,$WZERO,$WZERO,&BA1KA0200BM07,WERR)
+  BEFAUS (1,$B7,$B6,$WZERO,$WZERO,&BA1KA0200BM08,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (2,EIN-BYPASS-WT,EINSCHALT-KWS,0,$B8,$B9)
+  BEFAUS (1,$B9,$B8,$WZERO,$WZERO,&BA1KA0200BM05,WERR)
+  BEFAUS (1,$B9,$B8,$WZERO,$WZERO,&BA1KA0200BM06,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  VGLEH (PUF-TEM-HK-UNTEN,$M7,$M8,$B10)
+  NICHT ($B10,$B11)
+  BEFAUS (1,$B11,$B10,$WZERO,$WZERO,&BA1KA0000BM06,WERR)
+  BEFAUS (1,$B11,$B10,$WZERO,$WZERO,&BA1KA0000BM05,WERR)
+  ENDE 
+  ENDMODUL 

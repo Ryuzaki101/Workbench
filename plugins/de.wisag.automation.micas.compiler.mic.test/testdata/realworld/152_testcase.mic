@@ -1,0 +1,658 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 34_06_03.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 34101734
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 6
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV E_X_ZL_DRUCK_277
+  FloatV E_W_ZL_DRUCK_277
+  WordK  K_1_STATUS (1)
+  WordV  S_ERR
+  WordV  E_RM_ZL_1_EIN
+  FloatV A_Y_ZL_DRUCK_277
+  WordV  E_RM_ZL_2_EIN
+  FloatV A_Y_ZL_DRUCK_278
+  FloatV E_X_ZL_DRUCK_278
+  WordV  E_RM_AL_1_EIN
+  FloatV E_W_ZL_DRUCK_278
+  WordV  E_RM_AL_2_EIN
+  FloatV E_X_AL_DRUCK_277
+  FloatV E_W_AL_DRUCK_277
+  FloatV A_Y_AL_DRUCK_277
+  FloatV E_X_AL_DRUCK_278
+  FloatV E_W_AL_DRUCK_278
+  FloatV A_Y_AL_DRUCK_278
+  FloatV E_W_ZONEN_MIN
+  FloatK K_28_GRAD (28.00)
+  FloatV E_W_ZL_TEMP_NOT
+  WordV  Z_INIT_TASK_EIN
+  FloatV A_W_ZL_TEMP
+  FloatV A_Y_ZL_TEMP_REG
+  FloatV E_X_ZL_TEMP
+  FloatV A_X_ZL_FEUCHTE
+  FloatV R_MW_AL_F_S287
+  FloatV A_X_AL_FEUCHTE
+  FloatV E_MW_AL_TEMP
+  FloatV E_W_AL_FEUCHTE
+  FloatV A_W_AL_FEUCHTE
+  FloatV D_W_ZL_FEUCHTE
+  FloatV A_Y_ZL_FEUCHTE
+  WordV  E_BM_NOTBETRIEB
+  FloatK K_W_AL_DRUCK_277 (150.00)
+  WordK  K_0_STATUS (0)
+  FloatK K_W_AL_DRUCK_278 (150.00)
+  FloatK K_W_AL_FEUCHTE (50.00)
+  FloatK K_W_ZL_DRUCK_277 (150.00)
+  FloatK K_W_ZL_DRUCK_278 (150.00)
+  FloatV E_MW_ZL_F_GESAMT
+  FloatV E_MW_AL_FEUCHTE
+  FloatV R_MW_AL_F_S10207
+  FloatK K_1000_WERT (1000.00)
+  FloatK K_1_WERT (1.00)
+  FloatK K_16_GRAD (16.00)
+  WordV  $HB0
+  IPAAW &M0 (124)
+  IPAAW &M1 (126)
+  IPAAW &M2 (132)
+  IPAAW &M3 (120)
+  IPAAW &M4 (122)
+  IPAMB &M5 (255,2)
+  IPAMB &M6 (32,3)
+  IPAMB &M7 (50,3)
+  IPAMB &M8 (0,3)
+  IPAMB &M9 (14,3)
+  IPAAW &M15 (180)
+  IPAAW &M16 (21)
+  IPAAW &M17 (20)
+  IPAAW &M18 (22)
+  IPAAW &M19 (55)
+  IPAAW &M20 (254)
+  IPAAW &M21 (23)
+  IPAAW &M22 (58)
+  IPAAW &M23 (59)
+  IPAAW &M24 (56)
+  IPAAW &M25 (57)
+  IPAAW &M26 (54)
+  WordV  $B1
+  WordV  $HB3
+  FloatK $M27 (0.00)
+  WordV  $B2
+  FloatK $M28 (0.00)
+  WordV  $B3
+  FloatK $M29 (0.00)
+  WordV  $B4
+  FloatK $M30 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  WordV  $B5
+  FloatK $M31 (50.00)
+  FloatK $M32 (101325.00)
+  FloatV $F5
+  FloatK $M33 (101325.00)
+  FloatV $F6
+  FloatK $M34 (101325.00)
+  FloatV $F7
+  WordV  $B6
+  WordV  $B7
+  WordV  $HB4
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $FZERO (0.00)
+  FloatK $M35 (50.00)
+  IPAAW &M36 (133)
+  IPAAW &M37 (128)
+  IPAAW &M38 (130)
+  IPAAW &M39 (131)
+  IPAAW &M40 (125)
+  IPAAW &M41 (127)
+  IPAAW &M42 (121)
+  IPAAW &M43 (123)
+  IPAAW &M44 (135)
+  IPAAW &M45 (129)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut für
+  ;Bio-Physikalische-
+  ;Chemie Göttingen
+  ;KUNDE:
+  ;------------------------
+  ;AME- Technik GmbH
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;BTL 2
+  ;Lüftungsanlageen
+  ;Übergeordnete
+  ;Regelungen
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (K_1_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter aktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  TASK (2,cycl,500)
+  NICHT (Z_INIT_TASK_EIN,$HB0)
+  BENDE ($HB0)
+  ;Initialisierung
+  ;durchfühhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;BTLLU20-00A-P53
+  ; 
+  ANAUS (K_W_AL_DRUCK_277,K_1_STATUS,&M0,S_ERR)
+  ;Sollwert Abluft-
+  ;Druck Raum 277
+  ; 
+  ;BTLLU20-00A-P54
+  ; 
+  ANAUS (K_W_AL_DRUCK_278,K_1_STATUS,&M1,S_ERR)
+  ;Sollwert Abluft-
+  ;Druck Raum 278
+  ; 
+  ;BTLLU20-00A-F62
+  ; 
+  ANAUS (K_W_AL_FEUCHTE,K_1_STATUS,&M2,S_ERR)
+  ;Sollwert Abluft-
+  ;Feuchte Relativ
+  ; 
+  ;BTLLU20-00A-P51
+  ; 
+  ANAUS (K_W_ZL_DRUCK_277,K_1_STATUS,&M3,S_ERR)
+  ;Sollwert Zuluft-
+  ;Druck Raum 277
+  ; 
+  ;BTLLU20-00A-P52
+  ; 
+  ANAUS (K_W_ZL_DRUCK_278,K_1_STATUS,&M4,S_ERR)
+  ;Sollwert Zuluft-
+  ;Druck Raum 278
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  BTRA (K_0_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter
+  ;deaktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Meldung Ein
+  ;Notbetrieb
+  ; 
+  ;BTLAS06-00B-V03
+  ; 
+  MELEIN (&M5,1,E_BM_NOTBETRIEB,S_ERR)
+  ;Rückmeldung Ein
+  ;Ventilator
+  ;Abluftgerät 1
+  ; 
+  ;BTLLU20-05A-X02
+  ; 
+  MELEIN (&M6,1,E_RM_AL_1_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;Ventilator
+  ;Abluftgerät 2
+  ; 
+  ;BTLLU20-06A-X02
+  ; 
+  MELEIN (&M7,1,E_RM_AL_2_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;Ventilator
+  ;Zuluftgerät 1
+  ; 
+  ;BTLLU20-02A-X01
+  ; 
+  MELEIN (&M8,1,E_RM_ZL_1_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;Ventilator
+  ;Zuluftgerät 2
+  ; 
+  ;BTLLU20-03A-X01
+  ; 
+  MELEIN (&M9,1,E_RM_ZL_2_EIN,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M0,K_W_AL_DRUCK_277,S_ERR)
+  ATRA (K_W_AL_DRUCK_277,E_W_AL_DRUCK_277)
+  ;BTLLU20-00A-P53
+  ; 
+  ;Sollwert
+  ;Abluftdruck
+  ;Raum 277
+  ; 
+  ANEIN (&M1,K_W_AL_DRUCK_278,S_ERR)
+  ATRA (K_W_AL_DRUCK_278,E_W_AL_DRUCK_278)
+  ;BTLLU20-00A-P54
+  ;R
+  ; 
+  ;Sollwert
+  ;Abluftdruck
+  ;Raum 278
+  ; 
+  ANEIN (&M2,K_W_AL_FEUCHTE,S_ERR)
+  ATRA (K_W_AL_FEUCHTE,E_W_AL_FEUCHTE)
+  ;BTLLU20-00A-F62
+  ;R
+  ; 
+  ;Sollwert
+  ;Abluftfeuchte
+  ; 
+  ANEIN (&M3,K_W_ZL_DRUCK_277,S_ERR)
+  ATRA (K_W_ZL_DRUCK_277,E_W_ZL_DRUCK_277)
+  ;BTLLU20-00A-P51
+  ; 
+  ;Sollwert
+  ;Zuluftdruck
+  ;Raum 277
+  ; 
+  ANEIN (&M4,K_W_ZL_DRUCK_278,S_ERR)
+  ATRA (K_W_ZL_DRUCK_278,E_W_ZL_DRUCK_278)
+  ;BTLLU20-00A-P52
+  ;R
+  ; 
+  ;Sollwert
+  ;Zuluftdruck
+  ;Raum 278
+  ; 
+  ANEIN (&M15,E_W_ZL_TEMP_NOT,S_ERR)
+  ;BTLLU20-00A-T51
+  ;R
+  ; 
+  ;Sollwert
+  ;Zulufttemperatur
+  ;Notbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M16,R_MW_AL_F_S10207,S_ERR)
+  ;BTLLU20-04A-F22
+  ; 
+  ;Messwert
+  ;Abluftfeuchte
+  ;Strang 10207
+  ; 
+  ANEIN (&M17,R_MW_AL_F_S287,S_ERR)
+  ;BTLLU20-04A-F32
+  ; 
+  ;Messwert
+  ;Abluftfeuchte
+  ;Schacht 287
+  ; 
+  ANEIN (&M18,E_MW_AL_TEMP,S_ERR)
+  ;BTLLU20-04A-T02
+  ; 
+  ;Messwert
+  ;Ablufttemperatur
+  ;Gesamt
+  ; 
+  ANEIN (&M19,E_MW_ZL_F_GESAMT,S_ERR)
+  ;BTLLU20-03A-F11
+  ; 
+  ;Messwert
+  ;Zuluftfeuchte
+  ;Gesamt
+  ; 
+  ANEIN (&M20,E_W_ZONEN_MIN,S_ERR)
+  ;BTLAS06-00B-V21
+  ; 
+  ;Sollwert
+  ;Zulufttemperatur
+  ;Zonen
+  ; 
+  ANEIN (&M21,E_MW_AL_FEUCHTE,S_ERR)
+  ;BTLLU20-04A-F02
+  ; 
+  ;Messwert
+  ;Abluftfeuchte
+  ;Gesamt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M22,E_X_AL_DRUCK_277,S_ERR)
+  ;BTLLU20-04A-P12
+  ; 
+  ;Istwert
+  ;Abluftdruck
+  ;Raum 277
+  ; 
+  ANEIN (&M23,E_X_AL_DRUCK_278,S_ERR)
+  ;BTLLU20-04A-P22
+  ;R
+  ; 
+  ;Istwert
+  ;Abluftdruck
+  ;Raum 278
+  ; 
+  ANEIN (&M24,E_X_ZL_DRUCK_277,S_ERR)
+  ;BTLLU20-03A-P11
+  ;R
+  ; 
+  ;Istwert
+  ;Zuluftdruck
+  ;Raum 277
+  ; 
+  ANEIN (&M25,E_X_ZL_DRUCK_278,S_ERR)
+  ;BTLLU20-03A-P21
+  ;R
+  ; 
+  ;Istwert
+  ;Zuluftdruck
+  ;Raum 278
+  ; 
+  ANEIN (&M26,E_X_ZL_TEMP,S_ERR)
+  ;BTLLU20-03A-T11
+  ;R
+  ; 
+  ;Istwert
+  ;Zulufttemperatur
+  ;Gesamt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  TASK (4,cycl,2000)
+  ;Kopfsteuerung der
+  ;Anlage:
+  ;- virtuelle Störungen
+  ;- Sammelstörung
+  ;- Hauptstörung
+  ;- Anlage Einschalten
+  ; 
+  ;Steuerungs und
+  ;Regelungs-
+  ;Funktionen der Anlage
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODR2 (E_RM_ZL_1_EIN,E_RM_ZL_2_EIN,$B1)
+  NICHT ($B1,$HB3)
+  REGLER (1,K_1_STATUS,$HB3,$M27,A_Y_ZL_DRUCK_277,S_ERR)
+  ;Zuluftdruckregelung
+  ;über Volumestrombox
+  ;Raum 277
+  ;Regelung ist aktiv
+  ;wenn einer der beiden
+  ;Zulüfter eingeschaltet
+  ;wird
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODR2 (E_RM_ZL_1_EIN,E_RM_ZL_2_EIN,$B2)
+  NICHT ($B2,$HB3)
+  REGLER (2,K_1_STATUS,$HB3,$M28,A_Y_ZL_DRUCK_278,S_ERR)
+  ;Zuluftdruckregelung
+  ;über Volumestrombox
+  ;Raum 278
+  ;Regelung ist aktiv
+  ;wenn einer der beiden
+  ;Zulüfter eingeschaltet
+  ;wird
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODR2 (E_RM_AL_1_EIN,E_RM_AL_2_EIN,$B3)
+  NICHT ($B3,$HB3)
+  REGLER (3,K_1_STATUS,$HB3,$M29,A_Y_AL_DRUCK_277,S_ERR)
+  ;Abluftdruckregelung
+  ;über Volumestrombox
+  ;Raum 277
+  ;Regelung ist aktiv
+  ;wenn einer der beiden
+  ;Ablüfter eingeschaltet
+  ;wird
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODR2 (E_RM_AL_1_EIN,E_RM_AL_2_EIN,$B4)
+  NICHT ($B4,$HB3)
+  REGLER (4,K_1_STATUS,$HB3,$M30,A_Y_AL_DRUCK_278,S_ERR)
+  ;Abluftdruckregelung
+  ;über Volumestrombox
+  ;Raum 278
+  ;Regelung ist aktiv
+  ;wenn einer der beiden
+  ;Ablüfter eingeschaltet
+  ;wird
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MIN (2,E_W_ZONEN_MIN,K_28_GRAD,$F1)
+  MAX (2,$F1,K_16_GRAD,$F2)
+  MIN (2,E_W_ZL_TEMP_NOT,K_28_GRAD,$F3)
+  MAX (2,$F3,K_16_GRAD,$F4)
+  AWT (E_BM_NOTBETRIEB,$F2,$F4,A_W_ZL_TEMP)
+  ;Sollwertbildung
+  ;für die Zulufttemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODR2 (E_RM_ZL_1_EIN,E_RM_ZL_2_EIN,$B5)
+  NICHT ($B5,$HB3)
+  REGLER (5,K_1_STATUS,$HB3,$M31,A_Y_ZL_TEMP_REG,S_ERR)
+  ;ZUlufttemperatur
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ABSFEU (E_MW_ZL_F_GESAMT,E_X_ZL_TEMP,$M32,$F5)
+  MULDI ($F5,K_1000_WERT,K_1_WERT,A_X_ZL_FEUCHTE)
+  ABSFEU (E_MW_AL_FEUCHTE,E_MW_AL_TEMP,$M33,$F6)
+  MULDI ($F6,K_1000_WERT,K_1_WERT,A_X_AL_FEUCHTE)
+  ;Istwerte
+  ;Feuchteregelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ABSFEU (E_W_AL_FEUCHTE,E_MW_AL_TEMP,$M34,$F7)
+  MULDI ($F7,K_1000_WERT,K_1_WERT,A_W_AL_FEUCHTE)
+  ;Sollwert Abluft-
+  ;Feuchteregelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODR2 (E_RM_ZL_1_EIN,E_RM_ZL_2_EIN,$B6)
+  UND11 ($B6,E_BM_NOTBETRIEB,$B7)
+  NICHT ($B7,$HB4)
+  REGLER (6,K_1_STATUS,$WZERO,$FZERO,D_W_ZL_FEUCHTE,S_ERR)
+  REGLER (7,K_1_STATUS,$HB4,$M35,A_Y_ZL_FEUCHTE,S_ERR)
+  ;Abluft- Zuluft-Feuchte
+  ;Kaskadenregelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  TASK (5,cycl,1000)
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ;BTLLU20-00A-F63
+  ; 
+  ANAUS (A_W_AL_FEUCHTE,K_1_STATUS,&M36,S_ERR)
+  ;Sollwert Abluft-
+  ;Feuchte Absolut
+  ; 
+  ;BTLLU20-00A-T50
+  ; 
+  ANAUS (A_W_ZL_TEMP,K_1_STATUS,&M37,S_ERR)
+  ;Sollwert Zuluft-
+  ;Temperatur
+  ; 
+  ;BTLLU20-00A-F60
+  ; 
+  ANAUS (A_X_AL_FEUCHTE,K_1_STATUS,&M38,S_ERR)
+  ;Istwert Abluft-
+  ;Feuchte Absolut
+  ; 
+  ;BTLLU20-00A-F61
+  ; 
+  ANAUS (A_X_ZL_FEUCHTE,K_1_STATUS,&M39,S_ERR)
+  ;Istwert Zuluft-
+  ;Feuchte Absolut
+  ; 
+  ;BTLLU20-00A-Y53
+  ; 
+  ANAUS (A_Y_AL_DRUCK_277,K_1_STATUS,&M40,S_ERR)
+  ;Stellsign. Abluft-
+  ;DRuck Raum 277
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ;BTLLU20-00A-Y54
+  ; 
+  ANAUS (A_Y_AL_DRUCK_278,K_1_STATUS,&M41,S_ERR)
+  ;Stellsig. Abluft-
+  ;Druck Raum 278
+  ; 
+  ;BTLLU20-00A-Y51
+  ; 
+  ANAUS (A_Y_ZL_DRUCK_277,K_1_STATUS,&M42,S_ERR)
+  ;Stellsig. Zuluft-
+  ;Druck Raum 277
+  ; 
+  ;BTLLU20-00A-Y52
+  ; 
+  ANAUS (A_Y_ZL_DRUCK_278,K_1_STATUS,&M43,S_ERR)
+  ;Stellsig. Zuluft-
+  ;Druck Raum 278
+  ; 
+  ;BTLLU20-00A-Y64
+  ; 
+  ANAUS (A_Y_ZL_FEUCHTE,K_1_STATUS,&M44,S_ERR)
+  ;Stellsig. Zuluft-
+  ;Feuchte
+  ; 
+  ;BTLLU20-00A-Y50
+  ; 
+  ANAUS (A_Y_ZL_TEMP_REG,K_1_STATUS,&M45,S_ERR)
+  ;Stellsig. Zuluft-
+  ;Temperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

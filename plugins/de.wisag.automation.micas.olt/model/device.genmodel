@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.wisag.automation.micas.olt/src-gen"
+    modelPluginID="de.wisag.automation.micas.olt" modelName="Device" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="../../de.wisag.automation.micas.hwmodules/model/hwmodules.genmodel#//hwmodules">
+  <foreignModel>device.ecore</foreignModel>
+  <genPackages prefix="Device" basePackage="de.wisag.automation.micas.olt" disposableProviderFactory="true"
+      ecorePackage="device.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="device.ecore#//SerialParity">
+      <genEnumLiterals ecoreEnumLiteral="device.ecore#//SerialParity/Even"/>
+      <genEnumLiterals ecoreEnumLiteral="device.ecore#//SerialParity/Odd"/>
+      <genEnumLiterals ecoreEnumLiteral="device.ecore#//SerialParity/None"/>
+    </genEnums>
+    <genClasses ecoreClass="device.ecore#//DeviceInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/moduleName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/serial"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/macAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/ipAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//DeviceInfo/hardwareType"/>
+    </genClasses>
+    <genClasses ecoreClass="device.ecore#//ConnectionInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//ConnectionInfo/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//ConnectionInfo/description"/>
+    </genClasses>
+    <genClasses ecoreClass="device.ecore#//NetworkConnectionInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//NetworkConnectionInfo/ipv4Address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//NetworkConnectionInfo/hostname"/>
+    </genClasses>
+    <genClasses ecoreClass="device.ecore#//SerialConnectionInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//SerialConnectionInfo/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//SerialConnectionInfo/baudRate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//SerialConnectionInfo/stopBits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute device.ecore#//SerialConnectionInfo/dataBits"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

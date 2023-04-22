@@ -1,0 +1,145 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60507.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (sp20,7)
+  WordV  WERR
+  WordV  WEISS-KLIMASCHR
+  WordV  T6-UV12-41A-S07
+  WordV  NOT-NETZ-UEB-SPA
+  WordV  NOT-NETZ-PHASEN
+  WordV  T6-UV12-41A-S09
+  WordV  NOT-NETZ-24V-AC
+  WordV  NOT-NETZ-24V-DC
+  WordV  T6-UV12-41A-S02
+  WordV  NOR-NETZ-UEB-SPA
+  WordV  NOR-NETZ-PHASEN
+  WordV  T6-S012-41A-S01
+  WordV  T6-UV12-41A-S11
+  WordV  T6-UV12-41A-S13
+  WordV  STEU-SPANN-R-307
+  WordV  STEU-SPANN-R-207
+  WordV  NOR-NETZ-230V/AC
+  WordV  FEUERW-ABSCHALT
+  WordV  DRUCK-MIN-ST-LUF
+  WordV  DRUCK-MAX-ST-LUF
+  WordV  NOT-NETZ-230V/AC
+  FloatV GR_MIN_VL-T-FE
+  FloatV VL-Te-FE-PRIM
+  WordV  ENTRIEGELN
+  WordV  STOE_GR_VL-Te_FE
+  WordV  QUITTIEREN
+  FloatK K-GR_MIN_VL-T-FE (60.00)
+  WordK  $M0 (1)
+  IPAAW &M1 (207)
+  WordV  $WSCRATCH
+  IPAMB &T6-LU13-07A-S01 (27,15)
+  IPAMB &T6-UV12-41A-S06 (34,2)
+  IPAMB &M2 (34,3)
+  IPAMB &T6-UV12-41A-S08 (34,6)
+  IPAMB &M3 (34,7)
+  IPAMB &T6-UV12-41A-S01 (34,10)
+  IPAMB &M4 (34,11)
+  IPAMB &T6-UV12-41A-S10 (35,2)
+  IPAMB &M5 (35,3)
+  IPAMB &T6-SO12-41A-S02 (35,6)
+  IPAMB &M6 (35,7)
+  IPAMB &T6-UV12-41A-S05 (35,10)
+  IPAMB &T6-UV12-41A-S12 (35,14)
+  IPAMB &M7 (35,15)
+  IPAMB &M8 (0,11)
+  IPAMB &M9 (0,14)
+  IPAAW &M10 (17)
+  FloatK $M12 (1.00)
+  WordV  $B1
+  WordV  $B2
+  WordK  $M13 (1)
+  IPAMB &M14 (208,15)
+  WordV  $B3
+  FloatK $M15 (5.00)
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordK  $M16 (1)
+  IPAMB &T6-UV12-41A-S50 (135,8)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;Sammelstîrung erfassen
+  ;Allgemein
+  ;EINBAUORT:
+  ;Schaltschrank SUG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ANAUS (K-GR_MIN_VL-T-FE,$M0,&M1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&T6-LU13-07A-S01,1,WEISS-KLIMASCHR,WERR)
+  MELEIN (&T6-UV12-41A-S06,2,NOT-NETZ-UEB-SPA,
+          NOT-NETZ-PHASEN,WERR)
+  MELEIN (&T6-UV12-41A-S08,2,NOT-NETZ-24V-AC,NOT-NETZ-24V-DC,
+          WERR)
+  MELEIN (&T6-UV12-41A-S01,2,NOR-NETZ-UEB-SPA,
+          NOR-NETZ-PHASEN,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&T6-UV12-41A-S10,2,NOT-NETZ-230V/AC,
+          DRUCK-MIN-ST-LUF,WERR)
+  MELEIN (&T6-SO12-41A-S02,2,DRUCK-MAX-ST-LUF,
+          FEUERW-ABSCHALT,WERR)
+  MELEIN (&T6-UV12-41A-S05,1,NOR-NETZ-230V/AC,WERR)
+  MELEIN (&T6-UV12-41A-S12,2,STEU-SPANN-R-207,
+          STEU-SPANN-R-307,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M8,1,QUITTIEREN,$WSCRATCH)
+  MELEIN (&M9,1,ENTRIEGELN,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M10,VL-Te-FE-PRIM,$WSCRATCH)
+  ANEIN (&M1,K-GR_MIN_VL-T-FE,$WSCRATCH)
+  ATRA (K-GR_MIN_VL-T-FE,GR_MIN_VL-T-FE)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLEH (VL-Te-FE-PRIM,GR_MIN_VL-T-FE,$M12,$B1)
+  NICHT ($B1,$B2)
+  RSS ($B2,$B4,STOE_GR_VL-Te_FE,$WSCRATCH)
+  SETMEL ($M13,1,STOE_GR_VL-Te_FE,&M14,$WSCRATCH)
+  ODR2 (QUITTIEREN,ENTRIEGELN,$B3)
+  MOKY ($B3,$M15,$B4)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  ODRMN (1,WEISS-KLIMASCHR,6,NOT-NETZ-UEB-SPA,
+         NOT-NETZ-PHASEN,NOT-NETZ-24V-AC,NOT-NETZ-24V-DC,
+         NOR-NETZ-UEB-SPA,NOR-NETZ-PHASEN,$B5,$WSCRATCH)
+  ODRMN (1,$B5,5,NOT-NETZ-230V/AC,DRUCK-MIN-ST-LUF,
+         DRUCK-MAX-ST-LUF,FEUERW-ABSCHALT,NOR-NETZ-230V/AC,
+         $B6,$WSCRATCH)
+  ODRMN (2,$B6,STOE_GR_VL-Te_FE,2,STEU-SPANN-R-207,
+         STEU-SPANN-R-307,$B7,$WSCRATCH)
+  SETMEL ($M16,1,$B7,&T6-UV12-41A-S50,WERR)
+  ENDE 
+  ENDMODUL 

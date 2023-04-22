@@ -1,0 +1,5317 @@
+******************* Hardware parameter  ****************
+Type : AC40
+StartSegmentAddress  	 : 7700
+DataSegmentAddress  	 : 7700
+DataSegmentChecksum 	 : F316
+TaskSegmentChecksum 	 : 6436
+HeadModuleSegmentAddress : 7C80
+WordConstOffset     	 : 0030
+WordConstCount     	     : 778
+FloatConstOffset         : 00E0
+FloatConstCount     	 : 47
+WordVarsOffset     	 : 01A0
+WordVarsCount     	     : 433
+FloatVarsOffset         : 0510
+FloatVarsCount     	 : 53
+PastValuesOffset         : 05F0
+PastValuesLastOffset     : 0A30
+******************* HEAD Module ****************
+Task Count       : 5
+Segment Address  : 7C80
+    TaskId                     : 0001
+      Strategy                 : 0004
+      Task Segment  		   : 77A3
+      Task CyclTime 		   : 0000
+      Task PastValues Offset   : 05F0
+      Task PastValues Count    : 28
+    TaskId                     : 0002
+      Strategy                 : 0001
+      Task Segment  		   : 77A7
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 0610
+      Task PastValues Count    : 226
+    TaskId                     : 0003
+      Strategy                 : 0001
+      Task Segment  		   : 77E1
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 0700
+      Task PastValues Count    : 404
+    TaskId                     : 0004
+      Strategy                 : 0001
+      Task Segment  		   : 783B
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 08A0
+      Task PastValues Count    : 236
+    TaskId                     : 0005
+      Strategy                 : 0001
+      Task Segment  		   : 786F
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 0990
+      Task PastValues Count    : 152
+******************* Task Details ****************
+    TaskId                 : 0001
+    Runtime                : 500
+    Task CyclTime 		   : 0000
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_RLT03_ANLAGE_AUS
+          read    : true
+          address : 0034
+          symbol  : K_RLT03_ANLAGE_EIN
+          read    : true
+          address : 0036
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0300-BF90
+          read    : true
+          address : 0042
+          symbol  : $out-befaus-0-error
+          read    : false
+          address : 0408
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_RLT03_SW_ZUL_TEMP
+          read    : true
+          address : 00E0
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0301-SW92
+          read    : true
+          address : 0072
+          symbol  : $out-anaus-1-error
+          read    : false
+          address : 040A
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : K_RLT03_SW_ABL_TEMP_NE
+          read    : true
+          address : 00E4
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0309-SW92
+          read    : true
+          address : 0078
+          symbol  : $out-anaus-2-error
+          read    : false
+          address : 040C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : K_RLT04_ANLAGE_AUS
+          read    : true
+          address : 00D4
+          symbol  : K_RLT04_ANLAGE_BEREIT
+          read    : true
+          address : 00D6
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0400-BF90
+          read    : true
+          address : 005E
+          symbol  : $out-befaus-3-error
+          read    : false
+          address : 040E
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0002
+    Runtime                : 7700
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : $WSCATCH
+          read    : true
+          address : 01A0
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : ABS-HZG-RLT1-AUS
+          read    : true
+          address : 01BE
+          symbol  : UEBERSPANNUNG
+          read    : true
+          address : 01AE
+          symbol  : ABS-HZG-RLT1-EIN
+          read    : true
+          address : 01CE
+          symbol  : MERR00-05
+          read    : true
+          address : 01C4
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF25
+          read    : true
+          address : 0062
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : ABS-HZG-RLT8g-AUS
+          read    : true
+          address : 01B8
+          symbol  : STEUERSPG-24VDC
+          read    : true
+          address : 01D2
+          symbol  : ABS-HZG-RLT8g-EIN
+          read    : true
+          address : 01A4
+          symbol  : MERR121-09
+          read    : true
+          address : 01DA
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF23
+          read    : true
+          address : 0060
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : ABS-HZG-RLT6-AUS
+          read    : true
+          address : 01C6
+          symbol  : STEUERSPG-24VAC
+          read    : true
+          address : 01BA
+          symbol  : ABS-HZG-RLT6-EIN
+          read    : true
+          address : 01A8
+          symbol  : MERR120-09
+          read    : true
+          address : 01CC
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF02
+          read    : true
+          address : 00AC
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : QUITTIERUNG_AUS
+          read    : true
+          address : 01AC
+          symbol  : QUITTIERTASTER
+          read    : true
+          address : 01D0
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : MERR00-00
+          read    : true
+          address : 01CA
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF01
+          read    : true
+          address : 00AE
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : SSM-LED-AUS
+          read    : true
+          address : 01C0
+          symbol  : HAUPTSCHALTER-EIN
+          read    : true
+          address : 01D6
+          symbol  : SSM-LED-EIN
+          read    : true
+          address : 01D4
+          symbol  : MERR120-01
+          read    : true
+          address : 01BC
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF24
+          read    : true
+          address : 0064
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : ABS-HZG-RLT8k-AUS
+          read    : true
+          address : 01A2
+          symbol  : STEUERSPG-24VDC
+          read    : true
+          address : 01D2
+          symbol  : ABS-HZG-RLT8k-EIN
+          read    : true
+          address : 01B2
+          symbol  : MERR120-13
+          read    : true
+          address : 01D8
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0000-MW00
+          read    : true
+          address : 0038
+          symbol  : ISP01_AT
+          read    : true
+          address : 0510
+          symbol  : MERR10-00
+          read    : true
+          address : 0514
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-GF00
+          read    : true
+          address : 003C
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : ISP01-BMA
+          read    : true
+          address : 01B6
+          symbol  : ISP01-FEUER-NOT-AUS
+          read    : true
+          address : 01A6
+          symbol  : MERR121-14
+          read    : true
+          address : 01B4
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0000-BF22_OE
+          read    : true
+          address : 00A2
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : ABS-HZG-RLT4-AUS
+          read    : true
+          address : 01C8
+          symbol  : PHASENWAECHTER
+          read    : true
+          address : 01B0
+          symbol  : ABS-HZG-RLT4-EIN
+          read    : true
+          address : 01C2
+          symbol  : MERR121-14
+          read    : true
+          address : 01B4
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0301-BF11
+          read    : true
+          address : 00A4
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_ZUL_AUS
+          read    : true
+          address : 01F6
+          symbol  : RLT03_ZUL_ST
+          read    : true
+          address : 01F8
+          symbol  : RLT03_ZUL_EIN
+          read    : true
+          address : 01FA
+          symbol  : MERR24-01
+          read    : true
+          address : 0206
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0302-BF11
+          read    : true
+          address : 00B8
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_ABL_AUS
+          read    : true
+          address : 01FE
+          symbol  : RLT03_ABL_ST
+          read    : true
+          address : 0200
+          symbol  : RLT03_ABL_EIN
+          read    : true
+          address : 0202
+          symbol  : MERR24-05
+          read    : true
+          address : 020A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0302-BM21
+          read    : true
+          address : 003A
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_ABL_BF_OE
+          read    : true
+          address : 01FC
+          symbol  : MERR24-04
+          read    : true
+          address : 0208
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0301-BM21
+          read    : true
+          address : 0040
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_ZUL_BF_OE
+          read    : true
+          address : 01F4
+          symbol  : MERR24-00
+          read    : true
+          address : 0204
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0301-WA11
+          read    : true
+          address : 009E
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_ZUL_REP
+          read    : true
+          address : 01E8
+          symbol  : RLT03_ABL_REP
+          read    : true
+          address : 01EA
+          symbol  : MERR122-06
+          read    : true
+          address : 01F0
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0300-BF90
+          read    : true
+          address : 0042
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : RLT03_ANLAGE_AUS
+          read    : true
+          address : 01DE
+          symbol  : $out-melein-4-meldepunkt
+          read    : false
+          address : 0410
+          symbol  : RLT03_ANLAGE_EIN
+          read    : true
+          address : 01DC
+          symbol  : $out-melein-5-meldepunkt
+          read    : false
+          address : 0412
+          symbol  : $out-melein-6-meldepunkt
+          read    : false
+          address : 0414
+          symbol  : MERR215-01
+          read    : true
+          address : 01E0
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0301-BM01
+          read    : true
+          address : 004C
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_ZUL_LAUF
+          read    : true
+          address : 01E2
+          symbol  : RLT03_ABL_LAUF
+          read    : true
+          address : 01E4
+          symbol  : MERR122-02
+          read    : true
+          address : 01E6
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : RLT03_ANLAGE_AUS
+          read    : true
+          address : 01DE
+          symbol  : $out-btra-7-b
+          read    : false
+          address : 0416
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0301-GF01
+          read    : true
+          address : 00AA
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_RAUCH
+          read    : true
+          address : 01EC
+          symbol  : RLT03_FROST
+          read    : true
+          address : 01EE
+          symbol  : MERR123-02
+          read    : true
+          address : 01F2
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : RLT03_ANLAGE_EIN
+          read    : true
+          address : 01DC
+          symbol  : $out-btra-8-b
+          read    : false
+          address : 0418
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0300-AL07
+          read    : true
+          address : 0080
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_BSK07
+          read    : true
+          address : 0228
+          symbol  : RLT03_BSK08
+          read    : true
+          address : 022A
+          symbol  : MERR147-02
+          read    : true
+          address : 0232
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0300-AL05
+          read    : true
+          address : 007E
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_BSK05
+          read    : true
+          address : 0224
+          symbol  : RLT03_BSK06
+          read    : true
+          address : 0226
+          symbol  : MERR146-06
+          read    : true
+          address : 0230
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0300-AL01
+          read    : true
+          address : 0082
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_BSK01
+          read    : true
+          address : 021C
+          symbol  : RLT03_BSK02
+          read    : true
+          address : 021E
+          symbol  : MERR145-14
+          read    : true
+          address : 022C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0300-AL03
+          read    : true
+          address : 0086
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_BSK03
+          read    : true
+          address : 0220
+          symbol  : RLT03_BSK04
+          read    : true
+          address : 0222
+          symbol  : MERR146-02
+          read    : true
+          address : 022E
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0303-BM21
+          read    : true
+          address : 0070
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_VE-VENTIL_OE
+          read    : true
+          address : 021A
+          symbol  : MERR01-00
+          read    : true
+          address : 020E
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0303-BM31
+          read    : true
+          address : 0046
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_VE-VENTIL_OE
+          read    : true
+          address : 021A
+          symbol  : MERR22-02
+          read    : true
+          address : 0210
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0303-BF11
+          read    : true
+          address : 00B0
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_VE-PUMPE_AUS
+          read    : true
+          address : 0316
+          symbol  : RLT03_VE-PUMPE_ST
+          read    : true
+          address : 0216
+          symbol  : RLT03_VE-PUMPE_EIN
+          read    : true
+          address : 0218
+          symbol  : MERR01-01
+          read    : true
+          address : 020C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BF11
+          read    : true
+          address : 00D2
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_NE_STUFE1_AUS
+          read    : true
+          address : 0214
+          symbol  : RLT03_NE_ST
+          read    : true
+          address : 0234
+          symbol  : RLT03_NE_STUFE1_EIN
+          read    : true
+          address : 0236
+          symbol  : MERR25-09
+          read    : true
+          address : 0242
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BM11
+          read    : true
+          address : 0098
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_NE_STUFE1_OE
+          read    : true
+          address : 0212
+          symbol  : MERR25-08
+          read    : true
+          address : 0240
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BF12
+          read    : true
+          address : 008E
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_NE_STUFE2_AUS
+          read    : true
+          address : 023A
+          symbol  : RLT03_NE_STB
+          read    : true
+          address : 023C
+          symbol  : RLT03_NE_STUFE2_EIN
+          read    : true
+          address : 023E
+          symbol  : MERR25-13
+          read    : true
+          address : 0246
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BM12
+          read    : true
+          address : 0092
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_NE_STUFE2_OE
+          read    : true
+          address : 0238
+          symbol  : MERR25-12
+          read    : true
+          address : 0244
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BM13
+          read    : true
+          address : 0094
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_NE_LUFTSTROM
+          read    : true
+          address : 0248
+          symbol  : MERR24-10
+          read    : true
+          address : 024A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BM10
+          read    : true
+          address : 0096
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_NE_ANFORDERUNG
+          read    : true
+          address : 025A
+          symbol  : MERR24-14
+          read    : true
+          address : 025C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0309-BF21
+          read    : true
+          address : 007C
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_NE_KLAPPE_ZU
+          read    : true
+          address : 02BE
+          symbol  : $out-melein-9-meldepunkt
+          read    : false
+          address : 041A
+          symbol  : RLT03_NE_KLAPPE_AUF
+          read    : true
+          address : 02C0
+          symbol  : MERR49-05
+          read    : true
+          address : 02C2
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT03_SW_ZUL_TEMP
+          read    : true
+          address : 0530
+          symbol  : $out-atra-10-y
+          read    : false
+          address : 05CC
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0309-SW92
+          read    : true
+          address : 0078
+          symbol  : RLT03_SW_ABL_TEMP_NE
+          read    : true
+          address : 052C
+          symbol  : MERR218-00
+          read    : true
+          address : 0258
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0309-MW12
+          read    : true
+          address : 004E
+          symbol  : RLT03_ABL_TEMP_NE
+          read    : true
+          address : 0524
+          symbol  : MERR173-00
+          read    : true
+          address : 0252
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0301-SW92
+          read    : true
+          address : 0072
+          symbol  : RLT03_SW_ZUL_TEMP
+          read    : true
+          address : 0530
+          symbol  : MERR216-00
+          read    : true
+          address : 0256
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0302-MW12
+          read    : true
+          address : 00B6
+          symbol  : RLT03_ABL_TEMP
+          read    : true
+          address : 051C
+          symbol  : MERR29-00
+          read    : true
+          address : 024E
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT03_SW_ABL_TEMP_NE
+          read    : true
+          address : 052C
+          symbol  : $out-atra-11-y
+          read    : false
+          address : 05D0
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0303-MW12
+          read    : true
+          address : 005A
+          symbol  : RLT03_VE_RL_TEMP
+          read    : true
+          address : 0520
+          symbol  : MERR30-00
+          read    : true
+          address : 0250
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0301-MW12
+          read    : true
+          address : 00BC
+          symbol  : RLT03_ZUL_TEMP
+          read    : true
+          address : 0518
+          symbol  : MERR28-00
+          read    : true
+          address : 024C
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0309-MW11
+          read    : true
+          address : 0050
+          symbol  : RLT03_ZUL_TEMP_NE
+          read    : true
+          address : 0528
+          symbol  : MERR172-00
+          read    : true
+          address : 0254
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0400-BF90
+          read    : true
+          address : 005E
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : RLT04_ANLAGE_AUS
+          read    : true
+          address : 02DC
+          symbol  : $out-melein-12-meldepunkt
+          read    : false
+          address : 041C
+          symbol  : RLT04_ANLAGE_BEREIT
+          read    : true
+          address : 02DE
+          symbol  : $out-melein-13-meldepunkt
+          read    : false
+          address : 041E
+          symbol  : $out-melein-14-meldepunkt
+          read    : false
+          address : 0420
+          symbol  : MERR215-09
+          read    : true
+          address : 02E0
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0401-BM21
+          read    : true
+          address : 00BA
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_ZUL_BF_OE
+          read    : true
+          address : 02F4
+          symbol  : MERR26-00
+          read    : true
+          address : 0308
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0401-BF11
+          read    : true
+          address : 00CA
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : RLT04_ZUL_AUS
+          read    : true
+          address : 02F6
+          symbol  : RLT04_ZUL_ST
+          read    : true
+          address : 02F8
+          symbol  : RLT04_ZUL_EIN1
+          read    : true
+          address : 02FA
+          symbol  : $out-melein-15-meldepunkt
+          read    : false
+          address : 0422
+          symbol  : RLT04_ZUL_EIN2
+          read    : true
+          address : 02FC
+          symbol  : MERR26-01
+          read    : true
+          address : 030A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0402-BM21
+          read    : true
+          address : 00B4
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_ABL_BF_OE
+          read    : true
+          address : 02FE
+          symbol  : MERR26-08
+          read    : true
+          address : 030C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0402-BF11
+          read    : true
+          address : 0056
+          symbol  :  direct value
+          read    : true
+          value  : 5
+          symbol  : RLT04_ABL_AUS
+          read    : true
+          address : 0300
+          symbol  : RLT04_ABL_ST
+          read    : true
+          address : 0302
+          symbol  : RLT04_ABL_EIN1
+          read    : true
+          address : 0304
+          symbol  : $out-melein-16-meldepunkt
+          read    : false
+          address : 0424
+          symbol  : RLT04_ABL_EIN2
+          read    : true
+          address : 0306
+          symbol  : MERR26-09
+          read    : true
+          address : 030E
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0401-BM01
+          read    : true
+          address : 00CE
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_ZUL_LAUF
+          read    : true
+          address : 02E2
+          symbol  : RLT04_ABL_LAUF
+          read    : true
+          address : 02E4
+          symbol  : MERR122-10
+          read    : true
+          address : 02EE
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0401-WA11
+          read    : true
+          address : 00B2
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_ZUL_REP
+          read    : true
+          address : 02E6
+          symbol  : RLT04_ABL_REP
+          read    : true
+          address : 02E8
+          symbol  : MERR122-14
+          read    : true
+          address : 02F0
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0401-GF01
+          read    : true
+          address : 005C
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_RAUCH
+          read    : true
+          address : 02EA
+          symbol  : RLT04_FROST
+          read    : true
+          address : 02EC
+          symbol  : MERR123-10
+          read    : true
+          address : 02F2
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : RLT04_ANLAGE_AUS
+          read    : true
+          address : 02DC
+          symbol  : $out-btra-17-b
+          read    : false
+          address : 0426
+     Modulecall            : BTRA
+     pastvalues            : 0
+     opcode                : 303B
+          symbol  : RLT04_ANLAGE_BEREIT
+          read    : true
+          address : 02DE
+          symbol  : $out-btra-18-b
+          read    : false
+          address : 0428
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0400-AL01
+          read    : true
+          address : 006E
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_BSK01
+          read    : true
+          address : 0310
+          symbol  : RLT04_BSK02
+          read    : true
+          address : 0312
+          symbol  : MERR147-06
+          read    : true
+          address : 0314
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0403-BM21
+          read    : true
+          address : 0088
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_VE-PUMPE_OE
+          read    : true
+          address : 0318
+          symbol  : MERR25-04
+          read    : true
+          address : 0322
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0403-BF11
+          read    : true
+          address : 00A0
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_VE-PUMPE_AUS
+          read    : true
+          address : 031A
+          symbol  : RLT04_VE-PUMPE_ST
+          read    : true
+          address : 031C
+          symbol  : RLT04_VE-PUMPE_EIN
+          read    : true
+          address : 031E
+          symbol  : MERR25-05
+          read    : true
+          address : 0324
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0403-BM31
+          read    : true
+          address : 007A
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_VE-VENTIL_OE
+          read    : true
+          address : 0320
+          symbol  : MERR46-01
+          read    : true
+          address : 0326
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0404-BM21
+          read    : true
+          address : 004A
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_KAE_STUFE1_OE
+          read    : true
+          address : 0328
+          symbol  : MERR147-08
+          read    : true
+          address : 0342
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0404-BF11
+          read    : true
+          address : 00C8
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_KAE_STUFE1_AUS
+          read    : true
+          address : 032A
+          symbol  : RLT04_KAE_ST
+          read    : true
+          address : 032C
+          symbol  : RLT04_KAE_STUFE1_EIN
+          read    : true
+          address : 032E
+          symbol  : MERR147-09
+          read    : true
+          address : 0344
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0404-BM22
+          read    : true
+          address : 0048
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_KAE_STUFE2_OE
+          read    : true
+          address : 0330
+          symbol  : MERR147-12
+          read    : true
+          address : 0346
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0404-BF12
+          read    : true
+          address : 00C6
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_KAE_STUFE2_AUS
+          read    : true
+          address : 0332
+          symbol  : $out-melein-19-meldepunkt
+          read    : false
+          address : 042A
+          symbol  : RLT04_KAE_STUFE2_EIN
+          read    : true
+          address : 0334
+          symbol  : MERR147-13
+          read    : true
+          address : 0348
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0409-BF02
+          read    : true
+          address : 00BE
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_TAB_LED1_AUS
+          read    : true
+          address : 0336
+          symbol  : RLT04_TAB_TASTER_S1
+          read    : true
+          address : 033A
+          symbol  : RLT04_TAB_LED1_EIN
+          read    : true
+          address : 0338
+          symbol  : MERR169-13
+          read    : true
+          address : 034A
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0409-BF03
+          read    : true
+          address : 00C0
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_TAB_LED2_AUS
+          read    : true
+          address : 033C
+          symbol  : RLT04_TAB_TASTER_S2
+          read    : true
+          address : 0340
+          symbol  : RLT04_TAB_LED2_EIN
+          read    : true
+          address : 033E
+          symbol  : MERR170-01
+          read    : true
+          address : 034C
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : O3L1-LU0409-BM01
+          read    : true
+          address : 006C
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_TAB_TASTER_AUS
+          read    : true
+          address : 0356
+          symbol  : MERR169-11
+          read    : true
+          address : 0358
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0401-MW12
+          read    : true
+          address : 009A
+          symbol  : RLT04_ZUL_TEMP
+          read    : true
+          address : 0558
+          symbol  : MERR31-00
+          read    : true
+          address : 0370
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0402-MW12
+          read    : true
+          address : 0058
+          symbol  : RLT04_ABL_TEMP
+          read    : true
+          address : 055C
+          symbol  : MERR32-00
+          read    : true
+          address : 0372
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0407-MW11
+          read    : true
+          address : 0084
+          symbol  : RLT04_AUL_TEMP_WRG
+          read    : true
+          address : 0564
+          symbol  : MERR58-00
+          read    : true
+          address : 0376
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0403-MW12
+          read    : true
+          address : 00CC
+          symbol  : RLT04_VE_RL_TEMP
+          read    : true
+          address : 0560
+          symbol  : MERR33-00
+          read    : true
+          address : 0374
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0402-SW92
+          read    : true
+          address : 008C
+          symbol  : RLT04_SW_ABL_TEMP
+          read    : true
+          address : 056C
+          symbol  : MERR220-00
+          read    : true
+          address : 037A
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0407-MW12
+          read    : true
+          address : 0090
+          symbol  : RLT04_ABL_TEMP_WRG
+          read    : true
+          address : 0568
+          symbol  : MERR59-00
+          read    : true
+          address : 0378
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : O3L1-LU0409-MW01
+          read    : true
+          address : 009C
+          symbol  : RLT04_TAB_SW-STELLER
+          read    : true
+          address : 0570
+          symbol  : MERR174-00
+          read    : true
+          address : 037C
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0003
+    Runtime                : 52900
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : HAUPTSCHALTER-EIN
+          read    : true
+          address : 01D6
+          symbol  :  direct value
+          read    : true
+          value  : 7
+          symbol  : PHASENWAECHTER
+          read    : true
+          address : 01B0
+          symbol  : UEBERSPANNUNG
+          read    : true
+          address : 01AE
+          symbol  : STEUERSPG-230V
+          read    : true
+          address : 0404
+          symbol  : STEUERSPG-24VAC
+          read    : true
+          address : 01BA
+          symbol  : STEUERSPG-24VDC
+          read    : true
+          address : 01D2
+          symbol  : ISP01-BMA
+          read    : true
+          address : 01B6
+          symbol  : ISP01-FEUER-NOT-AUS
+          read    : true
+          address : 01A6
+          symbol  : $M186
+          read    : true
+          address : 05C8
+          symbol  : $out-odrmn-20-binv
+          read    : false
+          address : 042C
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M186
+          read    : true
+          address : 05C8
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : ssm-schrank
+          read    : true
+          address : 0402
+          symbol  : $out-rss-21-binv
+          read    : false
+          address : 042E
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : ssm-rlt03
+          read    : true
+          address : 026A
+          symbol  : ssm-rlt04
+          read    : true
+          address : 03D2
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : ssm-modul3
+          read    : true
+          address : 0406
+          symbol  : $out-odrmn-22-binv
+          read    : false
+          address : 0430
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M6
+          read    : true
+          address : 0260
+          symbol  : $M5
+          read    : true
+          address : 025E
+          symbol  : rlt03-winteranfahrt
+          read    : true
+          address : 0264
+          symbol  : $out-rss-23-binv
+          read    : false
+          address : 0432
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : FKON_06
+          read    : true
+          address : 00EC
+          symbol  : ISP01_AT
+          read    : true
+          address : 0510
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : rlt03-winter
+          read    : true
+          address : 0266
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : RLT03_VE_RL_TEMP
+          read    : true
+          address : 0520
+          symbol  : FKON_35
+          read    : true
+          address : 00F0
+          symbol  : $M5
+          read    : true
+          address : 025E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_ANLAGE_EIN
+          read    : true
+          address : 01DC
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : ssm-rlt03
+          read    : true
+          address : 026A
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : $out-undmn-24-binv
+          read    : false
+          address : 0434
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : FKON_10sek
+          read    : true
+          address : 00F4
+          symbol  : $M7
+          read    : true
+          address : 0262
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M7
+          read    : true
+          address : 0262
+          symbol  : rlt03-winter
+          read    : true
+          address : 0266
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M6
+          read    : true
+          address : 0260
+          symbol  : $out-undmn-25-binv
+          read    : false
+          address : 0436
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt03-winteranfahrt
+          read    : true
+          address : 0264
+          symbol  : rlt03-kla-soll-auf
+          read    : true
+          address : 026E
+          symbol  : $M10
+          read    : true
+          address : 026C
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M10
+          read    : true
+          address : 026C
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : rlt03-kla-auf
+          read    : true
+          address : 0270
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M20
+          read    : true
+          address : 0280
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M18
+          read    : true
+          address : 027C
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M18
+          read    : true
+          address : 027C
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt03-ve-pumpe-elek-st
+          read    : true
+          address : 0288
+          symbol  : $out-rss-26-binv
+          read    : false
+          address : 0438
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : rlt03-ve-pumpe-ein
+          read    : true
+          address : 028A
+          symbol  : RLT03_VE-PUMPE_EIN
+          read    : true
+          address : 0218
+          symbol  : $M16
+          read    : true
+          address : 0278
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M17
+          read    : true
+          address : 027A
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_300sek
+          read    : true
+          address : 0100
+          symbol  : $M21
+          read    : true
+          address : 0282
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M23
+          read    : true
+          address : 0284
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_VE-PUMPE_ST
+          read    : true
+          address : 0216
+          symbol  : rlt03-ve-pumpe-ein
+          read    : true
+          address : 028A
+          symbol  : $out-undmn-27-binv
+          read    : false
+          address : 043A
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M21
+          read    : true
+          address : 0282
+          symbol  : RLT03_ZUL_EIN
+          read    : true
+          address : 01FA
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M14
+          read    : true
+          address : 0274
+          symbol  : $out-undmn-28-binv
+          read    : false
+          address : 043C
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : rlt03-ve-ventil-sb
+          read    : true
+          address : 0286
+          symbol  : FKON_03
+          read    : true
+          address : 0108
+          symbol  : $M17
+          read    : true
+          address : 027A
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M14
+          read    : true
+          address : 0274
+          symbol  : $M19
+          read    : true
+          address : 027E
+          symbol  : rlt03-winteranfahrt
+          read    : true
+          address : 0264
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_FROST
+          read    : true
+          address : 01EE
+          symbol  : $M23
+          read    : true
+          address : 0284
+          symbol  : $out-odrmn-29-binv
+          read    : false
+          address : 043E
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : $M13
+          read    : true
+          address : 0272
+          symbol  : FKON_300sek
+          read    : true
+          address : 0100
+          symbol  : $M19
+          read    : true
+          address : 027E
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : $M12
+          read    : true
+          address : 0538
+          symbol  : $M11
+          read    : true
+          address : 0534
+          symbol  : $M13
+          read    : true
+          address : 0272
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_VE-PUMPE_EIN
+          read    : true
+          address : 0218
+          symbol  : $M15
+          read    : true
+          address : 0276
+     Modulecall            : UHR
+     pastvalues            : 4
+     opcode                : 302A
+          symbol  : $M15
+          read    : true
+          address : 0276
+          symbol  : RLT03_VE-PUMPE_EIN
+          read    : true
+          address : 0218
+          symbol  : $M12
+          read    : true
+          address : 0538
+     Modulecall            : MULT
+     pastvalues            : 0
+     opcode                : 3007
+          symbol  : FKON_3600sek
+          read    : true
+          address : 0104
+          symbol  : FKON_168std
+          read    : true
+          address : 010C
+          symbol  : $M11
+          read    : true
+          address : 0534
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M16
+          read    : true
+          address : 0278
+          symbol  : RLT03_VE-VENTIL_OE
+          read    : true
+          address : 021A
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M20
+          read    : true
+          address : 0280
+          symbol  : $out-undmn-30-binv
+          read    : false
+          address : 0440
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M22
+          read    : true
+          address : 028C
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M27
+          read    : true
+          address : 0292
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M26
+          read    : true
+          address : 0290
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M31
+          read    : true
+          address : 0296
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : rlt03-zul-soll-ein
+          read    : true
+          address : 029C
+          symbol  : RLT03_ZUL_LAUF
+          read    : true
+          address : 01E2
+          symbol  : $M30
+          read    : true
+          address : 0294
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M25
+          read    : true
+          address : 028E
+          symbol  : RLT03_ABL_BF_OE
+          read    : true
+          address : 01FC
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M22
+          read    : true
+          address : 028C
+          symbol  : $out-undmn-31-binv
+          read    : false
+          address : 0442
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M27
+          read    : true
+          address : 0292
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt03-abl-elek.st
+          read    : true
+          address : 029A
+          symbol  : $out-rss-32-binv
+          read    : false
+          address : 0444
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : rlt03-abl-soll-ein
+          read    : true
+          address : 029E
+          symbol  : RLT03_ABL_LAUF
+          read    : true
+          address : 01E4
+          symbol  : $M25
+          read    : true
+          address : 028E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : RLT03_ABL_ST
+          read    : true
+          address : 0200
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt03-abl-soll-ein
+          read    : true
+          address : 029E
+          symbol  : $out-undmn-33-binv
+          read    : false
+          address : 0446
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : RLT03_ZUL_ST
+          read    : true
+          address : 01F8
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt03-zul-soll-ein
+          read    : true
+          address : 029C
+          symbol  : $out-undmn-34-binv
+          read    : false
+          address : 0448
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M30
+          read    : true
+          address : 0294
+          symbol  : RLT03_ZUL_BF_OE
+          read    : true
+          address : 01F4
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M26
+          read    : true
+          address : 0290
+          symbol  : $out-undmn-35-binv
+          read    : false
+          address : 044A
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M31
+          read    : true
+          address : 0296
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt03-zul-elek.st
+          read    : true
+          address : 0298
+          symbol  : $out-rss-36-binv
+          read    : false
+          address : 044C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : RLT03_BSK01
+          read    : true
+          address : 021C
+          symbol  : RLT03_BSK02
+          read    : true
+          address : 021E
+          symbol  : RLT03_BSK03
+          read    : true
+          address : 0220
+          symbol  : RLT03_BSK04
+          read    : true
+          address : 0222
+          symbol  : RLT03_BSK05
+          read    : true
+          address : 0224
+          symbol  : RLT03_BSK06
+          read    : true
+          address : 0226
+          symbol  : RLT03_BSK07
+          read    : true
+          address : 0228
+          symbol  : RLT03_BSK08
+          read    : true
+          address : 022A
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt03-bsk-ok
+          read    : true
+          address : 02A0
+          symbol  : $out-undmn-37-binv
+          read    : false
+          address : 044E
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_RAUCH
+          read    : true
+          address : 01EC
+          symbol  : $M37
+          read    : true
+          address : 02AE
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_ZUL_ST
+          read    : true
+          address : 01F8
+          symbol  : $M40
+          read    : true
+          address : 02B4
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M40
+          read    : true
+          address : 02B4
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M38
+          read    : true
+          address : 02B0
+          symbol  : $out-rss-38-binv
+          read    : false
+          address : 0450
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : rlt03-zul-elek.st
+          read    : true
+          address : 0298
+          symbol  : rlt03-abl-elek.st
+          read    : true
+          address : 029A
+          symbol  : $M38
+          read    : true
+          address : 02B0
+          symbol  : $M33
+          read    : true
+          address : 02A6
+          symbol  : $M39
+          read    : true
+          address : 02B2
+          symbol  : $M36
+          read    : true
+          address : 02AC
+          symbol  : $M28
+          read    : true
+          address : 02A2
+          symbol  : ssm-schrank
+          read    : true
+          address : 0402
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT03_ZUL_REP
+          read    : true
+          address : 01E8
+          symbol  : RLT03_ABL_REP
+          read    : true
+          address : 01EA
+          symbol  : rlt03-bsk-ok
+          read    : true
+          address : 02A0
+          symbol  : ssm-rlt03
+          read    : true
+          address : 026A
+          symbol  : $out-odrmn-39-binv
+          read    : false
+          address : 0452
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M29
+          read    : true
+          address : 02A4
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M28
+          read    : true
+          address : 02A2
+          symbol  : $out-rss-40-binv
+          read    : false
+          address : 0454
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M37
+          read    : true
+          address : 02AE
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M36
+          read    : true
+          address : 02AC
+          symbol  : $out-rss-41-binv
+          read    : false
+          address : 0456
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_FROST
+          read    : true
+          address : 01EE
+          symbol  : $M29
+          read    : true
+          address : 02A4
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M35
+          read    : true
+          address : 02AA
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M33
+          read    : true
+          address : 02A6
+          symbol  : $out-rss-42-binv
+          read    : false
+          address : 0458
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M34
+          read    : true
+          address : 02A8
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M39
+          read    : true
+          address : 02B2
+          symbol  : $out-rss-43-binv
+          read    : false
+          address : 045A
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_VE-PUMPE_ST
+          read    : true
+          address : 0216
+          symbol  : $M34
+          read    : true
+          address : 02A8
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT03_ABL_ST
+          read    : true
+          address : 0200
+          symbol  : $M35
+          read    : true
+          address : 02AA
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : FKON_06
+          read    : true
+          address : 00EC
+          symbol  : ISP01_AT
+          read    : true
+          address : 0510
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : rlt04-winter
+          read    : true
+          address : 036E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M91
+          read    : true
+          address : 036A
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : ssm-rlt04
+          read    : true
+          address : 03D2
+          symbol  : $M80
+          read    : true
+          address : 0354
+          symbol  : $out-undmn-44-binv
+          read    : false
+          address : 045C
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : $M80
+          read    : true
+          address : 0354
+          symbol  : FKON_10sek
+          read    : true
+          address : 00F4
+          symbol  : $M76
+          read    : true
+          address : 034E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M76
+          read    : true
+          address : 034E
+          symbol  : rlt04-winter
+          read    : true
+          address : 036E
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M78
+          read    : true
+          address : 0350
+          symbol  : $out-undmn-45-binv
+          read    : false
+          address : 045E
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M78
+          read    : true
+          address : 0350
+          symbol  : $M79
+          read    : true
+          address : 0352
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : $out-rss-46-binv
+          read    : false
+          address : 0460
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : RLT04_VE_RL_TEMP
+          read    : true
+          address : 0560
+          symbol  : FKON_35
+          read    : true
+          address : 00F0
+          symbol  : $M79
+          read    : true
+          address : 0352
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M82
+          read    : true
+          address : 035C
+          symbol  : RLT04_TAB_TASTER_AUS
+          read    : true
+          address : 0356
+          symbol  : $M83
+          read    : true
+          address : 035E
+          symbol  : $out-rss-47-binv
+          read    : false
+          address : 0462
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M81
+          read    : true
+          address : 035A
+          symbol  : RLT04_TAB_TASTER_AUS
+          read    : true
+          address : 0356
+          symbol  : $M84
+          read    : true
+          address : 0360
+          symbol  : $out-rss-48-binv
+          read    : false
+          address : 0464
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_TAB_TASTER_S1
+          read    : true
+          address : 033A
+          symbol  : RLT04_ANLAGE_BEREIT
+          read    : true
+          address : 02DE
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M82
+          read    : true
+          address : 035C
+          symbol  : $out-undmn-49-binv
+          read    : false
+          address : 0466
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_TAB_TASTER_S2
+          read    : true
+          address : 0340
+          symbol  : RLT04_ANLAGE_BEREIT
+          read    : true
+          address : 02DE
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M81
+          read    : true
+          address : 035A
+          symbol  : $out-undmn-50-binv
+          read    : false
+          address : 0468
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M83
+          read    : true
+          address : 035E
+          symbol  : $M84
+          read    : true
+          address : 0360
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M86
+          read    : true
+          address : 0362
+          symbol  : $out-odrmn-51-binv
+          read    : false
+          address : 046A
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : RLT04_ZUL_EIN1
+          read    : true
+          address : 02FA
+          symbol  : FKON_30sek
+          read    : true
+          address : 0130
+          symbol  : $in-vvz-52-t2
+          read    : true
+          address : 0140
+          symbol  : $M88
+          read    : true
+          address : 0364
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M86
+          read    : true
+          address : 0362
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : $out-undmn-53-binv
+          read    : false
+          address : 046C
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M84
+          read    : true
+          address : 0360
+          symbol  : $M88
+          read    : true
+          address : 0364
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  : $out-undmn-54-binv
+          read    : false
+          address : 046E
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M91
+          read    : true
+          address : 036A
+          symbol  : $out-odrmn-55-binv
+          read    : false
+          address : 0470
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M94
+          read    : true
+          address : 0380
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt04-kla-soll-auf
+          read    : true
+          address : 0382
+          symbol  : $M93
+          read    : true
+          address : 037E
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M93
+          read    : true
+          address : 037E
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : rlt04-kla-auf
+          read    : true
+          address : 0384
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M94
+          read    : true
+          address : 0380
+          symbol  : $out-undmn-56-binv
+          read    : false
+          address : 0472
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UHR
+     pastvalues            : 4
+     opcode                : 302A
+          symbol  : $M97
+          read    : true
+          address : 0388
+          symbol  : RLT04_VE-PUMPE_EIN
+          read    : true
+          address : 031E
+          symbol  : $M95
+          read    : true
+          address : 0574
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : $M95
+          read    : true
+          address : 0574
+          symbol  : $M98
+          read    : true
+          address : 0578
+          symbol  : $M96
+          read    : true
+          address : 0386
+     Modulecall            : MOKY
+     pastvalues            : 16
+     opcode                : 302C
+          symbol  : $M96
+          read    : true
+          address : 0386
+          symbol  : FKON_300sek
+          read    : true
+          address : 0100
+          symbol  : $M101
+          read    : true
+          address : 038E
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M103
+          read    : true
+          address : 0392
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_VE-PUMPE_ST
+          read    : true
+          address : 031C
+          symbol  : rlt04-ve-pumpe-ein
+          read    : true
+          address : 039C
+          symbol  : $out-undmn-57-binv
+          read    : false
+          address : 0474
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_VE-PUMPE_EIN
+          read    : true
+          address : 031E
+          symbol  : $M97
+          read    : true
+          address : 0388
+     Modulecall            : MULT
+     pastvalues            : 0
+     opcode                : 3007
+          symbol  : FKON_3600sek
+          read    : true
+          address : 0104
+          symbol  : FKON_168std
+          read    : true
+          address : 010C
+          symbol  : $M98
+          read    : true
+          address : 0578
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M99
+          read    : true
+          address : 038A
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_300sek
+          read    : true
+          address : 0100
+          symbol  : $M100
+          read    : true
+          address : 038C
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : rlt04-ve-ventil-sb
+          read    : true
+          address : 057C
+          symbol  : FKON_03
+          read    : true
+          address : 0108
+          symbol  : $M99
+          read    : true
+          address : 038A
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M100
+          read    : true
+          address : 038C
+          symbol  : $M104
+          read    : true
+          address : 039E
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M102
+          read    : true
+          address : 0390
+          symbol  : $out-undmn-58-binv
+          read    : false
+          address : 0476
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M102
+          read    : true
+          address : 0390
+          symbol  : $M101
+          read    : true
+          address : 038E
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_FROST
+          read    : true
+          address : 02EC
+          symbol  : $M103
+          read    : true
+          address : 0392
+          symbol  : $out-odrmn-59-binv
+          read    : false
+          address : 0478
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : rlt04-ve-pumpe-ein
+          read    : true
+          address : 039C
+          symbol  : RLT04_VE-PUMPE_EIN
+          read    : true
+          address : 031E
+          symbol  : $M105
+          read    : true
+          address : 0394
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M106
+          read    : true
+          address : 0396
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M107
+          read    : true
+          address : 0398
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M105
+          read    : true
+          address : 0394
+          symbol  : RLT04_VE-PUMPE_OE
+          read    : true
+          address : 0318
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M106
+          read    : true
+          address : 0396
+          symbol  : $out-undmn-60-binv
+          read    : false
+          address : 047A
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M107
+          read    : true
+          address : 0398
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt04-ve-pumpe-elek-st
+          read    : true
+          address : 039A
+          symbol  : $out-rss-61-binv
+          read    : false
+          address : 047C
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_ZUL_EIN1
+          read    : true
+          address : 02FA
+          symbol  : RLT04_ZUL_EIN2
+          read    : true
+          address : 02FC
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M104
+          read    : true
+          address : 039E
+          symbol  : $out-odrmn-62-binv
+          read    : false
+          address : 047E
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : $M111
+          read    : true
+          address : 03AA
+          symbol  : RLT04_ZUL_LAUF
+          read    : true
+          address : 02E2
+          symbol  : $M108
+          read    : true
+          address : 03A0
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M109
+          read    : true
+          address : 03A2
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M110
+          read    : true
+          address : 03A4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M108
+          read    : true
+          address : 03A0
+          symbol  : RLT04_ZUL_BF_OE
+          read    : true
+          address : 02F4
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M109
+          read    : true
+          address : 03A2
+          symbol  : $out-undmn-63-binv
+          read    : false
+          address : 0480
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M110
+          read    : true
+          address : 03A4
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt04-zul-elek.st
+          read    : true
+          address : 03AC
+          symbol  : $out-rss-64-binv
+          read    : false
+          address : 0482
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : RLT04_ZUL_ST
+          read    : true
+          address : 02F8
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt04-zul-soll-ein1
+          read    : true
+          address : 03A6
+          symbol  : $out-undmn-65-binv
+          read    : false
+          address : 0484
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  : RLT04_ZUL_ST
+          read    : true
+          address : 02F8
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt04-zul-soll-ein2
+          read    : true
+          address : 03A8
+          symbol  : $out-undmn-66-binv
+          read    : false
+          address : 0486
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-zul-soll-ein1
+          read    : true
+          address : 03A6
+          symbol  : rlt04-zul-soll-ein2
+          read    : true
+          address : 03A8
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M111
+          read    : true
+          address : 03AA
+          symbol  : $out-odrmn-67-binv
+          read    : false
+          address : 0488
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M117
+          read    : true
+          address : 03B0
+          symbol  : RLT04_ABL_BF_OE
+          read    : true
+          address : 02FE
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M116
+          read    : true
+          address : 03AE
+          symbol  : $out-undmn-68-binv
+          read    : false
+          address : 048A
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  : RLT04_ABL_ST
+          read    : true
+          address : 0302
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt04-abl-soll-ein2
+          read    : true
+          address : 03BA
+          symbol  : $out-undmn-69-binv
+          read    : false
+          address : 048C
+     Modulecall            : XOR2
+     pastvalues            : 0
+     opcode                : 3016
+          symbol  : $M118
+          read    : true
+          address : 03B2
+          symbol  : RLT04_ABL_LAUF
+          read    : true
+          address : 02E4
+          symbol  : $M117
+          read    : true
+          address : 03B0
+     Modulecall            : VVZ
+     pastvalues            : 26
+     opcode                : 302B
+          symbol  : $M116
+          read    : true
+          address : 03AE
+          symbol  : FKON_180sek
+          read    : true
+          address : 00FC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M119
+          read    : true
+          address : 03B4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : RLT04_ABL_ST
+          read    : true
+          address : 0302
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  : rlt04-abl-soll-ein1
+          read    : true
+          address : 03B8
+          symbol  : $out-undmn-70-binv
+          read    : false
+          address : 048E
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M119
+          read    : true
+          address : 03B4
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : rlt04-abl-elek.st
+          read    : true
+          address : 03B6
+          symbol  : $out-rss-71-binv
+          read    : false
+          address : 0490
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-abl-soll-ein1
+          read    : true
+          address : 03B8
+          symbol  : rlt04-abl-soll-ein2
+          read    : true
+          address : 03BA
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M118
+          read    : true
+          address : 03B2
+          symbol  : $out-odrmn-72-binv
+          read    : false
+          address : 0492
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT04_BSK01
+          read    : true
+          address : 0310
+          symbol  : RLT04_BSK02
+          read    : true
+          address : 0312
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt04-bsk-ok
+          read    : true
+          address : 03BC
+          symbol  : $out-undmn-73-binv
+          read    : false
+          address : 0494
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : rlt04-zul-elek.st
+          read    : true
+          address : 03AC
+          symbol  : rlt04-abl-elek.st
+          read    : true
+          address : 03B6
+          symbol  : $M125
+          read    : true
+          address : 03C8
+          symbol  : $M126
+          read    : true
+          address : 03CA
+          symbol  : $M127
+          read    : true
+          address : 03CC
+          symbol  : $M128
+          read    : true
+          address : 03CE
+          symbol  : $M129
+          read    : true
+          address : 03D0
+          symbol  : ssm-schrank
+          read    : true
+          address : 0402
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : RLT04_ZUL_REP
+          read    : true
+          address : 02E6
+          symbol  : RLT04_ABL_REP
+          read    : true
+          address : 02E8
+          symbol  : rlt04-bsk-ok
+          read    : true
+          address : 03BC
+          symbol  : ssm-rlt04
+          read    : true
+          address : 03D2
+          symbol  : $out-odrmn-74-binv
+          read    : false
+          address : 0496
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M121
+          read    : true
+          address : 03C0
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M126
+          read    : true
+          address : 03CA
+          symbol  : $out-rss-75-binv
+          read    : false
+          address : 0498
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M122
+          read    : true
+          address : 03C2
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M127
+          read    : true
+          address : 03CC
+          symbol  : $out-rss-76-binv
+          read    : false
+          address : 049A
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M123
+          read    : true
+          address : 03C4
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M128
+          read    : true
+          address : 03CE
+          symbol  : $out-rss-77-binv
+          read    : false
+          address : 049C
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M124
+          read    : true
+          address : 03C6
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M129
+          read    : true
+          address : 03D0
+          symbol  : $out-rss-78-binv
+          read    : false
+          address : 049E
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_ABL_ST
+          read    : true
+          address : 0302
+          symbol  : $M121
+          read    : true
+          address : 03C0
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_VE-PUMPE_ST
+          read    : true
+          address : 031C
+          symbol  : $M122
+          read    : true
+          address : 03C2
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_RAUCH
+          read    : true
+          address : 02EA
+          symbol  : $M123
+          read    : true
+          address : 03C4
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_FROST
+          read    : true
+          address : 02EC
+          symbol  : $M124
+          read    : true
+          address : 03C6
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_ZUL_ST
+          read    : true
+          address : 02F8
+          symbol  : $M120
+          read    : true
+          address : 03BE
+     Modulecall            : RSS
+     pastvalues            : 2
+     opcode                : 301A
+          symbol  : $M120
+          read    : true
+          address : 03BE
+          symbol  : QUITTIERUNG-EIN
+          read    : true
+          address : 01AA
+          symbol  : $M125
+          read    : true
+          address : 03C8
+          symbol  : $out-rss-79-binv
+          read    : false
+          address : 04A0
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0004
+    Runtime                : 282400
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT03_ZUL_TEMP
+          read    : true
+          address : 0518
+          symbol  : $out-atra-80-y
+          read    : false
+          address : 05D4
+     Modulecall            : REGLER
+     pastvalues            : 38
+     opcode                : 3037
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : rlt03-sg-reg-temp
+          read    : true
+          address : 053C
+          symbol  : $out-regler-81-error
+          read    : false
+          address : 04A2
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt03-sg-reg-temp
+          read    : true
+          address : 053C
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0301-SG92
+          read    : true
+          address : 0054
+          symbol  : $out-anaus-82-error
+          read    : false
+          address : 04A4
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT03_SW_ZUL_TEMP
+          read    : true
+          address : 0530
+          symbol  : $out-atra-83-y
+          read    : false
+          address : 05D8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MAX
+     pastvalues            : 0
+     opcode                : 3009
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M48
+          read    : true
+          address : 0548
+          symbol  : $M52
+          read    : true
+          address : 054C
+          symbol  : $M45
+          read    : true
+          address : 0544
+          symbol  : rlt03-ve-ventil-sb
+          read    : true
+          address : 0286
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M53
+          read    : true
+          address : 02BA
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_100
+          read    : true
+          address : 0114
+          symbol  : $M45
+          read    : true
+          address : 0544
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : rlt03-sg-reg-temp
+          read    : true
+          address : 053C
+          symbol  : $M48
+          read    : true
+          address : 0548
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt03-winteranfahrt
+          read    : true
+          address : 0264
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT03_FROST
+          read    : true
+          address : 01EE
+          symbol  : $M53
+          read    : true
+          address : 02BA
+          symbol  : $out-odrmn-84-binv
+          read    : false
+          address : 04A6
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  : rlt03-winter
+          read    : true
+          address : 0266
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M50
+          read    : true
+          address : 02B8
+          symbol  : $M47
+          read    : true
+          address : 02B6
+     Modulecall            : LREG
+     pastvalues            : 38
+     opcode                : 3052
+          symbol  : RLT03_VE_RL_TEMP
+          read    : true
+          address : 0520
+          symbol  : FKON_15GRAD
+          read    : true
+          address : 0124
+          symbol  : $M47
+          read    : true
+          address : 02B6
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : FKON_02
+          read    : true
+          address : 0128
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : FKON_XP_FROST
+          read    : true
+          address : 0120
+          symbol  : FKON_TN_FROST
+          read    : true
+          address : 011C
+          symbol  : $in-lreg-85-vorhaltzeittv
+          read    : true
+          address : 0144
+          symbol  : FKON_GU_FROST
+          read    : true
+          address : 0110
+          symbol  : FKON_GO_FROST
+          read    : true
+          address : 0118
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_100
+          read    : true
+          address : 0114
+          symbol  : $M41
+          read    : true
+          address : 0540
+          symbol  : $out-lreg-86-error
+          read    : false
+          address : 04A8
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M50
+          read    : true
+          address : 02B8
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M41
+          read    : true
+          address : 0540
+          symbol  : $M52
+          read    : true
+          address : 054C
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : RLT03_NE_ANFORDERUNG
+          read    : true
+          address : 025A
+          symbol  : rlt03-ein
+          read    : true
+          address : 0268
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt03-ne-klappe-auf
+          read    : true
+          address : 02BC
+          symbol  : $out-undmn-87-binv
+          read    : false
+          address : 04AA
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : $M58
+          read    : true
+          address : 0550
+          symbol  : RLT03_ABL_TEMP_NE
+          read    : true
+          address : 0524
+          symbol  : FKON_0.5
+          read    : true
+          address : 012C
+          symbol  : $M60
+          read    : true
+          address : 02C4
+     Modulecall            : SUB2
+     pastvalues            : 0
+     opcode                : 3004
+          symbol  : RLT03_SW_ABL_TEMP_NE
+          read    : true
+          address : 052C
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : $M58
+          read    : true
+          address : 0550
+     Modulecall            : SUB2
+     pastvalues            : 0
+     opcode                : 3004
+          symbol  : RLT03_SW_ABL_TEMP_NE
+          read    : true
+          address : 052C
+          symbol  : FKON_02
+          read    : true
+          address : 0128
+          symbol  : $M59
+          read    : true
+          address : 0554
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : $M59
+          read    : true
+          address : 0554
+          symbol  : RLT03_ABL_TEMP_NE
+          read    : true
+          address : 0524
+          symbol  : FKON_0.5
+          read    : true
+          address : 012C
+          symbol  : $M61
+          read    : true
+          address : 02C6
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : RLT03_NE_LUFTSTROM
+          read    : true
+          address : 0248
+          symbol  : RLT03_NE_STB
+          read    : true
+          address : 023C
+          symbol  : RLT03_NE_KLAPPE_AUF
+          read    : true
+          address : 02C0
+          symbol  : RLT03_NE_ST
+          read    : true
+          address : 0234
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M62
+          read    : true
+          address : 02C8
+          symbol  : $out-undmn-88-binv
+          read    : false
+          address : 04AC
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : rlt03-ne-klappe-auf
+          read    : true
+          address : 02BC
+          symbol  : $M60
+          read    : true
+          address : 02C4
+          symbol  : $M62
+          read    : true
+          address : 02C8
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt03-ne-stufe1-ein
+          read    : true
+          address : 02CA
+          symbol  : $out-undmn-89-binv
+          read    : false
+          address : 04AE
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : rlt03-ne-klappe-auf
+          read    : true
+          address : 02BC
+          symbol  : $M61
+          read    : true
+          address : 02C6
+          symbol  : $M62
+          read    : true
+          address : 02C8
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt03-ne-stufe2-ein
+          read    : true
+          address : 02CC
+          symbol  : $out-undmn-90-binv
+          read    : false
+          address : 04B0
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : REGLER
+     pastvalues            : 38
+     opcode                : 3037
+          symbol  :  direct value
+          read    : true
+          value  : 10
+          symbol  : $M133
+          read    : true
+          address : 03D4
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : $M131
+          read    : true
+          address : 0580
+          symbol  : $out-regler-91-error
+          read    : false
+          address : 04B2
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M133
+          read    : true
+          address : 03D4
+          symbol  : $out-odrmn-92-binv
+          read    : false
+          address : 04B4
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : $M131
+          read    : true
+          address : 0580
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0401-SW92
+          read    : true
+          address : 00C2
+          symbol  : $out-anaus-93-error
+          read    : false
+          address : 04B6
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT04_ABL_TEMP
+          read    : true
+          address : 055C
+          symbol  : $out-atra-94-y
+          read    : false
+          address : 05DC
+     Modulecall            : REGLER
+     pastvalues            : 38
+     opcode                : 3037
+          symbol  :  direct value
+          read    : true
+          value  : 11
+          symbol  : $M133
+          read    : true
+          address : 03D4
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  : $out-regler-95-error
+          read    : false
+          address : 04B8
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0401-SG92
+          read    : true
+          address : 0052
+          symbol  : $out-anaus-96-error
+          read    : false
+          address : 04BA
+     Modulecall            : ATRA
+     pastvalues            : 0
+     opcode                : 303A
+          symbol  : RLT04_ZUL_TEMP
+          read    : true
+          address : 0558
+          symbol  : $out-atra-97-y
+          read    : false
+          address : 05E0
+     Modulecall            : ADD2
+     pastvalues            : 0
+     opcode                : 3003
+          symbol  : RLT04_SW_ABL_TEMP
+          read    : true
+          address : 056C
+          symbol  : RLT04_TAB_SW-STELLER
+          read    : true
+          address : 0570
+          symbol  : $M138
+          read    : true
+          address : 0584
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : $M138
+          read    : true
+          address : 0584
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0402-SW99
+          read    : true
+          address : 008A
+          symbol  : $out-anaus-98-error
+          read    : false
+          address : 04BC
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : FKON_15
+          read    : true
+          address : 0134
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  : FKON_05
+          read    : true
+          address : 0138
+          symbol  : $M163
+          read    : true
+          address : 03E6
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : FKON_05
+          read    : true
+          address : 0138
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  : FKON_15
+          read    : true
+          address : 0134
+          symbol  : $M162
+          read    : true
+          address : 03E4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M168
+          read    : true
+          address : 03E8
+          symbol  : $M163
+          read    : true
+          address : 03E6
+          symbol  : $M171
+          read    : true
+          address : 03EC
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt04-kae-stufe1-ein
+          read    : true
+          address : 03EE
+          symbol  : $out-undmn-99-binv
+          read    : false
+          address : 04BE
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M168
+          read    : true
+          address : 03E8
+          symbol  : $M162
+          read    : true
+          address : 03E4
+          symbol  : $M171
+          read    : true
+          address : 03EC
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : rlt04-kae-stufe2-ein
+          read    : true
+          address : 03F0
+          symbol  : $out-undmn-100-binv
+          read    : false
+          address : 04C0
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M168
+          read    : true
+          address : 03E8
+          symbol  : $out-odrmn-101-binv
+          read    : false
+          address : 04C2
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : ISP01_AT
+          read    : true
+          address : 0510
+          symbol  : FKON_16GRAD
+          read    : true
+          address : 013C
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : $M169
+          read    : true
+          address : 03EA
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M169
+          read    : true
+          address : 03EA
+          symbol  : RLT04_KAE_ST
+          read    : true
+          address : 032C
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M171
+          read    : true
+          address : 03EC
+          symbol  : $out-undmn-102-binv
+          read    : false
+          address : 04C4
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : SUB2
+     pastvalues            : 0
+     opcode                : 3004
+          symbol  : RLT04_AUL_TEMP_WRG
+          read    : true
+          address : 0564
+          symbol  : RLT04_ABL_TEMP_WRG
+          read    : true
+          address : 0568
+          symbol  : $M143
+          read    : true
+          address : 0598
+     Modulecall            : SUB2
+     pastvalues            : 0
+     opcode                : 3004
+          symbol  : RLT04_ABL_TEMP_WRG
+          read    : true
+          address : 0568
+          symbol  : RLT04_AUL_TEMP_WRG
+          read    : true
+          address : 0564
+          symbol  : $M144
+          read    : true
+          address : 059C
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-krg-ein
+          read    : true
+          address : 03D8
+          symbol  : rlt04-wrg-ein
+          read    : true
+          address : 03DA
+          symbol  : rlt04-wrg-aus
+          read    : true
+          address : 03D6
+          symbol  : $out-undmn-103-binv
+          read    : false
+          address : 04C6
+     Modulecall            : FKG
+     pastvalues            : 0
+     opcode                : 3022
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $FKG_104_X0
+          read    : true
+          address : 0148
+          symbol  : $FKG_104_Y0
+          read    : true
+          address : 014C
+          symbol  : $FKG_104_X1
+          read    : true
+          address : 0150
+          symbol  : $FKG_104_Y1
+          read    : true
+          address : 0154
+          symbol  : $M139
+          read    : true
+          address : 0588
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : rlt04-wrg-ein
+          read    : true
+          address : 03DA
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M139
+          read    : true
+          address : 0588
+          symbol  : $M141
+          read    : true
+          address : 0590
+     Modulecall            : FKG
+     pastvalues            : 0
+     opcode                : 3022
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $FKG_105_X0
+          read    : true
+          address : 0158
+          symbol  : $FKG_105_Y0
+          read    : true
+          address : 015C
+          symbol  : $FKG_105_X1
+          read    : true
+          address : 0160
+          symbol  : $FKG_105_Y1
+          read    : true
+          address : 0164
+          symbol  : $M140
+          read    : true
+          address : 058C
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : rlt04-krg-ein
+          read    : true
+          address : 03D8
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M140
+          read    : true
+          address : 058C
+          symbol  : $M142
+          read    : true
+          address : 0594
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : rlt04-krg-ein
+          read    : true
+          address : 03D8
+          symbol  : $M141
+          read    : true
+          address : 0590
+          symbol  : $M142
+          read    : true
+          address : 0594
+          symbol  : rlt04-wrg-sb
+          read    : true
+          address : 05A8
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : $M143
+          read    : true
+          address : 0598
+          symbol  : FKON_02
+          read    : true
+          address : 0128
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : rlt04-krg-ein
+          read    : true
+          address : 03D8
+     Modulecall            : VGLEH
+     pastvalues            : 2
+     opcode                : 3027
+          symbol  : $M144
+          read    : true
+          address : 059C
+          symbol  : FKON_02
+          read    : true
+          address : 0128
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : rlt04-wrg-ein
+          read    : true
+          address : 03DA
+     Modulecall            : FKG
+     pastvalues            : 0
+     opcode                : 3022
+          symbol  : rlt04-wrg-sb
+          read    : true
+          address : 05A8
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $FKG_106_X0
+          read    : true
+          address : 0168
+          symbol  : $FKG_106_Y0
+          read    : true
+          address : 016C
+          symbol  : $FKG_106_X1
+          read    : true
+          address : 0170
+          symbol  : $FKG_106_Y1
+          read    : true
+          address : 0174
+          symbol  : rlt04-wrg-by-sb
+          read    : true
+          address : 05A4
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : MAX
+     pastvalues            : 0
+     opcode                : 3009
+          symbol  :  direct value
+          read    : true
+          value  : 3
+          symbol  : $M159
+          read    : true
+          address : 05C4
+          symbol  : $M151
+          read    : true
+          address : 05AC
+          symbol  : $M152
+          read    : true
+          address : 05B0
+          symbol  : rlt04-ve-ventil-sb
+          read    : true
+          address : 057C
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M150
+          read    : true
+          address : 03DE
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_100
+          read    : true
+          address : 0114
+          symbol  : $M152
+          read    : true
+          address : 05B0
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M147
+          read    : true
+          address : 03DC
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M153
+          read    : true
+          address : 05B4
+          symbol  : $M151
+          read    : true
+          address : 05AC
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-winteranfahrt
+          read    : true
+          address : 036C
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : RLT04_FROST
+          read    : true
+          address : 02EC
+          symbol  : $M150
+          read    : true
+          address : 03DE
+          symbol  : $out-odrmn-107-binv
+          read    : false
+          address : 04C8
+     Modulecall            : ODRMN
+     pastvalues            : 0
+     opcode                : 3014
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-stufe1
+          read    : true
+          address : 0366
+          symbol  : rlt04-stufe2
+          read    : true
+          address : 0368
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M158
+          read    : true
+          address : 03E2
+          symbol  : $out-odrmn-108-binv
+          read    : false
+          address : 04CA
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M158
+          read    : true
+          address : 03E2
+          symbol  : rlt04-winter
+          read    : true
+          address : 036E
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  : $M147
+          read    : true
+          address : 03DC
+          symbol  : $M154
+          read    : true
+          address : 03E0
+     Modulecall            : LREG
+     pastvalues            : 38
+     opcode                : 3052
+          symbol  : RLT04_VE_RL_TEMP
+          read    : true
+          address : 0560
+          symbol  : FKON_15GRAD
+          read    : true
+          address : 0124
+          symbol  : $M154
+          read    : true
+          address : 03E0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : KON_0
+          read    : true
+          address : 00D0
+          symbol  : FKON_02
+          read    : true
+          address : 0128
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : FKON_XP_FROST
+          read    : true
+          address : 0120
+          symbol  : FKON_TN_FROST
+          read    : true
+          address : 011C
+          symbol  : $in-lreg-109-vorhaltzeittv
+          read    : true
+          address : 0178
+          symbol  : FKON_GU_FROST
+          read    : true
+          address : 0110
+          symbol  : FKON_GO_FROST
+          read    : true
+          address : 0118
+          symbol  : FKON_01
+          read    : true
+          address : 00E8
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : FKON_100
+          read    : true
+          address : 0114
+          symbol  : $M153
+          read    : true
+          address : 05B4
+          symbol  : $out-lreg-110-error
+          read    : false
+          address : 04CC
+     Modulecall            : FKG
+     pastvalues            : 0
+     opcode                : 3022
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $FKG_111_X0
+          read    : true
+          address : 017C
+          symbol  : $FKG_111_Y0
+          read    : true
+          address : 0180
+          symbol  : $FKG_111_X1
+          read    : true
+          address : 0184
+          symbol  : $FKG_111_Y1
+          read    : true
+          address : 0188
+          symbol  : $M156
+          read    : true
+          address : 05BC
+     Modulecall            : FKG
+     pastvalues            : 0
+     opcode                : 3022
+          symbol  : rlt04-sg-reg-temp
+          read    : true
+          address : 05A0
+          symbol  :  direct value
+          read    : true
+          value  : 4
+          symbol  : $FKG_112_X0
+          read    : true
+          address : 018C
+          symbol  : $FKG_112_Y0
+          read    : true
+          address : 0190
+          symbol  : $FKG_112_X1
+          read    : true
+          address : 0194
+          symbol  : $FKG_112_Y1
+          read    : true
+          address : 0198
+          symbol  : $M155
+          read    : true
+          address : 05B8
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : rlt04-wrg-aus
+          read    : true
+          address : 03D6
+          symbol  : $M155
+          read    : true
+          address : 05B8
+          symbol  : $M156
+          read    : true
+          address : 05BC
+          symbol  : $M157
+          read    : true
+          address : 05C0
+     Modulecall            : AWT
+     pastvalues            : 0
+     opcode                : 301F
+          symbol  : $M158
+          read    : true
+          address : 03E2
+          symbol  : FKON_00
+          read    : true
+          address : 00F8
+          symbol  : $M157
+          read    : true
+          address : 05C0
+          symbol  : $M159
+          read    : true
+          address : 05C4
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0005
+    Runtime                : 3250
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M63
+          read    : true
+          address : 02CE
+          symbol  : rlt03-abl-soll-ein
+          read    : true
+          address : 029E
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0302-BF11
+          read    : true
+          address : 00B8
+          symbol  : $out-befaus-113-error
+          read    : false
+          address : 04CE
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-abl-soll-ein
+          read    : true
+          address : 029E
+          symbol  : $M63
+          read    : true
+          address : 02CE
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt03-zul-elek.st
+          read    : true
+          address : 0298
+          symbol  : O3L1-LU0301-ST91
+          read    : true
+          address : 003E
+          symbol  : $out-setmel-114-error
+          read    : false
+          address : 04D0
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt03-abl-elek.st
+          read    : true
+          address : 029A
+          symbol  : O3L1-LU0302-ST91
+          read    : true
+          address : 0068
+          symbol  : $out-setmel-115-error
+          read    : false
+          address : 04D2
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M64
+          read    : true
+          address : 02D0
+          symbol  : rlt03-ve-pumpe-ein
+          read    : true
+          address : 028A
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0303-BF11
+          read    : true
+          address : 00B0
+          symbol  : $out-befaus-116-error
+          read    : false
+          address : 04D4
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-zul-soll-ein
+          read    : true
+          address : 029C
+          symbol  : $M65
+          read    : true
+          address : 02D2
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-ve-pumpe-ein
+          read    : true
+          address : 028A
+          symbol  : $M64
+          read    : true
+          address : 02D0
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M65
+          read    : true
+          address : 02D2
+          symbol  : rlt03-zul-soll-ein
+          read    : true
+          address : 029C
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0301-BF11
+          read    : true
+          address : 00A4
+          symbol  : $out-befaus-117-error
+          read    : false
+          address : 04D6
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-kla-soll-auf
+          read    : true
+          address : 026E
+          symbol  : $M66
+          read    : true
+          address : 02D4
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M66
+          read    : true
+          address : 02D4
+          symbol  : rlt03-kla-soll-auf
+          read    : true
+          address : 026E
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0306-BF11
+          read    : true
+          address : 00C4
+          symbol  : $out-befaus-118-error
+          read    : false
+          address : 04D8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M73
+          read    : true
+          address : 02D8
+          symbol  : rlt03-ne-stufe1-ein
+          read    : true
+          address : 02CA
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0309-BF11
+          read    : true
+          address : 00D2
+          symbol  : $out-befaus-119-error
+          read    : false
+          address : 04DA
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-ne-stufe2-ein
+          read    : true
+          address : 02CC
+          symbol  : $M70
+          read    : true
+          address : 02D6
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M70
+          read    : true
+          address : 02D6
+          symbol  : rlt03-ne-stufe2-ein
+          read    : true
+          address : 02CC
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0309-BF12
+          read    : true
+          address : 008E
+          symbol  : $out-befaus-120-error
+          read    : false
+          address : 04DC
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M74
+          read    : true
+          address : 02DA
+          symbol  : rlt03-ne-klappe-auf
+          read    : true
+          address : 02BC
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0309-BF21
+          read    : true
+          address : 007C
+          symbol  : $out-befaus-121-error
+          read    : false
+          address : 04DE
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-ne-stufe1-ein
+          read    : true
+          address : 02CA
+          symbol  : $M73
+          read    : true
+          address : 02D8
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt03-ne-klappe-auf
+          read    : true
+          address : 02BC
+          symbol  : $M74
+          read    : true
+          address : 02DA
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt03-ve-ventil-sb
+          read    : true
+          address : 0286
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0303-SB11
+          read    : true
+          address : 00A8
+          symbol  : $out-anaus-122-error
+          read    : false
+          address : 04E0
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M170
+          read    : true
+          address : 03F2
+          symbol  : rlt04-ve-pumpe-ein
+          read    : true
+          address : 039C
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0403-BF11
+          read    : true
+          address : 00A0
+          symbol  : $out-befaus-123-error
+          read    : false
+          address : 04E2
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt04-ve-pumpe-ein
+          read    : true
+          address : 039C
+          symbol  : $M170
+          read    : true
+          address : 03F2
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M175
+          read    : true
+          address : 03F6
+          symbol  : rlt04-zul-soll-ein1
+          read    : true
+          address : 03A6
+          symbol  : rlt04-zul-soll-ein2
+          read    : true
+          address : 03A8
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0401-BF11
+          read    : true
+          address : 00CA
+          symbol  : $out-befaus-124-error
+          read    : false
+          address : 04E4
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-zul-elek.st
+          read    : true
+          address : 03AC
+          symbol  : O3L1-LU0401-ST91
+          read    : true
+          address : 00A6
+          symbol  : $out-setmel-125-error
+          read    : false
+          address : 04E6
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : rlt04-abl-elek.st
+          read    : true
+          address : 03B6
+          symbol  : O3L1-LU0402-ST91
+          read    : true
+          address : 0044
+          symbol  : $out-setmel-126-error
+          read    : false
+          address : 04E8
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M174
+          read    : true
+          address : 03F4
+          symbol  : rlt04-kla-soll-auf
+          read    : true
+          address : 0382
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0406-BF11
+          read    : true
+          address : 0076
+          symbol  : $out-befaus-127-error
+          read    : false
+          address : 04EA
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt04-kla-soll-auf
+          read    : true
+          address : 0382
+          symbol  : $M174
+          read    : true
+          address : 03F4
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-zul-soll-ein1
+          read    : true
+          address : 03A6
+          symbol  : rlt04-zul-soll-ein2
+          read    : true
+          address : 03A8
+          symbol  : $M175
+          read    : true
+          address : 03F6
+          symbol  : $out-undmn-128-binv
+          read    : false
+          address : 04EC
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : $M176
+          read    : true
+          address : 03F8
+          symbol  : rlt04-abl-soll-ein1
+          read    : true
+          address : 03B8
+          symbol  : rlt04-abl-soll-ein2
+          read    : true
+          address : 03BA
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0402-BF11
+          read    : true
+          address : 0056
+          symbol  : $out-befaus-129-error
+          read    : false
+          address : 04EE
+     Modulecall            : UNDMN
+     pastvalues            : 0
+     opcode                : 3011
+          symbol  :  direct value
+          read    : true
+          value  : 0
+          symbol  :  direct value
+          read    : true
+          value  : 2
+          symbol  : rlt04-abl-soll-ein1
+          read    : true
+          address : 03B8
+          symbol  : rlt04-abl-soll-ein2
+          read    : true
+          address : 03BA
+          symbol  : $M176
+          read    : true
+          address : 03F8
+          symbol  : $out-undmn-130-binv
+          read    : false
+          address : 04F0
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M177
+          read    : true
+          address : 03FA
+          symbol  : rlt04-kae-stufe1-ein
+          read    : true
+          address : 03EE
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0404-BF11
+          read    : true
+          address : 00C8
+          symbol  : $out-befaus-131-error
+          read    : false
+          address : 04F2
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt04-kae-stufe1-ein
+          read    : true
+          address : 03EE
+          symbol  : $M177
+          read    : true
+          address : 03FA
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M178
+          read    : true
+          address : 03FC
+          symbol  : rlt04-kae-stufe2-ein
+          read    : true
+          address : 03F0
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0404-BF12
+          read    : true
+          address : 00C6
+          symbol  : $out-befaus-132-error
+          read    : false
+          address : 04F4
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : rlt04-kae-stufe2-ein
+          read    : true
+          address : 03F0
+          symbol  : $M178
+          read    : true
+          address : 03FC
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M179
+          read    : true
+          address : 03FE
+          symbol  : RLT04_ZUL_EIN1
+          read    : true
+          address : 02FA
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0409-BF02
+          read    : true
+          address : 00BE
+          symbol  : $out-befaus-133-error
+          read    : false
+          address : 04F6
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_ZUL_EIN1
+          read    : true
+          address : 02FA
+          symbol  : $M179
+          read    : true
+          address : 03FE
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : RLT04_ZUL_EIN2
+          read    : true
+          address : 02FC
+          symbol  : $M185
+          read    : true
+          address : 0400
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M185
+          read    : true
+          address : 0400
+          symbol  : RLT04_ZUL_EIN2
+          read    : true
+          address : 02FC
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : O3L1-LU0409-BF03
+          read    : true
+          address : 00C0
+          symbol  : $out-befaus-134-error
+          read    : false
+          address : 04F8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt04-wrg-sb
+          read    : true
+          address : 05A8
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0407-SB11
+          read    : true
+          address : 0066
+          symbol  : $out-anaus-135-error
+          read    : false
+          address : 04FA
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt04-wrg-by-sb
+          read    : true
+          address : 05A4
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0407-SB12
+          read    : true
+          address : 006A
+          symbol  : $out-anaus-136-error
+          read    : false
+          address : 04FC
+     Modulecall            : ANAUS
+     pastvalues            : 8
+     opcode                : 3032
+          symbol  : rlt04-ve-ventil-sb
+          read    : true
+          address : 057C
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  : O3L1-LU0403-SB11
+          read    : true
+          address : 0074
+          symbol  : $out-anaus-137-error
+          read    : false
+          address : 04FE
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : SETMEL
+     pastvalues            : 6
+     opcode                : 3034
+          symbol  : KON_1
+          read    : true
+          address : 0032
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : ssm-modul3
+          read    : true
+          address : 0406
+          symbol  : O3L1-US0100-ST03
+          read    : true
+          address : 00D8
+          symbol  : $out-setmel-138-error
+          read    : false
+          address : 0500
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+Task id;Modulename;Pastvaluecount
+ Task1;null;-1;
+ Task1;BEFAUS;6;
+ Task1;ANAUS;8;
+ Task1;ANAUS;8;
+ Task1;null;-1;
+ Task1;BEFAUS;6;
+ Task1;ENDE;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;ANEIN;2;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ATRA;0;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;BTRA;0;
+ Task2;BTRA;0;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;MELEIN;4;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ANEIN;2;
+ Task2;ENDE;0;
+ Task3;null;-1;
+ Task3;ODRMN;0;
+ Task3;RSS;2;
+ Task3;ODRMN;0;
+ Task3;null;-1;
+ Task3;RSS;2;
+ Task3;VGLEH;2;
+ Task3;VGLOH;0;
+ Task3;UNDMN;0;
+ Task3;MOKY;16;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;UNDMN;0;
+ Task3;VVZ;26;
+ Task3;null;-1;
+ Task3;VVZ;26;
+ Task3;RSS;2;
+ Task3;XOR2;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;VGLOH;0;
+ Task3;ODRMN;0;
+ Task3;MOKY;16;
+ Task3;VGLOH;0;
+ Task3;NICHT;0;
+ Task3;UHR;4;
+ Task3;MULT;0;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;VVZ;26;
+ Task3;VVZ;26;
+ Task3;XOR2;0;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;XOR2;0;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;null;-1;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;RSS;2;
+ Task3;ODRMN;0;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;null;-1;
+ Task3;VGLEH;2;
+ Task3;UNDMN;0;
+ Task3;MOKY;16;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;VGLOH;0;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;ODRMN;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;ODRMN;0;
+ Task3;null;-1;
+ Task3;UNDMN;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;UHR;4;
+ Task3;VGLOH;0;
+ Task3;MOKY;16;
+ Task3;UNDMN;0;
+ Task3;NICHT;0;
+ Task3;MULT;0;
+ Task3;VVZ;26;
+ Task3;VGLOH;0;
+ Task3;UNDMN;0;
+ Task3;ODRMN;0;
+ Task3;XOR2;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;ODRMN;0;
+ Task3;null;-1;
+ Task3;XOR2;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;ODRMN;0;
+ Task3;UNDMN;0;
+ Task3;UNDMN;0;
+ Task3;XOR2;0;
+ Task3;VVZ;26;
+ Task3;UNDMN;0;
+ Task3;RSS;2;
+ Task3;ODRMN;0;
+ Task3;null;-1;
+ Task3;UNDMN;0;
+ Task3;null;-1;
+ Task3;ODRMN;0;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;RSS;2;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;NICHT;0;
+ Task3;RSS;2;
+ Task3;ENDE;0;
+ Task4;null;-1;
+ Task4;ATRA;0;
+ Task4;REGLER;38;
+ Task4;ANAUS;8;
+ Task4;ATRA;0;
+ Task4;null;-1;
+ Task4;MAX;0;
+ Task4;AWT;0;
+ Task4;AWT;0;
+ Task4;ODRMN;0;
+ Task4;UNDMN;0;
+ Task4;LREG;38;
+ Task4;AWT;0;
+ Task4;null;-1;
+ Task4;UNDMN;0;
+ Task4;VGLEH;2;
+ Task4;SUB2;0;
+ Task4;SUB2;0;
+ Task4;VGLEH;2;
+ Task4;UNDMN;0;
+ Task4;UNDMN;0;
+ Task4;UNDMN;0;
+ Task4;null;-1;
+ Task4;REGLER;38;
+ Task4;ODRMN;0;
+ Task4;ANAUS;8;
+ Task4;ATRA;0;
+ Task4;REGLER;38;
+ Task4;ANAUS;8;
+ Task4;ATRA;0;
+ Task4;ADD2;0;
+ Task4;ANAUS;8;
+ Task4;null;-1;
+ Task4;VGLEH;2;
+ Task4;VGLEH;2;
+ Task4;UNDMN;0;
+ Task4;UNDMN;0;
+ Task4;ODRMN;0;
+ Task4;VGLEH;2;
+ Task4;UNDMN;0;
+ Task4;null;-1;
+ Task4;SUB2;0;
+ Task4;SUB2;0;
+ Task4;UNDMN;0;
+ Task4;FKG;0;
+ Task4;AWT;0;
+ Task4;FKG;0;
+ Task4;AWT;0;
+ Task4;AWT;0;
+ Task4;VGLEH;2;
+ Task4;VGLEH;2;
+ Task4;FKG;0;
+ Task4;null;-1;
+ Task4;MAX;0;
+ Task4;AWT;0;
+ Task4;AWT;0;
+ Task4;ODRMN;0;
+ Task4;ODRMN;0;
+ Task4;UNDMN;0;
+ Task4;LREG;38;
+ Task4;FKG;0;
+ Task4;FKG;0;
+ Task4;AWT;0;
+ Task4;AWT;0;
+ Task4;ENDE;0;
+ Task5;null;-1;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;SETMEL;6;
+ Task5;SETMEL;6;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;null;-1;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;NICHT;0;
+ Task5;null;-1;
+ Task5;ANAUS;8;
+ Task5;null;-1;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;SETMEL;6;
+ Task5;SETMEL;6;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;UNDMN;0;
+ Task5;BEFAUS;6;
+ Task5;UNDMN;0;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;null;-1;
+ Task5;BEFAUS;6;
+ Task5;NICHT;0;
+ Task5;NICHT;0;
+ Task5;BEFAUS;6;
+ Task5;null;-1;
+ Task5;ANAUS;8;
+ Task5;ANAUS;8;
+ Task5;ANAUS;8;
+ Task5;null;-1;
+ Task5;SETMEL;6;
+ Task5;ENDE;0;

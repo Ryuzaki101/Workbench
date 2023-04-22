@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: de.wisag.automation.micas.olt.terminal.view;singleton:=true
+Eclipse-LazyStart: true
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/dsd
+ p:de.wisag.automation.micas.olt.core/terminal/de.wisag.automation.micas.olt.terminal.view;tag=v2010
+ 06041240
+Bundle-Activator: de.wisag.automation.micas.olt.internal.terminal.view.TerminalViewPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.wisag.automation.micas.olt.terminal;bundle-version="[3.0.100,3.1.0)"
+Export-Package: de.wisag.automation.micas.olt.internal.terminal.actions;x-internal:=true,
+ de.wisag.automation.micas.olt.internal.terminal.view;x-internal:=true
+Bundle-Version: 2.1.0.v201006041240
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+

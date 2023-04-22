@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="de.wisag.automation.micas.workbench.licmgr.rcp.LicensemanagerApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.wisag.automation.micas.workbench.licmgr.rcp.Perspective"
+            fixed="true"
+            id="de.wisag.automation.micas.workbench.licmgr.perspective"
+            name="Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="de.wisag.automation.micas.workbench.licmgr.rcp.internal.views.View"
+            id="de.wisag.automation.micas.workbench.licmgr.view"
+            name="View"
+            restorable="false">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               closeable="false"
+               id="de.wisag.automation.micas.workbench.licmgr.view"
+               minimized="false"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               showTitle="false"
+               standalone="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="de.wisag.automation.micas.workbench.licmgr.rcp.commands.shorequestdialog"
+                  label="License Request Dialog"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.wisag.automation.micas.workbench.licmgr.rcp.application"
+            name="Workbench Licensemanager">
+         <property
+               name="appName"
+               value="Workbench Licensemanager">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/key-16.png,icons/key-32.png,icons/key-48.png,icons/key-64.png,icons/key-128.png,icons/key-256.png">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.wisag.automation.micas.workbench.licmgr.rcp.internal.handlers.ShowRequestDialogHandler"
+            commandId="de.wisag.automation.micas.workbench.licmgr.rcp.commands.shorequestdialog">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="de.wisag.automation.micas.workbench.licmgr.rcp.commands.category"
+            name="Micas License Manager">
+      </category>
+      <command
+            categoryId="de.wisag.automation.micas.workbench.licmgr.rcp.commands.category"
+            id="de.wisag.automation.micas.workbench.licmgr.rcp.commands.shorequestdialog"
+            name="Show License Request Dialog">
+      </command>
+   </extension>
+
+</plugin>

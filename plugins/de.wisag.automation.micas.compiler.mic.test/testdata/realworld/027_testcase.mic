@@ -1,0 +1,131 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60516.GPS
+  ;*** Projektname    : MPI-Göttingen T6
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : Jac.
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 16
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordV  ABL-VENT-EIN2-OP
+  WordV  ABL-VENT-EIN1-OP
+  WordV  ABL-VENT-ST-OP
+  WordV  ABL-VENT-AUS-OP
+  WordK  K-GES-AN-EIN1-OP (0)
+  WordV  T6-LU17-10D-X50
+  WordV  FEUERABSCHALTUNG
+  WordK  K-GES-AN-EIN2-OP (0)
+  WordK  K-GES-ANL-AUS-OP (1)
+  WordV  OP-TABLEAU-EIN1
+  WordV  OP-TABLEAU-EIN2
+  WordV  OP-TABLEAU-AUS
+  WordV  SOLL-EIN1-ABL-OP
+  WordV  SOLL-EIN2-ABL-OP
+  WordK  K-GES-ANL-AUS-WC (0)
+  WordK  K-GES-AN-EIN1-WC (0)
+  WordK  K-GES-AN-EIN2-WC (1)
+  WordV  T6-LU17-10F-X01
+  WordV  GES-ANL-AUS-WC
+  WordV  GES-AN-EIN1-WC
+  WordV  GES-AN-EIN2-WC
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (60,1)
+  IPAMB &M1 (125,1)
+  IPAMB &M3 (60,2)
+  IPAMB &M4 (60,3)
+  IPAMB &M5 (60,4)
+  IPAMB &M6 (60,5)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  WordV  $B3
+  IPAMB &T6-LU17-10D-X01 (124,1)
+  IPAMB &M7 (124,2)
+  IPAMB &M8 (124,3)
+  IPAMB &M9 (124,4)
+  IPAMB &M10 (124,5)
+  IPAMB &T6-UV17-10A-S11 (127,11)
+  IPAMB &T6-LU17-10D-B01 (101,14)
+  IPAMB &T6-LU17-10D-B02 (102,11)
+  IPAMB &M12 (125,2)
+  IPAMB &M13 (125,3)
+  IPAMB &M14 (125,4)
+  IPAMB &M15 (125,5)
+  IPAMB &T6-LU17-10D-B03 (102,15)
+  WordV  $B4
+  FloatK $M17 (10.00)
+  FloatK $M18 (10.00)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $HB1
+  WordK  $M19 (1)
+  WordV  $B8
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;Abluft OP-Raum
+  ;EINBAUORT: T6 Dachgesch.
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (2,K-GES-ANL-AUS-OP,K-GES-AN-EIN1-OP,
+          K-GES-AN-EIN2-OP,$WZERO,&M0,WERR)
+  BEFAUS (2,K-GES-ANL-AUS-WC,K-GES-AN-EIN1-WC,
+          K-GES-AN-EIN2-WC,$WZERO,&M1,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&M0,5,$B1,$WSCRATCH,$B2,$WSCRATCH,$B3,WERR)
+  MELEIN (&T6-LU17-10D-X01,5,ABL-VENT-AUS-OP,ABL-VENT-ST-OP,
+          ABL-VENT-EIN1-OP,$WSCRATCH,ABL-VENT-EIN2-OP,WERR)
+  BTRA ($B1,K-GES-ANL-AUS-OP)
+  BTRA ($B2,K-GES-AN-EIN1-OP)
+  BTRA ($B3,K-GES-AN-EIN2-OP)
+  MELEIN (&T6-UV17-10A-S11,1,FEUERABSCHALTUNG,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&T6-LU17-10D-B01,1,OP-TABLEAU-EIN1,WERR)
+  MELEIN (&T6-LU17-10D-B02,1,OP-TABLEAU-EIN2,WERR)
+  MELEIN (&M1,5,GES-ANL-AUS-WC,$WSCRATCH,GES-AN-EIN1-WC,
+          $WSCRATCH,GES-AN-EIN2-WC,WERR)
+  MELEIN (&T6-LU17-10D-B03,1,OP-TABLEAU-AUS,WERR)
+  BTRA (GES-ANL-AUS-WC,K-GES-ANL-AUS-WC)
+  BTRA (GES-AN-EIN1-WC,K-GES-AN-EIN1-WC)
+  BTRA (GES-AN-EIN2-WC,K-GES-AN-EIN2-WC)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  BEFAUS (2,OP-TABLEAU-AUS,OP-TABLEAU-EIN1,OP-TABLEAU-EIN2,
+          $WZERO,&M0,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ODR2 (K-GES-AN-EIN1-OP,K-GES-AN-EIN2-OP,$B4)
+  VVZ (K-GES-AN-EIN2-OP,$M17,$M18,$B5)
+  UND11 ($B4,$B5,$B6)
+  UND11 ($B6,$B8,SOLL-EIN1-ABL-OP)
+  UND21 ($B4,$B5,$B8,SOLL-EIN2-ABL-OP)
+  NOR2 (SOLL-EIN1-ABL-OP,SOLL-EIN2-ABL-OP,$B7)
+  BEFAUS (2,$B7,SOLL-EIN1-ABL-OP,SOLL-EIN2-ABL-OP,$WZERO,
+          &T6-LU17-10D-X01,WERR)
+  NICHT ($B8,$HB1)
+  SETMEL ($M19,0,&M3,WERR)
+  UND11 (FEUERABSCHALTUNG,ABL-VENT-ST-OP,$B8)
+  ENDE 
+  ENDMODUL 

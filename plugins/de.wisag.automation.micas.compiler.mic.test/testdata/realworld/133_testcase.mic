@@ -1,0 +1,291 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI40502.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 4
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Anl_EIN1_1
+  WordV  EIN-Taster
+  FloatV KAW-Vent-Stellun
+  WordV  Pumpe_ST
+  FloatV SW-KW-VL-Temp-se
+  WordV  Pumpe_R1
+  WordV  AUS-Taster
+  WordV  Anl_EIN1
+  WordK  Anl_R1 (1)
+  FloatV KAW-VL-Temp-sek
+  FloatV KAW-Ventil
+  WordV  Entriegeln
+  WordV  Entriegel-Taster
+  WordV  Entriegel-Befehl
+  WordK  k0 (0)
+  WordV  Anl_einsch_n_Res
+  WordV  VE_Ventil_ST
+  WordK  k1 (1)
+  FloatK $M0 (8.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &M2 (169,3)
+  WordV  $WSCRATCH
+  IPAMB &M3 (13,10)
+  WordV  $HB2
+  IPAMB &M4 (13,11)
+  IPAMB &M5 (4,6)
+  IPAMB &M6 (4,2)
+  IPAMB &M7 (1,0)
+  IPAMB &M16 (77,10)
+  IPAMB &M17 (77,11)
+  WordV  $B3
+  FloatK $M18 (3.00)
+  IPAMW &M19 (71)
+  IPAAW &M20 (141)
+  IPAMW &M21 (80)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $HB3
+  FloatK $M22 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatK $M23 (10.00)
+  WordV  $B4
+  WordV  $B5
+  WordV  $HB1
+  FloatV $F3
+  FloatK $M24 (300.00)
+  WordV  $B6
+  WordK  $M25 (1)
+  IPAMB &M26 (169,0)
+  WordV  $B7
+  FloatK $M27 (172800.00)
+  FloatK $M28 (0.00)
+  WordV  $B8
+  FloatK $M29 (300.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  WordV  $HB0
+  IPAMB &M30 (13,9)
+  IPAMB &M31 (4,5)
+  WordV  $B12
+  WordV  $B17
+  WordV  $B13
+  WordV  $B18
+  WordV  $B14
+  WordV  $B19
+  WordV  $B15
+  WordV  $B16
+  WordK  $M32 (1)
+  IPAMB &M33 (169,2)
+  IPAMB &M34 (169,1)
+  FloatK $M35 (5.00)
+  WordV  $B20
+  WordV  $B22
+  FloatK $M36 (10.00)
+  FloatK $M37 (0.00)
+  WordV  $B21
+  IPAMB &M38 (77,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Göttingen
+  ;Projekt: Sanierung
+  ;         Turm 4, SOG+SUG
+  ;Anlagen:
+  ;- Gerätekühlung SUG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl_R1,Anl_EIN1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,250)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (Anl_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,Anl_EIN1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,Anl_R1,$WSCRATCH)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Pumpe_ST)
+  MELEIN (&M4,1,Pumpe_R1,$WSCRATCH)
+  MELEIN (&M5,1,AUS-Taster,$WSCRATCH)
+  MELEIN (&M6,1,EIN-Taster,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M16,1,Entriegel-Taster,$WSCRATCH)
+  MELEIN (&M17,1,Entriegel-Befehl,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entriegel-Befehl,Entriegel-Taster,$B3)
+  MOKY ($B3,$M18,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M19,KAW-VL-Temp-sek,$WSCRATCH)
+  ANEIN (&M20,SW-KW-VL-Temp-se,$WSCRATCH)
+  ANEIN (&M21,KAW-Vent-Stellun,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  NICHT (Anl_R1,$HB3)
+  REGLER (18,$WONE,$HB3,$M22,KAW-Ventil,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  SUB2 (KAW-Ventil,KAW-Vent-Stellun,$F1)
+  ABSWER ($F1,$F2)
+  VGLOH ($F2,$M23,$B4)
+  UND21 ($B4,Anl_R1,Entriegeln,$B5)
+  NICHT ($B5,$HB1)
+  UHR (k1,$HB1,$F3)
+  VGLOH ($F3,$M24,$B6)
+  RSS ($B6,Entriegeln,VE_Ventil_ST,$WSCRATCH)
+  SETMEL ($M25,1,VE_Ventil_ST,&M26,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  UNDMN (0,2,Pumpe_R1,$B9,$B7,$WSCRATCH)
+  VVZ ($B7,$M27,$M28,$B8)
+  MOKY ($B8,$M29,$B9)
+  ODR2 ($B9,Anl_R1,$B10)
+  UND11 ($B10,Pumpe_ST,$B11)
+  NICHT ($B11,$HB0)
+  BEFAUS (1,$HB0,$B11,$WZERO,$WZERO,&M30,$WSCRATCH)
+  ;48 Std = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (Pumpe_R1,$HB0)
+  BEFAUS (1,$HB0,Pumpe_R1,$WZERO,$WZERO,&M31,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B17,Anl_R1,$B12)
+  NICHT (Anl_R1,$HB1)
+  NICHT ($HB1,$B17)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (k0,$B18,$B13)
+  NICHT (k0,$B18)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl_R1,$B19,$B14)
+  NICHT (Anl_R1,$B19)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (5,$B12,AUS-Taster,$B13,Pumpe_ST,k0,0,$B15,$WSCRATCH)
+  ODRMN (5,Anl_EIN1_1,EIN-Taster,$B14,k0,Anl_einsch_n_Res,0,
+         $B16,$WSCRATCH)
+  SETMEL ($M32,1,Pumpe_ST,&M33,$WSCRATCH)
+  BEFAUS (1,$B15,$B16,$WZERO,$WZERO,&M34,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MOKY ($WONE,$M35,Anl_einsch_n_Res)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Entriegeln,$B22,$B20)
+  NICHT (Entriegeln,$B22)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Entriegel-Befehl,$M36,$M37,$B21)
+  BEFAUS (1,$B21,$B20,$WZERO,$WZERO,&M38,$WSCRATCH)
+  ;die Betätigung eines
+  ;Quittiertasters in einem
+  ;beliebigen Schrank führt
+  ;in der örtlichen DDC zur
+  ;Mitschaltung des Fern-
+  ;Quittierbefehls. Dieser
+  ;widerum führt mittels
+  ;Ereignisprogramm der LZ
+  ;zur Quittierung in allen
+  ;anderen Schränken im
+  ;Turm 4.
+  ; 
+  ;diese Prgrammsequenz ist
+  ;immer im ersten Pro-
+  ;gramm einer US
+  ;programmiert.
+  ; 
+  ENDE 
+  ENDMODUL 

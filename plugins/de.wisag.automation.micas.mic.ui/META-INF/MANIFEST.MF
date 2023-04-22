@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Micas Workbench MIC Editor
+Bundle-Vendor: WISAG Automatisierungstechnik GmbH & Co. KG
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: de.wisag.automation.micas.mic.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui.console;bundle-version="3.4.0",
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.builder,
+ de.wisag.automation.micas.common;bundle-version="1.0.0",
+ de.wisag.automation.micas.mic,
+ de.wisag.automation.micas.compiler.mic,
+ de.wisag.automation.micas.hwmodules;bundle-version="1.0.0",
+ org.eclipse.compare,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ de.wisag.automation.micas.mic.ide;bundle-version="1.0.0",
+ org.eclipse.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.views.log;bundle-version="1.2.100"
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: de.wisag.automation.micas.ui,
+ de.wisag.automation.micas.ui.builder,
+ de.wisag.automation.micas.ui.contentassist,
+ de.wisag.automation.micas.ui.internal,
+ de.wisag.automation.micas.ui.labeling,
+ de.wisag.automation.micas.ui.outline,
+ de.wisag.automation.micas.ui.quickfix,
+ de.wisag.automation.micas.mic.ui.internal
+Bundle-Activator: de.wisag.automation.micas.mic.ui.internal.MicActivator

@@ -1,0 +1,150 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60506.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 6
+  ;*****************************************************************
+  MODUL (SP20,6)
+  WordV  WERR
+  WordK  K-TECHNIK-AUS (0)
+  WordK  K-TECHNIK-EIN (1)
+  WordV  ZUL-VENT-TEC-AUS
+  WordV  ZUL-VENT-TEC-ST
+  WordV  ZUL-VENT-TEC-EIN
+  WordV  ABL-VENT-TEC-AUS
+  WordV  ABL-VENT-TEC-ST
+  WordV  ABL-VENT-TEC-EIN
+  WordV  T6-LU12-41E-B02
+  WordV  THERMOSTAT-TECHN
+  WordV  KEILR-ZUL-TECHN
+  WordV  KEILR-ABL-TECHN
+  WordV  KEILRI-STOER-ZUL
+  WordV  KEILRI-STOER-ABL
+  WordK  K0 (0)
+  WordV  AUS-FEUERWEHRSCH
+  WordV  Quittierung
+  WordV  KEILRIE-ABL-TECH
+  WordV  PHASENAUSFALL_NN
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &T6-LU12-41E-X50 (135,1)
+  IPAMB &M0 (135,2)
+  IPAMB &M1 (135,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &T6-LU12-41E-X01 (42,1)
+  IPAMB &M2 (42,2)
+  IPAMB &M3 (42,3)
+  IPAMB &T6-LU12-41E-X02 (42,5)
+  IPAMB &M4 (42,6)
+  IPAMB &M5 (42,7)
+  IPAMB &T6-LU12-41E-B01 (27,2)
+  IPAMB &M6 (27,3)
+  IPAMB &T6-Lu12-41E-B03 (27,6)
+  IPAMB &M7 (0,14)
+  IPAMB &M8 (35,7)
+  WordV  $HB2
+  IPAMB &M9 (34,11)
+  WordV  $B3
+  FloatK $M10 (180.00)
+  FloatK $M11 (0.00)
+  WordV  $B4
+  WordK  $M12 (1)
+  IPAMB &T6-LU12-41E-S50 (135,0)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordK  $M13 (1)
+  WordV  $B8
+  FloatK $M15 (60.00)
+  FloatK $M16 (0.00)
+  WordV  $B9
+  WordK  $M17 (1)
+  IPAMB &T6-LU12-41E-S51 (135,4)
+  WordV  $B10
+  WordV  $B11
+  IPAMB &T6-LU12-41E-X03 (19,9)
+  WordV  $B12
+  WordK  $M18 (1)
+  IPAMB &T6-LU12-41E-S53 (135,6)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;LÅftung Technikzentrale
+  ;EINBAUORT:
+  ;Technikzentrale
+  ;Sockeluntergeschoss
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-TECHNIK-AUS,K-TECHNIK-EIN,$WZERO,$WZERO,
+          &T6-LU12-41E-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&T6-LU12-41E-X50,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-TECHNIK-AUS)
+  BTRA ($B2,K-TECHNIK-EIN)
+  MELEIN (&T6-LU12-41E-X01,3,ZUL-VENT-TEC-AUS,
+          ZUL-VENT-TEC-ST,ZUL-VENT-TEC-EIN,WERR)
+  MELEIN (&T6-LU12-41E-X02,3,ABL-VENT-TEC-AUS,
+          ABL-VENT-TEC-ST,ABL-VENT-TEC-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&T6-LU12-41E-B01,2,THERMOSTAT-TECHN,
+          KEILR-ZUL-TECHN,WERR)
+  MELEIN (&T6-Lu12-41E-B03,1,KEILR-ABL-TECHN,WERR)
+  MELEIN (&M7,1,Quittierung,WERR)
+  MELEIN (&M8,1,$HB2,WERR)
+  NICHT ($HB2,AUS-FEUERWEHRSCH)
+  MELEIN (&M9,1,PHASENAUSFALL_NN,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  XOR2 (ZUL-VENT-TEC-EIN,KEILR-ZUL-TECHN,$B3)
+  VVZ ($B3,$M10,$M11,$B4)
+  RSS ($B4,Quittierung,KEILRI-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M12,1,KEILRI-STOER-ZUL,&T6-LU12-41E-S50,WERR)
+  UNDMN (2,THERMOSTAT-TECHN,K-TECHNIK-EIN,2,KEILRI-STOER-ZUL,
+         ZUL-VENT-TEC-ST,$B5,$WSCRATCH)
+  NICHT ($B5,$B6)
+  BEFAUS (1,$B6,$B5,$WZERO,$WZERO,&T6-LU12-41E-X01,WERR)
+  ODRMN (4,KEILRI-STOER-ZUL,ZUL-VENT-TEC-ST,KEILRIE-ABL-TECH,
+         ABL-VENT-TEC-ST,0,$B7,$WSCRATCH)
+  SETMEL ($M13,1,$B7,&M0,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  XOR2 ($B10,KEILR-ABL-TECHN,$B8)
+  VVZ ($B8,$M15,$M16,$B9)
+  RSS ($B9,Quittierung,KEILRI-STOER-ABL,$WSCRATCH)
+  BTRA (KEILRI-STOER-ABL,KEILRIE-ABL-TECH)
+  SETMEL ($M17,1,KEILRI-STOER-ABL,&T6-LU12-41E-S51,WERR)
+  UNDMN (1,K-TECHNIK-EIN,2,KEILRI-STOER-ABL,ABL-VENT-TEC-ST,
+         $B10,$B11)
+  BEFAUS (1,$B11,$B10,$WZERO,$WZERO,&T6-LU12-41E-X02,WERR)
+  BEFAUS (1,$B11,$B10,$WZERO,$WZERO,&T6-LU12-41E-X03,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODRMN (5,ZUL-VENT-TEC-ST,KEILRI-STOER-ZUL,ABL-VENT-TEC-ST,
+         KEILRI-STOER-ABL,AUS-FEUERWEHRSCH,0,$B12,$WSCRATCH)
+  SETMEL ($M18,1,K0,&T6-LU12-41E-S53,WERR)
+  BEFAUS (1,$B12,$WZERO,$WZERO,$WZERO,&T6-LU12-41E-X50,WERR)
+  ENDE 
+  ENDMODUL 

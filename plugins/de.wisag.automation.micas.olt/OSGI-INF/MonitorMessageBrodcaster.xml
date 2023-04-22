@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="de.wisag.automation.micas.olt.msgbroadcaster">
+   <implementation class="de.wisag.automation.micas.olt.internal.MonitorMessageBroadcaster"/>
+   <reference bind="bindEventAdmin" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="static"/>
+   <service>
+      <provide interface="de.wisag.automation.micas.olt.IMonitorMessageBroadcaster"/>
+   </service>
+</scr:component>

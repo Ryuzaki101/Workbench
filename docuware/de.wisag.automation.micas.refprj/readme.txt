@@ -1,0 +1,1 @@
+This project holds various tests for diagram editor

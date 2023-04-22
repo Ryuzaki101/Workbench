@@ -1,0 +1,495 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : TH_0101C.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 1
+  ;*** Modul Typ      : zp20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  ERR
+  WordK  KENTRAU-14-EIN (0)
+  WordV  ZPK
+  WordK  KBRAND-14-AUS (1)
+  WordK  KBRAND-09-EIN (0)
+  WordK  KBRAND-14-EIN (0)
+  WordV  ERR1
+  WordV  ERR2
+  WordK  KENTRAU-21-AUS (1)
+  WordK  KENTRAU-21-EIN (0)
+  WordK  KONSETZ02 (0)
+  WordK  KBRAND-09-AUS (1)
+  WordK  KENTRAU-09-AUS (1)
+  WordK  KENTRAU-09-EIN (0)
+  WordK  KENTRAU-12-AUS (1)
+  WordK  KENTRAU-12-EIN (0)
+  WordK  KBRAND-12-AUS (1)
+  WordK  KBRAND-12-EIN (0)
+  WordK  KENTRAU-14-AUS (1)
+  WordK  KBRAND-21-AUS (1)
+  WordK  KBRAND-21-EIN (0)
+  WordV  KON_SETZ
+  WordK  KONSETZ04 (0)
+  WordV  ERR4
+  WordV  ERR3
+  WordV  ERR5
+  WordV  ERR6
+  WordV  ERR-HIGH-BUS
+  WordK  KONSETZ06 (0)
+  WordK  KONSETZ08 (0)
+  WordK  KONSETZ07 (0)
+  WordV  ERR8
+  WordV  ERR7
+  WordV  Anlage_12_ein
+  WordV  Anlage_14_ein
+  WordV  Anlage_21_ein
+  WordV  ERR10
+  WordV  Anlage_09_ein
+  WordV  ERR_HIGHBUS
+  WordV  RUECKSETZ_US03
+  WordV  ERR9
+  WordV  ERR11
+  WordV  ANL-K2-AUS
+  WordV  BSK-Z9A041
+  WordV  BSK-Z12A202
+  WordV  BSK-Z14A042
+  WordV  BSK-Z22F041
+  WordV  BSK-Z22F042
+  WordV  BSK-Z22F043
+  WordV  BSK-Z22-ANL.AUS
+  WordV  QUITT-US03
+  WordV  QUITT-US02
+  WordV  QUITT-ANLAGEN
+  WordV  BSK-A22-LAUFZEIT
+  WordV  A22A0412
+  WordV  A22A0413
+  WordV  A22A0415
+  WordV  A22A0414
+  WordV  A22A0416
+  WordV  A22A0417
+  WordK  KON01 (1)
+  WordV  KEIL_ANL09_ST
+  WordV  KEIL_ANL12_ST
+  WordV  KEIL_ANL14_ST
+  WordV  KEIL_ANL21_ST
+  WordV  ERR20
+  WordV  FU-ST-ANL12_HIGH
+  WordV  RAUCH-EBENE1-RWE
+  WordV  RAUCH-EBENE2-RWE
+  WordV  RAUCH-EBENE3-RWE
+  WordV  RAUCH-RWE-FSK-ZU
+  WordV  KONSETZ09
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &04A-KL090-004 (100,1)
+  IPAMB &04A-KL090-016 (100,5)
+  IPAMB &04A-KL120-004 (100,9)
+  IPAMB &04A-KL120-016 (100,13)
+  IPAMB &04A-KL140-004 (101,1)
+  IPAMB &04A-KL140-016 (101,5)
+  IPAMB &04A-KL210-004 (101,9)
+  IPAMB &04A-KL210-016 (101,13)
+  IPAMB &M0 (100,2)
+  IPAMB &M1 (100,3)
+  IPAMB &M2 (100,6)
+  IPAMB &M3 (100,7)
+  IPAMB &04A-KL002-900 (2,11)
+  WordV  $HB2
+  IPAMB &04A-KL220-073 (2,14)
+  IPAMB &04A-KL220-074 (2,15)
+  WordV  $B1
+  WordV  $WSCRATCH
+  IPAMB &04A-KL220-075 (3,10)
+  WordV  $B2
+  FloatK $M4 (10.00)
+  FloatK $M5 (1.00)
+  IPAMB &INT.MEL01-HIGH (254,2)
+  IPAMB &INT.MEL02-HIGH (254,3)
+  IPAMB &INT.MEL03-HIGH (253,2)
+  IPAMB &INT.MEL04-HIGH (253,3)
+  WordV  $B3
+  FloatK $M6 (2.00)
+  FloatK $M7 (1.00)
+  WordV  $B4
+  WordV  $HB0
+  IPAMB &Brand-ANL.09 (0,1)
+  WordV  $B5
+  FloatK $M8 (2.00)
+  FloatK $M9 (1.00)
+  WordV  $B6
+  IPAMB &Entrauch.Anl.09 (0,5)
+  IPAMB &M10 (100,10)
+  IPAMB &M11 (100,11)
+  IPAMB &M12 (100,14)
+  IPAMB &M13 (100,15)
+  IPAMB &KL120-104HIGH-B. (254,6)
+  WordV  $B7
+  FloatK $M14 (5.00)
+  FloatK $M15 (1.00)
+  WordV  $B8
+  IPAMB &Brand-ANL.12 (1,1)
+  WordV  $B9
+  FloatK $M16 (5.00)
+  FloatK $M17 (1.00)
+  WordV  $B10
+  IPAMB &Entrauch.Anl.12 (1,5)
+  WordV  $HB1
+  IPAMB &Entrauch.An.12.1 (0,9)
+  IPAMB &M18 (101,2)
+  IPAMB &M19 (101,3)
+  IPAMB &M20 (101,6)
+  IPAMB &M21 (101,7)
+  WordV  $B11
+  FloatK $M22 (5.00)
+  FloatK $M23 (1.00)
+  WordV  $B12
+  IPAMB &Brand-ANL.14 (10,1)
+  WordV  $B13
+  FloatK $M24 (5.00)
+  FloatK $M25 (1.00)
+  WordV  $B14
+  IPAMB &Entrauch.Anl.14 (10,5)
+  IPAMB &M26 (101,10)
+  IPAMB &M27 (101,11)
+  IPAMB &M28 (101,14)
+  IPAMB &M29 (101,15)
+  WordV  $B15
+  FloatK $M30 (5.00)
+  FloatK $M31 (1.00)
+  WordV  $B16
+  IPAMB &Brand-ANL.21 (31,1)
+  WordV  $B17
+  FloatK $M32 (5.00)
+  FloatK $M33 (1.00)
+  WordV  $B18
+  IPAMB &Entrauch.Anl.21 (31,5)
+  IPAMB &04A-KL090-051 (0,2)
+  IPAMB &04A-KL120-052 (0,7)
+  IPAMB &04A-KL140-052 (10,3)
+  IPAMB &04A-KL220-051 (30,10)
+  IPAMB &04A-KL220-053 (30,11)
+  WordV  $HB3
+  WordV  $HB4
+  IPAMB &04A-KL220-052 (30,14)
+  WordV  $B19
+  FloatK $M34 (5.00)
+  WordV  $B20
+  WordV  $B21
+  FloatK $M35 (5.00)
+  WordV  $B22
+  WordV  $B23
+  FloatK $M36 (5.00)
+  WordV  $B24
+  WordV  $B25
+  FloatK $M37 (5.00)
+  WordV  $B26
+  WordV  $B27
+  FloatK $M38 (5.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  FloatK $M39 (5.00)
+  WordV  $B31
+  WordV  $B32
+  FloatK $M40 (2.00)
+  FloatK $M41 (0.00)
+  WordV  $B33
+  FloatK $M42 (2.00)
+  FloatK $M43 (0.00)
+  IPAMB &Anlage09_Betrieb (254,0)
+  IPAMB &Anlage12_Betrieb (254,1)
+  IPAMB &Anlage14_Betrieb (253,0)
+  IPAMB &Anlage21_Betrieb (253,1)
+  IPAMB &04A-KL002-920 (2,10)
+  WordV  $B34
+  IPAMB &04A-KL002-940 (31,14)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  FloatK $M44 (0.00)
+  FloatK $M45 (10.00)
+  WordV  $B38
+  FloatK $M46 (0.00)
+  FloatK $M47 (10.00)
+  WordV  $B39
+  WordK  $M48 (1)
+  IPAMB &RUECKSETZ_US02 (254,15)
+  WordK  $M49 (1)
+  IPAMB &M50 (254,14)
+  IPAMB &04A-KL220-055 (31,11)
+  IPAMB &04A-KL220-058 (32,6)
+  IPAMB &04A-KL220-064 (32,14)
+  IPAMB &04A-KL220-061 (33,3)
+  IPAMB &04A-KL220-067 (33,11)
+  IPAMB &04A-KL220-070 (33,15)
+  WordV  $B40
+  FloatK $M51 (1.00)
+  FloatK $M52 (30.00)
+  WordV  $B41
+  WordV  $B42
+  IPAMB &04A-KL220-072 (30,1)
+  WordV  $B43
+  FloatK $M53 (10.00)
+  FloatK $M54 (1.00)
+  WordK  $M55 (1)
+  IPAMB &04A-KL002-ST900 (102,0)
+  IPAMB &Anlage_22_ein (30,5)
+  IPAMB &MEL_US03_MAGNET (253,4)
+  IPAMB &INT-MEL05-HIGH (253,5)
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  FloatK $M56 (10.00)
+  FloatK $M57 (0.00)
+  WordV  $B48
+  IPAMB &04A-LU260-015 (22,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  BEFAUS (1,KENTRAU-09-AUS,KENTRAU-09-EIN,$WZERO,$WZERO,
+          &04A-KL090-004,ERR)
+  BEFAUS (1,KBRAND-09-AUS,KBRAND-09-EIN,$WZERO,$WZERO,
+          &04A-KL090-016,ERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-12-AUS,KENTRAU-12-EIN,$WZERO,$WZERO,
+          &04A-KL120-004,ERR)
+  BEFAUS (1,KBRAND-12-AUS,KBRAND-12-EIN,$WZERO,$WZERO,
+          &04A-KL120-016,ERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-14-AUS,KENTRAU-14-EIN,$WZERO,$WZERO,
+          &04A-KL140-004,ERR)
+  BEFAUS (1,KBRAND-14-AUS,KBRAND-14-EIN,$WZERO,$WZERO,
+          &04A-KL140-016,ERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-21-AUS,KENTRAU-21-EIN,$WZERO,$WZERO,
+          &04A-KL210-004,ERR)
+  BEFAUS (1,KBRAND-21-AUS,KBRAND-21-EIN,$WZERO,$WZERO,
+          &04A-KL210-016,ERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&04A-KL090-004,3,KENTRAU-09-AUS,ZPK,KENTRAU-09-EIN,
+          ERR)
+  MELEIN (&04A-KL090-016,3,KBRAND-09-AUS,ZPK,KBRAND-09-EIN,
+          ERR)
+  MELEIN (&04A-KL002-900,1,$HB2,ERR11)
+  NICHT ($HB2,ANL-K2-AUS)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&04A-KL220-073,2,RAUCH-EBENE1-RWE,$B1,$WSCRATCH)
+  BTRA (RAUCH-EBENE1-RWE,RAUCH-EBENE2-RWE)
+  MELEIN (&04A-KL220-075,1,RAUCH-EBENE3-RWE,$WSCRATCH)
+  ODRMN (0,3,RAUCH-EBENE1-RWE,$B1,RAUCH-EBENE3-RWE,$B2,
+         $WSCRATCH)
+  VVZ ($B2,$M4,$M5,RAUCH-RWE-FSK-ZU)
+  ;Meldungen von RWE
+  ;Abschaltung der
+  ;Anlagen für
+  ;Tiefgarage
+  ;Kontakte OEFFNER
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&INT.MEL01-HIGH,2,KEIL_ANL09_ST,KEIL_ANL12_ST,
+          $WSCRATCH)
+  MELEIN (&INT.MEL03-HIGH,2,KEIL_ANL14_ST,KEIL_ANL21_ST,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (6,KBRAND-09-EIN,BSK-A22-LAUFZEIT,ANL-K2-AUS,
+         BSK-Z9A041,BSK-Z22-ANL.AUS,KEIL_ANL09_ST,0,$B3,
+         $WSCRATCH)
+  VVZ ($B3,$M6,$M7,$B4)
+  NICHT ($B4,$HB0)
+  BEFAUS (1,$HB0,$B4,$WZERO,$WZERO,&Brand-ANL.09,ERR1)
+  ODR2 (KENTRAU-09-EIN,KONSETZ02,$B5)
+  VVZ ($B5,$M8,$M9,$B6)
+  NICHT ($B6,$HB0)
+  BEFAUS (1,$HB0,$B6,$WZERO,$WZERO,&Entrauch.Anl.09,ERR2)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  MELEIN (&04A-KL120-004,3,KENTRAU-12-AUS,ZPK,KENTRAU-12-EIN,
+          ERR)
+  MELEIN (&04A-KL120-016,3,KBRAND-12-AUS,ZPK,KBRAND-12-EIN,
+          ERR)
+  MELEIN (&KL120-104HIGH-B.,1,FU-ST-ANL12_HIGH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ODRMN (7,KBRAND-12-EIN,BSK-A22-LAUFZEIT,ANL-K2-AUS,
+         BSK-Z12A202,BSK-Z22-ANL.AUS,KEIL_ANL12_ST,
+         FU-ST-ANL12_HIGH,0,$B7,$WSCRATCH)
+  VVZ ($B7,$M14,$M15,$B8)
+  NICHT ($B8,$HB0)
+  BEFAUS (1,$HB0,$B8,$WZERO,$WZERO,&Brand-ANL.12,ERR3)
+  ODR2 (KENTRAU-12-EIN,KONSETZ04,$B9)
+  VVZ ($B9,$M16,$M17,$B10)
+  NICHT ($B10,$HB0)
+  BEFAUS (1,$HB0,$B10,$WZERO,$WZERO,&Entrauch.Anl.12,ERR4)
+  NICHT ($B10,$HB1)
+  BEFAUS (1,$B10,$HB1,$WZERO,$WZERO,&Entrauch.An.12.1,ERR5)
+  ;Wirksinn gedreht
+  ;                  O
+  ;OEFFERN Kontakt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  MELEIN (&04A-KL140-004,3,KENTRAU-14-AUS,ZPK,KENTRAU-14-EIN,
+          ERR)
+  MELEIN (&04A-KL140-016,3,KBRAND-14-AUS,ZPK,KBRAND-14-EIN,
+          ERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ODRMN (6,KBRAND-14-EIN,BSK-A22-LAUFZEIT,ANL-K2-AUS,
+         BSK-Z14A042,BSK-Z22-ANL.AUS,KEIL_ANL14_ST,0,$B11,
+         $WSCRATCH)
+  VVZ ($B11,$M22,$M23,$B12)
+  NICHT ($B12,$HB0)
+  BEFAUS (1,$HB0,$B12,$WZERO,$WZERO,&Brand-ANL.14,ERR5)
+  ODR2 (KENTRAU-14-EIN,KONSETZ06,$B13)
+  VVZ ($B13,$M24,$M25,$B14)
+  NICHT ($B14,$HB0)
+  BEFAUS (1,$HB0,$B14,$WZERO,$WZERO,&Entrauch.Anl.14,ERR6)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1000)
+  MELEIN (&04A-KL210-004,3,KENTRAU-21-AUS,ZPK,KENTRAU-21-EIN,
+          ERR)
+  MELEIN (&04A-KL210-016,3,KBRAND-21-AUS,ZPK,KBRAND-21-EIN,
+          ERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODRMN (6,KBRAND-21-EIN,KONSETZ07,ANL-K2-AUS,
+         BSK-A22-LAUFZEIT,BSK-Z22-ANL.AUS,KEIL_ANL21_ST,0,
+         $B15,$WSCRATCH)
+  VVZ ($B15,$M30,$M31,$B16)
+  NICHT ($B16,$HB0)
+  BEFAUS (1,$HB0,$B16,$WZERO,$WZERO,&Brand-ANL.21,ERR7)
+  ODR2 (KENTRAU-21-EIN,KONSETZ08,$B17)
+  VVZ ($B17,$M32,$M33,$B18)
+  NICHT ($B18,$HB0)
+  BEFAUS (1,$HB0,$B18,$WZERO,$WZERO,&Entrauch.Anl.21,ERR8)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&04A-KL090-051,1,$HB2,ERR1)
+  NICHT ($HB2,BSK-Z9A041)
+  MELEIN (&04A-KL120-052,1,$HB2,ERR2)
+  NICHT ($HB2,BSK-Z12A202)
+  MELEIN (&04A-KL140-052,1,$HB2,ERR3)
+  NICHT ($HB2,BSK-Z14A042)
+  MELEIN (&04A-KL220-051,2,$HB3,$HB4,ERR4)
+  NICHT ($HB3,BSK-Z22F041)
+  NICHT ($HB4,BSK-Z22F042)
+  MELEIN (&04A-KL220-052,1,$HB2,ERR5)
+  NICHT ($HB2,BSK-Z22F043)
+  ODRMN (3,BSK-Z22F043,BSK-Z22F042,BSK-Z22F041,0,
+         BSK-Z22-ANL.AUS,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  NICHT (BSK-Z9A041,$B19)
+  MOKY ($B19,$M34,$B20)
+  NICHT (BSK-Z12A202,$B21)
+  MOKY ($B21,$M35,$B22)
+  NICHT (BSK-Z14A042,$B23)
+  MOKY ($B23,$M36,$B24)
+  NICHT (BSK-Z22-ANL.AUS,$B25)
+  MOKY ($B25,$M37,QUITT-ANLAGEN)
+  ODR2 (KEIL_ANL09_ST,KEIL_ANL12_ST,$B26)
+  NICHT ($B26,$B27)
+  MOKY ($B27,$M38,$B28)
+  ODR2 (KEIL_ANL14_ST,KEIL_ANL21_ST,$B29)
+  NICHT ($B29,$B30)
+  MOKY ($B30,$M39,$B31)
+  ODRMN (4,$B20,$B22,QUITT-ANLAGEN,$B28,0,$B32,$WSCRATCH)
+  VVZ ($B32,$M40,$M41,QUITT-US02)
+  ODRMN (3,$B24,QUITT-ANLAGEN,$B31,0,$B33,$WSCRATCH)
+  VVZ ($B33,$M42,$M43,QUITT-US03)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&Anlage09_Betrieb,2,Anlage_09_ein,Anlage_12_ein,
+          ERR_HIGHBUS)
+  MELEIN (&Anlage14_Betrieb,2,Anlage_14_ein,Anlage_21_ein,
+          ERR_HIGHBUS)
+  MELEIN (&04A-KL002-920,1,$B34,$WSCRATCH)
+  MELEIN (&04A-KL002-940,1,$B35,$WSCRATCH)
+  ODR2 ($B34,QUITT-US02,$B36)
+  ODR2 ($B35,QUITT-US03,$B37)
+  VVZ ($B36,$M44,$M45,$B38)
+  VVZ ($B37,$M46,$M47,$B39)
+  SETMEL ($M48,1,$B38,&RUECKSETZ_US02,ERR9)
+  SETMEL ($M49,1,$B39,&M50,RUECKSETZ_US03)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MELEIN (&04A-KL220-055,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0412)
+  MELEIN (&04A-KL220-058,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0413)
+  MELEIN (&04A-KL220-064,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0415)
+  MELEIN (&04A-KL220-061,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0414)
+  MELEIN (&04A-KL220-067,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0416)
+  MELEIN (&04A-KL220-070,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,A22A0417)
+  ;Meldungen sind Öffner
+  ;bitte beachten INV
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODRMN (5,Anlage_09_ein,Anlage_12_ein,Anlage_14_ein,
+         Anlage_21_ein,KONSETZ09,0,$B40,$WSCRATCH)
+  VVZ ($B40,$M51,$M52,$B41)
+  UND11 ($B41,RAUCH-RWE-FSK-ZU,$B42)
+  NICHT ($B42,$HB0)
+  BEFAUS (1,$HB0,$B42,$WZERO,$WZERO,&04A-KL220-072,ERR10)
+  UNDMN (8,$B40,A22A0412,A22A0413,A22A0414,A22A0415,A22A0416,
+         A22A0417,KON01,0,$B43,$WSCRATCH)
+  VVZ ($B43,$M53,$M54,BSK-A22-LAUFZEIT)
+  SETMEL ($M55,1,BSK-A22-LAUFZEIT,&04A-KL002-ST900,ERR11)
+  NICHT ($B42,$HB0)
+  BEFAUS (1,$HB0,$B42,$WZERO,$WZERO,&Anlage_22_ein,ERR20)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  MELEIN (&MEL_US03_MAGNET,2,$B44,$B45,ERR-HIGH-BUS)
+  ODRMN (3,$B44,$B45,KON_SETZ,0,$B46,$B47)
+  VVZ ($B47,$M56,$M57,$B48)
+  BEFAUS (1,$B48,$B46,$WZERO,$WZERO,&04A-LU260-015,ERR)
+  ENDE 
+  ENDMODUL 

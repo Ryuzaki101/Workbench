@@ -1,0 +1,395 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 03_03_08.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 3
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 8
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  E_ST_BSK_R112
+  WordV  S_ERR
+  WordK  K_1_STATUS (1)
+  WordV  A_ST_BSK_R112
+  WordV  E_ST_BSK_1.1
+  WordV  E_ST_ZL_1.2
+  WordV  E_ST_BSK_1.2
+  WordV  E_ST_ZL_1.7
+  WordV  BMZ-Meldung
+  WordV  Phasenwaecht_EIN
+  WordK  k0 (0)
+  WordV  E_ST_BSK_1.7
+  WordV  E_ST_DG
+  WordV  A_ST_BSK_1.2
+  WordV  A_ST_BSK_1.1
+  WordV  E_ST_1.OG
+  WordK  K_0_STATUS (0)
+  WordV  A_BF_ST_BETR
+  WordV  E_ST_HW_KO
+  WordV  E_ST_TR_KO
+  WordV  E_ST_AL_1.1
+  WordV  A_ST_BSK_1.7
+  WordV  E_ST_AL_1.2
+  WordV  E_ST_AL_1.7
+  WordV  E_ST_ZL_1.1
+  IPAMB &M0 (53,2)
+  WordV  $B1
+  IPAMB &M1 (53,3)
+  WordV  $B2
+  IPAMB &M2 (53,6)
+  WordV  $B3
+  IPAMB &M3 (53,7)
+  WordV  $B4
+  IPAMB &M4 (30,11)
+  WordV  $B5
+  IPAMB &M5 (31,10)
+  WordV  $B6
+  IPAMB &M6 (254,7)
+  IPAMB &M7 (254,0)
+  IPAMB &M8 (254,8)
+  IPAMB &M9 (252,3)
+  IPAMB &M10 (253,3)
+  IPAMB &M11 (253,5)
+  IPAMB &M12 (253,7)
+  IPAMB &M13 (253,9)
+  IPAMB &M14 (253,11)
+  IPAMB &M15 (253,13)
+  FloatK $M16 (0.00)
+  FloatK $M17 (10.00)
+  FloatK $M18 (0.00)
+  FloatK $M19 (10.00)
+  FloatK $M20 (0.00)
+  FloatK $M21 (10.00)
+  FloatK $M22 (0.00)
+  FloatK $M23 (10.00)
+  WordV  $B7
+  WordV  $WSCRATCH
+  WordV  $B8
+  IPAMB &M24 (254,5)
+  IPAMB &M25 (254,6)
+  IPAMB &M26 (254,2)
+  IPAMB &M27 (254,1)
+  FloatK $M28 (60.00)
+  FloatK $M29 (0.00)
+  WordV  $B9
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M30 (56,13)
+  WordV  $B10
+  WordV  $HB1
+  WordV  $B15
+  FloatK $M31 (50.00)
+  FloatK $M32 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B16
+  WordV  $B14
+  IPAMB &M33 (252,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Bio-Physikalische
+  ;Chemie Götingen
+  ;KUNDE:
+  ;------------------------
+  ;Stangl GmbH
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Turm 3 SUG
+  ;BSK-SCHRANK EG
+  ;Störmeldung Betriebs-
+  ;Technik
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;Störung
+  ;BSK D&S
+  ;R256/1
+  ; 
+  NICHT ($B1,E_ST_BSK_1.1)
+  MELEIN (&M0,1,$B1,S_ERR)
+  ;Störung
+  ;BSK D&S
+  ;R256/2
+  ; 
+  NICHT ($B2,E_ST_BSK_1.2)
+  MELEIN (&M1,1,$B2,S_ERR)
+  ;T3-BM00-01A-A02
+  ; 
+  ;Störung
+  ;BSK D&S
+  ;R256/3
+  ; 
+  NICHT ($B3,E_ST_BSK_1.7)
+  MELEIN (&M2,1,$B3,S_ERR)
+  ;Störung
+  ;BSK D&S
+  ;R256/4
+  ; 
+  NICHT ($B4,E_ST_BSK_R112)
+  MELEIN (&M3,1,$B4,S_ERR)
+  ;T3-BM00-01A-A04
+  ; 
+  ;T3-BM00-01A-A03
+  ; 
+  ;T3-BM00-01A-A01
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;Störung
+  ;Hochwasser
+  ;Kondensat
+  ; 
+  NICHT ($B5,E_ST_HW_KO)
+  MELEIN (&M4,1,$B5,S_ERR)
+  ;Störung
+  ;Trockenlauf
+  ;Kondensat
+  ; 
+  NICHT ($B6,E_ST_TR_KO)
+  MELEIN (&M5,1,$B6,S_ERR)
+  ;T3-HZ-2-00A-A02
+  ;K
+  ; 
+  ;T3-HE-2-00A-A01
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;Sammelstörung
+  ;DG
+  ;Highbus
+  ; 
+  ;BMZ-Meldung
+  ;Highbus
+  ; 
+  MELEIN (&M6,1,E_ST_DG,S_ERR)
+  ;Sammelstörung
+  ;1.OG
+  ;Highbus
+  ; 
+  MELEIN (&M7,1,BMZ-Meldung,S_ERR)
+  MELEIN (&M8,1,E_ST_1.OG,S_ERR)
+  ;T3-AS03-02B-V08
+  ; 
+  ;RM des 1F
+  ;Phasenwächter in
+  ;EZ angesprochen
+  ; 
+  MELEIN (&M9,1,Phasenwaecht_EIN,S_ERR)
+  ;T3-AS00-02B-V07
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;Abschaltstörung
+  ;Abluft
+  ;Anl 1.1
+  ; 
+  MELEIN (&M10,1,E_ST_AL_1.1,S_ERR)
+  ;T3-AS03-03B-V03
+  ; 
+  ;Abschaltstörung
+  ;Abluft
+  ;Anl 1.2
+  ; 
+  MELEIN (&M11,1,E_ST_AL_1.2,S_ERR)
+  ;T3-AS03-03B-V05
+  ; 
+  ;Abschaltstörung
+  ;Abluft
+  ;Anl 1.7
+  ; 
+  MELEIN (&M12,1,E_ST_AL_1.7,S_ERR)
+  ;T3-AS03-03B-V07
+  ; 
+  ;Abschaltstörung
+  ;Zuluft
+  ;Anl 1.1
+  ; 
+  MELEIN (&M13,1,E_ST_ZL_1.1,S_ERR)
+  ;T3-AS03-03B-V09
+  ; 
+  ;Abschaltstörung
+  ;Zuluft
+  ;Anl 1.2
+  ; 
+  MELEIN (&M14,1,E_ST_ZL_1.2,S_ERR)
+  ;T3-AS03-03B-V11
+  ; 
+  ;Abschaltstörung
+  ;Zuluft
+  ;Anl 1.7
+  ; 
+  MELEIN (&M15,1,E_ST_ZL_1.7,S_ERR)
+  ;T3-AS03-03B-V13
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  VVZ (E_ST_BSK_1.1,$M16,$M17,A_ST_BSK_1.1)
+  VVZ (E_ST_BSK_1.2,$M18,$M19,A_ST_BSK_1.2)
+  VVZ (E_ST_BSK_1.7,$M20,$M21,A_ST_BSK_1.7)
+  VVZ (E_ST_BSK_R112,$M22,$M23,A_ST_BSK_R112)
+  ;BSK Abschaltung
+  ;Zeitverzögert zurück-
+  ;schalten
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (8,E_ST_AL_1.1,E_ST_AL_1.2,E_ST_AL_1.7,E_ST_ZL_1.1,
+         E_ST_ZL_1.2,E_ST_ZL_1.7,E_ST_HW_KO,E_ST_TR_KO,0,$B7,
+         $WSCRATCH)
+  UNDMN (4,BMZ-Meldung,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,
+         $B8,$WSCRATCH)
+  ODRMN (4,E_ST_DG,E_ST_1.OG,$B7,$B8,0,A_BF_ST_BETR,
+         $WSCRATCH)
+  ;Sammelstörung
+  ;für die
+  ;Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ST_BSK_1.1,&M24,S_ERR)
+  ;T3-AS03-02B-V05
+  ; 
+  ;BSK Abschaltung
+  ;Highbus
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_BSK_1.2,&M25,S_ERR)
+  ;T3-AS03-02B-V06
+  ; 
+  ;BSK Abschaltung
+  ;Highbus
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_BSK_1.7,&M26,S_ERR)
+  ;T3-AS03-02B-V02
+  ; 
+  ;BSK Abschaltung
+  ;Highbus
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_BSK_R112,&M27,S_ERR)
+  ;T3-AS03-02B-V01
+  ; 
+  ;BSK Abschaltung
+  ;Highbus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  VVZ (A_BF_ST_BETR,$M28,$M29,$B9)
+  NICHT ($B9,$HB0)
+  BEFAUS (1,$HB0,$B9,$WZERO,$WZERO,&M30,S_ERR)
+  ;Sammelstörung
+  ;Betriebstechnik
+  ; 
+  ;T3-UV00-00A-X00
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B15,Phasenwaecht_EIN,$B10)
+  NICHT (Phasenwaecht_EIN,$HB1)
+  NICHT ($HB1,$B15)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  VVZ (Phasenwaecht_EIN,$M31,$M32,$B11)
+  ODR2 ($B10,$B11,$B12)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Phasenwaecht_EIN,$B16,$B13)
+  NICHT (Phasenwaecht_EIN,$B16)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,k0,k0,k0,$B13,0,$B14,$WSCRATCH)
+  BEFAUS (1,$B12,$B14,$WZERO,$WZERO,&M33,$WSCRATCH)
+  ;Phasenwächter in EZ
+  ;angesprochen; dieser
+  ;1F wird vom Ereign.
+  ;Progr. der LZ gesch.
+  ;_
+  ; 
+  ENDE 
+  ENDMODUL 

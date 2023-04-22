@@ -1,0 +1,710 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0503.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 5
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  FloatK K-SW-DIFF-DR-N-O (350.00)
+  WordK  K-ST-HEI-N/O-AUS (0)
+  WordK  K-ST-HEI-N/O-EIN (1)
+  WordK  K-GE-ANL-WT-2AUS (0)
+  WordK  K-GE-ANL-WT-2EIN (1)
+  FloatK K-SW-DIFF-DR-WT2 (350.00)
+  WordV  ST-HEI-NO-PU1AUS
+  WordV  ST-HEI-NO-PU1EIN
+  WordV  ST-HEI-NO-PU2AUS
+  WordV  ST-HEI-NO-PU2EIN
+  WordV  ST-HEI-NO-NE-AUS
+  WordV  ST-HEI-NO-RE-AUS
+  WordV  ST-HEI-NO-NE-EIN
+  WordV  ST-HEI-NO-RE-EIN
+  WordV  WT-2-PUMPE-1-AUS
+  WordV  WT-2-PUMPE-1-EIN
+  WordV  WT-2-PUMPE-2-AUS
+  WordV  WT-2-PUMPE-2-EIN
+  WordV  WT2-PUM-NETZ-AUS
+  WordV  WT2-PUM-NETZ-EIN
+  WordV  WT2-PU-REGEL-AUS
+  WordV  WT2-PU-REGEL-EIN
+  WordV  BA1HZ0100ST23
+  WordV  BA1HZ0100BM24
+  WordV  BA1HZ0100ST24
+  WordV  BA1HZ0100BM33
+  WordV  BA1HZ0100ST33
+  WordV  BA1HZ0100BM34
+  WordV  BA1HZ0100ST34
+  WordV  P2-N/0-NETZ-EIN
+  WordV  P1-N/0-NETZ-EIN
+  WordV  P1-N/0-REGEL-EIN
+  WordV  P1-N/O-NETZ-STOE
+  WordV  P1-N/O-REGEL-STO
+  WordV  P2-N/O-NETZ-STOE
+  WordV  P2-N/0-REGEL-EIN
+  WordV  P2-N/O-REGEL-STO
+  WordV  BA1HZ0002ST23
+  WordV  WT2-P2-NETZ-STOE
+  WordV  WT2-P1-NETZ-STOE
+  WordV  WT2-P1-REGEL-EIN
+  WordV  WT2-P1-REGEL-STO
+  WordV  WT2-P2-NETZ-EIN
+  WordV  WT2-P1-NETZ-EIN
+  WordV  WT2-P2-REGEL-EIN
+  WordV  WT2-P2-REGEL-STO
+  FloatV DIFF-DRU-PUM-WT2
+  FloatV DIFF-DRU-PUM-NO
+  FloatV VL-TEMP-NORD/OST
+  FloatV VL-TEMP-WT-2
+  FloatV RUECKL-TEMP-WT2
+  FloatV SW-VL-TEMP-NO-SW
+  FloatV SW-VL-TEMP-WT1-3
+  FloatV SW-RL-TEMP-WT1-3
+  WordK  KON01 (1)
+  WordK  KON00 (0)
+  WordV  BA1HZ0000AL00
+  WordV  WT2-TEMP-MAX-SEK
+  WordV  WT2-TEMP-MAX-PRI
+  FloatV BA1HZ0100AA91
+  FloatV BA1HZ0002AA91
+  WordV  BA1HZ0002BM24
+  WordV  BA1HZ0002ST24
+  WordV  BA1HZ0002BM33
+  WordV  BA1HZ0002ST33
+  WordV  BA1HZ0002BM34
+  WordV  BA1HZ0002ST34
+  FloatV AUSSENTEMPERATUR
+  FloatK K-SW-AT-ABSCHALT (18.00)
+  WordV  AT-ABSCH-HEIZ
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1HZ0100BF90 (104,13)
+  IPAMB &BA1HZ0002BF90 (104,5)
+  WordK  $M0 (1)
+  IPAAW &BA1HZ0100AA90 (101)
+  WordK  $M1 (1)
+  IPAAW &BA1HZ0002AA90 (99)
+  IPAMB &M2 (104,6)
+  IPAMB &M3 (104,7)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &M4 (104,14)
+  IPAMB &M5 (104,15)
+  WordV  $B3
+  WordV  $B4
+  IPAMB &BA1HZ0100BM01 (0,1)
+  IPAMB &M6 (0,2)
+  IPAMB &M7 (0,3)
+  IPAMB &BA1HZ0100BM02 (0,5)
+  IPAMB &M8 (0,6)
+  IPAMB &M9 (0,7)
+  IPAMB &BA1HZ0100BM03 (0,9)
+  IPAMB &M10 (0,10)
+  IPAMB &M11 (0,11)
+  IPAMB &BA1HZ0100BM04 (0,13)
+  IPAMB &M12 (0,14)
+  IPAMB &M13 (0,15)
+  IPAMB &BA1HZ0002BM01 (1,1)
+  IPAMB &M14 (1,2)
+  IPAMB &M15 (1,3)
+  IPAMB &BA1HZ0002BM02 (1,5)
+  IPAMB &M16 (1,6)
+  IPAMB &M17 (1,7)
+  IPAMB &BA1HZ0002BM03 (1,9)
+  IPAMB &M18 (1,10)
+  IPAMB &M19 (1,11)
+  IPAMB &BA1HZ0002BM04 (1,13)
+  IPAMB &M20 (1,14)
+  IPAMB &M21 (1,15)
+  IPAMB &BA1HZ0100BM23 (10,0)
+  IPAMB &M22 (10,1)
+  IPAMB &M23 (10,2)
+  IPAMB &M24 (10,3)
+  IPAMB &M25 (10,4)
+  IPAMB &M26 (10,5)
+  IPAMB &M27 (10,6)
+  IPAMB &M28 (10,7)
+  IPAMB &BA1HZ0002BM23 (11,0)
+  IPAMB &M29 (11,1)
+  IPAMB &M30 (11,2)
+  IPAMB &M31 (11,3)
+  IPAMB &M32 (11,4)
+  IPAMB &M33 (11,5)
+  IPAMB &M34 (11,6)
+  IPAMB &M35 (11,7)
+  IPAMB &BA1HZ0002GF02 (16,2)
+  IPAMB &M36 (16,3)
+  FloatV $F1
+  FloatV $F2
+  IPAAW &BA1HZ0002MW01 (64)
+  IPAAW &BA1HZ0100MW01 (51)
+  IPAAW &BA1HZ0002MW41 (67)
+  IPAAW &BA1HZ0100MW41 (57)
+  IPAAW &BA1HZ0000AA90 (107)
+  IPAAW &BA1HZ0000AA91 (126)
+  IPAAW &BA1HZ0002MW02 (65)
+  IPAAW &BA1HZ0000AA92 (127)
+  IPAAW &BA1HZ0001MW01 (63)
+  IPAAW &BA1HZ0000AA87 (117)
+  FloatV $F3
+  FloatK $M37 (1.00)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B26
+  WordV  $B15
+  WordV  $B16
+  FloatK $M38 (24.00)
+  FloatV $F4
+  FloatV $FSCRATCH
+  FloatK $M39 (24.00)
+  FloatV $F5
+  FloatV $F6
+  FloatK $M40 (3600.00)
+  WordV  $B27
+  FloatK $M41 (1.00)
+  FloatK $M42 (0.00)
+  FloatV $F7
+  WordV  $B17
+  FloatV $F8
+  FloatK $M43 (3600.00)
+  WordV  $B28
+  FloatK $M44 (1.00)
+  FloatK $M45 (0.00)
+  FloatV $F9
+  WordV  $B18
+  FloatK $M46 (10.00)
+  WordV  $B19
+  FloatK $M47 (10.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B31
+  WordV  $HB0
+  FloatV $F10
+  FloatK $M48 (48.00)
+  FloatV $F11
+  FloatK $M49 (3600.00)
+  FloatV $F12
+  FloatV $F13
+  WordV  $B32
+  FloatK $M50 (300.00)
+  WordV  $B29
+  WordV  $B33
+  WordV  $B30
+  WordV  $B8
+  WordV  $B36
+  FloatV $F14
+  FloatK $M51 (48.00)
+  FloatV $F15
+  FloatK $M52 (3600.00)
+  FloatV $F16
+  FloatV $F17
+  WordV  $B37
+  FloatK $M53 (300.00)
+  WordV  $B34
+  WordV  $B38
+  WordV  $B35
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  WordV  $B44
+  FloatK $M54 (0.00)
+  FloatV $F18
+  WordV  $B45
+  WordV  $B46
+  FloatK $M55 (0.00)
+  FloatV $F19
+  WordK  $M56 (1)
+  IPAAW &BA1HZ0100AA01 (79)
+  FloatK $M57 (0.00)
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B54
+  WordV  $B55
+  WordV  $B56
+  WordV  $B68
+  WordV  $B57
+  WordV  $B58
+  FloatK $M58 (24.00)
+  FloatV $F20
+  FloatK $M59 (24.00)
+  FloatV $F21
+  FloatV $F22
+  FloatK $M60 (3600.00)
+  WordV  $B69
+  FloatK $M61 (1.00)
+  FloatK $M62 (0.00)
+  FloatV $F23
+  WordV  $B59
+  FloatV $F24
+  FloatK $M63 (3600.00)
+  WordV  $B70
+  FloatK $M64 (1.00)
+  FloatK $M65 (0.00)
+  FloatV $F25
+  WordV  $B60
+  FloatK $M66 (10.00)
+  WordV  $B61
+  FloatK $M67 (10.00)
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  WordV  $B67
+  WordV  $B73
+  FloatV $F26
+  FloatK $M68 (48.00)
+  FloatV $F27
+  FloatK $M69 (3600.00)
+  FloatV $F28
+  FloatV $F29
+  WordV  $B74
+  FloatK $M70 (300.00)
+  WordV  $B71
+  WordV  $B75
+  WordV  $B72
+  WordV  $B50
+  WordV  $B78
+  FloatV $F30
+  FloatK $M71 (48.00)
+  FloatV $F31
+  FloatK $M72 (3600.00)
+  FloatV $F32
+  FloatV $F33
+  WordV  $B79
+  FloatK $M73 (300.00)
+  WordV  $B76
+  WordV  $B80
+  WordV  $B77
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  WordV  $B84
+  WordV  $B85
+  WordV  $B86
+  FloatK $M74 (0.00)
+  FloatV $F34
+  FloatK $M75 (0.00)
+  FloatV $F35
+  FloatV $F36
+  WordV  $B87
+  WordV  $B88
+  FloatK $M76 (0.00)
+  FloatV $F37
+  FloatK $M77 (0.00)
+  FloatK $M78 (0.00)
+  FloatK $M79 (50.00)
+  FloatK $M80 (100.00)
+  FloatV $F38
+  WordK  $M81 (1)
+  IPAAW &BA1HZ0002AA01 (91)
+  FloatK $M82 (50.00)
+  FloatK $M83 (0.00)
+  FloatK $M84 (100.00)
+  FloatK $M85 (100.00)
+  FloatV $F39
+  WordK  $M86 (1)
+  IPAAW &BA1HZ0002AA02 (80)
+  FloatK $M87 (0.00)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Einbauort:2.Kellergesch.
+  ;Raum xxx
+  ;Schaltschrank:
+  ;Feld: xx
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-ST-HEI-N/O-AUS,K-ST-HEI-N/O-EIN,$WZERO,$WZERO,
+          &BA1HZ0100BF90,WERR)
+  BEFAUS (1,K-GE-ANL-WT-2AUS,K-GE-ANL-WT-2EIN,$WZERO,$WZERO,
+          &BA1HZ0002BF90,WERR)
+  ANAUS (K-SW-DIFF-DR-N-O,$M0,&BA1HZ0100AA90,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K-SW-DIFF-DR-WT2,$M1,&BA1HZ0002AA90,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&BA1HZ0002BF90,3,$B1,$WSCRATCH,$B2,WERR)
+  MELEIN (&BA1HZ0100BF90,3,$B3,$WSCRATCH,$B4,WERR)
+  MELEIN (&BA1HZ0100BM01,3,ST-HEI-NO-PU1AUS,$WSCRATCH,
+          ST-HEI-NO-PU1EIN,WERR)
+  MELEIN (&BA1HZ0100BM02,3,ST-HEI-NO-PU2AUS,$WSCRATCH,
+          ST-HEI-NO-PU2EIN,WERR)
+  BTRA ($B1,K-GE-ANL-WT-2AUS)
+  BTRA ($B2,K-GE-ANL-WT-2EIN)
+  BTRA ($B3,K-ST-HEI-N/O-AUS)
+  BTRA ($B4,K-ST-HEI-N/O-EIN)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&BA1HZ0100BM03,3,ST-HEI-NO-NE-AUS,$WSCRATCH,
+          ST-HEI-NO-NE-EIN,WERR)
+  MELEIN (&BA1HZ0100BM04,3,ST-HEI-NO-RE-AUS,$WSCRATCH,
+          ST-HEI-NO-RE-EIN,WERR)
+  MELEIN (&BA1HZ0002BM01,3,WT-2-PUMPE-1-AUS,$WSCRATCH,
+          WT-2-PUMPE-1-EIN,WERR)
+  MELEIN (&BA1HZ0002BM02,3,WT-2-PUMPE-2-AUS,$WSCRATCH,
+          WT-2-PUMPE-2-EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1HZ0002BM03,3,WT2-PUM-NETZ-AUS,$WSCRATCH,
+          WT2-PUM-NETZ-EIN,WERR)
+  MELEIN (&BA1HZ0002BM04,3,WT2-PU-REGEL-AUS,$WSCRATCH,
+          WT2-PU-REGEL-EIN,WERR)
+  MELEIN (&BA1HZ0100BM23,8,P1-N/0-NETZ-EIN,P1-N/O-NETZ-STOE,
+          P1-N/0-REGEL-EIN,P1-N/O-REGEL-STO,P2-N/0-NETZ-EIN,
+          P2-N/O-NETZ-STOE,P2-N/0-REGEL-EIN,P2-N/O-REGEL-STO,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1HZ0002BM23,8,WT2-P1-NETZ-EIN,WT2-P1-NETZ-STOE,
+          WT2-P1-REGEL-EIN,WT2-P1-REGEL-STO,WT2-P2-NETZ-EIN,
+          WT2-P2-NETZ-STOE,WT2-P2-REGEL-EIN,WT2-P2-REGEL-STO,
+          WERR)
+  MELEIN (&BA1HZ0002GF02,2,WT2-TEMP-MAX-SEK,WT2-TEMP-MAX-PRI,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&BA1HZ0002AA90,$F1,WERR)
+  ATRA ($F1,K-SW-DIFF-DR-WT2)
+  ANEIN (&BA1HZ0100AA90,$F2,WERR)
+  ATRA ($F2,K-SW-DIFF-DR-N-O)
+  ANEIN (&BA1HZ0002MW01,VL-TEMP-WT-2,WERR)
+  ANEIN (&BA1HZ0100MW01,VL-TEMP-NORD/OST,WERR)
+  ANEIN (&BA1HZ0002MW41,DIFF-DRU-PUM-WT2,WERR)
+  ANEIN (&BA1HZ0100MW41,DIFF-DRU-PUM-NO,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1HZ0000AA90,SW-VL-TEMP-NO-SW,WERR)
+  ANEIN (&BA1HZ0000AA91,SW-VL-TEMP-WT1-3,WERR)
+  ANEIN (&BA1HZ0002MW02,RUECKL-TEMP-WT2,WERR)
+  ANEIN (&BA1HZ0000AA92,SW-RL-TEMP-WT1-3,WERR)
+  ANEIN (&BA1HZ0001MW01,AUSSENTEMPERATUR,WERR)
+  ANEIN (&BA1HZ0000AA87,$F3,WERR)
+  ATRA ($F3,K-SW-AT-ABSCHALT)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  VGLEH (K-SW-AT-ABSCHALT,AUSSENTEMPERATUR,$M37,
+         AT-ABSCH-HEIZ)
+  UND2 (AT-ABSCH-HEIZ,K-ST-HEI-N/O-EIN,$B5)
+  ODR2 (P2-N/O-REGEL-STO,P2-N/O-NETZ-STOE,$B6)
+  ODR2 (P1-N/O-REGEL-STO,P1-N/O-NETZ-STOE,$B7)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B5,$B12,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B5,$WONE,$B13,$WSCRATCH)
+  UND2 ($B5,$WONE,$B14)
+  ODRMN (3,$B12,$B13,$B14,0,$B26,$WSCRATCH)
+  UND2 ($B6,$B26,$B15)
+  UND2 ($B7,$B26,$B16)
+  UST ($WZERO,$M38,$F4,$FSCRATCH)
+  UST ($WZERO,$M39,$F5,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (ST-HEI-NO-PU1EIN,$B27,$F6)
+  VGLOH ($F6,$M40,$B27)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B19,$M41,$WZERO,$M42,$WONE,$B27,$WZERO,$F7)
+  ATRA ($F7,$FSCRATCH)
+  VGLOH ($F7,$F4,$B17)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (ST-HEI-NO-PU2EIN,$B28,$F8)
+  VGLOH ($F8,$M43,$B28)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B20,$M44,$WZERO,$M45,$WONE,$B28,$WZERO,$F9)
+  ATRA ($F9,$FSCRATCH)
+  VGLOH ($F9,$F5,$B18)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B17,$M46,$B19)
+  MOKY ($B18,$M47,$B20)
+  RSS ($B17,$B18,$B21,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B14,$B21,$B22)
+  UND2 ($B21,$B14,$B23)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B12,$B15,$B22,0,$B24,$WSCRATCH)
+  ODRMN (3,$B13,$B16,$B23,0,$B25,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B30,$B7,$B31)
+  NICHT ($B31,$HB0)
+  UHR ($HB0,$B31,$F10)
+  UST ($WZERO,$M48,$F11,$FSCRATCH)
+  UST ($WZERO,$M49,$F12,$FSCRATCH)
+  MULT ($F11,$F12,$F13)
+  VGLOH ($F10,$F13,$B32)
+  MOKY ($B32,$M50,$B29)
+  ODR2 ($B24,$B29,$B33)
+  UND11 ($B33,$B7,$B30)
+  BTRA ($B30,$B8)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B35,$B6,$B36)
+  NICHT ($B36,$HB0)
+  UHR ($HB0,$B36,$F14)
+  UST ($WZERO,$M51,$F15,$FSCRATCH)
+  UST ($WZERO,$M52,$F16,$FSCRATCH)
+  MULT ($F15,$F16,$F17)
+  VGLOH ($F14,$F17,$B37)
+  MOKY ($B37,$M53,$B34)
+  ODR2 ($B25,$B34,$B38)
+  UND11 ($B38,$B6,$B35)
+  BTRA ($B35,$B9)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B8,$B10)
+  BEFAUS (1,$B10,$B8,$WZERO,$WZERO,&BA1HZ0100BM01,WERR)
+  NICHT ($B9,$B11)
+  BEFAUS (1,$B11,$B9,$WZERO,$WZERO,&BA1HZ0100BM02,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  NOR2 (P1-N/O-REGEL-STO,P2-N/O-REGEL-STO,$B39)
+  UND2 ($B39,K-ST-HEI-N/O-EIN,$B40)
+  NICHT ($B40,$B41)
+  BEFAUS (1,$B41,$B40,$WZERO,$WZERO,&BA1HZ0100BM04,WERR)
+  NOR2 (P1-N/O-NETZ-STOE,P2-N/O-NETZ-STOE,$B42)
+  UND21 (K-ST-HEI-N/O-EIN,$B42,$B39,$B43)
+  NICHT ($B43,$B44)
+  BEFAUS (1,$B44,$B43,$WZERO,$WZERO,&BA1HZ0100BM03,WERR)
+  ;REGELBETRIEB
+  ; 
+  ;NETZBETRIEB
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  REGLER (17,KON01,KON00,$M54,$F18,WERR)
+  ODR2 (ST-HEI-NO-PU1EIN,ST-HEI-NO-PU2EIN,$B45)
+  UND2 (K-ST-HEI-N/O-EIN,$B45,$B46)
+  AWT ($B46,$M55,$F18,$F19)
+  ANAUS ($F19,$M56,&BA1HZ0100AA01,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  REGLER (10,KON01,KON00,$M57,BA1HZ0100AA91,WERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (4,CYCL,1000)
+  UND2 (K-GE-ANL-WT-2EIN,AT-ABSCH-HEIZ,$B47)
+  ODR2 (WT2-P1-REGEL-STO,WT2-P1-NETZ-STOE,$B48)
+  ODR2 (WT2-P2-REGEL-STO,WT2-P2-NETZ-STOE,$B49)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,$WZERO,2,$WONE,$B47,$B54,$WSCRATCH)
+  UNDMN (1,$WZERO,2,$B47,$WONE,$B55,$WSCRATCH)
+  UND2 ($B47,$WONE,$B56)
+  ODRMN (3,$B54,$B55,$B56,0,$B68,$WSCRATCH)
+  UND2 ($B49,$B68,$B57)
+  UND2 ($B48,$B68,$B58)
+  UST ($WZERO,$M58,$F20,$FSCRATCH)
+  UST ($WZERO,$M59,$F21,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (WT-2-PUMPE-1-EIN,$B69,$F22)
+  VGLOH ($F22,$M60,$B69)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B61,$M61,$WZERO,$M62,$WONE,$B69,$WZERO,$F23)
+  ATRA ($F23,$FSCRATCH)
+  VGLOH ($F23,$F20,$B59)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (WT-2-PUMPE-2-EIN,$B70,$F24)
+  VGLOH ($F24,$M63,$B70)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B62,$M64,$WZERO,$M65,$WONE,$B70,$WZERO,$F25)
+  ATRA ($F25,$FSCRATCH)
+  VGLOH ($F25,$F21,$B60)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B59,$M66,$B61)
+  MOKY ($B60,$M67,$B62)
+  RSS ($B59,$B60,$B63,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B56,$B63,$B64)
+  UND2 ($B63,$B56,$B65)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B54,$B57,$B64,0,$B66,$WSCRATCH)
+  ODRMN (3,$B55,$B58,$B65,0,$B67,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B72,$B48,$B73)
+  NICHT ($B73,$HB0)
+  UHR ($HB0,$B73,$F26)
+  UST ($WZERO,$M68,$F27,$FSCRATCH)
+  UST ($WZERO,$M69,$F28,$FSCRATCH)
+  MULT ($F27,$F28,$F29)
+  VGLOH ($F26,$F29,$B74)
+  MOKY ($B74,$M70,$B71)
+  ODR2 ($B66,$B71,$B75)
+  UND11 ($B75,$B48,$B72)
+  BTRA ($B72,$B50)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B77,$B49,$B78)
+  NICHT ($B78,$HB0)
+  UHR ($HB0,$B78,$F30)
+  UST ($WZERO,$M71,$F31,$FSCRATCH)
+  UST ($WZERO,$M72,$F32,$FSCRATCH)
+  MULT ($F31,$F32,$F33)
+  VGLOH ($F30,$F33,$B79)
+  MOKY ($B79,$M73,$B76)
+  ODR2 ($B67,$B76,$B80)
+  UND11 ($B80,$B49,$B77)
+  BTRA ($B77,$B51)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B50,$B52)
+  NICHT ($B51,$B53)
+  BEFAUS (1,$B52,$B50,$WZERO,$WZERO,&BA1HZ0002BM01,WERR)
+  BEFAUS (1,$B53,$B51,$WZERO,$WZERO,&BA1HZ0002BM02,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  NOR2 (WT2-P1-REGEL-STO,WT2-P2-REGEL-STO,$B81)
+  UND2 ($B81,K-GE-ANL-WT-2EIN,$B82)
+  NICHT ($B82,$B83)
+  BEFAUS (1,$B83,$B82,$WZERO,$WZERO,&BA1HZ0002BM04,WERR)
+  NOR2 (WT2-P1-NETZ-STOE,WT2-P2-NETZ-EIN,$B84)
+  UND21 (K-GE-ANL-WT-2EIN,$B84,$B81,$B85)
+  NICHT ($B85,$B86)
+  BEFAUS (1,$B86,$B85,$WZERO,$WZERO,&BA1HZ0002BM03,WERR)
+  ;REGELBETRIEB
+  ; 
+  ;NETZBETRIEB
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  REGLER (3,KON01,KON00,$M74,$F34,WERR)
+  REGLER (4,KON01,KON00,$M75,$F35,WERR)
+  MIN (2,$F34,$F35,$F36)
+  ODR2 (WT-2-PUMPE-1-EIN,WT-2-PUMPE-2-EIN,$B87)
+  UNDMN (4,WT2-TEMP-MAX-PRI,WT2-TEMP-MAX-SEK,
+         K-GE-ANL-WT-2EIN,$B87,0,$B88,$WSCRATCH)
+  AWT ($B88,$M76,$F36,$F37)
+  FKG ($F37,4,$M77,$M78,$M79,$M80,$F38)
+  ANAUS ($F38,$M81,&BA1HZ0002AA01,WERR)
+  FKG ($F37,4,$M82,$M83,$M84,$M85,$F39)
+  ANAUS ($F39,$M86,&BA1HZ0002AA02,WERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  REGLER (8,KON01,KON00,$M87,BA1HZ0002AA91,WERR)
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,1085 @@
+MODUL (AC60,4)
+  WordK $WZERO (0)
+  WordK K_Freigabe_stat_Heizung_Nachtabsenkung_AUS (1)
+  WordK K_Freigabe_stat_Heizung_Nachtabsenkung_EIN (0)
+  WordK K_Freigabe_WarenausgabeEG_AUS (1)
+  WordK K_Freigabe_WarenausgabeEG_EIN (0)
+  WordK K_Freigabe_LagerOG_AUS (1)
+  WordK K_Freigabe_LagerOG_EIN (0)
+  WordK K_Freigabe_neueAnlieferung_AUS (1)
+  WordK K_Freigabe_neueAnlieferung_EIN (0)
+  WordK K_Freigabe_stat_Heizung_AUS (1)
+  WordK K_Freigabe_stat_Heizung_EIN (0)
+  IPAMB &1380HEI05BF001 (11,9)
+  IPAMW &1380HEI07MW001 (23)
+  IPAMW &1380HEI07MW002 (24)
+  IPAMB &1380HEI07BF003 (7,9)
+  IPAMB &1380HEI07BF002 (6,13)
+  IPAMB &1380HEI07BF001 (6,9)
+  IPAAW &1380HEI02SW900 (114)
+  IPAMB &1380HEI03BF900 (110,13)
+  IPAMB &1380HEI03BF001 (7,13)
+  IPAMB &1380HEI07BF900 (120,13)
+  IPAMB &1380HEI01BF900 (110,1)
+  IPAMB &1380HEI01BF901 (110,5)
+  IPAMW &1380HEI05MW001 (38)
+  IPAAW &1380HEI04SW900 (116)
+  IPAMB &1380LUE00GF020 (7,3)
+  IPAMB &1380LUE00GF021 (7,6)
+  IPAMW &1380HEI03MW001 (36)
+  IPAMW &1380HEI02MW001 (34)
+  IPAMB &1380HEI01BF001 (10,1)
+  IPAMW &1380HEI02MW002 (35)
+  IPAMW &1380HEI04MW001 (37)
+  IPAAW &1380HEI06SW900 (118)
+  IPAAW &1380HEI06SW901 (119)
+  IPAMB &1380HEI02BF001 (8,1)
+  IPAAW &1380HEI00SW900 (111)
+  IPAMB &1380HEI02BF900 (110,9)
+  IPAMW &1380LUE00MW000 (12)
+  IPAMB &1380HEI06BF001 (9,1)
+  IPAAW &1380HEI03SW900 (115)
+  IPAMB &1380HEI04BF900 (120,1)
+  IPAMB &1380HEI04BF001 (11,5)
+  IPAAW &1380HEI05SW900 (117)
+  IPAMB &1380HEI06BF900 (120,9)
+  IPAAW &1380HEI07SW900 (122)
+  IPAMB &1380LUE00BF920 (94,13)
+  IPAAW &1380HEI01SB001 (58)
+  IPAMW &1380HEI01MW001 (32)
+  IPAMW &1380HEI01MW002 (33)
+  IPAMB &1380HEI00ST920 (110,0)
+  IPAMW &1380HEI06MW001 (39)
+  IPAMB &1380HEI05BF900 (120,5)
+  WordK K_Freigabe_Kassenzone_AUS (1)
+  WordK K_Freigabe_Kassenzone_EIN (0)
+  WordK K_Freigabe_LagerbueroEG_AUS (1)
+  WordK K_Freigabe_LagerbueroEG_EIN (0)
+  WordK K_Freigabe_EIN (0)
+  WordK K_Freigabe_AUS (1)
+  WordK K_Freigabe_Temperaturregelung_AUS (0)
+  WordK K_Freigabe_Temperaturregelung_EIN (1)
+  WordK K_Freigabe_CO2_AUS (0)
+  WordK K_Freigabe_CO2_EIN (0)
+  WordK K_Handbetrieb_AUS (1)
+  WordK K_Handbetrieb_EIN (1)
+  WordV Freigabe_stat_Heizung_AUS
+  WordV Freigabe_stat_Heizung_EIN
+  WordV Freigabe_stat_Heizung_Nachtabsenkung_EIN
+  WordV Freigabe_stat_Heizung_Nachtabsenkung_AUS
+  WordV Freigabe_WarenausgabeEG_EIN
+  WordV Freigabe_WarenausgabeEG_AUS
+  WordV Freigabe_LagerOG_EIN
+  WordV Freigabe_LagerOG_AUS
+  WordK K_Freigabe_EingangAusgang_AUS (1)
+  WordK K_Freigabe_EingangAusgang_EIN (0)
+  WordV Freigabe_LagerbueroEG_AUS
+  WordV Freigabe_Kassenzone_EIN
+  WordV Freigabe_Kassenzone_AUS
+  WordV Freigabe_neueAnlieferung_EIN
+  WordV Freigabe_LagerbueroEG_EIN
+  WordV Freigabe_neueAnlieferung_AUS
+  WordV Freigabe_EingangAusgang_EIN
+  WordV Freigabe_EingangAusgang_AUS
+  FloatK K_SW_AT_Abschaltung (18.00)
+  WordK K_1 (1)
+  FloatK K_SW_LagerOG (18.00)
+  FloatK K_SW_WarenausgabeEG (18.00)
+  FloatK K_SW_Kassenzone (18.00)
+  FloatK K_SW_LagerbueroEG_Lufterhitzer (18.00)
+  FloatK K_SW_LagerbueroEG_TLS (18.00)
+  FloatK K_SW_neueAnlieferung (18.00)
+  FloatK K_SW_Mindestfrischluftanteil (30.00)
+  FloatK K_SW_EingangAusgang (18.00)
+  FloatV SW_AT_Abschaltung
+  FloatV SW_LagerOG
+  FloatV SW_WarenausgabeEG
+  FloatV SW_EingangAusgang
+  FloatV SW_Kassenzone
+  FloatV SW_LagerbueroEG_Lufterhitzer
+  FloatV SW_LagerbueroEG_TLS
+  FloatV SW_neueAnlieferung
+  FloatK K_SW_Differnz_Raumtemperatur_Aussentemperatur (6.00)
+  FloatK K_SW_Mindestdrehzahl_Zuluftventilator (50.00)
+  FloatK K_SW_Mindestdrehzahl_Abluftventilator (50.00)
+  FloatK K_SW_Sperren_Heizen (20.00)
+  FloatK K_SW_Sperren_Kuehlen (12.00)
+  FloatK K_SW_WRG (18.00)
+  FloatK K_SW_Auskuehlschutz (15.00)
+  WordV BF_statHeizung_Pumpe_AUS
+  WordV Stoerung_statHeizung_Pumpe
+  WordV BF_LagerOG_Lufterhitzer_AUS_Stufe1
+  WordV Stoerung_LagerOG_Lufterhitzer_Stufe1
+  WordV BF_WarenausgabeEG_TLS_AUS
+  WordV Stoerung_WarenausgabeEG_TLS
+  WordV BF_WarenausgabeEG_TLS_EIN
+  WordV BF_statHeizung_Pumpe_EIN
+  WordV BF_LagerOG_Lufterhitzer_EIN_Stufe1
+  WordV BF_Fernquittierung_AUS
+  WordV BF_Fernquittierung_EIN
+  WordV BF_EingangAusgang_TLS_AUS
+  WordV Stoerung_EingangAusgang_TLS
+  WordV BF_EingangAusgang_TLS_EIN
+  WordV BF_Kassenzone_Absperrventil_AUS
+  WordV BF_Kassenzone_Absperrventil_EIN
+  WordV BF_LagerbueroEG_Lufterhitzer_AUS_Stufe1
+  WordV BF_LagerbueroEG_Lufterhitzer_EIN_Stufe1
+  WordV Stoerung_LagerbueroEG_Lufterhitzer_Stufe1
+  WordV BF_neueAnlieferung_Lufterhitzer_G1_AUS
+  WordV BF_neueAnlieferung_Lufterhitzer_G1_EIN
+  WordV Stoerung_neueAnlieferung_Lufterhitzer_G1
+  WordV BF_neueAnlieferung_Lufterhitzer_G2_AUS
+  WordV BF_neueAnlieferung_Lufterhitzer_G2_EIN
+  WordV Stoerung_neueAnlieferung_Lufterhitzer_G2
+  WordV BF_neueAnlieferung_Ansperrventil_G1_AUS
+  WordV BF_neueAnlieferung_Ansperrventil_G1_EIN
+  FloatV MW_Aussentemperatur
+  FloatV MW_neueAnlieferung_Raumtemperatur_G2
+  FloatV MW_statHeizung_Vorlauftemperatur
+  FloatV MW_statHeizung_Ruecklauftemperatur
+  FloatV MW_LagerOG_Raumtemperatur1
+  FloatV MW_LagerOG_Raumtemperatur2
+  FloatV MW_WarenausgabeEG_Raumtemperatur
+  FloatV MW_EingangAusgang_Raumtemperatur
+  FloatV MW_Kassenzone_Raumtemperatur
+  FloatV MW_LagerbueroEG_Raumtemperatur_Lufterhitzer
+  WordV Stoerung_Abschaltstoerung
+  WordV $M37
+  WordV $M38
+  WordV $M39
+  WordV $M40
+  WordV $M41
+  WordV Stoerung_Sammelstoerung_BEFAUS
+  WordK K_0 (0)
+  WordV $M50
+  FloatK K_float_300 (300.00)
+  FloatK K_float_1 (1.00)
+  WordV Sommerbetrieb
+  FloatV Sollwert_Regler08_Tag
+  FloatV Sollwert_Regler08_Nacht
+  FloatK K_float_0 (0.00)
+  FloatV Ansteuerung_Ventil
+  WordV $M53
+  FloatK K_float_100 (100.00)
+  FloatK K_float_5 (5.00)
+  WordV Pumpe_statHeizung_Soll_EIN
+  WordV $M63
+  FloatV $M64
+  WordV $M65
+  WordV $M66
+  FloatV $M67
+  FloatK K_float_168 (168.00)
+  FloatK K_float_3600 (3600.00)
+  WordV $M68
+  WordV $M70
+  WordV $M71
+  WordV Freigabe_Pumpe_statHeizung_BEFAUS
+  WordV $M75
+  FloatV $M72
+  FloatV $M73
+  WordV $M76
+  WordV $M78
+  FloatV $M79
+  FloatV $M80
+  FloatV $M81
+  FloatV $M82
+  FloatV $M83
+  FloatV $M84
+  FloatV $M85
+  WordV $M87
+  FloatV $M88
+  WordV $M90
+  FloatV $M91
+  FloatV $M92
+  FloatV $M93
+  FloatV $M94
+  FloatK K_float_40 (40.00)
+  FloatK K_float_20 (20.00)
+  FloatV MW_RT_Mittelwert_Lager_OG
+  WordV $M98
+  WordV $M99
+  WordV Freigabe_LagerOG_BEFAUS
+  WordV $M100
+  WordV $M102
+  WordV $M104
+  WordV $M105
+  WordV Freigabe_WarenausgabeEG_BEFAUS
+  WordV $M106
+  WordV $M107
+  WordV Freigabe_EingangAusgang_BEFAUS
+  WordV $M108
+  WordV $M110
+  WordV $M111
+  WordV Freigabe_Kassenzone_BEFAUS
+  WordV $M112
+  WordV $M114
+  WordV $M115
+  WordV $M117
+  WordV $M116
+  WordV $M119
+  WordV $M118
+  WordV Freigabe_LagerbueroEG_Lufterhitzer
+  WordV $M123
+  WordV $M127
+  WordV $M128
+  WordV $M129
+  WordV $M130
+  WordV $M131
+  WordV $M132
+  FloatV MW_neueAnlieferung_Raumtemperatur_G1
+  WordV Freigabe_neueAnlieferung_Gruppe1
+  WordV Freigabe_neueAnlieferung_Gruppe2
+  WordV $M133
+  WordV $M134
+  WordV $M135
+  FloatV $M137
+  WordV $M138
+  WordV $M139
+  FloatV $M140
+  WordV $M141
+  WordV $M143
+  WordV $M144
+  WordV Freigabe_Pumpe_RLT_BEFAUS
+  WordV Stoerung_RLT_Pumpe
+  WordV $M145
+  IPAMB &1380HEI09BF001 (11,13)
+  IPAMB &1380LUE04BF001 (2,13)
+  IPAMB &1380LUE05BF001 (3,1)
+  IPAMB &1380HEI08BF001 (10,9)
+  IPAMB &1380LUE09BF001 (10,13)
+  WordV BF_LagerOG_Lufterhitzer_AUS_Stufe2
+  WordV Stoerung_LagerOG_Lufterhitzer_Stufe2
+  WordV BF_LagerOG_Lufterhitzer_EIN_Stufe2
+  WordV BF_LagerbueroEG_Lufterhitzer_AUS_Stufe2
+  WordV Stoerung_LagerbueroEG_Lufterhitzer_Stufe2
+  WordV BF_LagerbueroEG_Lufterhitzer_EIN_Stufe2
+  WordV BF_Pumpe_RLT_AUS
+  WordV Stoerung_Pumpe_RLT
+  WordV BF_Pumpe_RLT_EIN
+  WordV $M146
+  WordV BF_Pumpe_Erhitzer_AUS
+  WordV BF_Pumpe_Erhitzer_EIN
+  WordV Stoerung_Pumpe_Erhitzer
+  WordV $M147
+  WordV $M148
+  WordV $M149
+  WordV Stoerung_neueAnlieferung_Lufterhitzer_G3
+  FloatV MW_neueAnlieferung_Raumtemperatur_G3
+  WordV Freigabe_neueAnlieferung_Gruppe3
+  WordV $M150
+  WordV BF_neueAnlieferung_G3_EIN
+  WordV BF_neueAnlieferung_Lufterhitzer_G3_AUS
+  WordV Entrauchung_Abschalt
+  IPAMW &1380HEI07MW003 (40)
+  IPAMB &1380HEI07BF005 (10,5)
+  WordV FWT_Abschaltung
+  WordV $M154
+  WordV $M155
+  WordV $M156
+  WordV $M157
+  WordV $M158
+  WordV $M159
+  WordV $M160
+  WordV Freigabe_Nebenlueftung_EIN
+  WordV Freigabe_Nebenlueftung_BEFAUS
+  IPAMB &1380LUE07BF001 (8,13)
+  IPAMB &1380LUE07BF900 (121,1)
+  WordK K_Freigabe_Nebenlueftung_AUS (1)
+  WordK K_Freigabe_Nebenlueftung_EIN (0)
+  WordV Freigabe_Nebenlueftung_AUS
+  WordV BF_Nebenlueftung_Lager_Aus
+  WordV BF_Nebenlueftung_Lager_EIN
+  WordV $M181
+  WordV $M182
+  WordV Freigabe_Abluefter_LagerWC_BEFAUS
+  WordV $M183
+  WordV Freigabe_Abluefter_KundenWC_BEFAUS
+  WordV Freigabe_Abluefter_LagerWC_EIN
+  WordV Freigabe_Abluefter_KundenWC_EIN
+  WordK K_Freigabe_Abluefter_LagerWC_AUS (1)
+  WordK K_Freigabe_Abluefter_LagerWC_EIN (0)
+  WordV Freigabe_Abluefter_LagerWC_AUS
+  WordV Freigabe_Abluefter_KundenWC_AUS
+  WordK K_Freigabe_Abluefter_KundenWC_AUS (1)
+  WordK K_Freigabe_Abluefter_KundenWC_EIN (0)
+  IPAMB &1380LUE04BF900 (121,5)
+  IPAMB &1380LUE05BF900 (121,9)
+  IPAMB &1380LUE09BF900 (121,13)
+  WordK K_Freigabe_Abluefter_AMR_AUS (1)
+  WordK K_Freigabe_Abluefter_AMR_EIN (0)
+  WordV Freigabe_Abluefter_AMR_EIN
+  WordV Freigabe_Abluefter_AMR_AUS
+  WordV Freigabe_Abluefter_AMR_BEFAUS
+  WordV $M184
+  WordV Stoerung_Nebenluftanlage_Lager
+  WordV $M185
+  WordV $out-befaus-0-error
+  WordV $out-befaus-1-error
+  WordV $out-befaus-2-error
+  WordV $out-befaus-3-error
+  WordV $out-befaus-4-error
+  WordV $out-befaus-5-error
+  WordV $out-befaus-6-error
+  WordV $out-befaus-7-error
+  WordV $out-befaus-8-error
+  WordV $out-befaus-9-error
+  WordV $out-befaus-10-error
+  WordV $out-befaus-11-error
+  WordV $out-anaus-12-error
+  WordV $out-anaus-13-error
+  WordV $out-anaus-14-error
+  WordV $out-anaus-15-error
+  WordV $out-anaus-16-error
+  WordV $out-anaus-17-error
+  WordV $out-anaus-18-error
+  WordV $out-anaus-19-error
+  WordV $out-melein-20-meldepunkt
+  WordV $out-melein-21-error
+  WordV $out-melein-22-meldepunkt
+  WordV $out-melein-23-error
+  WordV $out-melein-24-meldepunkt
+  WordV $out-melein-25-error
+  WordV $out-melein-26-meldepunkt
+  WordV $out-melein-27-error
+  WordV $out-melein-28-meldepunkt
+  WordV $out-melein-29-error
+  WordV $out-melein-30-meldepunkt
+  WordV $out-melein-31-error
+  WordV $out-melein-32-meldepunkt
+  WordV $out-melein-33-error
+  WordV $out-melein-34-meldepunkt
+  WordV $out-melein-35-error
+  WordV $out-melein-36-meldepunkt
+  WordV $out-melein-37-error
+  WordV $out-melein-38-meldepunkt
+  WordV $out-melein-39-error
+  WordV $out-melein-40-meldepunkt
+  WordV $out-melein-41-error
+  WordV $out-melein-42-meldepunkt
+  WordV $out-melein-43-error
+  WordV $out-anein-44-error
+  WordV $out-anein-45-error
+  WordV $out-anein-46-error
+  WordV $out-anein-47-error
+  WordV $out-anein-48-error
+  WordV $out-anein-49-error
+  WordV $out-anein-50-error
+  WordV $out-anein-51-error
+  WordV $out-melein-52-meldepunkt
+  WordV $out-melein-53-error
+  WordV $out-melein-54-error
+  WordV $out-melein-55-error
+  WordV $out-melein-56-meldepunkt
+  WordV $out-melein-57-error
+  WordV $out-melein-58-error
+  WordV $out-melein-59-error
+  WordV $out-melein-60-error
+  WordV $out-melein-61-error
+  WordV $out-melein-62-error
+  WordV $out-melein-63-error
+  WordV $out-melein-64-meldepunkt
+  WordV $out-melein-65-error
+  WordV $out-melein-66-error
+  WordV $out-melein-67-error
+  WordV $out-melein-68-error
+  WordV $out-melein-69-error
+  WordV $out-melein-70-error
+  WordV $out-anein-71-error
+  WordV $out-anein-72-error
+  WordV $out-anein-73-error
+  WordV $out-anein-74-error
+  WordV $out-anein-75-error
+  WordV $out-anein-76-error
+  WordV $out-anein-77-error
+  WordV $out-anein-78-error
+  WordV $out-anein-79-error
+  WordV $out-anein-80-error
+  WordV $out-anein-81-error
+  WordV $out-anein-82-error
+  WordV $out-odrmn-83-binv
+  WordV $out-odrmn-84-binv
+  WordV $out-odrmn-85-binv
+  WordV $out-odrmn-86-binv
+  WordV $out-odrmn-87-binv
+  WordV $out-rss-88-binv
+  WordV $out-rss-89-binv
+  WordV $out-solken-90-error
+  WordV $out-solken-91-error
+  WordV $out-undmn-92-binv
+  WordV $out-regler-93-error
+  FloatV $out-atra-94-y
+  FloatV $out-atra-95-y
+  FloatV $out-atra-96-y
+  WordV $out-vgl3p-97-bgr
+  WordV $out-vgl3p-98-bkl
+  WordV $out-vgl3p-99-bgr
+  WordV $out-vgl3p-100-bkl
+  WordV $out-vgl3p-101-bgr
+  WordV $out-vgl3p-102-bkl
+  WordV $out-vgl3p-103-bgr
+  WordV $out-vgl3p-104-bkl
+  WordV $out-undmn-105-binv
+  WordV $out-rss-106-binv
+  WordV $out-undmn-107-binv
+  WordV $out-rss-108-binv
+  WordV $out-undmn-109-binv
+  WordV $out-rss-110-binv
+  WordV $out-undmn-111-binv
+  WordV $out-rss-112-binv
+  WordV $out-undmn-113-binv
+  WordV $out-rss-114-binv
+  WordV $out-undmn-115-binv
+  WordV $out-rss-116-binv
+  WordV $out-undmn-117-binv
+  WordV $out-rss-118-binv
+  WordV $out-undmn-119-binv
+  WordV $out-rss-120-binv
+  WordV $out-odrmn-121-binv
+  WordV $out-undmn-122-binv
+  WordV $out-undmn-123-binv
+  WordV $out-undmn-124-binv
+  WordV $out-undmn-125-binv
+  WordV $out-undmn-126-binv
+  WordV $out-setmel-127-error
+  WordV $out-befaus-128-error
+  WordV $out-anaus-129-error
+  WordV $out-befaus-130-error
+  WordV $out-befaus-131-error
+  WordV $out-befaus-132-error
+  WordV $out-befaus-133-error
+  WordV $out-befaus-134-error
+  WordV $out-befaus-135-error
+  WordV $out-befaus-136-error
+  WordV $out-befaus-137-error
+  WordV $out-befaus-138-error
+  WordV $out-befaus-139-error
+  WordV $out-befaus-140-error
+  WordV $out-befaus-141-error
+  WordV $out-befaus-142-error
+  WordV $out-befaus-143-error
+ ;name : Task_init
+ TASK (1,init)
+ ;Page 1 Title : Init_BEFAUS
+  ;prio : 6 
+  BEFAUS (1,K_Freigabe_stat_Heizung_AUS,K_Freigabe_stat_Heizung_EIN,$WZERO,
+   $WZERO,&1380HEI01BF900,$out-befaus-0-error)
+  ;prio : 7 
+  BEFAUS (1,K_Freigabe_stat_Heizung_Nachtabsenkung_AUS,
+   K_Freigabe_stat_Heizung_Nachtabsenkung_EIN,$WZERO,$WZERO,&1380HEI01BF901,
+   $out-befaus-1-error)
+  ;prio : 8 
+  BEFAUS (1,K_Freigabe_LagerOG_AUS,K_Freigabe_LagerOG_EIN,$WZERO,$WZERO,
+   &1380HEI02BF900,$out-befaus-2-error)
+  ;prio : 9 
+  BEFAUS (1,K_Freigabe_WarenausgabeEG_AUS,K_Freigabe_WarenausgabeEG_EIN,$WZERO,
+   $WZERO,&1380HEI03BF900,$out-befaus-3-error)
+  ;prio : 10 
+  BEFAUS (1,K_Freigabe_EingangAusgang_AUS,K_Freigabe_EingangAusgang_EIN,$WZERO,
+   $WZERO,&1380HEI04BF900,$out-befaus-4-error)
+  ;prio : 11 
+  BEFAUS (1,K_Freigabe_Kassenzone_AUS,K_Freigabe_Kassenzone_EIN,$WZERO,$WZERO,
+   &1380HEI05BF900,$out-befaus-5-error)
+  ;prio : 12 
+  BEFAUS (1,K_Freigabe_LagerbueroEG_AUS,K_Freigabe_LagerbueroEG_EIN,$WZERO,
+   $WZERO,&1380HEI06BF900,$out-befaus-6-error)
+  ;prio : 13 
+  BEFAUS (1,K_Freigabe_neueAnlieferung_AUS,K_Freigabe_neueAnlieferung_EIN,$WZERO,
+   $WZERO,&1380HEI07BF900,$out-befaus-7-error)
+  ;prio : 14 
+  BEFAUS (1,K_Freigabe_Nebenlueftung_AUS,K_Freigabe_Nebenlueftung_EIN,$WZERO,
+   $WZERO,&1380LUE07BF900,$out-befaus-8-error)
+  ;prio : 15 
+  BEFAUS (1,K_Freigabe_Abluefter_LagerWC_AUS,K_Freigabe_Abluefter_LagerWC_EIN,
+   $WZERO,$WZERO,&1380LUE04BF900,$out-befaus-9-error)
+  ;prio : 16 
+  BEFAUS (1,K_Freigabe_Abluefter_KundenWC_AUS,K_Freigabe_Abluefter_KundenWC_EIN,
+   $WZERO,$WZERO,&1380LUE05BF900,$out-befaus-10-error)
+  ;prio : 17 
+  BEFAUS (1,K_Freigabe_Abluefter_AMR_AUS,K_Freigabe_Abluefter_AMR_EIN,$WZERO,
+   $WZERO,&1380LUE09BF900,$out-befaus-11-error)
+ ;Page 2 Title : Init_ANAUS
+  ;prio : 16 
+  ANAUS (K_SW_AT_Abschaltung,K_1,&1380HEI00SW900,$out-anaus-12-error)
+  ;prio : 17 
+  ANAUS (K_SW_LagerOG,K_1,&1380HEI02SW900,$out-anaus-13-error)
+  ;prio : 18 
+  ANAUS (K_SW_WarenausgabeEG,K_1,&1380HEI03SW900,$out-anaus-14-error)
+  ;prio : 19 
+  ANAUS (K_SW_Kassenzone,K_1,&1380HEI05SW900,$out-anaus-15-error)
+  ;prio : 20 
+  ANAUS (K_SW_LagerbueroEG_Lufterhitzer,K_1,&1380HEI06SW900,$out-anaus-16-error)
+  ;prio : 21 
+  ANAUS (K_SW_LagerbueroEG_TLS,K_1,&1380HEI06SW901,$out-anaus-17-error)
+  ;prio : 22 
+  ANAUS (K_SW_neueAnlieferung,K_1,&1380HEI07SW900,$out-anaus-18-error)
+  ;prio : 23 
+  ANAUS (K_SW_EingangAusgang,K_1,&1380HEI04SW900,$out-anaus-19-error)
+ ENDE 
+ ;name : Task_Einlesen
+ TASK (2,cycl,1000)
+ ;Page 1 Title : Init_Werte_MELEIN
+  ;prio : 22 
+  MELEIN (&1380HEI01BF900,3,Freigabe_stat_Heizung_AUS,$out-melein-20-meldepunkt,
+   Freigabe_stat_Heizung_EIN,$out-melein-21-error)
+  ;prio : 23 
+  BTRA (Freigabe_stat_Heizung_AUS,K_Freigabe_EIN)
+  ;prio : 24 
+  BTRA (Freigabe_stat_Heizung_EIN,K_Freigabe_AUS)
+  ;prio : 25 
+  MELEIN (&1380HEI01BF901,3,Freigabe_stat_Heizung_Nachtabsenkung_AUS,
+   $out-melein-22-meldepunkt,Freigabe_stat_Heizung_Nachtabsenkung_EIN,
+   $out-melein-23-error)
+  ;prio : 26 
+  BTRA (Freigabe_stat_Heizung_Nachtabsenkung_AUS,
+   K_Freigabe_Temperaturregelung_AUS)
+  ;prio : 27 
+  BTRA (Freigabe_stat_Heizung_Nachtabsenkung_EIN,
+   K_Freigabe_Temperaturregelung_EIN)
+  ;prio : 31 
+  MELEIN (&1380HEI03BF900,3,Freigabe_WarenausgabeEG_AUS,
+   $out-melein-24-meldepunkt,Freigabe_WarenausgabeEG_EIN,$out-melein-25-error)
+  ;prio : 32 
+  BTRA (Freigabe_WarenausgabeEG_AUS,K_Freigabe_CO2_AUS)
+  ;prio : 33 
+  BTRA (Freigabe_WarenausgabeEG_EIN,K_Freigabe_CO2_EIN)
+  ;prio : 34 
+  MELEIN (&1380HEI02BF900,3,Freigabe_LagerOG_AUS,$out-melein-26-meldepunkt,
+   Freigabe_LagerOG_EIN,$out-melein-27-error)
+  ;prio : 35 
+  BTRA (Freigabe_LagerOG_AUS,K_Handbetrieb_AUS)
+  ;prio : 36 
+  BTRA (Freigabe_LagerOG_EIN,K_Handbetrieb_EIN)
+  ;prio : 37 
+  MELEIN (&1380HEI05BF900,3,Freigabe_Kassenzone_AUS,$out-melein-28-meldepunkt,
+   Freigabe_Kassenzone_EIN,$out-melein-29-error)
+  ;prio : 38 
+  BTRA (Freigabe_Kassenzone_AUS,K_Freigabe_EIN)
+  ;prio : 39 
+  BTRA (Freigabe_Kassenzone_EIN,K_Freigabe_AUS)
+  ;prio : 40 
+  MELEIN (&1380HEI06BF900,3,Freigabe_LagerbueroEG_AUS,$out-melein-30-meldepunkt,
+   Freigabe_LagerbueroEG_EIN,$out-melein-31-error)
+  ;prio : 41 
+  BTRA (Freigabe_LagerbueroEG_AUS,K_Freigabe_Temperaturregelung_AUS)
+  ;prio : 42 
+  BTRA (Freigabe_LagerbueroEG_EIN,K_Freigabe_Temperaturregelung_EIN)
+  ;prio : 43 
+  MELEIN (&1380HEI07BF900,3,Freigabe_neueAnlieferung_AUS,
+   $out-melein-32-meldepunkt,Freigabe_neueAnlieferung_EIN,$out-melein-33-error)
+  ;prio : 44 
+  BTRA (Freigabe_neueAnlieferung_AUS,K_Handbetrieb_AUS)
+  ;prio : 45 
+  BTRA (Freigabe_neueAnlieferung_EIN,K_Handbetrieb_EIN)
+  ;prio : 46 
+  MELEIN (&1380HEI04BF900,3,Freigabe_EingangAusgang_AUS,
+   $out-melein-34-meldepunkt,Freigabe_EingangAusgang_EIN,$out-melein-35-error)
+  ;prio : 47 
+  BTRA (Freigabe_EingangAusgang_AUS,K_Handbetrieb_AUS)
+  ;prio : 48 
+  BTRA (Freigabe_EingangAusgang_EIN,K_Handbetrieb_EIN)
+ ;Page 2 Title : Init_Werte_MELEIN
+  ;prio : 49 
+  MELEIN (&1380LUE07BF900,3,Freigabe_Nebenlueftung_AUS,$out-melein-36-meldepunkt,
+   Freigabe_Nebenlueftung_EIN,$out-melein-37-error)
+  ;prio : 50 
+  BTRA (Freigabe_Nebenlueftung_AUS,K_Handbetrieb_AUS)
+  ;prio : 51 
+  BTRA (Freigabe_Nebenlueftung_EIN,K_Handbetrieb_EIN)
+  ;prio : 52 
+  MELEIN (&1380LUE05BF900,3,Freigabe_Abluefter_KundenWC_AUS,
+   $out-melein-38-meldepunkt,Freigabe_Abluefter_KundenWC_EIN,
+   $out-melein-39-error)
+  ;prio : 53 
+  BTRA (Freigabe_Abluefter_KundenWC_AUS,K_Handbetrieb_AUS)
+  ;prio : 54 
+  BTRA (Freigabe_Abluefter_KundenWC_EIN,K_Handbetrieb_EIN)
+  ;prio : 55 
+  MELEIN (&1380LUE04BF900,3,Freigabe_Abluefter_LagerWC_AUS,
+   $out-melein-40-meldepunkt,Freigabe_Abluefter_LagerWC_EIN,
+   $out-melein-41-error)
+  ;prio : 56 
+  BTRA (Freigabe_Abluefter_LagerWC_AUS,K_Handbetrieb_AUS)
+  ;prio : 57 
+  BTRA (Freigabe_Abluefter_LagerWC_EIN,K_Handbetrieb_EIN)
+  ;prio : 58 
+  MELEIN (&1380LUE09BF900,3,Freigabe_Abluefter_AMR_AUS,$out-melein-42-meldepunkt,
+   Freigabe_Abluefter_AMR_EIN,$out-melein-43-error)
+  ;prio : 59 
+  BTRA (Freigabe_Abluefter_AMR_AUS,K_Handbetrieb_AUS)
+  ;prio : 60 
+  BTRA (Freigabe_Abluefter_AMR_EIN,K_Handbetrieb_EIN)
+ ;Page 3 Title : Init_Werte_ANEIN
+  ;prio : 33 
+  ANEIN (&1380HEI00SW900,SW_AT_Abschaltung,$out-anein-44-error)
+  ;prio : 34 
+  ATRA (SW_AT_Abschaltung,K_SW_WRG)
+  ;prio : 35 
+  ANEIN (&1380HEI02SW900,SW_LagerOG,$out-anein-45-error)
+  ;prio : 36 
+  ATRA (SW_LagerOG,K_SW_Auskuehlschutz)
+  ;prio : 37 
+  ANEIN (&1380HEI03SW900,SW_WarenausgabeEG,$out-anein-46-error)
+  ;prio : 38 
+  ATRA (SW_WarenausgabeEG,K_SW_Differnz_Raumtemperatur_Aussentemperatur)
+  ;prio : 39 
+  ANEIN (&1380HEI04SW900,SW_EingangAusgang,$out-anein-47-error)
+  ;prio : 40 
+  ATRA (SW_EingangAusgang,K_SW_Mindestdrehzahl_Zuluftventilator)
+  ;prio : 41 
+  ANEIN (&1380HEI05SW900,SW_Kassenzone,$out-anein-48-error)
+  ;prio : 42 
+  ATRA (SW_Kassenzone,K_SW_Mindestdrehzahl_Abluftventilator)
+  ;prio : 43 
+  ANEIN (&1380HEI06SW900,SW_LagerbueroEG_Lufterhitzer,$out-anein-49-error)
+  ;prio : 44 
+  ATRA (SW_LagerbueroEG_Lufterhitzer,K_SW_Sperren_Heizen)
+  ;prio : 45 
+  ANEIN (&1380HEI06SW901,SW_LagerbueroEG_TLS,$out-anein-50-error)
+  ;prio : 46 
+  ATRA (SW_LagerbueroEG_TLS,K_SW_Sperren_Kuehlen)
+  ;prio : 47 
+  ANEIN (&1380HEI07SW900,SW_neueAnlieferung,$out-anein-51-error)
+  ;prio : 48 
+  ATRA (SW_neueAnlieferung,K_SW_Mindestfrischluftanteil)
+ ;Page 4 Title : MELEIN_M02
+  ;prio : 10 
+  MELEIN (&1380LUE00BF920,3,BF_Fernquittierung_AUS,$out-melein-52-meldepunkt,
+   BF_Fernquittierung_EIN,$out-melein-53-error)
+ ;Page 5 Title : MELEIN_M03
+  ;prio : 31 
+  MELEIN (&1380HEI07BF001,3,BF_neueAnlieferung_Lufterhitzer_G1_AUS,
+   Stoerung_neueAnlieferung_Lufterhitzer_G1,
+   BF_neueAnlieferung_Lufterhitzer_G1_EIN,$out-melein-54-error)
+  ;prio : 32 
+  MELEIN (&1380HEI07BF002,3,BF_neueAnlieferung_Lufterhitzer_G2_AUS,
+   Stoerung_neueAnlieferung_Lufterhitzer_G2,
+   BF_neueAnlieferung_Lufterhitzer_G2_EIN,$out-melein-55-error)
+  ;prio : 33 
+  MELEIN (&1380HEI07BF003,3,BF_neueAnlieferung_Ansperrventil_G1_AUS,
+   $out-melein-56-meldepunkt,BF_neueAnlieferung_Ansperrventil_G1_EIN,
+   $out-melein-57-error)
+  ;prio : 35 
+  MELEIN (&1380HEI07BF005,3,BF_neueAnlieferung_Lufterhitzer_G3_AUS,
+   Stoerung_neueAnlieferung_Lufterhitzer_G3,BF_neueAnlieferung_G3_EIN,
+   $out-melein-58-error)
+  ;prio : 36 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G1,
+   Stoerung_neueAnlieferung_Lufterhitzer_G1)
+  ;prio : 37 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G2,
+   Stoerung_neueAnlieferung_Lufterhitzer_G2)
+  ;prio : 38 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G3,
+   Stoerung_neueAnlieferung_Lufterhitzer_G3)
+  ;prio : 39 
+  MELEIN (&1380LUE07BF001,3,BF_Nebenlueftung_Lager_Aus,
+   Stoerung_Nebenluftanlage_Lager,BF_Nebenlueftung_Lager_EIN,
+   $out-melein-59-error)
+ ;Page 6 Title : MELEIN_M04
+  ;prio : 12 
+  MELEIN (&1380HEI01BF001,3,BF_statHeizung_Pumpe_AUS,Stoerung_statHeizung_Pumpe,
+   BF_statHeizung_Pumpe_EIN,$out-melein-60-error)
+  ;prio : 13 
+  MELEIN (&1380HEI02BF001,6,BF_LagerOG_Lufterhitzer_AUS_Stufe1,$M154,
+   BF_LagerOG_Lufterhitzer_EIN_Stufe1,BF_LagerOG_Lufterhitzer_AUS_Stufe2,$M155,
+   BF_LagerOG_Lufterhitzer_EIN_Stufe2,$out-melein-61-error)
+  ;prio : 18 
+  MELEIN (&1380HEI03BF001,3,BF_WarenausgabeEG_TLS_AUS,$M156,
+   BF_WarenausgabeEG_TLS_EIN,$out-melein-62-error)
+  ;prio : 24 
+  MELEIN (&1380HEI04BF001,3,BF_EingangAusgang_TLS_AUS,
+   Stoerung_EingangAusgang_TLS,BF_EingangAusgang_TLS_EIN,$out-melein-63-error)
+  ;prio : 26 
+  MELEIN (&1380HEI05BF001,3,BF_Kassenzone_Absperrventil_AUS,
+   $out-melein-64-meldepunkt,BF_Kassenzone_Absperrventil_EIN,
+   $out-melein-65-error)
+  ;prio : 27 
+  MELEIN (&1380HEI06BF001,6,BF_LagerbueroEG_Lufterhitzer_AUS_Stufe1,$M158,
+   BF_LagerbueroEG_Lufterhitzer_EIN_Stufe1,
+   BF_LagerbueroEG_Lufterhitzer_AUS_Stufe2,$M159,
+   BF_LagerbueroEG_Lufterhitzer_EIN_Stufe2,$out-melein-66-error)
+  ;prio : 29 
+  MELEIN (&1380HEI08BF001,3,BF_Pumpe_RLT_AUS,$M157,BF_Pumpe_RLT_EIN,
+   $out-melein-67-error)
+  ;prio : 30 
+  MELEIN (&1380HEI09BF001,3,BF_Pumpe_Erhitzer_AUS,$M160,BF_Pumpe_Erhitzer_EIN,
+   $out-melein-68-error)
+  ;prio : 31 
+  NICHT (Stoerung_statHeizung_Pumpe,Stoerung_statHeizung_Pumpe)
+  ;prio : 32 
+  NICHT ($M157,Stoerung_Pumpe_RLT)
+  ;prio : 33 
+  NICHT ($M160,Stoerung_Pumpe_Erhitzer)
+  ;prio : 35 
+  MELEIN (&1380LUE00GF020,1,Entrauchung_Abschalt,$out-melein-69-error)
+  ;prio : 36 
+  NICHT ($M156,Stoerung_WarenausgabeEG_TLS)
+  ;prio : 37 
+  NICHT ($M155,Stoerung_LagerOG_Lufterhitzer_Stufe2)
+  ;prio : 38 
+  NICHT ($M154,Stoerung_LagerOG_Lufterhitzer_Stufe1)
+  ;prio : 39 
+  NICHT ($M158,Stoerung_LagerbueroEG_Lufterhitzer_Stufe1)
+  ;prio : 40 
+  NICHT ($M159,Stoerung_LagerbueroEG_Lufterhitzer_Stufe2)
+  ;prio : 41 
+  NICHT (Stoerung_EingangAusgang_TLS,Stoerung_EingangAusgang_TLS)
+  ;prio : 42 
+  MELEIN (&1380LUE00GF021,1,FWT_Abschaltung,$out-melein-70-error)
+ ;Page 7 Title : ANEIN_M02
+  ;prio : 1 
+  ANEIN (&1380LUE00MW000,MW_Aussentemperatur,$out-anein-71-error)
+ ;Page 8 Title : ANEIN_M03
+  ;prio : 1 
+  ANEIN (&1380HEI07MW001,MW_neueAnlieferung_Raumtemperatur_G1,
+   $out-anein-72-error)
+  ;prio : 2 
+  ANEIN (&1380HEI07MW002,MW_neueAnlieferung_Raumtemperatur_G2,
+   $out-anein-73-error)
+ ;Page 9 Title : ANEIN_M04
+  ;prio : 1 
+  ANEIN (&1380HEI01MW001,MW_statHeizung_Vorlauftemperatur,$out-anein-74-error)
+  ;prio : 2 
+  ANEIN (&1380HEI01MW002,MW_statHeizung_Ruecklauftemperatur,$out-anein-75-error)
+  ;prio : 3 
+  ANEIN (&1380HEI02MW001,MW_LagerOG_Raumtemperatur1,$out-anein-76-error)
+  ;prio : 4 
+  ANEIN (&1380HEI02MW002,MW_LagerOG_Raumtemperatur2,$out-anein-77-error)
+  ;prio : 5 
+  ANEIN (&1380HEI03MW001,MW_WarenausgabeEG_Raumtemperatur,$out-anein-78-error)
+  ;prio : 6 
+  ANEIN (&1380HEI04MW001,MW_EingangAusgang_Raumtemperatur,$out-anein-79-error)
+  ;prio : 7 
+  ANEIN (&1380HEI05MW001,MW_Kassenzone_Raumtemperatur,$out-anein-80-error)
+  ;prio : 8 
+  ANEIN (&1380HEI06MW001,MW_LagerbueroEG_Raumtemperatur_Lufterhitzer,
+   $out-anein-81-error)
+  ;prio : 9 
+  ANEIN (&1380HEI07MW003,MW_neueAnlieferung_Raumtemperatur_G3,
+   $out-anein-82-error)
+ ENDE 
+ ;name : Task_Programm
+ TASK (3,cycl,1000)
+ ;Page 1 Title : Sammelstoerung
+  ;prio : 11 
+  ODRMN (2,K_0,K_0,6,Stoerung_neueAnlieferung_Lufterhitzer_G1,
+   Stoerung_neueAnlieferung_Lufterhitzer_G2,Stoerung_statHeizung_Pumpe,
+   Stoerung_LagerOG_Lufterhitzer_Stufe1,
+   Stoerung_LagerbueroEG_Lufterhitzer_Stufe1,
+   Stoerung_neueAnlieferung_Lufterhitzer_G3,$M40,$out-odrmn-83-binv)
+  ;prio : 12 
+  ODRMN (0,9,Stoerung_WarenausgabeEG_TLS,K_1,K_1,K_1,K_1,K_1,K_1,
+   Entrauchung_Abschalt,FWT_Abschaltung,$M39,$out-odrmn-84-binv)
+  ;prio : 13 
+  ODRMN (3,K_0,K_0,K_0,5,K_1,K_1,K_1,K_1,K_1,$M38,$out-odrmn-85-binv)
+  ;prio : 14 
+  ODRMN (3,$M40,$M39,$M38,0,$M37,$out-odrmn-86-binv)
+  ;prio : 15 
+  ODRMN (2,Stoerung_Abschaltstoerung,K_0,5,K_1,K_1,K_1,K_1,K_1,$M41,
+   $out-odrmn-87-binv)
+  ;prio : 16 
+  RSS ($M41,BF_Fernquittierung_EIN,Stoerung_Sammelstoerung_BEFAUS,
+   $out-rss-88-binv)
+  ;prio : 17 
+  RSS ($M37,BF_Fernquittierung_EIN,Stoerung_Abschaltstoerung,$out-rss-89-binv)
+ ;Page 2 Title : Sommerbetrieb
+  ;prio : 1 
+  VGLEH (MW_Aussentemperatur,SW_AT_Abschaltung,K_float_1,$M50)
+  ;prio : 2 
+  VVZ ($M50,K_float_300,K_float_300,Sommerbetrieb)
+ ;Page 3 Title : Statische Heizung 01
+  ;prio : 1 
+  SOLKEN (4,Freigabe_stat_Heizung_Nachtabsenkung_AUS,Sollwert_Regler08_Tag,
+   $out-solken-90-error)
+  ;prio : 2 
+  SOLKEN (5,Freigabe_stat_Heizung_Nachtabsenkung_EIN,Sollwert_Regler08_Nacht,
+   $out-solken-91-error)
+  ;prio : 3 
+  UNDMN (1,Stoerung_statHeizung_Pumpe,2,Sommerbetrieb,Freigabe_stat_Heizung_EIN,
+   $M53,$out-undmn-92-binv)
+  ;prio : 4 
+  REGLER (8,K_1,$M53,K_float_0,Ansteuerung_Ventil,$out-regler-93-error)
+  ;prio : 5 
+  VGLEH (Ansteuerung_Ventil,K_float_5,K_float_1,$M63)
+  ;prio : 6 
+  VVZ ($M63,K_float_5,K_float_300,Pumpe_statHeizung_Soll_EIN)
+  ;prio : 7 
+  ATRA (Sollwert_Regler08_Tag,$out-atra-94-y)
+  ;prio : 8 
+  ATRA (Sollwert_Regler08_Nacht,$out-atra-95-y)
+  ;prio : 9 
+  ATRA (MW_statHeizung_Vorlauftemperatur,$out-atra-96-y)
+ ;Page 4 Title : Statische Heizung 02
+  ;prio : 7 
+  ODR2 (Pumpe_statHeizung_Soll_EIN,$M65,$M71)
+  ;prio : 8 
+  ODRMN (1,$M71,1,Stoerung_statHeizung_Pumpe,$M70,$M68)
+  ;prio : 9 
+  UHR ($M68,$M70,$M64)
+  ;prio : 10 
+  MULT (K_float_168,K_float_3600,$M67)
+  ;prio : 11 
+  VGLOH ($M64,$M67,$M66)
+  ;prio : 12 
+  MOKY ($M66,K_float_300,$M65)
+  ;prio : 13 
+  UND2 ($M71,Stoerung_statHeizung_Pumpe,Freigabe_Pumpe_statHeizung_BEFAUS)
+ ;Page 5 Title : Lager OG Mittelwert
+  ;prio : 58 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-97-bgr,$out-vgl3p-98-bkl,
+   $M90)
+  ;prio : 59 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-99-bgr,$out-vgl3p-100-bkl,
+   $M87)
+  ;prio : 60 
+  AWT ($M78,K_float_0,K_float_1,$M80)
+  ;prio : 61 
+  AWT ($M78,K_float_0,$M72,$M82)
+  ;prio : 62 
+  AWT ($M90,K_float_0,K_float_1,$M92)
+  ;prio : 63 
+  PT1 (MW_LagerOG_Raumtemperatur1,K_float_20,$M73)
+  ;prio : 64 
+  ADSU (4,$M79,$M80,$M91,$M92,0,$M84)
+  ;prio : 65 
+  AWT ($M76,K_float_0,K_float_1,$M79)
+  ;prio : 66 
+  PT1 (MW_LagerOG_Raumtemperatur2,K_float_20,$M72)
+  ;prio : 67 
+  VGL3P (MW_LagerOG_Raumtemperatur2,K_float_40,K_float_0,$out-vgl3p-101-bgr,
+   $out-vgl3p-102-bkl,$M78)
+  ;prio : 68 
+  PT1 (K_float_100,K_float_20,$M85)
+  ;prio : 69 
+  AWT ($M87,K_float_0,K_float_1,$M91)
+  ;prio : 70 
+  AWT ($M87,K_float_0,$M85,$M93)
+  ;prio : 71 
+  ADSU (4,$M81,$M82,$M93,$M94,0,$M83)
+  ;prio : 72 
+  VGL3P (MW_LagerOG_Raumtemperatur1,K_float_40,K_float_0,$out-vgl3p-103-bgr,
+   $out-vgl3p-104-bkl,$M76)
+  ;prio : 73 
+  AWT ($M90,K_float_0,$M88,$M94)
+  ;prio : 74 
+  PT1 (K_float_100,K_float_20,$M88)
+  ;prio : 75 
+  MULDI ($M83,K_float_1,$M84,MW_RT_Mittelwert_Lager_OG)
+  ;prio : 76 
+  AWT ($M76,K_float_0,$M73,$M81)
+ ;Page 6 Title : Lager OG
+  ;prio : 1 
+  VGLEH (SW_LagerOG,MW_RT_Mittelwert_Lager_OG,K_float_1,$M98)
+  ;prio : 2 
+  UNDMN (2,$M98,Freigabe_LagerOG_EIN,3,Sommerbetrieb,$M99,
+   Stoerung_Abschaltstoerung,Freigabe_LagerOG_BEFAUS,$out-undmn-105-binv)
+  ;prio : 3 
+  RSS ($M117,BF_Fernquittierung_EIN,$M99,$out-rss-106-binv)
+  ;prio : 4 
+  NICHT (Stoerung_LagerOG_Lufterhitzer_Stufe1,$M117)
+ ;Page 7 Title : Warenausgabe EG
+  ;prio : 4 
+  VGLEH (SW_WarenausgabeEG,MW_WarenausgabeEG_Raumtemperatur,K_float_1,$M104)
+  ;prio : 5 
+  UNDMN (2,$M104,Freigabe_WarenausgabeEG_EIN,3,Sommerbetrieb,$M105,
+   Stoerung_Abschaltstoerung,Freigabe_WarenausgabeEG_BEFAUS,$out-undmn-107-binv)
+  ;prio : 6 
+  RSS ($M116,BF_Fernquittierung_EIN,$M105,$out-rss-108-binv)
+  ;prio : 7 
+  NICHT (Stoerung_WarenausgabeEG_TLS,$M116)
+ ;Page 8 Title : Eingang / Ausgang
+  ;prio : 7 
+  VGLEH (SW_EingangAusgang,MW_EingangAusgang_Raumtemperatur,K_float_1,$M106)
+  ;prio : 8 
+  UNDMN (2,$M106,Freigabe_EingangAusgang_EIN,3,Sommerbetrieb,$M107,
+   Stoerung_Abschaltstoerung,Freigabe_EingangAusgang_BEFAUS,$out-undmn-109-binv)
+  ;prio : 9 
+  RSS ($M119,BF_Fernquittierung_EIN,$M107,$out-rss-110-binv)
+  ;prio : 10 
+  NICHT (Stoerung_EingangAusgang_TLS,$M119)
+ ;Page 9 Title : Kassenzone
+  ;prio : 10 
+  VGLEH (SW_Kassenzone,MW_Kassenzone_Raumtemperatur,K_float_1,$M110)
+  ;prio : 11 
+  UNDMN (2,$M110,Freigabe_Kassenzone_EIN,3,Sommerbetrieb,$M111,
+   Stoerung_Abschaltstoerung,Freigabe_Kassenzone_BEFAUS,$out-undmn-111-binv)
+  ;prio : 12 
+  RSS (K_0,BF_Fernquittierung_EIN,$M111,$out-rss-112-binv)
+ ;Page 10 Title : LagerbÅro EG
+  ;prio : 13 
+  VGLEH (SW_LagerbueroEG_Lufterhitzer,
+   MW_LagerbueroEG_Raumtemperatur_Lufterhitzer,K_float_1,$M114)
+  ;prio : 14 
+  UNDMN (2,$M114,Freigabe_LagerbueroEG_EIN,3,Sommerbetrieb,$M115,
+   Stoerung_Abschaltstoerung,Freigabe_LagerbueroEG_Lufterhitzer,
+   $out-undmn-113-binv)
+  ;prio : 15 
+  RSS ($M118,BF_Fernquittierung_EIN,$M115,$out-rss-114-binv)
+  ;prio : 16 
+  NICHT (Stoerung_LagerbueroEG_Lufterhitzer_Stufe1,$M118)
+ ;Page 11 Title : neue Anlieferung
+  ;prio : 21 
+  VGLEH (SW_neueAnlieferung,MW_neueAnlieferung_Raumtemperatur_G1,K_float_1,
+   $M127)
+  ;prio : 22 
+  UNDMN (2,$M127,Freigabe_neueAnlieferung_EIN,3,Sommerbetrieb,$M128,
+   Stoerung_Abschaltstoerung,Freigabe_neueAnlieferung_Gruppe1,
+   $out-undmn-115-binv)
+  ;prio : 23 
+  RSS ($M129,BF_Fernquittierung_EIN,$M128,$out-rss-116-binv)
+  ;prio : 24 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G1,$M129)
+  ;prio : 25 
+  VGLEH (SW_neueAnlieferung,MW_neueAnlieferung_Raumtemperatur_G2,K_float_1,
+   $M130)
+  ;prio : 26 
+  UNDMN (2,$M130,Freigabe_neueAnlieferung_EIN,3,Sommerbetrieb,$M131,
+   Stoerung_Abschaltstoerung,Freigabe_neueAnlieferung_Gruppe2,
+   $out-undmn-117-binv)
+  ;prio : 27 
+  RSS ($M132,BF_Fernquittierung_EIN,$M131,$out-rss-118-binv)
+  ;prio : 28 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G2,$M132)
+  ;prio : 29 
+  VGLEH (SW_neueAnlieferung,MW_neueAnlieferung_Raumtemperatur_G3,K_float_1,
+   $M149)
+  ;prio : 30 
+  UNDMN (2,$M149,Freigabe_neueAnlieferung_EIN,3,Sommerbetrieb,$M148,
+   Stoerung_Abschaltstoerung,Freigabe_neueAnlieferung_Gruppe3,
+   $out-undmn-119-binv)
+  ;prio : 31 
+  RSS ($M147,BF_Fernquittierung_EIN,$M148,$out-rss-120-binv)
+  ;prio : 32 
+  NICHT (Stoerung_neueAnlieferung_Lufterhitzer_G3,$M147)
+ ;Page 12 Title : RLT Pumpe
+  ;prio : 14 
+  ODR2 ($M145,$M138,$M144)
+  ;prio : 15 
+  ODRMN (1,$M144,1,Stoerung_RLT_Pumpe,$M143,$M141)
+  ;prio : 16 
+  UHR ($M141,$M143,$M137)
+  ;prio : 17 
+  MULT (K_float_168,K_float_3600,$M140)
+  ;prio : 18 
+  VGLOH ($M137,$M140,$M139)
+  ;prio : 19 
+  MOKY ($M139,K_float_300,$M138)
+  ;prio : 21 
+  ODRMN (8,Freigabe_Kassenzone_BEFAUS,Freigabe_LagerOG_BEFAUS,
+   Freigabe_LagerbueroEG_Lufterhitzer,Freigabe_WarenausgabeEG_BEFAUS,
+   Freigabe_neueAnlieferung_Gruppe1,Freigabe_neueAnlieferung_Gruppe2,
+   BF_Pumpe_Erhitzer_EIN,Freigabe_neueAnlieferung_Gruppe3,0,$M145,
+   $out-odrmn-121-binv)
+  ;prio : 22 
+  UNDMN (1,$M144,1,Stoerung_RLT_Pumpe,Freigabe_Pumpe_RLT_BEFAUS,
+   $out-undmn-122-binv)
+ ;Page 13 Title : NebenlÅftung
+  ;prio : 12 
+  UNDMN (1,Freigabe_Nebenlueftung_EIN,2,$M185,Stoerung_Abschaltstoerung,
+   Freigabe_Nebenlueftung_BEFAUS,$out-undmn-123-binv)
+  ;prio : 13 
+  UNDMN (1,Freigabe_Abluefter_LagerWC_EIN,1,Stoerung_Abschaltstoerung,
+   Freigabe_Abluefter_LagerWC_BEFAUS,$out-undmn-124-binv)
+  ;prio : 14 
+  UNDMN (1,Freigabe_Abluefter_KundenWC_EIN,1,Stoerung_Abschaltstoerung,
+   Freigabe_Abluefter_KundenWC_BEFAUS,$out-undmn-125-binv)
+  ;prio : 15 
+  UNDMN (1,Freigabe_Abluefter_AMR_EIN,1,Stoerung_Abschaltstoerung,
+   Freigabe_Abluefter_AMR_BEFAUS,$out-undmn-126-binv)
+  ;prio : 16 
+  NICHT (Stoerung_Nebenluftanlage_Lager,$M185)
+ ENDE 
+ ;name : Task_Ausgabe
+ TASK (4,cycl,1000)
+ ;Page 1 Title : Sammelstoerung
+  ;prio : 7 
+  SETMEL (K_1,1,Stoerung_Abschaltstoerung,&1380HEI00ST920,$out-setmel-127-error)
+ ;Page 2 Title : Statische Heizung
+  ;prio : 1 
+  NICHT (Freigabe_Pumpe_statHeizung_BEFAUS,$M75)
+  ;prio : 2 
+  BEFAUS (1,$M75,Freigabe_Pumpe_statHeizung_BEFAUS,$WZERO,$WZERO,&1380HEI01BF001,
+   $out-befaus-128-error)
+  ;prio : 3 
+  ANAUS (Ansteuerung_Ventil,K_1,&1380HEI01SB001,$out-anaus-129-error)
+ ;Page 3 Title : Lager OG
+  ;prio : 1 
+  NICHT (Freigabe_LagerOG_BEFAUS,$M100)
+  ;prio : 2 
+  BEFAUS (1,$M100,Freigabe_LagerOG_BEFAUS,$WZERO,$WZERO,&1380HEI02BF001,
+   $out-befaus-130-error)
+ ;Page 4 Title : Warenausgabe EG
+  ;prio : 1 
+  NICHT (Freigabe_WarenausgabeEG_BEFAUS,$M102)
+  ;prio : 2 
+  BEFAUS (1,$M102,Freigabe_WarenausgabeEG_BEFAUS,$WZERO,$WZERO,&1380HEI03BF001,
+   $out-befaus-131-error)
+ ;Page 5 Title : Eingang / Ausgang
+  ;prio : 1 
+  NICHT (Freigabe_EingangAusgang_BEFAUS,$M108)
+  ;prio : 2 
+  BEFAUS (1,$M108,Freigabe_EingangAusgang_BEFAUS,$WZERO,$WZERO,&1380HEI04BF001,
+   $out-befaus-132-error)
+ ;Page 6 Title : Kassenzone
+  ;prio : 5 
+  NICHT (Freigabe_Kassenzone_BEFAUS,$M112)
+  ;prio : 6 
+  BEFAUS (1,$M112,Freigabe_Kassenzone_BEFAUS,$WZERO,$WZERO,&1380HEI05BF001,
+   $out-befaus-133-error)
+ ;Page 7 Title : LagerbÅro EG
+  ;prio : 5 
+  NICHT (Freigabe_LagerbueroEG_Lufterhitzer,$M123)
+  ;prio : 6 
+  BEFAUS (1,$M123,Freigabe_LagerbueroEG_Lufterhitzer,$WZERO,$WZERO,
+   &1380HEI06BF001,$out-befaus-134-error)
+ ;Page 8 Title : neue Anlieferung
+  ;prio : 13 
+  NICHT (Freigabe_neueAnlieferung_Gruppe1,$M133)
+  ;prio : 14 
+  BEFAUS (1,$M133,Freigabe_neueAnlieferung_Gruppe1,$WZERO,$WZERO,&1380HEI07BF001,
+   $out-befaus-135-error)
+  ;prio : 15 
+  NICHT (Freigabe_neueAnlieferung_Gruppe1,$M134)
+  ;prio : 16 
+  BEFAUS (1,$M134,Freigabe_neueAnlieferung_Gruppe1,$WZERO,$WZERO,&1380HEI07BF003,
+   $out-befaus-136-error)
+  ;prio : 17 
+  NICHT (Freigabe_neueAnlieferung_Gruppe2,$M135)
+  ;prio : 18 
+  BEFAUS (1,$M135,Freigabe_neueAnlieferung_Gruppe2,$WZERO,$WZERO,&1380HEI07BF002,
+   $out-befaus-137-error)
+  ;prio : 21 
+  NICHT (Freigabe_neueAnlieferung_Gruppe3,$M150)
+  ;prio : 22 
+  BEFAUS (1,$M150,Freigabe_neueAnlieferung_Gruppe3,$WZERO,$WZERO,&1380HEI07BF005,
+   $out-befaus-138-error)
+ ;Page 9 Title : RLT Pumpe
+  ;prio : 4 
+  NICHT (Freigabe_Pumpe_RLT_BEFAUS,$M146)
+  ;prio : 5 
+  BEFAUS (1,$M146,Freigabe_Pumpe_RLT_BEFAUS,$WZERO,$WZERO,&1380HEI08BF001,
+   $out-befaus-139-error)
+ ;Page 10 Title : Nebenlueftung Lager
+  ;prio : 3 
+  NICHT (Freigabe_Nebenlueftung_BEFAUS,$M181)
+  ;prio : 4 
+  BEFAUS (1,$M181,Freigabe_Nebenlueftung_BEFAUS,$WZERO,$WZERO,&1380LUE07BF001,
+   $out-befaus-140-error)
+ ;Page 11 Title : Abluefter Nebenanlagen
+  ;prio : 5 
+  NICHT (Freigabe_Abluefter_LagerWC_BEFAUS,$M182)
+  ;prio : 6 
+  BEFAUS (1,$M182,Freigabe_Abluefter_LagerWC_BEFAUS,$WZERO,$WZERO,
+   &1380LUE04BF001,$out-befaus-141-error)
+  ;prio : 7 
+  NICHT (Freigabe_Abluefter_KundenWC_BEFAUS,$M183)
+  ;prio : 8 
+  BEFAUS (1,$M183,Freigabe_Abluefter_KundenWC_BEFAUS,$WZERO,$WZERO,
+   &1380LUE05BF001,$out-befaus-142-error)
+  ;prio : 9 
+  NICHT (Freigabe_Abluefter_AMR_BEFAUS,$M184)
+  ;prio : 10 
+  BEFAUS (1,$M184,Freigabe_Abluefter_AMR_BEFAUS,$WZERO,$WZERO,&1380LUE09BF001,
+   $out-befaus-143-error)
+ ENDE 
+ENDMODUL

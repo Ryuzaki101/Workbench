@@ -1,0 +1,87 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2003.GPS
+  ;*** Projektname    : AAlto- Theater US09
+  ;*** Projektnummer  : 126187
+  ;*** Bearbeiter     : W.Donner
+  ;*** Prüfer         : W.Donner
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 9
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV ZULUFTTEMP.A5
+  FloatV ZULUFTFEUCH.A5
+  FloatV ABLUFTTEMP.A5
+  FloatV ABLUFTFEUCH.A5
+  WordV  ENTH01
+  WordV  ENTH03
+  WordV  ENTH02
+  FloatV abs-feuchte-zul
+  FloatV abs-feuchte-abl
+  FloatV AUSSENTEMP.A5
+  FloatV AUSSENFEUCHTE.A5
+  FloatV ENTH-ZULUFT.A5
+  FloatV ENTH-ABLUFT.A5
+  FloatV ENTH-AUSSEN.A5
+  IPAAW &04B-KL050-105 (36)
+  WordV  $WSCRATCH
+  IPAAW &04B-KL050-106 (34)
+  IPAAW &04B-KL050-205 (38)
+  IPAAW &04B-KL050-206 (35)
+  IPAAW &04B-KL050-005 (26)
+  IPAAW &04B-KL050-006 (25)
+  FloatK $M0 (101300.00)
+  WordK  $M1 (1)
+  IPAAW &04B-KL050-107 (150)
+  FloatK $M2 (101300.00)
+  WordK  $M3 (1)
+  IPAAW &04B-KL050-207 (151)
+  FloatK $M4 (101300.00)
+  WordK  $M5 (1)
+  IPAAW &04B-KL050-007 (153)
+  WordK  $M6 (1)
+  IPAAW &04B-KL050-971 (154)
+  WordK  $M7 (1)
+  IPAAW &04B-KL050-972 (155)
+  WordK  $M8 (1)
+  IPAAW &04B-Kl050-973 (156)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANEIN (&04B-KL050-105,ZULUFTTEMP.A5,$WSCRATCH)
+  ANEIN (&04B-KL050-106,ZULUFTFEUCH.A5,$WSCRATCH)
+  ANEIN (&04B-KL050-205,ABLUFTTEMP.A5,$WSCRATCH)
+  ANEIN (&04B-KL050-206,ABLUFTFEUCH.A5,$WSCRATCH)
+  ANEIN (&04B-KL050-005,AUSSENTEMP.A5,$WSCRATCH)
+  ANEIN (&04B-KL050-006,AUSSENFEUCHTE.A5,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ABFEUG (ZULUFTFEUCH.A5,ZULUFTTEMP.A5,$M0,abs-feuchte-zul)
+  ENTHAG (abs-feuchte-zul,ZULUFTTEMP.A5,ENTH-ZULUFT.A5)
+  ANAUS (abs-feuchte-zul,$M1,&04B-KL050-107,$WSCRATCH)
+  ABFEUG (ABLUFTFEUCH.A5,ABLUFTTEMP.A5,$M2,abs-feuchte-abl)
+  ENTHAG (abs-feuchte-abl,ABLUFTTEMP.A5,ENTH-ABLUFT.A5)
+  ANAUS (abs-feuchte-abl,$M3,&04B-KL050-207,$WSCRATCH)
+  ABFEUG (AUSSENFEUCHTE.A5,AUSSENTEMP.A5,$M4,abs-feuchte-abl)
+  ENTHAG (abs-feuchte-abl,AUSSENTEMP.A5,ENTH-AUSSEN.A5)
+  ANAUS (abs-feuchte-abl,$M5,&04B-KL050-007,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ANAUS (ENTH-ZULUFT.A5,$M6,&04B-KL050-971,ENTH01)
+  ANAUS (ENTH-ABLUFT.A5,$M7,&04B-KL050-972,ENTH02)
+  ANAUS (ENTH-AUSSEN.A5,$M8,&04B-Kl050-973,ENTH03)
+  ENDE 
+  ENDMODUL 

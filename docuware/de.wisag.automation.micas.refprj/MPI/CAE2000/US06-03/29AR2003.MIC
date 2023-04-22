@@ -1,0 +1,1585 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 06_03_03.GPS
+  ;*** Projektname    : MAX-PLANCK-INSTITUT
+  ;*** Projektnummer  : 39117730
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 3
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (ar20,3)
+  WordV  A_SAMMEL_ST_125
+  WordV  E_UK_ST_1_125
+  WordV  E_BSK_2_130
+  WordK  K0_STATUS (0)
+  WordV  Z_KEILR_ST_130
+  WordV  E_P_DIF_S_130
+  WordV  Z_TIEFER_125
+  WordV  Z_HôHER_107
+  WordV  ERR
+  WordV  A_STUFE_1_125
+  WordV  E_FREIG_EIN_126
+  FloatV A_MISCHBOX_119
+  WordV  E_FERN_AUTO_125
+  WordK  K1_STATUS (1)
+  WordV  Z_HAUPT_EIN_125
+  WordV  Z_HAUPT_EIN_126
+  FloatK K10_PROZENT (10.00)
+  WordV  A_STUFE_2_125
+  FloatK K0.5_WERT (0.50)
+  WordV  A_STUFE_3_125
+  WordV  E_FREIG_EIN_107
+  WordV  A_SAMMEL_ST_107
+  WordV  Z_HôHER_125
+  WordV  Z_HAUPT_EIN_107
+  FloatV E_X_107
+  FloatV E_W_107
+  WordV  E_FERN_AUTO_107
+  FloatV A_KUEHL_107
+  WordV  Z_TIEFER_107
+  WordV  A_STUFE_1_107
+  WordV  A_STUFE_2_107
+  WordV  A_STUFE_3_107
+  WordV  E_BSK_3_107
+  WordV  E_BSK_4_107
+  WordV  E_BSK_5_107
+  WordV  E_BSK_6_107
+  WordV  E_BSK_7_107
+  WordV  A_SAMMEL_ST_119
+  WordV  E_SPEIS_ST
+  WordV  E_STEUER_ST
+  WordV  E_BSK_1_119
+  WordV  E_BSK_2_119
+  FloatV E_X_119
+  FloatV E_W_119
+  WordV  E_FREIG_EIN_125
+  WordV  Z_QUITT
+  FloatV E_X_125
+  FloatV E_W_125
+  WordV  E_UK_ST_1_126
+  WordV  A_SAMMEL_ST_126
+  FloatV E_X_126
+  FloatV E_W_126
+  WordV  E_FERN_AUTO_126
+  WordV  A_FREIG_AUS_130
+  WordV  Z_TIEFER_126
+  WordV  Z_HôHER_126
+  WordV  A_STUFE_3_126
+  WordV  A_STUFE_2_126
+  WordV  A_STUFE_1_126
+  WordV  E_FREIG_EIN_130
+  WordV  Z_HAUPT_EIN_130
+  WordV  A_ST_ABS_ST_130
+  WordV  E_BSK_1_130
+  WordV  E_UK_ST_1_130
+  WordV  A_SAMMEL_ST_130
+  FloatV E_X_130
+  FloatV E_W_130
+  WordV  E_FERN_AUTO_130
+  WordV  Z_ZUSATZ_KU_130
+  FloatV A_MISCHBOX_130
+  WordV  Z_HôHER_130
+  WordV  Z_TIEFER_130
+  FloatV A_KUEHL_130
+  WordV  A_STUFE_1_130
+  WordV  A_STUFE_2_130
+  WordV  A_STUFE_3_130
+  WordV  E_RM_VE_EIN_130
+  WordV  E_SCHLUESSEL_130
+  WordV  R_VP_FREIG
+  WordV  A_QUITT_AUS
+  WordV  E_RM_2_126
+  WordV  E_RM_3_126
+  WordV  E_RM_1_130
+  WordV  E_RM_2_130
+  WordV  E_RM_3_130
+  FloatV Z_KUEHL_107
+  WordV  E_VENT_ST_130
+  WordV  E_ST_MILLIP_126
+  WordV  E_RM_QUITT
+  WordV  Z_STUFE_1_107
+  WordV  E_BM_QUITT
+  WordV  A_VENT_EIN_130
+  FloatV A_KUEHL_125
+  FloatV Z_KUEHL_125
+  FloatV A_KUEHL_126
+  FloatV Z_KUEHL_126
+  WordV  Z_STUFE_1_125
+  WordV  Z_STUFE_1_126
+  WordV  E_RM_1_107
+  WordV  E_RM_2_107
+  WordV  E_RM_3_107
+  WordV  E_RM_1_125
+  WordV  E_RM_2_125
+  WordV  E_RM_3_125
+  WordV  E_RM_1_126
+  WordV  A_KEILR_ST_130
+  WordK  K_FREIG_EIN_107 (1)
+  WordK  K_FREIG_EIN_125 (1)
+  WordV  E_-P_131
+  WordV  A_P-KLAPP_ZU_131
+  WordK  K_FREIG_EIN_126 (1)
+  WordK  K_FREIG_EIN_130 (1)
+  WordV  E_UK_ST_1_107
+  FloatK K_W_107 (22.00)
+  FloatK K_W_119 (20.00)
+  FloatK K_W_125 (22.00)
+  FloatK K_W_126 (22.00)
+  FloatK K_W_130 (20.00)
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (206,1)
+  IPAMB &M1 (206,9)
+  IPAMB &M2 (206,13)
+  IPAMB &M3 (207,1)
+  IPAAW &M4 (192)
+  IPAAW &M5 (194)
+  IPAAW &M6 (196)
+  IPAAW &M7 (198)
+  IPAAW &M8 (200)
+  IPAMB &M9 (206,3)
+  IPAMB &M10 (206,11)
+  IPAMB &M11 (206,15)
+  IPAMB &M12 (207,3)
+  IPAMB &M13 (45,15)
+  IPAMB &M14 (45,14)
+  IPAMB &M15 (55,10)
+  IPAMB &M16 (55,14)
+  WordV  $HB2
+  IPAMB &M17 (55,15)
+  IPAMB &M18 (66,11)
+  IPAMB &M19 (66,15)
+  IPAMB &M20 (67,11)
+  IPAMB &M21 (38,15)
+  IPAMB &M22 (67,10)
+  IPAMB &M23 (54,7)
+  IPAMB &M24 (55,2)
+  IPAMB &M25 (55,3)
+  IPAMB &M26 (53,10)
+  IPAMB &M27 (53,11)
+  IPAMB &M28 (53,6)
+  IPAMB &M29 (53,7)
+  IPAMB &M30 (45,10)
+  IPAMB &M31 (39,6)
+  IPAMB &M32 (44,11)
+  IPAMB &M33 (44,15)
+  IPAMB &M34 (45,11)
+  IPAMB &M35 (39,7)
+  IPAMB &M36 (69,2)
+  IPAMB &M37 (68,3)
+  IPAMB &M38 (68,7)
+  IPAMB &M39 (69,3)
+  IPAMB &M40 (43,10)
+  IPAMB &M41 (42,2)
+  IPAMB &M42 (18,2)
+  IPAMB &M43 (42,3)
+  IPAMB &M44 (18,3)
+  IPAMB &M45 (18,6)
+  IPAMB &M46 (52,10)
+  IPAMB &M47 (52,11)
+  IPAMB &M48 (42,11)
+  IPAMB &M49 (42,15)
+  IPAMB &M50 (43,11)
+  IPAMB &M51 (38,10)
+  IPAAW &M57 (25)
+  IPAAW &M58 (7)
+  IPAAW &M59 (23)
+  IPAAW &M60 (24)
+  IPAAW &M61 (8)
+  FloatK $M62 (8.00)
+  WordV  $B1
+  FloatK $M63 (8.00)
+  WordV  $B2
+  FloatK $M64 (8.00)
+  WordV  $B3
+  FloatK $M65 (8.00)
+  WordV  $B4
+  WordV  $B5
+  WordV  $WSCRATCH
+  FloatK $M66 (4.00)
+  FloatK $M67 (4.00)
+  FloatK $M68 (0.00)
+  WordV  $B6
+  FloatK $M69 (4.00)
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  FloatK $M70 (4.00)
+  FloatK $M71 (0.00)
+  WordV  $B11
+  FloatK $M72 (100.00)
+  FloatV $F1
+  FloatK $M73 (0.00)
+  FloatK $M74 (100.00)
+  FloatK $M75 (100.00)
+  FloatK $M76 (0.00)
+  WordV  $B12
+  WordV  $B13
+  FloatK $M77 (0.00)
+  FloatK $M78 (300.00)
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M79 (90.00)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  FloatV $F2
+  FloatK $M80 (600.00)
+  WordV  $B20
+  FloatK $M81 (4.00)
+  FloatV $F3
+  FloatK $M82 (600.00)
+  WordV  $B21
+  FloatK $M83 (4.00)
+  FloatK $M84 (1.00)
+  FloatK $M85 (0.00)
+  FloatV $F4
+  FloatV $F5
+  FloatK $M86 (1.00)
+  WordV  $B22
+  FloatK $M87 (2.00)
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  FloatK $M88 (50.00)
+  FloatV $F6
+  FloatK $M89 (0.00)
+  FloatK $M90 (100.00)
+  FloatK $M91 (100.00)
+  FloatK $M92 (0.00)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  FloatK $M93 (4.00)
+  FloatK $M94 (0.00)
+  WordV  $B35
+  FloatK $M95 (100.00)
+  FloatV $F7
+  FloatK $M96 (0.00)
+  FloatK $M97 (100.00)
+  FloatK $M98 (100.00)
+  FloatK $M99 (0.00)
+  WordV  $B36
+  WordV  $B37
+  FloatK $M100 (0.00)
+  FloatK $M101 (300.00)
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  FloatK $M102 (90.00)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  FloatV $F8
+  FloatK $M103 (600.00)
+  WordV  $B44
+  FloatK $M104 (4.00)
+  FloatV $F9
+  FloatK $M105 (600.00)
+  WordV  $B45
+  FloatK $M106 (4.00)
+  FloatK $M107 (1.00)
+  FloatK $M108 (0.00)
+  FloatV $F10
+  FloatV $F11
+  FloatK $M109 (1.00)
+  WordV  $B46
+  FloatK $M110 (2.00)
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  FloatK $M111 (4.00)
+  FloatK $M112 (0.00)
+  WordV  $B55
+  FloatK $M113 (100.00)
+  FloatV $F12
+  FloatK $M114 (0.00)
+  FloatK $M115 (100.00)
+  FloatK $M116 (100.00)
+  FloatK $M117 (0.00)
+  WordV  $B56
+  WordV  $B57
+  FloatK $M118 (0.00)
+  FloatK $M119 (300.00)
+  WordV  $B58
+  WordV  $B59
+  WordV  $B60
+  FloatK $M120 (90.00)
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  FloatV $F13
+  FloatK $M121 (600.00)
+  WordV  $B64
+  FloatK $M122 (4.00)
+  FloatV $F14
+  FloatK $M123 (600.00)
+  WordV  $B65
+  FloatK $M124 (4.00)
+  FloatK $M125 (1.00)
+  FloatK $M126 (0.00)
+  FloatV $F15
+  FloatV $F16
+  FloatK $M127 (1.00)
+  WordV  $B66
+  FloatK $M128 (2.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  WordV  $B76
+  WordV  $B77
+  FloatK $M129 (4.00)
+  FloatK $M130 (0.00)
+  FloatK $M131 (30.00)
+  FloatK $M132 (0.00)
+  WordV  $B78
+  FloatK $M133 (10.00)
+  FloatK $M134 (0.00)
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  FloatK $M135 (50.00)
+  FloatV $F17
+  FloatK $M136 (0.00)
+  FloatK $M137 (100.00)
+  FloatK $M138 (100.00)
+  FloatK $M139 (0.00)
+  FloatK $M140 (95.00)
+  FloatK $M141 (5.00)
+  WordV  $B82
+  WordV  $B83
+  WordV  $B84
+  WordV  $HB4
+  FloatK $M142 (100.00)
+  WordK  $M143 (2)
+  FloatK $M144 (10.00)
+  FloatK $M145 (40.00)
+  FloatK $M146 (80.00)
+  FloatK $M147 (0.00)
+  FloatK $M148 (16.00)
+  FloatK $M149 (30.00)
+  FloatK $M150 (0.00)
+  FloatK $M151 (0.00)
+  FloatK $M152 (100.00)
+  FloatV $F18
+  WordV  $B85
+  FloatK $M153 (90.00)
+  WordV  $B86
+  WordV  $B87
+  WordV  $B88
+  FloatV $F19
+  FloatK $M154 (600.00)
+  WordV  $B89
+  FloatK $M155 (4.00)
+  FloatV $F20
+  FloatK $M156 (600.00)
+  WordV  $B90
+  FloatK $M157 (4.00)
+  FloatK $M158 (0.00)
+  FloatK $M159 (100.00)
+  FloatK $M160 (100.00)
+  FloatK $M161 (0.00)
+  FloatK $M162 (1.00)
+  FloatK $M163 (0.00)
+  FloatV $F21
+  FloatV $F22
+  FloatK $M164 (1.00)
+  WordV  $B91
+  FloatK $M165 (2.00)
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  WordV  $B95
+  FloatK $M166 (0.00)
+  FloatK $M167 (10.00)
+  IPAMB &M168 (206,2)
+  IPAMB &M169 (206,6)
+  IPAMB &M170 (206,10)
+  IPAMB &M171 (206,14)
+  IPAMB &M172 (207,2)
+  IPAMB &M173 (207,0)
+  IPAMB &M175 (45,13)
+  IPAMB &M176 (66,9)
+  IPAMB &M177 (66,13)
+  IPAMB &M178 (67,9)
+  IPAMB &M179 (44,9)
+  IPAMB &M180 (44,13)
+  IPAMB &M181 (45,9)
+  IPAMB &M182 (68,1)
+  IPAMB &M183 (68,5)
+  IPAMB &M184 (69,1)
+  IPAMB &M185 (42,9)
+  IPAMB &M186 (42,13)
+  IPAMB &M187 (43,9)
+  IPAMB &M188 (42,1)
+  IPAMB &M189 (66,1)
+  IPAAW &M190 (34)
+  IPAAW &M191 (32)
+  IPAAW &M192 (33)
+  IPAAW &M193 (17)
+  IPAAW &M194 (15)
+  IPAAW &M195 (16)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;fÅr Bio-Physikalische
+  ;Chemie Gîttingen
+  ;KUNDE:
+  ;------------------------
+  ; 
+  ;0NLAGE:
+  ;------------------------
+  ;Turm 6 1.OG
+  ;Raum 107
+  ;Raum 119
+  ;Raum 125
+  ;Raum 126
+  ;Raum 130
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrÅcklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB GebÑudeautomation
+  ;geÑndert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Daten Einlesen
+  ;Task 3= Steuerung und
+  ;        Regelung
+  ;Task 4= Daten ausgeben
+  ;A
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ERR_ =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Stîrungs Var.
+  ;_RM_ = RÅckmeld. Var.
+  ;_MW_ = Me·wert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;T6-LU01-07A-X50
+  ; 
+  NICHT (K_FREIG_EIN_107,$HB0)
+  BEFAUS (1,$HB0,K_FREIG_EIN_107,$WZERO,$WZERO,&M0,ERR)
+  ;HAUPTSCHALTBEFEHL
+  ;NACHFAHREN
+  ;RAUM 107
+  ;_
+  ; 
+  ;T6-LU01-25A-X50
+  ; 
+  NICHT (K_FREIG_EIN_125,$HB0)
+  BEFAUS (1,$HB0,K_FREIG_EIN_125,$WZERO,$WZERO,&M1,ERR)
+  ;HAUPTSCHALTBEFEHL
+  ;NACHFAHREN
+  ;RAUM 125
+  ; 
+  ;T6-LU01-26A-X50
+  ; 
+  NICHT (K_FREIG_EIN_126,$HB0)
+  BEFAUS (1,$HB0,K_FREIG_EIN_126,$WZERO,$WZERO,&M2,ERR)
+  ;HAUPTSCHAKTBEFEHL
+  ;NACHFAHREN
+  ;RAUM 126
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;T6-LU01-30A-X50
+  ; 
+  NICHT (K_FREIG_EIN_130,$HB0)
+  BEFAUS (1,$HB0,K_FREIG_EIN_130,$WZERO,$WZERO,&M3,ERR)
+  ;HAUPTSCHALTBEFEHL
+  ;NACHFAHREN
+  ;RAUM 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;T6-LU01-07A-T50
+  ; 
+  ANAUS (K_W_107,K1_STATUS,&M4,ERR)
+  ;SOLLWERT NACHFAHREN
+  ;RAUM 107
+  ; 
+  ;T6-LU01-19A-T50
+  ; 
+  ANAUS (K_W_119,K1_STATUS,&M5,ERR)
+  ;SOLLWERT NACHFAHREN
+  ;RAUM 119
+  ; 
+  ;T6-LU01-25A-T50
+  ; 
+  ANAUS (K_W_125,K1_STATUS,&M6,ERR)
+  ;SOLLWERT NACHFAHREN
+  ;RAUM 125
+  ; 
+  ;T6-LU01-26A-T50
+  ; 
+  ANAUS (K_W_126,K1_STATUS,&M7,ERR)
+  ;SOLLWERT NACHFAHREN
+  ;RAUM 126
+  ; 
+  ;T6-LU01-30A-T50
+  ; 
+  ANAUS (K_W_130,K1_STATUS,&M8,ERR)
+  ;SOLLWERT NACHFAHREN
+  ;RAUM 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;Hauptschaltbefehl
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-X50
+  ; 
+  MELEIN (&M9,1,K_FREIG_EIN_107,ERR)
+  BTRA (K_FREIG_EIN_107,E_FREIG_EIN_107)
+  ;Hauptschaltbefehl
+  ;Raum 125
+  ; 
+  ;T6-LU01-25A-X50
+  ; 
+  MELEIN (&M10,1,K_FREIG_EIN_125,ERR)
+  BTRA (K_FREIG_EIN_125,E_FREIG_EIN_125)
+  ;Hauptschaltbefehl
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-X50
+  ; 
+  MELEIN (&M11,1,K_FREIG_EIN_126,ERR)
+  BTRA (K_FREIG_EIN_126,E_FREIG_EIN_126)
+  ;Hauptschaltbefehl
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X50
+  ; 
+  MELEIN (&M12,1,K_FREIG_EIN_130,ERR)
+  BTRA (K_FREIG_EIN_130,E_FREIG_EIN_130)
+  ;RÅckmeldung
+  ;Quittierung GLT
+  ; 
+  ;T6-UV01-01A-X00
+  ; 
+  MELEIN (&M13,1,E_RM_QUITT,ERR)
+  ;Meldung
+  ;Quittierung
+  ;Schaltschrank
+  ; 
+  ;T6-UV01-01A-B00
+  ;S
+  ; 
+  MELEIN (&M14,1,E_BM_QUITT,ERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;Stîrung
+  ;Millipor-Anlage
+  ; 
+  ;T6-SO01-26A-S01
+  ; 
+  MELEIN (&M15,1,E_ST_MILLIP_126,ERR)
+  ;Stîrung Einspeisung
+  ;Schaltschrank
+  ; 
+  ;T6-AS03-00A-S01
+  ; 
+  MELEIN (&M16,1,$HB2,ERR)
+  NICHT ($HB2,E_SPEIS_ST)
+  ;Stîrung Steuer-
+  ;Sicherung
+  ;Schaltschrank
+  ; 
+  ;T6-AS03-00A-S02
+  ; 
+  MELEIN (&M17,1,$HB2,ERR)
+  NICHT ($HB2,E_STEUER_ST)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;RÅckmeldung Stufe 1
+  ;UmluftkÅhler
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-X11
+  ; 
+  MELEIN (&M18,1,E_RM_1_107,ERR)
+  ;RÅckmeldung Stufe 2
+  ;UmluftkÅhler
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-X12
+  ; 
+  MELEIN (&M19,1,E_RM_2_107,ERR)
+  ;RÅckmeldung Stufe 3
+  ;UmluftkÅhler
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-X13
+  ; 
+  MELEIN (&M20,1,E_RM_3_107,ERR)
+  ;Raumfernschalter
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-B11
+  ; 
+  MELEIN (&M21,1,$HB2,ERR)
+  NICHT ($HB2,E_FERN_AUTO_107)
+  ;Stîrung Sicherung
+  ;UmluftkÅhler
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-S11
+  ; 
+  MELEIN (&M22,1,$HB2,ERR)
+  NICHT ($HB2,E_UK_ST_1_107)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Brandschutzklappe 3
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-A03
+  ; 
+  MELEIN (&M23,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_3_107)
+  ;Brandschutzklappe 4
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-A04
+  ; 
+  MELEIN (&M24,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_4_107)
+  ;Brandschutzklappe 5
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-A05
+  ; 
+  MELEIN (&M25,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_5_107)
+  ;Brandschutzklappe 6
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-A06
+  ; 
+  MELEIN (&M26,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_6_107)
+  ;Brandschutzklappe 7
+  ;Raum 107
+  ; 
+  ;T6-LU01-07A-A07
+  ; 
+  MELEIN (&M27,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_7_107)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Brandschutzklappe 1
+  ;Raum 119
+  ; 
+  ;T6-LU01-19A-A01
+  ; 
+  MELEIN (&M28,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_1_119)
+  ;Brandschutzklappe 2
+  ;Raum 119
+  ; 
+  ;T6-LU01-19A-A02
+  ; 
+  MELEIN (&M29,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_2_119)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Stîrung Sicherung
+  ;UmluftkÅhler
+  ;Raum 125
+  ; 
+  ;T6-LU01-25A-S11
+  ; 
+  MELEIN (&M30,1,$HB2,ERR)
+  NICHT ($HB2,E_UK_ST_1_125)
+  ;Raumfernschalter
+  ;Raum 125
+  ;R
+  ; 
+  ;T6-LU01-25A-B11
+  ; 
+  MELEIN (&M31,1,$HB2,ERR)
+  NICHT ($HB2,E_FERN_AUTO_125)
+  ;RÅckmeldung Stufe 1
+  ;UmluftkÅhler
+  ;Raum 125
+  ; 
+  ;T6-LU01-25A-X11
+  ; 
+  MELEIN (&M32,1,E_RM_1_125,ERR)
+  ;RÅckmeldung Stufe 2
+  ;UmluftkÅhler
+  ;Raum 125
+  ; 
+  ;T6-LU01-25A-X12
+  ; 
+  MELEIN (&M33,1,E_RM_2_125,ERR)
+  ;RÅckmeldung Stufe 3
+  ;UmluftkÅhler
+  ;Raum 125
+  ; 
+  ;T6-LU01-25A-X13
+  ; 
+  MELEIN (&M34,1,E_RM_3_125,ERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;Raumfernschalter
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-B11
+  ; 
+  MELEIN (&M35,1,$HB2,ERR)
+  NICHT ($HB2,E_FERN_AUTO_126)
+  ;Stîrung Sicherung
+  ;UmluftkÅhler
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-S11
+  ; 
+  MELEIN (&M36,1,$HB2,ERR)
+  NICHT ($HB2,E_UK_ST_1_126)
+  ;RÅckmeldung Stufe 1
+  ;UmluftkÅhler
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-X11
+  ; 
+  MELEIN (&M37,1,E_RM_1_126,ERR)
+  ;RÅckmeldung Stufe 2
+  ;UmluftkÅhler
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-X12
+  ; 
+  MELEIN (&M38,1,E_RM_2_126,ERR)
+  ;RÅckmeldung Stufe 3
+  ;UmluftkÅhler
+  ;Raum 126
+  ; 
+  ;T6-LU01-26A-X13
+  ; 
+  MELEIN (&M39,1,E_RM_3_126,ERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;Stîrung Sicherung
+  ;UmluftkÅhler
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-S11
+  ; 
+  MELEIN (&M40,1,$HB2,ERR)
+  NICHT ($HB2,E_UK_ST_1_130)
+  ;STîrung
+  ;Ventilator
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X01
+  ; 
+  MELEIN (&M41,1,$HB2,ERR)
+  NICHT ($HB2,E_VENT_ST_130)
+  ;Luftstrom-
+  ;öberwachung
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-P01
+  ; 
+  MELEIN (&M42,1,$HB2,ERR)
+  NICHT ($HB2,E_P_DIF_S_130)
+  ;RÅckmeldung
+  ;Ventilator Ein
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X01
+  ; 
+  MELEIN (&M43,1,E_RM_VE_EIN_130,ERR)
+  ;SchlÅsselschalter
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-B10
+  ; 
+  MELEIN (&M44,1,$HB2,ERR)
+  NICHT ($HB2,E_SCHLUESSEL_130)
+  ;Raumfernschalter
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-B11
+  ; 
+  MELEIN (&M45,1,$HB2,ERR)
+  NICHT ($HB2,E_FERN_AUTO_130)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;Brandschutzklappe 1
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-A01
+  ; 
+  MELEIN (&M46,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_1_130)
+  ;Brandschutzklappe 2
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-A02
+  ; 
+  MELEIN (&M47,1,$HB2,ERR)
+  NICHT ($HB2,E_BSK_2_130)
+  ;RÅckmeldung Stufe 1
+  ;UmluftkÅhler
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X11
+  ; 
+  MELEIN (&M48,1,E_RM_1_130,ERR)
+  ;RÅckmeldung Stufe 2
+  ;UmluftkÅhler
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X12
+  ; 
+  MELEIN (&M49,1,E_RM_2_130,ERR)
+  ;RÅckmeldung Stufe 3
+  ;UmluftkÅhler
+  ;Raum 130
+  ; 
+  ;T6-LU01-30A-X13
+  ; 
+  MELEIN (&M50,1,E_RM_3_130,ERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;Raum-Unterdruck-
+  ;öberwachung Raum 131
+  ; 
+  ;T6-LU01-31A-P11
+  ; 
+  MELEIN (&M51,1,$HB2,ERR)
+  NICHT ($HB2,E_-P_131)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&M4,K_W_107,ERR)
+  ATRA (K_W_107,E_W_107)
+  ;T6-LU01-07A-T50
+  ; 
+  ;Sollwert
+  ;Raumtemperatur 107
+  ; 
+  ANEIN (&M5,K_W_119,ERR)
+  ATRA (K_W_119,E_W_119)
+  ;T6-LU01-19A-T50
+  ; 
+  ;Sollwert
+  ;Raumtemperatur 119
+  ; 
+  ANEIN (&M6,K_W_125,ERR)
+  ATRA (K_W_125,E_W_125)
+  ;T6-LU01-25A-T50
+  ; 
+  ;Sollwert
+  ;Raumtemperatur 125
+  ; 
+  ANEIN (&M7,K_W_126,ERR)
+  ATRA (K_W_126,E_W_126)
+  ;T6-LU01-26A-T50
+  ; 
+  ;Sollwert
+  ;Raumtemperatur 126
+  ; 
+  ANEIN (&M8,K_W_130,ERR)
+  ATRA (K_W_130,E_W_130)
+  ;T6-LU01-30A-T50
+  ; 
+  ;Sollwert
+  ;Raumtemperatur 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ANEIN (&M57,E_X_107,ERR)
+  ;T6-LU01-07A-T01
+  ; 
+  ;Raumtemperatur 107
+  ; 
+  ANEIN (&M58,E_X_119,ERR)
+  ;T6-LU01-19A-T01
+  ; 
+  ;Raumtemperatur 119
+  ; 
+  ANEIN (&M59,E_X_125,ERR)
+  ;T6-LU01-25A-T01
+  ; 
+  ;Raumtemperatur 125
+  ; 
+  ANEIN (&M60,E_X_126,ERR)
+  ;T6-LU01-26A-T01
+  ; 
+  ;Raumtemperatur 126
+  ; 
+  ANEIN (&M61,E_X_130,ERR)
+  ;T6-LU01-30A-T01
+  ; 
+  ;Raumtemperatur 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  TASK (3,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MOKY (E_BM_QUITT,$M62,$B1)
+  MOKY (R_VP_FREIG,$M63,$B2)
+  MOKY (K0_STATUS,$M64,$B3)
+  MOKY (E_RM_QUITT,$M65,$B4)
+  ODRMN (4,$B1,$B2,$B3,$B4,0,$B5,$WSCRATCH)
+  MOKY ($B5,$M66,Z_QUITT)
+  VVZ ($B5,$M67,$M68,$B6)
+  MOKY ($B6,$M69,A_QUITT_AUS)
+  ;Stîrungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- RÅckm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ;_
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (9,K0_STATUS,E_BSK_3_107,E_BSK_4_107,K0_STATUS,
+         E_BSK_6_107,E_BSK_7_107,K0_STATUS,E_UK_ST_1_107,
+         K0_STATUS,0,$B7,$WSCRATCH)
+  ODRMN (3,E_STEUER_ST,E_SPEIS_ST,K0_STATUS,0,$B8,$WSCRATCH)
+  ODR2 ($B7,$B8,$B9)
+  ODR2 (K0_STATUS,$B9,A_SAMMEL_ST_107)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UND11 (E_FREIG_EIN_107,K0_STATUS,$B10)
+  VVZ ($B10,$M70,$M71,Z_HAUPT_EIN_107)
+  ;Freigabefunktion
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (1,$B15,1,Z_HAUPT_EIN_107,$B11,$WSCRATCH)
+  REGLER (1,K1_STATUS,$B11,$M72,$F1,ERR)
+  FKG ($F1,4,$M73,$M74,$M75,$M76,Z_KUEHL_107)
+  VGLOH (E_X_107,E_W_107,$B12)
+  UND2 (Z_HAUPT_EIN_107,$B12,$B13)
+  VVZ ($B13,$M77,$M78,Z_STUFE_1_107)
+  ODRMN (3,E_RM_1_107,E_RM_2_107,E_RM_3_107,0,$WSCRATCH,$B14)
+  UND2 (E_FERN_AUTO_107,$B14,$B15)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ATRA (Z_KUEHL_107,A_KUEHL_107)
+  VGLOH (K10_PROZENT,Z_KUEHL_107,$HB2)
+  NICHT ($HB2,$B16)
+  VGLOH (Z_KUEHL_107,$M79,$HB2)
+  NICHT ($HB2,$B17)
+  ODR2 ($B16,Z_TIEFER_107,$B18)
+  ODR2 ($B17,Z_HôHER_107,$B19)
+  UHR (K1_STATUS,$B18,$F2)
+  VGLOH ($F2,$M80,$B20)
+  MOKY ($B20,$M81,Z_TIEFER_107)
+  UHR (K1_STATUS,$B19,$F3)
+  VGLOH ($F3,$M82,$B21)
+  MOKY ($B21,$M83,Z_HôHER_107)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  NICHT (Z_HAUPT_EIN_107,$HB0)
+  VRZ ($HB0,$M84,$WZERO,$M85,K1_STATUS,$B25,$B26,$F4)
+  ADD2 (K0.5_WERT,$F4,$F5)
+  UND2 (Z_STUFE_1_107,$B24,A_STUFE_1_107)
+  VGLOH ($F5,$M86,$B22)
+  UND11 ($B22,A_STUFE_3_107,A_STUFE_2_107)
+  VGLOH ($F5,$M87,A_STUFE_3_107)
+  ODRMN (2,A_STUFE_2_107,A_STUFE_3_107,0,$B23,$B24)
+  UND11 (Z_HôHER_107,A_STUFE_3_107,$B25)
+  UND2 ($B23,Z_TIEFER_107,$B26)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (9,E_BSK_2_119,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,0,
+         $B27,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B28,$WSCRATCH)
+  ODR2 ($B27,$B28,$B29)
+  ODR2 (E_BSK_1_119,$B29,A_SAMMEL_ST_119)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (1,K0_STATUS,1,K1_STATUS,$B30,$WSCRATCH)
+  REGLER (2,K1_STATUS,$B30,$M88,$F6,ERR)
+  FKG ($F6,4,$M89,$M90,$M91,$M92,A_MISCHBOX_119)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODRMN (9,E_UK_ST_1_125,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,0,
+         $B31,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B32,$WSCRATCH)
+  ODR2 ($B31,$B32,$B33)
+  ODR2 (K0_STATUS,$B33,A_SAMMEL_ST_125)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  UND11 (E_FREIG_EIN_125,K0_STATUS,$B34)
+  VVZ ($B34,$M93,$M94,Z_HAUPT_EIN_125)
+  ;Freigabefunktion
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ODRMN (1,$B39,1,Z_HAUPT_EIN_125,$B35,$WSCRATCH)
+  REGLER (3,K1_STATUS,$B35,$M95,$F7,ERR)
+  FKG ($F7,4,$M96,$M97,$M98,$M99,Z_KUEHL_125)
+  ATRA (Z_KUEHL_125,A_KUEHL_125)
+  VGLOH (E_X_125,E_W_125,$B36)
+  UND2 (Z_HAUPT_EIN_125,$B36,$B37)
+  VVZ ($B37,$M100,$M101,Z_STUFE_1_125)
+  ODRMN (3,E_RM_1_125,E_RM_2_125,E_RM_3_125,0,$WSCRATCH,$B38)
+  UND2 (E_FERN_AUTO_125,$B38,$B39)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  VGLOH (K10_PROZENT,Z_KUEHL_125,$HB2)
+  NICHT ($HB2,$B40)
+  VGLOH (Z_KUEHL_125,$M102,$HB2)
+  NICHT ($HB2,$B41)
+  ODR2 ($B40,Z_TIEFER_125,$B42)
+  ODR2 ($B41,Z_HôHER_125,$B43)
+  UHR (K1_STATUS,$B42,$F8)
+  VGLOH ($F8,$M103,$B44)
+  MOKY ($B44,$M104,Z_TIEFER_125)
+  UHR (K1_STATUS,$B43,$F9)
+  VGLOH ($F9,$M105,$B45)
+  MOKY ($B45,$M106,Z_HôHER_125)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  NICHT (Z_STUFE_1_125,$HB0)
+  VRZ ($HB0,$M107,$WZERO,$M108,K1_STATUS,$B49,$B50,$F10)
+  ADD2 (K0.5_WERT,$F10,$F11)
+  UND2 (Z_STUFE_1_125,$B48,A_STUFE_1_125)
+  VGLOH ($F11,$M109,$B46)
+  UND11 ($B46,A_STUFE_3_125,A_STUFE_2_125)
+  VGLOH ($F11,$M110,A_STUFE_3_125)
+  ODRMN (2,A_STUFE_2_125,A_STUFE_3_125,0,$B47,$B48)
+  UND11 (Z_HôHER_125,A_STUFE_3_125,$B49)
+  UND2 ($B47,Z_TIEFER_125,$B50)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (9,E_UK_ST_1_126,E_ST_MILLIP_126,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,0,
+         $B51,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B52,$WSCRATCH)
+  ODR2 ($B51,$B52,$B53)
+  ODR2 (K0_STATUS,$B53,A_SAMMEL_ST_126)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UND11 (E_FREIG_EIN_126,K0_STATUS,$B54)
+  VVZ ($B54,$M111,$M112,Z_HAUPT_EIN_126)
+  ;Freigabefunktion
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ODRMN (1,$B59,1,Z_HAUPT_EIN_126,$B55,$WSCRATCH)
+  REGLER (4,K1_STATUS,$B55,$M113,$F12,ERR)
+  FKG ($F12,4,$M114,$M115,$M116,$M117,Z_KUEHL_126)
+  ATRA (Z_KUEHL_126,A_KUEHL_126)
+  VGLOH (E_X_126,E_W_126,$B56)
+  UND2 (Z_HAUPT_EIN_126,$B56,$B57)
+  VVZ ($B57,$M118,$M119,Z_STUFE_1_126)
+  ODRMN (3,E_RM_1_126,E_RM_2_126,E_RM_3_126,0,$WSCRATCH,$B58)
+  UND2 (E_FERN_AUTO_126,$B58,$B59)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  VGLOH (K10_PROZENT,Z_KUEHL_126,$HB2)
+  NICHT ($HB2,$B60)
+  VGLOH (Z_KUEHL_126,$M120,$HB2)
+  NICHT ($HB2,$B61)
+  ODR2 ($B60,Z_TIEFER_126,$B62)
+  ODR2 ($B61,Z_HôHER_126,$B63)
+  UHR (K1_STATUS,$B62,$F13)
+  VGLOH ($F13,$M121,$B64)
+  MOKY ($B64,$M122,Z_TIEFER_126)
+  UHR (K1_STATUS,$B63,$F14)
+  VGLOH ($F14,$M123,$B65)
+  MOKY ($B65,$M124,Z_HôHER_126)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  NICHT (Z_STUFE_1_126,$HB0)
+  VRZ ($HB0,$M125,$WZERO,$M126,K1_STATUS,$B69,$B70,$F15)
+  ADD2 (K0.5_WERT,$F15,$F16)
+  UND2 (Z_STUFE_1_126,$B68,A_STUFE_1_126)
+  VGLOH ($F16,$M127,$B66)
+  UND11 ($B66,A_STUFE_3_126,A_STUFE_2_126)
+  VGLOH ($F16,$M128,A_STUFE_3_126)
+  ODRMN (2,A_STUFE_2_126,A_STUFE_3_126,0,$B67,$B68)
+  UND11 (Z_HôHER_126,A_STUFE_3_126,$B69)
+  UND2 ($B67,Z_TIEFER_126,$B70)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  ODRMN (8,E_VENT_ST_130,E_SCHLUESSEL_130,Z_KEILR_ST_130,
+         E_BSK_1_130,E_BSK_2_130,E_BSK_5_107,K0_STATUS,
+         K0_STATUS,0,$B71,$WSCRATCH)
+  ODRMN (8,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,0,$B72,$WSCRATCH)
+  ODR2 ($B71,$B72,$B73)
+  RSS ($B73,Z_QUITT,A_FREIG_AUS_130,$WSCRATCH)
+  BTRA (A_FREIG_AUS_130,A_ST_ABS_ST_130)
+  ;Abschaltstîrung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ODRMN (9,E_UK_ST_1_130,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,0,
+         $B74,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B75,$WSCRATCH)
+  ODR2 ($B74,$B75,$B76)
+  ODR2 (A_ST_ABS_ST_130,$B76,A_SAMMEL_ST_130)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  UND11 (E_FREIG_EIN_130,A_ST_ABS_ST_130,$B77)
+  VVZ ($B77,$M129,$M130,A_VENT_EIN_130)
+  BTRA (A_VENT_EIN_130,Z_HAUPT_EIN_130)
+  ;Freigabefunktion
+  ; 
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  VVZ (E_RM_VE_EIN_130,$M131,$M132,$B78)
+  NICHT (E_P_DIF_S_130,$HB0)
+  VVZ ($HB0,$M133,$M134,$B79)
+  UND2 ($B78,$B79,$B80)
+  RSS ($B80,Z_QUITT,A_KEILR_ST_130,$WSCRATCH)
+  BTRA (A_KEILR_ST_130,Z_KEILR_ST_130)
+  ;Keilriemen Stîrung mit
+  ;Differenzdruckschalter
+  ;Ist die Anlage ausge-
+  ;schaltet wird Meldung
+  ;unterdrÅckt.
+  ;Ist der Ventilator ein-
+  ;geschaltet und nach
+  ;30 sec kein Diff.Druck
+  ;vorhanden wird eine
+  ;virtuelle Stîrung aktiv
+  ; 
+  ;Gegen Druckschwankungen
+  ;wird die Stîrung um
+  ;10 sec verzîgert
+  ;Ein ST virtuell
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  ODRMN (1,K0_STATUS,1,Z_HAUPT_EIN_130,$B81,$WSCRATCH)
+  REGLER (5,K1_STATUS,$B81,$M135,$F17,ERR)
+  FKG ($F17,4,$M136,$M137,$M138,$M139,A_MISCHBOX_130)
+  VGLEH (A_MISCHBOX_130,$M140,$M141,$B82)
+  UND11 ($B82,$B84,Z_ZUSATZ_KU_130)
+  ODRMN (3,E_RM_1_130,E_RM_2_130,E_RM_3_130,0,$WSCRATCH,$B83)
+  UND2 (E_FERN_AUTO_130,$B83,$B84)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  NICHT (Z_ZUSATZ_KU_130,$HB4)
+  LREG (E_X_130,E_W_130,K1_STATUS,$HB4,$M142,$M143,$M144,
+        $M145,$M146,$M147,$M148,$M149,$M150,$M151,$M152,$F18,
+        ERR)
+  VGLOH (K10_PROZENT,A_KUEHL_130,$HB2)
+  NICHT ($HB2,$B85)
+  VGLOH (A_KUEHL_130,$M153,$HB2)
+  NICHT ($HB2,$B86)
+  ODR2 ($B85,Z_TIEFER_130,$B87)
+  ODR2 ($B86,Z_HôHER_130,$B88)
+  UHR (K1_STATUS,$B87,$F19)
+  VGLOH ($F19,$M154,$B89)
+  MOKY ($B89,$M155,Z_TIEFER_130)
+  UHR (K1_STATUS,$B88,$F20)
+  VGLOH ($F20,$M156,$B90)
+  MOKY ($B90,$M157,Z_HôHER_130)
+  FKG ($F18,4,$M158,$M159,$M160,$M161,A_KUEHL_130)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  NICHT (Z_ZUSATZ_KU_130,$HB0)
+  VRZ ($HB0,$M162,$WZERO,$M163,K1_STATUS,$B94,$B95,$F21)
+  ADD2 (K0.5_WERT,$F21,$F22)
+  UND2 (Z_ZUSATZ_KU_130,$B93,A_STUFE_1_130)
+  VGLOH ($F22,$M164,$B91)
+  UND11 ($B91,A_STUFE_3_130,A_STUFE_2_130)
+  VGLOH ($F22,$M165,A_STUFE_3_130)
+  ODRMN (2,A_STUFE_2_130,A_STUFE_3_130,0,$B92,$B93)
+  UND11 (Z_HôHER_130,A_STUFE_3_130,$B94)
+  UND2 ($B92,Z_TIEFER_130,$B95)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  VVZ (E_-P_131,$M166,$M167,A_P-KLAPP_ZU_131)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  SETMEL (K1_STATUS,1,A_SAMMEL_ST_107,&M168,ERR)
+  ;T6-LU01-07A-S50
+  ; 
+  SETMEL (K1_STATUS,1,A_SAMMEL_ST_119,&M169,ERR)
+  ;Sammelstîrung
+  ;Raum 107
+  ; 
+  ;T6-LU01-19A-S50
+  ; 
+  ;Sammelstîrung
+  ;Raum 119
+  ; 
+  SETMEL (K1_STATUS,1,A_SAMMEL_ST_125,&M170,ERR)
+  ;T6-LU01-25A-S50
+  ; 
+  SETMEL (K1_STATUS,1,A_SAMMEL_ST_126,&M171,ERR)
+  ;Sammelstîrung
+  ;Raum 125
+  ; 
+  ;T6-LU01-26A-S50
+  ; 
+  ;Sammelstîrung
+  ;Raum 126
+  ; 
+  SETMEL (K1_STATUS,1,A_SAMMEL_ST_130,&M172,ERR)
+  ;T6-LU01-30A-S50
+  ; 
+  ;Sammelstîrung
+  ;Raum 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  SETMEL (K1_STATUS,1,A_KEILR_ST_130,&M173,ERR)
+  ;T6-LU01-30A-P51
+  ; 
+  ;Keilriemenstîrung
+  ;Ventilator Raum 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  ;T6-LU01-30A-X50
+  ; 
+  BEFAUS (1,A_FREIG_AUS_130,$WZERO,$WZERO,$WZERO,&M3,ERR)
+  ;Freigabe nach
+  ;Stîrung ausschalten
+  ;Raum 130
+  ; 
+  ;T6-UV01-01A-X00
+  ; 
+  BEFAUS (1,A_QUITT_AUS,$WZERO,$WZERO,$WZERO,&M175,ERR)
+  ;Quittierung
+  ;GLT ausschalten
+  ; 
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  ;T6-LU01-07A-X11
+  ; 
+  NICHT (A_STUFE_1_107,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_1_107,$WZERO,$WZERO,&M176,ERR)
+  ;UmluftkÅkler
+  ;Raum 107
+  ;Stufe 1
+  ; 
+  ;T6-LU01-07A-X12
+  ; 
+  NICHT (A_STUFE_2_107,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_2_107,$WZERO,$WZERO,&M177,ERR)
+  ;UmluftkÅhler
+  ;Raum 107
+  ;Stufe 2
+  ; 
+  ;T6-LU01-07A-X13
+  ; 
+  NICHT (A_STUFE_3_107,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_3_107,$WZERO,$WZERO,&M178,ERR)
+  ;UmluftkÅhler
+  ;Raum 107
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  ;T6-LU01-25A-X11
+  ; 
+  NICHT (A_STUFE_1_125,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_1_125,$WZERO,$WZERO,&M179,ERR)
+  ;UmluftkÅhler
+  ;Raum 125
+  ;Stufe 1
+  ; 
+  ;T6-LU01-25A-X12
+  ; 
+  NICHT (A_STUFE_2_125,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_2_125,$WZERO,$WZERO,&M180,ERR)
+  ;UmluftkÅhler
+  ;Raum 125
+  ;Stufe 2
+  ; 
+  ;T6-LU01-25A-X13
+  ; 
+  NICHT (A_STUFE_3_125,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_3_125,$WZERO,$WZERO,&M181,ERR)
+  ;UmluftkÅhler
+  ;Raum 125
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  ;T6-LU01-26A-X11
+  ; 
+  NICHT (A_STUFE_1_126,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_1_126,$WZERO,$WZERO,&M182,ERR)
+  ;UmluftkÅhler
+  ;Raum 126
+  ;Stufe 1
+  ; 
+  ;T6-LU01-26A-X12
+  ; 
+  NICHT (A_STUFE_2_126,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_2_126,$WZERO,$WZERO,&M183,ERR)
+  ;UmluftkÅhler
+  ;Raum 126
+  ;Stufe 2
+  ; 
+  ;T6-LU01-26A-X13
+  ; 
+  NICHT (A_STUFE_3_126,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_3_126,$WZERO,$WZERO,&M184,ERR)
+  ;UmluftkÅhler
+  ;Raum 126
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  56
+  ;*****************************************************************
+  ;T6-LU01-30A-X11
+  ; 
+  NICHT (A_STUFE_1_130,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_1_130,$WZERO,$WZERO,&M185,ERR)
+  ;UmluftkÅhler
+  ;Raum 130
+  ;Stufe 1
+  ; 
+  ;T6-LU01-30A-X12
+  ; 
+  NICHT (A_STUFE_2_130,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_2_130,$WZERO,$WZERO,&M186,ERR)
+  ;UmluftkÅhler
+  ;Raum 130
+  ;Stufe 2
+  ; 
+  ;T6-LU01-30A-X13
+  ; 
+  NICHT (A_STUFE_3_130,$HB0)
+  BEFAUS (1,$HB0,A_STUFE_3_130,$WZERO,$WZERO,&M187,ERR)
+  ;UmluftkÅhler
+  ;Raum 130
+  ;Stufe 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  57
+  ;*****************************************************************
+  ;T6-LU01-30A-X01
+  ; 
+  NICHT (A_VENT_EIN_130,$HB0)
+  BEFAUS (1,$HB0,A_VENT_EIN_130,$WZERO,$WZERO,&M188,ERR)
+  ;Ventilator
+  ;Raum 130
+  ; 
+  ;T6-LU01-31A-X10
+  ; 
+  NICHT (A_P-KLAPP_ZU_131,$HB0)
+  BEFAUS (1,$HB0,A_P-KLAPP_ZU_131,$WZERO,$WZERO,&M189,ERR)
+  ;Pneumatische Klappen
+  ;Raum 131
+  ; 
+  ;*****************************************************************
+  ;*** Seite  58
+  ;*****************************************************************
+  ;T6-LU01-07A-Y02
+  ;R
+  ; 
+  ANAUS (A_KUEHL_107,K1_STATUS,&M190,ERR)
+  ;KÅhlventil
+  ;Raum 107
+  ; 
+  ;T6-LU01-25A-Y02
+  ; 
+  ANAUS (A_KUEHL_125,K1_STATUS,&M191,ERR)
+  ;KÅhlventil
+  ;Raum 125
+  ; 
+  ;T6-LU01-26A-Y02
+  ; 
+  ANAUS (A_KUEHL_126,K1_STATUS,&M192,ERR)
+  ;KÅhlventil
+  ;Raum 126
+  ; 
+  ;T6-LU01-30A-Y02
+  ; 
+  ANAUS (A_KUEHL_130,K1_STATUS,&M193,ERR)
+  ;KÅhlventil
+  ;Raum 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  59
+  ;*****************************************************************
+  ;T6-LU01-19A-Y01
+  ; 
+  ANAUS (A_MISCHBOX_119,K1_STATUS,&M194,ERR)
+  ;Pneum. Mischbox
+  ;Raum 119
+  ; 
+  ;T6-LU01-30A-Y01
+  ; 
+  ANAUS (A_MISCHBOX_130,K1_STATUS,&M195,ERR)
+  ;Pneum. Mischbox
+  ;Raum 130
+  ; 
+  ;*****************************************************************
+  ;*** Seite  60
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

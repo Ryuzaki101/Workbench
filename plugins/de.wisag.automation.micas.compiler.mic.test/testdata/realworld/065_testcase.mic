@@ -1,0 +1,121 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01312.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 13
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  FloatV RL-Temp
+  FloatK K1 (1.00)
+  FloatK k1.667 (1.67)
+  FloatV VL-Temp
+  WordV  Primaerpumpe-ein
+  WordK  k0 (0)
+  FloatK k3600 (3600.00)
+  FloatV Waermeleistung
+  FloatV Energie-kWh
+  FloatK min_WT-VL-T_prim (4.50)
+  FloatK k35 (35.00)
+  IPAAW &M0 (162)
+  FloatV $F1
+  WordV  $WSCRATCH
+  FloatK $M1 (150.00)
+  FloatK $M2 (-50.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M3 (10.00)
+  WordV  $B1
+  WordK  $M4 (1)
+  FloatV $F3
+  FloatV $F4
+  FloatV $F5
+  FloatK $M6 (0.00)
+  FloatV $F6
+  IPAMW &M7 (137)
+  FloatK $M8 (5.00)
+  WordK  $M9 (1)
+  IPAMW &M10 (159)
+  IPAMW &M11 (138)
+  IPAMB &M12 (85,11)
+  FloatV $F7
+  WordK  $M13 (1)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M14 (0.00)
+  IPAZW &M15 (161)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AF X 0005
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Kältenetz-
+  ;         sanierung NMR 1
+  ;         in 2007
+  ;Berechnung der aktuellen
+  ;Kühlleistung und -Menge
+  ;in kW und kWh
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ANEIN (&M0,$F1,$WSCRATCH)
+  LIMIT ($F1,$M1,$M2,$F2)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M3,$B1)
+  AWT ($B1,$F2,min_WT-VL-T_prim,min_WT-VL-T_prim)
+  ANAUS (min_WT-VL-T_prim,$M4,&M0,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  SUB2 (RL-Temp,VL-Temp,$F3)
+  MULT ($F3,k35,$F4)
+  MULT ($F4,k1.667,$F5)
+  AWT (Primaerpumpe-ein,$M6,$F5,$F6)
+  ANEIN (&M7,VL-Temp,$WSCRATCH)
+  PT1 ($F6,$M8,Waermeleistung)
+  ANAUS (Waermeleistung,$M9,&M10,$WSCRATCH)
+  ANEIN (&M11,RL-Temp,$WSCRATCH)
+  MELEIN (&M12,1,Primaerpumpe-ein,$WSCRATCH)
+  ;Wärmeleistung:
+  ;P = c x rho x V x (VL-RL
+  ;c = 4200 J/kgK
+  ;rho = 1000 kg/m3
+  ;Je nachdem, in welcher
+  ;Einheit der Durchfluß
+  ;gemessen wird, ergeben
+  ;sich folgende Konstanten
+  ;um die Leistung in kW
+  ;angeben zu können:
+  ; 
+  ;m3/h   : 1,667
+  ;m3/min : 70
+  ;l/h    : 0,0011667
+  ;l/min  : 0,07
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MULDI (Waermeleistung,K1,k3600,$F7)
+  ZWAUS ($M13,$F7,$WZERO,$M14,&M15,$WSCRATCH)
+  ZWEIN (&M15,Energie-kWh,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

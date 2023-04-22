@@ -1,0 +1,761 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2007.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 2
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  \SETZ02
+  WordK  Kon00 (0)
+  WordV  ZPK2
+  WordV  ERR40
+  WordV  A8-ZUL2-REP-BM
+  WordV  ERR19
+  WordV  ERR37
+  WordV  A8-ZULU2-ST-KEIL
+  WordV  ERR27
+  WordV  ZPK
+  WordV  ERR38
+  WordV  A8-FREIG-ANLAGE2
+  WordV  A8-A2-2ST-RM-EIN
+  WordV  ERR07
+  WordV  A8-ZULU1-ST-KEIL
+  WordK  KFREIG-GLT-EIN2 (0)
+  WordK  KFREIG-GLT-EIN1 (1)
+  WordV  ERR41
+  WordV  ERR39
+  WordV  PK18
+  WordV  ERR-FREIG-GLT
+  WordV  A8-ABL1-KEIL-BM
+  WordV  A8-A2-1ST-RM-ST
+  WordV  A8-A2-1ST-RM-EIN
+  WordV  A8-A1-SOLL-EIN1
+  WordV  A8-A2-2ST-RM-AUS
+  WordV  A8-A2-2ST-RM-ST
+  FloatV A8-STELL-KLAPPEN
+  WordV  ERR15
+  WordV  \SETZ01
+  FloatV A8-STELL-VE-VENT
+  WordV  A8-Z2-2ST-RM-ST
+  WordV  A8-Z2-2ST-RM-EIN
+  WordV  A8-A2-1ST-RM-AUS
+  WordV  A8-A2-SOLL-EIN2
+  WordV  A8-ZULF2-AUTO-ST
+  WordV  A8-ABL1-REP-BM
+  WordV  A8-ZUL2-ABL2HAND
+  WordV  A8-ABL2-KEIL-BM
+  WordV  A8-Z2-2ST-RM-AUS
+  WordK  KON01 (1)
+  FloatV A8-ZULTEMP-TECHN
+  FloatV Aussentemperatur
+  WordV  A8-ZULF1-AUTO-ST
+  WordV  A8-Z2-1ST-RM-AUS
+  WordV  A8-Z2-1ST-RM-ST
+  WordV  A8-Z2-1ST-RM-EIN
+  WordV  ERR03
+  WordK  KFREIG-GLT-AUS (0)
+  WordV  ERR06
+  WordV  SAMMEL-ST-ANL1
+  WordV  ZPK1
+  WordV  A8-ZUL1-KEIL-BM
+  WordV  ERR35
+  WordV  A8-A1-2ST-RM-EIN
+  WordV  A8-ZUL1-REP-BM
+  WordV  ERR26
+  WordV  A8-A1-1ST-RM-EIN
+  WordV  A8-ABLF1-AUTO-ST
+  WordV  A8-ZUL1-ABL1HAND
+  WordV  ERR17
+  WordV  A8-A1-2ST-RM-AUS
+  WordV  A8-A1-2ST-RM-ST
+  FloatV Y-SIGNAL-REG.17
+  WordV  A8-A2-SOLL-EIN1
+  WordV  ZPK3
+  WordV  A8-A1-1ST-RM-ST
+  WordV  A8-ZUL2-KEIL-BM
+  WordV  SAMMEL-ST-ANL2
+  WordV  A8-Z1-2ST-RM-ST
+  WordV  A8-FREIG-ANLAGE1
+  FloatV A8-RL-TEMP
+  FloatV A8-ABLTEMP-TECHN
+  WordV  A8-Z2-SOLL-EIN1
+  WordV  A8-Z2-SOLL-EIN2
+  WordV  A8-Z1-SOLL-EIN2
+  WordV  ERR
+  WordV  A8-ABL2-REP-BM
+  WordV  A8-TECHNI-RAUCH
+  WordV  A8-A1-SOLL-EIN2
+  WordV  ERR42
+  WordV  ERR09
+  WordV  Fernquit_a05.aus
+  WordV  A8-Z1-1ST-RM-AUS
+  WordV  A8-Z1-1ST-RM-ST
+  WordV  A8-Z1-1ST-RM-EIN
+  WordV  A8-Z1-2ST-RM-AUS
+  WordV  A8-Z1-2ST-RM-EIN
+  WordV  A8-A1-1ST-RM-AUS
+  WordV  SAMMEL-ST-ANL1-2
+  WordV  ERR08
+  FloatV A8-ZULTEMP-USV
+  WordV  TESTSETZ01
+  WordV  Fernquit_a05.ein
+  WordV  ERR33
+  WordV  ERR34
+  WordV  QUITTIERUNG-A08
+  WordV  A8-ABLU1-ST-KEIL
+  WordV  A8-ABLU2-ST-KEIL
+  WordV  A8-Z1-SOLL-EIN1
+  WordV  A8-ABLF2-AUTO-ST
+  FloatK A8-SOLLW-ZULUFT (18.00)
+  FloatK A8-SOLLW-TrafoP (18.00)
+  FloatV Y-SIGNAL-REG.18
+  WordV  WERR
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU0800BF01 (96,1)
+  WordK  $M0 (1)
+  IPAAW &BA1LU0800AA91 (110)
+  WordV  $WSCRATCH
+  WordK  $M1 (1)
+  IPAAW &BA1LU0800AA92 (108)
+  IPAMB &M2 (8,0)
+  IPAMB &BA1LU0800BM11 (8,1)
+  IPAMB &M3 (8,2)
+  IPAMB &M4 (8,3)
+  IPAMB &M5 (8,4)
+  IPAMB &BA1LU0800BM12 (8,5)
+  IPAMB &M6 (8,6)
+  IPAMB &M7 (8,7)
+  IPAMB &M8 (9,0)
+  IPAMB &BA1LU0800BM21 (9,1)
+  IPAMB &M9 (9,2)
+  IPAMB &M10 (9,3)
+  IPAMB &M11 (9,4)
+  IPAMB &BA1LU0800BM22 (9,5)
+  IPAMB &M12 (9,6)
+  IPAMB &M13 (9,7)
+  IPAMB &M14 (4,0)
+  IPAMB &BA1LU0800BM13 (4,1)
+  IPAMB &M15 (4,2)
+  IPAMB &M16 (4,3)
+  IPAMB &M17 (4,4)
+  IPAMB &BA1LU0800BM14 (4,5)
+  IPAMB &M18 (4,6)
+  IPAMB &M19 (4,7)
+  IPAMB &M20 (5,0)
+  IPAMB &BA1LU0800BM23 (5,1)
+  IPAMB &M21 (5,2)
+  IPAMB &M22 (5,3)
+  IPAMB &M23 (5,4)
+  IPAMB &BA1LU0800BM24 (5,5)
+  IPAMB &M24 (5,6)
+  IPAMB &M25 (5,7)
+  IPAAW &BA1LU0800MW22 (60)
+  IPAAW &BA1LU0800MW01 (61)
+  IPAAW &BA1LU0800MW02 (62)
+  IPAAW &BA1LU0800MW09 (63)
+  IPAAW &BA1LU0500MW00 (35)
+  IPAMB &BA1LU0800AL01 (12,11)
+  WordV  $HB2
+  IPAMB &BA1LU0800BM15 (11,9)
+  IPAMB &M26 (11,10)
+  IPAMB &M27 (11,11)
+  IPAMB &M28 (11,12)
+  IPAMB &BA1LU0800WA70 (8,10)
+  IPAMB &BA1LU0800WA71 (8,14)
+  IPAMB &BA1LU0800WA11 (11,13)
+  IPAMB &M29 (11,14)
+  IPAMB &M30 (11,15)
+  WordV  $HB4
+  WordV  $HB5
+  WordV  $HB6
+  IPAMB &BA1LU0800WA22 (12,8)
+  IPAMB &M31 (96,0)
+  IPAMB &M32 (96,2)
+  IPAMB &M33 (96,3)
+  IPAMB &M34 (96,4)
+  IPAMB &M35 (96,5)
+  IPAMB &BA1LU0500BF02 (104,13)
+  IPAMB &M36 (104,14)
+  IPAMB &M37 (104,15)
+  IPAMB &BA1LU0500BM99 (1,15)
+  WordV  $B1
+  WordV  $B2
+  FloatK $M38 (5.00)
+  WordV  $HB0
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  FloatK $M39 (300.00)
+  FloatK $M40 (0.00)
+  WordV  $B6
+  WordK  $M41 (1)
+  IPAMB &BA1LU0802ST82 (100,1)
+  WordV  $B7
+  WordV  $B8
+  FloatK $M42 (300.00)
+  FloatK $M43 (0.00)
+  WordV  $B9
+  WordK  $M44 (1)
+  IPAMB &BA1LU0801ST82 (100,0)
+  WordV  $B10
+  WordV  $B11
+  FloatK $M45 (300.00)
+  FloatK $M46 (0.00)
+  WordV  $B12
+  WordK  $M47 (1)
+  IPAMB &BA1LU0802ST83 (100,3)
+  WordV  $B13
+  WordV  $B14
+  FloatK $M48 (300.00)
+  FloatK $M49 (0.00)
+  WordV  $B15
+  WordK  $M50 (1)
+  IPAMB &BA1LU0801ST83 (100,2)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  FloatK $M51 (60.00)
+  FloatK $M52 (0.00)
+  WordV  $B19
+  WordK  $M53 (1)
+  IPAMB &BA1LU0801ST78 (95,1)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  FloatK $M54 (60.00)
+  FloatK $M55 (0.00)
+  WordV  $B23
+  WordK  $M56 (1)
+  IPAMB &BA1LU0801ST77 (95,0)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  FloatK $M57 (60.00)
+  FloatK $M58 (0.00)
+  WordV  $B27
+  WordK  $M59 (1)
+  IPAMB &BA1LU0802ST78 (95,3)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  FloatK $M60 (60.00)
+  FloatK $M61 (0.00)
+  WordV  $B31
+  WordK  $M62 (1)
+  IPAMB &BA1LU0802ST77 (95,2)
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  WordV  $B51
+  WordV  $B40
+  WordV  $B41
+  FloatK $M63 (24.00)
+  FloatV $F1
+  FloatV $FSCRATCH
+  FloatK $M64 (24.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M65 (3600.00)
+  WordV  $B52
+  FloatK $M66 (1.00)
+  FloatK $M67 (0.00)
+  FloatV $F4
+  WordV  $B42
+  FloatV $F5
+  FloatK $M68 (3600.00)
+  WordV  $B53
+  FloatK $M69 (1.00)
+  FloatK $M70 (0.00)
+  FloatV $F6
+  WordV  $B43
+  FloatK $M71 (10.00)
+  WordV  $B44
+  FloatK $M72 (10.00)
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B56
+  FloatV $F7
+  FloatK $M73 (48.00)
+  FloatV $F8
+  FloatK $M74 (3600.00)
+  FloatV $F9
+  FloatV $F10
+  WordV  $B57
+  FloatK $M75 (300.00)
+  WordV  $B54
+  WordV  $B58
+  WordV  $B55
+  WordV  $B61
+  FloatV $F11
+  FloatK $M76 (48.00)
+  FloatV $F12
+  FloatK $M77 (3600.00)
+  FloatV $F13
+  FloatV $F14
+  WordV  $B62
+  FloatK $M78 (300.00)
+  WordV  $B59
+  WordV  $B63
+  WordV  $B60
+  WordV  $B35
+  WordV  $B36
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  FloatK $M79 (10.00)
+  FloatK $M80 (0.00)
+  WordV  $B73
+  FloatK $M81 (10.00)
+  FloatK $M82 (0.00)
+  FloatK $M83 (0.00)
+  FloatK $M84 (0.00)
+  FloatK $M85 (0.00)
+  FloatK $M86 (30.00)
+  FloatK $M87 (50.00)
+  FloatK $M88 (100.00)
+  FloatK $M89 (50.00)
+  FloatK $M90 (0.00)
+  FloatK $M91 (100.00)
+  FloatK $M92 (100.00)
+  WordV  $B74
+  FloatK $M93 (0.00)
+  FloatV $F15
+  WordK  $M94 (1)
+  IPAAW &BA1LU0800AA01 (87)
+  WordV  $B75
+  FloatK $M95 (0.00)
+  FloatV $F16
+  WordK  $M96 (1)
+  IPAAW &BA1LU0800AA52 (86)
+  WordV  $B76
+  FloatK $M97 (0.00)
+  FloatV $F17
+  WordK  $M98 (1)
+  IPAAW &BA1LU0800AA02 (88)
+  IPAMB &BA1LU0800BM55 (5,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 02
+  ;Lüftungszentrale
+  ;Keller
+  ;Anlage 08
+  ;Technikräume
+  ; 
+  ;Achtung alle Ventile
+  ;werden direkt über
+  ;die Regler angesteu.
+  ;Y-Ausgang keine
+  ;fiktiven Adressen
+  ;sondern die Ausgänge
+  ;direkt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (2,KFREIG-GLT-AUS,KFREIG-GLT-EIN1,KFREIG-GLT-EIN2,
+          $WZERO,&BA1LU0800BF01,ERR03)
+  ANAUS (A8-SOLLW-ZULUFT,$M0,&BA1LU0800AA91,$WSCRATCH)
+  ANAUS (A8-SOLLW-TrafoP,$M1,&BA1LU0800AA92,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M2,4,ZPK,A8-Z1-1ST-RM-AUS,A8-Z1-1ST-RM-ST,
+          A8-Z1-1ST-RM-EIN,ERR06)
+  MELEIN (&M5,4,ZPK,A8-Z1-2ST-RM-AUS,A8-Z1-2ST-RM-ST,
+          A8-Z1-2ST-RM-EIN,ERR06)
+  ;Anlage 08 Zulüfter1
+  ;1.Stufe
+  ; 
+  ;Anlage 08 Zulüfter1
+  ;2.Stufe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&M8,4,ZPK,A8-A1-1ST-RM-AUS,A8-A1-1ST-RM-ST,
+          A8-A1-1ST-RM-EIN,ERR06)
+  MELEIN (&M11,4,ZPK,A8-A1-2ST-RM-AUS,A8-A1-2ST-RM-ST,
+          A8-A1-2ST-RM-EIN,ERR06)
+  ;Anlage 08 Ablüfter1
+  ;1.Stufe
+  ; 
+  ;Anlage 08 Ablüfter1
+  ;2.Stufe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&M14,4,ZPK,A8-Z2-1ST-RM-AUS,A8-Z2-1ST-RM-ST,
+          A8-Z2-1ST-RM-EIN,ERR06)
+  MELEIN (&M17,4,ZPK,A8-Z2-2ST-RM-AUS,A8-Z2-2ST-RM-ST,
+          A8-Z2-2ST-RM-EIN,ERR06)
+  ;Anlage 08 Zulüfter2
+  ;1.Stufe
+  ; 
+  ;Anlage 08 Zulüfter2
+  ;2.Stufe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&M20,4,ZPK,A8-A2-1ST-RM-AUS,A8-A2-1ST-RM-ST,
+          A8-A2-1ST-RM-EIN,ERR06)
+  MELEIN (&M23,4,ZPK,A8-A2-2ST-RM-AUS,A8-A2-2ST-RM-ST,
+          A8-A2-2ST-RM-EIN,ERR06)
+  ;Anlage 08 Ablüfter2
+  ;1.Stufe
+  ; 
+  ;Anlage 08 Ablüfter2
+  ;2.Stufe
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU0800MW22,A8-RL-TEMP,ERR07)
+  ANEIN (&BA1LU0800MW01,A8-ZULTEMP-TECHN,ERR08)
+  ANEIN (&BA1LU0800MW02,A8-ZULTEMP-USV,ERR09)
+  ANEIN (&BA1LU0800MW09,A8-ABLTEMP-TECHN,ERR09)
+  ANEIN (&BA1LU0500MW00,Aussentemperatur,ERR09)
+  ANEIN (&BA1LU0800AA91,A8-SOLLW-ZULUFT,ERR07)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&BA1LU0800AL01,1,$HB2,ERR35)
+  NICHT ($HB2,A8-TECHNI-RAUCH)
+  MELEIN (&BA1LU0800BM15,4,A8-ZUL1-KEIL-BM,A8-ZUL2-KEIL-BM,
+          A8-ABL1-KEIL-BM,A8-ABL2-KEIL-BM,ERR15)
+  MELEIN (&BA1LU0800WA70,1,A8-ZUL1-ABL1HAND,ERR17)
+  MELEIN (&BA1LU0800WA71,1,A8-ZUL2-ABL2HAND,ERR17)
+  ANEIN (&BA1LU0800AA92,A8-SOLLW-TrafoP,ERR07)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&BA1LU0800WA11,3,$HB4,$HB5,$HB6,ERR19)
+  NICHT ($HB4,A8-ZUL1-REP-BM)
+  NICHT ($HB5,A8-ZUL2-REP-BM)
+  NICHT ($HB6,A8-ABL1-REP-BM)
+  MELEIN (&BA1LU0800WA22,1,$HB2,ERR)
+  NICHT ($HB2,A8-ABL2-REP-BM)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&M31,6,ZPK1,KFREIG-GLT-AUS,ZPK2,KFREIG-GLT-EIN1,
+          ZPK3,KFREIG-GLT-EIN2,ERR-FREIG-GLT)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&BA1LU0500BF02,3,Fernquit_a05.aus,PK18,
+          Fernquit_a05.ein,ERR33)
+  MELEIN (&BA1LU0500BM99,1,$B1,$WSCRATCH)
+  ODR2 (Fernquit_a05.ein,$B3,$B2)
+  MOKY ($B2,$M38,QUITTIERUNG-A08)
+  NICHT (QUITTIERUNG-A08,$HB0)
+  BEFAUS (1,$HB0,QUITTIERUNG-A08,$WZERO,$WZERO,
+          &BA1LU0500BF02,ERR34)
+  ;StörQuitt "setzen"
+  ; 
+  ODR2 (TESTSETZ01,$B1,$B3)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODR2 (A8-Z2-1ST-RM-EIN,A8-Z2-2ST-RM-EIN,$B4)
+  UND11 ($B4,A8-ZUL2-KEIL-BM,$B5)
+  VVZ ($B5,$M39,$M40,$B6)
+  RSS ($B6,QUITTIERUNG-A08,A8-ZULU2-ST-KEIL,$WSCRATCH)
+  SETMEL ($M41,1,A8-ZULU2-ST-KEIL,&BA1LU0802ST82,ERR27)
+  ODR2 (A8-Z1-1ST-RM-EIN,A8-Z1-2ST-RM-EIN,$B7)
+  UND11 ($B7,A8-ZUL1-KEIL-BM,$B8)
+  VVZ ($B8,$M42,$M43,$B9)
+  RSS ($B9,QUITTIERUNG-A08,A8-ZULU1-ST-KEIL,$WSCRATCH)
+  SETMEL ($M44,1,A8-ZULU1-ST-KEIL,&BA1LU0801ST82,ERR26)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODR2 (A8-A2-1ST-RM-EIN,A8-A2-2ST-RM-EIN,$B10)
+  UND11 ($B10,A8-ABL2-KEIL-BM,$B11)
+  VVZ ($B11,$M45,$M46,$B12)
+  RSS ($B12,QUITTIERUNG-A08,A8-ABLU2-ST-KEIL,$WSCRATCH)
+  SETMEL ($M47,1,A8-ABLU2-ST-KEIL,&BA1LU0802ST83,ERR27)
+  ODR2 (A8-A1-1ST-RM-EIN,A8-A1-2ST-RM-EIN,$B13)
+  UND11 ($B13,A8-ABL1-KEIL-BM,$B14)
+  VVZ ($B14,$M48,$M49,$B15)
+  RSS ($B15,QUITTIERUNG-A08,A8-ABLU1-ST-KEIL,$WSCRATCH)
+  SETMEL ($M50,1,A8-ABLU1-ST-KEIL,&BA1LU0801ST83,ERR26)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  UNDMN (1,A8-A1-SOLL-EIN1,2,A8-A1-1ST-RM-EIN,
+         A8-ZUL1-ABL1HAND,$B16,$WSCRATCH)
+  UNDMN (1,A8-A1-SOLL-EIN2,2,A8-A1-2ST-RM-EIN,
+         A8-ZUL1-ABL1HAND,$B17,$WSCRATCH)
+  ODR2 ($B16,$B17,$B18)
+  VVZ ($B18,$M51,$M52,$B19)
+  RSS ($B19,QUITTIERUNG-A08,A8-ABLF1-AUTO-ST,$WSCRATCH)
+  SETMEL ($M53,1,A8-ABLF1-AUTO-ST,&BA1LU0801ST78,ERR38)
+  UNDMN (1,A8-Z1-SOLL-EIN2,2,A8-Z1-2ST-RM-EIN,
+         A8-ZUL1-ABL1HAND,$B20,$WSCRATCH)
+  UNDMN (1,A8-Z1-SOLL-EIN1,2,A8-Z1-1ST-RM-EIN,
+         A8-ZUL1-ABL1HAND,$B21,$WSCRATCH)
+  ODR2 ($B21,$B20,$B22)
+  VVZ ($B22,$M54,$M55,$B23)
+  RSS ($B23,QUITTIERUNG-A08,A8-ZULF1-AUTO-ST,$WSCRATCH)
+  SETMEL ($M56,1,A8-ZULF1-AUTO-ST,&BA1LU0801ST77,ERR37)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UNDMN (1,A8-A2-SOLL-EIN1,2,A8-A2-1ST-RM-EIN,
+         A8-ZUL2-ABL2HAND,$B24,$WSCRATCH)
+  UNDMN (1,A8-A2-SOLL-EIN2,2,A8-A2-2ST-RM-EIN,
+         A8-ZUL2-ABL2HAND,$B25,$WSCRATCH)
+  ODR2 ($B24,$B25,$B26)
+  VVZ ($B26,$M57,$M58,$B27)
+  RSS ($B27,QUITTIERUNG-A08,A8-ABLF2-AUTO-ST,$WSCRATCH)
+  SETMEL ($M59,1,A8-ABLF2-AUTO-ST,&BA1LU0802ST78,ERR38)
+  UNDMN (1,A8-Z2-SOLL-EIN2,2,A8-Z2-2ST-RM-EIN,
+         A8-ZUL2-ABL2HAND,$B28,$WSCRATCH)
+  UNDMN (1,A8-Z2-SOLL-EIN1,2,A8-Z2-1ST-RM-EIN,
+         A8-ZUL2-ABL2HAND,$B29,$WSCRATCH)
+  ODR2 ($B29,$B28,$B30)
+  VVZ ($B30,$M60,$M61,$B31)
+  RSS ($B31,QUITTIERUNG-A08,A8-ZULF2-AUTO-ST,$WSCRATCH)
+  SETMEL ($M62,1,A8-ZULF2-AUTO-ST,&BA1LU0802ST77,ERR37)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (KFREIG-GLT-EIN2,KFREIG-GLT-EIN1,$B32)
+  ODR2 (A8-Z1-1ST-RM-EIN,A8-Z1-2ST-RM-EIN,$B33)
+  ODR2 (A8-Z2-1ST-RM-EIN,A8-Z2-2ST-RM-EIN,$B34)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UNDMN (1,\SETZ01,2,\SETZ02,$B32,$B37,$WSCRATCH)
+  UNDMN (1,\SETZ02,2,$B32,\SETZ01,$B38,$WSCRATCH)
+  UNDMN (1,$B32,2,\SETZ02,\SETZ01,$B39,$WSCRATCH)
+  ODRMN (3,$B37,$B38,$B39,0,$B51,$WSCRATCH)
+  UND2 ($B36,$B51,$B40)
+  UND2 ($B35,$B51,$B41)
+  UST ($WZERO,$M63,$F1,$FSCRATCH)
+  UST ($WZERO,$M64,$F2,$FSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR ($B33,$B52,$F3)
+  VGLOH ($F3,$M65,$B52)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B44,$M66,$WZERO,$M67,$WONE,$B52,$WZERO,$F4)
+  ATRA ($F4,$FSCRATCH)
+  VGLOH ($F4,$F1,$B42)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR ($B34,$B53,$F5)
+  VGLOH ($F5,$M68,$B53)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ ($B45,$M69,$WZERO,$M70,$WONE,$B53,$WZERO,$F6)
+  ATRA ($F6,$FSCRATCH)
+  VGLOH ($F6,$F2,$B43)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY ($B42,$M71,$B44)
+  MOKY ($B43,$M72,$B45)
+  RSS ($B42,$B43,$B46,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B39,$B46,$B47)
+  UND2 ($B46,$B39,$B48)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B37,$B40,$B47,0,$B49,$WSCRATCH)
+  ODRMN (3,$B38,$B41,$B48,0,$B50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B55,$B35,$B56)
+  NICHT ($B56,$HB0)
+  UHR ($HB0,$B56,$F7)
+  UST ($WZERO,$M73,$F8,$FSCRATCH)
+  UST ($WZERO,$M74,$F9,$FSCRATCH)
+  MULT ($F8,$F9,$F10)
+  VGLOH ($F7,$F10,$B57)
+  MOKY ($B57,$M75,$B54)
+  ODR2 ($B49,$B54,$B58)
+  UND11 ($B58,$B35,$B55)
+  BTRA ($B55,A8-FREIG-ANLAGE1)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ODR2 ($B60,$B36,$B61)
+  NICHT ($B61,$HB0)
+  UHR ($HB0,$B61,$F11)
+  UST ($WZERO,$M76,$F12,$FSCRATCH)
+  UST ($WZERO,$M77,$F13,$FSCRATCH)
+  MULT ($F12,$F13,$F14)
+  VGLOH ($F11,$F14,$B62)
+  MOKY ($B62,$M78,$B59)
+  ODR2 ($B50,$B59,$B63)
+  UND11 ($B63,$B36,$B60)
+  BTRA ($B60,A8-FREIG-ANLAGE2)
+  ;TÄGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  RSS (SAMMEL-ST-ANL1,QUITTIERUNG-A08,$B35,$WSCRATCH)
+  RSS (SAMMEL-ST-ANL2,QUITTIERUNG-A08,$B36,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  UNDMN (2,KFREIG-GLT-EIN1,A8-FREIG-ANLAGE1,1,
+         A8-Z1-SOLL-EIN2,A8-Z1-SOLL-EIN1,$B64)
+  UNDMN (2,KFREIG-GLT-EIN2,A8-FREIG-ANLAGE1,1,
+         A8-Z1-SOLL-EIN1,A8-Z1-SOLL-EIN2,$B65)
+  BEFAUS (1,$B64,A8-Z1-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0800BM11,ERR39)
+  BEFAUS (1,$B65,A8-Z1-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0800BM12,ERR40)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UNDMN (2,KFREIG-GLT-EIN1,A8-FREIG-ANLAGE1,1,
+         A8-A1-SOLL-EIN2,A8-A1-SOLL-EIN1,$B66)
+  UNDMN (2,KFREIG-GLT-EIN2,A8-FREIG-ANLAGE1,1,
+         A8-A1-SOLL-EIN1,A8-A1-SOLL-EIN2,$B67)
+  BEFAUS (1,$B66,A8-A1-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0800BM21,ERR41)
+  BEFAUS (1,$B67,A8-A1-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0800BM22,ERR42)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  UNDMN (2,KFREIG-GLT-EIN1,A8-FREIG-ANLAGE2,1,
+         A8-Z2-SOLL-EIN2,A8-Z2-SOLL-EIN1,$B68)
+  UNDMN (2,KFREIG-GLT-EIN2,A8-FREIG-ANLAGE2,1,
+         A8-Z2-SOLL-EIN1,A8-Z2-SOLL-EIN2,$B69)
+  BEFAUS (1,$B68,A8-Z2-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0800BM13,ERR39)
+  BEFAUS (1,$B69,A8-Z2-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0800BM14,ERR40)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  UNDMN (2,KFREIG-GLT-EIN1,A8-FREIG-ANLAGE2,1,
+         A8-A2-SOLL-EIN2,A8-A2-SOLL-EIN1,$B70)
+  UNDMN (2,KFREIG-GLT-EIN2,A8-FREIG-ANLAGE2,1,
+         A8-A2-SOLL-EIN1,A8-A2-SOLL-EIN2,$B71)
+  BEFAUS (1,$B70,A8-A2-SOLL-EIN1,$WZERO,$WZERO,
+          &BA1LU0800BM23,ERR41)
+  BEFAUS (1,$B71,A8-A2-SOLL-EIN2,$WZERO,$WZERO,
+          &BA1LU0800BM24,ERR42)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (11,A8-ZULU1-ST-KEIL,A8-ZUL1-REP-BM,A8-Z1-1ST-RM-ST,
+         A8-ZULF1-AUTO-ST,A8-TECHNI-RAUCH,A8-Z1-2ST-RM-ST,
+         A8-A1-1ST-RM-ST,A8-A1-2ST-RM-ST,A8-ABL1-REP-BM,
+         A8-ABLU1-ST-KEIL,A8-ABLF1-AUTO-ST,0,$B72,$WSCRATCH)
+  VVZ ($B72,$M79,$M80,SAMMEL-ST-ANL1)
+  ODRMN (11,A8-ZULU2-ST-KEIL,A8-ZUL2-REP-BM,A8-Z2-1ST-RM-ST,
+         A8-ZULF2-AUTO-ST,A8-TECHNI-RAUCH,A8-Z2-2ST-RM-ST,
+         A8-A2-1ST-RM-ST,A8-A2-2ST-RM-ST,A8-ABL2-REP-BM,
+         A8-ABLU2-ST-KEIL,A8-ABLF2-AUTO-ST,0,$B73,$WSCRATCH)
+  VVZ ($B73,$M81,$M82,SAMMEL-ST-ANL2)
+  ODR2 (SAMMEL-ST-ANL1,SAMMEL-ST-ANL2,SAMMEL-ST-ANL1-2)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1000)
+  REGLER (17,KON01,Kon00,$M83,Y-SIGNAL-REG.17,$WSCRATCH)
+  REGLER (18,KON01,Kon00,$M84,Y-SIGNAL-REG.18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  FKG (Y-SIGNAL-REG.17,4,$M85,$M86,$M87,$M88,
+       A8-STELL-KLAPPEN)
+  FKG (Y-SIGNAL-REG.17,4,$M89,$M90,$M91,$M92,
+       A8-STELL-VE-VENT)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (4,A8-Z1-1ST-RM-EIN,A8-Z1-2ST-RM-EIN,
+         A8-Z2-1ST-RM-EIN,A8-Z2-2ST-RM-EIN,0,$B74,$WSCRATCH)
+  AWT ($B74,$M93,A8-STELL-VE-VENT,$F15)
+  ANAUS ($F15,$M94,&BA1LU0800AA01,WERR)
+  ODRMN (4,A8-Z1-1ST-RM-EIN,A8-Z1-2ST-RM-EIN,
+         A8-Z2-1ST-RM-EIN,A8-Z2-2ST-RM-EIN,0,$B75,$WSCRATCH)
+  AWT ($B75,$M95,A8-STELL-KLAPPEN,$F16)
+  ANAUS ($F16,$M96,&BA1LU0800AA52,WERR)
+  ODRMN (4,A8-Z1-1ST-RM-EIN,A8-Z1-2ST-RM-EIN,
+         A8-Z2-1ST-RM-EIN,A8-Z2-2ST-RM-EIN,0,$B76,$WSCRATCH)
+  AWT ($B76,$M97,Y-SIGNAL-REG.18,$F17)
+  ANAUS ($F17,$M98,&BA1LU0800AA02,WERR)
+  NICHT ($B76,$HB0)
+  BEFAUS (1,$HB0,$B76,$WZERO,$WZERO,&BA1LU0800BM55,WERR)
+  ENDE 
+  ENDMODUL 

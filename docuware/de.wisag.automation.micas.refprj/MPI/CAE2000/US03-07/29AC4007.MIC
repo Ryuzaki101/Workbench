@@ -1,0 +1,372 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI30707.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : H. Peters
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 7
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 7
+  ;*****************************************************************
+  MODUL (ac40,7)
+  WordV  Entr.Taster
+  WordV  Entr.Befehl
+  WordV  Untersp_Notnetz
+  WordV  Untersp_NormNetz
+  WordV  Tagbetrieb_R310
+  WordV  Tagbetrieb_R318
+  WordV  Tagbetrieb_R332
+  WordV  Leckage_Spuelkue
+  WordV  Anl-Bef-Zell-EIN
+  WordV  Tagbetrieb_R337
+  WordV  Tagbetrieb_R335
+  WordV  Tagbetrieb_R309
+  WordV  Tagbetrieb_R339
+  WordV  Tagbetrieb_R340
+  WordV  Tagbetrieb_R341
+  WordV  Tagbetrieb_R301
+  WordV  Tagbetrieb_R319
+  WordV  Tagbetrieb_R342
+  WordV  Tagbetrieb_R314
+  WordV  Tagbetrieb_R315
+  WordV  Tagbetrieb_R316
+  WordV  Tagbetrieb_R311
+  WordV  Tagbetrieb_R312
+  WordV  Tagbetrieb_R313
+  WordV  Anlage_Wieder_2
+  WordV  Anlage_Wieder_1
+  WordV  Entriegeln_1
+  IPAMB &M0 (240,3)
+  WordV  $WSCRATCH
+  IPAMB &M1 (240,7)
+  IPAMB &M2 (240,11)
+  IPAMB &M3 (240,15)
+  IPAMB &M4 (241,3)
+  IPAMB &M5 (241,7)
+  IPAMB &M6 (241,11)
+  IPAMB &M7 (242,3)
+  IPAMB &M8 (242,7)
+  IPAMB &M9 (242,11)
+  IPAMB &M10 (243,3)
+  IPAMB &M11 (243,7)
+  IPAMB &M12 (243,11)
+  IPAMB &M13 (244,3)
+  IPAMB &M14 (245,3)
+  IPAMB &M15 (245,7)
+  IPAMB &M16 (245,11)
+  IPAMB &M17 (245,15)
+  IPAMB &M18 (87,3)
+  IPAMB &M19 (0,0)
+  IPAMB &M23 (50,15)
+  WordV  $HB2
+  IPAMB &M28 (65,11)
+  IPAMB &M29 (66,14)
+  IPAMB &M30 (50,3)
+  IPAMB &M31 (50,2)
+  WordV  $HB0
+  FloatK $M32 (10.00)
+  FloatK $M33 (0.00)
+  WordV  $B1
+  FloatK $M34 (10.00)
+  WordV  $B2
+  FloatK $M35 (30.00)
+  FloatK $M36 (0.00)
+  WordV  $B3
+  FloatK $M37 (10.00)
+  WordV  $B4
+  FloatK $M38 (10.00)
+  FloatK $M39 (0.00)
+  WordV  $B5
+  FloatK $M40 (10.00)
+  WordV  $B6
+  FloatK $M41 (30.00)
+  FloatK $M42 (0.00)
+  WordV  $B7
+  FloatK $M43 (10.00)
+  WordV  $B8
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M44 (36,9)
+  IPAMB &M45 (36,13)
+  IPAMB &M46 (21,9)
+  IPAMB &M47 (21,13)
+  IPAMB &M48 (22,1)
+  IPAMB &M49 (22,5)
+  IPAMB &M50 (23,1)
+  IPAMB &M51 (23,5)
+  IPAMB &M52 (22,9)
+  IPAMB &M53 (22,13)
+  IPAMB &M54 (49,9)
+  IPAMB &M55 (49,13)
+  IPAMB &M56 (23,9)
+  IPAMB &M57 (23,13)
+  IPAMB &M58 (34,1)
+  IPAMB &M59 (34,5)
+  IPAMB &M60 (35,1)
+  IPAMB &M61 (35,5)
+  IPAMB &M62 (34,13)
+  IPAMB &M63 (35,9)
+  IPAMB &M64 (35,13)
+  IPAMB &M65 (36,1)
+  WordK  $M66 (1)
+  IPAAW &M67 (69)
+  FloatK $M68 (50.00)
+  FloatK $M69 (100.00)
+  FloatV $F1
+  IPAMB &M70 (36,5)
+  IPAMB &M71 (2,9)
+  IPAMB &M72 (2,13)
+  IPAMB &M73 (37,1)
+  IPAMB &M74 (37,5)
+  IPAMB &M75 (37,9)
+  IPAMB &M76 (37,13)
+  IPAMB &M77 (48,1)
+  IPAMB &M78 (48,5)
+  IPAMB &M79 (49,1)
+  IPAMB &M80 (49,5)
+  IPAMB &M81 (48,9)
+  IPAMB &M82 (48,13)
+  FloatK $M83 (1.00)
+  WordV  $B9
+  FloatK $M84 (1.00)
+  WordV  $B10
+  WordV  $B11
+  IPAMB &M85 (34,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,500)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Gîttingen
+  ;Projekt: Turm 3
+  ;         Umbau 3.OG fÅr
+  ;         Prof. Gîrlich
+  ;Anlage:  Ansteuerung
+  ;         zahlreicher VSR
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,Tagbetrieb_R301,$WSCRATCH)
+  MELEIN (&M1,1,Tagbetrieb_R309,$WSCRATCH)
+  MELEIN (&M2,1,Tagbetrieb_R339,$WSCRATCH)
+  MELEIN (&M3,1,Tagbetrieb_R340,$WSCRATCH)
+  MELEIN (&M4,1,Tagbetrieb_R319,$WSCRATCH)
+  MELEIN (&M5,1,Tagbetrieb_R341,$WSCRATCH)
+  MELEIN (&M6,1,Tagbetrieb_R342,$WSCRATCH)
+  MELEIN (&M7,1,Tagbetrieb_R314,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,Tagbetrieb_R315,$WSCRATCH)
+  MELEIN (&M9,1,Tagbetrieb_R316,$WSCRATCH)
+  MELEIN (&M10,1,Tagbetrieb_R311,$WSCRATCH)
+  MELEIN (&M11,1,Tagbetrieb_R312,$WSCRATCH)
+  MELEIN (&M12,1,Tagbetrieb_R313,$WSCRATCH)
+  MELEIN (&M13,1,Tagbetrieb_R310,$WSCRATCH)
+  MELEIN (&M14,1,Tagbetrieb_R318,$WSCRATCH)
+  MELEIN (&M15,1,Tagbetrieb_R332,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,Tagbetrieb_R335,$WSCRATCH)
+  MELEIN (&M17,1,Tagbetrieb_R337,$WSCRATCH)
+  MELEIN (&M18,1,Anl-Bef-Zell-EIN,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Leckage_Spuelkue)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M28,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Untersp_NormNetz)
+  MELEIN (&M29,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Untersp_Notnetz)
+  MELEIN (&M30,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M31,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln_1)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT (Untersp_NormNetz,$HB0)
+  VVZ ($HB0,$M32,$M33,$B1)
+  MOKY ($B1,$M34,$B2)
+  NICHT (Untersp_NormNetz,$HB0)
+  VVZ ($HB0,$M35,$M36,$B3)
+  MOKY ($B3,$M37,$B4)
+  ODR2 ($B2,$B4,Anlage_Wieder_1)
+  NICHT (Untersp_Notnetz,$HB0)
+  VVZ ($HB0,$M38,$M39,$B5)
+  MOKY ($B5,$M40,$B6)
+  NICHT (Untersp_Notnetz,$HB0)
+  VVZ ($HB0,$M41,$M42,$B7)
+  MOKY ($B7,$M43,$B8)
+  ODR2 ($B6,$B8,Anlage_Wieder_2)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R301,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R301,$WZERO,$WZERO,&M44,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R301,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R301,$WZERO,$WZERO,&M45,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R309,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R309,$WZERO,$WZERO,&M46,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R309,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R309,$WZERO,$WZERO,&M47,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R310,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R310,$WZERO,$WZERO,&M48,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R310,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R310,$WZERO,$WZERO,&M49,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R311,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R311,$WZERO,$WZERO,&M50,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R311,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R311,$WZERO,$WZERO,&M51,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R312,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R312,$WZERO,$WZERO,&M52,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R312,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R312,$WZERO,$WZERO,&M53,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R313,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R313,$WZERO,$WZERO,&M54,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R313,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R313,$WZERO,$WZERO,&M55,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R314,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R314,$WZERO,$WZERO,&M56,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R314,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R314,$WZERO,$WZERO,&M57,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R315,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R315,$WZERO,$WZERO,&M58,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R315,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R315,$WZERO,$WZERO,&M59,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R316,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R316,$WZERO,$WZERO,&M60,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R316,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R316,$WZERO,$WZERO,&M61,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R318,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R318,$WZERO,$WZERO,&M62,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R319,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R319,$WZERO,$WZERO,&M63,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R319,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R319,$WZERO,$WZERO,&M64,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R332,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R332,$WZERO,$WZERO,&M65,
+          $WSCRATCH)
+  ANAUS ($F1,$M66,&M67,$WSCRATCH)
+  AWT (Tagbetrieb_R318,$M68,$M69,$F1)
+  NICHT (Tagbetrieb_R332,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R332,$WZERO,$WZERO,&M70,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R335,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R335,$WZERO,$WZERO,&M71,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R335,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R335,$WZERO,$WZERO,&M72,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R337,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R337,$WZERO,$WZERO,&M73,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R337,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R337,$WZERO,$WZERO,&M74,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R339,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R339,$WZERO,$WZERO,&M75,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R339,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R339,$WZERO,$WZERO,&M76,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (Tagbetrieb_R340,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R340,$WZERO,$WZERO,&M77,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R340,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R340,$WZERO,$WZERO,&M78,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R341,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R341,$WZERO,$WZERO,&M79,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R341,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R341,$WZERO,$WZERO,&M80,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R342,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R342,$WZERO,$WZERO,&M81,
+          $WSCRATCH)
+  NICHT (Tagbetrieb_R342,$HB0)
+  BEFAUS (1,$HB0,Tagbetrieb_R342,$WZERO,$WZERO,&M82,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  NICHT (Leckage_Spuelkue,$HB0)
+  MOKY ($HB0,$M83,$B9)
+  NICHT ($WONE,$WSCRATCH)
+  MOKY ($WONE,$M84,$B10)
+  ODRMN (4,$B9,Anlage_Wieder_1,$B10,Anlage_Wieder_2,0,$B11,
+         $WSCRATCH)
+  BEFAUS (1,Leckage_Spuelkue,$B11,$WZERO,$WZERO,&M85,
+          $WSCRATCH)
+  ENDE 
+  ENDMODUL 

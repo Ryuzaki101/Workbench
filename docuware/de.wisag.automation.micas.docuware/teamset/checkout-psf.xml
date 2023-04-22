@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="cheout-psf">
+
+	<!-- psf file to checkout -->
+	<property name="projectset" value="${basedir}/projectSet.psf" />
+	<!-- repository username -->
+	<property name="svn.user" value="wisag" />
+	<!-- repository password -->
+	<property name="svn.password" value="b40151b4bbc86b05" />
+	<!-- target dir for checkput -->
+	<property name="workspace.dir" value="${basedir}/buildroot" />
+
+	<property name="build.lib" value="${basedir}/tmp-lib" />
+	<property name="svnkit.url" value="http://www.svnkit.com/org.tmatesoft.svn_1.3.5.standalone.nojna.zip" />
+	<property name="svnkit.zip" value="${build.lib}/svnkit.zip" />
+
+	<property name="generated.ant.tasks" value="${workspace.dir}/checkout.ant" />
+	<!-- used by generated ant files -->
+	<property name="svnkit.cli.jar" value="${build.lib}/svnkit-cli.jar" />
+	<property name="svnkit.jar"     value="${build.lib}/svnkit.jar" />
+	<property name="trilead.jar"    value="${build.lib}/trilead.jar" />
+	 <macrodef name="maven">
+	    <attribute name="options" default="" />
+	    <attribute name="goal" />
+	    <attribute name="basedir" />
+	    <attribute name="resultproperty" default="maven.result" />
+	    <element name="args" implicit="true" optional="true" />
+	    <sequential>
+	      <java classname="org.codehaus.classworlds.Launcher" fork="true"
+	            dir="@{basedir}" resultproperty="@{resultproperty}">
+	        <jvmarg value="-Xmx512m"/>
+	        <classpath>
+	          <fileset dir="${maven.home}/boot">
+	            <include name="*.jar" />
+	          </fileset>
+	          <fileset dir="${maven.home}/lib">
+	            <include name="*.jar" />
+	          </fileset>
+	        </classpath>
+	        <sysproperty key="classworlds.conf" value="${maven.home}/bin/m2.conf" />
+	        <sysproperty key="maven.home" value="${maven.home}" />
+	        <arg line="--batch-mode @{options} @{goal}" />
+	      </java>
+	    </sequential>
+	  </macrodef>
+
+
+
+	<target name="generate-ants-and-checkout" depends="init-deps">
+		<mkdir dir="${workspace.dir}" />
+		<!-- TODO: check params -->
+		<xslt in="${projectset}" out="${generated.ant.tasks}" style="${basedir}/psf2anttask.xsl" />
+		<ant antfile="${generated.ant.tasks}" inheritall="true" />
+		<delete file="${generated.ant.tasks}" />
+	</target>
+	<target name="cheout-psf" depends="init-deps">
+		<ant antfile="${generated.ant.tasks}" inheritall="true" />
+	</target>
+
+	<target name="remote-revisions" depends="init-deps">
+		<!-- svn info http://nick:password@www.myhost.de/svn
+
+		-->
+	</target>
+
+	<target name="init-deps">
+		<mkdir dir="${build.lib}" />
+		<mkdir dir="${build.lib}/scratch" />
+		<get src="${svnkit.url}" dest="${svnkit.zip}" usetimestamp="true" />
+		<unzip src="${svnkit.zip}" dest="${build.lib}/scratch"/>
+		<copy todir="${build.lib}" flatten="true">
+			<fileset dir="${build.lib}/scratch">
+				<include name="**/svnkit-cli.jar"/>
+				<include name="**/svnkit.jar"/>
+				<include name="**/trilead.jar"/>
+			</fileset>
+		</copy>
+		<delete dir="${build.lib}/scratch" includeemptydirs="true"/>
+	</target>
+</project>

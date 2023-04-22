@@ -1,0 +1,412 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01310.GPS
+  ;*** Projektname    : NMR 1
+  ;*** Projektnummer  : 48100891
+  ;*** Bearbeiter     : Peters
+  ;*** PrÅfer         :       
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 13
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 10
+  ;*****************************************************************
+  MODUL (ar20,10)
+  WordV  24-Anl-ST
+  WordV  MK-Ventilstoerun
+  WordV  24-Rep-Schalter
+  WordV  MK-Pumpe-sek-ST
+  WordV  MK-Pumpe-sek-R1
+  WordV  PK-Anl-R1
+  WordV  PK-Anl-EIN
+  WordK  K0 (0)
+  WordV  MK-VL-T-zu-hoch
+  FloatV EL-SG-Abl-Regler
+  FloatV EL-SG-Zul-Regler
+  WordV  Entriegeln
+  WordK  K1 (1)
+  WordV  Entr.Befehl
+  WordV  Entr.Taster
+  FloatK SW-KW-VL-Temp (15.00)
+  WordV  24-Anl-R0
+  FloatV MK-Vent-Stellung
+  WordV  24-Rep-Sch-Stoer
+  WordV  24-Abluefter-ST
+  WordK  24-Anl-R1 (1)
+  FloatV EL-Ablufttemp
+  FloatV EL-Zulufttemp
+  WordV  24-Abluefter-R1
+  WordV  24-Ablue-Laufueb
+  WordV  24-Anl-EIN
+  WordV  24-Stroemungswae
+  FloatV MK-VL-Temp-sek
+  WordV  24-Anl-EIN-1
+  WordV  EL-Temp-Waechter
+  WordV  EL-RLT-Magn-E-R1
+  WordV  EL-StroemWaechte
+  FloatK EL-SW-Ablufttemp (22.00)
+  FloatV MK-Sign-Ventil
+  FloatK MK-SW-VL-Temp-se (10.00)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &M2 (0,0)
+  WordV  $WSCRATCH
+  IPAMB &M4 (54,15)
+  WordV  $HB2
+  IPAMB &M5 (54,14)
+  IPAMB &M9 (67,15)
+  IPAMB &M10 (76,1)
+  IPAMB &M11 (76,2)
+  IPAMB &M12 (76,3)
+  IPAMB &M13 (67,14)
+  IPAMB &M14 (66,2)
+  IPAMB &M15 (66,3)
+  IPAMB &M16 (0,11)
+  IPAMB &M17 (0,14)
+  IPAMB &M18 (119,3)
+  IPAMB &M19 (66,6)
+  IPAMB &M20 (67,10)
+  IPAAW &M26 (70)
+  IPAAW &M27 (72)
+  IPAAW &M28 (74)
+  IPAAW &M29 (73)
+  IPAAW &M30 (77)
+  FloatV $F1
+  IPAAW &M31 (78)
+  FloatV $F2
+  FloatK $M32 (150.00)
+  FloatK $M33 (-50.00)
+  FloatV $F3
+  FloatK $M34 (150.00)
+  FloatK $M35 (-50.00)
+  FloatV $F4
+  WordV  $HB0
+  FloatK $M36 (10.00)
+  WordV  $B3
+  FloatK $M37 (10.00)
+  WordV  $B4
+  WordK  $M38 (1)
+  WordK  $M40 (1)
+  IPAAW &M42 (80)
+  FloatV $F5
+  FloatK $M43 (150.00)
+  FloatK $M44 (-50.00)
+  FloatV $F6
+  FloatK $M45 (10.00)
+  WordV  $B5
+  WordK  $M46 (1)
+  FloatV $F7
+  FloatV $F8
+  FloatK $M48 (10.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $HB1
+  FloatV $F9
+  FloatK $M49 (300.00)
+  WordV  $B8
+  FloatK $M50 (10.00)
+  FloatK $M51 (0.00)
+  WordV  $B9
+  WordK  $M52 (1)
+  IPAMB &M53 (76,5)
+  FloatK $M54 (2.00)
+  FloatK $M55 (0.00)
+  FloatV $F10
+  FloatV $F11
+  FloatK $M56 (1.00)
+  WordV  $B10
+  WordV  $B11
+  FloatK $M57 (300.00)
+  FloatK $M58 (0.00)
+  WordV  $B12
+  WordK  $M59 (1)
+  IPAMB &M60 (76,6)
+  WordV  $HB3
+  FloatK $M61 (100.00)
+  WordV  $B13
+  WordV  $HB4
+  FloatK $FZERO (0.00)
+  FloatK $M62 (0.00)
+  FloatK $M63 (5.00)
+  FloatK $M64 (2.00)
+  WordV  $B14
+  FloatK $M65 (15.00)
+  FloatK $M66 (60.00)
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  IPAMB &M67 (66,5)
+  WordK  $M68 (1)
+  IPAMB &M69 (76,7)
+  WordV  $B18
+  WordV  $B19
+  FloatK $M70 (30.00)
+  FloatK $M71 (0.00)
+  WordV  $B20
+  WordK  $M72 (1)
+  IPAMB &M73 (76,0)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B30
+  WordV  $B26
+  WordV  $B27
+  WordV  $B31
+  WordV  $B28
+  WordK  $M75 (1)
+  FloatK $M77 (5.00)
+  FloatK $M78 (0.00)
+  WordV  $B29
+  IPAMB &M79 (66,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;fÅr diese Unterlagen
+  ;lautet:
+  ;D1 A6 AF X 0005
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Gîttingn
+  ;Projekt: Umbau Magnet-
+  ;         raum im NMR 1
+  ;         im Juni 2006
+  ;AbkÅrzungen in Variablen
+  ;MK = MagnetkÅhlung
+  ;24 = Abluft 24h-Absaug.
+  ;EL = ELT-Lufterhitzer-FG
+  ;PK = Proze·kÑlte
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (24-Anl-R1,24-Anl-EIN)
+  BTRA (PK-Anl-R1,PK-Anl-EIN)
+  ENDE 
+  TASK (2,cycl,1000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (24-Anl-EIN,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,24-Anl-EIN-1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,MK-Pumpe-sek-ST)
+  MELEIN (&M5,1,MK-Pumpe-sek-R1,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24-Rep-Schalter)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M10,1,24-Anl-R0,$WSCRATCH)
+  MELEIN (&M11,1,24-Anl-ST,$WSCRATCH)
+  MELEIN (&M12,1,24-Anl-R1,$WSCRATCH)
+  MELEIN (&M13,1,24-Stroemungswae,$WSCRATCH)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,24-Abluefter-ST)
+  MELEIN (&M15,1,24-Abluefter-R1,$WSCRATCH)
+  MELEIN (&M16,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M17,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M18,1,EL-RLT-Magn-E-R1,$WSCRATCH)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,EL-Temp-Waechter)
+  MELEIN (&M20,1,EL-StroemWaechte,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M26,MK-VL-Temp-sek,$WSCRATCH)
+  ANEIN (&M27,MK-Vent-Stellung,$WSCRATCH)
+  ANEIN (&M28,EL-Ablufttemp,$WSCRATCH)
+  ANEIN (&M29,EL-Zulufttemp,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&M30,$F1,$WSCRATCH)
+  ANEIN (&M31,$F2,$WSCRATCH)
+  LIMIT ($F1,$M32,$M33,$F3)
+  LIMIT ($F2,$M34,$M35,$F4)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M36,$B3)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M37,$B4)
+  AWT ($B3,$F3,MK-SW-VL-Temp-se,MK-SW-VL-Temp-se)
+  AWT ($B4,$F4,EL-SW-Ablufttemp,EL-SW-Ablufttemp)
+  ANAUS (MK-SW-VL-Temp-se,$M38,&M30,$WSCRATCH)
+  ANAUS (EL-SW-Ablufttemp,$M40,&M31,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M42,$F5,$WSCRATCH)
+  LIMIT ($F5,$M43,$M44,$F6)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M45,$B5)
+  AWT ($B5,$F6,SW-KW-VL-Temp,SW-KW-VL-Temp)
+  ANAUS (SW-KW-VL-Temp,$M46,&M42,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  SUB2 (MK-Sign-Ventil,MK-Vent-Stellung,$F7)
+  ABSWER ($F7,$F8)
+  VGLOH ($F8,$M48,$B6)
+  UND11 ($B6,Entriegeln,$B7)
+  NICHT ($B7,$HB1)
+  UHR (K1,$HB1,$F9)
+  VGLOH ($F9,$M49,$B8)
+  RSS ($B8,Entriegeln,MK-Ventilstoerun,$WSCRATCH)
+  VVZ (MK-Ventilstoerun,$M50,$M51,$B9)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  SETMEL ($M52,1,$B9,&M53,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  AWT ($WZERO,$M54,$M55,$F10)
+  ADD2 (MK-SW-VL-Temp-se,$F10,$F11)
+  VGLEH (MK-VL-Temp-sek,$F11,$M56,$B10)
+  UND2 ($B10,MK-Pumpe-sek-R1,$B11)
+  VVZ ($B11,$M57,$M58,$B12)
+  RSS ($B12,Entriegeln,MK-VL-T-zu-hoch,$WSCRATCH)
+  SETMEL ($M59,1,MK-VL-T-zu-hoch,&M60,$WSCRATCH)
+  NICHT (MK-Pumpe-sek-R1,$HB3)
+  REGLER (13,K1,$HB3,$M61,MK-Sign-Ventil,$WSCRATCH)
+  ;Die KW-VL-Temp.-Regelung
+  ;wird in dieser Anlage
+  ;mit laufender SekundÑr-
+  ;pumpe aktiviert. Es gibt
+  ;keinen Anlagenschaltbef.
+  ;(wie auch im NMR 2)
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  UND21 (EL-RLT-Magn-E-R1,EL-StroemWaechte,EL-Temp-Waechter,
+         $B13)
+  NICHT ($WONE,$WSCRATCH)
+  NICHT ($B13,$HB4)
+  REGLER (14,$WONE,$WZERO,$FZERO,EL-SG-Abl-Regler,$WSCRATCH)
+  REGLER (15,$WONE,$HB4,$M62,EL-SG-Zul-Regler,$WSCRATCH)
+  VGLEH (EL-SG-Zul-Regler,$M63,$M64,$B14)
+  VVZ ($B14,$M65,$M66,$B15)
+  UNDMN (2,$B15,$B13,0,$B16,$B17)
+  BEFAUS (1,$B17,$B16,$WZERO,$WZERO,&M67,$WSCRATCH)
+  SETMEL ($M68,1,EL-Temp-Waechter,&M69,$WSCRATCH)
+  ;Abschaltstîrung
+  ;ELT-Lufterhitzer
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  XOR2 (24-Abluefter-R1,24-Stroemungswae,$B18)
+  UND2 (24-Abluefter-R1,$B18,$B19)
+  VVZ ($B19,$M70,$M71,$B20)
+  RSS ($B20,Entriegeln,24-Ablue-Laufueb,$WSCRATCH)
+  SETMEL ($M72,1,24-Ablue-Laufueb,&M73,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UND2 (24-Anl-R1,24-Rep-Schalter,$B21)
+  RSS ($B21,Entriegeln,24-Rep-Sch-Stoer,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODRMN (3,24-Abluefter-ST,24-Ablue-Laufueb,24-Rep-Sch-Stoer,
+         0,$B22,$WSCRATCH)
+  UND11 (Entriegeln,$B22,$B23)
+  RSS ($B22,$B23,$B24,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (24-Anl-R0,$B30,$B25)
+  NICHT (24-Anl-R0,$B30)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B25,$B24,$B26)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (24-Anl-R1,$B31,$B27)
+  NICHT (24-Anl-R1,$B31)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (24-Anl-EIN-1,$B27,$B28)
+  BEFAUS (1,$B26,$B28,$WZERO,$WZERO,&M10,$WSCRATCH)
+  SETMEL ($M75,1,$B24,&M11,$WSCRATCH)
+  ;AblÅfter 24h-Absaugung
+  ; 
+  VVZ (24-Anl-R1,$M77,$M78,$B29)
+  NICHT ($B29,$HB0)
+  BEFAUS (1,$HB0,$B29,$WZERO,$WZERO,&M79,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

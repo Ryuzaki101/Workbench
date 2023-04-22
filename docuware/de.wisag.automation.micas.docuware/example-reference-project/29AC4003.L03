@@ -1,0 +1,4738 @@
+					- 1 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+
+
+        K o p f b a u s t e i n:
+        ------------------------
+        7C80:0000       F000
+        7C80:0002       2000
+        7C80:0004       0004
+        7C80:0006       0104    ;Task 1
+        7C80:0008       0000    ;Zykluszeit
+        7C80:000A       7881    ;Segmentadresse
+        7C80:000C       0CE0    ;Vergangenheitswerte
+        7C80:000E       0201    ;Task 2
+        7C80:0010       03E8    ;Zykluszeit
+        7C80:0012       78B1    ;Segmentadresse
+        7C80:0014       0D80    ;Vergangenheitswerte
+        7C80:0016       0301    ;Task 3
+        7C80:0018       03E8    ;Zykluszeit
+        7C80:001A       7925    ;Segmentadresse
+        7C80:001C       0E80    ;Vergangenheitswerte
+        7C80:001E       0401    ;Task 4
+        7C80:0020       03E8    ;Zykluszeit
+        7C80:0022       7978    ;Segmentadresse
+        7C80:0024       10F0    ;Vergangenheitswerte
+
+
+        Task 1:  Zykluszeit 0 ms  Laufzeit ca. 3 ms
+
+
+        7881:0000       F100
+        7881:0002       3017    ;NICHT
+        7881:0004       0030    ;FK-L1-FREIGABE
+        7881:0006       0A1A    ;$HB0
+        7881:0008       F101
+        7881:000A       3033    ;BEFAUS
+        7881:000C       0001
+        7881:000E       0A1A    ;$HB0
+        7881:0010       0030    ;FK-L1-FREIGABE
+        7881:0012       0080    ;$WZERO
+        7881:0014       0080    ;$WZERO
+        7881:0016       0082    ;&RLT01BF50
+        7881:0018       0826    ;WERR-66-01
+        7881:001A       F102
+        7881:001C       3017    ;NICHT
+        7881:001E       0032    ;FK-L2-FREIGABE
+        7881:0020       0A1A    ;$HB0
+        7881:0022       F103
+        7881:0024       3033    ;BEFAUS
+        7881:0026       0001
+        7881:0028       0A1A    ;$HB0
+        7881:002A       0032    ;FK-L2-FREIGABE
+        7881:002C       0080    ;$WZERO
+        7881:002E       0080    ;$WZERO
+        7881:0030       0084    ;&RLT02BF50
+        7881:0032       0828    ;WERR-66-05
+        7881:0034       F104
+        7881:0036       3017    ;NICHT
+        7881:0038       0034    ;FK-L3-FREIGABE
+        7881:003A       0A1A    ;$HB0
+					- 2 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:003C       F105
+        7881:003E       3033    ;BEFAUS
+        7881:0040       0001
+        7881:0042       0A1A    ;$HB0
+        7881:0044       0034    ;FK-L3-FREIGABE
+        7881:0046       0080    ;$WZERO
+        7881:0048       0080    ;$WZERO
+        7881:004A       0086    ;&RLT03BF50
+        7881:004C       082A    ;WERR-66-09
+        7881:004E       F106
+        7881:0050       3017    ;NICHT
+        7881:0052       0036    ;FK-VE1-FREIGABE
+        7881:0054       0A1A    ;$HB0
+        7881:0056       F107
+        7881:0058       3033    ;BEFAUS
+        7881:005A       0001
+        7881:005C       0A1A    ;$HB0
+        7881:005E       0036    ;FK-VE1-FREIGABE
+        7881:0060       0080    ;$WZERO
+        7881:0062       0080    ;$WZERO
+        7881:0064       0088    ;&RLT04BF50
+        7881:0066       082C    ;WERR-66-13
+        7881:0068       F108
+        7881:006A       3017    ;NICHT
+        7881:006C       0038    ;FK-VE2-FREIGABE
+        7881:006E       0A1A    ;$HB0
+        7881:0070       F109
+        7881:0072       3033    ;BEFAUS
+        7881:0074       0001
+        7881:0076       0A1A    ;$HB0
+        7881:0078       0038    ;FK-VE2-FREIGABE
+        7881:007A       0080    ;$WZERO
+        7881:007C       0080    ;$WZERO
+        7881:007E       008A    ;&RLT05BF50
+        7881:0080       082E    ;WERR-67-01
+        7881:0082       F10A
+        7881:0084       3017    ;NICHT
+        7881:0086       003A    ;FK-VE3-FREIGABE
+        7881:0088       0A1A    ;$HB0
+        7881:008A       F10B
+        7881:008C       3033    ;BEFAUS
+        7881:008E       0001
+        7881:0090       0A1A    ;$HB0
+        7881:0092       003A    ;FK-VE3-FREIGABE
+        7881:0094       0080    ;$WZERO
+        7881:0096       0080    ;$WZERO
+        7881:0098       008C    ;&RLT06BF50
+        7881:009A       0830    ;WERR-67-05
+        7881:009C       F10C
+        7881:009E       3017    ;NICHT
+        7881:00A0       003C    ;FK-VE4-FREIGABE
+        7881:00A2       0A1A    ;$HB0
+        7881:00A4       F10D
+        7881:00A6       3033    ;BEFAUS
+        7881:00A8       0001
+        7881:00AA       0A1A    ;$HB0
+        7881:00AC       003C    ;FK-VE4-FREIGABE
+        7881:00AE       0080    ;$WZERO
+					- 3 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:00B0       0080    ;$WZERO
+        7881:00B2       008E    ;&RLT07BF50
+        7881:00B4       0832    ;WERR-67-09
+        7881:00B6       F10E
+        7881:00B8       3017    ;NICHT
+        7881:00BA       003E    ;FK-VE5-FREIGABE
+        7881:00BC       0A1A    ;$HB0
+        7881:00BE       F10F
+        7881:00C0       3033    ;BEFAUS
+        7881:00C2       0001
+        7881:00C4       0A1A    ;$HB0
+        7881:00C6       003E    ;FK-VE5-FREIGABE
+        7881:00C8       0080    ;$WZERO
+        7881:00CA       0080    ;$WZERO
+        7881:00CC       0090    ;&RLT08BF50
+        7881:00CE       0834    ;WERR-67-13
+        7881:00D0       F110
+        7881:00D2       3017    ;NICHT
+        7881:00D4       0040    ;FK-VE6-FREIGABE
+        7881:00D6       0A1A    ;$HB0
+        7881:00D8       F111
+        7881:00DA       3033    ;BEFAUS
+        7881:00DC       0001
+        7881:00DE       0A1A    ;$HB0
+        7881:00E0       0040    ;FK-VE6-FREIGABE
+        7881:00E2       0080    ;$WZERO
+        7881:00E4       0080    ;$WZERO
+        7881:00E6       0092    ;&RLT09BF50
+        7881:00E8       0836    ;WERR-68-01
+        7881:00EA       F112
+        7881:00EC       3017    ;NICHT
+        7881:00EE       0042    ;FK-VE7-FREIGABE
+        7881:00F0       0A1A    ;$HB0
+        7881:00F2       F113
+        7881:00F4       3033    ;BEFAUS
+        7881:00F6       0001
+        7881:00F8       0A1A    ;$HB0
+        7881:00FA       0042    ;FK-VE7-FREIGABE
+        7881:00FC       0080    ;$WZERO
+        7881:00FE       0080    ;$WZERO
+        7881:0100       0094    ;&RLT10BF50
+        7881:0102       0838    ;WERR-68-05
+        7881:0104       F114
+        7881:0106       3017    ;NICHT
+        7881:0108       0044    ;FK-L1-HAND
+        7881:010A       0A1A    ;$HB0
+        7881:010C       F115
+        7881:010E       3033    ;BEFAUS
+        7881:0110       0001
+        7881:0112       0A1A    ;$HB0
+        7881:0114       0044    ;FK-L1-HAND
+        7881:0116       0080    ;$WZERO
+        7881:0118       0080    ;$WZERO
+        7881:011A       0096    ;&RLT01BF51
+        7881:011C       083A    ;WERR-91-01
+        7881:011E       F116
+        7881:0120       3017    ;NICHT
+        7881:0122       0046    ;FK-L2-HAND
+					- 4 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:0124       0A1A    ;$HB0
+        7881:0126       F117
+        7881:0128       3033    ;BEFAUS
+        7881:012A       0001
+        7881:012C       0A1A    ;$HB0
+        7881:012E       0046    ;FK-L2-HAND
+        7881:0130       0080    ;$WZERO
+        7881:0132       0080    ;$WZERO
+        7881:0134       0098    ;&RLT02BF51
+        7881:0136       083C    ;WERR-91-05
+        7881:0138       F118
+        7881:013A       3017    ;NICHT
+        7881:013C       0048    ;FK-L3-HAND
+        7881:013E       0A1A    ;$HB0
+        7881:0140       F119
+        7881:0142       3033    ;BEFAUS
+        7881:0144       0001
+        7881:0146       0A1A    ;$HB0
+        7881:0148       0048    ;FK-L3-HAND
+        7881:014A       0080    ;$WZERO
+        7881:014C       0080    ;$WZERO
+        7881:014E       009A    ;&RLT03BF51
+        7881:0150       083E    ;WERR-91-09
+        7881:0152       F11A
+        7881:0154       3017    ;NICHT
+        7881:0156       004A    ;FK-VE1-HAND
+        7881:0158       0A1A    ;$HB0
+        7881:015A       F11B
+        7881:015C       3033    ;BEFAUS
+        7881:015E       0001
+        7881:0160       0A1A    ;$HB0
+        7881:0162       004A    ;FK-VE1-HAND
+        7881:0164       0080    ;$WZERO
+        7881:0166       0080    ;$WZERO
+        7881:0168       009C    ;&RLT04BF51
+        7881:016A       0840    ;WERR-91-13
+        7881:016C       F11C
+        7881:016E       3017    ;NICHT
+        7881:0170       004C    ;FK-VE2-HAND
+        7881:0172       0A1A    ;$HB0
+        7881:0174       F11D
+        7881:0176       3033    ;BEFAUS
+        7881:0178       0001
+        7881:017A       0A1A    ;$HB0
+        7881:017C       004C    ;FK-VE2-HAND
+        7881:017E       0080    ;$WZERO
+        7881:0180       0080    ;$WZERO
+        7881:0182       009E    ;&RLT05BF51
+        7881:0184       0842    ;WERR-92-01
+        7881:0186       F11E
+        7881:0188       3017    ;NICHT
+        7881:018A       004E    ;FK-VE3-HAND
+        7881:018C       0A1A    ;$HB0
+        7881:018E       F11F
+        7881:0190       3033    ;BEFAUS
+        7881:0192       0001
+        7881:0194       0A1A    ;$HB0
+        7881:0196       004E    ;FK-VE3-HAND
+					- 5 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:0198       0080    ;$WZERO
+        7881:019A       0080    ;$WZERO
+        7881:019C       00A0    ;&RLT06BF51
+        7881:019E       0844    ;WERR-92-05
+        7881:01A0       F120
+        7881:01A2       3017    ;NICHT
+        7881:01A4       0050    ;FK-VE4-HAND
+        7881:01A6       0A1A    ;$HB0
+        7881:01A8       F121
+        7881:01AA       3033    ;BEFAUS
+        7881:01AC       0001
+        7881:01AE       0A1A    ;$HB0
+        7881:01B0       0050    ;FK-VE4-HAND
+        7881:01B2       0080    ;$WZERO
+        7881:01B4       0080    ;$WZERO
+        7881:01B6       00A2    ;&RLT07BF51
+        7881:01B8       0846    ;WERR-92-09
+        7881:01BA       F122
+        7881:01BC       3017    ;NICHT
+        7881:01BE       0052    ;FK-VE5-HAND
+        7881:01C0       0A1A    ;$HB0
+        7881:01C2       F123
+        7881:01C4       3033    ;BEFAUS
+        7881:01C6       0001
+        7881:01C8       0A1A    ;$HB0
+        7881:01CA       0052    ;FK-VE5-HAND
+        7881:01CC       0080    ;$WZERO
+        7881:01CE       0080    ;$WZERO
+        7881:01D0       00A4    ;&RLT08BF51
+        7881:01D2       0848    ;WERR-92-13
+        7881:01D4       F124
+        7881:01D6       3017    ;NICHT
+        7881:01D8       0054    ;FK-VE6-HAND
+        7881:01DA       0A1A    ;$HB0
+        7881:01DC       F125
+        7881:01DE       3033    ;BEFAUS
+        7881:01E0       0001
+        7881:01E2       0A1A    ;$HB0
+        7881:01E4       0054    ;FK-VE6-HAND
+        7881:01E6       0080    ;$WZERO
+        7881:01E8       0080    ;$WZERO
+        7881:01EA       00A6    ;&RLT09BF51
+        7881:01EC       084A    ;WERR-93-01
+        7881:01EE       F126
+        7881:01F0       3017    ;NICHT
+        7881:01F2       0056    ;FK-VE7-HAND
+        7881:01F4       0A1A    ;$HB0
+        7881:01F6       F127
+        7881:01F8       3033    ;BEFAUS
+        7881:01FA       0001
+        7881:01FC       0A1A    ;$HB0
+        7881:01FE       0056    ;FK-VE7-HAND
+        7881:0200       0080    ;$WZERO
+        7881:0202       0080    ;$WZERO
+        7881:0204       00A8    ;&RLT10BF51
+        7881:0206       084C    ;WERR-93-05
+        7881:0208       F128
+        7881:020A       3017    ;NICHT
+					- 6 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:020C       0070    ;FK-VE8-FREIGABE
+        7881:020E       0A1A    ;$HB0
+        7881:0210       F129
+        7881:0212       3033    ;BEFAUS
+        7881:0214       0001
+        7881:0216       0A1A    ;$HB0
+        7881:0218       0070    ;FK-VE8-FREIGABE
+        7881:021A       0080    ;$WZERO
+        7881:021C       0080    ;$WZERO
+        7881:021E       00AA    ;&RLT11BF50
+        7881:0220       09AA    ;WERR-68-09
+        7881:0222       F12A
+        7881:0224       3017    ;NICHT
+        7881:0226       0072    ;FK-VE8-HAND
+        7881:0228       0A1A    ;$HB0
+        7881:022A       F12B
+        7881:022C       3033    ;BEFAUS
+        7881:022E       0001
+        7881:0230       0A1A    ;$HB0
+        7881:0232       0072    ;FK-VE8-HAND
+        7881:0234       0080    ;$WZERO
+        7881:0236       0080    ;$WZERO
+        7881:0238       00AC    ;&RLT11BF51
+        7881:023A       09B6    ;WERR-68-13
+        7881:023C       F12C
+        7881:023E       3034    ;SETMEL
+        7881:0240       00AE    ;$M0
+        7881:0242       0001
+        7881:0244       006E    ;FK-VE8-ZEIT-EIN
+        7881:0246       00B0    ;&RLT11BM50
+        7881:0248       09CC    ;WERR-69-14
+        7881:024A       F12D
+        7881:024C       3034    ;SETMEL
+        7881:024E       00B2    ;$M1
+        7881:0250       0001
+        7881:0252       005A    ;FK-L1-ZEIT-EIN
+        7881:0254       00B4    ;&RLT01BM50
+        7881:0256       080A    ;WERR-94-04
+        7881:0258       F12E
+        7881:025A       3034    ;SETMEL
+        7881:025C       00B6    ;$M2
+        7881:025E       0001
+        7881:0260       005C    ;FK-L2-ZEIT-EIN
+        7881:0262       00B8    ;&RLT02BM50
+        7881:0264       080C    ;WERR-94-09
+        7881:0266       F12F
+        7881:0268       3034    ;SETMEL
+        7881:026A       00BA    ;$M3
+        7881:026C       0001
+        7881:026E       005E    ;FK-L3-ZEIT-EIN
+        7881:0270       00BC    ;&RLT03BM50
+        7881:0272       084E    ;WERR-94-14
+        7881:0274       F130
+        7881:0276       3034    ;SETMEL
+        7881:0278       00BE    ;$M4
+        7881:027A       0007
+        7881:027C       0058    ;FK-VE1-ZEIT-EIN
+        7881:027E       0060    ;FK-VE2-ZEIT-EIN
+					- 7 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7881:0280       0062    ;FK-VE3-ZEIT-EIN
+        7881:0282       0064    ;FK-VE4-ZEIT-EIN
+        7881:0284       0066    ;FK-VE5-ZEIT-EIN
+        7881:0286       0068    ;FK-VE6-ZEIT-EIN
+        7881:0288       006A    ;FK-VE7-ZEIT-EIN
+        7881:028A       00C0    ;&RLT04BM50
+        7881:028C       080E    ;WERR-95-01
+        7881:028E       F131
+        7881:0290       3032    ;ANAUS
+        7881:0292       03B0    ;FK-L1-SW-ZU-TEMP
+        7881:0294       00CE    ;$M5
+        7881:0296       00D0    ;&RLT01SW01
+        7881:0298       0866    ;WERR-70
+        7881:029A       F132
+        7881:029C       3032    ;ANAUS
+        7881:029E       03B8    ;FK-L2-SW-ZU-TEMP
+        7881:02A0       00D2    ;$M6
+        7881:02A2       00D4    ;&RLT02SW01
+        7881:02A4       086A    ;WERR-75
+        7881:02A6       F133
+        7881:02A8       3032    ;ANAUS
+        7881:02AA       03C0    ;FK-VE1-SW-AB-DRU
+        7881:02AC       00D6    ;$M7
+        7881:02AE       00D8    ;&RLT04SW11
+        7881:02B0       086E    ;WERR-81
+        7881:02B2       F134
+        7881:02B4       3032    ;ANAUS
+        7881:02B6       03C4    ;FK-VE2-SW-AB-DRU
+        7881:02B8       00DA    ;$M8
+        7881:02BA       00DC    ;&RLT05SW11
+        7881:02BC       0870    ;WERR-84
+        7881:02BE       F135
+        7881:02C0       3032    ;ANAUS
+        7881:02C2       03C8    ;FK-VE3-SW-AB-DRU
+        7881:02C4       00DE    ;$M9
+        7881:02C6       00E0    ;&RLT06SW11
+        7881:02C8       0872    ;WERR-87
+        7881:02CA       F136
+        7881:02CC       3032    ;ANAUS
+        7881:02CE       03D4    ;FK-L3-SW-AB-TEMP
+        7881:02D0       00E2    ;$M10
+        7881:02D2       00E4    ;&RLT03SW11
+        7881:02D4       0876    ;WERR-80
+        7881:02D6       F137
+        7881:02D8       3032    ;ANAUS
+        7881:02DA       03B4    ;FK-L1-SW-ZU-DRU.
+        7881:02DC       00E6    ;$M11
+        7881:02DE       00E8    ;&RLT01SW02
+        7881:02E0       0868    ;WERR-71
+        7881:02E2       F138
+        7881:02E4       3032    ;ANAUS
+        7881:02E6       03BC    ;FK-L2-SW-ZU-DRU.
+        7881:02E8       00EA    ;$M12
+        7881:02EA       00EC    ;&RLT02SW02
+        7881:02EC       086C    ;WERR-76
+        7881:02EE       F139
+        7881:02F0       3000    ;ENDE
+
+					- 8 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        Task 2:  Zykluszeit 1000 ms  Laufzeit ca. 19 ms
+
+
+        78B1:0000       F200
+        78B1:0002       3031    ;MELEIN
+        78B1:0004       00EE    ;&RLT01BF01-ST
+        78B1:0006       0002
+        78B1:0008       0A1C    ;$HB3
+        78B1:000A       0692    ;L1-ZU-VENT.R1
+        78B1:000C       06A6    ;WERR-0-2
+        78B1:000E       F201
+        78B1:0010       3017    ;NICHT
+        78B1:0012       0A1C    ;$HB3
+        78B1:0014       069A    ;L1-ZU-VENT.ST
+        78B1:0016       F202
+        78B1:0018       3031    ;MELEIN
+        78B1:001A       00F2    ;&RLT01BF02-R1
+        78B1:001C       0001
+        78B1:001E       0694    ;L1-AU-KLP.R1
+        78B1:0020       06A8    ;WERR-0-7
+        78B1:0022       F203
+        78B1:0024       3031    ;MELEIN
+        78B1:0026       00F4    ;&RLT01BM01
+        78B1:0028       0002
+        78B1:002A       0696    ;L1-ZU-VENT.R.SCH
+        78B1:002C       0A1E    ;$HB4
+        78B1:002E       06AA    ;WERR-2-2
+        78B1:0030       F204
+        78B1:0032       3017    ;NICHT
+        78B1:0034       0A1E    ;$HB4
+        78B1:0036       0698    ;L1-2-3-RAUCHMEL.
+        78B1:0038       F205
+        78B1:003A       3031    ;MELEIN
+        78B1:003C       00F8    ;&RLT01BM02
+        78B1:003E       0002
+        78B1:0040       069C    ;L1-AU-KLAPPE-AUF
+        78B1:0042       069E    ;L1-AU-KLAPPE-ZU
+        78B1:0044       06C0    ;WERR-2-6
+        78B1:0046       F206
+        78B1:0048       3031    ;MELEIN
+        78B1:004A       00FC    ;&RLT01-GF01
+        78B1:004C       0001
+        78B1:004E       0A20    ;$HB2
+        78B1:0050       06AE    ;WERR-3-6
+        78B1:0052       F207
+        78B1:0054       3017    ;NICHT
+        78B1:0056       0A20    ;$HB2
+        78B1:0058       06A4    ;L1-FROST
+        78B1:005A       F208
+        78B1:005C       3031    ;MELEIN
+        78B1:005E       00FE    ;&RLT01-WA01
+        78B1:0060       0001
+        78B1:0062       0A20    ;$HB2
+        78B1:0064       096E    ;WERR-3-7
+        78B1:0066       F209
+        78B1:0068       3017    ;NICHT
+        78B1:006A       0A20    ;$HB2
+        78B1:006C       096C    ;L1-FILTER
+					- 9 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:006E       F20A
+        78B1:0070       3031    ;MELEIN
+        78B1:0072       0100    ;&RLT02BF01-ST
+        78B1:0074       0002
+        78B1:0076       0A1C    ;$HB3
+        78B1:0078       06B2    ;L2-ZU-VENT.R1
+        78B1:007A       06B8    ;WERR-1-6
+        78B1:007C       F20B
+        78B1:007E       3017    ;NICHT
+        78B1:0080       0A1C    ;$HB3
+        78B1:0082       06B0    ;L2-ZU-VENT.ST
+        78B1:0084       F20C
+        78B1:0086       3031    ;MELEIN
+        78B1:0088       0104    ;&RLT02BF02-R1
+        78B1:008A       0001
+        78B1:008C       06B4    ;L2-AU-KLP.R1
+        78B1:008E       06C2    ;WERR-0-11
+        78B1:0090       F20D
+        78B1:0092       3031    ;MELEIN
+        78B1:0094       0106    ;&RLT02BM01
+        78B1:0096       0001
+        78B1:0098       06B6    ;L2-ZU-VENT.R.SCH
+        78B1:009A       06C4    ;WERR-2-10
+        78B1:009C       F20E
+        78B1:009E       3031    ;MELEIN
+        78B1:00A0       0108    ;&RLT02BM02
+        78B1:00A2       0002
+        78B1:00A4       06BA    ;L2-AU-KLAPPE-AUF
+        78B1:00A6       06BC    ;L2-AU-KLAPPE-ZU
+        78B1:00A8       06AC    ;WERR-2-14
+        78B1:00AA       F20F
+        78B1:00AC       3031    ;MELEIN
+        78B1:00AE       010C    ;&RLT02-GF01
+        78B1:00B0       0001
+        78B1:00B2       0A20    ;$HB2
+        78B1:00B4       06C6    ;WERR-3-14
+        78B1:00B6       F210
+        78B1:00B8       3017    ;NICHT
+        78B1:00BA       0A20    ;$HB2
+        78B1:00BC       06C8    ;L2-FROST
+        78B1:00BE       F211
+        78B1:00C0       3031    ;MELEIN
+        78B1:00C2       010E    ;&RLT02-WA01
+        78B1:00C4       0001
+        78B1:00C6       0A20    ;$HB2
+        78B1:00C8       096E    ;WERR-3-7
+        78B1:00CA       F212
+        78B1:00CC       3017    ;NICHT
+        78B1:00CE       0A20    ;$HB2
+        78B1:00D0       0970    ;L2-FILTER
+        78B1:00D2       F213
+        78B1:00D4       3031    ;MELEIN
+        78B1:00D6       0110    ;&RLT03BF01-ST
+        78B1:00D8       0002
+        78B1:00DA       0A1C    ;$HB3
+        78B1:00DC       06CC    ;L3-ZU-VENT.R1
+        78B1:00DE       06DA    ;WERR-22-2
+        78B1:00E0       F214
+					- 10 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:00E2       3017    ;NICHT
+        78B1:00E4       0A1C    ;$HB3
+        78B1:00E6       06CA    ;L3-ZU-VENT.ST
+        78B1:00E8       F215
+        78B1:00EA       3031    ;MELEIN
+        78B1:00EC       0114    ;&RLT03BF02-R1
+        78B1:00EE       0001
+        78B1:00F0       06CE    ;L3-AU-KLP.R1
+        78B1:00F2       06DC    ;WERR-22-7
+        78B1:00F4       F216
+        78B1:00F6       3031    ;MELEIN
+        78B1:00F8       0116    ;&RLT03BF11-ST
+        78B1:00FA       0002
+        78B1:00FC       0A1C    ;$HB3
+        78B1:00FE       06D2    ;L3-AB-VENT.R1
+        78B1:0100       06DE    ;WERR-23-2
+        78B1:0102       F217
+        78B1:0104       3017    ;NICHT
+        78B1:0106       0A1C    ;$HB3
+        78B1:0108       06D0    ;L3-AB-VENT.ST
+        78B1:010A       F218
+        78B1:010C       3031    ;MELEIN
+        78B1:010E       011A    ;&RLT03BF12-R1
+        78B1:0110       0001
+        78B1:0112       06F8    ;L3-FO-KLP.R1
+        78B1:0114       06E0    ;WERR-23-7
+        78B1:0116       F219
+        78B1:0118       3031    ;MELEIN
+        78B1:011A       011C    ;&RLT03BM01
+        78B1:011C       0001
+        78B1:011E       0A20    ;$HB2
+        78B1:0120       06E2    ;WERR-24-10
+        78B1:0122       F21A
+        78B1:0124       3017    ;NICHT
+        78B1:0126       0A20    ;$HB2
+        78B1:0128       06D4    ;L3-ZU-VENT.R.SCH
+        78B1:012A       F21B
+        78B1:012C       3031    ;MELEIN
+        78B1:012E       011E    ;&RLT03BM02
+        78B1:0130       0002
+        78B1:0132       06D6    ;L3-AU-KLAPPE-AUF
+        78B1:0134       06D8    ;L3-AU-KLAPPE-ZU
+        78B1:0136       06E4    ;WERR-24-14
+        78B1:0138       F21C
+        78B1:013A       3031    ;MELEIN
+        78B1:013C       0122    ;&RLT03BM12
+        78B1:013E       0002
+        78B1:0140       06E6    ;L3-FO-KLAPPE-AUF
+        78B1:0142       06E8    ;L3-FO-KLAPPE-ZU
+        78B1:0144       06EC    ;WERR-25-10
+        78B1:0146       F21D
+        78B1:0148       3031    ;MELEIN
+        78B1:014A       0126    ;&RLT03ST02
+        78B1:014C       0002
+        78B1:014E       0A1C    ;$HB3
+        78B1:0150       0A1E    ;$HB4
+        78B1:0152       06F0    ;WERR-25-14
+        78B1:0154       F21E
+					- 11 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:0156       3017    ;NICHT
+        78B1:0158       0A1C    ;$HB3
+        78B1:015A       06EE    ;L3-STW-E-ERHITZ.
+        78B1:015C       F21F
+        78B1:015E       3017    ;NICHT
+        78B1:0160       0A1E    ;$HB4
+        78B1:0162       095E    ;L3-STB-E-ERHITZ.
+        78B1:0164       F220
+        78B1:0166       3031    ;MELEIN
+        78B1:0168       012A    ;&RLT03-WA01
+        78B1:016A       0001
+        78B1:016C       0A20    ;$HB2
+        78B1:016E       0978    ;WERR-46-3
+        78B1:0170       F221
+        78B1:0172       3017    ;NICHT
+        78B1:0174       0A20    ;$HB2
+        78B1:0176       0974    ;L3-FILTER-ZU
+        78B1:0178       F222
+        78B1:017A       3031    ;MELEIN
+        78B1:017C       012C    ;&RLT03BM11
+        78B1:017E       0002
+        78B1:0180       0A1C    ;$HB3
+        78B1:0182       06F4    ;L3-ZU-LUFTSTROM
+        78B1:0184       06F6    ;WERR-44-10
+        78B1:0186       F223
+        78B1:0188       3017    ;NICHT
+        78B1:018A       0A1C    ;$HB3
+        78B1:018C       06F2    ;L3-AB-VENT.R.SCH
+        78B1:018E       F224
+        78B1:0190       3031    ;MELEIN
+        78B1:0192       0130    ;&RLT03-WA02
+        78B1:0194       0001
+        78B1:0196       0A20    ;$HB2
+        78B1:0198       0976    ;WERR-47-14
+        78B1:019A       F225
+        78B1:019C       3017    ;NICHT
+        78B1:019E       0A20    ;$HB2
+        78B1:01A0       0972    ;L3-FILTER-AB
+        78B1:01A2       F226
+        78B1:01A4       3031    ;MELEIN
+        78B1:01A6       0132    ;&ISP01ST02
+        78B1:01A8       0002
+        78B1:01AA       0A1C    ;$HB3
+        78B1:01AC       0A22    ;$B1
+        78B1:01AE       0704    ;WERR-25-2
+        78B1:01B0       F227
+        78B1:01B2       3017    ;NICHT
+        78B1:01B4       0A1C    ;$HB3
+        78B1:01B6       0700    ;ISP1-AUTOMAT-ST
+        78B1:01B8       F228
+        78B1:01BA       302C    ;MOKY
+        78B1:01BC       0A22    ;$B1
+        78B1:01BE       03EC    ;$M13
+        78B1:01C0       06FA    ;QUITTIEREN
+        78B1:01C2       F229
+        78B1:01C4       3031    ;MELEIN
+        78B1:01C6       0136    ;&ISP1BM02
+        78B1:01C8       0002
+					- 12 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:01CA       08B6    ;ISP1-LS-EIN
+        78B1:01CC       06FC    ;ISP1-LS-STîRUNG
+        78B1:01CE       0706    ;WERR-25-6
+        78B1:01D0       F22A
+        78B1:01D2       3031    ;MELEIN
+        78B1:01D4       013A    ;&ISP1ST03
+        78B1:01D6       0001
+        78B1:01D8       0A20    ;$HB2
+        78B1:01DA       0708    ;WERR-23-14
+        78B1:01DC       F22B
+        78B1:01DE       3017    ;NICHT
+        78B1:01E0       0A20    ;$HB2
+        78B1:01E2       0702    ;ISP1-PHASENÅBERW
+        78B1:01E4       F22C
+        78B1:01E6       3031    ;MELEIN
+        78B1:01E8       013C    ;&ISP1ST04
+        78B1:01EA       0001
+        78B1:01EC       0A20    ;$HB2
+        78B1:01EE       0756    ;WERR-46-14
+        78B1:01F0       F22D
+        78B1:01F2       3017    ;NICHT
+        78B1:01F4       0A20    ;$HB2
+        78B1:01F6       0754    ;ISP1-öBERSPANG.
+        78B1:01F8       F22E
+        78B1:01FA       3031    ;MELEIN
+        78B1:01FC       013E    ;&BSK00BM01
+        78B1:01FE       0001
+        78B1:0200       0A24    ;$B2
+        78B1:0202       08C0    ;WERR-47-15
+        78B1:0204       F22F
+        78B1:0206       302C    ;MOKY
+        78B1:0208       0A24    ;$B2
+        78B1:020A       03F0    ;$M14
+        78B1:020C       08BE    ;BSK-QUITTIEREN
+        78B1:020E       F230
+        78B1:0210       3031    ;MELEIN
+        78B1:0212       0140    ;&RLT04BF11-ST
+        78B1:0214       0002
+        78B1:0216       0A1C    ;$HB3
+        78B1:0218       070C    ;VE1-AB-VENT.R1
+        78B1:021A       0722    ;WERR-22-10
+        78B1:021C       F231
+        78B1:021E       3017    ;NICHT
+        78B1:0220       0A1C    ;$HB3
+        78B1:0222       070A    ;VE1-AB-VENT.ST
+        78B1:0224       F232
+        78B1:0226       3031    ;MELEIN
+        78B1:0228       0144    ;&RLT05BF11-ST
+        78B1:022A       0002
+        78B1:022C       0A1C    ;$HB3
+        78B1:022E       0710    ;VE2-AB-VENT.R1
+        78B1:0230       0724    ;WERR-22-14
+        78B1:0232       F233
+        78B1:0234       3017    ;NICHT
+        78B1:0236       0A1C    ;$HB3
+        78B1:0238       070E    ;VE2-AB-VENT.ST
+        78B1:023A       F234
+        78B1:023C       3031    ;MELEIN
+					- 13 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:023E       0148    ;&RLT06BF11-ST
+        78B1:0240       0002
+        78B1:0242       0A1C    ;$HB3
+        78B1:0244       0714    ;VE3-AB-VENT.R1
+        78B1:0246       0726    ;WERR-23-10
+        78B1:0248       F235
+        78B1:024A       3017    ;NICHT
+        78B1:024C       0A1C    ;$HB3
+        78B1:024E       0712    ;VE3-AB-VENT.ST
+        78B1:0250       F236
+        78B1:0252       3031    ;MELEIN
+        78B1:0254       014C    ;&RLT07BF11-ST
+        78B1:0256       0002
+        78B1:0258       0A1C    ;$HB3
+        78B1:025A       0718    ;VE4-AB-VENT.R1
+        78B1:025C       0728    ;WERR-44-2
+        78B1:025E       F237
+        78B1:0260       3017    ;NICHT
+        78B1:0262       0A1C    ;$HB3
+        78B1:0264       0716    ;VE4-AB-VENT.ST
+        78B1:0266       F238
+        78B1:0268       3031    ;MELEIN
+        78B1:026A       0150    ;&RLT08BF11-ST
+        78B1:026C       0002
+        78B1:026E       0A1C    ;$HB3
+        78B1:0270       071C    ;VE5-AB-VENT.R1
+        78B1:0272       072A    ;WERR-44-6
+        78B1:0274       F239
+        78B1:0276       3017    ;NICHT
+        78B1:0278       0A1C    ;$HB3
+        78B1:027A       071A    ;VE5-AB-VENT.ST
+        78B1:027C       F23A
+        78B1:027E       3031    ;MELEIN
+        78B1:0280       0154    ;&RLT09BF11-ST
+        78B1:0282       0002
+        78B1:0284       0A1C    ;$HB3
+        78B1:0286       0720    ;VE6-AB-VENT.R1
+        78B1:0288       072C    ;WERR-45-2
+        78B1:028A       F23B
+        78B1:028C       3017    ;NICHT
+        78B1:028E       0A1C    ;$HB3
+        78B1:0290       071E    ;VE6-AB-VENT.ST
+        78B1:0292       F23C
+        78B1:0294       3031    ;MELEIN
+        78B1:0296       0158    ;&RLT10BF11-ST
+        78B1:0298       0002
+        78B1:029A       0A1C    ;$HB3
+        78B1:029C       0730    ;VE7-AB-VENT.R1
+        78B1:029E       0732    ;WERR-45-6
+        78B1:02A0       F23D
+        78B1:02A2       3017    ;NICHT
+        78B1:02A4       0A1C    ;$HB3
+        78B1:02A6       072E    ;VE7-AB-VENT.ST
+        78B1:02A8       F23E
+        78B1:02AA       3031    ;MELEIN
+        78B1:02AC       015C    ;&RLT04BM11
+        78B1:02AE       0002
+        78B1:02B0       0A1C    ;$HB3
+					- 14 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:02B2       0A1E    ;$HB4
+        78B1:02B4       0748    ;WERR-44-14
+        78B1:02B6       F23F
+        78B1:02B8       3017    ;NICHT
+        78B1:02BA       0A1C    ;$HB3
+        78B1:02BC       0734    ;VE1-AB-REP.SCH.
+        78B1:02BE       F240
+        78B1:02C0       3017    ;NICHT
+        78B1:02C2       0A1E    ;$HB4
+        78B1:02C4       0736    ;VE2-AB-REP.SCH.
+        78B1:02C6       F241
+        78B1:02C8       3031    ;MELEIN
+        78B1:02CA       0160    ;&RLT06BM11
+        78B1:02CC       0002
+        78B1:02CE       0A1C    ;$HB3
+        78B1:02D0       0A1E    ;$HB4
+        78B1:02D2       074A    ;WERR-45-10
+        78B1:02D4       F242
+        78B1:02D6       3017    ;NICHT
+        78B1:02D8       0A1C    ;$HB3
+        78B1:02DA       0738    ;VE3-AB-REP.SCH.
+        78B1:02DC       F243
+        78B1:02DE       3017    ;NICHT
+        78B1:02E0       0A1E    ;$HB4
+        78B1:02E2       073A    ;VE4-AB-REP.SCH.
+        78B1:02E4       F244
+        78B1:02E6       3031    ;MELEIN
+        78B1:02E8       0164    ;&RLT08BM11
+        78B1:02EA       0002
+        78B1:02EC       0A1C    ;$HB3
+        78B1:02EE       0A1E    ;$HB4
+        78B1:02F0       074C    ;WERR-45-14
+        78B1:02F2       F245
+        78B1:02F4       3017    ;NICHT
+        78B1:02F6       0A1C    ;$HB3
+        78B1:02F8       073C    ;VE5-AB-REP.SCH.
+        78B1:02FA       F246
+        78B1:02FC       3017    ;NICHT
+        78B1:02FE       0A1E    ;$HB4
+        78B1:0300       073E    ;VE6-AB-REP.SCH.
+        78B1:0302       F247
+        78B1:0304       3031    ;MELEIN
+        78B1:0306       0168    ;&RLT10BM11
+        78B1:0308       0001
+        78B1:030A       0A20    ;$HB2
+        78B1:030C       074E    ;WERR-46-2
+        78B1:030E       F248
+        78B1:0310       3017    ;NICHT
+        78B1:0312       0A20    ;$HB2
+        78B1:0314       0740    ;VE7-AB-REP.SCH.
+        78B1:0316       F249
+        78B1:0318       3031    ;MELEIN
+        78B1:031A       016A    ;&RLT04BM12
+        78B1:031C       0002
+        78B1:031E       0742    ;VE1-FO-KLAPP.AUF
+        78B1:0320       0744    ;VE1-FO-KLAPP.ZU
+        78B1:0322       0750    ;WERR-47-2
+        78B1:0324       F24A
+					- 15 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:0326       3031    ;MELEIN
+        78B1:0328       016E    ;&RLT04BF12-R1
+        78B1:032A       0001
+        78B1:032C       0746    ;VE1-FO-KLAPP.R1
+        78B1:032E       0752    ;WERR-46-11
+        78B1:0330       F24B
+        78B1:0332       3031    ;MELEIN
+        78B1:0334       0170    ;&RLT11BM11
+        78B1:0336       0001
+        78B1:0338       07AA    ;VE8-AB-REP.SCH.
+        78B1:033A       09B8    ;WERR-3-2
+        78B1:033C       F24C
+        78B1:033E       3031    ;MELEIN
+        78B1:0340       0172    ;&RLT11BF11-ST
+        78B1:0342       0002
+        78B1:0344       0A1C    ;$HB3
+        78B1:0346       09A8    ;VE8-AB-VENT.R1
+        78B1:0348       072C    ;WERR-45-2
+        78B1:034A       F24D
+        78B1:034C       3017    ;NICHT
+        78B1:034E       0A1C    ;$HB3
+        78B1:0350       09A6    ;VE8-AB-VENT.ST
+        78B1:0352       F24E
+        78B1:0354       3031    ;MELEIN
+        78B1:0356       0176    ;&BSK01BM01
+        78B1:0358       0002
+        78B1:035A       0758    ;BSK-1-AUF
+        78B1:035C       075A    ;BSK-1-ZU
+        78B1:035E       0988    ;WERR-100-02
+        78B1:0360       F24F
+        78B1:0362       3031    ;MELEIN
+        78B1:0364       017A    ;&BSK02BM01
+        78B1:0366       0002
+        78B1:0368       075C    ;BSK-2-AUF
+        78B1:036A       075E    ;BSK-2-ZU
+        78B1:036C       098A    ;WERR-100-06
+        78B1:036E       F250
+        78B1:0370       3031    ;MELEIN
+        78B1:0372       017E    ;&BSK03BM01
+        78B1:0374       0002
+        78B1:0376       0760    ;BSK-3-AUF
+        78B1:0378       0762    ;BSK-3-ZU
+        78B1:037A       098C    ;WERR-101-02
+        78B1:037C       F251
+        78B1:037E       3031    ;MELEIN
+        78B1:0380       0182    ;&BSK04BM01
+        78B1:0382       0002
+        78B1:0384       0764    ;BSK-4-AUF
+        78B1:0386       0766    ;BSK-4-ZU
+        78B1:0388       098E    ;WERR-101-06
+        78B1:038A       F252
+        78B1:038C       3031    ;MELEIN
+        78B1:038E       0186    ;&BSK05BM01
+        78B1:0390       0002
+        78B1:0392       0768    ;BSK-5-AUF
+        78B1:0394       076A    ;BSK-5-ZU
+        78B1:0396       0992    ;WERR-100-10
+        78B1:0398       F253
+					- 16 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:039A       3031    ;MELEIN
+        78B1:039C       018A    ;&BSK06BM01
+        78B1:039E       0002
+        78B1:03A0       076C    ;BSK-6-AUF
+        78B1:03A2       076E    ;BSK-6-ZU
+        78B1:03A4       0990    ;WERR-100-14
+        78B1:03A6       F254
+        78B1:03A8       3031    ;MELEIN
+        78B1:03AA       018E    ;&BSK07BM01
+        78B1:03AC       0002
+        78B1:03AE       0770    ;BSK-7-AUF
+        78B1:03B0       0772    ;BSK-7-ZU
+        78B1:03B2       0994    ;WERR-101-10
+        78B1:03B4       F255
+        78B1:03B6       3031    ;MELEIN
+        78B1:03B8       0192    ;&BSK08BM01
+        78B1:03BA       0002
+        78B1:03BC       0774    ;BSK-8-AUF
+        78B1:03BE       0776    ;BSK-8-ZU
+        78B1:03C0       0778    ;WERR-101-14
+        78B1:03C2       F256
+        78B1:03C4       3031    ;MELEIN
+        78B1:03C6       0196    ;&BSK09BM01
+        78B1:03C8       0002
+        78B1:03CA       077E    ;BSK-9-AUF
+        78B1:03CC       0780    ;BSK-9-ZU
+        78B1:03CE       077A    ;WERR-102-02
+        78B1:03D0       F257
+        78B1:03D2       3031    ;MELEIN
+        78B1:03D4       019A    ;&BSK10BM01
+        78B1:03D6       0002
+        78B1:03D8       0782    ;BSK-10-AUF
+        78B1:03DA       0784    ;BSK-10-ZU
+        78B1:03DC       0996    ;B102-06
+        78B1:03DE       F258
+        78B1:03E0       3031    ;MELEIN
+        78B1:03E2       019E    ;&BSK11BM01
+        78B1:03E4       0002
+        78B1:03E6       0786    ;BSK-11-AUF
+        78B1:03E8       0788    ;BSK-11-ZU
+        78B1:03EA       0998    ;B103-02
+        78B1:03EC       F259
+        78B1:03EE       3031    ;MELEIN
+        78B1:03F0       01A2    ;&BSK12BM01
+        78B1:03F2       0002
+        78B1:03F4       078A    ;BSK-12-AUF
+        78B1:03F6       078C    ;BSK-12-ZU
+        78B1:03F8       099A    ;B103-06
+        78B1:03FA       F25A
+        78B1:03FC       3031    ;MELEIN
+        78B1:03FE       01A6    ;&BSK13BM01
+        78B1:0400       0002
+        78B1:0402       077C    ;BSK-13-AUF
+        78B1:0404       078E    ;BSK-13-ZU
+        78B1:0406       099C    ;WERR-102-10
+        78B1:0408       F25B
+        78B1:040A       3031    ;MELEIN
+        78B1:040C       01AA    ;&BSK14BM01
+					- 17 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:040E       0002
+        78B1:0410       0790    ;BSK-14-AUF
+        78B1:0412       0792    ;BSK-14-ZU
+        78B1:0414       079C    ;WERR-102-14
+        78B1:0416       F25C
+        78B1:0418       3031    ;MELEIN
+        78B1:041A       01AE    ;&BSK15BM01
+        78B1:041C       0002
+        78B1:041E       0794    ;BSK-15-AUF
+        78B1:0420       0796    ;BSK-15-ZU
+        78B1:0422       099E    ;WERR-103-10
+        78B1:0424       F25D
+        78B1:0426       3031    ;MELEIN
+        78B1:0428       01B2    ;&BSK16BM01
+        78B1:042A       0002
+        78B1:042C       0798    ;BSK-16-AUF
+        78B1:042E       079A    ;BSK-16-ZU
+        78B1:0430       079E    ;WERR-103-14
+        78B1:0432       F25E
+        78B1:0434       3031    ;MELEIN
+        78B1:0436       01B6    ;&BSK17BM01
+        78B1:0438       0002
+        78B1:043A       07A0    ;BSK-17-AUF
+        78B1:043C       07A2    ;BSK-17-ZU
+        78B1:043E       09A0    ;WERR-104-02
+        78B1:0440       F25F
+        78B1:0442       3031    ;MELEIN
+        78B1:0444       01BA    ;&BSK18AL01
+        78B1:0446       0002
+        78B1:0448       07A4    ;BSK-18-ZU
+        78B1:044A       07A6    ;BSK-19-ZU
+        78B1:044C       09A2    ;WERR-104-06
+        78B1:044E       F260
+        78B1:0450       3031    ;MELEIN
+        78B1:0452       01BE    ;&BSK20AL01
+        78B1:0454       0001
+        78B1:0456       07A8    ;BSK-20-ZU
+        78B1:0458       09A4    ;WERR-105-02
+        78B1:045A       F261
+        78B1:045C       3031    ;MELEIN
+        78B1:045E       01C0    ;&BSK00BF10-R1
+        78B1:0460       0001
+        78B1:0462       07AE    ;BSK-ZU-TABLEAU
+        78B1:0464       0968    ;WERR-93-11
+        78B1:0466       F262
+        78B1:0468       302C    ;MOKY
+        78B1:046A       07AE    ;BSK-ZU-TABLEAU
+        78B1:046C       03F4    ;$M15
+        78B1:046E       0A26    ;$B3
+        78B1:0470       F263
+        78B1:0472       3017    ;NICHT
+        78B1:0474       0A26    ;$B3
+        78B1:0476       0A1A    ;$HB0
+        78B1:0478       F264
+        78B1:047A       3033    ;BEFAUS
+        78B1:047C       0001
+        78B1:047E       0A1A    ;$HB0
+        78B1:0480       0080    ;$WZERO
+					- 18 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:0482       0080    ;$WZERO
+        78B1:0484       0080    ;$WZERO
+        78B1:0486       01C2    ;&BSK00BF10
+        78B1:0488       07AC    ;WERR-93-09
+        78B1:048A       F265
+        78B1:048C       3031    ;MELEIN
+        78B1:048E       01C4    ;&RLT01BF50-R1
+        78B1:0490       0001
+        78B1:0492       07BC    ;L1-FREIGABE
+        78B1:0494       07CA    ;WERR-66-03
+        78B1:0496       F266
+        78B1:0498       303B    ;BTRA
+        78B1:049A       07BC    ;L1-FREIGABE
+        78B1:049C       0030    ;FK-L1-FREIGABE
+        78B1:049E       F267
+        78B1:04A0       3031    ;MELEIN
+        78B1:04A2       01C6    ;&RLT02BF50-R1
+        78B1:04A4       0001
+        78B1:04A6       07BE    ;L2-FREIGABE
+        78B1:04A8       07B0    ;WERR-66-07
+        78B1:04AA       F268
+        78B1:04AC       303B    ;BTRA
+        78B1:04AE       07BE    ;L2-FREIGABE
+        78B1:04B0       0032    ;FK-L2-FREIGABE
+        78B1:04B2       F269
+        78B1:04B4       3031    ;MELEIN
+        78B1:04B6       01C8    ;&RLT03BF50-R1
+        78B1:04B8       0001
+        78B1:04BA       07C0    ;L3-FREIGABE
+        78B1:04BC       07B2    ;WER-66-11
+        78B1:04BE       F26A
+        78B1:04C0       303B    ;BTRA
+        78B1:04C2       07C0    ;L3-FREIGABE
+        78B1:04C4       0034    ;FK-L3-FREIGABE
+        78B1:04C6       F26B
+        78B1:04C8       3031    ;MELEIN
+        78B1:04CA       01CA    ;&RLT04BF50-R1
+        78B1:04CC       0001
+        78B1:04CE       07CC    ;VE1-FREIGABE
+        78B1:04D0       07B4    ;WERR-66-15
+        78B1:04D2       F26C
+        78B1:04D4       303B    ;BTRA
+        78B1:04D6       07CC    ;VE1-FREIGABE
+        78B1:04D8       0036    ;FK-VE1-FREIGABE
+        78B1:04DA       F26D
+        78B1:04DC       3031    ;MELEIN
+        78B1:04DE       01CC    ;&RLT05BF50-R1
+        78B1:04E0       0001
+        78B1:04E2       07B6    ;VE2-FREIGABE
+        78B1:04E4       07C2    ;WERR-67-03
+        78B1:04E6       F26E
+        78B1:04E8       303B    ;BTRA
+        78B1:04EA       07B6    ;VE2-FREIGABE
+        78B1:04EC       0038    ;FK-VE2-FREIGABE
+        78B1:04EE       F26F
+        78B1:04F0       3031    ;MELEIN
+        78B1:04F2       01CE    ;&RLT06BF50-R1
+        78B1:04F4       0001
+					- 19 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:04F6       093E    ;VE3-FREIGABE
+        78B1:04F8       07CE    ;WERR-67-07
+        78B1:04FA       F270
+        78B1:04FC       303B    ;BTRA
+        78B1:04FE       093E    ;VE3-FREIGABE
+        78B1:0500       003A    ;FK-VE3-FREIGABE
+        78B1:0502       F271
+        78B1:0504       3031    ;MELEIN
+        78B1:0506       01D0    ;&RLT07BF50-R1
+        78B1:0508       0001
+        78B1:050A       07D0    ;VE4-FREIGABE
+        78B1:050C       07C8    ;WERR-67-11
+        78B1:050E       F272
+        78B1:0510       303B    ;BTRA
+        78B1:0512       07D0    ;VE4-FREIGABE
+        78B1:0514       003C    ;FK-VE4-FREIGABE
+        78B1:0516       F273
+        78B1:0518       3031    ;MELEIN
+        78B1:051A       01D2    ;&RLT08BF50-R1
+        78B1:051C       0001
+        78B1:051E       07B8    ;VE5-FREIGABE
+        78B1:0520       07BA    ;WERR-67-15
+        78B1:0522       F274
+        78B1:0524       303B    ;BTRA
+        78B1:0526       07B8    ;VE5-FREIGABE
+        78B1:0528       003E    ;FK-VE5-FREIGABE
+        78B1:052A       F275
+        78B1:052C       3031    ;MELEIN
+        78B1:052E       01D4    ;&RLT09BF50-R1
+        78B1:0530       0001
+        78B1:0532       07C4    ;VE6-FREIGABE
+        78B1:0534       07D4    ;WERR-68-03
+        78B1:0536       F276
+        78B1:0538       303B    ;BTRA
+        78B1:053A       07C4    ;VE6-FREIGABE
+        78B1:053C       0040    ;FK-VE6-FREIGABE
+        78B1:053E       F277
+        78B1:0540       3031    ;MELEIN
+        78B1:0542       01D6    ;&RLT10BF50-R1
+        78B1:0544       0001
+        78B1:0546       07D2    ;VE7-FREIGABE
+        78B1:0548       07D6    ;WERR-68-07
+        78B1:054A       F278
+        78B1:054C       303B    ;BTRA
+        78B1:054E       07D2    ;VE7-FREIGABE
+        78B1:0550       0042    ;FK-VE7-FREIGABE
+        78B1:0552       F279
+        78B1:0554       3031    ;MELEIN
+        78B1:0556       01D8    ;&RLT01BF51-R1
+        78B1:0558       0001
+        78B1:055A       07D8    ;L1-HAND
+        78B1:055C       07E2    ;WERR-91-03
+        78B1:055E       F27A
+        78B1:0560       303B    ;BTRA
+        78B1:0562       07D8    ;L1-HAND
+        78B1:0564       0044    ;FK-L1-HAND
+        78B1:0566       F27B
+        78B1:0568       3031    ;MELEIN
+					- 20 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:056A       01DA    ;&RLT02BF51-R1
+        78B1:056C       0001
+        78B1:056E       07DA    ;L2-HAND
+        78B1:0570       07E4    ;WERR-91-07
+        78B1:0572       F27C
+        78B1:0574       303B    ;BTRA
+        78B1:0576       07DA    ;L2-HAND
+        78B1:0578       0046    ;FK-L2-HAND
+        78B1:057A       F27D
+        78B1:057C       3031    ;MELEIN
+        78B1:057E       01DC    ;&RLT03BF51-R1
+        78B1:0580       0001
+        78B1:0582       07DC    ;L3-HAND
+        78B1:0584       07E6    ;WER-91-11
+        78B1:0586       F27E
+        78B1:0588       303B    ;BTRA
+        78B1:058A       07DC    ;L3-HAND
+        78B1:058C       0048    ;FK-L3-HAND
+        78B1:058E       F27F
+        78B1:0590       3031    ;MELEIN
+        78B1:0592       01DE    ;&RLT04BF51R1
+        78B1:0594       0001
+        78B1:0596       07DE    ;VE1-HAND
+        78B1:0598       07E8    ;WERR-91-15
+        78B1:059A       F280
+        78B1:059C       303B    ;BTRA
+        78B1:059E       07DE    ;VE1-HAND
+        78B1:05A0       004A    ;FK-VE1-HAND
+        78B1:05A2       F281
+        78B1:05A4       3031    ;MELEIN
+        78B1:05A6       01E0    ;&RLT05BF51-R1
+        78B1:05A8       0001
+        78B1:05AA       07E0    ;VE2-HAND
+        78B1:05AC       07EA    ;WERR-92-03
+        78B1:05AE       F282
+        78B1:05B0       303B    ;BTRA
+        78B1:05B2       07E0    ;VE2-HAND
+        78B1:05B4       004C    ;FK-VE2-HAND
+        78B1:05B6       F283
+        78B1:05B8       3031    ;MELEIN
+        78B1:05BA       01E2    ;&RLT06BF51-R1
+        78B1:05BC       0001
+        78B1:05BE       07EC    ;VE3-HAND
+        78B1:05C0       07F6    ;WERR-92-07
+        78B1:05C2       F284
+        78B1:05C4       303B    ;BTRA
+        78B1:05C6       07EC    ;VE3-HAND
+        78B1:05C8       004E    ;FK-VE3-HAND
+        78B1:05CA       F285
+        78B1:05CC       3031    ;MELEIN
+        78B1:05CE       01E4    ;&RLT07BF51-R1
+        78B1:05D0       0001
+        78B1:05D2       07EE    ;VE4-HAND
+        78B1:05D4       07F8    ;WERR-92-11
+        78B1:05D6       F286
+        78B1:05D8       303B    ;BTRA
+        78B1:05DA       07EE    ;VE4-HAND
+        78B1:05DC       0050    ;FK-VE4-HAND
+					- 21 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:05DE       F287
+        78B1:05E0       3031    ;MELEIN
+        78B1:05E2       01E6    ;&RLT08BF51-R1
+        78B1:05E4       0001
+        78B1:05E6       07F0    ;VE5-HAND
+        78B1:05E8       07FA    ;WERR-92-15
+        78B1:05EA       F288
+        78B1:05EC       303B    ;BTRA
+        78B1:05EE       07F0    ;VE5-HAND
+        78B1:05F0       0052    ;FK-VE5-HAND
+        78B1:05F2       F289
+        78B1:05F4       3031    ;MELEIN
+        78B1:05F6       01E8    ;&RLT09BF51-R1
+        78B1:05F8       0001
+        78B1:05FA       07F2    ;VE6-HAND
+        78B1:05FC       07FC    ;WERR-93-03
+        78B1:05FE       F28A
+        78B1:0600       303B    ;BTRA
+        78B1:0602       07F2    ;VE6-HAND
+        78B1:0604       0054    ;FK-VE6-HAND
+        78B1:0606       F28B
+        78B1:0608       3031    ;MELEIN
+        78B1:060A       01EA    ;&RLT10BF51-R1
+        78B1:060C       0001
+        78B1:060E       07F4    ;VE7-HAND
+        78B1:0610       07FE    ;WERR-93-07
+        78B1:0612       F28C
+        78B1:0614       303B    ;BTRA
+        78B1:0616       07F4    ;VE7-HAND
+        78B1:0618       0056    ;FK-VE7-HAND
+        78B1:061A       F28D
+        78B1:061C       3031    ;MELEIN
+        78B1:061E       00B4    ;&RLT01BM50
+        78B1:0620       0001
+        78B1:0622       0800    ;L1-ZEIT-EIN
+        78B1:0624       080A    ;WERR-94-04
+        78B1:0626       F28E
+        78B1:0628       303B    ;BTRA
+        78B1:062A       0800    ;L1-ZEIT-EIN
+        78B1:062C       005A    ;FK-L1-ZEIT-EIN
+        78B1:062E       F28F
+        78B1:0630       3031    ;MELEIN
+        78B1:0632       00B8    ;&RLT02BM50
+        78B1:0634       0001
+        78B1:0636       08E6    ;L2-ZEIT-EIN
+        78B1:0638       080C    ;WERR-94-09
+        78B1:063A       F290
+        78B1:063C       303B    ;BTRA
+        78B1:063E       08E6    ;L2-ZEIT-EIN
+        78B1:0640       005C    ;FK-L2-ZEIT-EIN
+        78B1:0642       F291
+        78B1:0644       3031    ;MELEIN
+        78B1:0646       00BC    ;&RLT03BM50
+        78B1:0648       0001
+        78B1:064A       0802    ;L3-ZEIT-EIN
+        78B1:064C       084E    ;WERR-94-14
+        78B1:064E       F292
+        78B1:0650       303B    ;BTRA
+					- 22 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:0652       0802    ;L3-ZEIT-EIN
+        78B1:0654       005E    ;FK-L3-ZEIT-EIN
+        78B1:0656       F293
+        78B1:0658       3031    ;MELEIN
+        78B1:065A       00C0    ;&RLT04BM50
+        78B1:065C       0001
+        78B1:065E       0804    ;VE1-ZEIT-EIN
+        78B1:0660       080E    ;WERR-95-01
+        78B1:0662       F294
+        78B1:0664       303B    ;BTRA
+        78B1:0666       0804    ;VE1-ZEIT-EIN
+        78B1:0668       0058    ;FK-VE1-ZEIT-EIN
+        78B1:066A       F295
+        78B1:066C       3031    ;MELEIN
+        78B1:066E       00C2    ;&RLT05BM50
+        78B1:0670       0001
+        78B1:0672       0806    ;VE2-ZEIT-EIN
+        78B1:0674       0810    ;WERR-95-02
+        78B1:0676       F296
+        78B1:0678       303B    ;BTRA
+        78B1:067A       0806    ;VE2-ZEIT-EIN
+        78B1:067C       0060    ;FK-VE2-ZEIT-EIN
+        78B1:067E       F297
+        78B1:0680       3031    ;MELEIN
+        78B1:0682       00C4    ;&RLT06BM50
+        78B1:0684       0001
+        78B1:0686       0812    ;VE3-ZEIT-EIN
+        78B1:0688       081C    ;WERR-95-03
+        78B1:068A       F298
+        78B1:068C       303B    ;BTRA
+        78B1:068E       0812    ;VE3-ZEIT-EIN
+        78B1:0690       0062    ;FK-VE3-ZEIT-EIN
+        78B1:0692       F299
+        78B1:0694       3031    ;MELEIN
+        78B1:0696       00C6    ;&RLT07BM50
+        78B1:0698       0001
+        78B1:069A       0814    ;VE4-ZEIT-EIN
+        78B1:069C       081E    ;WERR-95-04
+        78B1:069E       F29A
+        78B1:06A0       303B    ;BTRA
+        78B1:06A2       0814    ;VE4-ZEIT-EIN
+        78B1:06A4       0064    ;FK-VE4-ZEIT-EIN
+        78B1:06A6       F29B
+        78B1:06A8       3031    ;MELEIN
+        78B1:06AA       00C8    ;&RLT08BM50
+        78B1:06AC       0001
+        78B1:06AE       0816    ;VE5-ZEIT-EIN
+        78B1:06B0       0820    ;WERR-95-05
+        78B1:06B2       F29C
+        78B1:06B4       303B    ;BTRA
+        78B1:06B6       0816    ;VE5-ZEIT-EIN
+        78B1:06B8       0066    ;FK-VE5-ZEIT-EIN
+        78B1:06BA       F29D
+        78B1:06BC       3031    ;MELEIN
+        78B1:06BE       00CA    ;&RLT09BM50
+        78B1:06C0       0001
+        78B1:06C2       0818    ;VE6-ZEIT-EIN
+        78B1:06C4       0822    ;WERR-95-06
+					- 23 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        78B1:06C6       F29E
+        78B1:06C8       303B    ;BTRA
+        78B1:06CA       0818    ;VE6-ZEIT-EIN
+        78B1:06CC       0068    ;FK-VE6-ZEIT-EIN
+        78B1:06CE       F29F
+        78B1:06D0       3031    ;MELEIN
+        78B1:06D2       00CC    ;&RLT10BM50
+        78B1:06D4       0001
+        78B1:06D6       081A    ;VE7-ZEIT-EIN
+        78B1:06D8       0824    ;WERR-95-07
+        78B1:06DA       F2A0
+        78B1:06DC       303B    ;BTRA
+        78B1:06DE       081A    ;VE7-ZEIT-EIN
+        78B1:06E0       006A    ;FK-VE7-ZEIT-EIN
+        78B1:06E2       F2A1
+        78B1:06E4       3031    ;MELEIN
+        78B1:06E6       01EC    ;&RLT11BF51-R1
+        78B1:06E8       0001
+        78B1:06EA       09C2    ;VE8-HAND
+        78B1:06EC       09AE    ;WERR-68-15
+        78B1:06EE       F2A2
+        78B1:06F0       303B    ;BTRA
+        78B1:06F2       09C2    ;VE8-HAND
+        78B1:06F4       0072    ;FK-VE8-HAND
+        78B1:06F6       F2A3
+        78B1:06F8       3031    ;MELEIN
+        78B1:06FA       00B0    ;&RLT11BM50
+        78B1:06FC       0001
+        78B1:06FE       0886    ;VE8-ZEIT-EIN
+        78B1:0700       09CC    ;WERR-69-14
+        78B1:0702       F2A4
+        78B1:0704       303B    ;BTRA
+        78B1:0706       0886    ;VE8-ZEIT-EIN
+        78B1:0708       006E    ;FK-VE8-ZEIT-EIN
+        78B1:070A       F2A5
+        78B1:070C       3031    ;MELEIN
+        78B1:070E       01EE    ;&RLT11BF50-R1
+        78B1:0710       0001
+        78B1:0712       0884    ;VE8-FREIGABE
+        78B1:0714       09B0    ;WERR-68-11
+        78B1:0716       F2A6
+        78B1:0718       303B    ;BTRA
+        78B1:071A       0884    ;VE8-FREIGABE
+        78B1:071C       0070    ;FK-VE8-FREIGABE
+        78B1:071E       F2A7
+        78B1:0720       3034    ;SETMEL
+        78B1:0722       01F0    ;$M16
+        78B1:0724       0005
+        78B1:0726       097A    ;L1-DRUCK-ST
+        78B1:0728       097C    ;L2-DRUCK-ST
+        78B1:072A       097E    ;VE01-DRUCK-ST
+        78B1:072C       0980    ;VE02-DRUCK-ST
+        78B1:072E       0982    ;VE03-DRUCK-ST
+        78B1:0730       01F2    ;&RLT01ST30
+        78B1:0732       0984    ;WERR-99-11
+        78B1:0734       F2A8
+        78B1:0736       3000    ;ENDE
+
+					- 24 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        Task 3:  Zykluszeit 1000 ms  Laufzeit ca. 47 ms
+
+
+        7925:0000       F300
+        7925:0002       302F    ;ANEIN
+        7925:0004       01FC    ;&RLT01MW01
+        7925:0006       0C14    ;L1-ZU-TEMP.
+        7925:0008       0850    ;WERR-4
+        7925:000A       F301
+        7925:000C       302F    ;ANEIN
+        7925:000E       01FE    ;&RLT02MW01
+        7925:0010       0C10    ;L2-ZU-TEMP.
+        7925:0012       0852    ;WERR-5
+        7925:0014       F302
+        7925:0016       302F    ;ANEIN
+        7925:0018       0200    ;&LUE00MW01
+        7925:001A       0C18    ;AT
+        7925:001C       0856    ;WERR-8
+        7925:001E       F303
+        7925:0020       302F    ;ANEIN
+        7925:0022       0202    ;&RLT01MW02
+        7925:0024       0C1C    ;L1-ZU-DRUCK
+        7925:0026       0854    ;WERR-10
+        7925:0028       F304
+        7925:002A       302F    ;ANEIN
+        7925:002C       0204    ;&RLT02MW02
+        7925:002E       0C20    ;L2-ZU-DRUCK
+        7925:0030       0858    ;WERR-11
+        7925:0032       F305
+        7925:0034       302F    ;ANEIN
+        7925:0036       0206    ;&RLT01MW03
+        7925:0038       0C24    ;L1-GES.AB-VS
+        7925:003A       085A    ;WERR-12
+        7925:003C       F306
+        7925:003E       302F    ;ANEIN
+        7925:0040       0208    ;&RLT02MW03
+        7925:0042       0C28    ;L2-GES.AB-VS
+        7925:0044       085C    ;WERR-13
+        7925:0046       F307
+        7925:0048       302F    ;ANEIN
+        7925:004A       020A    ;&RLT03MW01
+        7925:004C       0C30    ;L3-ZU-TEMP.
+        7925:004E       0916    ;WERR-48
+        7925:0050       F308
+        7925:0052       302F    ;ANEIN
+        7925:0054       020C    ;&RLT03MW11
+        7925:0056       0C2C    ;L3-AB-TEMP.
+        7925:0058       085E    ;WERR-49
+        7925:005A       F309
+        7925:005C       302F    ;ANEIN
+        7925:005E       020E    ;&RLT04MW12
+        7925:0060       0C34    ;VE1-AB-DRUCK
+        7925:0062       0860    ;WERR-54
+        7925:0064       F30A
+        7925:0066       302F    ;ANEIN
+        7925:0068       0210    ;&RLT05MW12
+        7925:006A       0C38    ;VE2-AB-DRUCK
+        7925:006C       0862    ;WERR-55
+					- 25 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:006E       F30B
+        7925:0070       302F    ;ANEIN
+        7925:0072       0212    ;&RLT06MW12
+        7925:0074       0C3C    ;VE3-AB-DRUCK
+        7925:0076       0864    ;WERR-56
+        7925:0078       F30C
+        7925:007A       302F    ;ANEIN
+        7925:007C       00D0    ;&RLT01SW01
+        7925:007E       0C40    ;L1-SW-ZU-TEMP.
+        7925:0080       0866    ;WERR-70
+        7925:0082       F30D
+        7925:0084       303A    ;ATRA
+        7925:0086       0C40    ;L1-SW-ZU-TEMP.
+        7925:0088       03B0    ;FK-L1-SW-ZU-TEMP
+        7925:008A       F30E
+        7925:008C       302F    ;ANEIN
+        7925:008E       00E8    ;&RLT01SW02
+        7925:0090       0C44    ;L1-SW-ZU-DRUCK
+        7925:0092       0868    ;WERR-71
+        7925:0094       F30F
+        7925:0096       303A    ;ATRA
+        7925:0098       0C44    ;L1-SW-ZU-DRUCK
+        7925:009A       03B4    ;FK-L1-SW-ZU-DRU.
+        7925:009C       F310
+        7925:009E       302F    ;ANEIN
+        7925:00A0       00D4    ;&RLT02SW01
+        7925:00A2       0C48    ;L2-SW-ZU-TEMP.
+        7925:00A4       086A    ;WERR-75
+        7925:00A6       F311
+        7925:00A8       303A    ;ATRA
+        7925:00AA       0C48    ;L2-SW-ZU-TEMP.
+        7925:00AC       03B8    ;FK-L2-SW-ZU-TEMP
+        7925:00AE       F312
+        7925:00B0       302F    ;ANEIN
+        7925:00B2       00EC    ;&RLT02SW02
+        7925:00B4       0C4C    ;L2-SW-ZU-DRUCK
+        7925:00B6       086C    ;WERR-76
+        7925:00B8       F313
+        7925:00BA       303A    ;ATRA
+        7925:00BC       0C4C    ;L2-SW-ZU-DRUCK
+        7925:00BE       03BC    ;FK-L2-SW-ZU-DRU.
+        7925:00C0       F314
+        7925:00C2       302F    ;ANEIN
+        7925:00C4       00D8    ;&RLT04SW11
+        7925:00C6       0C50    ;VE1-SW-AB-DRUCK
+        7925:00C8       086E    ;WERR-81
+        7925:00CA       F315
+        7925:00CC       303A    ;ATRA
+        7925:00CE       0C50    ;VE1-SW-AB-DRUCK
+        7925:00D0       03C0    ;FK-VE1-SW-AB-DRU
+        7925:00D2       F316
+        7925:00D4       302F    ;ANEIN
+        7925:00D6       00DC    ;&RLT05SW11
+        7925:00D8       0C54    ;VE2-SW-AB-DRUCK
+        7925:00DA       0870    ;WERR-84
+        7925:00DC       F317
+        7925:00DE       303A    ;ATRA
+        7925:00E0       0C54    ;VE2-SW-AB-DRUCK
+					- 26 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:00E2       03C4    ;FK-VE2-SW-AB-DRU
+        7925:00E4       F318
+        7925:00E6       302F    ;ANEIN
+        7925:00E8       00E0    ;&RLT06SW11
+        7925:00EA       0C58    ;VE3-SW-AB-DRUCK
+        7925:00EC       0872    ;WERR-87
+        7925:00EE       F319
+        7925:00F0       303A    ;ATRA
+        7925:00F2       0C58    ;VE3-SW-AB-DRUCK
+        7925:00F4       03C8    ;FK-VE3-SW-AB-DRU
+        7925:00F6       F31A
+        7925:00F8       302F    ;ANEIN
+        7925:00FA       00E4    ;&RLT03SW11
+        7925:00FC       0C98    ;L3-SW-AB-TEMP.
+        7925:00FE       0918    ;WERR-98
+        7925:0100       F31B
+        7925:0102       303A    ;ATRA
+        7925:0104       0C98    ;L3-SW-AB-TEMP.
+        7925:0106       03D4    ;FK-L3-SW-AB-TEMP
+        7925:0108       F31C
+        7925:010A       301D    ;PT1
+        7925:010C       0C1C    ;L1-ZU-DRUCK
+        7925:010E       03E0    ;FK-25
+        7925:0110       0C64    ;L1-ZU-DRU.GLATT
+        7925:0112       F31D
+        7925:0114       3032    ;ANAUS
+        7925:0116       0C64    ;L1-ZU-DRU.GLATT
+        7925:0118       0214    ;$M17
+        7925:011A       0216    ;&RLT01MW20
+        7925:011C       0878    ;WERR-72
+        7925:011E       F31E
+        7925:0120       301D    ;PT1
+        7925:0122       0C20    ;L2-ZU-DRUCK
+        7925:0124       03E0    ;FK-25
+        7925:0126       0C68    ;L2-ZU-DRU.GLATT
+        7925:0128       F31F
+        7925:012A       3032    ;ANAUS
+        7925:012C       0C68    ;L2-ZU-DRU.GLATT
+        7925:012E       0218    ;$M18
+        7925:0130       021A    ;&RLT02MW20
+        7925:0132       087C    ;WERR-77
+        7925:0134       F320
+        7925:0136       3032    ;ANAUS
+        7925:0138       0C90    ;VE2-AB-DRU.GLATT
+        7925:013A       021C    ;$M19
+        7925:013C       021E    ;&RLT05MW22
+        7925:013E       0880    ;WERR-86
+        7925:0140       F321
+        7925:0142       3032    ;ANAUS
+        7925:0144       0C8C    ;VE1-AB-DRU.GLATT
+        7925:0146       0220    ;$M20
+        7925:0148       0222    ;&RLT04MW22
+        7925:014A       087E    ;WERR-83
+        7925:014C       F322
+        7925:014E       3032    ;ANAUS
+        7925:0150       0C94    ;VE3-AB-DRU.GLATT
+        7925:0152       0224    ;$M21
+        7925:0154       0226    ;&RLT06MW22
+					- 27 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:0156       0882    ;WERR-89
+        7925:0158       F323
+        7925:015A       301D    ;PT1
+        7925:015C       0C34    ;VE1-AB-DRUCK
+        7925:015E       03E0    ;FK-25
+        7925:0160       0C8C    ;VE1-AB-DRU.GLATT
+        7925:0162       F324
+        7925:0164       301D    ;PT1
+        7925:0166       0C38    ;VE2-AB-DRUCK
+        7925:0168       03E0    ;FK-25
+        7925:016A       0C90    ;VE2-AB-DRU.GLATT
+        7925:016C       F325
+        7925:016E       301D    ;PT1
+        7925:0170       0C3C    ;VE3-AB-DRUCK
+        7925:0172       03E0    ;FK-25
+        7925:0174       0C94    ;VE3-AB-DRU.GLATT
+        7925:0176       F326
+        7925:0178       3031    ;MELEIN
+        7925:017A       0228    ;&RLT01BF01-OE
+        7925:017C       0001
+        7925:017E       0A28    ;$B4
+        7925:0180       0888    ;WERR-0-0
+        7925:0182       F327
+        7925:0184       3031    ;MELEIN
+        7925:0186       022A    ;&RLT01BF02-OE
+        7925:0188       0001
+        7925:018A       0A2A    ;$B5
+        7925:018C       088C    ;WERR-0-4
+        7925:018E       F328
+        7925:0190       3031    ;MELEIN
+        7925:0192       022C    ;&RLT02BF01-OE
+        7925:0194       0001
+        7925:0196       0A2C    ;$B6
+        7925:0198       0890    ;WERR-1-4
+        7925:019A       F329
+        7925:019C       3031    ;MELEIN
+        7925:019E       022E    ;&RLT02BF12-OE
+        7925:01A0       0001
+        7925:01A2       0A2E    ;$B7
+        7925:01A4       0892    ;WERR-0-12
+        7925:01A6       F32A
+        7925:01A8       3031    ;MELEIN
+        7925:01AA       0230    ;&RLT02BF02-OE
+        7925:01AC       0001
+        7925:01AE       0A30    ;$B8
+        7925:01B0       0894    ;WERR-0-8
+        7925:01B2       F32B
+        7925:01B4       3034    ;SETMEL
+        7925:01B6       0232    ;$M22
+        7925:01B8       0006
+        7925:01BA       0A28    ;$B4
+        7925:01BC       0080    ;$WZERO
+        7925:01BE       0A2A    ;$B5
+        7925:01C0       0A2C    ;$B6
+        7925:01C2       0A2E    ;$B7
+        7925:01C4       0A30    ;$B8
+        7925:01C6       0234    ;&RLT01BM20
+        7925:01C8       088E    ;WERR-95-08
+					- 28 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:01CA       F32C
+        7925:01CC       3031    ;MELEIN
+        7925:01CE       0240    ;&RLT03BF01-OE
+        7925:01D0       0001
+        7925:01D2       0A32    ;$B9
+        7925:01D4       0888    ;WERR-0-0
+        7925:01D6       F32D
+        7925:01D8       3031    ;MELEIN
+        7925:01DA       0242    ;&RLT03BF02-OE
+        7925:01DC       0001
+        7925:01DE       0A34    ;$B10
+        7925:01E0       0898    ;WERR-22-4
+        7925:01E2       F32E
+        7925:01E4       3031    ;MELEIN
+        7925:01E6       0244    ;&RLT03BF12-OE
+        7925:01E8       0001
+        7925:01EA       0A36    ;$B11
+        7925:01EC       089A    ;WERR-23-4
+        7925:01EE       F32F
+        7925:01F0       3031    ;MELEIN
+        7925:01F2       0246    ;&RLT03BF11-OE
+        7925:01F4       0001
+        7925:01F6       0A38    ;$B12
+        7925:01F8       089C    ;WERR-23-0
+        7925:01FA       F330
+        7925:01FC       3031    ;MELEIN
+        7925:01FE       0248    ;&RLT04BF11-OE
+        7925:0200       0001
+        7925:0202       0A3A    ;$B13
+        7925:0204       089E    ;WERR-22-8
+        7925:0206       F331
+        7925:0208       3031    ;MELEIN
+        7925:020A       024A    ;&RLT04BF12-OE
+        7925:020C       0001
+        7925:020E       0A3C    ;$B14
+        7925:0210       08A0    ;WERR-46-8
+        7925:0212       F332
+        7925:0214       3034    ;SETMEL
+        7925:0216       024C    ;$M24
+        7925:0218       0002
+        7925:021A       0A32    ;$B9
+        7925:021C       0A34    ;$B10
+        7925:021E       024E    ;&RLT03BM20
+        7925:0220       0896    ;WERR-95-14
+        7925:0222       F333
+        7925:0224       3034    ;SETMEL
+        7925:0226       0252    ;$M25
+        7925:0228       0004
+        7925:022A       0A36    ;$B11
+        7925:022C       0A38    ;$B12
+        7925:022E       0A3A    ;$B13
+        7925:0230       0A3C    ;$B14
+        7925:0232       0254    ;&RLT03BM22
+        7925:0234       088E    ;WERR-95-08
+        7925:0236       F334
+        7925:0238       3031    ;MELEIN
+        7925:023A       025C    ;&RLT05BF11-OE
+        7925:023C       0001
+					- 29 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:023E       0A3E    ;$B15
+        7925:0240       08A2    ;WERR-22-12
+        7925:0242       F335
+        7925:0244       3031    ;MELEIN
+        7925:0246       025E    ;&RLT06BF11-OE
+        7925:0248       0001
+        7925:024A       0A40    ;$B16
+        7925:024C       08A4    ;WERR-23-8
+        7925:024E       F336
+        7925:0250       3031    ;MELEIN
+        7925:0252       0260    ;&RLT07BF11-OE
+        7925:0254       0001
+        7925:0256       0A42    ;$B17
+        7925:0258       08A6    ;WERR-44-0
+        7925:025A       F337
+        7925:025C       3031    ;MELEIN
+        7925:025E       0262    ;&RLT08BF11-OE
+        7925:0260       0001
+        7925:0262       0A44    ;$B18
+        7925:0264       08AA    ;WERR-44-4
+        7925:0266       F338
+        7925:0268       3031    ;MELEIN
+        7925:026A       0264    ;&RLT09BF11-OE
+        7925:026C       0001
+        7925:026E       0A46    ;$B19
+        7925:0270       08AC    ;WERR-45-0
+        7925:0272       F339
+        7925:0274       3031    ;MELEIN
+        7925:0276       0266    ;&RLT10BF11-OE
+        7925:0278       0001
+        7925:027A       0A48    ;$B20
+        7925:027C       08B0    ;WERR-45-4
+        7925:027E       F33A
+        7925:0280       3034    ;SETMEL
+        7925:0282       0268    ;$M26
+        7925:0284       0004
+        7925:0286       0A3E    ;$B15
+        7925:0288       0A40    ;$B16
+        7925:028A       0A42    ;$B17
+        7925:028C       0A44    ;$B18
+        7925:028E       026A    ;&RLT05BM20
+        7925:0290       0962    ;WERR-96-4
+        7925:0292       F33B
+        7925:0294       3034    ;SETMEL
+        7925:0296       0272    ;$M27
+        7925:0298       0002
+        7925:029A       0A46    ;$B19
+        7925:029C       0A48    ;$B20
+        7925:029E       0274    ;&RLT09BM20
+        7925:02A0       08AE    ;WERR-96-8
+        7925:02A2       F33C
+        7925:02A4       3034    ;SETMEL
+        7925:02A6       0278    ;$M28
+        7925:02A8       0006
+        7925:02AA       069A    ;L1-ZU-VENT.ST
+        7925:02AC       06B0    ;L2-ZU-VENT.ST
+        7925:02AE       06CA    ;L3-ZU-VENT.ST
+        7925:02B0       06D0    ;L3-AB-VENT.ST
+					- 30 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:02B2       070A    ;VE1-AB-VENT.ST
+        7925:02B4       070E    ;VE2-AB-VENT.ST
+        7925:02B6       027A    ;&RLT01ST20
+        7925:02B8       08B2    ;WERR-96-10
+        7925:02BA       F33D
+        7925:02BC       3034    ;SETMEL
+        7925:02BE       0286    ;$M29
+        7925:02C0       0005
+        7925:02C2       0712    ;VE3-AB-VENT.ST
+        7925:02C4       0716    ;VE4-AB-VENT.ST
+        7925:02C6       071A    ;VE5-AB-VENT.ST
+        7925:02C8       071E    ;VE6-AB-VENT.ST
+        7925:02CA       072E    ;VE7-AB-VENT.ST
+        7925:02CC       0288    ;&RLT06ST20
+        7925:02CE       08B4    ;WERR-97-00
+        7925:02D0       F33E
+        7925:02D2       3034    ;SETMEL
+        7925:02D4       0292    ;$M30
+        7925:02D6       0001
+        7925:02D8       09A6    ;VE8-AB-VENT.ST
+        7925:02DA       0294    ;&RLT11ST20
+        7925:02DC       09D2    ;WERR-66-00
+        7925:02DE       F33F
+        7925:02E0       3034    ;SETMEL
+        7925:02E2       0296    ;$M31
+        7925:02E4       0008
+        7925:02E6       0692    ;L1-ZU-VENT.R1
+        7925:02E8       06B2    ;L2-ZU-VENT.R1
+        7925:02EA       06CC    ;L3-ZU-VENT.R1
+        7925:02EC       06D2    ;L3-AB-VENT.R1
+        7925:02EE       070C    ;VE1-AB-VENT.R1
+        7925:02F0       0710    ;VE2-AB-VENT.R1
+        7925:02F2       0714    ;VE3-AB-VENT.R1
+        7925:02F4       0718    ;VE4-AB-VENT.R1
+        7925:02F6       0298    ;&RLT01BM10
+        7925:02F8       0808    ;WERR-69-0
+        7925:02FA       F340
+        7925:02FC       3034    ;SETMEL
+        7925:02FE       02A8    ;$M32
+        7925:0300       0003
+        7925:0302       071C    ;VE5-AB-VENT.R1
+        7925:0304       0720    ;VE6-AB-VENT.R1
+        7925:0306       0730    ;VE7-AB-VENT.R1
+        7925:0308       02AA    ;&RLT08BM10
+        7925:030A       06EA    ;WERR-69-8
+        7925:030C       F341
+        7925:030E       3034    ;SETMEL
+        7925:0310       02B0    ;$M33
+        7925:0312       0001
+        7925:0314       09A8    ;VE8-AB-VENT.R1
+        7925:0316       02B2    ;&RLT11BM10
+        7925:0318       09B4    ;WERR-69-15
+        7925:031A       F342
+        7925:031C       3011    ;UNDMN
+        7925:031E       0000
+        7925:0320       0002
+        7925:0322       0692    ;L1-ZU-VENT.R1
+        7925:0324       069A    ;L1-ZU-VENT.ST
+					- 31 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:0326       0A4A    ;$B21
+        7925:0328       0A4C    ;$WSCRATCH
+        7925:032A       F343
+        7925:032C       3011    ;UNDMN
+        7925:032E       0000
+        7925:0330       0002
+        7925:0332       06B2    ;L2-ZU-VENT.R1
+        7925:0334       06B0    ;L2-ZU-VENT.ST
+        7925:0336       0A4E    ;$B22
+        7925:0338       0A4C    ;$WSCRATCH
+        7925:033A       F344
+        7925:033C       3011    ;UNDMN
+        7925:033E       0000
+        7925:0340       0002
+        7925:0342       06CC    ;L3-ZU-VENT.R1
+        7925:0344       06CA    ;L3-ZU-VENT.ST
+        7925:0346       0A50    ;$B23
+        7925:0348       0A4C    ;$WSCRATCH
+        7925:034A       F345
+        7925:034C       3011    ;UNDMN
+        7925:034E       0000
+        7925:0350       0002
+        7925:0352       06D2    ;L3-AB-VENT.R1
+        7925:0354       06D0    ;L3-AB-VENT.ST
+        7925:0356       0A52    ;$B24
+        7925:0358       0A4C    ;$WSCRATCH
+        7925:035A       F346
+        7925:035C       3011    ;UNDMN
+        7925:035E       0000
+        7925:0360       0002
+        7925:0362       070C    ;VE1-AB-VENT.R1
+        7925:0364       070A    ;VE1-AB-VENT.ST
+        7925:0366       0A54    ;$B25
+        7925:0368       0A4C    ;$WSCRATCH
+        7925:036A       F347
+        7925:036C       3011    ;UNDMN
+        7925:036E       0000
+        7925:0370       0002
+        7925:0372       0710    ;VE2-AB-VENT.R1
+        7925:0374       070E    ;VE2-AB-VENT.ST
+        7925:0376       0A56    ;$B26
+        7925:0378       0A4C    ;$WSCRATCH
+        7925:037A       F348
+        7925:037C       3011    ;UNDMN
+        7925:037E       0000
+        7925:0380       0002
+        7925:0382       0714    ;VE3-AB-VENT.R1
+        7925:0384       0712    ;VE3-AB-VENT.ST
+        7925:0386       0A58    ;$B27
+        7925:0388       0A4C    ;$WSCRATCH
+        7925:038A       F349
+        7925:038C       3011    ;UNDMN
+        7925:038E       0000
+        7925:0390       0002
+        7925:0392       0718    ;VE4-AB-VENT.R1
+        7925:0394       0716    ;VE4-AB-VENT.ST
+        7925:0396       0A5A    ;$B28
+        7925:0398       0A4C    ;$WSCRATCH
+					- 32 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:039A       F34A
+        7925:039C       3034    ;SETMEL
+        7925:039E       02B4    ;$M34
+        7925:03A0       0008
+        7925:03A2       0A4A    ;$B21
+        7925:03A4       0A4E    ;$B22
+        7925:03A6       0A50    ;$B23
+        7925:03A8       0A52    ;$B24
+        7925:03AA       0A54    ;$B25
+        7925:03AC       0A56    ;$B26
+        7925:03AE       0A58    ;$B27
+        7925:03B0       0A5A    ;$B28
+        7925:03B2       02B6    ;&RLT01BM30
+        7925:03B4       06A0    ;WERR-99-0
+        7925:03B6       F34B
+        7925:03B8       3011    ;UNDMN
+        7925:03BA       0000
+        7925:03BC       0002
+        7925:03BE       071C    ;VE5-AB-VENT.R1
+        7925:03C0       071A    ;VE5-AB-VENT.ST
+        7925:03C2       0A5C    ;$B29
+        7925:03C4       0A4C    ;$WSCRATCH
+        7925:03C6       F34C
+        7925:03C8       3011    ;UNDMN
+        7925:03CA       0000
+        7925:03CC       0002
+        7925:03CE       0720    ;VE6-AB-VENT.R1
+        7925:03D0       071E    ;VE6-AB-VENT.ST
+        7925:03D2       0A5E    ;$B30
+        7925:03D4       0A4C    ;$WSCRATCH
+        7925:03D6       F34D
+        7925:03D8       3011    ;UNDMN
+        7925:03DA       0000
+        7925:03DC       0002
+        7925:03DE       0730    ;VE7-AB-VENT.R1
+        7925:03E0       072E    ;VE7-AB-VENT.ST
+        7925:03E2       0A60    ;$B31
+        7925:03E4       0A4C    ;$WSCRATCH
+        7925:03E6       F34E
+        7925:03E8       3011    ;UNDMN
+        7925:03EA       0000
+        7925:03EC       0002
+        7925:03EE       09A8    ;VE8-AB-VENT.R1
+        7925:03F0       09A6    ;VE8-AB-VENT.ST
+        7925:03F2       0A62    ;$B32
+        7925:03F4       0A4C    ;$WSCRATCH
+        7925:03F6       F34F
+        7925:03F8       3034    ;SETMEL
+        7925:03FA       02C6    ;$M35
+        7925:03FC       0003
+        7925:03FE       0A5C    ;$B29
+        7925:0400       0A5E    ;$B30
+        7925:0402       0A60    ;$B31
+        7925:0404       02C8    ;&RLT08BM30
+        7925:0406       0690    ;WERR-99-8
+        7925:0408       F350
+        7925:040A       302B    ;VVZ
+        7925:040C       07AA    ;VE8-AB-REP.SCH.
+					- 33 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:040E       03F8    ;$M36
+        7925:0410       03FC    ;$M37
+        7925:0412       0A64    ;$B33
+        7925:0414       F351
+        7925:0416       3034    ;SETMEL
+        7925:0418       02CE    ;$M38
+        7925:041A       0002
+        7925:041C       0A62    ;$B32
+        7925:041E       0A64    ;$B33
+        7925:0420       02D0    ;&RLT11BM30
+        7925:0422       09CE    ;WERR-69-12
+        7925:0424       F352
+        7925:0426       3031    ;MELEIN
+        7925:0428       02D4    ;&RLT11BF11-OE
+        7925:042A       0001
+        7925:042C       0A66    ;$B34
+        7925:042E       088A    ;WERR-1-0
+        7925:0430       F353
+        7925:0432       3034    ;SETMEL
+        7925:0434       02D6    ;$M39
+        7925:0436       0001
+        7925:0438       0A66    ;$B34
+        7925:043A       02D8    ;&RLT11BM20
+        7925:043C       09BA    ;WERR-69-11
+        7925:043E       F354
+        7925:0440       302B    ;VVZ
+        7925:0442       0696    ;L1-ZU-VENT.R.SCH
+        7925:0444       0400    ;$M40
+        7925:0446       0404    ;$M41
+        7925:0448       0A68    ;$B35
+        7925:044A       F355
+        7925:044C       302B    ;VVZ
+        7925:044E       06B6    ;L2-ZU-VENT.R.SCH
+        7925:0450       0408    ;$M42
+        7925:0452       040C    ;$M43
+        7925:0454       0A6A    ;$B36
+        7925:0456       F356
+        7925:0458       302B    ;VVZ
+        7925:045A       06D4    ;L3-ZU-VENT.R.SCH
+        7925:045C       0410    ;$M44
+        7925:045E       0414    ;$M45
+        7925:0460       0A6C    ;$B37
+        7925:0462       F357
+        7925:0464       302B    ;VVZ
+        7925:0466       06F2    ;L3-AB-VENT.R.SCH
+        7925:0468       0418    ;$M46
+        7925:046A       041C    ;$M47
+        7925:046C       0A6E    ;$B38
+        7925:046E       F358
+        7925:0470       302B    ;VVZ
+        7925:0472       0734    ;VE1-AB-REP.SCH.
+        7925:0474       0420    ;$M48
+        7925:0476       0424    ;$M49
+        7925:0478       0A70    ;$B39
+        7925:047A       F359
+        7925:047C       302B    ;VVZ
+        7925:047E       0736    ;VE2-AB-REP.SCH.
+        7925:0480       0428    ;$M50
+					- 34 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:0482       042C    ;$M51
+        7925:0484       0A72    ;$B40
+        7925:0486       F35A
+        7925:0488       302B    ;VVZ
+        7925:048A       0738    ;VE3-AB-REP.SCH.
+        7925:048C       0430    ;$M52
+        7925:048E       0434    ;$M53
+        7925:0490       0A74    ;$B41
+        7925:0492       F35B
+        7925:0494       3034    ;SETMEL
+        7925:0496       02DA    ;$M54
+        7925:0498       0007
+        7925:049A       0A68    ;$B35
+        7925:049C       0A6A    ;$B36
+        7925:049E       0A6C    ;$B37
+        7925:04A0       0A6E    ;$B38
+        7925:04A2       0A70    ;$B39
+        7925:04A4       0A72    ;$B40
+        7925:04A6       0A74    ;$B41
+        7925:04A8       02DC    ;&RLT01BM35
+        7925:04AA       096A    ;WERR-97-05
+        7925:04AC       F35C
+        7925:04AE       302B    ;VVZ
+        7925:04B0       073A    ;VE4-AB-REP.SCH.
+        7925:04B2       0438    ;$M55
+        7925:04B4       043C    ;$M56
+        7925:04B6       0A76    ;$B42
+        7925:04B8       F35D
+        7925:04BA       302B    ;VVZ
+        7925:04BC       073C    ;VE5-AB-REP.SCH.
+        7925:04BE       0440    ;$M57
+        7925:04C0       0444    ;$M58
+        7925:04C2       0A78    ;$B43
+        7925:04C4       F35E
+        7925:04C6       302B    ;VVZ
+        7925:04C8       073E    ;VE6-AB-REP.SCH.
+        7925:04CA       0448    ;$M59
+        7925:04CC       044C    ;$M60
+        7925:04CE       0A7A    ;$B44
+        7925:04D0       F35F
+        7925:04D2       302B    ;VVZ
+        7925:04D4       0740    ;VE7-AB-REP.SCH.
+        7925:04D6       0450    ;$M61
+        7925:04D8       0454    ;$M62
+        7925:04DA       0A7C    ;$B45
+        7925:04DC       F360
+        7925:04DE       3034    ;SETMEL
+        7925:04E0       02EA    ;$M63
+        7925:04E2       0004
+        7925:04E4       0A76    ;$B42
+        7925:04E6       0A78    ;$B43
+        7925:04E8       0A7A    ;$B44
+        7925:04EA       0A7C    ;$B45
+        7925:04EC       02EC    ;&RLT07BM35
+        7925:04EE       06A2    ;WERR-97-12
+        7925:04F0       F361
+        7925:04F2       302B    ;VVZ
+        7925:04F4       09BE    ;VE01-E-FILTER-ST
+					- 35 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7925:04F6       0458    ;$M64
+        7925:04F8       045C    ;$M65
+        7925:04FA       0A7E    ;$B46
+        7925:04FC       F362
+        7925:04FE       302B    ;VVZ
+        7925:0500       0754    ;ISP1-öBERSPANG.
+        7925:0502       0460    ;$M66
+        7925:0504       0464    ;$M67
+        7925:0506       0A80    ;$B47
+        7925:0508       F363
+        7925:050A       3034    ;SETMEL
+        7925:050C       02F4    ;$M68
+        7925:050E       0001
+        7925:0510       0A7E    ;$B46
+        7925:0512       02F6    ;&RLT04ST22
+        7925:0514       09BC    ;WERR-66-02
+        7925:0516       F364
+        7925:0518       3034    ;SETMEL
+        7925:051A       02F8    ;$M69
+        7925:051C       0001
+        7925:051E       0A80    ;$B47
+        7925:0520       02FA    ;&ISP01ST20
+        7925:0522       09D0    ;WERR-66-04
+        7925:0524       F365
+        7925:0526       3000    ;ENDE
+
+        Task 4:  Zykluszeit 1000 ms  Laufzeit ca. 417 ms
+
+
+        7978:0000       F400
+        7978:0002       3011    ;UNDMN
+        7978:0004       0001
+        7978:0006       08B6    ;ISP1-LS-EIN
+        7978:0008       0004
+        7978:000A       06FC    ;ISP1-LS-STîRUNG
+        7978:000C       0702    ;ISP1-PHASENÅBERW
+        7978:000E       0754    ;ISP1-öBERSPANG.
+        7978:0010       0700    ;ISP1-AUTOMAT-ST
+        7978:0012       08B8    ;ISP1-EIN
+        7978:0014       0A4C    ;$WSCRATCH
+        7978:0016       F401
+        7978:0018       3011    ;UNDMN
+        7978:001A       0009
+        7978:001C       0758    ;BSK-1-AUF
+        7978:001E       075C    ;BSK-2-AUF
+        7978:0020       0760    ;BSK-3-AUF
+        7978:0022       0764    ;BSK-4-AUF
+        7978:0024       0768    ;BSK-5-AUF
+        7978:0026       076C    ;BSK-6-AUF
+        7978:0028       0770    ;BSK-7-AUF
+        7978:002A       0774    ;BSK-8-AUF
+        7978:002C       077E    ;BSK-9-AUF
+        7978:002E       0000
+        7978:0030       08BA    ;BSK-1-EIN
+        7978:0032       0A4C    ;$WSCRATCH
+        7978:0034       F402
+        7978:0036       3011    ;UNDMN
+        7978:0038       0008
+					- 36 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:003A       0782    ;BSK-10-AUF
+        7978:003C       0786    ;BSK-11-AUF
+        7978:003E       078A    ;BSK-12-AUF
+        7978:0040       077C    ;BSK-13-AUF
+        7978:0042       0790    ;BSK-14-AUF
+        7978:0044       0794    ;BSK-15-AUF
+        7978:0046       0798    ;BSK-16-AUF
+        7978:0048       07A0    ;BSK-17-AUF
+        7978:004A       0003
+        7978:004C       006C    ;K0
+        7978:004E       006C    ;K0
+        7978:0050       07A8    ;BSK-20-ZU
+        7978:0052       08BC    ;BSK-2-EIN
+        7978:0054       0A4C    ;$WSCRATCH
+        7978:0056       F403
+        7978:0058       300E    ;UND2
+        7978:005A       08BA    ;BSK-1-EIN
+        7978:005C       08BC    ;BSK-2-EIN
+        7978:005E       06FE    ;BSK-EIN
+        7978:0060       F404
+        7978:0062       300F    ;UND11
+        7978:0064       06FE    ;BSK-EIN
+        7978:0066       07AE    ;BSK-ZU-TABLEAU
+        7978:0068       0A82    ;$B48
+        7978:006A       F405
+        7978:006C       300F    ;UND11
+        7978:006E       08BE    ;BSK-QUITTIEREN
+        7978:0070       0A82    ;$B48
+        7978:0072       0A84    ;$B49
+        7978:0074       F406
+        7978:0076       302C    ;MOKY
+        7978:0078       0A84    ;$B49
+        7978:007A       0468    ;$M70
+        7978:007C       0A86    ;$B50
+        7978:007E       F407
+        7978:0080       3011    ;UNDMN
+        7978:0082       0000
+        7978:0084       0002
+        7978:0086       0A82    ;$B48
+        7978:0088       0A86    ;$B50
+        7978:008A       0A88    ;$B51
+        7978:008C       0A8A    ;$B52
+        7978:008E       F408
+        7978:0090       3033    ;BEFAUS
+        7978:0092       0001
+        7978:0094       0A88    ;$B51
+        7978:0096       0A8A    ;$B52
+        7978:0098       0080    ;$WZERO
+        7978:009A       0080    ;$WZERO
+        7978:009C       02FC    ;&BSK00BF01
+        7978:009E       08C2    ;WERR-1-9
+        7978:00A0       F409
+        7978:00A2       3011    ;UNDMN
+        7978:00A4       0002
+        7978:00A6       06FE    ;BSK-EIN
+        7978:00A8       08B8    ;ISP1-EIN
+        7978:00AA       0006
+        7978:00AC       0698    ;L1-2-3-RAUCHMEL.
+					- 37 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:00AE       06A4    ;L1-FROST
+        7978:00B0       0696    ;L1-ZU-VENT.R.SCH
+        7978:00B2       069A    ;L1-ZU-VENT.ST
+        7978:00B4       097A    ;L1-DRUCK-ST
+        7978:00B6       08C8    ;L1-KLAPPEN-ST
+        7978:00B8       0A8C    ;$B53
+        7978:00BA       0A4C    ;$WSCRATCH
+        7978:00BC       F40A
+        7978:00BE       300E    ;UND2
+        7978:00C0       07BC    ;L1-FREIGABE
+        7978:00C2       0800    ;L1-ZEIT-EIN
+        7978:00C4       0A8E    ;$B54
+        7978:00C6       F40B
+        7978:00C8       300E    ;UND2
+        7978:00CA       07BC    ;L1-FREIGABE
+        7978:00CC       07D8    ;L1-HAND
+        7978:00CE       0A90    ;$B55
+        7978:00D0       F40C
+        7978:00D2       3013    ;ODR2
+        7978:00D4       0A8E    ;$B54
+        7978:00D6       0A90    ;$B55
+        7978:00D8       0A92    ;$B56
+        7978:00DA       F40D
+        7978:00DC       300E    ;UND2
+        7978:00DE       0A8C    ;$B53
+        7978:00E0       0A92    ;$B56
+        7978:00E2       08C6    ;L1-ESB
+        7978:00E4       F40E
+        7978:00E6       3010    ;UND21
+        7978:00E8       08C6    ;L1-ESB
+        7978:00EA       0920    ;VE1-ESB
+        7978:00EC       08DA    ;L1-WINTERANF.
+        7978:00EE       08C4    ;L1-ANFORDERUNG
+        7978:00F0       F40F
+        7978:00F2       3011    ;UNDMN
+        7978:00F4       0001
+        7978:00F6       08C4    ;L1-ANFORDERUNG
+        7978:00F8       0001
+        7978:00FA       08C8    ;L1-KLAPPEN-ST
+        7978:00FC       0A94    ;$B57
+        7978:00FE       0A96    ;$B58
+        7978:0100       F410
+        7978:0102       3033    ;BEFAUS
+        7978:0104       0001
+        7978:0106       0A96    ;$B58
+        7978:0108       0A94    ;$B57
+        7978:010A       0080    ;$WZERO
+        7978:010C       0080    ;$WZERO
+        7978:010E       02FE    ;&RLT01BF02
+        7978:0110       08CA    ;WERR-0-5
+        7978:0112       F411
+        7978:0114       3011    ;UNDMN
+        7978:0116       0000
+        7978:0118       0003
+        7978:011A       069C    ;L1-AU-KLAPPE-AUF
+        7978:011C       069E    ;L1-AU-KLAPPE-ZU
+        7978:011E       08C8    ;L1-KLAPPEN-ST
+        7978:0120       0A98    ;$B59
+					- 38 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0122       0A4C    ;$WSCRATCH
+        7978:0124       F412
+        7978:0126       3034    ;SETMEL
+        7978:0128       0300    ;$M71
+        7978:012A       0001
+        7978:012C       0A98    ;$B59
+        7978:012E       0302    ;&RLT01BM04
+        7978:0130       08CC    ;WERR-94-0
+        7978:0132       F413
+        7978:0134       3011    ;UNDMN
+        7978:0136       0001
+        7978:0138       0694    ;L1-AU-KLP.R1
+        7978:013A       0002
+        7978:013C       08C8    ;L1-KLAPPEN-ST
+        7978:013E       069C    ;L1-AU-KLAPPE-AUF
+        7978:0140       0A9A    ;$B60
+        7978:0142       0A4C    ;$WSCRATCH
+        7978:0144       F414
+        7978:0146       3011    ;UNDMN
+        7978:0148       0000
+        7978:014A       0003
+        7978:014C       0694    ;L1-AU-KLP.R1
+        7978:014E       069E    ;L1-AU-KLAPPE-ZU
+        7978:0150       08C8    ;L1-KLAPPEN-ST
+        7978:0152       0A9C    ;$B61
+        7978:0154       0A4C    ;$WSCRATCH
+        7978:0156       F415
+        7978:0158       3013    ;ODR2
+        7978:015A       0A9A    ;$B60
+        7978:015C       0A9C    ;$B61
+        7978:015E       0A9E    ;$B62
+        7978:0160       F416
+        7978:0162       302B    ;VVZ
+        7978:0164       0A9E    ;$B62
+        7978:0166       046C    ;$M72
+        7978:0168       0470    ;$M73
+        7978:016A       0AA0    ;$B63
+        7978:016C       F417
+        7978:016E       301A    ;RSS
+        7978:0170       0AA0    ;$B63
+        7978:0172       06FA    ;QUITTIEREN
+        7978:0174       08C8    ;L1-KLAPPEN-ST
+        7978:0176       0A4C    ;$WSCRATCH
+        7978:0178       F418
+        7978:017A       3034    ;SETMEL
+        7978:017C       0304    ;$M74
+        7978:017E       0001
+        7978:0180       08C8    ;L1-KLAPPEN-ST
+        7978:0182       0306    ;&RLT01ST02
+        7978:0184       08CE    ;WERR-94-1
+        7978:0186       F419
+        7978:0188       300E    ;UND2
+        7978:018A       0692    ;L1-ZU-VENT.R1
+        7978:018C       069C    ;L1-AU-KLAPPE-AUF
+        7978:018E       08D0    ;L1-FREIG.ZU-VENT
+        7978:0190       F41A
+        7978:0192       3010    ;UND21
+        7978:0194       069C    ;L1-AU-KLAPPE-AUF
+					- 39 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0196       08C4    ;L1-ANFORDERUNG
+        7978:0198       0692    ;L1-ZU-VENT.R1
+        7978:019A       0AA2    ;$B64
+        7978:019C       F41B
+        7978:019E       302B    ;VVZ
+        7978:01A0       0AA2    ;$B64
+        7978:01A2       0474    ;$M75
+        7978:01A4       0478    ;$M76
+        7978:01A6       0A02    ;RLT01BF01-UE
+        7978:01A8       F41C
+        7978:01AA       3010    ;UND21
+        7978:01AC       069C    ;L1-AU-KLAPPE-AUF
+        7978:01AE       08C4    ;L1-ANFORDERUNG
+        7978:01B0       0A02    ;RLT01BF01-UE
+        7978:01B2       0AA4    ;$B65
+        7978:01B4       F41D
+        7978:01B6       302B    ;VVZ
+        7978:01B8       0A02    ;RLT01BF01-UE
+        7978:01BA       047C    ;$M77
+        7978:01BC       0480    ;$M78
+        7978:01BE       0AA6    ;$B66
+        7978:01C0       F41E
+        7978:01C2       3014    ;ODRMN
+        7978:01C4       0002
+        7978:01C6       0AA4    ;$B65
+        7978:01C8       0AA6    ;$B66
+        7978:01CA       0000
+        7978:01CC       0AA8    ;$B67
+        7978:01CE       0AAA    ;$B68
+        7978:01D0       F41F
+        7978:01D2       3033    ;BEFAUS
+        7978:01D4       0001
+        7978:01D6       0AAA    ;$B68
+        7978:01D8       0AA8    ;$B67
+        7978:01DA       0080    ;$WZERO
+        7978:01DC       0080    ;$WZERO
+        7978:01DE       0308    ;&RLT01BF01
+        7978:01E0       08D2    ;WERR-0-1
+        7978:01E2       F420
+        7978:01E4       3016    ;XOR2
+        7978:01E6       0692    ;L1-ZU-VENT.R1
+        7978:01E8       08C4    ;L1-ANFORDERUNG
+        7978:01EA       0AAC    ;$B69
+        7978:01EC       F421
+        7978:01EE       302B    ;VVZ
+        7978:01F0       0AAC    ;$B69
+        7978:01F2       0484    ;$M79
+        7978:01F4       0488    ;$M80
+        7978:01F6       0AAE    ;$B70
+        7978:01F8       F422
+        7978:01FA       301A    ;RSS
+        7978:01FC       0AAE    ;$B70
+        7978:01FE       06FA    ;QUITTIEREN
+        7978:0200       09D6    ;L1-ZU-ST-ELEKTR.
+        7978:0202       0A4C    ;$WSCRATCH
+        7978:0204       F423
+        7978:0206       3034    ;SETMEL
+        7978:0208       030A    ;$M81
+					- 40 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:020A       0001
+        7978:020C       09D6    ;L1-ZU-ST-ELEKTR.
+        7978:020E       030C    ;&RLT01ST90
+        7978:0210       09AC    ;WERR-108-00
+        7978:0212       F424
+        7978:0214       3027    ;VGLEH
+        7978:0216       03D0    ;FK-8
+        7978:0218       0C18    ;AT
+        7978:021A       048C    ;$M82
+        7978:021C       08DC    ;AT-KLEIN-8-GRDC
+        7978:021E       F425
+        7978:0220       3010    ;UND21
+        7978:0222       08DC    ;AT-KLEIN-8-GRDC
+        7978:0224       08C6    ;L1-ESB
+        7978:0226       08E2    ;L1-ZU-TEMP.20GRD
+        7978:0228       0AB0    ;$B71
+        7978:022A       F426
+        7978:022C       3011    ;UNDMN
+        7978:022E       0001
+        7978:0230       08DC    ;AT-KLEIN-8-GRDC
+        7978:0232       0002
+        7978:0234       08C6    ;L1-ESB
+        7978:0236       08E2    ;L1-ZU-TEMP.20GRD
+        7978:0238       0AB2    ;$B72
+        7978:023A       0A4C    ;$WSCRATCH
+        7978:023C       F427
+        7978:023E       3013    ;ODR2
+        7978:0240       0AB0    ;$B71
+        7978:0242       0AB2    ;$B72
+        7978:0244       0AB4    ;$B73
+        7978:0246       F428
+        7978:0248       3014    ;ODRMN
+        7978:024A       0002
+        7978:024C       08C4    ;L1-ANFORDERUNG
+        7978:024E       08E2    ;L1-ZU-TEMP.20GRD
+        7978:0250       0001
+        7978:0252       08DC    ;AT-KLEIN-8-GRDC
+        7978:0254       0AB6    ;$B74
+        7978:0256       0A4C    ;$WSCRATCH
+        7978:0258       F429
+        7978:025A       301A    ;RSS
+        7978:025C       0AB4    ;$B73
+        7978:025E       0AB6    ;$B74
+        7978:0260       08DA    ;L1-WINTERANF.
+        7978:0262       0A4C    ;$WSCRATCH
+        7978:0264       F42A
+        7978:0266       3027    ;VGLEH
+        7978:0268       0C14    ;L1-ZU-TEMP.
+        7978:026A       0490    ;$M83
+        7978:026C       0494    ;$M84
+        7978:026E       08E2    ;L1-ZU-TEMP.20GRD
+        7978:0270       F42B
+        7978:0272       3037    ;REGLER
+        7978:0274       0001
+        7978:0276       08D0    ;L1-FREIG.ZU-VENT
+        7978:0278       0AB8    ;$B75
+        7978:027A       0498    ;$M85
+        7978:027C       0C74    ;L1-Y-TEMP.REGL.
+					- 41 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:027E       08D4    ;WERR-REGLER-1
+        7978:0280       F42C
+        7978:0282       3017    ;NICHT
+        7978:0284       08D0    ;L1-FREIG.ZU-VENT
+        7978:0286       0AB8    ;$B75
+        7978:0288       F42D
+        7978:028A       301F    ;AWT
+        7978:028C       08D0    ;L1-FREIG.ZU-VENT
+        7978:028E       049C    ;$M86
+        7978:0290       0C74    ;L1-Y-TEMP.REGL.
+        7978:0292       0CA8    ;$F1
+        7978:0294       F42E
+        7978:0296       3022    ;FKG
+        7978:0298       0CA8    ;$F1
+        7978:029A       0004
+        7978:029C       04A0    ;$M87
+        7978:029E       04A4    ;$M88
+        7978:02A0       04A8    ;$M89
+        7978:02A2       04AC    ;$M90
+        7978:02A4       0C6C    ;L1-Y-VENTIL-1
+        7978:02A6       F42F
+        7978:02A8       3022    ;FKG
+        7978:02AA       0CA8    ;$F1
+        7978:02AC       0004
+        7978:02AE       04B0    ;$M91
+        7978:02B0       04B4    ;$M92
+        7978:02B2       04B8    ;$M93
+        7978:02B4       04BC    ;$M94
+        7978:02B6       0C70    ;L1-Y-VENTIL-2
+        7978:02B8       F430
+        7978:02BA       3013    ;ODR2
+        7978:02BC       06A4    ;L1-FROST
+        7978:02BE       08DA    ;L1-WINTERANF.
+        7978:02C0       0ABA    ;$B76
+        7978:02C2       F431
+        7978:02C4       301F    ;AWT
+        7978:02C6       0ABA    ;$B76
+        7978:02C8       0C6C    ;L1-Y-VENTIL-1
+        7978:02CA       04C0    ;$M95
+        7978:02CC       0CAC    ;$F2
+        7978:02CE       F432
+        7978:02D0       3032    ;ANAUS
+        7978:02D2       0CAC    ;$F2
+        7978:02D4       030E    ;$M96
+        7978:02D6       0310    ;&RLT01AS02
+        7978:02D8       08D6    ;WERR-15
+        7978:02DA       F433
+        7978:02DC       301F    ;AWT
+        7978:02DE       0ABA    ;$B76
+        7978:02E0       0C70    ;L1-Y-VENTIL-2
+        7978:02E2       04C4    ;$M97
+        7978:02E4       0CB0    ;$F3
+        7978:02E6       F434
+        7978:02E8       3032    ;ANAUS
+        7978:02EA       0CB0    ;$F3
+        7978:02EC       0312    ;$M98
+        7978:02EE       0314    ;&RLT01AS03
+        7978:02F0       08D8    ;WERR-16
+					- 42 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:02F2       F435
+        7978:02F4       3037    ;REGLER
+        7978:02F6       0002
+        7978:02F8       08D0    ;L1-FREIG.ZU-VENT
+        7978:02FA       0ABC    ;$B77
+        7978:02FC       04C8    ;$M99
+        7978:02FE       0C78    ;L1-Y-FU
+        7978:0300       08DE    ;WERR-RELER-2
+        7978:0302       F436
+        7978:0304       3017    ;NICHT
+        7978:0306       08D0    ;L1-FREIG.ZU-VENT
+        7978:0308       0ABC    ;$B77
+        7978:030A       F437
+        7978:030C       301F    ;AWT
+        7978:030E       08D0    ;L1-FREIG.ZU-VENT
+        7978:0310       04CC    ;$M100
+        7978:0312       0C78    ;L1-Y-FU
+        7978:0314       0CB4    ;$F4
+        7978:0316       F438
+        7978:0318       3032    ;ANAUS
+        7978:031A       0CB4    ;$F4
+        7978:031C       0316    ;$M101
+        7978:031E       0318    ;&RLT01AS01
+        7978:0320       08E4    ;WERR-14
+        7978:0322       F439
+        7978:0324       3026    ;VGLOH
+        7978:0326       0C64    ;L1-ZU-DRU.GLATT
+        7978:0328       04D0    ;$M102
+        7978:032A       0ABE    ;$B78
+        7978:032C       F43A
+        7978:032E       302B    ;VVZ
+        7978:0330       0ABE    ;$B78
+        7978:0332       04D4    ;$M103
+        7978:0334       04D8    ;$M104
+        7978:0336       0AC0    ;$B79
+        7978:0338       F43B
+        7978:033A       301A    ;RSS
+        7978:033C       0AC0    ;$B79
+        7978:033E       06FA    ;QUITTIEREN
+        7978:0340       097A    ;L1-DRUCK-ST
+        7978:0342       0A4C    ;$WSCRATCH
+        7978:0344       F43C
+        7978:0346       3011    ;UNDMN
+        7978:0348       0002
+        7978:034A       06FE    ;BSK-EIN
+        7978:034C       08B8    ;ISP1-EIN
+        7978:034E       0006
+        7978:0350       0698    ;L1-2-3-RAUCHMEL.
+        7978:0352       06C8    ;L2-FROST
+        7978:0354       06B6    ;L2-ZU-VENT.R.SCH
+        7978:0356       06B0    ;L2-ZU-VENT.ST
+        7978:0358       097C    ;L2-DRUCK-ST
+        7978:035A       08EC    ;L2-KLAPPEN-ST
+        7978:035C       0AC2    ;$B80
+        7978:035E       0A4C    ;$WSCRATCH
+        7978:0360       F43D
+        7978:0362       300E    ;UND2
+        7978:0364       07BE    ;L2-FREIGABE
+					- 43 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0366       08E6    ;L2-ZEIT-EIN
+        7978:0368       0AC4    ;$B81
+        7978:036A       F43E
+        7978:036C       300E    ;UND2
+        7978:036E       07BE    ;L2-FREIGABE
+        7978:0370       07DA    ;L2-HAND
+        7978:0372       0AC6    ;$B82
+        7978:0374       F43F
+        7978:0376       3013    ;ODR2
+        7978:0378       0AC4    ;$B81
+        7978:037A       0AC6    ;$B82
+        7978:037C       0AC8    ;$B83
+        7978:037E       F440
+        7978:0380       300E    ;UND2
+        7978:0382       0AC2    ;$B80
+        7978:0384       0AC8    ;$B83
+        7978:0386       08E8    ;L2-ESB
+        7978:0388       F441
+        7978:038A       3011    ;UNDMN
+        7978:038C       0003
+        7978:038E       08E8    ;L2-ESB
+        7978:0390       0932    ;VE2-ESB
+        7978:0392       0940    ;VE3-ESB
+        7978:0394       0001
+        7978:0396       08F8    ;L2-WINTERANF.
+        7978:0398       08EA    ;L2-ANFORDERUNG
+        7978:039A       0A4C    ;$WSCRATCH
+        7978:039C       F442
+        7978:039E       3011    ;UNDMN
+        7978:03A0       0001
+        7978:03A2       08EA    ;L2-ANFORDERUNG
+        7978:03A4       0001
+        7978:03A6       08EC    ;L2-KLAPPEN-ST
+        7978:03A8       0ACA    ;$B84
+        7978:03AA       0ACC    ;$B85
+        7978:03AC       F443
+        7978:03AE       3033    ;BEFAUS
+        7978:03B0       0001
+        7978:03B2       0ACC    ;$B85
+        7978:03B4       0ACA    ;$B84
+        7978:03B6       0080    ;$WZERO
+        7978:03B8       0080    ;$WZERO
+        7978:03BA       031A    ;&RLT02BF02
+        7978:03BC       08EE    ;WERR-0-9
+        7978:03BE       F444
+        7978:03C0       3011    ;UNDMN
+        7978:03C2       0000
+        7978:03C4       0003
+        7978:03C6       06BA    ;L2-AU-KLAPPE-AUF
+        7978:03C8       06BC    ;L2-AU-KLAPPE-ZU
+        7978:03CA       08EC    ;L2-KLAPPEN-ST
+        7978:03CC       0ACE    ;$B86
+        7978:03CE       0A4C    ;$WSCRATCH
+        7978:03D0       F445
+        7978:03D2       3034    ;SETMEL
+        7978:03D4       031C    ;$M105
+        7978:03D6       0001
+        7978:03D8       0ACE    ;$B86
+					- 44 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:03DA       031E    ;&RLT02BM04
+        7978:03DC       08F2    ;WERR-94-5
+        7978:03DE       F446
+        7978:03E0       3011    ;UNDMN
+        7978:03E2       0001
+        7978:03E4       06B4    ;L2-AU-KLP.R1
+        7978:03E6       0002
+        7978:03E8       08EC    ;L2-KLAPPEN-ST
+        7978:03EA       06BA    ;L2-AU-KLAPPE-AUF
+        7978:03EC       0AD0    ;$B87
+        7978:03EE       0A4C    ;$WSCRATCH
+        7978:03F0       F447
+        7978:03F2       3011    ;UNDMN
+        7978:03F4       0000
+        7978:03F6       0003
+        7978:03F8       06B4    ;L2-AU-KLP.R1
+        7978:03FA       06BC    ;L2-AU-KLAPPE-ZU
+        7978:03FC       08EC    ;L2-KLAPPEN-ST
+        7978:03FE       0AD2    ;$B88
+        7978:0400       0A4C    ;$WSCRATCH
+        7978:0402       F448
+        7978:0404       3013    ;ODR2
+        7978:0406       0AD0    ;$B87
+        7978:0408       0AD2    ;$B88
+        7978:040A       0AD4    ;$B89
+        7978:040C       F449
+        7978:040E       302B    ;VVZ
+        7978:0410       0AD4    ;$B89
+        7978:0412       04DC    ;$M106
+        7978:0414       04E0    ;$M107
+        7978:0416       0AD6    ;$B90
+        7978:0418       F44A
+        7978:041A       301A    ;RSS
+        7978:041C       0AD6    ;$B90
+        7978:041E       06FA    ;QUITTIEREN
+        7978:0420       08EC    ;L2-KLAPPEN-ST
+        7978:0422       0A4C    ;$WSCRATCH
+        7978:0424       F44B
+        7978:0426       3034    ;SETMEL
+        7978:0428       0320    ;$M108
+        7978:042A       0001
+        7978:042C       08EC    ;L2-KLAPPEN-ST
+        7978:042E       0322    ;&RLT02ST02
+        7978:0430       08F0    ;WERR-94-6
+        7978:0432       F44C
+        7978:0434       300E    ;UND2
+        7978:0436       06B2    ;L2-ZU-VENT.R1
+        7978:0438       06BA    ;L2-AU-KLAPPE-AUF
+        7978:043A       08F4    ;L2-FREIG.ZU-VENT
+        7978:043C       F44D
+        7978:043E       3010    ;UND21
+        7978:0440       06BA    ;L2-AU-KLAPPE-AUF
+        7978:0442       08EA    ;L2-ANFORDERUNG
+        7978:0444       06B2    ;L2-ZU-VENT.R1
+        7978:0446       0AD8    ;$B91
+        7978:0448       F44E
+        7978:044A       302B    ;VVZ
+        7978:044C       0AD8    ;$B91
+					- 45 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:044E       04E4    ;$M109
+        7978:0450       04E8    ;$M110
+        7978:0452       0A04    ;RLT02BF01-UE
+        7978:0454       F44F
+        7978:0456       3010    ;UND21
+        7978:0458       06BA    ;L2-AU-KLAPPE-AUF
+        7978:045A       08EA    ;L2-ANFORDERUNG
+        7978:045C       0A04    ;RLT02BF01-UE
+        7978:045E       0ADA    ;$B92
+        7978:0460       F450
+        7978:0462       302B    ;VVZ
+        7978:0464       0A04    ;RLT02BF01-UE
+        7978:0466       04EC    ;$M111
+        7978:0468       04F0    ;$M112
+        7978:046A       0ADC    ;$B93
+        7978:046C       F451
+        7978:046E       3014    ;ODRMN
+        7978:0470       0002
+        7978:0472       0ADA    ;$B92
+        7978:0474       0ADC    ;$B93
+        7978:0476       0000
+        7978:0478       0ADE    ;$B94
+        7978:047A       0AE0    ;$B95
+        7978:047C       F452
+        7978:047E       3033    ;BEFAUS
+        7978:0480       0001
+        7978:0482       0AE0    ;$B95
+        7978:0484       0ADE    ;$B94
+        7978:0486       0080    ;$WZERO
+        7978:0488       0080    ;$WZERO
+        7978:048A       0324    ;&RLT02BF01
+        7978:048C       08F6    ;WERR-1-5
+        7978:048E       F453
+        7978:0490       3016    ;XOR2
+        7978:0492       06B2    ;L2-ZU-VENT.R1
+        7978:0494       08EA    ;L2-ANFORDERUNG
+        7978:0496       0AE2    ;$B96
+        7978:0498       F454
+        7978:049A       302B    ;VVZ
+        7978:049C       0AE2    ;$B96
+        7978:049E       04F4    ;$M113
+        7978:04A0       04F8    ;$M114
+        7978:04A2       0AE4    ;$B97
+        7978:04A4       F455
+        7978:04A6       301A    ;RSS
+        7978:04A8       0AE4    ;$B97
+        7978:04AA       06FA    ;QUITTIEREN
+        7978:04AC       09D8    ;L2-ZU-ST-ELEKTR.
+        7978:04AE       0A4C    ;$WSCRATCH
+        7978:04B0       F456
+        7978:04B2       3034    ;SETMEL
+        7978:04B4       0326    ;$M115
+        7978:04B6       0001
+        7978:04B8       09D8    ;L2-ZU-ST-ELEKTR.
+        7978:04BA       0328    ;&RLT02ST90
+        7978:04BC       09B2    ;WERR-108-01
+        7978:04BE       F457
+        7978:04C0       3010    ;UND21
+					- 46 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:04C2       08DC    ;AT-KLEIN-8-GRDC
+        7978:04C4       08E8    ;L2-ESB
+        7978:04C6       08E0    ;L2-ZU-TEMP.20GRD
+        7978:04C8       0AE6    ;$B98
+        7978:04CA       F458
+        7978:04CC       3011    ;UNDMN
+        7978:04CE       0001
+        7978:04D0       08DC    ;AT-KLEIN-8-GRDC
+        7978:04D2       0002
+        7978:04D4       08E8    ;L2-ESB
+        7978:04D6       08E0    ;L2-ZU-TEMP.20GRD
+        7978:04D8       0AE8    ;$B99
+        7978:04DA       0A4C    ;$WSCRATCH
+        7978:04DC       F459
+        7978:04DE       3013    ;ODR2
+        7978:04E0       0AE8    ;$B99
+        7978:04E2       0AE6    ;$B98
+        7978:04E4       0AEA    ;$B100
+        7978:04E6       F45A
+        7978:04E8       3014    ;ODRMN
+        7978:04EA       0002
+        7978:04EC       08E0    ;L2-ZU-TEMP.20GRD
+        7978:04EE       08EA    ;L2-ANFORDERUNG
+        7978:04F0       0001
+        7978:04F2       08DC    ;AT-KLEIN-8-GRDC
+        7978:04F4       0AEC    ;$B101
+        7978:04F6       0A4C    ;$WSCRATCH
+        7978:04F8       F45B
+        7978:04FA       301A    ;RSS
+        7978:04FC       0AEA    ;$B100
+        7978:04FE       0AEC    ;$B101
+        7978:0500       08F8    ;L2-WINTERANF.
+        7978:0502       0A4C    ;$WSCRATCH
+        7978:0504       F45C
+        7978:0506       3027    ;VGLEH
+        7978:0508       0C10    ;L2-ZU-TEMP.
+        7978:050A       04FC    ;$M116
+        7978:050C       0500    ;$M117
+        7978:050E       08E0    ;L2-ZU-TEMP.20GRD
+        7978:0510       F45D
+        7978:0512       3037    ;REGLER
+        7978:0514       0003
+        7978:0516       08F4    ;L2-FREIG.ZU-VENT
+        7978:0518       0AEE    ;$B102
+        7978:051A       0504    ;$M118
+        7978:051C       0C7C    ;L2-Y-TEMP.REGL.
+        7978:051E       08D4    ;WERR-REGLER-1
+        7978:0520       F45E
+        7978:0522       3017    ;NICHT
+        7978:0524       08F4    ;L2-FREIG.ZU-VENT
+        7978:0526       0AEE    ;$B102
+        7978:0528       F45F
+        7978:052A       301F    ;AWT
+        7978:052C       08F4    ;L2-FREIG.ZU-VENT
+        7978:052E       0508    ;$M119
+        7978:0530       0C7C    ;L2-Y-TEMP.REGL.
+        7978:0532       0CB8    ;$F5
+        7978:0534       F460
+					- 47 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0536       3022    ;FKG
+        7978:0538       0CB8    ;$F5
+        7978:053A       0004
+        7978:053C       050C    ;$M120
+        7978:053E       0510    ;$M121
+        7978:0540       0514    ;$M122
+        7978:0542       0518    ;$M123
+        7978:0544       0C84    ;L2-Y-VENTIL-2
+        7978:0546       F461
+        7978:0548       3022    ;FKG
+        7978:054A       0CB8    ;$F5
+        7978:054C       0004
+        7978:054E       051C    ;$M124
+        7978:0550       0520    ;$M125
+        7978:0552       0524    ;$M126
+        7978:0554       0528    ;$M127
+        7978:0556       0C80    ;L2-Y-VENTIL-1
+        7978:0558       F462
+        7978:055A       3013    ;ODR2
+        7978:055C       06C8    ;L2-FROST
+        7978:055E       08F8    ;L2-WINTERANF.
+        7978:0560       0AF0    ;$B103
+        7978:0562       F463
+        7978:0564       301F    ;AWT
+        7978:0566       0AF0    ;$B103
+        7978:0568       0C80    ;L2-Y-VENTIL-1
+        7978:056A       052C    ;$M128
+        7978:056C       0CBC    ;$F6
+        7978:056E       F464
+        7978:0570       3032    ;ANAUS
+        7978:0572       0CBC    ;$F6
+        7978:0574       032A    ;$M129
+        7978:0576       032C    ;&RLT02AS02
+        7978:0578       08FC    ;WERR-18
+        7978:057A       F465
+        7978:057C       301F    ;AWT
+        7978:057E       0AF0    ;$B103
+        7978:0580       0C84    ;L2-Y-VENTIL-2
+        7978:0582       0530    ;$M130
+        7978:0584       0CC0    ;$F7
+        7978:0586       F466
+        7978:0588       3032    ;ANAUS
+        7978:058A       0CC0    ;$F7
+        7978:058C       032E    ;$M131
+        7978:058E       0330    ;&RLT02AS03
+        7978:0590       08FE    ;WERR-19
+        7978:0592       F467
+        7978:0594       3037    ;REGLER
+        7978:0596       0004
+        7978:0598       08F4    ;L2-FREIG.ZU-VENT
+        7978:059A       0AF2    ;$B104
+        7978:059C       0534    ;$M132
+        7978:059E       0C88    ;L2-Y-FU
+        7978:05A0       0900    ;WERR-RELER-4
+        7978:05A2       F468
+        7978:05A4       3017    ;NICHT
+        7978:05A6       08F4    ;L2-FREIG.ZU-VENT
+        7978:05A8       0AF2    ;$B104
+					- 48 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:05AA       F469
+        7978:05AC       301F    ;AWT
+        7978:05AE       08F4    ;L2-FREIG.ZU-VENT
+        7978:05B0       0538    ;$M133
+        7978:05B2       0C88    ;L2-Y-FU
+        7978:05B4       0CC4    ;$F8
+        7978:05B6       F46A
+        7978:05B8       3032    ;ANAUS
+        7978:05BA       0CC4    ;$F8
+        7978:05BC       0332    ;$M134
+        7978:05BE       0334    ;&RLT02AS01
+        7978:05C0       0902    ;WERR-17
+        7978:05C2       F46B
+        7978:05C4       3026    ;VGLOH
+        7978:05C6       0C68    ;L2-ZU-DRU.GLATT
+        7978:05C8       053C    ;$M135
+        7978:05CA       0AF4    ;$B105
+        7978:05CC       F46C
+        7978:05CE       302B    ;VVZ
+        7978:05D0       0AF4    ;$B105
+        7978:05D2       0540    ;$M136
+        7978:05D4       0544    ;$M137
+        7978:05D6       0AF6    ;$B106
+        7978:05D8       F46D
+        7978:05DA       301A    ;RSS
+        7978:05DC       0AF6    ;$B106
+        7978:05DE       06FA    ;QUITTIEREN
+        7978:05E0       097C    ;L2-DRUCK-ST
+        7978:05E2       0A4C    ;$WSCRATCH
+        7978:05E4       F46E
+        7978:05E6       3011    ;UNDMN
+        7978:05E8       0002
+        7978:05EA       06FE    ;BSK-EIN
+        7978:05EC       08B8    ;ISP1-EIN
+        7978:05EE       0005
+        7978:05F0       0698    ;L1-2-3-RAUCHMEL.
+        7978:05F2       06F2    ;L3-AB-VENT.R.SCH
+        7978:05F4       06D4    ;L3-ZU-VENT.R.SCH
+        7978:05F6       06CA    ;L3-ZU-VENT.ST
+        7978:05F8       06D0    ;L3-AB-VENT.ST
+        7978:05FA       0904    ;L3-ESB
+        7978:05FC       0A4C    ;$WSCRATCH
+        7978:05FE       F46F
+        7978:0600       300E    ;UND2
+        7978:0602       07C0    ;L3-FREIGABE
+        7978:0604       0802    ;L3-ZEIT-EIN
+        7978:0606       0AF8    ;$B107
+        7978:0608       F470
+        7978:060A       300E    ;UND2
+        7978:060C       07C0    ;L3-FREIGABE
+        7978:060E       07DC    ;L3-HAND
+        7978:0610       0AFA    ;$B108
+        7978:0612       F471
+        7978:0614       3013    ;ODR2
+        7978:0616       0AF8    ;$B107
+        7978:0618       0AFA    ;$B108
+        7978:061A       0AFC    ;$B109
+        7978:061C       F472
+					- 49 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:061E       300E    ;UND2
+        7978:0620       0AFC    ;$B109
+        7978:0622       0904    ;L3-ESB
+        7978:0624       0906    ;L3-ANFORDERUNG
+        7978:0626       F473
+        7978:0628       3026    ;VGLOH
+        7978:062A       03E4    ;FK10
+        7978:062C       0C30    ;L3-ZU-TEMP.
+        7978:062E       0AFE    ;$B110
+        7978:0630       F474
+        7978:0632       302B    ;VVZ
+        7978:0634       0AFE    ;$B110
+        7978:0636       0548    ;$M138
+        7978:0638       054C    ;$M139
+        7978:063A       0B00    ;$B111
+        7978:063C       F475
+        7978:063E       300E    ;UND2
+        7978:0640       0B00    ;$B111
+        7978:0642       06CC    ;L3-ZU-VENT.R1
+        7978:0644       0B02    ;$B112
+        7978:0646       F476
+        7978:0648       301A    ;RSS
+        7978:064A       0B02    ;$B112
+        7978:064C       06FA    ;QUITTIEREN
+        7978:064E       09CA    ;L3-ZU-TEMP.<10
+        7978:0650       0A4C    ;$WSCRATCH
+        7978:0652       F477
+        7978:0654       3034    ;SETMEL
+        7978:0656       0336    ;$M140
+        7978:0658       0001
+        7978:065A       09CA    ;L3-ZU-TEMP.<10
+        7978:065C       0338    ;&RLT03ST22
+        7978:065E       09C0    ;WERR-66-06
+        7978:0660       F478
+        7978:0662       3011    ;UNDMN
+        7978:0664       0001
+        7978:0666       0906    ;L3-ANFORDERUNG
+        7978:0668       0001
+        7978:066A       0908    ;L3-KLAPPEN-ST
+        7978:066C       0B04    ;$B113
+        7978:066E       0B06    ;$B114
+        7978:0670       F479
+        7978:0672       3033    ;BEFAUS
+        7978:0674       0001
+        7978:0676       0B06    ;$B114
+        7978:0678       0B04    ;$B113
+        7978:067A       0080    ;$WZERO
+        7978:067C       0080    ;$WZERO
+        7978:067E       033A    ;&RLT03BF02
+        7978:0680       090A    ;WERR-22-5
+        7978:0682       F47A
+        7978:0684       3033    ;BEFAUS
+        7978:0686       0001
+        7978:0688       0B06    ;$B114
+        7978:068A       0B04    ;$B113
+        7978:068C       0080    ;$WZERO
+        7978:068E       0080    ;$WZERO
+        7978:0690       033C    ;&RLT03BF12
+					- 50 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0692       090C    ;WERR-23-5
+        7978:0694       F47B
+        7978:0696       3034    ;SETMEL
+        7978:0698       033E    ;$M141
+        7978:069A       0001
+        7978:069C       0B0A    ;$B116
+        7978:069E       0340    ;&RLT03BM05
+        7978:06A0       0910    ;WERR-94-10
+        7978:06A2       F47C
+        7978:06A4       3011    ;UNDMN
+        7978:06A6       0000
+        7978:06A8       0003
+        7978:06AA       0908    ;L3-KLAPPEN-ST
+        7978:06AC       06E6    ;L3-FO-KLAPPE-AUF
+        7978:06AE       06E8    ;L3-FO-KLAPPE-ZU
+        7978:06B0       0B08    ;$B115
+        7978:06B2       0A4C    ;$WSCRATCH
+        7978:06B4       F47D
+        7978:06B6       3011    ;UNDMN
+        7978:06B8       0000
+        7978:06BA       0003
+        7978:06BC       06D6    ;L3-AU-KLAPPE-AUF
+        7978:06BE       06D8    ;L3-AU-KLAPPE-ZU
+        7978:06C0       0908    ;L3-KLAPPEN-ST
+        7978:06C2       0B0A    ;$B116
+        7978:06C4       0A4C    ;$WSCRATCH
+        7978:06C6       F47E
+        7978:06C8       3034    ;SETMEL
+        7978:06CA       0342    ;$M142
+        7978:06CC       0001
+        7978:06CE       0B08    ;$B115
+        7978:06D0       0344    ;&RLT03BM14
+        7978:06D2       090E    ;WERR-94-12
+        7978:06D4       F47F
+        7978:06D6       3011    ;UNDMN
+        7978:06D8       0001
+        7978:06DA       06CE    ;L3-AU-KLP.R1
+        7978:06DC       0002
+        7978:06DE       0B14    ;$B121
+        7978:06E0       06D6    ;L3-AU-KLAPPE-AUF
+        7978:06E2       0B0C    ;$B117
+        7978:06E4       0A4C    ;$WSCRATCH
+        7978:06E6       F480
+        7978:06E8       3011    ;UNDMN
+        7978:06EA       0000
+        7978:06EC       0003
+        7978:06EE       06CE    ;L3-AU-KLP.R1
+        7978:06F0       06D8    ;L3-AU-KLAPPE-ZU
+        7978:06F2       0B14    ;$B121
+        7978:06F4       0B0E    ;$B118
+        7978:06F6       0A4C    ;$WSCRATCH
+        7978:06F8       F481
+        7978:06FA       3013    ;ODR2
+        7978:06FC       0B0C    ;$B117
+        7978:06FE       0B0E    ;$B118
+        7978:0700       0B10    ;$B119
+        7978:0702       F482
+        7978:0704       302B    ;VVZ
+					- 51 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0706       0B10    ;$B119
+        7978:0708       0550    ;$M143
+        7978:070A       0554    ;$M144
+        7978:070C       0B12    ;$B120
+        7978:070E       F483
+        7978:0710       301A    ;RSS
+        7978:0712       0B12    ;$B120
+        7978:0714       06FA    ;QUITTIEREN
+        7978:0716       0B14    ;$B121
+        7978:0718       0A4C    ;$WSCRATCH
+        7978:071A       F484
+        7978:071C       3034    ;SETMEL
+        7978:071E       0346    ;$M145
+        7978:0720       0001
+        7978:0722       0B14    ;$B121
+        7978:0724       0348    ;&RLT03ST03
+        7978:0726       0914    ;WERR-94-11
+        7978:0728       F485
+        7978:072A       3011    ;UNDMN
+        7978:072C       0001
+        7978:072E       06F8    ;L3-FO-KLP.R1
+        7978:0730       0002
+        7978:0732       0B1E    ;$B126
+        7978:0734       06E6    ;L3-FO-KLAPPE-AUF
+        7978:0736       0B16    ;$B122
+        7978:0738       0A4C    ;$WSCRATCH
+        7978:073A       F486
+        7978:073C       3011    ;UNDMN
+        7978:073E       0000
+        7978:0740       0003
+        7978:0742       06F8    ;L3-FO-KLP.R1
+        7978:0744       06E8    ;L3-FO-KLAPPE-ZU
+        7978:0746       0B1E    ;$B126
+        7978:0748       0B18    ;$B123
+        7978:074A       0A4C    ;$WSCRATCH
+        7978:074C       F487
+        7978:074E       3013    ;ODR2
+        7978:0750       0B16    ;$B122
+        7978:0752       0B18    ;$B123
+        7978:0754       0B1A    ;$B124
+        7978:0756       F488
+        7978:0758       302B    ;VVZ
+        7978:075A       0B1A    ;$B124
+        7978:075C       0558    ;$M146
+        7978:075E       055C    ;$M147
+        7978:0760       0B1C    ;$B125
+        7978:0762       F489
+        7978:0764       301A    ;RSS
+        7978:0766       0B1C    ;$B125
+        7978:0768       06FA    ;QUITTIEREN
+        7978:076A       0B1E    ;$B126
+        7978:076C       0A4C    ;$WSCRATCH
+        7978:076E       F48A
+        7978:0770       3034    ;SETMEL
+        7978:0772       034A    ;$M148
+        7978:0774       0001
+        7978:0776       0B1E    ;$B126
+        7978:0778       034C    ;&RLT03ST13
+					- 52 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:077A       0912    ;WERR-94-13
+        7978:077C       F48B
+        7978:077E       3013    ;ODR2
+        7978:0780       0B14    ;$B121
+        7978:0782       0B1E    ;$B126
+        7978:0784       0908    ;L3-KLAPPEN-ST
+        7978:0786       F48C
+        7978:0788       3011    ;UNDMN
+        7978:078A       0004
+        7978:078C       06CC    ;L3-ZU-VENT.R1
+        7978:078E       06D2    ;L3-AB-VENT.R1
+        7978:0790       06E6    ;L3-FO-KLAPPE-AUF
+        7978:0792       06D6    ;L3-AU-KLAPPE-AUF
+        7978:0794       0000
+        7978:0796       08FA    ;L3-FREIG.ZU-VENT
+        7978:0798       0A4C    ;$WSCRATCH
+        7978:079A       F48D
+        7978:079C       3011    ;UNDMN
+        7978:079E       0003
+        7978:07A0       06E6    ;L3-FO-KLAPPE-AUF
+        7978:07A2       06D6    ;L3-AU-KLAPPE-AUF
+        7978:07A4       0906    ;L3-ANFORDERUNG
+        7978:07A6       0001
+        7978:07A8       06CC    ;L3-ZU-VENT.R1
+        7978:07AA       0B20    ;$B127
+        7978:07AC       0A4C    ;$WSCRATCH
+        7978:07AE       F48E
+        7978:07B0       3011    ;UNDMN
+        7978:07B2       0003
+        7978:07B4       06E6    ;L3-FO-KLAPPE-AUF
+        7978:07B6       06D6    ;L3-AU-KLAPPE-AUF
+        7978:07B8       0906    ;L3-ANFORDERUNG
+        7978:07BA       0001
+        7978:07BC       06D2    ;L3-AB-VENT.R1
+        7978:07BE       0B22    ;$B128
+        7978:07C0       0A4C    ;$WSCRATCH
+        7978:07C2       F48F
+        7978:07C4       3013    ;ODR2
+        7978:07C6       0B20    ;$B127
+        7978:07C8       0B22    ;$B128
+        7978:07CA       0B24    ;$B129
+        7978:07CC       F490
+        7978:07CE       302B    ;VVZ
+        7978:07D0       0B24    ;$B129
+        7978:07D2       0560    ;$M149
+        7978:07D4       0564    ;$M150
+        7978:07D6       0A06    ;RLT03BF01-UE
+        7978:07D8       F491
+        7978:07DA       3011    ;UNDMN
+        7978:07DC       0003
+        7978:07DE       06E6    ;L3-FO-KLAPPE-AUF
+        7978:07E0       06D6    ;L3-AU-KLAPPE-AUF
+        7978:07E2       0906    ;L3-ANFORDERUNG
+        7978:07E4       0001
+        7978:07E6       0A06    ;RLT03BF01-UE
+        7978:07E8       0B26    ;$B130
+        7978:07EA       0A4C    ;$WSCRATCH
+        7978:07EC       F492
+					- 53 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:07EE       302B    ;VVZ
+        7978:07F0       0A06    ;RLT03BF01-UE
+        7978:07F2       0568    ;$M151
+        7978:07F4       056C    ;$M152
+        7978:07F6       0B28    ;$B131
+        7978:07F8       F493
+        7978:07FA       3014    ;ODRMN
+        7978:07FC       0002
+        7978:07FE       0B26    ;$B130
+        7978:0800       0B28    ;$B131
+        7978:0802       0000
+        7978:0804       0B2A    ;$B132
+        7978:0806       0B2C    ;$B133
+        7978:0808       F494
+        7978:080A       3033    ;BEFAUS
+        7978:080C       0001
+        7978:080E       0B2C    ;$B133
+        7978:0810       0B2A    ;$B132
+        7978:0812       0080    ;$WZERO
+        7978:0814       0080    ;$WZERO
+        7978:0816       034E    ;&RLT03BF01
+        7978:0818       06BE    ;WERR-22-1
+        7978:081A       F495
+        7978:081C       3033    ;BEFAUS
+        7978:081E       0001
+        7978:0820       0B2C    ;$B133
+        7978:0822       0B2A    ;$B132
+        7978:0824       0080    ;$WZERO
+        7978:0826       0080    ;$WZERO
+        7978:0828       0350    ;&RLT03BF11
+        7978:082A       087A    ;WERR-23-1
+        7978:082C       F496
+        7978:082E       3016    ;XOR2
+        7978:0830       06CC    ;L3-ZU-VENT.R1
+        7978:0832       0906    ;L3-ANFORDERUNG
+        7978:0834       0B2E    ;$B134
+        7978:0836       F497
+        7978:0838       3016    ;XOR2
+        7978:083A       06D2    ;L3-AB-VENT.R1
+        7978:083C       0906    ;L3-ANFORDERUNG
+        7978:083E       0B30    ;$B135
+        7978:0840       F498
+        7978:0842       302B    ;VVZ
+        7978:0844       0B2E    ;$B134
+        7978:0846       0570    ;$M153
+        7978:0848       0574    ;$M154
+        7978:084A       0B32    ;$B136
+        7978:084C       F499
+        7978:084E       302B    ;VVZ
+        7978:0850       0B30    ;$B135
+        7978:0852       0578    ;$M155
+        7978:0854       057C    ;$M156
+        7978:0856       0B34    ;$B137
+        7978:0858       F49A
+        7978:085A       301A    ;RSS
+        7978:085C       0B32    ;$B136
+        7978:085E       06FA    ;QUITTIEREN
+        7978:0860       09DA    ;L3-ZU-ST-ELEKTR.
+					- 54 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0862       0A4C    ;$WSCRATCH
+        7978:0864       F49B
+        7978:0866       301A    ;RSS
+        7978:0868       0B34    ;$B137
+        7978:086A       06FA    ;QUITTIEREN
+        7978:086C       09DC    ;L3-AB-ST-ELEKTR.
+        7978:086E       0A4C    ;$WSCRATCH
+        7978:0870       F49C
+        7978:0872       3034    ;SETMEL
+        7978:0874       0352    ;$M157
+        7978:0876       0001
+        7978:0878       09DA    ;L3-ZU-ST-ELEKTR.
+        7978:087A       0354    ;&RLT03ST90
+        7978:087C       09D4    ;WERR-108-02
+        7978:087E       F49D
+        7978:0880       3034    ;SETMEL
+        7978:0882       0356    ;$M158
+        7978:0884       0001
+        7978:0886       09DC    ;L3-AB-ST-ELEKTR.
+        7978:0888       0358    ;&RLT03ST91
+        7978:088A       09E0    ;WERR-108-03
+        7978:088C       F49E
+        7978:088E       3037    ;REGLER
+        7978:0890       0005
+        7978:0892       08FA    ;L3-FREIG.ZU-VENT
+        7978:0894       0080    ;$WZERO
+        7978:0896       0580    ;$FZERO
+        7978:0898       0C60    ;L3-SW-ZU-TEMP.
+        7978:089A       0874    ;WERR-REGLER-5
+        7978:089C       F49F
+        7978:089E       3037    ;REGLER
+        7978:08A0       0006
+        7978:08A2       08FA    ;L3-FREIG.ZU-VENT
+        7978:08A4       0B36    ;$B138
+        7978:08A6       0584    ;$M159
+        7978:08A8       0C5C    ;L3-Y-REGLER
+        7978:08AA       091A    ;WERR-REGLER-6
+        7978:08AC       F4A0
+        7978:08AE       3017    ;NICHT
+        7978:08B0       08FA    ;L3-FREIG.ZU-VENT
+        7978:08B2       0B36    ;$B138
+        7978:08B4       F4A1
+        7978:08B6       3029    ;VGL3P
+        7978:08B8       0C5C    ;L3-Y-REGLER
+        7978:08BA       03DC    ;FK-55
+        7978:08BC       03D8    ;FK-45
+        7978:08BE       0B38    ;$B139
+        7978:08C0       0A4C    ;$WSCRATCH
+        7978:08C2       0A4C    ;$WSCRATCH
+        7978:08C4       F4A2
+        7978:08C6       3011    ;UNDMN
+        7978:08C8       0002
+        7978:08CA       0B38    ;$B139
+        7978:08CC       08FA    ;L3-FREIG.ZU-VENT
+        7978:08CE       0002
+        7978:08D0       06EE    ;L3-STW-E-ERHITZ.
+        7978:08D2       095E    ;L3-STB-E-ERHITZ.
+        7978:08D4       0B3A    ;$B140
+					- 55 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:08D6       0B3C    ;$B141
+        7978:08D8       F4A3
+        7978:08DA       3033    ;BEFAUS
+        7978:08DC       0001
+        7978:08DE       0B3C    ;$B141
+        7978:08E0       0B3A    ;$B140
+        7978:08E2       0080    ;$WZERO
+        7978:08E4       0080    ;$WZERO
+        7978:08E6       035A    ;&RLT03BF03
+        7978:08E8       091C    ;WERR-24-01
+        7978:08EA       F4A4
+        7978:08EC       3029    ;VGL3P
+        7978:08EE       0C5C    ;L3-Y-REGLER
+        7978:08F0       03DC    ;FK-55
+        7978:08F2       03CC    ;FK-50
+        7978:08F4       0B3E    ;$B142
+        7978:08F6       0A4C    ;$WSCRATCH
+        7978:08F8       0A4C    ;$WSCRATCH
+        7978:08FA       F4A5
+        7978:08FC       3011    ;UNDMN
+        7978:08FE       0002
+        7978:0900       08FA    ;L3-FREIG.ZU-VENT
+        7978:0902       0B3E    ;$B142
+        7978:0904       0002
+        7978:0906       095E    ;L3-STB-E-ERHITZ.
+        7978:0908       06EE    ;L3-STW-E-ERHITZ.
+        7978:090A       0B40    ;$B143
+        7978:090C       0B42    ;$B144
+        7978:090E       F4A6
+        7978:0910       3033    ;BEFAUS
+        7978:0912       0001
+        7978:0914       0B42    ;$B144
+        7978:0916       0B40    ;$B143
+        7978:0918       0080    ;$WZERO
+        7978:091A       0080    ;$WZERO
+        7978:091C       035C    ;&RLT03BF04
+        7978:091E       091E    ;WERR-24-05
+        7978:0920       F4A7
+        7978:0922       3011    ;UNDMN
+        7978:0924       0002
+        7978:0926       06FE    ;BSK-EIN
+        7978:0928       08B8    ;ISP1-EIN
+        7978:092A       0006
+        7978:092C       0698    ;L1-2-3-RAUCHMEL.
+        7978:092E       006C    ;K0
+        7978:0930       0734    ;VE1-AB-REP.SCH.
+        7978:0932       070A    ;VE1-AB-VENT.ST
+        7978:0934       097E    ;VE01-DRUCK-ST
+        7978:0936       0924    ;VE1-KLAPPEN-ST
+        7978:0938       0920    ;VE1-ESB
+        7978:093A       0A4C    ;$WSCRATCH
+        7978:093C       F4A8
+        7978:093E       300E    ;UND2
+        7978:0940       07CC    ;VE1-FREIGABE
+        7978:0942       0804    ;VE1-ZEIT-EIN
+        7978:0944       0B44    ;$B145
+        7978:0946       F4A9
+        7978:0948       300E    ;UND2
+					- 56 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:094A       07CC    ;VE1-FREIGABE
+        7978:094C       07DE    ;VE1-HAND
+        7978:094E       0B46    ;$B146
+        7978:0950       F4AA
+        7978:0952       3013    ;ODR2
+        7978:0954       0B44    ;$B145
+        7978:0956       0B46    ;$B146
+        7978:0958       0B48    ;$B147
+        7978:095A       F4AB
+        7978:095C       3011    ;UNDMN
+        7978:095E       0003
+        7978:0960       0B48    ;$B147
+        7978:0962       0920    ;VE1-ESB
+        7978:0964       08C6    ;L1-ESB
+        7978:0966       0000
+        7978:0968       0922    ;VE1-ANFORDERUNG
+        7978:096A       0A4C    ;$WSCRATCH
+        7978:096C       F4AC
+        7978:096E       3011    ;UNDMN
+        7978:0970       0001
+        7978:0972       0922    ;VE1-ANFORDERUNG
+        7978:0974       0001
+        7978:0976       0924    ;VE1-KLAPPEN-ST
+        7978:0978       0B4A    ;$B148
+        7978:097A       0B4C    ;$B149
+        7978:097C       F4AD
+        7978:097E       3033    ;BEFAUS
+        7978:0980       0001
+        7978:0982       0B4C    ;$B149
+        7978:0984       0B4A    ;$B148
+        7978:0986       0080    ;$WZERO
+        7978:0988       0080    ;$WZERO
+        7978:098A       035E    ;&RLT04BF12
+        7978:098C       0926    ;WERR-46-9
+        7978:098E       F4AE
+        7978:0990       3016    ;XOR2
+        7978:0992       070C    ;VE1-AB-VENT.R1
+        7978:0994       0922    ;VE1-ANFORDERUNG
+        7978:0996       0B4E    ;$B150
+        7978:0998       F4AF
+        7978:099A       302B    ;VVZ
+        7978:099C       0B4E    ;$B150
+        7978:099E       0588    ;$M160
+        7978:09A0       058C    ;$M161
+        7978:09A2       0B50    ;$B151
+        7978:09A4       F4B0
+        7978:09A6       301A    ;RSS
+        7978:09A8       0B50    ;$B151
+        7978:09AA       06FA    ;QUITTIEREN
+        7978:09AC       09DE    ;VE1-AB-ST-ELEKTR
+        7978:09AE       0A4C    ;$WSCRATCH
+        7978:09B0       F4B1
+        7978:09B2       3034    ;SETMEL
+        7978:09B4       0360    ;$M162
+        7978:09B6       0001
+        7978:09B8       09DE    ;VE1-AB-ST-ELEKTR
+        7978:09BA       0362    ;&RLT04ST90
+        7978:09BC       09E2    ;WERR-108-04
+					- 57 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:09BE       F4B2
+        7978:09C0       3011    ;UNDMN
+        7978:09C2       0000
+        7978:09C4       0003
+        7978:09C6       0742    ;VE1-FO-KLAPP.AUF
+        7978:09C8       0744    ;VE1-FO-KLAPP.ZU
+        7978:09CA       0924    ;VE1-KLAPPEN-ST
+        7978:09CC       0B52    ;$B152
+        7978:09CE       0A4C    ;$WSCRATCH
+        7978:09D0       F4B3
+        7978:09D2       3034    ;SETMEL
+        7978:09D4       0364    ;$M163
+        7978:09D6       0001
+        7978:09D8       0B52    ;$B152
+        7978:09DA       0366    ;&RLT04BM14
+        7978:09DC       0928    ;WERR-94-15
+        7978:09DE       F4B4
+        7978:09E0       3011    ;UNDMN
+        7978:09E2       0001
+        7978:09E4       0746    ;VE1-FO-KLAPP.R1
+        7978:09E6       0002
+        7978:09E8       0924    ;VE1-KLAPPEN-ST
+        7978:09EA       0742    ;VE1-FO-KLAPP.AUF
+        7978:09EC       0B54    ;$B153
+        7978:09EE       0A4C    ;$WSCRATCH
+        7978:09F0       F4B5
+        7978:09F2       3011    ;UNDMN
+        7978:09F4       0000
+        7978:09F6       0003
+        7978:09F8       0746    ;VE1-FO-KLAPP.R1
+        7978:09FA       0744    ;VE1-FO-KLAPP.ZU
+        7978:09FC       0924    ;VE1-KLAPPEN-ST
+        7978:09FE       0B56    ;$B154
+        7978:0A00       0A4C    ;$WSCRATCH
+        7978:0A02       F4B6
+        7978:0A04       3013    ;ODR2
+        7978:0A06       0B54    ;$B153
+        7978:0A08       0B56    ;$B154
+        7978:0A0A       0B58    ;$B155
+        7978:0A0C       F4B7
+        7978:0A0E       302B    ;VVZ
+        7978:0A10       0B58    ;$B155
+        7978:0A12       0590    ;$M164
+        7978:0A14       0594    ;$M165
+        7978:0A16       0B5A    ;$B156
+        7978:0A18       F4B8
+        7978:0A1A       301A    ;RSS
+        7978:0A1C       0B5A    ;$B156
+        7978:0A1E       06FA    ;QUITTIEREN
+        7978:0A20       0924    ;VE1-KLAPPEN-ST
+        7978:0A22       0A4C    ;$WSCRATCH
+        7978:0A24       F4B9
+        7978:0A26       3034    ;SETMEL
+        7978:0A28       0368    ;$M166
+        7978:0A2A       0001
+        7978:0A2C       0924    ;VE1-KLAPPEN-ST
+        7978:0A2E       036A    ;&RLT04ST12
+        7978:0A30       092A    ;WERR-95-0
+					- 58 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0A32       F4BA
+        7978:0A34       300E    ;UND2
+        7978:0A36       070C    ;VE1-AB-VENT.R1
+        7978:0A38       0742    ;VE1-FO-KLAPP.AUF
+        7978:0A3A       093A    ;VE1-FREIG.FO-VEN
+        7978:0A3C       F4BB
+        7978:0A3E       3010    ;UND21
+        7978:0A40       0922    ;VE1-ANFORDERUNG
+        7978:0A42       0742    ;VE1-FO-KLAPP.AUF
+        7978:0A44       070C    ;VE1-AB-VENT.R1
+        7978:0A46       0B5C    ;$B157
+        7978:0A48       F4BC
+        7978:0A4A       302B    ;VVZ
+        7978:0A4C       0B5C    ;$B157
+        7978:0A4E       0598    ;$M167
+        7978:0A50       059C    ;$M168
+        7978:0A52       0A08    ;RLT04BF11-UE
+        7978:0A54       F4BD
+        7978:0A56       3010    ;UND21
+        7978:0A58       0742    ;VE1-FO-KLAPP.AUF
+        7978:0A5A       0922    ;VE1-ANFORDERUNG
+        7978:0A5C       0A08    ;RLT04BF11-UE
+        7978:0A5E       0B5E    ;$B158
+        7978:0A60       F4BE
+        7978:0A62       302B    ;VVZ
+        7978:0A64       0A08    ;RLT04BF11-UE
+        7978:0A66       05A0    ;$M169
+        7978:0A68       05A4    ;$M170
+        7978:0A6A       0B60    ;$B159
+        7978:0A6C       F4BF
+        7978:0A6E       3014    ;ODRMN
+        7978:0A70       0002
+        7978:0A72       0B5E    ;$B158
+        7978:0A74       0B60    ;$B159
+        7978:0A76       0000
+        7978:0A78       0B62    ;$B160
+        7978:0A7A       0B64    ;$B161
+        7978:0A7C       F4C0
+        7978:0A7E       3033    ;BEFAUS
+        7978:0A80       0001
+        7978:0A82       0B64    ;$B161
+        7978:0A84       0B62    ;$B160
+        7978:0A86       0080    ;$WZERO
+        7978:0A88       0080    ;$WZERO
+        7978:0A8A       036C    ;&RLT04BF11
+        7978:0A8C       092C    ;WERR-22-09
+        7978:0A8E       F4C1
+        7978:0A90       3037    ;REGLER
+        7978:0A92       0007
+        7978:0A94       093A    ;VE1-FREIG.FO-VEN
+        7978:0A96       0B66    ;$B162
+        7978:0A98       05A8    ;$M171
+        7978:0A9A       0C9C    ;VE1-Y-FU
+        7978:0A9C       0930    ;WERR-RELER-7
+        7978:0A9E       F4C2
+        7978:0AA0       3017    ;NICHT
+        7978:0AA2       093A    ;VE1-FREIG.FO-VEN
+        7978:0AA4       0B66    ;$B162
+					- 59 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0AA6       F4C3
+        7978:0AA8       301F    ;AWT
+        7978:0AAA       093A    ;VE1-FREIG.FO-VEN
+        7978:0AAC       05AC    ;$M172
+        7978:0AAE       0C9C    ;VE1-Y-FU
+        7978:0AB0       0CC8    ;$F9
+        7978:0AB2       F4C4
+        7978:0AB4       3032    ;ANAUS
+        7978:0AB6       0CC8    ;$F9
+        7978:0AB8       036E    ;$M173
+        7978:0ABA       0370    ;&RLT04AS11
+        7978:0ABC       092E    ;WERR-58
+        7978:0ABE       F4C5
+        7978:0AC0       3026    ;VGLOH
+        7978:0AC2       0C8C    ;VE1-AB-DRU.GLATT
+        7978:0AC4       05B0    ;$M174
+        7978:0AC6       0B68    ;$B163
+        7978:0AC8       F4C6
+        7978:0ACA       302B    ;VVZ
+        7978:0ACC       0B68    ;$B163
+        7978:0ACE       05B4    ;$M175
+        7978:0AD0       05B8    ;$M176
+        7978:0AD2       0B6A    ;$B164
+        7978:0AD4       F4C7
+        7978:0AD6       301A    ;RSS
+        7978:0AD8       0B6A    ;$B164
+        7978:0ADA       06FA    ;QUITTIEREN
+        7978:0ADC       097E    ;VE01-DRUCK-ST
+        7978:0ADE       0A4C    ;$WSCRATCH
+        7978:0AE0       F4C8
+        7978:0AE2       3011    ;UNDMN
+        7978:0AE4       0002
+        7978:0AE6       06FE    ;BSK-EIN
+        7978:0AE8       08B8    ;ISP1-EIN
+        7978:0AEA       0005
+        7978:0AEC       0698    ;L1-2-3-RAUCHMEL.
+        7978:0AEE       006C    ;K0
+        7978:0AF0       0736    ;VE2-AB-REP.SCH.
+        7978:0AF2       070E    ;VE2-AB-VENT.ST
+        7978:0AF4       0980    ;VE02-DRUCK-ST
+        7978:0AF6       0932    ;VE2-ESB
+        7978:0AF8       0A4C    ;$WSCRATCH
+        7978:0AFA       F4C9
+        7978:0AFC       300E    ;UND2
+        7978:0AFE       07B6    ;VE2-FREIGABE
+        7978:0B00       0806    ;VE2-ZEIT-EIN
+        7978:0B02       0B6C    ;$B165
+        7978:0B04       F4CA
+        7978:0B06       300E    ;UND2
+        7978:0B08       07B6    ;VE2-FREIGABE
+        7978:0B0A       07E0    ;VE2-HAND
+        7978:0B0C       0B6E    ;$B166
+        7978:0B0E       F4CB
+        7978:0B10       3013    ;ODR2
+        7978:0B12       0B6C    ;$B165
+        7978:0B14       0B6E    ;$B166
+        7978:0B16       0B70    ;$B167
+        7978:0B18       F4CC
+					- 60 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0B1A       3011    ;UNDMN
+        7978:0B1C       0004
+        7978:0B1E       0B70    ;$B167
+        7978:0B20       0932    ;VE2-ESB
+        7978:0B22       0940    ;VE3-ESB
+        7978:0B24       08E8    ;L2-ESB
+        7978:0B26       0000
+        7978:0B28       0934    ;VE2-ANFORDERUNG
+        7978:0B2A       0A4C    ;$WSCRATCH
+        7978:0B2C       F4CD
+        7978:0B2E       303B    ;BTRA
+        7978:0B30       0710    ;VE2-AB-VENT.R1
+        7978:0B32       0936    ;VE2-FREIG.FO-VEN
+        7978:0B34       F4CE
+        7978:0B36       300F    ;UND11
+        7978:0B38       0934    ;VE2-ANFORDERUNG
+        7978:0B3A       0A0A    ;RLT05BF11-UE
+        7978:0B3C       0B72    ;$B168
+        7978:0B3E       F4CF
+        7978:0B40       300F    ;UND11
+        7978:0B42       0934    ;VE2-ANFORDERUNG
+        7978:0B44       0710    ;VE2-AB-VENT.R1
+        7978:0B46       0B74    ;$B169
+        7978:0B48       F4D0
+        7978:0B4A       302B    ;VVZ
+        7978:0B4C       0B74    ;$B169
+        7978:0B4E       05BC    ;$M177
+        7978:0B50       05C0    ;$M178
+        7978:0B52       0A0A    ;RLT05BF11-UE
+        7978:0B54       F4D1
+        7978:0B56       302B    ;VVZ
+        7978:0B58       0A0A    ;RLT05BF11-UE
+        7978:0B5A       05C4    ;$M179
+        7978:0B5C       05C8    ;$M180
+        7978:0B5E       0B76    ;$B170
+        7978:0B60       F4D2
+        7978:0B62       3013    ;ODR2
+        7978:0B64       0B72    ;$B168
+        7978:0B66       0B76    ;$B170
+        7978:0B68       0B78    ;$B171
+        7978:0B6A       F4D3
+        7978:0B6C       3017    ;NICHT
+        7978:0B6E       0B78    ;$B171
+        7978:0B70       0A1A    ;$HB0
+        7978:0B72       F4D4
+        7978:0B74       3033    ;BEFAUS
+        7978:0B76       0001
+        7978:0B78       0A1A    ;$HB0
+        7978:0B7A       0B78    ;$B171
+        7978:0B7C       0080    ;$WZERO
+        7978:0B7E       0080    ;$WZERO
+        7978:0B80       0372    ;&RLT05BF11
+        7978:0B82       0938    ;WERR-22-13
+        7978:0B84       F4D5
+        7978:0B86       3016    ;XOR2
+        7978:0B88       0710    ;VE2-AB-VENT.R1
+        7978:0B8A       0934    ;VE2-ANFORDERUNG
+        7978:0B8C       0B7A    ;$B172
+					- 61 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0B8E       F4D6
+        7978:0B90       302B    ;VVZ
+        7978:0B92       0B7A    ;$B172
+        7978:0B94       05CC    ;$M181
+        7978:0B96       05D0    ;$M182
+        7978:0B98       0B7C    ;$B173
+        7978:0B9A       F4D7
+        7978:0B9C       301A    ;RSS
+        7978:0B9E       0B7C    ;$B173
+        7978:0BA0       06FA    ;QUITTIEREN
+        7978:0BA2       09E6    ;VE2-AB-ST-ELEKTR
+        7978:0BA4       0A4C    ;$WSCRATCH
+        7978:0BA6       F4D8
+        7978:0BA8       3034    ;SETMEL
+        7978:0BAA       0374    ;$M183
+        7978:0BAC       0001
+        7978:0BAE       09E6    ;VE2-AB-ST-ELEKTR
+        7978:0BB0       0376    ;&RLT05ST90
+        7978:0BB2       09E4    ;WERR-108-05
+        7978:0BB4       F4D9
+        7978:0BB6       3037    ;REGLER
+        7978:0BB8       0008
+        7978:0BBA       0936    ;VE2-FREIG.FO-VEN
+        7978:0BBC       0B7E    ;$B174
+        7978:0BBE       05D4    ;$M184
+        7978:0BC0       0CA0    ;VE2-Y-FU
+        7978:0BC2       08DE    ;WERR-RELER-2
+        7978:0BC4       F4DA
+        7978:0BC6       3017    ;NICHT
+        7978:0BC8       0936    ;VE2-FREIG.FO-VEN
+        7978:0BCA       0B7E    ;$B174
+        7978:0BCC       F4DB
+        7978:0BCE       301F    ;AWT
+        7978:0BD0       0936    ;VE2-FREIG.FO-VEN
+        7978:0BD2       05D8    ;$M185
+        7978:0BD4       0CA0    ;VE2-Y-FU
+        7978:0BD6       0CCC    ;$F10
+        7978:0BD8       F4DC
+        7978:0BDA       3032    ;ANAUS
+        7978:0BDC       0CCC    ;$F10
+        7978:0BDE       0378    ;$M186
+        7978:0BE0       037A    ;&RLT05AS11
+        7978:0BE2       093C    ;WERR-59
+        7978:0BE4       F4DD
+        7978:0BE6       3026    ;VGLOH
+        7978:0BE8       0C90    ;VE2-AB-DRU.GLATT
+        7978:0BEA       05DC    ;$M187
+        7978:0BEC       0B80    ;$B175
+        7978:0BEE       F4DE
+        7978:0BF0       302B    ;VVZ
+        7978:0BF2       0B80    ;$B175
+        7978:0BF4       05E0    ;$M188
+        7978:0BF6       05E4    ;$M189
+        7978:0BF8       0B82    ;$B176
+        7978:0BFA       F4DF
+        7978:0BFC       301A    ;RSS
+        7978:0BFE       0B82    ;$B176
+        7978:0C00       06FA    ;QUITTIEREN
+					- 62 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0C02       0980    ;VE02-DRUCK-ST
+        7978:0C04       0A4C    ;$WSCRATCH
+        7978:0C06       F4E0
+        7978:0C08       3011    ;UNDMN
+        7978:0C0A       0002
+        7978:0C0C       06FE    ;BSK-EIN
+        7978:0C0E       08B8    ;ISP1-EIN
+        7978:0C10       0005
+        7978:0C12       0698    ;L1-2-3-RAUCHMEL.
+        7978:0C14       006C    ;K0
+        7978:0C16       0738    ;VE3-AB-REP.SCH.
+        7978:0C18       0712    ;VE3-AB-VENT.ST
+        7978:0C1A       0982    ;VE03-DRUCK-ST
+        7978:0C1C       0940    ;VE3-ESB
+        7978:0C1E       0A4C    ;$WSCRATCH
+        7978:0C20       F4E1
+        7978:0C22       300E    ;UND2
+        7978:0C24       093E    ;VE3-FREIGABE
+        7978:0C26       0812    ;VE3-ZEIT-EIN
+        7978:0C28       0B84    ;$B177
+        7978:0C2A       F4E2
+        7978:0C2C       300E    ;UND2
+        7978:0C2E       093E    ;VE3-FREIGABE
+        7978:0C30       07EC    ;VE3-HAND
+        7978:0C32       0B86    ;$B178
+        7978:0C34       F4E3
+        7978:0C36       3013    ;ODR2
+        7978:0C38       0B84    ;$B177
+        7978:0C3A       0B86    ;$B178
+        7978:0C3C       0B88    ;$B179
+        7978:0C3E       F4E4
+        7978:0C40       3011    ;UNDMN
+        7978:0C42       0004
+        7978:0C44       0B88    ;$B179
+        7978:0C46       0940    ;VE3-ESB
+        7978:0C48       08E8    ;L2-ESB
+        7978:0C4A       0932    ;VE2-ESB
+        7978:0C4C       0000
+        7978:0C4E       0942    ;VE3-ANFORDERUNG
+        7978:0C50       0A4C    ;$WSCRATCH
+        7978:0C52       F4E5
+        7978:0C54       303B    ;BTRA
+        7978:0C56       0714    ;VE3-AB-VENT.R1
+        7978:0C58       07C6    ;VE3-FREIG.FO-VEN
+        7978:0C5A       F4E6
+        7978:0C5C       300F    ;UND11
+        7978:0C5E       0942    ;VE3-ANFORDERUNG
+        7978:0C60       0A0C    ;RLT06BF11-UE
+        7978:0C62       0B8A    ;$B180
+        7978:0C64       F4E7
+        7978:0C66       300F    ;UND11
+        7978:0C68       0942    ;VE3-ANFORDERUNG
+        7978:0C6A       0714    ;VE3-AB-VENT.R1
+        7978:0C6C       0B8C    ;$B181
+        7978:0C6E       F4E8
+        7978:0C70       302B    ;VVZ
+        7978:0C72       0B8C    ;$B181
+        7978:0C74       05E8    ;$M190
+					- 63 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0C76       05EC    ;$M191
+        7978:0C78       0A0C    ;RLT06BF11-UE
+        7978:0C7A       F4E9
+        7978:0C7C       302B    ;VVZ
+        7978:0C7E       0A0C    ;RLT06BF11-UE
+        7978:0C80       05F0    ;$M192
+        7978:0C82       05F4    ;$M193
+        7978:0C84       0B8E    ;$B182
+        7978:0C86       F4EA
+        7978:0C88       3013    ;ODR2
+        7978:0C8A       0B8A    ;$B180
+        7978:0C8C       0B8E    ;$B182
+        7978:0C8E       0B90    ;$B183
+        7978:0C90       F4EB
+        7978:0C92       3017    ;NICHT
+        7978:0C94       0B90    ;$B183
+        7978:0C96       0A1A    ;$HB0
+        7978:0C98       F4EC
+        7978:0C9A       3033    ;BEFAUS
+        7978:0C9C       0001
+        7978:0C9E       0A1A    ;$HB0
+        7978:0CA0       0B90    ;$B183
+        7978:0CA2       0080    ;$WZERO
+        7978:0CA4       0080    ;$WZERO
+        7978:0CA6       037C    ;&RLT06BF11
+        7978:0CA8       0956    ;WERR-23-09
+        7978:0CAA       F4ED
+        7978:0CAC       3016    ;XOR2
+        7978:0CAE       0714    ;VE3-AB-VENT.R1
+        7978:0CB0       0942    ;VE3-ANFORDERUNG
+        7978:0CB2       0B92    ;$B184
+        7978:0CB4       F4EE
+        7978:0CB6       302B    ;VVZ
+        7978:0CB8       0B92    ;$B184
+        7978:0CBA       05F8    ;$M194
+        7978:0CBC       05FC    ;$M195
+        7978:0CBE       0B94    ;$B185
+        7978:0CC0       F4EF
+        7978:0CC2       301A    ;RSS
+        7978:0CC4       0B94    ;$B185
+        7978:0CC6       06FA    ;QUITTIEREN
+        7978:0CC8       09EA    ;VE3-AB-ST-ELEKTR
+        7978:0CCA       0A4C    ;$WSCRATCH
+        7978:0CCC       F4F0
+        7978:0CCE       3034    ;SETMEL
+        7978:0CD0       037E    ;$M196
+        7978:0CD2       0001
+        7978:0CD4       09EA    ;VE3-AB-ST-ELEKTR
+        7978:0CD6       0380    ;&RLT06ST90
+        7978:0CD8       09E8    ;WERR-108-06
+        7978:0CDA       F4F1
+        7978:0CDC       3037    ;REGLER
+        7978:0CDE       0009
+        7978:0CE0       07C6    ;VE3-FREIG.FO-VEN
+        7978:0CE2       0B96    ;$B186
+        7978:0CE4       0600    ;$M197
+        7978:0CE6       0CA4    ;VE3-Y-FU
+        7978:0CE8       08DE    ;WERR-RELER-2
+					- 64 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0CEA       F4F2
+        7978:0CEC       3017    ;NICHT
+        7978:0CEE       07C6    ;VE3-FREIG.FO-VEN
+        7978:0CF0       0B96    ;$B186
+        7978:0CF2       F4F3
+        7978:0CF4       301F    ;AWT
+        7978:0CF6       07C6    ;VE3-FREIG.FO-VEN
+        7978:0CF8       0604    ;$M198
+        7978:0CFA       0CA4    ;VE3-Y-FU
+        7978:0CFC       0CD0    ;$F11
+        7978:0CFE       F4F4
+        7978:0D00       3032    ;ANAUS
+        7978:0D02       0CD0    ;$F11
+        7978:0D04       0382    ;$M199
+        7978:0D06       0384    ;&RLT06AS11
+        7978:0D08       093C    ;WERR-59
+        7978:0D0A       F4F5
+        7978:0D0C       3026    ;VGLOH
+        7978:0D0E       0C94    ;VE3-AB-DRU.GLATT
+        7978:0D10       0608    ;$M200
+        7978:0D12       0B98    ;$B187
+        7978:0D14       F4F6
+        7978:0D16       302B    ;VVZ
+        7978:0D18       0B98    ;$B187
+        7978:0D1A       060C    ;$M201
+        7978:0D1C       0610    ;$M202
+        7978:0D1E       0B9A    ;$B188
+        7978:0D20       F4F7
+        7978:0D22       301A    ;RSS
+        7978:0D24       0B9A    ;$B188
+        7978:0D26       06FA    ;QUITTIEREN
+        7978:0D28       0982    ;VE03-DRUCK-ST
+        7978:0D2A       0A4C    ;$WSCRATCH
+        7978:0D2C       F4F8
+        7978:0D2E       3011    ;UNDMN
+        7978:0D30       0002
+        7978:0D32       06FE    ;BSK-EIN
+        7978:0D34       08B8    ;ISP1-EIN
+        7978:0D36       0004
+        7978:0D38       0698    ;L1-2-3-RAUCHMEL.
+        7978:0D3A       006C    ;K0
+        7978:0D3C       073A    ;VE4-AB-REP.SCH.
+        7978:0D3E       0716    ;VE4-AB-VENT.ST
+        7978:0D40       0944    ;VE4-ESB
+        7978:0D42       0A4C    ;$WSCRATCH
+        7978:0D44       F4F9
+        7978:0D46       300E    ;UND2
+        7978:0D48       07D0    ;VE4-FREIGABE
+        7978:0D4A       0814    ;VE4-ZEIT-EIN
+        7978:0D4C       0B9C    ;$B189
+        7978:0D4E       F4FA
+        7978:0D50       300E    ;UND2
+        7978:0D52       07D0    ;VE4-FREIGABE
+        7978:0D54       07EE    ;VE4-HAND
+        7978:0D56       0B9E    ;$B190
+        7978:0D58       F4FB
+        7978:0D5A       3013    ;ODR2
+        7978:0D5C       0B9C    ;$B189
+					- 65 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0D5E       0B9E    ;$B190
+        7978:0D60       0BA0    ;$B191
+        7978:0D62       F4FC
+        7978:0D64       300E    ;UND2
+        7978:0D66       0BA0    ;$B191
+        7978:0D68       0944    ;VE4-ESB
+        7978:0D6A       0946    ;VE4-ANFORDERUNG
+        7978:0D6C       F4FD
+        7978:0D6E       300F    ;UND11
+        7978:0D70       0946    ;VE4-ANFORDERUNG
+        7978:0D72       0718    ;VE4-AB-VENT.R1
+        7978:0D74       0BA2    ;$B192
+        7978:0D76       F4FE
+        7978:0D78       300F    ;UND11
+        7978:0D7A       0946    ;VE4-ANFORDERUNG
+        7978:0D7C       0A0E    ;RLT07BF11-UE
+        7978:0D7E       0BA4    ;$B193
+        7978:0D80       F4FF
+        7978:0D82       302B    ;VVZ
+        7978:0D84       0BA2    ;$B192
+        7978:0D86       0614    ;$M203
+        7978:0D88       0618    ;$M204
+        7978:0D8A       0A0E    ;RLT07BF11-UE
+        7978:0D8C       F500
+        7978:0D8E       302B    ;VVZ
+        7978:0D90       0A0E    ;RLT07BF11-UE
+        7978:0D92       061C    ;$M205
+        7978:0D94       0620    ;$M206
+        7978:0D96       0BA6    ;$B194
+        7978:0D98       F501
+        7978:0D9A       3013    ;ODR2
+        7978:0D9C       0BA4    ;$B193
+        7978:0D9E       0BA6    ;$B194
+        7978:0DA0       0BA8    ;$B195
+        7978:0DA2       F502
+        7978:0DA4       3017    ;NICHT
+        7978:0DA6       0BA8    ;$B195
+        7978:0DA8       0A1A    ;$HB0
+        7978:0DAA       F503
+        7978:0DAC       3033    ;BEFAUS
+        7978:0DAE       0001
+        7978:0DB0       0A1A    ;$HB0
+        7978:0DB2       0BA8    ;$B195
+        7978:0DB4       0080    ;$WZERO
+        7978:0DB6       0080    ;$WZERO
+        7978:0DB8       0386    ;&RLT07BF11
+        7978:0DBA       0958    ;WERR-44-01
+        7978:0DBC       F504
+        7978:0DBE       3011    ;UNDMN
+        7978:0DC0       0002
+        7978:0DC2       06FE    ;BSK-EIN
+        7978:0DC4       08B8    ;ISP1-EIN
+        7978:0DC6       0004
+        7978:0DC8       0698    ;L1-2-3-RAUCHMEL.
+        7978:0DCA       006C    ;K0
+        7978:0DCC       073C    ;VE5-AB-REP.SCH.
+        7978:0DCE       071A    ;VE5-AB-VENT.ST
+        7978:0DD0       094A    ;VE5-ESB
+					- 66 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0DD2       0A4C    ;$WSCRATCH
+        7978:0DD4       F505
+        7978:0DD6       300E    ;UND2
+        7978:0DD8       07B8    ;VE5-FREIGABE
+        7978:0DDA       0816    ;VE5-ZEIT-EIN
+        7978:0DDC       0BAA    ;$B196
+        7978:0DDE       F506
+        7978:0DE0       300E    ;UND2
+        7978:0DE2       07B8    ;VE5-FREIGABE
+        7978:0DE4       07F0    ;VE5-HAND
+        7978:0DE6       0BAC    ;$B197
+        7978:0DE8       F507
+        7978:0DEA       3013    ;ODR2
+        7978:0DEC       0BAA    ;$B196
+        7978:0DEE       0BAC    ;$B197
+        7978:0DF0       0BAE    ;$B198
+        7978:0DF2       F508
+        7978:0DF4       300E    ;UND2
+        7978:0DF6       0BAE    ;$B198
+        7978:0DF8       094A    ;VE5-ESB
+        7978:0DFA       094C    ;VE5-ANFORDERUNG
+        7978:0DFC       F509
+        7978:0DFE       300F    ;UND11
+        7978:0E00       094C    ;VE5-ANFORDERUNG
+        7978:0E02       071C    ;VE5-AB-VENT.R1
+        7978:0E04       0BB0    ;$B199
+        7978:0E06       F50A
+        7978:0E08       300F    ;UND11
+        7978:0E0A       094C    ;VE5-ANFORDERUNG
+        7978:0E0C       0A10    ;RLT08BF11-UE
+        7978:0E0E       0BB2    ;$B200
+        7978:0E10       F50B
+        7978:0E12       302B    ;VVZ
+        7978:0E14       0BB0    ;$B199
+        7978:0E16       0624    ;$M207
+        7978:0E18       0628    ;$M208
+        7978:0E1A       0A10    ;RLT08BF11-UE
+        7978:0E1C       F50C
+        7978:0E1E       302B    ;VVZ
+        7978:0E20       0A10    ;RLT08BF11-UE
+        7978:0E22       062C    ;$M209
+        7978:0E24       0630    ;$M210
+        7978:0E26       0BB4    ;$B201
+        7978:0E28       F50D
+        7978:0E2A       3013    ;ODR2
+        7978:0E2C       0BB2    ;$B200
+        7978:0E2E       0BB4    ;$B201
+        7978:0E30       0BB6    ;$B202
+        7978:0E32       F50E
+        7978:0E34       3017    ;NICHT
+        7978:0E36       0BB6    ;$B202
+        7978:0E38       0A1A    ;$HB0
+        7978:0E3A       F50F
+        7978:0E3C       3033    ;BEFAUS
+        7978:0E3E       0001
+        7978:0E40       0A1A    ;$HB0
+        7978:0E42       0BB6    ;$B202
+        7978:0E44       0080    ;$WZERO
+					- 67 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0E46       0080    ;$WZERO
+        7978:0E48       0388    ;&RLT08BF11
+        7978:0E4A       094E    ;WERR-44-05
+        7978:0E4C       F510
+        7978:0E4E       3011    ;UNDMN
+        7978:0E50       0002
+        7978:0E52       06FE    ;BSK-EIN
+        7978:0E54       08B8    ;ISP1-EIN
+        7978:0E56       0004
+        7978:0E58       0698    ;L1-2-3-RAUCHMEL.
+        7978:0E5A       006C    ;K0
+        7978:0E5C       073E    ;VE6-AB-REP.SCH.
+        7978:0E5E       071E    ;VE6-AB-VENT.ST
+        7978:0E60       0950    ;VE6-ESB
+        7978:0E62       0A4C    ;$WSCRATCH
+        7978:0E64       F511
+        7978:0E66       300E    ;UND2
+        7978:0E68       07C4    ;VE6-FREIGABE
+        7978:0E6A       0818    ;VE6-ZEIT-EIN
+        7978:0E6C       0BB8    ;$B203
+        7978:0E6E       F512
+        7978:0E70       300E    ;UND2
+        7978:0E72       07C4    ;VE6-FREIGABE
+        7978:0E74       07F2    ;VE6-HAND
+        7978:0E76       0BBA    ;$B204
+        7978:0E78       F513
+        7978:0E7A       3013    ;ODR2
+        7978:0E7C       0BB8    ;$B203
+        7978:0E7E       0BBA    ;$B204
+        7978:0E80       0BBC    ;$B205
+        7978:0E82       F514
+        7978:0E84       300E    ;UND2
+        7978:0E86       0BBC    ;$B205
+        7978:0E88       0950    ;VE6-ESB
+        7978:0E8A       0952    ;VE6-ANFORDERUNG
+        7978:0E8C       F515
+        7978:0E8E       300F    ;UND11
+        7978:0E90       0952    ;VE6-ANFORDERUNG
+        7978:0E92       0720    ;VE6-AB-VENT.R1
+        7978:0E94       0BBE    ;$B206
+        7978:0E96       F516
+        7978:0E98       300F    ;UND11
+        7978:0E9A       0952    ;VE6-ANFORDERUNG
+        7978:0E9C       0986    ;RLT09BF11-UE
+        7978:0E9E       0BC0    ;$B207
+        7978:0EA0       F517
+        7978:0EA2       302B    ;VVZ
+        7978:0EA4       0BBE    ;$B206
+        7978:0EA6       0634    ;$M211
+        7978:0EA8       0638    ;$M212
+        7978:0EAA       0986    ;RLT09BF11-UE
+        7978:0EAC       F518
+        7978:0EAE       302B    ;VVZ
+        7978:0EB0       0986    ;RLT09BF11-UE
+        7978:0EB2       063C    ;$M213
+        7978:0EB4       0640    ;$M214
+        7978:0EB6       0BC2    ;$B208
+        7978:0EB8       F519
+					- 68 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0EBA       3013    ;ODR2
+        7978:0EBC       0BC0    ;$B207
+        7978:0EBE       0BC2    ;$B208
+        7978:0EC0       0BC4    ;$B209
+        7978:0EC2       F51A
+        7978:0EC4       3017    ;NICHT
+        7978:0EC6       0BC4    ;$B209
+        7978:0EC8       0A1A    ;$HB0
+        7978:0ECA       F51B
+        7978:0ECC       3033    ;BEFAUS
+        7978:0ECE       0001
+        7978:0ED0       0A1A    ;$HB0
+        7978:0ED2       0BC4    ;$B209
+        7978:0ED4       0080    ;$WZERO
+        7978:0ED6       0080    ;$WZERO
+        7978:0ED8       038A    ;&RLT09BF11
+        7978:0EDA       0954    ;WERR-45-01
+        7978:0EDC       F51C
+        7978:0EDE       3011    ;UNDMN
+        7978:0EE0       0002
+        7978:0EE2       06FE    ;BSK-EIN
+        7978:0EE4       08B8    ;ISP1-EIN
+        7978:0EE6       0004
+        7978:0EE8       0698    ;L1-2-3-RAUCHMEL.
+        7978:0EEA       006C    ;K0
+        7978:0EEC       0740    ;VE7-AB-REP.SCH.
+        7978:0EEE       072E    ;VE7-AB-VENT.ST
+        7978:0EF0       0948    ;VE7-ESB
+        7978:0EF2       0A4C    ;$WSCRATCH
+        7978:0EF4       F51D
+        7978:0EF6       300E    ;UND2
+        7978:0EF8       07D2    ;VE7-FREIGABE
+        7978:0EFA       081A    ;VE7-ZEIT-EIN
+        7978:0EFC       0BC6    ;$B210
+        7978:0EFE       F51E
+        7978:0F00       300E    ;UND2
+        7978:0F02       07D2    ;VE7-FREIGABE
+        7978:0F04       07F4    ;VE7-HAND
+        7978:0F06       0BC8    ;$B211
+        7978:0F08       F51F
+        7978:0F0A       3013    ;ODR2
+        7978:0F0C       0BC6    ;$B210
+        7978:0F0E       0BC8    ;$B211
+        7978:0F10       0BCA    ;$B212
+        7978:0F12       F520
+        7978:0F14       300E    ;UND2
+        7978:0F16       0BCA    ;$B212
+        7978:0F18       0948    ;VE7-ESB
+        7978:0F1A       095A    ;VE7-ANFORDERUNG
+        7978:0F1C       F521
+        7978:0F1E       3017    ;NICHT
+        7978:0F20       0BD2    ;$B216
+        7978:0F22       0A1A    ;$HB0
+        7978:0F24       F522
+        7978:0F26       3033    ;BEFAUS
+        7978:0F28       0001
+        7978:0F2A       0A1A    ;$HB0
+        7978:0F2C       0BD2    ;$B216
+					- 69 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0F2E       0080    ;$WZERO
+        7978:0F30       0080    ;$WZERO
+        7978:0F32       038C    ;&RLT10BF11
+        7978:0F34       08A8    ;WERR-45-05
+        7978:0F36       F523
+        7978:0F38       300F    ;UND11
+        7978:0F3A       095A    ;VE7-ANFORDERUNG
+        7978:0F3C       0730    ;VE7-AB-VENT.R1
+        7978:0F3E       0BCC    ;$B213
+        7978:0F40       F524
+        7978:0F42       300F    ;UND11
+        7978:0F44       095A    ;VE7-ANFORDERUNG
+        7978:0F46       0A12    ;RLT10BF11-UE
+        7978:0F48       0BCE    ;$B214
+        7978:0F4A       F525
+        7978:0F4C       302B    ;VVZ
+        7978:0F4E       0BCC    ;$B213
+        7978:0F50       0644    ;$M215
+        7978:0F52       0648    ;$M216
+        7978:0F54       0A12    ;RLT10BF11-UE
+        7978:0F56       F526
+        7978:0F58       302B    ;VVZ
+        7978:0F5A       0A12    ;RLT10BF11-UE
+        7978:0F5C       064C    ;$M217
+        7978:0F5E       0650    ;$M218
+        7978:0F60       0BD0    ;$B215
+        7978:0F62       F527
+        7978:0F64       3013    ;ODR2
+        7978:0F66       0BCE    ;$B214
+        7978:0F68       0BD0    ;$B215
+        7978:0F6A       0BD2    ;$B216
+        7978:0F6C       F528
+        7978:0F6E       3011    ;UNDMN
+        7978:0F70       0002
+        7978:0F72       06FE    ;BSK-EIN
+        7978:0F74       08B8    ;ISP1-EIN
+        7978:0F76       0004
+        7978:0F78       0698    ;L1-2-3-RAUCHMEL.
+        7978:0F7A       006C    ;K0
+        7978:0F7C       07AA    ;VE8-AB-REP.SCH.
+        7978:0F7E       09A6    ;VE8-AB-VENT.ST
+        7978:0F80       09C4    ;VE8-ESB
+        7978:0F82       0A4C    ;$WSCRATCH
+        7978:0F84       F529
+        7978:0F86       300E    ;UND2
+        7978:0F88       0884    ;VE8-FREIGABE
+        7978:0F8A       0886    ;VE8-ZEIT-EIN
+        7978:0F8C       0BD4    ;$B217
+        7978:0F8E       F52A
+        7978:0F90       300E    ;UND2
+        7978:0F92       0884    ;VE8-FREIGABE
+        7978:0F94       09C2    ;VE8-HAND
+        7978:0F96       0BD6    ;$B218
+        7978:0F98       F52B
+        7978:0F9A       3013    ;ODR2
+        7978:0F9C       0BD4    ;$B217
+        7978:0F9E       0BD6    ;$B218
+        7978:0FA0       0BD8    ;$B219
+					- 70 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:0FA2       F52C
+        7978:0FA4       300E    ;UND2
+        7978:0FA6       0BD8    ;$B219
+        7978:0FA8       09C4    ;VE8-ESB
+        7978:0FAA       09C6    ;VE8-ANFORDERUNG
+        7978:0FAC       F52D
+        7978:0FAE       300F    ;UND11
+        7978:0FB0       09C6    ;VE8-ANFORDERUNG
+        7978:0FB2       09A8    ;VE8-AB-VENT.R1
+        7978:0FB4       0BDA    ;$B220
+        7978:0FB6       F52E
+        7978:0FB8       300F    ;UND11
+        7978:0FBA       09C6    ;VE8-ANFORDERUNG
+        7978:0FBC       0A14    ;RLT11BF11-UE
+        7978:0FBE       0BDC    ;$B221
+        7978:0FC0       F52F
+        7978:0FC2       302B    ;VVZ
+        7978:0FC4       0BDA    ;$B220
+        7978:0FC6       0654    ;$M219
+        7978:0FC8       0658    ;$M220
+        7978:0FCA       0A14    ;RLT11BF11-UE
+        7978:0FCC       F530
+        7978:0FCE       302B    ;VVZ
+        7978:0FD0       0A14    ;RLT11BF11-UE
+        7978:0FD2       065C    ;$M221
+        7978:0FD4       0660    ;$M222
+        7978:0FD6       0BDE    ;$B222
+        7978:0FD8       F531
+        7978:0FDA       3013    ;ODR2
+        7978:0FDC       0BDC    ;$B221
+        7978:0FDE       0BDE    ;$B222
+        7978:0FE0       0BE0    ;$B223
+        7978:0FE2       F532
+        7978:0FE4       3017    ;NICHT
+        7978:0FE6       0BE0    ;$B223
+        7978:0FE8       0A1A    ;$HB0
+        7978:0FEA       F533
+        7978:0FEC       3033    ;BEFAUS
+        7978:0FEE       0001
+        7978:0FF0       0A1A    ;$HB0
+        7978:0FF2       0BE0    ;$B223
+        7978:0FF4       0080    ;$WZERO
+        7978:0FF6       0080    ;$WZERO
+        7978:0FF8       038E    ;&RLT11BF11
+        7978:0FFA       09C8    ;WERR-1-01
+        7978:0FFC       F534
+        7978:0FFE       3016    ;XOR2
+        7978:1000       0718    ;VE4-AB-VENT.R1
+        7978:1002       0946    ;VE4-ANFORDERUNG
+        7978:1004       0BE2    ;$B224
+        7978:1006       F535
+        7978:1008       302B    ;VVZ
+        7978:100A       0BE2    ;$B224
+        7978:100C       0664    ;$M223
+        7978:100E       0668    ;$M224
+        7978:1010       0BE4    ;$B225
+        7978:1012       F536
+        7978:1014       301A    ;RSS
+					- 71 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:1016       0BE4    ;$B225
+        7978:1018       06FA    ;QUITTIEREN
+        7978:101A       09EC    ;VE4-AB-ST-ELEKTR
+        7978:101C       0A4C    ;$WSCRATCH
+        7978:101E       F537
+        7978:1020       3034    ;SETMEL
+        7978:1022       0390    ;$M225
+        7978:1024       0001
+        7978:1026       09EC    ;VE4-AB-ST-ELEKTR
+        7978:1028       0392    ;&RLT07ST90
+        7978:102A       09F2    ;WERR-108-07
+        7978:102C       F538
+        7978:102E       3016    ;XOR2
+        7978:1030       071C    ;VE5-AB-VENT.R1
+        7978:1032       094C    ;VE5-ANFORDERUNG
+        7978:1034       0BE6    ;$B226
+        7978:1036       F539
+        7978:1038       302B    ;VVZ
+        7978:103A       0BE6    ;$B226
+        7978:103C       066C    ;$M226
+        7978:103E       0670    ;$M227
+        7978:1040       0BE8    ;$B227
+        7978:1042       F53A
+        7978:1044       301A    ;RSS
+        7978:1046       0BE8    ;$B227
+        7978:1048       06FA    ;QUITTIEREN
+        7978:104A       09EE    ;VE5-AB-ST-ELEKTR
+        7978:104C       0A4C    ;$WSCRATCH
+        7978:104E       F53B
+        7978:1050       3034    ;SETMEL
+        7978:1052       0394    ;$M228
+        7978:1054       0001
+        7978:1056       09EE    ;VE5-AB-ST-ELEKTR
+        7978:1058       0396    ;&RLT08ST90
+        7978:105A       09F4    ;WERR-108-08
+        7978:105C       F53C
+        7978:105E       3016    ;XOR2
+        7978:1060       0720    ;VE6-AB-VENT.R1
+        7978:1062       0952    ;VE6-ANFORDERUNG
+        7978:1064       0BEA    ;$B228
+        7978:1066       F53D
+        7978:1068       302B    ;VVZ
+        7978:106A       0BEA    ;$B228
+        7978:106C       0674    ;$M229
+        7978:106E       0678    ;$M230
+        7978:1070       0BEC    ;$B229
+        7978:1072       F53E
+        7978:1074       301A    ;RSS
+        7978:1076       0BEC    ;$B229
+        7978:1078       06FA    ;QUITTIEREN
+        7978:107A       09F0    ;VE6-AB-ST-ELEKTR
+        7978:107C       0A4C    ;$WSCRATCH
+        7978:107E       F53F
+        7978:1080       3034    ;SETMEL
+        7978:1082       0398    ;$M231
+        7978:1084       0001
+        7978:1086       09F0    ;VE6-AB-ST-ELEKTR
+        7978:1088       039A    ;&RLT09ST90
+					- 72 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:108A       09F6    ;WERR-108-09
+        7978:108C       F540
+        7978:108E       3016    ;XOR2
+        7978:1090       0730    ;VE7-AB-VENT.R1
+        7978:1092       095A    ;VE7-ANFORDERUNG
+        7978:1094       0BEE    ;$B230
+        7978:1096       F541
+        7978:1098       302B    ;VVZ
+        7978:109A       0BEE    ;$B230
+        7978:109C       067C    ;$M232
+        7978:109E       0680    ;$M233
+        7978:10A0       0BF0    ;$B231
+        7978:10A2       F542
+        7978:10A4       301A    ;RSS
+        7978:10A6       0BF0    ;$B231
+        7978:10A8       06FA    ;QUITTIEREN
+        7978:10AA       09F8    ;VE7-AB-ST-ELEKTR
+        7978:10AC       0A4C    ;$WSCRATCH
+        7978:10AE       F543
+        7978:10B0       3034    ;SETMEL
+        7978:10B2       039C    ;$M234
+        7978:10B4       0001
+        7978:10B6       09F8    ;VE7-AB-ST-ELEKTR
+        7978:10B8       039E    ;&RLT010ST90
+        7978:10BA       09FC    ;WERR-108-10
+        7978:10BC       F544
+        7978:10BE       3016    ;XOR2
+        7978:10C0       09A8    ;VE8-AB-VENT.R1
+        7978:10C2       09C6    ;VE8-ANFORDERUNG
+        7978:10C4       0BF2    ;$B232
+        7978:10C6       F545
+        7978:10C8       302B    ;VVZ
+        7978:10CA       0BF2    ;$B232
+        7978:10CC       0684    ;$M235
+        7978:10CE       0688    ;$M236
+        7978:10D0       0BF4    ;$B233
+        7978:10D2       F546
+        7978:10D4       301A    ;RSS
+        7978:10D6       0BF4    ;$B233
+        7978:10D8       06FA    ;QUITTIEREN
+        7978:10DA       09FA    ;VE8-AB-ST-ELEKTR
+        7978:10DC       0A4C    ;$WSCRATCH
+        7978:10DE       F547
+        7978:10E0       3034    ;SETMEL
+        7978:10E2       03A0    ;$M237
+        7978:10E4       0001
+        7978:10E6       09FA    ;VE8-AB-ST-ELEKTR
+        7978:10E8       03A2    ;&RLT11ST90
+        7978:10EA       09FE    ;WERR-108-11
+        7978:10EC       F548
+        7978:10EE       3014    ;ODRMN
+        7978:10F0       0007
+        7978:10F2       0698    ;L1-2-3-RAUCHMEL.
+        7978:10F4       06A4    ;L1-FROST
+        7978:10F6       08C8    ;L1-KLAPPEN-ST
+        7978:10F8       069A    ;L1-ZU-VENT.ST
+        7978:10FA       0696    ;L1-ZU-VENT.R.SCH
+        7978:10FC       06C8    ;L2-FROST
+					- 73 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:10FE       08EC    ;L2-KLAPPEN-ST
+        7978:1100       0002
+        7978:1102       06FE    ;BSK-EIN
+        7978:1104       08B8    ;ISP1-EIN
+        7978:1106       0BF6    ;$B234
+        7978:1108       0A4C    ;$WSCRATCH
+        7978:110A       F549
+        7978:110C       3014    ;ODRMN
+        7978:110E       000B
+        7978:1110       0BF6    ;$B234
+        7978:1112       06B6    ;L2-ZU-VENT.R.SCH
+        7978:1114       06B0    ;L2-ZU-VENT.ST
+        7978:1116       06F2    ;L3-AB-VENT.R.SCH
+        7978:1118       06D0    ;L3-AB-VENT.ST
+        7978:111A       0908    ;L3-KLAPPEN-ST
+        7978:111C       06EE    ;L3-STW-E-ERHITZ.
+        7978:111E       06D4    ;L3-ZU-VENT.R.SCH
+        7978:1120       06CA    ;L3-ZU-VENT.ST
+        7978:1122       095E    ;L3-STB-E-ERHITZ.
+        7978:1124       09BE    ;VE01-E-FILTER-ST
+        7978:1126       0000
+        7978:1128       095C    ;SAMMELST.1
+        7978:112A       0A4C    ;$WSCRATCH
+        7978:112C       F54A
+        7978:112E       3031    ;MELEIN
+        7978:1130       03A4    ;&RLT04ST21
+        7978:1132       0001
+        7978:1134       0A20    ;$HB2
+        7978:1136       0966    ;WERR-47-11
+        7978:1138       F54B
+        7978:113A       3017    ;NICHT
+        7978:113C       0A20    ;$HB2
+        7978:113E       09BE    ;VE01-E-FILTER-ST
+        7978:1140       F54C
+        7978:1142       3014    ;ODRMN
+        7978:1144       0007
+        7978:1146       097A    ;L1-DRUCK-ST
+        7978:1148       097C    ;L2-DRUCK-ST
+        7978:114A       097E    ;VE01-DRUCK-ST
+        7978:114C       0980    ;VE02-DRUCK-ST
+        7978:114E       0982    ;VE03-DRUCK-ST
+        7978:1150       0BF8    ;$B235
+        7978:1152       0BFA    ;$B236
+        7978:1154       0000
+        7978:1156       0A00    ;ST-BLATT-99
+        7978:1158       0A4C    ;$WSCRATCH
+        7978:115A       F54D
+        7978:115C       3014    ;ODRMN
+        7978:115E       0006
+        7978:1160       09D6    ;L1-ZU-ST-ELEKTR.
+        7978:1162       09D8    ;L2-ZU-ST-ELEKTR.
+        7978:1164       09DC    ;L3-AB-ST-ELEKTR.
+        7978:1166       09DA    ;L3-ZU-ST-ELEKTR.
+        7978:1168       09DE    ;VE1-AB-ST-ELEKTR
+        7978:116A       09E6    ;VE2-AB-ST-ELEKTR
+        7978:116C       0000
+        7978:116E       0BF8    ;$B235
+        7978:1170       0A4C    ;$WSCRATCH
+					- 74 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:1172       F54E
+        7978:1174       3014    ;ODRMN
+        7978:1176       0008
+        7978:1178       09EA    ;VE3-AB-ST-ELEKTR
+        7978:117A       09EC    ;VE4-AB-ST-ELEKTR
+        7978:117C       09EE    ;VE5-AB-ST-ELEKTR
+        7978:117E       09F0    ;VE6-AB-ST-ELEKTR
+        7978:1180       09F8    ;VE7-AB-ST-ELEKTR
+        7978:1182       09FA    ;VE8-AB-ST-ELEKTR
+        7978:1184       07AA    ;VE8-AB-REP.SCH.
+        7978:1186       09A6    ;VE8-AB-VENT.ST
+        7978:1188       0000
+        7978:118A       0BFA    ;$B236
+        7978:118C       0A4C    ;$WSCRATCH
+        7978:118E       F54F
+        7978:1190       3014    ;ODRMN
+        7978:1192       000A
+        7978:1194       06D4    ;L3-ZU-VENT.R.SCH
+        7978:1196       06CA    ;L3-ZU-VENT.ST
+        7978:1198       0734    ;VE1-AB-REP.SCH.
+        7978:119A       070A    ;VE1-AB-VENT.ST
+        7978:119C       0924    ;VE1-KLAPPEN-ST
+        7978:119E       0736    ;VE2-AB-REP.SCH.
+        7978:11A0       070E    ;VE2-AB-VENT.ST
+        7978:11A2       0738    ;VE3-AB-REP.SCH.
+        7978:11A4       0712    ;VE3-AB-VENT.ST
+        7978:11A6       0716    ;VE4-AB-VENT.ST
+        7978:11A8       0000
+        7978:11AA       0BFC    ;$B237
+        7978:11AC       0A4C    ;$WSCRATCH
+        7978:11AE       F550
+        7978:11B0       3014    ;ODRMN
+        7978:11B2       0009
+        7978:11B4       0BFC    ;$B237
+        7978:11B6       073C    ;VE5-AB-REP.SCH.
+        7978:11B8       071A    ;VE5-AB-VENT.ST
+        7978:11BA       073E    ;VE6-AB-REP.SCH.
+        7978:11BC       071E    ;VE6-AB-VENT.ST
+        7978:11BE       0740    ;VE7-AB-REP.SCH.
+        7978:11C0       072E    ;VE7-AB-VENT.ST
+        7978:11C2       095C    ;SAMMELST.1
+        7978:11C4       0C00    ;$B239
+        7978:11C6       0000
+        7978:11C8       0BFE    ;$B238
+        7978:11CA       0A4C    ;$WSCRATCH
+        7978:11CC       F551
+        7978:11CE       3014    ;ODRMN
+        7978:11D0       0006
+        7978:11D2       096C    ;L1-FILTER
+        7978:11D4       0970    ;L2-FILTER
+        7978:11D6       0972    ;L3-FILTER-AB
+        7978:11D8       0974    ;L3-FILTER-ZU
+        7978:11DA       0A00    ;ST-BLATT-99
+        7978:11DC       09CA    ;L3-ZU-TEMP.<10
+        7978:11DE       0000
+        7978:11E0       0C00    ;$B239
+        7978:11E2       0A4C    ;$WSCRATCH
+        7978:11E4       F552
+					- 75 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:11E6       300F    ;UND11
+        7978:11E8       0BFE    ;$B238
+        7978:11EA       0C02    ;$B240
+        7978:11EC       0C02    ;$B240
+        7978:11EE       F553
+        7978:11F0       3017    ;NICHT
+        7978:11F2       0C02    ;$B240
+        7978:11F4       0A1A    ;$HB0
+        7978:11F6       F554
+        7978:11F8       3033    ;BEFAUS
+        7978:11FA       0001
+        7978:11FC       0A1A    ;$HB0
+        7978:11FE       0C02    ;$B240
+        7978:1200       0080    ;$WZERO
+        7978:1202       0080    ;$WZERO
+        7978:1204       03A6    ;&ISP1BF02
+        7978:1206       0964    ;WERR-23-13
+        7978:1208       F555
+        7978:120A       3017    ;NICHT
+        7978:120C       0BFE    ;$B238
+        7978:120E       0A1A    ;$HB0
+        7978:1210       F556
+        7978:1212       3033    ;BEFAUS
+        7978:1214       0001
+        7978:1216       0A1A    ;$HB0
+        7978:1218       0BFE    ;$B238
+        7978:121A       0080    ;$WZERO
+        7978:121C       0080    ;$WZERO
+        7978:121E       03A8    ;&ISP1BF01
+        7978:1220       0960    ;WERR-1-13
+        7978:1222       F557
+        7978:1224       3014    ;ODRMN
+        7978:1226       000F
+        7978:1228       0A02    ;RLT01BF01-UE
+        7978:122A       0A04    ;RLT02BF01-UE
+        7978:122C       0A06    ;RLT03BF01-UE
+        7978:122E       0A08    ;RLT04BF11-UE
+        7978:1230       0A0A    ;RLT05BF11-UE
+        7978:1232       0A0C    ;RLT06BF11-UE
+        7978:1234       0A0E    ;RLT07BF11-UE
+        7978:1236       0A10    ;RLT08BF11-UE
+        7978:1238       0986    ;RLT09BF11-UE
+        7978:123A       0A12    ;RLT10BF11-UE
+        7978:123C       0A14    ;RLT11BF11-UE
+        7978:123E       006C    ;K0
+        7978:1240       006C    ;K0
+        7978:1242       006C    ;K0
+        7978:1244       006C    ;K0
+        7978:1246       0000
+        7978:1248       0A16    ;UEBERWACHUNGA
+        7978:124A       0C04    ;$B241
+        7978:124C       F558
+        7978:124E       3013    ;ODR2
+        7978:1250       0C04    ;$B241
+        7978:1252       0A18    ;ONESHOT
+        7978:1254       0C06    ;$B242
+        7978:1256       F559
+        7978:1258       303D    ;BENDE
+					- 76 -
+
+Micas-Konverter V4.32      29AC4003.LST
+Hardware: AC40, Modul  3			  Montag     22.02.110  09:43
+
+        7978:125A       0C06    ;$B242
+        7978:125C       F55A
+        7978:125E       303B    ;BTRA
+        7978:1260       0074    ;K1
+        7978:1262       0A18    ;ONESHOT
+        7978:1264       F55B
+        7978:1266       3000    ;ENDE
+

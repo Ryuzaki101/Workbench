@@ -1,0 +1,152 @@
+******************* Hardware parameter  ****************
+Type : AC40
+StartSegmentAddress  	 : 7700
+DataSegmentAddress  	 : 7700
+DataSegmentChecksum 	 : 6EF2
+TaskSegmentChecksum 	 : F5A2
+HeadModuleSegmentAddress : 7C80
+WordConstOffset     	 : 0030
+WordConstCount     	     : 12
+FloatConstOffset         : 0040
+FloatConstCount     	 : 1
+WordVarsOffset     	 : 0050
+WordVarsCount     	     : 13
+FloatVarsOffset         : 0070
+FloatVarsCount     	 : 1
+PastValuesOffset         : 0080
+PastValuesLastOffset     : 00A0
+******************* HEAD Module ****************
+Task Count       : 2
+Segment Address  : 7C80
+    TaskId                     : 0001
+      Strategy                 : 0004
+      Task Segment  		   : 770A
+      Task CyclTime 		   : 0000
+      Task PastValues Offset   : 0080
+      Task PastValues Count    : 0
+    TaskId                     : 0002
+      Strategy                 : 0001
+      Task Segment  		   : 770B
+      Task CyclTime 		   : 03E8
+      Task PastValues Offset   : 0090
+      Task PastValues Count    : 12
+******************* Task Details ****************
+    TaskId                 : 0001
+    Runtime                : 100
+    Task CyclTime 		   : 0000
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+    TaskId                 : 0002
+    Runtime                : 600
+    Task CyclTime 		   : 03E8
+     Modulecall            : null
+     pastvalues            : -1
+     opcode                : FFFFFFFF
+     Modulecall            : ANEIN
+     pastvalues            : 2
+     opcode                : 302F
+          symbol  : 0002-003-00-C-MW
+          read    : true
+          address : 0032
+          symbol  : $M0
+          read    : true
+          address : 0070
+          symbol  : $out-anein-0-error
+          read    : false
+          address : 005C
+     Modulecall            : BEFAUS
+     pastvalues            : 6
+     opcode                : 3033
+          symbol  :  direct value
+          read    : true
+          value  : 1
+          symbol  : $M2
+          read    : true
+          address : 0052
+          symbol  : $M1
+          read    : true
+          address : 0050
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : $WZERO
+          read    : true
+          address : 0030
+          symbol  : 0002-001-01-C-1D
+          read    : true
+          address : 0034
+          symbol  : $out-befaus-1-error
+          read    : false
+          address : 005E
+     Modulecall            : VGLOH
+     pastvalues            : 0
+     opcode                : 3026
+          symbol  : $M0
+          read    : true
+          address : 0070
+          symbol  : tempGrenze
+          read    : true
+          address : 0040
+          symbol  : $M2
+          read    : true
+          address : 0052
+     Modulecall            : NICHT
+     pastvalues            : 0
+     opcode                : 3017
+          symbol  : $M2
+          read    : true
+          address : 0052
+          symbol  : $M1
+          read    : true
+          address : 0050
+     Modulecall            : MELEIN
+     pastvalues            : 4
+     opcode                : 3031
+          symbol  : 0002-001-01-C-1D
+          read    : true
+          address : 0034
+          symbol  :  direct value
+          read    : true
+          value  : 8
+          symbol  : $M3
+          read    : true
+          address : 0054
+          symbol  : $M4
+          read    : true
+          address : 0056
+          symbol  : $M5
+          read    : true
+          address : 0058
+          symbol  : $M6
+          read    : true
+          address : 005A
+          symbol  : $out-melein-2-meldepunkt
+          read    : false
+          address : 0060
+          symbol  : $out-melein-3-meldepunkt
+          read    : false
+          address : 0062
+          symbol  : $out-melein-4-meldepunkt
+          read    : false
+          address : 0064
+          symbol  : $out-melein-5-meldepunkt
+          read    : false
+          address : 0066
+          symbol  : $out-melein-6-error
+          read    : false
+          address : 0068
+     Modulecall            : ENDE
+     pastvalues            : 0
+     opcode                : 3000
+    ******************************************
+Task id;Modulename;Pastvaluecount
+ Task1;ENDE;0;
+ Task2;null;-1;
+ Task2;ANEIN;2;
+ Task2;BEFAUS;6;
+ Task2;VGLOH;0;
+ Task2;NICHT;0;
+ Task2;MELEIN;4;
+ Task2;ENDE;0;

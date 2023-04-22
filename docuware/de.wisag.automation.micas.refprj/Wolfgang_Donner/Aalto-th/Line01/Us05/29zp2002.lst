@@ -1,0 +1,2575 @@
+					- 1 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+
+
+        K o p f b a u s t e i n:
+        ------------------------
+        3C80:0000       F000
+        3C80:0002       2000
+        3C80:0004       0006
+        3C80:0006       0104    ;Task 1
+        3C80:0008       0000    ;Zykluszeit
+        3C80:000A       3821    ;Segmentadresse
+        3C80:000C       0850    ;Vergangenheitswerte
+        3C80:000E       0201    ;Task 2
+        3C80:0010       03E8    ;Zykluszeit
+        3C80:0012       382A    ;Segmentadresse
+        3C80:0014       0890    ;Vergangenheitswerte
+        3C80:0016       0301    ;Task 3
+        3C80:0018       03E8    ;Zykluszeit
+        3C80:001A       3865    ;Segmentadresse
+        3C80:001C       0A10    ;Vergangenheitswerte
+        3C80:001E       0401    ;Task 4
+        3C80:0020       03E8    ;Zykluszeit
+        3C80:0022       389A    ;Segmentadresse
+        3C80:0024       0BA0    ;Vergangenheitswerte
+        3C80:0026       0501    ;Task 5
+        3C80:0028       03E8    ;Zykluszeit
+        3C80:002A       38B7    ;Segmentadresse
+        3C80:002C       0D90    ;Vergangenheitswerte
+        3C80:002E       0601    ;Task 6
+        3C80:0030       03E8    ;Zykluszeit
+        3C80:0032       38FB    ;Segmentadresse
+        3C80:0034       0F60    ;Vergangenheitswerte
+
+
+        Task 1:  Zykluszeit 0 ms  Laufzeit ca. 1 ms
+
+
+        3821:0000       F100
+        3821:0002       3015    ;NOR2
+        3821:0004       003C    ;K-LU2-AUTOM_EIN1
+        3821:0006       0038    ;K-LU2-AUTOM_EIN2
+        3821:0008       05B0    ;$B1
+        3821:000A       F101
+        3821:000C       3033    ;BEFAUS
+        3821:000E       0002
+        3821:0010       05B0    ;$B1
+        3821:0012       003C    ;K-LU2-AUTOM_EIN1
+        3821:0014       0038    ;K-LU2-AUTOM_EIN2
+        3821:0016       0036    ;KON00
+        3821:0018       003E    ;&03E-KL020-900
+        3821:001A       0512    ;WERR
+        3821:001C       F102
+        3821:001E       3015    ;NOR2
+        3821:0020       0032    ;K-LU3-AUTOM_EIN1
+        3821:0022       0030    ;K-LU3-AUTOM_EIN2
+        3821:0024       05B2    ;$B2
+        3821:0026       F103
+        3821:0028       3033    ;BEFAUS
+        3821:002A       0002
+					- 2 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3821:002C       05B2    ;$B2
+        3821:002E       0032    ;K-LU3-AUTOM_EIN1
+        3821:0030       0030    ;K-LU3-AUTOM_EIN2
+        3821:0032       0036    ;KON00
+        3821:0034       0040    ;&03E-KL030-900
+        3821:0036       0512    ;WERR
+        3821:0038       F104
+        3821:003A       3032    ;ANAUS
+        3821:003C       0240    ;KSOLLW-FORTL-A2
+        3821:003E       0042    ;$M0
+        3821:0040       0044    ;&03E-KL020-341
+        3821:0042       05B4    ;$WSCRATCH
+        3821:0044       F105
+        3821:0046       3032    ;ANAUS
+        3821:0048       0230    ;KSOL-DR-REG-A3-Z
+        3821:004A       0046    ;$M1
+        3821:004C       0048    ;&03E-KL030-149
+        3821:004E       05B4    ;$WSCRATCH
+        3821:0050       F106
+        3821:0052       3032    ;ANAUS
+        3821:0054       0238    ;KSOL-DR-REG-A3-A
+        3821:0056       004A    ;$M2
+        3821:0058       004C    ;&03E-KL030-249
+        3821:005A       0512    ;WERR
+        3821:005C       F107
+        3821:005E       3032    ;ANAUS
+        3821:0060       0248    ;KSOLLW-ZULFEU-A2
+        3821:0062       004E    ;$M3
+        3821:0064       0050    ;&03E-KL020-145
+        3821:0066       0512    ;WERR
+        3821:0068       F108
+        3821:006A       3032    ;ANAUS
+        3821:006C       023C    ;KSOLLW-DR-REG-A2
+        3821:006E       0052    ;$M4
+        3821:0070       0054    ;&03E-KL020-149
+        3821:0072       05B4    ;$WSCRATCH
+        3821:0074       F109
+        3821:0076       3032    ;ANAUS
+        3821:0078       0268    ;SOLL-MIN-AUSSEN
+        3821:007A       0056    ;$M5
+        3821:007C       0058    ;&03E-KL030-401
+        3821:007E       0512    ;WERR
+        3821:0080       F10A
+        3821:0082       3000    ;ENDE
+
+        Task 2:  Zykluszeit 1000 ms  Laufzeit ca. 22 ms
+
+
+        382A:0000       F200
+        382A:0002       3031    ;MELEIN
+        382A:0004       005A    ;&03E-KL020-900RM
+        382A:0006       0006
+        382A:0008       0516    ;PK
+        382A:000A       055E    ;LU2-AUTOM.AUS
+        382A:000C       0516    ;PK
+        382A:000E       05A4    ;LU2-EIN1-AUTOM.
+        382A:0010       0516    ;PK
+        382A:0012       05A6    ;LU2-EIN2-AUTOM.
+					- 3 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:0014       0512    ;WERR
+        382A:0016       F201
+        382A:0018       303B    ;BTRA
+        382A:001A       05A4    ;LU2-EIN1-AUTOM.
+        382A:001C       05A0    ;K-LU2-EIN1-AUTOM
+        382A:001E       F202
+        382A:0020       303B    ;BTRA
+        382A:0022       05A6    ;LU2-EIN2-AUTOM.
+        382A:0024       05A2    ;K-LU2-EIN2-AUTOM
+        382A:0026       F203
+        382A:0028       3013    ;ODR2
+        382A:002A       05A4    ;LU2-EIN1-AUTOM.
+        382A:002C       05A6    ;LU2-EIN2-AUTOM.
+        382A:002E       0524    ;LU2-AUTO__ISTEIN
+        382A:0030       F204
+        382A:0032       3031    ;MELEIN
+        382A:0034       0064    ;&03E-KL020-010
+        382A:0036       0001
+        382A:0038       05B6    ;$B3
+        382A:003A       05B4    ;$WSCRATCH
+        382A:003C       F205
+        382A:003E       3017    ;NICHT
+        382A:0040       05B6    ;$B3
+        382A:0042       05B8    ;$B4
+        382A:0044       F206
+        382A:0046       302B    ;VVZ
+        382A:0048       05B8    ;$B4
+        382A:004A       0288    ;$M11
+        382A:004C       028C    ;$M12
+        382A:004E       059A    ;NOT-AUS
+        382A:0050       F207
+        382A:0052       300E    ;UND2
+        382A:0054       05B6    ;$B3
+        382A:0056       051C    ;FERNQUIT_A2.EIN
+        382A:0058       05BA    ;$B5
+        382A:005A       F208
+        382A:005C       3013    ;ODR2
+        382A:005E       05BA    ;$B5
+        382A:0060       05BE    ;$B7
+        382A:0062       05BC    ;$B6
+        382A:0064       F209
+        382A:0066       301A    ;RSS
+        382A:0068       059A    ;NOT-AUS
+        382A:006A       05BC    ;$B6
+        382A:006C       059E    ;NOT-AUSAUSGELOES
+        382A:006E       05B4    ;$WSCRATCH
+        382A:0070       F20A
+        382A:0072       300E    ;UND2
+        382A:0074       05B6    ;$B3
+        382A:0076       0566    ;FERNQUIT_A3.EIN
+        382A:0078       05BE    ;$B7
+        382A:007A       F20B
+        382A:007C       300F    ;UND11
+        382A:007E       05A0    ;K-LU2-EIN1-AUTOM
+        382A:0080       059E    ;NOT-AUSAUSGELOES
+        382A:0082       003C    ;K-LU2-AUTOM_EIN1
+        382A:0084       F20C
+        382A:0086       300F    ;UND11
+					- 4 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:0088       05A2    ;K-LU2-EIN2-AUTOM
+        382A:008A       059E    ;NOT-AUSAUSGELOES
+        382A:008C       0038    ;K-LU2-AUTOM_EIN2
+        382A:008E       F20D
+        382A:0090       300F    ;UND11
+        382A:0092       05A4    ;LU2-EIN1-AUTOM.
+        382A:0094       059E    ;NOT-AUSAUSGELOES
+        382A:0096       0520    ;LU2-AUTOM.EIN1
+        382A:0098       F20E
+        382A:009A       300F    ;UND11
+        382A:009C       05A6    ;LU2-EIN2-AUTOM.
+        382A:009E       059E    ;NOT-AUSAUSGELOES
+        382A:00A0       0522    ;LU2-AUTOM.EIN2
+        382A:00A2       F20F
+        382A:00A4       300F    ;UND11
+        382A:00A6       05A8    ;K-LU3-EIN1-AUTOM
+        382A:00A8       059E    ;NOT-AUSAUSGELOES
+        382A:00AA       0032    ;K-LU3-AUTOM_EIN1
+        382A:00AC       F210
+        382A:00AE       300F    ;UND11
+        382A:00B0       05AA    ;K-LU3-EIN2-AUTOM
+        382A:00B2       059E    ;NOT-AUSAUSGELOES
+        382A:00B4       0030    ;K-LU3-AUTOM_EIN2
+        382A:00B6       F211
+        382A:00B8       300F    ;UND11
+        382A:00BA       05AC    ;LU3-EIN1-AUTOM.
+        382A:00BC       059E    ;NOT-AUSAUSGELOES
+        382A:00BE       0518    ;LU3-AUTOM.EIN1
+        382A:00C0       F212
+        382A:00C2       300F    ;UND11
+        382A:00C4       05AE    ;LU3-EIN2-AUTOM.
+        382A:00C6       059E    ;NOT-AUSAUSGELOES
+        382A:00C8       0538    ;LU3-AUTOM.EIN2
+        382A:00CA       F213
+        382A:00CC       3031    ;MELEIN
+        382A:00CE       0066    ;&03E-KL020-117
+        382A:00D0       0001
+        382A:00D2       052E    ;A2_ZUL：TER_EIN
+        382A:00D4       0512    ;WERR
+        382A:00D6       F214
+        382A:00D8       303B    ;BTRA
+        382A:00DA       052E    ;A2_ZUL：TER_EIN
+        382A:00DC       055A    ;A2_ZL_STUFE_1
+        382A:00DE       F215
+        382A:00E0       3031    ;MELEIN
+        382A:00E2       0068    ;&03E-KL020-125
+        382A:00E4       0001
+        382A:00E6       0532    ;ACM_ZL_SAM-ST-A2
+        382A:00E8       0512    ;WERR
+        382A:00EA       F216
+        382A:00EC       3031    ;MELEIN
+        382A:00EE       006A    ;&03E-KL020-217
+        382A:00F0       0001
+        382A:00F2       054C    ;A2_ABL_STUFE_1
+        382A:00F4       0512    ;WERR
+        382A:00F6       F217
+        382A:00F8       3031    ;MELEIN
+        382A:00FA       006C    ;&03E-KL020-218
+					- 5 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:00FC       0001
+        382A:00FE       051A    ;A2_ABL_STUFE_2
+        382A:0100       0512    ;WERR
+        382A:0102       F218
+        382A:0104       3031    ;MELEIN
+        382A:0106       006E    ;&03E-KL020-225
+        382A:0108       0001
+        382A:010A       052A    ;ACM_AB_SAM-ST-A2
+        382A:010C       05B4    ;$WSCRATCH
+        382A:010E       F219
+        382A:0110       3013    ;ODR2
+        382A:0112       054C    ;A2_ABL_STUFE_1
+        382A:0114       051A    ;A2_ABL_STUFE_2
+        382A:0116       0534    ;A2_ABL：TER_EIN
+        382A:0118       F21A
+        382A:011A       300E    ;UND2
+        382A:011C       052E    ;A2_ZUL：TER_EIN
+        382A:011E       0534    ;A2_ABL：TER_EIN
+        382A:0120       051E    ;A2_ZL/ABL_EIN
+        382A:0122       F21B
+        382A:0124       3013    ;ODR2
+        382A:0126       0532    ;ACM_ZL_SAM-ST-A2
+        382A:0128       052A    ;ACM_AB_SAM-ST-A2
+        382A:012A       05C0    ;$B8
+        382A:012C       F21C
+        382A:012E       302B    ;VVZ
+        382A:0130       05C0    ;$B8
+        382A:0132       0290    ;$M13
+        382A:0134       0294    ;$M14
+        382A:0136       0554    ;A2_ZL/ABL_ACM_ST
+        382A:0138       F21D
+        382A:013A       300F    ;UND11
+        382A:013C       052E    ;A2_ZUL：TER_EIN
+        382A:013E       0554    ;A2_ZL/ABL_ACM_ST
+        382A:0140       055C    ;A2_FREIGREGELUNG
+        382A:0142       F21E
+        382A:0144       3034    ;SETMEL
+        382A:0146       0070    ;$M15
+        382A:0148       0001
+        382A:014A       055E    ;LU2-AUTOM.AUS
+        382A:014C       0072    ;&A2-ZL-AUS
+        382A:014E       0512    ;WERR
+        382A:0150       F21F
+        382A:0152       3014    ;ODRMN
+        382A:0154       0003
+        382A:0156       0520    ;LU2-AUTOM.EIN1
+        382A:0158       0036    ;KON00
+        382A:015A       0522    ;LU2-AUTOM.EIN2
+        382A:015C       0000
+        382A:015E       0526    ;A2_A-BEF_EIN
+        382A:0160       05B4    ;$WSCRATCH
+        382A:0162       F220
+        382A:0164       3034    ;SETMEL
+        382A:0166       0074    ;$M16
+        382A:0168       0001
+        382A:016A       0526    ;A2_A-BEF_EIN
+        382A:016C       0076    ;&A2-ZL-STUFE1
+        382A:016E       0512    ;WERR
+					- 6 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:0170       F221
+        382A:0172       3034    ;SETMEL
+        382A:0174       0078    ;$M17
+        382A:0176       0001
+        382A:0178       055E    ;LU2-AUTOM.AUS
+        382A:017A       007A    ;&A2-ABL-AUS
+        382A:017C       0512    ;WERR
+        382A:017E       F222
+        382A:0180       3034    ;SETMEL
+        382A:0182       007C    ;$M18
+        382A:0184       0001
+        382A:0186       0526    ;A2_A-BEF_EIN
+        382A:0188       007E    ;&A2-ABL-STUFE1
+        382A:018A       0512    ;WERR
+        382A:018C       F223
+        382A:018E       301F    ;AWT
+        382A:0190       0522    ;LU2-AUTOM.EIN2
+        382A:0192       0298    ;$M19
+        382A:0194       029C    ;$M20
+        382A:0196       074C    ;$F1
+        382A:0198       F224
+        382A:019A       3032    ;ANAUS
+        382A:019C       074C    ;$F1
+        382A:019E       0080    ;$M21
+        382A:01A0       0082    ;&03E-KL020-420
+        382A:01A2       05B4    ;$WSCRATCH
+        382A:01A4       F225
+        382A:01A6       3034    ;SETMEL
+        382A:01A8       0084    ;$M22
+        382A:01AA       0001
+        382A:01AC       055E    ;LU2-AUTOM.AUS
+        382A:01AE       0086    ;&A2-KLAPPEN_AUS
+        382A:01B0       0512    ;WERR
+        382A:01B2       F226
+        382A:01B4       3034    ;SETMEL
+        382A:01B6       0088    ;$M23
+        382A:01B8       0001
+        382A:01BA       0526    ;A2_A-BEF_EIN
+        382A:01BC       008A    ;&A2-KLAPPEN_EIN
+        382A:01BE       0512    ;WERR
+        382A:01C0       F227
+        382A:01C2       3034    ;SETMEL
+        382A:01C4       008C    ;$M24
+        382A:01C6       0001
+        382A:01C8       055E    ;LU2-AUTOM.AUS
+        382A:01CA       008E    ;&A2-ERH/KUHL_AUS
+        382A:01CC       0512    ;WERR
+        382A:01CE       F228
+        382A:01D0       3034    ;SETMEL
+        382A:01D2       0090    ;$M25
+        382A:01D4       0001
+        382A:01D6       0526    ;A2_A-BEF_EIN
+        382A:01D8       0092    ;&A2-ERH/KUHL_EIN
+        382A:01DA       0512    ;WERR
+        382A:01DC       F229
+        382A:01DE       3034    ;SETMEL
+        382A:01E0       0094    ;$M26
+        382A:01E2       0001
+					- 7 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:01E4       055E    ;LU2-AUTOM.AUS
+        382A:01E6       0096    ;&A2-NE_1_AUS
+        382A:01E8       0512    ;WERR
+        382A:01EA       F22A
+        382A:01EC       3034    ;SETMEL
+        382A:01EE       0098    ;$M27
+        382A:01F0       0001
+        382A:01F2       0526    ;A2_A-BEF_EIN
+        382A:01F4       009A    ;&A2-NE_1_EIN
+        382A:01F6       0512    ;WERR
+        382A:01F8       F22B
+        382A:01FA       3034    ;SETMEL
+        382A:01FC       009C    ;$M28
+        382A:01FE       0001
+        382A:0200       055E    ;LU2-AUTOM.AUS
+        382A:0202       009E    ;&A2-BEF_1_AUS
+        382A:0204       0512    ;WERR
+        382A:0206       F22C
+        382A:0208       3034    ;SETMEL
+        382A:020A       00A0    ;$M29
+        382A:020C       0001
+        382A:020E       0526    ;A2_A-BEF_EIN
+        382A:0210       00A2    ;&A2-BEF_1_EIN
+        382A:0212       0512    ;WERR
+        382A:0214       F22D
+        382A:0216       3031    ;MELEIN
+        382A:0218       00A4    ;&03E-KL020-102
+        382A:021A       0001
+        382A:021C       05C2    ;$B9
+        382A:021E       05B4    ;$WSCRATCH
+        382A:0220       F22E
+        382A:0222       300F    ;UND11
+        382A:0224       052E    ;A2_ZUL：TER_EIN
+        382A:0226       05C2    ;$B9
+        382A:0228       05C4    ;$B10
+        382A:022A       F22F
+        382A:022C       302B    ;VVZ
+        382A:022E       05C4    ;$B10
+        382A:0230       02A0    ;$M30
+        382A:0232       02A4    ;$M31
+        382A:0234       05C6    ;$B11
+        382A:0236       F230
+        382A:0238       301A    ;RSS
+        382A:023A       05C6    ;$B11
+        382A:023C       054E    ;STOERUNG_QUITA2
+        382A:023E       0530    ;KEILR-ZUL-ANL02
+        382A:0240       05B4    ;$WSCRATCH
+        382A:0242       F231
+        382A:0244       3034    ;SETMEL
+        382A:0246       00A6    ;$M32
+        382A:0248       0001
+        382A:024A       0530    ;KEILR-ZUL-ANL02
+        382A:024C       00A8    ;&03E-KL020-991
+        382A:024E       0512    ;WERR
+        382A:0250       F232
+        382A:0252       3031    ;MELEIN
+        382A:0254       00AA    ;&03E-KL020-202
+        382A:0256       0001
+					- 8 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:0258       05C8    ;$B12
+        382A:025A       05B4    ;$WSCRATCH
+        382A:025C       F233
+        382A:025E       300F    ;UND11
+        382A:0260       0534    ;A2_ABL：TER_EIN
+        382A:0262       05C8    ;$B12
+        382A:0264       05CA    ;$B13
+        382A:0266       F234
+        382A:0268       302B    ;VVZ
+        382A:026A       05CA    ;$B13
+        382A:026C       02A8    ;$M33
+        382A:026E       02AC    ;$M34
+        382A:0270       05CC    ;$B14
+        382A:0272       F235
+        382A:0274       301A    ;RSS
+        382A:0276       05CC    ;$B14
+        382A:0278       054E    ;STOERUNG_QUITA2
+        382A:027A       0556    ;KEILR-ABL-ANL02
+        382A:027C       05B4    ;$WSCRATCH
+        382A:027E       F236
+        382A:0280       3013    ;ODR2
+        382A:0282       0530    ;KEILR-ZUL-ANL02
+        382A:0284       0556    ;KEILR-ABL-ANL02
+        382A:0286       05CE    ;$B15
+        382A:0288       F237
+        382A:028A       3034    ;SETMEL
+        382A:028C       00AC    ;$M35
+        382A:028E       0001
+        382A:0290       0556    ;KEILR-ABL-ANL02
+        382A:0292       00AE    ;&03E-KL020-992
+        382A:0294       0512    ;WERR
+        382A:0296       F238
+        382A:0298       3034    ;SETMEL
+        382A:029A       00B0    ;$M36
+        382A:029C       0001
+        382A:029E       05CE    ;$B15
+        382A:02A0       00B2    ;&INT-MEL01-HIGH
+        382A:02A2       05B4    ;$WSCRATCH
+        382A:02A4       F239
+        382A:02A6       3031    ;MELEIN
+        382A:02A8       00B4    ;&03E-KL020-126
+        382A:02AA       0003
+        382A:02AC       0550    ;FERNQUIT_A2.AUS
+        382A:02AE       0516    ;PK
+        382A:02B0       051C    ;FERNQUIT_A2.EIN
+        382A:02B2       0512    ;WERR
+        382A:02B4       F23A
+        382A:02B6       3013    ;ODR2
+        382A:02B8       051C    ;FERNQUIT_A2.EIN
+        382A:02BA       0528    ;QUITT.TASTER-F2
+        382A:02BC       05D0    ;$B16
+        382A:02BE       F23B
+        382A:02C0       302C    ;MOKY
+        382A:02C2       05D0    ;$B16
+        382A:02C4       02B0    ;$M39
+        382A:02C6       054E    ;STOERUNG_QUITA2
+        382A:02C8       F23C
+        382A:02CA       302B    ;VVZ
+					- 9 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:02CC       054E    ;STOERUNG_QUITA2
+        382A:02CE       02B4    ;$M40
+        382A:02D0       02B8    ;$M41
+        382A:02D2       05D2    ;$B17
+        382A:02D4       F23D
+        382A:02D6       3031    ;MELEIN
+        382A:02D8       00BA    ;&HIGH-BUS_
+        382A:02DA       0001
+        382A:02DC       0528    ;QUITT.TASTER-F2
+        382A:02DE       05B4    ;$WSCRATCH
+        382A:02E0       F23E
+        382A:02E2       300F    ;UND11
+        382A:02E4       05D8    ;$B20
+        382A:02E6       05D2    ;$B17
+        382A:02E8       05D4    ;$B18
+        382A:02EA       F23F
+        382A:02EC       301A    ;RSS
+        382A:02EE       05D4    ;$B18
+        382A:02F0       05D2    ;$B17
+        382A:02F2       05D6    ;$B19
+        382A:02F4       05D8    ;$B20
+        382A:02F6       F240
+        382A:02F8       3033    ;BEFAUS
+        382A:02FA       0001
+        382A:02FC       05D6    ;$B19
+        382A:02FE       05D2    ;$B17
+        382A:0300       00BE    ;$WZERO
+        382A:0302       00BE    ;$WZERO
+        382A:0304       00B4    ;&03E-KL020-126
+        382A:0306       0512    ;WERR
+        382A:0308       F241
+        382A:030A       300F    ;UND11
+        382A:030C       0520    ;LU2-AUTOM.EIN1
+        382A:030E       055A    ;A2_ZL_STUFE_1
+        382A:0310       05DA    ;$B21
+        382A:0312       F242
+        382A:0314       300F    ;UND11
+        382A:0316       0522    ;LU2-AUTOM.EIN2
+        382A:0318       055A    ;A2_ZL_STUFE_1
+        382A:031A       05DC    ;$B22
+        382A:031C       F243
+        382A:031E       3013    ;ODR2
+        382A:0320       05DA    ;$B21
+        382A:0322       05DC    ;$B22
+        382A:0324       05DE    ;$B23
+        382A:0326       F244
+        382A:0328       302B    ;VVZ
+        382A:032A       05DE    ;$B23
+        382A:032C       02BC    ;$M42
+        382A:032E       02C0    ;$M43
+        382A:0330       05E0    ;$B24
+        382A:0332       F245
+        382A:0334       301A    ;RSS
+        382A:0336       05E0    ;$B24
+        382A:0338       054E    ;STOERUNG_QUITA2
+        382A:033A       0594    ;A02_ZUL_AUTO_ST
+        382A:033C       05B4    ;$WSCRATCH
+        382A:033E       F246
+					- 10 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        382A:0340       3034    ;SETMEL
+        382A:0342       00C0    ;$M44
+        382A:0344       0001
+        382A:0346       0594    ;A02_ZUL_AUTO_ST
+        382A:0348       00C2    ;&03E-KL020-993
+        382A:034A       05B4    ;$WSCRATCH
+        382A:034C       F247
+        382A:034E       3013    ;ODR2
+        382A:0350       0594    ;A02_ZUL_AUTO_ST
+        382A:0352       0592    ;A02_ABL_AUTO_ST
+        382A:0354       05E2    ;$B25
+        382A:0356       F248
+        382A:0358       300F    ;UND11
+        382A:035A       0520    ;LU2-AUTOM.EIN1
+        382A:035C       054C    ;A2_ABL_STUFE_1
+        382A:035E       05E4    ;$B26
+        382A:0360       F249
+        382A:0362       300F    ;UND11
+        382A:0364       0522    ;LU2-AUTOM.EIN2
+        382A:0366       051A    ;A2_ABL_STUFE_2
+        382A:0368       05E6    ;$B27
+        382A:036A       F24A
+        382A:036C       3013    ;ODR2
+        382A:036E       05E4    ;$B26
+        382A:0370       05E6    ;$B27
+        382A:0372       05E8    ;$B28
+        382A:0374       F24B
+        382A:0376       302B    ;VVZ
+        382A:0378       05E8    ;$B28
+        382A:037A       02C4    ;$M45
+        382A:037C       02C8    ;$M46
+        382A:037E       05EA    ;$B29
+        382A:0380       F24C
+        382A:0382       301A    ;RSS
+        382A:0384       05EA    ;$B29
+        382A:0386       054E    ;STOERUNG_QUITA2
+        382A:0388       0592    ;A02_ABL_AUTO_ST
+        382A:038A       05B4    ;$WSCRATCH
+        382A:038C       F24D
+        382A:038E       3034    ;SETMEL
+        382A:0390       00C4    ;$M47
+        382A:0392       0001
+        382A:0394       0592    ;A02_ABL_AUTO_ST
+        382A:0396       00C6    ;&03E-KL020-994
+        382A:0398       05B4    ;$WSCRATCH
+        382A:039A       F24E
+        382A:039C       3033    ;BEFAUS
+        382A:039E       0001
+        382A:03A0       05E2    ;$B25
+        382A:03A2       00BE    ;$WZERO
+        382A:03A4       00BE    ;$WZERO
+        382A:03A6       00BE    ;$WZERO
+        382A:03A8       003E    ;&03E-KL020-900
+        382A:03AA       05B4    ;$WSCRATCH
+        382A:03AC       F24F
+        382A:03AE       3000    ;ENDE
+
+        Task 3:  Zykluszeit 1000 ms  Laufzeit ca. 164 ms
+					- 11 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+
+
+        3865:0000       F300
+        3865:0002       3032    ;ANAUS
+        3865:0004       0688    ;AUSSENTEMPERATUR
+        3865:0006       00C8    ;$M48
+        3865:0008       00CA    ;&03E-KL020-905
+        3865:000A       0512    ;WERR
+        3865:000C       F301
+        3865:000E       302F    ;ANEIN
+        3865:0010       00CC    ;&AUSSENTEMP.US04
+        3865:0012       0688    ;AUSSENTEMPERATUR
+        3865:0014       0512    ;WERR
+        3865:0016       F302
+        3865:0018       3031    ;MELEIN
+        3865:001A       00CE    ;&03E-KL020-140
+        3865:001C       0001
+        3865:001E       05EC    ;$B30
+        3865:0020       05B4    ;$WSCRATCH
+        3865:0022       F303
+        3865:0024       3013    ;ODR2
+        3865:0026       05EC    ;$B30
+        3865:0028       003A    ;KONSET
+        3865:002A       05EE    ;$B31
+        3865:002C       F304
+        3865:002E       300A    ;MIN
+        3865:0030       0004
+        3865:0032       06D0    ;Y-SIGN-REG08
+        3865:0034       06E8    ;Y-SIGN-REG10
+        3865:0036       06C4    ;Y-SIGN-REG12
+        3865:0038       0694    ;Y-SIGN-REG14
+        3865:003A       06A8    ;ZL-NACHERH.-MIN
+        3865:003C       F305
+        3865:003E       3004    ;SUB2
+        3865:0040       06A8    ;ZL-NACHERH.-MIN
+        3865:0042       0244    ;FKON00
+        3865:0044       0750    ;$F2
+        3865:0046       F306
+        3865:0048       301F    ;AWT
+        3865:004A       05EE    ;$B31
+        3865:004C       02CC    ;$M49
+        3865:004E       0750    ;$F2
+        3865:0050       066C    ;ZULUFT-SOLLWERT
+        3865:0052       F307
+        3865:0054       3032    ;ANAUS
+        3865:0056       066C    ;ZULUFT-SOLLWERT
+        3865:0058       00D0    ;$M50
+        3865:005A       00D2    ;&03E-KL020-141
+        3865:005C       0512    ;WERR
+        3865:005E       F308
+        3865:0060       302F    ;ANEIN
+        3865:0062       00D4    ;&03E-KL020-305
+        3865:0064       06D4    ;A2_FORTLUFTTEMP.
+        3865:0066       052C    ;ERR
+        3865:0068       F309
+        3865:006A       302F    ;ANEIN
+        3865:006C       0044    ;&03E-KL020-341
+        3865:006E       0240    ;KSOLLW-FORTL-A2
+					- 12 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:0070       05B4    ;$WSCRATCH
+        3865:0072       F30A
+        3865:0074       3037    ;REGLER
+        3865:0076       0019
+        3865:0078       0034    ;KON01
+        3865:007A       00BE    ;$WZERO
+        3865:007C       02D0    ;$M51
+        3865:007E       06B0    ;Y-SIGN_REG_01
+        3865:0080       0536    ;ERR_REG01
+        3865:0082       F30B
+        3865:0084       301F    ;AWT
+        3865:0086       055C    ;A2_FREIGREGELUNG
+        3865:0088       02D4    ;$M52
+        3865:008A       06B0    ;Y-SIGN_REG_01
+        3865:008C       0650    ;A2-AN_FORTL_5GRD
+        3865:008E       F30C
+        3865:0090       302F    ;ANEIN
+        3865:0092       00D6    ;&03E-KL020-205
+        3865:0094       0744    ;A2-ABLUFTTEMP.
+        3865:0096       05B4    ;$WSCRATCH
+        3865:0098       F30D
+        3865:009A       3027    ;VGLEH
+        3865:009C       0688    ;AUSSENTEMPERATUR
+        3865:009E       0744    ;A2-ABLUFTTEMP.
+        3865:00A0       02D8    ;$M53
+        3865:00A2       05F0    ;$B32
+        3865:00A4       F30E
+        3865:00A6       301F    ;AWT
+        3865:00A8       05F0    ;$B32
+        3865:00AA       02DC    ;$M54
+        3865:00AC       02E0    ;$M55
+        3865:00AE       0748    ;VERGLEICHSWERT
+        3865:00B0       F30F
+        3865:00B2       302F    ;ANEIN
+        3865:00B4       00D8    ;&03E-KL020-105
+        3865:00B6       06BC    ;A2-ZULT-VENT.
+        3865:00B8       0512    ;WERR
+        3865:00BA       F310
+        3865:00BC       3037    ;REGLER
+        3865:00BE       0003
+        3865:00C0       0034    ;KON01
+        3865:00C2       00BE    ;$WZERO
+        3865:00C4       02E4    ;$M56
+        3865:00C6       0708    ;Y-SIGN_REG-NR3
+        3865:00C8       05B4    ;$WSCRATCH
+        3865:00CA       F311
+        3865:00CC       3022    ;FKG
+        3865:00CE       0708    ;Y-SIGN_REG-NR3
+        3865:00D0       0004
+        3865:00D2       02E8    ;$M57
+        3865:00D4       02EC    ;$M58
+        3865:00D6       02F0    ;$M59
+        3865:00D8       02F4    ;$M60
+        3865:00DA       0754    ;$F3
+        3865:00DC       F312
+        3865:00DE       300A    ;MIN
+        3865:00E0       0002
+        3865:00E2       0754    ;$F3
+					- 13 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:00E4       0650    ;A2-AN_FORTL_5GRD
+        3865:00E6       0758    ;$F4
+        3865:00E8       F313
+        3865:00EA       3009    ;MAX
+        3865:00EC       0002
+        3865:00EE       0758    ;$F4
+        3865:00F0       0284    ;FKON_ECO-MIN
+        3865:00F2       075C    ;$F5
+        3865:00F4       F314
+        3865:00F6       301F    ;AWT
+        3865:00F8       059C    ;A2-ENTF-WRG-SPER
+        3865:00FA       075C    ;$F5
+        3865:00FC       0284    ;FKON_ECO-MIN
+        3865:00FE       0760    ;$F6
+        3865:0100       F315
+        3865:0102       301F    ;AWT
+        3865:0104       055C    ;A2_FREIGREGELUNG
+        3865:0106       02F8    ;$M61
+        3865:0108       0768    ;$F8
+        3865:010A       0764    ;$F7
+        3865:010C       F316
+        3865:010E       3034    ;SETMEL
+        3865:0110       00DA    ;$M62
+        3865:0112       0001
+        3865:0114       055C    ;A2_FREIGREGELUNG
+        3865:0116       00DC    ;&M63
+        3865:0118       05B4    ;$WSCRATCH
+        3865:011A       F317
+        3865:011C       3032    ;ANAUS
+        3865:011E       0764    ;$F7
+        3865:0120       00DE    ;$M64
+        3865:0122       00E0    ;&03E-KL020-316
+        3865:0124       0512    ;WERR
+        3865:0126       F318
+        3865:0128       3009    ;MAX
+        3865:012A       0002
+        3865:012C       0760    ;$F6
+        3865:012E       0748    ;VERGLEICHSWERT
+        3865:0130       0768    ;$F8
+        3865:0132       F319
+        3865:0134       3022    ;FKG
+        3865:0136       0708    ;Y-SIGN_REG-NR3
+        3865:0138       0004
+        3865:013A       02FC    ;$M65
+        3865:013C       0300    ;$M66
+        3865:013E       0304    ;$M67
+        3865:0140       0308    ;$M68
+        3865:0142       076C    ;$F9
+        3865:0144       F31A
+        3865:0146       3009    ;MAX
+        3865:0148       0002
+        3865:014A       076C    ;$F9
+        3865:014C       0680    ;AST-KUE-A01-ENTF
+        3865:014E       0770    ;$F10
+        3865:0150       F31B
+        3865:0152       300F    ;UND11
+        3865:0154       055C    ;A2_FREIGREGELUNG
+        3865:0156       056A    ;KAELTE_AUS_K2
+					- 14 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:0158       05F2    ;$B33
+        3865:015A       F31C
+        3865:015C       301F    ;AWT
+        3865:015E       05F2    ;$B33
+        3865:0160       030C    ;$M69
+        3865:0162       0770    ;$F10
+        3865:0164       0774    ;$F11
+        3865:0166       F31D
+        3865:0168       3032    ;ANAUS
+        3865:016A       0774    ;$F11
+        3865:016C       00E2    ;$M70
+        3865:016E       00E4    ;&03E-KL020-616
+        3865:0170       0512    ;WERR
+        3865:0172       F31E
+        3865:0174       301F    ;AWT
+        3865:0176       05F8    ;$B36
+        3865:0178       0310    ;$M71
+        3865:017A       0670    ;Y-SIGNZL-FEOBGRE
+        3865:017C       0680    ;AST-KUE-A01-ENTF
+        3865:017E       F31F
+        3865:0180       3027    ;VGLEH
+        3865:0182       0680    ;AST-KUE-A01-ENTF
+        3865:0184       0314    ;$M72
+        3865:0186       0318    ;$M73
+        3865:0188       05F4    ;$B34
+        3865:018A       F320
+        3865:018C       302B    ;VVZ
+        3865:018E       05F4    ;$B34
+        3865:0190       031C    ;$M74
+        3865:0192       0320    ;$M75
+        3865:0194       059C    ;A2-ENTF-WRG-SPER
+        3865:0196       F321
+        3865:0198       3022    ;FKG
+        3865:019A       0708    ;Y-SIGN_REG-NR3
+        3865:019C       0004
+        3865:019E       0324    ;$M76
+        3865:01A0       0328    ;$M77
+        3865:01A2       032C    ;$M78
+        3865:01A4       0330    ;$M79
+        3865:01A6       0778    ;$F12
+        3865:01A8       F322
+        3865:01AA       300F    ;UND11
+        3865:01AC       055C    ;A2_FREIGREGELUNG
+        3865:01AE       059C    ;A2-ENTF-WRG-SPER
+        3865:01B0       05F6    ;$B35
+        3865:01B2       F323
+        3865:01B4       301F    ;AWT
+        3865:01B6       05F6    ;$B35
+        3865:01B8       0334    ;$M80
+        3865:01BA       0778    ;$F12
+        3865:01BC       077C    ;$F13
+        3865:01BE       F324
+        3865:01C0       3032    ;ANAUS
+        3865:01C2       077C    ;$F13
+        3865:01C4       00E6    ;$M81
+        3865:01C6       00E8    ;&03E-KL020-516
+        3865:01C8       0512    ;WERR
+        3865:01CA       F325
+					- 15 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:01CC       302B    ;VVZ
+        3865:01CE       055C    ;A2_FREIGREGELUNG
+        3865:01D0       0338    ;$M82
+        3865:01D2       033C    ;$M83
+        3865:01D4       05F8    ;$B36
+        3865:01D6       F326
+        3865:01D8       302F    ;ANEIN
+        3865:01DA       00EA    ;&03E-KL020-106
+        3865:01DC       0660    ;ZL-FEUCHTE_A2
+        3865:01DE       05B4    ;$WSCRATCH
+        3865:01E0       F327
+        3865:01E2       3037    ;REGLER
+        3865:01E4       0005
+        3865:01E6       0034    ;KON01
+        3865:01E8       00BE    ;$WZERO
+        3865:01EA       0340    ;$M84
+        3865:01EC       0670    ;Y-SIGNZL-FEOBGRE
+        3865:01EE       0512    ;WERR
+        3865:01F0       F328
+        3865:01F2       3037    ;REGLER
+        3865:01F4       0007
+        3865:01F6       0034    ;KON01
+        3865:01F8       00BE    ;$WZERO
+        3865:01FA       0344    ;$M85
+        3865:01FC       0674    ;Y-SIGNZL-FEUNGRE
+        3865:01FE       0512    ;WERR
+        3865:0200       F329
+        3865:0202       302F    ;ANEIN
+        3865:0204       0050    ;&03E-KL020-145
+        3865:0206       0248    ;KSOLLW-ZULFEU-A2
+        3865:0208       05B4    ;$WSCRATCH
+        3865:020A       F32A
+        3865:020C       3038    ;SOLKEN
+        3865:020E       0002
+        3865:0210       0034    ;KON01
+        3865:0212       06A4    ;SOLLW.ZUF-STIMM
+        3865:0214       05B4    ;$WSCRATCH
+        3865:0216       F32B
+        3865:0218       302B    ;VVZ
+        3865:021A       055C    ;A2_FREIGREGELUNG
+        3865:021C       0348    ;$M86
+        3865:021E       034C    ;$M87
+        3865:0220       05FA    ;$B37
+        3865:0222       F32C
+        3865:0224       300E    ;UND2
+        3865:0226       05FA    ;$B37
+        3865:0228       0602    ;$B41
+        3865:022A       05FC    ;$B38
+        3865:022C       F32D
+        3865:022E       3026    ;VGLOH
+        3865:0230       0674    ;Y-SIGNZL-FEUNGRE
+        3865:0232       025C    ;FKON30
+        3865:0234       05FE    ;$B39
+        3865:0236       F32E
+        3865:0238       301F    ;AWT
+        3865:023A       05FC    ;$B38
+        3865:023C       0350    ;$M88
+        3865:023E       0674    ;Y-SIGNZL-FEUNGRE
+					- 16 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:0240       0780    ;$F14
+        3865:0242       F32F
+        3865:0244       300E    ;UND2
+        3865:0246       05FA    ;$B37
+        3865:0248       05FE    ;$B39
+        3865:024A       0600    ;$B40
+        3865:024C       F330
+        3865:024E       302B    ;VVZ
+        3865:0250       0600    ;$B40
+        3865:0252       0354    ;$M89
+        3865:0254       0258    ;KON300SEK
+        3865:0256       0602    ;$B41
+        3865:0258       F331
+        3865:025A       301F    ;AWT
+        3865:025C       0602    ;$B41
+        3865:025E       0358    ;$M90
+        3865:0260       025C    ;FKON30
+        3865:0262       0784    ;$F15
+        3865:0264       F332
+        3865:0266       302C    ;MOKY
+        3865:0268       0602    ;$B41
+        3865:026A       035C    ;$M91
+        3865:026C       0604    ;$B42
+        3865:026E       F333
+        3865:0270       301F    ;AWT
+        3865:0272       0604    ;$B42
+        3865:0274       0784    ;$F15
+        3865:0276       0360    ;$M92
+        3865:0278       0788    ;$F16
+        3865:027A       F334
+        3865:027C       3009    ;MAX
+        3865:027E       0002
+        3865:0280       0780    ;$F14
+        3865:0282       0788    ;$F16
+        3865:0284       078C    ;$F17
+        3865:0286       F335
+        3865:0288       3032    ;ANAUS
+        3865:028A       078C    ;$F17
+        3865:028C       00EC    ;$M93
+        3865:028E       00EE    ;&03E-KL020-716
+        3865:0290       0512    ;WERR
+        3865:0292       F336
+        3865:0294       302F    ;ANEIN
+        3865:0296       00F0    ;&03E-KL020-923
+        3865:0298       0790    ;$F18
+        3865:029A       05B4    ;$WSCRATCH
+        3865:029C       F337
+        3865:029E       3032    ;ANAUS
+        3865:02A0       0684    ;A2-RAUMT1-ORCHES
+        3865:02A2       00F2    ;$M94
+        3865:02A4       00F4    ;&03E-KL020-825
+        3865:02A6       05B4    ;$WSCRATCH
+        3865:02A8       F338
+        3865:02AA       3022    ;FKG
+        3865:02AC       0790    ;$F18
+        3865:02AE       0004
+        3865:02B0       0364    ;$M95
+        3865:02B2       0368    ;$M96
+					- 17 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:02B4       036C    ;$M97
+        3865:02B6       0370    ;$M98
+        3865:02B8       0794    ;$F19
+        3865:02BA       F339
+        3865:02BC       3003    ;ADD2
+        3865:02BE       0794    ;$F19
+        3865:02C0       0250    ;KONMESS1
+        3865:02C2       0684    ;A2-RAUMT1-ORCHES
+        3865:02C4       F33A
+        3865:02C6       3003    ;ADD2
+        3865:02C8       0234    ;KONMESS2
+        3865:02CA       079C    ;$F21
+        3865:02CC       06F4    ;A2-RAUMT2-ORCHES
+        3865:02CE       F33B
+        3865:02D0       302F    ;ANEIN
+        3865:02D2       00F6    ;&03E-KL020-924
+        3865:02D4       0798    ;$F20
+        3865:02D6       05B4    ;$WSCRATCH
+        3865:02D8       F33C
+        3865:02DA       3022    ;FKG
+        3865:02DC       0798    ;$F20
+        3865:02DE       0004
+        3865:02E0       0374    ;$M99
+        3865:02E2       0378    ;$M100
+        3865:02E4       037C    ;$M101
+        3865:02E6       0380    ;$M102
+        3865:02E8       079C    ;$F21
+        3865:02EA       F33D
+        3865:02EC       3032    ;ANAUS
+        3865:02EE       06F4    ;A2-RAUMT2-ORCHES
+        3865:02F0       00F8    ;$M103
+        3865:02F2       00FA    ;&03E-KL020-826
+        3865:02F4       05B4    ;$WSCRATCH
+        3865:02F6       F33E
+        3865:02F8       3002    ;ADSU
+        3865:02FA       0009
+        3865:02FC       0684    ;A2-RAUMT1-ORCHES
+        3865:02FE       06F4    ;A2-RAUMT2-ORCHES
+        3865:0300       0384    ;$FZERO
+        3865:0302       0384    ;$FZERO
+        3865:0304       0384    ;$FZERO
+        3865:0306       0384    ;$FZERO
+        3865:0308       0384    ;$FZERO
+        3865:030A       0384    ;$FZERO
+        3865:030C       0384    ;$FZERO
+        3865:030E       000A
+        3865:0310       0384    ;$FZERO
+        3865:0312       0384    ;$FZERO
+        3865:0314       0384    ;$FZERO
+        3865:0316       0384    ;$FZERO
+        3865:0318       0384    ;$FZERO
+        3865:031A       0384    ;$FZERO
+        3865:031C       0384    ;$FZERO
+        3865:031E       0384    ;$FZERO
+        3865:0320       0384    ;$FZERO
+        3865:0322       0384    ;$FZERO
+        3865:0324       07A0    ;$F22
+        3865:0326       F33F
+					- 18 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        3865:0328       3006    ;MULDI
+        3865:032A       07A0    ;$F22
+        3865:032C       024C    ;FKON01
+        3865:032E       0260    ;FKON02
+        3865:0330       06F8    ;A2-MITTW-RT-ORCH
+        3865:0332       F340
+        3865:0334       3032    ;ANAUS
+        3865:0336       06F8    ;A2-MITTW-RT-ORCH
+        3865:0338       00FC    ;$M104
+        3865:033A       00FE    ;&03E-KL020-859
+        3865:033C       05B4    ;$WSCRATCH
+        3865:033E       F341
+        3865:0340       3000    ;ENDE
+
+        Task 4:  Zykluszeit 1000 ms  Laufzeit ca. 290 ms
+
+
+        389A:0000       F400
+        389A:0002       3038    ;SOLKEN
+        389A:0004       0003
+        389A:0006       0034    ;KON01
+        389A:0008       06FC    ;SOLLW.RT.ORCHES
+        389A:000A       05B4    ;$WSCRATCH
+        389A:000C       F401
+        389A:000E       302F    ;ANEIN
+        389A:0010       0100    ;&03E-KL020-808
+        389A:0012       06DC    ;ZULTEMP.ORCHES
+        389A:0014       05B4    ;$WSCRATCH
+        389A:0016       F402
+        389A:0018       3037    ;REGLER
+        389A:001A       0008
+        389A:001C       0034    ;KON01
+        389A:001E       00BE    ;$WZERO
+        389A:0020       0384    ;$FZERO
+        389A:0022       06D0    ;Y-SIGN-REG08
+        389A:0024       05B4    ;$WSCRATCH
+        389A:0026       F403
+        389A:0028       3037    ;REGLER
+        389A:002A       0009
+        389A:002C       0034    ;KON01
+        389A:002E       00BE    ;$WZERO
+        389A:0030       0388    ;$M105
+        389A:0032       06D8    ;Y-SIGN-REG09
+        389A:0034       05B4    ;$WSCRATCH
+        389A:0036       F404
+        389A:0038       301F    ;AWT
+        389A:003A       055C    ;A2_FREIGREGELUNG
+        389A:003C       038C    ;$M106
+        389A:003E       06D8    ;Y-SIGN-REG09
+        389A:0040       07A4    ;$F23
+        389A:0042       F405
+        389A:0044       3032    ;ANAUS
+        389A:0046       07A4    ;$F23
+        389A:0048       0102    ;$M107
+        389A:004A       0104    ;&03E-KL020-916
+        389A:004C       05B4    ;$WSCRATCH
+        389A:004E       F406
+        389A:0050       301F    ;AWT
+					- 19 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        389A:0052       0522    ;LU2-AUTOM.EIN2
+        389A:0054       0390    ;$M108
+        389A:0056       0394    ;$M109
+        389A:0058       07A8    ;$F24
+        389A:005A       F407
+        389A:005C       3032    ;ANAUS
+        389A:005E       07A8    ;$F24
+        389A:0060       0106    ;$M110
+        389A:0062       0108    ;&03E-KL020-405
+        389A:0064       05B4    ;$WSCRATCH
+        389A:0066       F408
+        389A:0068       3038    ;SOLKEN
+        389A:006A       0004
+        389A:006C       0034    ;KON01
+        389A:006E       0664    ;SOLLW-RT.STIMM-1
+        389A:0070       05B4    ;$WSCRATCH
+        389A:0072       F409
+        389A:0074       302F    ;ANEIN
+        389A:0076       010A    ;&03E-KL020-805
+        389A:0078       0668    ;ZULTTEMP.STIMM-1
+        389A:007A       05B4    ;$WSCRATCH
+        389A:007C       F40A
+        389A:007E       3037    ;REGLER
+        389A:0080       000A
+        389A:0082       0034    ;KON01
+        389A:0084       00BE    ;$WZERO
+        389A:0086       0384    ;$FZERO
+        389A:0088       06E8    ;Y-SIGN-REG10
+        389A:008A       05B4    ;$WSCRATCH
+        389A:008C       F40B
+        389A:008E       3037    ;REGLER
+        389A:0090       000B
+        389A:0092       0034    ;KON01
+        389A:0094       00BE    ;$WZERO
+        389A:0096       0398    ;$M111
+        389A:0098       06EC    ;Y-SIGN-REG11
+        389A:009A       05B4    ;$WSCRATCH
+        389A:009C       F40C
+        389A:009E       301F    ;AWT
+        389A:00A0       055C    ;A2_FREIGREGELUNG
+        389A:00A2       039C    ;$M112
+        389A:00A4       06EC    ;Y-SIGN-REG11
+        389A:00A6       07AC    ;$F25
+        389A:00A8       F40D
+        389A:00AA       3032    ;ANAUS
+        389A:00AC       07AC    ;$F25
+        389A:00AE       010C    ;$M113
+        389A:00B0       010E    ;&03E-KL020-816
+        389A:00B2       05B4    ;$WSCRATCH
+        389A:00B4       F40E
+        389A:00B6       302F    ;ANEIN
+        389A:00B8       0110    ;&03E-KL020-819
+        389A:00BA       065C    ;ABLTEMP.STIMM-1
+        389A:00BC       05B4    ;$WSCRATCH
+        389A:00BE       F40F
+        389A:00C0       3038    ;SOLKEN
+        389A:00C2       0005
+        389A:00C4       0034    ;KON01
+					- 20 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        389A:00C6       06E4    ;SOLLW-RT-STIMM-2
+        389A:00C8       05B4    ;$WSCRATCH
+        389A:00CA       F410
+        389A:00CC       302F    ;ANEIN
+        389A:00CE       0112    ;&03E-KL020-806
+        389A:00D0       06C0    ;ZULUFT-STIMM-2
+        389A:00D2       05B4    ;$WSCRATCH
+        389A:00D4       F411
+        389A:00D6       3037    ;REGLER
+        389A:00D8       000C
+        389A:00DA       0034    ;KON01
+        389A:00DC       00BE    ;$WZERO
+        389A:00DE       0384    ;$FZERO
+        389A:00E0       06C4    ;Y-SIGN-REG12
+        389A:00E2       05B4    ;$WSCRATCH
+        389A:00E4       F412
+        389A:00E6       3037    ;REGLER
+        389A:00E8       000D
+        389A:00EA       0034    ;KON01
+        389A:00EC       00BE    ;$WZERO
+        389A:00EE       03A0    ;$M114
+        389A:00F0       06C8    ;Y-SIGN-REG13
+        389A:00F2       05B4    ;$WSCRATCH
+        389A:00F4       F413
+        389A:00F6       301F    ;AWT
+        389A:00F8       055C    ;A2_FREIGREGELUNG
+        389A:00FA       03A4    ;$M115
+        389A:00FC       06C8    ;Y-SIGN-REG13
+        389A:00FE       07B0    ;$F26
+        389A:0100       F414
+        389A:0102       3032    ;ANAUS
+        389A:0104       07B0    ;$F26
+        389A:0106       0114    ;$M116
+        389A:0108       0116    ;&03E-KL020-817
+        389A:010A       05B4    ;$WSCRATCH
+        389A:010C       F415
+        389A:010E       302F    ;ANEIN
+        389A:0110       0118    ;&03E-KL020-820
+        389A:0112       0698    ;ABLUFT-STIMM-2
+        389A:0114       05B4    ;$WSCRATCH
+        389A:0116       F416
+        389A:0118       3038    ;SOLKEN
+        389A:011A       0006
+        389A:011C       0034    ;KON01
+        389A:011E       070C    ;SOLLW-RT-STIMM-3
+        389A:0120       05B4    ;$WSCRATCH
+        389A:0122       F417
+        389A:0124       302F    ;ANEIN
+        389A:0126       011A    ;&03E-KL020-807
+        389A:0128       06AC    ;ZULUFT-STIMM-3
+        389A:012A       05B4    ;$WSCRATCH
+        389A:012C       F418
+        389A:012E       3037    ;REGLER
+        389A:0130       000E
+        389A:0132       0034    ;KON01
+        389A:0134       00BE    ;$WZERO
+        389A:0136       0384    ;$FZERO
+        389A:0138       0694    ;Y-SIGN-REG14
+					- 21 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        389A:013A       05B4    ;$WSCRATCH
+        389A:013C       F419
+        389A:013E       3037    ;REGLER
+        389A:0140       000F
+        389A:0142       0034    ;KON01
+        389A:0144       00BE    ;$WZERO
+        389A:0146       03A8    ;$M117
+        389A:0148       069C    ;Y-SIGN-REG15
+        389A:014A       05B4    ;$WSCRATCH
+        389A:014C       F41A
+        389A:014E       301F    ;AWT
+        389A:0150       055C    ;A2_FREIGREGELUNG
+        389A:0152       03AC    ;$M118
+        389A:0154       069C    ;Y-SIGN-REG15
+        389A:0156       07B4    ;$F27
+        389A:0158       F41B
+        389A:015A       3032    ;ANAUS
+        389A:015C       07B4    ;$F27
+        389A:015E       011C    ;$M119
+        389A:0160       011E    ;&03E-KL020-818
+        389A:0162       05B4    ;$WSCRATCH
+        389A:0164       F41C
+        389A:0166       302F    ;ANEIN
+        389A:0168       0120    ;&03E-KL020-821
+        389A:016A       06CC    ;ABLUFT-STIMM-3
+        389A:016C       05B4    ;$WSCRATCH
+        389A:016E       F41D
+        389A:0170       302F    ;ANEIN
+        389A:0172       0122    ;&03E-KL020-132
+        389A:0174       0700    ;DRUCK-ZULUFT_A2
+        389A:0176       05B4    ;$WSCRATCH
+        389A:0178       F41E
+        389A:017A       301D    ;PT1
+        389A:017C       0700    ;DRUCK-ZULUFT_A2
+        389A:017E       0278    ;FKON30SEK_PT1-A2
+        389A:0180       07B8    ;$F28
+        389A:0182       F41F
+        389A:0184       3032    ;ANAUS
+        389A:0186       07B8    ;$F28
+        389A:0188       0124    ;$M120
+        389A:018A       0126    ;&DR-ZULUFT-PT1-A2
+        389A:018C       05B4    ;$WSCRATCH
+        389A:018E       F420
+        389A:0190       302F    ;ANEIN
+        389A:0192       0054    ;&03E-KL020-149
+        389A:0194       023C    ;KSOLLW-DR-REG-A2
+        389A:0196       05B4    ;$WSCRATCH
+        389A:0198       F421
+        389A:019A       302C    ;MOKY
+        389A:019C       055C    ;A2_FREIGREGELUNG
+        389A:019E       0280    ;FKON60SEK
+        389A:01A0       0606    ;$B43
+        389A:01A2       F422
+        389A:01A4       3037    ;REGLER
+        389A:01A6       001A
+        389A:01A8       0034    ;KON01
+        389A:01AA       0606    ;$B43
+        389A:01AC       026C    ;KON50-A2-ZL
+					- 22 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        389A:01AE       06B4    ;STELLGR.REG-26
+        389A:01B0       05B4    ;$WSCRATCH
+        389A:01B2       F423
+        389A:01B4       301F    ;AWT
+        389A:01B6       055C    ;A2_FREIGREGELUNG
+        389A:01B8       03B0    ;$M121
+        389A:01BA       06B4    ;STELLGR.REG-26
+        389A:01BC       07BC    ;$F29
+        389A:01BE       F424
+        389A:01C0       3032    ;ANAUS
+        389A:01C2       07BC    ;$F29
+        389A:01C4       0128    ;$M122
+        389A:01C6       012A    ;&03E-KL020-116
+        389A:01C8       05B4    ;$WSCRATCH
+        389A:01CA       F425
+        389A:01CC       3000    ;ENDE
+
+        Task 5:  Zykluszeit 1000 ms  Laufzeit ca. 77 ms
+
+
+        38B7:0000       F500
+        38B7:0002       3031    ;MELEIN
+        38B7:0004       012C    ;&03E-KL030-900RM
+        38B7:0006       0006
+        38B7:0008       0516    ;PK
+        38B7:000A       0514    ;LU3-AUTOM.AUS
+        38B7:000C       0516    ;PK
+        38B7:000E       05AC    ;LU3-EIN1-AUTOM.
+        38B7:0010       0516    ;PK
+        38B7:0012       05AE    ;LU3-EIN2-AUTOM.
+        38B7:0014       0512    ;WERR
+        38B7:0016       F501
+        38B7:0018       303B    ;BTRA
+        38B7:001A       05AC    ;LU3-EIN1-AUTOM.
+        38B7:001C       05A8    ;K-LU3-EIN1-AUTOM
+        38B7:001E       F502
+        38B7:0020       303B    ;BTRA
+        38B7:0022       05AE    ;LU3-EIN2-AUTOM.
+        38B7:0024       05AA    ;K-LU3-EIN2-AUTOM
+        38B7:0026       F503
+        38B7:0028       3013    ;ODR2
+        38B7:002A       05AC    ;LU3-EIN1-AUTOM.
+        38B7:002C       05AE    ;LU3-EIN2-AUTOM.
+        38B7:002E       0510    ;LU3-AUTO__ISTEIN
+        38B7:0030       F504
+        38B7:0032       3031    ;MELEIN
+        38B7:0034       0136    ;&03E-KL030-117
+        38B7:0036       0001
+        38B7:0038       053C    ;A3_ZUL：TER_EIN
+        38B7:003A       0512    ;WERR
+        38B7:003C       F505
+        38B7:003E       303B    ;BTRA
+        38B7:0040       053C    ;A3_ZUL：TER_EIN
+        38B7:0042       053A    ;A3_ZL_STUFE_1
+        38B7:0044       F506
+        38B7:0046       3031    ;MELEIN
+        38B7:0048       0138    ;&03E-KL030-125
+        38B7:004A       0001
+					- 23 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:004C       053E    ;ACM_ZL_SAM-ST-A3
+        38B7:004E       0512    ;WERR
+        38B7:0050       F507
+        38B7:0052       3031    ;MELEIN
+        38B7:0054       013A    ;&03E-KL030-217
+        38B7:0056       0001
+        38B7:0058       0542    ;A3_ABL_STUFE_1
+        38B7:005A       0512    ;WERR
+        38B7:005C       F508
+        38B7:005E       3013    ;ODR2
+        38B7:0060       0542    ;A3_ABL_STUFE_1
+        38B7:0062       0036    ;KON00
+        38B7:0064       0544    ;A3_ABL：TER_EIN
+        38B7:0066       F509
+        38B7:0068       3031    ;MELEIN
+        38B7:006A       013C    ;&03E-KL030-225
+        38B7:006C       0001
+        38B7:006E       0548    ;ACM_AB_SAM-ST-A3
+        38B7:0070       05B4    ;$WSCRATCH
+        38B7:0072       F50A
+        38B7:0074       3013    ;ODR2
+        38B7:0076       053E    ;ACM_ZL_SAM-ST-A3
+        38B7:0078       0548    ;ACM_AB_SAM-ST-A3
+        38B7:007A       0608    ;$B44
+        38B7:007C       F50B
+        38B7:007E       300F    ;UND11
+        38B7:0080       053C    ;A3_ZUL：TER_EIN
+        38B7:0082       0546    ;A3_ZL/ABL_ACM_ST
+        38B7:0084       0552    ;A3_FREIGREGELUNG
+        38B7:0086       F50C
+        38B7:0088       300E    ;UND2
+        38B7:008A       053C    ;A3_ZUL：TER_EIN
+        38B7:008C       0544    ;A3_ABL：TER_EIN
+        38B7:008E       0540    ;A3_ZL/ABL_EIN
+        38B7:0090       F50D
+        38B7:0092       302B    ;VVZ
+        38B7:0094       0608    ;$B44
+        38B7:0096       03B4    ;$M128
+        38B7:0098       03B8    ;$M129
+        38B7:009A       0546    ;A3_ZL/ABL_ACM_ST
+        38B7:009C       F50E
+        38B7:009E       3034    ;SETMEL
+        38B7:00A0       013E    ;$M130
+        38B7:00A2       0001
+        38B7:00A4       0514    ;LU3-AUTOM.AUS
+        38B7:00A6       0140    ;&A3-ZL-AUS
+        38B7:00A8       0512    ;WERR
+        38B7:00AA       F50F
+        38B7:00AC       3014    ;ODRMN
+        38B7:00AE       0003
+        38B7:00B0       0518    ;LU3-AUTOM.EIN1
+        38B7:00B2       0036    ;KON00
+        38B7:00B4       0538    ;LU3-AUTOM.EIN2
+        38B7:00B6       0000
+        38B7:00B8       054A    ;A3_A-BEF_EIN
+        38B7:00BA       05B4    ;$WSCRATCH
+        38B7:00BC       F510
+        38B7:00BE       3034    ;SETMEL
+					- 24 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:00C0       0142    ;$M131
+        38B7:00C2       0001
+        38B7:00C4       054A    ;A3_A-BEF_EIN
+        38B7:00C6       0144    ;&A3-ZL-STUFE1
+        38B7:00C8       0512    ;WERR
+        38B7:00CA       F511
+        38B7:00CC       3034    ;SETMEL
+        38B7:00CE       0146    ;$M132
+        38B7:00D0       0001
+        38B7:00D2       0514    ;LU3-AUTOM.AUS
+        38B7:00D4       0148    ;&A3-ABL-AUS
+        38B7:00D6       0512    ;WERR
+        38B7:00D8       F512
+        38B7:00DA       3034    ;SETMEL
+        38B7:00DC       014A    ;$M133
+        38B7:00DE       0001
+        38B7:00E0       054A    ;A3_A-BEF_EIN
+        38B7:00E2       014C    ;&A3-ABL-STUFE1
+        38B7:00E4       0512    ;WERR
+        38B7:00E6       F513
+        38B7:00E8       3034    ;SETMEL
+        38B7:00EA       014E    ;$M134
+        38B7:00EC       0001
+        38B7:00EE       0514    ;LU3-AUTOM.AUS
+        38B7:00F0       0150    ;&A3-KLAPPEN_AUS
+        38B7:00F2       0512    ;WERR
+        38B7:00F4       F514
+        38B7:00F6       3034    ;SETMEL
+        38B7:00F8       0152    ;$M135
+        38B7:00FA       0001
+        38B7:00FC       054A    ;A3_A-BEF_EIN
+        38B7:00FE       0154    ;&A3-KLAPPEN_EIN
+        38B7:0100       0512    ;WERR
+        38B7:0102       F515
+        38B7:0104       3034    ;SETMEL
+        38B7:0106       0156    ;$M136
+        38B7:0108       0001
+        38B7:010A       0514    ;LU3-AUTOM.AUS
+        38B7:010C       0158    ;&A3-ERH/KUHL_AUS
+        38B7:010E       0512    ;WERR
+        38B7:0110       F516
+        38B7:0112       3034    ;SETMEL
+        38B7:0114       015A    ;$M137
+        38B7:0116       0001
+        38B7:0118       054A    ;A3_A-BEF_EIN
+        38B7:011A       015C    ;&A3-ERH/KUHL_EIN
+        38B7:011C       0512    ;WERR
+        38B7:011E       F517
+        38B7:0120       3034    ;SETMEL
+        38B7:0122       015E    ;$M138
+        38B7:0124       0001
+        38B7:0126       0514    ;LU3-AUTOM.AUS
+        38B7:0128       0160    ;&A3-NE_1-AUS
+        38B7:012A       0512    ;WERR
+        38B7:012C       F518
+        38B7:012E       3034    ;SETMEL
+        38B7:0130       0162    ;$M139
+        38B7:0132       0001
+					- 25 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:0134       054A    ;A3_A-BEF_EIN
+        38B7:0136       0164    ;&A3-NE_1_EIN
+        38B7:0138       0512    ;WERR
+        38B7:013A       F519
+        38B7:013C       3034    ;SETMEL
+        38B7:013E       0166    ;$M140
+        38B7:0140       0001
+        38B7:0142       0514    ;LU3-AUTOM.AUS
+        38B7:0144       0168    ;&A3-NE_2_AUS
+        38B7:0146       0512    ;WERR
+        38B7:0148       F51A
+        38B7:014A       3034    ;SETMEL
+        38B7:014C       016A    ;$M141
+        38B7:014E       0001
+        38B7:0150       054A    ;A3_A-BEF_EIN
+        38B7:0152       016C    ;&A3-NE_2_EIN
+        38B7:0154       0512    ;WERR
+        38B7:0156       F51B
+        38B7:0158       3031    ;MELEIN
+        38B7:015A       016E    ;&03E-KL030-102
+        38B7:015C       0001
+        38B7:015E       060A    ;$B45
+        38B7:0160       05B4    ;$WSCRATCH
+        38B7:0162       F51C
+        38B7:0164       300F    ;UND11
+        38B7:0166       053C    ;A3_ZUL：TER_EIN
+        38B7:0168       060A    ;$B45
+        38B7:016A       060C    ;$B46
+        38B7:016C       F51D
+        38B7:016E       302B    ;VVZ
+        38B7:0170       060C    ;$B46
+        38B7:0172       03BC    ;$M142
+        38B7:0174       03C0    ;$M143
+        38B7:0176       060E    ;$B47
+        38B7:0178       F51E
+        38B7:017A       301A    ;RSS
+        38B7:017C       060E    ;$B47
+        38B7:017E       0560    ;STOERUNG_QUITA3
+        38B7:0180       0564    ;KEILR-ZUL-ANL03
+        38B7:0182       05B4    ;$WSCRATCH
+        38B7:0184       F51F
+        38B7:0186       3034    ;SETMEL
+        38B7:0188       0170    ;$M144
+        38B7:018A       0001
+        38B7:018C       0564    ;KEILR-ZUL-ANL03
+        38B7:018E       0172    ;&03E-KL030-991
+        38B7:0190       0512    ;WERR
+        38B7:0192       F520
+        38B7:0194       3031    ;MELEIN
+        38B7:0196       0174    ;&03E-KL030-202
+        38B7:0198       0001
+        38B7:019A       0610    ;$B48
+        38B7:019C       05B4    ;$WSCRATCH
+        38B7:019E       F521
+        38B7:01A0       300F    ;UND11
+        38B7:01A2       0544    ;A3_ABL：TER_EIN
+        38B7:01A4       0610    ;$B48
+        38B7:01A6       0612    ;$B49
+					- 26 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:01A8       F522
+        38B7:01AA       302B    ;VVZ
+        38B7:01AC       0612    ;$B49
+        38B7:01AE       03C4    ;$M145
+        38B7:01B0       03C8    ;$M146
+        38B7:01B2       0614    ;$B50
+        38B7:01B4       F523
+        38B7:01B6       301A    ;RSS
+        38B7:01B8       0614    ;$B50
+        38B7:01BA       0560    ;STOERUNG_QUITA3
+        38B7:01BC       0562    ;KEILR-ABL-ANL03
+        38B7:01BE       05B4    ;$WSCRATCH
+        38B7:01C0       F524
+        38B7:01C2       3013    ;ODR2
+        38B7:01C4       0564    ;KEILR-ZUL-ANL03
+        38B7:01C6       0562    ;KEILR-ABL-ANL03
+        38B7:01C8       0616    ;$B51
+        38B7:01CA       F525
+        38B7:01CC       3034    ;SETMEL
+        38B7:01CE       0176    ;$M147
+        38B7:01D0       0001
+        38B7:01D2       0562    ;KEILR-ABL-ANL03
+        38B7:01D4       0178    ;&03E-KL030-992
+        38B7:01D6       0512    ;WERR
+        38B7:01D8       F526
+        38B7:01DA       3034    ;SETMEL
+        38B7:01DC       017A    ;$M148
+        38B7:01DE       0001
+        38B7:01E0       0616    ;$B51
+        38B7:01E2       017C    ;&INT-MEL02-HIGH??
+        38B7:01E4       05B4    ;$WSCRATCH
+        38B7:01E6       F527
+        38B7:01E8       3031    ;MELEIN
+        38B7:01EA       017E    ;&03E-KL030-126
+        38B7:01EC       0003
+        38B7:01EE       0568    ;FERNQUIT_A3.AUS
+        38B7:01F0       0516    ;PK
+        38B7:01F2       0566    ;FERNQUIT_A3.EIN
+        38B7:01F4       0512    ;WERR
+        38B7:01F6       F528
+        38B7:01F8       3013    ;ODR2
+        38B7:01FA       0566    ;FERNQUIT_A3.EIN
+        38B7:01FC       0528    ;QUITT.TASTER-F2
+        38B7:01FE       0618    ;$B52
+        38B7:0200       F529
+        38B7:0202       302C    ;MOKY
+        38B7:0204       0618    ;$B52
+        38B7:0206       03CC    ;$M151
+        38B7:0208       0560    ;STOERUNG_QUITA3
+        38B7:020A       F52A
+        38B7:020C       302B    ;VVZ
+        38B7:020E       0560    ;STOERUNG_QUITA3
+        38B7:0210       03D0    ;$M152
+        38B7:0212       03D4    ;$M153
+        38B7:0214       061A    ;$B53
+        38B7:0216       F52B
+        38B7:0218       300F    ;UND11
+        38B7:021A       0620    ;$B56
+					- 27 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:021C       061A    ;$B53
+        38B7:021E       061C    ;$B54
+        38B7:0220       F52C
+        38B7:0222       301A    ;RSS
+        38B7:0224       061C    ;$B54
+        38B7:0226       061A    ;$B53
+        38B7:0228       061E    ;$B55
+        38B7:022A       0620    ;$B56
+        38B7:022C       F52D
+        38B7:022E       3033    ;BEFAUS
+        38B7:0230       0001
+        38B7:0232       061E    ;$B55
+        38B7:0234       061A    ;$B53
+        38B7:0236       00BE    ;$WZERO
+        38B7:0238       00BE    ;$WZERO
+        38B7:023A       017E    ;&03E-KL030-126
+        38B7:023C       0512    ;WERR
+        38B7:023E       F52E
+        38B7:0240       302F    ;ANEIN
+        38B7:0242       0184    ;&03E-KL030-105
+        38B7:0244       0718    ;A3-ZULT-VENT.
+        38B7:0246       0512    ;WERR
+        38B7:0248       F52F
+        38B7:024A       3038    ;SOLKEN
+        38B7:024C       0007
+        38B7:024E       0034    ;KON01
+        38B7:0250       0710    ;SOLLW.ZUT.A3
+        38B7:0252       05B4    ;$WSCRATCH
+        38B7:0254       F530
+        38B7:0256       3037    ;REGLER
+        38B7:0258       0004
+        38B7:025A       0034    ;KON01
+        38B7:025C       00BE    ;$WZERO
+        38B7:025E       03D8    ;$M154
+        38B7:0260       0704    ;Y-SIGN_REG-NR4
+        38B7:0262       05B4    ;$WSCRATCH
+        38B7:0264       F531
+        38B7:0266       302F    ;ANEIN
+        38B7:0268       0186    ;&03E-KL030-205
+        38B7:026A       0734    ;A3-ABLUFTTEMP.
+        38B7:026C       05B4    ;$WSCRATCH
+        38B7:026E       F532
+        38B7:0270       302F    ;ANEIN
+        38B7:0272       0058    ;&03E-KL030-401
+        38B7:0274       0268    ;SOLL-MIN-AUSSEN
+        38B7:0276       05B4    ;$WSCRATCH
+        38B7:0278       F533
+        38B7:027A       3022    ;FKG
+        38B7:027C       0704    ;Y-SIGN_REG-NR4
+        38B7:027E       0004
+        38B7:0280       03DC    ;$M155
+        38B7:0282       03E0    ;$M156
+        38B7:0284       03E4    ;$M157
+        38B7:0286       03E8    ;$M158
+        38B7:0288       07C0    ;$F30
+        38B7:028A       F534
+        38B7:028C       3022    ;FKG
+        38B7:028E       0704    ;Y-SIGN_REG-NR4
+					- 28 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:0290       0004
+        38B7:0292       03EC    ;$M159
+        38B7:0294       03F0    ;$M160
+        38B7:0296       03F4    ;$M161
+        38B7:0298       03F8    ;$M162
+        38B7:029A       07C4    ;$F31
+        38B7:029C       F535
+        38B7:029E       3027    ;VGLEH
+        38B7:02A0       0688    ;AUSSENTEMPERATUR
+        38B7:02A2       0734    ;A3-ABLUFTTEMP.
+        38B7:02A4       03FC    ;$M163
+        38B7:02A6       0622    ;$B57
+        38B7:02A8       F536
+        38B7:02AA       301F    ;AWT
+        38B7:02AC       0624    ;$B58
+        38B7:02AE       07C0    ;$F30
+        38B7:02B0       07C4    ;$F31
+        38B7:02B2       0740    ;WIRKSINN-KLAPPEN
+        38B7:02B4       F537
+        38B7:02B6       302B    ;VVZ
+        38B7:02B8       0622    ;$B57
+        38B7:02BA       0400    ;$M164
+        38B7:02BC       0404    ;$M165
+        38B7:02BE       0624    ;$B58
+        38B7:02C0       F538
+        38B7:02C2       3009    ;MAX
+        38B7:02C4       0002
+        38B7:02C6       0740    ;WIRKSINN-KLAPPEN
+        38B7:02C8       0268    ;SOLL-MIN-AUSSEN
+        38B7:02CA       07C8    ;$F32
+        38B7:02CC       F539
+        38B7:02CE       301F    ;AWT
+        38B7:02D0       0552    ;A3_FREIGREGELUNG
+        38B7:02D2       0408    ;$M166
+        38B7:02D4       07C8    ;$F32
+        38B7:02D6       073C    ;AUSSEN/FORTKL-A3
+        38B7:02D8       F53A
+        38B7:02DA       3022    ;FKG
+        38B7:02DC       073C    ;AUSSEN/FORTKL-A3
+        38B7:02DE       0004
+        38B7:02E0       040C    ;$M167
+        38B7:02E2       0410    ;$M168
+        38B7:02E4       0414    ;$M169
+        38B7:02E6       0418    ;$M170
+        38B7:02E8       0738    ;UMLUFTKLAPPE-A3
+        38B7:02EA       F53B
+        38B7:02EC       3032    ;ANAUS
+        38B7:02EE       073C    ;AUSSEN/FORTKL-A3
+        38B7:02F0       0188    ;$M171
+        38B7:02F2       018A    ;&03E-KL030-409
+        38B7:02F4       0512    ;WERR
+        38B7:02F6       F53C
+        38B7:02F8       3032    ;ANAUS
+        38B7:02FA       073C    ;AUSSEN/FORTKL-A3
+        38B7:02FC       018C    ;$M172
+        38B7:02FE       018E    ;&03E-KL030-410
+        38B7:0300       0512    ;WERR
+        38B7:0302       F53D
+					- 29 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:0304       3032    ;ANAUS
+        38B7:0306       0738    ;UMLUFTKLAPPE-A3
+        38B7:0308       0190    ;$M173
+        38B7:030A       0192    ;&03E-KL030-319
+        38B7:030C       0512    ;WERR
+        38B7:030E       F53E
+        38B7:0310       3022    ;FKG
+        38B7:0312       0704    ;Y-SIGN_REG-NR4
+        38B7:0314       0004
+        38B7:0316       041C    ;$M174
+        38B7:0318       0420    ;$M175
+        38B7:031A       0424    ;$M176
+        38B7:031C       0428    ;$M177
+        38B7:031E       07CC    ;$F33
+        38B7:0320       F53F
+        38B7:0322       300F    ;UND11
+        38B7:0324       0552    ;A3_FREIGREGELUNG
+        38B7:0326       056A    ;KAELTE_AUS_K2
+        38B7:0328       0626    ;$B59
+        38B7:032A       F540
+        38B7:032C       301F    ;AWT
+        38B7:032E       0626    ;$B59
+        38B7:0330       042C    ;$M178
+        38B7:0332       07CC    ;$F33
+        38B7:0334       07D0    ;$F34
+        38B7:0336       F541
+        38B7:0338       3032    ;ANAUS
+        38B7:033A       07D0    ;$F34
+        38B7:033C       0194    ;$M179
+        38B7:033E       0196    ;&03E-KL030-616
+        38B7:0340       0512    ;WERR
+        38B7:0342       F542
+        38B7:0344       3022    ;FKG
+        38B7:0346       0704    ;Y-SIGN_REG-NR4
+        38B7:0348       0004
+        38B7:034A       0430    ;$M180
+        38B7:034C       0434    ;$M181
+        38B7:034E       0438    ;$M182
+        38B7:0350       043C    ;$M183
+        38B7:0352       07D4    ;$F35
+        38B7:0354       F543
+        38B7:0356       301F    ;AWT
+        38B7:0358       0552    ;A3_FREIGREGELUNG
+        38B7:035A       0440    ;$M184
+        38B7:035C       07D4    ;$F35
+        38B7:035E       07D8    ;$F36
+        38B7:0360       F544
+        38B7:0362       3032    ;ANAUS
+        38B7:0364       07D8    ;$F36
+        38B7:0366       0198    ;$M185
+        38B7:0368       019A    ;&03E-KL030-516
+        38B7:036A       0512    ;WERR
+        38B7:036C       F545
+        38B7:036E       300F    ;UND11
+        38B7:0370       0518    ;LU3-AUTOM.EIN1
+        38B7:0372       053A    ;A3_ZL_STUFE_1
+        38B7:0374       0628    ;$B60
+        38B7:0376       F546
+					- 30 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:0378       300F    ;UND11
+        38B7:037A       0538    ;LU3-AUTOM.EIN2
+        38B7:037C       053A    ;A3_ZL_STUFE_1
+        38B7:037E       062A    ;$B61
+        38B7:0380       F547
+        38B7:0382       3013    ;ODR2
+        38B7:0384       0628    ;$B60
+        38B7:0386       062A    ;$B61
+        38B7:0388       062C    ;$B62
+        38B7:038A       F548
+        38B7:038C       302B    ;VVZ
+        38B7:038E       062C    ;$B62
+        38B7:0390       0444    ;$M186
+        38B7:0392       0448    ;$M187
+        38B7:0394       062E    ;$B63
+        38B7:0396       F549
+        38B7:0398       301A    ;RSS
+        38B7:039A       062E    ;$B63
+        38B7:039C       0560    ;STOERUNG_QUITA3
+        38B7:039E       0598    ;A03_ZUL_AUTO_ST
+        38B7:03A0       05B4    ;$WSCRATCH
+        38B7:03A2       F54A
+        38B7:03A4       3034    ;SETMEL
+        38B7:03A6       019C    ;$M188
+        38B7:03A8       0001
+        38B7:03AA       0598    ;A03_ZUL_AUTO_ST
+        38B7:03AC       019E    ;&03E-KL030-993
+        38B7:03AE       05B4    ;$WSCRATCH
+        38B7:03B0       F54B
+        38B7:03B2       3013    ;ODR2
+        38B7:03B4       0598    ;A03_ZUL_AUTO_ST
+        38B7:03B6       0596    ;A03_ABL_AUTO_ST
+        38B7:03B8       0630    ;$B64
+        38B7:03BA       F54C
+        38B7:03BC       300F    ;UND11
+        38B7:03BE       0518    ;LU3-AUTOM.EIN1
+        38B7:03C0       0542    ;A3_ABL_STUFE_1
+        38B7:03C2       0632    ;$B65
+        38B7:03C4       F54D
+        38B7:03C6       300F    ;UND11
+        38B7:03C8       0538    ;LU3-AUTOM.EIN2
+        38B7:03CA       0542    ;A3_ABL_STUFE_1
+        38B7:03CC       0634    ;$B66
+        38B7:03CE       F54E
+        38B7:03D0       3013    ;ODR2
+        38B7:03D2       0632    ;$B65
+        38B7:03D4       0634    ;$B66
+        38B7:03D6       0636    ;$B67
+        38B7:03D8       F54F
+        38B7:03DA       302B    ;VVZ
+        38B7:03DC       0636    ;$B67
+        38B7:03DE       044C    ;$M189
+        38B7:03E0       0450    ;$M190
+        38B7:03E2       0638    ;$B68
+        38B7:03E4       F550
+        38B7:03E6       301A    ;RSS
+        38B7:03E8       0638    ;$B68
+        38B7:03EA       0560    ;STOERUNG_QUITA3
+					- 31 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38B7:03EC       0596    ;A03_ABL_AUTO_ST
+        38B7:03EE       05B4    ;$WSCRATCH
+        38B7:03F0       F551
+        38B7:03F2       3034    ;SETMEL
+        38B7:03F4       01A0    ;$M191
+        38B7:03F6       0001
+        38B7:03F8       0596    ;A03_ABL_AUTO_ST
+        38B7:03FA       01A2    ;&03E-KL030-994
+        38B7:03FC       05B4    ;$WSCRATCH
+        38B7:03FE       F552
+        38B7:0400       3033    ;BEFAUS
+        38B7:0402       0001
+        38B7:0404       0630    ;$B64
+        38B7:0406       00BE    ;$WZERO
+        38B7:0408       00BE    ;$WZERO
+        38B7:040A       00BE    ;$WZERO
+        38B7:040C       0040    ;&03E-KL030-900
+        38B7:040E       05B4    ;$WSCRATCH
+        38B7:0410       F553
+        38B7:0412       302F    ;ANEIN
+        38B7:0414       01A4    ;&03E-KL030-451
+        38B7:0416       0678    ;A3-SW-REGIE
+        38B7:0418       05B4    ;$WSCRATCH
+        38B7:041A       F554
+        38B7:041C       302F    ;ANEIN
+        38B7:041E       01A6    ;&03E-KL030-452
+        38B7:0420       06B8    ;A3-SW.PROJEKTION
+        38B7:0422       05B4    ;$WSCRATCH
+        38B7:0424       F555
+        38B7:0426       302F    ;ANEIN
+        38B7:0428       01A8    ;&03E-KL030-454
+        38B7:042A       06E0    ;A3-SW.TON-REGIE
+        38B7:042C       05B4    ;$WSCRATCH
+        38B7:042E       F556
+        38B7:0430       302F    ;ANEIN
+        38B7:0432       01AA    ;&03E-KL030-453
+        38B7:0434       0690    ;A3-SW.LICH-REGIE
+        38B7:0436       05B4    ;$WSCRATCH
+        38B7:0438       F557
+        38B7:043A       3000    ;ENDE
+
+        Task 6:  Zykluszeit 1000 ms  Laufzeit ca. 272 ms
+
+
+        38FB:0000       F600
+        38FB:0002       3038    ;SOLKEN
+        38FB:0004       0008
+        38FB:0006       0034    ;KON01
+        38FB:0008       07DC    ;$F37
+        38FB:000A       05B4    ;$WSCRATCH
+        38FB:000C       F601
+        38FB:000E       302F    ;ANEIN
+        38FB:0010       01AC    ;&03E-KL030-819
+        38FB:0012       07E0    ;$F38
+        38FB:0014       05B4    ;$WSCRATCH
+        38FB:0016       F602
+        38FB:0018       3003    ;ADD2
+        38FB:001A       07DC    ;$F37
+					- 32 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:001C       0678    ;A3-SW-REGIE
+        38FB:001E       07E4    ;$F39
+        38FB:0020       F603
+        38FB:0022       3037    ;REGLER
+        38FB:0024       0010
+        38FB:0026       0552    ;A3_FREIGREGELUNG
+        38FB:0028       00BE    ;$WZERO
+        38FB:002A       0454    ;$M192
+        38FB:002C       06A0    ;Y-SIGN-REG16
+        38FB:002E       05B4    ;$WSCRATCH
+        38FB:0030       F604
+        38FB:0032       301F    ;AWT
+        38FB:0034       0552    ;A3_FREIGREGELUNG
+        38FB:0036       0458    ;$M193
+        38FB:0038       06A0    ;Y-SIGN-REG16
+        38FB:003A       07E8    ;$F40
+        38FB:003C       F605
+        38FB:003E       3032    ;ANAUS
+        38FB:0040       07E8    ;$F40
+        38FB:0042       01AE    ;$M194
+        38FB:0044       01B0    ;&03E-KL030-816
+        38FB:0046       05B4    ;$WSCRATCH
+        38FB:0048       F606
+        38FB:004A       3032    ;ANAUS
+        38FB:004C       07E4    ;$F39
+        38FB:004E       01B2    ;$M195
+        38FB:0050       01B4    ;&03E-KL030-844
+        38FB:0052       05B4    ;$WSCRATCH
+        38FB:0054       F607
+        38FB:0056       3038    ;SOLKEN
+        38FB:0058       0009
+        38FB:005A       0034    ;KON01
+        38FB:005C       07EC    ;$F41
+        38FB:005E       05B4    ;$WSCRATCH
+        38FB:0060       F608
+        38FB:0062       302F    ;ANEIN
+        38FB:0064       01B6    ;&03E-KL030-823
+        38FB:0066       07F0    ;$F42
+        38FB:0068       05B4    ;$WSCRATCH
+        38FB:006A       F609
+        38FB:006C       3003    ;ADD2
+        38FB:006E       07EC    ;$F41
+        38FB:0070       06E0    ;A3-SW.TON-REGIE
+        38FB:0072       07F4    ;$F43
+        38FB:0074       F60A
+        38FB:0076       3032    ;ANAUS
+        38FB:0078       07F4    ;$F43
+        38FB:007A       01B8    ;$M196
+        38FB:007C       01BA    ;&03E-KL030-847
+        38FB:007E       05B4    ;$WSCRATCH
+        38FB:0080       F60B
+        38FB:0082       3037    ;REGLER
+        38FB:0084       0011
+        38FB:0086       0552    ;A3_FREIGREGELUNG
+        38FB:0088       00BE    ;$WZERO
+        38FB:008A       045C    ;$M197
+        38FB:008C       071C    ;Y-SIGN-REG17
+        38FB:008E       05B4    ;$WSCRATCH
+					- 33 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0090       F60C
+        38FB:0092       3022    ;FKG
+        38FB:0094       071C    ;Y-SIGN-REG17
+        38FB:0096       0004
+        38FB:0098       0460    ;$M198
+        38FB:009A       0464    ;$M199
+        38FB:009C       0468    ;$M200
+        38FB:009E       046C    ;$M201
+        38FB:00A0       07F8    ;$F44
+        38FB:00A2       F60D
+        38FB:00A4       3022    ;FKG
+        38FB:00A6       071C    ;Y-SIGN-REG17
+        38FB:00A8       0004
+        38FB:00AA       0470    ;$M202
+        38FB:00AC       0474    ;$M203
+        38FB:00AE       0478    ;$M204
+        38FB:00B0       047C    ;$M205
+        38FB:00B2       07FC    ;$F45
+        38FB:00B4       F60E
+        38FB:00B6       301F    ;AWT
+        38FB:00B8       0552    ;A3_FREIGREGELUNG
+        38FB:00BA       0480    ;$M206
+        38FB:00BC       07F8    ;$F44
+        38FB:00BE       0800    ;$F46
+        38FB:00C0       F60F
+        38FB:00C2       3032    ;ANAUS
+        38FB:00C4       0800    ;$F46
+        38FB:00C6       01BC    ;$M207
+        38FB:00C8       01BE    ;&03E-KL030-818
+        38FB:00CA       05B4    ;$WSCRATCH
+        38FB:00CC       F610
+        38FB:00CE       301F    ;AWT
+        38FB:00D0       0552    ;A3_FREIGREGELUNG
+        38FB:00D2       0484    ;$M208
+        38FB:00D4       07FC    ;$F45
+        38FB:00D6       0804    ;$F47
+        38FB:00D8       F611
+        38FB:00DA       3032    ;ANAUS
+        38FB:00DC       0804    ;$F47
+        38FB:00DE       01C0    ;$M209
+        38FB:00E0       01C2    ;&03E-KL030-918
+        38FB:00E2       05B4    ;$WSCRATCH
+        38FB:00E4       F612
+        38FB:00E6       3038    ;SOLKEN
+        38FB:00E8       000A
+        38FB:00EA       0034    ;KON01
+        38FB:00EC       0808    ;$F48
+        38FB:00EE       05B4    ;$WSCRATCH
+        38FB:00F0       F613
+        38FB:00F2       302F    ;ANEIN
+        38FB:00F4       01C4    ;&03E-KL030-822
+        38FB:00F6       080C    ;$F49
+        38FB:00F8       05B4    ;$WSCRATCH
+        38FB:00FA       F614
+        38FB:00FC       3003    ;ADD2
+        38FB:00FE       0808    ;$F48
+        38FB:0100       0690    ;A3-SW.LICH-REGIE
+        38FB:0102       0810    ;$F50
+					- 34 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0104       F615
+        38FB:0106       3032    ;ANAUS
+        38FB:0108       0810    ;$F50
+        38FB:010A       01C6    ;$M210
+        38FB:010C       01C8    ;&03E-KL030-850
+        38FB:010E       05B4    ;$WSCRATCH
+        38FB:0110       F616
+        38FB:0112       3037    ;REGLER
+        38FB:0114       0012
+        38FB:0116       0552    ;A3_FREIGREGELUNG
+        38FB:0118       00BE    ;$WZERO
+        38FB:011A       0488    ;$M211
+        38FB:011C       0720    ;Y-SIGN-REG18
+        38FB:011E       05B4    ;$WSCRATCH
+        38FB:0120       F617
+        38FB:0122       3022    ;FKG
+        38FB:0124       0720    ;Y-SIGN-REG18
+        38FB:0126       0004
+        38FB:0128       048C    ;$M212
+        38FB:012A       0490    ;$M213
+        38FB:012C       0494    ;$M214
+        38FB:012E       0498    ;$M215
+        38FB:0130       0814    ;$F51
+        38FB:0132       F618
+        38FB:0134       3022    ;FKG
+        38FB:0136       0720    ;Y-SIGN-REG18
+        38FB:0138       0004
+        38FB:013A       049C    ;$M216
+        38FB:013C       04A0    ;$M217
+        38FB:013E       04A4    ;$M218
+        38FB:0140       04A8    ;$M219
+        38FB:0142       0818    ;$F52
+        38FB:0144       F619
+        38FB:0146       301F    ;AWT
+        38FB:0148       0552    ;A3_FREIGREGELUNG
+        38FB:014A       04AC    ;$M220
+        38FB:014C       0814    ;$F51
+        38FB:014E       081C    ;$F53
+        38FB:0150       F61A
+        38FB:0152       3032    ;ANAUS
+        38FB:0154       081C    ;$F53
+        38FB:0156       01CA    ;$M221
+        38FB:0158       01CC    ;&03E-KL030-917
+        38FB:015A       05B4    ;$WSCRATCH
+        38FB:015C       F61B
+        38FB:015E       301F    ;AWT
+        38FB:0160       0552    ;A3_FREIGREGELUNG
+        38FB:0162       04B0    ;$M222
+        38FB:0164       0818    ;$F52
+        38FB:0166       0820    ;$F54
+        38FB:0168       F61C
+        38FB:016A       3032    ;ANAUS
+        38FB:016C       0820    ;$F54
+        38FB:016E       01CE    ;$M223
+        38FB:0170       01D0    ;&03E-KL030-920
+        38FB:0172       05B4    ;$WSCRATCH
+        38FB:0174       F61D
+        38FB:0176       3038    ;SOLKEN
+					- 35 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0178       000B
+        38FB:017A       0034    ;KON01
+        38FB:017C       0824    ;$F55
+        38FB:017E       05B4    ;$WSCRATCH
+        38FB:0180       F61E
+        38FB:0182       302F    ;ANEIN
+        38FB:0184       01D2    ;&03E-KL030-821
+        38FB:0186       0828    ;$F56
+        38FB:0188       05B4    ;$WSCRATCH
+        38FB:018A       F61F
+        38FB:018C       3003    ;ADD2
+        38FB:018E       0824    ;$F55
+        38FB:0190       06B8    ;A3-SW.PROJEKTION
+        38FB:0192       082C    ;$F57
+        38FB:0194       F620
+        38FB:0196       3032    ;ANAUS
+        38FB:0198       082C    ;$F57
+        38FB:019A       01D4    ;$M224
+        38FB:019C       01D6    ;&03E-KL030-853
+        38FB:019E       05B4    ;$WSCRATCH
+        38FB:01A0       F621
+        38FB:01A2       3037    ;REGLER
+        38FB:01A4       0013
+        38FB:01A6       0552    ;A3_FREIGREGELUNG
+        38FB:01A8       00BE    ;$WZERO
+        38FB:01AA       04B4    ;$M225
+        38FB:01AC       068C    ;Y-SIGN-REG19
+        38FB:01AE       05B4    ;$WSCRATCH
+        38FB:01B0       F622
+        38FB:01B2       3022    ;FKG
+        38FB:01B4       068C    ;Y-SIGN-REG19
+        38FB:01B6       0004
+        38FB:01B8       04B8    ;$M226
+        38FB:01BA       04BC    ;$M227
+        38FB:01BC       04C0    ;$M228
+        38FB:01BE       04C4    ;$M229
+        38FB:01C0       0830    ;$F58
+        38FB:01C2       F623
+        38FB:01C4       3022    ;FKG
+        38FB:01C6       068C    ;Y-SIGN-REG19
+        38FB:01C8       0004
+        38FB:01CA       04C8    ;$M230
+        38FB:01CC       04CC    ;$M231
+        38FB:01CE       04D0    ;$M232
+        38FB:01D0       04D4    ;$M233
+        38FB:01D2       0834    ;$F59
+        38FB:01D4       F624
+        38FB:01D6       301F    ;AWT
+        38FB:01D8       0552    ;A3_FREIGREGELUNG
+        38FB:01DA       04D8    ;$M234
+        38FB:01DC       0830    ;$F58
+        38FB:01DE       0838    ;$F60
+        38FB:01E0       F625
+        38FB:01E2       3032    ;ANAUS
+        38FB:01E4       0838    ;$F60
+        38FB:01E6       01D8    ;$M235
+        38FB:01E8       01DA    ;&03E-KL030-916
+        38FB:01EA       05B4    ;$WSCRATCH
+					- 36 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:01EC       F626
+        38FB:01EE       301F    ;AWT
+        38FB:01F0       0552    ;A3_FREIGREGELUNG
+        38FB:01F2       04DC    ;$M236
+        38FB:01F4       0834    ;$F59
+        38FB:01F6       083C    ;$F61
+        38FB:01F8       F627
+        38FB:01FA       3032    ;ANAUS
+        38FB:01FC       083C    ;$F61
+        38FB:01FE       01DC    ;$M237
+        38FB:0200       01DE    ;&03E-KL030-919
+        38FB:0202       05B4    ;$WSCRATCH
+        38FB:0204       F628
+        38FB:0206       3038    ;SOLKEN
+        38FB:0208       000C
+        38FB:020A       0034    ;KON01
+        38FB:020C       0728    ;A3-SOLLW-STELLER
+        38FB:020E       05B4    ;$WSCRATCH
+        38FB:0210       F629
+        38FB:0212       302F    ;ANEIN
+        38FB:0214       01E0    ;&03E-KL030-820
+        38FB:0216       06F0    ;A3-RT-STELLER
+        38FB:0218       05B4    ;$WSCRATCH
+        38FB:021A       F62A
+        38FB:021C       3037    ;REGLER
+        38FB:021E       0014
+        38FB:0220       0552    ;A3_FREIGREGELUNG
+        38FB:0222       00BE    ;$WZERO
+        38FB:0224       04E0    ;$M238
+        38FB:0226       0724    ;Y-SIGN-REG20
+        38FB:0228       05B4    ;$WSCRATCH
+        38FB:022A       F62B
+        38FB:022C       301F    ;AWT
+        38FB:022E       0552    ;A3_FREIGREGELUNG
+        38FB:0230       04E4    ;$M239
+        38FB:0232       0724    ;Y-SIGN-REG20
+        38FB:0234       0840    ;$F62
+        38FB:0236       F62C
+        38FB:0238       3032    ;ANAUS
+        38FB:023A       0840    ;$F62
+        38FB:023C       01E2    ;$M240
+        38FB:023E       01E4    ;&03E-KL030-817
+        38FB:0240       05B4    ;$WSCRATCH
+        38FB:0242       F62D
+        38FB:0244       302F    ;ANEIN
+        38FB:0246       01E6    ;&03E-KL030-132
+        38FB:0248       0714    ;DRUCK-ZULUFT_A3
+        38FB:024A       05B4    ;$WSCRATCH
+        38FB:024C       F62E
+        38FB:024E       301D    ;PT1
+        38FB:0250       0714    ;DRUCK-ZULUFT_A3
+        38FB:0252       0270    ;FKON30SEK-A3-ZL
+        38FB:0254       072C    ;A3-DRUCK-ZL-PT1
+        38FB:0256       F62F
+        38FB:0258       3032    ;ANAUS
+        38FB:025A       072C    ;A3-DRUCK-ZL-PT1
+        38FB:025C       01E8    ;$M241
+        38FB:025E       01EA    ;&03E-KL030-133
+					- 37 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0260       05B4    ;$WSCRATCH
+        38FB:0262       F630
+        38FB:0264       302F    ;ANEIN
+        38FB:0266       0048    ;&03E-KL030-149
+        38FB:0268       0230    ;KSOL-DR-REG-A3-Z
+        38FB:026A       05B4    ;$WSCRATCH
+        38FB:026C       F631
+        38FB:026E       302C    ;MOKY
+        38FB:0270       0552    ;A3_FREIGREGELUNG
+        38FB:0272       0254    ;FKON30SEK
+        38FB:0274       063A    ;$B69
+        38FB:0276       F632
+        38FB:0278       3037    ;REGLER
+        38FB:027A       001B
+        38FB:027C       0034    ;KON01
+        38FB:027E       063A    ;$B69
+        38FB:0280       0274    ;KON50-FU-ZL-A3
+        38FB:0282       067C    ;STELLGR.REG-27
+        38FB:0284       05B4    ;$WSCRATCH
+        38FB:0286       F633
+        38FB:0288       301F    ;AWT
+        38FB:028A       0552    ;A3_FREIGREGELUNG
+        38FB:028C       04E8    ;$M242
+        38FB:028E       067C    ;STELLGR.REG-27
+        38FB:0290       0844    ;$F63
+        38FB:0292       F634
+        38FB:0294       3032    ;ANAUS
+        38FB:0296       0844    ;$F63
+        38FB:0298       01EC    ;$M243
+        38FB:029A       01EE    ;&03E-KL030-116
+        38FB:029C       05B4    ;$WSCRATCH
+        38FB:029E       F635
+        38FB:02A0       302F    ;ANEIN
+        38FB:02A2       01F0    ;&03E-KL030-232
+        38FB:02A4       0658    ;DRUCK-ABLUFT
+        38FB:02A6       05B4    ;$WSCRATCH
+        38FB:02A8       F636
+        38FB:02AA       301D    ;PT1
+        38FB:02AC       0658    ;DRUCK-ABLUFT
+        38FB:02AE       0264    ;FKON30SEK-A3-AB
+        38FB:02B0       0730    ;A3-DRUCK-AB-PT1
+        38FB:02B2       F637
+        38FB:02B4       3032    ;ANAUS
+        38FB:02B6       0730    ;A3-DRUCK-AB-PT1
+        38FB:02B8       01F2    ;$M244
+        38FB:02BA       01F4    ;&03E-KL030-233
+        38FB:02BC       05B4    ;$WSCRATCH
+        38FB:02BE       F638
+        38FB:02C0       302F    ;ANEIN
+        38FB:02C2       004C    ;&03E-KL030-249
+        38FB:02C4       0238    ;KSOL-DR-REG-A3-A
+        38FB:02C6       05B4    ;$WSCRATCH
+        38FB:02C8       F639
+        38FB:02CA       302C    ;MOKY
+        38FB:02CC       0552    ;A3_FREIGREGELUNG
+        38FB:02CE       0254    ;FKON30SEK
+        38FB:02D0       063C    ;$B70
+        38FB:02D2       F63A
+					- 38 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:02D4       3037    ;REGLER
+        38FB:02D6       001C
+        38FB:02D8       0034    ;KON01
+        38FB:02DA       063C    ;$B70
+        38FB:02DC       027C    ;KON50-FU-ABL-A3
+        38FB:02DE       0654    ;STELLGR.REG-28
+        38FB:02E0       05B4    ;$WSCRATCH
+        38FB:02E2       F63B
+        38FB:02E4       301F    ;AWT
+        38FB:02E6       0552    ;A3_FREIGREGELUNG
+        38FB:02E8       04EC    ;$M245
+        38FB:02EA       0654    ;STELLGR.REG-28
+        38FB:02EC       0848    ;$F64
+        38FB:02EE       F63C
+        38FB:02F0       3032    ;ANAUS
+        38FB:02F2       0848    ;$F64
+        38FB:02F4       01F6    ;$M246
+        38FB:02F6       01F8    ;&03E-KL030-216
+        38FB:02F8       05B4    ;$WSCRATCH
+        38FB:02FA       F63D
+        38FB:02FC       3034    ;SETMEL
+        38FB:02FE       01FA    ;$M247
+        38FB:0300       0002
+        38FB:0302       0524    ;LU2-AUTO__ISTEIN
+        38FB:0304       0510    ;LU3-AUTO__ISTEIN
+        38FB:0306       01FC    ;&HIGHBUS_ANL.2EIN
+        38FB:0308       0558    ;ERR_HIGH5
+        38FB:030A       F63E
+        38FB:030C       3031    ;MELEIN
+        38FB:030E       0200    ;&INT-MEL-HIGH-K2
+        38FB:0310       0001
+        38FB:0312       056A    ;KAELTE_AUS_K2
+        38FB:0314       056C    ;HIGH-BUS-K2-STOE
+        38FB:0316       F63F
+        38FB:0318       3031    ;MELEIN
+        38FB:031A       0202    ;&M248
+        38FB:031C       0001
+        38FB:031E       056E    ;03E-KL020-122
+        38FB:0320       05B4    ;$WSCRATCH
+        38FB:0322       F640
+        38FB:0324       3031    ;MELEIN
+        38FB:0326       0204    ;&M249
+        38FB:0328       0001
+        38FB:032A       0570    ;03E-KL020-104
+        38FB:032C       05B4    ;$WSCRATCH
+        38FB:032E       F641
+        38FB:0330       3031    ;MELEIN
+        38FB:0332       0206    ;&M250
+        38FB:0334       0001
+        38FB:0336       0572    ;03E-KL020-203
+        38FB:0338       05B4    ;$WSCRATCH
+        38FB:033A       F642
+        38FB:033C       3031    ;MELEIN
+        38FB:033E       0208    ;&M251
+        38FB:0340       0001
+        38FB:0342       0574    ;03E-KL020-320
+        38FB:0344       05B4    ;$WSCRATCH
+        38FB:0346       F643
+					- 39 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0348       3031    ;MELEIN
+        38FB:034A       020A    ;&M252
+        38FB:034C       0001
+        38FB:034E       0576    ;03E-KL020-325
+        38FB:0350       05B4    ;$WSCRATCH
+        38FB:0352       F644
+        38FB:0354       3031    ;MELEIN
+        38FB:0356       020C    ;&M253
+        38FB:0358       0001
+        38FB:035A       0578    ;03E-KL020-503
+        38FB:035C       05B4    ;$WSCRATCH
+        38FB:035E       F645
+        38FB:0360       3031    ;MELEIN
+        38FB:0362       020E    ;&M254
+        38FB:0364       0001
+        38FB:0366       057A    ;03E-KL020-525
+        38FB:0368       05B4    ;$WSCRATCH
+        38FB:036A       F646
+        38FB:036C       3031    ;MELEIN
+        38FB:036E       0210    ;&M255
+        38FB:0370       0001
+        38FB:0372       057C    ;03E-KL020-703
+        38FB:0374       05B4    ;$WSCRATCH
+        38FB:0376       F647
+        38FB:0378       3031    ;MELEIN
+        38FB:037A       0212    ;&M256
+        38FB:037C       0001
+        38FB:037E       057E    ;03E-KL020-725
+        38FB:0380       05B4    ;$WSCRATCH
+        38FB:0382       F648
+        38FB:0384       3031    ;MELEIN
+        38FB:0386       0214    ;&M257
+        38FB:0388       0001
+        38FB:038A       058C    ;03E-KL020-507
+        38FB:038C       05B4    ;$WSCRATCH
+        38FB:038E       F649
+        38FB:0390       3031    ;MELEIN
+        38FB:0392       0216    ;&M258
+        38FB:0394       0001
+        38FB:0396       0590    ;03E-KL020-706
+        38FB:0398       05B4    ;$WSCRATCH
+        38FB:039A       F64A
+        38FB:039C       3014    ;ODRMN
+        38FB:039E       000E
+        38FB:03A0       0530    ;KEILR-ZUL-ANL02
+        38FB:03A2       0556    ;KEILR-ABL-ANL02
+        38FB:03A4       0532    ;ACM_ZL_SAM-ST-A2
+        38FB:03A6       052A    ;ACM_AB_SAM-ST-A2
+        38FB:03A8       056E    ;03E-KL020-122
+        38FB:03AA       0570    ;03E-KL020-104
+        38FB:03AC       0572    ;03E-KL020-203
+        38FB:03AE       0574    ;03E-KL020-320
+        38FB:03B0       0576    ;03E-KL020-325
+        38FB:03B2       0578    ;03E-KL020-503
+        38FB:03B4       057A    ;03E-KL020-525
+        38FB:03B6       057C    ;03E-KL020-703
+        38FB:03B8       058C    ;03E-KL020-507
+        38FB:03BA       059E    ;NOT-AUSAUSGELOES
+					- 40 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:03BC       0000
+        38FB:03BE       063E    ;$B71
+        38FB:03C0       05B4    ;$WSCRATCH
+        38FB:03C2       F64B
+        38FB:03C4       3014    ;ODRMN
+        38FB:03C6       0003
+        38FB:03C8       0590    ;03E-KL020-706
+        38FB:03CA       0592    ;A02_ABL_AUTO_ST
+        38FB:03CC       0594    ;A02_ZUL_AUTO_ST
+        38FB:03CE       0000
+        38FB:03D0       0640    ;$B72
+        38FB:03D2       05B4    ;$WSCRATCH
+        38FB:03D4       F64C
+        38FB:03D6       3013    ;ODR2
+        38FB:03D8       063E    ;$B71
+        38FB:03DA       0640    ;$B72
+        38FB:03DC       0642    ;$B73
+        38FB:03DE       F64D
+        38FB:03E0       302B    ;VVZ
+        38FB:03E2       0642    ;$B73
+        38FB:03E4       04F0    ;$M259
+        38FB:03E6       04F4    ;$M260
+        38FB:03E8       0644    ;$B74
+        38FB:03EA       F64E
+        38FB:03EC       3034    ;SETMEL
+        38FB:03EE       0218    ;$M261
+        38FB:03F0       0001
+        38FB:03F2       0644    ;$B74
+        38FB:03F4       021A    ;&03E-KL020-950
+        38FB:03F6       05B4    ;$WSCRATCH
+        38FB:03F8       F64F
+        38FB:03FA       3031    ;MELEIN
+        38FB:03FC       021C    ;&M262
+        38FB:03FE       0001
+        38FB:0400       0580    ;03E-KL030-122
+        38FB:0402       05B4    ;$WSCRATCH
+        38FB:0404       F650
+        38FB:0406       3031    ;MELEIN
+        38FB:0408       021E    ;&M263
+        38FB:040A       0001
+        38FB:040C       0582    ;03E-KL030-104
+        38FB:040E       05B4    ;$WSCRATCH
+        38FB:0410       F651
+        38FB:0412       3031    ;MELEIN
+        38FB:0414       0220    ;&M264
+        38FB:0416       0001
+        38FB:0418       0584    ;03E-KL030-222
+        38FB:041A       05B4    ;$WSCRATCH
+        38FB:041C       F652
+        38FB:041E       3031    ;MELEIN
+        38FB:0420       0222    ;&M265
+        38FB:0422       0001
+        38FB:0424       0586    ;03E-KL030-204
+        38FB:0426       05B4    ;$WSCRATCH
+        38FB:0428       F653
+        38FB:042A       3031    ;MELEIN
+        38FB:042C       0224    ;&M266
+        38FB:042E       0001
+					- 41 -
+
+Micas-Konverter V4.33      29zp2002.LST
+Hardware: ZP20, Modul  2			  Donnerstag 03.02.111  19:19
+
+        38FB:0430       0588    ;03E-KL030-503
+        38FB:0432       05B4    ;$WSCRATCH
+        38FB:0434       F654
+        38FB:0436       3031    ;MELEIN
+        38FB:0438       0226    ;&M267
+        38FB:043A       0001
+        38FB:043C       058A    ;03E-KL030-525
+        38FB:043E       05B4    ;$WSCRATCH
+        38FB:0440       F655
+        38FB:0442       3031    ;MELEIN
+        38FB:0444       0228    ;&M268
+        38FB:0446       0001
+        38FB:0448       058E    ;03E-KL030-507
+        38FB:044A       05B4    ;$WSCRATCH
+        38FB:044C       F656
+        38FB:044E       3014    ;ODRMN
+        38FB:0450       000E
+        38FB:0452       0564    ;KEILR-ZUL-ANL03
+        38FB:0454       0562    ;KEILR-ABL-ANL03
+        38FB:0456       053E    ;ACM_ZL_SAM-ST-A3
+        38FB:0458       0548    ;ACM_AB_SAM-ST-A3
+        38FB:045A       0580    ;03E-KL030-122
+        38FB:045C       0582    ;03E-KL030-104
+        38FB:045E       0584    ;03E-KL030-222
+        38FB:0460       0586    ;03E-KL030-204
+        38FB:0462       0588    ;03E-KL030-503
+        38FB:0464       058A    ;03E-KL030-525
+        38FB:0466       058E    ;03E-KL030-507
+        38FB:0468       0596    ;A03_ABL_AUTO_ST
+        38FB:046A       0598    ;A03_ZUL_AUTO_ST
+        38FB:046C       059E    ;NOT-AUSAUSGELOES
+        38FB:046E       0000
+        38FB:0470       0646    ;$B75
+        38FB:0472       05B4    ;$WSCRATCH
+        38FB:0474       F657
+        38FB:0476       302B    ;VVZ
+        38FB:0478       0646    ;$B75
+        38FB:047A       04F8    ;$M269
+        38FB:047C       04FC    ;$M270
+        38FB:047E       0648    ;$B76
+        38FB:0480       F658
+        38FB:0482       3034    ;SETMEL
+        38FB:0484       022A    ;$M271
+        38FB:0486       0001
+        38FB:0488       0648    ;$B76
+        38FB:048A       022C    ;&03E-KL030-950
+        38FB:048C       05B4    ;$WSCRATCH
+        38FB:048E       F659
+        38FB:0490       3000    ;ENDE
+

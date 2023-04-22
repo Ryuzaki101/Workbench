@@ -1,0 +1,1217 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 00_03_12.GPS
+  ;*** Projektname    : MAX-PLANCK-INSTITUT
+  ;*** Projektnummer  : 35101397
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 3
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  E_NS01-00A-S06
+  WordV  A_SAMMEL_ST
+  WordV  E_NS00-23C-S02
+  WordV  ERR
+  WordV  E_NS00-01B-S03
+  WordK  K0_STATUS (0)
+  WordV  E_NS00-01B-S02
+  WordV  E_MS00-07A-S06
+  WordV  E_NS00-01B-S04
+  WordV  E_NS00-01B-S01
+  WordV  E_NS00-23D-S01
+  WordV  E_NS00-23D-S02
+  WordV  E_NS00-03B-S02
+  WordV  E_NS00-03B-S01
+  WordV  E_NS00-02B-S01
+  WordV  Z_HAUPT_ST_1
+  WordV  E_NS00-04B-S02
+  WordV  E_NS00-04B-S03
+  WordV  E_NS00-04B-S04
+  WordV  E_NS00-04B-S01
+  WordV  E_NS00-06B-S02
+  WordV  E_NS01-00A-S04
+  WordV  E_NS00-23C-S01
+  WordV  E_NS00-06B-S01
+  WordV  E_NS00-05B-S01
+  WordV  Z_HAUPT_ST_2
+  WordV  Z_HAUPT_ST_3
+  WordV  E_NS00-07B-S02
+  WordV  E_NS00-07B-S01
+  WordV  E_NS00-08B-S01
+  WordV  E_NS00-09C-S02
+  WordV  E_NS00-09C-S01
+  WordV  E_NS00-09D-S02
+  WordV  E_NS00-09D-S01
+  WordV  E_NS00-09E-S02
+  WordV  E_NS00-09E-S01
+  WordV  E_NS00-02C-S05
+  WordV  Z_HAUPT_ST_4
+  WordV  E_NS00-09F-S02
+  WordV  E_NS00-09F-S01
+  WordV  E_NS00-09G-S02
+  WordV  E_NS00-09G-S01
+  WordV  E_NS00-09H-S02
+  WordV  E_NS00-09H-S01
+  WordV  E_NS00-10C-S02
+  WordV  E_NS00-10C-S01
+  WordV  E_NS00-09C-S05
+  WordV  Z_HAUPT_ST_5
+  WordV  E_NS00-10D-S02
+  WordV  E_NS00-10D-S01
+  WordV  E_NS00-10E-S02
+  WordV  E_NS00-10E-S01
+  WordV  E_NS00-10F-S02
+  WordV  E_NS00-10F-S01
+  WordV  E_NS00-10G-S02
+  WordV  E_NS00-10G-S01
+  WordV  E_NS00-14C-S05
+  WordV  E_NS00-14B-S01
+  WordV  Z_HAUPT_ST_6
+  WordV  E_NS00-10H-S02
+  WordV  E_NS00-10H-S01
+  WordV  E_NS00-11B-S02
+  WordV  E_NS00-11B-S01
+  WordV  E_NS00-11B-S50
+  WordV  E_NS00-12B-S02
+  WordV  E_NS00-12B-S03
+  WordV  E_NS00-12B-S04
+  WordV  E_NS00-12B-S01
+  WordV  Z_HAUPT_ST_7
+  WordV  E_NS00-13B-S02
+  WordV  E_NS00-13B-S03
+  WordV  E_NS00-13B-S04
+  WordV  E_NS00-13B-S01
+  WordV  Z_HAUPT_ST_8
+  WordV  E_NS00-19B-S01
+  WordV  E_NS00-16B-S02
+  WordV  E_NS00-16B-S01
+  WordV  E_NS00-17B-S02
+  WordV  E_NS00-17B-S03
+  WordV  E_NS00-17B-S04
+  WordV  E_NS00-17B-S01
+  WordV  E_NS00-18B-S02
+  WordV  E_NS00-18B-S03
+  WordV  E_NS00-18B-S04
+  WordV  E_NS00-18B-S01
+  WordV  Z_HAUPT_ST_9
+  WordV  E_BA01-00A-S09
+  WordV  E_BA02-00A-S09
+  WordV  E_MS00-08A-S01
+  WordV  Z_HAUPT_ST_10
+  WordV  E_MS00-05A-S06
+  WordV  E_MS00-05A-S01
+  WordV  E_MS00-06A-S06
+  WordV  E_MS00-06A-S01
+  WordV  E_MS00-10A-S06
+  WordV  E_MS00-10A-S01
+  WordV  E_MS00-13A-S06
+  WordV  E_MS00-13A-S01
+  WordV  Z_HAUPT_ST_11
+  WordV  E_MS00-07A-S01
+  WordV  E_MS00-09A-S06
+  WordV  E_MS00-09A-S01
+  WordV  E_MS00-14A-S06
+  WordV  E_MS00-14A-S01
+  WordV  E_MS00-15A-S06
+  WordV  E_MS00-15A-S01
+  WordV  E_GE01-01A-S11
+  WordV  E_GE02-02A-S11
+  WordV  Z_HAUPT_ST_12
+  WordV  E_NS00-06B-S50
+  WordV  E_NS01-00A-S01
+  WordV  E_NS01-00A-S03
+  WordV  E_NS00-23E-S02
+  WordV  E_NS00-23H-S01
+  WordV  E_NS00-23F-S01
+  WordV  E_NS00-23F-S02
+  WordV  E_NS00-23G-S01
+  WordV  E_NS00-23G-S02
+  WordV  E_NS00-23H-S02
+  WordV  Z_HAUPT_ST_13
+  WordV  E_GE10-00A-S01
+  WordV  E_GE10-00A-S02
+  WordV  E_NS00-23E-S01
+  IPAMB &M0 (42,6)
+  WordV  $HB2
+  IPAMB &M1 (42,2)
+  IPAMB &M2 (42,4)
+  IPAMB &M3 (42,5)
+  IPAMB &M4 (42,14)
+  IPAMB &M5 (49,14)
+  IPAMB &M6 (42,12)
+  IPAMB &M7 (42,10)
+  IPAMB &M8 (44,6)
+  IPAMB &M9 (44,2)
+  IPAMB &M10 (44,4)
+  IPAMB &M11 (44,5)
+  IPAMB &M12 (44,14)
+  IPAMB &M13 (44,12)
+  IPAMB &M14 (44,10)
+  IPAMB &M15 (44,13)
+  IPAMB &M16 (49,2)
+  IPAMB &M17 (48,6)
+  IPAMB &M18 (49,6)
+  IPAMB &M19 (49,10)
+  IPAMB &M20 (48,14)
+  IPAMB &M21 (13,14)
+  IPAMB &M22 (55,6)
+  IPAMB &M23 (51,2)
+  IPAMB &M24 (50,6)
+  IPAMB &M25 (51,10)
+  IPAMB &M26 (50,14)
+  IPAMB &M27 (55,2)
+  IPAMB &M28 (54,6)
+  IPAMB &M29 (55,10)
+  IPAMB &M30 (54,14)
+  IPAMB &M31 (57,2)
+  IPAMB &M32 (56,6)
+  IPAMB &M33 (57,10)
+  IPAMB &M34 (56,14)
+  IPAMB &M35 (7,2)
+  IPAMB &M36 (6,6)
+  IPAMB &M37 (7,10)
+  IPAMB &M38 (6,14)
+  IPAMB &M39 (9,2)
+  IPAMB &M40 (8,6)
+  IPAMB &M41 (9,10)
+  IPAMB &M42 (8,14)
+  IPAMB &M43 (13,2)
+  IPAMB &M44 (12,6)
+  IPAMB &M45 (13,10)
+  IPAMB &M46 (12,14)
+  IPAMB &M47 (13,11)
+  IPAMB &M48 (14,6)
+  IPAMB &M49 (14,2)
+  IPAMB &M50 (14,4)
+  IPAMB &M51 (14,5)
+  IPAMB &M52 (14,14)
+  IPAMB &M53 (14,10)
+  IPAMB &M54 (14,12)
+  IPAMB &M55 (14,13)
+  IPAMB &M56 (9,14)
+  IPAMB &M57 (51,14)
+  IPAMB &M58 (18,4)
+  IPAMB &M59 (18,2)
+  IPAMB &M60 (18,14)
+  IPAMB &M61 (18,10)
+  IPAMB &M62 (18,12)
+  IPAMB &M63 (18,13)
+  IPAMB &M64 (20,6)
+  IPAMB &M65 (20,2)
+  IPAMB &M66 (20,4)
+  IPAMB &M67 (20,5)
+  IPAMB &M68 (24,2)
+  IPAMB &M69 (24,6)
+  IPAMB &M70 (38,10)
+  IPAMB &M71 (38,14)
+  IPAMB &M72 (30,6)
+  IPAMB &M73 (30,2)
+  IPAMB &M74 (30,14)
+  IPAMB &M75 (30,10)
+  IPAMB &M76 (32,6)
+  IPAMB &M77 (32,2)
+  IPAMB &M78 (25,2)
+  IPAMB &M79 (32,14)
+  IPAMB &M80 (32,10)
+  IPAMB &M81 (31,6)
+  IPAMB &M82 (31,2)
+  IPAMB &M83 (31,14)
+  IPAMB &M84 (31,10)
+  IPAMB &M85 (33,6)
+  IPAMB &M86 (33,2)
+  IPAMB &M87 (33,14)
+  IPAMB &M88 (33,10)
+  IPAMB &M89 (24,10)
+  IPAMB &M90 (24,11)
+  IPAMB &M91 (24,14)
+  IPAMB &M92 (24,15)
+  IPAMB &M93 (55,15)
+  IPAMB &M94 (55,14)
+  IPAMB &M95 (57,7)
+  IPAMB &M96 (57,6)
+  IPAMB &M97 (57,15)
+  IPAMB &M98 (57,14)
+  IPAMB &M99 (7,7)
+  IPAMB &M100 (7,6)
+  IPAMB &M101 (7,15)
+  IPAMB &M102 (7,14)
+  IPAMB &M103 (9,7)
+  IPAMB &M104 (9,6)
+  IPAMB &M105 (25,15)
+  IPAMB &M106 (25,14)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $HB0
+  IPAMB &M107 (39,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;MAX-PLANCK-INSTITUT
+  ;GÖTTINGEN
+  ;ENERGIEZENTRALE
+  ;SAMMELSTÖRUNG FÜR
+  ;RUFANLAGE
+  ; 
+  ;Compiler -V4
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M0,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-01B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M1,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-01B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M2,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-01B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M3,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-01B-S04)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M4,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-02B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M5,1,E_NS00-02C-S05,ERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M6,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-03B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M7,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-03B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M8,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-04B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M9,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-04B-S02)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M10,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-04B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M11,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-04B-S04)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M12,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-05B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M13,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-06B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M14,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-06B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M15,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-06B-S50)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M16,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-07B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M17,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-07B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M18,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-08B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M19,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09C-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M20,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09C-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M21,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-19B-S01)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M22,1,E_NS00-09C-S05,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M23,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09D-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M24,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09D-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M25,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09E-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M26,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09E-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M27,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09F-S01)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M28,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09F-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M29,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09G-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M30,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09G-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M31,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09H-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M32,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-09H-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M33,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10C-S01)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M34,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10C-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M35,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10D-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M36,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10D-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M37,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10E-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M38,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10E-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M39,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10F-S01)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M40,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10F-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M41,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10G-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M42,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10G-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M43,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10H-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M44,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-10H-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M45,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-11B-S01)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M46,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-11B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M47,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-11B-S50)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M48,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-12B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M49,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-12B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M50,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-12B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M51,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-12B-S04)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M52,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-13B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M53,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-13B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M54,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-13B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M55,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-13B-S04)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M56,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-14B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M57,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-14C-S05)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M58,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-16B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M59,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-16B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M60,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-17B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M61,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-17B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M62,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-17B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M63,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-17B-S04)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M64,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-18B-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M65,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-18B-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M66,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-18B-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M67,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-18B-S04)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M68,1,$HB2,ERR)
+  NICHT ($HB2,E_BA01-00A-S09)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M69,1,$HB2,ERR)
+  NICHT ($HB2,E_BA02-00A-S09)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M70,1,$HB2,ERR)
+  NICHT ($HB2,E_GE01-01A-S11)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M71,1,$HB2,ERR)
+  NICHT ($HB2,E_GE02-02A-S11)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M72,1,E_MS00-05A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M73,1,E_MS00-05A-S06,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M74,1,E_MS00-06A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M75,1,E_MS00-06A-S06,ERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M76,1,E_MS00-07A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M77,1,E_MS00-07A-S06,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M78,1,E_MS00-08A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M79,1,E_MS00-09A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M80,1,E_MS00-09A-S06,ERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M81,1,E_MS00-10A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M82,1,E_MS00-10A-S06,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M83,1,E_MS00-13A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M84,1,E_MS00-13A-S06,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M85,1,E_MS00-14A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M86,1,E_MS00-14A-S06,ERR)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M87,1,E_MS00-15A-S01,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M88,1,E_MS00-15A-S06,ERR)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M89,1,$HB2,ERR)
+  NICHT ($HB2,E_NS01-00A-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M90,1,$HB2,ERR)
+  NICHT ($HB2,E_NS01-00A-S03)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M91,1,$HB2,ERR)
+  NICHT ($HB2,E_NS01-00A-S04)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M92,1,$HB2,ERR)
+  NICHT ($HB2,E_NS01-00A-S06)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M93,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23C-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M94,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23C-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M95,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23D-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M96,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23D-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M97,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23E-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M98,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23E-S02)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M99,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23F-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M100,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23F-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M101,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23G-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M102,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23G-S02)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M103,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23H-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M104,1,$HB2,ERR)
+  NICHT ($HB2,E_NS00-23H-S02)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M105,1,$HB2,ERR)
+  NICHT ($HB2,E_GE10-00A-S01)
+  ;
+  ; 
+  ;
+  ; 
+  MELEIN (&M106,1,$HB2,ERR)
+  NICHT ($HB2,E_GE10-00A-S02)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (9,E_NS00-01B-S02,E_NS00-01B-S03,E_NS00-01B-S04,
+         E_NS00-01B-S01,K0_STATUS,E_NS00-03B-S02,K0_STATUS,
+         K0_STATUS,E_NS00-03B-S01,0,$B1,$WSCRATCH)
+  ODRMN (3,K0_STATUS,E_NS00-02B-S01,E_NS00-02C-S05,0,$B2,
+         $WSCRATCH)
+  ODR2 ($B1,$B2,Z_HAUPT_ST_1)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;1, 2, 3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (9,E_NS00-04B-S02,E_NS00-04B-S03,E_NS00-04B-S04,
+         E_NS00-04B-S01,K0_STATUS,E_NS00-06B-S02,K0_STATUS,
+         E_NS00-06B-S50,E_NS00-06B-S01,0,$B3,$WSCRATCH)
+  ODRMN (3,K0_STATUS,E_NS00-05B-S01,K0_STATUS,0,$B4,
+         $WSCRATCH)
+  ODR2 ($B3,$B4,Z_HAUPT_ST_2)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;4, 5, 6
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODRMN (9,E_NS00-07B-S02,E_NS00-07B-S01,K0_STATUS,
+         E_NS00-08B-S01,K0_STATUS,E_NS00-09C-S02,
+         E_NS00-09C-S01,E_NS00-09C-S05,E_NS00-09D-S02,0,$B5,
+         $WSCRATCH)
+  ODRMN (3,E_NS00-09D-S01,E_NS00-09E-S02,E_NS00-09E-S01,0,
+         $B6,$WSCRATCH)
+  ODR2 ($B5,$B6,Z_HAUPT_ST_3)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;7, 8, 9C, 9D, 9E
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (9,E_NS00-09F-S02,E_NS00-09F-S01,K0_STATUS,
+         E_NS00-09G-S02,E_NS00-09G-S01,K0_STATUS,
+         E_NS00-09H-S02,E_NS00-09H-S01,K0_STATUS,0,$B7,
+         $WSCRATCH)
+  ODRMN (3,E_NS00-10C-S02,E_NS00-10C-S01,K0_STATUS,0,$B8,
+         $WSCRATCH)
+  ODR2 ($B7,$B8,Z_HAUPT_ST_4)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;9F, 9G, 9H, 10C
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (9,E_NS00-10D-S02,E_NS00-10D-S01,K0_STATUS,
+         E_NS00-10E-S02,E_NS00-10E-S01,K0_STATUS,
+         E_NS00-10F-S02,E_NS00-10F-S01,E_NS00-10G-S02,0,$B9,
+         $WSCRATCH)
+  ODRMN (3,E_NS00-10G-S01,E_NS00-14C-S05,E_NS00-14B-S01,0,
+         $B10,$WSCRATCH)
+  ODR2 ($B9,$B10,Z_HAUPT_ST_5)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;10D, 10E, 10F, 10G, 14
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODRMN (9,E_NS00-10H-S02,E_NS00-10H-S01,K0_STATUS,
+         E_NS00-11B-S02,E_NS00-11B-S01,E_NS00-11B-S50,
+         K0_STATUS,E_NS00-12B-S02,E_NS00-12B-S03,0,$B11,
+         $WSCRATCH)
+  ODRMN (3,E_NS00-12B-S04,E_NS00-12B-S01,K0_STATUS,0,$B12,
+         $WSCRATCH)
+  ODR2 ($B11,$B12,Z_HAUPT_ST_6)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;10H, 11 , 12
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ODRMN (9,E_NS00-13B-S02,E_NS00-13B-S03,E_NS00-13B-S04,
+         E_NS00-13B-S01,K0_STATUS,E_NS00-19B-S01,K0_STATUS,
+         K0_STATUS,K0_STATUS,0,$B13,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B14,$WSCRATCH)
+  ODR2 ($B13,$B14,Z_HAUPT_ST_7)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;13, 19
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ODRMN (9,E_NS00-16B-S02,E_NS00-16B-S01,K0_STATUS,
+         E_NS00-17B-S02,E_NS00-17B-S03,E_NS00-17B-S04,
+         E_NS00-17B-S01,K0_STATUS,E_NS00-18B-S02,0,$B15,
+         $WSCRATCH)
+  ODRMN (3,E_NS00-18B-S03,E_NS00-18B-S04,E_NS00-18B-S01,0,
+         $B16,$WSCRATCH)
+  ODR2 ($B15,$B16,Z_HAUPT_ST_8)
+  ;SAMMELSTÖRUNG
+  ;NIEDERSPANNUNG
+  ;FELD:
+  ;16, 17, 18
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ODRMN (9,E_BA01-00A-S09,E_BA02-00A-S09,K0_STATUS,
+         E_MS00-08A-S01,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,0,$B17,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B18,$WSCRATCH)
+  ODR2 ($B17,$B18,Z_HAUPT_ST_9)
+  ;SAMMELSTÖRUNG
+  ;MITTELSPANNUNG
+  ;FELD:
+  ;8
+  ;BATTERIE
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODRMN (9,E_MS00-05A-S06,E_MS00-05A-S01,K0_STATUS,
+         E_MS00-06A-S06,E_MS00-06A-S01,K0_STATUS,
+         E_MS00-10A-S06,E_MS00-10A-S01,K0_STATUS,0,$B19,
+         $WSCRATCH)
+  ODRMN (3,E_MS00-13A-S06,E_MS00-13A-S01,K0_STATUS,0,$B20,
+         $WSCRATCH)
+  ODR2 ($B19,$B20,Z_HAUPT_ST_10)
+  ;SAMMELSTÖRUNG
+  ;MITTELSPANNUNG
+  ;FELD:
+  ;5, 6, 10, 13
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODRMN (9,E_MS00-07A-S06,E_MS00-07A-S01,K0_STATUS,
+         E_MS00-09A-S06,E_MS00-09A-S01,K0_STATUS,
+         E_MS00-14A-S06,E_MS00-14A-S01,K0_STATUS,0,$B21,
+         $WSCRATCH)
+  ODRMN (3,E_MS00-15A-S06,E_MS00-15A-S01,K0_STATUS,0,$B22,
+         $WSCRATCH)
+  ODR2 ($B21,$B22,Z_HAUPT_ST_11)
+  ;SAMMELSTÖRUNG
+  ;MITTELSPANNUNG
+  ;FELD:
+  ;7, 9, 14, 15
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODRMN (9,E_GE01-01A-S11,E_GE02-02A-S11,K0_STATUS,
+         E_NS01-00A-S01,E_NS01-00A-S03,E_NS01-00A-S04,
+         E_NS01-00A-S06,K0_STATUS,K0_STATUS,0,$B23,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B24,$WSCRATCH)
+  ODR2 ($B23,$B24,Z_HAUPT_ST_12)
+  ;SAMMELSTÖRUNG
+  ;GENERATOR
+  ;EIGENBEDARF
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ODRMN (9,E_NS00-23C-S01,E_NS00-23C-S02,E_NS00-23D-S01,
+         E_NS00-23D-S02,E_NS00-23E-S01,E_NS00-23E-S02,
+         E_NS00-23F-S01,E_NS00-23F-S02,$WZERO,0,$B25,
+         $WSCRATCH)
+  ODRMN (9,E_NS00-23G-S01,E_NS00-23G-S02,E_NS00-23H-S01,
+         E_NS00-23H-S02,E_NS01-00A-S03,E_NS01-00A-S04,
+         E_NS01-00A-S06,E_GE10-00A-S01,E_GE10-00A-S02,0,$B26,
+         $WSCRATCH)
+  ODR2 ($B25,$B26,Z_HAUPT_ST_13)
+  ;SAMMELSTÖRUNG
+  ;N23
+  ;BHKW
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ODRMN (9,Z_HAUPT_ST_1,Z_HAUPT_ST_2,Z_HAUPT_ST_3,
+         Z_HAUPT_ST_4,Z_HAUPT_ST_5,Z_HAUPT_ST_6,Z_HAUPT_ST_7,
+         Z_HAUPT_ST_8,Z_HAUPT_ST_9,0,$B27,$WSCRATCH)
+  ODRMN (3,Z_HAUPT_ST_10,Z_HAUPT_ST_11,Z_HAUPT_ST_12,0,$B28,
+         $WSCRATCH)
+  ODR2 ($B27,$B28,$B29)
+  ODRMN (9,Z_HAUPT_ST_13,K0_STATUS,K0_STATUS,K0_STATUS,
+         K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,K0_STATUS,0,
+         $B30,$WSCRATCH)
+  ODRMN (3,K0_STATUS,K0_STATUS,K0_STATUS,0,$B31,$WSCRATCH)
+  ODR2 ($B30,$B31,$B32)
+  ODR2 ($B29,$B32,A_SAMMEL_ST)
+  ;SAMMELSTÖRUNG
+  ;FÜR RUFANLAGE
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ;
+  ; 
+  NICHT (A_SAMMEL_ST,$HB0)
+  BEFAUS (1,$HB0,A_SAMMEL_ST,$WZERO,$WZERO,&M107,ERR)
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,915 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0303.GPS
+  ;*** Projektname    : ALLDATA
+  ;*** Projektnummer  : 23100965
+  ;*** Bearbeiter     : Wolfgang Donner
+  ;*** PrÅfer         : Wolfgang Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 3
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (AR20,3)
+  WordV  A07-ZUL-RM-EIN1
+  WordV  ZPK
+  WordV  A07-WRG-RM-ST
+  WordK  KON00 (0)
+  WordK  FREIG-EIN-GLT (1)
+  WordV  A7-Hand-Luefter
+  WordV  A09-ZUL-RM-AUS
+  WordV  A07-VE-RM-ST
+  WordV  BA1LU0900BM10RM
+  FloatV A7-SOLLW-BEF-ZUL
+  FloatV A7-STELL-WRG
+  FloatV A7-SIG-ENTFEUCHT
+  FloatV A7-SIG-WRG-ZUL
+  WordV  A7-BEFEUCHT-EIN
+  WordV  A07-REP-ZUL
+  WordV  A07-REP-ABL
+  WordV  A07-WRG-RM-EIN1
+  FloatV A07-ABL-TEMP
+  FloatV A07-ABS-FEU-ZUL
+  FloatK FKON5-MIN-WRG (5.00)
+  FloatV A7-Y-FROST
+  FloatK KON02-G-KG (2.00)
+  WordK  FREIG-AUS-GLT (0)
+  WordV  A07-MAX-DRUCK-ZU
+  WordV  A07-WRG-STôRUNG
+  FloatV A7-STELL-VORERH
+  WordK  KON01 (1)
+  FloatV A7-SIG-WRG-TAU
+  FloatV Y-SIGNAL-ZUL-REG
+  FloatV A7-SIG-KUEH-ZUL
+  FloatV Y-SIGNAL-TAUPREG
+  FloatV A7-Y-SIG-ZUL-DR
+  FloatV A7-Y-SIG-ABL-DR
+  WordV  A07-ZUL-AUTO-ST
+  FloatV A7-SIG-VORH-TAU
+  WordV  A7-ZUL-KEIL-ST
+  WordV  A7-ABL-FU-ST
+  FloatK FKONABL-50PA (50.00)
+  FloatV A07-ZUL-FEUCHTE
+  WordV  A7-FREIG-LU-EIN
+  WordV  A7-ZUL-FU-ST
+  WordV  A7-FREIG-LU-AUS
+  WordV  A7-ANLAGE-EIN1
+  WordV  A07-ABL-RM-ST
+  WordV  A07-ABL-RM-EIN1
+  WordV  A07-ABKL-RM-ST
+  WordV  A07-ABKL-RM-EIN1
+  WordV  A7-ANLAGE-AUS
+  WordV  ZPK-OE
+  WordV  A07-BEF-RM-ST
+  FloatV A07-AUSSEN-TEMP
+  WordV  A7-ABL-KEIL-ST
+  FloatK FKONZUL-50PA (50.00)
+  FloatV A07-ABS-FEU-ABL
+  WordV  QUITTIERUNG-A7
+  WordV  Fernquit_a7-ein
+  WordV  A07-ABL-AUTO-ST
+  FloatK A7-SOLLW-TAUPUNK (18.00)
+  FloatK A7-SOLLW-ZULTEMP (18.00)
+  FloatK A7-SW-DRUCK-ZUL (460.00)
+  FloatK A7-SW-DRUCK-ABL (460.00)
+  WordV  A07-ZUL-RM-AUS
+  WordV  A07-ZUL-RM-ST
+  WordV  A07-ABL-RM-AUS
+  WordV  A07-VE-RM-AUS
+  WordV  A07-VE-RM-EIN1
+  WordV  A07-ABKL-RM-AUS
+  WordV  A07-BEF-RM-AUS
+  WordV  A07-BEF-RM-EIN1
+  WordV  A07-WRG-RM-AUS
+  WordV  A07-MAX-DRUCK-AB
+  WordV  A07-RAUCHMELDER
+  WordV  A7-FROST-GF
+  WordV  A7-FEUCH-MAX-ZUL
+  FloatV A07-VE-RL-TEMP
+  FloatV A07-ZUL-TEMP
+  FloatV A07-ZUL-DRUCK
+  FloatV A07-ABL-DRUCK
+  FloatV A07-RAUM-EG-TEMP
+  FloatV A07-TAUP-TEMP
+  FloatV A07-ABL-FEUCHTE
+  WordV  A07-ABL-MAXDRUCK
+  WordV  A07-ZUL-MAXDRUCK
+  FloatV A7-SIG-BEFEUCHT
+  WordV  WERR
+  FloatK A07-SW-FREIG-BEF (45.00)
+  WordV  SAMMELSTANL07
+  WordV  Fernquit_a7-aus
+  WordV  STOER-ANL-11
+  FloatV A07-SW-ABS-F-BEF
+  FloatV A07-SW-ABS-F-ENT
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU0700BF01 (126,1)
+  WordK  $M0 (1)
+  IPAAW &BA1LU0700AA33 (100)
+  WordK  $M1 (1)
+  IPAAW &BA1LU0700AA95 (93)
+  WordK  $M2 (1)
+  IPAAW &BA1LU0700AA92 (90)
+  WordK  $M3 (1)
+  IPAAW &BA1LU0700AA61 (116)
+  WordK  $M4 (1)
+  IPAAW &BA1LU0700AA62 (117)
+  IPAMB &M5 (126,0)
+  IPAMB &M6 (126,2)
+  IPAMB &M7 (126,3)
+  IPAMB &BA1LU0700BM10 (0,1)
+  IPAMB &M8 (0,2)
+  IPAMB &M9 (0,3)
+  IPAMB &BA1LU0700BM40 (1,1)
+  IPAMB &M10 (1,2)
+  IPAMB &M11 (1,3)
+  IPAMB &BA1LU0700BM20 (1,5)
+  IPAMB &M12 (1,6)
+  IPAMB &M13 (1,7)
+  IPAMB &BA1LU0700BM50 (0,5)
+  IPAMB &M14 (0,6)
+  IPAMB &M15 (0,7)
+  IPAMB &BA1LU0700BM30 (15,1)
+  IPAMB &M16 (15,2)
+  IPAMB &M17 (15,3)
+  IPAMB &BA1LU0700BM51 (2,9)
+  IPAMB &M18 (2,10)
+  IPAMB &M19 (2,11)
+  IPAMB &BA1LU0700ST51 (6,2)
+  IPAMB &BA1LU0700WA11 (6,6)
+  WordV  $HB2
+  IPAMB &BA1LU0700WA21 (6,7)
+  IPAMB &BA1LU0700AL01 (7,4)
+  IPAMB &BA1LU0700GF01 (7,5)
+  WordV  $HB3
+  WordV  $HB4
+  IPAMB &BA1LU0700ST01 (6,0)
+  IPAMB &BA1LU0700ST02 (6,1)
+  IPAMB &BA1LU0700ST30 (11,1)
+  IPAMB &BA1LU0700WA70 (0,10)
+  IPAMB &BA1LU1100BM99 (125,15)
+  IPAAW &BA1LU0700MW09 (23)
+  IPAAW &BA1LU0700MW22 (22)
+  IPAAW &BA1LU0700MW03 (20)
+  IPAAW &BA1LU0700MW41 (36)
+  IPAAW &BA1LU0700MW42 (37)
+  IPAAW &BA1LU0700MW00 (24)
+  IPAAW &BA1LU0700MW13 (32)
+  IPAAW &BA1LU0700MW38 (30)
+  IPAAW &BA1LU0700MW02 (21)
+  IPAAW &BA1LU0700MW39 (28)
+  IPAAW &BA1LU0700AA32 (111)
+  IPAAW &BA1LU0700AA31 (110)
+  WordV  $B1
+  WordV  $B2
+  FloatK $M20 (120.00)
+  FloatK $M21 (0.00)
+  WordV  $B3
+  WordV  $WSCRATCH
+  WordK  $M22 (1)
+  IPAMB &BA1LU0700ST83 (127,6)
+  WordV  $B4
+  WordV  $B5
+  FloatK $M23 (120.00)
+  FloatK $M24 (0.00)
+  WordV  $B6
+  WordK  $M25 (1)
+  IPAMB &BA1LU0700ST82 (127,5)
+  IPAMB &BA1LU0700BF02 (126,5)
+  IPAMB &M26 (126,6)
+  IPAMB &M27 (126,7)
+  IPAMB &BA1LU0700BM99 (15,11)
+  WordV  $B7
+  WordV  $B8
+  FloatK $M28 (5.00)
+  WordV  $B9
+  WordV  $B10
+  WordV  $HB0
+  IPAMB &BA1LU0700BF03 (126,9)
+  WordV  $B11
+  FloatK $M29 (300.00)
+  FloatK $M30 (0.00)
+  WordV  $B12
+  WordK  $M31 (1)
+  IPAMB &BA1LU0700ST77 (127,0)
+  WordV  $B13
+  WordV  $B14
+  FloatK $M32 (300.00)
+  FloatK $M33 (0.00)
+  WordV  $B15
+  WordK  $M34 (1)
+  IPAMB &BA1LU0700ST78 (127,1)
+  WordK  $M35 (1)
+  IPAMB &BA1LU0700ST84 (127,7)
+  WordK  $M36 (1)
+  IPAMB &BA1LU0700ST85 (127,8)
+  FloatK $M37 (0.00)
+  FloatK $M38 (100.00)
+  FloatV $F5
+  WordV  $B21
+  FloatK $M39 (600.00)
+  FloatK $M40 (0.00)
+  WordV  $B22
+  FloatK $M41 (1.00)
+  FloatK $M42 (0.50)
+  WordV  $B16
+  FloatK $M43 (1.00)
+  FloatK $M44 (0.50)
+  WordV  $B17
+  FloatK $M45 (10.00)
+  FloatK $M46 (1.00)
+  WordV  $B25
+  FloatK $M47 (29.00)
+  FloatK $M48 (2.00)
+  WordV  $B26
+  WordV  $HB1
+  WordV  $B27
+  WordV  $B18
+  FloatK $M49 (30.00)
+  FloatK $M50 (10.00)
+  FloatV $F7
+  FloatK $M51 (0.00)
+  WordK  $M52 (2)
+  FloatK $M53 (2.00)
+  FloatK $M54 (10.00)
+  FloatK $M55 (300.00)
+  FloatK $M56 (0.00)
+  FloatK $M57 (0.00)
+  FloatK $M58 (40.00)
+  FloatK $M59 (0.00)
+  FloatK $M60 (0.00)
+  FloatK $M61 (100.00)
+  FloatV $F8
+  FloatK $M62 (10.00)
+  FloatK $M63 (0.00)
+  WordK  $M64 (2)
+  FloatK $M65 (2.00)
+  FloatK $M66 (10.00)
+  FloatK $M67 (300.00)
+  FloatK $M68 (0.00)
+  FloatK $M69 (0.00)
+  FloatK $M70 (20.00)
+  FloatK $M71 (0.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (100.00)
+  FloatV $F1
+  FloatK $M74 (0.00)
+  FloatV $F2
+  WordV  $B24
+  FloatK $M75 (10.00)
+  FloatV $F6
+  FloatK $M76 (5.00)
+  FloatK $M77 (1.00)
+  WordV  $B23
+  WordV  $B19
+  FloatK $M78 (10.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B20
+  FloatK $M79 (0.00)
+  FloatV $F3
+  FloatK $M80 (0.00)
+  FloatV $F4
+  WordV  $B30
+  FloatK $M81 (120.00)
+  FloatK $M82 (0.00)
+  FloatV $F9
+  FloatK $M83 (0.00)
+  FloatK $M84 (1800.00)
+  FloatV $F10
+  WordV  $B33
+  FloatK $M85 (3.00)
+  FloatK $M86 (2.00)
+  WordV  $B36
+  FloatK $M87 (0.00)
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  FloatV $F11
+  FloatK $M88 (172800.00)
+  WordV  $B40
+  FloatK $M89 (300.00)
+  WordV  $B34
+  WordV  $B41
+  WordV  $B35
+  WordV  $B31
+  WordV  $B42
+  WordV  $B32
+  FloatK $M90 (4.00)
+  FloatK $M91 (0.00)
+  WordV  $B43
+  WordK  $M92 (1)
+  IPAMB &BA1LU0700ST81 (127,4)
+  FloatK $M93 (0.00)
+  FloatK $M94 (0.00)
+  FloatK $M95 (0.00)
+  FloatK $M96 (50.00)
+  FloatK $M97 (100.00)
+  FloatK $M98 (50.00)
+  FloatK $M99 (0.00)
+  FloatK $M100 (100.00)
+  FloatK $M101 (100.00)
+  FloatK $M102 (0.00)
+  FloatV $F12
+  WordK  $M103 (1)
+  IPAAW &BA1LU0700AA01 (74)
+  FloatV $F13
+  FloatK $M104 (0.00)
+  WordK  $M105 (1)
+  IPAAW &BA1LU0700AA51 (72)
+  FloatK $M106 (0.00)
+  FloatK $M107 (60.00)
+  FloatK $M108 (0.00)
+  FloatK $M109 (100.00)
+  FloatK $M110 (100.00)
+  FloatV $F14
+  FloatK $M111 (0.00)
+  FloatV $F15
+  WordK  $M112 (1)
+  IPAAW &BA1LU0700AA03 (76)
+  FloatK $M113 (40.00)
+  FloatK $M114 (0.00)
+  FloatK $M115 (60.00)
+  FloatK $M116 (100.00)
+  FloatK $M117 (0.00)
+  FloatK $M118 (100.00)
+  FloatK $M119 (40.00)
+  FloatK $M120 (0.00)
+  FloatV $F16
+  FloatK $M121 (0.00)
+  FloatV $F17
+  WordK  $M122 (1)
+  IPAAW &BA1LU0700AA02 (75)
+  FloatK $M123 (20.00)
+  FloatV $F18
+  FloatK $M124 (0.00)
+  FloatK $M125 (0.00)
+  FloatV $F19
+  WordK  $M126 (1)
+  IPAAW &BA1LU0700AA41 (70)
+  WordK  $M127 (1)
+  IPAAW &BA1LU0700AA63 (118)
+  FloatK $M128 (20.00)
+  FloatV $F20
+  WordK  $M129 (1)
+  IPAAW &BA1LU0700AA64 (119)
+  FloatK $M130 (0.00)
+  FloatK $M131 (0.00)
+  FloatV $F21
+  WordK  $M132 (1)
+  IPAAW &BA1LU0700AA42 (71)
+  FloatK $M133 (101300.00)
+  WordK  $M134 (1)
+  IPAAW &BA1LU0700MW32 (67)
+  FloatK $M135 (101300.00)
+  WordK  $M136 (1)
+  IPAAW &BA1LU0700MW31 (66)
+  FloatK $M137 (0.00)
+  FloatV $F22
+  FloatV $F23
+  WordK  $M138 (1)
+  WordK  $M139 (1)
+  FloatK $M140 (0.00)
+  FloatK $M141 (0.00)
+  FloatK $M142 (3.00)
+  WordV  $B44
+  WordV  $B45
+  FloatK $M143 (3.00)
+  FloatK $M144 (2.00)
+  WordV  $B49
+  FloatK $M145 (0.00)
+  FloatK $M146 (300.00)
+  WordV  $B50
+  WordV  $B51
+  WordV  $B52
+  FloatV $F25
+  FloatK $M147 (172800.00)
+  WordV  $B53
+  FloatK $M148 (300.00)
+  WordV  $B47
+  WordV  $B54
+  WordV  $B48
+  WordV  $B46
+  FloatK $M149 (0.00)
+  FloatV $F24
+  WordK  $M150 (1)
+  IPAAW &BA1LU0700AA30 (85)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE :
+  ;--------
+  ;Anlage 07 BÅros 1.1-1.4
+  ;STEUERUNG UND REGELUNG
+  ; 
+  ;MODUL - EINBAU - ORT :
+  ;----------------------
+  ;LöFTUNGSCHALTSCHRANK
+  ;1H01+
+  ;Kellergeschoss
+  ;LÅftungszentrale
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,FREIG-AUS-GLT,FREIG-EIN-GLT,$WZERO,$WZERO,
+          &BA1LU0700BF01,WERR)
+  ANAUS (A07-SW-FREIG-BEF,$M0,&BA1LU0700AA33,WERR)
+  ;BÅros     A07
+  ;Freigabe GLT
+  ; 
+  ;Sollwert Einschaltung
+  ;Befeuchter
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (A7-SOLLW-TAUPUNK,$M1,&BA1LU0700AA95,WERR)
+  ANAUS (A7-SOLLW-ZULTEMP,$M2,&BA1LU0700AA92,WERR)
+  ANAUS (A7-SW-DRUCK-ZUL,$M3,&BA1LU0700AA61,WERR)
+  ANAUS (A7-SW-DRUCK-ABL,$M4,&BA1LU0700AA62,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1500)
+  MELEIN (&M5,4,ZPK-OE,FREIG-AUS-GLT,ZPK,FREIG-EIN-GLT,WERR)
+  MELEIN (&BA1LU0700BM10,3,A07-ZUL-RM-AUS,A07-ZUL-RM-ST,
+          A07-ZUL-RM-EIN1,WERR)
+  MELEIN (&BA1LU0700BM40,3,A07-VE-RM-AUS,A07-VE-RM-ST,
+          A07-VE-RM-EIN1,WERR)
+  MELEIN (&BA1LU0700BM20,3,A07-ABL-RM-AUS,A07-ABL-RM-ST,
+          A07-ABL-RM-EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&BA1LU0700BM50,3,A07-ABKL-RM-AUS,A07-ABKL-RM-ST,
+          A07-ABKL-RM-EIN1,WERR)
+  MELEIN (&BA1LU0700BM30,3,A07-BEF-RM-AUS,A07-BEF-RM-ST,
+          A07-BEF-RM-EIN1,WERR)
+  MELEIN (&BA1LU0700BM51,3,A07-WRG-RM-AUS,A07-WRG-RM-ST,
+          A07-WRG-RM-EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU0700ST51,1,A07-WRG-STôRUNG,WERR)
+  MELEIN (&BA1LU0700WA11,1,$HB2,WERR)
+  NICHT ($HB2,A07-REP-ZUL)
+  MELEIN (&BA1LU0700WA21,1,$HB2,WERR)
+  NICHT ($HB2,A07-REP-ABL)
+  MELEIN (&BA1LU0700AL01,2,$HB3,$HB4,WERR)
+  NICHT ($HB3,A07-RAUCHMELDER)
+  NICHT ($HB4,A7-FROST-GF)
+  MELEIN (&BA1LU0700ST01,2,A07-MAX-DRUCK-ZU,A07-MAX-DRUCK-AB,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1LU0700ST30,1,A7-FEUCH-MAX-ZUL,WERR)
+  MELEIN (&BA1LU0700WA70,1,A7-Hand-Luefter,WERR)
+  MELEIN (&BA1LU1100BM99,1,STOER-ANL-11,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&BA1LU0700MW09,A07-ABL-TEMP,WERR)
+  ANEIN (&BA1LU0700MW22,A07-VE-RL-TEMP,WERR)
+  ANEIN (&BA1LU0700MW03,A07-ZUL-TEMP,WERR)
+  ANEIN (&BA1LU0700MW41,A07-ZUL-DRUCK,WERR)
+  ANEIN (&BA1LU0700MW42,A07-ABL-DRUCK,WERR)
+  ;A09 Ablufttemp.
+  ;B
+  ; 
+  ;A09 VE- RÅcklauftemp
+  ; 
+  ;A09 Zulufttemperatur
+  ; 
+  ;A09 Zuluftdruck
+  ; 
+  ;A09 Abluftdruck
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU0700MW00,A07-AUSSEN-TEMP,WERR)
+  ANEIN (&BA1LU0700MW13,A07-RAUM-EG-TEMP,WERR)
+  ANEIN (&BA1LU0700MW38,A07-ZUL-FEUCHTE,WERR)
+  ANEIN (&BA1LU0700MW02,A07-TAUP-TEMP,WERR)
+  ANEIN (&BA1LU0700MW39,A07-ABL-FEUCHTE,WERR)
+  ;A09 Aussentemp.
+  ; 
+  ;A09 Raumtemp. 1 EG
+  ; 
+  ;A09 Zuluftfeuchte
+  ; 
+  ;A09 Taupunkttemp.
+  ; 
+  ;A09 Abluftfeuchte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&BA1LU0700AA95,A7-SOLLW-TAUPUNK,WERR)
+  ANEIN (&BA1LU0700AA92,A7-SOLLW-ZULTEMP,WERR)
+  ANEIN (&BA1LU0700AA61,A7-SW-DRUCK-ZUL,WERR)
+  ANEIN (&BA1LU0700AA62,A7-SW-DRUCK-ABL,WERR)
+  ANEIN (&BA1LU0700AA32,A07-SW-ABS-F-ENT,WERR)
+  ANEIN (&BA1LU0700AA31,A07-SW-ABS-F-BEF,WERR)
+  ;Sollw.Taupunkttemp.
+  ; 
+  ;Sollw. Zulufttemp
+  ; 
+  ;Sollw.Zuluftdruck
+  ; 
+  ;Sollw.Abluftdruck
+  ; 
+  ;SW.Absolute Feuchte ABL
+  ; 
+  ;SW.Absolute Feuchte ZUL
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&BA1LU0700AA33,A07-SW-FREIG-BEF,WERR)
+  ;A07 Sollw.Einsch.Befeuch
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1500)
+  VGLOH (A07-ABL-DRUCK,FKONABL-50PA,$B1)
+  UND11 (A07-ABL-RM-EIN1,$B1,$B2)
+  VVZ ($B2,$M20,$M21,$B3)
+  RSS ($B3,QUITTIERUNG-A7,A7-ABL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M22,1,A7-ABL-KEIL-ST,&BA1LU0700ST83,WERR)
+  ;DiffDruck ZulÅfter
+  ; 
+  ;DiffDruck AblÅfter
+  ; 
+  VGLOH (A07-ZUL-DRUCK,FKONZUL-50PA,$B4)
+  UND11 (A07-ZUL-RM-EIN1,$B4,$B5)
+  VVZ ($B5,$M23,$M24,$B6)
+  RSS ($B6,QUITTIERUNG-A7,A7-ZUL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M25,1,A7-ZUL-KEIL-ST,&BA1LU0700ST82,WERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&BA1LU0700BF02,3,Fernquit_a7-aus,WERR,
+          Fernquit_a7-ein,WERR)
+  MELEIN (&BA1LU0700BM99,1,$B7,WERR)
+  ODR2 (Fernquit_a7-ein,$B7,$B8)
+  MOKY ($B8,$M28,QUITTIERUNG-A7)
+  BEFAUS (1,QUITTIERUNG-A7,QUITTIERUNG-A7,$WZERO,$WZERO,
+          &BA1LU0700BF02,WERR)
+  ;StîrQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODRMN (9,A07-ABL-AUTO-ST,A07-ZUL-AUTO-ST,A7-ABL-KEIL-ST,
+         A7-ZUL-KEIL-ST,A07-ABL-MAXDRUCK,A07-ZUL-MAXDRUCK,
+         A07-REP-ABL,A07-REP-ZUL,$WZERO,0,SAMMELSTANL07,
+         $WSCRATCH)
+  ODR2 (SAMMELSTANL07,STOER-ANL-11,$B9)
+  RSS ($B9,QUITTIERUNG-A7,$B10,$WSCRATCH)
+  NICHT ($B10,$HB0)
+  BEFAUS (1,$HB0,$B10,$WZERO,$WZERO,&BA1LU0700BF03,WERR)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UNDMN (1,A7-ANLAGE-EIN1,2,A7-Hand-Luefter,A07-ZUL-RM-EIN1,
+         $B11,$WSCRATCH)
+  VVZ ($B11,$M29,$M30,$B12)
+  RSS ($B12,QUITTIERUNG-A7,A07-ZUL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M31,1,A07-ZUL-AUTO-ST,&BA1LU0700ST77,WERR)
+  ODRMN (4,A07-ABL-MAXDRUCK,A07-ZUL-MAXDRUCK,A07-ZUL-AUTO-ST,
+         A07-ABL-AUTO-ST,0,$B13,$WSCRATCH)
+  UNDMN (1,A7-ANLAGE-EIN1,2,A7-Hand-Luefter,A07-ABL-RM-EIN1,
+         $B14,$WSCRATCH)
+  ;EinschaltÅberwachung
+  ;Anlage 07 Automatikfunk.
+  ;Handmeldungen fehlen
+  ;noch
+  ; 
+  VVZ ($B14,$M32,$M33,$B15)
+  RSS ($B15,QUITTIERUNG-A7,A07-ABL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M34,1,A07-ABL-AUTO-ST,&BA1LU0700ST78,WERR)
+  BEFAUS (1,$B13,$WZERO,$WZERO,$WZERO,&BA1LU0700BF01,WERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  RSS (A07-MAX-DRUCK-AB,QUITTIERUNG-A7,A07-ABL-MAXDRUCK,
+       $WSCRATCH)
+  SETMEL ($M35,1,A07-ABL-MAXDRUCK,&BA1LU0700ST84,WERR)
+  RSS (A07-MAX-DRUCK-ZU,QUITTIERUNG-A7,A07-ZUL-MAXDRUCK,
+       $WSCRATCH)
+  SETMEL ($M36,1,A07-ZUL-MAXDRUCK,&BA1LU0700ST85,WERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B20,$M37,$M38,$F5)
+  MAX (3,$F5,$F4,$F3,A7-Y-FROST)
+  UND11 (FREIG-EIN-GLT,$B17,$B21)
+  VVZ ($B21,$M39,$M40,$B22)
+  VGLEH (A07-TAUP-TEMP,$M41,$M42,$B16)
+  ODRMN (2,$B22,$B18,0,$WSCRATCH,$WSCRATCH)
+  VGLEH (A07-VE-RL-TEMP,$M43,$M44,$B17)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (A07-AUSSEN-TEMP,$M45,$M46,$B25)
+  VGLEH (A07-VE-RL-TEMP,$M47,$M48,$B26)
+  NICHT (FREIG-EIN-GLT,$HB1)
+  RSS ($B24,$HB1,$B27,$WSCRATCH)
+  BTRA ($B27,$B18)
+  AWT ($B27,$M49,$M50,$F7)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A07-VE-RL-TEMP,$F7,$WONE,$B25,$M51,$M52,$M53,$M54,
+        $M55,$M56,$M57,$M58,$M59,$M60,$M61,$F8,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A07-TAUP-TEMP,$M62,$WONE,$WZERO,$M63,$M64,$M65,$M66,
+        $M67,$M68,$M69,$M70,$M71,$M72,$M73,$F1,$WSCRATCH)
+  AWT ($B25,$F8,$M74,$F2)
+  ;Version 2.0
+  ; 
+  ODR2 ($B26,$B25,$B24)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B17,$M75,A07-VE-RL-TEMP,$F6)
+  VGLEH ($F6,$M76,$M77,$HB3)
+  NICHT ($HB3,$B23)
+  ODR2 ($B23,A7-FROST-GF,$B19)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIERUNG-A7,$M78,$B28)
+  UND11 ($B28,$B19,$B29)
+  RSS ($B19,$B29,$B20,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B20,$WSCRATCH)
+  AWT ($B17,$M79,$F2,$F3)
+  AWT ($B16,$M80,$F1,$F4)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (0,7,A7-FROST-GF,SAMMELSTANL07,A7-ZUL-FU-ST,
+         A7-ABL-FU-ST,A07-MAX-DRUCK-AB,A07-MAX-DRUCK-ZU,
+         A07-RAUCHMELDER,A7-FREIG-LU-EIN,A7-FREIG-LU-AUS)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ;Ansteuerung AbsperrKl.
+  ;Anlage 07
+  ;Zuluft/Abluftklappe
+  ; 
+  BEFAUS (1,A7-FREIG-LU-AUS,A7-FREIG-LU-EIN,$WZERO,$WZERO,
+          &BA1LU0700BM50,WERR)
+  ;Freigabe der Anlage
+  ;wenn Klappen geîffnet
+  ;sind KlappenrÅckmeldung
+  ;wird intern gesetzt
+  ;keine RÅckmeldung
+  ; 
+  UNDMN (2,A07-ABKL-RM-EIN1,KON01,0,$B30,A7-ANLAGE-AUS)
+  VVZ ($B30,$M81,$M82,A7-ANLAGE-EIN1)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;  ZULUFTVENTILATOR
+  ;        LU09
+  ;Freigabe FU
+  ; 
+  BEFAUS (1,A7-ANLAGE-AUS,A7-ANLAGE-EIN1,$WZERO,$WZERO,
+          &BA1LU0700BM10,WERR)
+  ;  ABLUFTVENTILATOR
+  ;        LU09
+  ;Freigabe FU
+  ; 
+  BEFAUS (1,A7-ANLAGE-AUS,A7-ANLAGE-EIN1,$WZERO,$WZERO,
+          &BA1LU0700BM20,WERR)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MAX (2,A7-STELL-VORERH,A7-Y-FROST,$F9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M83,$M84,$F10)
+  MOKY (A07-ZUL-RM-EIN1,$F10,$B33)
+  VGLEH ($F9,$M85,$M86,$B36)
+  VVZ ($B36,$M87,$F10,$B37)
+  UND2 (A07-ZUL-RM-EIN1,$B37,$B38)
+  ODR2 (A07-VE-RM-ST,$B35,$B39)
+  NICHT ($B39,$HB0)
+  UHR ($HB0,$B39,$F11)
+  VGLOH ($F11,$M88,$B40)
+  MOKY ($B40,$M89,$B34)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (4,$B33,$B38,A7-FROST-GF,$B34,0,$B41,$WSCRATCH)
+  UND11 ($B41,A07-VE-RM-ST,$B35)
+  BTRA ($B35,$B31)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 ($B31,A07-VE-RM-EIN1,$B42)
+  RSS ($B43,QUITTIERUNG-A7,$B32,$WSCRATCH)
+  VVZ ($B42,$M90,$M91,$B43)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;FREIG-VE-PUMPE
+  ; 
+  NICHT ($B31,$HB0)
+  BEFAUS (1,$HB0,$B31,$WZERO,$WZERO,&BA1LU0700BM40,WERR)
+  SETMEL ($M92,1,$B32,&BA1LU0700ST81,WERR)
+  ;Ansteuerung
+  ;Vorerhitzer A07
+  ;mit Befehls-
+  ;Åberwachung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ;Taupunktregelung
+  ;Anlage 07
+  ; 
+  REGLER (1,KON01,KON00,$M93,Y-SIGNAL-TAUPREG,WERR)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  FKG (Y-SIGNAL-TAUPREG,4,$M94,$M95,$M96,$M97,A7-SIG-WRG-TAU)
+  FKG (Y-SIGNAL-TAUPREG,4,$M98,$M99,$M100,$M101,
+       A7-SIG-VORH-TAU)
+  ;WRG-A07
+  ; 
+  ;Vorerhitz A07
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  AWT (A07-ZUL-RM-EIN1,$M102,A7-SIG-VORH-TAU,$F12)
+  MAX (2,$F12,A7-Y-FROST,A7-STELL-VORERH)
+  ANAUS (A7-STELL-VORERH,$M103,&BA1LU0700AA01,WERR)
+  MAX (3,A7-SIG-WRG-TAU,A7-SIG-WRG-ZUL,FKON5-MIN-WRG,$F13)
+  AWT (A07-ZUL-RM-EIN1,$M104,$F13,A7-STELL-WRG)
+  ANAUS (A7-STELL-WRG,$M105,&BA1LU0700AA51,WERR)
+  ;WRG
+  ; 
+  ;VORERHITZER
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  REGLER (2,KON01,$WZERO,$M106,Y-SIGNAL-ZUL-REG,WERR)
+  ;Regler Zulufttemp.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  FKG (Y-SIGNAL-ZUL-REG,4,$M107,$M108,$M109,$M110,$F14)
+  AWT (A07-ZUL-RM-EIN1,$M111,$F14,$F15)
+  ANAUS ($F15,$M112,&BA1LU0700AA03,WERR)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M113,$M114,$M115,$M116,
+       A7-SIG-WRG-ZUL)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M117,$M118,$M119,$M120,
+       A7-SIG-KUEH-ZUL)
+  ;Ansteuerung KÅhler
+  ; 
+  ;Ansteuerung WRG
+  ; 
+  ;Nacherhitzer A07
+  ; 
+  ;ZUL-TEMP
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  MAX (2,A7-SIG-KUEH-ZUL,A7-SIG-ENTFEUCHT,$F16)
+  AWT (A07-ZUL-RM-EIN1,$M121,$F16,$F17)
+  ANAUS ($F17,$M122,&BA1LU0700AA02,WERR)
+  ;KÅhler A07
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1500)
+  PT1 (A07-ZUL-DRUCK,$M123,$F18)
+  REGLER (10,KON01,KON00,$M124,A7-Y-SIG-ZUL-DR,WERR)
+  AWT (A07-ZUL-RM-EIN1,$M125,A7-Y-SIG-ZUL-DR,$F19)
+  ANAUS ($F19,$M126,&BA1LU0700AA41,WERR)
+  ANAUS ($F18,$M127,&BA1LU0700AA63,WERR)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  PT1 (A07-ABL-DRUCK,$M128,$F20)
+  ANAUS ($F20,$M129,&BA1LU0700AA64,WERR)
+  REGLER (11,KON01,KON00,$M130,A7-Y-SIG-ABL-DR,WERR)
+  AWT (A07-ZUL-RM-EIN1,$M131,A7-Y-SIG-ABL-DR,$F21)
+  ANAUS ($F21,$M132,&BA1LU0700AA42,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1500)
+  ABFEUG (A07-ABL-FEUCHTE,A07-ABL-TEMP,$M133,A07-ABS-FEU-ABL)
+  ANAUS (A07-ABS-FEU-ABL,$M134,&BA1LU0700MW32,WERR)
+  ABFEUG (A07-ZUL-FEUCHTE,A07-ZUL-TEMP,$M135,A07-ABS-FEU-ZUL)
+  ANAUS (A07-ABS-FEU-ZUL,$M136,&BA1LU0700MW31,WERR)
+  ;Zuluftfeuchte
+  ; 
+  ;Abluftfeuchte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  REGLER (6,KON01,KON00,$M137,A7-SIG-ENTFEUCHT,WERR)
+  SOLKEN (1,KON01,$F22,WERR)
+  ADD2 ($F22,KON02-G-KG,$F23)
+  ANAUS ($F22,$M138,&BA1LU0700AA31,WERR)
+  ANAUS ($F23,$M139,&BA1LU0700AA32,WERR)
+  ;Entfeuchtung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  ;Abluftregler Befeucht.
+  ;Kaskadenregelung
+  ; 
+  REGLER (9,A07-ZUL-RM-EIN1,KON00,$M140,A7-SOLLW-BEF-ZUL,
+          WERR)
+  REGLER (7,A07-ZUL-RM-EIN1,KON00,$M141,A7-SIG-BEFEUCHT,WERR)
+  ;Befeuchtung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ;Freigabe Befeuchtung
+  ;bei Grenzwertunter-
+  ;schreitung Abluft-
+  ;feuchte relativ
+  ; 
+  VGLEH (A07-SW-FREIG-BEF,A07-ABL-FEUCHTE,$M142,$B44)
+  UND2 ($B44,A07-ZUL-RM-EIN1,A7-BEFEUCHT-EIN)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  UND21 (A07-ZUL-RM-EIN1,A7-BEFEUCHT-EIN,A7-FEUCH-MAX-ZUL,
+         $B45)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (A7-SIG-BEFEUCHT,$M143,$M144,$B49)
+  VVZ ($B49,$M145,$M146,$B50)
+  UND2 ($B45,$B50,$B51)
+  ODR2 (A07-BEF-RM-ST,$B48,$B52)
+  NICHT ($B52,$HB0)
+  UHR ($HB0,$B52,$F25)
+  VGLOH ($F25,$M147,$B53)
+  MOKY ($B53,$M148,$B47)
+  ODR2 ($B51,$B47,$B54)
+  UND11 ($B54,A07-BEF-RM-ST,$B48)
+  BTRA ($B48,$B46)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT ($B46,$HB0)
+  BEFAUS (1,$HB0,$B46,$WZERO,$WZERO,&BA1LU0700BM30,WERR)
+  AWT ($B45,$M149,A7-SIG-BEFEUCHT,$F24)
+  ANAUS ($F24,$M150,&BA1LU0700AA30,WERR)
+  ;Ansteuerung Befeuchter
+  ;Anlage 07
+  ;-
+  ; 
+  ENDE 
+  ENDMODUL 

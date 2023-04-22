@@ -1,0 +1,563 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 0010-05C.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 10
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (ar20,5)
+  WordV  A_ST_SAM_ST_2
+  WordV  S_ERR
+  WordV  E_VP_FREIG_1
+  WordV  E_ST_KA_PU_1
+  WordV  E_RM_KA_PU_1
+  WordK  K_0_STATUS (0)
+  WordV  E_BM_QUITT
+  WordV  K_VP_FREIG_2
+  WordV  Z_KA_WA_PU_1
+  WordK  K_VP_FREIG_1 (1)
+  WordV  A_BF_KA_PU_1
+  WordV  E_VP_FREIG_2
+  WordV  Wassermangel-MaK
+  FloatV E_X_KA_T_2
+  WordV  E_RM_QUITT
+  FloatV A_AS_KA_VE_2
+  FloatV E_MW_KA_VE_2
+  FloatV D_KA_ZT_PU_A_1
+  FloatK K_W_KA_T_2 (10.00)
+  WordV  Z_HAUPT_1
+  WordV  R_BF_QUITT_A
+  WordK  K_1_STATUS (1)
+  WordV  MK-VL-T-zu-hoch
+  WordV  Z_QUITT
+  WordV  A_ST_KA_VE_2
+  FloatV E_W_KA_T_2
+  WordV  Maku-Pum-2-i-ein
+  WordV  Maku-Pum-1-i-ein
+  WordV  MaKu-Pum-1-STOE
+  WordV  MaKu-Pum-2-STOE
+  WordV  Maku-Pumpe-ein
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (177,1)
+  IPAAW &M1 (178)
+  IPAMB &M2 (47,15)
+  IPAMB &M3 (47,14)
+  IPAMB &M4 (177,3)
+  IPAMB &M5 (177,11)
+  IPAMB &M6 (30,2)
+  WordV  $B1
+  IPAMB &M7 (30,3)
+  IPAMB &M8 (51,7)
+  WordV  $B2
+  IPAMB &M9 (51,6)
+  IPAMB &M10 (51,11)
+  WordV  $HB2
+  IPAMB &M11 (51,15)
+  WordV  $B3
+  IPAMB &M12 (51,14)
+  FloatK $M13 (8.00)
+  WordV  $B4
+  FloatK $M14 (8.00)
+  WordV  $B5
+  FloatK $M15 (8.00)
+  WordV  $B6
+  FloatK $M16 (8.00)
+  WordV  $B7
+  WordV  $B8
+  WordV  $WSCRATCH
+  FloatK $M17 (12.00)
+  FloatK $M18 (4.00)
+  FloatK $M19 (0.00)
+  WordV  $B9
+  FloatK $M20 (4.00)
+  WordV  $B10
+  FloatK $M21 (172800.00)
+  WordV  $B11
+  FloatK $M22 (300.00)
+  WordV  $B12
+  IPAMB &M23 (177,0)
+  IPAMB &M24 (177,8)
+  IPAMB &M25 (177,12)
+  IPAMB &M26 (30,1)
+  IPAAW &M28 (34)
+  IPAAW &M29 (36)
+  WordV  $B13
+  FloatK $M30 (100.00)
+  FloatV $F1
+  FloatK $M31 (0.00)
+  FloatK $M32 (100.00)
+  FloatK $M33 (100.00)
+  FloatK $M34 (0.00)
+  FloatK $M35 (180.00)
+  FloatK $M36 (0.00)
+  WordV  $B14
+  FloatK $M37 (2.00)
+  FloatK $M38 (0.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M39 (1.00)
+  WordV  $B15
+  WordV  $B16
+  FloatK $M40 (60.00)
+  FloatK $M41 (0.00)
+  WordV  $B17
+  FloatV $F4
+  FloatV $F5
+  FloatK $M42 (10.00)
+  WordV  $B18
+  WordV  $B19
+  WordV  $HB1
+  FloatV $F6
+  FloatK $M43 (180.00)
+  WordV  $B20
+  IPAAW &M44 (40)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;KUNDE:
+  ;------------------------
+  ;ABB GebÑudetechnik AG
+  ;Lufttechnik
+  ;Hannover
+  ; 
+  ;ANLAGEN-INDEX:
+  ;------------------------
+  ;- FernkÑlte (1)
+  ;- MagnetkÅhlung (2)
+  ; 
+  ;PROJEKT:
+  ;------------------------
+  ;Max- Planck- Institut
+  ;fÅr bio- physikalische
+  ;chemie Gîttingen
+  ;Neubau NMR 2
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;MS TEPLAN
+  ;Weidrichstra·e 29
+  ;65795 Hattersheim
+  ;email:
+  ;ms-teplan@t-online.de
+  ;www.ms-teplan.de
+  ;tel. 06145/938603
+  ;fax  06145/938604
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrÅcklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB GebÑudeautomation
+  ;geÑndert oder kopiert
+  ;werden.
+  ; 
+  ;Programmierumgebung:
+  ;- EEPROM Version > 5.0
+  ;- Compileroption:
+  ;  -OD-V5
+  ;- MIC.EXE Version:
+  ;  07.09.99
+  ;- Zielhardware:
+  ;  ar20 / sp20 / zp20
+  ; 
+  ;Druckereinstellung:
+  ;Laserjet-150-Portrait
+  ;Raster= Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Daten Einlesen
+  ;Task 3= Steuerung und
+  ;        Regelung
+  ;Task 4= Daten ausgeben
+  ;
+  ; 
+  ;BLATT-BENNUNG
+  ;------------------------
+  ;1. Anlagenindex
+  ;2. Anlagenkomponente
+  ;3. Funktion oder
+  ;   Tranfer
+  ;Beispiel
+  ;1 VE MELEIN
+  ;oder
+  ;2 LU 1F
+  ; 
+  ;ANLAGENKOMPONENTE
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- VE = Vorerhitzer
+  ;- KU = KÅhler
+  ;- WR = WRG
+  ;- BE = Befeuchter
+  ;- LU = LÅfter
+  ;- KL = Klappen
+  ;usw.
+  ; 
+  ;ANLAGENFUNKTION
+  ;( Dies ist nur ein
+  ;Auszug; siehe Standard)
+  ;------------------------
+  ;- 1F = einstufig
+  ;- FU = Frequenzumf.
+  ;- WA = Wartung
+  ;- VE = Ventil
+  ;- PU = Pumpe
+  ;- BE = Bedarf
+  ;usw.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;1_ = Anlagenindex
+  ;_Z_= Zwischenvariable
+  ;_E_= Eingabevariable
+  ;_A_= Ausgabevariable
+  ;_K_= Konstante
+  ;_D_= Displayvariable
+  ;_S_= Systemvariable
+  ;_R_= Reservarariable
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Stîrungs Var.
+  ;_RM_ = RÅckmeld. Var.
+  ;_MW_ = Me·wert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_BF_ = Befehl Var.
+  ; 
+  ;_SK_  =Sollkennlinie
+  ;_ER_  =Fehlerkorb
+  ;_PK_  =Papierkorb
+  ; 
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;NMRKA20-01A-X50
+  ;_
+  ; 
+  NICHT (K_VP_FREIG_1,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_1,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ;FernkÑlte
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;NMRKA20-01A-T50
+  ; 
+  ANAUS (K_W_KA_T_2,K_1_STATUS,&M1,S_ERR)
+  ;Sollwert Vorlauf
+  ;Kaltwasser
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;GLT Schaltbefehl
+  ;Quittierung
+  ; 
+  MELEIN (&M2,1,E_RM_QUITT,S_ERR)
+  ;NMRUV20-01A-X01
+  ; 
+  ;Meldung
+  ;Schaltschrank
+  ;Quittierung
+  ; 
+  MELEIN (&M3,1,E_BM_QUITT,S_ERR)
+  ;NMRUV20-01A-B00
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;RÅckmeldung Ein
+  ;Freigabe
+  ;FernkÑlte
+  ; 
+  ;NMRKA20-01A-X50
+  ; 
+  MELEIN (&M4,1,K_VP_FREIG_1,S_ERR)
+  BTRA (K_VP_FREIG_1,E_VP_FREIG_1)
+  ;RÅckmeldung Ein
+  ;Freigabe
+  ;MagnetkÅhlung
+  ; 
+  ;NMRKA20-02A-X50
+  ; 
+  MELEIN (&M5,1,K_VP_FREIG_2,S_ERR)
+  BTRA (K_VP_FREIG_2,E_VP_FREIG_2)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;Stîrung
+  ;Kaltwasserpumpe
+  ; 
+  MELEIN (&M6,1,$B1,S_ERR)
+  ;RÅckmeldung Ein
+  ;Kaltwasserpumpe
+  ; 
+  MELEIN (&M7,1,E_RM_KA_PU_1,S_ERR)
+  ;NMRKA20-01A-X01
+  ; 
+  ;NMRKA20-01A-X01
+  ; 
+  ;Stîrung
+  ;Kaltwasserpumpe 1
+  ;MagentkÅhlung
+  ; 
+  MELEIN (&M8,1,$B2,S_ERR)
+  ;RÅckmeldung Ein
+  ;Kaltwasserpumpe 1
+  ;MagnetkÅhlung
+  ; 
+  MELEIN (&M9,1,Maku-Pum-1-i-ein,S_ERR)
+  ;NMRKA20-02A-X01
+  ; 
+  ;NMRKA20-02A-X01
+  ; 
+  NICHT ($B1,E_ST_KA_PU_1)
+  ;Wassermangel
+  ;MagnetkÅhlung
+  ; 
+  MELEIN (&M10,1,$HB2,S_ERR)
+  NICHT ($HB2,Wassermangel-MaK)
+  ;NMRKA20-02A-S52
+  ; 
+  NICHT ($B2,MaKu-Pum-1-STOE)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Stîrung
+  ;Kaltwasserpumpe 2
+  ;MagentkÅhlung
+  ; 
+  MELEIN (&M11,1,$B3,S_ERR)
+  ;RÅckmeldung Ein
+  ;Kaltwasserpumpe 2
+  ;MagnetkÅhlung
+  ; 
+  MELEIN (&M12,1,Maku-Pum-2-i-ein,S_ERR)
+  ;NMRKA20-02A-X02
+  ; 
+  ;NMRKA20-02A-X02
+  ; 
+  NICHT ($B3,MaKu-Pum-2-STOE)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MOKY (E_BM_QUITT,$M13,$B4)
+  MOKY (E_RM_QUITT,$M14,$B5)
+  MOKY (K_0_STATUS,$M15,$B6)
+  MOKY (K_0_STATUS,$M16,$B7)
+  ODRMN (4,$B4,$B5,$B6,$B7,0,$B8,$WSCRATCH)
+  MOKY ($B8,$M17,Z_QUITT)
+  VVZ ($B8,$M18,$M19,$B9)
+  MOKY ($B9,$M20,R_BF_QUITT_A)
+  ;Stîrungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Virt. Quittierung
+  ;- RÅckm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ;
+  ;_
+  ; 
+  ;Es kann die Software
+  ;und die Hardware
+  ;Veriegelung quittiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UND11 (E_VP_FREIG_1,K_0_STATUS,Z_HAUPT_1)
+  ;Anlage Einschalten
+  ;- Freigabe DDC
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODR2 (E_RM_KA_PU_1,Z_KA_WA_PU_1,$B10)
+  UHR (K_1_STATUS,$B10,D_KA_ZT_PU_A_1)
+  VGLOH (D_KA_ZT_PU_A_1,$M21,$B11)
+  MOKY ($B11,$M22,Z_KA_WA_PU_1)
+  ;KÅhlerpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe lÑnger
+  ;als 48 Stunden gestanden
+  ;wird sie fÅr 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODR2 (Z_HAUPT_1,Z_KA_WA_PU_1,$B12)
+  UND11 ($B12,E_ST_KA_PU_1,A_BF_KA_PU_1)
+  ;KÅhlerpumpe
+  ;- Stîrung Pumpe
+  ;- Freigabe Anlage
+  ;- Freigbae KÅhler
+  ;- Anforderung Regelung
+  ;- Wartung Ventil 0
+  ;- Wartung Ventil 100
+  ;- Wartungslauf Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODRMN (8,MaKu-Pum-1-STOE,MaKu-Pum-2-STOE,Wassermangel-MaK,
+         MK-VL-T-zu-hoch,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,A_ST_SAM_ST_2,$WSCRATCH)
+  ;Sammelstîrung
+  ;Tritt eine Stîrung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehîrt wird die
+  ;Stîrung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,E_ST_KA_PU_1,&M23,S_ERR)
+  ;NMRKA20-01A-S50
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_SAM_ST_2,&M24,S_ERR)
+  ;Sammelstîrung
+  ;FernkÑlte
+  ; 
+  ;NMRKA20-02A-S50
+  ; 
+  ;Sammelstîrung
+  ;MagnetkÅhlung
+  ; 
+  SETMEL (K_1_STATUS,1,A_ST_KA_VE_2,&M25,S_ERR)
+  ;NMRKA20-02A-S51
+  ; 
+  ;Lauf-Stîrung
+  ;Ventil MagnetkÅhl.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NICHT (A_BF_KA_PU_1,$HB0)
+  BEFAUS (1,$HB0,A_BF_KA_PU_1,$WZERO,$WZERO,&M26,S_ERR)
+  ;NMRKA20-01A-X01
+  ; 
+  ;Kaltwasserpumpe
+  ;FernkÑlte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ANEIN (&M1,K_W_KA_T_2,S_ERR)
+  ATRA (K_W_KA_T_2,E_W_KA_T_2)
+  ;NMRKA20-02A-T50
+  ; 
+  ;Sollwert
+  ;Vorlauf-
+  ;Kaltwasser
+  ; 
+  ANEIN (&M28,E_X_KA_T_2,S_ERR)
+  ;NMRKA20-02A-T11
+  ; 
+  ;Istwert
+  ;Vorlauf-
+  ;Kaltwasser
+  ; 
+  ANEIN (&M29,E_MW_KA_VE_2,S_ERR)
+  ;NMRKA20-02A-M01
+  ; 
+  ;Messwert
+  ;KW-Ventil
+  ;RÅcksignal
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UNDMN (0,2,Maku-Pum-1-i-ein,Maku-Pum-2-i-ein,$B13,
+         Maku-Pumpe-ein)
+  NICHT ($WONE,$WSCRATCH)
+  REGLER (4,$WONE,$B13,$M30,$F1,S_ERR)
+  FKG ($F1,4,$M31,$M32,$M33,$M34,A_AS_KA_VE_2)
+  ;sek. VL-Temp-Regler
+  ; 
+  ;Die KW-VL-Temp.-Regelung
+  ;wird in dieser Anlage
+  ;mit laufender SekundÑr-
+  ;pumpe aktiviert. Es gibt
+  ;keinen Anlagenschaltbef.
+  ;(wie auch im NMR 2)
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  VVZ (Maku-Pumpe-ein,$M35,$M36,$B14)
+  AWT ($WZERO,$M37,$M38,$F2)
+  ADD2 (E_W_KA_T_2,$F2,$F3)
+  VGLEH (E_X_KA_T_2,$F3,$M39,$B15)
+  UND2 ($B15,$B14,$B16)
+  VVZ ($B16,$M40,$M41,$B17)
+  RSS ($B17,Z_QUITT,MK-VL-T-zu-hoch,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  SUB2 (A_AS_KA_VE_2,E_MW_KA_VE_2,$F4)
+  ABSWER ($F4,$F5)
+  VGLOH ($F5,$M42,$B18)
+  UND11 ($B18,Z_QUITT,$B19)
+  NICHT ($B19,$HB1)
+  UHR (K_1_STATUS,$HB1,$F6)
+  VGLOH ($F6,$M43,$B20)
+  RSS ($B20,Z_QUITT,A_ST_KA_VE_2,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rÅcksignal verglichen.
+  ;Ist die Diffferenz
+  ;grî·er als +/- 1028682nd
+  ;dauert diese lÑnger als
+  ;3 Minuten, dann wird
+  ;eine virtuelle Stîrung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ;NMRKA20-02A-Y01
+  ;m
+  ; 
+  ANAUS (A_AS_KA_VE_2,K_1_STATUS,&M44,S_ERR)
+  ;Kaltwasserventil
+  ;MagnetkÅhlung
+  ; 
+  ENDE 
+  ENDMODUL 

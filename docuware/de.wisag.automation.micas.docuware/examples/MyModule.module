@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:module="http://www.wisag.de/Automation/Micas/Module">
+  <attributes xsi:type="module:VariableAttribute" name="MyVariable1"/>
+  <attributes xsi:type="module:VariableAttribute" name="MyVariable2"/>
+  <attributes xsi:type="module:VariableAttribute" name="MyVariable3"/>
+  <attributes xsi:type="module:ConstantAttribute" name="MyConst1">
+    <value xsi:type="module:RealValue"/>
+  </attributes>
+  <attributes xsi:type="module:ConstantAttribute" name="MyConst2">
+    <value xsi:type="module:BooleanValue" dataType="Boolean"/>
+  </attributes>
+  <attributes xsi:type="module:ReferenceAttribute" name="MyReference1" row="4" column="3"/>
+  <attributes xsi:type="module:ReferenceAttribute" name="MyReference2" row="2" column="1"/>
+  <tasks>
+    <pages name="MyFirstPage"/>
+    <pages name="MySecondPage"/>
+  </tasks>
+</module:Module>

@@ -1,0 +1,682 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2003.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 1
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  A1-UMLF3-AUTO-ST
+  WordV  A1-UML2-SOLL-EIN
+  WordV  ERR-FREIG-GLT
+  WordV  A1-UML3-KEIL-BM
+  WordV  A1-UML2-KEIL-BM
+  WordV  A1-UMLUF3-REP
+  WordV  ERR20
+  WordV  A1-UMLUF1-REP
+  WordV  A1-UMLUF2-RM-EIN
+  WordV  A1-UML1-KEIL-BM
+  WordV  \SETZ03
+  WordV  ZPK
+  WordV  A1-UMLUF3-RM-AUS
+  WordK  KFREIG-GLT-EIN (1)
+  WordV  ERR-UML1
+  WordV  ERR-UML2
+  WordV  ERR-UML3
+  WordV  ERR09
+  FloatV A1-UMLUF2-ZULTEM
+  WordV  SAMMEL-ST-UML1-3
+  WordV  ERR123
+  WordV  \SETZ01
+  WordV  \SETZ02
+  WordV  ERR27
+  WordV  ANFORD-UML2-3EIN
+  WordV  SAMMEL-ST-UML1
+  WordV  FREIG-UMLUFT1
+  WordV  FREIG-UMLUFT2
+  WordV  Entriegelung
+  WordV  A1-UML1-HAND-BET
+  WordV  A1-UMLU2-ST-KEIL
+  WordV  A1-UMLU1-ST-KEIL
+  WordV  FREIG-UMLUFT3
+  WordV  ANFORD-UML3-1EIN
+  WordV  SAMMEL-ST-UML2
+  WordV  SAMMEL-ST-UNL3
+  FloatK FKON24H-3 (48.00)
+  WordV  A1-UMLUF2-RM-ST
+  FloatK FKON24H-2 (48.00)
+  FloatK BETR-STD-UMLUFT3 (0.00)
+  WordV  RESET-ZÄHLER
+  FloatK BETR-STD-UMLUFT2 (0.00)
+  FloatK BETR-STD-UMLUFT1 (0.00)
+  WordV  ERR30
+  WordV  GRENZW-UMLUFT-1
+  FloatV TEST2
+  FloatV TEST3
+  WordV  ANFORD-UML1-2EIN
+  WordV  MERR01
+  FloatV Y-SIGNAL-REG.01
+  FloatV Y-SIGNAL-REG.02
+  WordK  KON01 (1)
+  WordV  ERR-REG03
+  FloatV Y-SIGNAL-REG.03
+  WordV  ERR-REG04
+  FloatV Y-SIGNAL-REG.04
+  FloatV Aussentemperatur
+  FloatK FKON24H-1 (24.00)
+  WordV  A1-UMLUF1-RM-ST
+  WordV  A1-UMLUF1-RM-EIN
+  WordV  A1-UMLUF1-RM-AUS
+  WordV  ERR03
+  WordK  KFREIG-GLT-AUS (0)
+  WordV  ERR06
+  WordV  ERR08
+  WordV  ERR07
+  FloatV A1-UMLUF1-ZULTEM
+  WordV  A1-UMLUF2-RM-AUS
+  WordV  ERR11
+  WordV  A1-UMLUF2-RAUCH
+  WordV  A1-UMLUF3-RAUCH
+  WordV  ERR16
+  WordV  A1-UMLF1-AUTO-ST
+  WordV  ERR19
+  WordV  A1-UMLUF2-REP
+  WordV  A1-UML3-SOLL-EIN
+  WordV  A1-UMLU3-ST-KEIL
+  WordV  ERR25
+  WordV  ERR26
+  WordV  A1-UMLF2-AUTO-ST
+  WordV  A1-UML1-SOLL-EIN
+  WordV  GRENZW-UMLUFT-2
+  WordV  GRENZW-UMLUFT-3
+  FloatV TEST1
+  FloatV SK01
+  FloatK FKON30SEK (30.00)
+  FloatV RAUMTEMP-MITTELW
+  FloatK FKON00 (0.00)
+  FloatK FKON40G (40.00)
+  FloatV MITTELWERT-OK
+  FloatV A1-RAUMTEMP-1
+  FloatV A1-RAUMTEMP-2
+  FloatV A1-RAUMTEMP-3
+  FloatV A1-RAUMTEMP-4
+  WordV  A1-UMLUF3-RM-ST
+  WordV  A1-UMLUF3-RM-EIN
+  FloatV A1-UMLUF3-ZULTEM
+  WordV  A1-UMLUF1-RAUCH
+  WordV  RESET-ZÄHLER_T
+  WordV  RESET-ZÄHLER-T1
+  WordV  RESET-ZÄHLER_T2
+  WordK  KON00 (0)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU0100BF01 (100,1)
+  IPAMB &M0 (0,0)
+  IPAMB &BA1LU0101BM01 (0,1)
+  IPAMB &M1 (0,2)
+  IPAMB &M2 (0,3)
+  IPAMB &M3 (0,4)
+  IPAMB &BA1LU0102BM01 (0,5)
+  IPAMB &M4 (0,6)
+  IPAMB &M5 (0,7)
+  IPAMB &M6 (1,0)
+  IPAMB &BA1LU0103BM01 (1,1)
+  IPAMB &M7 (1,2)
+  IPAMB &M8 (1,3)
+  IPAAW &BA1LU0101MW02 (20)
+  IPAAW &BA1LU0102MW02 (21)
+  IPAAW &BA1LU0103MW02 (22)
+  IPAAW &BA1LU0100MW00 (35)
+  IPAAW &BA1LU0100MW13 (24)
+  IPAAW &BA1LU0100MW14 (25)
+  IPAAW &BA1LU0100MW15 (30)
+  IPAAW &BA1LU0100MW16 (31)
+  IPAMB &BA1LU0101AL01 (7,5)
+  WordV  $HB2
+  IPAMB &BA1LU0102AL01 (7,6)
+  IPAMB &BA1LU0103AL01 (7,7)
+  IPAMB &BA1LU0100WA70 (0,10)
+  IPAMB &BA1LU0101BM11 (6,1)
+  IPAMB &BA1LU0102BM11 (6,2)
+  IPAMB &BA1LU0103BM11 (6,3)
+  IPAMB &BA1LU0101WA11 (6,5)
+  IPAMB &BA1LU0102WA11 (6,6)
+  IPAMB &BA1LU0103WA11 (6,7)
+  IPAMB &M9 (100,0)
+  IPAMB &M10 (100,2)
+  IPAMB &M11 (100,3)
+  IPAMB &BA1LU0000WA01 (5,11)
+  WordV  $B1
+  FloatK $M12 (0.00)
+  FloatK $M13 (10.00)
+  WordV  $B2
+  WordV  $B3
+  FloatK $M14 (60.00)
+  FloatK $M15 (0.00)
+  WordV  $B4
+  WordV  $WSCRATCH
+  WordK  $M16 (1)
+  IPAMB &BA1LU0103ST82 (90,5)
+  WordV  $B5
+  FloatK $M17 (60.00)
+  FloatK $M18 (0.00)
+  WordV  $B6
+  WordK  $M19 (1)
+  IPAMB &BA1LU0102ST82 (90,3)
+  WordV  $B7
+  FloatK $M20 (60.00)
+  FloatK $M21 (0.00)
+  WordV  $B8
+  WordK  $M22 (1)
+  IPAMB &BA1LU0101ST82 (90,1)
+  WordV  $B9
+  FloatK $M23 (60.00)
+  FloatK $M24 (0.00)
+  WordV  $B10
+  WordK  $M25 (1)
+  IPAMB &BA1LU0101ST77 (90,0)
+  WordV  $B11
+  FloatK $M26 (60.00)
+  FloatK $M27 (0.00)
+  WordV  $B12
+  WordK  $M28 (1)
+  IPAMB &BA1LU0102ST77 (90,2)
+  WordV  $B13
+  FloatK $M29 (60.00)
+  FloatK $M30 (0.00)
+  WordV  $B14
+  WordK  $M31 (1)
+  IPAMB &BA1LU0103ST77 (90,4)
+  FloatV $F1
+  FloatK $M32 (3600.00)
+  WordV  $B16
+  FloatK $M33 (1.00)
+  FloatV $F2
+  FloatV $F3
+  FloatK $M34 (3600.00)
+  WordV  $B17
+  FloatK $M35 (1.00)
+  FloatV $F4
+  FloatV $F5
+  FloatK $M36 (3600.00)
+  WordV  $B18
+  FloatK $M37 (1.00)
+  FloatV $F6
+  WordV  $B15
+  FloatK $M38 (5.00)
+  FloatK $M39 (10.00)
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  WordV  $B31
+  WordV  $B32
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B36
+  WordV  $B37
+  WordV  $B43
+  WordV  $B44
+  WordV  $B45
+  WordV  $B41
+  WordV  $B42
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B28
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  WordV  $B29
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  WordV  $B30
+  WordV  $B55
+  FloatK $M40 (3.00)
+  FloatK $M41 (0.00)
+  WordV  $B56
+  WordV  $B57
+  FloatK $M42 (3.00)
+  FloatK $M43 (0.00)
+  WordV  $B58
+  WordV  $B59
+  FloatK $M44 (3.00)
+  FloatK $M45 (0.00)
+  WordV  $B60
+  WordV  $HB0
+  FloatV $F17
+  WordV  $B62
+  FloatK $M46 (0.00)
+  FloatV $F18
+  FloatK $M47 (0.00)
+  FloatK $M48 (1.00)
+  FloatV $F19
+  FloatK $FZERO (0.00)
+  FloatV $F7
+  FloatV $F8
+  FloatV $F20
+  WordV  $B63
+  FloatK $M49 (0.00)
+  FloatV $F21
+  FloatK $M50 (0.00)
+  FloatK $M51 (1.00)
+  FloatV $F22
+  FloatV $F9
+  FloatV $F10
+  FloatV $F23
+  WordV  $B64
+  FloatK $M52 (0.00)
+  FloatV $F24
+  FloatK $M53 (0.00)
+  FloatK $M54 (1.00)
+  FloatV $F25
+  FloatV $F11
+  FloatV $F12
+  FloatV $F26
+  WordV  $B65
+  FloatK $M55 (0.00)
+  FloatV $F27
+  FloatK $M56 (0.00)
+  FloatK $M57 (1.00)
+  FloatV $F28
+  FloatV $F13
+  FloatV $F14
+  FloatK $M58 (1.00)
+  FloatV $F15
+  FloatV $FSCRATCH
+  FloatK $M59 (0.00)
+  WordV  $B61
+  FloatK $M60 (1.00)
+  FloatV $F16
+  WordK  $M61 (1)
+  IPAAW &BA1LU0100AA10 (127)
+  FloatK $M62 (0.00)
+  FloatK $M63 (0.00)
+  FloatK $M64 (0.00)
+  FloatK $M65 (0.00)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Umbau US 01
+  ;Lüftungszentrale
+  ;Keller
+  ;Umluftgeräte Anl.01
+  ;DVMR1
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,KFREIG-GLT-AUS,KFREIG-GLT-EIN,$WZERO,$WZERO,
+          &BA1LU0100BF01,ERR03)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M0,4,ZPK,A1-UMLUF1-RM-AUS,A1-UMLUF1-RM-ST,
+          A1-UMLUF1-RM-EIN,ERR06)
+  MELEIN (&M3,4,ZPK,A1-UMLUF2-RM-AUS,A1-UMLUF2-RM-ST,
+          A1-UMLUF2-RM-EIN,ERR06)
+  MELEIN (&M6,4,ZPK,A1-UMLUF3-RM-AUS,A1-UMLUF3-RM-ST,
+          A1-UMLUF3-RM-EIN,ERR06)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&BA1LU0101MW02,A1-UMLUF1-ZULTEM,ERR07)
+  ANEIN (&BA1LU0102MW02,A1-UMLUF2-ZULTEM,ERR08)
+  ANEIN (&BA1LU0103MW02,A1-UMLUF3-ZULTEM,ERR09)
+  ANEIN (&BA1LU0100MW00,Aussentemperatur,ERR09)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ANEIN (&BA1LU0100MW13,A1-RAUMTEMP-1,ERR09)
+  ANEIN (&BA1LU0100MW14,A1-RAUMTEMP-2,ERR09)
+  ANEIN (&BA1LU0100MW15,A1-RAUMTEMP-3,ERR09)
+  ANEIN (&BA1LU0100MW16,A1-RAUMTEMP-4,ERR09)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&BA1LU0101AL01,1,$HB2,ERR11)
+  NICHT ($HB2,A1-UMLUF1-RAUCH)
+  MELEIN (&BA1LU0102AL01,1,$HB2,ERR11)
+  NICHT ($HB2,A1-UMLUF2-RAUCH)
+  MELEIN (&BA1LU0103AL01,1,$HB2,ERR11)
+  NICHT ($HB2,A1-UMLUF3-RAUCH)
+  MELEIN (&BA1LU0100WA70,1,A1-UML1-HAND-BET,ERR11)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&BA1LU0101BM11,1,A1-UML1-KEIL-BM,ERR16)
+  MELEIN (&BA1LU0102BM11,1,A1-UML2-KEIL-BM,ERR16)
+  MELEIN (&BA1LU0103BM11,1,A1-UML3-KEIL-BM,ERR16)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&BA1LU0101WA11,1,$HB2,ERR19)
+  NICHT ($HB2,A1-UMLUF1-REP)
+  MELEIN (&BA1LU0102WA11,1,$HB2,ERR20)
+  NICHT ($HB2,A1-UMLUF2-REP)
+  MELEIN (&BA1LU0103WA11,1,$HB2,ERR20)
+  NICHT ($HB2,A1-UMLUF3-REP)
+  MELEIN (&M9,4,ZPK,KFREIG-GLT-AUS,ZPK,KFREIG-GLT-EIN,
+          ERR-FREIG-GLT)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&BA1LU0000WA01,1,$B1,ERR25)
+  VVZ ($B1,$M12,$M13,$B2)
+  ODR2 (\SETZ03,$B2,Entriegelung)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  UND11 (A1-UMLUF3-RM-EIN,A1-UML3-KEIL-BM,$B3)
+  VVZ ($B3,$M14,$M15,$B4)
+  RSS ($B4,Entriegelung,A1-UMLU3-ST-KEIL,$WSCRATCH)
+  SETMEL ($M16,1,A1-UMLU3-ST-KEIL,&BA1LU0103ST82,ERR27)
+  UND11 (A1-UMLUF2-RM-EIN,A1-UML2-KEIL-BM,$B5)
+  VVZ ($B5,$M17,$M18,$B6)
+  RSS ($B6,Entriegelung,A1-UMLU2-ST-KEIL,$WSCRATCH)
+  SETMEL ($M19,1,A1-UMLU2-ST-KEIL,&BA1LU0102ST82,ERR27)
+  UND11 (A1-UMLUF1-RM-EIN,A1-UML1-KEIL-BM,$B7)
+  VVZ ($B7,$M20,$M21,$B8)
+  RSS ($B8,Entriegelung,A1-UMLU1-ST-KEIL,$WSCRATCH)
+  SETMEL ($M22,1,A1-UMLU1-ST-KEIL,&BA1LU0101ST82,ERR26)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UNDMN (1,A1-UML1-SOLL-EIN,2,A1-UMLUF1-RM-EIN,
+         A1-UML1-HAND-BET,$B9,$WSCRATCH)
+  VVZ ($B9,$M23,$M24,$B10)
+  RSS ($B10,Entriegelung,A1-UMLF1-AUTO-ST,$WSCRATCH)
+  SETMEL ($M25,1,A1-UMLF1-AUTO-ST,&BA1LU0101ST77,ERR123)
+  UNDMN (1,A1-UML2-SOLL-EIN,2,A1-UMLUF2-RM-EIN,
+         A1-UML1-HAND-BET,$B11,$WSCRATCH)
+  VVZ ($B11,$M26,$M27,$B12)
+  RSS ($B12,Entriegelung,A1-UMLF2-AUTO-ST,$WSCRATCH)
+  SETMEL ($M28,1,A1-UMLF2-AUTO-ST,&BA1LU0102ST77,ERR123)
+  UNDMN (1,A1-UML3-SOLL-EIN,2,A1-UMLUF3-RM-EIN,
+         A1-UML1-HAND-BET,$B13,$WSCRATCH)
+  VVZ ($B13,$M29,$M30,$B14)
+  RSS ($B14,Entriegelung,A1-UMLF3-AUTO-ST,$WSCRATCH)
+  SETMEL ($M31,1,A1-UMLF3-AUTO-ST,&BA1LU0103ST77,ERR30)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (A1-UMLUF1-RM-EIN,$B16,$F1)
+  VGLOH ($F1,$M32,$B16)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (RESET-ZÄHLER,$M33,RESET-ZÄHLER_T,TEST1,$WONE,$B16,
+       $WZERO,$F2)
+  ATRA ($F2,BETR-STD-UMLUFT1)
+  VGLOH ($F2,FKON24H-1,GRENZW-UMLUFT-1)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (A1-UMLUF2-RM-EIN,$B17,$F3)
+  VGLOH ($F3,$M34,$B17)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (RESET-ZÄHLER,$M35,RESET-ZÄHLER-T1,TEST2,$WONE,$B17,
+       $WZERO,$F4)
+  ATRA ($F4,BETR-STD-UMLUFT2)
+  VGLOH ($F4,FKON24H-2,GRENZW-UMLUFT-2)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UHR (A1-UMLUF3-RM-EIN,$B18,$F5)
+  VGLOH ($F5,$M36,$B18)
+  NICHT ($WONE,$WSCRATCH)
+  VRZ (RESET-ZÄHLER,$M37,RESET-ZÄHLER_T2,TEST3,$WONE,$B18,
+       $WZERO,$F6)
+  ATRA ($F6,BETR-STD-UMLUFT3)
+  VGLOH ($F6,FKON24H-3,GRENZW-UMLUFT-3)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (3,GRENZW-UMLUFT-1,GRENZW-UMLUFT-2,GRENZW-UMLUFT-3,0,
+         $B15,$WSCRATCH)
+  VVZ ($B15,$M38,$M39,RESET-ZÄHLER)
+  NICHT (GRENZW-UMLUFT-1,ANFORD-UML1-2EIN)
+  NICHT (GRENZW-UMLUFT-2,ANFORD-UML2-3EIN)
+  NICHT (GRENZW-UMLUFT-3,ANFORD-UML3-1EIN)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  UNDMN (4,ANFORD-UML1-2EIN,KFREIG-GLT-EIN,KON01,KON01,0,
+         $B19,$WSCRATCH)
+  UNDMN (3,ANFORD-UML2-3EIN,KFREIG-GLT-EIN,KON01,2,
+         ANFORD-UML1-2EIN,KON00,$B20,$WSCRATCH)
+  UNDMN (3,ANFORD-UML3-1EIN,KFREIG-GLT-EIN,KON01,2,
+         ANFORD-UML2-3EIN,ANFORD-UML1-2EIN,$B21,$WSCRATCH)
+  ODR2 ($B19,$B21,$B22)
+  ODR2 ($B19,$B20,$B23)
+  ODR2 ($B20,$B21,$B24)
+  ODR2 (\SETZ01,SAMMEL-ST-UML1,$B25)
+  ODR2 (SAMMEL-ST-UML2,\SETZ02,$B26)
+  ODR2 (SAMMEL-ST-UNL3,\SETZ03,$B27)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B30,$B27,$B33)
+  UNDMN (3,$B29,$B30,$B26,0,$B34,$WSCRATCH)
+  ODRMN (5,$B28,$B33,$B34,$B31,$B32,0,$B35,$WSCRATCH)
+  UND11 ($B35,$B25,FREIG-UMLUFT1)
+  UNDMN (3,$B29,$B26,$B27,0,$B31,$WSCRATCH)
+  UNDMN (3,$B30,$B26,$B27,0,$B32,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B28,$B25,$B38)
+  UNDMN (3,$B30,$B28,$B27,0,$B39,$WSCRATCH)
+  ODRMN (5,$B29,$B38,$B39,$B36,$B37,0,$B40,$WSCRATCH)
+  UND11 ($B40,$B26,FREIG-UMLUFT2)
+  UNDMN (3,$B30,$B27,$B25,0,$B36,$WSCRATCH)
+  UNDMN (3,$B28,$B27,$B25,0,$B37,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B29,$B26,$B43)
+  UNDMN (3,$B28,$B29,$B25,0,$B44,$WSCRATCH)
+  ODRMN (5,$B30,$B43,$B44,$B41,$B42,0,$B45,$WSCRATCH)
+  UND11 ($B45,$B27,FREIG-UMLUFT3)
+  UNDMN (3,$B28,$B25,$B26,0,$B41,$WSCRATCH)
+  UNDMN (3,$B29,$B25,$B26,0,$B42,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (KON01,$B22,$B46)
+  UND11 ($B23,KON01,$B47)
+  UND11 ($B24,KON01,$B48)
+  ODRMN (3,$B46,$B47,$B48,0,$B28,$WSCRATCH)
+  UND11 ($B22,KON01,$B49)
+  UND2 (KON01,$B23,$B50)
+  UND11 ($B24,KON01,$B51)
+  ODRMN (3,$B49,$B50,$B51,0,$B29,$WSCRATCH)
+  UND11 ($B22,KON01,$B52)
+  ;Version 2.0
+  ; 
+  UND11 ($B23,KON01,$B53)
+  UND2 (KON01,$B24,$B54)
+  ODRMN (3,$B52,$B53,$B54,0,$B30,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODRMN (5,A1-UMLU1-ST-KEIL,A1-UMLUF1-REP,A1-UMLUF1-RM-ST,
+         A1-UMLF1-AUTO-ST,A1-UMLUF1-RAUCH,0,$B55,$WSCRATCH)
+  VVZ ($B55,$M40,$M41,$B56)
+  RSS ($B56,Entriegelung,SAMMEL-ST-UML1,$WSCRATCH)
+  ODRMN (5,A1-UMLU2-ST-KEIL,A1-UMLUF2-REP,A1-UMLUF2-RM-ST,
+         A1-UMLF2-AUTO-ST,A1-UMLUF2-RAUCH,0,$B57,$WSCRATCH)
+  VVZ ($B57,$M42,$M43,$B58)
+  RSS ($B58,Entriegelung,SAMMEL-ST-UML2,$WSCRATCH)
+  ODRMN (5,A1-UMLU3-ST-KEIL,A1-UMLUF3-REP,A1-UMLUF3-RM-ST,
+         A1-UMLF3-AUTO-ST,A1-UMLUF3-RAUCH,0,$B59,$WSCRATCH)
+  VVZ ($B59,$M44,$M45,$B60)
+  RSS ($B60,Entriegelung,SAMMEL-ST-UNL3,$WSCRATCH)
+  ODRMN (3,$B56,$B58,$B60,0,SAMMEL-ST-UML1-3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  BTRA (FREIG-UMLUFT1,A1-UML1-SOLL-EIN)
+  BTRA (FREIG-UMLUFT2,A1-UML2-SOLL-EIN)
+  BTRA (FREIG-UMLUFT3,A1-UML3-SOLL-EIN)
+  NICHT (FREIG-UMLUFT1,$HB0)
+  BEFAUS (1,$HB0,FREIG-UMLUFT1,$WZERO,$WZERO,&BA1LU0101BM01,
+          ERR-UML1)
+  NICHT (FREIG-UMLUFT2,$HB0)
+  BEFAUS (1,$HB0,FREIG-UMLUFT2,$WZERO,$WZERO,&BA1LU0102BM01,
+          ERR-UML2)
+  NICHT (FREIG-UMLUFT3,$HB0)
+  BEFAUS (1,$HB0,FREIG-UMLUFT3,$WZERO,$WZERO,&BA1LU0103BM01,
+          ERR-UML3)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  PT1 (A1-RAUMTEMP-1,FKON30SEK,$F17)
+  VGL3P (A1-RAUMTEMP-1,FKON40G,FKON00,$WSCRATCH,$WSCRATCH,
+         $B62)
+  AWT ($B62,$M46,$F17,$F18)
+  AWT ($B62,$M47,$M48,$F19)
+  ADD2 ($FZERO,$F18,$F7)
+  ADD2 ($F19,$FZERO,$F8)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;MAKRO  MITTEL-4
+  ; 
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  PT1 (A1-RAUMTEMP-2,FKON30SEK,$F20)
+  VGL3P (A1-RAUMTEMP-2,FKON40G,FKON00,$WSCRATCH,$WSCRATCH,
+         $B63)
+  AWT ($B63,$M49,$F20,$F21)
+  AWT ($B63,$M50,$M51,$F22)
+  ADD2 ($F7,$F21,$F9)
+  ADD2 ($F22,$F8,$F10)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  PT1 (A1-RAUMTEMP-3,FKON30SEK,$F23)
+  VGL3P (A1-RAUMTEMP-3,FKON40G,FKON00,$WSCRATCH,$WSCRATCH,
+         $B64)
+  AWT ($B64,$M52,$F23,$F24)
+  AWT ($B64,$M53,$M54,$F25)
+  ADD2 ($F9,$F24,$F11)
+  ADD2 ($F25,$F10,$F12)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  PT1 (A1-RAUMTEMP-4,FKON30SEK,$F26)
+  VGL3P (A1-RAUMTEMP-4,FKON40G,FKON00,$WSCRATCH,$WSCRATCH,
+         $B65)
+  AWT ($B65,$M55,$F26,$F27)
+  AWT ($B65,$M56,$M57,$F28)
+  ADD2 ($F11,$F27,$F13)
+  ADD2 ($F28,$F12,$F14)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ATRA ($F14,MITTELWERT-OK)
+  UST ($WZERO,$M58,$F15,$FSCRATCH)
+  VGLOH ($F14,$M59,$B61)
+  AWT ($B61,$M60,$F14,$F16)
+  MULDI ($F13,$F15,$F16,RAUMTEMP-MITTELW)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ANAUS (RAUMTEMP-MITTELW,$M61,&BA1LU0100AA10,MERR01)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  SOLKEN (1,KON01,SK01,$WSCRATCH)
+  REGLER (1,KON01,$WZERO,$M62,Y-SIGNAL-REG.01,$WSCRATCH)
+  REGLER (2,KON01,A1-UMLUF1-RM-AUS,$M63,Y-SIGNAL-REG.02,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,1000)
+  REGLER (3,KON01,A1-UMLUF2-RM-AUS,$M64,Y-SIGNAL-REG.03,
+          ERR-REG03)
+  REGLER (4,KON01,A1-UMLUF3-RM-AUS,$M65,Y-SIGNAL-REG.04,
+          ERR-REG04)
+  ENDE 
+  ENDMODUL 

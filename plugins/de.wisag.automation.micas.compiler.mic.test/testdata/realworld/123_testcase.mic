@@ -1,0 +1,417 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI50612.GPS
+  ;*** Projektname    : MPI Turm 5
+  ;*** Projektnummer  : 23101125
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Bormann
+  ;*** Line Nummer    : 5
+  ;*** User Number    : 6
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Keilr_ABL_521
+  WordV  Keilr_ABL_Spuele
+  WordV  Unterspannung
+  WordV  Steuerspg_24AC
+  WordV  Steuerspg_230AC
+  WordV  Steuerspg_24DC
+  WordV  SSM_1_R210
+  WordV  SSM_2_R210
+  WordV  SSM_3_R210
+  WordV  SSM_4_R210
+  WordV  SSM_5_R210
+  WordV  SSM_6_R210
+  WordV  SSM_7_R210
+  WordV  SSM_8_R210
+  WordV  SSM_9_R210
+  WordV  SSM_10_R210
+  WordV  SSM_Spuele
+  WordV  SSM_Datenvert
+  WordV  SSM_1_Kuehlzelle
+  WordV  SSM_2_Kuehlzelle
+  WordV  Keilr_ABL2_510
+  WordV  ZUL_FU_521
+  WordV  ABL_FU_521
+  WordV  Frost_521
+  WordV  Keilr_ZUL_521
+  WordV  Leckage_R215
+  WordV  ABL_FU_510
+  WordV  ZUL_FU_510
+  WordV  Entriegeln
+  WordV  Frost_510
+  WordV  Keilr_ZUL1_510
+  WordV  Keilr_ZUL2_510
+  WordV  Keilr_ABL1_510
+  WordV  BSK_3_521
+  WordV  BSK_2_521
+  WordV  BSK_1_521
+  WordV  BSK_2_510
+  WordV  BSK_1_510
+  WordV  BMZ_RM_521
+  WordV  BSK_6_521
+  WordV  BSK_5_521
+  WordV  BSK_4_521
+  WordV  ZUL_Vent1_510
+  WordV  ABL_Vent2_510
+  WordV  ZUL_Vent_521
+  WordV  ABL_Vent_521
+  WordV  VE_Pumpe_521
+  WordV  WRG_Pumpe_521
+  WordV  ABL_Vent_Spuele
+  WordV  BMZ_2OG
+  WordV  BMZ_DG
+  WordV  BMZ_RM_510
+  WordV  Sammel_ST_1
+  WordV  Entr.Befehl
+  WordV  Sammel_ST_2
+  WordV  Sammel_ST_3
+  WordV  SSM_11_R210
+  WordV  SSM_Konden_R223
+  WordV  ABL_Vent1_510
+  WordV  ZUL_Vent2_510
+  WordV  VE_Pumpe_510
+  WordV  SSM_210_Gesperrt
+  WordV  WRG_Pumpe_510
+  WordV  Entr.Taster
+  WordK  K0 (0)
+  WordV  SSM_Tierstaelle
+  IPAMB &M0 (37,2)
+  WordV  $HB2
+  WordV  $WSCRATCH
+  IPAMB &M1 (38,2)
+  IPAMB &M2 (51,2)
+  IPAMB &M3 (51,6)
+  IPAMB &M4 (37,6)
+  IPAMB &M5 (38,6)
+  IPAMB &M6 (1,6)
+  IPAMB &M7 (2,6)
+  IPAMB &M8 (19,2)
+  IPAMB &M9 (19,6)
+  IPAMB &M10 (108,2)
+  IPAMB &M11 (102,2)
+  IPAMB &M12 (102,3)
+  IPAMB &M13 (102,6)
+  IPAMB &M14 (102,7)
+  IPAMB &M15 (1,0)
+  IPAMB &M16 (101,3)
+  IPAMB &M17 (101,6)
+  IPAMB &M18 (97,10)
+  IPAMB &M19 (97,11)
+  IPAMB &M20 (97,14)
+  IPAMB &M21 (97,15)
+  IPAMB &M22 (98,2)
+  IPAMB &M23 (98,3)
+  IPAMB &M24 (98,7)
+  IPAMB &M25 (99,7)
+  IPAMB &M26 (100,6)
+  IPAMB &M27 (145,0)
+  IPAMB &M28 (145,7)
+  IPAMB &M29 (145,1)
+  IPAMB &M30 (145,8)
+  IPAMB &M32 (96,3)
+  IPAMB &M33 (97,3)
+  IPAMB &M34 (96,10)
+  IPAMB &M35 (115,0)
+  IPAMB &M36 (115,1)
+  IPAMB &M37 (146,1)
+  IPAMB &M38 (104,15)
+  IPAMB &M40 (106,11)
+  IPAMB &M41 (107,10)
+  IPAMB &M42 (106,14)
+  IPAMB &M43 (106,15)
+  IPAMB &M48 (110,2)
+  IPAMB &M49 (110,3)
+  IPAMB &M50 (110,6)
+  IPAMB &M51 (110,7)
+  IPAMB &M52 (111,2)
+  IPAMB &M53 (111,3)
+  IPAMB &M54 (111,6)
+  IPAMB &M55 (111,7)
+  IPAMB &M56 (110,10)
+  IPAMB &M57 (110,11)
+  IPAMB &M58 (110,14)
+  IPAMB &M59 (110,15)
+  IPAMB &M60 (103,2)
+  IPAMB &M61 (103,3)
+  IPAMB &M62 (113,6)
+  IPAMB &M63 (123,0)
+  IPAMB &M64 (254,0)
+  IPAMB &M69 (114,15)
+  IPAMB &M70 (1,11)
+  IPAMB &M71 (1,14)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M72 (1,13)
+  FloatK $M73 (10.00)
+  FloatK $M74 (0.00)
+  WordV  $B10
+  IPAMB &M75 (1,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,2000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         Turm 5
+  ;Anlage:  Sammelstörung
+  ;         Betriebstechnik
+  ;         US05.06
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL_Vent1_510)
+  MELEIN (&M1,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL_Vent1_510)
+  MELEIN (&M2,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,VE_Pumpe_510)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,WRG_Pumpe_510)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL_Vent2_510)
+  MELEIN (&M5,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL_Vent2_510)
+  MELEIN (&M6,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL_Vent_521)
+  MELEIN (&M7,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL_Vent_521)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,VE_Pumpe_521)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,WRG_Pumpe_521)
+  MELEIN (&M10,1,ABL_Vent_Spuele,$WSCRATCH)
+  MELEIN (&M11,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_2OG)
+  MELEIN (&M12,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_DG)
+  MELEIN (&M13,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_RM_510)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BMZ_RM_521)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_1_510)
+  MELEIN (&M17,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_2_510)
+  MELEIN (&M18,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_1_521)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_2_521)
+  MELEIN (&M20,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_3_521)
+  MELEIN (&M21,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_4_521)
+  MELEIN (&M22,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_5_521)
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,BSK_6_521)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL_FU_510)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL_FU_510)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_510)
+  MELEIN (&M27,1,Keilr_ZUL1_510,$WSCRATCH)
+  MELEIN (&M28,1,Keilr_ZUL2_510,$WSCRATCH)
+  MELEIN (&M29,1,Keilr_ABL1_510,$WSCRATCH)
+  MELEIN (&M30,1,Keilr_ABL2_510,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ZUL_FU_521)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ABL_FU_521)
+  MELEIN (&M34,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_521)
+  MELEIN (&M35,1,Keilr_ZUL_521,$WSCRATCH)
+  MELEIN (&M36,1,Keilr_ABL_521,$WSCRATCH)
+  MELEIN (&M37,1,Keilr_ABL_Spuele,$WSCRATCH)
+  MELEIN (&M38,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Leckage_R215)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  MELEIN (&M41,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_230AC)
+  MELEIN (&M42,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_24AC)
+  MELEIN (&M43,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Steuerspg_24DC)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M48,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_1_R210)
+  MELEIN (&M49,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_2_R210)
+  MELEIN (&M50,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_3_R210)
+  MELEIN (&M51,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_4_R210)
+  MELEIN (&M52,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_5_R210)
+  MELEIN (&M53,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_6_R210)
+  MELEIN (&M54,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_7_R210)
+  MELEIN (&M55,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_8_R210)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M56,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_9_R210)
+  MELEIN (&M57,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_10_R210)
+  MELEIN (&M58,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_11_R210)
+  MELEIN (&M59,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_Datenvert)
+  MELEIN (&M60,1,SSM_1_Kuehlzelle,$WSCRATCH)
+  MELEIN (&M61,1,SSM_2_Kuehlzelle,$WSCRATCH)
+  MELEIN (&M62,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_Spuele)
+  MELEIN (&M63,1,SSM_Tierstaelle,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M64,1,SSM_Konden_R223,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M15,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M69,1,SSM_210_Gesperrt,$WSCRATCH)
+  MELEIN (&M70,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M71,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODRMN (9,ZUL_FU_510,ZUL_FU_521,ABL_FU_510,ABL_FU_521,
+         ABL_Vent_Spuele,ZUL_Vent1_510,ZUL_Vent2_510,
+         ABL_Vent1_510,ABL_Vent2_510,0,$B1,$WSCRATCH)
+  ODRMN (8,ZUL_Vent_521,ABL_Vent_521,BMZ_2OG,BMZ_DG,
+         BMZ_RM_510,BMZ_RM_521,Frost_510,Frost_521,0,$B2,
+         $WSCRATCH)
+  ODR2 ($B1,$B2,Sammel_ST_1)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (12,BSK_1_510,BSK_2_510,BSK_1_521,BSK_2_521,
+         BSK_3_521,BSK_4_521,BSK_5_521,BSK_6_521,
+         Keilr_ABL_Spuele,Keilr_ZUL1_510,Keilr_ZUL2_510,
+         Keilr_ABL1_510,0,$B3,$WSCRATCH)
+  ODRMN (11,Keilr_ABL2_510,Keilr_ZUL_521,Keilr_ABL_521,
+         VE_Pumpe_510,VE_Pumpe_521,WRG_Pumpe_510,
+         WRG_Pumpe_521,K0,K0,SSM_Konden_R223,Sammel_ST_1,0,
+         $B4,$WSCRATCH)
+  ODR2 ($B3,$B4,Sammel_ST_2)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (11,SSM_1_R210,SSM_2_R210,SSM_3_R210,SSM_4_R210,
+         SSM_5_R210,SSM_6_R210,SSM_7_R210,SSM_8_R210,
+         SSM_9_R210,SSM_10_R210,SSM_11_R210,0,$B5,$WSCRATCH)
+  UND11 ($B5,SSM_210_Gesperrt,$B6)
+  ODRMN (12,Leckage_R215,SSM_1_Kuehlzelle,SSM_2_Kuehlzelle,
+         SSM_Datenvert,SSM_Spuele,SSM_Tierstaelle,K0,
+         Unterspannung,Steuerspg_230AC,Steuerspg_24AC,
+         Steuerspg_24DC,Sammel_ST_2,0,$B7,$WSCRATCH)
+  ODR2 ($B6,$B7,Sammel_ST_3)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UND11 (Entriegeln,Sammel_ST_3,$B8)
+  RSS (Sammel_ST_3,$B8,$B9,$WSCRATCH)
+  NICHT ($B9,$HB0)
+  BEFAUS (1,$HB0,$B9,$WZERO,$WZERO,&M72,$WSCRATCH)
+  VVZ (Entr.Befehl,$M73,$M74,$B10)
+  BEFAUS (1,$B10,$WZERO,$WZERO,$WZERO,&M75,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

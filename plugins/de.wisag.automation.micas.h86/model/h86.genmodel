@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.wisag.automation.micas.h86/src-gen"
+    modelPluginID="de.wisag.automation.micas.h86" modelName="H86" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>h86.ecore</foreignModel>
+  <genPackages prefix="H86" basePackage="de.wisag.automation.micas" disposableProviderFactory="true"
+      ecorePackage="h86.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="h86.ecore#//RecordType">
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/DATA"/>
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/EOF"/>
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/EXTENDED_SEGMENT_ADDRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/START_SEGMENT_ADDRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/EXTENDED_LINEAR_ADDRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="h86.ecore#//RecordType/START_LINEAR_ADDRESS"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="h86.ecore#//Record">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//Record/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//Record/numberOfBytes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//Record/checksum"/>
+    </genClasses>
+    <genClasses ecoreClass="h86.ecore#//AddressRecord">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//AddressRecord/address"/>
+    </genClasses>
+    <genClasses ecoreClass="h86.ecore#//DataRecord">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//DataRecord/data"/>
+    </genClasses>
+    <genClasses ecoreClass="h86.ecore#//SegmentAddressRecord"/>
+    <genClasses ecoreClass="h86.ecore#//ExtendedSegmentAddressRecord"/>
+    <genClasses ecoreClass="h86.ecore#//EOFRecord"/>
+    <genClasses ecoreClass="h86.ecore#//H86Content">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//H86Content/records"/>
+    </genClasses>
+    <nestedGenPackages prefix="Modules" basePackage="de.wisag.automation.micas.h86"
+        disposableProviderFactory="true" ecorePackage="h86.ecore#//modules">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="h86.ecore#//modules/PortDataType">
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/WORD_CONST"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/WORD_VAR"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FLOAT_CONST"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FLOAT_VAR"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FGA_VALUE_CONST"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FGA_MESSAGE_CONST"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FGA_MEASURED_VALUE"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/FGA_ANALOG_VALUE"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/PortDataType/DIRECT_VALUE"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="h86.ecore#//modules/HardwareType">
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZP03"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZP10"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZP12"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZP13"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZM12"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZM13"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZM14"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/ZP20"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//modules/HardwareType/AC40"/>
+      </genEnums>
+      <genClasses ecoreClass="h86.ecore#//modules/Module">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Module/id"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Module/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//modules/Module/inputs"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//modules/Module/outputs"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Module/hardwareTypeBlacklist"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Module/runtime"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Module/pastValueCount"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//modules/Port">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Port/index"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Port/allowedPortDataTypes"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Port/inputPort"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/Port/name"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//modules/PortGroup">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/PortGroup/runtime"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//modules/MicasModules">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//modules/MicasModules/modulesById"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//modules/MicasModules/modules"/>
+        <genOperations ecoreOperation="h86.ecore#//modules/MicasModules/findModuleById">
+          <genParameters ecoreParameter="h86.ecore#//modules/MicasModules/findModuleById/id"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Rt" basePackage="de.wisag.automation.micas.h86" disposableProviderFactory="true"
+        ecorePackage="h86.ecore#//rt">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="h86.ecore#//rt/RtTaskStrategy">
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//rt/RtTaskStrategy/CYCL"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//rt/RtTaskStrategy/EVNT"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//rt/RtTaskStrategy/BACK"/>
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//rt/RtTaskStrategy/INIT"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="h86.ecore#//rt/RtHwType">
+        <genEnumLiterals ecoreEnumLiteral="h86.ecore#//rt/RtHwType/AC40"/>
+      </genEnums>
+      <genClasses ecoreClass="h86.ecore#//rt/RtModule">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//rt/RtModule/constants"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//rt/RtModule/variables"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//rt/RtModule/tasks"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/dataSegmentAddress"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/wordConstOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/floatConstOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/wordVarOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/floatVarOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/endOfFloatVars"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/dataSegment"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/hwType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModule/fieldBus"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtTask">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference h86.ecore#//rt/RtTask/module"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h86.ecore#//rt/RtTask/moduleInvocations"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/id"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/cyclTime"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/segment"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/pastValuesOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/strategy"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtTask/data"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtAddressable">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtAddressable/address"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtAddressable/name"/>
+        <genOperations ecoreOperation="h86.ecore#//rt/RtAddressable/getDisplayName"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtConstant">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference h86.ecore#//rt/RtConstant/module"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtVariable">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference h86.ecore#//rt/RtVariable/module"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtWordConstant">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtWordConstant/value"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtFloatConstant">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtFloatConstant/value"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtDirectValue">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtDirectValue/value"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtWordVariable">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtWordVariable/value"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtFloatVariable">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtFloatVariable/value"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtModuleInvocation">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference h86.ecore#//rt/RtModuleInvocation/inputs"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference h86.ecore#//rt/RtModuleInvocation/outputs"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference h86.ecore#//rt/RtModuleInvocation/task"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtModuleInvocation/name"/>
+        <genOperations ecoreOperation="h86.ecore#//rt/RtModuleInvocation/getAllArguments"/>
+      </genClasses>
+      <genClasses ecoreClass="h86.ecore#//rt/RtReferenceConstant">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference h86.ecore#//rt/RtReferenceConstant/module"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtReferenceConstant/col"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h86.ecore#//rt/RtReferenceConstant/row"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

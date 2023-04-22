@@ -1,0 +1,384 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 00_03_13.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 3
+  ;*** Modul Typ      : sp20
+  ;*** Feldbus Nummer : 13
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  EZ-AL00-00A-B02
+  WordV  WERR
+  WordV  RUFBEREIT-AUS
+  WordV  RUFBEREIT-EIN
+  WordV  BEREIT-HERD
+  WordV  BEREIT-TEICH
+  WordV  EZ-AL00-00A-B05
+  WordV  SCHALT-WARTE-EIN
+  WordV  BTL2-US0012-EG
+  WordV  EZ-AL00-00A-A06
+  WordV  AI-US0011_KG
+  WordV  EZ-US0003_EG
+  WordV  AI-NOTBEL-KG
+  WordV  EZ-AL00-00A-A08
+  WordV  ZK-PUMPESCH-EG
+  WordV  EZ-TEMP-TRAFO-KG
+  WordV  EZ-AL00-00A-A02
+  WordV  EZ-AL00-00A-A04
+  WordV  NMR1-US0013-KG
+  WordV  NMR2-US0009-14DG
+  WordV  EZ-HOCHNIEDER_KG
+  WordV  EZ-SANITAER-EG
+  WordV  EZ-AL00-00A-A10
+  WordV  EZ-AL00-00A-A13
+  WordV  CHEMIEKALIEN-EG
+  WordV  EZ-NEUTRA-EG
+  WordV  NMR1-NSHV-KG
+  WordV  EZ-AL00-00A-A15
+  WordV  BTL1-NSHV-EG
+  WordV  BTL2-US06-07_KG
+  WordV  T3-STICKST-SUG
+  WordV  EZ-AL00-00A-A16
+  WordV  EZ-AL00-00A-A22
+  WordV  T3-IT-SERVER-SOG
+  WordV  T3-US0306-EG
+  WordV  T4-HEIZUNG-EG
+  WordV  T1-HEIZ-EG
+  WordV  EZ-AL00-00A-A24
+  WordV  EZ-AL00-00A-A18
+  WordV  T2-HEIZ-EG
+  WordV  T1-LUEFT-EG
+  WordV  EZ-AL00-00A-A20
+  WordV  T2-US0203-SUG
+  WordV  T2-LUEFT-EG
+  WordV  T4-LUEFT-EG
+  WordV  T5-US0503-SUG
+  WordV  EZ-AL00-00A-A26
+  WordV  EZ-AL00-00A-A28
+  WordV  T5-US0504-EG
+  WordV  T5-US0505-EG
+  WordV  T6-US0605-KG
+  WordV  T6-US0603-1OG
+  WordV  EZ-AL00-00A-A30
+  WordV  EZ-AL00-00A-B03
+  WordV  BEREIT-SCHYMURA
+  WordV  QUITT-RUFAN
+  WordV  k0
+  WordV  EZ-AL00-00A-A32
+  WordV  RESERVE_3
+  WordV  T3-LECKWASS-2OG
+  WordV  SSM-LEITR-EIN
+  WordV  RUFANLAG-1
+  WordV  RUFANLAG-2
+  WordV  RUFANLAG-3
+  WordV  RUFANLAG-4
+  WordV  Trockenlauf_Druc
+  WordV  Bereit_Borchers
+  WordV  Bereit_Laukat
+  WordV  Hupenunterdrueck
+  WordV  Quittierung
+  WordV  SSM-LEITR-AUS
+  WordV  RUFANLAG-5
+  WordV  SSM_Druckhalte
+  IPAMB &EZ-AL00-00A-X01 (64,1)
+  IPAMB &M0 (64,2)
+  IPAMB &M1 (64,3)
+  IPAMB &EZ-AL00-00A-B04 (64,6)
+  IPAMB &M2 (64,7)
+  IPAMB &EZ-AL00-00A-A05 (64,10)
+  IPAMB &M3 (64,11)
+  IPAMB &EZ-AL00-00A-A07 (64,14)
+  IPAMB &M4 (64,15)
+  IPAMB &EZ-AL00-00A-A01 (65,2)
+  IPAMB &M5 (65,3)
+  IPAMB &EZ-AL00-00A-A03 (65,6)
+  IPAMB &M6 (65,7)
+  IPAMB &EZ-AL00-00A-A09 (65,10)
+  IPAMB &M7 (65,11)
+  IPAMB &EZ-AL00-00A-A12 (65,14)
+  IPAMB &M8 (65,15)
+  IPAMB &EZ-AL00-00A-A14 (66,2)
+  IPAMB &M9 (66,3)
+  IPAMB &EZ-AL00-00A-A11 (66,6)
+  IPAMB &M10 (66,7)
+  IPAMB &EZ-AL00-00A-A21 (66,10)
+  IPAMB &M11 (66,11)
+  IPAMB &EZ-AL00-00A-A23 (66,14)
+  IPAMB &M12 (66,15)
+  IPAMB &EZ-AL00-00A-A17 (67,2)
+  IPAMB &M13 (67,3)
+  IPAMB &EZ-AL00-00A-A19 (67,6)
+  IPAMB &M14 (67,7)
+  IPAMB &EZ-AL00-00A-A25 (67,10)
+  IPAMB &M15 (67,11)
+  IPAMB &EZ-AL00-00A-A27 (67,14)
+  IPAMB &M16 (67,15)
+  IPAMB &EZ-AL00-00A-A29 (58,2)
+  IPAMB &M17 (58,3)
+  IPAMB &EZ-AL00-00A-B01 (58,6)
+  IPAMB &M18 (58,7)
+  IPAMB &EZ-AL00-00A-X02 (59,5)
+  IPAMB &M19 (59,6)
+  IPAMB &M20 (59,7)
+  WordV  $HB5
+  WordV  $WSCRATCH
+  IPAMB &EZ-AL00-00A-A31 (59,2)
+  IPAMB &M21 (59,3)
+  IPAMB &M22 (59,4)
+  IPAMB &M23 (58,10)
+  IPAMB &M24 (58,11)
+  FloatK $M25 (2.00)
+  WordV  $B1
+  FloatK $M26 (2.00)
+  WordV  $B2
+  FloatK $M27 (2.00)
+  WordV  $B3
+  FloatK $M28 (2.00)
+  WordV  $B4
+  FloatK $M29 (2.00)
+  WordV  $B5
+  FloatK $M30 (2.00)
+  WordV  $B6
+  FloatK $M31 (2.00)
+  WordV  $B7
+  FloatK $M32 (2.00)
+  WordV  $B8
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M33 (2.00)
+  WordV  $B9
+  FloatK $M34 (2.00)
+  WordV  $B10
+  FloatK $M35 (2.00)
+  WordV  $B11
+  FloatK $M36 (2.00)
+  WordV  $B12
+  FloatK $M37 (2.00)
+  WordV  $B13
+  FloatK $M38 (2.00)
+  WordV  $B14
+  FloatK $M39 (2.00)
+  WordV  $B15
+  FloatK $M40 (2.00)
+  WordV  $B16
+  FloatK $M41 (2.00)
+  WordV  $B17
+  FloatK $M42 (2.00)
+  WordV  $B18
+  FloatK $M43 (2.00)
+  WordV  $B19
+  FloatK $M44 (2.00)
+  WordV  $B20
+  FloatK $M45 (2.00)
+  WordV  $B21
+  FloatK $M46 (2.00)
+  WordV  $B22
+  FloatK $M47 (2.00)
+  WordV  $B23
+  FloatK $M48 (2.00)
+  WordV  $B24
+  FloatK $M49 (2.00)
+  WordV  $B25
+  FloatK $M50 (2.00)
+  WordV  $B26
+  FloatK $M51 (2.00)
+  WordV  $B27
+  FloatK $M52 (2.00)
+  WordV  $B28
+  FloatK $M53 (2.00)
+  WordV  $B29
+  FloatK $M54 (2.00)
+  WordV  $B30
+  FloatK $M55 (2.00)
+  WordV  $B31
+  FloatK $M56 (2.00)
+  WordV  $B32
+  FloatK $M57 (2.00)
+  WordV  $B33
+  FloatK $M58 (2.00)
+  WordV  $B34
+  FloatK $M59 (2.00)
+  WordV  $B35
+  FloatK $M60 (10.00)
+  WordV  $B36
+  FloatK $M61 (10.00)
+  WordV  $B37
+  FloatK $M62 (10.00)
+  WordV  $B38
+  FloatK $M63 (10.00)
+  WordV  $B39
+  FloatK $M64 (10.00)
+  WordV  $B40
+  WordV  $HB0
+  FloatK $M65 (2.00)
+  WordV  $B41
+  WordV  $B42
+  FloatK $M66 (2.00)
+  WordV  $B43
+  WordV  $B44
+  FloatK $M67 (10.00)
+  WordV  $B45
+  FloatK $M68 (1.00)
+  WordV  $B46
+  WordV  $B47
+  FloatK $M69 (1.00)
+  WordV  $B48
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;Anlage:
+  ;Linie 0
+  ;Unterstation 03
+  ;Modul 13
+  ;Sammelstörmeldung MPI
+  ;zur Ansteuerung der
+  ;Rufbereitschaft
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  MELEIN (&EZ-AL00-00A-X01,3,RUFBEREIT-AUS,SCHALT-WARTE-EIN,
+          RUFBEREIT-EIN,WERR)
+  MELEIN (&EZ-AL00-00A-B04,2,BEREIT-HERD,BEREIT-TEICH,WERR)
+  MELEIN (&EZ-AL00-00A-A05,2,AI-US0011_KG,BTL2-US0012-EG,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  MELEIN (&EZ-AL00-00A-A07,2,EZ-US0003_EG,AI-NOTBEL-KG,WERR)
+  MELEIN (&EZ-AL00-00A-A01,2,ZK-PUMPESCH-EG,EZ-TEMP-TRAFO-KG,
+          WERR)
+  MELEIN (&EZ-AL00-00A-A03,2,NMR2-US0009-14DG,NMR1-US0013-KG,
+          WERR)
+  MELEIN (&EZ-AL00-00A-A09,2,EZ-HOCHNIEDER_KG,EZ-SANITAER-EG,
+          WERR)
+  MELEIN (&EZ-AL00-00A-A12,2,EZ-NEUTRA-EG,CHEMIEKALIEN-EG,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&EZ-AL00-00A-A14,2,BTL1-NSHV-EG,NMR1-NSHV-KG,WERR)
+  MELEIN (&EZ-AL00-00A-A11,2,BTL2-US06-07_KG,T1-HEIZ-EG,WERR)
+  MELEIN (&EZ-AL00-00A-A21,2,T3-US0306-EG,T3-IT-SERVER-SOG,
+          WERR)
+  MELEIN (&EZ-AL00-00A-A23,2,T3-STICKST-SUG,T4-HEIZUNG-EG,
+          WERR)
+  MELEIN (&EZ-AL00-00A-A17,2,T1-LUEFT-EG,T2-HEIZ-EG,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&EZ-AL00-00A-A19,2,T2-LUEFT-EG,T2-US0203-SUG,WERR)
+  MELEIN (&EZ-AL00-00A-A25,2,T4-LUEFT-EG,T5-US0503-SUG,WERR)
+  MELEIN (&EZ-AL00-00A-A27,2,T5-US0505-EG,T5-US0504-EG,WERR)
+  MELEIN (&EZ-AL00-00A-A29,2,T6-US0605-KG,T6-US0603-1OG,WERR)
+  MELEIN (&EZ-AL00-00A-B01,2,QUITT-RUFAN,BEREIT-SCHYMURA,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&EZ-AL00-00A-X02,3,SSM-LEITR-AUS,$HB5,
+          SSM-LEITR-EIN,$WSCRATCH)
+  NICHT ($HB5,SSM_Druckhalte)
+  MELEIN (&EZ-AL00-00A-A31,3,T3-LECKWASS-2OG,
+          Trockenlauf_Druc,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M23,2,Bereit_Laukat,Bereit_Borchers,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MOKY (AI-US0011_KG,$M25,$B1)
+  MOKY (BTL2-US0012-EG,$M26,$B2)
+  MOKY (EZ-US0003_EG,$M27,$B3)
+  MOKY (ZK-PUMPESCH-EG,$M28,$B4)
+  MOKY (NMR2-US0009-14DG,$M29,$B5)
+  MOKY (NMR1-US0013-KG,$M30,$B6)
+  MOKY (EZ-TEMP-TRAFO-KG,$M31,$B7)
+  MOKY (AI-NOTBEL-KG,$M32,$B8)
+  ODRMN (9,$B1,$B2,$B7,$WZERO,$B3,$B8,$B4,$B5,$B6,0,
+         RUFANLAG-1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MOKY (EZ-HOCHNIEDER_KG,$M33,$B9)
+  MOKY (EZ-SANITAER-EG,$M34,$B10)
+  MOKY (CHEMIEKALIEN-EG,$M35,$B11)
+  MOKY (NMR1-NSHV-KG,$M36,$B12)
+  MOKY (BTL2-US06-07_KG,$M37,$B13)
+  MOKY (T1-HEIZ-EG,$M38,$B14)
+  MOKY (EZ-NEUTRA-EG,$M39,$B15)
+  MOKY (BTL1-NSHV-EG,$M40,$B16)
+  ODRMN (9,$B9,$B10,$B15,$WZERO,$B11,$B16,$B12,$B13,$B14,0,
+         RUFANLAG-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MOKY (T3-US0306-EG,$M41,$B17)
+  MOKY (T3-IT-SERVER-SOG,$M42,$B18)
+  MOKY (T4-HEIZUNG-EG,$M43,$B19)
+  MOKY (T2-HEIZ-EG,$M44,$B20)
+  MOKY (T2-LUEFT-EG,$M45,$B21)
+  MOKY (T2-US0203-SUG,$M46,$B22)
+  MOKY (T3-STICKST-SUG,$M47,$B23)
+  MOKY (T1-LUEFT-EG,$M48,$B24)
+  ODRMN (9,$B17,$B18,$B23,$WZERO,$B19,$B24,$B20,$B21,$B22,0,
+         RUFANLAG-3,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MOKY (T4-LUEFT-EG,$M49,$B25)
+  MOKY (T5-US0503-SUG,$M50,$B26)
+  MOKY (T5-US0504-EG,$M51,$B27)
+  MOKY (T6-US0603-1OG,$M52,$B28)
+  MOKY (T3-LECKWASS-2OG,$M53,$B29)
+  MOKY (SSM-LEITR-EIN,$M54,$B30)
+  MOKY (T5-US0505-EG,$M55,$B31)
+  MOKY (T6-US0605-KG,$M56,$B32)
+  ODRMN (9,$B25,$B26,$B31,$WZERO,$B27,$B32,$B28,$B29,$B30,0,
+         RUFANLAG-4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MOKY (SSM_Druckhalte,$M57,$B33)
+  MOKY (Trockenlauf_Druc,$M58,$B34)
+  MOKY (k0,$M59,$B35)
+  ODRMN (3,$B33,$B34,$B35,0,RUFANLAG-5,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MOKY (BEREIT-HERD,$M60,$B36)
+  MOKY (BEREIT-SCHYMURA,$M61,$B37)
+  MOKY (BEREIT-TEICH,$M62,$B38)
+  MOKY (Bereit_Borchers,$M63,$B39)
+  MOKY (Bereit_Laukat,$M64,$B40)
+  ODRMN (5,$B36,$B37,$B38,$B39,$B40,0,Hupenunterdrueck,
+         $WSCRATCH)
+  NICHT (Hupenunterdrueck,$HB0)
+  MOKY ($HB0,$M65,Quittierung)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ODRMN (5,RUFANLAG-1,RUFANLAG-2,RUFANLAG-3,RUFANLAG-4,
+         RUFANLAG-5,0,$B41,$WSCRATCH)
+  UND11 ($B41,Hupenunterdrueck,$B42)
+  MOKY (QUITT-RUFAN,$M66,$B43)
+  RSS ($B42,$B43,$B44,RESERVE_3)
+  MOKY ($B43,$M67,$B45)
+  MOKY (SSM-LEITR-AUS,$M68,$B46)
+  ODRMN (3,$B45,Quittierung,$B46,0,$B47,$WSCRATCH)
+  MOKY (SSM-LEITR-EIN,$M69,$B48)
+  ;Ansteuerung
+  ;Rufbereitschaft
+  ;M
+  ; 
+  ;Sammelstörung
+  ;Leitrechner
+  ; 
+  BEFAUS (1,$B47,$B48,$WZERO,$WZERO,&EZ-AL00-00A-X02,WERR)
+  NICHT ($B44,$HB0)
+  BEFAUS (1,$HB0,$B44,$WZERO,$WZERO,&EZ-AL00-00A-X01,WERR)
+  ENDE 
+  ENDMODUL 

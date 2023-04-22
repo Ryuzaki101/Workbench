@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="module" nsURI="http://www.wisag.de/Automation/Micas/Module"
+    nsPrefix="module">
+  <eClassifiers xsi:type="ecore:EClass" name="Module">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" ordered="false" lowerBound="1"
+        eType="#//ModuleKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tasks" upperBound="-1"
+        eType="#//Task" containment="true" eOpposite="#//Task/module"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="processor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="examiner" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="createdDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastModifiedDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastInstallDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="29"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stationNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fieldBusNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pageFormat" eType="#//PageFormat"
+        defaultValueLiteral="A3"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pageOrientation" eType="#//PageOrientation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ModuleKind">
+    <eLiterals name="AC40"/>
+    <eLiterals name="AR11" value="2"/>
+    <eLiterals name="AR20" value="4"/>
+    <eLiterals name="ER11" value="5"/>
+    <eLiterals name="ER12" value="6"/>
+    <eLiterals name="GW12" value="7"/>
+    <eLiterals name="GW13" value="8"/>
+    <eLiterals name="GW14" value="9"/>
+    <eLiterals name="MB11" value="10"/>
+    <eLiterals name="SP11" value="12"/>
+    <eLiterals name="SP20" value="13"/>
+    <eLiterals name="ZM12" value="14"/>
+    <eLiterals name="ZM13" value="15"/>
+    <eLiterals name="ZM14" value="16"/>
+    <eLiterals name="ZM15" value="17"/>
+    <eLiterals name="ZP12" value="19"/>
+    <eLiterals name="ZP13" value="20"/>
+    <eLiterals name="AR10" value="21" literal="AR10"/>
+    <eLiterals name="ZP10" value="22" literal="ZP10"/>
+    <eLiterals name="ZP20" value="23" literal="ZP20"/>
+    <eLiterals name="MB10" value="24" literal="MB10"/>
+    <eLiterals name="SP10" value="25" literal="SP10"/>
+    <eLiterals name="AR12" value="26" literal="AR12"/>
+    <eLiterals name="AC60" value="27" literal="AC60"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" ordered="false"
+        lowerBound="1" eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="&quot;&quot;"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataType">
+    <eLiterals name="Float"/>
+    <eLiterals name="Word" value="1"/>
+    <eLiterals name="Reference" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ReferenceType">
+    <eLiterals name="FgaValue" value="1" literal="FgaValue"/>
+    <eLiterals name="FgaMessageConst" value="2" literal="FgaMessageConst"/>
+    <eLiterals name="FgaMeasuredValue" value="3" literal="FgaMeasuredValue"/>
+    <eLiterals name="FgaAnalogValue" value="4" literal="FgaAnalogValue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" ordered="false" lowerBound="1"
+        eType="#//TaskKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cycleTime" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pages" upperBound="-1"
+        eType="#//Page" containment="true" eOpposite="#//Page/task"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="module" lowerBound="1"
+        eType="#//Module" eOpposite="#//Module/tasks"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TaskKind">
+    <eLiterals name="init" literal="INIT"/>
+    <eLiterals name="cyclic" value="1" literal="CYCLIC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariableAttribute" eSuperTypes="#//Attribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstantAttribute" eSuperTypes="#//Attribute">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" ordered="false"
+        lowerBound="1" eType="#//Value" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferenceAttribute" eSuperTypes="#//Attribute">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="row" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="column" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceType" eType="#//ReferenceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FloatValue" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+        lowerBound="1" eType="#//Float"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WordValue" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Float" instanceClassName="double"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeSpecification" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//SignalSpecification">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        eType="#//Attribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MicasDataTypeSpecification" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//DataTypeSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" lowerBound="1"
+        eType="#//DataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="task" lowerBound="1" eType="#//Task"
+        eOpposite="#//Task/pages"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OffpageConnector" abstract="true" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IncomingOffpageConnector" eSuperTypes="#//OffpageConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OutgoingOffpageConnector" eSuperTypes="#//OffpageConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Constant" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="../../org.eclipselabs.damos.dml/model/DML.ecore#//Component"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="PageFormat">
+    <eLiterals name="A4" literal="A4"/>
+    <eLiterals name="A3" value="1" literal="A3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PageOrientation">
+    <eLiterals name="Landscape" literal="Landscape"/>
+    <eLiterals name="Portrait" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

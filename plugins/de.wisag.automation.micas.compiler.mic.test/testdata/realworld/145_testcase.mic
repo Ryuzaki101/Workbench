@@ -1,0 +1,1597 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 00_04_03.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Z_HAUPT
+  FloatV E_VP_MIN_AUL
+  WordK  K_1_STATUS (1)
+  FloatV E_MW_AU_TEMP
+  FloatV E_W_VE_RL_TEMP
+  FloatK K_100_WERT (100.00)
+  FloatK K_10_GRAD (10.00)
+  FloatK K_8_GRAD (8.00)
+  FloatK K_VP_ANF_B_GW (5.00)
+  FloatV D_ZEIT_VE_PU_AUS
+  FloatV E_X_VE_RL_TEMP
+  FloatV A_VE_VENTIL
+  WordV  E_ST_FROST
+  WordV  S_ERR
+  FloatV R_ML_TEMP_REG
+  FloatV R_ML_KUEHLEN
+  WordV  S_PK
+  FloatV R_ML_CO2_REG
+  WordV  Z_VE_ZWANGS
+  WordV  R_VE_WA_VE_100
+  FloatV Z_WRG_HEIZEN
+  WordV  E_RM_VE_PU_EIN
+  FloatV R_ML_MIN_AUL
+  WordV  Z_VE_ANF_PU
+  FloatK K_6_GRAD (6.00)
+  WordV  Z_ANFAHR
+  FloatV Z_VE_HEIZEN
+  WordV  Z_VE_WA_PU
+  FloatK K_4_GRAD (4.00)
+  FloatK K_15_GRAD (15.00)
+  FloatV Z_VE_RL_MIN_REG
+  WordV  R_VE_WA_VE_0
+  WordV  E_ST_VE_PU
+  FloatK K_100_PROZENT (100.00)
+  FloatK K_5_GRAD (5.00)
+  FloatK K_9_GRAD (9.00)
+  WordV  A_VE_PUMPE
+  FloatV R_ML_HEIZEN
+  FloatV Z_ML_AU_TEMP
+  FloatV Z_ML_MIN_AUL
+  FloatK K_0_PROZENT (0.00)
+  WordV  A_WRG_EIN
+  WordV  Z_WRG_ZWANGS
+  WordV  Z_WRG_WA
+  WordV  E_BM_ALU_DS
+  FloatV Z_WRG_KUEHLEN
+  WordV  E_ST_WRG
+  FloatK K_-5_GRAD (-5.00)
+  FloatK K_0_GRAD (0.00)
+  WordV  E_ST_ALU_REPS
+  WordV  Z_WRG_ANF
+  FloatV E_X_WRG_TEMP
+  WordV  A_ZLU_EIN
+  WordV  E_RM_WRG_EIN
+  FloatV D_ZT_WRG_AUS
+  WordV  E_BM_ENTRAUCH
+  WordV  A_ZLU_ST_KEIL
+  FloatV E_VP_WRG_OG
+  WordV  E_ST_ALU_BI
+  WordV  R_ST_ZLU_FU
+  WordV  R_ENTRAUCH
+  WordV  E_RM_ALU_EIN
+  WordV  E_ST_ZLU_REPS
+  WordV  E_RM_FO_KL_AUF
+  WordV  E_ST_ZLU_BI
+  WordV  E_BM_TASTER_EIN
+  FloatK K_3600_WERT (3600.00)
+  WordV  R_ST_ZLU_KL
+  FloatV E_VP_ANL_ZT_EIN
+  WordV  E_BM_ZLU_DS
+  WordV  Z_QUITT
+  WordV  A_ALU_EIN
+  WordV  R_ZLU_ST_RAD
+  WordV  A_FO_KLAPPE
+  WordV  Z_ZLU_ST
+  WordV  E_RM_ZLU_EIN
+  WordV  R_ST_ALU_FU
+  FloatK K_1_WERT (1.00)
+  WordV  R_ALU_ST_RAD
+  WordV  R_ST_ALU_KL
+  WordV  Z_ALU_ST
+  WordV  A_ALU_ST_KEIL
+  WordV  E_BM_QUITT
+  WordV  E_RM_QUITT
+  WordV  Z_HAUPT_ST_1
+  WordV  E_VP_FREIG_DDC
+  WordV  A_HAUPT_ST
+  WordV  A_QUITT_AUS
+  WordV  A_SAMMEL_ST
+  WordV  Z_EINSCHALT
+  WordV  E_ST_ZL_BSK
+  WordV  Z_SAMMEL_ST_1
+  FloatV E_VP_ANF_B_GW
+  WordK  K_0_STATUS (0)
+  WordV  E_BM_TASTER_AUS
+  FloatK K_300_WERT (300.00)
+  FloatK K_300_SEK (300.00)
+  FloatK K_900_SEK (900.00)
+  WordV  E_ST_AL_BSK
+  WordV  E_ST_ZL_RM
+  FloatV E_X_AL_TEMP
+  FloatV E_X_ZL_TEMP
+  FloatV E_W_AL_TEMP
+  FloatV Z_Y_HEIZEN
+  FloatV Z_Y_KUEHLEN
+  WordV  R_ST_REPS_WRG
+  WordV  Z_INIT_TASK_EIN
+  WordV  Z_WRG_KU
+  WordV  Z_WRG_HZ
+  FloatV A_KU_VENTIL
+  WordK  K_VP_FREIG_DDC (1)
+  FloatV A_AUL_KLAPP
+  FloatV A_UML_KLAPP
+  FloatV D_Y_REG_1
+  FloatK K_VP_ANL_ZT_EIN (3.00)
+  FloatK K_VP_MIN_AUL (30.00)
+  FloatK K_VP_WRG_OG (1.00)
+  FloatK K_W_VE_RL_TEMP (15.00)
+  FloatV D_Y_REG_2
+  FloatV D_ZEIT_TASTER
+  WordV  E_VP_FREIE_KU
+  WordK  K_VP_FREIE_KU (0)
+  WordV  Z_FREIE_KU
+  WordV  A_BF_FR_KU_AUS
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (160,1)
+  IPAMB &M1 (160,5)
+  IPAAW &M2 (161)
+  IPAAW &M3 (163)
+  IPAAW &M4 (164)
+  IPAAW &M5 (168)
+  IPAAW &M6 (162)
+  IPAMB &M7 (160,3)
+  IPAMB &M8 (160,7)
+  IPAMB &M9 (29,7)
+  IPAMB &M10 (1,2)
+  WordV  $B1
+  IPAMB &M11 (1,15)
+  WordV  $B2
+  IPAMB &M12 (23,3)
+  WordV  $B3
+  IPAMB &M13 (0,14)
+  WordV  $B4
+  IPAMB &M14 (0,6)
+  WordV  $B5
+  IPAMB &M15 (0,2)
+  WordV  $B6
+  IPAMB &M16 (1,6)
+  WordV  $B7
+  IPAMB &M17 (1,11)
+  WordV  $B8
+  IPAMB &M18 (23,2)
+  WordV  $B9
+  IPAMB &M19 (28,7)
+  WordV  $B10
+  IPAMB &M20 (28,6)
+  WordV  $B11
+  IPAMB &M21 (0,15)
+  IPAMB &M22 (28,2)
+  IPAMB &M23 (23,6)
+  IPAMB &M24 (23,7)
+  IPAMB &M25 (0,11)
+  IPAMB &M26 (1,3)
+  IPAMB &M27 (21,11)
+  IPAMB &M28 (0,7)
+  IPAMB &M29 (0,3)
+  IPAMB &M30 (1,7)
+  IPAAW &M36 (2)
+  IPAAW &M37 (6)
+  IPAAW &M38 (4)
+  IPAAW &M39 (3)
+  IPAAW &M40 (5)
+  FloatK $M41 (4.00)
+  WordV  $B12
+  FloatK $M42 (4.00)
+  WordV  $B13
+  WordV  $B14
+  WordV  $WSCRATCH
+  FloatK $M43 (4.00)
+  FloatK $M44 (4.00)
+  FloatK $M45 (0.00)
+  WordV  $B15
+  FloatK $M46 (4.00)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  FloatK $M47 (4.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  FloatK $M48 (4.00)
+  WordV  $B32
+  FloatV $F1
+  FloatV $F2
+  WordV  $B33
+  WordV  $B34
+  FloatK $M49 (4.00)
+  WordV  $B35
+  FloatV $F3
+  FloatV $F4
+  FloatK $M50 (1.00)
+  WordV  $HB3
+  WordV  $B36
+  WordV  $B37
+  FloatV $F5
+  FloatV $F6
+  WordV  $B38
+  FloatK $M51 (600.00)
+  WordV  $B39
+  WordV  $B40
+  FloatV $F7
+  FloatK $M52 (4.00)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  FloatV $F8
+  FloatK $M53 (1.00)
+  WordV  $HB2
+  WordV  $B44
+  FloatK $M54 (16.00)
+  WordV  $B45
+  FloatK $M55 (4.00)
+  WordV  $B46
+  WordV  $B47
+  WordV  $HB4
+  FloatK $FZERO (0.00)
+  FloatK $M56 (50.00)
+  FloatK $M57 (48.00)
+  FloatK $M58 (4.00)
+  FloatK $M59 (0.00)
+  FloatK $M60 (1.00)
+  WordV  $B48
+  FloatK $M61 (1.00)
+  WordV  $B49
+  WordV  $B50
+  FloatK $M62 (0.00)
+  FloatK $M63 (0.00)
+  FloatK $M64 (48.00)
+  FloatK $M65 (100.00)
+  FloatV $F9
+  FloatK $M66 (52.00)
+  FloatK $M67 (0.00)
+  FloatK $M68 (100.00)
+  FloatK $M69 (100.00)
+  FloatV $F10
+  WordV  $B51
+  FloatK $M70 (0.00)
+  FloatK $M71 (0.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (48.00)
+  FloatK $M74 (100.00)
+  FloatV $F11
+  FloatK $M75 (52.00)
+  FloatK $M76 (0.00)
+  FloatK $M77 (100.00)
+  FloatK $M78 (100.00)
+  FloatV $F12
+  WordV  $B52
+  FloatK $M79 (0.00)
+  WordV  $B53
+  FloatK $M80 (30.00)
+  FloatK $M81 (0.00)
+  WordV  $B54
+  FloatK $M82 (10.00)
+  FloatK $M83 (0.00)
+  WordV  $B55
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  FloatK $M84 (10.00)
+  FloatK $M85 (0.00)
+  WordV  $B59
+  FloatK $M86 (30.00)
+  FloatK $M87 (0.00)
+  WordV  $B60
+  FloatK $M88 (10.00)
+  FloatK $M89 (0.00)
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $B64
+  FloatK $M90 (10.00)
+  FloatK $M91 (0.00)
+  FloatK $M92 (26.00)
+  FloatK $M93 (1.00)
+  WordV  $B65
+  FloatK $M94 (0.00)
+  FloatK $M95 (1.00)
+  WordV  $B66
+  WordV  $B67
+  FloatV $F13
+  FloatV $F14
+  FloatV $F15
+  FloatK $M96 (5.00)
+  FloatK $M97 (0.00)
+  FloatK $M98 (20.00)
+  FloatK $M99 (100.00)
+  FloatV $F16
+  FloatV $F17
+  FloatV $F18
+  FloatV $F19
+  WordV  $B68
+  FloatK $M100 (0.00)
+  FloatV $F20
+  WordV  $B69
+  FloatK $M101 (0.00)
+  FloatV $F21
+  WordV  $B70
+  FloatK $M102 (100.00)
+  FloatK $M103 (0.00)
+  FloatK $M104 (100.00)
+  FloatK $M105 (100.00)
+  FloatK $M106 (0.00)
+  FloatV $F22
+  FloatK $M107 (0.00)
+  FloatV $F23
+  FloatK $M108 (5.00)
+  FloatK $M109 (2.00)
+  WordV  $B71
+  FloatK $M110 (0.00)
+  FloatK $M111 (300.00)
+  WordV  $B72
+  FloatK $M112 (172800.00)
+  WordV  $B73
+  FloatK $M113 (300.00)
+  FloatV $F24
+  FloatV $F25
+  FloatK $M114 (0.25)
+  FloatK $M115 (0.25)
+  WordV  $B74
+  FloatV $F26
+  FloatV $F27
+  FloatK $M116 (0.25)
+  FloatK $M117 (0.25)
+  WordV  $B75
+  FloatV $F28
+  WordV  $B76
+  WordV  $B77
+  FloatV $F29
+  FloatV $F30
+  FloatK $M118 (1.00)
+  WordV  $B78
+  FloatK $M119 (0.00)
+  WordK  $M120 (2)
+  FloatK $M121 (10.00)
+  FloatK $M122 (40.00)
+  FloatK $M123 (80.00)
+  FloatK $M124 (0.00)
+  FloatK $M125 (15.00)
+  FloatK $M126 (30.00)
+  FloatK $M127 (0.00)
+  FloatK $M128 (0.00)
+  FloatK $M129 (100.00)
+  WordV  $B79
+  WordV  $B80
+  FloatK $M130 (0.00)
+  FloatV $F31
+  FloatK $M131 (120.00)
+  WordV  $B81
+  WordV  $B82
+  FloatK $M132 (100.00)
+  FloatV $F32
+  FloatV $F33
+  FloatV $F34
+  FloatK $M133 (0.25)
+  FloatK $M134 (0.25)
+  WordV  $B83
+  FloatV $F35
+  FloatV $F36
+  FloatK $M135 (0.25)
+  FloatK $M136 (0.25)
+  WordV  $B84
+  FloatK $M137 (5.00)
+  FloatK $M138 (2.00)
+  WordV  $B85
+  FloatK $M139 (0.00)
+  FloatK $M140 (300.00)
+  WordV  $B86
+  FloatK $M141 (172800.00)
+  WordV  $B87
+  FloatK $M142 (300.00)
+  WordV  $B88
+  WordV  $B89
+  IPAMB &M143 (160,4)
+  IPAMB &M144 (160,0)
+  IPAMB &M145 (160,2)
+  FloatK $M147 (4.00)
+  WordV  $B90
+  WordV  $B91
+  IPAMB &M149 (29,5)
+  IPAMB &M150 (1,1)
+  IPAMB &M151 (21,9)
+  IPAMB &M152 (0,5)
+  IPAMB &M153 (0,1)
+  IPAMB &M154 (1,5)
+  IPAAW &M155 (11)
+  IPAAW &M156 (12)
+  IPAAW &M157 (10)
+  IPAAW &M158 (13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Biophysikalische
+  ;Chemie Göttingen
+  ;KUNDE:
+  ;------------------------
+  ;Büürma GmbH
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Lüftung Speisesaal
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (K_1_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter aktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  TASK (2,cycl,500)
+  NICHT (Z_INIT_TASK_EIN,$HB0)
+  BENDE ($HB0)
+  ;Initialisierung
+  ;durchfühhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;AI-LU01-00A-X50
+  ; 
+  NICHT (K_VP_FREIG_DDC,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_DDC,$WZERO,$WZERO,&M0,S_ERR)
+  ;DDC Freigabe
+  ; 
+  ;AI-LU01-00A-X51
+  ; 
+  NICHT (K_VP_FREIE_KU,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIE_KU,$WZERO,$WZERO,&M1,S_ERR)
+  ;Freie Kühlung
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;AI-LU01-00A-V50
+  ; 
+  ANAUS (K_VP_ANF_B_GW,K_1_STATUS,&M2,S_ERR)
+  ;Anfahrbetrieb
+  ;Grenzwert
+  ; 
+  ;AI-LU01-00A-V52
+  ; 
+  ANAUS (K_VP_MIN_AUL,K_1_STATUS,&M3,S_ERR)
+  ;Minimaler
+  ;Aussenluftanteil
+  ; 
+  ;AI-LU01-00A-V53
+  ; 
+  ANAUS (K_VP_WRG_OG,K_1_STATUS,&M4,S_ERR)
+  ;Oberer Grenzwert
+  ;WRG
+  ; 
+  ;AI-LU01-00A-T60
+  ; 
+  ANAUS (K_W_VE_RL_TEMP,K_1_STATUS,&M5,S_ERR)
+  ;Sollwert Rücklauf-
+  ;Temp. Vorerhitzer
+  ; 
+  ;AI-LU01-00A-V51
+  ; 
+  ANAUS (K_VP_ANL_ZT_EIN,K_1_STATUS,&M6,S_ERR)
+  ;Zeit Anlage Ein
+  ;über Taster
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  BTRA (K_0_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter
+  ;deaktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;DDC-Freigabe
+  ; 
+  ;AI-LU01-00A-X50
+  ; 
+  MELEIN (&M7,1,K_VP_FREIG_DDC,S_ERR)
+  BTRA (K_VP_FREIG_DDC,E_VP_FREIG_DDC)
+  ;Rückmeldung Ein
+  ;Freigabe Freie
+  ;Kühlung
+  ; 
+  ;AI-LU01-00A-X51
+  ; 
+  MELEIN (&M8,1,K_VP_FREIE_KU,S_ERR)
+  BTRA (K_VP_FREIE_KU,E_VP_FREIE_KU)
+  ;Rückmeldung Ein
+  ;Quittierung GLT
+  ; 
+  ;AI-UV00-00A-X00
+  ; 
+  MELEIN (&M9,1,E_RM_QUITT,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Störung
+  ;Abluftventilator
+  ;Motor
+  ; 
+  NICHT ($B1,E_ST_ALU_BI)
+  MELEIN (&M10,1,$B1,S_ERR)
+  ;Störung
+  ;Abluftventilator
+  ;Rep.-Schalter
+  ; 
+  NICHT ($B2,E_ST_ALU_REPS)
+  MELEIN (&M11,1,$B2,S_ERR)
+  ;AI-LU01-00A-W02
+  ; 
+  ;Störung
+  ;Brandschutzklappe
+  ;Abluft
+  ; 
+  NICHT ($B3,E_ST_AL_BSK)
+  MELEIN (&M12,1,$B3,S_ERR)
+  ;Störung
+  ;Frost
+  ; 
+  NICHT ($B4,E_ST_FROST)
+  MELEIN (&M13,1,$B4,S_ERR)
+  ;AI-LU01-00A-S10
+  ; 
+  ;AI-LU01-00A-A02
+  ; 
+  ;Störung
+  ;Vorerhitzerpumpe
+  ; 
+  NICHT ($B5,E_ST_VE_PU)
+  MELEIN (&M14,1,$B5,S_ERR)
+  ;AI-LU01-00A-X02
+  ; 
+  ;Störung
+  ;WRG
+  ; 
+  NICHT ($B6,E_ST_WRG)
+  MELEIN (&M15,1,$B6,S_ERR)
+  ;AI-LU01-00A-X04
+  ; 
+  ;AI-LU01-00A-X06
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ;Störung
+  ;Zuluftventilator
+  ;Motor
+  ; 
+  NICHT ($B7,E_ST_ZLU_BI)
+  MELEIN (&M16,1,$B7,S_ERR)
+  ;Störung
+  ;Zuluftventilator
+  ;Rep.-Schalter
+  ; 
+  NICHT ($B8,E_ST_ZLU_REPS)
+  MELEIN (&M17,1,$B8,S_ERR)
+  ;AI-LU01-00A-W01
+  ; 
+  ;Störung
+  ;Brandschutzklappe
+  ;Zuluft
+  ; 
+  NICHT ($B9,E_ST_ZL_BSK)
+  MELEIN (&M18,1,$B9,S_ERR)
+  ;Störung
+  ;Rauchmelder
+  ;Zuluft
+  ; 
+  NICHT ($B10,E_ST_ZL_RM)
+  MELEIN (&M19,1,$B10,S_ERR)
+  ;AI-LU01-00A-A00
+  ;Z
+  ; 
+  ;AI-LU01-00A-A01
+  ; 
+  ;AI-LU01-00A-X01
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ;Meldung
+  ;Entrauchung
+  ;Feuerwehr
+  ; 
+  NICHT ($B11,E_BM_ENTRAUCH)
+  MELEIN (&M20,1,$B11,S_ERR)
+  ;AI-LU00-00A-A00
+  ;F
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ;Meldung
+  ;Druckschalter
+  ;Abluftventilator
+  ; 
+  ;AI-LU01-00A-P02
+  ; 
+  MELEIN (&M21,1,E_BM_ALU_DS,S_ERR)
+  ;Meldung
+  ;Quittierung
+  ;Schaltschrank
+  ; 
+  ;AI-LU00-00A-B00
+  ;S
+  ; 
+  MELEIN (&M22,1,E_BM_QUITT,S_ERR)
+  ;Meldung
+  ;Taster Raum Aus
+  ; 
+  ;AI-LU01-00A-B10
+  ; 
+  MELEIN (&M23,1,E_BM_TASTER_AUS,S_ERR)
+  ;Meldung
+  ;Taster Raum Ein
+  ; 
+  ;AI-LU01-00A-B11
+  ; 
+  MELEIN (&M24,1,E_BM_TASTER_EIN,S_ERR)
+  ;Meldung
+  ;Druckschalter
+  ;Zuluftventilator
+  ; 
+  ;AI-LU01-00A-P01
+  ; 
+  MELEIN (&M25,1,E_BM_ZLU_DS,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ;Rückmeldung Ein
+  ;Abluftventilator
+  ; 
+  ;AI-LU01-00A-X02
+  ; 
+  MELEIN (&M26,1,E_RM_ALU_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;Fortluftklappe
+  ; 
+  ;AI-LU01-00A-X12
+  ; 
+  MELEIN (&M27,1,E_RM_FO_KL_AUF,S_ERR)
+  ;Rückmeldung Ein
+  ;Vorerhitzerpumpe
+  ; 
+  ;AI-LU01-00A-X06
+  ; 
+  MELEIN (&M28,1,E_RM_VE_PU_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;WRG
+  ; 
+  ;AI-LU01-00A-X04
+  ; 
+  MELEIN (&M29,1,E_RM_WRG_EIN,S_ERR)
+  ;Rückmeldung Ein
+  ;Zuluftventilator
+  ; 
+  ;AI-LU01-00A-X01
+  ; 
+  MELEIN (&M30,1,E_RM_ZLU_EIN,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&M2,K_VP_ANF_B_GW,S_ERR)
+  ATRA (K_VP_ANF_B_GW,E_VP_ANF_B_GW)
+  ;AI-LU01-00A-V50
+  ; 
+  ;Anfahrbetrieb
+  ;Grenzwert
+  ; 
+  ANEIN (&M6,K_VP_ANL_ZT_EIN,S_ERR)
+  ATRA (K_VP_ANL_ZT_EIN,E_VP_ANL_ZT_EIN)
+  ;AI-LU01-00A-V51
+  ; 
+  ;Zeit Anlage Ein
+  ;über Taster
+  ; 
+  ANEIN (&M3,K_VP_MIN_AUL,S_ERR)
+  ATRA (K_VP_MIN_AUL,E_VP_MIN_AUL)
+  ;AI-LU01-00A-V52
+  ; 
+  ;Minimaler
+  ;Aussenluftanteil
+  ; 
+  ANEIN (&M4,K_VP_WRG_OG,S_ERR)
+  ATRA (K_VP_WRG_OG,E_VP_WRG_OG)
+  ;AI-LU01-00A-V53
+  ; 
+  ;Oberer Grenzwert
+  ;WRG
+  ; 
+  ANEIN (&M5,K_W_VE_RL_TEMP,S_ERR)
+  ATRA (K_W_VE_RL_TEMP,E_W_VE_RL_TEMP)
+  ;AI-LU01-00A-T60
+  ; 
+  ;Sollwert Rücklauf-
+  ;Temperatur
+  ;Vorerhitzer
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ANEIN (&M36,E_MW_AU_TEMP,S_ERR)
+  ;AI-LU01-00A-T00
+  ; 
+  ;Messwert
+  ;Aussentemperatur
+  ;V
+  ; 
+  ANEIN (&M37,E_X_AL_TEMP,S_ERR)
+  ;AI-LU01-00A-T12
+  ; 
+  ;Istwert
+  ;Ablufttemperatur
+  ; 
+  ANEIN (&M38,E_X_VE_RL_TEMP,S_ERR)
+  ;AI-LU01-00A-T06
+  ; 
+  ;Istwert
+  ;Rücklauftemperatur
+  ;Vorerhitzer
+  ; 
+  ANEIN (&M39,E_X_WRG_TEMP,S_ERR)
+  ;AI-LU01-00A-T04
+  ; 
+  ;Istwert
+  ;WRG Medium
+  ;Temperatur
+  ; 
+  ANEIN (&M40,E_X_ZL_TEMP,S_ERR)
+  ;AI-LU01-00A-T11
+  ; 
+  ;Istwert
+  ;Zulufttemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  SOLKEN (1,K_1_STATUS,E_W_AL_TEMP,S_ERR)
+  ;Aussentemperatur
+  ;Lüftung
+  ; 
+  ;Sollwert
+  ;Ablufttemperatur
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  TASK (4,cycl,1000)
+  ;Kopfsteuerung der
+  ;Anlage:
+  ;- virtuelle Störungen
+  ;- Sammelstörung
+  ;- Hauptstörung
+  ;- Anlage Einschalten
+  ; 
+  ;Steuerungs und
+  ;Regelungs-
+  ;Funktionen der Anlage
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MOKY (E_BM_QUITT,$M41,$B12)
+  MOKY (E_VP_FREIG_DDC,$M42,$B13)
+  ODRMN (3,$B12,$B13,E_RM_QUITT,0,$B14,$WSCRATCH)
+  MOKY ($B14,$M43,Z_QUITT)
+  VVZ ($B14,$M44,$M45,$B15)
+  MOKY ($B15,$M46,A_QUITT_AUS)
+  ;Störungs- Quittierung
+  ;- Taster Schaltschrank
+  ;- Virt. Freigabe
+  ;- Rückm. Schaltbefehl
+  ;  Hardw. Quittierung
+  ; 
+  ;Es kann die Software
+  ;und die Hardware
+  ;Veriegelung quittiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (8,E_ST_ZL_BSK,E_ST_AL_BSK,E_ST_ZL_RM,E_ST_FROST,
+         Z_ALU_ST,Z_ZLU_ST,K_0_STATUS,K_0_STATUS,0,$B16,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B17,
+         $WSCRATCH)
+  ODR2 ($B16,$B17,Z_HAUPT_ST_1)
+  ;Anlagenstörung
+  ;Störungen die zum
+  ;Abschalten der Anlage
+  ;führen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (9,Z_HAUPT_ST_1,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B18,$WSCRATCH)
+  ODRMN (3,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B19,$WSCRATCH)
+  ODR2 ($B18,$B19,$B20)
+  RSS ($B20,Z_QUITT,A_HAUPT_ST,$WSCRATCH)
+  ;Anlagenstörung
+  ;Störungen die zum
+  ;Abschalten der Anlage
+  ;führen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (8,E_ST_VE_PU,E_ST_WRG,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B21,
+         $WSCRATCH)
+  ODRMN (8,K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B22,
+         $WSCRATCH)
+  ODR2 ($B21,$B22,Z_SAMMEL_ST_1)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (9,Z_SAMMEL_ST_1,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,0,$B23,$WSCRATCH)
+  ODRMN (3,A_HAUPT_ST,K_0_STATUS,K_0_STATUS,0,$B24,$WSCRATCH)
+  ODR2 ($B23,$B24,$B25)
+  RSS ($B25,Z_QUITT,A_SAMMEL_ST,$WSCRATCH)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UNDMN (1,E_VP_FREIG_DDC,2,A_HAUPT_ST,E_BM_ENTRAUCH,$B26,
+         $WSCRATCH)
+  ODR2 (E_BM_ENTRAUCH,A_HAUPT_ST,$B27)
+  ODR2 ($B26,$B30,Z_EINSCHALT)
+  MOKY (E_BM_TASTER_EIN,$M47,$B28)
+  UND11 ($B28,$B26,$B29)
+  RSS ($B29,$B34,$B30,$B31)
+  MOKY (E_BM_TASTER_AUS,$M48,$B32)
+  MULDI (E_VP_ANL_ZT_EIN,K_3600_WERT,K_1_WERT,$F1)
+  MAX (2,$F1,K_300_WERT,$F2)
+  ;Einschalten der
+  ;Anlage
+  ;- DDC Freigabe
+  ;- Taster Raum
+  ;A
+  ; 
+  UHR (K_1_STATUS,$B31,D_ZEIT_TASTER)
+  VGLOH (D_ZEIT_TASTER,$F2,$B33)
+  ODRMN (3,$B27,$B32,$B33,0,$B34,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UND11 (Z_EINSCHALT,Z_ANFAHR,Z_HAUPT)
+  MOKS (Z_EINSCHALT,$M49,$B35)
+  MIN (2,E_VP_ANF_B_GW,K_10_GRAD,$F3)
+  MAX (2,$F3,K_0_GRAD,$F4)
+  VGLEH (E_MW_AU_TEMP,$F4,$M50,$HB3)
+  NICHT ($HB3,$B36)
+  UND2 ($B35,$B36,$B37)
+  MIN (2,K_300_SEK,K_900_SEK,$F5)
+  MAX (2,$F5,K_300_SEK,$F6)
+  MOKY ($B37,$F6,$B38)
+  ;Anfahrbetrieb
+  ;- Aussentemperatur
+  ;abhängig über Grenzwert
+  ;- Variable Zeit
+  ;- Aktiv. Schalter
+  ; 
+  UNDMN (3,Z_EINSCHALT,$B38,K_1_STATUS,0,Z_ANFAHR,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  MOKS (E_VP_FREIE_KU,$M51,$B39)
+  UND11 ($B39,A_HAUPT_ST,$B40)
+  SUB2 (E_X_AL_TEMP,E_MW_AU_TEMP,$F7)
+  VGLOH ($F7,$M52,$B41)
+  UND2 ($B39,$B41,$B42)
+  VGLOH (E_W_AL_TEMP,E_X_AL_TEMP,$B43)
+  SUB2 (E_X_AL_TEMP,E_MW_AU_TEMP,$F8)
+  VGLOH ($F8,$M53,$HB2)
+  NICHT ($HB2,$B44)
+  VGLOH (E_MW_AU_TEMP,$M54,$HB2)
+  NICHT ($HB2,$B45)
+  ;Freie Kühlung
+  ;- Einschalten über
+  ;  virtuellen Befehl
+  ;- Aussentemp. <
+  ;  Abluftemp H=4K
+  ;- Ausschalten bei
+  ;  Einschalten Haupt-
+  ;  Schaltbefehl oder
+  ;  Erreichen Sollwert
+  ;  Ablufttemp.
+  ; 
+  NICHT (E_VP_FREIE_KU,$HB0)
+  MOKY ($HB0,$M55,$B46)
+  ODRMN (8,A_HAUPT_ST,Z_ANFAHR,Z_HAUPT,E_BM_ENTRAUCH,$B43,
+         $B44,$B45,$B46,0,A_BF_FR_KU_AUS,$WSCRATCH)
+  RSS ($B42,A_BF_FR_KU_AUS,$B47,$WSCRATCH)
+  ODR2 ($B40,$B47,Z_FREIE_KU)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  NICHT (Z_HAUPT,$HB4)
+  REGLER (1,K_1_STATUS,$WZERO,$FZERO,D_Y_REG_1,S_ERR)
+  REGLER (2,K_1_STATUS,$HB4,$M56,D_Y_REG_2,S_ERR)
+  SEQ2 (D_Y_REG_2,$M57,$M58,$M59,Z_Y_KUEHLEN,Z_Y_HEIZEN,S_PK)
+  ;Abluft/Zuluftkaskaden
+  ;Temperatur-Regelung mit
+  ;Kühlen/Heizen Sequenz
+  ;0% -> 0%
+  ;Kühlen
+  ;52% -> 0%
+  ;Heizen
+  ;- Freigabe Anlage
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  VGLEH (E_MW_AU_TEMP,E_X_AL_TEMP,$M60,$HB3)
+  NICHT ($HB3,$B48)
+  UNDMN (1,$B48,2,$B49,$B50,Z_WRG_HZ,$WSCRATCH)
+  VGLEH (E_X_AL_TEMP,E_MW_AU_TEMP,$M61,$HB3)
+  NICHT ($HB3,$B49)
+  UNDMN (1,$B49,2,$B48,$B50,Z_WRG_KU,$WSCRATCH)
+  ODR2 (E_ST_WRG,R_ST_REPS_WRG,$B50)
+  ;Auswahl Klappen
+  ;Heizen / Kühlen
+  ;Aussentemperatur <
+  ;Ablufttemperatur
+  ;-> Heizbetrieb
+  ;Aussentemperatur >
+  ;Ablufttemperarur
+  ;-> Kühlbetrieb
+  ;- Störung WRG
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  FKG (Z_Y_KUEHLEN,4,$M62,$M63,$M64,$M65,$F9)
+  FKG (Z_Y_KUEHLEN,4,$M66,$M67,$M68,$M69,$F10)
+  NICHT (Z_WRG_KU,$B51)
+  AWT ($B51,$F9,$M70,Z_WRG_KUEHLEN)
+  AWT ($B51,$F10,Z_Y_KUEHLEN,A_KU_VENTIL)
+  ;Bei Kühlsignal
+  ;Aufteilung in Zweier-
+  ;Sequenz WRG/Kühler
+  ;Falls kein WRG-Kühl-
+  ;betrieb möglich wird
+  ;direkt der Kühler
+  ;angesprochen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  FKG (Z_Y_HEIZEN,4,$M71,$M72,$M73,$M74,$F11)
+  FKG (Z_Y_HEIZEN,4,$M75,$M76,$M77,$M78,$F12)
+  NICHT (Z_WRG_HZ,$B52)
+  AWT ($B52,$F11,$M79,Z_WRG_HEIZEN)
+  AWT ($B52,$F12,Z_Y_HEIZEN,Z_VE_HEIZEN)
+  ;Bei Heizsignal
+  ;Aufteilung in Zweier-
+  ;Sequenz WRG/Erhitzer
+  ;Falls kein WRG-Heiz-
+  ;betrieb möglich wird
+  ;direkt der Erhitzer
+  ;angesprochen
+  ;-
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODRMN (3,Z_HAUPT,Z_ANFAHR,Z_FREIE_KU,0,$B53,$WSCRATCH)
+  UND11 ($B53,E_BM_ENTRAUCH,A_FO_KLAPPE)
+  ;Fortluftklappe
+  ;- Freigabe Anlage
+  ;- Anfahrbetrieb
+  ;- Entrauchung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  VVZ (E_RM_ZLU_EIN,$M80,$M81,$B54)
+  NICHT (E_BM_ZLU_DS,$HB0)
+  VVZ ($HB0,$M82,$M83,$B55)
+  UND2 ($B54,$B55,$B56)
+  RSS ($B56,Z_QUITT,A_ZLU_ST_KEIL,$WSCRATCH)
+  ;Keilriemenstörung mit
+  ;Differenzdruckschalter
+  ;Ist die Anlage ausge-
+  ;schaltet wird Meldung
+  ;unterdrückt.
+  ;Ist der Ventilator ein-
+  ;geschaltet und nach
+  ;30 sec kein Diff.Druck
+  ;vorhanden wird eine
+  ;virtuelle Störung aktiv
+  ;_
+  ; 
+  ;Gegen Druckschwankungen
+  ;wird die Störung um
+  ;10 sec verzögert
+  ;Die Druckschalter-
+  ;Meldung wird als
+  ;"Luftdruck vorhanden"
+  ;verarbeitet
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODRMN (6,R_ST_ZLU_KL,E_ST_ZLU_BI,E_ST_ZLU_REPS,
+         A_ZLU_ST_KEIL,R_ST_ZLU_FU,R_ZLU_ST_RAD,0,Z_ZLU_ST,
+         $WSCRATCH)
+  ;Störung Ventilator
+  ;- Kaltleiter Motor
+  ;- Bimetall Motor
+  ;- Reparaturschalter
+  ;- Keilriemen
+  ;- Frequenzumformer
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ODRMN (3,Z_ANFAHR,Z_HAUPT,Z_FREIE_KU,0,$B57,$WSCRATCH)
+  UND21 ($B57,E_RM_FO_KL_AUF,Z_ZLU_ST,$B58)
+  VVZ ($B58,$M84,$M85,$B59)
+  ODR2 ($B59,E_BM_ENTRAUCH,A_ZLU_EIN)
+  ;Einstufiger Ventilator
+  ;- Anfahrbetrieb
+  ;- Freigabe Anlage
+  ;- Entrauchung
+  ;- Störung Ventilator
+  ;- Klappe Auf
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  VVZ (E_RM_ALU_EIN,$M86,$M87,$B60)
+  NICHT (E_BM_ALU_DS,$HB0)
+  VVZ ($HB0,$M88,$M89,$B61)
+  UND2 ($B60,$B61,$B62)
+  RSS ($B62,Z_QUITT,A_ALU_ST_KEIL,$WSCRATCH)
+  ;Keilriemenstörung mit
+  ;Differenzdruckschalter
+  ;Ist die Anlage ausge-
+  ;schaltet wird Meldung
+  ;unterdrückt.
+  ;Ist der Ventilator ein-
+  ;geschaltet und nach
+  ;30 sec kein Diff.Druck
+  ;vorhanden wird eine
+  ;virtuelle Störung aktiv
+  ; 
+  ;Gegen Druckschwankungen
+  ;wird die Störung um
+  ;10 sec verzögert
+  ;Die Druckschalter-
+  ;Meldung wird als
+  ;"Luftdruck vorhanden"
+  ;verarbeitet
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ODRMN (6,R_ST_ALU_KL,E_ST_ALU_BI,E_ST_ALU_REPS,
+         A_ALU_ST_KEIL,R_ST_ALU_FU,R_ALU_ST_RAD,0,Z_ALU_ST,
+         $WSCRATCH)
+  ;Störung Ventilator
+  ;- Kaltleiter Motor
+  ;- Bimetall Motor
+  ;- Reparaturschalter
+  ;- Keilriemen
+  ;- Frequenzumformer
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  ODRMN (4,Z_ANFAHR,Z_HAUPT,R_ENTRAUCH,Z_FREIE_KU,0,$B63,
+         $WSCRATCH)
+  UND21 ($B63,E_RM_FO_KL_AUF,Z_ALU_ST,$B64)
+  VVZ ($B64,$M90,$M91,A_ALU_EIN)
+  ;Einstufiger Ventilator
+  ;- Anfahrbetrieb
+  ;- Freigabe Anlage
+  ;- Entrauchung
+  ;- Störung Ventilator
+  ;- Klappe Auf
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  VGLEH (E_MW_AU_TEMP,$M92,$M93,$B65)
+  VGLEH (E_MW_AU_TEMP,$M94,$M95,$HB3)
+  NICHT ($HB3,$B66)
+  ODR2 ($B65,$B66,$B67)
+  MIN (2,K_100_PROZENT,E_VP_MIN_AUL,$F13)
+  MAX (2,K_0_PROZENT,$F13,$F14)
+  DIVK2 ($F14,$F15)
+  AWT ($B67,$F14,$F15,Z_ML_MIN_AUL)
+  ;Minimaler
+  ;Aussenluftanteil
+  ;AU-Temp > 26 Grad oder
+  ;AU-Temp < 0 Grad
+  ;-> halbieren des
+  ;eingegebenen Wertes
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  FKG (E_MW_AU_TEMP,4,$M96,$M97,$M98,$M99,$F16)
+  SUB2 (K_100_WERT,Z_ML_MIN_AUL,$F17)
+  MULDI ($F16,$F17,K_100_WERT,$F18)
+  ADD2 (Z_ML_MIN_AUL,$F18,$F19)
+  UND11 (Z_HAUPT,Z_ANFAHR,$B68)
+  AWT ($B68,$M100,$F19,Z_ML_AU_TEMP)
+  ;Ansteuerung
+  ;Mischluftklappen
+  ;über Aussenlufttemp.
+  ;und einstellbaren
+  ;Min. Aussenl. Anteil
+  ;- Aussentemperatur
+  ;- Anfahrbetrieb
+  ;- Freigabe Anlage
+  ;- Rechenwert
+  ;- Minimale Aussenluft
+  ; 
+  ;   100 - b
+  ;Y= ------- * X + b
+  ;     100
+  ;Y= Klappenstellung
+  ;X= Aussentemperatur
+  ;   Verhältnis
+  ;B= Minimaler
+  ;Aussenluftanteil
+  ;Die Kennlinie wird
+  ;dynamisch verändert
+  ; 
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  MAX (6,R_ML_TEMP_REG,R_ML_CO2_REG,R_ML_MIN_AUL,
+       Z_ML_AU_TEMP,R_ML_KUEHLEN,R_ML_HEIZEN,$F20)
+  ODRMN (1,Z_ANFAHR,1,Z_HAUPT,$B69,$WSCRATCH)
+  AWT ($B69,$F20,$M101,$F21)
+  ODR2 (Z_FREIE_KU,E_BM_ENTRAUCH,$B70)
+  AWT ($B70,$F21,$M102,A_AUL_KLAPP)
+  FKG (A_AUL_KLAPP,4,$M103,$M104,$M105,$M106,$F22)
+  AWT (E_ST_ZL_RM,$F22,$M107,A_UML_KLAPP)
+  ;Mischluftklappen
+  ;- Regelsignal Temperatur
+  ;- Regelsignal CO2
+  ;- Minimale  Aussenluft
+  ;- Aussentemp- Abhängig
+  ;- Regelsignal Heizen
+  ;- Regelsignal Kühlen
+  ;- Freigabe Anlage
+  ;- Anfahrbetrieb
+  ;- Entrauchung
+  ; 
+  ;0= 100Umluft
+  ;100= 100Aussenluft
+  ;-
+  ; 
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  MAX (2,Z_WRG_KUEHLEN,Z_WRG_HEIZEN,$F23)
+  VGLEH ($F23,$M108,$M109,$B71)
+  VVZ ($B71,$M110,$M111,$B72)
+  UND2 ($B72,Z_HAUPT,Z_WRG_ANF)
+  ;Bedarfabhängiges
+  ;Einschalten der
+  ;WRG
+  ;Y>5> WRG   Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;WRG   Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_WRG_EIN,D_ZT_WRG_AUS)
+  VGLOH (D_ZT_WRG_AUS,$M112,$B73)
+  MOKY ($B73,$M113,Z_WRG_WA)
+  ;WRG
+  ;Wartungslauf
+  ;Hat die WRG   länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  MIN (2,E_VP_WRG_OG,K_10_GRAD,$F24)
+  MAX (2,$F24,K_0_GRAD,$F25)
+  VGLUH (E_X_WRG_TEMP,$F25,$M114,$M115,$B74)
+  MIN (2,$F28,K_5_GRAD,$F26)
+  MAX (2,$F26,K_-5_GRAD,$F27)
+  VGLUH ($F27,E_X_WRG_TEMP,$M116,$M117,$B75)
+  RSS ($B74,$B75,Z_WRG_ZWANGS,$WSCRATCH)
+  SUB2 (E_VP_WRG_OG,K_1_WERT,$F28)
+  ;Zwangsschaltung der
+  ;WRG über
+  ;eine Obere Temp.-Grenze
+  ;und eine
+  ;Untere Temp.-Grenze
+  ;Hysterese: 0,25K
+  ;WRG-TEMP<  0 Grad
+  ;-> WRG Aus
+  ;WRG-TEMP>  1 Grad
+  ;-> WRG Ein
+  ; 
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  UND2 (Z_WRG_ZWANGS,Z_WRG_ANF,$B76)
+  ODRMN (3,$B76,Z_ANFAHR,Z_WRG_WA,0,$B77,$WSCRATCH)
+  UND11 ($B77,E_ST_WRG,A_WRG_EIN)
+  ;Regenerative
+  ;Rotations WRG
+  ;Rekuperative
+  ;WRG Pumpe
+  ; 
+  ;WRG
+  ;- WRG Zwangsschaltung
+  ;- Anforderung Regelung
+  ;- Anfahrbetrieb
+  ;- Wartung WRG
+  ;- Störung WRG
+  ; 
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  MIN (2,K_15_GRAD,K_15_GRAD,$F29)
+  MAX (2,$F29,K_5_GRAD,$F30)
+  VGLEH (E_MW_AU_TEMP,$F30,$M118,$B78)
+  LREG (E_X_VE_RL_TEMP,E_W_VE_RL_TEMP,K_1_STATUS,$B78,$M119,
+        $M120,$M121,$M122,$M123,$M124,$M125,$M126,$M127,
+        $M128,$M129,Z_VE_RL_MIN_REG,S_ERR)
+  ;Vorerhitzer Rücklauf
+  ;Min-Temperaturregelung
+  ;- lokaler Regler
+  ;- Einstellbarer Wert
+  ;  Freigabe über AU-Temp
+  ; 
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  MAX (2,Z_VE_RL_MIN_REG,$F32,A_VE_VENTIL)
+  NAND2 (Z_HAUPT,K_1_STATUS,$B79)
+  ODR2 ($B79,R_VE_WA_VE_0,$B80)
+  AWT ($B80,Z_VE_HEIZEN,$M130,$F31)
+  MOKS (K_0_STATUS,$M131,$B81)
+  ODRMN (3,$B81,E_ST_FROST,R_VE_WA_VE_100,0,$B82,$WSCRATCH)
+  AWT ($B82,$F31,$M132,$F32)
+  ;Vorerhitzerventil
+  ;- Regelsignal Min-Temp
+  ;- Regelsignal Temp-Reg.
+  ;- Freigabe Anlage
+  ;- Freigabe Vorerhitzer
+  ;- Wartung Ventil 0 
+  ;- Anfahrbetrieb
+  ;- Frostschutz luftseitig
+  ;- Wartung Ventil 100
+  ; 
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  MIN (2,K_9_GRAD,K_10_GRAD,$F33)
+  MAX (2,$F33,K_6_GRAD,$F34)
+  VGLUH (E_MW_AU_TEMP,$F34,$M133,$M134,$B83)
+  MIN (2,K_8_GRAD,K_8_GRAD,$F35)
+  MAX (2,$F35,K_4_GRAD,$F36)
+  VGLUH ($F36,E_MW_AU_TEMP,$M135,$M136,$B84)
+  RSS ($B84,$B83,Z_VE_ZWANGS,$WSCRATCH)
+  ;Zwangsschaltung des
+  ;Vorerhitzers über
+  ;eine Obere Temp.-Grenze
+  ;und eine
+  ;Untere Temp.-Grenze
+  ;Hysterese: 0,25K
+  ;AU-Temp <  5 Grad
+  ;-> Vorerhitz. Ein
+  ;AU-Temp >  7 Grad
+  ;-> Vorerhitz Aus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  VGLEH (A_VE_VENTIL,$M137,$M138,$B85)
+  VVZ ($B85,$M139,$M140,$B86)
+  UND2 ($B86,K_1_STATUS,Z_VE_ANF_PU)
+  ;Bedarfabhängiges
+  ;Einschalten der
+  ;Vorerhitzerpumpe
+  ;Y>5> Pumpe Ein
+  ;Y<3
+  ; und Zeit> 5Min ->
+  ;Pumpe Aus
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  UHR (K_1_STATUS,E_RM_VE_PU_EIN,D_ZEIT_VE_PU_AUS)
+  VGLOH (D_ZEIT_VE_PU_AUS,$M141,$B87)
+  MOKY ($B87,$M142,Z_VE_WA_PU)
+  ;Vorerhitzerpumpe
+  ;Wartungslauf
+  ;Hat die Pumpe länger
+  ;als 48 Stunden gestanden
+  ;wird sie für 5 Min
+  ;eingeschaltet.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  UNDMN (3,Z_HAUPT,K_1_STATUS,Z_VE_ANF_PU,0,$B88,$WSCRATCH)
+  ODRMN (6,$B88,E_ST_FROST,Z_VE_ZWANGS,Z_VE_WA_PU,Z_ANFAHR,
+         E_BM_ENTRAUCH,0,$B89,$WSCRATCH)
+  UND11 ($B89,E_ST_VE_PU,A_VE_PUMPE)
+  ;Vorerhitzerpumpe
+  ;- Störung Pumpe
+  ;- Freigabe Anlage
+  ;- Freigbae Vorerhitzer
+  ;- Anforderung Regelung
+  ;- Frostschutz
+  ;- Zwangsschaltung
+  ;- Wartungslauf Pumpe
+  ;- Anfahrbetrieb
+  ; 
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  TASK (5,cycl,1000)
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  56
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_ALU_ST_KEIL,&M143,S_ERR)
+  ;AI-LU1-00A-P52
+  ; 
+  SETMEL (K_1_STATUS,1,A_SAMMEL_ST,&M144,S_ERR)
+  ;Störung Keilriemen
+  ;Abluftventilator
+  ; 
+  ;AI-LU01-00A-S50
+  ; 
+  ;Sammelstörung
+  ;Lüftung
+  ; 
+  SETMEL (K_1_STATUS,1,A_ZLU_ST_KEIL,&M145,S_ERR)
+  ;AI-LU01-00A-P51
+  ; 
+  ;Störung Keilriemen
+  ;Zuluftventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite  57
+  ;*****************************************************************
+  ;AI-LU01-00A-X50
+  ; 
+  BEFAUS (1,$B91,$WZERO,$WZERO,$WZERO,&M0,S_ERR)
+  ;DDC-Freigabe
+  ;ausschalten
+  ; 
+  MOKY (A_HAUPT_ST,$M147,$B90)
+  ODR2 ($B90,E_BM_ENTRAUCH,$B91)
+  ;AI-LU01-00A-X51
+  ; 
+  BEFAUS (1,A_BF_FR_KU_AUS,$WZERO,$WZERO,$WZERO,&M1,S_ERR)
+  ;Freigabe
+  ;Freie Kühlung
+  ;Ausschalten
+  ; 
+  ;AI-UV00-00A-X00
+  ; 
+  BEFAUS (1,A_QUITT_AUS,$WZERO,$WZERO,$WZERO,&M149,S_ERR)
+  ;Quittierung
+  ;GLT
+  ;Ausschalten
+  ; 
+  ;*****************************************************************
+  ;*** Seite  58
+  ;*****************************************************************
+  ;AI-LU01-00A-X02
+  ; 
+  NICHT (A_ALU_EIN,$HB0)
+  BEFAUS (1,$HB0,A_ALU_EIN,$WZERO,$WZERO,&M150,S_ERR)
+  ;Abluftventilator
+  ; 
+  ;AI-LU01-00A-X12
+  ; 
+  NICHT (A_FO_KLAPPE,$HB0)
+  BEFAUS (1,$HB0,A_FO_KLAPPE,$WZERO,$WZERO,&M151,S_ERR)
+  ;Fortluftklappe
+  ; 
+  ;AI-LU01-00A-X06
+  ; 
+  NICHT (A_VE_PUMPE,$HB0)
+  BEFAUS (1,$HB0,A_VE_PUMPE,$WZERO,$WZERO,&M152,S_ERR)
+  ;Vorerhitzerpumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  59
+  ;*****************************************************************
+  ;AI-LU01-00A-X04
+  ; 
+  NICHT (A_WRG_EIN,$HB0)
+  BEFAUS (1,$HB0,A_WRG_EIN,$WZERO,$WZERO,&M153,S_ERR)
+  ;WRG
+  ; 
+  ;AI-LU01-00A-X01
+  ; 
+  NICHT (A_ZLU_EIN,$HB0)
+  BEFAUS (1,$HB0,A_ZLU_EIN,$WZERO,$WZERO,&M154,S_ERR)
+  ;Zuluftventilator
+  ; 
+  ;*****************************************************************
+  ;*** Seite  60
+  ;*****************************************************************
+  ;AI-LU01-00A-Y08
+  ; 
+  ANAUS (A_KU_VENTIL,K_1_STATUS,&M155,S_ERR)
+  ;Kühlerventil
+  ; 
+  ;AI-LU01-00A-Y11
+  ; 
+  ANAUS (A_AUL_KLAPP,K_1_STATUS,&M156,S_ERR)
+  ;Aussenluftklappe
+  ; 
+  ;AI-LU01-00A-Y06
+  ; 
+  ANAUS (A_VE_VENTIL,K_1_STATUS,&M157,S_ERR)
+  ;Vorerhitzerventil
+  ; 
+  ;AI-LU01-00A-Y13
+  ; 
+  ANAUS (A_UML_KLAPP,K_1_STATUS,&M158,S_ERR)
+  ;Umluftklappe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  61
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

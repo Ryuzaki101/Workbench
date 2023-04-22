@@ -1,0 +1,714 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01103.GPS
+  ;*** Projektname    : MPI-Goettingen
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 11
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (AR20,3)
+  WordV  WERR
+  WordK  K-GESAMT-ANL-AUS (0)
+  WordK  K-GES-ANL-EIN1 (1)
+  WordK  K-GES-ANL-EIN2 (0)
+  WordV  GES-ANL-STOERUNG
+  WordV  ZUL-VENT-AUS
+  WordV  ZUL-VENT-STOER
+  WordV  ZUL-VENT-EIN-1
+  WordV  ZUL-VENT-EIN-2
+  WordV  ABL-1-VENT-AUS
+  WordV  ABL-1-VENT-EIN-1
+  WordV  ABL-1-VENT-STOER
+  WordV  ABL-1-VENT-EIN-2
+  WordV  ABL-2-VENT-AUS
+  WordV  ABL-2-VENT-EIN-1
+  WordV  ABL-2-VENT-STOER
+  WordV  ABL-2-VENT-EIN-2
+  WordV  AI-LU12-13I-S02
+  WordV  FROSTSCHUTZ
+  WordV  KEILRIEMEN-ZUL
+  WordV  AI-LU12-13I-S04
+  WordV  HYGROSTAT-ZULUFT
+  WordV  KEILRIEMEN-ABL-1
+  WordV  KEILRIEMEN-ABL-2
+  FloatV SW-ABS-FE-ZU-ENT
+  FloatV AUSSENTEMPERATUR
+  WordV  AI-LU12-13I-W04
+  WordV  REP-SCH-ZUL-VENT
+  WordV  REP-SCH-ABL-1
+  FloatV SW-FERNVERSTELL
+  FloatV GEAEND-ABL-SOLLW
+  WordK  K-AUSKUE-BET-AUS (0)
+  FloatV ABS-ABL-FEU-HOER
+  WordV  SOLL-EIN2-ZUL-V
+  FloatK K-SW-ABL-TEMP (22.00)
+  FloatK K-SW-RAUM-TEMP (25.00)
+  WordV  SOLL-EIN1-ZUL-V
+  WordV  STOERUNG-ZUL
+  WordV  ZULUFT-EIN
+  WordV  ENTRIEGELN
+  WordV  VORSPUEL-SCHALT
+  WordV  SOLL-EIN2-ABL1-V
+  WordV  STOERUNG-ABL2
+  WordV  SOLL-EIN1-ABL1-V
+  WordV  STOERUNG-ABL1
+  WordV  SOLL-EIN2-ABL2-V
+  FloatV Y-ABS-FE-REG-MAX
+  WordK  KON00 (0)
+  FloatV Y-SIGNAL-ABLUFT
+  WordK  KON01 (1)
+  FloatV SOLL-KENN-1
+  WordV  UMSCHALT-SOMMER
+  WordV  Anf-TB-1Stufe
+  FloatV Y-ZU-TE-REG-ERHI
+  FloatV SW-ABS-FE-ZU-BEF
+  FloatV Y-ZU-TE-REG-UM-K
+  FloatV ABS-ZUL-FEU-HOER
+  FloatV ZUL-FEUCHTE-HOER
+  FloatV ABL-FEUCHTE-HOER
+  FloatV ABL-TEMP-HOERSA
+  FloatV ZUL-TEMP-HOERSA
+  FloatV RAUM-TEMP-HOERSA
+  FloatV ANST-AU-KL-LUFTQ
+  FloatV Y-Reg-ZU-TE-n-VE
+  WordK  K-AUSKUE-BET-EIN (0)
+  WordK  K-GES-ANL-EIN (0)
+  WordV  AUSKUEHL-BETRIEB
+  FloatK K-SW-AUSKUEH-HOE (23.00)
+  FloatV K-LFZ-MAX-AUSKUE
+  WordV  Anf-2Stufe-Luftq
+  FloatK FKON00 (0.00)
+  WordV  SOLL-EIN1-ABL2-V
+  FloatK K-SW-RE-FE-AB-MA (55.00)
+  FloatV SW-ABS-FE-AB-MIN
+  FloatV SW-ABS-FE-AB-MAX
+  FloatV Y-ZUL-TEMP-REG
+  FloatK K-SW-RE-FE-AB-MI (45.00)
+  FloatV Y-ABS-FE-REG-MIN
+  FloatV Y-ZU-TE-REG-KUEH
+  FloatV Y-ZU-TE-REG-AU-K
+  FloatV ZU-TEMP-nach-VE
+  FloatK K-SW-MIN-AU-KLAP (10.00)
+  FloatK K-SW-ZU-TEM-n-VE (16.00)
+  WordV  STOE-KEILR-ZUL
+  WordV  STOE-KEILR-ABL
+  WordV  TB-1-2STUFE
+  WordV  Anf-TB-2Stufe
+  FloatV AB-Luftqualit
+  FloatK K-SW-GRZW_Luftqa (1200.00)
+  WordV  Anf-1Stufe-Luftq
+  FloatV AKT-RAUM-TEMP-HO
+  FloatK K2_GRAD (2.00)
+  FloatK K6_GRAD (6.00)
+  WordV  FRG_AUSKUEHLBETR
+  FloatK K3_GRAD (3.00)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &AI-LU12-13I-X50 (150,1)
+  WordK  $M0 (1)
+  IPAAW &AI-LU12-13I-T50 (152)
+  WordK  $M1 (1)
+  IPAAW &AI-LU12-13I-T51 (153)
+  WordK  $M2 (1)
+  IPAAW &AI-LU12-13I-T53 (159)
+  WordK  $M3 (1)
+  IPAAW &AI-LU12-13I-F50 (192)
+  WordK  $M4 (1)
+  IPAAW &AI-LU12-13I-F51 (193)
+  WordK  $M5 (1)
+  IPAAW &AI-LU12-13I-T54 (160)
+  WordK  $M6 (1)
+  IPAAW &AI-LU12-13I-T56 (200)
+  WordK  $M7 (1)
+  IPAAW &AI-LU12-13I-T57 (56)
+  IPAMB &AI-LU12-13I-X51 (158,1)
+  IPAMB &M8 (150,2)
+  IPAMB &M9 (150,3)
+  IPAMB &M10 (150,4)
+  IPAMB &M11 (150,5)
+  WordV  $B1
+  WordV  $B2
+  WordV  $WSCRATCH
+  WordV  $B3
+  IPAMB &AI-LU12-13I-X01 (60,1)
+  IPAMB &M12 (60,2)
+  IPAMB &M13 (60,3)
+  IPAMB &M14 (60,4)
+  IPAMB &M15 (60,5)
+  WordV  $HB7
+  IPAMB &AI-LU12-13I-X02 (61,1)
+  IPAMB &M16 (61,2)
+  IPAMB &M17 (61,3)
+  IPAMB &M18 (61,4)
+  IPAMB &M19 (61,5)
+  IPAMB &AI-LU12-13I-X03 (62,1)
+  IPAMB &M20 (62,2)
+  IPAMB &M21 (62,3)
+  IPAMB &M22 (62,4)
+  IPAMB &M23 (62,5)
+  IPAMB &AI-LU12-13I-S01 (66,10)
+  IPAMB &M24 (66,11)
+  IPAMB &AI-LU12-13I-S03 (66,14)
+  IPAMB &M25 (66,15)
+  IPAMB &AI-LU12-13I-S05 (67,10)
+  IPAMB &AI-LU12-13I-W03 (62,14)
+  IPAMB &M26 (62,15)
+  IPAMB &AI-LU13-13I-S50 (150,0)
+  IPAMB &AI-LU13-16I-B01 (63,10)
+  IPAMB &M27 (158,2)
+  IPAMB &M28 (158,3)
+  WordV  $B4
+  WordV  $B5
+  IPAAW &AI-AS14-00A-T00 (86)
+  IPAAW &AI-LU12-13I-T03 (6)
+  IPAAW &AI-LU12-13I-T04 (7)
+  IPAAW &AI-LU13-16I-T02 (47)
+  IPAAW &AI-LU12-13I-F03 (3)
+  IPAAW &AI-LU12-13I-F01 (2)
+  IPAAW &AI-LU12-13I-T02 (5)
+  IPAAW &AI-LU12-13I-E01 (37)
+  IPAAW &AI-LU13-15I-T05 (8)
+  FloatK $M29 (1.50)
+  FloatK $M30 (0.00)
+  FloatV $F1
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  FloatV $F5
+  FloatV $F6
+  FloatV $F7
+  FloatV $F8
+  FloatV $F9
+  IPAAW &AI-LU12-13I-E50 (202)
+  FloatV $F10
+  FloatV $F11
+  WordK  $M31 (1)
+  IPAAW &AI-LU13-15E-Y01 (34)
+  WordK  $M32 (1)
+  IPAAW &AI-LU13-15E-Y02 (35)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordK  $M34 (1)
+  WordV  $B10
+  WordV  $B11
+  FloatK $M36 (2.00)
+  FloatK $M37 (2.00)
+  FloatK $M38 (10.00)
+  FloatK $M39 (1.00)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $HB1
+  WordV  $B15
+  FloatK $M40 (120.00)
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  FloatK $M41 (10.00)
+  FloatK $M42 (0.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  FloatK $M43 (30.00)
+  FloatK $M44 (0.00)
+  WordV  $B24
+  WordK  $M45 (1)
+  IPAMB &AI-LU12-13I-S51 (150,8)
+  WordV  $HB0
+  WordV  $B25
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  FloatK $M46 (10.00)
+  FloatK $M47 (0.00)
+  WordV  $B30
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  FloatK $M48 (30.00)
+  FloatK $M49 (0.00)
+  WordV  $B35
+  WordK  $M50 (1)
+  IPAMB &AI-LU12-13I-S52 (150,14)
+  WordV  $B36
+  WordV  $B37
+  FloatK $M51 (1.00)
+  WordV  $B38
+  FloatK $M52 (10.00)
+  FloatK $M53 (10.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  IPAMB &AI-LU12-13I-X04 (0,9)
+  WordV  $B44
+  WordK  $M54 (1)
+  IPAMB &AI-LU12-13I-S53 (150,15)
+  WordV  $B45
+  WordV  $B46
+  IPAMB &AI-LU13-16I-X01 (41,5)
+  FloatK $M55 (0.00)
+  FloatV $F12
+  FloatK $M56 (0.00)
+  WordV  $B47
+  FloatK $M57 (100.00)
+  FloatV $F13
+  FloatV $F14
+  WordK  $M58 (1)
+  IPAAW &AI-LU12-13I-Y04 (10)
+  WordV  $B48
+  FloatK $M59 (100.00)
+  FloatK $M60 (0.00)
+  FloatV $F15
+  FloatK $M61 (180.00)
+  FloatV $F16
+  FloatK $M62 (0.00)
+  FloatV $F17
+  FloatV $F18
+  WordK  $M63 (1)
+  IPAAW &AI-LU12-13I-T52 (157)
+  FloatK $M64 (1.00)
+  FloatK $FZERO (0.00)
+  FloatK $M65 (0.00)
+  FloatK $M66 (30.00)
+  FloatK $M67 (5.00)
+  FloatK $M68 (60.00)
+  FloatK $M69 (5.00)
+  FloatK $M70 (0.00)
+  FloatK $M71 (0.00)
+  FloatV $F19
+  FloatK $M72 (0.00)
+  FloatV $F20
+  WordK  $M73 (1)
+  IPAAW &AI-LU12-13I-Y05 (11)
+  FloatK $M74 (100.00)
+  FloatV $F21
+  FloatV $F22
+  FloatK $M75 (0.00)
+  FloatV $F23
+  WordK  $M76 (1)
+  IPAAW &AI-LU12-13I-Y02 (93)
+  WordK  $M77 (1)
+  IPAAW &AI-LU12-13I-Y01 (92)
+  FloatK $M78 (50.00)
+  WordV  $B49
+  FloatK $M79 (60.00)
+  FloatK $M80 (0.00)
+  WordV  $B50
+  FloatK $M81 (900.00)
+  WordV  $B51
+  WordV  $B52
+  FloatK $M82 (2.00)
+  FloatK $M83 (2.00)
+  FloatK $M84 (0.00)
+  FloatV $F24
+  WordK  $M85 (1)
+  IPAAW &AI-LU12-13I-Y07 (36)
+  WordV  $B53
+  FloatK $M86 (0.00)
+  FloatV $F25
+  WordK  $M87 (1)
+  IPAAW &AI-LU12-13I-Y06 (12)
+  FloatK $M88 (101325.00)
+  WordK  $M89 (1)
+  IPAAW &AI-LU12-13I-F04 (156)
+  FloatK $M90 (101325.00)
+  WordK  $M91 (1)
+  IPAAW &AI-LU12-13I-F02 (155)
+  FloatK $M92 (101325.00)
+  WordK  $M93 (1)
+  IPAAW &AI-LU12-13I-F52 (194)
+  FloatK $M94 (101325.00)
+  WordK  $M95 (1)
+  IPAAW &AI-LU12-13I-F53 (195)
+  WordV  $HB3
+  FloatK $M96 (0.00)
+  FloatK $M97 (0.00)
+  WordV  $B54
+  FloatK $M98 (0.00)
+  FloatK $M99 (0.00)
+  WordV  $B55
+  FloatV $F26
+  FloatK $M100 (0.00)
+  WordV  $B56
+  FloatK $M101 (1.00)
+  WordV  $B57
+  FloatV $F27
+  FloatK $M102 (0.00)
+  WordV  $B58
+  FloatV $F28
+  FloatK $M103 (0.00)
+  WordV  $B59
+  FloatK $M104 (10.00)
+  FloatK $M105 (0.00)
+  WordV  $B60
+  FloatK $M106 (1800.00)
+  FloatK $M107 (0.00)
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordK  $M108 (1)
+  IPAMB &AI-LU12-13I-B01 (158,0)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;Hoersaal
+  ;Einbauort:
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (2,K-GESAMT-ANL-AUS,K-GES-ANL-EIN1,K-GES-ANL-EIN2,
+          $WZERO,&AI-LU12-13I-X50,WERR)
+  ANAUS (K-SW-ABL-TEMP,$M0,&AI-LU12-13I-T50,WERR)
+  ANAUS (K-SW-RAUM-TEMP,$M1,&AI-LU12-13I-T51,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (K-SW-AUSKUEH-HOE,$M2,&AI-LU12-13I-T53,WERR)
+  ANAUS (K-SW-RE-FE-AB-MI,$M3,&AI-LU12-13I-F50,WERR)
+  ANAUS (K-SW-RE-FE-AB-MA,$M4,&AI-LU12-13I-F51,WERR)
+  ANAUS (K-LFZ-MAX-AUSKUE,$M5,&AI-LU12-13I-T54,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (K-SW-ZU-TEM-n-VE,$M6,&AI-LU12-13I-T56,WERR)
+  ANAUS (K-SW-MIN-AU-KLAP,$M7,&AI-LU12-13I-T57,WERR)
+  BEFAUS (1,K-AUSKUE-BET-AUS,K-AUSKUE-BET-EIN,$WZERO,$WZERO,
+          &AI-LU12-13I-X51,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&AI-LU12-13I-X50,5,$B1,GES-ANL-STOERUNG,$B2,
+          $WSCRATCH,$B3,WERR)
+  BTRA ($B1,K-GESAMT-ANL-AUS)
+  BTRA ($B2,K-GES-ANL-EIN1)
+  BTRA ($B3,K-GES-ANL-EIN2)
+  MELEIN (&AI-LU12-13I-X01,5,ZUL-VENT-AUS,$HB7,
+          ZUL-VENT-EIN-1,$WSCRATCH,ZUL-VENT-EIN-2,WERR)
+  NICHT ($HB7,ZUL-VENT-STOER)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13I-X02,5,ABL-1-VENT-AUS,$HB7,
+          ABL-1-VENT-EIN-1,$WSCRATCH,ABL-1-VENT-EIN-2,WERR)
+  NICHT ($HB7,ABL-1-VENT-STOER)
+  MELEIN (&AI-LU12-13I-X03,5,ABL-2-VENT-AUS,ABL-2-VENT-STOER,
+          ABL-2-VENT-EIN-1,$WSCRATCH,ABL-2-VENT-EIN-2,WERR)
+  MELEIN (&AI-LU12-13I-S01,2,FROSTSCHUTZ,KEILRIEMEN-ZUL,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13I-S03,2,HYGROSTAT-ZULUFT,
+          KEILRIEMEN-ABL-1,WERR)
+  MELEIN (&AI-LU12-13I-S05,1,KEILRIEMEN-ABL-2,WERR)
+  MELEIN (&AI-LU12-13I-W03,2,REP-SCH-ZUL-VENT,REP-SCH-ABL-1,
+          WERR)
+  MELEIN (&AI-LU13-13I-S50,1,ENTRIEGELN,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&AI-LU13-16I-B01,1,TB-1-2STUFE,WERR)
+  MELEIN (&AI-LU12-13I-X51,3,$B4,$WSCRATCH,$B5,WERR)
+  BTRA ($B4,K-AUSKUE-BET-AUS)
+  BTRA ($B5,K-AUSKUE-BET-EIN)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&AI-AS14-00A-T00,AUSSENTEMPERATUR,WERR)
+  ANEIN (&AI-LU12-13I-T03,ZUL-TEMP-HOERSA,WERR)
+  ANEIN (&AI-LU12-13I-T04,ABL-TEMP-HOERSA,WERR)
+  ANEIN (&AI-LU13-16I-T02,SW-FERNVERSTELL,WERR)
+  ANEIN (&AI-LU12-13I-F03,ABL-FEUCHTE-HOER,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13I-F01,ZUL-FEUCHTE-HOER,WERR)
+  ANEIN (&AI-LU12-13I-T02,ZU-TEMP-nach-VE,WERR)
+  ANEIN (&AI-LU12-13I-E01,AB-Luftqualit,WERR)
+  ANEIN (&AI-LU13-15I-T05,AKT-RAUM-TEMP-HO,WERR)
+  AWT ($WZERO,$M29,$M30,$F1)
+  SUB2 (AKT-RAUM-TEMP-HO,$F1,RAUM-TEMP-HOERSA)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13I-T50,$F2,WERR)
+  ATRA ($F2,K-SW-ABL-TEMP)
+  ANEIN (&AI-LU12-13I-T51,$F3,WERR)
+  ATRA ($F3,K-SW-RAUM-TEMP)
+  ANEIN (&AI-LU12-13I-T53,$F4,WERR)
+  ATRA ($F4,K-SW-AUSKUEH-HOE)
+  ANEIN (&AI-LU12-13I-T54,$F5,WERR)
+  ATRA ($F5,K-LFZ-MAX-AUSKUE)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13I-F50,$F6,WERR)
+  ATRA ($F6,K-SW-RE-FE-AB-MI)
+  ANEIN (&AI-LU12-13I-F51,$F7,WERR)
+  ATRA ($F7,K-SW-RE-FE-AB-MA)
+  ANEIN (&AI-LU12-13I-T56,$F8,WERR)
+  ATRA ($F8,K-SW-ZU-TEM-n-VE)
+  ANEIN (&AI-LU12-13I-T57,$F9,WERR)
+  ATRA ($F9,K-SW-MIN-AU-KLAP)
+  ANEIN (&AI-LU12-13I-E50,$F10,WERR)
+  ATRA ($F10,K-SW-GRZW_Luftqa)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ADD2 (AKT-RAUM-TEMP-HO,AKT-RAUM-TEMP-HO,$F11)
+  ANAUS ($F11,$M31,&AI-LU13-15E-Y01,WERR)
+  ANAUS (ABL-FEUCHTE-HOER,$M32,&AI-LU13-15E-Y02,WERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,2000)
+  ODR2 (Anf-TB-1Stufe,Anf-1Stufe-Luftq,$B6)
+  ODR2 (Anf-TB-2Stufe,Anf-2Stufe-Luftq,$B7)
+  UND11 ($B7,$B9,$B8)
+  BEFAUS (2,$B9,$B6,$B8,$WZERO,&AI-LU12-13I-X50,WERR)
+  ODR2 (STOERUNG-ZUL,STOERUNG-ABL1,$B9)
+  SETMEL ($M34,1,$B9,&M8,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  TFF (TB-1-2STUFE,$B10,$B11)
+  MOKY ($B10,$M36,Anf-TB-1Stufe)
+  MOKY ($B11,$M37,Anf-TB-2Stufe)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  VGLEH (AUSSENTEMPERATUR,$M38,$M39,$B12)
+  ODR2 (K-GES-ANL-EIN1,K-GES-ANL-EIN2,$B13)
+  UND11 ($B13,$B12,$B14)
+  NICHT ($B13,$HB1)
+  RSS ($B14,$HB1,$B15,$WSCRATCH)
+  MOKY ($B15,$M40,VORSPUEL-SCHALT)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODRMN (3,K-GES-ANL-EIN1,K-GES-ANL-EIN2,AUSKUEHL-BETRIEB,0,
+         $B16,$WSCRATCH)
+  UNDMN (1,$B16,2,VORSPUEL-SCHALT,$B20,$B17,$WSCRATCH)
+  UND11 ($B17,STOERUNG-ZUL,SOLL-EIN1-ZUL-V)
+  UND11 (K-GES-ANL-EIN2,VORSPUEL-SCHALT,$B18)
+  ODR2 ($B18,AUSKUEHL-BETRIEB,$B19)
+  VVZ ($B19,$M41,$M42,$B20)
+  UND21 ($B20,$B19,STOERUNG-ZUL,SOLL-EIN2-ZUL-V)
+  NOR2 (SOLL-EIN1-ZUL-V,SOLL-EIN2-ZUL-V,$B21)
+  BEFAUS (2,$B21,SOLL-EIN1-ZUL-V,SOLL-EIN2-ZUL-V,$WZERO,
+          &AI-LU12-13I-X01,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODR2 (ZUL-VENT-EIN-1,ZUL-VENT-EIN-2,ZULUFT-EIN)
+  XOR2 (ZULUFT-EIN,KEILRIEMEN-ZUL,$B22)
+  UND2 (ZULUFT-EIN,$B22,$B23)
+  VVZ ($B23,$M43,$M44,$B24)
+  RSS ($B24,ENTRIEGELN,STOE-KEILR-ZUL,$WSCRATCH)
+  ODRMN (3,STOE-KEILR-ZUL,ZUL-VENT-STOER,$B25,1,FROSTSCHUTZ,
+         STOERUNG-ZUL,$WSCRATCH)
+  SETMEL ($M45,1,STOE-KEILR-ZUL,&AI-LU12-13I-S51,WERR)
+  NICHT (REP-SCH-ZUL-VENT,$HB0)
+  RSS ($HB0,ENTRIEGELN,$B25,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODRMN (3,K-GES-ANL-EIN1,K-GES-ANL-EIN2,AUSKUEHL-BETRIEB,0,
+         $B26,$WSCRATCH)
+  UNDMN (1,$B26,2,VORSPUEL-SCHALT,$B30,$B27,$WSCRATCH)
+  UND11 ($B27,STOERUNG-ABL1,SOLL-EIN1-ABL1-V)
+  UND11 (K-GES-ANL-EIN2,VORSPUEL-SCHALT,$B28)
+  ODR2 ($B28,AUSKUEHL-BETRIEB,$B29)
+  VVZ ($B29,$M46,$M47,$B30)
+  UND21 ($B30,$B29,STOERUNG-ABL1,SOLL-EIN2-ABL1-V)
+  NOR2 (SOLL-EIN1-ABL1-V,SOLL-EIN2-ABL1-V,$B31)
+  BEFAUS (2,$B31,SOLL-EIN1-ABL1-V,SOLL-EIN2-ABL1-V,$WZERO,
+          &AI-LU12-13I-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ODR2 (ABL-1-VENT-EIN-1,ABL-1-VENT-EIN-2,$B32)
+  XOR2 ($B32,KEILRIEMEN-ABL-1,$B33)
+  UND2 ($B32,$B33,$B34)
+  VVZ ($B34,$M48,$M49,$B35)
+  RSS ($B35,ENTRIEGELN,STOE-KEILR-ABL,$WSCRATCH)
+  ODRMN (3,STOE-KEILR-ABL,ABL-1-VENT-STOER,$B36,1,
+         FROSTSCHUTZ,STOERUNG-ABL1,$WSCRATCH)
+  SETMEL ($M50,1,STOE-KEILR-ABL,&AI-LU12-13I-S52,WERR)
+  NICHT (REP-SCH-ABL-1,$HB0)
+  RSS ($HB0,ENTRIEGELN,$B36,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODR2 (K-GES-ANL-EIN1,K-GES-ANL-EIN2,$B37)
+  VGLEH (RAUM-TEMP-HOERSA,K-SW-RAUM-TEMP,$M51,$B38)
+  VVZ ($B38,$M52,$M53,$B39)
+  UNDMN (1,$B37,2,VORSPUEL-SCHALT,$B39,$B40,$WSCRATCH)
+  UND11 ($B40,STOERUNG-ABL2,SOLL-EIN1-ABL2-V)
+  UNDMN (3,$B37,$B39,$B38,1,STOERUNG-ABL2,SOLL-EIN2-ABL2-V,
+         $WSCRATCH)
+  ODRMN (2,SOLL-EIN1-ABL2-V,SOLL-EIN2-ABL2-V,0,$B41,$B42)
+  BEFAUS (2,$B42,SOLL-EIN1-ABL2-V,SOLL-EIN2-ABL2-V,$WZERO,
+          &AI-LU12-13I-X03,WERR)
+  NICHT ($B41,$B43)
+  BEFAUS (1,$B43,$B41,$WZERO,$WZERO,&AI-LU12-13I-X04,WERR)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  NICHT (KEILRIEMEN-ABL-2,$B44)
+  SETMEL ($M54,1,$B44,&AI-LU12-13I-S53,WERR)
+  ODRMN (2,$B44,ABL-2-VENT-STOER,1,FROSTSCHUTZ,STOERUNG-ABL2,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (3,STOERUNG-ZUL,STOERUNG-ABL1,STOERUNG-ABL2,1,
+         HYGROSTAT-ZULUFT,$B45,$WSCRATCH)
+  NICHT ($B45,$B46)
+  BEFAUS (1,$B46,$B45,$WZERO,$WZERO,&AI-LU13-16I-X01,WERR)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  REGLER (3,KON01,KON00,$M55,$F12,$WSCRATCH)
+  AWT (K-GES-ANL-EIN,$M56,$F12,Y-Reg-ZU-TE-n-VE)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (1,VORSPUEL-SCHALT,1,FROSTSCHUTZ,$B47,$WSCRATCH)
+  AWT ($B47,Y-Reg-ZU-TE-n-VE,$M57,$F13)
+  MAX (2,$F13,$F17,$F14)
+  ANAUS ($F14,$M58,&AI-LU12-13I-Y04,WERR)
+  ODR2 (K-GES-ANL-EIN1,K-GES-ANL-EIN2,$B48)
+  NICHT (VORSPUEL-SCHALT,$HB0)
+  AWT ($HB0,$M59,$M60,$F15)
+  PT1 ($F15,$M61,$F16)
+  AWT ($B48,$M62,$F16,$F17)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ADD2 (K-SW-ABL-TEMP,SW-FERNVERSTELL,$F18)
+  SUB2 ($F18,FKON00,GEAEND-ABL-SOLLW)
+  ANAUS (GEAEND-ABL-SOLLW,$M63,&AI-LU12-13I-T52,WERR)
+  VGLEH (AUSSENTEMPERATUR,GEAEND-ABL-SOLLW,$M64,
+         UMSCHALT-SOMMER)
+  REGLER (1,KON01,$WZERO,$FZERO,Y-SIGNAL-ABLUFT,WERR)
+  REGLER (2,KON01,KON00,$M65,Y-ZUL-TEMP-REG,WERR)
+  SOLKEN (1,KON01,SOLL-KENN-1,WERR)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  SEQ3 (Y-ZUL-TEMP-REG,$M66,$M67,$M68,$M69,$M70,$M71,
+        K-SW-MIN-AU-KLAP,UMSCHALT-SOMMER,Y-ZU-TE-REG-KUEH,
+        Y-ZU-TE-REG-UM-K,Y-ZU-TE-REG-AU-K,Y-ZU-TE-REG-ERHI,
+        $WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  MAX (2,Y-ZU-TE-REG-KUEH,Y-ABS-FE-REG-MAX,$F19)
+  AWT (K-GES-ANL-EIN,$M72,$F19,$F20)
+  ANAUS ($F20,$M73,&AI-LU12-13I-Y05,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  AWT (AUSKUEHL-BETRIEB,$F23,$M74,$F21)
+  ODR2 (K-GES-ANL-EIN1,K-GES-ANL-EIN2,K-GES-ANL-EIN)
+  SOLKEN (2,$WZERO,ANST-AU-KL-LUFTQ,$WSCRATCH)
+  MAX (2,Y-ZU-TE-REG-AU-K,ANST-AU-KL-LUFTQ,$F22)
+  AWT (K-GES-ANL-EIN,$M75,$F22,$F23)
+  ANAUS ($F21,$M76,&AI-LU12-13I-Y02,WERR)
+  ANAUS ($F21,$M77,&AI-LU12-13I-Y01,WERR)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  VGLEH (AB-Luftqualit,K-SW-GRZW_Luftqa,$M78,$B49)
+  VVZ ($B49,$M79,$M80,$B50)
+  MOKY ($B50,$M81,$B51)
+  ODR2 ($B50,$B51,$B52)
+  MOKY ($B52,$M82,Anf-2Stufe-Luftq)
+  NICHT ($B52,$HB0)
+  MOKY ($HB0,$M83,Anf-1Stufe-Luftq)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  AWT (K-GES-ANL-EIN,$M84,Y-ZU-TE-REG-ERHI,$F24)
+  ANAUS ($F24,$M85,&AI-LU12-13I-Y07,WERR)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  UND2 (K-GES-ANL-EIN,HYGROSTAT-ZULUFT,$B53)
+  AWT ($B53,$M86,Y-ABS-FE-REG-MIN,$F25)
+  ANAUS ($F25,$M87,&AI-LU12-13I-Y06,WERR)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ABFEUG (ABL-FEUCHTE-HOER,ABL-TEMP-HOERSA,$M88,
+          ABS-ABL-FEU-HOER)
+  ANAUS (ABS-ABL-FEU-HOER,$M89,&AI-LU12-13I-F04,WERR)
+  ABFEUG (ZUL-FEUCHTE-HOER,ZUL-TEMP-HOERSA,$M90,
+          ABS-ZUL-FEU-HOER)
+  ANAUS (ABS-ZUL-FEU-HOER,$M91,&AI-LU12-13I-F02,WERR)
+  ABFEUG (K-SW-RE-FE-AB-MI,GEAEND-ABL-SOLLW,$M92,
+          SW-ABS-FE-AB-MIN)
+  ANAUS (SW-ABS-FE-AB-MIN,$M93,&AI-LU12-13I-F52,WERR)
+  ABFEUG (K-SW-RE-FE-AB-MA,GEAEND-ABL-SOLLW,$M94,
+          SW-ABS-FE-AB-MAX)
+  ANAUS (SW-ABS-FE-AB-MAX,$M95,&AI-LU12-13I-F53,WERR)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  NICHT ($B54,$HB3)
+  REGLER (21,KON01,$HB3,$M96,SW-ABS-FE-ZU-ENT,$WSCRATCH)
+  NICHT ($B54,$HB3)
+  REGLER (22,KON01,$HB3,$M97,Y-ABS-FE-REG-MAX,$WSCRATCH)
+  UND2 (ZULUFT-EIN,HYGROSTAT-ZULUFT,$B54)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  NICHT ($B55,$HB3)
+  REGLER (23,KON01,$HB3,$M98,SW-ABS-FE-ZU-BEF,$WSCRATCH)
+  NICHT ($B55,$HB3)
+  REGLER (24,KON01,$HB3,$M99,Y-ABS-FE-REG-MIN,$WSCRATCH)
+  UND2 (ZULUFT-EIN,HYGROSTAT-ZULUFT,$B55)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ADD2 (K-SW-ABL-TEMP,K3_GRAD,$F26)
+  VGLEH (RAUM-TEMP-HOERSA,$F26,$M100,$B56)
+  VGLEH (AUSSENTEMPERATUR,K-SW-AUSKUEH-HOE,$M101,$B57)
+  ADD2 (AUSSENTEMPERATUR,K6_GRAD,$F27)
+  VGLEH (RAUM-TEMP-HOERSA,$F27,$M102,$B58)
+  SUB2 (K-SW-ABL-TEMP,K2_GRAD,$F28)
+  VGLEH ($F28,RAUM-TEMP-HOERSA,$M103,$B59)
+  UNDMN (4,$B56,$B57,$B58,$B59,0,FRG_AUSKUEHLBETR,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  VVZ (KON01,$M104,$M105,$B60)
+  VVZ (K-GESAMT-ANL-AUS,$M106,$M107,$B61)
+  UND2 ($B61,K-AUSKUE-BET-EIN,$B62)
+  UNDMN (3,$B60,$B62,FRG_AUSKUEHLBETR,0,$B63,$WSCRATCH)
+  MOKS ($B63,K-LFZ-MAX-AUSKUE,AUSKUEHL-BETRIEB)
+  SETMEL ($M108,1,AUSKUEHL-BETRIEB,&AI-LU12-13I-B01,WERR)
+  ;Verzoegerung bei RESTART
+  ;Modul(sonst Anlage AUS)
+  ; 
+  ENDE 
+  ENDMODUL 

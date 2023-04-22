@@ -1,0 +1,477 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI60513.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 6
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 13
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Anl-aus
+  WordV  Zirk-Pumpe-2-ein
+  WordV  HZG-Pumpe-ein
+  FloatV Stellsign-HZG-Ve
+  WordK  K0 (0)
+  WordV  Entriegeln
+  WordV  Anl-ein-2
+  WordV  Speichertemp<60
+  WordK  Anl-ein (1)
+  WordV  Unterspannung-NN
+  WordV  Anl-ein-1
+  FloatK K3 (3.00)
+  WordV  Zirk-Pump-1-gest
+  WordV  VL-T-i-TW-N>67
+  WordV  Zirk-Pumpe-1-ein
+  WordV  Entr-Befehl
+  WordV  Ladepumpe-ein
+  WordK  K1 (1)
+  WordV  STW
+  WordV  Entr-Taster
+  WordV  Zirk-Pump-2-gest
+  WordV  Ladepumpe-aussch
+  WordV  Anl-ein-3
+  FloatV Speichertemp
+  FloatV Ladetemp-KW-seit
+  FloatV Ladetemp-WW-seit
+  FloatV HZG-Vent-Stellun
+  WordV  Ladepumpe-einsch
+  WordV  Ladetemp-KW-s>60
+  WordV  Ladung-starten
+  FloatK SW-Speicherl-aus (60.00)
+  FloatK SW-Speicherl-ein (60.00)
+  FloatK SW-Ladet-WW-seit (65.00)
+  WordV  Ladep.-einschalt
+  FloatV VL-Temp-in-TW-Ne
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  WordV  $HB0
+  FloatK $M2 (20.00)
+  FloatK $M3 (0.00)
+  WordV  $B3
+  FloatK $M4 (0.00)
+  FloatK $M5 (5.00)
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $WSCRATCH
+  WordV  $B7
+  WordV  $B8
+  IPAMB &M6 (230,1)
+  IPAMB &M7 (230,3)
+  IPAMB &M8 (46,7)
+  WordV  $HB2
+  IPAMB &M9 (38,11)
+  IPAMB &M10 (38,15)
+  IPAMB &M11 (39,10)
+  IPAMB &M12 (39,11)
+  IPAMB &M13 (0,0)
+  IPAMB &M14 (39,14)
+  IPAMB &M15 (39,15)
+  IPAMB &M19 (34,11)
+  IPAMB &M20 (0,11)
+  IPAMB &M21 (0,14)
+  IPAMW &M22 (226)
+  IPAMW &M23 (224)
+  IPAMW &M24 (223)
+  IPAMW &M25 (225)
+  IPAMW &M26 (219)
+  FloatK $M27 (2.00)
+  WordV  $B9
+  FloatK $M28 (15.00)
+  FloatK $M29 (15.00)
+  FloatK $M30 (2.00)
+  WordV  $B10
+  FloatK $M31 (67.00)
+  FloatK $M32 (2.00)
+  WordV  $B11
+  FloatK $M33 (1.50)
+  WordV  $HB3
+  WordV  $B12
+  FloatK $M34 (15.00)
+  FloatK $M35 (15.00)
+  FloatK $M36 (15.00)
+  FloatK $M37 (15.00)
+  FloatK $M38 (15.00)
+  FloatK $M39 (15.00)
+  FloatK $M40 (0.00)
+  WordV  $B13
+  FloatK $M41 (15.00)
+  FloatK $M42 (15.00)
+  FloatV $F1
+  IPAAW &M43 (227)
+  FloatV $F2
+  FloatK $M44 (70.00)
+  FloatK $M45 (50.00)
+  FloatV $F3
+  FloatK $M46 (10.00)
+  WordV  $B14
+  WordK  $M47 (1)
+  IPAAW &M49 (228)
+  FloatV $F4
+  FloatK $M50 (70.00)
+  FloatK $M51 (50.00)
+  FloatV $F5
+  FloatK $M52 (10.00)
+  WordV  $B15
+  WordK  $M53 (1)
+  IPAAW &M55 (229)
+  FloatV $F6
+  FloatK $M56 (70.00)
+  FloatK $M57 (50.00)
+  FloatV $F7
+  FloatK $M58 (10.00)
+  WordV  $B16
+  WordK  $M59 (1)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  FloatK $M61 (172800.00)
+  FloatK $M62 (0.00)
+  WordV  $B23
+  FloatK $M63 (300.00)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  IPAMB &M64 (38,9)
+  WordV  $B27
+  FloatK $M65 (172800.00)
+  FloatK $M66 (0.00)
+  WordV  $B28
+  FloatK $M67 (300.00)
+  WordV  $B29
+  WordV  $B30
+  WordV  $B31
+  IPAMB &M68 (38,13)
+  FloatK $M69 (0.00)
+  WordK  $M70 (1)
+  IPAAW &M71 (217)
+  FloatV $F8
+  FloatK $M72 (86400.00)
+  WordV  $B32
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  FloatK $M73 (175200.00)
+  FloatK $M74 (10.00)
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  IPAMB &M75 (39,9)
+  FloatV $F9
+  FloatK $M76 (86400.00)
+  WordV  $B39
+  WordV  $B40
+  FloatK $M77 (0.00)
+  FloatK $M78 (2.00)
+  WordV  $B41
+  WordV  $B42
+  FloatK $M79 (175200.00)
+  FloatK $M80 (10.00)
+  WordV  $B43
+  WordV  $B44
+  FloatK $M81 (10.00)
+  FloatK $M82 (0.00)
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  IPAMB &M83 (39,13)
+  FloatV $F10
+  FloatV $F11
+  FloatK $M84 (10.00)
+  WordV  $B48
+  WordV  $B49
+  WordV  $HB1
+  FloatV $F12
+  FloatK $M85 (180.00)
+  WordV  $B50
+  WordV  $B51
+  WordK  $M86 (1)
+  IPAMB &M87 (230,0)
+  WordV  $B52
+  WordV  $B55
+  WordV  $B53
+  WordV  $B56
+  WordV  $B54
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingen
+  ;Projekt: Sanierung
+  ;         Turm 6
+  ;Anlage:  WWB
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (Anl-ein,Anl-ein-1)
+  ENDE 
+  TASK (2,cycl,1000)
+  NICHT ($WZERO,K1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (Anl-ein-1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,Anl-ein-2)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  NICHT (Unterspannung-NN,$HB0)
+  VVZ ($HB0,$M2,$M3,$B3)
+  VVZ (Anl-ein,$M4,$M5,$B4)
+  UND11 ($B4,$B3,$B5)
+  RSS ($B5,Anl-ein,$B6,$WSCRATCH)
+  UND2 ($B6,$B3,$B7)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B7,$B8,Anl-ein-3)
+  NICHT ($B7,$B8)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M6,1,Anl-aus,$WSCRATCH)
+  MELEIN (&M7,1,Anl-ein,$WSCRATCH)
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STW)
+  MELEIN (&M9,1,HZG-Pumpe-ein,$WSCRATCH)
+  MELEIN (&M10,1,Ladepumpe-ein,$WSCRATCH)
+  MELEIN (&M11,1,Zirk-Pump-1-gest,$WSCRATCH)
+  MELEIN (&M12,1,Zirk-Pumpe-1-ein,$WSCRATCH)
+  MELEIN (&M13,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M14,1,Zirk-Pump-2-gest,$WSCRATCH)
+  MELEIN (&M15,1,Zirk-Pumpe-2-ein,$WSCRATCH)
+  MELEIN (&M13,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M13,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M13,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung-NN)
+  MELEIN (&M20,1,Entr-Befehl,$WSCRATCH)
+  MELEIN (&M21,1,Entr-Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr-Befehl,Entr-Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M22,Speichertemp,$WSCRATCH)
+  ANEIN (&M23,Ladetemp-KW-seit,$WSCRATCH)
+  ANEIN (&M24,Ladetemp-WW-seit,$WSCRATCH)
+  ANEIN (&M25,VL-Temp-in-TW-Ne,$WSCRATCH)
+  ANEIN (&M26,HZG-Vent-Stellun,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLEH (SW-Speicherl-ein,Speichertemp,$M27,$B9)
+  VVZ ($B9,$M28,$M29,Speichertemp<60)
+  VGLEH (Ladetemp-KW-seit,SW-Speicherl-aus,$M30,$B10)
+  VGLEH (VL-Temp-in-TW-Ne,$M31,$M32,$B11)
+  VGLEH (Ladetemp-WW-seit,SW-Ladet-WW-seit,$M33,$HB3)
+  NICHT ($HB3,$B12)
+  VVZ ($B10,$M34,$M35,Ladetemp-KW-s>60)
+  VVZ ($B11,$M36,$M37,VL-T-i-TW-N>67)
+  VVZ ($B12,$M38,$M39,Ladepumpe-aussch)
+  VGLEH (Ladetemp-WW-seit,$F1,$M40,$B13)
+  VVZ ($B13,$M41,$M42,Ladep.-einschalt)
+  SUB2 (SW-Ladet-WW-seit,K3,$F1)
+  ;Ladung EIN
+  ; 
+  ;Ladung AUS
+  ; 
+  ;Ladung Not-AUS
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M43,$F2,$WSCRATCH)
+  LIMIT ($F2,$M44,$M45,$F3)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M46,$B14)
+  AWT ($B14,$F3,SW-Speicherl-ein,SW-Speicherl-ein)
+  ANAUS (SW-Speicherl-ein,$M47,&M43,$WSCRATCH)
+  ANEIN (&M49,$F4,$WSCRATCH)
+  LIMIT ($F4,$M50,$M51,$F5)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M52,$B15)
+  AWT ($B15,$F5,SW-Speicherl-aus,SW-Speicherl-aus)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ANAUS (SW-Speicherl-aus,$M53,&M49,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M55,$F6,$WSCRATCH)
+  LIMIT ($F6,$M56,$M57,$F7)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M58,$B16)
+  AWT ($B16,$F7,SW-Ladet-WW-seit,SW-Ladet-WW-seit)
+  ANAUS (SW-Ladet-WW-seit,$M59,&M55,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UND21 (Anl-ein,Speichertemp<60,STW,$B17)
+  ODRMN (2,Ladetemp-KW-s>60,VL-T-i-TW-N>67,1,$B17,$B18,
+         $WSCRATCH)
+  RSS ($B17,$B18,Ladung-starten,$WSCRATCH)
+  UND2 (Ladung-starten,Ladep.-einschalt,$B19)
+  UND11 (Ladepumpe-aussch,Ladung-starten,$B20)
+  ODR2 ($B20,VL-T-i-TW-N>67,$B21)
+  RSS ($B19,$B21,Ladepumpe-einsch,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  UNDMN (0,2,HZG-Pumpe-ein,$B24,$B22,$WSCRATCH)
+  VVZ ($B22,$M61,$M62,$B23)
+  MOKY ($B23,$M63,$B24)
+  ODR2 ($B24,Ladung-starten,$B25)
+  UND11 ($B25,K0,$B26)
+  NICHT ($B26,$HB0)
+  BEFAUS (1,$HB0,$B26,$WZERO,$WZERO,&M64,$WSCRATCH)
+  ;48 h = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  UNDMN (0,2,Ladepumpe-ein,$B29,$B27,$WSCRATCH)
+  VVZ ($B27,$M65,$M66,$B28)
+  MOKY ($B28,$M67,$B29)
+  ODR2 ($B29,Ladepumpe-einsch,$B30)
+  UND11 ($B30,K0,$B31)
+  NICHT ($B31,$HB0)
+  BEFAUS (1,$HB0,$B31,$WZERO,$WZERO,&M68,$WSCRATCH)
+  ;48 h = 172.800 sec
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  NICHT (Ladung-starten,$HB3)
+  REGLER (28,$WONE,$HB3,$M69,Stellsign-HZG-Ve,$WSCRATCH)
+  ANAUS (Stellsign-HZG-Ve,$M70,&M71,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UHR (Zirk-Pumpe-1-ein,$B33,$F8)
+  VGLOH ($F8,$M72,$B32)
+  RSS ($B32,Zirk-Pumpe-2-ein,$B33,$WSCRATCH)
+  UNDMN (0,2,$B33,Zirk-Pumpe-2-ein,$B34,$WSCRATCH)
+  ODRMN (3,$B34,Zirk-Pump-2-gest,$B36,0,$B35,$WSCRATCH)
+  NICHT (Zirk-Pumpe-1-ein,$HB0)
+  VVZ ($HB0,$M73,$M74,$B36)
+  UNDMN (2,$B35,Anl-ein,1,Zirk-Pump-1-gest,$B37,$B38)
+  BEFAUS (1,$B38,$B37,$WZERO,$WZERO,&M75,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UHR (Zirk-Pumpe-2-ein,$B40,$F9)
+  VGLOH ($F9,$M76,$B39)
+  RSS ($B39,$B41,$B40,$WSCRATCH)
+  VVZ (Zirk-Pumpe-1-ein,$M77,$M78,$B41)
+  UNDMN (1,$B45,2,$B40,$B41,$B42,$WSCRATCH)
+  NICHT (Zirk-Pumpe-2-ein,$HB0)
+  VVZ ($HB0,$M79,$M80,$B43)
+  ODRMN (3,$B42,Zirk-Pump-1-gest,$B43,0,$B44,$WSCRATCH)
+  VVZ (Anl-ein,$M81,$M82,$B45)
+  UNDMN (1,$B44,1,Zirk-Pump-2-gest,$B46,$B47)
+  BEFAUS (1,$B47,$B46,$WZERO,$WZERO,&M83,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  SUB2 (Stellsign-HZG-Ve,HZG-Vent-Stellun,$F10)
+  ABSWER ($F10,$F11)
+  VGLOH ($F11,$M84,$B48)
+  UND11 ($B48,Entriegeln,$B49)
+  NICHT ($WONE,$WSCRATCH)
+  NICHT ($B49,$HB1)
+  UHR ($WONE,$HB1,$F12)
+  VGLOH ($F12,$M85,$B50)
+  RSS ($B50,Entriegeln,$B51,$WSCRATCH)
+  ;Ventillaufüberwachung:
+  ;Beträgt die Differenz
+  ;zwischen Soll- und Ist-
+  ;wert des Ventils länger
+  ;als 3min mehr als 10,
+  ;wird die fiktive
+  ;Störmeldung für dieses
+  ;Ventil gesetzt. Die
+  ;Anlage selbst läuft
+  ;weiter.
+  ; 
+  SETMEL ($M86,1,$B51,&M87,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl-aus,$B55,$B52)
+  NICHT (Anl-aus,$B55)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (Anl-ein,$B56,$B53)
+  NICHT (Anl-ein,$B56)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,Anl-ein-2,Anl-ein-3,$B53,0,$B54,$WSCRATCH)
+  BEFAUS (1,$B52,$B54,$WZERO,$WZERO,&M6,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

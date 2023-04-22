@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Micas Workbench Onlinetest UI
+Bundle-SymbolicName: de.wisag.automation.micas.olt.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.wisag.automation.micas.olt.ui.internal.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.apache.commons.lang,
+ de.wisag.automation.micas.olt,
+ de.wisag.automation.micas.rt,
+ de.wisag.automation.micas.hwmodules,
+ org.eclipse.core.databinding;bundle-version="1.3.100",
+ org.eclipse.core.databinding.property;bundle-version="1.3.0",
+ org.eclipse.jface.databinding;bundle-version="1.4.0",
+ de.wisag.automation.micas.olt.terminal;bundle-version="3.0.101",
+ org.eclipse.core.databinding.beans;bundle-version="1.2.100",
+ de.wisag.automation.micas.common;bundle-version="1.0.0",
+ org.eclipse.ui.ide;bundle-version="3.6.1",
+ org.eclipse.core.resources;bundle-version="3.6.0",
+ org.apache.commons.io;bundle-version="1.4.0",
+ de.wisag.automation.micas.diagram.ui;bundle-version="1.0.0",
+ org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.4.1",
+ de.wisag.automation.micas.module;bundle-version="1.0.0",
+ de.wisag.automation.micas.export.mic;bundle-version="1.0.0",
+ de.wisag.automation.micas.common.ui;bundle-version="1.0.0",
+ org.eclipse.emf.databinding;bundle-version="1.2.0",
+ org.eclipse.core.expressions;bundle-version="3.4.200",
+ org.eclipselabs.damos.dml;bundle-version="0.2.0",
+ com.google.guava;bundle-version="21.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: WISAG Automatisierungstechnik GmbH & Co. KG
+Import-Package: org.osgi.service.event

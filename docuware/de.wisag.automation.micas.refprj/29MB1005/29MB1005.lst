@@ -1,0 +1,100 @@
+					- 1 -
+
+Micas-Konverter V4.33      29MB1005.LST
+Hardware: MB10, Modul  5			  Sonntag    06.02.111  23:19
+
+
+
+        K o p f b a u s t e i n:
+        ------------------------
+        0500:0000       F000
+        0500:0002       2000
+        0500:0004       0002
+        0500:0006       0104    ;Task 1
+        0500:0008       0000    ;Zykluszeit
+        0500:000A       051E    ;Segmentadresse
+        0500:000C       00A0    ;Vergangenheitswerte
+        0500:000E       0201    ;Task 2
+        0500:0010       03E8    ;Zykluszeit
+        0500:0012       051F    ;Segmentadresse
+        0500:0014       00B0    ;Vergangenheitswerte
+
+
+        Task 1:  Zykluszeit 0 ms  Laufzeit ca. 0 ms
+
+
+        051E:0000       F100
+        051E:0002       3000    ;ENDE
+
+        Task 2:  Zykluszeit 1000 ms  Laufzeit ca. 4 ms
+
+
+        051F:0000       F200
+        051F:0002       302F    ;ANEIN
+        051F:0004       0034    ;&ID_00002-006-00-C-MW
+        051F:0006       0080    ;LINIE4R
+        051F:0008       006C    ;WERR-ANEIN-ERROR112
+        051F:000A       F201
+        051F:000C       3017    ;NICHT
+        051F:000E       0060    ;LINIE2
+        051F:0010       0062    ;LINIE3
+        051F:0012       F202
+        051F:0014       3033    ;BEFAUS
+        051F:0016       0002
+        051F:0018       0062    ;LINIE3
+        051F:001A       0066    ;LINE1W
+        051F:001C       0040    ;$IN-BEFAUS_ON2_25425
+        051F:001E       0042    ;$IN-BEFAUS_ON3_22640
+        051F:0020       0032    ;&ID_00002-000-00-C-BM
+        051F:0022       006E    ;WERR-BEFAUS-ERROR114
+        051F:0024       F203
+        051F:0026       302F    ;ANEIN
+        051F:0028       0036    ;&ID_00002-007-00-C-MW
+        051F:002A       0084    ;LINIE5R
+        051F:002C       0070    ;WERR-ANEIN2-ERROR289
+        051F:002E       F204
+        051F:0030       3003    ;ADD2
+        051F:0032       0080    ;LINIE4R
+        051F:0034       0084    ;LINIE5R
+        051F:0036       0088    ;LINIE6R
+        051F:0038       F205
+        051F:003A       3032    ;ANAUS
+        051F:003C       0088    ;LINIE6R
+        051F:003E       0030    ;BINK0
+					- 2 -
+
+Micas-Konverter V4.33      29MB1005.LST
+Hardware: MB10, Modul  5			  Sonntag    06.02.111  23:19
+
+        051F:0040       0038    ;&ID_00002-016-00-C-AS
+        051F:0042       0072    ;WERR-ANAUS-ERROR497
+        051F:0044       F206
+        051F:0046       3030    ;ZWEIN
+        051F:0048       003A    ;&ID_0002-028-00-C-ZW
+        051F:004A       008C    ;LINIE7R
+        051F:004C       0074    ;WERR-ZWEIN-ERROR400
+        051F:004E       F207
+        051F:0050       3035    ;ZWAUS
+        051F:0052       0030    ;BINK0
+        051F:0054       0050    ;$IN-ZWAUS_DELTA_29919
+        051F:0056       0044    ;$IN-ZWAUS_MODE_22034
+        051F:0058       008C    ;LINIE7R
+        051F:005A       003E    ;&ZW_4711
+        051F:005C       0076    ;WERR-ZWAUS-ERROR89
+        051F:005E       F208
+        051F:0060       3031    ;MELEIN
+        051F:0062       0032    ;&ID_00002-000-00-C-BM
+        051F:0064       0001
+        051F:0066       0066    ;LINE1W
+        051F:0068       0060    ;LINIE2
+        051F:006A       F209
+        051F:006C       3034    ;SETMEL
+        051F:006E       003C    ;$WZERO
+        051F:0070       0002
+        051F:0072       0068    ;MP1
+        051F:0074       006A    ;MP2
+        051F:0076       0032    ;&ID_00002-000-00-C-BM
+        051F:0078       0064    ;ERROR2
+        051F:007A       F20A
+        051F:007C       3000    ;ENDE
+

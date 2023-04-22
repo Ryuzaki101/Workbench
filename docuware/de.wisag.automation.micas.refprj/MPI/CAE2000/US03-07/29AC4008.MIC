@@ -1,0 +1,131 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI30708.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 3
+  ;*** User Number    : 7
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 8
+  ;*****************************************************************
+  MODUL (ac40,8)
+  WordK  k0 (0)
+  WordV  Raumt_Froscha_zh
+  WordV  Raumt_Kuehlra_zh
+  WordV  Entriegeln
+  WordV  Entr.Taster
+  WordV  Entr.Befehl
+  WordV  Untersp_Notnetz
+  WordV  SSM_1
+  WordV  Entriegeln_1
+  WordV  Abschaltst_Labor
+  WordV  Raumt_Zellkul_zh
+  WordV  Untersp_NormNetz
+  WordV  SSM_Aquarienanl.
+  IPAMB &M0 (51,10)
+  WordV  $HB2
+  WordV  $WSCRATCH
+  IPAMB &M1 (73,2)
+  IPAMB &M2 (0,0)
+  IPAMB &M4 (65,11)
+  IPAMB &M5 (66,14)
+  IPAMB &M6 (50,3)
+  IPAMB &M7 (50,2)
+  IPAMB &M8 (72,2)
+  IPAMB &M9 (83,6)
+  IPAMB &M10 (85,14)
+  FloatK $M16 (3.00)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M17 (59,9)
+  FloatK $M18 (10.00)
+  FloatK $M19 (0.00)
+  WordV  $B4
+  IPAMB &M20 (50,1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,500)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Gîttingen
+  ;Projekt: Turm 3
+  ;         Umbau 3.OG fÅr
+  ;         Prof. Gîrlich
+  ;Anlage:  Laboranlage fÅr
+  ;         3.OG / DG
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM_Aquarienanl.)
+  MELEIN (&M1,1,Abschaltst_Labor,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Untersp_NormNetz)
+  MELEIN (&M5,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Untersp_Notnetz)
+  MELEIN (&M6,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M7,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,Raumt_Zellkul_zh,$WSCRATCH)
+  MELEIN (&M9,1,Raumt_Froscha_zh,$WSCRATCH)
+  MELEIN (&M10,1,Raumt_Kuehlra_zh,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M2,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln_1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  MOKY (Entriegeln_1,$M16,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ODRMN (11,k0,Untersp_NormNetz,Untersp_Notnetz,
+         Abschaltst_Labor,Raumt_Froscha_zh,Raumt_Kuehlra_zh,
+         Raumt_Zellkul_zh,k0,k0,k0,k0,0,$B1,$WSCRATCH)
+  ODR2 ($B1,k0,SSM_1)
+  ;SSM Aquarienanlage wurde
+  ;am 23.08.07 auf Wunsch
+  ;des Kunden aus der SSM
+  ;BT entfernt, da der
+  ;Steuerschrank im Aquar.-
+  ;Raum separat vom Nutzer
+  ;Åberwacht wird.
+  ;F
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  UND11 (Entriegeln,SSM_1,$B2)
+  RSS (SSM_1,$B2,$B3,$WSCRATCH)
+  NICHT ($B3,$HB0)
+  BEFAUS (1,$HB0,$B3,$WZERO,$WZERO,&M17,$WSCRATCH)
+  VVZ (Entr.Befehl,$M18,$M19,$B4)
+  BEFAUS (1,$B4,$WZERO,$WZERO,$WZERO,&M20,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

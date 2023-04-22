@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Micas Importer"
+            id="de.wisag.automation.micas.importer.ui.commands.category">
+      </category>
+      <command
+            name="Import MIC File"
+            categoryId="de.wisag.automation.micas.importer.ui.commands.category"
+            id="de.wisag.automation.micas.importer.ui.commands.micimport">
+      </command>
+      
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="de.wisag.automation.micas.importer.ui.commands.micimport"
+            class="de.wisag.automation.micas.importer.mic.ui.internal.handlers.MicImportHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="de.wisag.automation.micas.importer.ui.commands.micimport"
+               label="Import MIC File"
+               style="push">
+            <visibleWhen>
+ 				<with variable="selection">
+  					<iterate ifEmpty="false">
+  						<instanceof value="org.eclipse.core.resources.IFile"/>
+   						<test property="org.eclipse.core.resources.name" value="*.mic"/>
+   						<test property="org.eclipse.core.resources.name" value="*.MIC"/>
+  					</iterate>
+ 				</with>
+			</visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+</plugin>

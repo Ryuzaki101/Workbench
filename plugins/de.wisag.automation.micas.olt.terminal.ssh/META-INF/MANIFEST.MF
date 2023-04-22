@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: de.wisag.automation.micas.olt.terminal.ssh;singleton:=true
+Eclipse-LazyStart: true
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/dsd
+ p:de.wisag.automation.micas.olt.core/terminal/de.wisag.automation.micas.olt.terminal.ssh;tag=v20100
+ 5271030
+Bundle-Activator: de.wisag.automation.micas.olt.internal.terminal.ssh.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.wisag.automation.micas.olt.terminal;bundle-version="[3.0.0,3.1.0)",
+ com.jcraft.jsch;bundle-version="[0.1.31,1.0.0)",
+ org.eclipse.jsch.core;bundle-version="[1.0.0,2.0.0)",
+ org.apache.commons.io;bundle-version="1.4.0",
+ org.apache.commons.lang;bundle-version="2.6.0"
+Export-Package: de.wisag.automation.micas.olt.internal.terminal.ssh;x-internal:=true
+Bundle-Version: 2.0.200.v201005271030
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+

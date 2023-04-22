@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: gnu.io.rxtx
+Bundle-Version: 2.1.7.qualifier
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-ClassPath: .
+Export-Package: gnu.io
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-NativeCode: 
+  os/win32/x86/rxtxParallel.dll; os/win32/x86/rxtxSerial.dll; osname=win32; processor=x86,
+  os/win32/x86_64/rxtxSerial.dll; osname=win32; processor=x86_64,
+  os/linux/x86/librxtxParallel.so; os/linux/x86/librxtxSerial.so; osname=Linux; processor=x86,
+  os/linux/x86_64/librxtxParallel.so; os/linux/x86_64/librxtxSerial.so; osname=Linux; processor=x86_64

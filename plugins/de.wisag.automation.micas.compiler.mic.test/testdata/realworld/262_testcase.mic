@@ -1,0 +1,1336 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : TH_0102A.GPS
+  ;*** Projektname    : Aalto Theater Essen
+  ;*** Projektnummer  : 126 187
+  ;*** Bearbeiter     : Tinmaz
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 2
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  A9_B1_via_B2_ein
+  WordV  A9_B1_via_B2_aus
+  FloatV ABL-Feuchte_A9
+  WordV  WERR
+  WordK  KON01 (1)
+  FloatK k-Solw_ABL_FeuGr (45.00)
+  WordV  PK
+  WordV  Fernquit_a9.aus
+  WordV  A9_A-Bef_ein
+  FloatV Y-Sign_ZL-RegA12
+  WordK  LU9-autom.AUS (0)
+  WordK  LU9-autom.EIN2 (0)
+  WordK  K-LU9-AUTOM_EIN2 (0)
+  FloatV Y-Sign_ZL-RegA9
+  FloatV Sollw_ZL-Te_hW
+  WordK  KON00 (0)
+  WordK  K-LU9-AUTOM_EIN1 (0)
+  WordK  LU9-autom.EIN1 (0)
+  WordV  Fernquit_a9.ein
+  FloatK k-Sollw_ZL-Te_hW (16.00)
+  FloatV ZL-Temp_hWäscher
+  FloatV Y-Sign_Reg-Nr2
+  FloatV Y-Sign_Reg-Nr1
+  WordV  A9_ZL_stufe_2
+  FloatV ZL-Temp_Schneide
+  FloatV Sollw_ZL_FeReg7
+  FloatV Y-SignZL-FeObGre
+  FloatV Y-SignZL-FeUnGre
+  FloatV Y-Sign_Reg-Nr8
+  FloatV ZL-Feuchte_A9
+  FloatK Fkon-xyz (0.00)
+  WordV  ACM_ABL_sammelST
+  WordV  ACM_ZL_sammelST
+  WordV  k_EIN2_LU12_AUTO
+  FloatV Sollw_ZL_FeReg5
+  WordV  A9_ZL_stufe_1
+  WordV  A9_Zulüfter_ein
+  WordV  A9_ABL_stufe_1
+  WordV  A9_ABL_stufe_2
+  WordV  A9_ZL/ABL_ein
+  WordV  A9_ZL/ABL_ACM_ST
+  WordV  A9_Ablüfter_ein
+  FloatV ZUL-REG-NE-ANF
+  FloatV Aussentemperatur
+  FloatK k-Solw_ABL_FeoGr (55.00)
+  WordV  k_EIN1_LU12_AUTO
+  WordV  A12_ZL/ABL_ACMst
+  WordV  A12_ABL_sammelST
+  WordV  A12_ABL_stufe_2
+  WordV  A12_Ablüfter_ein
+  WordV  A12_ABL_stufe_1
+  WordV  A12_ZL/ABL_ein
+  WordV  A12_ZL_sammelST
+  WordV  A12_ZL_stufe_2
+  WordV  A12_Zulüfter_ein
+  WordV  A12_ZL_stufe_1
+  WordK  LU12-autom.AUS (0)
+  WordK  LU12-autom.EIN1 (0)
+  WordK  LU12-autom.EIN2 (0)
+  WordV  a12-zl-aus
+  WordV  a12-abl-aus
+  WordV  A12_A-Bef_ein
+  WordV  Fernquit_a12.aus
+  WordV  Fernquit_a12.ein
+  WordV  Stoer_quit_a12
+  FloatK KON300SEK (300.00)
+  FloatK FKON30 (30.00)
+  WordK  K-LU12-AUTO_EIN2 (0)
+  WordK  K-LU12-AUTO_EIN1 (0)
+  WordV  Stoerung_quitA9
+  FloatV Solw_ABL-TempA9
+  FloatV Solw_ABL-TempA12
+  FloatV Solw_ABL_FeuGr
+  FloatV Solw_ABL_FeoGr
+  WordV  A9_FreigRegelung
+  WordV  A12_FreigRegelng
+  FloatK FKON10.0 (1.00)
+  WordV  LU9-auto__istEIN
+  WordV  LU12-auto_istEIN
+  WordV  ERR1
+  FloatV STELLGR-REGL10
+  WordV  ERR2
+  WordK  K-ANFORD-EIN2 (0)
+  FloatV Anl.9_ZULTEMP.NE
+  WordV  ERR
+  WordV  KONSETZ02
+  FloatV LAMELLEN-SETZWER
+  WordV  KONSETZ03
+  WordV  K-ANFORD-EIN11
+  WordV  MERR-TEST1
+  WordV  MERR-TEST2
+  WordV  MERR-TEST3
+  WordV  ANST.UMLUFT-09
+  WordV  MERR-TEST4
+  WordV  KONSETZ05
+  WordV  KONSETZ04
+  WordV  KONSETZ06
+  WordV  KONSETZ07
+  WordV  KONSETZ08
+  WordV  ANST.UMLUFT-12
+  WordV  EIN2_LU12-autom.
+  WordV  Quitt.Taster-F2
+  WordV  ZPK
+  WordV  KEILR-ZUL-ANL09
+  WordV  KEILR-ABL-ANL09
+  WordV  KEILR.ZUL.ANL.12
+  WordV  KEILR.ABL.ANL.12
+  FloatK FKON10 (1.00)
+  FloatV AST-KUE-A09-ENTF
+  WordV  ERR-HIGH-BUS-K1
+  WordV  KAELTE_AUS_K2
+  FloatK K-SOLLW-DRU-A12 (120.00)
+  WordK  K-LU12-AUTO_EIN3 (0)
+  WordV  A12_ZL_stu_2RES
+  WordK  LU12-autom.EIN3 (0)
+  FloatK FKON50 (50.00)
+  WordV  ERR001
+  FloatK FKON100 (100.00)
+  WordV  A09_ABL_AUTO_ST
+  WordV  A12_ABL_AUTO_ST
+  WordV  A12_ZUL_AUTO_ST
+  WordV  A09_ZUL_AUTO_ST
+  WordV  04A-KL090-507
+  WordV  04A-KL090-503
+  WordV  04A-KL090-525
+  WordV  04A-KL090-321
+  WordV  04A-KL090-320
+  WordV  04A-KL090-325
+  WordV  04A-KL090-103
+  WordV  04A-KL090-020
+  WordV  04A-KL090-203
+  WordV  04A-KL090-706
+  WordV  04A-KL090-703
+  WordV  04A-KL090-725
+  WordV  04A-KL120-507
+  WordV  04A-KL120-503
+  WordV  04A-KL120-525
+  WordV  04A-KL120-203
+  WordV  04A-KL120-321
+  WordV  04A-KL120-320
+  WordV  04A-KL120-325
+  WordV  04A-KL120-103
+  WordV  04A-KL120-104
+  FloatV SK4-SIGNAL
+  FloatV SK3-SIGNAL
+  WordV  NOT-AUS_betaetig
+  WordV  NOT-AUS_ausgel.
+  WordV  EIN1_LU9-autom.
+  WordV  EIN2_LU9-autom.
+  WordV  K_EIN1_LU9_AUTOM
+  WordV  K_EIN2_LU9_AUTOM
+  WordV  Not-Aus
+  WordV  NOT-AUS_ausgel12
+  WordV  EIN1_LU12-autom.
+  WordV  EIN3_LU12-autom.
+  WordV  k_EIN3_LU12_AUTO
+  FloatV Y-SIGN_REG_24
+  FloatV A9-AN_FORTL_5GRD
+  FloatV A9_Fortlufttemp.
+  FloatV AusgangFKGS.17
+  FloatK KSOLLW-FORTL-A12 (5.00)
+  WordV  ERR_REG24
+  FloatK KSOLLW-FORTL-A9 (5.00)
+  WordV  ERR_REG25
+  FloatV A12AN_FORTL_5GRD
+  FloatK KSOLLW-Anf.Kaelt (13.00)
+  FloatV A12Fortlufttemp.
+  FloatV Y-SIGN_REG_25
+  FloatV Anl.9_Ablufttemp
+  FloatV A9_Vergleichswer
+  FloatV Anl.12_Abluftt.
+  FloatV A12_Vergleichswe
+  WordV  $B1
+  IPAMB &04A-KL090-900 (160,1)
+  WordV  $B2
+  IPAMB &04A-KL120-900 (180,1)
+  WordK  $M0 (1)
+  IPAAW &04A-KL090-741 (162)
+  WordK  $M1 (1)
+  IPAAW &04A-KL090-243 (167)
+  WordK  $M2 (1)
+  IPAAW &04A-KL090-245 (170)
+  WordK  $M3 (1)
+  IPAAW &04A-KL120-149 (208)
+  WordK  $M4 (1)
+  IPAAW &04A-KL090-341 (153)
+  WordK  $M5 (1)
+  IPAAW &04A-KL120-341 (155)
+  WordK  $M6 (1)
+  IPAAW &04A-KA000-999 (175)
+  IPAMB &04A-KL090-900RM (160,0)
+  IPAMB &M8 (160,2)
+  IPAMB &M9 (160,3)
+  IPAMB &M10 (160,4)
+  IPAMB &M11 (160,5)
+  IPAMB &04A-KL120-010 (34,3)
+  WordV  $WSCRATCH
+  WordV  $B3
+  IPAMB &04A-KL120-900RM (180,0)
+  IPAMB &M13 (180,2)
+  IPAMB &M14 (180,3)
+  IPAMB &M15 (180,4)
+  IPAMB &M16 (180,5)
+  IPAMB &M17 (180,6)
+  IPAMB &M18 (180,7)
+  WordV  $B4
+  WordV  $B5
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  FloatK $M19 (0.00)
+  FloatK $M20 (20.00)
+  WordV  $B11
+  FloatK $M21 (60.00)
+  FloatK $M22 (2.00)
+  IPAMB &04A-KL090-117 (25,6)
+  IPAMB &04A-KL090-118 (25,7)
+  IPAMB &04A-KL090-125 (25,13)
+  IPAMB &04A-KL090-217 (29,6)
+  IPAMB &04A-KL090-218 (29,7)
+  IPAMB &04A-KL090-225 (29,13)
+  WordV  $B12
+  FloatK $M23 (5.00)
+  FloatK $M24 (0.00)
+  WordV  $B13
+  WordK  $M25 (1)
+  IPAMB &a9-zl-aus (26,13)
+  WordK  $M26 (1)
+  IPAMB &a9-zl-stufe1 (26,14)
+  WordK  $M27 (1)
+  IPAMB &a9-zl-stufe2 (26,15)
+  WordK  $M28 (1)
+  IPAMB &a9-abl-aus (30,13)
+  WordK  $M29 (1)
+  IPAMB &a9-abl-stufe1 (30,14)
+  WordK  $M30 (1)
+  IPAMB &a9-abl-stufe2 (30,15)
+  WordK  $M31 (1)
+  IPAMB &a9-klappen_aus (12,13)
+  WordK  $M32 (1)
+  IPAMB &a9-klappen_ein (12,14)
+  WordK  $M33 (1)
+  IPAMB &a9-erh/kuhl_aus (10,13)
+  WordK  $M34 (1)
+  IPAMB &a9-erh/kuhl_ein (10,14)
+  IPAMB &04A-KL090-126 (28,1)
+  IPAMB &M35 (28,2)
+  IPAMB &M36 (28,3)
+  WordV  $B14
+  FloatK $M37 (5.00)
+  FloatK $M38 (3.00)
+  FloatK $M39 (0.00)
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordK  $M40 (1)
+  IPAAW &04A-KL090-136 (173)
+  WordK  $M41 (1)
+  IPAAW &04A-KL090-236 (174)
+  WordK  $M42 (1)
+  IPAAW &AT-K2 (255)
+  IPAAW &04A-KL090-005 (7)
+  IPAAW &04A-KL090-305 (205)
+  FloatK $M43 (0.00)
+  FloatK $M44 (0.00)
+  IPAAW &04A-KL090-505 (8)
+  FloatK $M45 (0.00)
+  FloatK $M46 (0.00)
+  FloatK $M47 (0.00)
+  FloatK $M48 (48.00)
+  FloatK $M49 (100.00)
+  FloatK $M50 (52.00)
+  FloatK $M51 (0.00)
+  FloatK $M52 (100.00)
+  FloatK $M53 (100.00)
+  FloatV $F1
+  FloatK $M54 (0.00)
+  FloatV $F2
+  WordK  $M55 (1)
+  IPAAW &04A-KL090-516 (0)
+  WordK  $M56 (1)
+  IPAMB &M57 (12,7)
+  FloatV $F3
+  FloatV $F4
+  FloatK $M58 (0.00)
+  FloatV $F5
+  WordK  $M59 (1)
+  IPAAW &04A-KL090-316 (13)
+  FloatK $M60 (2.00)
+  WordV  $B19
+  FloatK $M61 (0.00)
+  FloatK $M62 (100.00)
+  FloatV $F6
+  IPAAW &04A-KL090-205 (23)
+  IPAAW &04A-KL090-105 (21)
+  FloatK $FZERO (0.00)
+  FloatK $M63 (0.00)
+  FloatK $M64 (40.00)
+  FloatK $M65 (0.00)
+  FloatK $M66 (60.00)
+  FloatK $M67 (100.00)
+  FloatV $F7
+  FloatK $M68 (5.00)
+  FloatK $M69 (0.00)
+  WordV  $B20
+  FloatK $M70 (60.00)
+  FloatK $M71 (600.00)
+  WordV  $B21
+  FloatK $M72 (0.00)
+  FloatV $F8
+  FloatK $M73 (0.00)
+  FloatK $M74 (100.00)
+  FloatK $M75 (40.00)
+  FloatK $M76 (0.00)
+  FloatV $F9
+  FloatV $F10
+  FloatK $M77 (0.00)
+  FloatV $F11
+  WordK  $M78 (1)
+  IPAAW &04A-KL090-616 (1)
+  FloatK $M79 (300.00)
+  FloatK $M80 (0.00)
+  WordV  $B22
+  FloatK $M81 (0.00)
+  FloatK $M82 (60.00)
+  FloatK $M83 (0.00)
+  FloatK $M84 (100.00)
+  FloatK $M85 (100.00)
+  FloatV $F12
+  FloatV $F13
+  FloatK $M86 (0.00)
+  FloatV $F14
+  WordK  $M87 (1)
+  IPAAW &04A-KL090-816 (67)
+  WordV  $B23
+  IPAAW &04A-KL090-206 (18)
+  IPAAW &04A-KL090-106 (15)
+  FloatK $M88 (0.00)
+  FloatK $M89 (0.00)
+  FloatK $M90 (0.00)
+  FloatK $M91 (0.00)
+  FloatK $M92 (300.00)
+  FloatK $M93 (0.00)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  FloatK $M94 (0.00)
+  FloatV $F15
+  FloatK $M95 (5.00)
+  WordV  $B27
+  FloatK $M96 (0.00)
+  FloatV $F16
+  FloatV $F17
+  WordK  $M97 (1)
+  IPAAW &04a-KL090-716 (51)
+  IPAMB &04A-KL090-102 (25,2)
+  WordV  $B28
+  WordV  $B29
+  FloatK $M98 (30.00)
+  FloatK $M99 (0.00)
+  WordV  $B30
+  WordK  $M100 (1)
+  IPAMB &04A-KL090-991 (161,0)
+  IPAMB &04A-KL090-202 (29,2)
+  WordV  $B31
+  WordV  $B32
+  FloatK $M101 (30.00)
+  FloatK $M102 (0.00)
+  WordV  $B33
+  WordV  $B34
+  WordK  $M103 (1)
+  IPAMB &04A-KL090-992 (161,1)
+  WordK  $M104 (1)
+  IPAMB &INT-MEL01-HIGH (254,2)
+  FloatK $M105 (60.00)
+  FloatV $F18
+  FloatV $F19
+  WordV  $B35
+  FloatK $M106 (60.00)
+  FloatK $M107 (120.00)
+  WordV  $B36
+  FloatK $M108 (0.00)
+  FloatV $F20
+  WordK  $M109 (1)
+  IPAAW &04A-KL090-416 (66)
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  FloatK $M110 (300.00)
+  FloatK $M111 (0.00)
+  WordV  $B40
+  WordK  $M112 (1)
+  IPAMB &04A-KL090-993 (161,2)
+  WordV  $B41
+  WordV  $B42
+  WordV  $B43
+  FloatK $M113 (300.00)
+  FloatK $M114 (0.00)
+  WordV  $B44
+  WordV  $B45
+  WordK  $M115 (1)
+  IPAMB &04A-KL090-994 (161,3)
+  IPAMB &04A-KL120-117 (48,6)
+  IPAMB &04A-KL120-118 (48,7)
+  IPAMB &04A-KL120-125 (48,13)
+  IPAMB &04A-KL120-217 (45,6)
+  IPAMB &04A-KL120-218 (45,7)
+  IPAMB &04A-KL120-225 (45,13)
+  WordV  $B46
+  FloatK $M116 (0.00)
+  FloatK $M117 (10.00)
+  WordV  $B47
+  FloatK $M118 (5.00)
+  FloatK $M119 (0.00)
+  WordV  $B48
+  WordK  $M120 (1)
+  IPAMB &a12-zl-stufe1 (49,14)
+  WordK  $M121 (1)
+  IPAMB &a12-zl-stufe2 (49,15)
+  WordV  $B49
+  WordK  $M122 (1)
+  IPAMB &a12-abl-stufe1 (46,14)
+  WordK  $M123 (1)
+  IPAMB &a12-abl-stufe2 (46,15)
+  FloatK $M124 (0.00)
+  FloatK $M125 (5.00)
+  WordK  $M126 (1)
+  IPAMB &a12-klappen_aus (39,13)
+  WordK  $M127 (1)
+  IPAMB &a12-klappen_ein (39,14)
+  WordK  $M128 (1)
+  IPAMB &a12-erh/kuhl_aus (37,13)
+  WordK  $M129 (1)
+  IPAMB &a12-erh/kuhl_ein (37,14)
+  IPAMB &04A-KL120-126 (50,1)
+  IPAMB &M130 (50,2)
+  IPAMB &M131 (50,3)
+  WordV  $B50
+  IPAMB &Meld-High-Bus (254,15)
+  FloatK $M132 (5.00)
+  FloatK $M133 (3.00)
+  FloatK $M134 (0.00)
+  WordV  $B51
+  WordV  $B52
+  WordV  $B53
+  WordV  $B54
+  IPAAW &04A-KL120-205 (43)
+  IPAAW &04A-KL120-105 (35)
+  FloatV $F21
+  FloatK $M135 (0.00)
+  IPAAW &04A-KL120-305 (206)
+  FloatK $M136 (0.00)
+  FloatK $M137 (0.00)
+  FloatK $M138 (0.00)
+  FloatK $M139 (0.00)
+  FloatK $M140 (45.00)
+  FloatK $M141 (100.00)
+  FloatV $F22
+  FloatV $F23
+  FloatK $M142 (0.00)
+  FloatV $F24
+  WordK  $M143 (1)
+  IPAAW &04A-KL120-316 (40)
+  FloatV $F25
+  FloatV $F26
+  WordK  $M144 (1)
+  IPAMB &M145 (39,7)
+  FloatK $M146 (55.00)
+  FloatK $M147 (0.00)
+  FloatK $M148 (100.00)
+  FloatK $M149 (100.00)
+  FloatV $F27
+  FloatK $M150 (0.00)
+  FloatV $F28
+  WordK  $M151 (1)
+  IPAAW &04A-KL120-516 (32)
+  FloatK $M152 (2.00)
+  WordV  $B55
+  FloatK $M153 (0.00)
+  FloatK $M154 (100.00)
+  IPAAW &04A-KL120-905 (42)
+  FloatK $M155 (0.00)
+  WordV  $B56
+  FloatK $M156 (0.00)
+  FloatV $F29
+  WordK  $M157 (1)
+  IPAAW &04A-KL120-615 (33)
+  IPAMB &04A-KL120-102 (48,2)
+  WordV  $B57
+  WordV  $B58
+  FloatK $M158 (30.00)
+  FloatK $M159 (0.00)
+  WordV  $B59
+  WordK  $M160 (1)
+  IPAMB &04A-KL120-991 (181,0)
+  IPAMB &04A-KL120-202 (45,2)
+  WordV  $B60
+  WordV  $B61
+  FloatK $M161 (30.00)
+  FloatK $M162 (0.00)
+  WordV  $B62
+  WordV  $B63
+  WordK  $M163 (1)
+  IPAMB &INT-MEL02-HIGH (254,3)
+  WordK  $M164 (1)
+  IPAMB &04A-KL120-992 (181,1)
+  WordK  $M165 (1)
+  IPAMB &04A-KL090-900.BM (254,0)
+  WordK  $M166 (1)
+  IPAMB &04A-KL120-900.BM (254,1)
+  WordV  $B64
+  WordK  $M167 (1)
+  IPAMB &ANL.12.1FREI-AUS (46,6)
+  WordK  $M168 (1)
+  IPAMB &ANL.12.1FREI-EIN (46,7)
+  WordK  $M169 (1)
+  IPAMB &Anl12.1Frei-Aus2 (46,8)
+  WordK  $M170 (1)
+  IPAMB &Anl12.1Frei-EIN2 (46,9)
+  WordV  $B65
+  WordV  $B66
+  FloatK $M171 (10.00)
+  FloatK $M172 (10.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordK  $M173 (1)
+  IPAMB &ANL.12.1-AUS (49,6)
+  WordK  $M174 (1)
+  IPAMB &ANL.12.1-EIN1 (49,7)
+  WordV  $B70
+  FloatK $M175 (10.00)
+  FloatK $M176 (5.00)
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordK  $M177 (1)
+  IPAMB &ANL.12.1-2ST-AUS (49,8)
+  WordK  $M178 (1)
+  IPAMB &ANL.12.1-EIN2 (49,9)
+  WordV  $B74
+  FloatK $M179 (1.00)
+  FloatK $M180 (10.00)
+  WordV  $B75
+  WordV  $B76
+  FloatK $M181 (0.00)
+  FloatK $M182 (100.00)
+  FloatV $F30
+  WordK  $M183 (1)
+  IPAAW &04A-KL120-420 (68)
+  FloatK $M184 (1.00)
+  FloatK $M185 (20.00)
+  WordV  $B77
+  WordV  $B78
+  FloatK $M186 (0.00)
+  FloatV $F31
+  FloatV $F32
+  WordK  $M187 (1)
+  IPAAW &04A-KL120-419 (65)
+  WordV  $B79
+  FloatK $M188 (2.00)
+  FloatK $M189 (5.00)
+  WordV  $B80
+  WordV  $B81
+  FloatK $M190 (0.00)
+  FloatK $M191 (100.00)
+  FloatV $F33
+  WordK  $M192 (1)
+  IPAAW &04A-KL090-319 (60)
+  WordV  $B82
+  FloatK $M193 (2.00)
+  FloatK $M194 (5.00)
+  WordV  $B83
+  WordV  $B84
+  FloatK $M195 (0.00)
+  FloatK $M196 (100.00)
+  FloatV $F34
+  WordK  $M197 (1)
+  IPAAW &04A-KL120-319 (62)
+  FloatK $M198 (1.00)
+  WordV  $B85
+  WordV  $B86
+  WordV  $B87
+  WordK  $M199 (1)
+  IPAMB &Anford.KM-AUS (37,2)
+  WordK  $M200 (1)
+  IPAMB &Anford.KM-EIN (37,3)
+  WordK  $M201 (1)
+  IPAMB &INT-MEL-HIGH-K1 (220,0)
+  FloatK $M202 (300.00)
+  FloatK $M203 (0.00)
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  FloatK $M204 (300.00)
+  FloatK $M205 (0.00)
+  WordV  $B91
+  WordK  $M206 (1)
+  IPAMB &04A-KL120-993 (161,4)
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  FloatK $M207 (300.00)
+  FloatK $M208 (0.00)
+  WordV  $B95
+  WordK  $M209 (1)
+  IPAMB &04A-KL120-994 (161,5)
+  IPAMB &M210 (3,1)
+  IPAMB &M211 (3,9)
+  IPAMB &M212 (3,13)
+  IPAMB &M213 (14,7)
+  IPAMB &M214 (14,9)
+  IPAMB &M215 (14,13)
+  IPAMB &M216 (25,9)
+  IPAMB &M217 (29,1)
+  IPAMB &M218 (29,9)
+  IPAMB &M219 (52,1)
+  IPAMB &M220 (52,9)
+  IPAMB &M221 (52,13)
+  WordV  $B96
+  WordV  $B97
+  WordV  $B98
+  FloatK $M222 (10.00)
+  FloatK $M223 (0.00)
+  WordV  $B99
+  WordK  $M224 (1)
+  IPAMB &04A-KL090-950 (161,6)
+  IPAMB &M225 (34,1)
+  IPAMB &M226 (34,9)
+  IPAMB &M227 (34,13)
+  IPAMB &M228 (45,9)
+  IPAMB &M229 (41,7)
+  IPAMB &M230 (41,9)
+  IPAMB &M231 (41,13)
+  IPAMB &M232 (48,9)
+  IPAMB &M233 (200,3)
+  WordV  $B100
+  WordV  $B101
+  WordV  $B102
+  WordV  $B103
+  FloatK $M234 (10.00)
+  FloatK $M235 (0.00)
+  WordV  $B104
+  WordK  $M236 (1)
+  IPAMB &04A-KL120-950 (161,7)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;--------------------
+  ;Klimaanlage 9
+  ;   Orchesterproben
+  ;Klimaanlage 12
+  ;   Werkstätten und .
+  ;   Nebenräume
+  ; 
+  ;Moduleinbauort:
+  ;--------------------
+  ;Schaltschrank=A
+  ;Gebäude
+  ;Klimazentrale 2, 3UG
+  ; 
+  ;Engineeringhilfe..
+  ;--------------------
+  ;CAE2000 V6.2
+  ;ModConf V
+  ;EEPROM  V
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  NOR2 (K-LU9-AUTOM_EIN1,K-LU9-AUTOM_EIN2,$B1)
+  BEFAUS (2,$B1,K-LU9-AUTOM_EIN1,K-LU9-AUTOM_EIN2,KON00,
+          &04A-KL090-900,WERR)
+  NOR2 (K-LU12-AUTO_EIN1,K-LU12-AUTO_EIN2,$B2)
+  BEFAUS (3,$B2,K-LU12-AUTO_EIN1,K-LU12-AUTO_EIN2,
+          K-LU12-AUTO_EIN3,&04A-KL120-900,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (k-Sollw_ZL-Te_hW,$M0,&04A-KL090-741,WERR)
+  ANAUS (k-Solw_ABL_FeoGr,$M1,&04A-KL090-243,WERR)
+  ANAUS (k-Solw_ABL_FeuGr,$M2,&04A-KL090-245,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (K-SOLLW-DRU-A12,$M3,&04A-KL120-149,WERR)
+  ANAUS (KSOLLW-FORTL-A9,$M4,&04A-KL090-341,WERR)
+  ANAUS (KSOLLW-FORTL-A12,$M5,&04A-KL120-341,WERR)
+  ANAUS (KSOLLW-Anf.Kaelt,$M6,&04A-KA000-999,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  MELEIN (&04A-KL090-900RM,6,PK,LU9-autom.AUS,PK,
+          EIN1_LU9-autom.,PK,EIN2_LU9-autom.,WERR)
+  BTRA (EIN1_LU9-autom.,K_EIN1_LU9_AUTOM)
+  BTRA (EIN2_LU9-autom.,K_EIN2_LU9_AUTOM)
+  ODR2 (EIN1_LU9-autom.,EIN2_LU9-autom.,LU9-auto__istEIN)
+  MELEIN (&04A-KL120-010,1,Not-Aus,$WSCRATCH)
+  NICHT (Not-Aus,NOT-AUS_betaetig)
+  UND2 (Not-Aus,Fernquit_a9.ein,$B3)
+  RSS (NOT-AUS_betaetig,$B3,NOT-AUS_ausgel.,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  UND11 (EIN1_LU9-autom.,NOT-AUS_ausgel.,LU9-autom.EIN1)
+  UND11 (EIN2_LU9-autom.,NOT-AUS_ausgel.,LU9-autom.EIN2)
+  UND11 (K_EIN1_LU9_AUTOM,NOT-AUS_ausgel.,K-LU9-AUTOM_EIN1)
+  UND11 (K_EIN2_LU9_AUTOM,NOT-AUS_ausgel.,K-LU9-AUTOM_EIN2)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&04A-KL120-900RM,8,PK,LU12-autom.AUS,PK,
+          EIN1_LU12-autom.,PK,EIN2_LU12-autom.,ZPK,
+          EIN3_LU12-autom.,WERR)
+  BTRA (EIN1_LU12-autom.,k_EIN1_LU12_AUTO)
+  BTRA (EIN2_LU12-autom.,k_EIN2_LU12_AUTO)
+  ODR2 (EIN1_LU12-autom.,EIN2_LU12-autom.,LU12-auto_istEIN)
+  BTRA (EIN3_LU12-autom.,k_EIN3_LU12_AUTO)
+  NICHT (Not-Aus,$B4)
+  UND2 (Not-Aus,Fernquit_a12.ein,$B5)
+  RSS ($B4,$B5,NOT-AUS_ausgel12,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  UND11 (EIN1_LU12-autom.,NOT-AUS_ausgel12,LU12-autom.EIN1)
+  UND11 (EIN2_LU12-autom.,NOT-AUS_ausgel12,LU12-autom.EIN2)
+  UND11 (EIN3_LU12-autom.,NOT-AUS_ausgel12,LU12-autom.EIN3)
+  UND11 (k_EIN1_LU12_AUTO,NOT-AUS_ausgel12,K-LU12-AUTO_EIN1)
+  UND11 (k_EIN2_LU12_AUTO,NOT-AUS_ausgel12,K-LU12-AUTO_EIN2)
+  UND11 (k_EIN3_LU12_AUTO,NOT-AUS_ausgel12,K-LU12-AUTO_EIN3)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  BEFAUS (2,$B6,KON00,KON00,$WZERO,&04A-KL090-900,ERR1)
+  BEFAUS (3,$B7,KON00,KON00,$WZERO,&04A-KL120-900,ERR2)
+  ODR2 (KON00,KON00,$B6)
+  ODR2 (KON00,KON00,$B7)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UND2 (A9_ZL_stufe_2,LU9-autom.EIN2,$B8)
+  ODRMN (2,LU9-autom.EIN1,LU9-autom.AUS,0,$WSCRATCH,
+         $WSCRATCH)
+  RSS ($B8,LU9-autom.AUS,$B9,$B10)
+  VVZ ($B9,$M19,$M20,$B11)
+  UND21 ($B11,$B10,$B9,A9_B1_via_B2_ein)
+  VVZ (A9_B1_via_B2_ein,$M21,$M22,A9_B1_via_B2_aus)
+  ;Ausstrudelzeit
+  ; 
+  ;Ausschalten d.Anlage
+  ;von hoher Stufe/Drehzahl
+  ;über niedrige Drehzahl
+  ; 
+  ;Stufe 1 aktivieren
+  ; 
+  ;Ausschalten "B0"
+  ;nach Ablauf Tx
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&04A-KL090-117,1,A9_ZL_stufe_1,WERR)
+  MELEIN (&04A-KL090-118,1,A9_ZL_stufe_2,WERR)
+  MELEIN (&04A-KL090-125,1,ACM_ZL_sammelST,WERR)
+  MELEIN (&04A-KL090-217,1,A9_ABL_stufe_1,WERR)
+  MELEIN (&04A-KL090-218,1,A9_ABL_stufe_2,WERR)
+  MELEIN (&04A-KL090-225,1,ACM_ABL_sammelST,$WSCRATCH)
+  ;ACM ST
+  ;Reg-AUS
+  ; 
+  ODR2 (A9_ZL_stufe_1,A9_ZL_stufe_2,A9_Zulüfter_ein)
+  ODR2 (A9_ABL_stufe_1,A9_ABL_stufe_2,A9_Ablüfter_ein)
+  UND2 (A9_Zulüfter_ein,A9_Ablüfter_ein,A9_ZL/ABL_ein)
+  ODR2 (ACM_ZL_sammelST,ACM_ABL_sammelST,$B12)
+  VVZ ($B12,$M23,$M24,A9_ZL/ABL_ACM_ST)
+  UND11 (A9_Zulüfter_ein,A9_ZL/ABL_ACM_ST,A9_FreigRegelung)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODR2 (LU9-autom.AUS,A9_B1_via_B2_aus,$B13)
+  SETMEL ($M25,1,$B13,&a9-zl-aus,WERR)
+  ODRMN (3,LU9-autom.EIN1,A9_B1_via_B2_ein,LU9-autom.EIN2,0,
+         A9_A-Bef_ein,$WSCRATCH)
+  SETMEL ($M26,1,A9_A-Bef_ein,&a9-zl-stufe1,WERR)
+  SETMEL ($M27,1,LU9-autom.EIN2,&a9-zl-stufe2,WERR)
+  SETMEL ($M28,1,$B13,&a9-abl-aus,WERR)
+  SETMEL ($M29,1,A9_A-Bef_ein,&a9-abl-stufe1,WERR)
+  SETMEL ($M30,1,LU9-autom.EIN2,&a9-abl-stufe2,WERR)
+  ;A9  Zulüfter AUS
+  ; 
+  ;A9  Zulüfter st1
+  ; 
+  ;A9  Zulüfter st2
+  ; 
+  ;A9  Ablüfter AUS
+  ; 
+  ;A9  Ablüfter st1
+  ; 
+  ;A9  Ablüfter st2
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  SETMEL ($M31,1,LU9-autom.AUS,&a9-klappen_aus,WERR)
+  SETMEL ($M32,1,A9_A-Bef_ein,&a9-klappen_ein,WERR)
+  SETMEL ($M33,1,LU9-autom.AUS,&a9-erh/kuhl_aus,WERR)
+  SETMEL ($M34,1,A9_A-Bef_ein,&a9-erh/kuhl_ein,WERR)
+  ;Anlage 9 Klappen
+  ; 
+  ;Anlage 9 Klappen
+  ; 
+  ;Anlage 9 VE AUS
+  ; 
+  ;Anlage 9 VE EIN
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&04A-KL090-126,3,Fernquit_a9.aus,PK,
+          Fernquit_a9.ein,WERR)
+  ODR2 (Fernquit_a9.ein,Quitt.Taster-F2,$B14)
+  MOKY ($B14,$M37,Stoerung_quitA9)
+  VVZ (Stoerung_quitA9,$M38,$M39,$B15)
+  UND11 ($B18,$B15,$B16)
+  RSS ($B16,$B15,$B17,$B18)
+  BEFAUS (1,$B17,$B15,$WZERO,$WZERO,&04A-KL090-126,WERR)
+  ;StörQuitt
+  ;  "Rücksetzen"
+  ; 
+  ;StörQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ANAUS (ZL-Feuchte_A9,$M40,&04A-KL090-136,$WSCRATCH)
+  ANAUS (ABL-Feuchte_A9,$M41,&04A-KL090-236,$WSCRATCH)
+  ANAUS (Aussentemperatur,$M42,&AT-K2,WERR)
+  ANEIN (&04A-KL090-005,Aussentemperatur,WERR)
+  ;Transf. ProHighBus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ANEIN (&04A-KL090-305,A9_Fortlufttemp.,ERR)
+  ANEIN (&04A-KL090-341,KSOLLW-FORTL-A9,$WSCRATCH)
+  REGLER (24,KON01,$WZERO,$M43,Y-SIGN_REG_24,ERR_REG24)
+  AWT (A9_FreigRegelung,$M44,Y-SIGN_REG_24,A9-AN_FORTL_5GRD)
+  ;REGLERSIGNAL
+  ;XP- negativ
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ANEIN (&04A-KL090-505,ZL-Temp_hWäscher,$WSCRATCH)
+  ANEIN (&04A-KL090-741,Sollw_ZL-Te_hW,$WSCRATCH)
+  REGLER (1,KON01,$WZERO,$M45,Y-Sign_Reg-Nr1,WERR)
+  ATRA (Sollw_ZL-Te_hW,k-Sollw_ZL-Te_hW)
+  FKG (Y-Sign_Reg-Nr1,4,$M46,$M47,$M48,$M49,AusgangFKGS.17)
+  FKG (Y-Sign_Reg-Nr1,4,$M50,$M51,$M52,$M53,$F1)
+  AWT (A9_FreigRegelung,$M54,$F1,$F2)
+  ;VE-Ventil
+  ; 
+  ;ZL-TempReg hinterVorerhi
+  ; 
+  ANAUS ($F2,$M55,&04A-KL090-516,WERR)
+  SETMEL ($M56,1,A9_FreigRegelung,&M57,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MIN (2,AusgangFKGS.17,A9-AN_FORTL_5GRD,$F3)
+  MAX (2,$F3,ZUL-REG-NE-ANF,$F4)
+  AWT (A9_FreigRegelung,$M58,$F6,$F5)
+  ANAUS ($F5,$M59,&04A-KL090-316,WERR)
+  VGLEH (Aussentemperatur,Anl.9_Ablufttemp,$M60,$B19)
+  AWT ($B19,$M61,$M62,A9_Vergleichswer)
+  MAX (2,$F4,A9_Vergleichswer,$F6)
+  ;Econovent-Y-Signal
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  SOLKEN (1,KON01,Solw_ABL-TempA9,WERR)
+  ANEIN (&04A-KL090-205,Anl.9_Ablufttemp,WERR)
+  ANEIN (&04A-KL090-105,Anl.9_ZULTEMP.NE,WERR)
+  REGLER (2,KON01,$WZERO,$FZERO,Y-Sign_Reg-Nr2,WERR)
+  REGLER (3,KON01,$WZERO,$M63,Y-Sign_ZL-RegA9,WERR)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  FKG (Y-Sign_ZL-RegA9,4,$M64,$M65,$M66,$M67,$F7)
+  VGLEH (AST-KUE-A09-ENTF,$M68,$M69,$B20)
+  VVZ ($B20,$M70,$M71,$B21)
+  MAX (2,$F8,FKON10,ZUL-REG-NE-ANF)
+  AWT ($B21,$F7,$M72,$F8)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  FKG (Y-Sign_ZL-RegA9,4,$M73,$M74,$M75,$M76,$F9)
+  MAX (2,$F9,AST-KUE-A09-ENTF,$F10)
+  AWT ($B23,$M77,$F10,$F11)
+  ANAUS ($F11,$M78,&04A-KL090-616,WERR)
+  VVZ (A9_FreigRegelung,$M79,$M80,$B22)
+  AWT ($B22,$M81,Y-SignZL-FeObGre,AST-KUE-A09-ENTF)
+  FKG (Y-Sign_ZL-RegA9,4,$M82,$M83,$M84,$M85,$F12)
+  MAX (2,$F12,Fkon-xyz,$F13)
+  AWT (A9_FreigRegelung,$M86,$F13,$F14)
+  ;Kühlerventil
+  ; 
+  ;NE-Ventil
+  ; 
+  ANAUS ($F14,$M87,&04A-KL090-816,WERR)
+  UND11 (A9_FreigRegelung,KAELTE_AUS_K2,$B23)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ANEIN (&04A-KL090-206,ABL-Feuchte_A9,WERR)
+  ANEIN (&04A-KL090-106,ZL-Feuchte_A9,WERR)
+  ANEIN (&04A-KL090-243,Solw_ABL_FeoGr,WERR)
+  ANEIN (&04A-KL090-245,Solw_ABL_FeuGr,WERR)
+  REGLER (4,KON01,$WZERO,$M88,Sollw_ZL_FeReg5,$WSCRATCH)
+  REGLER (6,KON01,$WZERO,$M89,Sollw_ZL_FeReg7,WERR)
+  REGLER (5,KON01,$WZERO,$M90,Y-SignZL-FeObGre,WERR)
+  REGLER (7,KON01,$WZERO,$M91,Y-SignZL-FeUnGre,WERR)
+  ;ABL/ZL-FeuchtekaskadenRg
+  ;mit neutraler Zone
+  ; 
+  ;!!!!!
+  ;Be-
+  ;feuch
+  ;ten
+  ; 
+  ;!!!!!
+  ;Ent-
+  ;feuch
+  ;ten
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  VVZ (A9_FreigRegelung,$M92,$M93,$B24)
+  UND2 ($B24,$B27,$B25)
+  VGLOH (Y-SignZL-FeUnGre,FKON30,$B26)
+  AWT ($B25,$M94,Y-SignZL-FeUnGre,$F15)
+  VVZ ($B26,$M95,KON300SEK,$B27)
+  AWT ($B27,$M96,FKON30,$F16)
+  MAX (2,$F15,$F16,$F17)
+  ;Wäscher-Regelventl
+  ; 
+  ANAUS ($F17,$M97,&04a-KL090-716,WERR)
+  ;* Be-feuchten *
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  MELEIN (&04A-KL090-102,1,$B28,$WSCRATCH)
+  UND11 (A9_Zulüfter_ein,$B28,$B29)
+  VVZ ($B29,$M98,$M99,$B30)
+  RSS ($B30,Stoerung_quitA9,KEILR-ZUL-ANL09,$WSCRATCH)
+  SETMEL ($M100,1,KEILR-ZUL-ANL09,&04A-KL090-991,WERR)
+  MELEIN (&04A-KL090-202,1,$B31,$WSCRATCH)
+  UND11 (A9_Ablüfter_ein,$B31,$B32)
+  VVZ ($B32,$M101,$M102,$B33)
+  RSS ($B33,Stoerung_quitA9,KEILR-ABL-ANL09,$WSCRATCH)
+  ;DiffDruck Zulüfter
+  ; 
+  ;DiffDruck Ablüfter
+  ; 
+  ODR2 (KEILR-ZUL-ANL09,KEILR-ABL-ANL09,$B34)
+  SETMEL ($M103,1,KEILR-ABL-ANL09,&04A-KL090-992,WERR)
+  SETMEL ($M104,1,$B34,&INT-MEL01-HIGH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  PT1 (Anl.9_ZULTEMP.NE,$M105,$F18)
+  SOLKEN (3,KON01,SK3-SIGNAL,$WSCRATCH)
+  MAX (2,SK3-SIGNAL,LAMELLEN-SETZWER,$F19)
+  ODR2 (A9_ZL_stufe_1,A9_ZL_stufe_2,$B35)
+  VVZ ($B35,$M106,$M107,$B36)
+  AWT ($B36,$M108,$F19,$F20)
+  ANAUS ($F20,$M109,&04A-KL090-416,ERR)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  UND11 (LU9-autom.EIN1,A9_ZL_stufe_1,$B37)
+  UND11 (LU9-autom.EIN2,A9_ZL_stufe_2,$B38)
+  ODR2 ($B37,$B38,$B39)
+  VVZ ($B39,$M110,$M111,$B40)
+  RSS ($B40,Stoerung_quitA9,A09_ZUL_AUTO_ST,$WSCRATCH)
+  SETMEL ($M112,1,A09_ZUL_AUTO_ST,&04A-KL090-993,$WSCRATCH)
+  UND11 (LU9-autom.EIN1,A9_ABL_stufe_1,$B41)
+  UND11 (LU9-autom.EIN2,A9_ABL_stufe_2,$B42)
+  ODR2 ($B41,$B42,$B43)
+  VVZ ($B43,$M113,$M114,$B44)
+  RSS ($B44,Stoerung_quitA9,A09_ABL_AUTO_ST,$WSCRATCH)
+  ODR2 (A09_ZUL_AUTO_ST,A09_ABL_AUTO_ST,$B45)
+  SETMEL ($M115,1,A09_ABL_AUTO_ST,&04A-KL090-994,$WSCRATCH)
+  BEFAUS (1,$B45,$WZERO,$WZERO,$WZERO,&04A-KL090-900,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ENDE 
+  TASK (4,cycl,1000)
+  ANEIN (&04A-KL120-149,K-SOLLW-DRU-A12,ERR001)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  MELEIN (&04A-KL120-117,1,A12_ZL_stufe_1,$WSCRATCH)
+  MELEIN (&04A-KL120-118,1,A12_ZL_stufe_2,$WSCRATCH)
+  MELEIN (&04A-KL120-125,1,A12_ZL_sammelST,$WSCRATCH)
+  MELEIN (&04A-KL120-217,1,A12_ABL_stufe_1,$WSCRATCH)
+  MELEIN (&04A-KL120-218,1,A12_ABL_stufe_2,$WSCRATCH)
+  MELEIN (&04A-KL120-225,1,A12_ABL_sammelST,$WSCRATCH)
+  ODR2 (A12_ZL_stufe_1,A12_ZL_stufe_2,$B46)
+  VVZ ($B46,$M116,$M117,A12_Zulüfter_ein)
+  ODR2 (A12_ABL_stufe_1,A12_ABL_stufe_2,A12_Ablüfter_ein)
+  ;ACM ST
+  ;Reg-AUS
+  ; 
+  ODR2 (A12_ZL_sammelST,A12_ABL_sammelST,$B47)
+  VVZ ($B47,$M118,$M119,A12_ZL/ABL_ACMst)
+  UND11 (A12_Zulüfter_ein,A12_ZL/ABL_ACMst,A12_FreigRegelng)
+  UND2 (A12_Zulüfter_ein,A12_Ablüfter_ein,A12_ZL/ABL_ein)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (3,LU12-autom.EIN1,LU12-autom.EIN3,LU12-autom.EIN2,0,
+         $B48,$WSCRATCH)
+  SETMEL ($M120,1,$B48,&a12-zl-stufe1,WERR)
+  SETMEL ($M121,1,LU12-autom.EIN2,&a12-zl-stufe2,WERR)
+  UND11 ($B48,LU12-autom.EIN3,$B49)
+  SETMEL ($M122,1,$B49,&a12-abl-stufe1,WERR)
+  SETMEL ($M123,1,LU12-autom.EIN2,&a12-abl-stufe2,WERR)
+  ;A12 Zulüfter st1
+  ; 
+  ;A12 Zulüfter st2
+  ; 
+  ;A12 Ablüfter st1
+  ; 
+  ;A12 Ablüfter st2
+  ; 
+  VVZ ($B48,$M124,$M125,A12_A-Bef_ein)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  SETMEL ($M126,1,LU12-autom.AUS,&a12-klappen_aus,WERR)
+  SETMEL ($M127,1,A12_A-Bef_ein,&a12-klappen_ein,WERR)
+  SETMEL ($M128,1,LU12-autom.AUS,&a12-erh/kuhl_aus,WERR)
+  SETMEL ($M129,1,A12_A-Bef_ein,&a12-erh/kuhl_ein,WERR)
+  ;Anl.12   Klappen
+  ; 
+  ;Anl.12   Klappen
+  ; 
+  ;Anl. 12  VE AUS
+  ; 
+  ;Anl. 12  VE EIN
+  ; 
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  MELEIN (&04A-KL120-126,3,Fernquit_a12.aus,PK,
+          Fernquit_a12.ein,WERR)
+  ODR2 (Fernquit_a12.ein,Quitt.Taster-F2,$B50)
+  MELEIN (&Meld-High-Bus,1,Quitt.Taster-F2,$WSCRATCH)
+  MOKY ($B50,$M132,Stoer_quit_a12)
+  VVZ (Stoer_quit_a12,$M133,$M134,$B51)
+  UND11 ($B54,$B51,$B52)
+  RSS ($B52,$B51,$B53,$B54)
+  BEFAUS (1,$B53,$B51,$WZERO,$WZERO,&04A-KL120-126,WERR)
+  ;StörQuitt
+  ;  "Rücksetzen"
+  ; 
+  ;StörQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  SOLKEN (2,KON01,Solw_ABL-TempA12,WERR)
+  ANEIN (&04A-KL120-205,Anl.12_Abluftt.,WERR)
+  ANEIN (&04A-KL120-105,$F21,WERR)
+  REGLER (8,KON01,$WZERO,$FZERO,Y-Sign_Reg-Nr8,WERR)
+  REGLER (9,KON01,$WZERO,$M135,Y-Sign_ZL-RegA12,WERR)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ANEIN (&04A-KL120-305,A12Fortlufttemp.,ERR)
+  ANEIN (&04A-KL120-341,KSOLLW-FORTL-A12,$WSCRATCH)
+  REGLER (25,KON01,$WZERO,$M136,Y-SIGN_REG_25,ERR_REG25)
+  AWT (A12_FreigRegelng,$M137,Y-SIGN_REG_25,A12AN_FORTL_5GRD)
+  ;REGLERSIGNAL
+  ;XP- negativ
+  ; 
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  FKG (Y-Sign_ZL-RegA12,4,$M138,$M139,$M140,$M141,$F22)
+  MAX (2,$F26,A12_Vergleichswe,$F23)
+  AWT (A12_FreigRegelng,$M142,$F23,$F24)
+  ANAUS ($F24,$M143,&04A-KL120-316,WERR)
+  MIN (2,$F22,A12AN_FORTL_5GRD,$F25)
+  MAX (2,$F25,FKON10.0,$F26)
+  SETMEL ($M144,1,A12_FreigRegelng,&M145,$WSCRATCH)
+  FKG (Y-Sign_ZL-RegA12,4,$M146,$M147,$M148,$M149,$F27)
+  AWT (A12_FreigRegelng,$M150,$F27,$F28)
+  ;ECOnnovent
+  ; 
+  ;VE-Ventil
+  ; 
+  ANAUS ($F28,$M151,&04A-KL120-516,WERR)
+  VGLEH (Aussentemperatur,Anl.12_Abluftt.,$M152,$B55)
+  AWT ($B55,$M153,$M154,A12_Vergleichswe)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ANEIN (&04A-KL120-905,ZL-Temp_Schneide,WERR)
+  REGLER (10,KON01,$WZERO,$M155,STELLGR-REGL10,WERR)
+  UND11 (A12_FreigRegelng,KAELTE_AUS_K2,$B56)
+  AWT ($B56,$M156,STELLGR-REGL10,$F29)
+  ANAUS ($F29,$M157,&04A-KL120-615,WERR)
+  ;Anlage 12
+  ;Kühler Schneider
+  ;NACHKÜHLUNG
+  ; 
+  SOLKEN (4,KON01,SK4-SIGNAL,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  MELEIN (&04A-KL120-102,1,$B57,$WSCRATCH)
+  UND11 (A12_Zulüfter_ein,$B57,$B58)
+  VVZ ($B58,$M158,$M159,$B59)
+  RSS ($B59,Stoer_quit_a12,KEILR.ZUL.ANL.12,$WSCRATCH)
+  SETMEL ($M160,1,KEILR.ZUL.ANL.12,&04A-KL120-991,WERR)
+  MELEIN (&04A-KL120-202,1,$B60,$WSCRATCH)
+  UND11 (A12_Ablüfter_ein,$B60,$B61)
+  VVZ ($B61,$M161,$M162,$B62)
+  RSS ($B62,Stoer_quit_a12,KEILR.ABL.ANL.12,$WSCRATCH)
+  ;DiffDruck Zulüfter
+  ; 
+  ;DiffDruck Ablüfter
+  ; 
+  ODR2 (KEILR.ZUL.ANL.12,KEILR.ABL.ANL.12,$B63)
+  SETMEL ($M163,1,$B63,&INT-MEL02-HIGH,$WSCRATCH)
+  SETMEL ($M164,1,KEILR.ABL.ANL.12,&04A-KL120-992,WERR)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  SETMEL ($M165,1,LU9-auto__istEIN,&04A-KL090-900.BM,WERR)
+  SETMEL ($M166,1,LU12-auto_istEIN,&04A-KL120-900.BM,WERR)
+  ;Anforderung Anlage 9
+  ;an ProfiHighBus
+  ; 
+  ;Anforderung Anlage 12
+  ;an ProfiHighBus
+  ; 
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  NICHT (A12_ABL_stufe_1,$B64)
+  SETMEL ($M167,1,$B64,&ANL.12.1FREI-AUS,WERR)
+  SETMEL ($M168,1,A12_ABL_stufe_1,&ANL.12.1FREI-EIN,WERR)
+  SETMEL ($M169,1,$B65,&Anl12.1Frei-Aus2,$WSCRATCH)
+  SETMEL ($M170,1,A12_ABL_stufe_2,&Anl12.1Frei-EIN2,
+          $WSCRATCH)
+  NICHT (A12_ABL_stufe_2,$B65)
+  ;Freigabe    Anlage 12.1
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ODRMN (3,K-LU12-AUTO_EIN1,K-LU12-AUTO_EIN2,
+         K-LU12-AUTO_EIN3,0,$B66,$WSCRATCH)
+  VVZ ($B66,$M171,$M172,$B67)
+  ODRMN (2,$B67,KONSETZ02,0,$B68,$B69)
+  SETMEL ($M173,1,$B69,&ANL.12.1-AUS,WERR)
+  SETMEL ($M174,1,$B68,&ANL.12.1-EIN1,WERR)
+  ODR2 (A12_ZL_stu_2RES,K-ANFORD-EIN2,$B70)
+  VVZ ($B70,$M175,$M176,$B71)
+  ODRMN (2,KONSETZ03,$B71,0,$B72,$B73)
+  SETMEL ($M177,1,$B73,&ANL.12.1-2ST-AUS,WERR)
+  ;Anforderung Anlage 12.1
+  ;1 Stufe ein
+  ; 
+  ;Anforderung Anlage 12.1
+  ;2 Stufe ein
+  ; 
+  SETMEL ($M178,1,$B72,&ANL.12.1-EIN2,WERR)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  ODR2 (K-LU12-AUTO_EIN2,K-ANFORD-EIN11,$B74)
+  VVZ ($B74,$M179,$M180,$B75)
+  ODR2 ($B75,KONSETZ04,$B76)
+  AWT ($B76,$M181,$M182,$F30)
+  ANAUS ($F30,$M183,&04A-KL120-420,MERR-TEST1)
+  VVZ (K-LU12-AUTO_EIN1,$M184,$M185,$B77)
+  ODR2 (KONSETZ05,$B77,$B78)
+  AWT ($B78,$M186,FKON50,$F31)
+  ;Ansteuerung Bypassklappe
+  ;Anl.12. wenn 2 Stufe Ein
+  ; 
+  ;Ansteuerung Zuluftklappe
+  ;ANLAGE 12
+  ; 
+  AWT (K-LU12-AUTO_EIN2,$F31,FKON100,$F32)
+  ANAUS ($F32,$M187,&04A-KL120-419,MERR-TEST2)
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  ODR2 (ANST.UMLUFT-09,KON00,$B79)
+  VVZ ($B79,$M188,$M189,$B80)
+  ODR2 ($B80,KONSETZ06,$B81)
+  AWT ($B81,$M190,$M191,$F33)
+  ANAUS ($F33,$M192,&04A-KL090-319,MERR-TEST3)
+  ODR2 (ANST.UMLUFT-12,KON00,$B82)
+  VVZ ($B82,$M193,$M194,$B83)
+  ODR2 (KONSETZ07,$B83,$B84)
+  AWT ($B84,$M195,$M196,$F34)
+  ;Ansteuerung Umluftklappe
+  ;Anl.09                 n
+  ; 
+  ;Ansteuerung Umluftklappe
+  ;ANLAGE 12
+  ; 
+  ANAUS ($F34,$M197,&04A-KL120-319,MERR-TEST4)
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  VGLEH (Aussentemperatur,KSOLLW-Anf.Kaelt,$M198,$B85)
+  ODRMN (2,KONSETZ08,$B85,0,$B86,$B87)
+  SETMEL ($M199,1,$B87,&Anford.KM-AUS,WERR)
+  SETMEL ($M200,1,$B86,&Anford.KM-EIN,WERR)
+  SETMEL ($M201,1,KAELTE_AUS_K2,&INT-MEL-HIGH-K1,
+          ERR-HIGH-BUS-K1)
+  VVZ ($B87,$M202,$M203,KAELTE_AUS_K2)
+  ANEIN (&04A-KA000-999,KSOLLW-Anf.Kaelt,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  UND11 (LU12-autom.EIN1,A12_ZL_stufe_1,$B88)
+  UND11 (LU12-autom.EIN2,A12_ZL_stufe_2,$B89)
+  ODR2 ($B88,$B89,$B90)
+  VVZ ($B90,$M204,$M205,$B91)
+  RSS ($B91,Stoer_quit_a12,A12_ZUL_AUTO_ST,$WSCRATCH)
+  SETMEL ($M206,1,A12_ZUL_AUTO_ST,&04A-KL120-993,$WSCRATCH)
+  BEFAUS (1,A12_ZUL_AUTO_ST,$WZERO,$WZERO,$WZERO,
+          &04A-KL120-900,$WSCRATCH)
+  UND11 (LU12-autom.EIN1,A12_ABL_stufe_1,$B92)
+  UND11 (LU12-autom.EIN2,A12_ABL_stufe_2,$B93)
+  ODR2 ($B92,$B93,$B94)
+  VVZ ($B94,$M207,$M208,$B95)
+  RSS ($B95,Stoer_quit_a12,A12_ABL_AUTO_ST,$WSCRATCH)
+  SETMEL ($M209,1,A12_ABL_AUTO_ST,&04A-KL120-994,$WSCRATCH)
+  BEFAUS (1,A12_ABL_AUTO_ST,$WZERO,$WZERO,$WZERO,
+          &04A-KL120-900,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  MELEIN (&M210,1,04A-KL090-507,$WSCRATCH)
+  MELEIN (&M211,1,04A-KL090-503,$WSCRATCH)
+  MELEIN (&M212,1,04A-KL090-525,$WSCRATCH)
+  MELEIN (&M213,1,04A-KL090-321,$WSCRATCH)
+  MELEIN (&M214,1,04A-KL090-320,$WSCRATCH)
+  MELEIN (&M215,1,04A-KL090-325,$WSCRATCH)
+  MELEIN (&M216,1,04A-KL090-103,$WSCRATCH)
+  MELEIN (&M217,1,04A-KL090-020,$WSCRATCH)
+  MELEIN (&M218,1,04A-KL090-203,$WSCRATCH)
+  MELEIN (&M219,1,04A-KL090-706,$WSCRATCH)
+  MELEIN (&M220,1,04A-KL090-703,$WSCRATCH)
+  MELEIN (&M221,1,04A-KL090-725,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  ODRMN (10,KEILR-ABL-ANL09,KEILR-ZUL-ANL09,A09_ABL_AUTO_ST,
+         A09_ZUL_AUTO_ST,04A-KL090-507,04A-KL090-503,
+         04A-KL090-525,04A-KL090-321,04A-KL090-320,
+         04A-KL090-325,0,$B96,$WSCRATCH)
+  ODRMN (12,04A-KL090-103,NOT-AUS_ausgel.,04A-KL090-203,
+         04A-KL090-706,04A-KL090-703,KON00,ACM_ABL_sammelST,
+         ACM_ZL_sammelST,KON00,KON00,KON00,KON00,0,$B97,
+         $WSCRATCH)
+  ODR2 ($B96,$B97,$B98)
+  VVZ ($B98,$M222,$M223,$B99)
+  SETMEL ($M224,1,$B99,&04A-KL090-950,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  MELEIN (&M225,1,04A-KL120-507,$WSCRATCH)
+  MELEIN (&M226,1,04A-KL120-503,$WSCRATCH)
+  MELEIN (&M227,1,04A-KL120-525,$WSCRATCH)
+  MELEIN (&M228,1,04A-KL120-203,$WSCRATCH)
+  MELEIN (&M229,1,04A-KL120-321,$WSCRATCH)
+  MELEIN (&M230,1,04A-KL120-320,$WSCRATCH)
+  MELEIN (&M231,1,04A-KL120-325,$WSCRATCH)
+  MELEIN (&M232,1,04A-KL120-103,$WSCRATCH)
+  MELEIN (&M233,1,$B100,$WSCRATCH)
+  NICHT ($B100,04A-KL120-104)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  ODRMN (10,KEILR.ABL.ANL.12,KEILR.ZUL.ANL.12,
+         A12_ABL_AUTO_ST,A12_ZUL_AUTO_ST,A12_ZL_sammelST,
+         A12_ABL_sammelST,04A-KL120-507,04A-KL120-503,
+         04A-KL120-525,04A-KL120-203,0,$B101,$WSCRATCH)
+  ODRMN (12,04A-KL120-321,04A-KL120-320,04A-KL120-325,
+         04A-KL120-103,04A-KL120-104,NOT-AUS_ausgel12,KON00,
+         KON00,KON00,KON00,KON00,KON00,0,$B102,$WSCRATCH)
+  ODR2 ($B101,$B102,$B103)
+  VVZ ($B103,$M234,$M235,$B104)
+  SETMEL ($M236,1,$B104,&04A-KL120-950,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

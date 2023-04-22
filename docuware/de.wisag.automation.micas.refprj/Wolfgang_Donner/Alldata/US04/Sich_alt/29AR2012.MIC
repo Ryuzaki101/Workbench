@@ -1,0 +1,177 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0412.GPS
+  ;*** Projektname    : ARAG KAELTE
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** PrÅfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 4
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (AR20,12)
+  WordV  WERR
+  WordV  K-ENTRIEGELN-AUS
+  WordV  K-ENTRIEGELN-EIN
+  FloatK K-SW-GYKOLKUEHL (42.00)
+  WordK  K-GES-ANL-EIN1 (0)
+  WordK  K-GES-ANL-AUS (0)
+  WordK  K-GES-ANL-EIN2 (0)
+  WordK  K-GES-ANL-EIN3 (1)
+  WordV  GLYKOL_4-6_AUS
+  WordV  GLYKOL_4-6_EIN
+  WordV  GLYKOL_1-3_EIN
+  WordV  GLYKOL_1-3_AUS
+  WordV  EINSCH-NI-DR-1-3
+  WordV  EINSCH-NI-DR-1-6
+  FloatV TEMP-GLYKOLSOLE
+  FloatK KON0-5GRD (0.50)
+  WordV  ZEIT-KUEHL_4-6
+  WordV  ZEIT-KUEHL_1-3
+  WordV  EINSCH-HOHE-DREH
+  WordV  TESTSETZ01
+  WordV  TESTSETZ02
+  FloatK KONZEIT01 (86400.00)
+  FloatK KONZEIT02 (86400.00)
+  WordK  KONSETZ01 (0)
+  FloatK K-LAUFZEIT01 (0.00)
+  FloatK K-LAUFZEIT02 (0.00)
+  WordV  ERR_03
+  IPAMB &BA1KA0000BF02 (100,9)
+  WordK  $M0 (1)
+  IPAAW &BA1KA0000AA70 (125)
+  IPAMB &BA1KA0004BF60 (102,9)
+  IPAMB &M1 (102,10)
+  IPAMB &M2 (102,11)
+  WordV  $WSCRATCH
+  IPAMB &M3 (100,10)
+  IPAMB &M4 (100,11)
+  IPAMB &M5 (100,12)
+  IPAMB &M6 (100,13)
+  IPAMB &M7 (100,14)
+  IPAMB &M8 (100,15)
+  WordV  $B1
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  IPAMB &BA1KA0000BM23 (43,1)
+  IPAMB &M9 (43,2)
+  IPAMB &M10 (43,3)
+  IPAMB &BA1KA0000BM24 (43,5)
+  IPAMB &M11 (43,6)
+  IPAMB &M12 (43,7)
+  IPAAW &BA1KA0000MW22 (45)
+  FloatV $F1
+  FloatK $M13 (0.50)
+  WordV  $B6
+  FloatK $M14 (0.50)
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  FloatV $F2
+  FloatK $M15 (0.50)
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  IPAMB &BA1KA0000BM21 (42,1)
+  WordV  $B21
+  IPAMB &BA1KA0000BM22 (42,5)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE:
+  ;EDV-KAELTE
+  ;STANDORT:
+  ;2.KG Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (3,K-GES-ANL-AUS,K-GES-ANL-EIN1,K-GES-ANL-EIN2,
+          K-GES-ANL-EIN3,&BA1KA0000BF02,ERR_03)
+  ANAUS (K-SW-GYKOLKUEHL,$M0,&BA1KA0000AA70,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&BA1KA0004BF60,3,K-ENTRIEGELN-AUS,$WSCRATCH,
+          K-ENTRIEGELN-EIN,WERR)
+  MELEIN (&BA1KA0000BF02,7,$B1,$WSCRATCH,$B2,$WSCRATCH,$B3,
+          $WSCRATCH,$B4,$WSCRATCH)
+  BTRA ($B4,$B5)
+  BTRA ($B3,K-GES-ANL-EIN2)
+  BTRA ($B2,K-GES-ANL-EIN1)
+  BTRA ($B1,K-GES-ANL-AUS)
+  ODR2 ($B5,KONSETZ01,K-GES-ANL-EIN3)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&BA1KA0000BM23,3,GLYKOL_4-6_AUS,$WSCRATCH,
+          GLYKOL_4-6_EIN,WERR)
+  MELEIN (&BA1KA0000BM24,3,GLYKOL_1-3_AUS,$WSCRATCH,
+          GLYKOL_1-3_EIN,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&BA1KA0000MW22,TEMP-GLYKOLSOLE,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  SUB2 (K-SW-GYKOLKUEHL,KON0-5GRD,$F1)
+  VGLEH (TEMP-GLYKOLSOLE,$F1,$M13,$B6)
+  VGLEH (TEMP-GLYKOLSOLE,K-SW-GYKOLKUEHL,$M14,$B7)
+  UND2 ($B7,K-GES-ANL-EIN3,$B8)
+  ODR2 ($B8,K-GES-ANL-EIN1,$B9)
+  ADD2 (K-SW-GYKOLKUEHL,KON0-5GRD,$F2)
+  VGLEH (TEMP-GLYKOLSOLE,$F2,$M15,$B10)
+  UND2 ($B10,K-GES-ANL-EIN3,$B11)
+  ODR2 ($B11,K-GES-ANL-EIN2,$B12)
+  UND11 ($B6,$B9,$B13)
+  UND11 ($B9,$B12,EINSCH-NI-DR-1-6)
+  ODR2 ($B13,TESTSETZ01,EINSCH-NI-DR-1-3)
+  ODR2 ($B12,TESTSETZ02,EINSCH-HOHE-DREH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  UHR (GLYKOL_1-3_EIN,ZEIT-KUEHL_4-6,K-LAUFZEIT01)
+  VGLOH (K-LAUFZEIT01,KONZEIT01,$B14)
+  RSS ($B14,$B15,ZEIT-KUEHL_4-6,ZEIT-KUEHL_1-3)
+  UHR (GLYKOL_4-6_EIN,ZEIT-KUEHL_1-3,K-LAUFZEIT02)
+  VGLOH (K-LAUFZEIT02,KONZEIT02,$B15)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  UNDMN (2,ZEIT-KUEHL_4-6,EINSCH-NI-DR-1-3,0,$B16,$B17)
+  BEFAUS (1,$B17,$B16,$WZERO,$WZERO,&BA1KA0000BM23,WERR)
+  UNDMN (2,ZEIT-KUEHL_1-3,EINSCH-NI-DR-1-3,0,$B18,$B19)
+  BEFAUS (1,$B19,$B18,$WZERO,$WZERO,&BA1KA0000BM24,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  NICHT (EINSCH-HOHE-DREH,$B20)
+  BEFAUS (1,$B20,EINSCH-HOHE-DREH,$WZERO,$WZERO,
+          &BA1KA0000BM21,WERR)
+  NICHT (EINSCH-NI-DR-1-6,$B21)
+  BEFAUS (1,$B21,EINSCH-NI-DR-1-6,$WZERO,$WZERO,
+          &BA1KA0000BM22,WERR)
+  ENDE 
+  ENDMODUL 

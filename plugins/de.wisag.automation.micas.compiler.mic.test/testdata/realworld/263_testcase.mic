@@ -1,0 +1,727 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : TH0112C.GPS
+  ;*** Projektname    : Aalto-Theater K3
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Braun
+  ;*** Prüfer         : Donner
+  ;*** Line Nummer    : 1
+  ;*** User Number    : 12
+  ;*** Modul Typ      : zp20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  KENTRAU-05-AUS
+  WordV  KENTRAU-05-EIN
+  WordV  KBRAND-05-AUS
+  WordV  KBRAND-05-EIN
+  WordV  ERR_HIGHBUS01
+  WordV  KENTRAU-07-AUS
+  WordV  KENTRAU-07-EIN
+  WordV  KBRAND-07-AUS
+  WordV  KBRAND-07-EIN
+  WordV  KENTRAU-08-AUS
+  WordV  KENTRAU-08-EIN
+  WordV  KBRAND-08-AUS
+  WordV  KBRAND-08-EIN
+  WordV  KBRAND-13.1-AUS
+  WordV  KBRAND-13.1-EIN
+  WordV  KENTRAU-13.1-AUS
+  WordV  KENTRAU-13.1-EIN
+  WordV  KENTRAU-16-AUS
+  WordV  KENTRAU-16-EIN
+  WordV  KBRAND-16-AUS
+  WordV  KBRAND-16-EIN
+  WordV  ERR19
+  WordV  KENTRAU-18-AUS
+  WordV  KENTRAU-18-EIN
+  WordV  KBRAND-18-AUS
+  WordV  KBRAND-18-EIN
+  WordV  ERR20
+  WordV  KENTRAU-20.6-AUS
+  WordV  KBRAND-20.6-EIN
+  WordV  KENTRAU-20.6-EIN
+  WordV  KBRAND-20.6-AUS
+  WordV  KENTRAU-20.8-AUS
+  WordV  KENTRAU-20.8-EIN
+  WordV  KBRAND-20.8-AUS
+  WordV  KBRAND-20.8-EIN
+  WordV  KEIL_ANL05_ST
+  WordV  KEIL_ANL07_ST
+  WordV  KEIL_ANL08_ST
+  WordV  KEIL_ANL13.1_ST
+  WordV  KEIL_ANL16_ST
+  WordV  KEIL_ANL18_ST
+  WordV  KEIL_ANL20.6_ST
+  WordV  KEIL_ANL20.8_ST
+  WordV  ZPK
+  WordV  ERR47
+  WordV  ERR49
+  WordK  KONSETZ01 (0)
+  WordV  ANL-K3-AUS
+  WordK  KON0 (0)
+  WordK  KONSETZ02 (0)
+  WordK  KONSETZ03 (0)
+  WordK  KONSETZ04 (0)
+  WordK  KONSETZ05 (0)
+  WordK  KONSETZ06 (0)
+  WordV  ERR52
+  WordV  ERR53
+  WordV  ERR51
+  WordV  ERR50
+  WordV  ERR54
+  WordV  ERR55
+  WordK  KONSETZ08 (0)
+  WordK  KONSETZ07 (0)
+  WordK  KONSETZ09 (0)
+  WordK  KONSETZ10 (0)
+  WordV  ERR56
+  WordV  ERR10
+  WordK  KONSETZ11 (0)
+  WordK  KONSETZ12 (0)
+  WordV  ERR11
+  WordV  ERR12
+  WordK  KONSETZ13 (0)
+  WordK  KONSETZ14 (0)
+  WordV  ERR13
+  WordV  ERR14
+  WordK  KONSETZ15 (0)
+  WordK  KONSETZ16 (0)
+  WordV  ERR16
+  WordV  ERR15
+  WordV  QUITT-US10
+  WordV  QUITT-US09
+  WordV  QUITT-US11
+  WordK  KON1 (1)
+  WordV  Anlage_05_ein
+  WordV  Anlage_13.1_ein
+  WordV  Anlage_16_ein
+  WordV  Anlage_18_ein
+  WordV  Anlage_07_ein
+  WordV  Anlage_08_ein
+  WordV  Anlage_20.6_ein
+  WordV  Anlage_20.8_ein
+  WordV  ERR_HIGHBUS_K2
+  WordV  KAELTE_AUS_K2
+  WordV  Klap.05_Ball_ein
+  WordV  Klap.05_Ball_aus
+  WordV  Klap.05_Chor_aus
+  WordV  Klap.05_Chor_ein
+  WordV  Klap.05_Pro1_aus
+  WordV  Klap.05_Pro1_ein
+  WordV  Klap.05_Pro2_aus
+  WordV  Klap.05_Pro2_ein
+  WordV  Klap.05_Sol1_aus
+  WordV  Klap.05_Sol2_aus
+  WordV  Klap.05_Sol1_ein
+  WordV  Klap.05_Sol2_ein
+  WordV  Klap.05_Sol3_aus
+  WordV  Klap.05_Sol3_ein
+  WordV  ERR_HIGHBUS08
+  WordV  ERR01
+  WordV  ERR02
+  WordV  ERR03
+  WordV  ERR04
+  WordV  ERR05
+  WordV  ERR06
+  WordV  ERR07
+  WordV  ERR08
+  WordV  ERR09
+  WordV  ERR17
+  WordV  ERR18
+  WordV  ERR21
+  WordV  ERR22
+  WordV  ERR23
+  WordV  ERR24
+  WordV  ERR25
+  WordV  ERR26
+  WordV  ERR27
+  WordV  ERR28
+  WordV  ERR29
+  WordV  ERR30
+  WordV  ERR31
+  WordV  ERR32
+  WordV  ERR33
+  WordV  ERR34
+  WordV  ERR35
+  WordV  ERR36
+  WordV  ERR37
+  WordV  ERR38
+  WordV  ERR39
+  WordV  ERR40
+  WordV  ERR41
+  WordV  ERR42
+  WordV  ERR43
+  WordV  ERR44
+  WordV  ERR45
+  WordV  ERR46
+  WordV  ERR48
+  WordV  ERR57
+  WordV  ERR58
+  WordV  ERR59
+  WordV  ERR60
+  WordV  ERR61
+  WordV  ERR62
+  WordV  ERR63
+  WordV  ERR64
+  WordV  ERR65
+  WordV  ERR66
+  WordV  ERR_HIGHBUS02
+  WordV  ERR_HIGHBUS03
+  WordV  ERR_HIGHBUS04
+  WordV  ERR_HIGHBUS05
+  WordV  ERR_HIGHBUS06
+  WordV  ERR_HIGHBUS07
+  WordV  ERR_HIGHBUS09
+  WordV  ERR_HIGHBUS10
+  FloatV 04B-KL050-005
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &04B-KL050-004 (100,1)
+  IPAMB &04B-KL050-016 (100,5)
+  IPAMB &04B-KL070-004 (100,9)
+  IPAMB &04B-KL070-016 (100,13)
+  IPAMB &04B-KL080-004 (101,1)
+  IPAMB &04B-KL080-016 (101,5)
+  IPAMB &04B-KL131-004 (101,9)
+  IPAMB &04B-KL131-016 (101,13)
+  IPAMB &04B-KL160-004 (102,1)
+  IPAMB &04B-KL160-016 (102,5)
+  IPAMB &04B-KL180-004 (102,9)
+  IPAMB &04B-KL180-016 (102,13)
+  IPAMB &04B-KL206-004 (103,1)
+  IPAMB &04B-KL206-016 (103,5)
+  IPAMB &04B-KL208-004 (103,9)
+  IPAMB &04B-KL208-016 (103,13)
+  IPAMB &04B-KL050-432 (22,1)
+  IPAMB &04B-KL050-433 (22,5)
+  IPAMB &04B-KL050-434 (23,1)
+  IPAMB &04B-KL050-435 (23,5)
+  IPAMB &04B-KL050-436 (22,9)
+  IPAMB &04B-KL050-437 (22,13)
+  IPAMB &04B-KL050-438 (23,9)
+  IPAMB &INT.MEL01-HIGH (243,2)
+  WordV  $WSCRATCH
+  IPAMB &INT.MEL02-HIGH (242,2)
+  IPAMB &INT.MEL03-HIGH (242,3)
+  IPAMB &INT.MEL04-HIGH (241,2)
+  IPAMB &INT.MEL05-HIGH (241,3)
+  IPAMB &INT.MEL06-HIGH (241,4)
+  IPAMB &INT.MEL07-HIGH (241,5)
+  IPAMB &INT.MEL08-HIGH (241,6)
+  IPAMB &M0 (100,2)
+  IPAMB &M1 (100,3)
+  IPAMB &M2 (100,6)
+  IPAMB &M3 (100,7)
+  IPAMB &M4 (100,10)
+  IPAMB &M5 (100,11)
+  IPAMB &M6 (100,14)
+  IPAMB &M7 (100,15)
+  IPAMB &M8 (101,2)
+  IPAMB &M9 (101,3)
+  IPAMB &M10 (101,6)
+  IPAMB &M11 (101,7)
+  IPAMB &M12 (101,10)
+  IPAMB &M13 (101,11)
+  IPAMB &M14 (101,14)
+  IPAMB &M15 (101,15)
+  IPAMB &M16 (102,2)
+  IPAMB &M17 (102,3)
+  IPAMB &M18 (102,6)
+  IPAMB &M19 (102,7)
+  IPAMB &M20 (102,10)
+  IPAMB &M21 (102,11)
+  IPAMB &M22 (102,14)
+  IPAMB &M23 (102,15)
+  IPAMB &M24 (103,2)
+  IPAMB &M25 (103,3)
+  IPAMB &M26 (103,6)
+  IPAMB &M27 (103,7)
+  IPAMB &M28 (103,10)
+  IPAMB &M29 (103,11)
+  IPAMB &M30 (103,14)
+  IPAMB &M31 (103,15)
+  IPAMB &M32 (22,2)
+  IPAMB &M33 (22,3)
+  WordV  $B1
+  WordK  $M34 (1)
+  IPAMB &MelHIGHBUS1 (243,9)
+  IPAMB &M35 (22,6)
+  IPAMB &M36 (22,7)
+  WordV  $B2
+  WordK  $M37 (1)
+  IPAMB &MelHIGHBUS2 (243,10)
+  IPAMB &M38 (23,2)
+  IPAMB &M39 (23,3)
+  WordV  $B3
+  WordK  $M40 (1)
+  IPAMB &MelHIGHBUS3 (243,11)
+  IPAMB &M41 (23,6)
+  IPAMB &M42 (23,7)
+  WordV  $B4
+  WordK  $M43 (1)
+  IPAMB &MelHIGHBUS4 (243,12)
+  IPAMB &M44 (22,10)
+  IPAMB &M45 (22,11)
+  WordV  $B5
+  WordK  $M46 (1)
+  IPAMB &MelHIGHBUS5 (243,6)
+  IPAMB &M47 (22,14)
+  IPAMB &M48 (22,15)
+  WordV  $B6
+  WordK  $M49 (1)
+  IPAMB &MelHIGHBUS6 (243,7)
+  IPAMB &M50 (23,10)
+  IPAMB &M51 (23,11)
+  WordV  $B7
+  WordK  $M52 (1)
+  IPAMB &MelHIGHBUS7 (243,8)
+  WordV  $B8
+  FloatK $M53 (5.00)
+  FloatK $M54 (1.00)
+  WordV  $B9
+  WordV  $HB0
+  IPAMB &Brand-Anl.05 (20,1)
+  WordV  $B10
+  FloatK $M55 (5.00)
+  FloatK $M56 (1.00)
+  WordV  $B11
+  IPAMB &Entrauch.Anl.05 (20,5)
+  WordV  $B12
+  FloatK $M57 (5.00)
+  FloatK $M58 (1.00)
+  WordV  $B13
+  IPAMB &Brand-Anl.07 (21,1)
+  WordV  $B14
+  FloatK $M59 (5.00)
+  FloatK $M60 (1.00)
+  WordV  $B15
+  IPAMB &Entrauch.Anl.07 (21,5)
+  WordV  $B16
+  FloatK $M61 (5.00)
+  FloatK $M62 (1.00)
+  WordV  $B17
+  IPAMB &Brand-Anl.08 (20,9)
+  WordV  $B18
+  FloatK $M63 (5.00)
+  FloatK $M64 (1.00)
+  WordV  $B19
+  IPAMB &Entrauch.Anl.08 (20,13)
+  WordV  $B20
+  FloatK $M65 (5.00)
+  FloatK $M66 (1.00)
+  WordV  $B21
+  IPAMB &Brand-Anl.13.1 (16,1)
+  WordV  $B22
+  FloatK $M67 (5.00)
+  FloatK $M68 (1.00)
+  WordV  $B23
+  IPAMB &Entrauch.Anl.131 (16,5)
+  WordV  $B24
+  FloatK $M69 (5.00)
+  FloatK $M70 (1.00)
+  WordV  $B25
+  IPAMB &Brand-Anl.16 (17,1)
+  WordV  $B26
+  FloatK $M71 (5.00)
+  FloatK $M72 (1.00)
+  WordV  $B27
+  IPAMB &Entrauch.Anl.16 (17,5)
+  WordV  $B28
+  FloatK $M73 (5.00)
+  FloatK $M74 (1.00)
+  WordV  $B29
+  IPAMB &Brand-Anl.18 (16,9)
+  WordV  $B30
+  FloatK $M75 (5.00)
+  FloatK $M76 (1.00)
+  WordV  $B31
+  IPAMB &Entrauch.Anl.18 (16,13)
+  WordV  $B32
+  FloatK $M77 (5.00)
+  FloatK $M78 (1.00)
+  WordV  $B33
+  IPAMB &Brand-Anl.20.6 (17,9)
+  WordV  $B34
+  FloatK $M79 (5.00)
+  FloatK $M80 (1.00)
+  WordV  $B35
+  IPAMB &Entrauch.Anl.206 (17,13)
+  WordV  $B36
+  FloatK $M81 (5.00)
+  FloatK $M82 (1.00)
+  WordV  $B37
+  IPAMB &Brand-Anl.20.8 (18,1)
+  WordV  $B38
+  FloatK $M83 (5.00)
+  FloatK $M84 (1.00)
+  WordV  $B39
+  IPAMB &Entrauch.Anl.208 (18,5)
+  IPAMB &04B-KL000-901 (20,2)
+  IPAMB &04B-KL000-941 (20,3)
+  WordV  $B40
+  WordV  $B41
+  FloatK $M85 (0.00)
+  FloatK $M86 (10.00)
+  WordV  $B42
+  WordK  $M87 (1)
+  IPAMB &RUECKSETZ_US09 (243,15)
+  IPAMB &04B-KL000-942 (15,15)
+  WordV  $B43
+  WordV  $B44
+  FloatK $M88 (0.00)
+  FloatK $M89 (10.00)
+  WordV  $B45
+  WordK  $M90 (1)
+  IPAMB &RUECKSETZ_US10 (242,15)
+  IPAMB &04B-KL000-943 (19,2)
+  WordV  $B46
+  WordV  $B47
+  FloatK $M91 (0.00)
+  FloatK $M92 (10.00)
+  WordV  $B48
+  WordK  $M93 (1)
+  IPAMB &RUECKSETZ_US11 (241,15)
+  WordV  $B49
+  WordV  $B50
+  FloatK $M94 (5.00)
+  WordV  $B51
+  FloatK $M95 (2.00)
+  FloatK $M96 (0.00)
+  WordV  $B52
+  WordV  $B53
+  FloatK $M97 (5.00)
+  WordV  $B54
+  FloatK $M98 (2.00)
+  FloatK $M99 (0.00)
+  WordV  $B55
+  WordV  $B56
+  FloatK $M100 (5.00)
+  WordV  $B57
+  FloatK $M101 (2.00)
+  FloatK $M102 (0.00)
+  IPAMB &Anlage05_Betrieb (243,0)
+  IPAMB &Anlage07_Betrieb (242,0)
+  IPAMB &Anlage08_Betrieb (242,1)
+  IPAMB &Anlage13.1_Betri (241,7)
+  IPAMB &Anlage16_Betrieb (241,8)
+  IPAMB &Anlage18_Betrieb (241,9)
+  IPAMB &Anlage20.6_Betri (241,10)
+  IPAMB &Anlage20.8_Betri (241,11)
+  IPAMB &INT_MEL-HIGH-K2 (220,0)
+  IPAAW &AT_HIGHBUS_US09 (251)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Brand und
+  ;Entrauchung der
+  ;Anlagen 5+7+8+13.1+
+  ;16+18+20.6+20.8
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,init)
+  BEFAUS (1,KENTRAU-05-AUS,KENTRAU-05-EIN,$WZERO,$WZERO,
+          &04B-KL050-004,ERR01)
+  BEFAUS (1,KBRAND-05-AUS,KBRAND-05-EIN,$WZERO,$WZERO,
+          &04B-KL050-016,ERR02)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-07-AUS,KENTRAU-07-EIN,$WZERO,$WZERO,
+          &04B-KL070-004,ERR03)
+  BEFAUS (1,KBRAND-07-AUS,KBRAND-07-EIN,$WZERO,$WZERO,
+          &04B-KL070-016,ERR04)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-08-AUS,KENTRAU-08-EIN,$WZERO,$WZERO,
+          &04B-KL080-004,ERR05)
+  BEFAUS (1,KBRAND-08-AUS,KBRAND-08-EIN,$WZERO,$WZERO,
+          &04B-KL080-016,ERR06)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-13.1-AUS,KENTRAU-13.1-EIN,$WZERO,$WZERO,
+          &04B-KL131-004,ERR07)
+  BEFAUS (1,KBRAND-13.1-AUS,KBRAND-13.1-EIN,$WZERO,$WZERO,
+          &04B-KL131-016,ERR08)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-16-AUS,KENTRAU-16-EIN,$WZERO,$WZERO,
+          &04B-KL160-004,ERR09)
+  BEFAUS (1,KBRAND-16-AUS,KBRAND-16-EIN,$WZERO,$WZERO,
+          &04B-KL160-016,ERR10)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-18-AUS,KENTRAU-18-EIN,$WZERO,$WZERO,
+          &04B-KL180-004,ERR11)
+  BEFAUS (1,KBRAND-18-AUS,KBRAND-18-EIN,$WZERO,$WZERO,
+          &04B-KL180-016,ERR12)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-20.6-AUS,KENTRAU-20.6-EIN,$WZERO,$WZERO,
+          &04B-KL206-004,ERR13)
+  BEFAUS (1,KBRAND-20.6-AUS,KBRAND-20.6-EIN,$WZERO,$WZERO,
+          &04B-KL206-016,ERR14)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  BEFAUS (1,KENTRAU-20.8-AUS,KENTRAU-20.8-EIN,$WZERO,$WZERO,
+          &04B-KL208-004,ERR15)
+  BEFAUS (1,KBRAND-20.8-AUS,KBRAND-20.8-EIN,$WZERO,$WZERO,
+          &04B-KL208-016,ERR16)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  BEFAUS (1,Klap.05_Ball_aus,Klap.05_Ball_ein,$WZERO,$WZERO,
+          &04B-KL050-432,ERR17)
+  BEFAUS (1,Klap.05_Chor_aus,Klap.05_Chor_ein,$WZERO,$WZERO,
+          &04B-KL050-433,ERR18)
+  BEFAUS (1,Klap.05_Pro1_aus,Klap.05_Pro1_ein,$WZERO,$WZERO,
+          &04B-KL050-434,ERR19)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  BEFAUS (1,Klap.05_Pro2_aus,Klap.05_Pro2_ein,$WZERO,$WZERO,
+          &04B-KL050-435,ERR20)
+  BEFAUS (1,Klap.05_Sol1_aus,Klap.05_Sol1_ein,$WZERO,$WZERO,
+          &04B-KL050-436,ERR21)
+  BEFAUS (1,Klap.05_Sol2_aus,Klap.05_Sol2_ein,$WZERO,$WZERO,
+          &04B-KL050-437,ERR22)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  BEFAUS (1,Klap.05_Sol3_aus,Klap.05_Sol3_ein,$WZERO,$WZERO,
+          &04B-KL050-438,ERR23)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&INT.MEL01-HIGH,1,KEIL_ANL05_ST,$WSCRATCH)
+  MELEIN (&INT.MEL02-HIGH,2,KEIL_ANL07_ST,KEIL_ANL08_ST,
+          $WSCRATCH)
+  MELEIN (&INT.MEL04-HIGH,5,KEIL_ANL13.1_ST,KEIL_ANL16_ST,
+          KEIL_ANL18_ST,KEIL_ANL20.6_ST,KEIL_ANL20.8_ST,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  MELEIN (&04B-KL050-004,3,KENTRAU-05-AUS,ZPK,KENTRAU-05-EIN,
+          ERR24)
+  MELEIN (&04B-KL050-016,3,KBRAND-05-AUS,ZPK,KBRAND-05-EIN,
+          ERR25)
+  MELEIN (&04B-KL070-004,3,KENTRAU-07-AUS,ZPK,KENTRAU-07-EIN,
+          ERR26)
+  MELEIN (&04B-KL070-016,3,KBRAND-07-AUS,ZPK,KBRAND-07-EIN,
+          ERR27)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  MELEIN (&04B-KL080-004,3,KENTRAU-08-AUS,ZPK,KENTRAU-08-EIN,
+          ERR28)
+  MELEIN (&04B-KL080-016,3,KBRAND-08-AUS,ZPK,KBRAND-08-EIN,
+          ERR29)
+  MELEIN (&04B-KL131-004,3,KENTRAU-13.1-AUS,ZPK,
+          KENTRAU-13.1-EIN,ERR30)
+  MELEIN (&04B-KL131-016,3,KBRAND-13.1-AUS,ZPK,
+          KBRAND-13.1-EIN,ERR31)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&04B-KL160-004,3,KENTRAU-16-AUS,ZPK,KENTRAU-16-EIN,
+          ERR32)
+  MELEIN (&04B-KL160-016,3,KBRAND-16-AUS,ZPK,KBRAND-16-EIN,
+          ERR33)
+  MELEIN (&04B-KL180-004,3,KENTRAU-18-AUS,ZPK,KENTRAU-18-EIN,
+          ERR34)
+  MELEIN (&04B-KL180-016,3,KBRAND-18-AUS,ZPK,KBRAND-18-EIN,
+          ERR35)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&04B-KL206-004,3,KENTRAU-20.6-AUS,ZPK,
+          KENTRAU-20.6-EIN,ERR36)
+  MELEIN (&04B-KL206-016,3,KBRAND-20.6-AUS,ZPK,
+          KBRAND-20.6-EIN,ERR37)
+  MELEIN (&04B-KL208-004,3,KENTRAU-20.8-AUS,ZPK,
+          KENTRAU-20.8-EIN,ERR38)
+  MELEIN (&04B-KL208-016,3,KBRAND-20.8-AUS,ZPK,
+          KBRAND-20.8-EIN,ERR39)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MELEIN (&04B-KL050-432,3,Klap.05_Ball_aus,ZPK,$B1,ERR40)
+  SETMEL ($M34,1,$B1,&MelHIGHBUS1,ERR_HIGHBUS01)
+  MELEIN (&04B-KL050-433,3,Klap.05_Chor_aus,ZPK,$B2,ERR41)
+  SETMEL ($M37,1,$B2,&MelHIGHBUS2,ERR_HIGHBUS02)
+  MELEIN (&04B-KL050-434,3,Klap.05_Pro1_aus,ZPK,$B3,ERR42)
+  SETMEL ($M40,1,$B3,&MelHIGHBUS3,ERR_HIGHBUS03)
+  MELEIN (&04B-KL050-435,3,Klap.05_Pro2_aus,ZPK,$B4,ERR43)
+  SETMEL ($M43,1,$B4,&MelHIGHBUS4,ERR_HIGHBUS04)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MELEIN (&04B-KL050-436,3,Klap.05_Sol1_aus,ZPK,$B5,ERR44)
+  SETMEL ($M46,1,$B5,&MelHIGHBUS5,ERR_HIGHBUS05)
+  MELEIN (&04B-KL050-437,3,Klap.05_Sol2_aus,ZPK,$B6,ERR45)
+  SETMEL ($M49,1,$B6,&MelHIGHBUS6,ERR_HIGHBUS06)
+  MELEIN (&04B-KL050-438,3,Klap.05_Sol3_aus,ZPK,$B7,ERR46)
+  SETMEL ($M52,1,$B7,&MelHIGHBUS7,ERR_HIGHBUS07)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ODRMN (5,KBRAND-05-EIN,KONSETZ01,KEIL_ANL05_ST,KON0,KON0,1,
+         ANL-K3-AUS,$B8,$WSCRATCH)
+  VVZ ($B8,$M53,$M54,$B9)
+  NICHT ($B9,$HB0)
+  BEFAUS (1,$HB0,$B9,$WZERO,$WZERO,&Brand-Anl.05,ERR47)
+  ODR2 (KENTRAU-05-EIN,KONSETZ02,$B10)
+  VVZ ($B10,$M55,$M56,$B11)
+  NICHT ($B11,$HB0)
+  BEFAUS (1,$HB0,$B11,$WZERO,$WZERO,&Entrauch.Anl.05,ERR48)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (5,KBRAND-07-EIN,KONSETZ03,KEIL_ANL07_ST,KON0,KON0,1,
+         ANL-K3-AUS,$B12,$WSCRATCH)
+  VVZ ($B12,$M57,$M58,$B13)
+  NICHT ($B13,$HB0)
+  BEFAUS (1,$HB0,$B13,$WZERO,$WZERO,&Brand-Anl.07,ERR49)
+  ODR2 (KENTRAU-07-EIN,KONSETZ04,$B14)
+  VVZ ($B14,$M59,$M60,$B15)
+  NICHT ($B15,$HB0)
+  BEFAUS (1,$HB0,$B15,$WZERO,$WZERO,&Entrauch.Anl.07,ERR50)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (5,KBRAND-08-EIN,KONSETZ05,KEIL_ANL08_ST,KON0,KON0,1,
+         ANL-K3-AUS,$B16,$WSCRATCH)
+  VVZ ($B16,$M61,$M62,$B17)
+  NICHT ($B17,$HB0)
+  BEFAUS (1,$HB0,$B17,$WZERO,$WZERO,&Brand-Anl.08,ERR51)
+  ODR2 (KENTRAU-08-EIN,KONSETZ06,$B18)
+  VVZ ($B18,$M63,$M64,$B19)
+  NICHT ($B19,$HB0)
+  BEFAUS (1,$HB0,$B19,$WZERO,$WZERO,&Entrauch.Anl.08,ERR52)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ODRMN (5,KBRAND-13.1-EIN,KONSETZ07,KEIL_ANL13.1_ST,KON0,
+         KON0,1,ANL-K3-AUS,$B20,$WSCRATCH)
+  VVZ ($B20,$M65,$M66,$B21)
+  NICHT ($B21,$HB0)
+  BEFAUS (1,$HB0,$B21,$WZERO,$WZERO,&Brand-Anl.13.1,ERR53)
+  ODR2 (KENTRAU-13.1-EIN,KONSETZ08,$B22)
+  VVZ ($B22,$M67,$M68,$B23)
+  NICHT ($B23,$HB0)
+  BEFAUS (1,$HB0,$B23,$WZERO,$WZERO,&Entrauch.Anl.131,ERR54)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODRMN (5,KBRAND-16-EIN,KONSETZ09,KEIL_ANL16_ST,KON0,KON0,1,
+         ANL-K3-AUS,$B24,$WSCRATCH)
+  VVZ ($B24,$M69,$M70,$B25)
+  NICHT ($B25,$HB0)
+  BEFAUS (1,$HB0,$B25,$WZERO,$WZERO,&Brand-Anl.16,ERR55)
+  ODR2 (KENTRAU-16-EIN,KONSETZ10,$B26)
+  VVZ ($B26,$M71,$M72,$B27)
+  NICHT ($B27,$HB0)
+  BEFAUS (1,$HB0,$B27,$WZERO,$WZERO,&Entrauch.Anl.16,ERR56)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODRMN (5,KBRAND-18-EIN,KONSETZ11,KEIL_ANL18_ST,KON0,KON0,1,
+         ANL-K3-AUS,$B28,$WSCRATCH)
+  VVZ ($B28,$M73,$M74,$B29)
+  NICHT ($B29,$HB0)
+  BEFAUS (1,$HB0,$B29,$WZERO,$WZERO,&Brand-Anl.18,ERR57)
+  ODR2 (KENTRAU-18-EIN,KONSETZ12,$B30)
+  VVZ ($B30,$M75,$M76,$B31)
+  NICHT ($B31,$HB0)
+  BEFAUS (1,$HB0,$B31,$WZERO,$WZERO,&Entrauch.Anl.18,ERR58)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODRMN (5,KBRAND-20.6-EIN,KONSETZ13,KEIL_ANL20.6_ST,KON0,
+         KON0,1,ANL-K3-AUS,$B32,$WSCRATCH)
+  VVZ ($B32,$M77,$M78,$B33)
+  NICHT ($B33,$HB0)
+  BEFAUS (1,$HB0,$B33,$WZERO,$WZERO,&Brand-Anl.20.6,ERR59)
+  ODR2 (KENTRAU-20.6-EIN,KONSETZ14,$B34)
+  VVZ ($B34,$M79,$M80,$B35)
+  NICHT ($B35,$HB0)
+  BEFAUS (1,$HB0,$B35,$WZERO,$WZERO,&Entrauch.Anl.206,ERR60)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODRMN (5,KBRAND-20.8-EIN,KONSETZ15,KEIL_ANL20.8_ST,KON0,
+         KON0,1,ANL-K3-AUS,$B36,$WSCRATCH)
+  VVZ ($B36,$M81,$M82,$B37)
+  NICHT ($B37,$HB0)
+  BEFAUS (1,$HB0,$B37,$WZERO,$WZERO,&Brand-Anl.20.8,ERR61)
+  ODR2 (KENTRAU-20.8-EIN,KONSETZ16,$B38)
+  VVZ ($B38,$M83,$M84,$B39)
+  NICHT ($B39,$HB0)
+  BEFAUS (1,$HB0,$B39,$WZERO,$WZERO,&Entrauch.Anl.208,ERR62)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  MELEIN (&04B-KL000-901,1,ANL-K3-AUS,ERR63)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  MELEIN (&04B-KL000-941,1,$B40,$WSCRATCH)
+  ODR2 ($B40,QUITT-US09,$B41)
+  VVZ ($B41,$M85,$M86,$B42)
+  SETMEL ($M87,1,$B42,&RUECKSETZ_US09,ERR64)
+  MELEIN (&04B-KL000-942,1,$B43,$WSCRATCH)
+  ODR2 ($B43,QUITT-US10,$B44)
+  VVZ ($B44,$M88,$M89,$B45)
+  SETMEL ($M90,1,$B45,&RUECKSETZ_US10,ERR65)
+  MELEIN (&04B-KL000-943,1,$B46,$WSCRATCH)
+  ODR2 ($B46,QUITT-US11,$B47)
+  VVZ ($B47,$M91,$M92,$B48)
+  SETMEL ($M93,1,$B48,&RUECKSETZ_US11,ERR66)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  ODR2 (KEIL_ANL05_ST,KON1,$B49)
+  NICHT ($B49,$B50)
+  MOKY ($B50,$M94,$B51)
+  VVZ ($B51,$M95,$M96,QUITT-US09)
+  ODR2 (KEIL_ANL07_ST,KEIL_ANL08_ST,$B52)
+  NICHT ($B52,$B53)
+  MOKY ($B53,$M97,$B54)
+  VVZ ($B54,$M98,$M99,QUITT-US10)
+  ODRMN (5,KEIL_ANL13.1_ST,KEIL_ANL16_ST,KEIL_ANL18_ST,
+         KEIL_ANL20.6_ST,KEIL_ANL20.8_ST,0,$B55,$WSCRATCH)
+  NICHT ($B55,$B56)
+  MOKY ($B56,$M100,$B57)
+  VVZ ($B57,$M101,$M102,QUITT-US11)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  MELEIN (&Anlage05_Betrieb,1,Anlage_05_ein,ERR_HIGHBUS08)
+  MELEIN (&Anlage07_Betrieb,2,Anlage_07_ein,Anlage_08_ein,
+          ERR_HIGHBUS09)
+  MELEIN (&Anlage13.1_Betri,5,Anlage_13.1_ein,Anlage_16_ein,
+          Anlage_18_ein,Anlage_20.6_ein,Anlage_20.8_ein,
+          ERR_HIGHBUS10)
+  MELEIN (&INT_MEL-HIGH-K2,1,KAELTE_AUS_K2,ERR_HIGHBUS_K2)
+  ANEIN (&AT_HIGHBUS_US09,04B-KL050-005,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

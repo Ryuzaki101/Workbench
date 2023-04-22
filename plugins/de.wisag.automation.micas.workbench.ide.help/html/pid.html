@@ -1,0 +1,458 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<div id="logo">MICAS Workbench</div>
+
+<hr>
+
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Regler- und Kennlinien-Bausteine</h1>
+
+<p>
+ <a href="#REGLER" title="Regler, per Dialog parametrierbar">REGLER</a>&nbsp;
+ <a href="#SOLKEN" title="Sollwert-Kennlinie, per Dialog parametrierbar">SOLKEN</a>&nbsp;
+ <a href="#LREG" title="Lokaler Regler">LREG</a>&nbsp;
+ <a href="#UREG" title="Universeller Regler">UREG</a>&nbsp;
+ <!--a href="#KASREG" title="Kaskaden Regler">UREG</a-->&nbsp;
+</p>
+<br>
+
+<h2><a name="REGLER">REGLER</a> - Regler, per Dialog parametrierbar</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Dieser Regler kann nur per Dialog &uuml;ber die MMK-Schnittstelle einer areadat-AutomationsStation
+bzw. von einer INScontrol Leitzentrale aus parametriert werden.
+</p>
+<p>Der Regler wird &uuml;ber die Reglernummer dem Parametersatz der Datenbank zugeordnet.
+&Uuml;ber den Parametersatz werden die Sollwert-, Istwert- und Stellgr&ouml;&szlig;en-Adresse, der
+Reglertyp, die Reglerparameter Xp, Tn und Tv sowie die Zykluszeit des Reglers definiert.
+</p>
+<p>&Uuml;ber den Eingang "AusEin" kann der Regler ein- bzw. ausgeschaltet werden (1
+entspricht Regler = EIN). Geht der Eingang "AusgangFesteGrenze" (SFW) auf 1-Signal, so wird der am
+Eingang "FesteGrenze" (FW) liegende Wert auf den Regler-Ausgang "StellbefehlYa" &uuml;bernommen.
+Damit kann z. B. w&auml;hrend der Aufheizphase ein Reglerausgang auf einem bestimmten
+Wert festgehalten werden.
+</p>
+<p>Wird beim Zugriff auf die Proze&szlig;-Datenbank ein Fehler entdeckt, so wird der
+Ausgang "Error" auf 1-Signal gesetzt. Die aktuelle Stellgr&ouml;&szlig;e "StellbefehlYa" steht zus&auml;tzlich
+zum Eintrag in die Proze&szlig;-Datenbank auch am Ausgang zur weiteren Verarbeitung
+zur Verf&uuml;gung.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>AusEin</td>
+   <td>Word</td>
+   <td>Steuersignal AUS(=0)/EIN(=1)</td>
+  </tr>
+  <tr align="center">
+   <td>AusgangFesteGrenze</td>
+   <td>Word</td>
+   <td>Steuersignal<br> wenn 1, dann StellbefehlYa auf FesteGrenze,<br> wenn 0, dann aus Reglerausgang</td>
+  </tr>
+  <tr align="center">
+   <td>FesteGrenze</td>
+   <td>Float</td>
+   <td>Setzwert f&uuml;r StellbefehlYa,<br>wenn AusgangFesteGrenze = 1</td>
+  </tr>
+  <tr align="center">
+   <td>StellbefehlYa</td>
+   <td>Float</td>
+   <td>Stellsignal des Reglers</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="SOLKEN">SOLKEN</a> - Sollwert-Kennlinie, per Dialog parametrierbar</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Mit diesem Baustein kann man eine per Dialog &uuml;ber die MMK-Schnittstelle
+einer areadat-Automations-Station oder von einer INScontrol Leitzentrale aus
+vereinbarte Sollwert-Kennlinie ein- bzw. ausschalten.
+</p>
+<p>Sollwert-Kennlinie wird &uuml;ber die Kennliniennummer dem Parametersatz der Datenbank zugeordnet.
+Bei ausgeschalteter Sollwert-Kennlinie wird kein aktueller Wert in die Proze&szlig;-Datenbank eingetragen,
+d. h. der alte Wert bleibt unver&auml;ndert bestehen.
+</p>
+<p>Wird beim Zugriff auf die Proze&szlig;-Datenbank ein Fehler entdeckt, so wird der
+Ausgang "Error" auf 1-Signal gesetzt.
+</p>
+<p>Der aktuelle Sollwert steht zus&auml;tzlich zum Eintrag in die Proze&szlig;-Datenbank
+auch am Ausgang Xa zur weiteren Verarbeitung zur Verf&uuml;gung.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Steuersignal AUS(=0)/EIN(=1)</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Float</td>
+   <td>Ausgangssignal der Kennlinie</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+
+<h2><a name="LREG">LREG</a> - Lokaler Regler, nur per MICAS parametrierbar</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Dieser Baustein stellt einen frei parametrierbaren Regler innerhalb eines MICASProgramms bereit.
+Dieser Regler ist nur innerhalb des DDC-Programs einstellbar und daher ist auch das &Auml;ndern von Regler-
+Parametern nur im Programm m&ouml;glich.<br>
+(Der Baustein ist ab GK-MICAS-Version >2.6 bzw. >7.8 nutzbar.)
+</p>
+<p>Sollwert W, Istwert Xe und Stellgr&ouml;sse Ya sind lokale Float-Variable, die nicht automatisch in der Prozes-
+Datenbank abgelegt werden. Daher k&ouml;nnen weder sie noch die Regler-Parameter per Dialog auf Automationsstations oder
+LZ-Ebene abgefragt oder ver&auml;ndert werden. M&ouml;chte man Sollwert, Istwert und Stellgr&ouml;sse anzeigen
+und z. B. graphisch darstellen k&ouml;nnen, so sind diese Werte &uuml;ber ANAUS-Transfer-Bausteine in die Prozess-
+Datenbank zu ubertragen.
+</p>
+<p>&Uuml;ber den Eingang "Aus/Ein" kann der Regler ein- bzw. ausgeschaltet werden. Das Einschalten des Reglers
+erfolgt nur bei einem Wechsel von 0- auf 1-Signal, das Ausschalten nur bei einem Wechsel von 1- auf
+0-Signal. Wird ein Regler ausgeschaltet, so bleibt die zuletzt ausgegebene Stellgr&ouml;sse konstant. Ein
+ausgeschalteter Regler reagiert nur noch auf Signalanderungen am Eingang "Aus/Ein". Alle &uuml;brigen Eing&auml;nge
+werden nicht mehr beachtet.
+</p>
+<p>Ein 1-Signal am Eingang SFW ??? (Stellausgang Ya auf Festwert setzen) erzwingt, das die Stellgrose auf den
+am Eingang FW ??? liegenden Wert springt und diesen Wert solange h&auml;lt, wie am Eingang SFW 1-Signal
+anliegt.
+</p>
+<p>Uber den dem Parameter "ReglerTyp" (RT) zugewiesenen Wert wird bestimmt, ob der Regler als P-Regler (RT=1), PIRegler
+(RT=2) oder PID-Regler (RT=3) arbeiten soll.<br>
+Die Zykluszeit des Reglers ist am Eingang "Abtastzeit" (TA) als ganzzahliges Vielfaches von 1 Sekunde anzugeben.
+Entsprechend dem vorgewahlten Reglertyp sind auserdem am Eingang "Proportionalbereich Xp" der Proportionalbereich, am
+Eingang "Nachstellzeit Tn" die Nachstellzeit in Sekunden und am Eingang "Vorhaltzeit Tv" die Vorhaltezeit in Sekunden einzugeben.
+</p>
+<p>F&uuml;r den Sollwert W k&ouml;nnen an dem Eingang "uGrenzeSollwert" (WU) ein unterer Grenzwert und am Eingang "oGrenzeSollwert" (WO)
+ein oberer Grenzwert vorgegeben werden, auf die der Sollwert automatisch begrenzt wird.
+Ein Eingriff des Reglers erfolgt nur, wenn die Abweichung des Istwertes vom Sollwert gr&ouml;sser als der am
+Eingang "Hysterese" (HY) anliegende Wert f&uuml;r eine Totzone bzw. Hysterese ist.
+</p>
+<p>Die Stellgr&ouml;sse kann uber den Eingang "uGrenzeStellgroesse" (YU) auf einen unteren Grenzwert und uber den Eingang
+"oGrenzeStellgroesse" (YO) auf einen oberen Grenzwert begrenzt werden.
+</p>
+<p>Wird beim Bearbeiten der Reglerfunktion ein Fehler festgestellt, so wird der Ausgang "Error" auf 1-Signal
+gesetzt.
+</p>
+<p>Das Ausgangssignal des Reglers, die Stellgr&ouml;sse, steht am Ausgang "StellbefehlYa" des Bausteins zur Verfugung.
+</p>
+<h3>Regel-Algorithmus und Randbedingungen</h3>
+<ol>
+<h4><li>Sollwertbegrenzung</h4>
+Es wird gepruft, ob der Sollwert innerhalb der unteren und oberen Sollwertgrenze liegt. Ist er kleiner als
+die untere Grenze, wird als gultiger Sollwert die untere Grenze genommen. Ist er groser als die obere
+Grenze, wird als gultiger Sollwert die obere Grenze genommen.</li>
+<h4><li>Regelabweichung</h4>
+Es wird die Regelabweichung Sollwert minus Istwert gebildet: e = w - x</li>
+<h4><li>Hysterese</h4>
+Wenn der Betrag von e kleiner oder gleich der halben Hysterese ist, wird ek = 0 gesetzt. </li>
+<h4><li>Arbeitspunkt</h4>
+Der Arbeitspunkt (die Stellgrose) u0 wird berechnet aus der halben Differenz von oberer minus unterer
+Sollwertgrenze: u0 = (YOG - YUG)/2 </li>
+<h4><li>Verst&auml;rkung</h4>
+Die Verst&auml;rkung wird gebildet aus dem Stellhub geteilt durch Proportionalbereich: kr = (YOG - YUG)/Xp</li>
+<h4><li>Regelalgorithmus</h4>
+<table border="0" cellpadding="1" cellspacing="3">
+<tr><td>P-Regler</td><td>: u(k) = kr * e(k)</td></tr>
+<tr><td>PI-Regler</td><td>: u(k) = kr * [e(k) + TA/TN * &int; e(k-1)]&nbsp;&nbsp;&nbsp;im Intervall 1 bis k </td></tr>
+<tr><td>PID-Regler</td><td>: u(k) = kr * [e(k) + TA/TN * &int; e(k-1) + TV/TA * [e(k) - e(k-1)]]&nbsp;&nbsp; im Intervall 1 bis k</td></tr>
+</table></li>
+<h4><li>Stellgr&ouml;sse:</h4> Y = u(k) + u0</li>
+<h4><li>Bereich Stellgr&ouml;sse</h4> Es wird &uuml;berpr&uuml;ft, ob die Stellgr&ouml;sse innerhalb der Grenzen liegt. Sie wird dementsprechend ausgegeben.
+Der Integralanteil wird bei einer Grenzwertverletzung neu angepasst.</li>
+</ol>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Istwert Xe</td>
+   <td>Float</td>
+   <td>Eingangssignal Istwert</td>
+  </tr>
+  <tr align="center">
+   <td>Sollwert W</td>
+   <td>Float</td>
+   <td>Eingangssignal Sollwert</td>
+  </tr>
+  <tr align="center">
+   <td>Aus/Ein</td>
+   <td>Word</td>
+   <td>Steuersignal AUS(=0)/EIN(=1)</td>
+  </tr>
+  <tr align="center">
+   <td>EingangFesteGrenze</td>
+   <td>Word</td>
+   <td>Steuersignal Festwert ausgeben</td>
+  </tr>
+  <tr align="center">
+   <td>ReglerTyp P/PI/PID</td>
+   <td>INTEGER</td>
+   <td>Reglertyp Vorgabe (P=1, PI=2, PID=3)</td>
+  </tr>
+  <tr align="center">
+   <td>Abtastzeit</td>
+   <td>Float</td>
+   <td>Reglerzykluszeit in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Proportionalbereich Xp</td>
+   <td>Float</td>
+   <td>Proportionalbereich Xp</td>
+  </tr>
+  <tr align="center">
+   <td>Nachstellzeit Tn</td>
+   <td>Float</td>
+   <td>Nachstellzeit Tn in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Vorhaltzeit Tv</td>
+   <td>Float</td>
+   <td>Vorhaltzeit Tv in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>uGrenzeSollwert</td>
+   <td>Float</td>
+   <td>Untere Grenze des Sollwertes</td>
+  </tr>
+  <tr align="center">
+   <td>oGrenzeSollwert</td>
+   <td>Float</td>
+   <td>Obere Grenze des Sollwertes</td>
+  </tr>
+  <tr align="center">
+   <td>Hysterese</td>
+   <td>Float</td>
+   <td>Totzone/Hysterese Sollwert-Istwert</td>
+  </tr>
+  <tr align="center">
+   <td>uGrenzeStellgroesse</td>
+   <td>Float</td>
+   <td>Untere Grenze der Stellgroesse</td>
+  </tr>
+  <tr align="center">
+   <td>oGrenzeStellgroesse</td>
+   <td>Float</td>
+   <td>Obere Grenze der Stellgroesse</td>
+  </tr>
+  <tr align="center">
+   <td>Stellbefehl Ya</td>
+   <td>Float</td>
+   <td>Ausgang Stellgroesse</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="UREG">UREG</a> - Universalregler *** Muss noch &uuml;berarbeitet werden ***</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Dieser Baustein erm&ouml;glicht das Parametrieren eines Reglers in einem MICAS-Programm und
+damit auch das programmgesteuerte &Auml;ndern von Regler-Parametern.
+</p>
+<p>Die Nummer des Regelkreises (1 &lt;= RNR &lt;= 32) wird als Parameter vorgegeben. Am Eingang
+Sollwert und Istwert sind die IP-Adressen vorzugeben.
+</p>
+<p>&Uuml;ber den Eingang "Enable" kann der Regler ein- bzw. ausgeschaltet werden. Das Einschalten des Reglers
+erfolgt nur bei einem Wechsel von 0- auf 1-Signal, das Ausschalten nur bei einem Wechsel von 1- auf
+0-Signal. Wird ein Regler ausgeschaltet, so bleibt die zuletzt ausgegebene Stellgr&ouml;sse konstant. Ein
+ausgeschalteter Regler reagiert nur noch auf Signalanderungen am Eingang "Aus/Ein". Alle &uuml;brigen Eing&auml;nge
+werden nicht mehr beachtet.
+</p>
+<p>Ein 1-Signal am Eingang KYEA ??? (Stellausgang Ya auf Festwert setzen) erzwingt, das die Stellgr&ouml;sse auf den
+Wert KY springt und diesen Wert solange h&auml;lt, wie am Eingang KYEA 1-Signal anliegt.
+</p>
+<p>&Uuml;ber den Eingang F/S wird die Parametrierung des Reglers durch das MICAS-Programm gesperrt bzw. freigegeben. Nur wenn
+ein Signalwechsel von 0 nach 1 erfolgt, werden die an den Baustein-Eing&auml;gen liegenden Werte in die Datenbank &uuml;bernommen und
+k&ouml;nnen dann auch per Bediendialog abge&auml;ndert werden
+</p>
+<p>Uber den dem Parameter "ReglerTyp" (RT) zugewiesenen Wert wird bestimmt, ob der Regler als P-Regler (RT=1), PIRegler
+(RT=2) oder PID-Regler (RT=3) arbeiten soll.<br>
+Die Zykluszeit des Reglers ist am Eingang "Abtastzeit" (TA) als ganzzahliges Vielfaches von 1 Sekunde anzugeben.
+Entsprechend dem vorgewahlten Reglertyp sind auserdem am Eingang "Proportionalbereich Xp" der Proportionalbereich, am
+Eingang "Nachstellzeit Tn" die Nachstellzeit in Sekunden und am Eingang "Vorhaltzeit Tv" die Vorhaltezeit in Sekunden einzugeben.
+</p>
+<p>F&uuml;r den Sollwert W k&ouml;nnen an dem Eingang "uGrenzeSollwert" (WU) ein unterer Grenzwert und am Eingang "oGrenzeSollwert" (WO)
+ein oberer Grenzwert vorgegeben werden, auf die der Sollwert automatisch begrenzt wird.
+Ein Eingriff des Reglers erfolgt nur, wenn die Abweichung des Istwertes vom Sollwert gr&ouml;sser als der am
+Eingang "Hysterese" (HY) anliegende Wert f&uuml;r eine Totzone bzw. Hysterese ist.
+</p>
+<p>Die Art der Stellgr&ouml;&szlig;e kann &uuml;ber den Eingang "Stellgr&ouml;&szlig;eTyp" als Analogausgang (=1) oder als Dreipunkt_Stellbefehl (=2)
+vorgegeben werden.
+</p>
+<p>Die Stellgr&ouml;sse kann uber den Eingang "uGrenzeStellgroesse" (YU) auf einen unteren Grenzwert und uber den Eingang
+"oGrenzeStellgroesse" (YO) auf einen oberen Grenzwert begrenzt werden.
+</p>
+<p>Wird beim Bearbeiten der Reglerfunktion ein Fehler festgestellt, so wird der Ausgang "Error" auf 1-Signal
+gesetzt.
+</p>
+<p>Das Ausgangssignal des Reglers, die Stellgr&ouml;sse, steht am Ausgang "Stellgr&ouml;sse" des Bausteins zur Verfugung.
+Am Ausgang Scaltbefehl wird ??? angezeigt
+Wird beim Zugriff auf die Proze&szlig;-Datenbank ein Fehler entdeckt, so wird der
+Ausgang "Error" auf 1-Signal gesetzt.</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Istwert IPAX</td>
+   <td>???</td>
+   <td>Eingangssignal Istwert</td>
+  </tr>
+  <tr align="center">
+   <td>Sollwert IPAW</td>
+   <td>???</td>
+   <td>Eingangssignal Sollwert</td>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Steuersignal E/A (AUS=0/EIN=1)</td>
+  </tr>
+  <tr align="center">
+   <td>EingangFesteGrenze</td>
+   <td>Word</td>
+   <td>Steuersignal Festwert ausgeben KYEA</td>
+  </tr>
+  <tr align="center">
+   <td>REGELM</td>
+   <td>Word</td>
+   <td>Parameter in DB schreiben</td>
+  </tr>
+  <tr align="center">
+   <td>ReglerTyp</td>
+   <td>INTEGER</td>
+   <td>Reglertyp Vorgabe (P=1, PI=2, PID=3)</td>
+  </tr>
+  <tr align="center">
+   <td>Abtastzeit</td>
+   <td>Float</td>
+   <td>Reglerzykluszeit in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Proportionalbereich Xp</td>
+   <td>Float</td>
+   <td>Proportionalbereich Xp</td>
+  </tr>
+  <tr align="center">
+   <td>Nachstellzeit Tn</td>
+   <td>Float</td>
+   <td>Nachstellzeit Tn in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Vorhaltzeit Tv</td>
+   <td>Float</td>
+   <td>Vorhaltzeit Tv in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>uGrenzeSollwert</td>
+   <td>Float</td>
+   <td>Untere Grenze des Sollwertes</td>
+  </tr>
+  <tr align="center">
+   <td>oGrenzeSollwert</td>
+   <td>Float</td>
+   <td>Obere Grenze des Sollwertes</td>
+  </tr>
+  <tr align="center">
+   <td>Hysterese</td>
+   <td>Float</td>
+   <td>Totzone/Hysterese Sollwert-Istwert</td>
+  </tr>
+  <tr align="center">
+   <td>StellgroesseTyp</td>
+   <td>Word</td>
+   <td>Art der Stellgr&ouml;&szlig;e (1=AS/2=SA)</td>
+  </tr>
+  <tr align="center">
+   <td>uGrenzeStellgroesse</td>
+   <td>Float</td>
+   <td>Untere Grenze der Stellgroesse</td>
+  </tr>
+  <tr align="center">
+   <td>oGrenzeStellgroesse</td>
+   <td>Float</td>
+   <td>Obere Grenze der Stellgroesse</td>
+  </tr>
+  <tr align="center">
+   <td>Stellgr&ouml;sse</td>
+   <td>Float</td>
+   <td>Ausgang Stellgr&ouml;sse</td>
+  </tr>
+  <tr align="center">
+   <td>Schaltbefehl</td>
+   <td>INTEGER</td>
+   <td>Ausgang Stellgr&ouml;sse</td>
+  </tr>
+  <tr align="center">
+   <td>Error</td>
+   <td>Word</td>
+   <td>Errorausgang</td>
+  </tr>
+</table>
+<br>
+
+<br>
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+
+</body>
+</html>

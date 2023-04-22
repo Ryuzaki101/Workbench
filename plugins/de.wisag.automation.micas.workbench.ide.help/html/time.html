@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+         <title>WISAG Automatisierungstechnik</title>
+         <meta name="author" content="M_Calmbach, HJ_Werder">
+         <link rel="stylesheet" href="./css/screen.css" type="text/css">
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+         <!--title>analoge Bausteine</title-->
+</head>
+
+<body>
+
+<div id="logo">MICAS Workbench</div>
+
+<hr>
+
+<p><a name="Inhalt" href="Inhalt.html">&Uuml;bersicht Bausteinbibliothek</a>
+</p>
+<h1>Zeit-Bausteine</h1>
+
+<p>
+ <a href="#KALUHR" title="Kalender und Uhrzeit">KALUHR</a>&nbsp;
+ <a href="#MOKS" title="Monostabile Kippstufe, statisch">MOKS</a>&nbsp;
+ <a href="#MOKY" title="Monostabile Kippstufe, dynamisch">MOKY</a>&nbsp;
+ <a href="#PDM" title="Pulsdauer-Modulator">PDM</a>&nbsp;
+ <a href="analoge.html#PT1" title="PT1-Zeitglied">PT1</a>&nbsp;
+ <a href="#UHR" title="Stoppuhr">UHR</a>&nbsp;
+ <a href="#VVZ" title="Variabler Zwei-Flanken-Verz&ouml;gerer">VVZ</a>&nbsp;
+ <a href="#TTZEIT" title="Totzeitglied siehe Analogbausteine">TTZEIT</a>&nbsp;
+</p>
+<br>
+
+<h2><a name="KALUHR"> KALUHR</a> - Kalender und Uhrzeit </h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Der Baustein liefert an seinen Ausg&auml;ngen als Zahlenwerte
+<ul>
+ <li>die aktuelle Kalenderwoche(KW) 01-53</li>
+ <li>den aktuellen Wochentag 1-7</li>
+ <li>das aktuelle Jahr ab 1990, vierstellig</li>
+ <li>den aktuellen Monat 1-12</li>
+ <li>den aktuellen Tag 1-31</li>
+ <li>die aktuellen Stunden 0-23</li>
+ <li>die aktuellen Minuten 0-59</li>
+</ul>,
+Ferner vergleicht der Baustein die an seinen Eing&auml;ngen liegenden Werte mit
+den aktuellen Werten an seinen Ausg&auml;ngen.
+Sind Eing&auml;nge mit Werten ungleich "0= belegt, so wird der Bin&auml;rausgang AB
+dann auf "1" Signal gesetzt, wenn alle mit ungleich "0" belegten Eingangswerte mit den
+entsprechenden Zeit- und Kalenderwerten an den Ausg&auml;ngen identisch sind.<br>
+Sind alle Eing&auml;nge mit "0" belegt, so wird kein Vergleich vorgenommen, das
+hei&szlig;t, der Baustein gibt nur Datum- und Zeitwerte aus.<br>
+Daraus folgt, da&szlig; um 00:00 Uhr der Ausgang AB nicht auf "1"-Signal gesetzt wird, auch wenn alle Eingangswerte auf
+Null gesetzt sind.</p>
+
+<p><i>Hinweis:<br>
+Der Baustein ist nur areadat Modulen mit Echtzeituhr (29ZP10/12/13,29ZM12,ZG20,AC40) ab GK-MICAS Versionen
+> 7.8 ablauff&auml;hig.</i></p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>AlarmMin</td>
+   <td>Float</td>
+   <td>Eingang Minute 0-59</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmHour</td>
+   <td>Float</td>
+   <td>Eingang Stunde 0-23</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmDay</td>
+   <td>Float</td>
+   <td>Eingang Tag 1-31</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmMonth</td>
+   <td>Float</td>
+   <td>Eingang Monate 1-12</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmYear</td>
+   <td>Float</td>
+   <td>Eingang Jahr ab 1990, vierstellig</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmWD</td>
+   <td>Float</td>
+   <td>Eingang Wochentag 1-7</td>
+  </tr>
+  <tr align="center">
+   <td>AlarmKW</td>
+   <td>Float</td>
+   <td>Eingang Kalenderwoche 1-53</td>
+  </tr>
+  <tr align="center">
+   <td>Minute</td>
+   <td>Float</td>
+   <td>Ausgang Minute 0-59</td>
+  </tr>
+  <tr align="center">
+   <td>Stunde</td>
+   <td>Float</td>
+   <td>Ausgang Stunde 0-23</td>
+  </tr>
+  <tr align="center">
+   <td>Tag</td>
+   <td>Float</td>
+   <td>Ausgang Tag 1-31</td>
+  </tr>
+  <tr align="center">
+   <td>Monat</td>
+   <td>Float</td>
+   <td>Ausgang Monate 1-12</td>
+  </tr>
+  <tr align="center">
+   <td>Jahr</td>
+   <td>Float</td>
+   <td>Ausgang Jahr ab 1990, vierstellig</td>
+  </tr>
+  <tr align="center">
+   <td>Wochentag</td>
+   <td>Float</td>
+   <td>Ausgang Wochentag 1-7</td>
+  </tr>
+  <tr align="center">
+   <td>Kalenderwoche</td>
+   <td>Float</td>
+   <td>Ausgang Kalenderwoche 1-53</td>
+  </tr>
+  <tr align="center">
+   <td>AB</td>
+   <td>Word</td>
+   <td>Ausgangwert AB (Zustand Vergleichsergebnis)</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="MOKS">MOKS</a> - Monostabile Kippstufe, statisch</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Geht der Eingang A auf 1-Signal, so geht auch der Ausgang Xa auf 1-Signal.<br>
+Bleibt das Signal am Eingang A l&auml;nger auf 1 als durch den Parameter am
+Eingang T vorgegeben ist, so geht nach der Zeit T (in Sekunden) der Ausgang
+Xa wieder auf 0-Signal.</p>
+<p>Ist das Signal am Eingang A f&uuml;r eine Zeit &lt;T auf 1-
+Signal, so geht das Signal am Ausgang Xa gleichzeitig mit dem Signal am
+Eingang A wieder auf 0 zur&uuml;ck.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>A</td>
+   <td>Word</td>
+   <td>Eingangssignal A</td>
+  </tr>
+  <tr align="center">
+   <td>T</td>
+   <td>Float</td>
+   <td>Signaldauer T in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/MOKS.png" alt="" border="0" width="635" height="353">
+
+
+<h2><a name="MOKY">MOKY</a> - Monostabile Kippstufe, dynamisch</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Diese monostabile Kippstufe ist nachtriggerbar, d. h. wenn am Eingang "Trigger" ein
+Signalwechsel von 0 nach 1 stattfindet bevor das Signal am Ausgang Xa wieder
+auf 0 ist, so beginnt die &uuml;ber den Eingang T vorgegebene Laufzeit des
+Ausgangssignals von neuem.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Trigger</td>
+   <td>Word</td>
+   <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+   <td>T</td>
+   <td>Float</td>
+   <td>Signaldauer T in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/MOKY.png" alt="" border="0" width="650" height="353">
+
+<!-- 
+<h2><a name="PT1">PT1</a> - PT1-Zeitglied - siehe Analogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+ -->
+
+<h2><a name="PDM">PDM</a> - Pulsdauer-Modulator</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Dieser Baustein ist ein beliebig einstellbarer Taktgenerator. Am Eingang "Tastverh" (Tv)
+ist das Tastverh&auml;ltnis = Impulsdauer/Periodendauer in % anzugeben <br>
+(0 &lt; Tv &lt;= 100), am Eingang "Periode" die Periodendauer Tp in Sekunden.</p>
+<p>Bedingung:<br>
+Tastverh * Periode &gt;= 100*Tz (Tz=Taskzykluszeit in Sekunden)</p>
+<p>Werden Tastverh&auml;ltnis oder Periodendauer im Betrieb ge&auml;ndert, so wird erst
+der letzte Taktzyklus beendet bevor mit dem neuen begonnen wird (synchrone
+Taktumschaltung).</p>
+<p>Tv = Tx / Tp [in %]
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Tastverh</td>
+   <td>Float</td>
+   <td>Tastverh&auml;ltnis Tv in %</td>
+  </tr>
+  <tr align="center">
+   <td>Periode Tp</td>
+   <td>Float</td>
+   <td>Periodendauer in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgangwert Xa</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/PDM.png" alt="" border="0" width="635" height="162">
+
+
+<h2><a name="UHR">UHR</a> - Stoppuhr</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Solang am Eingang "Enable" 1-Signal anliegt, l&auml;uft die Zeit, die &uuml;ber den
+Ausgang "Zeit" in Sekunden ausgegeben wird. <br>
+Der Eingang "Reset" ist dominierend und setzt die Stopuhr auf Null zur&uuml;ck.</p>
+
+<p>Die maximal zu stoppende Zeit betr&auml;gt Tmax.= 2'147'483'647 * Tz (Tz=Taskzykluszeit)</p>
+<p>Beispiel:
+
+<table width="30%" border="1" cellpadding="0" cellspacing="2">
+ <tr>
+  <th>Taskzykluszeit Tz ["]</th>
+  <th>Tmax</th>
+ </tr>
+ <tr align="right">
+  <td>1 ms</td>
+  <td>24 Tage</td>
+ </tr>
+ <tr align="right">
+  <td>10 ms</td>
+  <td>248 Tage</td>
+ </tr>
+ <tr align="right">
+  <td>100 ms</td>
+  <td>2485 Tage = 6 Jahre</td>
+ </tr>
+ <tr align="right">
+  <td>1000 ms</td>
+  <td>24855 Tage = 68 Jahre</td>
+ </tr>
+</table>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Enable</td>
+   <td>Word</td>
+   <td>Startet die Stoppuhr</td>
+  </tr>
+  <tr align="center">
+   <td>Reset</td>
+   <td>Word</td>
+   <td>Setzt Stoppuhr auf 0</td>
+  </tr>
+  <tr align="center">
+   <td>Zeit</td>
+   <td>Float</td>
+   <td>laufende Zeit in Sekunden</td>
+  </tr>
+</table>
+<br>
+
+
+<h2><a name="VVZ">VVZ</a> - Variabler Zwei-Flanken-Verz&ouml;gerer</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<h3>Funktion</h3>
+<p>Vorderflanke: <br>Wenn am Eingang Xe das Signal von 0 nach 1 wechselt, so wird
+das Signal am Ausgang Xa um den am Eingang T1 liegenden Wert verz&ouml;gert
+auf 1 gesetzt.
+</p>
+<p>R&uuml;ckflanke: <br>Wenn am Eingang E das Signal von 1 nach 0 wechselt, so wird
+das Signal am Ausgang Xa um den am Eingang T2 liegenden Wert verz&ouml;gert
+auf 0 gesetzt.
+</p>
+<p>Eingangsimpulse, die kleiner als T1 bzw. T2 sind, bewirken keine &Auml;nderung
+am Ausgang Xa.
+</p>
+
+<h3>Parameter</h3>
+<table width="50%" border="1" cellpadding="2" cellspacing="2">
+  <tr align="center">
+   <th scope="col">Parametername</th>
+   <th scope="col">Typ</th>
+   <th scope="col">Bedeutung</th>
+  </tr>
+  <tr align="center">
+   <td>Xe</td>
+   <td>Word</td>
+   <td>Eingangssignal</td>
+  </tr>
+  <tr align="center">
+   <td>T1</td>
+   <td>Float</td>
+   <td>Anzugsverz&ouml;gerung in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>T2</td>
+   <td>Float</td>
+   <td>Abfallverz&ouml;gerung in Sekunden</td>
+  </tr>
+  <tr align="center">
+   <td>Xa</td>
+   <td>Word</td>
+   <td>Ausgangssignal</td>
+  </tr>
+</table>
+<br>
+
+<h3>Funktionsdiagramm</h3>
+<img src="img/VVZ.png" alt="" border="0" width="635" height="332">
+
+
+<h2><a name="TTZEIT">TTZEIT</a> - Totzeitglied siehe Analogbausteine</h2>
+<p><a href="#Inhalt">&Uuml;bersicht</a></p>
+
+<br>
+<hr>
+ <p><font size="-2">
+ WISAG Automatisierungstechnik GmbH & Co. KG<br>
+ Ohmweg 11-15, D-68199 Mannheim<br>
+ Stand: 04.02.2011 - Bearbeiter: HJ Werder</font></p>
+
+</body>
+</html>

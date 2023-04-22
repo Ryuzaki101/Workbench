@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="monitor"
+    nsURI="http://www.wisag.de/automation/schema/monitor" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="MonitorModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//MonitoredItem" containment="true" eOpposite="#//MonitoredItem/monitorModel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastUpdated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rtModule" eType="ecore:EClass ../../de.wisag.automation.micas.rt/model/rt.ecore#//RtModule"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MonitoredItem">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rtSymbol" eType="ecore:EClass ../../de.wisag.automation.micas.rt/model/rt.ecore#//RtSymbol"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="&quot;&quot;"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="monitorModel" eType="#//MonitorModel"
+        eOpposite="#//MonitorModel/items"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MonitoredValueSet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eType="#//MonitoredValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hwType" eType="ecore:EEnum ../../de.wisag.automation.micas.rt/model/rt.ecore#//RtHwType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MonitoredValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="&quot;&quot;"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rtSymbol" eType="ecore:EClass ../../de.wisag.automation.micas.rt/model/rt.ecore#//RtSymbol"/>
+  </eClassifiers>
+</ecore:EPackage>

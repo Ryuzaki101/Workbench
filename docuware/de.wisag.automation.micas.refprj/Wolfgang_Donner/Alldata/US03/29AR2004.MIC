@@ -1,0 +1,123 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : AR2004.GPS
+  ;*** Projektname    : Pumpenschaltung
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Braun
+  ;*** PrÅfer         : Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 3
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (AR20,4)
+  WordK  FREIG-EIN-GLT14 (0)
+  WordK  FREIG-EIN-GLT21 (0)
+  WordV  ERR02
+  WordV  ERR01
+  WordK  FREIG-AUS-GLT21 (1)
+  WordV  ERR06
+  WordK  FREIG-AUS-GLT25 (0)
+  WordK  FREIG-EIN-GLT25 (1)
+  WordK  FREIG-AUS-GLT141 (1)
+  WordK  FREIG-EIN-GLT141 (0)
+  WordK  FREIG-EIN-GLT17 (0)
+  WordK  FREIG-EIN-GLT15 (1)
+  WordK  FREIG-AUS-GLT17 (1)
+  WordK  FREIG-AUS-GLT15 (0)
+  WordK  FREIG-AUS-GLT14 (1)
+  WordV  ERR07
+  WordV  ERR03
+  WordV  ZPK
+  WordV  ERR04
+  WordV  ERR09
+  WordV  ERR08
+  WordV  ERR05
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU1400BM20 (2,1)
+  IPAMB &BA1LU2100BF20 (3,1)
+  IPAMB &BA1LU1500BF20 (2,5)
+  IPAMB &BA1LU1700BF20 (17,13)
+  IPAMB &BA1LU2500BF20 (3,9)
+  IPAMB &BA1LU1401BM20 (3,13)
+  IPAMB &M0 (2,2)
+  IPAMB &M1 (2,3)
+  IPAMB &M2 (3,2)
+  IPAMB &M3 (3,3)
+  IPAMB &M4 (2,6)
+  IPAMB &M5 (2,7)
+  IPAMB &M6 (17,14)
+  IPAMB &M7 (17,15)
+  IPAMB &M8 (3,10)
+  IPAMB &M9 (3,11)
+  IPAMB &M10 (3,14)
+  IPAMB &M11 (3,15)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,FREIG-AUS-GLT14,FREIG-EIN-GLT14,$WZERO,$WZERO,
+          &BA1LU1400BM20,ERR01)
+  BEFAUS (1,FREIG-AUS-GLT21,FREIG-EIN-GLT21,$WZERO,$WZERO,
+          &BA1LU2100BF20,ERR02)
+  ;Anlage 14
+  ;Freigabe GLT
+  ; 
+  ;Anlage 21
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (1,FREIG-AUS-GLT15,FREIG-EIN-GLT15,$WZERO,$WZERO,
+          &BA1LU1500BF20,ERR03)
+  BEFAUS (1,FREIG-AUS-GLT17,FREIG-EIN-GLT17,$WZERO,$WZERO,
+          &BA1LU1700BF20,ERR04)
+  ;Anlage 15
+  ;Freigabe GLT
+  ; 
+  ;Anlage 17
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,FREIG-AUS-GLT25,FREIG-EIN-GLT25,$WZERO,$WZERO,
+          &BA1LU2500BF20,ERR05)
+  BEFAUS (1,FREIG-AUS-GLT141,FREIG-EIN-GLT141,$WZERO,$WZERO,
+          &BA1LU1401BM20,ERR06)
+  ;Anlage 25
+  ;Freigabe GLT
+  ; 
+  ;Anlage 14.1
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU1400BM20,3,FREIG-AUS-GLT14,ZPK,
+          FREIG-EIN-GLT14,ERR07)
+  MELEIN (&BA1LU2100BF20,3,FREIG-AUS-GLT21,ZPK,
+          FREIG-EIN-GLT21,ERR08)
+  MELEIN (&BA1LU1500BF20,3,FREIG-AUS-GLT15,ZPK,
+          FREIG-EIN-GLT15,ERR09)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1LU1700BF20,3,FREIG-AUS-GLT17,ZPK,
+          FREIG-EIN-GLT17,ERR07)
+  MELEIN (&BA1LU2500BF20,3,FREIG-AUS-GLT25,ZPK,
+          FREIG-EIN-GLT25,ERR08)
+  MELEIN (&BA1LU1401BM20,3,FREIG-AUS-GLT141,ZPK,
+          FREIG-EIN-GLT141,ERR09)
+  ENDE 
+  ENDMODUL 

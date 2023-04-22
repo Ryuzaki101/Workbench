@@ -1,0 +1,943 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : ARAG0703.GPS
+  ;*** Projektname    : ALLDATA US07
+  ;*** Projektnummer  : 23100965
+  ;*** Bearbeiter     : Wolfgang Donner
+  ;*** PrÅfer         : Wolfgang Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 7
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 3
+  ;*****************************************************************
+  MODUL (AR20,3)
+  FloatV A10Y-SIG-ABL-DR
+  WordV  A10-ZUL-RM-ST
+  FloatV A10-SW-ABS-ENTF
+  WordV  ERR_REG02
+  WordV  A10-WRG-RM-EIN1
+  WordK  KON00 (0)
+  WordK  FREIG-EIN-GLT (1)
+  WordV  WERR
+  WordV  A09-ZUL-RM-AUS
+  WordV  BA1LU0900BM10RM
+  FloatV A10STELL-WRG
+  FloatV A10STELL-KUEHLER
+  WordV  A10ABSALZ-AUTO
+  FloatV A10-AUSSENFEUCH
+  WordV  MERR_117
+  WordV  A10-WRG-STôRUNG
+  FloatV A10-ABS-FEU-AUSS
+  WordV  MERR_30
+  FloatK FKON5 (5.00)
+  WordV  A10-VE-SPERR-EIN
+  WordV  MERR_123
+  WordV  MERR_70
+  WordV  MERR_99
+  WordV  ERR_REG03
+  FloatK FKON5-MIN-WRG (5.00)
+  WordV  MERR_71
+  WordV  ERR_SK02
+  WordV  ERR_REG06
+  WordK  FREIG-AUS-GLT (0)
+  WordV  A10-Hand-Steueru
+  WordV  A10-MAX-DRUCK-ZU
+  WordV  ERR_126_13
+  WordV  ERR_125_04
+  WordV  ERR_125_03
+  WordV  ERR_REG01
+  WordV  MERR_72
+  WordK  KON01 (1)
+  WordV  MERR_74
+  WordV  MERR_76
+  WordV  MERR_75
+  WordV  MERR_105
+  FloatV Y-SIGNAL-ZUL-REG
+  WordV  ERR_REG04
+  FloatV A10SIG-ENTFEUCHT
+  FloatV Y-SIGNAL-TAUPREG
+  WordV  MERR_26
+  WordV  MERR_35
+  WordV  ERR_125_06
+  WordV  ERR_125_05
+  WordV  ERR_126_05
+  WordV  ERR_08_09
+  WordV  ERR_125_15
+  WordK  Fernquit_a10ein (0)
+  WordV  ERR_125_00
+  WordV  ERR_125_01
+  WordV  ERR_125_07
+  WordV  ERR_125_08
+  FloatV A10SIG-WRG-ZUL
+  WordV  ERR_125_02
+  WordV  MERR_25
+  WordV  A10-ABL-MAXDRUCK
+  WordV  MERR_23
+  WordV  MERR_24
+  WordV  MERR_31
+  WordV  MERR_27
+  FloatK FKONZUL-50PA (50.00)
+  FloatK FKONABL-50PA (50.00)
+  WordV  MERR_28
+  WordV  MERR_33
+  WordV  MERR_32
+  WordV  MERR_34
+  WordV  MERR_22
+  WordV  A10-ABSP-KL-EIN
+  WordV  ERR_01_01
+  WordV  ERR_00_13
+  WordV  ERR_06_02
+  WordV  ERR_06_05
+  WordV  ERR_07_05
+  WordV  ERR_08_03
+  WordV  ERR_08_02
+  WordV  ERR_06_06
+  WordV  A10-ABL-RM-ST
+  WordV  ERR_00_10
+  FloatV A10-VE-RL-TEMP
+  WordV  A10-ABKL-RM-EIN1
+  WordV  A10ANLAGE-AUS
+  FloatV A10-ZUL-TEMP
+  FloatV A10-ZUL-DRUCK
+  FloatV A10-ABL-DRUCK
+  FloatV A10-TAUP-TEMP
+  WordV  A10-BEF-RM-EIN1
+  FloatV A10-RAUM-03-TEMP
+  FloatV A10-ABL-TEMP
+  WordK  Fernquit_a10-AUS (1)
+  FloatK FKON-ZUL-PT1 (20.00)
+  WordV  A10-MAX-DRUCK-AB
+  WordV  A10ZUL-KEIL-ST
+  WordV  A10ABL-KEIL-ST
+  WordV  A10-ZUL-MAXDRUCK
+  WordV  A10-ZUL-RM-AUS
+  WordV  A10-ABL-RM-AUS
+  WordV  A10-VE-RM-AUS
+  WordV  A10-ZUL-AUTO-ST
+  WordV  A10-VE-RM-EIN1
+  WordV  A10-ABKL-RM-AUS
+  WordV  A10-BEF-RM-AUS
+  WordV  A10FROST-GF
+  WordV  A10-REP-ABL
+  WordV  A10-REP-ZUL
+  WordV  Reserve
+  FloatK A10SOLLW-TAUPUNK (16.00)
+  FloatK A10SOLLW-ZULTEMP (18.00)
+  FloatK A10SW-DRUCK-ZUL (300.00)
+  FloatK A10SW-DRUCK-ABL (300.00)
+  WordV  Reserve_04
+  WordV  ERR_127_01
+  FloatK FKON-ABLUFT-PT1 (20.00)
+  WordV  A10-ABL-AUTO-ST
+  WordV  ERR_00_01
+  FloatV A10SIG-WRG-TAU
+  FloatV A10SIG-KUEH-ZUL
+  FloatV A10Y-SIG-ZUL-DR
+  WordV  ERR_00_05
+  WordV  ERR_01_05
+  WordV  MERR_107
+  WordV  MERR_110
+  WordV  MERR_104
+  WordV  A10-VE-RM-ST
+  FloatV A10STELL-VORERH
+  WordV  ERR_102_00
+  WordV  A10-ABL-RM-EIN1
+  WordV  A10-ZUL-RM-EIN1
+  WordV  A10-ABKL-RM-ST
+  WordV  A10-BEF-RM-ST
+  WordV  A10-WRG-RM-AUS
+  WordV  A10-WRG-RM-ST
+  WordV  ERR_00_11
+  WordV  A10-RAUCHMELDER
+  FloatV A10Y-FROST
+  WordV  A10FREIG-LU-AUS
+  WordV  A10FREIG-LU-EIN
+  WordV  A10ANLAGE-EIN1
+  WordV  A10-FREIG-ANLAGE
+  WordV  ERR_102_01
+  WordV  MERR_108
+  FloatV A10-RAUM-01-TEMP
+  FloatV A10SIG-VORH-TAU
+  FloatV A10-ABS-FEU-ABL
+  FloatV A10-ABL-FEUCHTE
+  WordV  SAMMELSTANL10
+  FloatV A10-RAUM-04-TEMP
+  FloatV A10-RAUM-02-TEMP
+  WordV  QUITTIERUNG-A10
+  FloatV A10-AUSSEN-TEMP
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &BA1LU1000BF01 (102,1)
+  WordK  $M0 (1)
+  IPAAW &BA1LU1000AA95 (108)
+  WordK  $M1 (1)
+  IPAAW &BA1LU1000AA92 (107)
+  WordK  $M2 (1)
+  IPAAW &BA1LU1000AA61 (110)
+  WordK  $M3 (1)
+  IPAAW &BA1LU1000AA62 (104)
+  IPAMB &M4 (102,0)
+  IPAMB &M5 (102,2)
+  IPAMB &M6 (102,3)
+  IPAMB &BA1LU1000BM10 (0,1)
+  IPAMB &M7 (0,2)
+  IPAMB &M8 (0,3)
+  IPAMB &BA1LU1000BM20 (0,5)
+  IPAMB &M9 (0,6)
+  IPAMB &M10 (0,7)
+  IPAMB &BA1LU1000BM40 (1,5)
+  IPAMB &M11 (1,6)
+  IPAMB &M12 (1,7)
+  IPAMB &BA1LU1000BM50 (127,1)
+  IPAMB &M13 (127,2)
+  IPAMB &M14 (127,3)
+  IPAMB &BA1LU1000BM30 (1,1)
+  IPAMB &M15 (1,2)
+  IPAMB &M16 (1,3)
+  IPAMB &BA1LU1000BM51 (0,13)
+  IPAMB &M17 (0,14)
+  IPAMB &M18 (0,15)
+  IPAMB &BA1LU1000BM01RM (0,11)
+  IPAMB &BA1LU1000WA11 (6,2)
+  WordV  $HB2
+  IPAMB &BA1LU1000WA21 (6,5)
+  IPAMB &BA1LU1000AL01 (7,5)
+  IPAMB &BA1LU1000GF01 (7,6)
+  WordV  $HB3
+  WordV  $HB4
+  IPAMB &BA1LU1000ST51 (8,3)
+  IPAMB &BA1LU1000ST09 (8,2)
+  IPAMB &BA1LU1000WA70 (0,10)
+  IPAMB &BA1LU1000ST55 (6,6)
+  IPAMB &BA1LU1000ST65 (6,7)
+  IPAAW &BA1LU1000MW00 (25)
+  IPAAW &BA1LU1000MW09 (23)
+  IPAAW &BA1LU1000MW22 (24)
+  IPAAW &BA1LU1000MW03 (31)
+  IPAAW &BA1LU1000MW41 (27)
+  IPAAW &BA1LU1000MW42 (28)
+  IPAAW &BA1LU1000MW14 (33)
+  IPAAW &BA1LU1000MW13 (32)
+  IPAAW &BA1LU1000MW15 (34)
+  IPAAW &BA1LU1000MW02 (22)
+  IPAAW &BA1LU1000MW39 (26)
+  IPAAW &BA1LU1000MW30 (30)
+  IPAAW &BA1LU1000MW16 (35)
+  WordV  $B1
+  WordV  $B2
+  FloatK $M19 (120.00)
+  FloatK $M20 (0.00)
+  WordV  $B3
+  WordV  $WSCRATCH
+  WordK  $M21 (1)
+  IPAMB &BA1LU1000ST83 (125,6)
+  WordV  $B4
+  WordV  $B5
+  FloatK $M22 (120.00)
+  FloatK $M23 (0.00)
+  WordV  $B6
+  WordK  $M24 (1)
+  IPAMB &BA1LU1000ST82 (125,5)
+  IPAMB &BA1LU1000BF50 (126,5)
+  IPAMB &M25 (126,6)
+  IPAMB &M26 (126,7)
+  IPAMB &BA1LU0000BM07 (8,9)
+  WordV  $B7
+  WordV  $B8
+  FloatK $M27 (5.00)
+  WordV  $HB0
+  WordV  $B9
+  WordK  $M28 (1)
+  IPAMB &BA1LU1000ST99 (125,15)
+  WordV  $B10
+  FloatK $M29 (300.00)
+  FloatK $M30 (0.00)
+  WordV  $B11
+  WordK  $M31 (1)
+  IPAMB &BA1LU1000ST77 (125,0)
+  WordV  $B12
+  WordV  $B13
+  FloatK $M32 (300.00)
+  FloatK $M33 (0.00)
+  WordV  $B14
+  WordK  $M34 (1)
+  IPAMB &BA1LU1000ST78 (125,1)
+  WordK  $M35 (1)
+  IPAMB &BA1LU1000ST84 (125,7)
+  WordK  $M36 (1)
+  IPAMB &BA1LU1000ST85 (125,8)
+  FloatK $M37 (0.00)
+  FloatK $M38 (100.00)
+  FloatV $F5
+  WordV  $B21
+  FloatK $M39 (600.00)
+  FloatK $M40 (0.00)
+  WordV  $B22
+  FloatK $M41 (1.00)
+  FloatK $M42 (0.50)
+  WordV  $B16
+  FloatK $M43 (1.00)
+  FloatK $M44 (0.50)
+  WordV  $B17
+  FloatK $M45 (10.00)
+  FloatK $M46 (1.00)
+  WordV  $B25
+  FloatK $M47 (29.00)
+  FloatK $M48 (2.00)
+  WordV  $B26
+  WordV  $HB1
+  WordV  $B27
+  WordV  $B18
+  FloatK $M49 (30.00)
+  FloatK $M50 (10.00)
+  FloatV $F7
+  FloatK $M51 (0.00)
+  WordK  $M52 (2)
+  FloatK $M53 (2.00)
+  FloatK $M54 (10.00)
+  FloatK $M55 (300.00)
+  FloatK $M56 (0.00)
+  FloatK $M57 (0.00)
+  FloatK $M58 (40.00)
+  FloatK $M59 (0.00)
+  FloatK $M60 (0.00)
+  FloatK $M61 (100.00)
+  FloatV $F8
+  FloatK $M62 (10.00)
+  FloatK $M63 (0.00)
+  WordK  $M64 (2)
+  FloatK $M65 (2.00)
+  FloatK $M66 (10.00)
+  FloatK $M67 (300.00)
+  FloatK $M68 (0.00)
+  FloatK $M69 (0.00)
+  FloatK $M70 (20.00)
+  FloatK $M71 (0.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (100.00)
+  FloatV $F1
+  FloatK $M74 (0.00)
+  FloatV $F2
+  WordV  $B24
+  FloatK $M75 (10.00)
+  FloatV $F6
+  FloatK $M76 (5.00)
+  FloatK $M77 (1.00)
+  WordV  $B23
+  WordV  $B19
+  FloatK $M78 (10.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B20
+  WordV  $B15
+  FloatK $M79 (0.00)
+  FloatV $F3
+  FloatK $M80 (0.00)
+  FloatV $F4
+  WordK  $M81 (1)
+  IPAMB &BA1LU1000ST79 (125,2)
+  IPAMB &BA1LU1000BM01 (0,9)
+  WordV  $B30
+  FloatK $M82 (120.00)
+  FloatK $M83 (0.00)
+  FloatV $F9
+  FloatK $M84 (0.00)
+  FloatK $M85 (1800.00)
+  FloatV $F10
+  WordV  $B33
+  FloatK $M86 (3.00)
+  FloatK $M87 (2.00)
+  WordV  $B36
+  FloatK $M88 (0.00)
+  WordV  $B37
+  WordV  $B38
+  WordV  $B39
+  FloatV $F11
+  FloatK $M89 (172800.00)
+  WordV  $B40
+  FloatK $M90 (300.00)
+  WordV  $B34
+  WordV  $B41
+  WordV  $B35
+  WordV  $B31
+  WordV  $B42
+  WordV  $B32
+  FloatK $M91 (4.00)
+  FloatK $M92 (0.00)
+  WordV  $B43
+  WordK  $M93 (1)
+  IPAMB &BA1LU1000ST81 (125,4)
+  WordV  $B45
+  WordV  $B44
+  FloatK $M94 (4.00)
+  FloatK $M95 (0.00)
+  WordV  $B46
+  WordK  $M96 (1)
+  IPAMB &BA1LU1000ST80 (125,3)
+  FloatK $M97 (0.00)
+  FloatK $M98 (0.00)
+  FloatK $M99 (0.00)
+  FloatK $M100 (50.00)
+  FloatK $M101 (100.00)
+  FloatK $M102 (50.00)
+  FloatK $M103 (0.00)
+  FloatK $M104 (100.00)
+  FloatK $M105 (100.00)
+  FloatV $F12
+  FloatK $M106 (0.00)
+  FloatK $M107 (0.00)
+  FloatV $F13
+  WordK  $M108 (1)
+  IPAAW &BA1LU1000AA01 (74)
+  FloatV $F14
+  FloatK $M109 (0.00)
+  WordK  $M110 (1)
+  IPAAW &BA1LU1000AA51 (72)
+  FloatV $F15
+  FloatK $M111 (0.00)
+  FloatK $M112 (0.00)
+  FloatK $M113 (100.00)
+  FloatK $M114 (40.00)
+  FloatK $M115 (0.00)
+  FloatK $M116 (40.00)
+  FloatK $M117 (0.00)
+  FloatK $M118 (60.00)
+  FloatK $M119 (100.00)
+  FloatK $M120 (60.00)
+  FloatK $M121 (0.00)
+  FloatK $M122 (100.00)
+  FloatK $M123 (100.00)
+  FloatV $F16
+  WordK  $M124 (1)
+  IPAAW &BA1LU1000AA03 (76)
+  FloatK $M125 (0.00)
+  FloatV $F17
+  FloatV $F18
+  FloatK $M126 (0.00)
+  WordK  $M127 (1)
+  IPAAW &BA1LU1000AA02 (75)
+  FloatK $M128 (4.00)
+  WordV  $B47
+  FloatK $M129 (60.00)
+  FloatK $M130 (120.00)
+  FloatV $F19
+  WordK  $M131 (1)
+  IPAAW &BA1LU1000AA63 (105)
+  FloatK $M132 (120.00)
+  WordV  $B48
+  FloatK $M133 (45.00)
+  FloatK $M134 (0.00)
+  FloatV $F20
+  WordK  $M135 (1)
+  IPAAW &BA1LU1000AA41 (70)
+  FloatV $F21
+  WordK  $M136 (1)
+  IPAAW &BA1LU1000AA64 (99)
+  FloatK $M137 (120.00)
+  WordV  $B49
+  FloatK $M138 (45.00)
+  FloatK $M139 (0.00)
+  FloatV $F22
+  WordK  $M140 (1)
+  IPAAW &BA1LU1000AA42 (71)
+  FloatK $M141 (101300.00)
+  WordK  $M142 (1)
+  IPAAW &BA1LU0000AA00 (117)
+  FloatK $M143 (101300.00)
+  WordK  $M144 (1)
+  IPAAW &BA1LU1000MW32 (123)
+  FloatK $M145 (0.00)
+  FloatV $F23
+  FloatK $M146 (0.00)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;ANLAGE :
+  ;--------
+  ;Anlage 10 BÅro 1-4 OG.
+  ;STEUERUNG UND REGELUNG
+  ; 
+  ;MODUL - EINBAU - ORT :
+  ;----------------------
+  ;LöFTUNGSCHALTSCHRANK
+  ;LU10
+  ;4.OG LÅftungszentrale
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,FREIG-AUS-GLT,FREIG-EIN-GLT,$WZERO,$WZERO,
+          &BA1LU1000BF01,ERR_102_01)
+  ; BÅro A10
+  ;Freigabe GLT
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ANAUS (A10SOLLW-TAUPUNK,$M0,&BA1LU1000AA95,MERR_108)
+  ANAUS (A10SOLLW-ZULTEMP,$M1,&BA1LU1000AA92,MERR_107)
+  ANAUS (A10SW-DRUCK-ZUL,$M2,&BA1LU1000AA61,MERR_110)
+  ANAUS (A10SW-DRUCK-ABL,$M3,&BA1LU1000AA62,MERR_104)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M4,4,WERR,FREIG-AUS-GLT,WERR,FREIG-EIN-GLT,
+          ERR_102_00)
+  MELEIN (&BA1LU1000BM10,3,A10-ZUL-RM-AUS,A10-ZUL-RM-ST,
+          A10-ZUL-RM-EIN1,ERR_00_01)
+  MELEIN (&BA1LU1000BM20,3,A10-ABL-RM-AUS,A10-ABL-RM-ST,
+          A10-ABL-RM-EIN1,ERR_00_05)
+  MELEIN (&BA1LU1000BM40,3,A10-VE-RM-AUS,A10-VE-RM-ST,
+          A10-VE-RM-EIN1,ERR_01_05)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&BA1LU1000BM50,3,A10-ABKL-RM-AUS,A10-ABKL-RM-ST,
+          A10-ABKL-RM-EIN1,ERR_127_01)
+  MELEIN (&BA1LU1000BM30,3,A10-BEF-RM-AUS,A10-BEF-RM-ST,
+          A10-BEF-RM-EIN1,ERR_01_01)
+  MELEIN (&BA1LU1000BM51,3,A10-WRG-RM-AUS,A10-WRG-RM-ST,
+          A10-WRG-RM-EIN1,ERR_00_13)
+  MELEIN (&BA1LU1000BM01RM,1,A10-ABSP-KL-EIN,ERR_00_11)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&BA1LU1000WA11,1,$HB2,ERR_06_02)
+  NICHT ($HB2,A10-REP-ZUL)
+  MELEIN (&BA1LU1000WA21,1,$HB2,ERR_06_05)
+  NICHT ($HB2,A10-REP-ABL)
+  MELEIN (&BA1LU1000AL01,2,$HB3,$HB4,ERR_07_05)
+  NICHT ($HB3,A10-RAUCHMELDER)
+  NICHT ($HB4,A10FROST-GF)
+  MELEIN (&BA1LU1000ST51,1,$HB2,ERR_08_03)
+  NICHT ($HB2,A10-WRG-STôRUNG)
+  MELEIN (&BA1LU1000ST09,1,$HB2,ERR_08_02)
+  NICHT ($HB2,A10ABSALZ-AUTO)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&BA1LU1000WA70,1,A10-Hand-Steueru,ERR_00_10)
+  MELEIN (&BA1LU1000ST55,2,A10-MAX-DRUCK-ZU,A10-MAX-DRUCK-AB,
+          ERR_06_06)
+  ANEIN (&BA1LU1000MW00,A10-AUSSEN-TEMP,MERR_25)
+  ;Aussentemp. Anl.10
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&BA1LU1000MW09,A10-ABL-TEMP,MERR_23)
+  ANEIN (&BA1LU1000MW22,A10-VE-RL-TEMP,MERR_24)
+  ANEIN (&BA1LU1000MW03,A10-ZUL-TEMP,MERR_31)
+  ANEIN (&BA1LU1000MW41,A10-ZUL-DRUCK,MERR_27)
+  ANEIN (&BA1LU1000MW42,A10-ABL-DRUCK,MERR_28)
+  ;A10 Ablufttemp.
+  ; 
+  ;A10 VE- RÅcklauftemp
+  ; 
+  ;A10 Zulufttemperatur
+  ; 
+  ;A10 Zuluftdruck
+  ; 
+  ;A10 Abluftdruck
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&BA1LU1000MW14,A10-RAUM-02-TEMP,MERR_33)
+  ANEIN (&BA1LU1000MW13,A10-RAUM-01-TEMP,MERR_32)
+  ANEIN (&BA1LU1000MW15,A10-RAUM-03-TEMP,MERR_34)
+  ANEIN (&BA1LU1000MW02,A10-TAUP-TEMP,MERR_22)
+  ANEIN (&BA1LU1000MW39,A10-ABL-FEUCHTE,MERR_26)
+  ;A10 Raumtemp. 2
+  ; 
+  ;A10 Raumtemp. 1
+  ; 
+  ;A10 Raumtemp. 3
+  ; 
+  ;A10 Taupunkttemp.
+  ; 
+  ;A10 Abluftfeuchte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&BA1LU1000AA95,A10SOLLW-TAUPUNK,MERR_108)
+  ANEIN (&BA1LU1000AA92,A10SOLLW-ZULTEMP,MERR_107)
+  ANEIN (&BA1LU1000AA61,A10SW-DRUCK-ZUL,MERR_110)
+  ANEIN (&BA1LU1000AA62,A10SW-DRUCK-ABL,MERR_104)
+  ANEIN (&BA1LU1000MW30,A10-AUSSENFEUCH,MERR_30)
+  ANEIN (&BA1LU1000MW16,A10-RAUM-04-TEMP,MERR_35)
+  ;Sollw.Taupunkttemp.
+  ; 
+  ;Sollw. Zulufttemp
+  ; 
+  ;Sollw.Zuluftdruck
+  ; 
+  ;Sollw.Abluftdruck
+  ; 
+  ;Aussenfeuchte
+  ; 
+  ;A10 Raumtemp. 4
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  VGLOH (A10-ABL-DRUCK,FKONABL-50PA,$B1)
+  UND11 (A10-ABL-RM-EIN1,$B1,$B2)
+  VVZ ($B2,$M19,$M20,$B3)
+  RSS ($B3,QUITTIERUNG-A10,A10ABL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M21,1,A10ABL-KEIL-ST,&BA1LU1000ST83,ERR_125_06)
+  ;DiffDruck ZulÅfter
+  ; 
+  ;DiffDruck AblÅfter
+  ; 
+  VGLOH (A10-ZUL-DRUCK,FKONZUL-50PA,$B4)
+  UND11 (A10-ZUL-RM-EIN1,$B4,$B5)
+  VVZ ($B5,$M22,$M23,$B6)
+  RSS ($B6,QUITTIERUNG-A10,A10ZUL-KEIL-ST,$WSCRATCH)
+  SETMEL ($M24,1,A10ZUL-KEIL-ST,&BA1LU1000ST82,ERR_125_05)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&BA1LU1000BF50,3,Fernquit_a10-AUS,WERR,
+          Fernquit_a10ein,ERR_126_05)
+  MELEIN (&BA1LU0000BM07,1,$B7,ERR_08_09)
+  ODR2 (Fernquit_a10ein,$B7,$B8)
+  MOKY ($B8,$M27,QUITTIERUNG-A10)
+  NICHT (QUITTIERUNG-A10,$HB0)
+  BEFAUS (1,$HB0,QUITTIERUNG-A10,$WZERO,$WZERO,
+          &BA1LU1000BF50,ERR_126_05)
+  ;StîrQuitt
+  ;  "RÅcksetzen"
+  ; 
+  ;StîrQuitt "setzen"
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ENDE 
+  TASK (3,cycl,1000)
+  ODRMN (10,A10-ABL-AUTO-ST,A10-ZUL-AUTO-ST,A10ABL-KEIL-ST,
+         A10ZUL-KEIL-ST,A10-ABL-MAXDRUCK,A10-ZUL-MAXDRUCK,
+         A10-REP-ABL,A10-REP-ZUL,A10-ABL-RM-ST,A10-ZUL-RM-ST,
+         0,$B9,$WSCRATCH)
+  RSS ($B9,QUITTIERUNG-A10,SAMMELSTANL10,$WSCRATCH)
+  SETMEL ($M28,1,SAMMELSTANL10,&BA1LU1000ST99,ERR_125_15)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  UNDMN (1,A10ANLAGE-EIN1,2,A10-Hand-Steueru,A10-ZUL-RM-EIN1,
+         $B10,$WSCRATCH)
+  VVZ ($B10,$M29,$M30,$B11)
+  RSS ($B11,QUITTIERUNG-A10,A10-ZUL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M31,1,A10-ZUL-AUTO-ST,&BA1LU1000ST77,ERR_125_00)
+  ODRMN (4,A10-ABL-MAXDRUCK,A10-ZUL-MAXDRUCK,A10-ZUL-AUTO-ST,
+         A10-ABL-AUTO-ST,0,$B12,$WSCRATCH)
+  UNDMN (1,A10ANLAGE-EIN1,2,A10-Hand-Steueru,A10-ABL-RM-EIN1,
+         $B13,$WSCRATCH)
+  ;EinschaltÅberwachung
+  ;Anlage 10 Autoatikfunkt.
+  ; 
+  VVZ ($B13,$M32,$M33,$B14)
+  RSS ($B14,QUITTIERUNG-A10,A10-ABL-AUTO-ST,$WSCRATCH)
+  SETMEL ($M34,1,A10-ABL-AUTO-ST,&BA1LU1000ST78,ERR_125_01)
+  BEFAUS (1,$B12,$WZERO,$WZERO,$WZERO,&BA1LU1000BF01,
+          ERR_102_01)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  RSS (A10-MAX-DRUCK-AB,QUITTIERUNG-A10,A10-ABL-MAXDRUCK,
+       $WSCRATCH)
+  SETMEL ($M35,1,A10-ABL-MAXDRUCK,&BA1LU1000ST84,ERR_125_07)
+  RSS (A10-MAX-DRUCK-ZU,QUITTIERUNG-A10,A10-ZUL-MAXDRUCK,
+       $WSCRATCH)
+  SETMEL ($M36,1,A10-ZUL-MAXDRUCK,&BA1LU1000ST85,ERR_125_08)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  AWT ($B20,$M37,$M38,$F5)
+  MAX (3,$F5,$F4,$F3,A10Y-FROST)
+  UND11 (FREIG-EIN-GLT,$B17,$B21)
+  VVZ ($B21,$M39,$M40,$B22)
+  VGLEH (A10-TAUP-TEMP,$M41,$M42,$B16)
+  ODR2 ($B22,$B18,A10-FREIG-ANLAGE)
+  VGLEH (A10-VE-RL-TEMP,$M43,$M44,$B17)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  VGLEH (A10-AUSSEN-TEMP,$M45,$M46,$B25)
+  VGLEH (A10-VE-RL-TEMP,$M47,$M48,$B26)
+  NICHT (FREIG-EIN-GLT,$HB1)
+  RSS ($B24,$HB1,$B27,$WSCRATCH)
+  BTRA ($B27,$B18)
+  AWT ($B27,$M49,$M50,$F7)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A10-VE-RL-TEMP,$F7,$WONE,$B25,$M51,$M52,$M53,$M54,
+        $M55,$M56,$M57,$M58,$M59,$M60,$M61,$F8,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  LREG (A10-TAUP-TEMP,$M62,$WONE,$WZERO,$M63,$M64,$M65,$M66,
+        $M67,$M68,$M69,$M70,$M71,$M72,$M73,$F1,$WSCRATCH)
+  AWT ($B25,$F8,$M74,$F2)
+  ;Version 2.0
+  ; 
+  ODR2 ($B26,$B25,$B24)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;V 2.0
+  ; 
+  AWT ($B17,$M75,A10-VE-RL-TEMP,$F6)
+  VGLEH ($F6,$M76,$M77,$HB3)
+  NICHT ($HB3,$B23)
+  ODR2 ($B23,A10FROST-GF,$B19)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MOKY (QUITTIERUNG-A10,$M78,$B28)
+  UND11 ($B28,$B19,$B29)
+  RSS ($B19,$B29,$B20,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  BTRA ($B20,$B15)
+  AWT ($B17,$M79,$F2,$F3)
+  AWT ($B16,$M80,$F1,$F4)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  UNDMN (1,A10-FREIG-ANLAGE,7,A10FROST-GF,SAMMELSTANL10,
+         A10-ZUL-RM-ST,A10-ABL-RM-ST,A10-MAX-DRUCK-AB,
+         A10-MAX-DRUCK-ZU,A10-RAUCHMELDER,A10FREIG-LU-EIN,
+         A10FREIG-LU-AUS)
+  SETMEL ($M81,1,$B15,&BA1LU1000ST79,ERR_125_02)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ;Ansteuerung AbsperrKl.
+  ;Anlage 10
+  ;Zuluft/Abluftklappe
+  ; 
+  BEFAUS (1,A10FREIG-LU-AUS,A10FREIG-LU-EIN,$WZERO,$WZERO,
+          &BA1LU1000BM01,ERR_126_13)
+  ;Freigabe der Anlage
+  ;wenn Klappen geîffnet
+  ;sind KlappenrÅckmeldung
+  ;wird intern gesetzt
+  ;keine RÅckmeldung
+  ; 
+  UNDMN (2,A10-ABSP-KL-EIN,KON01,0,$B30,A10ANLAGE-AUS)
+  VVZ ($B30,$M82,$M83,A10ANLAGE-EIN1)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ;  ZULUFTVENTILATOR
+  ;        LU10
+  ;Freigabe FU
+  ; 
+  BEFAUS (1,A10ANLAGE-AUS,A10ANLAGE-EIN1,$WZERO,$WZERO,
+          &BA1LU1000BM10,ERR_00_01)
+  ;  ABLUFTVENTILATOR
+  ;        LU10
+  ;Freigabe FU
+  ; 
+  BEFAUS (1,A10ANLAGE-AUS,A10ANLAGE-EIN1,$WZERO,$WZERO,
+          &BA1LU1000BM20,ERR_00_05)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MAX (2,A10STELL-VORERH,A10Y-FROST,$F9)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  AWT ($WONE,$M84,$M85,$F10)
+  MOKY (KON01,$F10,$B33)
+  VGLEH ($F9,$M86,$M87,$B36)
+  VVZ ($B36,$M88,$F10,$B37)
+  UND2 (KON01,$B37,$B38)
+  ODR2 (A10-VE-RM-ST,$B35,$B39)
+  NICHT ($B39,$HB0)
+  UHR ($HB0,$B39,$F11)
+  VGLOH ($F11,$M89,$B40)
+  MOKY ($B40,$M90,$B34)
+  ;BEDARFSABH. EINSCHALTEN
+  ; 
+  ; 
+  ;TéGLICHES EINSCHALTEN
+  ; 
+  ;Version 2.0
+  ; 
+  ODRMN (4,$B33,$B38,A10FROST-GF,$B34,0,$B41,$WSCRATCH)
+  UND11 ($B41,A10-VE-RM-ST,$B35)
+  BTRA ($B35,$B31)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 ($B31,A10-VE-RM-EIN1,$B42)
+  RSS ($B43,QUITTIERUNG-A10,$B32,$WSCRATCH)
+  VVZ ($B42,$M91,$M92,$B43)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;FREIG-VE-PUMPE
+  ; 
+  NICHT ($B31,$HB0)
+  BEFAUS (1,$HB0,$B31,$WZERO,$WZERO,&BA1LU1000BM40,ERR_01_05)
+  SETMEL ($M93,1,$B32,&BA1LU1000ST81,ERR_125_04)
+  ;Ansteuerung
+  ;Vorerhitzer A10
+  ;mit Befehls-
+  ;Åberwachung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ;FREIG-WRG A10
+  ; 
+  NICHT (Reserve,$HB0)
+  BEFAUS (1,$HB0,Reserve,$WZERO,$WZERO,&BA1LU1000BM51,
+          ERR_00_13)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 (Reserve,Reserve_04,$B45)
+  RSS ($B46,QUITTIERUNG-A10,$B44,$WSCRATCH)
+  VVZ ($B45,$M94,$M95,$B46)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Bypassklappen Anlage 10
+  ;zur Zeit keine Ansteueru
+  ;ng Åber DDC- Programm
+  ;Stîrmeldung WRG fehlt
+  ; 
+  SETMEL ($M96,1,$B44,&BA1LU1000ST80,ERR_125_03)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  ENDE 
+  TASK (4,CYCL,2000)
+  REGLER (1,KON01,KON00,$M97,Y-SIGNAL-TAUPREG,ERR_REG01)
+  ;Taupunktregelung
+  ;Anlage 10
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  FKG (Y-SIGNAL-TAUPREG,4,$M98,$M99,$M100,$M101,
+       A10SIG-WRG-TAU)
+  FKG (Y-SIGNAL-TAUPREG,4,$M102,$M103,$M104,$M105,$F12)
+  AWT (A10-VE-SPERR-EIN,$F12,$M106,A10SIG-VORH-TAU)
+  ;REGELUNG Taupunkttemp.
+  ;nur WRG/ Vorerhitzer
+  ;n
+  ; 
+  ;WRG-A10
+  ; 
+  ;Vorerhitz A10
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  AWT (A10-ZUL-RM-EIN1,$M107,A10SIG-VORH-TAU,$F13)
+  ANAUS ($F15,$M108,&BA1LU1000AA01,MERR_74)
+  MAX (3,A10SIG-WRG-TAU,A10SIG-WRG-ZUL,FKON5-MIN-WRG,$F14)
+  AWT (A10-ZUL-RM-EIN1,$M109,$F14,A10STELL-WRG)
+  ANAUS (A10STELL-WRG,$M110,&BA1LU1000AA51,MERR_72)
+  ;VORERHITZER
+  ; 
+  ;WRG
+  ; 
+  MAX (2,$F13,A10Y-FROST,$F15)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  REGLER (2,KON01,KON00,$M111,Y-SIGNAL-ZUL-REG,ERR_REG02)
+  ;Regler Zulufttemp.
+  ;n
+  ; 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  FKG (Y-SIGNAL-ZUL-REG,4,$M112,$M113,$M114,$M115,
+       A10SIG-KUEH-ZUL)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M116,$M117,$M118,$M119,
+       A10SIG-WRG-ZUL)
+  FKG (Y-SIGNAL-ZUL-REG,4,$M120,$M121,$M122,$M123,$F16)
+  ANAUS ($F17,$M124,&BA1LU1000AA03,MERR_76)
+  AWT (A10-ZUL-RM-EIN1,$M125,$F16,$F17)
+  ;Ansteuerung KÅhler
+  ; 
+  ;Ansteuerung WRG
+  ; 
+  ;Ansteuerung NE
+  ; 
+  ;ZUL-TEMP
+  ;Regelung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  MAX (2,A10SIG-KUEH-ZUL,A10SIG-ENTFEUCHT,$F18)
+  AWT (A10-ZUL-RM-EIN1,$M126,$F18,A10STELL-KUEHLER)
+  ANAUS (A10STELL-KUEHLER,$M127,&BA1LU1000AA02,MERR_75)
+  VGLEH (A10SIG-ENTFEUCHT,FKON5,$M128,$B47)
+  VVZ ($B47,$M129,$M130,A10-VE-SPERR-EIN)
+  ;KÅhler A10
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ENDE 
+  TASK (5,cycl,2000)
+  PT1 (A10-ZUL-DRUCK,FKON-ZUL-PT1,$F19)
+  ANAUS ($F19,$M131,&BA1LU1000AA63,MERR_105)
+  MOKY (A10-ZUL-RM-EIN1,$M132,$B48)
+  REGLER (3,KON01,$B48,$M133,A10Y-SIG-ZUL-DR,ERR_REG03)
+  AWT (A10-ZUL-RM-EIN1,$M134,A10Y-SIG-ZUL-DR,$F20)
+  ANAUS ($F20,$M135,&BA1LU1000AA41,MERR_70)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  PT1 (A10-ABL-DRUCK,FKON-ABLUFT-PT1,$F21)
+  ANAUS ($F21,$M136,&BA1LU1000AA64,MERR_99)
+  MOKY (A10-ABL-RM-EIN1,$M137,$B49)
+  REGLER (4,KON01,$B49,$M138,A10Y-SIG-ABL-DR,ERR_REG04)
+  AWT (A10-ABL-RM-EIN1,$M139,A10Y-SIG-ABL-DR,$F22)
+  ANAUS ($F22,$M140,&BA1LU1000AA42,MERR_71)
+  ;Druckregelung
+  ;Abluft Anlage 10
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ABFEUG (A10-AUSSENFEUCH,A10-AUSSEN-TEMP,$M141,
+          A10-ABS-FEU-AUSS)
+  ANAUS (A10-ABS-FEU-AUSS,$M142,&BA1LU0000AA00,MERR_117)
+  ABFEUG (A10-ABL-FEUCHTE,A10-ABL-TEMP,$M143,A10-ABS-FEU-ABL)
+  ANAUS (A10-ABS-FEU-ABL,$M144,&BA1LU1000MW32,MERR_123)
+  REGLER (6,KON01,KON00,$M145,$F23,ERR_REG06)
+  SOLKEN (2,KON01,A10-SW-ABS-ENTF,ERR_SK02)
+  AWT (A10-ZUL-RM-EIN1,$M146,$F23,A10SIG-ENTFEUCHT)
+  ;Entfeuchtung
+  ; 
+  ;Abluftfeuchte
+  ; 
+  ;Aussenfeuchte
+  ; 
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,362 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01112.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 11
+  ;*** Modul Typ      : SP20
+  ;*** Feldbus Nummer : 12
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-FREE-ANL-AUS (0)
+  WordK  K-FREE-ANL-EIN1 (1)
+  WordV  FREE-UM-VEN-EIN1
+  WordV  FREE-UM-VEN-STOE
+  WordV  FREE-TABLEAU-AUS
+  WordV  FREE-RAUCHMELDER
+  WordV  BATT-ABL-STOER
+  WordV  FREE-UM-VEN-AUS
+  WordV  BATT-ABL-AUS
+  WordV  REGI-ABL-KEILRI
+  WordV  REGI-ABL-EIN1
+  WordV  REGI-ABL-STOER
+  WordV  REGI-ABL-AUS
+  WordK  K-REGI-ANL-EIN1 (1)
+  WordK  K-REGI-ANL-AUS (0)
+  WordK  K-GARD-ANL-AUS (0)
+  WordK  K-GARD-ANL-EIN1 (1)
+  WordK  K-GARD-ANL-EIN2 (0)
+  WordV  GARD-ABL-KEILRI
+  WordV  GARD-ABL-AUS
+  WordV  GARD-ABL-STOER
+  WordV  GARD-ABL-EIN1
+  WordV  GARD-ABL-EIN2
+  WordV  KM-RA-ABL-EIN1
+  WordV  ENTRIEGELN
+  WordV  GARD-ABLUFT-EIN
+  WordV  GA-SOLL-EIN2-ZUL
+  WordV  GARD-STOER-ABL
+  WordV  GA-SOLL-EIN1-ZUL
+  WordK  K-TK-RA-ANL-AUS (0)
+  WordK  K-TK-RA-ANL-EIN1 (1)
+  WordV  TK-RA-ABL-AUS
+  WordV  TK-RA-ABL-STOER
+  WordV  TK-RA-ABL-EIN1
+  WordK  K-VERM-ANL-AUS (0)
+  WordK  K-VERM-ANL-EIN1 (1)
+  WordV  VERM-ABL-AUS
+  WordV  VERM-ABL-STOER
+  WordV  VERM-ABL-EIN1
+  WordV  KM-RA-ABL-AUS
+  WordV  KM-RA-ABL-STOER
+  WordV  FREE-TABLEAU-EIN
+  WordV  BATT-ABL-EIN1
+  WordK  K-BATT-ANL-EIN1 (1)
+  WordK  K-BATT-ANL-AUS (0)
+  WordK  K-KM-RA-ANL-AUS (0)
+  WordK  K-KM-RA-ANL-EIN1 (1)
+  WordV  AI-LU12-02G-B02
+  WordV  KM-RA-TB-AUTOM
+  WordV  KM-RA-TB-EIN1
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &AI-LU12-13L-X50 (177,1)
+  IPAMB &AI-LU12-13G-X50 (13,1)
+  IPAMB &AI-LU12-13H-X50 (176,9)
+  IPAMB &AI-LU12-13G-X51 (13,5)
+  IPAMB &AI-LU12-13G-X52 (13,13)
+  IPAMB &AI-LU12-13G-X53 (15,1)
+  IPAMB &AI-LU12-02G-X50 (13,9)
+  IPAMB &M0 (177,2)
+  IPAMB &M1 (177,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  IPAMB &AI-LU12-13L-X01 (102,9)
+  IPAMB &M2 (102,10)
+  IPAMB &M3 (102,11)
+  IPAMB &AI-LU12-13L-A01 (108,14)
+  IPAMB &AI-LU12-13L-B01 (1,6)
+  IPAMB &AI-LU12-13L-B02 (1,3)
+  IPAMB &M4 (13,2)
+  IPAMB &M5 (13,3)
+  WordV  $B3
+  WordV  $B4
+  IPAMB &AI-LU14-00G-X01 (101,1)
+  IPAMB &M6 (101,2)
+  IPAMB &M7 (101,3)
+  IPAMB &AI-LU12-13G-B02 (108,7)
+  IPAMB &AI-LU12-13I-S50 (150,0)
+  IPAMB &M8 (176,10)
+  IPAMB &M9 (176,11)
+  IPAMB &M10 (176,12)
+  IPAMB &M11 (176,13)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  IPAMB &AI-LU12-13H-X07 (104,1)
+  IPAMB &M12 (104,2)
+  IPAMB &M13 (104,3)
+  IPAMB &M14 (104,4)
+  IPAMB &M15 (104,5)
+  IPAMB &AI-LU12-13H-B01 (109,6)
+  IPAMB &M16 (13,6)
+  IPAMB &M17 (13,7)
+  WordV  $B8
+  WordV  $B9
+  IPAMB &AI-LU14-00G-X03 (102,1)
+  IPAMB &M18 (102,2)
+  IPAMB &M19 (102,3)
+  IPAMB &M20 (13,14)
+  IPAMB &M21 (13,15)
+  WordV  $B10
+  WordV  $B11
+  IPAMB &AI-LU14-00G-X02 (101,5)
+  IPAMB &M22 (101,6)
+  IPAMB &M23 (101,7)
+  IPAMB &M24 (15,2)
+  IPAMB &M25 (15,3)
+  WordV  $B12
+  WordV  $B13
+  IPAMB &AI-LU14-00G-X04 (102,5)
+  IPAMB &M26 (102,6)
+  IPAMB &M27 (102,7)
+  IPAMB &M28 (13,10)
+  IPAMB &M29 (13,11)
+  WordV  $B14
+  WordV  $B15
+  IPAMB &AI-LU12-02G-X01 (103,1)
+  IPAMB &M30 (103,2)
+  IPAMB &M31 (103,3)
+  IPAMB &AI-LU12-02G-B01 (96,6)
+  IPAMB &M32 (96,7)
+  FloatK $M33 (5.00)
+  WordV  $B16
+  FloatK $M34 (5.00)
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  WordK  $M35 (1)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  IPAMB &AI-LU12-37L-S01 (40,9)
+  WordV  $B24
+  WordV  $B25
+  WordK  $M37 (1)
+  WordV  $B26
+  WordV  $B27
+  FloatK $M39 (10.00)
+  FloatK $M40 (10.00)
+  WordV  $B28
+  WordV  $B29
+  WordV  $B30
+  IPAMB &AI-LU12-13H-X08 (80,9)
+  WordV  $B31
+  FloatK $M41 (30.00)
+  FloatK $M42 (0.00)
+  WordV  $B32
+  WordV  $B33
+  WordK  $M43 (1)
+  IPAMB &AI-LU12-13H-S52 (14,0)
+  WordK  $M44 (1)
+  WordV  $B34
+  WordV  $B35
+  WordK  $M46 (1)
+  WordV  $B36
+  WordV  $B37
+  WordK  $M48 (1)
+  WordV  $B38
+  FloatK $M50 (0.00)
+  FloatK $M51 (300.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  WordK  $M52 (1)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage: Free-Flow-Umluft
+  ;Einbauort:
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (1,K-FREE-ANL-AUS,K-FREE-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-13L-X50,WERR)
+  BEFAUS (1,K-REGI-ANL-AUS,K-REGI-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-13G-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (2,K-GARD-ANL-AUS,K-GARD-ANL-EIN1,K-GARD-ANL-EIN2,
+          $WZERO,&AI-LU12-13H-X50,WERR)
+  BEFAUS (1,K-TK-RA-ANL-AUS,K-TK-RA-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-13G-X51,WERR)
+  BEFAUS (1,K-VERM-ANL-AUS,K-VERM-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-13G-X52,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  BEFAUS (1,K-BATT-ANL-AUS,K-BATT-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-13G-X53,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  BEFAUS (1,K-TK-RA-ANL-AUS,K-TK-RA-ANL-EIN1,$WZERO,$WZERO,
+          &AI-LU12-02G-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&AI-LU12-13L-X50,3,$B1,$WSCRATCH,$B2,WERR)
+  BTRA ($B1,K-FREE-ANL-AUS)
+  BTRA ($B2,K-FREE-ANL-EIN1)
+  MELEIN (&AI-LU12-13L-X01,3,FREE-UM-VEN-AUS,
+          FREE-UM-VEN-STOE,FREE-UM-VEN-EIN1,WERR)
+  MELEIN (&AI-LU12-13L-A01,1,FREE-RAUCHMELDER,WERR)
+  MELEIN (&AI-LU12-13L-B01,1,FREE-TABLEAU-AUS,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13L-B02,1,FREE-TABLEAU-EIN,WERR)
+  MELEIN (&AI-LU12-13G-X50,3,$B3,$WSCRATCH,$B4,WERR)
+  BTRA ($B3,K-REGI-ANL-AUS)
+  BTRA ($B4,K-REGI-ANL-EIN1)
+  MELEIN (&AI-LU14-00G-X01,3,REGI-ABL-AUS,REGI-ABL-STOER,
+          REGI-ABL-EIN1,WERR)
+  MELEIN (&AI-LU12-13G-B02,1,REGI-ABL-KEILRI,WERR)
+  MELEIN (&AI-LU12-13I-S50,1,ENTRIEGELN,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13H-X50,5,$B5,$WSCRATCH,$B6,$WSCRATCH,$B7,
+          WERR)
+  BTRA ($B5,K-GARD-ANL-AUS)
+  BTRA ($B6,K-GARD-ANL-EIN1)
+  BTRA ($B7,K-GARD-ANL-EIN2)
+  MELEIN (&AI-LU12-13H-X07,5,GARD-ABL-AUS,GARD-ABL-STOER,
+          GARD-ABL-EIN1,$WSCRATCH,GARD-ABL-EIN2,WERR)
+  MELEIN (&AI-LU12-13H-B01,1,GARD-ABL-KEILRI,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13G-X51,3,$B8,$WSCRATCH,$B9,WERR)
+  BTRA ($B8,K-TK-RA-ANL-AUS)
+  BTRA ($B9,K-TK-RA-ANL-EIN1)
+  MELEIN (&AI-LU14-00G-X03,3,TK-RA-ABL-AUS,TK-RA-ABL-STOER,
+          TK-RA-ABL-EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13G-X52,3,$B10,$WSCRATCH,$B11,WERR)
+  BTRA ($B10,K-VERM-ANL-AUS)
+  BTRA ($B11,K-VERM-ANL-EIN1)
+  MELEIN (&AI-LU14-00G-X02,3,VERM-ABL-AUS,VERM-ABL-STOER,
+          VERM-ABL-EIN1,WERR)
+  MELEIN (&AI-LU12-13G-X53,3,$B12,$WSCRATCH,$B13,WERR)
+  BTRA ($B12,K-BATT-ANL-AUS)
+  BTRA ($B13,K-BATT-ANL-EIN1)
+  MELEIN (&AI-LU14-00G-X04,3,BATT-ABL-AUS,BATT-ABL-STOER,
+          BATT-ABL-EIN1,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&AI-LU12-02G-X50,3,$B14,$WSCRATCH,$B15,WERR)
+  BTRA ($B14,K-KM-RA-ANL-AUS)
+  BTRA ($B15,K-KM-RA-ANL-EIN1)
+  MELEIN (&AI-LU12-02G-X01,3,KM-RA-ABL-AUS,KM-RA-ABL-STOER,
+          KM-RA-ABL-EIN1,WERR)
+  MELEIN (&AI-LU12-02G-B01,2,KM-RA-TB-AUTOM,KM-RA-TB-EIN1,
+          WERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  MOKY (FREE-TABLEAU-AUS,$M33,$B16)
+  MOKY (FREE-TABLEAU-EIN,$M34,$B17)
+  ODR2 ($B16,$B19,$B18)
+  BEFAUS (1,$B18,$B17,$WZERO,$WZERO,&AI-LU12-13L-X50,WERR)
+  NAND2 (FREE-RAUCHMELDER,FREE-UM-VEN-STOE,$B19)
+  SETMEL ($M35,1,$B19,&M0,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ODRMN (0,2,FREE-UM-VEN-STOE,FREE-RAUCHMELDER,$B20,$B21)
+  UND11 (K-FREE-ANL-EIN1,$B20,$B22)
+  NICHT ($B22,$B23)
+  BEFAUS (1,$B23,$B22,$WZERO,$WZERO,&AI-LU12-13L-X01,WERR)
+  BEFAUS (1,$B21,$B20,$WZERO,$WZERO,&AI-LU12-37L-S01,WERR)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  UND11 (K-REGI-ANL-EIN1,REGI-ABL-STOER,$B24)
+  NICHT ($B24,$B25)
+  BEFAUS (1,$B25,$B24,$WZERO,$WZERO,&AI-LU14-00G-X01,WERR)
+  SETMEL ($M37,1,REGI-ABL-STOER,&M4,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  BEFAUS (2,GARD-STOER-ABL,$WZERO,$WZERO,$WZERO,
+          &AI-LU12-13H-X50,WERR)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODR2 (K-GARD-ANL-EIN1,K-GARD-ANL-EIN2,$B26)
+  UND11 ($B26,$B28,$B27)
+  UND11 ($B27,GARD-STOER-ABL,GA-SOLL-EIN1-ZUL)
+  VVZ (K-GARD-ANL-EIN2,$M39,$M40,$B28)
+  UND21 ($B28,K-GARD-ANL-EIN2,GARD-STOER-ABL,
+         GA-SOLL-EIN2-ZUL)
+  NOR2 (GA-SOLL-EIN1-ZUL,GA-SOLL-EIN2-ZUL,$B29)
+  BEFAUS (2,$B29,GA-SOLL-EIN1-ZUL,GA-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13H-X07,WERR)
+  NICHT (GARD-ABLUFT-EIN,$B30)
+  BEFAUS (1,$B30,GARD-ABLUFT-EIN,$WZERO,$WZERO,
+          &AI-LU12-13H-X08,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODR2 (GARD-ABL-EIN1,GARD-ABL-EIN2,GARD-ABLUFT-EIN)
+  XOR2 (GARD-ABLUFT-EIN,GARD-ABL-KEILRI,$B31)
+  VVZ ($B31,$M41,$M42,$B32)
+  RSS ($B32,ENTRIEGELN,$B33,$WSCRATCH)
+  ODR2 ($B33,GARD-ABL-STOER,GARD-STOER-ABL)
+  SETMEL ($M43,1,$B33,&AI-LU12-13H-S52,WERR)
+  SETMEL ($M44,1,GARD-STOER-ABL,&M8,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  UND11 (K-TK-RA-ANL-EIN1,TK-RA-ABL-STOER,$B34)
+  NICHT ($B34,$B35)
+  BEFAUS (1,$B35,$B34,$WZERO,$WZERO,&AI-LU14-00G-X03,WERR)
+  SETMEL ($M46,1,TK-RA-ABL-STOER,&M16,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  UND11 (K-VERM-ANL-EIN1,VERM-ABL-STOER,$B36)
+  NICHT ($B36,$B37)
+  BEFAUS (1,$B37,$B36,$WZERO,$WZERO,&AI-LU14-00G-X02,WERR)
+  SETMEL ($M48,1,VERM-ABL-STOER,&M20,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  UND2 (K-KM-RA-ANL-EIN1,KM-RA-TB-AUTOM,$B38)
+  VVZ ($B38,$M50,$M51,$B39)
+  ODR2 ($B39,KM-RA-TB-EIN1,$B40)
+  UND11 ($B40,KM-RA-ABL-STOER,$B41)
+  NICHT ($B41,$B42)
+  BEFAUS (1,$B42,$B41,$WZERO,$WZERO,&AI-LU12-02G-X01,WERR)
+  SETMEL ($M52,1,KM-RA-ABL-STOER,&M28,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

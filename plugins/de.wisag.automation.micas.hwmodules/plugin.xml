@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension-point id="hwtypes"  name="MICAS Hardware Types" schema="schema/hwtypes.exsd"/>
+   <extension-point id="hwblocks" name="MICAS Hardware modules" schema="schema/hwblocks.exsd"/>
+  
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.wisag.de/automation/schema/hwmodules"
+            class="de.wisag.automation.micas.hwmodules.HwmodulesPackage"
+            genModel="model/hwmodules.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,1780 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01311.GPS
+  ;*** Projektname    : Kältesanierung NMR1
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : H. Peters
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 13
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 11
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  2-Sek-Pumpe-1-ST
+  WordV  1-Pumpe-2-sek-R1
+  WordV  2-Sek-Pumpe-2-R1
+  WordV  2-Prim-Pumpe-R1
+  WordV  1-Pumpe-1-sek-R1
+  WordV  1-VL-Temp-hoch
+  WordV  1-Pumpe-2-sek-ST
+  WordV  2-Sek-Pumpe-2-ST
+  FloatK 1-SW-KW-VL-Temp (7.00)
+  WordV  2-Prim-Pumpe-ST
+  WordV  2-RK-Ventil.1-ST
+  WordV  2-RK-Ventil.1-R1
+  WordV  Entriegeln
+  WordV  2-RK-Ventil.2-ST
+  WordV  2-Anl-EIN
+  WordV  Entr.Befehl
+  WordV  Entr.Taster
+  FloatV 2-Ausschaltv_sec
+  WordV  5-Anl-EIN-1
+  WordV  4-Anl-EIN-1
+  WordV  3-Anl-EIN-1
+  WordV  2-Anl-EIN-1
+  WordV  3-Stroemungsscha
+  FloatV 2-Einschaltv_sec
+  WordV  3-Pumpe-ST
+  WordV  3-Pumpe-R1
+  WordV  2-RK-Ventil.7-ST
+  WordV  2-Sek-Pumpe-1-R1
+  WordV  1-Anl-EIN-1
+  FloatV 2-Kuehlwas-AT-se
+  WordK  k1 (1)
+  WordK  2-Anl-R1 (1)
+  WordK  3-Anl-R1 (1)
+  WordK  4-Anl-R1 (1)
+  WordV  2-Stufe-4
+  WordK  5-Anl-R1 (1)
+  WordV  5-Anl-EIN
+  WordV  4-Anl-EIN
+  WordK  1-Anl-R1 (1)
+  WordV  1-Anl-EIN
+  WordV  1-Pumpe-1-sek-ST
+  WordV  3-Anl-EIN
+  WordV  2-RK-Ventil.2-R1
+  WordV  2-RK-Ventil.3-R1
+  WordV  2-RK-Ventil.4-R1
+  WordV  2-RK-Ventil.5-R1
+  WordV  2-RK-Ventil.5-ST
+  WordV  2-RK-Ventil.4-ST
+  WordV  2-RK-Ventil.3-ST
+  WordV  2-RK-Ventil.6-ST
+  WordV  2-RK-Ventil.6-R1
+  WordV  5-Schwimmerschal
+  WordV  5-Pumpe-ST
+  WordV  5-Pumpe-R1
+  FloatV 2-Kuehlwas-ET-se
+  WordV  2-RK-Ventil.7-R1
+  WordV  2-RK-Ventil.8-ST
+  WordV  2-RK-Ventil.8-R1
+  WordK  2-RK-Ven-Gruppe2 (0)
+  WordK  k0 (0)
+  FloatK 2-AT-Grenz-FK-ei (8.00)
+  FloatK 2-SW-WT-Austr.se (5.00)
+  FloatK 2-Diff-AT-RL-Tem (2.00)
+  FloatK 2-Einschaltverzo (5.00)
+  FloatK 2-Ausschaltverzo (5.00)
+  FloatK 4-AT-Grenzwert (20.00)
+  FloatV 2-Kuehlwas-ET-pr
+  FloatV 1-KW-VL-Temp-sek
+  FloatV 2-Kuehlwas-AT-pr
+  FloatV 1-KW-Ventil-RM
+  WordV  Entriegeln_0
+  WordV  3-Anl-EIN-2
+  WordV  Unterspannung
+  WordV  2-Anl-EIN-2
+  WordV  1-Anl-EIN-2
+  WordV  4-Anl-EIN-2
+  WordV  5-Anl-EIN-2
+  WordV  2-RK-Ven-Grup2_e
+  WordV  2-RK-Ven-Grup2_1
+  WordV  1-KW-Ventil-ST
+  FloatV 1-KW-RL-Temp-sek
+  FloatV 1-KW-Ventil-Sign
+  FloatV 1-KW-Verteil-RL
+  WordV  1-VL-Temp-zu-hoc
+  WordV  1-RL-Filter-sek
+  WordV  3-Regelung-ein
+  FloatV 3-KW-Ventil-Sign
+  FloatV 3-KW-Ventil-RM
+  WordV  3-KW-Ventil-ST
+  FloatV 3-KW-VL-Temp
+  FloatK 3-SW-KW-VL-Temp (15.00)
+  FloatV Aussentemperatur
+  FloatK k60 (60.00)
+  WordV  4-AT-ueber-GW
+  WordV  4-Kugelhahn-auff
+  WordV  4-Kugelhahn-ST
+  WordV  4-Kugelhahn-offe
+  FloatK k01 (1.00)
+  WordV  2-Fr-Kueh-zu-ger
+  WordV  2-Glyk.seite-kue
+  WordV  2-Sek.seite-EIN
+  WordV  2-Ventil>95
+  FloatV 2-KW-VT-RL-Temp
+  WordV  2-Stufe-1
+  WordV  2-Ventil-ST
+  WordV  2-Ven-wegschalt
+  WordV  2-Ven-zuschalten
+  WordV  2-Stufe-2
+  WordV  2-Stufe-3
+  WordV  2-Stufe-5
+  WordV  2-Stufe-6
+  WordV  2-Stufe-7
+  WordV  2-Stufe-8
+  FloatV 2-P2-Laufzeit
+  WordV  2-Folgepump-eins
+  FloatV 2-P1-Laufzeit
+  WordV  2-Regel-anfahren
+  WordV  2-P2-LZ>P1-LZ
+  WordV  2-P1-LZ>P2-LZ
+  WordV  2-AT>5-Grad
+  WordV  2-Pumpe-2-fuehrt
+  FloatV 2-Ventil-Signal
+  FloatV 2-Ventil-Stellun
+  WordV  2-Frostgefahr
+  FloatV 2-Anfahr-Stellsi
+  FloatK k0.5 (0.50)
+  FloatK k2 (2.00)
+  FloatV 2-min-VL-Te-prim
+  FloatV 2-SG-Kuehlw-Regl
+  WordV  2-Ventil<60
+  FloatV 2-ET-T-Min-Regl
+  WordV  2-Frostwaechter
+  FloatK $M0 (4.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  FloatK $M2 (4.00)
+  FloatK $M3 (0.00)
+  WordV  $B2
+  FloatK $M4 (4.00)
+  FloatK $M5 (0.00)
+  WordV  $B3
+  FloatK $M6 (4.00)
+  FloatK $M7 (0.00)
+  WordV  $B4
+  FloatK $M8 (4.00)
+  FloatK $M9 (0.00)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  FloatK $M10 (4.00)
+  FloatK $M11 (0.00)
+  WordV  $B11
+  WordV  $B12
+  IPAMB &M12 (67,2)
+  WordV  $HB2
+  WordV  $WSCRATCH
+  IPAMB &M13 (67,3)
+  IPAMB &M14 (67,6)
+  IPAMB &M15 (67,7)
+  IPAMB &M16 (141,3)
+  IPAMB &M17 (141,7)
+  IPAMB &M18 (142,3)
+  IPAMB &M19 (141,15)
+  IPAMB &M20 (142,7)
+  IPAMB &M21 (45,15)
+  IPAMB &M22 (35,6)
+  IPAMB &M23 (35,7)
+  IPAMB &M24 (85,15)
+  IPAMB &M25 (141,11)
+  IPAMB &M26 (0,11)
+  IPAMB &M27 (0,14)
+  FloatK $M28 (10.00)
+  IPAMB &M29 (96,2)
+  IPAMB &M30 (96,3)
+  IPAMB &M31 (96,6)
+  IPAMB &M32 (96,7)
+  IPAMB &M33 (95,11)
+  IPAMB &M34 (85,11)
+  IPAMB &M35 (85,2)
+  IPAMB &M36 (85,3)
+  IPAMB &M37 (85,6)
+  IPAMB &M38 (85,7)
+  IPAMB &M39 (86,2)
+  IPAMB &M40 (86,3)
+  IPAMB &M41 (86,6)
+  IPAMB &M42 (86,7)
+  IPAMB &M43 (86,10)
+  IPAMB &M44 (86,11)
+  IPAMB &M45 (86,14)
+  IPAMB &M46 (86,15)
+  IPAMB &M47 (95,2)
+  IPAMB &M48 (95,3)
+  IPAMB &M49 (95,6)
+  IPAMB &M50 (95,7)
+  IPAMB &M51 (95,15)
+  IPAMB &M52 (96,14)
+  IPAMB &M53 (19,6)
+  IPAMB &M54 (19,7)
+  IPAMB &M55 (96,15)
+  IPAMB &M56 (0,0)
+  IPAMB &M60 (51,11)
+  IPAMW &M61 (97)
+  IPAMW &M62 (98)
+  IPAMW &M63 (87)
+  IPAMW &M64 (140)
+  IPAMW &M65 (75)
+  IPAMW &M66 (89)
+  IPAMW &M67 (138)
+  IPAMW &M68 (137)
+  IPAMW &M69 (99)
+  IPAMW &M70 (136)
+  IPAAW &M72 (80)
+  IPAMW &M73 (27)
+  IPAMW &M74 (88)
+  IPAAW &M75 (144)
+  FloatV $F1
+  IPAAW &M76 (143)
+  FloatV $F2
+  FloatK $M77 (150.00)
+  FloatK $M78 (-50.00)
+  FloatV $F3
+  FloatK $M79 (150.00)
+  FloatK $M80 (-50.00)
+  FloatV $F4
+  WordV  $HB0
+  FloatK $M81 (10.00)
+  WordV  $B13
+  FloatK $M82 (10.00)
+  WordV  $B14
+  WordK  $M83 (1)
+  WordK  $M85 (1)
+  IPAAW &M87 (147)
+  FloatV $F5
+  IPAAW &M88 (158)
+  FloatV $F6
+  FloatK $M89 (150.00)
+  FloatK $M90 (-50.00)
+  FloatV $F7
+  FloatK $M91 (150.00)
+  FloatK $M92 (-50.00)
+  FloatV $F8
+  FloatK $M93 (10.00)
+  WordV  $B15
+  FloatK $M94 (10.00)
+  WordV  $B16
+  WordK  $M95 (1)
+  WordK  $M97 (1)
+  IPAAW &M99 (145)
+  FloatV $F9
+  IPAAW &M100 (146)
+  FloatV $F10
+  FloatK $M101 (150.00)
+  FloatK $M102 (-50.00)
+  FloatV $F11
+  FloatK $M103 (150.00)
+  FloatK $M104 (-50.00)
+  FloatV $F12
+  FloatK $M105 (10.00)
+  WordV  $B17
+  FloatK $M106 (10.00)
+  WordV  $B18
+  WordK  $M107 (1)
+  WordK  $M109 (1)
+  IPAAW &M111 (160)
+  FloatV $F13
+  FloatK $M112 (150.00)
+  FloatK $M113 (-50.00)
+  FloatV $F14
+  FloatK $M114 (10.00)
+  WordV  $B19
+  WordK  $M115 (1)
+  FloatK $M117 (20.00)
+  FloatK $M118 (0.00)
+  WordV  $B20
+  FloatK $M119 (0.00)
+  FloatK $M120 (5.00)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B30
+  FloatK $M121 (20.00)
+  FloatK $M122 (0.00)
+  WordV  $B25
+  FloatK $M123 (0.00)
+  FloatK $M124 (5.00)
+  WordV  $B26
+  WordV  $B27
+  WordV  $B28
+  WordV  $B29
+  WordV  $B31
+  FloatK $M125 (20.00)
+  FloatK $M126 (0.00)
+  WordV  $B32
+  FloatK $M127 (0.00)
+  FloatK $M128 (5.00)
+  WordV  $B33
+  WordV  $B34
+  WordV  $B35
+  WordV  $B36
+  WordV  $B42
+  FloatK $M129 (20.00)
+  FloatK $M130 (0.00)
+  WordV  $B37
+  FloatK $M131 (0.00)
+  FloatK $M132 (5.00)
+  WordV  $B38
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B43
+  FloatK $M133 (20.00)
+  FloatK $M134 (0.00)
+  WordV  $B44
+  FloatK $M135 (0.00)
+  FloatK $M136 (5.00)
+  WordV  $B45
+  WordV  $B46
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M137 (67,1)
+  IPAMB &M138 (67,5)
+  FloatV $F15
+  FloatV $F16
+  FloatK $M139 (10.00)
+  WordV  $B50
+  WordV  $B51
+  WordV  $HB1
+  FloatV $F17
+  FloatK $M140 (300.00)
+  WordV  $B52
+  WordK  $M141 (1)
+  IPAMB &M142 (141,0)
+  FloatV $F18
+  FloatV $F19
+  FloatK $M143 (1.00)
+  WordV  $B53
+  WordV  $B54
+  FloatK $M144 (180.00)
+  FloatK $M145 (0.00)
+  WordV  $B55
+  WordV  $HB3
+  FloatK $M146 (0.00)
+  FloatK $M147 (1.00)
+  WordK  $M148 (1)
+  IPAMB &M149 (141,4)
+  WordV  $B56
+  WordV  $B57
+  WordV  $B58
+  WordV  $B59
+  WordK  $M150 (1)
+  IPAMB &M151 (141,14)
+  FloatK $M152 (1.00)
+  WordV  $B60
+  FloatK $M153 (1800.00)
+  FloatK $M154 (900.00)
+  WordV  $B61
+  FloatV $F20
+  FloatK $M155 (1.00)
+  WordV  $B62
+  FloatK $M156 (300.00)
+  FloatK $M157 (600.00)
+  WordV  $B63
+  FloatV $F21
+  FloatK $M158 (0.00)
+  WordV  $B64
+  WordV  $B65
+  FloatK $M159 (15.00)
+  FloatK $M160 (5.00)
+  WordV  $B66
+  WordV  $B67
+  FloatV $F22
+  FloatK $M161 (0.30)
+  WordV  $B68
+  WordV  $B69
+  FloatK $M162 (3600.00)
+  FloatK $M163 (1.00)
+  WordV  $B70
+  FloatK $M164 (5.00)
+  WordV  $B71
+  WordV  $B72
+  WordV  $B73
+  WordV  $B74
+  FloatK $M165 (600.00)
+  FloatK $M166 (1.00)
+  WordV  $B75
+  FloatV $F23
+  FloatK $M167 (4.00)
+  FloatK $M168 (3.00)
+  WordV  $B76
+  FloatV $F24
+  FloatK $M169 (2.00)
+  FloatK $M170 (1.00)
+  WordV  $B77
+  WordV  $B78
+  FloatK $M171 (120.00)
+  FloatK $M172 (0.00)
+  WordV  $B79
+  WordV  $B80
+  FloatK $M173 (60.00)
+  FloatK $M174 (0.00)
+  WordV  $B81
+  WordV  $B82
+  WordV  $B83
+  IPAMB &M175 (85,9)
+  WordV  $B84
+  WordV  $B85
+  WordV  $B86
+  WordV  $B87
+  WordV  $B88
+  WordV  $B89
+  WordV  $B90
+  WordV  $B91
+  IPAMB &M176 (96,1)
+  IPAMB &M177 (96,5)
+  WordV  $B92
+  WordV  $B93
+  WordV  $B94
+  FloatK $M178 (172800.00)
+  WordV  $B95
+  FloatK $M179 (5.00)
+  WordV  $B96
+  FloatK $M180 (172800.00)
+  WordV  $B97
+  FloatK $M181 (5.00)
+  WordV  $B98
+  WordV  $B99
+  WordV  $B100
+  WordV  $B101
+  FloatK $M182 (15.00)
+  FloatV $F25
+  WordV  $B102
+  FloatK $M183 (0.00)
+  WordV  $B103
+  WordV  $B104
+  FloatK $M184 (0.00)
+  WordV  $B105
+  WordV  $B106
+  WordV  $B107
+  WordV  $B108
+  WordV  $B109
+  WordV  $B110
+  WordV  $B111
+  WordV  $B112
+  WordV  $B113
+  WordV  $B114
+  WordV  $B115
+  WordV  $B116
+  WordV  $B117
+  WordV  $B118
+  WordV  $B119
+  WordV  $B120
+  WordV  $B121
+  WordV  $B122
+  WordV  $B123
+  WordV  $B124
+  WordV  $B125
+  WordV  $B126
+  WordV  $B127
+  WordV  $B128
+  WordV  $B129
+  WordV  $B130
+  WordV  $B131
+  IPAMB &M185 (85,1)
+  IPAMB &M186 (85,5)
+  IPAMB &M187 (86,1)
+  WordV  $B132
+  WordV  $B133
+  WordV  $B134
+  WordV  $B135
+  WordV  $B136
+  WordV  $B137
+  WordV  $B138
+  WordV  $B139
+  WordV  $B140
+  WordV  $B141
+  WordV  $B142
+  WordV  $B143
+  IPAMB &M188 (86,5)
+  IPAMB &M189 (86,9)
+  IPAMB &M190 (86,13)
+  WordV  $B144
+  WordV  $B145
+  WordV  $B146
+  WordV  $B147
+  WordV  $B148
+  WordV  $B149
+  WordV  $B150
+  WordV  $B151
+  IPAMB &M191 (95,1)
+  IPAMB &M192 (95,5)
+  FloatK $M193 (5.00)
+  FloatK $M194 (1.00)
+  WordV  $B152
+  FloatK $M195 (30.00)
+  FloatK $M196 (30.00)
+  FloatK $M197 (5.00)
+  FloatK $M198 (5.00)
+  FloatK $M199 (8.00)
+  FloatK $M200 (100.00)
+  FloatV $F26
+  FloatK $M201 (5.00)
+  WordV  $B153
+  FloatK $M202 (120.00)
+  FloatK $M203 (0.00)
+  WordV  $B154
+  WordV  $B155
+  WordV  $B156
+  FloatK $M204 (0.00)
+  FloatK $M205 (0.00)
+  FloatV $FSCRATCH
+  WordK  $M206 (1)
+  IPAAW &M207 (82)
+  FloatK $M208 (95.00)
+  FloatK $M209 (60.00)
+  IPAAW &M210 (162)
+  WordV  $HB4
+  FloatK $M211 (0.00)
+  WordK  $M212 (2)
+  FloatK $M213 (1.00)
+  FloatK $M214 (-10.00)
+  FloatK $M215 (60.00)
+  FloatK $M216 (0.00)
+  FloatK $M217 (3.00)
+  FloatK $M218 (10.00)
+  FloatK $M219 (0.10)
+  FloatK $M220 (0.00)
+  FloatK $M221 (100.00)
+  FloatV $F27
+  FloatV $F28
+  FloatK $M222 (10.00)
+  WordV  $B157
+  WordV  $B158
+  FloatV $F29
+  FloatK $M223 (300.00)
+  WordV  $B159
+  WordK  $M224 (1)
+  IPAMB &M225 (141,10)
+  WordV  $B160
+  FloatK $M226 (30.00)
+  FloatK $M227 (0.00)
+  WordV  $B161
+  WordV  $B162
+  WordV  $B163
+  WordV  $B164
+  WordV  $B165
+  WordV  $B166
+  WordK  $M228 (1)
+  IPAMB &M229 (141,8)
+  IPAMB &M230 (35,5)
+  FloatV $F30
+  FloatV $F31
+  FloatK $M231 (10.00)
+  WordV  $B167
+  WordV  $B168
+  FloatV $F32
+  FloatK $M232 (300.00)
+  WordV  $B169
+  WordK  $M233 (1)
+  IPAMB &M234 (142,4)
+  FloatK $M235 (0.00)
+  WordV  $B170
+  WordV  $B171
+  WordV  $B172
+  WordV  $B173
+  WordK  $M236 (1)
+  IPAMB &M237 (142,0)
+  FloatK $M238 (2.00)
+  WordV  $B174
+  FloatK $M239 (1800.00)
+  FloatK $M240 (1800.00)
+  IPAMB &M241 (85,13)
+  WordV  $B175
+  FloatK $M242 (300.00)
+  FloatK $M243 (0.00)
+  WordV  $B176
+  WordV  $B177
+  FloatK $M244 (300.00)
+  FloatK $M245 (0.00)
+  WordV  $B178
+  WordV  $B179
+  WordK  $M246 (1)
+  IPAMB &M247 (141,12)
+  WordV  $B180
+  IPAMB &M248 (19,5)
+  WordV  $B181
+  WordV  $B182
+  WordV  $B183
+  WordV  $B184
+  WordK  $M249 (1)
+  IPAMB &M250 (141,2)
+  WordV  $B185
+  WordV  $B190
+  FloatK $M251 (10.00)
+  WordV  $B186
+  WordV  $B187
+  WordV  $B188
+  WordV  $B191
+  WordV  $B189
+  IPAMB &M252 (141,1)
+  WordV  $B192
+  WordV  $B193
+  WordV  $B194
+  WordV  $B195
+  WordV  $B196
+  WordK  $M253 (1)
+  IPAMB &M254 (141,6)
+  WordV  $B197
+  WordV  $B201
+  WordV  $B198
+  WordV  $B199
+  WordV  $B202
+  WordV  $B200
+  IPAMB &M255 (141,5)
+  WordV  $B203
+  WordV  $B207
+  WordV  $B204
+  WordV  $B205
+  WordV  $B208
+  WordV  $B206
+  IPAMB &M256 (141,9)
+  WordV  $B209
+  WordV  $B210
+  WordV  $B211
+  WordV  $B212
+  WordV  $B213
+  WordK  $M257 (1)
+  IPAMB &M258 (142,2)
+  WordV  $B214
+  WordV  $B218
+  WordV  $B215
+  WordV  $B216
+  WordV  $B219
+  WordV  $B217
+  IPAMB &M259 (142,1)
+  WordV  $B220
+  WordV  $B224
+  WordV  $B221
+  WordV  $B222
+  WordV  $B225
+  WordV  $B223
+  IPAMB &M260 (141,13)
+  WordV  $B226
+  WordV  $B227
+  WordV  $B228
+  WordV  $B229
+  WordV  $B230
+  WordK  $M261 (1)
+  IPAMB &M262 (142,6)
+  WordV  $B231
+  WordV  $B235
+  WordV  $B232
+  WordV  $B233
+  WordV  $B236
+  WordV  $B234
+  IPAMB &M263 (142,5)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.40
+  ;FMICON  : 4.22
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AF X 0005
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Kältenetz-
+  ;         sanierung NMR 1
+  ;         in 2007
+  ;Variablen-Zuordnung:
+  ;1 = Kälteübergabe
+  ;2 = Freie Kühlung
+  ;3 = KW-Abgang Gradienten
+  ;4 = KW-Abgang Bürokühl.
+  ;5 = Hebeanlage (Sumpf)
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (1-Anl-R1,1-Anl-EIN)
+  BTRA (2-Anl-R1,2-Anl-EIN)
+  BTRA (3-Anl-R1,3-Anl-EIN)
+  BTRA (4-Anl-R1,4-Anl-EIN)
+  BTRA (5-Anl-R1,5-Anl-EIN)
+  BTRA (2-RK-Ven-Gruppe2,2-RK-Ven-Grup2_e)
+  ENDE 
+  TASK (2,cycl,3500)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  VVZ (1-Anl-EIN,$M0,$M1,$B1)
+  VVZ (2-Anl-EIN,$M2,$M3,$B2)
+  VVZ (3-Anl-EIN,$M4,$M5,$B3)
+  VVZ (4-Anl-EIN,$M6,$M7,$B4)
+  VVZ (5-Anl-EIN,$M8,$M9,$B5)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B6,1-Anl-EIN-1)
+  NICHT ($B1,$B6)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B2,$B7,2-Anl-EIN-1)
+  NICHT ($B2,$B7)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B3,$B8,3-Anl-EIN-1)
+  NICHT ($B3,$B8)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B4,$B9,4-Anl-EIN-1)
+  NICHT ($B4,$B9)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B5,$B10,5-Anl-EIN-1)
+  NICHT ($B5,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (2-RK-Ven-Grup2_e,$M10,$M11,$B11)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B11,$B12,2-RK-Ven-Grup2_1)
+  NICHT ($B11,$B12)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M12,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1-Pumpe-1-sek-ST)
+  MELEIN (&M13,1,1-Pumpe-1-sek-R1,$WSCRATCH)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,1-Pumpe-2-sek-ST)
+  MELEIN (&M15,1,1-Pumpe-2-sek-R1,$WSCRATCH)
+  MELEIN (&M16,1,1-Anl-R1,$WSCRATCH)
+  MELEIN (&M17,1,2-Anl-R1,$WSCRATCH)
+  MELEIN (&M18,1,3-Anl-R1,$WSCRATCH)
+  MELEIN (&M19,1,4-Anl-R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M20,1,5-Anl-R1,$WSCRATCH)
+  MELEIN (&M21,1,3-Stroemungsscha,$WSCRATCH)
+  MELEIN (&M22,1,3-Pumpe-ST,$WSCRATCH)
+  MELEIN (&M23,1,3-Pumpe-R1,$WSCRATCH)
+  MELEIN (&M24,1,4-Kugelhahn-offe,$WSCRATCH)
+  MELEIN (&M25,1,2-RK-Ven-Gruppe2,$WSCRATCH)
+  MELEIN (&M26,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M27,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln_0)
+  MOKY (Entriegeln_0,$M28,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M29,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-Sek-Pumpe-1-ST)
+  MELEIN (&M30,1,2-Sek-Pumpe-1-R1,$WSCRATCH)
+  MELEIN (&M31,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-Sek-Pumpe-2-ST)
+  MELEIN (&M32,1,2-Sek-Pumpe-2-R1,$WSCRATCH)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-Prim-Pumpe-ST)
+  MELEIN (&M34,1,2-Prim-Pumpe-R1,$WSCRATCH)
+  MELEIN (&M35,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.1-ST)
+  MELEIN (&M36,1,2-RK-Ventil.1-R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M37,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.2-ST)
+  MELEIN (&M38,1,2-RK-Ventil.2-R1,$WSCRATCH)
+  MELEIN (&M39,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.3-ST)
+  MELEIN (&M40,1,2-RK-Ventil.3-R1,$WSCRATCH)
+  MELEIN (&M41,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.4-ST)
+  MELEIN (&M42,1,2-RK-Ventil.4-R1,$WSCRATCH)
+  MELEIN (&M43,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.5-ST)
+  MELEIN (&M44,1,2-RK-Ventil.5-R1,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M45,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.6-ST)
+  MELEIN (&M46,1,2-RK-Ventil.6-R1,$WSCRATCH)
+  MELEIN (&M47,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.7-ST)
+  MELEIN (&M48,1,2-RK-Ventil.7-R1,$WSCRATCH)
+  MELEIN (&M49,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-RK-Ventil.8-ST)
+  MELEIN (&M50,1,2-RK-Ventil.8-R1,$WSCRATCH)
+  MELEIN (&M51,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,2-Frostwaechter)
+  MELEIN (&M52,1,1-RL-Filter-sek,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M53,1,5-Pumpe-ST,$WSCRATCH)
+  MELEIN (&M54,1,5-Pumpe-R1,$WSCRATCH)
+  MELEIN (&M55,1,5-Schwimmerschal,$WSCRATCH)
+  MELEIN (&M56,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M56,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M56,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M56,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M60,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Unterspannung)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ANEIN (&M61,1-KW-VL-Temp-sek,$WSCRATCH)
+  ANEIN (&M62,1-KW-RL-Temp-sek,$WSCRATCH)
+  ANEIN (&M63,1-KW-Ventil-RM,$WSCRATCH)
+  ANEIN (&M64,1-KW-Verteil-RL,$WSCRATCH)
+  ANEIN (&M65,3-KW-VL-Temp,$WSCRATCH)
+  ANEIN (&M66,3-KW-Ventil-RM,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ANEIN (&M67,2-Kuehlwas-AT-pr,$WSCRATCH)
+  ANEIN (&M68,2-Kuehlwas-ET-pr,$WSCRATCH)
+  ANEIN (&M69,2-Kuehlwas-ET-se,$WSCRATCH)
+  ANEIN (&M70,2-Kuehlwas-AT-se,$WSCRATCH)
+  ANEIN (&M64,2-KW-VT-RL-Temp,$WSCRATCH)
+  ANEIN (&M72,3-SW-KW-VL-Temp,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ANEIN (&M73,Aussentemperatur,$WSCRATCH)
+  ANEIN (&M74,2-Ventil-Stellun,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ANEIN (&M75,$F1,$WSCRATCH)
+  ANEIN (&M76,$F2,$WSCRATCH)
+  LIMIT ($F1,$M77,$M78,$F3)
+  LIMIT ($F2,$M79,$M80,$F4)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M81,$B13)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M82,$B14)
+  AWT ($B13,$F3,1-SW-KW-VL-Temp,1-SW-KW-VL-Temp)
+  AWT ($B14,$F4,2-SW-WT-Austr.se,2-SW-WT-Austr.se)
+  ANAUS (1-SW-KW-VL-Temp,$M83,&M75,$WSCRATCH)
+  ANAUS (2-SW-WT-Austr.se,$M85,&M76,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&M87,$F5,$WSCRATCH)
+  ANEIN (&M88,$F6,$WSCRATCH)
+  LIMIT ($F5,$M89,$M90,$F7)
+  LIMIT ($F6,$M91,$M92,$F8)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M93,$B15)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M94,$B16)
+  AWT ($B15,$F7,2-AT-Grenz-FK-ei,2-AT-Grenz-FK-ei)
+  AWT ($B16,$F8,2-Diff-AT-RL-Tem,2-Diff-AT-RL-Tem)
+  ANAUS (2-AT-Grenz-FK-ei,$M95,&M87,$WSCRATCH)
+  ANAUS (2-Diff-AT-RL-Tem,$M97,&M88,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M99,$F9,$WSCRATCH)
+  ANEIN (&M100,$F10,$WSCRATCH)
+  LIMIT ($F9,$M101,$M102,$F11)
+  LIMIT ($F10,$M103,$M104,$F12)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M105,$B17)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M106,$B18)
+  AWT ($B17,$F11,2-Einschaltverzo,2-Einschaltverzo)
+  AWT ($B18,$F12,2-Ausschaltverzo,2-Ausschaltverzo)
+  ANAUS (2-Einschaltverzo,$M107,&M99,$WSCRATCH)
+  ANAUS (2-Ausschaltverzo,$M109,&M100,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M111,$F13,$WSCRATCH)
+  LIMIT ($F13,$M112,$M113,$F14)
+  NICHT (k0,$HB0)
+  MOKY ($HB0,$M114,$B19)
+  AWT ($B19,$F14,4-AT-Grenzwert,4-AT-Grenzwert)
+  ANAUS (4-AT-Grenzwert,$M115,&M111,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M117,$M118,$B20)
+  VVZ (1-Anl-R1,$M119,$M120,$B21)
+  UND11 ($B21,$B20,$B22)
+  RSS ($B22,1-Anl-R1,$B23,$WSCRATCH)
+  UND2 ($B23,$B20,$B24)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B24,$B30,1-Anl-EIN-2)
+  NICHT ($B24,$B30)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M121,$M122,$B25)
+  VVZ (2-Anl-R1,$M123,$M124,$B26)
+  UND11 ($B26,$B25,$B27)
+  RSS ($B27,2-Anl-R1,$B28,$WSCRATCH)
+  UND2 ($B28,$B25,$B29)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B29,$B31,2-Anl-EIN-2)
+  NICHT ($B29,$B31)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M125,$M126,$B32)
+  VVZ (3-Anl-R1,$M127,$M128,$B33)
+  UND11 ($B33,$B32,$B34)
+  RSS ($B34,3-Anl-R1,$B35,$WSCRATCH)
+  UND2 ($B35,$B32,$B36)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B36,$B42,3-Anl-EIN-2)
+  NICHT ($B36,$B42)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M129,$M130,$B37)
+  VVZ (4-Anl-R1,$M131,$M132,$B38)
+  UND11 ($B38,$B37,$B39)
+  RSS ($B39,4-Anl-R1,$B40,$WSCRATCH)
+  UND2 ($B40,$B37,$B41)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B41,$B43,4-Anl-EIN-2)
+  NICHT ($B41,$B43)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  NICHT (Unterspannung,$HB0)
+  VVZ ($HB0,$M133,$M134,$B44)
+  VVZ (5-Anl-R1,$M135,$M136,$B45)
+  UND11 ($B45,$B44,$B46)
+  RSS ($B46,5-Anl-R1,$B47,$WSCRATCH)
+  UND2 ($B47,$B44,$B48)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B48,$B49,5-Anl-EIN-2)
+  NICHT ($B48,$B49)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  NICHT (1-Anl-R1,$HB0)
+  BEFAUS (1,$HB0,1-Anl-R1,$WZERO,$WZERO,&M137,$WSCRATCH)
+  NICHT (1-Anl-R1,$HB0)
+  BEFAUS (1,$HB0,1-Anl-R1,$WZERO,$WZERO,&M138,$WSCRATCH)
+  ;die Doppelpumpen ver-
+  ;fügen über die IF-Module
+  ;mit kompletten Pumpen-
+  ;Management
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  SUB2 (1-KW-Ventil-Sign,1-KW-Ventil-RM,$F15)
+  ABSWER ($F15,$F16)
+  VGLOH ($F16,$M139,$B50)
+  UND11 ($B50,Entriegeln,$B51)
+  NICHT ($B51,$HB1)
+  UHR (k1,$HB1,$F17)
+  VGLOH ($F17,$M140,$B52)
+  RSS ($B52,Entriegeln,1-KW-Ventil-ST,$WSCRATCH)
+  SETMEL ($M141,1,1-KW-Ventil-ST,&M142,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  ADD2 (1-SW-KW-VL-Temp,k01,$F18)
+  ADD2 (1-SW-KW-VL-Temp,k2,$F19)
+  VGLEH (1-KW-VL-Temp-sek,$F19,$M143,$B53)
+  UND2 ($B53,k1,$B54)
+  VVZ ($B54,$M144,$M145,$B55)
+  RSS ($B55,Entriegeln,1-VL-Temp-zu-hoc,$WSCRATCH)
+  NICHT (1-Anl-R1,$HB3)
+  REGLER (3,k1,$HB3,$M146,1-KW-Ventil-Sign,$WSCRATCH)
+  VGLEH (1-KW-VL-Temp-sek,$F18,$M147,1-VL-Temp-hoch)
+  SETMEL ($M148,1,1-VL-Temp-zu-hoc,&M149,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ODRMN (6,1-Pumpe-1-sek-ST,1-Pumpe-2-sek-ST,
+         1-VL-Temp-zu-hoc,1-KW-Ventil-ST,1-RL-Filter-sek,k0,
+         0,$B56,$B57)
+  UND2 ($B57,Entriegeln,$B58)
+  RSS ($B56,$B58,$B59,$WSCRATCH)
+  SETMEL ($M150,1,$B59,&M151,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MULT (2-Ausschaltverzo,k60,2-Ausschaltv_sec)
+  MULT (2-Einschaltverzo,k60,2-Einschaltv_sec)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  VGLEH (2-AT-Grenz-FK-ei,Aussentemperatur,$M152,$B60)
+  VVZ ($B60,$M153,$M154,$B61)
+  ADD2 (Aussentemperatur,2-Diff-AT-RL-Tem,$F20)
+  VGLEH (2-KW-VT-RL-Temp,$F20,$M155,$B62)
+  VVZ ($B62,$M156,$M157,$B63)
+  ;Fr.Kühlung ein, wenn:
+  ;-Anl.Kälteübergabe ein +
+  ;-Anl.Fr.Kühlung ein +
+  ;-AT-Bedingungen erfüllt+
+  ;-Fr.Kühlleist.ausreich.
+  ;ist: dieses wird in
+  ;separtem Progr.teil wied
+  ;erholt überprüft
+  ; 
+  UNDMN (4,2-Anl-R1,1-Anl-R1,$B61,$B63,1,2-Fr-Kueh-zu-ger,
+         2-Glyk.seite-kue,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ADD2 (2-Kuehlwas-AT-pr,k2,$F21)
+  VGLEH (2-KW-VT-RL-Temp,$F21,$M158,$B64)
+  UND2 (2-Glyk.seite-kue,$B64,$B65)
+  VVZ ($B65,$M159,$M160,$B66)
+  NICHT (2-Glyk.seite-kue,$HB1)
+  RSS ($B66,$HB1,$B67,$WSCRATCH)
+  UNDMN (4,2-Glyk.seite-kue,k1,k1,$B67,0,2-Sek.seite-EIN,
+         $WSCRATCH)
+  ;Wenn die Glykolseite aus
+  ;reichend kalt ist, wird
+  ;die Fr. Kühlung in das
+  ;Kältenetz zugeschaltet.
+  ;Glykolseitenuntersuch-
+  ;ungen werden stündlich
+  ;wiederholt. Ein manuell.
+  ;Start eines neuen Ver-
+  ;uches kann auch mit dem
+  ;Anl.Bef. eingeleitet wer
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  SUB2 (2-Kuehlwas-ET-se,k0.5,$F22)
+  VGLEH (2-Kuehlwas-AT-se,$F22,$M161,$B68)
+  UNDMN (3,$B68,2-Stufe-8,2-Sek.seite-EIN,0,$B69,$WSCRATCH)
+  VVZ (2-Fr-Kueh-zu-ger,$M162,$M163,$B70)
+  MOKY (2-Anl-R1,$M164,$B71)
+  ODR2 ($B70,$B71,$B72)
+  UND11 (2-Stufe-8,2-Sek.seite-EIN,$B73)
+  ODR2 ($B69,$B73,$B74)
+  VVZ ($B74,$M165,$M166,$B75)
+  RSS ($B75,$B72,2-Fr-Kueh-zu-ger,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  SUB2 (1-KW-RL-Temp-sek,1-KW-VL-Temp-sek,$F23)
+  VGLEH ($F23,$M167,$M168,$B76)
+  SUB2 (2-Kuehlwas-ET-se,2-Kuehlwas-AT-se,$F24)
+  VGLEH ($F24,$M169,$M170,$B77)
+  UNDMN (3,$B76,2-Sek.seite-EIN,$B77,0,$B78,$WSCRATCH)
+  VVZ ($B78,$M171,$M172,$B79)
+  UNDMN (0,2,$B77,$B76,$B80,$WSCRATCH)
+  VVZ ($B80,$M173,$M174,$B81)
+  ODRMN (1,$B81,1,2-Sek.seite-EIN,$B82,$WSCRATCH)
+  ;sek. Kühlwasser-Folge-
+  ;pumpe einschalten, wenn
+  ;Temp.spreizung am Kälte-
+  ;übergabe-WT sek. und
+  ;Kühlwasser-WT sek.
+  ;steigen.
+  ; 
+  RSS ($B79,$B82,2-Folgepump-eins,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  UND11 (2-Glyk.seite-kue,2-Prim-Pumpe-ST,$B83)
+  NICHT ($B83,$HB0)
+  BEFAUS (1,$HB0,$B83,$WZERO,$WZERO,&M175,$WSCRATCH)
+  ;Primär-
+  ;Pumpe
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  UND11 (2-Sek.seite-EIN,2-Pumpe-2-fuehrt,$B84)
+  UND2 (2-Sek.seite-EIN,2-Pumpe-2-fuehrt,$B85)
+  UND2 ($B92,2-Pumpe-2-fuehrt,$B86)
+  UND11 ($B92,2-Pumpe-2-fuehrt,$B87)
+  ODR2 ($B84,$B86,$B88)
+  ODR2 ($B85,$B87,$B89)
+  UND11 ($B88,2-Sek-Pumpe-1-ST,$B90)
+  UND11 ($B89,2-Sek-Pumpe-2-ST,$B91)
+  NICHT ($B90,$HB0)
+  BEFAUS (1,$HB0,$B90,$WZERO,$WZERO,&M176,$WSCRATCH)
+  NICHT ($B91,$HB0)
+  BEFAUS (1,$HB0,$B91,$WZERO,$WZERO,&M177,$WSCRATCH)
+  ;sek. Kühl-
+  ;was.pu.1
+  ; 
+  ;sek. Kühl-
+  ;was.pu.2
+  ; 
+  ODR2 (2-Folgepump-eins,2-Frostgefahr,$B92)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  UND11 (2-Sek-Pumpe-1-R1,2-Sek-Pumpe-2-R1,$B93)
+  ODR2 (2-P1-LZ>P2-LZ,2-P2-LZ>P1-LZ,$B94)
+  UHR ($B93,$B94,2-P1-Laufzeit)
+  VGLOH (2-P1-Laufzeit,$M178,$B95)
+  MOKY ($B95,$M179,2-P1-LZ>P2-LZ)
+  UND11 (2-Sek-Pumpe-2-R1,2-Sek-Pumpe-1-R1,$B96)
+  UHR ($B96,$B94,2-P2-Laufzeit)
+  VGLOH (2-P2-Laufzeit,$M180,$B97)
+  MOKY ($B97,$M181,2-P2-LZ>P1-LZ)
+  ;Es wird je Pumpe die
+  ;Zeit gezählt, zu der sie
+  ;alleine läuft (Differenz
+  ;zeit). Wenn diese 48h
+  ;beträgt, wird die
+  ;Führung gewechselt.
+  ;Diese Differenzzeitzähl.
+  ;ist notwendig,wenn beide
+  ;Pumpen in Betrieb sein
+  ;können.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ODR2 (2-Sek-Pumpe-2-ST,2-P2-LZ>P1-LZ,$B98)
+  UND11 ($B98,2-Sek-Pumpe-1-ST,$B99)
+  ODR2 (2-Sek-Pumpe-1-ST,2-P1-LZ>P2-LZ,$B100)
+  UND11 ($B100,2-Sek-Pumpe-2-ST,$B101)
+  RSS ($B101,$B99,2-Pumpe-2-fuehrt,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  AWT (2-Regel-anfahren,2-Einschaltv_sec,$M182,$F25)
+  UND11 (2-Ventil>95,$B103,$B102)
+  VVZ ($B102,$F25,$M183,$B103)
+  UND2 ($B103,2-Prim-Pumpe-R1,2-Ven-zuschalten)
+  UND11 (2-Ventil<60,$B105,$B104)
+  VVZ ($B104,2-Ausschaltv_sec,$M184,$B105)
+  ODRMN (1,$B105,1,2-Glyk.seite-kue,2-Ven-wegschalt,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  RSS (2-Ven-zuschalten,$B106,2-Stufe-1,$WSCRATCH)
+  RSS ($B107,$B108,2-Stufe-2,$WSCRATCH)
+  RSS ($B109,$B110,2-Stufe-3,$WSCRATCH)
+  RSS ($B111,$B112,2-Stufe-4,$WSCRATCH)
+  UND11 (2-Ven-wegschalt,2-Stufe-2,$B106)
+  UND2 (2-Ven-zuschalten,2-Stufe-1,$B107)
+  UND11 (2-Ven-wegschalt,2-Stufe-3,$B108)
+  UND2 (2-Ven-zuschalten,2-Stufe-2,$B109)
+  UND11 (2-Ven-wegschalt,2-Stufe-4,$B110)
+  UND2 (2-Ven-zuschalten,2-Stufe-3,$B111)
+  UND11 (2-Ven-wegschalt,2-Stufe-5,$B112)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  RSS ($B113,$B114,2-Stufe-5,$WSCRATCH)
+  RSS ($B115,$B116,2-Stufe-6,$WSCRATCH)
+  RSS ($B117,$B118,2-Stufe-7,$WSCRATCH)
+  RSS ($B119,2-Ven-wegschalt,2-Stufe-8,$WSCRATCH)
+  UND2 (2-Ven-zuschalten,2-Stufe-4,$B113)
+  UND11 (2-Ven-wegschalt,2-Stufe-6,$B114)
+  UND2 (2-Ven-zuschalten,2-Stufe-5,$B115)
+  UND11 (2-Ven-wegschalt,2-Stufe-7,$B116)
+  UND2 (2-Ven-zuschalten,2-Stufe-6,$B117)
+  UND11 (2-Ven-wegschalt,2-Stufe-8,$B118)
+  UND2 (2-Ven-zuschalten,2-Stufe-7,$B119)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  UND11 (2-Stufe-1,2-RK-Ven-Gruppe2,$B120)
+  UND11 (2-Stufe-2,2-RK-Ven-Gruppe2,$B121)
+  UND11 (2-Stufe-3,2-RK-Ven-Gruppe2,$B122)
+  UND2 (2-Stufe-5,2-RK-Ven-Gruppe2,$B123)
+  UND2 (2-Stufe-6,2-RK-Ven-Gruppe2,$B124)
+  UND2 (2-Stufe-7,2-RK-Ven-Gruppe2,$B125)
+  ODR2 ($B120,$B123,$B126)
+  ODR2 ($B121,$B124,$B127)
+  ODR2 ($B122,$B125,$B128)
+  UND11 ($B126,2-RK-Ventil.1-ST,$B129)
+  UND11 ($B127,2-RK-Ventil.2-ST,$B130)
+  UND11 ($B128,2-RK-Ventil.3-ST,$B131)
+  NICHT ($B129,$HB0)
+  BEFAUS (1,$HB0,$B129,$WZERO,$WZERO,&M185,$WSCRATCH)
+  NICHT ($B130,$HB0)
+  BEFAUS (1,$HB0,$B130,$WZERO,$WZERO,&M186,$WSCRATCH)
+  NICHT ($B131,$HB0)
+  BEFAUS (1,$HB0,$B131,$WZERO,$WZERO,&M187,$WSCRATCH)
+  ;Ventilator
+  ;1
+  ; 
+  ;Ventilator
+  ;2
+  ; 
+  ;Ventilator
+  ;3
+  ; 
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  UND11 (2-Stufe-4,2-RK-Ven-Gruppe2,$B132)
+  UND11 (2-Stufe-5,2-RK-Ven-Gruppe2,$B133)
+  UND11 (2-Stufe-6,2-RK-Ven-Gruppe2,$B134)
+  UND2 (2-Stufe-8,2-RK-Ven-Gruppe2,$B135)
+  UND2 (2-Stufe-1,2-RK-Ven-Gruppe2,$B136)
+  UND2 (2-Stufe-2,2-RK-Ven-Gruppe2,$B137)
+  ODR2 ($B132,$B135,$B138)
+  ODR2 ($B133,$B136,$B139)
+  ODR2 ($B134,$B137,$B140)
+  UND11 ($B138,2-RK-Ventil.4-ST,$B141)
+  UND11 ($B139,2-RK-Ventil.5-ST,$B142)
+  UND11 ($B140,2-RK-Ventil.6-ST,$B143)
+  NICHT ($B141,$HB0)
+  BEFAUS (1,$HB0,$B141,$WZERO,$WZERO,&M188,$WSCRATCH)
+  NICHT ($B142,$HB0)
+  BEFAUS (1,$HB0,$B142,$WZERO,$WZERO,&M189,$WSCRATCH)
+  NICHT ($B143,$HB0)
+  BEFAUS (1,$HB0,$B143,$WZERO,$WZERO,&M190,$WSCRATCH)
+  ;Ventilator
+  ;4
+  ; 
+  ;Ventilator
+  ;5
+  ; 
+  ;Ventilator
+  ;6
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  UND11 (2-Stufe-7,2-RK-Ven-Gruppe2,$B144)
+  UND11 (2-Stufe-8,2-RK-Ven-Gruppe2,$B145)
+  UND2 (2-Stufe-3,2-RK-Ven-Gruppe2,$B146)
+  UND2 (2-Stufe-4,2-RK-Ven-Gruppe2,$B147)
+  ODR2 ($B144,$B146,$B148)
+  ODR2 ($B145,$B147,$B149)
+  UND11 ($B148,2-RK-Ventil.7-ST,$B150)
+  UND11 ($B149,2-RK-Ventil.8-ST,$B151)
+  NICHT ($B150,$HB0)
+  BEFAUS (1,$HB0,$B150,$WZERO,$WZERO,&M191,$WSCRATCH)
+  NICHT ($B151,$HB0)
+  BEFAUS (1,$HB0,$B151,$WZERO,$WZERO,&M192,$WSCRATCH)
+  ;Ventilator
+  ;7
+  ; 
+  ;Ventilator
+  ;8
+  ; 
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  VGLEH (Aussentemperatur,$M193,$M194,$B152)
+  VVZ ($B152,$M195,$M196,2-AT>5-Grad)
+  FKG (2-Kuehlwas-ET-pr,4,$M197,$M198,$M199,$M200,$F26)
+  PT1 ($F26,$M201,2-Anfahr-Stellsi)
+  UND11 (2-Glyk.seite-kue,2-AT>5-Grad,$B153)
+  VVZ (2-Glyk.seite-kue,$M202,$M203,$B154)
+  ;Anfahrschaltung wegen
+  ;MIN-Eintr.Temp-Regelung
+  ;entbehrlich geworden.
+  ; 
+  UND11 ($B153,$B154,$B155)
+  ODRMN (1,$B154,1,2-Glyk.seite-kue,$B156,$WSCRATCH)
+  RSS ($B155,$B156,2-Regel-anfahren,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  NICHT (2-Glyk.seite-kue,$HB3)
+  REGLER (16,k1,$HB3,$M204,2-SG-Kuehlw-Regl,$WSCRATCH)
+  AWT (2-Regel-anfahren,$M205,2-Anfahr-Stellsi,$FSCRATCH)
+  ODRMN (1,2-Regel-anfahren,1,2-Glyk.seite-kue,$WSCRATCH,
+         $WSCRATCH)
+  ;Anfahrschaltung wegen
+  ;MIN-Eintr.Temp-Regelung
+  ;entbehrlich geworden.
+  ; 
+  ;Reglerausgang:
+  ;0 5568420537337027000000000000000000000000000000000000000000000000000.000000est bei Anl. AUS
+  ;100 5568420537337027000000000000000000000000000000000000000000000000000.000000est bei Kühlung
+  ;     einleiten
+  ;geregelt, wenn Kühlungs-
+  ;vorbereitung abgeschlos-
+  ;sen ist
+  ; 
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  ANAUS (2-Ventil-Signal,$M206,&M207,$WSCRATCH)
+  VGL3P (2-Ventil-Signal,$M208,$M209,2-Ventil>95,2-Ventil<60,
+         $WSCRATCH)
+  ANEIN (&M210,2-min-VL-Te-prim,$WSCRATCH)
+  NICHT (2-Glyk.seite-kue,$HB4)
+  LREG (2-Kuehlwas-ET-pr,2-min-VL-Te-prim,k1,$HB4,$M211,
+        $M212,$M213,$M214,$M215,$M216,$M217,$M218,$M219,
+        $M220,$M221,2-ET-T-Min-Regl,$WSCRATCH)
+  MIN (2,2-ET-T-Min-Regl,2-SG-Kuehlw-Regl,2-Ventil-Signal)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  SUB2 (2-Ventil-Signal,2-Ventil-Stellun,$F27)
+  ABSWER ($F27,$F28)
+  VGLOH ($F28,$M222,$B157)
+  UND11 ($B157,Entriegeln,$B158)
+  NICHT ($B158,$HB1)
+  UHR (k1,$HB1,$F29)
+  VGLOH ($F29,$M223,$B159)
+  RSS ($B159,Entriegeln,2-Ventil-ST,$WSCRATCH)
+  SETMEL ($M224,1,2-Ventil-ST,&M225,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  41
+  ;*****************************************************************
+  UNDMN (1,2-Sek.seite-EIN,3,2-AT>5-Grad,2-Sek-Pumpe-1-R1,
+         2-Sek-Pumpe-2-R1,$B160,$WSCRATCH)
+  VVZ ($B160,$M226,$M227,2-Frostgefahr)
+  ;Bei tiefen AT kann
+  ;fehlende sek.seitige
+  ;Durchströmung des WT zur
+  ;Frostgefahr führen.
+  ;Sollte keine der beiden
+  ;Sek.Pumpen anlaufen,
+  ;geht die Anl. u.U. über
+  ;den Frostwächter auf
+  ;Störung.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  42
+  ;*****************************************************************
+  ODRMN (7,k0,2-Frostwaechter,2-Prim-Pumpe-ST,
+         2-RK-Ventil.1-ST,2-RK-Ventil.2-ST,2-RK-Ventil.3-ST,
+         $B163,0,$B161,$B162)
+  ODRMN (7,2-RK-Ventil.4-ST,2-RK-Ventil.5-ST,
+         2-RK-Ventil.6-ST,2-RK-Ventil.7-ST,2-RK-Ventil.8-ST,
+         2-Sek-Pumpe-1-ST,$B164,0,$B163,$WSCRATCH)
+  ODRMN (6,2-Sek-Pumpe-2-ST,2-Ventil-ST,k0,k0,k0,k0,0,$B164,
+         $WSCRATCH)
+  UND2 ($B162,Entriegeln,$B165)
+  RSS ($B161,$B165,$B166,$WSCRATCH)
+  SETMEL ($M228,1,$B166,&M229,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  43
+  ;*****************************************************************
+  NICHT (3-Regelung-ein,$HB0)
+  BEFAUS (1,$HB0,3-Regelung-ein,$WZERO,$WZERO,&M230,
+          $WSCRATCH)
+  UND2 (3-Anl-R1,3-Stroemungsscha,3-Regelung-ein)
+  ;*****************************************************************
+  ;*** Seite  44
+  ;*****************************************************************
+  SUB2 (3-KW-Ventil-Sign,3-KW-Ventil-RM,$F30)
+  ABSWER ($F30,$F31)
+  VGLOH ($F31,$M231,$B167)
+  UND11 ($B167,Entriegeln,$B168)
+  NICHT ($B168,$HB1)
+  UHR (k1,$HB1,$F32)
+  VGLOH ($F32,$M232,$B169)
+  RSS ($B169,Entriegeln,3-KW-Ventil-ST,$WSCRATCH)
+  SETMEL ($M233,1,3-KW-Ventil-ST,&M234,$WSCRATCH)
+  ;Das Stellsignal wird
+  ;mit dem Stellungs-
+  ;rücksignal verglichen.
+  ;Ist die Diffferenz
+  ;größer als +/- 1028682nd
+  ;dauert diese länger als
+  ;5 Minuten, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  45
+  ;*****************************************************************
+  NICHT (3-Regelung-ein,$HB3)
+  REGLER (17,k1,$HB3,$M235,3-KW-Ventil-Sign,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  46
+  ;*****************************************************************
+  ODRMN (6,3-Pumpe-ST,3-KW-Ventil-ST,k0,k0,k0,k0,0,$B170,
+         $B171)
+  UND2 ($B171,Entriegeln,$B172)
+  RSS ($B170,$B172,$B173,$WSCRATCH)
+  SETMEL ($M236,1,$B173,&M237,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  47
+  ;*****************************************************************
+  VGLEH (Aussentemperatur,4-AT-Grenzwert,$M238,$B174)
+  VVZ ($B174,$M239,$M240,4-AT-ueber-GW)
+  UND2 (4-AT-ueber-GW,4-Anl-R1,4-Kugelhahn-auff)
+  NICHT (4-Kugelhahn-auff,$HB0)
+  BEFAUS (1,$HB0,4-Kugelhahn-auff,$WZERO,$WZERO,&M241,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  48
+  ;*****************************************************************
+  UND11 (4-Kugelhahn-auff,4-Kugelhahn-offe,$B175)
+  VVZ ($B175,$M242,$M243,$B176)
+  UND11 (4-Kugelhahn-offe,4-Kugelhahn-auff,$B177)
+  VVZ ($B177,$M244,$M245,$B178)
+  ODR2 ($B176,$B178,$B179)
+  RSS ($B179,Entriegeln,4-Kugelhahn-ST,$WSCRATCH)
+  SETMEL ($M246,1,4-Kugelhahn-ST,&M247,$WSCRATCH)
+  ;Laufüberwachung Antrieb:
+  ;Erreicht der Antrieb
+  ;nach Ansteuerung Auf und
+  ;Ablauf der Überwachungs-
+  ;zeit seine Endlage Auf
+  ;nicht oder verläßt er
+  ;seine Endlage Auf nach
+  ;Ansteuerung Zu und Ab-
+  ;lauf der Überwachungs-
+  ;zeit nicht, dann wird
+  ;eine virtuelle Störung
+  ;gesetzt.
+  ; 
+  ;*****************************************************************
+  ;*** Seite  49
+  ;*****************************************************************
+  UND2 (5-Anl-R1,k1,$B180)
+  NICHT ($B180,$HB0)
+  BEFAUS (1,$HB0,$B180,$WZERO,$WZERO,&M248,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  50
+  ;*****************************************************************
+  UNDMN (2,1-Pumpe-1-sek-ST,1-Pumpe-2-sek-ST,0,$WSCRATCH,
+         $WSCRATCH)
+  ODRMN (3,k0,k0,k0,0,$B181,$B182)
+  UND2 ($B182,Entriegeln,$B183)
+  RSS ($B181,$B183,$B184,$WSCRATCH)
+  SETMEL ($M249,1,$B184,&M250,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (1-Anl-R1,$B190,$B185)
+  NICHT (1-Anl-R1,$B190)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  MOKY (1-VL-Temp-hoch,$M251,$B186)
+  ODRMN (4,1-Anl-EIN-1,1-Anl-EIN-2,$B186,$B185,0,$B187,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B191,1-Anl-R1,$B188)
+  NICHT (1-Anl-R1,$HB1)
+  NICHT ($HB1,$B191)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;Anlagenbefehl
+  ;Kälteübergabe
+  ; 
+  ;Da u.U. beide Pumpen-ST
+  ;kommen, obwohl nur eine
+  ;Pumpe gestört ist,
+  ;sollte die Anl. auch bei
+  ;Vorliegen beider ST
+  ;weiterlaufen.
+  ;(17.12.07)
+  ; 
+  ODRMN (3,$B188,k0,$B184,0,$B189,$WSCRATCH)
+  BEFAUS (1,$B189,$B187,$WZERO,$WZERO,&M252,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  51
+  ;*****************************************************************
+  UND2 (2-Sek-Pumpe-1-ST,2-Sek-Pumpe-2-ST,$B192)
+  ODRMN (4,$B192,2-Prim-Pumpe-ST,2-Frostwaechter,k0,0,$B193,
+         $B194)
+  UND2 ($B194,Entriegeln,$B195)
+  RSS ($B193,$B195,$B196,$WSCRATCH)
+  SETMEL ($M253,1,$B196,&M254,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2-Anl-R1,$B201,$B197)
+  NICHT (2-Anl-R1,$B201)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,2-Anl-EIN-1,2-Anl-EIN-2,k0,$B197,0,$B198,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B202,2-Anl-R1,$B199)
+  NICHT (2-Anl-R1,$HB1)
+  NICHT ($HB1,$B202)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B199,k0,$B196,0,$B200,$WSCRATCH)
+  ;Anlagenbefehl
+  ;Freie Kühlung
+  ; 
+  BEFAUS (1,$B200,$B198,$WZERO,$WZERO,&M255,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  52
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (2-RK-Ven-Gruppe2,$B207,$B203)
+  NICHT (2-RK-Ven-Gruppe2,$B207)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,2-RK-Ven-Grup2_1,k0,k0,$B203,0,$B204,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B208,2-RK-Ven-Gruppe2,$B205)
+  NICHT (2-RK-Ven-Gruppe2,$HB1)
+  NICHT ($HB1,$B208)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B205,k0,$B206)
+  ;Führungsbefehl
+  ;Ventilatorgruppe
+  ; 
+  BEFAUS (1,$B206,$B204,$WZERO,$WZERO,&M256,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  53
+  ;*****************************************************************
+  UND2 (k0,k0,$B209)
+  ODRMN (3,$B209,3-Pumpe-ST,k0,0,$B210,$B211)
+  UND2 ($B211,Entriegeln,$B212)
+  RSS ($B210,$B212,$B213,$WSCRATCH)
+  SETMEL ($M257,1,$B213,&M258,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (3-Anl-R1,$B218,$B214)
+  NICHT (3-Anl-R1,$B218)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,3-Anl-EIN-1,3-Anl-EIN-2,k0,$B214,0,$B215,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B219,3-Anl-R1,$B216)
+  NICHT (3-Anl-R1,$HB1)
+  NICHT ($HB1,$B219)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B216,k0,$B213,0,$B217,$WSCRATCH)
+  ;Anlagenbefehl
+  ;Prozeßkälte/Gradi.
+  ;
+  ; 
+  BEFAUS (1,$B217,$B215,$WZERO,$WZERO,&M259,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  54
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (4-Anl-R1,$B224,$B220)
+  NICHT (4-Anl-R1,$B224)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,4-Anl-EIN-1,4-Anl-EIN-2,k0,$B220,0,$B221,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B225,4-Anl-R1,$B222)
+  NICHT (4-Anl-R1,$HB1)
+  NICHT ($HB1,$B225)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 ($B222,k0,$B223)
+  ;Anlagenbefehl
+  ;Bürokühlung
+  ;=
+  ; 
+  BEFAUS (1,$B223,$B221,$WZERO,$WZERO,&M260,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  55
+  ;*****************************************************************
+  UND2 (k0,k0,$B226)
+  ODRMN (3,$B226,5-Pumpe-ST,k0,0,$B227,$B228)
+  UND2 ($B228,Entriegeln,$B229)
+  RSS ($B227,$B229,$B230,$WSCRATCH)
+  SETMEL ($M261,1,$B230,&M262,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (5-Anl-R1,$B235,$B231)
+  NICHT (5-Anl-R1,$B235)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (4,5-Anl-EIN-1,5-Anl-EIN-2,k0,$B231,0,$B232,
+         $WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B236,5-Anl-R1,$B233)
+  NICHT (5-Anl-R1,$HB1)
+  NICHT ($HB1,$B236)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,$B233,k0,$B230,0,$B234,$WSCRATCH)
+  ;Anlagenbefehl
+  ;Hebeanlage
+  ;=
+  ; 
+  BEFAUS (1,$B234,$B232,$WZERO,$WZERO,&M263,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,1202 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : TROX.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 14
+  ;*** Modul Typ      : ZP20
+  ;*** Feldbus Nummer : 2
+  ;*****************************************************************
+  MODUL (ZP20,2)
+  WordV  OG1-BSK1
+  WordV  OG1-BSK2
+  WordV  OG1-BSK3
+  WordV  OG1-BSK4
+  WordV  OG1-BSK5
+  WordV  OG1-BSK6
+  WordV  OG1-BSK7
+  WordV  OG1-BSK8
+  WordV  OG1-BSK9
+  WordV  OG1-BSK10
+  WordV  OG1-BSK11
+  WordV  OG1-BSK12
+  WordV  OG1-BSK14
+  WordV  OG1-BSK13
+  WordV  OG1-BSK15
+  WordV  OG1-BSK16
+  WordV  OG2-BSK15
+  WordV  OG2-BSK2
+  WordV  OG2-BSK14
+  WordV  OG4-BSK12
+  WordV  OG2-BSK13
+  WordV  1UG2-BSK16
+  WordV  OG4-BSK11
+  WordV  OG2-BSK12
+  WordV  OG4-BSK10
+  WordV  OG2-BSK11
+  WordV  OG4-BSK9
+  WordV  OG2-BSK10
+  WordV  OG4-BSK7
+  WordV  OG4-BSK8
+  WordV  OG2-BSK9
+  WordV  OGJ-BSK2
+  WordV  OG4-BSK1
+  WordV  OG4-BSK2
+  WordV  OG2-BSK3
+  WordV  OG2-BSK1
+  WordV  OG2-BSK4
+  WordV  OG4-BSK3
+  WordV  OG2-BSK6
+  WordV  OG4-BSK4
+  WordV  OG2-BSK5
+  WordV  2UG4-BSK5
+  WordV  2UG2-BSK7
+  WordV  2UG2-BSK8
+  WordV  2UG4-BSK6
+  WordV  OG4-BSK23
+  WordV  OG3-BSK10
+  WordV  OG4-BSK24
+  WordV  OG3-BSK2
+  WordV  OG4-BSK15
+  WordV  EG3-BSK3
+  WordV  EG4-BSK21
+  WordV  EG3-BSK4
+  WordV  EG4-BSK22
+  WordV  1UG3-BSK6
+  WordV  1UG4-BSK20
+  WordV  1UG3-BSK5
+  WordV  1UG3-BSK7
+  WordV  1UG4-BSK19
+  WordV  2UG4-BSK18
+  WordV  2UG3-BSK9
+  WordV  2UGA-BSK1
+  WordV  2UG3-BSK8
+  WordV  2UG4-BSK16
+  WordV  EG3-BSK1
+  WordV  2UG4-BSK17
+  WordV  Zeitverz.1
+  WordV  Zeitverz.2
+  WordV  Zeitverz.3
+  WordV  Zeitverz.4
+  WordV  Zeitverz.5
+  WordV  Zeitverz.6
+  IPAMB &M0 (0,1)
+  IPAMB &M1 (0,2)
+  IPAMB &M2 (0,3)
+  WordV  $B1
+  WordV  $WSCRATCH
+  IPAMB &M3 (0,5)
+  IPAMB &M4 (0,6)
+  IPAMB &M5 (0,7)
+  WordV  $B2
+  IPAMB &M6 (0,9)
+  IPAMB &M7 (0,10)
+  IPAMB &M8 (0,11)
+  WordV  $B3
+  IPAMB &M9 (0,13)
+  IPAMB &M10 (0,14)
+  IPAMB &M11 (0,15)
+  WordV  $B4
+  WordK  $M12 (1)
+  IPAMB &M13 (40,5)
+  WordK  $M14 (1)
+  IPAMB &M15 (41,5)
+  WordK  $M16 (1)
+  IPAMB &M17 (40,0)
+  WordK  $M18 (1)
+  IPAMB &M19 (41,0)
+  WordK  $M20 (1)
+  IPAMB &M21 (42,5)
+  WordK  $M22 (1)
+  IPAMB &M23 (43,5)
+  WordK  $M24 (1)
+  IPAMB &M25 (42,0)
+  WordK  $M26 (1)
+  IPAMB &M27 (43,0)
+  IPAMB &M28 (1,1)
+  IPAMB &M29 (1,2)
+  IPAMB &M30 (1,3)
+  WordV  $B5
+  IPAMB &M31 (1,5)
+  IPAMB &M32 (1,6)
+  IPAMB &M33 (1,7)
+  WordV  $B6
+  IPAMB &M34 (1,9)
+  IPAMB &M35 (1,10)
+  IPAMB &M36 (1,11)
+  WordV  $B7
+  IPAMB &M37 (1,13)
+  IPAMB &M38 (1,14)
+  IPAMB &M39 (1,15)
+  WordV  $B8
+  WordK  $M40 (1)
+  IPAMB &M41 (44,5)
+  WordK  $M42 (1)
+  IPAMB &M43 (45,5)
+  WordK  $M44 (1)
+  IPAMB &M45 (44,0)
+  WordK  $M46 (1)
+  IPAMB &M47 (45,0)
+  WordK  $M48 (1)
+  IPAMB &M49 (46,5)
+  WordK  $M50 (1)
+  IPAMB &M51 (47,5)
+  WordK  $M52 (1)
+  IPAMB &M53 (46,0)
+  WordK  $M54 (1)
+  IPAMB &M55 (47,0)
+  IPAMB &M56 (2,1)
+  IPAMB &M57 (2,2)
+  IPAMB &M58 (2,3)
+  WordV  $B9
+  IPAMB &M59 (2,5)
+  IPAMB &M60 (2,6)
+  IPAMB &M61 (2,7)
+  WordV  $B10
+  IPAMB &M62 (2,9)
+  IPAMB &M63 (2,10)
+  IPAMB &M64 (2,11)
+  WordV  $B11
+  IPAMB &M65 (2,13)
+  IPAMB &M66 (2,14)
+  IPAMB &M67 (2,15)
+  WordV  $B12
+  WordK  $M68 (1)
+  IPAMB &M69 (48,5)
+  WordK  $M70 (1)
+  IPAMB &M71 (49,5)
+  WordK  $M72 (1)
+  IPAMB &M73 (48,0)
+  WordK  $M74 (1)
+  IPAMB &M75 (49,0)
+  WordK  $M76 (1)
+  IPAMB &M77 (50,5)
+  WordK  $M78 (1)
+  IPAMB &M79 (51,5)
+  WordK  $M80 (1)
+  IPAMB &M81 (50,0)
+  WordK  $M82 (1)
+  IPAMB &M83 (51,0)
+  IPAMB &M84 (3,1)
+  IPAMB &M85 (3,2)
+  IPAMB &M86 (3,3)
+  WordV  $B13
+  IPAMB &M87 (3,5)
+  IPAMB &M88 (3,6)
+  IPAMB &M89 (3,7)
+  WordV  $B14
+  IPAMB &M90 (3,9)
+  IPAMB &M91 (3,10)
+  IPAMB &M92 (3,11)
+  WordV  $B15
+  IPAMB &M93 (3,13)
+  IPAMB &M94 (3,14)
+  IPAMB &M95 (3,15)
+  WordV  $B16
+  WordK  $M96 (1)
+  IPAMB &M97 (52,5)
+  WordK  $M98 (1)
+  IPAMB &M99 (53,5)
+  WordK  $M100 (1)
+  IPAMB &M101 (52,0)
+  WordK  $M102 (1)
+  IPAMB &M103 (53,0)
+  WordK  $M104 (1)
+  IPAMB &M105 (54,5)
+  WordK  $M106 (1)
+  IPAMB &M107 (55,5)
+  WordK  $M108 (1)
+  IPAMB &M109 (54,0)
+  WordK  $M110 (1)
+  IPAMB &M111 (55,0)
+  IPAMB &M112 (4,1)
+  IPAMB &M113 (4,2)
+  IPAMB &M114 (4,3)
+  WordV  $B17
+  IPAMB &M115 (4,5)
+  IPAMB &M116 (4,6)
+  IPAMB &M117 (4,7)
+  WordV  $B18
+  IPAMB &M118 (4,9)
+  IPAMB &M119 (4,10)
+  IPAMB &M120 (4,11)
+  WordV  $B19
+  IPAMB &M121 (4,13)
+  IPAMB &M122 (4,14)
+  IPAMB &M123 (4,15)
+  WordV  $B20
+  WordK  $M124 (1)
+  IPAMB &M125 (56,5)
+  WordK  $M126 (1)
+  IPAMB &M127 (57,5)
+  WordK  $M128 (1)
+  IPAMB &M129 (56,0)
+  WordK  $M130 (1)
+  IPAMB &M131 (57,0)
+  WordK  $M132 (1)
+  IPAMB &M133 (58,5)
+  WordK  $M134 (1)
+  IPAMB &M135 (59,5)
+  WordK  $M136 (1)
+  IPAMB &M137 (58,0)
+  WordK  $M138 (1)
+  IPAMB &M139 (59,0)
+  IPAMB &M140 (5,1)
+  IPAMB &M141 (5,2)
+  IPAMB &M142 (5,3)
+  WordV  $B21
+  IPAMB &M143 (5,5)
+  IPAMB &M144 (5,6)
+  IPAMB &M145 (5,7)
+  WordV  $B22
+  IPAMB &M146 (5,9)
+  IPAMB &M147 (5,10)
+  IPAMB &M148 (5,11)
+  WordV  $B23
+  IPAMB &M149 (5,13)
+  IPAMB &M150 (5,14)
+  IPAMB &M151 (5,15)
+  WordV  $B24
+  WordK  $M152 (1)
+  IPAMB &M153 (60,5)
+  WordK  $M154 (1)
+  IPAMB &M155 (61,5)
+  WordK  $M156 (1)
+  IPAMB &M157 (60,0)
+  WordK  $M158 (1)
+  IPAMB &M159 (61,0)
+  WordK  $M160 (1)
+  IPAMB &M161 (62,5)
+  WordK  $M162 (1)
+  IPAMB &M163 (63,5)
+  WordK  $M164 (1)
+  IPAMB &M165 (62,0)
+  WordK  $M166 (1)
+  IPAMB &M167 (63,0)
+  IPAMB &M168 (6,1)
+  IPAMB &M169 (6,2)
+  IPAMB &M170 (6,3)
+  WordV  $B25
+  IPAMB &M171 (6,5)
+  IPAMB &M172 (6,6)
+  IPAMB &M173 (6,7)
+  WordV  $B26
+  IPAMB &M174 (6,9)
+  IPAMB &M175 (6,10)
+  IPAMB &M176 (6,11)
+  WordV  $B27
+  IPAMB &M177 (6,13)
+  IPAMB &M178 (6,14)
+  IPAMB &M179 (6,15)
+  WordV  $B28
+  WordK  $M180 (1)
+  IPAMB &M181 (64,5)
+  WordK  $M182 (1)
+  IPAMB &M183 (65,5)
+  WordK  $M184 (1)
+  IPAMB &M185 (64,0)
+  WordK  $M186 (1)
+  IPAMB &M187 (65,0)
+  WordK  $M188 (1)
+  IPAMB &M189 (66,5)
+  WordK  $M190 (1)
+  IPAMB &M191 (67,5)
+  WordK  $M192 (1)
+  IPAMB &M193 (66,0)
+  WordK  $M194 (1)
+  IPAMB &M195 (67,0)
+  IPAMB &M196 (7,1)
+  IPAMB &M197 (7,2)
+  IPAMB &M198 (7,3)
+  WordV  $B29
+  IPAMB &M199 (7,5)
+  IPAMB &M200 (7,6)
+  IPAMB &M201 (7,7)
+  WordV  $B30
+  IPAMB &M202 (7,9)
+  IPAMB &M203 (7,10)
+  IPAMB &M204 (7,11)
+  WordV  $B31
+  IPAMB &M205 (7,13)
+  IPAMB &M206 (7,14)
+  IPAMB &M207 (7,15)
+  WordV  $B32
+  WordK  $M208 (1)
+  IPAMB &M209 (68,5)
+  WordK  $M210 (1)
+  IPAMB &M211 (69,5)
+  WordK  $M212 (1)
+  IPAMB &M213 (68,0)
+  WordK  $M214 (1)
+  IPAMB &M215 (69,0)
+  WordK  $M216 (1)
+  IPAMB &M217 (70,5)
+  WordK  $M218 (1)
+  IPAMB &M219 (71,5)
+  WordK  $M220 (1)
+  IPAMB &M221 (70,0)
+  WordK  $M222 (1)
+  IPAMB &M223 (71,0)
+  IPAMB &M224 (8,1)
+  IPAMB &M225 (8,2)
+  IPAMB &M226 (8,3)
+  WordV  $B33
+  IPAMB &M227 (8,5)
+  IPAMB &M228 (8,6)
+  IPAMB &M229 (8,7)
+  WordV  $B34
+  IPAMB &M230 (8,9)
+  IPAMB &M231 (8,10)
+  IPAMB &M232 (8,11)
+  WordV  $B35
+  IPAMB &M233 (8,13)
+  IPAMB &M234 (8,14)
+  IPAMB &M235 (8,15)
+  WordV  $B36
+  WordK  $M236 (1)
+  IPAMB &M237 (72,5)
+  WordK  $M238 (1)
+  IPAMB &M239 (73,5)
+  WordK  $M240 (1)
+  IPAMB &M241 (72,0)
+  WordK  $M242 (1)
+  IPAMB &M243 (73,0)
+  WordK  $M244 (1)
+  IPAMB &M245 (74,5)
+  WordK  $M246 (1)
+  IPAMB &M247 (75,5)
+  WordK  $M248 (1)
+  IPAMB &M249 (74,0)
+  WordK  $M250 (1)
+  IPAMB &M251 (75,0)
+  IPAMB &M252 (9,1)
+  IPAMB &M253 (9,2)
+  IPAMB &M254 (9,3)
+  WordV  $B37
+  IPAMB &M255 (9,5)
+  IPAMB &M256 (9,6)
+  IPAMB &M257 (9,7)
+  WordV  $B38
+  IPAMB &M258 (9,9)
+  IPAMB &M259 (9,10)
+  IPAMB &M260 (9,11)
+  WordV  $B39
+  IPAMB &M261 (9,13)
+  IPAMB &M262 (9,14)
+  IPAMB &M263 (9,15)
+  WordV  $B40
+  WordK  $M264 (1)
+  IPAMB &M265 (76,5)
+  WordK  $M266 (1)
+  IPAMB &M267 (77,5)
+  WordK  $M268 (1)
+  IPAMB &M269 (76,0)
+  WordK  $M270 (1)
+  IPAMB &M271 (77,0)
+  WordK  $M272 (1)
+  IPAMB &M273 (78,5)
+  WordK  $M274 (1)
+  IPAMB &M275 (79,5)
+  WordK  $M276 (1)
+  IPAMB &M277 (78,0)
+  WordK  $M278 (1)
+  IPAMB &M279 (79,0)
+  IPAMB &M280 (10,1)
+  IPAMB &M281 (10,2)
+  IPAMB &M282 (10,3)
+  WordV  $B41
+  IPAMB &M283 (10,5)
+  IPAMB &M284 (10,6)
+  IPAMB &M285 (10,7)
+  WordV  $B42
+  IPAMB &M286 (10,9)
+  IPAMB &M287 (10,10)
+  IPAMB &M288 (10,11)
+  WordV  $B43
+  IPAMB &M289 (10,13)
+  IPAMB &M290 (10,14)
+  IPAMB &M291 (10,15)
+  WordV  $B44
+  WordK  $M292 (1)
+  IPAMB &M293 (80,5)
+  WordK  $M294 (1)
+  IPAMB &M295 (81,5)
+  WordK  $M296 (1)
+  IPAMB &M297 (80,0)
+  WordK  $M298 (1)
+  IPAMB &M299 (81,0)
+  WordK  $M300 (1)
+  IPAMB &M301 (82,5)
+  WordK  $M302 (1)
+  IPAMB &M303 (83,5)
+  WordK  $M304 (1)
+  IPAMB &M305 (82,0)
+  WordK  $M306 (1)
+  IPAMB &M307 (83,0)
+  IPAMB &M308 (11,1)
+  IPAMB &M309 (11,2)
+  IPAMB &M310 (11,3)
+  WordV  $B45
+  WordK  $M311 (1)
+  IPAMB &M312 (84,5)
+  WordK  $M313 (1)
+  IPAMB &M314 (84,0)
+  IPAMB &M315 (12,1)
+  IPAMB &M316 (12,2)
+  IPAMB &M317 (12,3)
+  WordV  $B46
+  IPAMB &M318 (12,5)
+  IPAMB &M319 (12,6)
+  IPAMB &M320 (12,7)
+  WordV  $B47
+  IPAMB &M321 (12,9)
+  IPAMB &M322 (12,10)
+  IPAMB &M323 (12,11)
+  WordV  $B48
+  IPAMB &M324 (12,13)
+  IPAMB &M325 (12,14)
+  IPAMB &M326 (12,15)
+  WordV  $B49
+  WordK  $M327 (1)
+  IPAMB &M328 (85,5)
+  WordK  $M329 (1)
+  IPAMB &M330 (86,5)
+  WordK  $M331 (1)
+  IPAMB &M332 (85,0)
+  WordK  $M333 (1)
+  IPAMB &M334 (86,0)
+  WordK  $M335 (1)
+  IPAMB &M336 (87,5)
+  WordK  $M337 (1)
+  IPAMB &M338 (88,5)
+  WordK  $M339 (1)
+  IPAMB &M340 (87,0)
+  WordK  $M341 (1)
+  IPAMB &M342 (88,0)
+  IPAMB &M343 (13,1)
+  IPAMB &M344 (13,2)
+  IPAMB &M345 (13,3)
+  WordV  $B50
+  IPAMB &M346 (13,5)
+  IPAMB &M347 (13,6)
+  IPAMB &M348 (13,7)
+  WordV  $B51
+  IPAMB &M349 (13,9)
+  IPAMB &M350 (13,10)
+  IPAMB &M351 (13,11)
+  WordV  $B52
+  IPAMB &M352 (13,13)
+  IPAMB &M353 (13,14)
+  IPAMB &M354 (13,15)
+  WordV  $B53
+  WordK  $M355 (1)
+  IPAMB &M356 (89,5)
+  WordK  $M357 (1)
+  IPAMB &M358 (90,5)
+  WordK  $M359 (1)
+  IPAMB &M360 (89,0)
+  WordK  $M361 (1)
+  IPAMB &M362 (90,0)
+  WordK  $M363 (1)
+  IPAMB &M364 (91,5)
+  WordK  $M365 (1)
+  IPAMB &M366 (92,5)
+  WordK  $M367 (1)
+  IPAMB &M368 (91,0)
+  WordK  $M369 (1)
+  IPAMB &M370 (92,0)
+  IPAMB &M371 (14,1)
+  IPAMB &M372 (14,2)
+  IPAMB &M373 (14,3)
+  WordV  $B54
+  IPAMB &M374 (14,5)
+  IPAMB &M375 (14,6)
+  IPAMB &M376 (14,7)
+  WordV  $B55
+  IPAMB &M377 (14,9)
+  IPAMB &M378 (14,10)
+  IPAMB &M379 (14,11)
+  WordV  $B56
+  IPAMB &M380 (14,13)
+  IPAMB &M381 (14,14)
+  IPAMB &M382 (14,15)
+  WordV  $B57
+  WordK  $M383 (1)
+  IPAMB &M384 (93,5)
+  WordK  $M385 (1)
+  IPAMB &M386 (94,5)
+  WordK  $M387 (1)
+  IPAMB &M388 (93,0)
+  WordK  $M389 (1)
+  IPAMB &M390 (94,0)
+  WordK  $M391 (1)
+  IPAMB &M392 (95,5)
+  WordK  $M393 (1)
+  IPAMB &M394 (96,5)
+  WordK  $M395 (1)
+  IPAMB &M396 (95,0)
+  WordK  $M397 (1)
+  IPAMB &M398 (96,0)
+  IPAMB &M399 (15,1)
+  IPAMB &M400 (15,2)
+  IPAMB &M401 (15,3)
+  WordV  $B58
+  IPAMB &M402 (15,5)
+  IPAMB &M403 (15,6)
+  IPAMB &M404 (15,7)
+  WordV  $B59
+  IPAMB &M405 (15,9)
+  IPAMB &M406 (15,10)
+  IPAMB &M407 (15,11)
+  WordV  $B60
+  IPAMB &M408 (15,13)
+  IPAMB &M409 (15,14)
+  IPAMB &M410 (15,15)
+  WordV  $B61
+  WordK  $M411 (1)
+  IPAMB &M412 (97,5)
+  WordK  $M413 (1)
+  IPAMB &M414 (98,5)
+  WordK  $M415 (1)
+  IPAMB &M416 (97,0)
+  WordK  $M417 (1)
+  IPAMB &M418 (98,0)
+  WordK  $M419 (1)
+  IPAMB &M420 (99,5)
+  WordK  $M421 (1)
+  IPAMB &M422 (100,5)
+  WordK  $M423 (1)
+  IPAMB &M424 (99,0)
+  WordK  $M425 (1)
+  IPAMB &M426 (100,0)
+  IPAMB &M427 (16,1)
+  IPAMB &M428 (16,2)
+  IPAMB &M429 (16,3)
+  WordV  $B62
+  IPAMB &M430 (16,5)
+  IPAMB &M431 (16,6)
+  IPAMB &M432 (16,7)
+  WordV  $B63
+  IPAMB &M433 (16,9)
+  IPAMB &M434 (16,10)
+  IPAMB &M435 (16,11)
+  WordV  $B64
+  IPAMB &M436 (16,13)
+  IPAMB &M437 (16,14)
+  IPAMB &M438 (16,15)
+  WordV  $B65
+  WordK  $M439 (1)
+  IPAMB &M440 (101,5)
+  WordK  $M441 (1)
+  IPAMB &M442 (102,5)
+  WordK  $M443 (1)
+  IPAMB &M444 (101,0)
+  WordK  $M445 (1)
+  IPAMB &M446 (102,0)
+  WordK  $M447 (1)
+  IPAMB &M448 (103,5)
+  WordK  $M449 (1)
+  IPAMB &M450 (104,5)
+  WordK  $M451 (1)
+  IPAMB &M452 (103,0)
+  WordK  $M453 (1)
+  IPAMB &M454 (104,0)
+  IPAMB &M455 (17,1)
+  IPAMB &M456 (17,2)
+  IPAMB &M457 (17,3)
+  WordV  $B66
+  WordK  $M458 (1)
+  IPAMB &M459 (105,5)
+  WordK  $M460 (1)
+  IPAMB &M461 (105,0)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  FloatK $M462 (2.00)
+  FloatK $M463 (0.00)
+  FloatK $M464 (10.00)
+  WordV  $B67
+  FloatK $M469 (10.00)
+  WordV  $B68
+  FloatK $M474 (10.00)
+  WordV  $B69
+  FloatK $M479 (5.00)
+  FloatK $M480 (0.00)
+  FloatK $M481 (10.00)
+  WordV  $B70
+  FloatK $M486 (10.00)
+  WordV  $B71
+  FloatK $M491 (10.00)
+  WordV  $B72
+  FloatK $M496 (8.00)
+  FloatK $M497 (0.00)
+  FloatK $M498 (10.00)
+  WordV  $B73
+  FloatK $M503 (10.00)
+  WordV  $B74
+  FloatK $M508 (10.00)
+  WordV  $B75
+  FloatK $M513 (11.00)
+  FloatK $M514 (0.00)
+  FloatK $M515 (10.00)
+  WordV  $B76
+  FloatK $M520 (10.00)
+  WordV  $B77
+  FloatK $M525 (10.00)
+  WordV  $B78
+  FloatK $M527 (14.00)
+  FloatK $M528 (0.00)
+  FloatK $M530 (10.00)
+  WordV  $B79
+  FloatK $M535 (10.00)
+  WordV  $B80
+  FloatK $M540 (10.00)
+  WordV  $B81
+  FloatK $M544 (17.00)
+  FloatK $M545 (0.00)
+  FloatK $M547 (10.00)
+  WordV  $B82
+  FloatK $M552 (10.00)
+  WordV  $B83
+  FloatK $M557 (10.00)
+  WordV  $B84
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;In diesem Programm
+  ;werden folgende
+  ;Aufgaben realisiert
+  ;1) Umsetzen fiktiver
+  ;Schaltbefehl BSK auf
+  ;LON-Zeile
+  ;2) Bildung Klappenst”r
+  ;Meldung aus Endlage AUF
+  ;und Endlage ZU mit
+  ;Ausgabe auf 1F-St”rmeldu
+  ;ng
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;In diesem Task werden
+  ;die Rckmeldungen der
+  ;1F-Befehle auf die
+  ;entsprechende Zeile
+  ;geschrieben, die im
+  ;LON die Klappe auff„hrt
+  ;M
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R0= Schliessen der BSK
+  ;-> Spalte 05 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_FIRE wird
+  ;      ausgegeben
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R1= ™ffnen der BSK
+  ;-> Spalte 00 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_NORMAL wird
+  ;      ausgegeben
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  MELEIN (&M0,3,$B1,$WSCRATCH,OG1-BSK1,$WSCRATCH)
+  MELEIN (&M3,3,$B2,$WSCRATCH,OG1-BSK2,$WSCRATCH)
+  MELEIN (&M6,3,$B3,$WSCRATCH,OG1-BSK3,$WSCRATCH)
+  MELEIN (&M9,3,$B4,$WSCRATCH,OG1-BSK4,$WSCRATCH)
+  SETMEL ($M12,1,$B1,&M13,$WSCRATCH)
+  SETMEL ($M14,1,$B2,&M15,$WSCRATCH)
+  SETMEL ($M16,1,OG1-BSK1,&M17,$WSCRATCH)
+  SETMEL ($M18,1,OG1-BSK2,&M19,$WSCRATCH)
+  SETMEL ($M20,1,$B3,&M21,$WSCRATCH)
+  SETMEL ($M22,1,$B4,&M23,$WSCRATCH)
+  SETMEL ($M24,1,OG1-BSK3,&M25,$WSCRATCH)
+  SETMEL ($M26,1,OG1-BSK4,&M27,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ;R
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&M28,3,$B5,$WSCRATCH,OG1-BSK5,$WSCRATCH)
+  MELEIN (&M31,3,$B6,$WSCRATCH,OG1-BSK6,$WSCRATCH)
+  MELEIN (&M34,3,$B7,$WSCRATCH,OG1-BSK7,$WSCRATCH)
+  MELEIN (&M37,3,$B8,$WSCRATCH,OG1-BSK8,$WSCRATCH)
+  SETMEL ($M40,1,$B5,&M41,$WSCRATCH)
+  SETMEL ($M42,1,$B6,&M43,$WSCRATCH)
+  SETMEL ($M44,1,OG1-BSK5,&M45,$WSCRATCH)
+  SETMEL ($M46,1,OG1-BSK6,&M47,$WSCRATCH)
+  SETMEL ($M48,1,$B7,&M49,$WSCRATCH)
+  SETMEL ($M50,1,$B8,&M51,$WSCRATCH)
+  SETMEL ($M52,1,OG1-BSK7,&M53,$WSCRATCH)
+  SETMEL ($M54,1,OG1-BSK8,&M55,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MELEIN (&M56,3,$B9,$WSCRATCH,OG1-BSK9,$WSCRATCH)
+  MELEIN (&M59,3,$B10,$WSCRATCH,OG1-BSK10,$WSCRATCH)
+  MELEIN (&M62,3,$B11,$WSCRATCH,OG1-BSK11,$WSCRATCH)
+  MELEIN (&M65,3,$B12,$WSCRATCH,OG1-BSK12,$WSCRATCH)
+  SETMEL ($M68,1,$B9,&M69,$WSCRATCH)
+  SETMEL ($M70,1,$B10,&M71,$WSCRATCH)
+  SETMEL ($M72,1,OG1-BSK9,&M73,$WSCRATCH)
+  SETMEL ($M74,1,OG1-BSK10,&M75,$WSCRATCH)
+  SETMEL ($M76,1,$B11,&M77,$WSCRATCH)
+  SETMEL ($M78,1,$B12,&M79,$WSCRATCH)
+  SETMEL ($M80,1,OG1-BSK11,&M81,$WSCRATCH)
+  SETMEL ($M82,1,OG1-BSK12,&M83,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&M84,3,$B13,$WSCRATCH,OG1-BSK13,$WSCRATCH)
+  MELEIN (&M87,3,$B14,$WSCRATCH,OG1-BSK14,$WSCRATCH)
+  MELEIN (&M90,3,$B15,$WSCRATCH,OG1-BSK15,$WSCRATCH)
+  MELEIN (&M93,3,$B16,$WSCRATCH,OG1-BSK16,$WSCRATCH)
+  SETMEL ($M96,1,$B13,&M97,$WSCRATCH)
+  SETMEL ($M98,1,$B14,&M99,$WSCRATCH)
+  SETMEL ($M100,1,OG1-BSK13,&M101,$WSCRATCH)
+  SETMEL ($M102,1,OG1-BSK14,&M103,$WSCRATCH)
+  SETMEL ($M104,1,$B15,&M105,$WSCRATCH)
+  SETMEL ($M106,1,$B16,&M107,$WSCRATCH)
+  SETMEL ($M108,1,OG1-BSK15,&M109,$WSCRATCH)
+  SETMEL ($M110,1,OG1-BSK16,&M111,$WSCRATCH)
+  ENDE 
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  TASK (2,cycl,1000)
+  ;In diesem Task werden
+  ;die Rckmeldungen der
+  ;1F-Befehle auf die
+  ;entsprechende Zeile
+  ;geschrieben, die im
+  ;LON die Klappe auff„hrt
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R0= Schliessen der BSK
+  ;-> Spalte 05 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_FIRE wird
+  ;      ausgegeben
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R1= ™ffnen der BSK
+  ;-> Spalte 00 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_NORMAL wird
+  ;      ausgegeben
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&M112,3,$B17,$WSCRATCH,OG2-BSK15,$WSCRATCH)
+  MELEIN (&M115,3,$B18,$WSCRATCH,OGJ-BSK2,$WSCRATCH)
+  MELEIN (&M118,3,$B19,$WSCRATCH,OG2-BSK14,$WSCRATCH)
+  MELEIN (&M121,3,$B20,$WSCRATCH,OG4-BSK12,$WSCRATCH)
+  SETMEL ($M124,1,$B17,&M125,$WSCRATCH)
+  SETMEL ($M126,1,$B18,&M127,$WSCRATCH)
+  SETMEL ($M128,1,OG2-BSK15,&M129,$WSCRATCH)
+  SETMEL ($M130,1,OGJ-BSK2,&M131,$WSCRATCH)
+  SETMEL ($M132,1,$B19,&M133,$WSCRATCH)
+  SETMEL ($M134,1,$B20,&M135,$WSCRATCH)
+  SETMEL ($M136,1,OG2-BSK14,&M137,$WSCRATCH)
+  SETMEL ($M138,1,OG4-BSK12,&M139,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ;R
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&M140,3,$B21,$WSCRATCH,OG2-BSK13,$WSCRATCH)
+  MELEIN (&M143,3,$B22,$WSCRATCH,1UG2-BSK16,$WSCRATCH)
+  MELEIN (&M146,3,$B23,$WSCRATCH,OG4-BSK11,$WSCRATCH)
+  MELEIN (&M149,3,$B24,$WSCRATCH,OG2-BSK12,$WSCRATCH)
+  SETMEL ($M152,1,$B21,&M153,$WSCRATCH)
+  SETMEL ($M154,1,$B22,&M155,$WSCRATCH)
+  SETMEL ($M156,1,OG2-BSK13,&M157,$WSCRATCH)
+  SETMEL ($M158,1,1UG2-BSK16,&M159,$WSCRATCH)
+  SETMEL ($M160,1,$B23,&M161,$WSCRATCH)
+  SETMEL ($M162,1,$B24,&M163,$WSCRATCH)
+  SETMEL ($M164,1,OG4-BSK11,&M165,$WSCRATCH)
+  SETMEL ($M166,1,OG2-BSK12,&M167,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&M168,3,$B25,$WSCRATCH,OG4-BSK10,$WSCRATCH)
+  MELEIN (&M171,3,$B26,$WSCRATCH,OG2-BSK11,$WSCRATCH)
+  MELEIN (&M174,3,$B27,$WSCRATCH,OG4-BSK9,$WSCRATCH)
+  MELEIN (&M177,3,$B28,$WSCRATCH,OG2-BSK10,$WSCRATCH)
+  SETMEL ($M180,1,$B25,&M181,$WSCRATCH)
+  SETMEL ($M182,1,$B26,&M183,$WSCRATCH)
+  SETMEL ($M184,1,OG4-BSK10,&M185,$WSCRATCH)
+  SETMEL ($M186,1,OG2-BSK11,&M187,$WSCRATCH)
+  SETMEL ($M188,1,$B27,&M189,$WSCRATCH)
+  SETMEL ($M190,1,$B28,&M191,$WSCRATCH)
+  SETMEL ($M192,1,OG4-BSK9,&M193,$WSCRATCH)
+  SETMEL ($M194,1,OG2-BSK10,&M195,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&M196,3,$B29,$WSCRATCH,OG4-BSK7,$WSCRATCH)
+  MELEIN (&M199,3,$B30,$WSCRATCH,OG4-BSK8,$WSCRATCH)
+  MELEIN (&M202,3,$B31,$WSCRATCH,OG2-BSK9,$WSCRATCH)
+  MELEIN (&M205,3,$B32,$WSCRATCH,OG2-BSK2,$WSCRATCH)
+  SETMEL ($M208,1,$B29,&M209,$WSCRATCH)
+  SETMEL ($M210,1,$B30,&M211,$WSCRATCH)
+  SETMEL ($M212,1,OG4-BSK7,&M213,$WSCRATCH)
+  SETMEL ($M214,1,OG4-BSK8,&M215,$WSCRATCH)
+  SETMEL ($M216,1,$B31,&M217,$WSCRATCH)
+  SETMEL ($M218,1,$B32,&M219,$WSCRATCH)
+  SETMEL ($M220,1,OG2-BSK9,&M221,$WSCRATCH)
+  SETMEL ($M222,1,OG2-BSK2,&M223,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  MELEIN (&M224,3,$B33,$WSCRATCH,OG4-BSK1,$WSCRATCH)
+  MELEIN (&M227,3,$B34,$WSCRATCH,OG4-BSK2,$WSCRATCH)
+  MELEIN (&M230,3,$B35,$WSCRATCH,OG2-BSK3,$WSCRATCH)
+  MELEIN (&M233,3,$B36,$WSCRATCH,OG2-BSK1,$WSCRATCH)
+  SETMEL ($M236,1,$B33,&M237,$WSCRATCH)
+  SETMEL ($M238,1,$B34,&M239,$WSCRATCH)
+  SETMEL ($M240,1,OG4-BSK1,&M241,$WSCRATCH)
+  SETMEL ($M242,1,OG4-BSK2,&M243,$WSCRATCH)
+  SETMEL ($M244,1,$B35,&M245,$WSCRATCH)
+  SETMEL ($M246,1,$B36,&M247,$WSCRATCH)
+  SETMEL ($M248,1,OG2-BSK3,&M249,$WSCRATCH)
+  SETMEL ($M250,1,OG2-BSK1,&M251,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  MELEIN (&M252,3,$B37,$WSCRATCH,OG2-BSK4,$WSCRATCH)
+  MELEIN (&M255,3,$B38,$WSCRATCH,OG4-BSK3,$WSCRATCH)
+  MELEIN (&M258,3,$B39,$WSCRATCH,OG2-BSK6,$WSCRATCH)
+  MELEIN (&M261,3,$B40,$WSCRATCH,OG4-BSK4,$WSCRATCH)
+  SETMEL ($M264,1,$B37,&M265,$WSCRATCH)
+  SETMEL ($M266,1,$B38,&M267,$WSCRATCH)
+  SETMEL ($M268,1,OG2-BSK4,&M269,$WSCRATCH)
+  SETMEL ($M270,1,OG4-BSK3,&M271,$WSCRATCH)
+  SETMEL ($M272,1,$B39,&M273,$WSCRATCH)
+  SETMEL ($M274,1,$B40,&M275,$WSCRATCH)
+  SETMEL ($M276,1,OG2-BSK6,&M277,$WSCRATCH)
+  SETMEL ($M278,1,OG4-BSK4,&M279,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  MELEIN (&M280,3,$B41,$WSCRATCH,OG2-BSK5,$WSCRATCH)
+  MELEIN (&M283,3,$B42,$WSCRATCH,2UG4-BSK5,$WSCRATCH)
+  MELEIN (&M286,3,$B43,$WSCRATCH,2UG2-BSK7,$WSCRATCH)
+  MELEIN (&M289,3,$B44,$WSCRATCH,2UG2-BSK8,$WSCRATCH)
+  SETMEL ($M292,1,$B41,&M293,$WSCRATCH)
+  SETMEL ($M294,1,$B42,&M295,$WSCRATCH)
+  SETMEL ($M296,1,OG2-BSK5,&M297,$WSCRATCH)
+  SETMEL ($M298,1,2UG4-BSK5,&M299,$WSCRATCH)
+  SETMEL ($M300,1,$B43,&M301,$WSCRATCH)
+  SETMEL ($M302,1,$B44,&M303,$WSCRATCH)
+  SETMEL ($M304,1,2UG2-BSK7,&M305,$WSCRATCH)
+  SETMEL ($M306,1,2UG2-BSK8,&M307,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  MELEIN (&M308,3,$B45,$WSCRATCH,2UG4-BSK6,$WSCRATCH)
+  SETMEL ($M311,1,$B45,&M312,$WSCRATCH)
+  SETMEL ($M313,1,2UG4-BSK6,&M314,$WSCRATCH)
+  ENDE 
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;In diesem Task werden
+  ;die Rckmeldungen der
+  ;1F-Befehle auf die
+  ;entsprechende Zeile
+  ;geschrieben, die im
+  ;LON die Klappe auff„hrt
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R0= Schliessen der BSK
+  ;-> Spalte 05 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_FIRE wird
+  ;      ausgegeben
+  ; 
+  ;Vorgabe: Rckmeldung
+  ;R1= ™ffnen der BSK
+  ;-> Spalte 00 der LON
+  ;   Zeile auf 1 setzen
+  ;   -> Emerg_NORMAL wird
+  ;      ausgegeben
+  ; 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  MELEIN (&M315,3,$B46,$WSCRATCH,OG4-BSK23,$WSCRATCH)
+  MELEIN (&M318,3,$B47,$WSCRATCH,OG3-BSK10,$WSCRATCH)
+  MELEIN (&M321,3,$B48,$WSCRATCH,OG4-BSK24,$WSCRATCH)
+  MELEIN (&M324,3,$B49,$WSCRATCH,OG3-BSK2,$WSCRATCH)
+  SETMEL ($M327,1,$B46,&M328,$WSCRATCH)
+  SETMEL ($M329,1,$B47,&M330,$WSCRATCH)
+  SETMEL ($M331,1,OG4-BSK23,&M332,$WSCRATCH)
+  SETMEL ($M333,1,OG3-BSK10,&M334,$WSCRATCH)
+  SETMEL ($M335,1,$B48,&M336,$WSCRATCH)
+  SETMEL ($M337,1,$B49,&M338,$WSCRATCH)
+  SETMEL ($M339,1,OG4-BSK24,&M340,$WSCRATCH)
+  SETMEL ($M341,1,OG3-BSK2,&M342,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ;R
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  MELEIN (&M343,3,$B50,$WSCRATCH,OG4-BSK15,$WSCRATCH)
+  MELEIN (&M346,3,$B51,$WSCRATCH,EG3-BSK3,$WSCRATCH)
+  MELEIN (&M349,3,$B52,$WSCRATCH,EG4-BSK21,$WSCRATCH)
+  MELEIN (&M352,3,$B53,$WSCRATCH,EG3-BSK4,$WSCRATCH)
+  SETMEL ($M355,1,$B50,&M356,$WSCRATCH)
+  SETMEL ($M357,1,$B51,&M358,$WSCRATCH)
+  SETMEL ($M359,1,OG4-BSK15,&M360,$WSCRATCH)
+  SETMEL ($M361,1,EG3-BSK3,&M362,$WSCRATCH)
+  SETMEL ($M363,1,$B52,&M364,$WSCRATCH)
+  SETMEL ($M365,1,$B53,&M366,$WSCRATCH)
+  SETMEL ($M367,1,EG4-BSK21,&M368,$WSCRATCH)
+  SETMEL ($M369,1,EG3-BSK4,&M370,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  MELEIN (&M371,3,$B54,$WSCRATCH,EG4-BSK22,$WSCRATCH)
+  MELEIN (&M374,3,$B55,$WSCRATCH,1UG3-BSK6,$WSCRATCH)
+  MELEIN (&M377,3,$B56,$WSCRATCH,1UG4-BSK20,$WSCRATCH)
+  MELEIN (&M380,3,$B57,$WSCRATCH,1UG3-BSK5,$WSCRATCH)
+  SETMEL ($M383,1,$B54,&M384,$WSCRATCH)
+  SETMEL ($M385,1,$B55,&M386,$WSCRATCH)
+  SETMEL ($M387,1,EG4-BSK22,&M388,$WSCRATCH)
+  SETMEL ($M389,1,1UG3-BSK6,&M390,$WSCRATCH)
+  SETMEL ($M391,1,$B56,&M392,$WSCRATCH)
+  SETMEL ($M393,1,$B57,&M394,$WSCRATCH)
+  SETMEL ($M395,1,1UG4-BSK20,&M396,$WSCRATCH)
+  SETMEL ($M397,1,1UG3-BSK5,&M398,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MELEIN (&M399,3,$B58,$WSCRATCH,1UG3-BSK7,$WSCRATCH)
+  MELEIN (&M402,3,$B59,$WSCRATCH,1UG4-BSK19,$WSCRATCH)
+  MELEIN (&M405,3,$B60,$WSCRATCH,2UG4-BSK18,$WSCRATCH)
+  MELEIN (&M408,3,$B61,$WSCRATCH,2UG3-BSK9,$WSCRATCH)
+  SETMEL ($M411,1,$B58,&M412,$WSCRATCH)
+  SETMEL ($M413,1,$B59,&M414,$WSCRATCH)
+  SETMEL ($M415,1,1UG3-BSK7,&M416,$WSCRATCH)
+  SETMEL ($M417,1,1UG4-BSK19,&M418,$WSCRATCH)
+  SETMEL ($M419,1,$B60,&M420,$WSCRATCH)
+  SETMEL ($M421,1,$B61,&M422,$WSCRATCH)
+  SETMEL ($M423,1,2UG4-BSK18,&M424,$WSCRATCH)
+  SETMEL ($M425,1,2UG3-BSK9,&M426,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  MELEIN (&M427,3,$B62,$WSCRATCH,2UGA-BSK1,$WSCRATCH)
+  MELEIN (&M430,3,$B63,$WSCRATCH,2UG4-BSK17,$WSCRATCH)
+  MELEIN (&M433,3,$B64,$WSCRATCH,2UG3-BSK8,$WSCRATCH)
+  MELEIN (&M436,3,$B65,$WSCRATCH,2UG4-BSK16,$WSCRATCH)
+  SETMEL ($M439,1,$B62,&M440,$WSCRATCH)
+  SETMEL ($M441,1,$B63,&M442,$WSCRATCH)
+  SETMEL ($M443,1,2UGA-BSK1,&M444,$WSCRATCH)
+  SETMEL ($M445,1,2UG4-BSK17,&M446,$WSCRATCH)
+  SETMEL ($M447,1,$B64,&M448,$WSCRATCH)
+  SETMEL ($M449,1,$B65,&M450,$WSCRATCH)
+  SETMEL ($M451,1,2UG3-BSK8,&M452,$WSCRATCH)
+  SETMEL ($M453,1,2UG4-BSK16,&M454,$WSCRATCH)
+  ;fiktiver BSK-Bef
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  MELEIN (&M455,3,$B66,$WSCRATCH,EG3-BSK1,$WSCRATCH)
+  SETMEL ($M458,1,$B66,&M459,$WSCRATCH)
+  SETMEL ($M460,1,EG3-BSK1,&M461,$WSCRATCH)
+  ENDE 
+  ;fiktiver BSK-Bef
+  ; 
+  TASK (4,cycl,2000)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M462,$M463,Zeitverz.1)
+  MOKY (Zeitverz.1,$M464,$B67)
+  BEFAUS (1,$WZERO,$B67,$WZERO,$WZERO,&M0,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B67,$WZERO,$WZERO,&M3,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B67,$WZERO,$WZERO,&M6,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B67,$WZERO,$WZERO,&M9,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  MOKY (Zeitverz.1,$M469,$B68)
+  BEFAUS (1,$WZERO,$B68,$WZERO,$WZERO,&M28,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B68,$WZERO,$WZERO,&M31,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B68,$WZERO,$WZERO,&M34,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B68,$WZERO,$WZERO,&M37,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  MOKY (Zeitverz.1,$M474,$B69)
+  BEFAUS (1,$WZERO,$B69,$WZERO,$WZERO,&M56,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B69,$WZERO,$WZERO,&M59,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B69,$WZERO,$WZERO,&M62,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B69,$WZERO,$WZERO,&M65,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M479,$M480,Zeitverz.2)
+  MOKY (Zeitverz.2,$M481,$B70)
+  BEFAUS (1,$WZERO,$B70,$WZERO,$WZERO,&M84,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B70,$WZERO,$WZERO,&M87,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B70,$WZERO,$WZERO,&M90,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B70,$WZERO,$WZERO,&M93,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  MOKY (Zeitverz.2,$M486,$B71)
+  BEFAUS (1,$WZERO,$B71,$WZERO,$WZERO,&M112,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B71,$WZERO,$WZERO,&M115,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B71,$WZERO,$WZERO,&M118,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B71,$WZERO,$WZERO,&M121,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  MOKY (Zeitverz.2,$M491,$B72)
+  BEFAUS (1,$WZERO,$B72,$WZERO,$WZERO,&M140,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B72,$WZERO,$WZERO,&M143,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B72,$WZERO,$WZERO,&M146,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B72,$WZERO,$WZERO,&M149,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M496,$M497,Zeitverz.3)
+  MOKY (Zeitverz.3,$M498,$B73)
+  BEFAUS (1,$WZERO,$B73,$WZERO,$WZERO,&M168,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B73,$WZERO,$WZERO,&M171,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B73,$WZERO,$WZERO,&M174,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B73,$WZERO,$WZERO,&M177,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  MOKY (Zeitverz.3,$M503,$B74)
+  BEFAUS (1,$WZERO,$B74,$WZERO,$WZERO,&M196,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B74,$WZERO,$WZERO,&M199,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B74,$WZERO,$WZERO,&M202,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B74,$WZERO,$WZERO,&M205,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  MOKY (Zeitverz.3,$M508,$B75)
+  BEFAUS (1,$WZERO,$B75,$WZERO,$WZERO,&M224,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B75,$WZERO,$WZERO,&M227,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B75,$WZERO,$WZERO,&M230,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B75,$WZERO,$WZERO,&M233,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M513,$M514,Zeitverz.4)
+  MOKY (Zeitverz.4,$M515,$B76)
+  BEFAUS (1,$WZERO,$B76,$WZERO,$WZERO,&M252,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B76,$WZERO,$WZERO,&M255,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B76,$WZERO,$WZERO,&M258,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B76,$WZERO,$WZERO,&M261,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  MOKY (Zeitverz.4,$M520,$B77)
+  BEFAUS (1,$WZERO,$B77,$WZERO,$WZERO,&M280,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B77,$WZERO,$WZERO,&M283,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B77,$WZERO,$WZERO,&M286,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B77,$WZERO,$WZERO,&M289,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  MOKY (Zeitverz.4,$M525,$B78)
+  BEFAUS (1,$WZERO,$B78,$WZERO,$WZERO,&M308,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M527,$M528,Zeitverz.5)
+  BEFAUS (1,$WZERO,$B79,$WZERO,$WZERO,&M315,$WSCRATCH)
+  MOKY (Zeitverz.5,$M530,$B79)
+  BEFAUS (1,$WZERO,$B79,$WZERO,$WZERO,&M318,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B79,$WZERO,$WZERO,&M321,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B79,$WZERO,$WZERO,&M324,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  BEFAUS (1,$WZERO,$B80,$WZERO,$WZERO,&M343,$WSCRATCH)
+  MOKY (Zeitverz.5,$M535,$B80)
+  BEFAUS (1,$WZERO,$B80,$WZERO,$WZERO,&M346,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B80,$WZERO,$WZERO,&M349,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B80,$WZERO,$WZERO,&M352,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  BEFAUS (1,$WZERO,$B81,$WZERO,$WZERO,&M371,$WSCRATCH)
+  MOKY (Zeitverz.5,$M540,$B81)
+  BEFAUS (1,$WZERO,$B81,$WZERO,$WZERO,&M374,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B81,$WZERO,$WZERO,&M377,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B81,$WZERO,$WZERO,&M380,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  VVZ ($WONE,$M544,$M545,Zeitverz.6)
+  BEFAUS (1,$WZERO,$B82,$WZERO,$WZERO,&M399,$WSCRATCH)
+  MOKY (Zeitverz.6,$M547,$B82)
+  BEFAUS (1,$WZERO,$B82,$WZERO,$WZERO,&M402,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B82,$WZERO,$WZERO,&M405,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B82,$WZERO,$WZERO,&M408,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  BEFAUS (1,$WZERO,$B83,$WZERO,$WZERO,&M427,$WSCRATCH)
+  MOKY (Zeitverz.6,$M552,$B83)
+  BEFAUS (1,$WZERO,$B83,$WZERO,$WZERO,&M430,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B83,$WZERO,$WZERO,&M433,$WSCRATCH)
+  BEFAUS (1,$WZERO,$B83,$WZERO,$WZERO,&M436,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  40
+  ;*****************************************************************
+  BEFAUS (1,$WZERO,$B84,$WZERO,$WZERO,&M455,$WSCRATCH)
+  MOKY (Zeitverz.6,$M557,$B84)
+  ENDE 
+  ENDMODUL 

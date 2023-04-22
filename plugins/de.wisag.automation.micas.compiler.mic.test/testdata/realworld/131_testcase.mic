@@ -1,0 +1,355 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI40505.GPS
+  ;*** Projektname    : 
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : 
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 4
+  ;*** User Number    : 5
+  ;*** Modul Typ      : ac40
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  A_Anl_EIN1
+  FloatV A_Raumtemp
+  WordV  NN_Steuer_230VAC
+  WordV  NN_Steuer_24VAC
+  WordK  A_Anl_R1 (1)
+  WordV  KW-Pumpe-Raum-36
+  WordV  Abluefter-Loetpl
+  WordV  KW-Sek-Pumpe-SUG
+  FloatV A_SW_Raumtemp
+  WordV  NN_Steuer_24VDC
+  WordV  SSM-Abwa-Hebe-57
+  WordV  Abl-Gefahrenschr
+  WordV  SSM-Abwa-Hebe-46
+  WordV  SSM-Waermetausch
+  WordV  SSM_1
+  WordV  SSM_3
+  WordV  SSM_4
+  WordV  A_Anl_EIN1_1
+  WordV  SSM_5
+  FloatV A_Regler-SG
+  WordV  SSM_6
+  WordV  NN_Unterspannung
+  WordV  NN_Ueberspannung
+  WordV  SSM_2
+  WordV  Entriegeln
+  WordV  Entriegel-Taster
+  WordV  Entriegel-Befehl
+  WordV  A_Luefter_einsch
+  WordV  A_Heizvent.oeffn
+  WordK  k0 (0)
+  WordV  SSM_7
+  WordV  SSM-UMLUFTERH-2
+  WordV  SSM-UMLUFTERH-1
+  FloatK $M0 (8.00)
+  FloatK $M1 (0.00)
+  WordV  $B1
+  WordV  $B2
+  IPAMB &M2 (140,7)
+  WordV  $WSCRATCH
+  IPAMB &M3 (10,2)
+  WordV  $HB2
+  IPAMB &M4 (10,6)
+  IPAMB &M5 (1,0)
+  IPAMB &M8 (77,10)
+  IPAMB &M9 (77,11)
+  WordV  $B3
+  FloatK $M10 (3.00)
+  IPAMW &M11 (39)
+  IPAMW &M12 (145)
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $HB3
+  FloatK $M13 (0.00)
+  FloatK $M14 (5.00)
+  FloatK $M15 (3.00)
+  FloatK $M16 (60.00)
+  FloatK $M17 (600.00)
+  WordV  $HB0
+  IPAMB &M18 (9,13)
+  IPAMB &M19 (10,1)
+  IPAMB &M20 (10,5)
+  IPAMB &M21 (9,9)
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  WordV  $HB1
+  WordV  $B9
+  WordV  $B7
+  WordV  $B10
+  WordV  $B8
+  IPAMB &M22 (140,5)
+  IPAMB &M23 (19,6)
+  IPAMB &M24 (19,7)
+  IPAMB &M25 (74,2)
+  IPAMB &M26 (20,2)
+  IPAMB &M27 (20,3)
+  IPAMB &M31 (13,10)
+  IPAMB &M32 (13,14)
+  IPAMB &M33 (17,2)
+  IPAMB &M34 (14,2)
+  IPAMB &M35 (17,3)
+  IPAMB &M36 (17,14)
+  IPAMB &M37 (17,15)
+  WordV  $B11
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  WordV  $B17
+  WordV  $B18
+  WordV  $B19
+  IPAMB &M39 (77,13)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;In dieser BM existieren
+  ;nur in den Räumen 201 +
+  ;204 örtliche Ventilator-
+  ;Stufenschalter. Diese
+  ;Programmvorlage rührt
+  ;aus der BM im Turm 3 her
+  ; 
+  ;Der Einfachheit halber
+  ;verbleiben die Variablen
+  ;von fehlenden Schalter-
+  ;stellungen; diese werden
+  ;im Zuordnungseditor auf
+  ;0 oder 1 gesetzt.
+  ; 
+  ;VSR in den
+  ;Räumen:
+  ;
+  ; 
+  ;Verwendete Versionen:
+  ;CAE2000 : 7.4
+  ;FMICON  :
+  ; 
+  ;Kunde:   MPI Göttingen
+  ;Projekt: Sanierung
+  ;         Turm 4
+  ;         SOG + SUG
+  ;Anlage:  Lufterhitzer
+  ;         Raum 59
+  ;         Sammelstörung
+  ;         Betriebstechnik
+  ; 
+  ;Um die Variablennamen
+  ;nicht bei jedem Programm
+  ;an die Raum-Nr. anpassen
+  ;zu müssen, werden die
+  ;Räume je Programm und
+  ;Modul mit A, B, C usw.
+  ;durch"nummeriert".
+  ;A = Raum 59
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  BTRA (A_Anl_R1,A_Anl_EIN1)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (2,cycl,1000)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  VVZ (A_Anl_EIN1,$M0,$M1,$B1)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 ($B1,$B2,A_Anl_EIN1_1)
+  NICHT ($B1,$B2)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M2,1,A_Anl_R1,$WSCRATCH)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM-UMLUFTERH-1)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM-UMLUFTERH-2)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M8,1,Entriegel-Taster,$WSCRATCH)
+  MELEIN (&M9,1,Entriegel-Befehl,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entriegel-Befehl,Entriegel-Taster,$B3)
+  MOKY ($B3,$M10,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M11,A_Raumtemp,$WSCRATCH)
+  ANEIN (&M12,A_SW_Raumtemp,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  NICHT ($WONE,$WSCRATCH)
+  NICHT (A_Anl_R1,$HB3)
+  REGLER (7,$WONE,$HB3,$M13,A_Regler-SG,$WSCRATCH)
+  VGLEH (A_Regler-SG,$M14,$M15,A_Heizvent.oeffn)
+  VVZ (A_Heizvent.oeffn,$M16,$M17,A_Luefter_einsch)
+  ;Raumtemp.-Regler
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  NICHT (A_Heizvent.oeffn,$HB0)
+  BEFAUS (1,$HB0,A_Heizvent.oeffn,$WZERO,$WZERO,&M18,
+          $WSCRATCH)
+  NICHT ($B5,$HB0)
+  BEFAUS (1,$HB0,A_Luefter_einsch,$WZERO,$WZERO,&M19,
+          $WSCRATCH)
+  NICHT ($B4,$HB0)
+  BEFAUS (1,$HB0,A_Luefter_einsch,$WZERO,$WZERO,&M20,
+          $WSCRATCH)
+  NICHT (A_Heizvent.oeffn,$HB0)
+  BEFAUS (1,$HB0,A_Heizvent.oeffn,$WZERO,$WZERO,&M21,
+          $WSCRATCH)
+  ODRMN (1,SSM-UMLUFTERH-2,1,A_Luefter_einsch,$B4,$WSCRATCH)
+  ODRMN (1,SSM-UMLUFTERH-1,1,A_Luefter_einsch,$B5,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND11 ($B9,A_Anl_R1,$B6)
+  NICHT (A_Anl_R1,$HB1)
+  NICHT ($HB1,$B9)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  UND2 (A_Anl_R1,$B10,$B7)
+  NICHT (A_Anl_R1,$B10)
+  ;1BLOCK BLOCKER 1 ZYKLUSZ
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (3,A_Anl_EIN1_1,k0,$B7,0,$B8,$WSCRATCH)
+  BEFAUS (1,$B6,$B8,$WZERO,$WZERO,&M22,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,NN_Ueberspannung)
+  MELEIN (&M24,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,NN_Unterspannung)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,NN_Steuer_230VAC)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,NN_Steuer_24VAC)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,NN_Steuer_24VDC)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  NICHT ($WONE,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M31,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,KW-Sek-Pumpe-SUG)
+  MELEIN (&M32,1,KW-Pumpe-Raum-36,$WSCRATCH)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Abluefter-Loetpl)
+  MELEIN (&M34,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Abl-Gefahrenschr)
+  MELEIN (&M35,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM-Waermetausch)
+  MELEIN (&M36,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM-Abwa-Hebe-46)
+  MELEIN (&M37,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SSM-Abwa-Hebe-57)
+  MELEIN (&M5,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODRMN (14,Abl-Gefahrenschr,Abluefter-Loetpl,
+         KW-Pumpe-Raum-36,KW-Sek-Pumpe-SUG,SSM-Abwa-Hebe-46,
+         SSM-Abwa-Hebe-57,k0,SSM-Waermetausch,
+         SSM-UMLUFTERH-1,SSM-UMLUFTERH-2,k0,k0,k0,k0,0,$B11,
+         $WSCRATCH)
+  ODR2 ($B11,k0,SSM_1)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ODRMN (14,NN_Ueberspannung,NN_Unterspannung,
+         NN_Steuer_230VAC,NN_Steuer_24VAC,NN_Steuer_24VDC,k0,
+         k0,k0,k0,k0,k0,k0,k0,k0,0,$B12,$WSCRATCH)
+  ODR2 ($B12,SSM_1,SSM_2)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ODRMN (14,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,0,$B13,
+         $WSCRATCH)
+  ODR2 ($B13,SSM_2,SSM_3)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ODRMN (14,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,0,$B14,
+         $WSCRATCH)
+  ODR2 ($B14,SSM_3,SSM_4)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODRMN (14,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,0,$B15,
+         $WSCRATCH)
+  ODR2 ($B15,SSM_4,SSM_5)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODRMN (14,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,0,$B16,
+         $WSCRATCH)
+  ODR2 ($B16,SSM_5,SSM_6)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODRMN (14,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,k0,0,$B17,
+         $WSCRATCH)
+  ODR2 ($B17,SSM_6,SSM_7)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  UND11 (Entriegeln,SSM_7,$B18)
+  RSS (SSM_7,$B18,$B19,$WSCRATCH)
+  NICHT ($B19,$HB0)
+  BEFAUS (1,$HB0,$B19,$WZERO,$WZERO,&M39,$WSCRATCH)
+  ENDE 
+  ENDMODUL 

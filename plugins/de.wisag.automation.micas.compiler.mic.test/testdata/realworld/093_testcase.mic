@@ -1,0 +1,523 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 00_08_04.GPS
+  ;*** Projektname    : MPI GÖTTINGEN
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : SCHLERETH
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 8
+  ;*** Modul Typ      : ar20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  Z_INIT_TASK_EIN
+  WordV  S_ERR
+  WordK  K_1_STATUS (1)
+  WordK  K_0_STATUS (0)
+  FloatK K_VP_WT_RL_VE_ZT (10.00)
+  WordV  E_ST_VL_SEK_STW
+  WordV  E_ST_RL_PRI_STW
+  WordV  Z_RL_VE_SEK
+  WordV  E_VP_FREIG_WT
+  FloatV E_X_VL_TEMP_SEK
+  FloatV E_VP_WT_RL_VE_ZT
+  FloatK K_60_FAKTOR (60.00)
+  WordV  Z_HAUPT
+  FloatK K_1_FAKTOR (1.00)
+  WordV  E_BM_WW_PU_1
+  WordV  E_BM_WW_PU_2
+  WordV  E_BM_WW_PU_3
+  FloatV R_FG_SK_1
+  FloatV R_FG_SK_2
+  WordK  K_VP_FREIG_WT (0)
+  WordV  E_RM_SEK_RL_VE_A
+  FloatV E_W_VL_TEMP_SEK
+  FloatV E_W_RL_TEMP_PRI
+  FloatV Z_1_WT_RL_PRI_VE
+  FloatV E_X_RL_TEMP_PRI
+  FloatV Z_2_WT_RL_PRI_VE
+  WordV  E_BM_KO_UEBER
+  WordV  E_ST_HZ_STROEM
+  FloatV E_MW_HZ_VL_TEMP
+  FloatV A_WT_RL_PRI_VE
+  WordV  A_RL_VE_SEK
+  WordV  Z_RL_VE_PRIM_ZU
+  WordV  A_SAM_ST
+  WordV  E_BM_TEMP_S
+  WordV  $HB0
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &M0 (191,1)
+  IPAAW &M1 (192)
+  IPAMB &M2 (34,3)
+  WordV  $B1
+  IPAMB &M3 (34,6)
+  WordV  $B2
+  IPAMB &M4 (11,7)
+  WordV  $B3
+  IPAMB &M5 (10,3)
+  IPAMB &M6 (10,7)
+  IPAMB &M7 (11,3)
+  IPAMB &M8 (34,2)
+  IPAMB &M9 (191,3)
+  IPAMB &M10 (32,7)
+  IPAMB &M11 (35,6)
+  IPAAW &M13 (14)
+  IPAAW &M14 (15)
+  IPAAW &M15 (7)
+  WordV  $B4
+  WordV  $WSCRATCH
+  FloatK $M16 (94.00)
+  FloatK $M17 (6.00)
+  WordV  $B5
+  FloatK $M18 (94.00)
+  FloatK $M19 (6.00)
+  WordV  $B6
+  FloatV $F1
+  FloatK $M20 (0.00)
+  FloatK $M21 (50.00)
+  FloatK $M22 (2.00)
+  WordV  $B7
+  WordV  $B8
+  FloatK $M23 (0.00)
+  FloatK $M24 (10.00)
+  WordV  $B9
+  WordV  $B10
+  FloatK $M25 (300.00)
+  FloatK $M26 (0.00)
+  FloatK $M27 (15.00)
+  FloatK $M28 (0.00)
+  WordV  $B11
+  WordV  $B12
+  WordV  $HB3
+  FloatK $M29 (0.00)
+  FloatK $M30 (15.00)
+  FloatK $M31 (0.00)
+  WordV  $B13
+  WordV  $B14
+  FloatK $M32 (0.00)
+  WordV  $B15
+  FloatK $M33 (0.00)
+  FloatV $F2
+  FloatK $M34 (100.00)
+  IPAMB &M35 (191,0)
+  IPAMB &M36 (32,5)
+  IPAMB &M37 (33,1)
+  IPAAW &M38 (22)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,init)
+  ;PROJEKT:
+  ;------------------------
+  ;Max-Planck-Institut
+  ;für Bio-Physikalische
+  ;Chemie Göttingen
+  ;KUNDE:
+  ;------------------------
+  ;Lodewick GmbH
+  ; 
+  ;ANLAGE:
+  ;------------------------
+  ;Umbau Kesselhaus
+  ;- Wärmetauscher 2
+  ; 
+  ;Diese Steuerungs- und
+  ;Regelungs- Software
+  ;wurde von der Firma
+  ;MS-TEPLAN erstellt.
+  ;Das Programm darf nur
+  ;mit ausdrücklicher
+  ;Genehmigung von
+  ;MS-TEPLAN oder von
+  ;ABB Gebäudeautomation
+  ;geändert oder kopiert
+  ;werden.
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;PROGRAMMSTRUKTUR:
+  ;-----------------------
+  ;Task 1= Initialisierung
+  ;Task 2= Initialisierung
+  ;Task 3= Daten Einlesen
+  ;Digitale Werte
+  ;Analoge Werte
+  ;Task 4= Kopfsteuerung/
+  ;Regelung und Steuerung
+  ; 
+  ;VARIABLENLEGENDE:
+  ;-----------------------
+  ;Z_ = Zwischenvariable
+  ;E_ = Eingabevariable
+  ;A_ = Ausgabevariable
+  ;K_ = Konstante
+  ;D_ = Displayvariable
+  ;S_ = Systemvariable
+  ;R_ = Reservarariable
+  ; 
+  ;Task 5= Daten Ausgeben
+  ;Digitale Werte
+  ;Analoge Werte
+  ; 
+  ;_VP_ = Virtueller Var.
+  ;_BM_ = Betriebs Var.
+  ;_ST_ = Störungs Var.
+  ;_RM_ = Rückmeld. Var.
+  ;_MW_ = Meßwert Var.
+  ;_AS_ = Stellsignal Var.
+  ;_X_  = Istwert Regel.
+  ;_W_  = Sollwert Regel.
+  ;_Y_  = Stellwert Regel.
+  ;_SK_ = Sollkennlinie
+  ;_PK_ = Papierkorb
+  ;_ERR_= Fehlerkorb
+  ; 
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BTRA (K_1_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter aktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  TASK (2,cycl,500)
+  NICHT (Z_INIT_TASK_EIN,$HB0)
+  BENDE ($HB0)
+  ;Initialisierung
+  ;durchfühhren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ;EZ-HE00-10A-X50
+  ; 
+  NICHT (K_VP_FREIG_WT,$HB0)
+  BEFAUS (1,$HB0,K_VP_FREIG_WT,$WZERO,$WZERO,&M0,S_ERR)
+  ;Freigabe
+  ;schalten
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ;EZ-HE00-10A-V10
+  ; 
+  ANAUS (K_VP_WT_RL_VE_ZT,K_1_STATUS,&M1,S_ERR)
+  ;Wert Nachfahren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  BTRA (K_0_STATUS,Z_INIT_TASK_EIN)
+  ;Initialisierungs-
+  ;schalter
+  ;deaktivieren
+  ; 
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  TASK (3,cycl,1000)
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Einlesen der
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ;Störung Rücklauf-
+  ;Primär   STW
+  ; 
+  NICHT ($B1,E_ST_RL_PRI_STW)
+  MELEIN (&M2,1,$B1,S_ERR)
+  ;Störung Vorlauf-
+  ;Sekundär STW
+  ; 
+  NICHT ($B2,E_ST_VL_SEK_STW)
+  MELEIN (&M3,1,$B2,S_ERR)
+  ;EZ-HE00-10A-S02
+  ; 
+  ;Störung
+  ;Keine Strömung da
+  ;HZ Vorlauf
+  ; 
+  NICHT ($B3,E_ST_HZ_STROEM)
+  MELEIN (&M4,1,$B3,S_ERR)
+  ;Betriebsmeldung
+  ;Warmwasserpumpe 1
+  ; 
+  ;EZ-HE00-11A-B01
+  ; 
+  MELEIN (&M5,1,E_BM_WW_PU_1,S_ERR)
+  ;Betriebsmeldung
+  ;Warmwasserpumpe 2
+  ; 
+  ;EZ-HE00-11A-A01
+  ; 
+  ;EZ-HE00-11A-B02
+  ; 
+  MELEIN (&M6,1,E_BM_WW_PU_2,S_ERR)
+  ;Betriebsmeldung
+  ;Warmwasserpumpe 3
+  ; 
+  ;EZ-HE00-10A-S01
+  ; 
+  ;EZ-HE00-11A-B03
+  ; 
+  MELEIN (&M7,1,E_BM_WW_PU_3,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ;Betriebsmeldung
+  ;Kondensat-
+  ;Überfüllung
+  ; 
+  ;EZ-HE00-10A-B01
+  ; 
+  MELEIN (&M8,1,E_BM_KO_UEBER,S_ERR)
+  ;Rückmeldung Ein
+  ;Freigabe
+  ;Wärmetauscher
+  ; 
+  ;EZ-HE00-10A-X50
+  ; 
+  MELEIN (&M9,1,K_VP_FREIG_WT,S_ERR)
+  BTRA (K_VP_FREIG_WT,E_VP_FREIG_WT)
+  ;Rückmeldung Ein
+  ;Sek.-RL-Ventil
+  ;Wärmetauscher
+  ; 
+  ;EZ-HE00-10A-X02
+  ; 
+  MELEIN (&M10,1,E_RM_SEK_RL_VE_A,S_ERR)
+  ;Meldung Ein
+  ;Temperaturschalter
+  ;Dampfventil
+  ; 
+  ;EZ-HE00-10A-B13
+  ; 
+  MELEIN (&M11,1,E_BM_TEMP_S,S_ERR)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&M1,K_VP_WT_RL_VE_ZT,S_ERR)
+  ATRA (K_VP_WT_RL_VE_ZT,E_VP_WT_RL_VE_ZT)
+  ;EZ-HE00-10A-V10
+  ; 
+  ;Virtueller Zeit
+  ;Wärmetauscher Ventil
+  ;Rücklauf Sekundär
+  ; 
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&M13,E_X_RL_TEMP_PRI,S_ERR)
+  ;EZ-HE00-10A-T01
+  ; 
+  ;Istwert
+  ;Rücklauftemperatur
+  ;Primär
+  ; 
+  ANEIN (&M14,E_X_VL_TEMP_SEK,S_ERR)
+  ;EZ-HE00-10A-T02
+  ; 
+  ;Istwert
+  ;Vorlauftemperatur
+  ;Sekundär
+  ; 
+  ANEIN (&M15,E_MW_HZ_VL_TEMP,S_ERR)
+  ;EZ-HE00-11A-T01
+  ; 
+  ;Messwert
+  ;Vorlauftemperatur
+  ;Heizung
+  ; 
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  SOLKEN (3,K_1_STATUS,E_W_VL_TEMP_SEK,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Vorlauf
+  ;Sekundär
+  ; 
+  SOLKEN (4,K_1_STATUS,E_W_RL_TEMP_PRI,S_ERR)
+  ;Aussentemperatur
+  ; 
+  ;Sollwert Rücklauf
+  ;Primär
+  ; 
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  TASK (4,cycl,1000)
+  ;Kopfsteuerung der
+  ;Anlage:
+  ;- virtuelle Störungen
+  ;- Sammelstörung
+  ;- Hauptstörung
+  ;- Anlage Einschalten
+  ; 
+  ;Steuerungs und
+  ;Regelungs-
+  ;Funktionen der Anlage
+  ;
+  ; 
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODRMN (8,E_ST_RL_PRI_STW,K_0_STATUS,K_0_STATUS,K_0_STATUS,
+         K_0_STATUS,K_0_STATUS,K_0_STATUS,K_0_STATUS,0,$B4,
+         $WSCRATCH)
+  ODR2 ($B4,K_0_STATUS,A_SAM_ST)
+  ;Sammelstörung
+  ;Tritt eine Störung auf
+  ;die allgemein zur
+  ;Anlage oder zu einem
+  ;Bereich gehört wird die
+  ;Störung gesetzt
+  ; 
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  VGLEH (E_X_VL_TEMP_SEK,$M16,$M17,$B5)
+  VGLEH (E_X_RL_TEMP_PRI,$M18,$M19,$B6)
+  ODRMN (3,$B5,$B6,E_BM_TEMP_S,0,Z_RL_VE_PRIM_ZU,$WSCRATCH)
+  ;Primär-
+  ;Rücklauf Ventil
+  ;Zwangsweise zufahren
+  ;und Regler auf
+  ;Festwert 0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  MULDI (E_VP_WT_RL_VE_ZT,K_60_FAKTOR,K_1_FAKTOR,$F1)
+  VVZ (E_VP_FREIG_WT,$M20,$F1,Z_RL_VE_SEK)
+  VGLEH (E_MW_HZ_VL_TEMP,$M21,$M22,$B7)
+  ODRMN (3,E_BM_WW_PU_1,E_BM_WW_PU_2,E_BM_WW_PU_3,0,$B8,
+         $WSCRATCH)
+  VVZ ($B8,$M23,$M24,$B9)
+  UNDMN (4,E_VP_FREIG_WT,$B7,E_RM_SEK_RL_VE_A,$B9,3,
+         E_ST_HZ_STROEM,E_ST_RL_PRI_STW,E_ST_VL_SEK_STW,$B10,
+         $WSCRATCH)
+  VVZ ($B10,$M25,$M26,Z_HAUPT)
+  ;Ein- und Ausschalten
+  ;Wärmetauscher
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  VVZ (Z_HAUPT,$M27,$M28,$B11)
+  UND11 ($B11,Z_RL_VE_PRIM_ZU,$B12)
+  NICHT ($B12,$HB3)
+  REGLER (3,K_1_STATUS,$HB3,$M29,Z_1_WT_RL_PRI_VE,S_ERR)
+  ;Vorlauftemperatur
+  ;regelung
+  ;Wärmetauscher
+  ;u
+  ; 
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  VVZ (Z_HAUPT,$M30,$M31,$B13)
+  UND11 ($B13,Z_RL_VE_PRIM_ZU,$B14)
+  NICHT ($B14,$HB3)
+  REGLER (4,K_1_STATUS,$HB3,$M32,Z_2_WT_RL_PRI_VE,S_ERR)
+  ;Rücklauftemperatur
+  ;regelung
+  ;Wärmetauscher
+  ; 
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  ODRMN (3,E_ST_VL_SEK_STW,E_ST_RL_PRI_STW,Z_RL_VE_PRIM_ZU,0,
+         $B15,$WSCRATCH)
+  AWT ($B15,Z_1_WT_RL_PRI_VE,$M33,$F2)
+  AWT (E_BM_KO_UEBER,$F2,$M34,A_WT_RL_PRI_VE)
+  ;Wärmetauscher
+  ;Primär Rücklauf Ventil
+  ; 
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  ODRMN (3,E_ST_VL_SEK_STW,E_ST_RL_PRI_STW,Z_RL_VE_SEK,0,
+         A_RL_VE_SEK,$WSCRATCH)
+  ;Wärmetauscher
+  ;Rücklauf Sekundär Ventil
+  ; 
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  ENDE 
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  TASK (5,cycl,1000)
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Digitale Werte
+  ; 
+  ;Ausgeben von
+  ;Prozeßdaten
+  ;Analoge Werte
+  ; 
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  SETMEL (K_1_STATUS,1,A_SAM_ST,&M35,S_ERR)
+  ;EZ-HE00-10A-S50
+  ; 
+  ;Sammelstörung
+  ;Wärmetauscher
+  ; 
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ;EZ-HE00-10A-X02
+  ; 
+  NICHT (A_RL_VE_SEK,$HB0)
+  BEFAUS (1,$HB0,A_RL_VE_SEK,$WZERO,$WZERO,&M36,S_ERR)
+  ;Rücklauf-Sekundär
+  ;Wärmetauscher Ventil
+  ; 
+  ;EZ-HE00-10A-X10
+  ; 
+  NICHT (Z_HAUPT,$HB0)
+  BEFAUS (1,$HB0,Z_HAUPT,$WZERO,$WZERO,&M37,S_ERR)
+  ;Freigabe
+  ;Primär Dampfventil
+  ; 
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ;EZ-HE00-10A-Y01
+  ; 
+  ANAUS (A_WT_RL_PRI_VE,K_1_STATUS,&M38,S_ERR)
+  ;Rücklauf-Primär
+  ;Wärmet. Ventil
+  ; 
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  ENDE 
+  ENDMODUL 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="sshd"
+         name="MICAS Emulator Application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="de.wisag.automation.micas.emulator.rcp.EmulatorApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="sshd"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.wisag.automation.micas.emulator.rcp.sshd"
+            name="MICAS Emulator">
+         <property
+               name="appName"
+               value="MICAS Emulator">
+         </property>
+         
+      </product>
+   </extension>
+
+</plugin>

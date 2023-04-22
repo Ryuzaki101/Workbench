@@ -1,0 +1,2316 @@
+MODUL (AC60,2)
+  WordV $WSCATCH
+  WordK $WZERO (0)
+  WordK K_1 (1)
+  FloatV MW_Aussentemperatur
+  FloatK K_float_0 (0.00)
+  FloatK K_float_1 (1.00)
+  WordV BF_Abluftventilator_Stufe1_EIN
+  WordV BF_Zuluftventilator_Stufe1_EIN
+  WordV Stoerung_Sammelstoerung_BEFAUS
+  FloatK K_float_120 (120.00)
+  FloatK K_float_10 (10.00)
+  FloatK K_float_30 (30.00)
+  FloatV Ansteuerung_Abluftventilator
+  WordV Stoerung_Abschaltstoerung
+  FloatK K_float_5 (5.00)
+  FloatK K_float_300 (300.00)
+  FloatK K_float_100 (100.00)
+  FloatK K_float_3600 (3600.00)
+  WordK K_Freigabe_Temperaturregelung_AUS (0)
+  WordK K_Nachtkuehlung_EIN (0)
+  WordK K_Freigabe_Temperaturregelung_EIN (1)
+  WordK K_Freigabe_EIN (0)
+  WordK K_Nachtkuehlung_AUS (1)
+  WordK K_Freigabe_AUS (1)
+  FloatK K_SW_Mindestdrehzahl_Abluftventilator (50.00)
+  FloatK K_SW_Sperren_Heizen (20.00)
+  FloatK K_SW_Sperren_Kuehlen (12.00)
+  FloatK K_SW_Auskuehlschutz (15.00)
+  FloatK K_SW_Mindestdrehzahl_Zuluftventilator (50.00)
+  FloatK K_SW_WRG (18.00)
+  FloatK K_SW_Differnz_Raumtemperatur_Aussentemperatur (6.00)
+  FloatK K_SW_Mindestfrischluftanteil (30.00)
+  WordV Nachtkuehlung_AUS
+  WordV Freigabe_Temperaturregelung_EIN
+  WordV Freigabe_Temperaturregelung_AUS
+  WordV Nachtkuehlung_EIN
+  WordV Freigabe_AUS
+  WordV Freigabe_EIN
+  FloatV SW_Sperren_Kuehlen
+  FloatV SW_Sperren_Heizen
+  FloatV SW_Auskuehlschutz
+  FloatV SW_Differenz_Raumtemperatur_Aussentemperatur
+  FloatV SW_Mindestdrehzahl_Zuluftventilator
+  FloatV SW_Mindestdrehzahl_Abluftventilator
+  FloatV SW_Mindestfrischluftanteil
+  WordV Betriebsmeldung_Abluftventilator
+  WordV Stoerung_Abluftventilator_Stufe1
+  WordV Gefahr_Rauchmelder_Zuluft
+  WordV BF_Abluftventilator_AUS
+  WordV BF_Zuluftventilator_AUS
+  WordV Stoerung_Zuluftventilator_Stufe1
+  FloatV MW_Zulufttemperatur_nach_Ventilator
+  WordV $M308
+  WordV $M309
+  WordV Quittierung_EIN_BEFAUS
+  WordV Quittierung_AUS_BEFAUS
+  WordV $M311
+  WordV $M312
+  WordV $M313
+  WordV $M314
+  WordV $M315
+  WordV $M326
+  WordV $M327
+  WordV $M332
+  WordV $M333
+  WordV $M334
+  WordV Stoerung_Zuluft_Druckueberwachung
+  WordV Stoerung_Abluft_Druckueberwachung
+  WordV $M331
+  WordV $M335
+  WordV Stoerung_Einschaltueberwachung
+  FloatK K_float_900 (900.00)
+  WordV Freigabe_RLT_Anlage
+  WordV $M338
+  WordV $M339
+  FloatK K_1_float (1.00)
+  WordV Sperren_Heizen
+  WordV Sperren_Kuehlen
+  FloatV Sollwert_Regler01
+  FloatV Stellgroesse_Regler01
+  FloatV Ansteuerung_Ventilator_Heizen_EG
+  FloatV Sollwert_Regler02
+  FloatV Ansteuerung_Ventilator_Kuehlen_EG
+  FloatV Stellgroesse_Regler02
+  FloatK K_float_2 (2.00)
+  WordV $M366
+  FloatV Stellgroesse_Klappen
+  WordV $M367
+  WordV $M368
+  WordV $M370
+  WordV $M371
+  WordV Nachtkuehlung_Einschalten
+  FloatV Ansteuerung_Nachtkuehlung
+  FloatV $M372
+  FloatV Differnz_Raumtemperatur_Aussentemperatur
+  FloatK K_float_8 (8.00)
+  WordK K_0 (0)
+  FloatK K_100 (100.00)
+  FloatV $M376
+  FloatV $M381
+  FloatK K_300_float (300.00)
+  WordV Wirksinn_Klappe
+  FloatV $M384
+  FloatV $M386
+  FloatV $M387
+  FloatV Ansteuerung_Klappen
+  WordV $M388
+  FloatV $M402
+  FloatV Ansteuerung_Fortluftklappe
+  FloatV Ansteuerung_Aussenluftklappe
+  FloatV $M403
+  FloatV Ansteuerung_Umluftklappe
+  FloatV $M407
+  FloatV Stellgroesse_Regler03
+  FloatV $M409
+  FloatV $M410
+  FloatV Ansteuerung_WRG
+  FloatK K_float_65 (65.00)
+  WordV BF_WP_EG_AUS
+  WordV Stoerung_WP_EG
+  WordV BF_WP_EG_EIN
+  WordV BF_WP_OG_AUS
+  WordV BF_WP_OG_EIN
+  WordV Stoerung_WP_OG
+  WordV Freigabe_WRG_BEFAUS
+  WordV $M498
+  FloatK K_float_168 (168.00)
+  IPAMW &1380LUE00MW011 (27)
+  IPAMB &1380LUE00BF020 (3,13)
+  IPAMW &1380LUE01MW001 (13)
+  IPAMW &1380LUE02MW012 (30)
+  IPAMW &1380LUE02MW013 (31)
+  IPAMB &1380LUE00GF002 (4,6)
+  IPAMB &1380LUE00GF001 (4,2)
+  IPAMB &1380LUE00WA001 (5,2)
+  IPAAW &1380LUE00SW933 (139)
+  IPAMW &1380LUE02MW001 (14)
+  IPAMW &1380LUE02MW003 (29)
+  IPAMW &1380LUE02MW002 (28)
+  IPAMB &1380LUE00BF001 (0,1)
+  IPAMB &1380LUE00BF003 (0,9)
+  IPAMB &1380LUE00BF002 (1,1)
+  IPAMB &1380LUE02BF001 (2,1)
+  IPAAW &1380LUE00SW911 (89)
+  IPAAW &1380LUE00SW912 (90)
+  IPAAW &1380LUE00SW913 (137)
+  IPAAW &1380LUE00SW994 (145)
+  IPAAW &1380LUE00SW991 (142)
+  IPAAW &1380LUE00SW992 (143)
+  IPAAW &1380LUE00SW993 (144)
+  IPAMB &1380LUE00BF990 (81,1)
+  IPAAW &1380LUE00SW907 (135)
+  IPAAW &1380LUE00SW908 (136)
+  IPAMB &1380LUE01BF001 (0,13)
+  IPAMB &1380LUE00BF903 (80,13)
+  IPAMB &1380LUE00BF900 (80,1)
+  IPAMB &1380LUE00BF902 (80,9)
+  IPAMB &1380LUE00BF901 (80,5)
+  IPAAW &1380LUE00SW903 (87)
+  IPAAW &1380LUE00SW904 (88)
+  IPAMW &1380LUE00MW000 (12)
+  IPAAW &1380LUE00SW905 (91)
+  IPAMW &1380LUE00MW003 (22)
+  IPAAW &1380LUE00SW980 (140)
+  IPAAW &1380LUE00SW981 (141)
+  WordK K_Freigabe_CO2_AUS (0)
+  WordK K_Freigabe_CO2_EIN (0)
+  WordK K_Handbetrieb_AUS (1)
+  WordK K_Handbetrieb_EIN (1)
+  WordV Freigabe_CO2_AUS
+  WordV Freigabe_CO2_EIN
+  WordV Handbetrieb_AUS
+  WordV Handbetrieb_EIN
+  FloatK K_SW_CO2 (800.00)
+  FloatK K_SW_Zuluftdruck (800.00)
+  FloatK K_SW_Abluftdruck (800.00)
+  FloatK K_SW_Raumtemperatur_Untergrenze (20.00)
+  FloatK K_SW_Raumtemperatur_Obergrenze (24.00)
+  FloatK K_SW_CO2_Obergrenze (800.00)
+  FloatK K_SW_Spuelzeit (120.00)
+  FloatV SW_CO2
+  FloatV SW_Zuluftdruck
+  FloatV SW_Abluftdruck
+  FloatV SW_Raumtemperatur_Untergrenze
+  FloatV SW_Raumtemperatur_Obergrenze
+  FloatV SW_CO2_Obergrenze
+  FloatV SW_Spuelzeit
+  IPAMW &1380LUE00MW001 (16)
+  IPAMW &1380LUE00MW002 (15)
+  FloatV MW_EG_Zulufttemperatur
+  FloatV MW_OG_Zulufttemperatur
+  FloatV MW_Ablufttemperatur_vor_Ventilator
+  FloatV MW_Zuluftdruck
+  FloatV MW_EG_RT1
+  FloatV MW_EG_RT2
+  FloatV MW_EG_CO2_1
+  FloatV MW_EG_CO2_2
+  FloatV MW_Zulufttemperatur_nach_WRG
+  FloatV MW_Abluftdruck
+  FloatV MW_OG_RT1
+  FloatV MW_OG_RT2
+  FloatV MW_OG_CO2_1
+  FloatV MW_OG_CO2_2
+  WordV BF_Zuluftventilator_Stufe2_EIN
+  WordV Stoerung_Zuluftventilator_Stufe2
+  WordV BF_Abluftventilator_Stufe2_EIN
+  WordV Stoerung_Abluftventilator_Stufe2
+  WordV $M108
+  WordV RM_Lueftung_EIN
+  WordV BF_WRG_AUS
+  WordV Stoerung_WRG
+  WordV BF_WRG_EIN
+  WordV BF_Fernquittierung_AUS
+  WordV BF_Fernquittierung_EIN
+  WordV Betriebsmeldung_Zuluftventilator
+  WordV Wartung_Zuluftventilator
+  WordV Wartung_Abluftventilator
+  IPAMB &1380LUE00WA002 (5,3)
+  IPAMB &1380LUE00BM001 (4,10)
+  IPAMW &1380LUE00MW010 (17)
+  IPAMB &1380LUE00BM980 (94,1)
+  IPAMB &1380LUE00BM981 (94,2)
+  IPAMW &1380LUE01MW012 (20)
+  IPAMW &1380LUE01MW013 (21)
+  IPAMW &1380LUE01MW003 (19)
+  IPAMW &1380LUE01MW002 (18)
+  IPAAW &1380LUE02SW907 (148)
+  IPAMW &1380LUE00MW950 (70)
+  IPAMW &1380LUE00MW951 (73)
+  IPAAW &1380LUE01SW902 (146)
+  IPAMW &1380LUE01MW950 (71)
+  IPAAW &1380LUE00SB002 (50)
+  IPAAW &1380LUE00SB001 (42)
+  IPAAW &1380LUE00SB004 (45)
+  IPAAW &1380LUE00SB003 (44)
+  IPAMB &1380LUE02BF007 (2,9)
+  IPAMB &1380LUE01BF007 (1,13)
+  IPAAW &1380LUE00SB901 (68)
+  IPAAW &1380LUE00SB900 (67)
+  IPAMB &1380LUE00ST902 (69,1)
+  IPAMB &1380LUE00ST901 (69,0)
+  IPAAW &1380LUE01SB001 (48)
+  IPAAW &1380LUE02SB001 (49)
+  IPAAW &1380LUE00MW910 (74)
+  IPAAW &1380LUE00MW911 (75)
+  IPAMB &1380LUE00BM991 (93,0)
+  IPAMB &1380LUE00BM993 (93,1)
+  IPAMB &1380LUE00BM994 (93,2)
+  IPAMW &1380LUE02MW950 (72)
+  WordV Gefahr_Rauchmelder_Abluft
+  WordV $M112
+  WordV $M113
+  WordV Freigabe_Bedarfsregelung_EIN
+  IPAMB &1380LUE00ST923 (94,3)
+  WordV $M114
+  WordV $M115
+  WordV $M117
+  FloatV $M118
+  FloatV $M119
+  WordV $M121
+  WordV $M123
+  FloatV $M124
+  FloatV $M125
+  FloatV $M126
+  FloatV $M127
+  FloatV $M128
+  FloatV $M129
+  FloatV $M130
+  WordV $M132
+  FloatV $M133
+  WordV $M135
+  FloatV $M136
+  FloatV $M137
+  FloatV $M138
+  FloatV $M139
+  FloatK K_float_40 (40.00)
+  FloatK K_float_20 (20.00)
+  FloatV MW_RT_Mittelwert_EG
+  FloatV $M140
+  FloatV $M141
+  WordV $M143
+  WordV $M145
+  FloatV $M146
+  FloatV $M147
+  FloatV $M148
+  FloatV $M149
+  FloatV $M150
+  FloatV $M151
+  FloatV $M152
+  WordV $M154
+  FloatV $M155
+  WordV $M157
+  FloatV $M158
+  FloatV $M159
+  FloatV $M160
+  FloatV $M161
+  FloatV MW_RT_Mittelwert_OG
+  FloatV $M162
+  FloatV $M163
+  WordV $M165
+  WordV $M167
+  FloatV $M168
+  FloatV $M169
+  FloatV $M170
+  FloatV $M171
+  FloatV $M172
+  FloatV $M173
+  FloatV $M174
+  WordV $M176
+  FloatV $M177
+  WordV $M179
+  FloatV $M180
+  FloatV $M181
+  FloatV $M182
+  FloatV $M183
+  FloatV MW_RT_Mittelwert
+  FloatV $M184
+  FloatV $M185
+  WordV $M187
+  WordV $M189
+  FloatV $M190
+  FloatV $M191
+  FloatV $M192
+  FloatV $M193
+  FloatV $M194
+  FloatV $M195
+  FloatV $M196
+  WordV $M198
+  FloatV $M199
+  WordV $M201
+  FloatV $M202
+  FloatV $M203
+  FloatV $M204
+  FloatV $M205
+  FloatV MW_CO2_Mittelwert
+  IPAMB &1380LUE00GF015 (7,2)
+  IPAMB &1380LUE00GF014 (6,7)
+  IPAMB &1380LUE00GF013 (6,6)
+  IPAMB &1380LUE01GF001 (4,14)
+  IPAMB &1380LUE01GF002 (4,15)
+  IPAMB &1380LUE01GF004 (5,10)
+  IPAMB &1380LUE01GF006 (5,11)
+  IPAMB &1380LUE00GF012 (6,3)
+  IPAMB &1380LUE00GF011 (6,2)
+  IPAMB &1380LUE02GF003 (5,14)
+  IPAMB &1380LUE02GF005 (5,15)
+  WordV Gefahr_BSK1
+  WordV Gefahr_BSK2
+  WordV Gefahr_BSK3
+  WordV Gefahr_BSK4
+  WordV Gefahr_BSK5
+  WordV Gefahr_BSK6
+  WordV Gefahr_BSK7
+  WordV Gefahr_BSK8
+  WordV Gefahr_BSK9
+  WordV Gefahr_BSK10
+  WordV Gefahr_BSK11
+  IPAMB &1380LUE00GF020 (7,3)
+  IPAMB &1380LUE00GF021 (7,6)
+  WordV Gefahr_Entrauchungsschalter_Entrauchung
+  WordV Gefahr_Entrauchungsschalter_ANL_AUS
+  IPAMB &1380LUE00ST924 (94,4)
+  WordV $M206
+  WordV Stoerung_Sammelstoerung_Nebenanlagen
+  IPAMB &1380HEI00ST920 (110,0)
+  IPAMB &1380LUE00BM933 (69,2)
+  WordV $M211
+  WordV $M212
+  WordV $M213
+  WordV $M214
+  WordV Freigabe_Bedarfsregelung_Temperatur
+  WordV Freigabe_Bedarfsregelung_Spuelbetrieb
+  FloatV $M220
+  FloatK K_float_4 (4.00)
+  FloatV SW_Spuelzeit_2
+  WordV $M222
+  WordV Freigabe_Bedarfsregelung_CO2
+  FloatK K_float_60 (60.00)
+  WordV Freigabe_Ventilatoren_EIN
+  WordV Freigabe_Ventilatoren_AUS
+  WordV $M219
+  FloatV Sollwert_Regler06
+  FloatV Stellgroesse_Regler06
+  FloatV Ansteuerung_Ventilator_Heizen_OG
+  FloatV Ansteuerung_Ventilator_Kuehlen_OG
+  FloatV Sollwert_Regler07
+  WordV $M218
+  FloatV Stellgroesse_Regler07
+  WordV $M221
+  WordV Stuetzbetrieb
+  FloatV $M223
+  FloatV $M224
+  FloatK K_float_22 (0.00)
+  FloatK K_float_15 (0.00)
+  WordV AT>22
+  WordV AT>20
+  WordV AT>15
+  WordV AT>1
+  FloatV Stellgroesse_heizen_EG
+  FloatV Stellgroesse_Klappen_EG
+  FloatV Stellgroesse_Klappen_OG
+  FloatV Stellgroesse_heizen_OG
+  FloatV Stellgroesse_kuehlen_OG
+  FloatV Stellgroesse_kuehlen_EG
+  FloatV $M239
+  FloatV $M240
+  FloatV $M241
+  FloatV Stellgroesse_Raumregler_max
+  FloatV Stellgroesse_Ventilatoren_Heizfall
+  FloatV Stellgroesse_Ventilatoren_Kuehlfall
+  WordV $M245
+  WordV $M246
+  WordV $M247
+  WordV $M249
+  WordV $M250
+  WordV $M251
+  FloatK K_float_29 (29.00)
+  WordV Sperren_Heizfall_Ventilator
+  WordV Sperren_Kuehlfall_Ventilator
+  FloatV Ansteuerung_CO2
+  WordV $M252
+  WordV $M253
+  FloatV $M258
+  FloatV $M259
+  FloatV Ansteuerung_WP_EG
+  WordV $M260
+  WordV $M261
+  WordV $M262
+  WordV $M263
+  WordV $M264
+  WordV $M265
+  WordV Freigabe_WP_EG_Heizfall
+  WordV Freigabe_WP_EG_Kuehlfall
+  WordV $M266
+  WordV Freigabe_WP_EG_BEFAUS
+  WordV Freigabe_WP_EG_Kuehlfall_BEFAUS
+  WordV $M270
+  WordV $M271
+  WordV $M272
+  WordV $M274
+  FloatV $M275
+  FloatV $M276
+  FloatV Ansteuerung_WP_OG
+  WordV $M277
+  WordV $M278
+  WordV $M280
+  WordV $M281
+  WordV $M283
+  WordV $M284
+  WordV Freigabe_WP_OG_Heizfall
+  WordV Freigabe_WP_OG_Kuehlfall
+  WordV $M285
+  WordV $M286
+  WordV $M287
+  WordV $M288
+  WordV Freigabe_WP_OG_BEFAUS
+  WordV Freigabe_WP_OG_Kuehlfall_BEFAUS
+  FloatV MW_Zuluftdruck_PT1
+  WordV $M294
+  FloatV Stellgroesse_Regler09
+  WordV $M293
+  FloatV Stellgroesse_Regler04
+  FloatV MW_Abluftdruck_PT1
+  WordV $M295
+  WordV $M297
+  WordV $M301
+  FloatV Stellgroesse_Regler05
+  WordV $M303
+  FloatK K_float_600 (600.00)
+  FloatV Ansteuerung_CO2_Ventilatoren
+  WordV $M316
+  WordV $M317
+  WordV $M318
+  FloatV $M319
+  FloatV $M320
+  FloatV Stellgroesse_Ventilatoren
+  FloatV $M330
+  WordV $M336
+  FloatV Ansteuerung_Zuluftventilator
+  FloatV $M342
+  WordV $M343
+  WordV $M352
+  WordV Freigabe_Zuluftventilator_Stufe1
+  WordV $M353
+  WordV $M354
+  WordV $M355
+  WordV Freigabe_Zuluftventilator_Stufe2
+  FloatK K_float_80 (80.00)
+  WordV $M362
+  WordV $M363
+  WordV $M364
+  WordV $M365
+  WordV Freigabe_Abluftventilator_Stufe1
+  WordV Freigabe_Abluftventilator_Stufe2
+  WordV $M375
+  WordV $M378
+  WordV $M380
+  WordV $M383
+  WordV $M390
+  WordV $M392
+  WordV $M394
+  WordV $M396
+  WordV $M398
+  WordV $M399
+  WordV $M400
+  WordV $M401
+  WordV $M405
+  WordV $M411
+  WordV $M412
+  WordV Freigabe_Zuluftventilator_Stufe2_BEFAUS
+  WordV Freigabe_Zuluftventilator_Stufe1_BEFAUS
+  WordV $M417
+  WordV $M419
+  WordV $M420
+  WordV $M430
+  WordV $M431
+  WordV $M434
+  WordV $M438
+  WordV $M439
+  WordV $M441
+  WordV $M445
+  WordV $M447
+  WordV $M450
+  WordV $M452
+  WordV $M454
+  WordV $M455
+  WordV Freigabe_Abluftventilator_Stufe2_BEFAUS
+  WordV Freigabe_Abluftventilator_Stufe1_BEFAUS
+  WordV $M459
+  IPAMB &1380ELT01BF920 (3,9)
+  WordV $M461
+  FloatV Ansteuerung_Ventil_Erhitzer
+  FloatV Stellgroesse_Regler13
+  FloatV $M465
+  WordV $M468
+  WordV $M470
+  FloatV $M471
+  WordV $M472
+  WordV $M474
+  WordV $M475
+  WordV Pumpe_Erhitzer_Soll_EIN
+  WordV Freigabe_Pumpe_Erhitzer_BEFAUS
+  WordV Stoerung_Erhitzer_Pumpe
+  FloatV SW_Zulufttemp_n_Ventilator
+  FloatK K_float_3 (3.00)
+  WordV $M477
+  IPAMB &1380HEI09BF001 (11,13)
+  IPAMW &1380HEI01MW003 (25)
+  WordV BF_Pumpe_Erhitzer_AUS
+  WordV BF_Pumpe_Erhitzerr_EIN
+  FloatV MW_RL_Temperatur_Erhitzer
+  IPAMB &1380LUE01BM001 (69,4)
+  IPAMB &1380LUE02BM001 (69,6)
+  WordV $M479
+  WordV Zwangsaus_Enteisung_WP1
+  WordV Zwangsaus_Enteisung_WP2
+  IPAMB &1380LUE01GF100 (9,11)
+  WordV Frostschutz
+  IPAAW &1380HEI01SW903 (138)
+  IPAAW &1380HEI01SB002 (59)
+  IPAMB &1380LUE00BM002 (4,11)
+  FloatV SW_RL_Erhitzer
+  WordV $M230
+  WordV Entrauchungsvent
+  IPAMB &1380LUE00GF022 (8,10)
+  IPAMB &1380LUE00BF920 (94,13)
+  WordV $M237
+  WordV $M238
+  WordV $M242
+  FloatK K_float_1500 (1500.00)
+  WordV $M244
+  WordV $M248
+  FloatV Sollwert_Regler09
+  WordV $M254
+  WordV $M255
+  WordV $M257
+  WordV $M267
+  WordV $M268
+  WordV $M269
+  FloatV $M273
+  WordV $M279
+  WordV $M282
+  WordV $M290
+  WordV $M292
+  WordV $M291
+  WordV $M296
+  WordV $M302
+  FloatV $M300
+  FloatV $M304
+  WordV $M307
+  FloatV $M305
+  IPAMB &1380LUE01ST001 (69,3)
+  IPAMB &1380LUE02ST001 (69,5)
+  WordV $M321
+  WordV $M322
+  WordV $M323
+  WordV $M325
+  WordV $M329
+  WordV $M337
+  WordV $M340
+  WordV $M341
+  WordV Nachlauf_Lueftung
+  WordV $M344
+  WordV $M345
+  WordV ST_Waermepumpe_EG
+  WordV ST_Waermepumpe_OG
+  FloatV $M346
+  FloatV $M348
+  FloatV $M349
+  FloatV $M350
+  WordK DONNER-TEST (1)
+  WordV $M351
+  WordV $M356
+  WordV $M357
+  WordV $M358
+  WordV $M359
+  WordV $M360
+  FloatK FKON-0 (0.00)
+  WordV $out-befaus-0-error
+  WordV $out-befaus-1-error
+  WordV $out-befaus-2-error
+  WordV $out-befaus-3-error
+  WordV $out-befaus-4-error
+  WordV $out-anaus-5-error
+  WordV $out-anaus-6-error
+  WordV $out-anaus-7-error
+  WordV $out-anaus-8-error
+  WordV $out-anaus-9-error
+  WordV $out-anaus-10-error
+  WordV $out-anaus-11-error
+  WordV $out-anaus-12-error
+  WordV $out-anaus-13-error
+  WordV $out-anaus-14-error
+  WordV $out-anaus-15-error
+  WordV $out-anaus-16-error
+  WordV $out-anaus-17-error
+  WordV $out-anaus-18-error
+  WordV $out-melein-19-meldepunkt
+  WordV $out-melein-20-error
+  WordV $out-melein-21-meldepunkt
+  WordV $out-melein-22-error
+  WordV $out-melein-23-meldepunkt
+  WordV $out-melein-24-error
+  WordV $out-melein-25-meldepunkt
+  WordV $out-melein-26-error
+  WordV $out-melein-27-meldepunkt
+  WordV $out-melein-28-error
+  WordV $out-anein-29-error
+  WordV $out-anein-30-error
+  WordV $out-anein-31-error
+  WordV $out-anein-32-error
+  WordV $out-anein-33-error
+  WordV $out-anein-34-error
+  WordV $out-anein-35-error
+  WordV $out-anein-36-error
+  WordV $out-anein-37-error
+  WordV $out-anein-38-error
+  WordV $out-anein-39-error
+  WordV $out-anein-40-error
+  WordV $out-anein-41-error
+  WordV $out-anein-42-error
+  WordV $out-anein-43-error
+  WordV $out-anein-44-error
+  WordV $out-melein-45-meldepunkt
+  WordV $out-melein-46-error
+  WordV $out-melein-47-meldepunkt
+  WordV $out-melein-48-error
+  WordV $out-odr2-49-b
+  WordV $out-melein-50-error
+  WordV $out-melein-51-error
+  WordV $out-melein-52-error
+  WordV $out-melein-53-meldepunkt
+  WordV $out-melein-54-error
+  WordV $out-melein-55-error
+  WordV $out-melein-56-error
+  WordV $out-melein-57-error
+  WordV $out-melein-58-error
+  WordV $out-melein-59-meldepunkt
+  WordV $out-melein-60-meldepunkt
+  WordV $out-melein-61-error
+  WordV $out-melein-62-error
+  WordV $out-melein-63-error
+  WordV $out-melein-64-error
+  WordV $out-melein-65-error
+  WordV $out-melein-66-error
+  WordV $out-melein-67-error
+  WordV $out-melein-68-error
+  WordV $out-melein-69-error
+  WordV $out-melein-70-error
+  WordV $out-melein-71-error
+  WordV $out-melein-72-error
+  WordV $out-melein-73-error
+  WordV $out-melein-74-error
+  WordV $out-melein-75-error
+  WordV $out-melein-76-error
+  WordV $out-melein-77-error
+  WordV $out-melein-78-error
+  WordV $out-melein-79-error
+  WordV $out-melein-80-error
+  WordV $out-melein-81-error
+  WordV $out-melein-82-error
+  WordV $out-anein-83-error
+  WordV $out-anein-84-error
+  WordV $out-anein-85-error
+  WordV $out-anein-86-error
+  WordV $out-anein-87-error
+  WordV $out-anein-88-error
+  WordV $out-anein-89-error
+  WordV $out-anein-90-error
+  WordV $out-anein-91-error
+  WordV $out-anein-92-error
+  WordV $out-anein-93-error
+  WordV $out-anein-94-error
+  WordV $out-anein-95-error
+  WordV $out-anein-96-error
+  WordV $out-anein-97-error
+  WordV $out-anein-98-error
+  WordV $out-anein-99-error
+  WordV $out-odrmn-100-binv
+  WordV $out-odrmn-101-binv
+  WordV $out-odrmn-102-binv
+  WordV $out-odrmn-103-binv
+  WordV $out-odrmn-104-binv
+  WordV $out-rss-105-binv
+  WordV $out-rss-106-binv
+  WordV $out-undmn-107-binv
+  WordV $out-rss-108-binv
+  WordV $out-setmel-109-error
+  WordV $out-undmn-110-binv
+  WordV $out-rss-111-binv
+  WordV $out-setmel-112-error
+  WordV $out-undmn-113-binv
+  WordV $out-rss-114-binv
+  WordV $out-setmel-115-error
+  WordV $out-setmel-116-error
+  WordV $out-setmel-117-error
+  WordV $out-vgl3p-118-bgr
+  WordV $out-vgl3p-119-bkl
+  WordV $out-vgl3p-120-bgr
+  WordV $out-vgl3p-121-bkl
+  WordV $out-vgl3p-122-bgr
+  WordV $out-vgl3p-123-bkl
+  WordV $out-vgl3p-124-bgr
+  WordV $out-vgl3p-125-bkl
+  WordV $out-vgl3p-126-bgr
+  WordV $out-vgl3p-127-bkl
+  WordV $out-vgl3p-128-bgr
+  WordV $out-vgl3p-129-bkl
+  WordV $out-vgl3p-130-bgr
+  WordV $out-vgl3p-131-bkl
+  WordV $out-vgl3p-132-bgr
+  WordV $out-vgl3p-133-bkl
+  WordV $out-vgl3p-134-bgr
+  WordV $out-vgl3p-135-bkl
+  WordV $out-vgl3p-136-bgr
+  WordV $out-vgl3p-137-bkl
+  WordV $out-vgl3p-138-bgr
+  WordV $out-vgl3p-139-bkl
+  WordV $out-vgl3p-140-bgr
+  WordV $out-vgl3p-141-bkl
+  WordV $out-vgl3p-142-bgr
+  WordV $out-vgl3p-143-bkl
+  WordV $out-vgl3p-144-bgr
+  WordV $out-vgl3p-145-bkl
+  WordV $out-vgl3p-146-bgr
+  WordV $out-vgl3p-147-bkl
+  WordV $out-vgl3p-148-bgr
+  WordV $out-vgl3p-149-bkl
+  FloatV $out-muldi-150-y
+  WordV $out-undmn-151-binv
+  WordV $out-setmel-152-error
+  WordV $out-odrmn-153-binv
+  WordV $out-undmn-154-binv
+  WordV $out-rss-155-binv
+  WordV $out-odrmn-156-binv
+  WordV $out-solken-157-error
+  WordV $out-odrmn-158-binv
+  WordV $out-regler-159-error
+  FloatK $FKG_160_X0 (70.00)
+  FloatK $FKG_160_Y0 (0.00)
+  FloatK $FKG_160_X1 (100.00)
+  FloatK $FKG_160_Y1 (100.00)
+  FloatK $FKG_161_X0 (30.00)
+  FloatK $FKG_161_Y0 (12.00)
+  FloatK $FKG_161_X1 (65.00)
+  FloatK $FKG_161_Y1 (40.00)
+  FloatK $FKG_162_X0 (0.00)
+  FloatK $FKG_162_Y0 (100.00)
+  FloatK $FKG_162_X1 (30.00)
+  FloatK $FKG_162_Y1 (0.00)
+  FloatV $out-atra-163-y
+  FloatV $out-atra-164-y
+  WordV $out-anaus-165-error
+  WordV $out-odrmn-166-binv
+  WordV $out-regler-167-error
+  FloatV $out-atra-168-y
+  FloatV $out-atra-169-y
+  FloatK $FKG_170_X0 (0.00)
+  FloatK $FKG_170_Y0 (100.00)
+  FloatK $FKG_170_X1 (40.00)
+  FloatK $FKG_170_Y1 (0.00)
+  FloatK $FKG_171_X0 (42.00)
+  FloatK $FKG_171_Y0 (0.00)
+  FloatK $FKG_171_X1 (58.00)
+  FloatK $FKG_171_Y1 (100.00)
+  FloatK $FKG_172_X0 (60.00)
+  FloatK $FKG_172_Y0 (0.00)
+  FloatK $FKG_172_X1 (100.00)
+  FloatK $FKG_172_Y1 (100.00)
+  WordV $out-solken-173-error
+  WordV $out-odrmn-174-binv
+  WordV $out-regler-175-error
+  FloatK $FKG_176_X0 (70.00)
+  FloatK $FKG_176_Y0 (0.00)
+  FloatK $FKG_176_X1 (100.00)
+  FloatK $FKG_176_Y1 (100.00)
+  FloatK $FKG_177_X0 (30.00)
+  FloatK $FKG_177_Y0 (12.00)
+  FloatK $FKG_177_X1 (65.00)
+  FloatK $FKG_177_Y1 (40.00)
+  FloatK $FKG_178_X0 (0.00)
+  FloatK $FKG_178_Y0 (100.00)
+  FloatK $FKG_178_X1 (30.00)
+  FloatK $FKG_178_Y1 (0.00)
+  FloatV $out-atra-179-y
+  FloatV $out-atra-180-y
+  WordV $out-anaus-181-error
+  WordV $out-odrmn-182-binv
+  WordV $out-regler-183-error
+  FloatV $out-atra-184-y
+  FloatV $out-atra-185-y
+  FloatK $FKG_186_X0 (0.00)
+  FloatK $FKG_186_Y0 (100.00)
+  FloatK $FKG_186_X1 (40.00)
+  FloatK $FKG_186_Y1 (0.00)
+  FloatK $FKG_187_X0 (42.00)
+  FloatK $FKG_187_Y0 (0.00)
+  FloatK $FKG_187_X1 (58.00)
+  FloatK $FKG_187_Y1 (100.00)
+  FloatK $FKG_188_X0 (60.00)
+  FloatK $FKG_188_Y0 (0.00)
+  FloatK $FKG_188_X1 (100.00)
+  FloatK $FKG_188_Y1 (100.00)
+  WordV $out-rss-189-binv
+  WordV $out-rss-190-binv
+  WordV $out-odrmn-191-binv
+  WordV $out-regler-192-error
+  FloatV $out-atra-193-y
+  FloatV $out-atra-194-y
+  WordV $out-odrmn-195-binv
+  WordV $out-regler-196-error
+  FloatV $out-atra-197-y
+  FloatV $out-atra-198-y
+  WordV $out-solken-199-error
+  FloatK $FKG_200_X0 (0.00)
+  FloatK $FKG_200_Y0 (100.00)
+  FloatK $FKG_200_X1 (100.00)
+  FloatK $FKG_200_Y1 (0.00)
+  WordV $out-odrmn-201-binv
+  FloatK $FKG_202_X0 (65.00)
+  FloatK $FKG_202_Y0 (0.00)
+  FloatK $FKG_202_X1 (100.00)
+  FloatK $FKG_202_Y1 (100.00)
+  WordV $out-odrmn-203-binv
+  FloatK $FKG_204_X0 (0.00)
+  FloatK $FKG_204_Y0 (100.00)
+  FloatK $FKG_204_X1 (100.00)
+  FloatK $FKG_204_Y1 (0.00)
+  WordV $out-undmn-205-binv
+  FloatK $FKG_206_X0 (0.00)
+  FloatK $FKG_206_Y0 (100.00)
+  FloatK $FKG_206_X1 (100.00)
+  FloatK $FKG_206_Y1 (0.00)
+  WordV $out-undmn-207-binv
+  WordV $out-undmn-208-binv
+  WordV $out-undmn-209-binv
+  WordV $out-undmn-210-binv
+  WordV $out-undmn-211-binv
+  WordV $out-vvz-212-y
+  WordV $out-undmn-213-binv
+  WordV $out-undmn-214-binv
+  WordV $out-undmn-215-binv
+  WordV $out-undmn-216-binv
+  WordV $out-undmn-217-binv
+  WordV $out-undmn-218-binv
+  WordV $out-undmn-219-binv
+  WordV $out-vvz-220-y
+  WordV $out-undmn-221-binv
+  WordV $out-undmn-222-binv
+  WordV $out-odrmn-223-binv
+  WordV $out-regler-224-error
+  FloatV $out-atra-225-y
+  FloatV $out-atra-226-y
+  WordV $out-odrmn-227-binv
+  WordV $out-regler-228-error
+  FloatV $out-atra-229-y
+  FloatV $out-atra-230-y
+  WordV $out-odrmn-231-binv
+  WordV $out-regler-232-error
+  FloatK $FKG_233_X0 (0.00)
+  FloatK $FKG_233_Y0 (0.00)
+  FloatK $FKG_233_X1 (30.00)
+  FloatK $FKG_233_Y1 (100.00)
+  FloatK $FKG_234_X0 (30.00)
+  FloatK $FKG_234_Y0 (0.00)
+  FloatK $FKG_234_X1 (100.00)
+  FloatK $FKG_234_Y1 (100.00)
+  FloatV $out-atra-235-y
+  FloatV $out-atra-236-y
+  WordV $out-undmn-237-binv
+  WordV $out-undmn-238-binv
+  WordV $out-undmn-239-binv
+  WordV $out-undmn-240-binv
+  WordV $out-undmn-241-binv
+  WordV $out-undmn-242-binv
+  WordV $out-odrmn-243-binv
+  WordV $out-rss-244-binv
+  WordV $out-odrmn-245-binv
+  WordV $out-rss-246-binv
+  WordV $out-undmn-247-binv
+  WordV $out-rss-248-binv
+  WordV $out-undmn-249-binv
+  WordV $out-undmn-250-binv
+  WordV $out-undmn-251-binv
+  WordV $out-undmn-252-binv
+  WordV $out-undmn-253-binv
+  WordK $in-odr2-254-a2 (0)
+  WordV $out-odrmn-255-binv
+  WordV $out-rss-256-binv
+  WordV $out-odrmn-257-binv
+  WordV $out-rss-258-binv
+  WordV $out-undmn-259-binv
+  WordV $out-rss-260-binv
+  WordV $out-undmn-261-binv
+  WordV $out-undmn-262-binv
+  WordV $out-undmn-263-binv
+  WordV $out-undmn-264-binv
+  WordV $out-befaus-265-error
+  WordV $out-befaus-266-error
+  WordV $out-odrmn-267-binv
+  WordV $out-odrmn-268-binv
+  WordV $out-befaus-269-error
+  WordV $out-setmel-270-error
+  WordV $out-anaus-271-error
+  WordV $out-anaus-272-error
+  WordV $out-anaus-273-error
+  WordV $out-anaus-274-error
+  WordV $out-setmel-275-error
+  WordV $out-setmel-276-error
+  WordV $out-setmel-277-error
+  WordV $out-anaus-278-error
+  WordV $out-befaus-279-error
+  WordV $out-anaus-280-error
+  WordV $out-befaus-281-error
+  WordV $out-anaus-282-error
+  WordV $out-anaus-283-error
+  WordV $out-anaus-284-error
+  WordV $out-anaus-285-error
+  WordV $out-befaus-286-error
+  WordV $out-befaus-287-error
+  WordV $out-anaus-288-error
+  WordV $out-setmel-289-error
+  WordV $out-setmel-290-error
+  WordV $out-undmn-291-binv
+  WordV $out-befaus-292-error
+  WordV $out-befaus-293-error
+  WordV $out-anaus-294-error
+  WordV $out-setmel-295-error
+  WordV $out-setmel-296-error
+  WordV $out-undmn-297-binv
+  WordV $out-anaus-298-error
+  WordV $out-anaus-299-error
+  WordV $out-undmn-300-binv
+  WordV $out-befaus-301-error
+  WordV $out-anaus-302-error
+  WordV $out-undmn-303-binv
+  WordV $out-befaus-304-error
+  WordV $out-anaus-305-error
+  WordV $out-undmn-306-binv
+ ;name : Task_init
+ TASK (1,init)
+ ;Page 1 Title : Init_BEFAUS
+  ;prio : 1 
+  BEFAUS (1,K_Freigabe_AUS,K_Freigabe_EIN,$WZERO,$WZERO,&1380LUE00BF900,
+   $out-befaus-0-error)
+  ;prio : 2 
+  BEFAUS (1,K_Freigabe_Temperaturregelung_AUS,K_Freigabe_Temperaturregelung_EIN,
+   $WZERO,$WZERO,&1380LUE00BF901,$out-befaus-1-error)
+  ;prio : 3 
+  BEFAUS (1,K_Freigabe_CO2_AUS,K_Freigabe_CO2_EIN,$WZERO,$WZERO,&1380LUE00BF902,
+   $out-befaus-2-error)
+  ;prio : 4 
+  BEFAUS (1,K_Nachtkuehlung_AUS,K_Nachtkuehlung_EIN,$WZERO,$WZERO,
+   &1380LUE00BF903,$out-befaus-3-error)
+  ;prio : 5 
+  BEFAUS (1,K_Handbetrieb_AUS,K_Handbetrieb_EIN,$WZERO,$WZERO,&1380LUE00BF990,
+   $out-befaus-4-error)
+ ;Page 2 Title : Init_ANAUS
+  ;prio : 2 
+  ANAUS (K_SW_Auskuehlschutz,K_1,&1380LUE00SW908,$out-anaus-5-error)
+  ;prio : 3 
+  ANAUS (K_SW_Differnz_Raumtemperatur_Aussentemperatur,K_1,&1380LUE00SW933,
+   $out-anaus-6-error)
+  ;prio : 4 
+  ANAUS (K_SW_Mindestdrehzahl_Zuluftventilator,K_1,&1380LUE00SW911,
+   $out-anaus-7-error)
+  ;prio : 5 
+  ANAUS (K_SW_Mindestdrehzahl_Abluftventilator,K_1,&1380LUE00SW912,
+   $out-anaus-8-error)
+  ;prio : 6 
+  ANAUS (K_SW_Sperren_Heizen,K_1,&1380LUE00SW980,$out-anaus-9-error)
+  ;prio : 7 
+  ANAUS (K_SW_Sperren_Kuehlen,K_1,&1380LUE00SW981,$out-anaus-10-error)
+  ;prio : 8 
+  ANAUS (K_SW_Mindestfrischluftanteil,K_1,&1380LUE00SW907,$out-anaus-11-error)
+  ;prio : 9 
+  ANAUS (K_SW_CO2,K_1,&1380LUE00SW905,$out-anaus-12-error)
+  ;prio : 10 
+  ANAUS (K_SW_Zuluftdruck,K_1,&1380LUE00SW903,$out-anaus-13-error)
+  ;prio : 11 
+  ANAUS (K_SW_Abluftdruck,K_1,&1380LUE00SW904,$out-anaus-14-error)
+  ;prio : 12 
+  ANAUS (K_SW_Raumtemperatur_Untergrenze,K_1,&1380LUE00SW991,
+   $out-anaus-15-error)
+  ;prio : 13 
+  ANAUS (K_SW_Raumtemperatur_Obergrenze,K_1,&1380LUE00SW992,$out-anaus-16-error)
+  ;prio : 14 
+  ANAUS (K_SW_CO2_Obergrenze,K_1,&1380LUE00SW993,$out-anaus-17-error)
+  ;prio : 15 
+  ANAUS (K_SW_Spuelzeit,K_1,&1380LUE00SW994,$out-anaus-18-error)
+ ENDE 
+ ;name : Task_Einlesen
+ TASK (2,cycl,1000)
+ ;Page 1 Title : Init_Werte_MELEIN
+  ;prio : 1 
+  MELEIN (&1380LUE00BF900,3,Freigabe_AUS,$out-melein-19-meldepunkt,Freigabe_EIN,
+   $out-melein-20-error)
+  ;prio : 2 
+  BTRA (Freigabe_AUS,K_Freigabe_EIN)
+  ;prio : 3 
+  BTRA (Freigabe_EIN,K_Freigabe_AUS)
+  ;prio : 4 
+  MELEIN (&1380LUE00BF901,3,Freigabe_Temperaturregelung_AUS,
+   $out-melein-21-meldepunkt,Freigabe_Temperaturregelung_EIN,
+   $out-melein-22-error)
+  ;prio : 5 
+  BTRA (Freigabe_Temperaturregelung_AUS,K_Freigabe_Temperaturregelung_AUS)
+  ;prio : 6 
+  BTRA (Freigabe_Temperaturregelung_EIN,K_Freigabe_Temperaturregelung_EIN)
+  ;prio : 13 
+  MELEIN (&1380LUE00BF903,3,Nachtkuehlung_AUS,$out-melein-23-meldepunkt,
+   Nachtkuehlung_EIN,$out-melein-24-error)
+  ;prio : 14 
+  BTRA (Nachtkuehlung_AUS,K_Nachtkuehlung_AUS)
+  ;prio : 15 
+  BTRA (Nachtkuehlung_EIN,K_Nachtkuehlung_EIN)
+  ;prio : 16 
+  MELEIN (&1380LUE00BF902,3,Freigabe_CO2_AUS,$out-melein-25-meldepunkt,
+   Freigabe_CO2_EIN,$out-melein-26-error)
+  ;prio : 17 
+  BTRA (Freigabe_CO2_AUS,K_Freigabe_CO2_AUS)
+  ;prio : 18 
+  BTRA (Freigabe_CO2_EIN,K_Freigabe_CO2_EIN)
+  ;prio : 19 
+  MELEIN (&1380LUE00BF990,3,Handbetrieb_AUS,$out-melein-27-meldepunkt,
+   Handbetrieb_EIN,$out-melein-28-error)
+  ;prio : 20 
+  BTRA (Handbetrieb_AUS,K_Handbetrieb_AUS)
+  ;prio : 21 
+  BTRA (Handbetrieb_EIN,K_Handbetrieb_EIN)
+ ;Page 2 Title : Init Werte_ANEIN
+  ;prio : 1 
+  ANEIN (&1380LUE00SW913,SW_Zulufttemp_n_Ventilator,$out-anein-29-error)
+  ;prio : 2 
+  ATRA (SW_Zulufttemp_n_Ventilator,K_SW_WRG)
+  ;prio : 3 
+  ANEIN (&1380LUE00SW908,SW_Auskuehlschutz,$out-anein-30-error)
+  ;prio : 4 
+  ATRA (SW_Auskuehlschutz,K_SW_Auskuehlschutz)
+  ;prio : 5 
+  ANEIN (&1380LUE00SW933,SW_Differenz_Raumtemperatur_Aussentemperatur,
+   $out-anein-31-error)
+  ;prio : 6 
+  ATRA (SW_Differenz_Raumtemperatur_Aussentemperatur,
+   K_SW_Differnz_Raumtemperatur_Aussentemperatur)
+  ;prio : 7 
+  ANEIN (&1380LUE00SW911,SW_Mindestdrehzahl_Zuluftventilator,
+   $out-anein-32-error)
+  ;prio : 8 
+  ATRA (SW_Mindestdrehzahl_Zuluftventilator,
+   K_SW_Mindestdrehzahl_Zuluftventilator)
+  ;prio : 9 
+  ANEIN (&1380LUE00SW912,SW_Mindestdrehzahl_Abluftventilator,
+   $out-anein-33-error)
+  ;prio : 10 
+  ATRA (SW_Mindestdrehzahl_Abluftventilator,
+   K_SW_Mindestdrehzahl_Abluftventilator)
+  ;prio : 11 
+  ANEIN (&1380LUE00SW980,SW_Sperren_Heizen,$out-anein-34-error)
+  ;prio : 12 
+  ATRA (SW_Sperren_Heizen,K_SW_Sperren_Heizen)
+  ;prio : 13 
+  ANEIN (&1380LUE00SW981,SW_Sperren_Kuehlen,$out-anein-35-error)
+  ;prio : 14 
+  ATRA (SW_Sperren_Kuehlen,K_SW_Sperren_Kuehlen)
+  ;prio : 17 
+  ANEIN (&1380LUE00SW907,SW_Mindestfrischluftanteil,$out-anein-36-error)
+  ;prio : 18 
+  ATRA (SW_Mindestfrischluftanteil,K_SW_Mindestfrischluftanteil)
+  ;prio : 19 
+  ANEIN (&1380LUE00SW905,SW_CO2,$out-anein-37-error)
+  ;prio : 20 
+  ATRA (SW_CO2,K_SW_CO2)
+  ;prio : 21 
+  ANEIN (&1380LUE00SW903,SW_Zuluftdruck,$out-anein-38-error)
+  ;prio : 22 
+  ATRA (SW_Zuluftdruck,K_SW_Zuluftdruck)
+  ;prio : 23 
+  ANEIN (&1380LUE00SW904,SW_Abluftdruck,$out-anein-39-error)
+  ;prio : 24 
+  ATRA (SW_Abluftdruck,K_SW_Abluftdruck)
+  ;prio : 25 
+  ANEIN (&1380LUE00SW991,SW_Raumtemperatur_Untergrenze,$out-anein-40-error)
+  ;prio : 26 
+  ATRA (SW_Raumtemperatur_Untergrenze,K_SW_Raumtemperatur_Untergrenze)
+  ;prio : 27 
+  ANEIN (&1380LUE00SW992,SW_Raumtemperatur_Obergrenze,$out-anein-41-error)
+  ;prio : 28 
+  ATRA (SW_Raumtemperatur_Obergrenze,K_SW_Raumtemperatur_Obergrenze)
+  ;prio : 29 
+  ANEIN (&1380LUE00SW993,SW_CO2_Obergrenze,$out-anein-42-error)
+  ;prio : 30 
+  ATRA (SW_CO2_Obergrenze,K_SW_CO2_Obergrenze)
+  ;prio : 31 
+  ANEIN (&1380LUE00SW994,SW_Spuelzeit,$out-anein-43-error)
+  ;prio : 32 
+  ATRA (SW_Spuelzeit,K_SW_Spuelzeit)
+  ;prio : 33 
+  ANEIN (&1380HEI01SW903,SW_RL_Erhitzer,$out-anein-44-error)
+ ;Page 3 Title : MELEIN_M02
+  ;prio : 1 
+  MELEIN (&1380LUE00BF001,6,BF_Zuluftventilator_AUS,
+   Stoerung_Zuluftventilator_Stufe1,BF_Zuluftventilator_Stufe1_EIN,
+   $out-melein-45-meldepunkt,BF_Zuluftventilator_Stufe2_EIN,
+   Stoerung_Zuluftventilator_Stufe2,$out-melein-46-error)
+  ;prio : 2 
+  MELEIN (&1380LUE00BF002,6,BF_Abluftventilator_AUS,
+   Stoerung_Abluftventilator_Stufe1,BF_Abluftventilator_Stufe1_EIN,
+   $out-melein-47-meldepunkt,BF_Abluftventilator_Stufe2_EIN,
+   Stoerung_Abluftventilator_Stufe2,$out-melein-48-error)
+  ;prio : 3 
+  ODR2 (BF_Zuluftventilator_Stufe2_EIN,BF_Zuluftventilator_Stufe1_EIN,$M108)
+  ;prio : 4 
+  ODR2 (BF_Abluftventilator_Stufe2_EIN,BF_Abluftventilator_Stufe1_EIN,
+   $out-odr2-49-b)
+  ;prio : 5 
+  UND2 ($M108,DONNER-TEST,RM_Lueftung_EIN)
+  ;prio : 6 
+  MELEIN (&1380LUE01BF001,3,BF_WP_EG_AUS,$M359,BF_WP_EG_EIN,
+   $out-melein-50-error)
+  ;prio : 7 
+  MELEIN (&1380LUE02BF001,3,BF_WP_OG_AUS,$M360,BF_WP_OG_EIN,
+   $out-melein-51-error)
+  ;prio : 8 
+  MELEIN (&1380LUE00BF003,3,BF_WRG_AUS,Stoerung_WRG,BF_WRG_EIN,
+   $out-melein-52-error)
+  ;prio : 9 
+  MELEIN (&1380LUE00BF920,3,BF_Fernquittierung_AUS,$out-melein-53-meldepunkt,
+   $M296,$out-melein-54-error)
+  ;prio : 11 
+  MELEIN (&1380HEI00ST920,1,Stoerung_Sammelstoerung_Nebenanlagen,
+   $out-melein-55-error)
+  ;prio : 12 
+  MELEIN (&1380HEI09BF001,3,BF_Pumpe_Erhitzer_AUS,Stoerung_Erhitzer_Pumpe,
+   BF_Pumpe_Erhitzerr_EIN,$out-melein-56-error)
+  ;prio : 13 
+  MELEIN (&1380LUE01BM001,1,Zwangsaus_Enteisung_WP1,$out-melein-57-error)
+  ;prio : 14 
+  MELEIN (&1380LUE02BM001,1,Zwangsaus_Enteisung_WP2,$out-melein-58-error)
+  ;prio : 15 
+  NICHT (Stoerung_Erhitzer_Pumpe,Stoerung_Erhitzer_Pumpe)
+  ;prio : 16 
+  MELEIN (&1380LUE00BF020,3,$out-melein-59-meldepunkt,$out-melein-60-meldepunkt,
+   $WSCATCH,$out-melein-61-error)
+  ;prio : 17 
+  ODR2 ($M296,$WSCATCH,BF_Fernquittierung_EIN)
+  ;prio : 18 
+  NICHT ($M359,Stoerung_WP_EG)
+  ;prio : 19 
+  NICHT ($M360,Stoerung_WP_OG)
+ ;Page 4 Title : MELEIN_M03
+  ;prio : 1 
+  MELEIN (&1380LUE00GF001,1,Gefahr_Rauchmelder_Zuluft,$out-melein-62-error)
+  ;prio : 2 
+  MELEIN (&1380LUE00BM001,1,Betriebsmeldung_Zuluftventilator,
+   $out-melein-63-error)
+  ;prio : 3 
+  MELEIN (&1380LUE00GF002,1,Gefahr_Rauchmelder_Abluft,$out-melein-64-error)
+  ;prio : 4 
+  MELEIN (&1380LUE00BM002,1,Betriebsmeldung_Abluftventilator,
+   $out-melein-65-error)
+  ;prio : 5 
+  MELEIN (&1380LUE00WA001,1,Wartung_Zuluftventilator,$out-melein-66-error)
+  ;prio : 6 
+  MELEIN (&1380LUE00WA002,1,Wartung_Abluftventilator,$out-melein-67-error)
+  ;prio : 7 
+  MELEIN (&1380LUE01GF001,1,Gefahr_BSK1,$out-melein-68-error)
+  ;prio : 8 
+  MELEIN (&1380LUE01GF002,1,Gefahr_BSK2,$out-melein-69-error)
+  ;prio : 9 
+  MELEIN (&1380LUE01GF004,1,Gefahr_BSK3,$out-melein-70-error)
+  ;prio : 10 
+  MELEIN (&1380LUE01GF006,1,Gefahr_BSK4,$out-melein-71-error)
+  ;prio : 11 
+  MELEIN (&1380LUE02GF003,1,Gefahr_BSK5,$out-melein-72-error)
+  ;prio : 12 
+  MELEIN (&1380LUE02GF005,1,Gefahr_BSK6,$out-melein-73-error)
+  ;prio : 13 
+  MELEIN (&1380LUE00GF011,1,Gefahr_BSK7,$out-melein-74-error)
+  ;prio : 14 
+  MELEIN (&1380LUE00GF012,1,Gefahr_BSK8,$out-melein-75-error)
+  ;prio : 15 
+  MELEIN (&1380LUE00GF013,1,Gefahr_BSK9,$out-melein-76-error)
+  ;prio : 16 
+  MELEIN (&1380LUE00GF014,1,Gefahr_BSK10,$out-melein-77-error)
+  ;prio : 17 
+  MELEIN (&1380LUE00GF015,1,Gefahr_BSK11,$out-melein-78-error)
+  ;prio : 18 
+  MELEIN (&1380LUE00GF020,1,Gefahr_Entrauchungsschalter_Entrauchung,
+   $out-melein-79-error)
+  ;prio : 19 
+  MELEIN (&1380LUE00GF021,1,Gefahr_Entrauchungsschalter_ANL_AUS,
+   $out-melein-80-error)
+  ;prio : 20 
+  MELEIN (&1380LUE01GF100,1,Frostschutz,$out-melein-81-error)
+  ;prio : 21 
+  MELEIN (&1380LUE00GF022,1,Entrauchungsvent,$out-melein-82-error)
+ ;Page 5 Title : ANEIN_M02
+  ;prio : 1 
+  ANEIN (&1380LUE00MW000,MW_Aussentemperatur,$out-anein-83-error)
+  ;prio : 2 
+  ANEIN (&1380LUE01MW001,MW_EG_Zulufttemperatur,$out-anein-84-error)
+  ;prio : 3 
+  ANEIN (&1380LUE02MW001,MW_OG_Zulufttemperatur,$out-anein-85-error)
+  ;prio : 4 
+  ANEIN (&1380LUE00MW002,MW_Zulufttemperatur_nach_Ventilator,
+   $out-anein-86-error)
+  ;prio : 5 
+  ANEIN (&1380LUE00MW001,MW_Ablufttemperatur_vor_Ventilator,$out-anein-87-error)
+  ;prio : 6 
+  ANEIN (&1380LUE00MW010,MW_Zuluftdruck,$out-anein-88-error)
+  ;prio : 7 
+  ANEIN (&1380LUE01MW002,MW_EG_RT1,$out-anein-89-error)
+  ;prio : 8 
+  ANEIN (&1380LUE01MW003,MW_EG_RT2,$out-anein-90-error)
+  ;prio : 9 
+  ANEIN (&1380LUE01MW012,MW_EG_CO2_1,$out-anein-91-error)
+  ;prio : 10 
+  ANEIN (&1380LUE01MW013,MW_EG_CO2_2,$out-anein-92-error)
+ ;Page 6 Title : ANEIN_M03
+  ;prio : 1 
+  ANEIN (&1380LUE00MW003,MW_Zulufttemperatur_nach_WRG,$out-anein-93-error)
+  ;prio : 2 
+  ANEIN (&1380LUE00MW011,MW_Abluftdruck,$out-anein-94-error)
+  ;prio : 3 
+  ANEIN (&1380LUE02MW002,MW_OG_RT1,$out-anein-95-error)
+  ;prio : 4 
+  ANEIN (&1380LUE02MW003,MW_OG_RT2,$out-anein-96-error)
+  ;prio : 5 
+  ANEIN (&1380LUE02MW012,MW_OG_CO2_1,$out-anein-97-error)
+  ;prio : 6 
+  ANEIN (&1380LUE02MW013,MW_OG_CO2_2,$out-anein-98-error)
+  ;prio : 7 
+  ANEIN (&1380HEI01MW003,MW_RL_Temperatur_Erhitzer,$out-anein-99-error)
+ ENDE 
+ ;name : Task_Programm
+ TASK (3,cycl,1000)
+ ;Page 1 Title : Quittierung_Autorcksetzung
+  ;prio : 1 
+  ODR2 (BF_Fernquittierung_EIN,BF_Fernquittierung_EIN,$M309)
+  ;prio : 2 
+  MOKY ($M309,K_float_5,Quittierung_EIN_BEFAUS)
+  ;prio : 3 
+  VVZ ($M309,K_float_10,K_float_0,$M308)
+  ;prio : 4 
+  MOKY ($M308,K_float_5,Quittierung_AUS_BEFAUS)
+ ;Page 2 Title : Sammelst”rung/Abschaltst”rung
+  ;prio : 1 
+  ODRMN (0,6,Stoerung_Abluftventilator_Stufe1,Stoerung_Zuluftventilator_Stufe1,
+   Frostschutz,Gefahr_Entrauchungsschalter_Entrauchung,
+   Gefahr_Entrauchungsschalter_ANL_AUS,Entrauchungsvent,$M313,
+   $out-odrmn-100-binv)
+  ;prio : 4 
+  ODRMN (0,8,Gefahr_Rauchmelder_Zuluft,Gefahr_Rauchmelder_Abluft,Gefahr_BSK1,
+   Gefahr_BSK2,Gefahr_BSK3,Gefahr_BSK4,Gefahr_BSK5,Gefahr_BSK6,$M314,
+   $out-odrmn-101-binv)
+  ;prio : 5 
+  ODRMN (3,Stoerung_Zuluft_Druckueberwachung,Stoerung_Abluft_Druckueberwachung,
+   Stoerung_Einschaltueberwachung,5,Gefahr_BSK10,Gefahr_BSK11,Gefahr_BSK7,
+   Gefahr_BSK8,Gefahr_BSK9,$M311,$out-odrmn-102-binv)
+  ;prio : 6 
+  ODRMN (3,$M313,$M314,$M311,0,$M315,$out-odrmn-103-binv)
+  ;prio : 8 
+  ODRMN (5,Stoerung_Abschaltstoerung,K_0,Stoerung_WRG,ST_Waermepumpe_EG,
+   ST_Waermepumpe_OG,2,K_1,K_1,$M312,$out-odrmn-104-binv)
+  ;prio : 9 
+  RSS ($M312,BF_Fernquittierung_EIN,Stoerung_Sammelstoerung_BEFAUS,
+   $out-rss-105-binv)
+  ;prio : 10 
+  RSS ($M315,BF_Fernquittierung_EIN,Stoerung_Abschaltstoerung,$out-rss-106-binv)
+ ;Page 3 Title : Druckberwachung
+  ;prio : 1 
+  ODR2 (BF_Zuluftventilator_Stufe1_EIN,BF_Zuluftventilator_Stufe2_EIN,$M112)
+  ;prio : 2 
+  XOR2 ($M112,Betriebsmeldung_Zuluftventilator,$M334)
+  ;prio : 3 
+  UNDMN (1,$M334,1,BF_Fernquittierung_EIN,$M333,$out-undmn-107-binv)
+  ;prio : 4 
+  VVZ ($M333,K_float_120,K_float_0,$M332)
+  ;prio : 5 
+  RSS ($M332,BF_Fernquittierung_EIN,Stoerung_Zuluft_Druckueberwachung,
+   $out-rss-108-binv)
+  ;prio : 6 
+  SETMEL (K_1,1,Stoerung_Zuluft_Druckueberwachung,&1380LUE00ST901,
+   $out-setmel-109-error)
+  ;prio : 7 
+  ODR2 (BF_Abluftventilator_Stufe1_EIN,BF_Abluftventilator_Stufe2_EIN,$M113)
+  ;prio : 8 
+  XOR2 ($M113,Betriebsmeldung_Abluftventilator,$M334)
+  ;prio : 9 
+  UNDMN (1,$M334,1,BF_Fernquittierung_EIN,$M326,$out-undmn-110-binv)
+  ;prio : 10 
+  VVZ ($M326,K_float_120,K_float_0,$M327)
+  ;prio : 11 
+  RSS ($M327,BF_Fernquittierung_EIN,Stoerung_Abluft_Druckueberwachung,
+   $out-rss-111-binv)
+  ;prio : 12 
+  SETMEL (K_1,1,Stoerung_Abluft_Druckueberwachung,&1380LUE00ST902,
+   $out-setmel-112-error)
+ ;Page 4 Title : Einschaltberwachung
+  ;prio : 1 
+  ODR2 (BF_Zuluftventilator_Stufe1_EIN,BF_Zuluftventilator_Stufe2_EIN,$M114)
+  ;prio : 2 
+  ODR2 (BF_Abluftventilator_Stufe1_EIN,BF_Abluftventilator_Stufe2_EIN,$M115)
+  ;prio : 3 
+  UNDMN (1,Freigabe_RLT_Anlage,3,$M114,$M115,BF_Fernquittierung_EIN,$M331,
+   $out-undmn-113-binv)
+  ;prio : 4 
+  VVZ ($M331,K_float_900,K_float_0,$M335)
+  ;prio : 5 
+  RSS ($M335,BF_Fernquittierung_EIN,Stoerung_Einschaltueberwachung,
+   $out-rss-114-binv)
+  ;prio : 6 
+  SETMEL (K_1,1,Stoerung_Einschaltueberwachung,&1380LUE00ST923,
+   $out-setmel-115-error)
+ ;Page 5 Title : Sperren heizen / khlen
+  ;prio : 1 
+  VGLEH (MW_Aussentemperatur,SW_Sperren_Heizen,K_float_1,Sperren_Heizen)
+  ;prio : 2 
+  SETMEL (K_1,1,Sperren_Heizen,&1380LUE00BM980,$out-setmel-116-error)
+  ;prio : 3 
+  VGLEH (SW_Sperren_Kuehlen,MW_Aussentemperatur,K_float_1,Sperren_Kuehlen)
+  ;prio : 4 
+  SETMEL (K_1,1,Sperren_Kuehlen,&1380LUE00BM981,$out-setmel-117-error)
+ ;Page 6 Title : Mittelwert EG Temperatur
+  ;prio : 39 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-118-bgr,$out-vgl3p-119-bkl,
+   $M135)
+  ;prio : 40 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-120-bgr,$out-vgl3p-121-bkl,
+   $M132)
+  ;prio : 41 
+  AWT ($M123,K_float_0,K_float_1,$M125)
+  ;prio : 42 
+  AWT ($M123,K_float_0,$M118,$M127)
+  ;prio : 43 
+  AWT ($M135,K_float_0,K_float_1,$M137)
+  ;prio : 44 
+  PT1 (MW_EG_RT1,K_float_20,$M119)
+  ;prio : 45 
+  ADSU (4,$M124,$M125,$M136,$M137,0,$M129)
+  ;prio : 46 
+  AWT ($M121,K_float_0,K_float_1,$M124)
+  ;prio : 47 
+  PT1 (MW_EG_RT2,K_float_20,$M118)
+  ;prio : 48 
+  VGL3P (MW_EG_RT2,K_float_40,K_float_0,$out-vgl3p-122-bgr,$out-vgl3p-123-bkl,
+   $M123)
+  ;prio : 49 
+  PT1 (K_float_100,K_float_20,$M130)
+  ;prio : 50 
+  AWT ($M132,K_float_0,K_float_1,$M136)
+  ;prio : 51 
+  AWT ($M132,K_float_0,$M130,$M138)
+  ;prio : 52 
+  ADSU (4,$M126,$M127,$M138,$M139,0,$M128)
+  ;prio : 53 
+  VGL3P (MW_EG_RT1,K_float_40,K_float_0,$out-vgl3p-124-bgr,$out-vgl3p-125-bkl,
+   $M121)
+  ;prio : 54 
+  AWT ($M135,K_float_0,$M133,$M139)
+  ;prio : 55 
+  PT1 (K_float_100,K_float_20,$M133)
+  ;prio : 56 
+  MULDI ($M128,K_float_1,$M129,MW_RT_Mittelwert_EG)
+  ;prio : 57 
+  AWT ($M121,K_float_0,$M119,$M126)
+ ;Page 7 Title : Mittelwert OG Temperatur
+  ;prio : 58 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-126-bgr,$out-vgl3p-127-bkl,
+   $M157)
+  ;prio : 59 
+  VGL3P (K_float_100,K_float_40,K_float_0,$out-vgl3p-128-bgr,$out-vgl3p-129-bkl,
+   $M154)
+  ;prio : 60 
+  AWT ($M145,K_float_0,K_float_1,$M147)
+  ;prio : 61 
+  AWT ($M145,K_float_0,$M140,$M149)
+  ;prio : 62 
+  AWT ($M157,K_float_0,K_float_1,$M159)
+  ;prio : 63 
+  PT1 (MW_OG_RT1,K_float_20,$M141)
+  ;prio : 64 
+  ADSU (4,$M146,$M147,$M158,$M159,0,$M151)
+  ;prio : 65 
+  AWT ($M143,K_float_0,K_float_1,$M146)
+  ;prio : 66 
+  PT1 (MW_OG_RT2,K_float_20,$M140)
+  ;prio : 67 
+  VGL3P (MW_OG_RT2,K_float_40,K_float_0,$out-vgl3p-130-bgr,$out-vgl3p-131-bkl,
+   $M145)
+  ;prio : 68 
+  PT1 (K_float_100,K_float_20,$M152)
+  ;prio : 69 
+  AWT ($M154,K_float_0,K_float_1,$M158)
+  ;prio : 70 
+  AWT ($M154,K_float_0,$M152,$M160)
+  ;prio : 71 
+  ADSU (4,$M148,$M149,$M160,$M161,0,$M150)
+  ;prio : 72 
+  VGL3P (MW_OG_RT1,K_float_40,K_float_0,$out-vgl3p-132-bgr,$out-vgl3p-133-bkl,
+   $M143)
+  ;prio : 73 
+  AWT ($M157,K_float_0,$M155,$M161)
+  ;prio : 74 
+  PT1 (K_float_100,K_float_20,$M155)
+  ;prio : 75 
+  MULDI ($M150,K_float_1,$M151,MW_RT_Mittelwert_OG)
+  ;prio : 76 
+  AWT ($M143,K_float_0,$M141,$M148)
+ ;Page 8 Title : Mittelwert Temperaturen
+  ;prio : 77 
+  VGL3P (MW_EG_RT2,K_float_40,K_float_0,$out-vgl3p-134-bgr,$out-vgl3p-135-bkl,
+   $M179)
+  ;prio : 78 
+  VGL3P (MW_EG_RT1,K_float_40,K_float_0,$out-vgl3p-136-bgr,$out-vgl3p-137-bkl,
+   $M176)
+  ;prio : 79 
+  AWT ($M167,K_float_0,K_float_1,$M169)
+  ;prio : 80 
+  AWT ($M167,K_float_0,$M162,$M171)
+  ;prio : 81 
+  AWT ($M179,K_float_0,K_float_1,$M181)
+  ;prio : 82 
+  PT1 (MW_OG_RT1,K_float_20,$M163)
+  ;prio : 83 
+  ADSU (4,$M168,$M169,$M180,$M181,0,$M173)
+  ;prio : 84 
+  AWT ($M165,K_float_0,K_float_1,$M168)
+  ;prio : 85 
+  PT1 (MW_OG_RT2,K_float_20,$M162)
+  ;prio : 86 
+  VGL3P (MW_OG_RT2,K_float_40,K_float_0,$out-vgl3p-138-bgr,$out-vgl3p-139-bkl,
+   $M167)
+  ;prio : 87 
+  PT1 (MW_EG_RT1,K_float_20,$M174)
+  ;prio : 88 
+  AWT ($M176,K_float_0,K_float_1,$M180)
+  ;prio : 89 
+  AWT ($M176,K_float_0,$M174,$M182)
+  ;prio : 90 
+  ADSU (4,$M170,$M171,$M182,$M183,0,$M172)
+  ;prio : 91 
+  VGL3P (MW_OG_RT1,K_float_40,K_float_0,$out-vgl3p-140-bgr,$out-vgl3p-141-bkl,
+   $M165)
+  ;prio : 92 
+  AWT ($M179,K_float_0,$M177,$M183)
+  ;prio : 93 
+  PT1 (MW_EG_RT2,K_float_20,$M177)
+  ;prio : 94 
+  MULDI ($M172,K_float_1,$M173,MW_RT_Mittelwert)
+  ;prio : 95 
+  AWT ($M165,K_float_0,$M163,$M170)
+ ;Page 9 Title : Mittelwert CO2
+  ;prio : 96 
+  VGL3P (MW_OG_CO2_2,K_float_1500,K_float_0,$out-vgl3p-142-bgr,
+   $out-vgl3p-143-bkl,$M201)
+  ;prio : 97 
+  VGL3P (MW_OG_CO2_1,K_float_1500,K_float_0,$out-vgl3p-144-bgr,
+   $out-vgl3p-145-bkl,$M198)
+  ;prio : 98 
+  AWT ($M189,K_float_0,K_float_1,$M191)
+  ;prio : 99 
+  AWT ($M189,K_float_0,$M184,$M193)
+  ;prio : 100 
+  AWT ($M201,K_float_0,K_float_1,$M203)
+  ;prio : 101 
+  PT1 (MW_EG_CO2_1,K_float_20,$M185)
+  ;prio : 102 
+  ADSU (4,$M190,$M191,$M202,$M203,0,$M195)
+  ;prio : 103 
+  AWT ($M187,K_float_0,K_float_1,$M190)
+  ;prio : 104 
+  PT1 (MW_EG_CO2_2,K_float_20,$M184)
+  ;prio : 105 
+  VGL3P (MW_EG_CO2_2,K_float_1500,K_float_0,$out-vgl3p-146-bgr,
+   $out-vgl3p-147-bkl,$M189)
+  ;prio : 106 
+  PT1 (MW_OG_CO2_1,K_float_20,$M196)
+  ;prio : 107 
+  AWT ($M198,K_float_0,K_float_1,$M202)
+  ;prio : 108 
+  AWT ($M198,K_float_0,$M196,$M204)
+  ;prio : 109 
+  ADSU (4,$M192,$M193,$M204,$M205,0,$M194)
+  ;prio : 110 
+  VGL3P (MW_EG_CO2_1,K_float_1500,K_float_0,$out-vgl3p-148-bgr,
+   $out-vgl3p-149-bkl,$M187)
+  ;prio : 111 
+  AWT ($M201,K_float_0,$M199,$M205)
+  ;prio : 112 
+  PT1 (MW_OG_CO2_2,K_float_20,$M199)
+  ;prio : 113 
+  MULDI ($M194,K_float_1,$M195,$out-muldi-150-y)
+  ;prio : 114 
+  AWT ($M187,K_float_0,$M185,$M192)
+ ;Page 10 Title : Vergleicher Aussentemperaturen
+  ;prio : 1 
+  VGLEH (MW_Aussentemperatur,K_float_22,K_1_float,AT>22)
+  ;prio : 2 
+  VGLEH (MW_Aussentemperatur,K_float_20,K_1_float,AT>20)
+  ;prio : 3 
+  VGLEH (MW_Aussentemperatur,K_float_15,K_1_float,AT>15)
+  ;prio : 4 
+  VGLEH (MW_Aussentemperatur,K_float_1,K_1_float,AT>1)
+ ;Page 11 Title : Nachtkhlung
+  ;prio : 1 
+  UND11 (Nachtkuehlung_EIN,Freigabe_EIN,$M367)
+  ;prio : 2 
+  ADD2 (Sollwert_Regler01,K_float_2,$M372)
+  ;prio : 3 
+  VGLEH (MW_RT_Mittelwert,$M372,K_float_1,$M368)
+  ;prio : 4 
+  VGLEH (Differnz_Raumtemperatur_Aussentemperatur,
+   SW_Differenz_Raumtemperatur_Aussentemperatur,K_float_1,$M370)
+  ;prio : 5 
+  VGLEH (MW_Aussentemperatur,K_float_8,K_float_1,$M371)
+  ;prio : 6 
+  SUB2 (MW_RT_Mittelwert,MW_Aussentemperatur,
+   Differnz_Raumtemperatur_Aussentemperatur)
+  ;prio : 7 
+  UNDMN (4,$M367,$M368,$M370,$M371,0,Nachtkuehlung_Einschalten,
+   $out-undmn-151-binv)
+  ;prio : 8 
+  SETMEL (K_1,1,Nachtkuehlung_Einschalten,&1380LUE00BM933,$out-setmel-152-error)
+  ;prio : 9 
+  AWT (Nachtkuehlung_Einschalten,K_float_0,K_float_100,
+   Ansteuerung_Nachtkuehlung)
+ ;Page 12 Title : Bedarfsregelung
+  ;prio : 1 
+  VGLEH (SW_Raumtemperatur_Untergrenze,MW_RT_Mittelwert,K_float_1,$M211)
+  ;prio : 2 
+  VGLEH (MW_RT_Mittelwert,SW_Raumtemperatur_Obergrenze,K_float_1,$M213)
+  ;prio : 3 
+  VGLEH ($M305,SW_CO2_Obergrenze,K_float_100,Freigabe_Bedarfsregelung_CO2)
+  ;prio : 4 
+  VGLEH (MW_RT_Mittelwert,$M220,K_float_1,$M214)
+  ;prio : 5 
+  MOKY (Freigabe_EIN,SW_Spuelzeit_2,Freigabe_Bedarfsregelung_Spuelbetrieb)
+  ;prio : 6 
+  ADD2 (MW_Aussentemperatur,K_float_4,$M220)
+  ;prio : 7 
+  UND2 ($M213,$M214,$M212)
+  ;prio : 8 
+  UND2 (Freigabe_EIN,$M222,Freigabe_Bedarfsregelung_EIN)
+  ;prio : 9 
+  ODR2 ($M211,$M212,Freigabe_Bedarfsregelung_Temperatur)
+  ;prio : 10 
+  ODRMN (4,Freigabe_Bedarfsregelung_Temperatur,
+   Freigabe_Bedarfsregelung_Spuelbetrieb,Handbetrieb_EIN,
+   Freigabe_Bedarfsregelung_CO2,0,$M222,$out-odrmn-153-binv)
+  ;prio : 11 
+  MULDI (SW_Spuelzeit,K_float_60,K_float_1,SW_Spuelzeit_2)
+  ;prio : 12 
+  MAX (4,MW_EG_CO2_1,MW_EG_CO2_2,MW_OG_CO2_1,MW_OG_CO2_2,$M305)
+  ;prio : 13 
+  ATRA ($M305,MW_CO2_Mittelwert)
+  ;prio : 14 
+  ODR2 (BF_WP_EG_EIN,BF_WP_OG_EIN,$M329)
+  ;prio : 15 
+  UNDMN (1,$M329,1,Freigabe_Bedarfsregelung_EIN,$M337,$out-undmn-154-binv)
+  ;prio : 16 
+  RSS ($M337,$M341,Nachlauf_Lueftung,$out-rss-155-binv)
+  ;prio : 17 
+  VVZ ($M340,FKON-0,K_float_300,$M341)
+  ;prio : 18 
+  NICHT (Freigabe_Bedarfsregelung_EIN,$M340)
+ ;Page 13 Title : Einschalten
+  ;prio : 1 
+  VGLEH (SW_Auskuehlschutz,MW_RT_Mittelwert,K_1_float,$M338)
+  ;prio : 2 
+  VVZ ($M338,K_float_30,K_float_30,Stuetzbetrieb)
+  ;prio : 3 
+  ODRMN (4,Stuetzbetrieb,Freigabe_Bedarfsregelung_EIN,Nachtkuehlung_Einschalten,
+   Nachlauf_Lueftung,0,$M339,$out-odrmn-156-binv)
+  ;prio : 4 
+  UNDMN (1,$M339,1,Stoerung_Abschaltstoerung,Freigabe_RLT_Anlage,
+   Freigabe_Ventilatoren_AUS)
+  ;prio : 5 
+  VVZ (Freigabe_RLT_Anlage,K_float_120,K_float_0,Freigabe_Ventilatoren_EIN)
+ ;Page 14 Title : Raumregler EG
+  ;prio : 1 
+  SOLKEN (1,K_1,Sollwert_Regler01,$out-solken-157-error)
+  ;prio : 2 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M366,
+   $out-odrmn-158-binv)
+  ;prio : 3 
+  REGLER (1,K_1,$M366,K_float_0,Stellgroesse_Regler01,$out-regler-159-error)
+  ;prio : 4 
+  FKG (Stellgroesse_Regler01,4,$FKG_160_X0,$FKG_160_Y0,$FKG_160_X1,$FKG_160_Y1,
+   Ansteuerung_Ventilator_Heizen_EG)
+  ;prio : 5 
+  FKG (Stellgroesse_Regler01,4,$FKG_161_X0,$FKG_161_Y0,$FKG_161_X1,$FKG_161_Y1,
+   Sollwert_Regler02)
+  ;prio : 6 
+  FKG (Stellgroesse_Regler01,4,$FKG_162_X0,$FKG_162_Y0,$FKG_162_X1,$FKG_162_Y1,
+   Ansteuerung_Ventilator_Kuehlen_EG)
+  ;prio : 7 
+  ATRA (Sollwert_Regler01,$out-atra-163-y)
+  ;prio : 8 
+  ATRA (MW_RT_Mittelwert_EG,$out-atra-164-y)
+  ;prio : 9 
+  ANAUS (Sollwert_Regler02,K_1,&1380LUE01SW902,$out-anaus-165-error)
+ ;Page 15 Title : Zuluftregler EG
+  ;prio : 1 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M366,
+   $out-odrmn-166-binv)
+  ;prio : 2 
+  REGLER (2,K_1,$M366,K_float_0,Stellgroesse_Regler02,$out-regler-167-error)
+  ;prio : 3 
+  ATRA (Sollwert_Regler02,$out-atra-168-y)
+  ;prio : 4 
+  ATRA (MW_EG_Zulufttemperatur,$out-atra-169-y)
+ ;Page 16 Title : Zuluftsequenz EG
+  ;prio : 1 
+  FKG (Stellgroesse_Regler02,4,$FKG_170_X0,$FKG_170_Y0,$FKG_170_X1,$FKG_170_Y1,
+   $M346)
+  ;prio : 2 
+  FKG (Stellgroesse_Regler02,4,$FKG_171_X0,$FKG_171_Y0,$FKG_171_X1,$FKG_171_Y1,
+   Stellgroesse_Klappen_EG)
+  ;prio : 3 
+  FKG (Stellgroesse_Regler02,4,$FKG_172_X0,$FKG_172_Y0,$FKG_172_X1,$FKG_172_Y1,
+   $M348)
+  ;prio : 4 
+  AWT (AT>20,K_float_0,$M346,Stellgroesse_kuehlen_EG)
+  ;prio : 5 
+  AWT (Stuetzbetrieb,$M348,K_float_100,Stellgroesse_heizen_EG)
+ ;Page 17 Title : Raumregler OG
+  ;prio : 10 
+  SOLKEN (2,K_1,Sollwert_Regler06,$out-solken-173-error)
+  ;prio : 11 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M219,
+   $out-odrmn-174-binv)
+  ;prio : 12 
+  REGLER (6,K_1,$M219,K_float_0,Stellgroesse_Regler06,$out-regler-175-error)
+  ;prio : 13 
+  FKG (Stellgroesse_Regler06,4,$FKG_176_X0,$FKG_176_Y0,$FKG_176_X1,$FKG_176_Y1,
+   Ansteuerung_Ventilator_Heizen_OG)
+  ;prio : 14 
+  FKG (Stellgroesse_Regler06,4,$FKG_177_X0,$FKG_177_Y0,$FKG_177_X1,$FKG_177_Y1,
+   Sollwert_Regler07)
+  ;prio : 15 
+  FKG (Stellgroesse_Regler06,4,$FKG_178_X0,$FKG_178_Y0,$FKG_178_X1,$FKG_178_Y1,
+   Ansteuerung_Ventilator_Kuehlen_OG)
+  ;prio : 16 
+  ATRA (Sollwert_Regler06,$out-atra-179-y)
+  ;prio : 17 
+  ATRA (MW_RT_Mittelwert_OG,$out-atra-180-y)
+  ;prio : 18 
+  ANAUS (Sollwert_Regler07,K_1,&1380LUE02SW907,$out-anaus-181-error)
+ ;Page 18 Title : Zuluftregler OG
+  ;prio : 1 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M218,
+   $out-odrmn-182-binv)
+  ;prio : 2 
+  REGLER (7,K_1,$M218,K_float_0,Stellgroesse_Regler07,$out-regler-183-error)
+  ;prio : 3 
+  ATRA (Sollwert_Regler07,$out-atra-184-y)
+  ;prio : 4 
+  ATRA (MW_OG_Zulufttemperatur,$out-atra-185-y)
+ ;Page 19 Title : Zuluftsequenz OG
+  ;prio : 6 
+  FKG (Stellgroesse_Regler07,4,$FKG_186_X0,$FKG_186_Y0,$FKG_186_X1,$FKG_186_Y1,
+   $M349)
+  ;prio : 7 
+  FKG (Stellgroesse_Regler07,4,$FKG_187_X0,$FKG_187_Y0,$FKG_187_X1,$FKG_187_Y1,
+   Stellgroesse_Klappen_OG)
+  ;prio : 8 
+  FKG (Stellgroesse_Regler07,4,$FKG_188_X0,$FKG_188_Y0,$FKG_188_X1,$FKG_188_Y1,
+   $M350)
+  ;prio : 9 
+  AWT (AT>20,K_float_0,$M349,Stellgroesse_kuehlen_OG)
+  ;prio : 10 
+  AWT (Stuetzbetrieb,$M350,K_float_100,Stellgroesse_heizen_OG)
+ ;Page 20 Title : Zuluftsequenzen max Auswahl
+  ;prio : 1 
+  MAX (2,Stellgroesse_Regler01,Stellgroesse_Regler06,
+   Stellgroesse_Raumregler_max)
+  ;prio : 2 
+  MAX (2,Ansteuerung_Ventilator_Heizen_EG,Ansteuerung_Ventilator_Heizen_OG,
+   $M239)
+  ;prio : 3 
+  MAX (2,Ansteuerung_Ventilator_Kuehlen_EG,Ansteuerung_Ventilator_Kuehlen_OG,
+   $M240)
+  ;prio : 4 
+  MAX (2,Stellgroesse_Klappen_EG,Stellgroesse_Klappen_OG,$M241)
+  ;prio : 5 
+  AWT (Sperren_Heizen,$M239,K_float_0,Stellgroesse_Ventilatoren_Heizfall)
+  ;prio : 6 
+  AWT (Sperren_Kuehlen,$M240,K_float_0,Stellgroesse_Ventilatoren_Kuehlfall)
+  ;prio : 7 
+  AWT (AT>1,K_float_0,$M241,Stellgroesse_Klappen)
+ ;Page 21 Title : Ventilatoren_Temperaturregelung_3600s_sperren
+  ;prio : 1 
+  VGLOH (Stellgroesse_Raumregler_max,K_float_65,$M245)
+  ;prio : 2 
+  VVZ ($M245,K_float_3600,K_float_3600,$M247)
+  ;prio : 3 
+  ODR2 ($M247,$M251,$M246)
+  ;prio : 4 
+  RSS ($M245,$M246,Sperren_Heizfall_Ventilator,$out-rss-189-binv)
+  ;prio : 5 
+  VGLOH (Stellgroesse_Raumregler_max,K_float_29,$M251)
+  ;prio : 6 
+  VVZ ($M251,K_float_3600,K_float_3600,$M249)
+  ;prio : 7 
+  ODR2 ($M249,$M245,$M250)
+  ;prio : 8 
+  RSS ($M251,$M250,Sperren_Kuehlfall_Ventilator,$out-rss-190-binv)
+ ;Page 22 Title : WRG Regler
+  ;prio : 1 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M366,
+   $out-odrmn-191-binv)
+  ;prio : 2 
+  REGLER (13,K_1,$M366,K_float_0,Stellgroesse_Regler13,$out-regler-192-error)
+  ;prio : 3 
+  ATRA (SW_Zulufttemp_n_Ventilator,$out-atra-193-y)
+  ;prio : 4 
+  ATRA (MW_Zulufttemperatur_nach_Ventilator,$out-atra-194-y)
+  ;prio : 9 
+  MIN (2,Sollwert_Regler02,Sollwert_Regler07,SW_Zulufttemp_n_Ventilator)
+ ;Page 23 Title : Erhitzer Regler
+  ;prio : 5 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M461,
+   $out-odrmn-195-binv)
+  ;prio : 6 
+  REGLER (9,K_1,$M461,K_float_0,Stellgroesse_Regler09,$out-regler-196-error)
+  ;prio : 7 
+  ATRA (Sollwert_Regler09,$out-atra-197-y)
+  ;prio : 8 
+  ATRA (MW_RL_Temperatur_Erhitzer,$out-atra-198-y)
+  ;prio : 9 
+  SOLKEN (3,K_1,Sollwert_Regler09,$out-solken-199-error)
+ ;Page 24 Title : Ansteuerung WRG
+  ;prio : 1 
+  FKG (Stellgroesse_Regler13,4,$FKG_200_X0,$FKG_200_Y0,$FKG_200_X1,$FKG_200_Y1,
+   $M409)
+  ;prio : 2 
+  AWT (Wirksinn_Klappe,Stellgroesse_Regler13,$M409,$M410)
+  ;prio : 3 
+  AWT (RM_Lueftung_EIN,K_float_0,$M410,$M224)
+  ;prio : 4 
+  AWT (Stuetzbetrieb,$M224,K_float_100,$M223)
+  ;prio : 5 
+  ODRMN (2,Nachtkuehlung_EIN,Stoerung_Sammelstoerung_BEFAUS,1,
+   Freigabe_RLT_Anlage,$M221,$out-odrmn-201-binv)
+  ;prio : 6 
+  AWT ($M221,$M223,K_float_0,Ansteuerung_WRG)
+  ;prio : 7 
+  VGLEH (Ansteuerung_WRG,K_float_5,K_float_2,Freigabe_WRG_BEFAUS)
+ ;Page 25 Title : Ansteuerung Erhitzer
+  ;prio : 1 
+  MAX (2,$M304,Stellgroesse_Regler09,$M273)
+  ;prio : 3 
+  VGLEH ($M273,K_float_3,K_float_1,$M279)
+  ;prio : 5 
+  FKG (Stellgroesse_Regler13,4,$FKG_202_X0,$FKG_202_Y0,$FKG_202_X1,$FKG_202_Y1,
+   $M300)
+  ;prio : 6 
+  AWT ($M282,$M273,K_float_100,Ansteuerung_Ventil_Erhitzer)
+  ;prio : 7 
+  ODR2 ($M290,$M279,Pumpe_Erhitzer_Soll_EIN)
+  ;prio : 8 
+  NICHT (Frostschutz,$M282)
+  ;prio : 9 
+  NICHT (Frostschutz,$M290)
+  ;prio : 10 
+  AWT ($M307,K_float_0,$M300,$M304)
+  ;prio : 11 
+  ODRMN (2,Stoerung_WP_EG,Stoerung_WP_OG,0,$M307,$out-odrmn-203-binv)
+ ;Page 26 Title : Ansteuerung_Erhitzer
+  ;prio : 14 
+  ODR2 (Pumpe_Erhitzer_Soll_EIN,$M468,$M475)
+  ;prio : 15 
+  ODRMN (1,$M475,1,Stoerung_Erhitzer_Pumpe,$M474,$M472)
+  ;prio : 16 
+  UHR ($M472,$M474,$M465)
+  ;prio : 17 
+  MULT (K_float_168,K_float_3600,$M471)
+  ;prio : 18 
+  VGLOH ($M465,$M471,$M470)
+  ;prio : 19 
+  MOKY ($M470,K_float_300,$M468)
+  ;prio : 20 
+  UND2 ($M475,Stoerung_Erhitzer_Pumpe,Freigabe_Pumpe_Erhitzer_BEFAUS)
+ ;Page 27 Title : Ansteuerung Luftklappen01
+  ;prio : 1 
+  VGLEH (MW_Aussentemperatur,MW_RT_Mittelwert,K_1_float,$M388)
+  ;prio : 2 
+  VVZ ($M388,K_300_float,K_100,Wirksinn_Klappe)
+  ;prio : 3 
+  AWT (Freigabe_RLT_Anlage,K_float_0,Stellgroesse_Klappen,$M387)
+  ;prio : 4 
+  FKG ($M387,4,$FKG_204_X0,$FKG_204_Y0,$FKG_204_X1,$FKG_204_Y1,$M384)
+  ;prio : 5 
+  AWT (Wirksinn_Klappe,$M387,$M384,$M381)
+  ;prio : 6 
+  AWT (Sperren_Kuehlen,$M381,K_float_0,$M386)
+  ;prio : 7 
+  MAX (4,$M386,Ansteuerung_CO2,SW_Mindestfrischluftanteil,
+   Ansteuerung_Nachtkuehlung,$M376)
+  ;prio : 8 
+  AWT ($M253,K_float_0,$M376,Ansteuerung_Klappen)
+  ;prio : 9 
+  ODR2 (Nachtkuehlung_EIN,Freigabe_RLT_Anlage,$M252)
+  ;prio : 10 
+  UNDMN (1,$M252,2,Stoerung_Abschaltstoerung,Stuetzbetrieb,$M253,
+   $out-undmn-205-binv)
+ ;Page 28 Title : Ansteuerung Luftklappen02
+  ;prio : 2 
+  AWT (Freigabe_RLT_Anlage,K_float_100,Ansteuerung_Klappen,$M402)
+  ;prio : 3 
+  FKG ($M402,4,$FKG_206_X0,$FKG_206_Y0,$FKG_206_X1,$FKG_206_Y1,$M403)
+  ;prio : 4 
+  AWT (Freigabe_RLT_Anlage,K_float_0,$M403,Ansteuerung_Umluftklappe)
+  ;prio : 5 
+  AWT (Freigabe_RLT_Anlage,K_float_0,Ansteuerung_Klappen,$M407)
+  ;prio : 6 
+  AWT (K_1,K_float_0,$M407,Ansteuerung_Aussenluftklappe)
+  ;prio : 7 
+  AWT (Gefahr_Entrauchungsschalter_Entrauchung,K_float_100,$M407,
+   Ansteuerung_Fortluftklappe)
+ ;Page 29 Title : Ansteuerung W„rmepumpe EG 01
+  ;prio : 1 
+  AWT (AT>20,FKON-0,Stellgroesse_kuehlen_EG,$M259)
+  ;prio : 2 
+  AWT ($M344,FKON-0,$M258,Ansteuerung_WP_EG)
+  ;prio : 3 
+  MAX (2,$M259,Stellgroesse_heizen_EG,$M258)
+  ;prio : 4 
+  UNDMN (1,RM_Lueftung_EIN,1,Nachlauf_Lueftung,$M344,$out-undmn-207-binv)
+ ;Page 30 Title : Ansteuerung W„rmepumpe EG 02
+  ;prio : 1 
+  VGLEH (Stellgroesse_heizen_EG,K_float_5,K_float_1,$M260)
+  ;prio : 2 
+  UNDMN (1,$M260,1,$M263,$M261,$out-undmn-208-binv)
+  ;prio : 3 
+  VVZ ($M261,K_float_10,K_float_120,$M262)
+  ;prio : 4 
+  UNDMN (2,$M262,Freigabe_RLT_Anlage,1,Stoerung_Abschaltstoerung,
+   Freigabe_WP_EG_Heizfall,$out-undmn-209-binv)
+  ;prio : 5 
+  VGLEH (Stellgroesse_kuehlen_EG,K_float_5,K_float_1,$M264)
+  ;prio : 6 
+  UNDMN (1,$M264,1,$M262,$M265,$out-undmn-210-binv)
+  ;prio : 7 
+  VVZ ($M265,K_float_10,K_float_120,$M263)
+  ;prio : 8 
+  UNDMN (2,$M263,Freigabe_RLT_Anlage,1,Stoerung_Abschaltstoerung,
+   Freigabe_WP_EG_Kuehlfall,$out-undmn-211-binv)
+ ;Page 31 Title : Ansteuerung W„rmepumpe EG 03
+  ;prio : 1 
+  ODR2 ($M479,Freigabe_WP_EG_Kuehlfall,$M266)
+  ;prio : 2 
+  VVZ ($M266,K_float_0,K_float_30,$out-vvz-212-y)
+  ;prio : 5 
+  UNDMN (1,Freigabe_WP_EG_Heizfall,1,Sperren_Heizen,$M479,$out-undmn-213-binv)
+  ;prio : 6 
+  VVZ ($M270,K_float_0,K_float_30,Freigabe_WP_EG_Kuehlfall_BEFAUS)
+  ;prio : 7 
+  UNDMN (1,Freigabe_WP_EG_Kuehlfall,1,Sperren_Kuehlen,$M271,$out-undmn-214-binv)
+  ;prio : 8 
+  UND2 ($M271,AT>20,$M270)
+  ;prio : 9 
+  BTRA ($M255,Freigabe_WP_EG_BEFAUS)
+  ;prio : 10 
+  VVZ (Freigabe_EIN,K_float_0,K_float_300,$M255)
+ ;Page 32 Title : Ansteuerung W„rmepumpe OG 01
+  ;prio : 4 
+  AWT (AT>20,FKON-0,Stellgroesse_kuehlen_OG,$M276)
+  ;prio : 5 
+  AWT ($M345,FKON-0,$M275,Ansteuerung_WP_OG)
+  ;prio : 6 
+  MAX (2,$M276,Stellgroesse_heizen_OG,$M275)
+  ;prio : 7 
+  UNDMN (1,RM_Lueftung_EIN,1,Nachlauf_Lueftung,$M345,$out-undmn-215-binv)
+ ;Page 33 Title : Ansteuerung W„rmepumpe OG 02
+  ;prio : 9 
+  VGLEH (Stellgroesse_heizen_OG,K_float_5,K_float_1,$M277)
+  ;prio : 10 
+  UNDMN (1,$M277,1,$M284,$M278,$out-undmn-216-binv)
+  ;prio : 11 
+  VVZ ($M278,K_float_10,K_float_120,$M283)
+  ;prio : 12 
+  UNDMN (2,$M283,Freigabe_RLT_Anlage,1,Stoerung_Abschaltstoerung,
+   Freigabe_WP_OG_Heizfall,$out-undmn-217-binv)
+  ;prio : 13 
+  VGLEH (Stellgroesse_kuehlen_OG,K_float_5,K_float_1,$M280)
+  ;prio : 14 
+  UNDMN (1,$M280,1,$M283,$M281,$out-undmn-218-binv)
+  ;prio : 15 
+  VVZ ($M281,K_float_10,K_float_120,$M284)
+  ;prio : 16 
+  UNDMN (2,$M284,Freigabe_RLT_Anlage,1,Stoerung_Abschaltstoerung,
+   Freigabe_WP_OG_Kuehlfall,$out-undmn-219-binv)
+ ;Page 34 Title : Ansteuerung W„rmepumpe OG 03
+  ;prio : 9 
+  ODR2 ($M286,Freigabe_WP_OG_Kuehlfall,$M285)
+  ;prio : 10 
+  VVZ ($M285,K_float_0,K_float_30,$out-vvz-220-y)
+  ;prio : 12 
+  UNDMN (1,Freigabe_WP_OG_Heizfall,1,Sperren_Heizen,$M286,$out-undmn-221-binv)
+  ;prio : 13 
+  VVZ ($M287,K_float_0,K_float_30,Freigabe_WP_OG_Kuehlfall_BEFAUS)
+  ;prio : 14 
+  UNDMN (1,Freigabe_WP_OG_Kuehlfall,1,Sperren_Kuehlen,$M288,$out-undmn-222-binv)
+  ;prio : 15 
+  UND2 ($M288,AT>20,$M287)
+  ;prio : 17 
+  VVZ (Freigabe_EIN,K_float_0,K_float_300,$M302)
+  ;prio : 18 
+  BTRA ($M302,Freigabe_WP_OG_BEFAUS)
+ ;Page 35 Title : Ventilatoren Druckbegrenzung
+  ;prio : 1 
+  PT1 (MW_Zuluftdruck,K_float_20,MW_Zuluftdruck_PT1)
+  ;prio : 5 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M294,
+   $out-odrmn-223-binv)
+  ;prio : 6 
+  REGLER (3,K_1,$M294,K_float_0,Stellgroesse_Regler03,$out-regler-224-error)
+  ;prio : 7 
+  ATRA (SW_Zuluftdruck,$out-atra-225-y)
+  ;prio : 8 
+  ATRA (MW_Zuluftdruck_PT1,$out-atra-226-y)
+  ;prio : 9 
+  PT1 (MW_Abluftdruck,K_float_20,MW_Abluftdruck_PT1)
+  ;prio : 10 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M293,
+   $out-odrmn-227-binv)
+  ;prio : 11 
+  REGLER (4,K_1,$M293,K_float_0,Stellgroesse_Regler04,$out-regler-228-error)
+  ;prio : 12 
+  ATRA (SW_Abluftdruck,$out-atra-229-y)
+  ;prio : 13 
+  ATRA (MW_Abluftdruck_PT1,$out-atra-230-y)
+ ;Page 36 Title : Ansteuerung CO2
+  ;prio : 1 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_RLT_Anlage,$M301,
+   $out-odrmn-231-binv)
+  ;prio : 2 
+  REGLER (5,K_1,$M301,K_float_0,Stellgroesse_Regler05,$out-regler-232-error)
+  ;prio : 3 
+  VVZ (Freigabe_CO2_EIN,K_float_600,K_float_0,$M303)
+  ;prio : 4 
+  FKG (Stellgroesse_Regler05,4,$FKG_233_X0,$FKG_233_Y0,$FKG_233_X1,$FKG_233_Y1,
+   $WSCATCH)
+  ;prio : 5 
+  FKG (Stellgroesse_Regler05,4,$FKG_234_X0,$FKG_234_Y0,$FKG_234_X1,$FKG_234_Y1,
+   $WSCATCH)
+  ;prio : 6 
+  AWT ($M303,K_float_0,$WSCATCH,Ansteuerung_CO2)
+  ;prio : 7 
+  AWT ($M303,K_float_0,$WSCATCH,Ansteuerung_CO2_Ventilatoren)
+  ;prio : 8 
+  ATRA (SW_CO2,$out-atra-235-y)
+  ;prio : 9 
+  ATRA (MW_CO2_Mittelwert,$out-atra-236-y)
+ ;Page 37 Title : Ansteuerung Ventilatoren 01
+  ;prio : 1 
+  UND2 (RM_Lueftung_EIN,Freigabe_Temperaturregelung_EIN,$M316)
+  ;prio : 2 
+  UNDMN (1,$M317,2,Sperren_Heizfall_Ventilator,Sperren_Kuehlfall_Ventilator,
+   $M318,$out-undmn-237-binv)
+  ;prio : 3 
+  VVZ ($M316,K_float_120,K_float_0,$M317)
+  ;prio : 4 
+  AWT ($M318,K_float_0,$M319,$M320)
+  ;prio : 5 
+  MAX (2,Stellgroesse_Ventilatoren_Heizfall,Stellgroesse_Ventilatoren_Kuehlfall,
+   $M319)
+  ;prio : 6 
+  MAX (3,$M320,Ansteuerung_CO2_Ventilatoren,Ansteuerung_Nachtkuehlung,
+   Stellgroesse_Ventilatoren)
+ ;Page 38 Title : Ansteuerung Ventilatoren 02
+  ;prio : 1 
+  MAX (2,Stellgroesse_Ventilatoren,SW_Mindestdrehzahl_Zuluftventilator,$M330)
+  ;prio : 3 
+  UNDMN (1,RM_Lueftung_EIN,1,Stoerung_Abschaltstoerung,$M336,
+   $out-undmn-238-binv)
+  ;prio : 4 
+  AWT ($M336,K_float_0,$M330,Ansteuerung_Zuluftventilator)
+  ;prio : 5 
+  MAX (2,Stellgroesse_Ventilatoren,SW_Mindestdrehzahl_Abluftventilator,$M342)
+  ;prio : 7 
+  UNDMN (1,RM_Lueftung_EIN,1,Stoerung_Abschaltstoerung,$M343,
+   $out-undmn-239-binv)
+  ;prio : 8 
+  AWT ($M343,K_float_0,$M342,Ansteuerung_Abluftventilator)
+ ;Page 39 Title : Ansteuerung Zuluftventilator 01
+  ;prio : 1 
+  VVZ (Freigabe_RLT_Anlage,K_float_60,K_float_0,$M352)
+  ;prio : 3 
+  VGLEH (Ansteuerung_Zuluftventilator,K_float_80,K_float_2,$M353)
+  ;prio : 4 
+  VVZ ($M353,K_float_30,K_float_30,$WSCATCH)
+  ;prio : 5 
+  UNDMN (2,$WSCATCH,Freigabe_Zuluftventilator_Stufe1,1,
+   Sperren_Heizfall_Ventilator,$M354,$out-undmn-240-binv)
+  ;prio : 6 
+  UNDMN (2,$WSCATCH,Freigabe_Zuluftventilator_Stufe1,1,
+   Sperren_Kuehlfall_Ventilator,$M355,$out-undmn-241-binv)
+  ;prio : 7 
+  ODR2 ($M354,$M355,Freigabe_Zuluftventilator_Stufe2)
+  ;prio : 8 
+  UNDMN (2,$M352,Freigabe_Ventilatoren_EIN,0,Freigabe_Zuluftventilator_Stufe1,
+   $out-undmn-242-binv)
+ ;Page 40 Title : Ansteuerung Zuluftventilator 02
+  ;prio : 18 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_Zuluftventilator_Stufe1,$M375,
+   $out-odrmn-243-binv)
+  ;prio : 19 
+  RSS (Freigabe_Zuluftventilator_Stufe1,$M375,$M399,$out-rss-244-binv)
+  ;prio : 20 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_Zuluftventilator_Stufe2,$M383,
+   $out-odrmn-245-binv)
+  ;prio : 21 
+  RSS (Freigabe_Zuluftventilator_Stufe2,$M383,$M411,$out-rss-246-binv)
+  ;prio : 22 
+  VVZ ($M411,K_float_0,K_float_10,$M405)
+  ;prio : 23 
+  UND11 ($M399,$M405,$M394)
+  ;prio : 24 
+  UNDMN (0,2,$M399,$M411,$M392,$out-undmn-247-binv)
+  ;prio : 25 
+  ODR2 ($M392,Stoerung_Abschaltstoerung,$M378)
+  ;prio : 26 
+  VVZ ($M412,K_1_float,K_float_0,$M380)
+  ;prio : 27 
+  RSS ($M380,$M378,$M396,$out-rss-248-binv)
+  ;prio : 28 
+  UND11 ($M411,$M396,$M390)
+  ;prio : 29 
+  MOKY ($M390,K_1_float,$M400)
+  ;prio : 30 
+  ODR2 ($M400,$M394,$M412)
+  ;prio : 31 
+  UNDMN (1,$M412,2,$M398,Stoerung_Abschaltstoerung,$M401,$out-undmn-249-binv)
+  ;prio : 32 
+  BTRA ($M401,Freigabe_Zuluftventilator_Stufe1_BEFAUS)
+  ;prio : 33 
+  UNDMN (2,$M396,$M411,2,Stoerung_Abschaltstoerung,$M412,$M398,
+   $out-undmn-250-binv)
+  ;prio : 34 
+  UND11 ($M398,$M401,Freigabe_Zuluftventilator_Stufe2_BEFAUS)
+ ;Page 41 Title : Ansteuerung Abluftventilator 01
+  ;prio : 8 
+  VVZ (Freigabe_RLT_Anlage,K_float_60,K_float_0,$M362)
+  ;prio : 10 
+  VGLEH (Ansteuerung_Abluftventilator,K_float_80,K_float_2,$M363)
+  ;prio : 11 
+  VVZ ($M363,K_float_30,K_float_30,$WSCATCH)
+  ;prio : 12 
+  UNDMN (2,$WSCATCH,Freigabe_Abluftventilator_Stufe1,1,
+   Sperren_Heizfall_Ventilator,$M364,$out-undmn-251-binv)
+  ;prio : 13 
+  UNDMN (2,$WSCATCH,Freigabe_Abluftventilator_Stufe1,1,
+   Sperren_Kuehlfall_Ventilator,$M365,$out-undmn-252-binv)
+  ;prio : 14 
+  ODR2 ($M364,$M365,Freigabe_Abluftventilator_Stufe2)
+  ;prio : 15 
+  UNDMN (2,$M362,Freigabe_Ventilatoren_EIN,0,Freigabe_Abluftventilator_Stufe1,
+   $out-undmn-253-binv)
+  ;prio : 17 
+  ODR2 (Freigabe_Abluftventilator_Stufe1,$in-odr2-254-a2,
+   Freigabe_Abluftventilator_Stufe1)
+ ;Page 42 Title : Ansteuerung Abluftventilator 02
+  ;prio : 35 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_Abluftventilator_Stufe1,$M419,
+   $out-odrmn-255-binv)
+  ;prio : 36 
+  RSS (Freigabe_Abluftventilator_Stufe1,$M419,$M441,$out-rss-256-binv)
+  ;prio : 37 
+  ODRMN (1,Stoerung_Abschaltstoerung,1,Freigabe_Abluftventilator_Stufe2,$M420,
+   $out-odrmn-257-binv)
+  ;prio : 38 
+  RSS (Freigabe_Abluftventilator_Stufe2,$M420,$M445,$out-rss-258-binv)
+  ;prio : 39 
+  VVZ ($M445,K_float_0,K_float_10,$M430)
+  ;prio : 40 
+  UND11 ($M441,$M430,$M431)
+  ;prio : 41 
+  UNDMN (0,2,$M441,$M445,$M434,$out-undmn-259-binv)
+  ;prio : 42 
+  ODR2 ($M434,Stoerung_Abschaltstoerung,$M439)
+  ;prio : 43 
+  VVZ ($M450,K_1_float,K_float_0,$M438)
+  ;prio : 44 
+  RSS ($M438,$M439,$M447,$out-rss-260-binv)
+  ;prio : 45 
+  UND11 ($M445,$M447,$M455)
+  ;prio : 46 
+  MOKY ($M455,K_1_float,$M417)
+  ;prio : 47 
+  ODR2 ($M417,$M431,$M450)
+  ;prio : 48 
+  UNDMN (1,$M450,2,$M452,Stoerung_Abschaltstoerung,$M454,$out-undmn-261-binv)
+  ;prio : 49 
+  BTRA ($M269,Freigabe_Abluftventilator_Stufe1_BEFAUS)
+  ;prio : 50 
+  UNDMN (2,$M447,$M445,2,Stoerung_Abschaltstoerung,$M450,$M452,
+   $out-undmn-262-binv)
+  ;prio : 51 
+  UND11 ($M452,$M454,$M267)
+  ;prio : 52 
+  UNDMN (2,$M254,Gefahr_Entrauchungsschalter_ANL_AUS,1,$M257,$M268,
+   $out-undmn-263-binv)
+  ;prio : 53 
+  NICHT (Gefahr_Entrauchungsschalter_Entrauchung,$M230)
+  ;prio : 54 
+  VVZ ($M254,K_float_60,K_float_0,$M257)
+  ;prio : 55 
+  ODR2 ($M257,$M267,Freigabe_Abluftventilator_Stufe2_BEFAUS)
+  ;prio : 56 
+  ODR2 ($M268,$M454,$M269)
+  ;prio : 57 
+  UNDMN (2,$M230,Gefahr_Entrauchungsschalter_ANL_AUS,0,$M254,
+   $out-undmn-264-binv)
+ ENDE 
+ ;name : Task_Ausgabe
+ TASK (4,cycl,1000)
+ ;Page 1 Title : Quittierung
+  ;prio : 1 
+  BEFAUS (1,$M292,Quittierung_EIN_BEFAUS,$WZERO,$WZERO,&1380LUE00BF020,
+   $out-befaus-265-error)
+  ;prio : 2 
+  BEFAUS (1,$M291,Quittierung_EIN_BEFAUS,$WZERO,$WZERO,&1380LUE00BF920,
+   $out-befaus-266-error)
+  ;prio : 3 
+  ODRMN (1,Quittierung_AUS_BEFAUS,1,Quittierung_EIN_BEFAUS,$M291,
+   $out-odrmn-267-binv)
+  ;prio : 4 
+  ODRMN (1,Quittierung_AUS_BEFAUS,1,Quittierung_EIN_BEFAUS,$M292,
+   $out-odrmn-268-binv)
+ ;Page 2 Title : Sammelst”rung/Abschaltst”rung
+  ;prio : 1 
+  NICHT ($M206,$M117)
+  ;prio : 2 
+  BEFAUS (1,$M117,$M206,$WZERO,$WZERO,&1380ELT01BF920,$out-befaus-269-error)
+  ;prio : 3 
+  SETMEL (K_1,1,Stoerung_Abschaltstoerung,&1380LUE00ST924,$out-setmel-270-error)
+  ;prio : 4 
+  ODR2 (Stoerung_Sammelstoerung_BEFAUS,Stoerung_Sammelstoerung_Nebenanlagen,
+   $M206)
+ ;Page 3 Title : Mittelwerte
+  ;prio : 1 
+  ANAUS (MW_RT_Mittelwert,K_1,&1380LUE00MW950,$out-anaus-271-error)
+  ;prio : 2 
+  ANAUS (MW_RT_Mittelwert_EG,K_1,&1380LUE01MW950,$out-anaus-272-error)
+  ;prio : 3 
+  ANAUS (MW_RT_Mittelwert_OG,K_1,&1380LUE02MW950,$out-anaus-273-error)
+  ;prio : 4 
+  ANAUS (MW_CO2_Mittelwert,K_1,&1380LUE00MW951,$out-anaus-274-error)
+ ;Page 4 Title : Bedarfsregelung
+  ;prio : 5 
+  SETMEL (K_1,1,Freigabe_Bedarfsregelung_Temperatur,&1380LUE00BM991,
+   $out-setmel-275-error)
+  ;prio : 6 
+  SETMEL (K_1,1,Freigabe_Bedarfsregelung_CO2,&1380LUE00BM993,
+   $out-setmel-276-error)
+  ;prio : 7 
+  SETMEL (K_1,1,Freigabe_Bedarfsregelung_Spuelbetrieb,&1380LUE00BM994,
+   $out-setmel-277-error)
+ ;Page 5 Title : WRG
+  ;prio : 1 
+  ANAUS (Ansteuerung_WRG,K_1,&1380LUE00SB004,$out-anaus-278-error)
+  ;prio : 2 
+  NICHT (Freigabe_WRG_BEFAUS,$M498)
+  ;prio : 3 
+  BEFAUS (1,$M498,Freigabe_WRG_BEFAUS,$WZERO,$WZERO,&1380LUE00BF003,
+   $out-befaus-279-error)
+  ;prio : 4 
+  ANAUS (SW_Zulufttemp_n_Ventilator,K_1,&1380LUE00SW913,$out-anaus-280-error)
+  ;prio : 5 
+  NICHT (Freigabe_Pumpe_Erhitzer_BEFAUS,$M477)
+  ;prio : 6 
+  BEFAUS (1,$M477,Freigabe_Pumpe_Erhitzer_BEFAUS,$WZERO,$WZERO,&1380HEI09BF001,
+   $out-befaus-281-error)
+  ;prio : 7 
+  ANAUS (Ansteuerung_Ventil_Erhitzer,K_1,&1380HEI01SB002,$out-anaus-282-error)
+ ;Page 6 Title : Luftklappen
+  ;prio : 1 
+  ANAUS (Ansteuerung_Aussenluftklappe,K_1,&1380LUE00SB001,$out-anaus-283-error)
+  ;prio : 2 
+  ANAUS (Ansteuerung_Fortluftklappe,K_1,&1380LUE00SB002,$out-anaus-284-error)
+  ;prio : 3 
+  ANAUS (Ansteuerung_Umluftklappe,K_1,&1380LUE00SB003,$out-anaus-285-error)
+ ;Page 7 Title : W„rmepumpe EG
+  ;prio : 1 
+  NICHT (Freigabe_WP_EG_BEFAUS,$M272)
+  ;prio : 2 
+  BEFAUS (1,$M272,Freigabe_WP_EG_BEFAUS,$WZERO,$WZERO,&1380LUE01BF001,
+   $out-befaus-286-error)
+  ;prio : 5 
+  NICHT (Freigabe_WP_EG_Kuehlfall_BEFAUS,$M274)
+  ;prio : 6 
+  BEFAUS (1,$M274,Freigabe_WP_EG_Kuehlfall_BEFAUS,$WZERO,$WZERO,&1380LUE01BF007,
+   $out-befaus-287-error)
+  ;prio : 7 
+  ANAUS (Ansteuerung_WP_EG,K_1,&1380LUE01SB001,$out-anaus-288-error)
+  ;prio : 8 
+  SETMEL (K_1,1,$M322,&1380LUE01BM001,$out-setmel-289-error)
+  ;prio : 9 
+  SETMEL (K_1,1,$M351,&1380LUE01ST001,$out-setmel-290-error)
+  ;prio : 10 
+  UND2 (Stoerung_WP_EG,BF_WP_EG_EIN,$M321)
+  ;prio : 11 
+  VVZ ($M321,K_float_60,K_float_0,$M322)
+  ;prio : 12 
+  VVZ ($M323,K_float_60,K_float_0,$M351)
+  ;prio : 13 
+  UNDMN (1,Stoerung_WP_EG,1,BF_WP_EG_EIN,$M323,$out-undmn-291-binv)
+  ;prio : 14 
+  BTRA ($M351,ST_Waermepumpe_EG)
+ ;Page 8 Title : W„rmepumpe OG
+  ;prio : 8 
+  NICHT (Freigabe_WP_OG_BEFAUS,$M295)
+  ;prio : 9 
+  BEFAUS (1,$M295,Freigabe_WP_OG_BEFAUS,$WZERO,$WZERO,&1380LUE02BF001,
+   $out-befaus-292-error)
+  ;prio : 12 
+  NICHT (Freigabe_WP_OG_Kuehlfall_BEFAUS,$M297)
+  ;prio : 13 
+  BEFAUS (1,$M297,Freigabe_WP_OG_Kuehlfall_BEFAUS,$WZERO,$WZERO,&1380LUE02BF007,
+   $out-befaus-293-error)
+  ;prio : 14 
+  ANAUS (Ansteuerung_WP_OG,K_1,&1380LUE02SB001,$out-anaus-294-error)
+  ;prio : 15 
+  SETMEL (K_1,1,$M357,&1380LUE02BM001,$out-setmel-295-error)
+  ;prio : 16 
+  SETMEL (K_1,1,$M358,&1380LUE02ST001,$out-setmel-296-error)
+  ;prio : 17 
+  UND2 (Stoerung_WP_OG,BF_WP_OG_EIN,$M356)
+  ;prio : 18 
+  VVZ ($M356,K_float_60,K_float_0,$M357)
+  ;prio : 19 
+  VVZ ($M325,K_float_60,K_float_0,$M358)
+  ;prio : 20 
+  UNDMN (1,Stoerung_WP_OG,1,BF_WP_OG_EIN,$M325,$out-undmn-297-binv)
+  ;prio : 21 
+  BTRA ($M358,ST_Waermepumpe_OG)
+ ;Page 9 Title : Anlagendruck PT1
+  ;prio : 1 
+  ANAUS (MW_Zuluftdruck_PT1,K_1,&1380LUE00MW910,$out-anaus-298-error)
+  ;prio : 2 
+  ANAUS (MW_Abluftdruck_PT1,K_1,&1380LUE00MW911,$out-anaus-299-error)
+ ;Page 10 Title : Ventilatoren
+  ;prio : 1 
+  UNDMN (0,2,Freigabe_Zuluftventilator_Stufe2_BEFAUS,
+   Freigabe_Zuluftventilator_Stufe1_BEFAUS,$M459,$out-undmn-300-binv)
+  ;prio : 2 
+  BEFAUS (2,$M459,Freigabe_Zuluftventilator_Stufe1_BEFAUS,
+   Freigabe_Zuluftventilator_Stufe2_BEFAUS,$WZERO,&1380LUE00BF001,
+   $out-befaus-301-error)
+  ;prio : 3 
+  ANAUS (Ansteuerung_Zuluftventilator,K_1,&1380LUE00SB900,$out-anaus-302-error)
+  ;prio : 4 
+  UNDMN (0,2,Freigabe_Abluftventilator_Stufe2_BEFAUS,
+   Freigabe_Abluftventilator_Stufe1_BEFAUS,$M237,$out-undmn-303-binv)
+  ;prio : 5 
+  BEFAUS (2,$M238,Freigabe_Abluftventilator_Stufe1_BEFAUS,
+   Freigabe_Abluftventilator_Stufe2_BEFAUS,$WZERO,&1380LUE00BF002,
+   $out-befaus-304-error)
+  ;prio : 6 
+  ANAUS (Ansteuerung_Abluftventilator,K_1,&1380LUE00SB901,$out-anaus-305-error)
+  ;prio : 7 
+  ODR2 ($M242,$M237,$M238)
+  ;prio : 8 
+  MOKY ($M248,K_float_10,$M242)
+  ;prio : 9 
+  NICHT (Gefahr_Entrauchungsschalter_Entrauchung,$M244)
+  ;prio : 10 
+  UNDMN (2,$M244,Gefahr_Entrauchungsschalter_ANL_AUS,0,$M248,
+   $out-undmn-306-binv)
+ ENDE 
+ENDMODUL

@@ -1,0 +1,712 @@
+MODUL (AC40,6)
+  WordV $WSCATCH
+  WordK $WZERO (0)
+  WordK KON_1 (1)
+  WordK K_RLT31_ANLAGE_AUS (0)
+  WordK K_RLT31_ANLAGE_TAG (0)
+  WordK K_RLT31_ANLAGE_NACHT (0)
+  IPAMB &O3L1-LU3502-BM21 (96,8)
+  IPAMB &O3L1-LU3602-BF11 (96,13)
+  IPAMB &O3L1-LU0000-GF00 (121,14)
+  IPAMB &O3L1-LU3602-BM21 (96,12)
+  IPAMB &O3L1-LU3700-BF90 (246,13)
+  IPAMB &O3L1-LU3600-BF90 (246,9)
+  IPAMB &O3L1-LU3609-BF02 (98,5)
+  IPAMB &O3L1-LU3402-BM31 (118,3)
+  IPAMB &O3L1-LU0000-BF21 (121,1)
+  IPAMB &O3L1-LU0000-BF23 (120,9)
+  IPAMB &O3L1-LU0000-BF22 (121,5)
+  IPAMB &O3L1-LU0000-BF25 (121,9)
+  IPAMB &O3L1-LU0000-BF24 (120,13)
+  IPAMB &O3L1-LU3602-WA11 (99,11)
+  IPAMB &O3L1-LU3502-WA11 (99,10)
+  IPAMB &O3L1-LU3100-BF90 (247,1)
+  IPAMB &O3L1-LU3402-BF11 (97,5)
+  IPAMB &O3L1-LU3402-BM21 (97,4)
+  IPAMB &O3L1-LU3102-BM31 (118,0)
+  IPAMB &O3L1-LU3102-WA11 (98,10)
+  IPAMB &O3L1-LU3102-BM21 (96,0)
+  IPAMB &O3L1-LU3502-BF11 (96,9)
+  IPAMB &O3L1-LU3402-WA11 (98,15)
+  IPAMB &O3L1-LU3609-BM01 (99,6)
+  IPAMB &O3L1-LU3300-BF90 (247,9)
+  IPAAW &O3L1-LU3102-SB11 (110)
+  IPAMB &O3L1-LU3509-BF02 (98,1)
+  IPAMB &O3L1-LU3302-BF11 (97,1)
+  IPAMB &O3L1-LU0000-BF02 (120,5)
+  IPAMB &O3L1-LU0000-BF01 (120,1)
+  IPAMB &O3L1-LU3500-BF90 (246,5)
+  IPAMB &O3L1-LU3302-WA11 (98,14)
+  IPAMB &O3L1-LU3702-BM21 (97,8)
+  IPAAW &O3L1-LU3302-SB11 (112)
+  IPAMB &O3L1-LU3302-BM31 (118,2)
+  IPAMB &O3L1-LU3200-BF90 (246,1)
+  IPAMB &O3L1-LU3202-WA11 (98,11)
+  IPAMB &O3L1-LU3702-BF11 (97,9)
+  IPAMB &O3L1-LU3302-BM21 (97,0)
+  IPAMB &O3L1-LU3702-WA11 (99,14)
+  IPAMB &O3L1-LU3202-BM21 (96,4)
+  IPAMB &O3L1-LU3400-BF90 (248,1)
+  IPAAW &O3L1-LU3402-SB11 (113)
+  IPAMB &O3L1-LU3509-BM01 (99,2)
+  WordV SSM-LED-AUS
+  WordV SSM-LED-EIN
+  WordV HAUPTSCHALTER-EIN
+  WordV QUITTIERUNG_AUS
+  WordV QUITTIERUNG-EIN
+  WordV QUITTIERTASTER
+  WordV ABS-HZG-RLT6-AUS
+  WordV ABS-HZG-RLT6-EIN
+  WordV STEUERSPG-24VAC
+  WordV ABS-HZG-RLT1-AUS
+  WordV ABS-HZG-RLT1-EIN
+  WordV UEBERSPANNUNG
+  WordV ABS-HZG-RLT4-AUS
+  WordV ABS-HZG-RLT4-EIN
+  WordV PHASENWAECHTER
+  WordV MERR120-09
+  WordV MERR120-01
+  WordV MERR00-00
+  WordV MERR00-05
+  WordV MERR121-14
+  WordV ABS-HZG-RLT8k-AUS
+  WordV ABS-HZG-RLT8k-EIN
+  WordV STEUERSPG-24VDC
+  WordV MERR12009
+  WordV ABS-HZG-RLT8g-AUS
+  WordV ABS-HZG-RLT8g-EIN
+  WordV ISP01-BMA
+  WordV ISP01-FEUER-NOT-AUS
+  FloatV ISP01_AT
+  FloatV MERR10-00
+  WordV RLT31_ANLAGE_AUS
+  WordV RLT31_ANLAGE_TAG
+  WordV RLT31_ANLAGE_NACHT
+  WordV RLT31_ABL_REP
+  WordV RLT31_ABL_BF_OE
+  WordV RLT31_ABL_AUS
+  WordV RLT31_ABL_ST
+  WordV RLT31_ABL_EIN
+  WordV RLT31_ABL_SB_OE
+  WordV MERR247-01
+  WordV MERR98-10
+  WordV MERR96-00
+  WordV MERR96-01
+  WordV MERR118-00
+  WordV ssm-rlt31
+  WordV rlt31-tag
+  WordV rlt31-nacht
+  WordV rlt31-abl-soll-ein
+  FloatV $M7
+  FloatK FKON_100 (100.00)
+  FloatK FKON_50 (50.00)
+  FloatK FKON_00 (0.00)
+  FloatV rlt31-sb-abl
+  FloatV $M13
+  WordV ssm-schrank
+  WordV STEUERSPG-230V
+  WordV $M14
+  WordV $M19
+  WordV $M26
+  IPAMB &O3L1-LU3102-BF11 (96,1)
+  WordK K_RLT32_ANLAGE_AUS (0)
+  WordK K_RLT32_ANLAGE_EIN (0)
+  WordV RLT32_ANLAGE_AUS
+  WordV RLT32_ANLAGE_EIN
+  WordV RLT32_ABL_REP
+  WordV RLT32_ABL_BF_OE
+  WordV RLT32_ABL_AUS
+  WordV RLT32_ABL_ST
+  WordV RLT32_ABL_EIN
+  IPAMB &O3L1-LU3202-BF11 (96,5)
+  WordV MERR246-01
+  WordV MERR98-11
+  WordV MERR96-04
+  WordV MERR96-05
+  WordV rlt32-abl-soll-ein
+  WordV ssm-rlt32
+  WordV $M33
+  WordV $M34
+  WordV $M35
+  WordK K_RLT33_ANLAGE_AUS (0)
+  WordK K_RLT33_ANLAGE_TAG (0)
+  WordK K_RLT33_ANLAGE_NACHT (0)
+  WordV RLT33_ANLAGE_AUS
+  WordV RLT33_ANLAGE_TAG
+  WordV RLT33_ANLAGE_NACHT
+  WordV RLT33_ABL_REP
+  WordV RLT33_ABL_BF_OE
+  WordV RLT33_ABL_AUS
+  WordV RLT33_ABL_ST
+  WordV RLT33_ABL_EIN
+  WordV MERR247-09
+  WordV MERR98-14
+  WordV MERR97-00
+  WordV MERR97-01
+  WordV MERR118-02
+  WordV RLT33_ABL_SB_OE
+  FloatV $M39
+  WordV ssm-rlt33
+  WordV rlt33-tag
+  WordV rlt33-nacht
+  WordV rlt33-abl-soll-ein
+  FloatV rlt33-sb-abl
+  WordV $M36
+  WordV $M38
+  WordV $M40
+  WordK K_RLT34_ANLAGE_AUS (0)
+  WordK K_RLT34_ANLAGE_TAG (0)
+  WordK K_RLT34_ANLAGE_NACHT (0)
+  WordV RLT34_ANLAGE_AUS
+  WordV RLT34_ANLAGE_TAG
+  WordV RLT34_ANLAGE_NACHT
+  WordV RLT34_ABL_REP
+  WordV RLT34_ABL_BF_OE
+  WordV RLT34_ABL_AUS
+  WordV RLT34_ABL_ST
+  WordV RLT34_ABL_EIN
+  WordV RLT34_ABL_SB_OE
+  WordV MERR248-01
+  WordV MERR98-15
+  WordV MERR97-04
+  WordV MERR97-05
+  WordV MERR118-03
+  FloatV $M44
+  WordV ssm-rlt34
+  WordV rlt34-tag
+  WordV rlt34-nacht
+  WordV rlt34-abl-soll-ein
+  FloatV rlt34-sb-abl
+  WordV $M41
+  WordV $M43
+  WordV $M45
+  WordK K_RLT35_ANLAGE_AUS (0)
+  WordK K_RLT35_ANLAGE_BEREIT (0)
+  WordV RLT35_ANLAGE_AUS
+  WordV RLT35_ANLAGE_BEREIT
+  WordV RLT35_ABL_REP
+  WordV RLT35_ABL_BF_OE
+  WordV RLT35_ABL_AUS
+  WordV RLT35_ABL_ST
+  WordV RLT35_ABL_EIN
+  WordV RLT35_TAB_LED_AUS
+  WordV RLT35_TAB_TASTER_EIN
+  WordV RLT35_TAB_LED_EIN
+  WordV RLT35_TAB_TASTER_AUS
+  WordV MERR246-05
+  WordV MERR99-10
+  WordV MERR96-08
+  WordV MERR96-09
+  WordV MERR98-01
+  WordV MERR99-02
+  WordV $M51
+  WordV $M52
+  WordV ssm-rlt35
+  WordV rlt35-abl-soll-ein
+  WordV $M55
+  WordV $M56
+  WordV RLT35_BSK01
+  WordV rlt35-bsk-ok
+  WordV $M57
+  WordK K_RLT36_ANLAGE_AUS (0)
+  WordK K_RLT36_ANLAGE_BEREIT (0)
+  WordV RLT36_ANLAGE_AUS
+  WordV RLT36_ANLAGE_BETREIT
+  WordV RLT36_ABL_REP
+  WordV RLT36_ABL_BF_OE
+  WordV RLT36_ABL_AUS
+  WordV RLT36_ABL_ST
+  WordV RLT36_ABL_EIN
+  WordV RLT36_TAB_LED_AUS
+  WordV RLT36_BSK01
+  WordV RLT36_TAB_LED_EIN
+  WordV RLT36_TAB_TASTER_AUS
+  WordV RLT36_TAB_TASTER_EIN
+  WordV MERR246-09
+  WordV MERR99-11
+  WordV MERR96-12
+  WordV MERR96-13
+  WordV MERR98-05
+  WordV MERR99-06
+  WordV $M58
+  WordV $M59
+  WordV ssm-rlt36
+  WordV rlt36-abl-soll-ein
+  WordV rlt36-bsk-ok
+  WordV $M60
+  WordV $M61
+  WordV $M62
+  WordK K_RLT37_ANLAGE_AUS (0)
+  WordK K_RLT37_ANLAGE_BEREIT (0)
+  WordV RLT37_ANLAGE_AUS
+  WordV RLT37_ANLAGE_BEREIT
+  WordV RLT37_ABL_REP
+  WordV RLT37_THERMOSTAT
+  WordV RLT37_ABL_BF_OE
+  WordV RLT37_ABL_AUS
+  WordV RLT37_ABL_ST
+  WordV RLT37_ABL_EIN
+  WordV MERR246-13
+  WordV MERR99-14
+  WordV MERR97-08
+  WordV MERR97-09
+  WordV ssm-rlt37
+  WordV rlt37-sbl-soll-ein
+  WordV $M63
+  WordV $M65
+  WordV $M66
+  WordV ssm-modul6
+  IPAMB &O3L1-US0100-ST06 (248,15)
+  WordV $out-befaus-0-error
+  WordV $out-befaus-1-error
+  WordV $out-befaus-2-error
+  WordV $out-befaus-3-error
+  WordV $out-befaus-4-error
+  WordV $out-befaus-5-error
+  WordV $out-befaus-6-error
+  WordV $out-melein-7-meldepunkt
+  WordV $out-melein-8-meldepunkt
+  WordV $out-melein-9-meldepunkt
+  WordV $out-btra-10-b
+  WordV $out-btra-11-b
+  WordV $out-btra-12-b
+  WordV $out-melein-13-meldepunkt
+  WordV $out-melein-14-meldepunkt
+  WordV $out-btra-15-b
+  WordV $out-btra-16-b
+  WordV $out-melein-17-meldepunkt
+  WordV $out-melein-18-meldepunkt
+  WordV $out-melein-19-meldepunkt
+  WordV $out-btra-20-b
+  WordV $out-btra-21-b
+  WordV $out-btra-22-b
+  WordV $out-melein-23-meldepunkt
+  WordV $out-melein-24-meldepunkt
+  WordV $out-melein-25-meldepunkt
+  WordV $out-btra-26-b
+  WordV $out-btra-27-b
+  WordV $out-btra-28-b
+  WordV $out-melein-29-meldepunkt
+  WordV $out-melein-30-meldepunkt
+  WordV $out-btra-31-b
+  WordV $out-btra-32-b
+  WordV $out-melein-33-meldepunkt
+  WordV $out-melein-34-meldepunkt
+  WordV $out-btra-35-b
+  WordV $out-btra-36-b
+  WordV $out-melein-37-meldepunkt
+  WordV $out-btra-38-b
+  WordV $out-btra-39-b
+  WordV $out-odrmn-40-binv
+  WordV $out-rss-41-binv
+  WordV $out-odrmn-42-binv
+  WordV $out-undmn-43-binv
+  WordV $out-undmn-44-binv
+  WordV $out-odrmn-45-binv
+  WordV $out-odrmn-46-binv
+  WordV $out-rss-47-binv
+  WordV $out-undmn-48-binv
+  WordV $out-odrmn-49-binv
+  WordV $out-rss-50-binv
+  WordV $out-undmn-51-binv
+  WordV $out-undmn-52-binv
+  WordV $out-odrmn-53-binv
+  WordV $out-odrmn-54-binv
+  WordV $out-rss-55-binv
+  WordV $out-undmn-56-binv
+  WordV $out-undmn-57-binv
+  WordV $out-odrmn-58-binv
+  WordV $out-odrmn-59-binv
+  WordV $out-rss-60-binv
+  WordV $out-rss-61-binv
+  WordV $out-undmn-62-binv
+  WordV $out-undmn-63-binv
+  WordV $out-odrmn-64-binv
+  WordV $out-rss-65-binv
+  WordV $out-rss-66-binv
+  WordV $out-undmn-67-binv
+  WordV $out-undmn-68-binv
+  WordV $out-odrmn-69-binv
+  WordV $out-rss-70-binv
+  WordV $out-undmn-71-binv
+  WordV $out-odrmn-72-binv
+  WordV $out-rss-73-binv
+  WordV $out-befaus-74-error
+  WordV $out-anaus-75-error
+  WordV $out-befaus-76-error
+  WordV $out-befaus-77-error
+  WordV $out-anaus-78-error
+  WordV $out-befaus-79-error
+  WordV $out-anaus-80-error
+  WordV $out-befaus-81-error
+  WordV $out-befaus-82-error
+  WordV $out-befaus-83-error
+  WordV $out-setmel-84-error
+ ;name : Task_init
+ TASK (1,init)
+ ;Page 1 Title : RLT 31 INIT
+  ;prio : 4 
+  BEFAUS (2,K_RLT31_ANLAGE_AUS,K_RLT31_ANLAGE_TAG,K_RLT31_ANLAGE_NACHT,$WZERO,
+   &O3L1-LU3100-BF90,$out-befaus-0-error)
+ ;Page 2 Title : RLT 32 INIT
+  ;prio : 5 
+  BEFAUS (1,K_RLT32_ANLAGE_AUS,K_RLT32_ANLAGE_EIN,$WZERO,$WZERO,
+   &O3L1-LU3200-BF90,$out-befaus-1-error)
+ ;Page 3 Title : RLT 33 INIT
+  ;prio : 5 
+  BEFAUS (2,K_RLT33_ANLAGE_AUS,K_RLT33_ANLAGE_TAG,K_RLT33_ANLAGE_NACHT,$WZERO,
+   &O3L1-LU3300-BF90,$out-befaus-2-error)
+ ;Page 4 Title : RLT 34 INIT
+  ;prio : 6 
+  BEFAUS (2,K_RLT34_ANLAGE_AUS,K_RLT34_ANLAGE_TAG,K_RLT34_ANLAGE_NACHT,$WZERO,
+   &O3L1-LU3400-BF90,$out-befaus-3-error)
+ ;Page 5 Title : RLT 35 INIT
+  ;prio : 6 
+  BEFAUS (1,K_RLT35_ANLAGE_AUS,K_RLT35_ANLAGE_BEREIT,$WZERO,$WZERO,
+   &O3L1-LU3500-BF90,$out-befaus-4-error)
+ ;Page 6 Title : RLT 36 INIT
+  ;prio : 7 
+  BEFAUS (1,K_RLT36_ANLAGE_AUS,K_RLT36_ANLAGE_BEREIT,$WZERO,$WZERO,
+   &O3L1-LU3600-BF90,$out-befaus-5-error)
+ ;Page 7 Title : RLT 37 INIT
+  ;prio : 8 
+  BEFAUS (1,K_RLT37_ANLAGE_AUS,K_RLT37_ANLAGE_BEREIT,$WZERO,$WZERO,
+   &O3L1-LU3700-BF90,$out-befaus-6-error)
+ ENDE 
+ ;name : Task_Einlesen
+ TASK (2,cycl,1000)
+ ;Page 1 Title : Schrank AN-/MELEIN
+  ;prio : 10 
+  MELEIN (&O3L1-LU0000-BF01,3,SSM-LED-AUS,HAUPTSCHALTER-EIN,SSM-LED-EIN,
+   MERR120-01)
+  ;prio : 11 
+  MELEIN (&O3L1-LU0000-BF02,3,QUITTIERUNG_AUS,QUITTIERTASTER,QUITTIERUNG-EIN,
+   MERR00-00)
+  ;prio : 12 
+  MELEIN (&O3L1-LU0000-BF23,3,ABS-HZG-RLT6-AUS,STEUERSPG-24VAC,ABS-HZG-RLT6-EIN,
+   MERR120-09)
+  ;prio : 13 
+  MELEIN (&O3L1-LU0000-BF21,3,ABS-HZG-RLT1-AUS,UEBERSPANNUNG,ABS-HZG-RLT1-EIN,
+   MERR00-05)
+  ;prio : 14 
+  MELEIN (&O3L1-LU0000-BF22,3,ABS-HZG-RLT4-AUS,PHASENWAECHTER,ABS-HZG-RLT4-EIN,
+   MERR121-14)
+  ;prio : 15 
+  MELEIN (&O3L1-LU0000-BF24,3,ABS-HZG-RLT8k-AUS,STEUERSPG-24VDC,
+   ABS-HZG-RLT8k-EIN,MERR12009)
+  ;prio : 16 
+  MELEIN (&O3L1-LU0000-BF25,3,ABS-HZG-RLT8g-AUS,STEUERSPG-24VDC,
+   ABS-HZG-RLT8g-EIN,MERR12009)
+  ;prio : 17 
+  MELEIN (&O3L1-LU0000-GF00,2,ISP01-BMA,ISP01-FEUER-NOT-AUS,MERR121-14)
+  ;prio : 18 
+  ANEIN ($WSCATCH,ISP01_AT,MERR10-00)
+ ;Page 2 Title : RLT31 MELEIN_01
+  ;prio : 27 
+  MELEIN (&O3L1-LU3100-BF90,5,RLT31_ANLAGE_AUS,$out-melein-7-meldepunkt,
+   RLT31_ANLAGE_TAG,$out-melein-8-meldepunkt,RLT31_ANLAGE_NACHT,MERR247-01)
+  ;prio : 31 
+  MELEIN (&O3L1-LU3102-BM21,1,RLT31_ABL_BF_OE,MERR96-00)
+  ;prio : 32 
+  MELEIN (&O3L1-LU3102-BF11,3,RLT31_ABL_AUS,RLT31_ABL_ST,RLT31_ABL_EIN,
+   MERR96-01)
+  ;prio : 35 
+  MELEIN (&O3L1-LU3102-WA11,2,RLT31_ABL_REP,$out-melein-9-meldepunkt,MERR98-10)
+  ;prio : 38 
+  BTRA (RLT31_ANLAGE_AUS,$out-btra-10-b)
+  ;prio : 39 
+  BTRA (RLT31_ANLAGE_TAG,$out-btra-11-b)
+  ;prio : 40 
+  BTRA (RLT31_ANLAGE_NACHT,$out-btra-12-b)
+  ;prio : 41 
+  MELEIN (&O3L1-LU3102-BM31,1,RLT31_ABL_SB_OE,MERR118-00)
+ ;Page 3 Title : RLT32 MELEIN_01
+  ;prio : 42 
+  MELEIN (&O3L1-LU3200-BF90,3,RLT32_ANLAGE_AUS,RLT32_ANLAGE_EIN,
+   $out-melein-13-meldepunkt,MERR246-01)
+  ;prio : 43 
+  MELEIN (&O3L1-LU3202-BM21,1,RLT32_ABL_BF_OE,MERR96-04)
+  ;prio : 44 
+  MELEIN (&O3L1-LU3202-BF11,3,RLT32_ABL_AUS,RLT32_ABL_ST,RLT32_ABL_EIN,
+   MERR96-05)
+  ;prio : 45 
+  MELEIN (&O3L1-LU3202-WA11,2,RLT32_ABL_REP,$out-melein-14-meldepunkt,MERR98-11)
+  ;prio : 46 
+  BTRA (RLT32_ANLAGE_AUS,$out-btra-15-b)
+  ;prio : 47 
+  BTRA (RLT32_ANLAGE_EIN,$out-btra-16-b)
+ ;Page 4 Title : RLT33 MELEIN_01
+  ;prio : 42 
+  MELEIN (&O3L1-LU3300-BF90,5,RLT33_ANLAGE_AUS,$out-melein-17-meldepunkt,
+   RLT33_ANLAGE_TAG,$out-melein-18-meldepunkt,RLT33_ANLAGE_NACHT,MERR247-09)
+  ;prio : 43 
+  MELEIN (&O3L1-LU3302-BM21,1,RLT33_ABL_BF_OE,MERR97-00)
+  ;prio : 44 
+  MELEIN (&O3L1-LU3302-BF11,3,RLT33_ABL_AUS,RLT33_ABL_ST,RLT33_ABL_EIN,
+   MERR97-01)
+  ;prio : 45 
+  MELEIN (&O3L1-LU3302-WA11,2,RLT33_ABL_REP,$out-melein-19-meldepunkt,MERR98-14)
+  ;prio : 46 
+  BTRA (RLT33_ANLAGE_AUS,$out-btra-20-b)
+  ;prio : 47 
+  BTRA (RLT33_ANLAGE_TAG,$out-btra-21-b)
+  ;prio : 48 
+  BTRA (RLT33_ANLAGE_NACHT,$out-btra-22-b)
+  ;prio : 49 
+  MELEIN (&O3L1-LU3302-BM31,1,RLT33_ABL_SB_OE,MERR118-02)
+ ;Page 5 Title : RLT34 MELEIN_01
+  ;prio : 50 
+  MELEIN (&O3L1-LU3400-BF90,5,RLT34_ANLAGE_AUS,$out-melein-23-meldepunkt,
+   RLT34_ANLAGE_TAG,$out-melein-24-meldepunkt,RLT34_ANLAGE_NACHT,MERR248-01)
+  ;prio : 51 
+  MELEIN (&O3L1-LU3402-BM21,1,RLT34_ABL_BF_OE,MERR97-04)
+  ;prio : 52 
+  MELEIN (&O3L1-LU3402-BF11,3,RLT34_ABL_AUS,RLT34_ABL_ST,RLT34_ABL_EIN,
+   MERR97-05)
+  ;prio : 53 
+  MELEIN (&O3L1-LU3402-WA11,2,RLT34_ABL_REP,$out-melein-25-meldepunkt,MERR98-15)
+  ;prio : 54 
+  BTRA (RLT34_ANLAGE_AUS,$out-btra-26-b)
+  ;prio : 55 
+  BTRA (RLT34_ANLAGE_TAG,$out-btra-27-b)
+  ;prio : 56 
+  BTRA (RLT34_ANLAGE_NACHT,$out-btra-28-b)
+  ;prio : 57 
+  MELEIN (&O3L1-LU3402-BM31,1,RLT34_ABL_SB_OE,MERR118-03)
+ ;Page 6 Title : RLT35 MELEIN_01
+  ;prio : 48 
+  MELEIN (&O3L1-LU3500-BF90,3,RLT35_ANLAGE_AUS,RLT35_ANLAGE_BEREIT,
+   $out-melein-29-meldepunkt,MERR246-05)
+  ;prio : 49 
+  MELEIN (&O3L1-LU3502-BM21,1,RLT35_ABL_BF_OE,MERR96-08)
+  ;prio : 50 
+  MELEIN (&O3L1-LU3502-BF11,3,RLT35_ABL_AUS,RLT35_ABL_ST,RLT35_ABL_EIN,
+   MERR96-09)
+  ;prio : 51 
+  MELEIN (&O3L1-LU3502-WA11,2,RLT35_ABL_REP,$out-melein-30-meldepunkt,MERR99-10)
+  ;prio : 52 
+  BTRA (RLT35_ANLAGE_AUS,$out-btra-31-b)
+  ;prio : 53 
+  BTRA (RLT35_ANLAGE_BEREIT,$out-btra-32-b)
+  ;prio : 54 
+  MELEIN (&O3L1-LU3509-BF02,3,RLT35_TAB_LED_AUS,RLT35_BSK01,RLT35_TAB_LED_EIN,
+   MERR98-01)
+  ;prio : 55 
+  MELEIN (&O3L1-LU3509-BM01,2,RLT35_TAB_TASTER_AUS,RLT35_TAB_TASTER_EIN,
+   MERR99-02)
+ ;Page 7 Title : RLT36 MELEIN_01
+  ;prio : 56 
+  MELEIN (&O3L1-LU3600-BF90,3,RLT36_ANLAGE_AUS,RLT36_ANLAGE_BETREIT,
+   $out-melein-33-meldepunkt,MERR246-09)
+  ;prio : 57 
+  MELEIN (&O3L1-LU3602-BM21,1,RLT36_ABL_BF_OE,MERR96-12)
+  ;prio : 58 
+  MELEIN (&O3L1-LU3602-BF11,3,RLT36_ABL_AUS,RLT36_ABL_ST,RLT36_ABL_EIN,
+   MERR96-13)
+  ;prio : 59 
+  MELEIN (&O3L1-LU3602-WA11,2,RLT36_ABL_REP,$out-melein-34-meldepunkt,MERR99-11)
+  ;prio : 60 
+  BTRA (RLT36_ANLAGE_AUS,$out-btra-35-b)
+  ;prio : 61 
+  BTRA (RLT36_ANLAGE_BETREIT,$out-btra-36-b)
+  ;prio : 62 
+  MELEIN (&O3L1-LU3609-BF02,3,RLT36_TAB_LED_AUS,RLT36_BSK01,RLT36_TAB_LED_EIN,
+   MERR98-05)
+  ;prio : 63 
+  MELEIN (&O3L1-LU3609-BM01,2,RLT36_TAB_TASTER_AUS,RLT36_TAB_TASTER_EIN,
+   MERR99-06)
+ ;Page 8 Title : RLT37 MELEIN_01
+  ;prio : 64 
+  MELEIN (&O3L1-LU3700-BF90,3,RLT37_ANLAGE_AUS,RLT37_ANLAGE_BEREIT,
+   $out-melein-37-meldepunkt,MERR246-13)
+  ;prio : 65 
+  MELEIN (&O3L1-LU3702-BM21,1,RLT37_ABL_BF_OE,MERR97-08)
+  ;prio : 66 
+  MELEIN (&O3L1-LU3702-BF11,3,RLT37_ABL_AUS,RLT37_ABL_ST,RLT37_ABL_EIN,
+   MERR97-09)
+  ;prio : 67 
+  MELEIN (&O3L1-LU3702-WA11,2,RLT37_ABL_REP,RLT37_THERMOSTAT,MERR99-14)
+  ;prio : 68 
+  BTRA (RLT37_ANLAGE_AUS,$out-btra-38-b)
+  ;prio : 69 
+  BTRA (RLT37_ANLAGE_BEREIT,$out-btra-39-b)
+ ENDE 
+ ;name : Task_Steuerung
+ TASK (3,cycl,1000)
+ ;Page 1 Title : Schaltschrank
+  ;prio : 15 
+  ODRMN (1,HAUPTSCHALTER-EIN,7,PHASENWAECHTER,UEBERSPANNUNG,STEUERSPG-230V,
+   STEUERSPG-24VAC,STEUERSPG-24VDC,ISP01-BMA,ISP01-FEUER-NOT-AUS,$M13,
+   $out-odrmn-40-binv)
+  ;prio : 16 
+  RSS ($M13,QUITTIERUNG-EIN,ssm-schrank,$out-rss-41-binv)
+  ;prio : 18 
+  ODRMN (7,ssm-rlt31,ssm-rlt32,ssm-rlt33,ssm-rlt34,ssm-rlt35,ssm-rlt36,ssm-rlt37,
+   0,ssm-modul6,$out-odrmn-42-binv)
+ ;Page 2 Title : RLT 31 Freigabe
+  ;prio : 11 
+  UNDMN (1,RLT31_ANLAGE_TAG,1,ssm-rlt31,rlt31-tag,$out-undmn-43-binv)
+  ;prio : 12 
+  UNDMN (1,RLT31_ANLAGE_NACHT,1,ssm-rlt31,rlt31-nacht,$out-undmn-44-binv)
+  ;prio : 13 
+  ODRMN (2,rlt31-tag,rlt31-nacht,0,rlt31-abl-soll-ein,$out-odrmn-45-binv)
+  ;prio : 14 
+  AWT (rlt31-abl-soll-ein,FKON_00,$M7,rlt31-sb-abl)
+  ;prio : 15 
+  AWT (rlt31-nacht,FKON_100,FKON_50,$M7)
+ ;Page 3 Title : RLT 31 Sammenst”rung
+  ;prio : 34 
+  ODRMN (2,$M19,ssm-schrank,1,RLT31_ABL_REP,ssm-rlt31,$out-odrmn-46-binv)
+  ;prio : 43 
+  NICHT (RLT31_ABL_ST,$M14)
+  ;prio : 44 
+  RSS ($M14,QUITTIERUNG-EIN,$M19,$out-rss-47-binv)
+ ;Page 4 Title : RLT 32 Freigabe
+  ;prio : 16 
+  UNDMN (1,RLT32_ANLAGE_EIN,1,ssm-rlt32,rlt32-abl-soll-ein,$out-undmn-48-binv)
+ ;Page 5 Title : RLT 32 Sammenst”rung
+  ;prio : 45 
+  ODRMN (2,$M34,ssm-schrank,1,RLT32_ABL_REP,ssm-rlt32,$out-odrmn-49-binv)
+  ;prio : 46 
+  NICHT (RLT32_ABL_ST,$M33)
+  ;prio : 47 
+  RSS ($M33,QUITTIERUNG-EIN,$M34,$out-rss-50-binv)
+ ;Page 6 Title : RLT 33 Freigabe
+  ;prio : 16 
+  UNDMN (1,RLT33_ANLAGE_TAG,1,ssm-rlt33,rlt33-tag,$out-undmn-51-binv)
+  ;prio : 17 
+  UNDMN (1,RLT33_ANLAGE_NACHT,1,ssm-rlt33,rlt33-nacht,$out-undmn-52-binv)
+  ;prio : 18 
+  ODRMN (2,rlt33-tag,rlt33-nacht,0,rlt33-abl-soll-ein,$out-odrmn-53-binv)
+  ;prio : 19 
+  AWT (rlt33-abl-soll-ein,FKON_00,$M39,rlt33-sb-abl)
+  ;prio : 20 
+  AWT (rlt33-nacht,FKON_100,FKON_50,$M39)
+ ;Page 7 Title : RLT 33 Sammenst”rung
+  ;prio : 45 
+  ODRMN (2,$M38,ssm-schrank,1,RLT33_ABL_REP,ssm-rlt33,$out-odrmn-54-binv)
+  ;prio : 46 
+  NICHT (RLT33_ABL_ST,$M36)
+  ;prio : 47 
+  RSS ($M36,QUITTIERUNG-EIN,$M38,$out-rss-55-binv)
+ ;Page 8 Title : RLT 33 Freigabe
+  ;prio : 21 
+  UNDMN (1,RLT34_ANLAGE_TAG,1,ssm-rlt34,rlt34-tag,$out-undmn-56-binv)
+  ;prio : 22 
+  UNDMN (1,RLT34_ANLAGE_NACHT,1,ssm-rlt34,rlt34-nacht,$out-undmn-57-binv)
+  ;prio : 23 
+  ODRMN (2,rlt34-tag,rlt34-nacht,0,rlt34-abl-soll-ein,$out-odrmn-58-binv)
+  ;prio : 24 
+  AWT (rlt34-abl-soll-ein,FKON_00,$M44,rlt34-sb-abl)
+  ;prio : 25 
+  AWT (rlt34-nacht,FKON_100,FKON_50,$M44)
+ ;Page 9 Title : RLT 34 Sammenst”rung
+  ;prio : 48 
+  ODRMN (2,$M43,ssm-schrank,1,RLT34_ABL_REP,ssm-rlt34,$out-odrmn-59-binv)
+  ;prio : 49 
+  NICHT (RLT34_ABL_ST,$M41)
+  ;prio : 50 
+  RSS ($M41,QUITTIERUNG-EIN,$M43,$out-rss-60-binv)
+ ;Page 10 Title : RLT 35 Freigabe
+  ;prio : 80 
+  RSS ($M51,RLT35_TAB_TASTER_AUS,$M52,$out-rss-61-binv)
+  ;prio : 82 
+  UNDMN (2,RLT35_TAB_TASTER_EIN,RLT35_ANLAGE_BEREIT,0,$M51,$out-undmn-62-binv)
+  ;prio : 85 
+  UNDMN (1,$M52,1,ssm-rlt35,rlt35-abl-soll-ein,$out-undmn-63-binv)
+ ;Page 11 Title : RLT 35 BSK
+  ;prio : 1 
+  BTRA (RLT35_BSK01,rlt35-bsk-ok)
+ ;Page 12 Title : RLT 35 Sammenst”rung
+  ;prio : 51 
+  ODRMN (2,$M56,ssm-schrank,2,RLT35_ABL_REP,RLT35_BSK01,ssm-rlt35,
+   $out-odrmn-64-binv)
+  ;prio : 52 
+  NICHT (RLT35_ABL_ST,$M55)
+  ;prio : 53 
+  RSS ($M55,QUITTIERUNG-EIN,$M56,$out-rss-65-binv)
+ ;Page 13 Title : RLT 36 Freigabe
+  ;prio : 86 
+  RSS ($M58,RLT36_TAB_TASTER_AUS,$M59,$out-rss-66-binv)
+  ;prio : 87 
+  UNDMN (2,RLT36_TAB_TASTER_EIN,RLT36_ANLAGE_BETREIT,0,$M58,$out-undmn-67-binv)
+  ;prio : 88 
+  UNDMN (1,$M59,1,ssm-rlt36,rlt36-abl-soll-ein,$out-undmn-68-binv)
+ ;Page 14 Title : RLT 36 BSK
+  ;prio : 2 
+  BTRA (RLT36_BSK01,rlt36-bsk-ok)
+ ;Page 15 Title : RLT 36 Sammenst”rung
+  ;prio : 54 
+  ODRMN (2,$M61,ssm-schrank,2,RLT36_ABL_REP,RLT36_BSK01,ssm-rlt36,
+   $out-odrmn-69-binv)
+  ;prio : 55 
+  NICHT (RLT36_ABL_ST,$M60)
+  ;prio : 56 
+  RSS ($M60,QUITTIERUNG-EIN,$M61,$out-rss-70-binv)
+ ;Page 16 Title : RLT 37 Freigabe
+  ;prio : 90 
+  UNDMN (2,RLT37_THERMOSTAT,RLT37_ANLAGE_BEREIT,1,ssm-rlt37,rlt37-sbl-soll-ein,
+   $out-undmn-71-binv)
+ ;Page 17 Title : RLT 37 Sammenst”rung
+  ;prio : 45 
+  ODRMN (2,$M65,ssm-schrank,1,RLT37_ABL_REP,ssm-rlt37,$out-odrmn-72-binv)
+  ;prio : 46 
+  NICHT (RLT37_ABL_ST,$M63)
+  ;prio : 47 
+  RSS ($M63,QUITTIERUNG-EIN,$M65,$out-rss-73-binv)
+ ENDE 
+ ;name : Task_Ausgabe
+ TASK (4,cycl,1000)
+ ;Page 1 Title : RLT 31 Ausgabe
+  ;prio : 75 
+  BEFAUS (1,$M26,rlt31-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3102-BF11,
+   $out-befaus-74-error)
+  ;prio : 76 
+  NICHT (rlt31-abl-soll-ein,$M26)
+  ;prio : 77 
+  ANAUS (rlt31-sb-abl,KON_1,&O3L1-LU3102-SB11,$out-anaus-75-error)
+ ;Page 2 Title : RLT 32 Ausgabe
+  ;prio : 78 
+  BEFAUS (1,$M35,rlt32-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3202-BF11,
+   $out-befaus-76-error)
+  ;prio : 79 
+  NICHT (rlt32-abl-soll-ein,$M35)
+ ;Page 3 Title : RLT 33 Ausgabe
+  ;prio : 78 
+  BEFAUS (1,$M40,rlt33-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3302-BF11,
+   $out-befaus-77-error)
+  ;prio : 79 
+  NICHT (rlt33-abl-soll-ein,$M40)
+  ;prio : 80 
+  ANAUS (rlt33-sb-abl,KON_1,&O3L1-LU3302-SB11,$out-anaus-78-error)
+ ;Page 4 Title : RLT 34 Ausgabe
+  ;prio : 81 
+  BEFAUS (1,$M45,rlt34-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3402-BF11,
+   $out-befaus-79-error)
+  ;prio : 82 
+  NICHT (rlt34-abl-soll-ein,$M45)
+  ;prio : 83 
+  ANAUS (rlt34-sb-abl,KON_1,&O3L1-LU3402-SB11,$out-anaus-80-error)
+ ;Page 5 Title : RLT 35 Ausgabe
+  ;prio : 80 
+  BEFAUS (1,$M57,rlt35-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3502-BF11,
+   $out-befaus-81-error)
+  ;prio : 81 
+  NICHT (rlt35-abl-soll-ein,$M57)
+ ;Page 6 Title : RLT 36 Ausgabe
+  ;prio : 82 
+  BEFAUS (1,$M62,rlt36-abl-soll-ein,$WZERO,$WZERO,&O3L1-LU3602-BF11,
+   $out-befaus-82-error)
+  ;prio : 83 
+  NICHT (rlt36-abl-soll-ein,$M62)
+ ;Page 7 Title : RLT 37 Ausgabe
+  ;prio : 84 
+  BEFAUS (1,$M66,rlt37-sbl-soll-ein,$WZERO,$WZERO,&O3L1-LU3702-BF11,
+   $out-befaus-83-error)
+  ;prio : 85 
+  NICHT (rlt37-sbl-soll-ein,$M66)
+ ;Page 8 Title : ISP BEFAUS_01
+  ;prio : 28 
+  SETMEL (KON_1,1,ssm-modul6,&O3L1-US0100-ST06,$out-setmel-84-error)
+ ENDE 
+ENDMODUL

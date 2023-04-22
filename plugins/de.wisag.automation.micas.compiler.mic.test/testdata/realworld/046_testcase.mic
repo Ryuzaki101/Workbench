@@ -1,0 +1,874 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01105.GPS
+  ;*** Projektname    : MPI-Goettingen
+  ;*** Projektnummer  : 
+  ;*** Bearbeiter     : Jacobs
+  ;*** Prüfer         : 
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 11
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 5
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  WERR
+  WordK  K-FILM-ANL-AUS (0)
+  WordK  K-FILM-ANL-EIN1 (1)
+  WordK  K-FILM-ANL-EIN2 (0)
+  WordV  AI-LU12-13E-S10
+  WordV  FILM-FROST
+  WordV  FILM-ZUL-KEILRIM
+  WordV  FILM-ABL-KEILRIM
+  WordV  FILM-ZUL-VE-AUS
+  WordV  FILM-ZUL-VE-STOE
+  WordV  FILM-ZUL-VE-EIN1
+  WordV  FILM-ZUL-VE-EIN2
+  WordV  FILM-ABL-VE-AUS
+  WordV  FILM-ABL-VE-STOE
+  WordV  FILM-ABL-VE-EIN1
+  WordV  FILM-ABL-VE-EIN2
+  FloatK K-FILM-RAUM-TEMP (22.00)
+  FloatV FILM-RAUM-TEMP
+  FloatV FILM-ZULUFT-TEMP
+  FloatV FILM-AUSSEN-TEMP
+  FloatV FILM-WINTER-BETR
+  WordK  KON01 (1)
+  WordV  ST-KEIL-ABL-FILM
+  WordV  VERT-FROSTSCHUTZ
+  FloatV FILM-KLAPPE-SOMM
+  WordV  FI-SOLL-EIN2-ABL
+  WordV  EING-AB-VEN-EIN2
+  WordV  ST-KEIL-ZUL-FILM
+  WordV  EING-ABL-KEILRI
+  WordK  KON00 (0)
+  WordV  FI-SOLL-EIN1-ZUL
+  WordV  FI-SOLL-EIN2-ZUL
+  FloatV FILM-SOMMER-BETR
+  WordV  ENTRIEGELN
+  WordV  FI-SOLL-EIN1-ABL
+  WordV  EING-ZU-VEN-EIN1
+  WordV  EING-ZU-VEN-EIN2
+  WordV  FILM-ZULUFT-EIN
+  WordV  FILM-STOER-ZUL
+  WordV  FILM-STOER-ABL
+  WordV  EING-ZUL-KEILRI
+  WordV  EING-FROSTSCHUTZ
+  WordV  AI-LU12-13D-S10
+  WordV  EING-AB-VENT-AUS
+  WordV  EING-AB-VEN-STOE
+  WordV  EING-AB-VEN-EIN1
+  FloatV FILM-STELSIG-ERH
+  WordV  FILM-VORSPUE-SCH
+  WordV  FILM-UMSCHAL-SOM
+  FloatV FIL-Y-SIGNAL-ABL
+  FloatV SOLL-KENN-3
+  WordK  K-EING-ANL-AUS (0)
+  WordK  K-EING-ANL-EIN1 (1)
+  WordK  K-EING-ANL-EIN2 (0)
+  WordV  EING-ZU-VENT-AUS
+  WordV  EING-ZU-VEN-STOE
+  FloatK K-EING-ABL-TEMP (22.00)
+  FloatK K-VERT-ABL-TEMP (22.00)
+  FloatV EING-ZULUFT-TEMP
+  FloatV EING-ABLUFT-TEMP
+  FloatV VERT-ZULUFT-TEMP
+  FloatV VERT-ABLUFT-TEMP
+  WordV  EING-STOER-ZUL
+  WordV  EI-SOLL-EIN1-ZUL
+  WordV  EI-SOLL-EIN2-ZUL
+  WordV  EING-ZULUFT-EIN
+  WordV  EING-STOER-ABL
+  WordV  EI-SOLL-EIN1-ABL
+  WordV  EI-SOLL-EIN2-ABL
+  WordV  EINGANG-FROST
+  FloatV EING-Y-SIGN-ZUL
+  FloatV VERT-Y-SIGN-ZUL
+  WordV  KUE-ABL-KEILRI
+  WordV  KUE-ZUL-VEN-AUS
+  WordV  EING-VORSPUE-SCH
+  FloatV EING-Y-SIGN-ABL
+  FloatV VERT-Y-SIGN-ABL
+  WordK  K-KUEC-ANL-AUS (0)
+  WordK  K-KUEC-ANL-EIN1 (1)
+  WordK  K-KUEC-ANL-EIN2 (0)
+  WordV  AI-LU12-13A-B02
+  WordV  KUECHE-FROSTSCH
+  WordV  KUE-ZUL-KEILRI
+  WordV  KUE-ZUL-VEN-STOE
+  WordV  KUE-ZUL-VEN-EIN1
+  WordV  KUE-ZUL-VEN-EIN2
+  WordV  KUE-ABL-VEN-AUS
+  WordV  KUE-ABL-VEN-STOE
+  WordV  KUE-ABL-VEN-EIN1
+  WordV  KUE-ABL-VEN-EIN2
+  WordV  AI-LU12-27A-B02
+  WordV  KUE-TABL-EIN1
+  WordV  KUE-TABL-EIN2
+  WordV  KUE-TABL-AUS
+  FloatK K-KUE-RAUM-TEMP (20.00)
+  FloatV KUECHE-RAUM-TEMP
+  FloatV KUECHE-ZUL-TEMP
+  WordV  KUECHE-STOER-ZUL
+  WordV  KU-SOLL-EIN2-ZUL
+  WordV  KU-SOLL-EIN1-ZUL
+  WordV  KUECH-ZULUFT-EIN
+  WordV  KUECHE-STOER-ABL
+  WordV  KU-SOLL-EIN2-ABL
+  WordV  KU-SOLL-EIN1-ABL
+  WordV  KUECHE-BSK-AUF
+  WordV  KUECH-ABLUFT-EIN
+  WordV  KUEC-VORSPUE-SCH
+  FloatV KUE-Y-SIGN-ABL
+  FloatV KUE-Y-SIGN-ZUL
+  FloatV VERT-ZUL-TEMPER
+  FloatV K-EING-ZUL-TEMP
+  WordV  ST-KEIL-ZUL-EING
+  WordV  ST-KEIL-ABL-EING
+  WordV  ST-KEIL-ZUL-KUEC
+  WordV  ST-KEIL-ABL-KUEC
+  WordV  SSM_EINGANGSH
+  FloatK K-SW-SCHIEB-HOER (0.00)
+  WordV  FILMVORF-BSK-ZU
+  FloatK K-SW-SCHIEB-FILM (0.00)
+  FloatV K-GEAEND-FILM-R
+  WordV  FILM-ANL-STOER
+  WordV  EING-BSK-ZU
+  WordV  KUE-KLP-OFFEN
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  IPAMB &AI-LU12-13E-X50 (175,9)
+  IPAMB &AI-LU12-13D-X50 (175,1)
+  WordK  $M0 (1)
+  IPAAW &AI-LU12-13A-T50 (167)
+  IPAMB &AI-LU12-13A-X50 (14,1)
+  WordK  $M1 (1)
+  IPAAW &AI-LU12-13D-T50 (178)
+  WordK  $M2 (1)
+  IPAAW &AI-LU12-13D-T52 (180)
+  WordK  $M3 (1)
+  IPAAW &AI-LU12-13I-T53 (39)
+  WordK  $M4 (1)
+  IPAAW &AI-LU12-13E-T53 (47)
+  IPAMB &M5 (175,10)
+  IPAMB &M6 (175,11)
+  IPAMB &M7 (175,12)
+  IPAMB &M8 (175,13)
+  WordV  $B1
+  WordV  $WSCRATCH
+  WordV  $B2
+  WordV  $B3
+  IPAMB &AI-LU12-13E-X01 (72,1)
+  IPAMB &M9 (72,2)
+  IPAMB &M10 (72,3)
+  IPAMB &M11 (72,4)
+  IPAMB &M12 (72,5)
+  IPAMB &AI-LU13-16E-X01 (73,1)
+  IPAMB &M13 (73,2)
+  IPAMB &M14 (73,3)
+  IPAMB &M15 (73,4)
+  IPAMB &M16 (73,5)
+  IPAMB &AI-LU13-16E-B04 (75,14)
+  IPAMB &M17 (75,15)
+  IPAMB &AI-LU12-13E-B05 (75,11)
+  IPAMB &AI-LU12-13I-S50 (150,0)
+  IPAMB &M18 (175,2)
+  IPAMB &M19 (175,3)
+  IPAMB &M20 (175,4)
+  IPAMB &M21 (175,5)
+  WordV  $B4
+  WordV  $B5
+  WordV  $B6
+  IPAMB &AI-LU12-13D-X01 (70,1)
+  IPAMB &M22 (70,2)
+  IPAMB &M23 (70,3)
+  IPAMB &M24 (70,4)
+  IPAMB &M25 (70,5)
+  IPAMB &AI-LU12-13D-B02 (74,14)
+  IPAMB &M26 (74,15)
+  IPAMB &AI-LU12-13D-X02 (71,1)
+  IPAMB &M27 (71,2)
+  IPAMB &M28 (71,3)
+  IPAMB &M29 (71,4)
+  IPAMB &M30 (71,5)
+  IPAMB &AI-LU12-13D-B01 (74,11)
+  IPAMB &AI-LU12-13D-S11 (75,10)
+  WordV  $B7
+  IPAMB &M32 (14,3)
+  WordV  $B8
+  IPAMB &M33 (14,5)
+  WordV  $B9
+  IPAMB &AI-LU12-13A-X01 (63,1)
+  IPAMB &M34 (63,2)
+  IPAMB &M35 (63,3)
+  IPAMB &M36 (63,4)
+  IPAMB &M37 (63,5)
+  IPAMB &AI-LU12-13A-X02 (64,1)
+  IPAMB &M38 (64,2)
+  IPAMB &M39 (64,3)
+  IPAMB &M40 (64,4)
+  IPAMB &M41 (64,5)
+  IPAMB &AI-LU12-13A-B01 (67,14)
+  IPAMB &M42 (67,15)
+  IPAMB &AI-LU12-13A-S10 (70,11)
+  IPAMB &AI-LU12-27A-B01 (0,6)
+  IPAMB &M43 (0,7)
+  IPAMB &AI-LU12-27A-B03 (1,2)
+  IPAMB &AI-LU12-13A-A01 (0,2)
+  IPAMB &M44 (127,10)
+  WordV  $HB2
+  IPAMB &M45 (128,2)
+  IPAMB &M46 (0,15)
+  IPAAW &AI-LU12-13E-T50 (182)
+  FloatV $F1
+  IPAAW &AI-LU13-16E-T01 (46)
+  IPAAW &AI-LU12-13E-T01 (44)
+  IPAAW &AI-LU12-13E-T03 (45)
+  FloatV $F2
+  FloatV $F3
+  IPAAW &AI-LU12-13D-T01 (27)
+  IPAAW &AI-LU12-13D-T02 (28)
+  IPAAW &AI-LU12-13D-T03 (29)
+  IPAAW &AI-LU12-13D-T04 (42)
+  IPAAW &AI-LU12-31A-T02 (22)
+  FloatV $F4
+  IPAAW &AI-LU12-13A-T01 (9)
+  IPAAW &AI-LU12-13D-T05 (43)
+  IPAAW &AI-LU12-13D-T54 (189)
+  FloatV $F5
+  FloatV $F6
+  FloatV $F7
+  WordK  $M48 (1)
+  WordV  $B10
+  WordV  $B11
+  WordV  $B12
+  FloatK $M50 (10.00)
+  FloatK $M51 (10.00)
+  WordV  $B13
+  WordV  $B14
+  WordV  $B15
+  WordV  $B16
+  FloatK $M52 (30.00)
+  FloatK $M53 (0.00)
+  WordV  $B17
+  WordK  $M54 (1)
+  IPAMB &AI-LU12-13E-S51 (158,10)
+  WordV  $B18
+  WordV  $B19
+  WordV  $B20
+  FloatK $M55 (10.00)
+  FloatK $M56 (10.00)
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  IPAMB &M57 (20,13)
+  WordV  $B24
+  WordV  $B25
+  WordV  $B26
+  FloatK $M58 (30.00)
+  FloatK $M59 (0.00)
+  WordV  $B27
+  WordK  $M60 (1)
+  IPAMB &AI-LU12-13E-S52 (158,11)
+  WordV  $B28
+  IPAMB &AI-LU13-16E-X02 (203,1)
+  WordK  $M61 (1)
+  IPAAW &M62 (204)
+  FloatK $M63 (1.00)
+  FloatK $FZERO (0.00)
+  FloatK $M64 (0.00)
+  FloatV $F8
+  WordV  $B29
+  FloatK $M65 (50.00)
+  FloatK $M66 (0.00)
+  FloatK $M67 (0.00)
+  FloatV $F9
+  FloatV $F10
+  FloatK $M68 (0.00)
+  FloatK $M69 (0.00)
+  FloatV $F11
+  WordK  $M70 (1)
+  IPAAW &AI-LU12-13E-Y02 (54)
+  WordV  $B30
+  FloatK $M71 (50.00)
+  FloatK $M72 (0.00)
+  FloatK $M73 (0.00)
+  FloatV $F12
+  FloatV $F13
+  FloatK $M74 (0.00)
+  FloatV $F14
+  FloatK $M75 (0.00)
+  FloatV $F15
+  WordK  $M76 (1)
+  IPAAW &AI-LU12-13E-Y03 (94)
+  FloatK $M77 (10.00)
+  FloatK $M78 (1.00)
+  WordV  $B31
+  WordV  $B32
+  WordV  $B33
+  FloatK $M79 (120.00)
+  WordV  $B34
+  FloatK $M80 (100.00)
+  FloatV $F16
+  WordK  $M81 (1)
+  IPAAW &AI-LU12-13E-Y01 (53)
+  WordV  $B35
+  WordV  $B36
+  WordV  $B37
+  WordV  $B38
+  FloatK $M83 (10.00)
+  FloatK $M84 (10.00)
+  WordV  $B39
+  WordV  $B40
+  WordV  $B41
+  WordV  $B42
+  FloatK $M85 (30.00)
+  FloatK $M86 (0.00)
+  WordV  $B43
+  WordK  $M87 (1)
+  IPAMB &AI-LU12-13D-S51 (158,12)
+  WordV  $B44
+  WordV  $B45
+  WordV  $B46
+  FloatK $M88 (10.00)
+  FloatK $M89 (10.00)
+  WordV  $B47
+  WordV  $B48
+  WordV  $B49
+  WordV  $B50
+  WordV  $B51
+  FloatK $M90 (30.00)
+  FloatK $M91 (0.00)
+  WordV  $B52
+  WordK  $M92 (1)
+  IPAMB &AI-LU12-13D-S52 (158,13)
+  WordK  $M93 (1)
+  FloatK $M95 (0.00)
+  FloatV $F17
+  FloatK $M96 (0.00)
+  FloatK $M97 (30.00)
+  FloatK $M98 (100.00)
+  FloatK $M99 (100.00)
+  FloatV $F18
+  FloatK $M100 (0.00)
+  FloatV $F19
+  WordK  $M101 (1)
+  IPAAW &AI-LU12-13D-Y03 (33)
+  FloatV $F20
+  WordK  $M102 (1)
+  FloatK $M104 (0.00)
+  FloatK $M105 (0.00)
+  FloatV $F21
+  WordV  $B53
+  FloatK $M106 (100.00)
+  FloatV $F22
+  WordK  $M107 (1)
+  IPAAW &AI-LU12-13D-Y01 (51)
+  FloatK $M108 (10.00)
+  FloatK $M109 (1.00)
+  WordV  $B54
+  WordV  $B55
+  WordV  $HB1
+  WordV  $B56
+  FloatK $M110 (120.00)
+  WordV  $B57
+  FloatK $M111 (0.00)
+  FloatK $M112 (0.00)
+  FloatV $F23
+  WordV  $B58
+  FloatK $M113 (100.00)
+  FloatV $F24
+  WordK  $M114 (1)
+  IPAAW &AI-LU12-13D-Y02 (52)
+  WordV  $B59
+  WordV  $B60
+  WordK  $M116 (1)
+  IPAMB &M117 (14,2)
+  WordV  $B61
+  WordV  $B62
+  WordV  $B63
+  WordV  $HB0
+  IPAMB &AI-LU12-13A-X04 (0,13)
+  WordV  $B64
+  WordV  $B65
+  WordV  $B66
+  FloatK $M118 (10.00)
+  FloatK $M119 (10.00)
+  WordV  $B67
+  WordV  $B68
+  WordV  $B69
+  WordV  $B70
+  WordV  $B71
+  WordV  $B72
+  FloatK $M120 (30.00)
+  FloatK $M121 (0.00)
+  WordK  $M122 (1)
+  IPAMB &AI-LU12-13A-S51 (158,14)
+  WordV  $B73
+  WordV  $B74
+  WordV  $B75
+  FloatK $M123 (10.00)
+  FloatK $M124 (10.00)
+  WordV  $B76
+  WordV  $B77
+  WordV  $B78
+  WordV  $B79
+  WordV  $B80
+  WordV  $B81
+  FloatK $M125 (30.00)
+  FloatK $M126 (0.00)
+  WordV  $B82
+  WordK  $M127 (1)
+  IPAMB &AI-LU12-13A-S52 (158,15)
+  WordV  $B83
+  WordV  $B84
+  IPAMB &AI-LU12-27A-S01 (40,1)
+  FloatK $M128 (0.00)
+  FloatK $M129 (0.00)
+  FloatV $F25
+  WordV  $B85
+  FloatK $M130 (100.00)
+  FloatV $F26
+  WordK  $M131 (1)
+  IPAAW &AI-LU12-13A-Y01 (30)
+  FloatK $M132 (10.00)
+  FloatK $M133 (1.00)
+  WordV  $B86
+  WordV  $B87
+  WordV  $B88
+  FloatK $M134 (120.00)
+  WordV  $B89
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  ;Anlage:
+  ;Filmraum / Kueche
+  ;Eingangsraum / Verteiler
+  ;Einbauort:
+  ;Schaltschrank
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (2,K-FILM-ANL-AUS,K-FILM-ANL-EIN1,K-FILM-ANL-EIN2,
+          $WZERO,&AI-LU12-13E-X50,WERR)
+  BEFAUS (2,K-EING-ANL-AUS,K-EING-ANL-EIN1,K-EING-ANL-EIN2,
+          $WZERO,&AI-LU12-13D-X50,WERR)
+  ANAUS (K-KUE-RAUM-TEMP,$M0,&AI-LU12-13A-T50,WERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  BEFAUS (2,K-KUEC-ANL-AUS,K-KUEC-ANL-EIN1,K-KUEC-ANL-EIN2,
+          $WZERO,&AI-LU12-13A-X50,WERR)
+  ANAUS (K-EING-ABL-TEMP,$M1,&AI-LU12-13D-T50,WERR)
+  ANAUS (K-VERT-ABL-TEMP,$M2,&AI-LU12-13D-T52,WERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ANAUS (K-SW-SCHIEB-HOER,$M3,&AI-LU12-13I-T53,WERR)
+  ANAUS (K-SW-SCHIEB-FILM,$M4,&AI-LU12-13E-T53,WERR)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1200)
+  MELEIN (&AI-LU12-13E-X50,5,$B1,$WSCRATCH,$B2,$WSCRATCH,$B3,
+          WERR)
+  BTRA ($B1,K-FILM-ANL-AUS)
+  BTRA ($B2,K-FILM-ANL-EIN1)
+  BTRA ($B3,K-FILM-ANL-EIN2)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13E-X01,5,FILM-ZUL-VE-AUS,
+          FILM-ZUL-VE-STOE,FILM-ZUL-VE-EIN1,$WSCRATCH,
+          FILM-ZUL-VE-EIN2,WERR)
+  MELEIN (&AI-LU13-16E-X01,5,FILM-ABL-VE-AUS,
+          FILM-ABL-VE-STOE,FILM-ABL-VE-EIN1,$WSCRATCH,
+          FILM-ABL-VE-EIN2,WERR)
+  MELEIN (&AI-LU13-16E-B04,2,FILM-ZUL-KEILRIM,FILM-FROST,
+          WERR)
+  MELEIN (&AI-LU12-13E-B05,1,FILM-ABL-KEILRIM,WERR)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13I-S50,1,ENTRIEGELN,WERR)
+  MELEIN (&AI-LU12-13D-X50,5,$B4,$WSCRATCH,$B5,$WSCRATCH,$B6,
+          WERR)
+  BTRA ($B4,K-EING-ANL-AUS)
+  BTRA ($B5,K-EING-ANL-EIN1)
+  BTRA ($B6,K-EING-ANL-EIN2)
+  MELEIN (&AI-LU12-13D-X01,5,EING-ZU-VENT-AUS,
+          EING-ZU-VEN-STOE,EING-ZU-VEN-EIN1,$WSCRATCH,
+          EING-ZU-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13D-B02,2,EING-ABL-KEILRI,
+          EING-FROSTSCHUTZ,WERR)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13D-X02,5,EING-AB-VENT-AUS,
+          EING-AB-VEN-STOE,EING-AB-VEN-EIN1,$WSCRATCH,
+          EING-AB-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13D-B01,1,EING-ZUL-KEILRI,WERR)
+  MELEIN (&AI-LU12-13D-S11,1,VERT-FROSTSCHUTZ,WERR)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13A-X50,1,$B7,$WSCRATCH)
+  BTRA ($B7,K-KUEC-ANL-AUS)
+  MELEIN (&M32,1,$B8,$WSCRATCH)
+  BTRA ($B8,K-KUEC-ANL-EIN1)
+  MELEIN (&M33,1,$B9,$WSCRATCH)
+  BTRA ($B9,K-KUEC-ANL-EIN2)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  MELEIN (&AI-LU12-13A-X01,5,KUE-ZUL-VEN-AUS,
+          KUE-ZUL-VEN-STOE,KUE-ZUL-VEN-EIN1,$WSCRATCH,
+          KUE-ZUL-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13A-X02,5,KUE-ABL-VEN-AUS,
+          KUE-ABL-VEN-STOE,KUE-ABL-VEN-EIN1,$WSCRATCH,
+          KUE-ABL-VEN-EIN2,WERR)
+  MELEIN (&AI-LU12-13A-B01,2,KUE-ZUL-KEILRI,KUE-ABL-KEILRI,
+          WERR)
+  MELEIN (&AI-LU12-13A-S10,1,KUECHE-FROSTSCH,WERR)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  MELEIN (&AI-LU12-27A-B01,2,KUE-TABL-EIN1,KUE-TABL-EIN2,
+          WERR)
+  MELEIN (&AI-LU12-27A-B03,1,KUE-TABL-AUS,WERR)
+  MELEIN (&AI-LU12-13A-A01,1,KUECHE-BSK-AUF,WERR)
+  MELEIN (&M44,1,$HB2,WERR)
+  NICHT ($HB2,FILMVORF-BSK-ZU)
+  MELEIN (&M45,1,$HB2,WERR)
+  NICHT ($HB2,EING-BSK-ZU)
+  MELEIN (&M46,1,KUE-KLP-OFFEN,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13E-T50,$F1,WERR)
+  ATRA ($F1,K-FILM-RAUM-TEMP)
+  ANEIN (&AI-LU13-16E-T01,FILM-RAUM-TEMP,WERR)
+  ANEIN (&AI-LU12-13E-T01,FILM-ZULUFT-TEMP,WERR)
+  ANEIN (&AI-LU12-13E-T03,FILM-AUSSEN-TEMP,WERR)
+  ANEIN (&AI-LU12-13D-T50,$F2,WERR)
+  ATRA ($F2,K-EING-ABL-TEMP)
+  ANEIN (&AI-LU12-13D-T52,$F3,WERR)
+  ATRA ($F3,K-VERT-ABL-TEMP)
+  ;*****************************************************************
+  ;*** Seite  13
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13D-T01,EING-ZULUFT-TEMP,WERR)
+  ANEIN (&AI-LU12-13D-T02,EING-ABLUFT-TEMP,WERR)
+  ANEIN (&AI-LU12-13D-T03,VERT-ZULUFT-TEMP,WERR)
+  ANEIN (&AI-LU12-13D-T04,VERT-ABLUFT-TEMP,WERR)
+  ANEIN (&AI-LU12-31A-T02,KUECHE-RAUM-TEMP,WERR)
+  ANEIN (&AI-LU12-13A-T50,$F4,WERR)
+  ATRA ($F4,K-KUE-RAUM-TEMP)
+  ;*****************************************************************
+  ;*** Seite  14
+  ;*****************************************************************
+  ANEIN (&AI-LU12-13A-T01,KUECHE-ZUL-TEMP,WERR)
+  ANEIN (&AI-LU12-13D-T05,VERT-ZUL-TEMPER,WERR)
+  ANEIN (&AI-LU12-13D-T54,$F5,WERR)
+  ATRA ($F5,K-EING-ZUL-TEMP)
+  ANEIN (&AI-LU12-13I-T53,$F6,WERR)
+  ATRA ($F6,K-SW-SCHIEB-HOER)
+  ANEIN (&AI-LU12-13E-T53,$F7,WERR)
+  ATRA ($F7,K-SW-SCHIEB-FILM)
+  ;*****************************************************************
+  ;*** Seite  15
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1300)
+  BEFAUS (2,FILM-ANL-STOER,$WZERO,$WZERO,$WZERO,
+          &AI-LU12-13E-X50,WERR)
+  ODRMN (5,FILM-STOER-ZUL,ST-KEIL-ZUL-FILM,FILM-STOER-ABL,
+         ST-KEIL-ABL-FILM,FILMVORF-BSK-ZU,1,FILM-FROST,
+         FILM-ANL-STOER,$WSCRATCH)
+  SETMEL ($M48,1,FILM-ANL-STOER,&M5,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  16
+  ;*****************************************************************
+  ODR2 (K-FILM-ANL-EIN1,K-FILM-ANL-EIN2,$B10)
+  UNDMN (1,$B10,2,FILM-VORSPUE-SCH,$B13,$B11,$WSCRATCH)
+  UND11 ($B11,FILM-STOER-ZUL,FI-SOLL-EIN1-ZUL)
+  UND11 (K-FILM-ANL-EIN2,FILM-VORSPUE-SCH,$B12)
+  VVZ ($B12,$M50,$M51,$B13)
+  UND21 ($B13,$B12,FILM-STOER-ZUL,FI-SOLL-EIN2-ZUL)
+  NOR2 (FI-SOLL-EIN1-ZUL,FI-SOLL-EIN2-ZUL,$B14)
+  BEFAUS (2,$B14,FI-SOLL-EIN1-ZUL,FI-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13E-X01,WERR)
+  ;*****************************************************************
+  ;*** Seite  17
+  ;*****************************************************************
+  ODR2 (FILM-ZUL-VE-EIN1,FILM-ZUL-VE-EIN2,FILM-ZULUFT-EIN)
+  XOR2 (FILM-ZULUFT-EIN,FILM-ZUL-KEILRIM,$B15)
+  UND2 (FILM-ZULUFT-EIN,$B15,$B16)
+  VVZ ($B16,$M52,$M53,$B17)
+  RSS ($B17,ENTRIEGELN,ST-KEIL-ZUL-FILM,$WSCRATCH)
+  ODRMN (2,ST-KEIL-ZUL-FILM,FILM-ZUL-VE-STOE,1,FILM-FROST,
+         FILM-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M54,1,ST-KEIL-ZUL-FILM,&AI-LU12-13E-S51,WERR)
+  ;*****************************************************************
+  ;*** Seite  18
+  ;*****************************************************************
+  ODR2 (K-FILM-ANL-EIN1,K-FILM-ANL-EIN2,$B18)
+  UNDMN (1,$B18,2,FILM-VORSPUE-SCH,$B21,$B19,$WSCRATCH)
+  UND11 ($B19,FILM-STOER-ABL,FI-SOLL-EIN1-ABL)
+  UND11 (K-FILM-ANL-EIN2,FILM-VORSPUE-SCH,$B20)
+  VVZ ($B20,$M55,$M56,$B21)
+  UND21 ($B21,$B20,FILM-STOER-ABL,FI-SOLL-EIN2-ABL)
+  NOR2 (FI-SOLL-EIN1-ABL,FI-SOLL-EIN2-ABL,$B22)
+  BEFAUS (2,$B22,FI-SOLL-EIN1-ABL,FI-SOLL-EIN2-ABL,$WZERO,
+          &AI-LU13-16E-X01,WERR)
+  ODR2 (FI-SOLL-EIN1-ABL,FI-SOLL-EIN2-ABL,$B23)
+  BEFAUS (1,$B22,$B23,$WZERO,$WZERO,&M57,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  19
+  ;*****************************************************************
+  ODR2 (FILM-ABL-VE-EIN1,FILM-ABL-VE-EIN2,$B24)
+  XOR2 ($B24,FILM-ABL-KEILRIM,$B25)
+  UND2 ($B24,$B25,$B26)
+  VVZ ($B26,$M58,$M59,$B27)
+  RSS ($B27,ENTRIEGELN,ST-KEIL-ABL-FILM,$WSCRATCH)
+  ODRMN (2,ST-KEIL-ABL-FILM,FILM-ABL-VE-STOE,1,FILM-FROST,
+         FILM-STOER-ABL,$WSCRATCH)
+  SETMEL ($M60,1,ST-KEIL-ABL-FILM,&AI-LU12-13E-S52,WERR)
+  ;*****************************************************************
+  ;*** Seite  20
+  ;*****************************************************************
+  NICHT (FILM-ANL-STOER,$B28)
+  BEFAUS (2,$B28,$WZERO,FILM-ANL-STOER,$WZERO,
+          &AI-LU13-16E-X02,WERR)
+  ;Ansteuerung LED
+  ;im Beijer Bedien-
+  ;gerät Filmvor-
+  ;führraum
+  ; 
+  ;*****************************************************************
+  ;*** Seite  21
+  ;*****************************************************************
+  ADD2 (K-SW-SCHIEB-FILM,K-FILM-RAUM-TEMP,K-GEAEND-FILM-R)
+  ANAUS (K-GEAEND-FILM-R,$M61,&M62,$WSCRATCH)
+  VGLEH (FILM-AUSSEN-TEMP,K-FILM-RAUM-TEMP,$M63,
+         FILM-UMSCHAL-SOM)
+  REGLER (9,KON01,$WZERO,$FZERO,FIL-Y-SIGNAL-ABL,WERR)
+  REGLER (10,KON01,KON00,$M64,$F8,WERR)
+  UST (FILM-UMSCHAL-SOM,$F8,FILM-WINTER-BETR,
+       FILM-SOMMER-BETR)
+  SOLKEN (3,KON01,SOLL-KENN-3,WERR)
+  ;*****************************************************************
+  ;*** Seite  22
+  ;*****************************************************************
+  UND2 (FILM-ZULUFT-EIN,FILM-UMSCHAL-SOM,$B29)
+  SEQ2 (FILM-SOMMER-BETR,$M65,$M66,$M67,$F9,$F10,$WSCRATCH)
+  AWT ($B29,$M68,$F10,FILM-KLAPPE-SOMM)
+  AWT ($B29,$M69,$F9,$F11)
+  ANAUS ($F11,$M70,&AI-LU12-13E-Y02,WERR)
+  ;*****************************************************************
+  ;*** Seite  23
+  ;*****************************************************************
+  UND11 (FILM-ZULUFT-EIN,FILM-UMSCHAL-SOM,$B30)
+  SEQ2 (FILM-WINTER-BETR,$M71,$M72,$M73,$F12,$F13,$WSCRATCH)
+  AWT ($B30,$M74,$F12,$F14)
+  AWT ($B30,$M75,$F13,FILM-STELSIG-ERH)
+  MAX (2,$F14,FILM-KLAPPE-SOMM,$F15)
+  ANAUS ($F15,$M76,&AI-LU12-13E-Y03,WERR)
+  ;*****************************************************************
+  ;*** Seite  24
+  ;*****************************************************************
+  VGLEH (FILM-AUSSEN-TEMP,$M77,$M78,$B31)
+  UND11 ($B35,$B31,$B32)
+  RSS ($B32,$B35,$B33,$WSCRATCH)
+  MOKY ($B33,$M79,FILM-VORSPUE-SCH)
+  ODRMN (1,FILM-VORSPUE-SCH,1,FILM-FROST,$B34,$WSCRATCH)
+  AWT ($B34,FILM-STELSIG-ERH,$M80,$F16)
+  ANAUS ($F16,$M81,&AI-LU12-13E-Y01,WERR)
+  ODR2 (K-FILM-ANL-EIN1,K-FILM-ANL-EIN2,$B35)
+  ;*****************************************************************
+  ;*** Seite  25
+  ;*****************************************************************
+  BEFAUS (2,SSM_EINGANGSH,$WZERO,$WZERO,$WZERO,
+          &AI-LU12-13D-X50,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  26
+  ;*****************************************************************
+  ODR2 (K-EING-ANL-EIN1,K-EING-ANL-EIN2,$B36)
+  UNDMN (1,$B36,2,EING-VORSPUE-SCH,$B39,$B37,$WSCRATCH)
+  UND11 ($B37,EING-STOER-ZUL,EI-SOLL-EIN1-ZUL)
+  UND11 (K-EING-ANL-EIN2,EING-VORSPUE-SCH,$B38)
+  VVZ ($B38,$M83,$M84,$B39)
+  UND21 ($B39,$B38,EING-STOER-ZUL,EI-SOLL-EIN2-ZUL)
+  NOR2 (EI-SOLL-EIN1-ZUL,EI-SOLL-EIN2-ZUL,$B40)
+  BEFAUS (2,$B40,EI-SOLL-EIN1-ZUL,EI-SOLL-EIN2-ZUL,$WZERO,
+          &AI-LU12-13D-X01,WERR)
+  ;*****************************************************************
+  ;*** Seite  27
+  ;*****************************************************************
+  ODR2 (EING-ZU-VEN-EIN1,EING-ZU-VEN-EIN2,EING-ZULUFT-EIN)
+  XOR2 (EING-ZULUFT-EIN,EING-ZUL-KEILRI,$B41)
+  UND2 (EING-ZULUFT-EIN,$B41,$B42)
+  VVZ ($B42,$M85,$M86,$B43)
+  RSS ($B43,ENTRIEGELN,ST-KEIL-ZUL-EING,$WSCRATCH)
+  ODR2 (EING-FROSTSCHUTZ,VERT-FROSTSCHUTZ,EINGANG-FROST)
+  ODRMN (2,ST-KEIL-ZUL-EING,EING-ZU-VEN-STOE,1,EINGANG-FROST,
+         EING-STOER-ZUL,$WSCRATCH)
+  SETMEL ($M87,1,ST-KEIL-ZUL-EING,&AI-LU12-13D-S51,WERR)
+  ;*****************************************************************
+  ;*** Seite  28
+  ;*****************************************************************
+  ODR2 (K-EING-ANL-EIN1,K-EING-ANL-EIN2,$B44)
+  UNDMN (1,$B44,2,EING-VORSPUE-SCH,$B47,$B45,$WSCRATCH)
+  UND11 ($B45,EING-STOER-ABL,EI-SOLL-EIN1-ABL)
+  UND11 (K-EING-ANL-EIN2,EING-VORSPUE-SCH,$B46)
+  VVZ ($B46,$M88,$M89,$B47)
+  UND21 ($B47,$B46,EING-STOER-ABL,EI-SOLL-EIN2-ABL)
+  NOR2 (EI-SOLL-EIN1-ABL,EI-SOLL-EIN2-ABL,$B48)
+  BEFAUS (2,$B48,EI-SOLL-EIN1-ABL,EI-SOLL-EIN2-ABL,$WZERO,
+          &AI-LU12-13D-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  29
+  ;*****************************************************************
+  ODR2 (EING-AB-VEN-EIN1,EING-AB-VEN-EIN2,$B49)
+  XOR2 ($B49,EING-ABL-KEILRI,$B50)
+  UND2 ($B49,$B50,$B51)
+  VVZ ($B51,$M90,$M91,$B52)
+  RSS ($B52,ENTRIEGELN,ST-KEIL-ABL-EING,$WSCRATCH)
+  ODRMN (2,ST-KEIL-ABL-EING,EING-AB-VEN-STOE,1,EINGANG-FROST,
+         EING-STOER-ABL,$WSCRATCH)
+  SETMEL ($M92,1,ST-KEIL-ABL-EING,&AI-LU12-13D-S52,WERR)
+  ODRMN (5,EING-STOER-ZUL,ST-KEIL-ZUL-EING,EING-STOER-ABL,
+         ST-KEIL-ABL-EING,EING-BSK-ZU,1,EING-FROSTSCHUTZ,
+         SSM_EINGANGSH,$WSCRATCH)
+  SETMEL ($M93,1,SSM_EINGANGSH,&M18,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  30
+  ;*****************************************************************
+  REGLER (20,KON01,KON00,$M95,$F17,$WSCRATCH)
+  FKG ($F17,4,$M96,$M97,$M98,$M99,$F18)
+  AWT (EING-ZULUFT-EIN,$M100,$F18,$F19)
+  ANAUS ($F19,$M101,&AI-LU12-13D-Y03,$WSCRATCH)
+  MIN (2,EING-Y-SIGN-ABL,VERT-Y-SIGN-ABL,$F20)
+  ANAUS ($F20,$M102,&AI-LU12-13D-T54,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  31
+  ;*****************************************************************
+  REGLER (11,KON01,$WZERO,$FZERO,EING-Y-SIGN-ABL,WERR)
+  REGLER (12,KON01,KON00,$M104,EING-Y-SIGN-ZUL,WERR)
+  AWT (EING-ZULUFT-EIN,$M105,EING-Y-SIGN-ZUL,$F21)
+  ODRMN (1,EING-VORSPUE-SCH,1,EINGANG-FROST,$B53,$WSCRATCH)
+  AWT ($B53,$F21,$M106,$F22)
+  ANAUS ($F22,$M107,&AI-LU12-13D-Y01,WERR)
+  VGLEH (FILM-AUSSEN-TEMP,$M108,$M109,$B54)
+  UND11 ($B57,$B54,$B55)
+  NICHT ($B57,$HB1)
+  RSS ($B55,$HB1,$B56,$WSCRATCH)
+  MOKY ($B56,$M110,EING-VORSPUE-SCH)
+  ODR2 (K-EING-ANL-EIN1,K-EING-ANL-EIN2,$B57)
+  ;*****************************************************************
+  ;*** Seite  32
+  ;*****************************************************************
+  REGLER (13,KON01,$WZERO,$FZERO,VERT-Y-SIGN-ABL,WERR)
+  REGLER (14,KON01,KON00,$M111,VERT-Y-SIGN-ZUL,WERR)
+  AWT (EING-ZULUFT-EIN,$M112,VERT-Y-SIGN-ZUL,$F23)
+  ODRMN (1,EING-VORSPUE-SCH,1,VERT-FROSTSCHUTZ,$B58,
+         $WSCRATCH)
+  AWT ($B58,$F23,$M113,$F24)
+  ANAUS ($F24,$M114,&AI-LU12-13D-Y02,WERR)
+  ;*****************************************************************
+  ;*** Seite  33
+  ;*****************************************************************
+  ENDE 
+  TASK (4,CYCL,1200)
+  ODR2 ($B60,KUE-TABL-AUS,$B59)
+  BEFAUS (2,$B59,KUE-TABL-EIN1,KUE-TABL-EIN2,$WZERO,
+          &AI-LU12-13A-X50,WERR)
+  ODRMN (4,KUECHE-STOER-ZUL,ST-KEIL-ZUL-KUEC,
+         KUECHE-STOER-ABL,ST-KEIL-ABL-KUEC,2,KUECHE-FROSTSCH,
+         KUECHE-BSK-AUF,$B60,$WSCRATCH)
+  SETMEL ($M116,1,$B60,&M117,$WSCRATCH)
+  ODR2 (KU-SOLL-EIN1-ZUL,KU-SOLL-EIN2-ZUL,$B61)
+  ODR2 (KU-SOLL-EIN1-ABL,KU-SOLL-EIN2-ABL,$B62)
+  UND2 ($B61,$B62,$B63)
+  NICHT ($B63,$HB0)
+  BEFAUS (1,$HB0,$B63,$WZERO,$WZERO,&AI-LU12-13A-X04,
+          $WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  34
+  ;*****************************************************************
+  ODR2 (K-KUEC-ANL-EIN1,K-KUEC-ANL-EIN2,$B64)
+  UNDMN (1,$B64,2,KUEC-VORSPUE-SCH,$B67,$B65,$WSCRATCH)
+  UND11 ($B65,KUECHE-STOER-ZUL,KU-SOLL-EIN1-ZUL)
+  UND11 (K-KUEC-ANL-EIN2,KUEC-VORSPUE-SCH,$B66)
+  VVZ ($B66,$M118,$M119,$B67)
+  UND21 ($B67,$B66,KUECHE-STOER-ZUL,KU-SOLL-EIN2-ZUL)
+  NOR2 (KU-SOLL-EIN2-ZUL,KU-SOLL-EIN1-ZUL,$B68)
+  UND2 (KU-SOLL-EIN1-ZUL,KUE-KLP-OFFEN,$B69)
+  UND2 (KU-SOLL-EIN2-ZUL,KUE-KLP-OFFEN,$B70)
+  BEFAUS (2,$B68,$B69,$B70,$WZERO,&AI-LU12-13A-X01,WERR)
+  ;*****************************************************************
+  ;*** Seite  35
+  ;*****************************************************************
+  ODR2 (KUE-ZUL-VEN-EIN1,KUE-ZUL-VEN-EIN2,KUECH-ZULUFT-EIN)
+  XOR2 (KUECH-ZULUFT-EIN,$WZERO,$B71)
+  UND2 (KUECH-ZULUFT-EIN,$B71,$B72)
+  VVZ ($B72,$M120,$M121,$WSCRATCH)
+  RSS ($WZERO,ENTRIEGELN,ST-KEIL-ZUL-KUEC,$WSCRATCH)
+  ODRMN (2,ST-KEIL-ZUL-KUEC,KUE-ZUL-VEN-STOE,2,
+         KUECHE-FROSTSCH,KUECHE-BSK-AUF,KUECHE-STOER-ZUL,
+         $WSCRATCH)
+  SETMEL ($M122,1,ST-KEIL-ZUL-KUEC,&AI-LU12-13A-S51,WERR)
+  ;Keine Keilr möglich
+  ;später ändern
+  ;         20.12.09Re
+  ; 
+  ;*****************************************************************
+  ;*** Seite  36
+  ;*****************************************************************
+  ODR2 (K-KUEC-ANL-EIN1,K-KUEC-ANL-EIN2,$B73)
+  UNDMN (1,$B73,2,KUEC-VORSPUE-SCH,$B76,$B74,$WSCRATCH)
+  UND11 ($B74,KUECHE-STOER-ABL,KU-SOLL-EIN1-ABL)
+  UND11 (K-KUEC-ANL-EIN2,KUEC-VORSPUE-SCH,$B75)
+  VVZ ($B75,$M123,$M124,$B76)
+  UND21 ($B76,$B75,KUECHE-STOER-ABL,KU-SOLL-EIN2-ABL)
+  NOR2 (KU-SOLL-EIN1-ABL,KU-SOLL-EIN2-ABL,$B77)
+  UND2 (KU-SOLL-EIN1-ABL,KUE-KLP-OFFEN,$B78)
+  UND2 (KU-SOLL-EIN2-ABL,KUE-KLP-OFFEN,$B79)
+  BEFAUS (2,$B77,$B78,$B79,$WZERO,&AI-LU12-13A-X02,WERR)
+  ;*****************************************************************
+  ;*** Seite  37
+  ;*****************************************************************
+  ODR2 (KUE-ABL-VEN-EIN1,KUE-ABL-VEN-EIN2,KUECH-ABLUFT-EIN)
+  XOR2 (KUECH-ABLUFT-EIN,KUE-ABL-KEILRI,$B80)
+  UND2 (KUECH-ABLUFT-EIN,$B80,$B81)
+  VVZ ($B81,$M125,$M126,$B82)
+  RSS ($B82,ENTRIEGELN,ST-KEIL-ABL-KUEC,$WSCRATCH)
+  ODRMN (2,ST-KEIL-ABL-KUEC,KUE-ABL-VEN-STOE,2,
+         KUECHE-FROSTSCH,KUECHE-BSK-AUF,KUECHE-STOER-ABL,
+         $WSCRATCH)
+  SETMEL ($M127,1,ST-KEIL-ABL-KUEC,&AI-LU12-13A-S52,WERR)
+  ;*****************************************************************
+  ;*** Seite  38
+  ;*****************************************************************
+  ODR2 (KUECHE-STOER-ZUL,KUECHE-STOER-ABL,$B83)
+  NICHT ($B83,$B84)
+  BEFAUS (1,$B84,$B83,$WZERO,$WZERO,&AI-LU12-27A-S01,WERR)
+  ;*****************************************************************
+  ;*** Seite  39
+  ;*****************************************************************
+  REGLER (15,KON01,$WZERO,$FZERO,KUE-Y-SIGN-ABL,WERR)
+  REGLER (16,KON01,$WZERO,$M128,KUE-Y-SIGN-ZUL,WERR)
+  AWT (KUECH-ZULUFT-EIN,$M129,KUE-Y-SIGN-ZUL,$F25)
+  ODRMN (1,KUEC-VORSPUE-SCH,1,KUECHE-FROSTSCH,$B85,$WSCRATCH)
+  AWT ($B85,$F25,$M130,$F26)
+  ANAUS ($F26,$M131,&AI-LU12-13A-Y01,WERR)
+  VGLEH (FILM-AUSSEN-TEMP,$M132,$M133,$B86)
+  UND11 ($B89,$B86,$B87)
+  NICHT ($B89,$HB1)
+  RSS ($B87,$HB1,$B88,$WSCRATCH)
+  MOKY ($B88,$M134,KUEC-VORSPUE-SCH)
+  ODR2 (K-KUEC-ANL-EIN1,K-KUEC-ANL-EIN2,$B89)
+  ENDE 
+  ENDMODUL 

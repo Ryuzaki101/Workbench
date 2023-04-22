@@ -1,0 +1,339 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : 29AR2004.GPS
+  ;*** Projektname    : ALLDATA Wahler Park
+  ;*** Projektnummer  : 04100026
+  ;*** Bearbeiter     : D.Patzer
+  ;*** PrÅfer         : W.Donner
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 10
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 4
+  ;*****************************************************************
+  MODUL (AR20,4)
+  WordV  PUMPE-RM_ST
+  WordV  NOTBETRIEB1
+  WordV  HAND-KV
+  WordV  STOER.LUEFTER
+  WordV  ERR
+  FloatV STELLGR-KH-VENT
+  WordV  KH-PUMPE_EIN
+  FloatV AB-TEMP
+  WordV  HAND-MODUL_9/1
+  WordV  PUMPE-RM_AUS
+  WordV  STOERUNG_QUIT.
+  WordV  BKS_2.2
+  WordV  UMLKG_2_R1
+  WordV  UMLKG_2_R2
+  WordV  NOTBETRIEB2
+  WordV  DIFF-DRUCK
+  WordV  SAMMELSTOERUNG
+  WordV  PUMPE-RM_EIN
+  WordV  M-SCHUTZ_LUEF2
+  WordV  UMLKG_2_STUFE1
+  FloatV AUSGANG_REG_3
+  FloatK FKON10 (10.00)
+  WordK  UMLKG_2_EIN1 (0)
+  WordK  UMLKG_2_EIN2 (0)
+  WordK  UMLKG_2_AUTO (1)
+  WordV  UMLKG_2_ST
+  WordV  STOER.KH-PUMPE
+  WordV  ST-DIFF-DRUCK
+  WordK  UMLKG_2_AUS (0)
+  WordK  KON01 (1)
+  WordV  M-SCHUTZ_PUMPE
+  WordK  KON00 (0)
+  FloatV ZU-TEMP
+  WordV  ZPK
+  WordV  UMLKG_2_R0
+  FloatV AUSGANG_REG_4
+  WordV  BKS_2.1
+  FloatV Sollwert_Regler
+  FloatK FKON20 (20.00)
+  WordV  UMLKG_2_STUFE2
+  IPAMB &BA3LU0102BF91 (82,1)
+  IPAMB &BA3LU0100BM00 (1,14)
+  WordV  $B1
+  FloatK $M0 (5.00)
+  IPAMB &BA3LU0102BM02 (17,10)
+  IPAMB &BA3LU0101BM03 (70,10)
+  IPAMB &BA3LU0102ST21 (13,6)
+  IPAMB &BA3LU0102ST22 (13,7)
+  IPAAW &BA3LU0102MW11 (19)
+  IPAAW &BA3LU0102MW21 (20)
+  IPAMB &BA3LU0102BM04 (17,11)
+  IPAMB &M1 (16,4)
+  IPAMB &BA3LU0102BF02 (16,5)
+  IPAMB &M2 (16,6)
+  IPAMB &M3 (16,7)
+  IPAMB &M4 (82,2)
+  IPAMB &M5 (82,3)
+  IPAMB &M6 (82,4)
+  IPAMB &M7 (82,5)
+  IPAMB &M8 (82,6)
+  IPAMB &M9 (82,7)
+  WordV  $WSCRATCH
+  IPAMB &BA3LU0102BF01 (71,1)
+  IPAMB &M10 (71,2)
+  IPAMB &M11 (71,3)
+  IPAMB &M12 (71,4)
+  IPAMB &M13 (71,5)
+  WordV  $HB7
+  FloatK $M14 (2.00)
+  WordV  $B2
+  WordV  $B3
+  WordV  $B4
+  WordV  $B5
+  FloatK $M15 (2.00)
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  FloatK $M16 (30.00)
+  FloatK $M17 (4.00)
+  WordV  $B10
+  FloatK $M18 (0.00)
+  FloatK $M19 (0.00)
+  FloatK $M20 (0.00)
+  FloatK $M21 (100.00)
+  FloatK $M22 (100.00)
+  FloatK $M23 (0.00)
+  FloatV $F1
+  FloatK $M24 (100.00)
+  WordV  $B11
+  FloatK $M25 (0.00)
+  FloatK $M26 (0.50)
+  WordV  $B12
+  WordV  $B13
+  FloatK $M27 (0.00)
+  FloatV $F2
+  FloatV $F3
+  FloatV $F4
+  WordK  $M28 (1)
+  IPAAW &BA3LU0102AA02 (24)
+  FloatK $M29 (5.00)
+  WordV  $B14
+  FloatK $M30 (1.00)
+  FloatK $M31 (600.00)
+  WordV  $B15
+  WordV  $B16
+  FloatK $M32 (100.00)
+  FloatK $M33 (0.00)
+  WordV  $B17
+  FloatK $M34 (300.00)
+  FloatK $M35 (1.00)
+  WordV  $B18
+  FloatK $M36 (0.00)
+  WordV  $HB3
+  WordV  $B19
+  FloatK $M37 (300.00)
+  FloatK $M38 (1.00)
+  WordV  $B20
+  WordV  $B21
+  WordV  $B22
+  WordV  $B23
+  WordV  $B24
+  WordV  $B30
+  FloatK $M39 (30.00)
+  FloatK $M40 (0.00)
+  WordV  $B32
+  FloatK $M41 (10.00)
+  WordV  $B31
+  WordV  $B33
+  WordV  $B25
+  WordV  $B34
+  FloatK $M42 (30.00)
+  FloatK $M43 (0.00)
+  WordV  $B36
+  FloatK $M44 (10.00)
+  WordV  $B35
+  WordV  $B37
+  WordV  $B26
+  WordK  $M45 (1)
+  IPAMB &BA3LU0102ST91 (82,14)
+  WordV  $B27
+  WordV  $B28
+  FloatK $M46 (30.00)
+  FloatK $M47 (0.00)
+  WordV  $B29
+  WordV  $B38
+  WordV  $B39
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B42
+  FloatK $M48 (30.00)
+  FloatK $M49 (0.00)
+  WordV  $B44
+  FloatK $M50 (10.00)
+  WordV  $B43
+  WordV  $B45
+  WordV  $B40
+  WordK  $M51 (1)
+  IPAMB &BA3LU0102ST92 (82,15)
+  WordV  $B41
+  WordK  $M52 (1)
+  IPAMB &BA3LU0102ST00 (81,3)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,INIT)
+  BEFAUS (3,UMLKG_2_AUS,UMLKG_2_EIN1,UMLKG_2_EIN2,
+          UMLKG_2_AUTO,&BA3LU0102BF91,ERR)
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ENDE 
+  TASK (2,CYCL,1000)
+  MELEIN (&BA3LU0100BM00,1,$B1,ERR)
+  MOKY ($B1,$M0,STOERUNG_QUIT.)
+  MELEIN (&BA3LU0102BM02,1,HAND-KV,ERR)
+  MELEIN (&BA3LU0101BM03,1,HAND-MODUL_9/1,ERR)
+  MELEIN (&BA3LU0102ST21,2,BKS_2.1,BKS_2.2,ERR)
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ENDE 
+  TASK (3,CYCL,1000)
+  ;Regelung/Steuerung
+  ;UMLKG 2
+  ; 
+  ANEIN (&BA3LU0102MW11,ZU-TEMP,ERR)
+  ANEIN (&BA3LU0102MW21,AB-TEMP,ERR)
+  MELEIN (&BA3LU0102BM04,1,DIFF-DRUCK,ERR)
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  MELEIN (&M1,4,ZPK,PUMPE-RM_AUS,PUMPE-RM_ST,PUMPE-RM_EIN,
+          ERR)
+  MELEIN (&BA3LU0102BF91,7,UMLKG_2_AUS,$WSCRATCH,
+          UMLKG_2_EIN1,$WSCRATCH,UMLKG_2_EIN2,$WSCRATCH,
+          UMLKG_2_AUTO,ERR)
+  MELEIN (&BA3LU0102BF01,5,UMLKG_2_R0,$HB7,UMLKG_2_R1,
+          $WSCRATCH,UMLKG_2_R2,ERR)
+  NICHT ($HB7,UMLKG_2_ST)
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  MOKY (STOERUNG_QUIT.,$M14,$B2)
+  NICHT (UMLKG_2_ST,$B3)
+  RSS ($B3,$B5,$WSCRATCH,$B4)
+  UND2 (UMLKG_2_ST,$B4,M-SCHUTZ_LUEF2)
+  UND2 (UMLKG_2_ST,$B2,$B5)
+  MOKY (STOERUNG_QUIT.,$M15,$B6)
+  NICHT (PUMPE-RM_ST,$B7)
+  RSS ($B7,$B9,$WSCRATCH,$B8)
+  UND2 (PUMPE-RM_ST,$B8,M-SCHUTZ_PUMPE)
+  UND2 (PUMPE-RM_ST,$B6,$B9)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  VGLEH (AB-TEMP,$M16,$M17,$B10)
+  UND11 ($B10,UMLKG_2_AUTO,NOTBETRIEB2)
+  REGLER (3,KON01,KON00,$M18,AUSGANG_REG_3,$WSCRATCH)
+  REGLER (4,KON01,KON00,$M19,AUSGANG_REG_4,ERR)
+  FKG (AUSGANG_REG_4,4,$M20,$M21,$M22,$M23,$F1)
+  AWT (NOTBETRIEB2,$F1,$M24,STELLGR-KH-VENT)
+  SOLKEN (2,KON01,Sollwert_Regler,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  ODR2 (UMLKG_2_R2,UMLKG_2_R1,$B11)
+  VVZ ($B11,$M25,$M26,$B12)
+  UNDMN (4,$B12,BKS_2.1,BKS_2.2,M-SCHUTZ_LUEF2,1,HAND-KV,
+         $B13,$WSCRATCH)
+  AWT ($B13,$M27,$F4,$F2)
+  MAX (2,STELLGR-KH-VENT,FKON20,$F3)
+  AWT (UMLKG_2_R2,STELLGR-KH-VENT,$F3,$F4)
+  ANAUS ($F2,$M28,&BA3LU0102AA02,ERR)
+  VGLEH ($F2,FKON10,$M29,$B14)
+  VVZ ($B14,$M30,$M31,KH-PUMPE_EIN)
+  ;Freigabe Regelung UMLKG2
+  ;und Mindeststellung
+  ;KH-Ventil bei 2. Stufe
+  ;20
+  ; 
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  UNDMN (3,BKS_2.1,M-SCHUTZ_LUEF2,BKS_2.2,2,ST-DIFF-DRUCK,
+         KON00,$B15,$WSCRATCH)
+  ODR2 (UMLKG_2_EIN1,UMLKG_2_AUTO,$B16)
+  UND21 ($B16,$B15,$B23,UMLKG_2_STUFE1)
+  VGLEH (STELLGR-KH-VENT,$M32,$M33,$B17)
+  VVZ ($B17,$M34,$M35,$B18)
+  VGLEH (STELLGR-KH-VENT,FKON20,$M36,$HB3)
+  NICHT ($HB3,$B19)
+  VVZ ($B19,$M37,$M38,$B20)
+  RSS ($B18,$B20,$B21,$WSCRATCH)
+  UND2 (UMLKG_2_AUTO,$B21,$B22)
+  ODRMN (3,NOTBETRIEB1,UMLKG_2_EIN2,$B22,0,$B23,$WSCRATCH)
+  UND2 ($B15,$B23,UMLKG_2_STUFE2)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  NOR2 (UMLKG_2_STUFE1,UMLKG_2_STUFE2,$B24)
+  BEFAUS (2,$B24,UMLKG_2_STUFE1,UMLKG_2_STUFE2,KON00,
+          &BA3LU0102BF01,ERR)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 (UMLKG_2_STUFE1,UMLKG_2_R1,$B30)
+  VVZ ($B30,$M39,$M40,$B32)
+  MOKY (STOERUNG_QUIT.,$M41,$B31)
+  UND11 ($B31,$B32,$B33)
+  RSS ($B32,$B33,$B25,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 (UMLKG_2_STUFE2,UMLKG_2_R2,$B34)
+  VVZ ($B34,$M42,$M43,$B36)
+  MOKY (STOERUNG_QUIT.,$M44,$B35)
+  UND11 ($B35,$B36,$B37)
+  RSS ($B36,$B37,$B26,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (2,$B25,$B26,1,M-SCHUTZ_LUEF2,STOER.LUEFTER,
+         $WSCRATCH)
+  SETMEL ($M45,1,STOER.LUEFTER,&BA3LU0102ST91,ERR)
+  ODR2 (UMLKG_2_R1,UMLKG_2_R2,$B27)
+  UND11 ($B27,DIFF-DRUCK,$B28)
+  VVZ ($B28,$M46,$M47,$B29)
+  RSS ($B29,STOERUNG_QUIT.,ST-DIFF-DRUCK,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  UNDMN (2,M-SCHUTZ_PUMPE,KH-PUMPE_EIN,0,$B38,$B39)
+  BEFAUS (1,$B39,$B38,$WZERO,$WZERO,&BA3LU0102BF02,ERR)
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  XOR2 (KH-PUMPE_EIN,PUMPE-RM_EIN,$B42)
+  VVZ ($B42,$M48,$M49,$B44)
+  MOKY (STOERUNG_QUIT.,$M50,$B43)
+  UND11 ($B43,$B44,$B45)
+  RSS ($B44,$B45,$B40,$WSCRATCH)
+  ;Version 2.0
+  ; 
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODRMN (1,$B40,1,M-SCHUTZ_PUMPE,STOER.KH-PUMPE,$WSCRATCH)
+  SETMEL ($M51,1,STOER.KH-PUMPE,&BA3LU0102ST92,ERR)
+  ODRMN (3,STOER.LUEFTER,STOER.KH-PUMPE,ST-DIFF-DRUCK,4,
+         M-SCHUTZ_LUEF2,M-SCHUTZ_PUMPE,BKS_2.1,BKS_2.2,$B41,
+         $WSCRATCH)
+  RSS ($B41,STOERUNG_QUIT.,SAMMELSTOERUNG,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  SETMEL ($M52,1,SAMMELSTOERUNG,&BA3LU0102ST00,ERR)
+  ENDE 
+  ENDMODUL 

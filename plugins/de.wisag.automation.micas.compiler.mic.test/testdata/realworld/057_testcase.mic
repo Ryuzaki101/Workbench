@@ -1,0 +1,384 @@
+  ;*****************************************************************
+  ;*** Projekt Beginn
+  ;*** Dateiname      : MPI01213.GPS
+  ;*** Projektname    : MPI Turm 3
+  ;*** Projektnummer  : 171736
+  ;*** Bearbeiter     : H.Romahn
+  ;*** Prüfer         : H.Meyer
+  ;*** Line Nummer    : 0
+  ;*** User Number    : 12
+  ;*** Modul Typ      : AR20
+  ;*** Feldbus Nummer : 13
+  ;*****************************************************************
+  MODUL (@TYPE@, @FILEDBUS@)
+  WordV  STB_WWB
+  WordV  Entriegeln
+  WordV  ST_Spuelmasch
+  WordV  ST_Verhalten
+  WordV  Keilr_Zul1
+  WordV  Keilr_Zul2
+  WordV  Keilr_Abl1
+  WordV  Keilr_Abl2
+  WordV  ST_Zul1
+  WordV  STOE_4-2
+  WordV  ST_Zul2
+  WordV  ST_Abl1
+  WordV  ST_ABL2
+  WordV  Frost_Haupt
+  WordV  STB_R210
+  WordV  STB_R126/129
+  WordV  STB_R104
+  WordV  STB_Verhalten
+  FloatK GRZW_VL-TEMP.KW (12.00)
+  WordV  DRUCK_MAX
+  WordV  DRUCK_MIN
+  WordV  SPG_24V_AC
+  WordV  SPG_24V_DC
+  WordV  SPG_230V
+  WordV  Reindampf
+  WordV  STOE_4-1
+  WordV  Frost_Spuelmasch
+  WordV  Keilr_Spuelmasch
+  WordV  STOE_1-2
+  WordV  Kompressor1
+  WordV  STOE_2-2
+  WordV  Kompressor2
+  WordV  STB_R101
+  WordV  STB_R127/128
+  WordV  STB_R212
+  WordV  STB_R213
+  WordV  STOE_GR_VL-KAELT
+  WordV  STOE_3-1
+  WordV  STOE_3-2
+  WordV  STB_R214
+  WordV  STB_R215
+  WordV  STB_R216
+  WordV  Sammel_ST_1
+  WordV  Entr.Befehl
+  WordV  Sammel_ST_2
+  WordV  STOE_1-1
+  WordV  Sammel_ST_4
+  FloatV VL_Kaltwasser
+  WordV  Sammel_ST_3
+  WordV  GRW_MIN_Fernltg
+  WordV  STOE_2-1
+  WordV  HZG_Pumpe
+  WordK  K0 (0)
+  WordV  Entr.Taster
+  WordV  LUE_Pumpe
+  WordV  Ladepumpe
+  IPAMB &M0 (114,0)
+  WordV  $WSCRATCH
+  IPAMB &M1 (87,10)
+  WordV  $HB2
+  IPAMB &M2 (87,14)
+  IPAMB &M3 (88,10)
+  IPAMB &M4 (104,6)
+  IPAMB &M5 (104,7)
+  IPAMB &M6 (0,0)
+  IPAMB &M7 (92,15)
+  IPAMB &M8 (99,3)
+  IPAMB &M9 (99,7)
+  IPAMB &M10 (100,3)
+  IPAMB &M11 (100,7)
+  IPAMB &M12 (99,11)
+  IPAMB &M13 (99,15)
+  IPAMB &M14 (100,11)
+  IPAMB &M15 (100,15)
+  IPAMB &M16 (101,3)
+  IPAMB &M17 (101,7)
+  IPAMB &M18 (102,3)
+  IPAMB &M19 (104,11)
+  IPAMB &M20 (104,14)
+  IPAMB &M21 (103,14)
+  IPAMB &M22 (103,15)
+  IPAMB &M23 (104,10)
+  IPAMB &M24 (92,14)
+  IPAMB &M25 (93,15)
+  IPAMB &M26 (93,14)
+  IPAMB &M27 (0,2)
+  IPAMB &M28 (66,2)
+  IPAMB &M32 (95,3)
+  IPAMB &M33 (95,6)
+  IPAMB &M34 (95,7)
+  IPAMB &M35 (96,2)
+  IPAMB &M36 (85,2)
+  IPAMB &M37 (86,2)
+  IPAMB &M38 (87,2)
+  IPAMB &M39 (88,2)
+  IPAMB &M40 (95,2)
+  IPAMB &M54 (0,11)
+  IPAMB &M55 (0,14)
+  IPAAW &M56 (171)
+  FloatV $F1
+  FloatK $M57 (20.00)
+  FloatK $M58 (0.00)
+  FloatV $F2
+  WordV  $HB0
+  FloatK $M59 (10.00)
+  WordV  $B1
+  WordK  $M60 (1)
+  IPAAW &M62 (71)
+  FloatK $M63 (1.00)
+  WordV  $B2
+  WordK  $M64 (1)
+  IPAMB &M65 (172,0)
+  WordV  $B3
+  WordV  $B4
+  WordK  $WONE (1)
+  WordK  $WZERO (0)
+  WordV  $B5
+  WordV  $B6
+  WordV  $B7
+  WordV  $B8
+  WordV  $B9
+  WordV  $B10
+  WordV  $B11
+  FloatK $M66 (15.00)
+  FloatK $M67 (0.00)
+  WordV  $B12
+  WordV  $B13
+  WordV  $B14
+  IPAMB &M68 (0,13)
+  FloatK $M69 (10.00)
+  FloatK $M70 (0.00)
+  WordV  $B15
+  IPAMB &M71 (0,9)
+  ;*****************************************************************
+  ;*** Seite   1
+  ;*****************************************************************
+  TASK (1,cycl,1000)
+  ;Verwendete Versionen:
+  ;CAE2000 : 6.02
+  ;FMICON  : 4.21
+  ; 
+  ;Die Zeichnungs-Nr.
+  ;für diese Unterlagen
+  ;lautet:
+  ;D1 A6 AFB0001
+  ;Sie wird der Einfach-
+  ;heit halber nicht mehr
+  ;auf jedem Blatt
+  ;erscheinen.
+  ; 
+  ;Kunde:   MPI Göttingn
+  ;Projekt: Sanierung
+  ;         BTL 1
+  ;Anlage:  Sammelstörung
+  ;         Betriebstechnik
+  ; 
+  ;*****************************************************************
+  ;*** Seite   2
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M0,1,GRW_MIN_Fernltg,$WSCRATCH)
+  MELEIN (&M1,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,LUE_Pumpe)
+  MELEIN (&M2,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,HZG_Pumpe)
+  MELEIN (&M3,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Ladepumpe)
+  MELEIN (&M4,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Kompressor1)
+  MELEIN (&M5,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Kompressor2)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M7,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_WWB)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M8,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R126/129)
+  MELEIN (&M9,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R212)
+  MELEIN (&M10,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R213)
+  MELEIN (&M11,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R214)
+  MELEIN (&M12,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R215)
+  MELEIN (&M13,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R216)
+  MELEIN (&M14,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R127/128)
+  MELEIN (&M15,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R210)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   3
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M16,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R101)
+  MELEIN (&M17,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_R104)
+  MELEIN (&M18,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,STB_Verhalten)
+  MELEIN (&M19,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,DRUCK_MIN)
+  MELEIN (&M20,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,DRUCK_MAX)
+  MELEIN (&M21,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SPG_24V_AC)
+  MELEIN (&M22,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SPG_24V_DC)
+  MELEIN (&M23,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,SPG_230V)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M24,1,Reindampf,$WSCRATCH)
+  MELEIN (&M25,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_Spuelmasch)
+  MELEIN (&M26,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Keilr_Spuelmasch)
+  MELEIN (&M27,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,ST_Spuelmasch)
+  MELEIN (&M28,1,ST_Verhalten,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   4
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M32,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Keilr_Zul1)
+  MELEIN (&M33,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Keilr_Zul2)
+  MELEIN (&M34,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Keilr_Abl1)
+  MELEIN (&M35,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Keilr_Abl2)
+  MELEIN (&M36,1,ST_Zul1,$WSCRATCH)
+  MELEIN (&M37,1,ST_Zul2,$WSCRATCH)
+  MELEIN (&M38,1,ST_Abl1,$WSCRATCH)
+  MELEIN (&M39,1,ST_ABL2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M40,1,$HB2,$WSCRATCH)
+  NICHT ($HB2,Frost_Haupt)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Seite   5
+  ;*****************************************************************
+  ;*****************************************************************
+  ;*** Macro Beginn
+  ;*****************************************************************
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M6,1,$WSCRATCH,$WSCRATCH)
+  MELEIN (&M54,1,Entr.Befehl,$WSCRATCH)
+  MELEIN (&M55,1,Entr.Taster,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Macro  Ende
+  ;*****************************************************************
+  ODR2 (Entr.Befehl,Entr.Taster,Entriegeln)
+  ;*****************************************************************
+  ;*** Seite   6
+  ;*****************************************************************
+  ANEIN (&M56,$F1,$WSCRATCH)
+  LIMIT ($F1,$M57,$M58,$F2)
+  NICHT (K0,$HB0)
+  MOKY ($HB0,$M59,$B1)
+  AWT ($B1,$F2,GRZW_VL-TEMP.KW,GRZW_VL-TEMP.KW)
+  ANAUS (GRZW_VL-TEMP.KW,$M60,&M56,$WSCRATCH)
+  ANEIN (&M62,VL_Kaltwasser,$WSCRATCH)
+  ;Sollwert-Erinnerung
+  ;Variablen im Editor auf
+  ;0 setzen
+  ; 
+  ;*****************************************************************
+  ;*** Seite   7
+  ;*****************************************************************
+  VGLEH (VL_Kaltwasser,GRZW_VL-TEMP.KW,$M63,$B2)
+  RSS ($B2,Entriegeln,STOE_GR_VL-KAELT,$WSCRATCH)
+  SETMEL ($M64,1,STOE_GR_VL-KAELT,&M65,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   8
+  ;*****************************************************************
+  ODRMN (6,DRUCK_MAX,DRUCK_MIN,Frost_Haupt,Frost_Spuelmasch,
+         GRW_MIN_Fernltg,HZG_Pumpe,0,$B3,$WSCRATCH)
+  ODRMN (5,Keilr_Abl1,Keilr_Abl2,Keilr_Spuelmasch,Keilr_Zul1,
+         Keilr_Zul2,0,$B4,$WSCRATCH)
+  ODR2 ($B3,$B4,Sammel_ST_1)
+  RSS ($B3,$WZERO,STOE_1-1,$WSCRATCH)
+  RSS ($B4,$WZERO,STOE_1-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite   9
+  ;*****************************************************************
+  ODRMN (4,Kompressor1,Kompressor2,LUE_Pumpe,Ladepumpe,0,$B5,
+         $WSCRATCH)
+  ODRMN (4,Reindampf,SPG_230V,SPG_24V_AC,SPG_24V_DC,0,$B6,
+         $WSCRATCH)
+  ODR2 ($B5,$B6,Sammel_ST_2)
+  RSS ($B5,$WZERO,STOE_2-1,$WSCRATCH)
+  RSS ($B6,$WZERO,STOE_2-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  10
+  ;*****************************************************************
+  ODRMN (6,STB_R101,STB_R104,STB_R126/129,STB_R127/128,
+         STB_R210,STB_R212,0,$B7,$WSCRATCH)
+  ODRMN (5,STB_R213,STB_R214,STB_R215,STB_R216,STB_Verhalten,
+         0,$B8,$WSCRATCH)
+  ODR2 ($B7,$B8,Sammel_ST_3)
+  RSS ($B7,$WZERO,STOE_3-1,$WSCRATCH)
+  RSS ($B8,$WZERO,STOE_3-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  11
+  ;*****************************************************************
+  ODRMN (4,ST_ABL2,ST_Abl1,ST_Spuelmasch,ST_Verhalten,0,$B9,
+         $WSCRATCH)
+  ODRMN (4,ST_Zul1,ST_Zul2,STOE_GR_VL-KAELT,STB_WWB,0,$B10,
+         $WSCRATCH)
+  ODR2 ($B9,$B10,Sammel_ST_4)
+  RSS ($B9,$WZERO,STOE_4-1,$WSCRATCH)
+  RSS ($B10,$WZERO,STOE_4-2,$WSCRATCH)
+  ;*****************************************************************
+  ;*** Seite  12
+  ;*****************************************************************
+  ODRMN (4,Sammel_ST_1,Sammel_ST_2,Sammel_ST_3,Sammel_ST_4,0,
+         $B11,$WSCRATCH)
+  VVZ ($B11,$M66,$M67,$B12)
+  UND11 (Entriegeln,$B12,$B13)
+  RSS ($B12,$B13,$B14,$WSCRATCH)
+  NICHT ($B14,$HB0)
+  BEFAUS (1,$HB0,$B14,$WZERO,$WZERO,&M68,$WSCRATCH)
+  VVZ (Entr.Befehl,$M69,$M70,$B15)
+  BEFAUS (1,$B15,$WZERO,$WZERO,$WZERO,&M71,$WSCRATCH)
+  ENDE 
+  ENDMODUL 
